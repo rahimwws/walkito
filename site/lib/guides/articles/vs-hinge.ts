@@ -19,7 +19,7 @@ export const VS_HINGE_EN: Guide = {
   lede:
     'If your employer or health plan offers Hinge Health, start there: it costs you nothing and comes with your own physical therapist. If it does not, you cannot buy Hinge Health on your own, and Walkito is a heel and foot focused alternative you can download on iPhone or Android. Walkito makes this page, so we say plainly where Hinge Health is stronger.',
   intro: [
-    'The two are built for different situations. [Hinge Health](https://www.hingehealth.com/resources/articles/what-is-hinge-health/) is a virtual physical therapy program for muscle and joint pain anywhere in the body, offered as a benefit through employers and health plans. Walkito is a short exercise plan for heel, foot and lower leg pain, on 3, 5 or 7 days a week, that you download and pay for yourself.',
+    'The two are built for different situations. [Hinge Health](https://www.hingehealth.com/resources/articles/what-is-hinge-health/) is a virtual physical therapy program for muscle and joint pain anywhere in the body, offered as a benefit through employers and health plans. Walkito is a short exercise plan for heel, foot and lower leg pain, on 3, 5 or 7 days a week, that you download and pay for yourself. For what members say about Hinge, see our summary of [Hinge Health reviews](/hinge-health-reviews/).',
   ],
   takeaways: [
     'Hinge Health is free to you through an employer or health plan; we found no way to buy it on your own. Walkito is a weekly or yearly subscription anyone can download.',

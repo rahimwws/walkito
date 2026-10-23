@@ -1744,6 +1744,106 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.5535/arm.250134',
     pmid: '42332940',
   },
+  {
+    text: "Martin RL, Davenport TE, Reischl SF, et al. Heel pain-plantar fasciitis: revision 2014. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(11):A1–A33.",
+    doi: "10.2519/jospt.2014.0303",
+    pmid: "25361863",
+  },
+  {
+    text: "Fong DT, Pang KY, Chung MM, Hung AS, Chan KM. Evaluation of combined prescription of rocker sole shoes and custom-made foot orthoses for the treatment of plantar fasciitis. Clinical Biomechanics. 2012;27(10):1072–1077.",
+    doi: "10.1016/j.clinbiomech.2012.08.003",
+    pmid: "22954426",
+  },
+  {
+    text: "Greve C, Schuitema D, Otten B, et al. Biomechanical effects of rocker shoes on plantar aponeurosis strain in patients with plantar fasciitis and healthy controls. PLoS One. 2019;14(10):e0222388.",
+    doi: "10.1371/journal.pone.0222388",
+    pmid: "31600227",
+  },
+  {
+    text: "Franettovich Smith MM, van den Hoorn W, van den Hoek A, Kerr G, Hurn SE. Immediate effects of footwear design on in-shoe plantar pressures, impact forces and comfort in women with plantar heel pain. Journal of Foot and Ankle Research. 2025;18(2):e70055.",
+    doi: "10.1002/jfa2.70055",
+    pmid: "40509892",
+  },
+  {
+    text: "Chiu MC, Wang MJ. Professional footwear evaluation for clinical nurses. Applied Ergonomics. 2007;38(2):133–141.",
+    doi: "10.1016/j.apergo.2006.03.012",
+    pmid: "16765904",
+  },
+  {
+    text: "Ryan M, Fraser S, McDonald K, Taunton J. Examining the degree of pain reduction using a multielement exercise model with a conventional training shoe versus an ultraflexible training shoe for treating plantar fasciitis. The Physician and Sportsmedicine. 2009;37(4):68–74.",
+    doi: "10.3810/psm.2009.12.1744",
+    pmid: "20048543",
+  },
+  {
+    text: "Hansen L, Winkel J, Jørgensen K. Significance of mat and shoe softness during prolonged work in upright position: based on measurements of low back muscle EMG, foot volume changes, discomfort and ground force reactions. Applied Ergonomics. 1998;29(3):217–224.",
+    doi: "10.1016/s0003-6870(97)00062-8",
+    pmid: "9676339",
+  },
+  {
+    text: "Karimi Z, Allahyari T, Azghani MR, Khalkhali H. Influence of unstable footwear on lower leg muscle activity, volume change and subjective discomfort during prolonged standing. Applied Ergonomics. 2016;53 Pt A:95–102.",
+    doi: "10.1016/j.apergo.2015.09.003",
+    pmid: "26674409",
+  },
+  {
+    text: "Werner RA, Gell N, Hartigan A, Wiggerman N, Keyserling WM. Risk factors for plantar fasciitis among assembly plant workers. PM&R. 2010;2(2):110–116.",
+    doi: "10.1016/j.pmrj.2009.11.012",
+    pmid: "20193937",
+  },
+  {
+    text: "Koo SW, Yoon YS, Yoon MK, Choi SG, Kim DW, Jang HY. Effectiveness of shoe rotation in managing plantar fasciitis in patients. Journal of Clinical Medicine. 2024;13(16):4624.",
+    doi: "10.3390/jcm13164624",
+    pmid: "39200766",
+  },
+  {
+    text: "Cockayne S, Fairhurst C, Frost G, et al. Slip-resistant footwear reduces slips among National Health Service workers in England: a randomised controlled trial. Occupational and Environmental Medicine. 2021;78(7):472–478.",
+    doi: "10.1136/oemed-2020-106914",
+    pmid: "33452038",
+  },
+  {
+    text: "Bell JL, Collins JW, Wolf L, et al. Evaluation of a comprehensive slip, trip and fall prevention programme for hospital employees. Ergonomics. 2008;51(12):1906–1925.",
+    doi: "10.1080/00140130802248092",
+    pmid: "18932056",
+  },
+  {
+    text: "Getie K, Kahsay G, Kassaw A, Gomera G, Alamer A, Hailu T. Ankle and foot pain and associated factors among nurses at Ayder Comprehensive Specialized Hospital, Mekelle, Ethiopia: cross-sectional study. Journal of Pain Research. 2021;14:83–92.",
+    doi: "10.2147/JPR.S283580",
+    pmid: "33500657",
+  },
+  {
+    text: "Puszczałowska-Lizis E, Lizis S, Dunaj W, Omorczyk J. Evaluation of professional footwear and its relationships with the foot structure among clinical nurses. Acta of Bioengineering and Biomechanics. 2024;26(1):133–142.",
+    doi: "10.37190/abb-02440-2024-02",
+    pmid: "39219083",
+  },
+  {
+    text: "Sullivan J, Pappas E, Adams R, Crosbie J, Burns J. Determinants of footwear difficulties in people with plantar heel pain. Journal of Foot and Ankle Research. 2015;8:40.",
+    doi: "10.1186/s13047-015-0102-9",
+    pmid: "26288656",
+  },
+  {
+    text: "Mecklenburg G, Smittenaar P, Erhart-Hledik JC, Perez DA, Hunter S. Effects of a 12-week digital care program for chronic knee pain on pain, mobility, and surgery risk: randomized controlled trial. Journal of Medical Internet Research. 2018;20(4):e156.",
+    doi: "10.2196/jmir.9667",
+    pmid: "29695370",
+  },
+  {
+    text: "Shebib R, Bailey JF, Smittenaar P, Perez DA, Mecklenburg G, Hunter S. Randomized controlled trial of a 12-week digital care program in improving low back pain. NPJ Digital Medicine. 2019;2:1.",
+    doi: "10.1038/s41746-018-0076-7",
+    pmid: "31304351",
+  },
+  {
+    text: "Bailey JF, Agarwal V, Zheng P, Smuck M, Fredericson M, Kennedy DJ, et al. Digital care for chronic musculoskeletal pain: 10,000 participant longitudinal cohort study. Journal of Medical Internet Research. 2020;22(5):e18250.",
+    doi: "10.2196/18250",
+    pmid: "32208358",
+  },
+  {
+    text: "Wang G, Yang M, Hong M, Krauss J, Bailey JF. Clinical outcomes after a digital musculoskeletal program for acute and subacute pain: observational, longitudinal study with comparison group. JMIR Rehabilitation and Assistive Technologies. 2022;9(2):e38214.",
+    doi: "10.2196/38214",
+    pmid: "35759317",
+  },
+  {
+    text: "Hong M, Krauss J, Wang G, Cohen K, Chaisson CE, Gulati A. Effectiveness of hybrid form impulse therapy (HFIT) compared to traditional transcutaneous electronic nerve stimulation (TENS) in patients with chronic low back and knee pain: a randomized controlled trial. Journal of Pain Research. 2024;17:2417-2430.",
+    doi: "10.2147/JPR.S461343",
+    pmid: "39050679",
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -2097,6 +2197,26 @@ export const CITE = {
   cookHrtAchilles: 346,
   finniHrtTwins: 347,
   ansariMenopause: 348,
+  shoeMartin2014Cpg: 349,
+  shoeFong2012: 350,
+  shoeGreve2019: 351,
+  shoeFranettovich2025: 352,
+  shoeChiu2007: 353,
+  shoeRyan2009: 354,
+  shoeHansen1998: 355,
+  shoeKarimi2016: 356,
+  shoeWerner2010: 357,
+  shoeKoo2024: 358,
+  shoeCockayne2021: 359,
+  shoeBell2008: 360,
+  shoeGetie2021: 361,
+  shoePuszczalowska2024: 362,
+  shoeSullivan2015: 363,
+  hingeMecklenburgRCT: 364,
+  hingeShebibRCT: 365,
+  hingeBaileyCohort: 366,
+  hingeWangAcute: 367,
+  hingeHongEnsoRCT: 368,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

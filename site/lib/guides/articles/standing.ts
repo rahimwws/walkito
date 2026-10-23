@@ -45,7 +45,7 @@ export const STANDING_EN: Guide = {
   lede:
     'Feet hurt after standing all day because hours on a hard floor load the same tissues over and over, without the pumping action that walking gives your calves and veins. Stretching the calf and plantar fascia, and building some calf strength, targets the tissues that take the most strain. Your feet hurt by the end of a long shift. The arch aches, the heel is sore, and your legs feel heavy.',
   intro: [
-    'Not all foot pain from standing is [plantar fasciitis](/plantar-fasciitis/), but the two overlap. A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that standing for most of the working day raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility was an even stronger risk factor, at 23.3 times the odds. The exercises that help both are largely the same: calf and plantar fascia stretches, plus strength work for the calf.',
+    'Not all foot pain from standing is [plantar fasciitis](/plantar-fasciitis/), but the two overlap. A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that standing for most of the working day raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility was an even stronger risk factor, at 23.3 times the odds. The exercises that help both are largely the same: calf and plantar fascia stretches, plus strength work for the calf. If you are choosing work shoes, our guide to [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/) sets out what the studies say about footwear for long shifts.',
   ],
   toc: true,
   takeaways: [

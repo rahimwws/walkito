@@ -495,6 +495,8 @@ export const EN_ONLY = {
   heelNotPf: '/heel-pain-not-plantar-fasciitis/',
   pfNotBetter: '/plantar-fasciitis-not-getting-better/',
   pfMenopause: '/plantar-fasciitis-menopause/',
+  shoesNurses: '/best-shoes-for-nurses-with-plantar-fasciitis/',
+  hingeReviews: '/hinge-health-reviews/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -597,6 +599,8 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   heelNotPf: '/es/dolor-de-talon-que-no-es-fascitis/',
   pfNotBetter: '/es/fascitis-plantar-no-mejora/',
   pfMenopause: '/es/fascitis-plantar-menopausia/',
+  shoesNurses: '/es/zapatos-para-enfermeras-fascitis-plantar/',
+  hingeReviews: '/es/hinge-health-opiniones/',
 };
 
 /**
@@ -696,6 +700,8 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   heelNotPf: '/ru/bol-v-pyatke-ne-fastsiit/',
   pfNotBetter: '/ru/plantarnyy-fastsiit-ne-prokhodit/',
   pfMenopause: '/ru/plantarnyy-fastsiit-i-menopauza/',
+  shoesNurses: '/ru/obuv-dlya-medsester-pri-plantarnom-fastsiite/',
+  hingeReviews: '/ru/hinge-health-otzyvy/',
 };
 
 /**

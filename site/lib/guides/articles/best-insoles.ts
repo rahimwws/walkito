@@ -21,7 +21,7 @@ export const BEST_INSOLES_EN: Guide = {
   lede:
     'Going by the trials, the best insole for plantar fasciitis to try first is a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18). No trial crowns a brand, and in trials that compared them, custom insoles did no better than store-bought ones. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.',
   intro: [
-    'We do not sell insoles, we have no affiliate links and we did not wear-test these products. Walkito is an exercise app, so we have our own bias toward exercise; this page sticks to what the trials found.',
+    'We do not sell insoles, we have no affiliate links and we did not wear-test these products. Walkito is an exercise app, so we have our own bias toward exercise; this page sticks to what the trials found. If you work long shifts on your feet, see also our guide to [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/).',
   ],
   takeaways: [
     'The 2023 guideline grades insoles used alone for short-term pain relief B against, and says clinicians may use them combined with other care (grade C), custom or store-bought.',

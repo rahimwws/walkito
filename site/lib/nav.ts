@@ -91,6 +91,8 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   heelNotPf: 'Heel pain that isn\'t plantar fasciitis',
   pfNotBetter: 'Plantar fasciitis not getting better',
   pfMenopause: 'Plantar fasciitis and menopause',
+  shoesNurses: 'Shoes for nurses with plantar fasciitis',
+  hingeReviews: 'Hinge Health reviews',
 };
 
 /** Spanish footer labels, for the articles that exist in Spanish. */
@@ -270,7 +272,7 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
   work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers', 'hikers'],
-  compare: ['bestApp', 'vsExakt', 'vsPlantarCare', 'vsPfExercises', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
+  compare: ['bestApp', 'vsExakt', 'vsPlantarCare', 'vsPfExercises', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'hingeReviews', 'bestInsoles', 'shoesNurses', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
     'exTowelHeelRaise', 'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance',
@@ -343,6 +345,8 @@ export const TOPICS: Record<Topic, readonly GuideKey[]> = {
     'heelNotPf',
     'pfNotBetter',
     'pfMenopause',
+    'shoesNurses',
+    'hingeReviews',
   ],
   flat: [
     'hubFlatFeet', 'flatFeet', 'archPain', 'pttd', 'highArches', 'footStrengthening',

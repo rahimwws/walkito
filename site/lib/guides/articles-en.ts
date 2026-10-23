@@ -91,6 +91,8 @@ import { PF_KNEE_HIP_BACK_EN } from './articles/can-plantar-fasciitis-cause-knee
 import { HEEL_NOT_PF_EN } from './articles/heel-pain-not-plantar-fasciitis';
 import { PF_NOT_BETTER_EN } from './articles/plantar-fasciitis-not-getting-better';
 import { PF_MENOPAUSE_EN } from './articles/plantar-fasciitis-menopause';
+import { SHOES_NURSES_EN } from './articles/shoes-nurses';
+import { HINGE_REVIEWS_EN } from './articles/hinge-reviews';
 import type { Guide } from './types';
 
 /**
@@ -190,4 +192,6 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   heelNotPf: HEEL_NOT_PF_EN,
   pfNotBetter: PF_NOT_BETTER_EN,
   pfMenopause: PF_MENOPAUSE_EN,
+  shoesNurses: SHOES_NURSES_EN,
+  hingeReviews: HINGE_REVIEWS_EN,
 };

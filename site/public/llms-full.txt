@@ -393,6 +393,26 @@ Sources:
 - Cook JL, Bass SL, Black JE. Hormone therapy is associated with smaller Achilles tendon diameter in active post-menopausal women. Scandinavian Journal of Medicine & Science in Sports. 2007;17(2):128–132.
 - Finni T, Kovanen V, Ronkainen PH, et al. Combination of hormone replacement therapy and high physical activity is associated with differences in Achilles tendon size in monozygotic female twin pairs. Journal of Applied Physiology. 2009;106(4):1332–1337.
 - Ansari M, Hussain F, Shopon M, Ajmal H, Asif M, David S. Hormonal shifts and structural strain: a literature review of menopause and perimenopause in relation to overuse injuries and stress fractures. Annals of Rehabilitation Medicine. 2026;50(3):139–149.
+- Martin RL, Davenport TE, Reischl SF, et al. Heel pain-plantar fasciitis: revision 2014. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(11):A1–A33.
+- Fong DT, Pang KY, Chung MM, Hung AS, Chan KM. Evaluation of combined prescription of rocker sole shoes and custom-made foot orthoses for the treatment of plantar fasciitis. Clinical Biomechanics. 2012;27(10):1072–1077.
+- Greve C, Schuitema D, Otten B, et al. Biomechanical effects of rocker shoes on plantar aponeurosis strain in patients with plantar fasciitis and healthy controls. PLoS One. 2019;14(10):e0222388.
+- Franettovich Smith MM, van den Hoorn W, van den Hoek A, Kerr G, Hurn SE. Immediate effects of footwear design on in-shoe plantar pressures, impact forces and comfort in women with plantar heel pain. Journal of Foot and Ankle Research. 2025;18(2):e70055.
+- Chiu MC, Wang MJ. Professional footwear evaluation for clinical nurses. Applied Ergonomics. 2007;38(2):133–141.
+- Ryan M, Fraser S, McDonald K, Taunton J. Examining the degree of pain reduction using a multielement exercise model with a conventional training shoe versus an ultraflexible training shoe for treating plantar fasciitis. The Physician and Sportsmedicine. 2009;37(4):68–74.
+- Hansen L, Winkel J, Jørgensen K. Significance of mat and shoe softness during prolonged work in upright position: based on measurements of low back muscle EMG, foot volume changes, discomfort and ground force reactions. Applied Ergonomics. 1998;29(3):217–224.
+- Karimi Z, Allahyari T, Azghani MR, Khalkhali H. Influence of unstable footwear on lower leg muscle activity, volume change and subjective discomfort during prolonged standing. Applied Ergonomics. 2016;53 Pt A:95–102.
+- Werner RA, Gell N, Hartigan A, Wiggerman N, Keyserling WM. Risk factors for plantar fasciitis among assembly plant workers. PM&R. 2010;2(2):110–116.
+- Koo SW, Yoon YS, Yoon MK, Choi SG, Kim DW, Jang HY. Effectiveness of shoe rotation in managing plantar fasciitis in patients. Journal of Clinical Medicine. 2024;13(16):4624.
+- Cockayne S, Fairhurst C, Frost G, et al. Slip-resistant footwear reduces slips among National Health Service workers in England: a randomised controlled trial. Occupational and Environmental Medicine. 2021;78(7):472–478.
+- Bell JL, Collins JW, Wolf L, et al. Evaluation of a comprehensive slip, trip and fall prevention programme for hospital employees. Ergonomics. 2008;51(12):1906–1925.
+- Getie K, Kahsay G, Kassaw A, Gomera G, Alamer A, Hailu T. Ankle and foot pain and associated factors among nurses at Ayder Comprehensive Specialized Hospital, Mekelle, Ethiopia: cross-sectional study. Journal of Pain Research. 2021;14:83–92.
+- Puszczałowska-Lizis E, Lizis S, Dunaj W, Omorczyk J. Evaluation of professional footwear and its relationships with the foot structure among clinical nurses. Acta of Bioengineering and Biomechanics. 2024;26(1):133–142.
+- Sullivan J, Pappas E, Adams R, Crosbie J, Burns J. Determinants of footwear difficulties in people with plantar heel pain. Journal of Foot and Ankle Research. 2015;8:40.
+- Mecklenburg G, Smittenaar P, Erhart-Hledik JC, Perez DA, Hunter S. Effects of a 12-week digital care program for chronic knee pain on pain, mobility, and surgery risk: randomized controlled trial. Journal of Medical Internet Research. 2018;20(4):e156.
+- Shebib R, Bailey JF, Smittenaar P, Perez DA, Mecklenburg G, Hunter S. Randomized controlled trial of a 12-week digital care program in improving low back pain. NPJ Digital Medicine. 2019;2:1.
+- Bailey JF, Agarwal V, Zheng P, Smuck M, Fredericson M, Kennedy DJ, et al. Digital care for chronic musculoskeletal pain: 10,000 participant longitudinal cohort study. Journal of Medical Internet Research. 2020;22(5):e18250.
+- Wang G, Yang M, Hong M, Krauss J, Bailey JF. Clinical outcomes after a digital musculoskeletal program for acute and subacute pain: observational, longitudinal study with comparison group. JMIR Rehabilitation and Assistive Technologies. 2022;9(2):e38214.
+- Hong M, Krauss J, Wang G, Cohen K, Chaisson CE, Gulati A. Effectiveness of hybrid form impulse therapy (HFIT) compared to traditional transcutaneous electronic nerve stimulation (TENS) in patients with chronic low back and knee pain: a randomized controlled trial. Journal of Pain Research. 2024;17:2417-2430.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -1828,7 +1848,7 @@ Left unaddressed, metatarsalgia can change how you walk, since people naturally 
 
 ## Foot pain for nurses: what helps on 12-hour shifts
 
-Language: English · https://walkito.site/nurses-foot-pain/ · published 2026-10-04 · updated 2026-10-10
+Language: English · https://walkito.site/nurses-foot-pain/ · published 2026-10-04 · updated 2026-10-23
 
 The things that help nurses’ feet, calf stretches, arch exercises and compression stockings, take a few minutes before or after a shift. Nurses walk more in a single shift than most people walk in a day, and they do it on hard floors in shoes that may not fit well. Foot and ankle problems are one of the most common musculoskeletal complaints in nursing, reported by more than half of hospital nurses over a 12-month period in one survey.
 
@@ -1892,11 +1912,12 @@ Three sessions a week is a reasonable starting point. If you work three 12-hour 
 
 Footwear is one of the most discussed topics among nurses, but the evidence for one type over another is limited. A 2007 evaluation of three brands of professional nursing shoes found that the shoe with a more cushioned insole and better arch support reduced lower-extremity muscle effort compared to the other two, but the study was small and brand-specific.
 
-What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades [orthotics](https://walkito.site/insoles-vs-exercises/) on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.
+What the research does support more broadly is that footwear comfort matters. In a survey of 366 nurses in Ethiopia, 72% of those reporting low shoe comfort had ankle or foot pain in the past 12 months, compared with 28% of those reporting high shoe comfort. The 2023 heel pain guideline grades [orthotics](https://walkito.site/insoles-vs-exercises/) on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.
 
 A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. **Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.**
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Getie K, Kahsay G, Kassaw A, Gomera G, Alamer A, Hailu T. Ankle and foot pain and associated factors among nurses at Ayder Comprehensive Specialized Hospital, Mekelle, Ethiopia: cross-sectional study. Journal of Pain Research. 2021;14:83–92.
 
 ### Do compression stockings help nurses with foot and leg pain?
 
@@ -1957,7 +1978,7 @@ In a survey of paediatric hospital nurses, working 12-hour shifts in the intensi
 
 #### Should nurses wear clogs or sneakers for foot pain?
 
-There is no large trial comparing nursing clogs to sneakers for foot outcomes. What the evidence does support is that footwear comfort is strongly associated with foot pain: in one survey, 72% of nurses reporting low footwear comfort also reported foot and heel pain. Choose a shoe that fits well, has some cushioning and does not pinch the toes. Shoes alone do not replace the stretching and strength work on this page.
+There is no large trial comparing nursing clogs to sneakers for foot outcomes. What the evidence does support is that footwear comfort is strongly associated with foot pain: in a survey of 366 nurses, 72% of those reporting low shoe comfort had ankle or foot pain in the past year, against 28% with comfortable shoes. Choose a shoe that fits well, has some cushioning and does not pinch the toes. Shoes alone do not replace the stretching and strength work on this page. Our [guide to shoes for nurses with plantar fasciitis](https://walkito.site/best-shoes-for-nurses-with-plantar-fasciitis/) compares the features with some evidence behind them.
 
 #### Do compression socks help nurses on long shifts?
 
@@ -14219,6 +14240,328 @@ A higher weight is linked to plantar fasciitis. In a review of 51 studies, a BMI
 #### Will plantar fasciitis go away after menopause?
 
 No study has followed heel pain through menopause, so there is no figure. For plantar fasciitis in general, about 90% of people get better with non-surgical care, often within 3 to 6 months. In a long follow-up, the risk of it lasting was higher in women and in people with pain in both heels.
+
+## Best shoes for nurses with plantar fasciitis: what the evidence shows
+
+Language: English · https://walkito.site/best-shoes-for-nurses-with-plantar-fasciitis/ · published 2026-10-23 · updated 2026-10-23
+
+No trial has tested any named nursing shoe for plantar fasciitis, so no brand has evidence that it is the best. Pick by features that have some research behind them: a good fit, a cushioned heel, some heel raise or a rocker sole, a slip-resistant outsole and two pairs to rotate. The shoes below are ones review sites often recommend; the stretching and strengthening in our [exercises guide](https://walkito.site/plantar-fasciitis-exercises/) have more evidence behind them than any shoe.
+
+- The 2023 heel pain guideline does not grade shoes on their own. It lists footwear advice under patient education at its lowest grade, E. The 2014 version said clinicians may prescribe a rocker-bottom shoe with an orthosis, and shoe rotation for people who stand for long periods (grade C).
+- In 29 women with heel pain, a shoe with a 14 mm heel-to-toe drop gave 15% lower heel pressure and was 47% to 67% more comfortable than a 4 mm shoe with a different outsole, in one lab session.
+- In a study of 50 people with heel pain and 25 matched people without it, those with heel pain wore shoes with harder heels and stood 3.4 hours a day longer.
+- In a survey of 366 nurses in Ethiopia, low shoe comfort went with about 4 times the odds of ankle or foot pain.
+- In a trial of 4,553 NHS staff, slip-resistant shoes cut the slip rate by 37% over 14 weeks. That is about slips, not heel pain.
+
+### What are the best shoes for nurses with plantar fasciitis?
+
+The honest answer is a set of features, not a brand. No study we found tested a Hoka, Brooks, Dansko, ASICS, New Balance or Clove shoe in people with plantar fasciitis. What the research does give is a checklist:
+
+- **A shoe that fits and feels comfortable.** Nurses with low shoe comfort had about 4 times the odds of ankle or foot pain in one survey, and a study of 120 nurses called for nursing shoes in different widths for the same length, so look for a model sold in widths.
+- **A cushioned, not hard, heel.** People with heel pain wore harder-heeled shoes than matched people without it, and the 2023 guideline mentions footwear with heel cushioning for some people (grade C).
+- **Some heel raise or a rocker sole, not a flat one.** A higher-drop shoe lowered heel pressure in a lab study, and rocker soles with an orthosis lowered pain in another. Both were single sessions.
+- **Room for an insole.** The rocker shoe did best combined with an orthosis. See [best insoles for plantar fasciitis](https://walkito.site/best-insoles-for-plantar-fasciitis/).
+- **A slip-resistant outsole.** The strongest footwear trial in hospital staff is about slips, and it found fewer of them.
+- **Two pairs, rotated through the week.** Linked to lower odds of plantar fasciitis in factory workers, and part of the 2014 guideline.
+
+A firm heel counter, the stiff cup at the back of the shoe, is a common recommendation for holding the heel and an insole in place. We found no study testing it in plantar fasciitis.
+
+Source: Getie K, Kahsay G, Kassaw A, Gomera G, Alamer A, Hailu T. Ankle and foot pain and associated factors among nurses at Ayder Comprehensive Specialized Hospital, Mekelle, Ethiopia: cross-sectional study. Journal of Pain Research. 2021;14:83–92.
+Source: Puszczałowska-Lizis E, Lizis S, Dunaj W, Omorczyk J. Evaluation of professional footwear and its relationships with the foot structure among clinical nurses. Acta of Bioengineering and Biomechanics. 2024;26(1):133–142.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Franettovich Smith MM, van den Hoorn W, van den Hoek A, Kerr G, Hurn SE. Immediate effects of footwear design on in-shoe plantar pressures, impact forces and comfort in women with plantar heel pain. Journal of Foot and Ankle Research. 2025;18(2):e70055.
+Source: Fong DT, Pang KY, Chung MM, Hung AS, Chan KM. Evaluation of combined prescription of rocker sole shoes and custom-made foot orthoses for the treatment of plantar fasciitis. Clinical Biomechanics. 2012;27(10):1072–1077.
+Source: Cockayne S, Fairhurst C, Frost G, et al. Slip-resistant footwear reduces slips among National Health Service workers in England: a randomised controlled trial. Occupational and Environmental Medicine. 2021;78(7):472–478.
+Source: Werner RA, Gell N, Hartigan A, Wiggerman N, Keyserling WM. Risk factors for plantar fasciitis among assembly plant workers. PM&R. 2010;2(2):110–116.
+Source: Martin RL, Davenport TE, Reischl SF, et al. Heel pain-plantar fasciitis: revision 2014. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(11):A1–A33.
+
+### What does the heel pain guideline say about shoes?
+
+Not much. The 2023 guideline has no graded recommendation for shoes on their own. Footwear shows up twice: under patient education, “footwear options to mitigate commonly occurring weight loading stresses”, at grade E, the lowest level; and inside its orthoses advice, a heel cushion or footwear with heel cushioning for people whose feet roll outward (grade C).
+
+The 2014 version was more specific. It said clinicians may prescribe a rocker-bottom shoe together with a foot orthosis, and shoe rotation during the work week for people who stand for long periods, both at grade C, meaning weaker evidence. **For nurses, shoe rotation is the one piece of guideline shoe advice written for people who stand at work.**
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Martin RL, Davenport TE, Reischl SF, et al. Heel pain-plantar fasciitis: revision 2014. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(11):A1–A33.
+
+### Do rocker soles help plantar fasciitis?
+
+Maybe, and mostly with an insole. In that crossover study of 15 people, the combination also lowered pressure under the inner heel the most. But it measured pain right after walking, not over weeks.
+
+A lab study of 8 people with plantar fasciitis and 8 without found that rocker shoes with a stiff insole reduced bending at the big toe but did not significantly reduce strain on the plantar fascia. **We found no trial that followed people in rocker shoes over weeks, and none that tested a commercial rocker shoe such as a Hoka or a Dansko clog.**
+
+Source: Fong DT, Pang KY, Chung MM, Hung AS, Chan KM. Evaluation of combined prescription of rocker sole shoes and custom-made foot orthoses for the treatment of plantar fasciitis. Clinical Biomechanics. 2012;27(10):1072–1077.
+Source: Greve C, Schuitema D, Otten B, et al. Biomechanical effects of rocker shoes on plantar aponeurosis strain in patients with plantar fasciitis and healthy controls. PLoS One. 2019;14(10):e0222388.
+
+### What heel drop is best for plantar fasciitis?
+
+No trial has tested which drop is best. That 2025 lab study is the closest: the higher-drop shoe also scored 47% to 67% higher for comfort. But the two shoes also differed in outsole material, so it does not isolate drop, and one author had earlier consulted for a footwear brand. Review sites quote drop ranges for plantar fasciitis; we could not find those ranges in either guideline.
+
+Two other findings point the same way. People with heel pain wore harder-heeled shoes than people without it, though heel height did not differ between the groups. And a lab test of three brands of nursing shoe concluded that comfortable nursing shoes need arch support, about 1.5 cm of foam under the ball of the foot and a heel height of 1.8 to 3.6 cm. That study measured total heel height, not drop, and was not a study of people with plantar fasciitis.
+
+Zero-drop and minimalist shoes have only small trials in plantar fasciitis, some of them alongside exercise or insoles, and switching straight into them for 12-hour shifts has not been tested. Our page on [barefoot shoes](https://walkito.site/barefoot-shoes/) covers those trials and how people moved into them slowly.
+
+Source: Franettovich Smith MM, van den Hoorn W, van den Hoek A, Kerr G, Hurn SE. Immediate effects of footwear design on in-shoe plantar pressures, impact forces and comfort in women with plantar heel pain. Journal of Foot and Ankle Research. 2025;18(2):e70055.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Chiu MC, Wang MJ. Professional footwear evaluation for clinical nurses. Applied Ergonomics. 2007;38(2):133–141.
+Source: Ryan M, Fraser S, McDonald K, Taunton J. Examining the degree of pain reduction using a multielement exercise model with a conventional training shoe versus an ultraflexible training shoe for treating plantar fasciitis. The Physician and Sportsmedicine. 2009;37(4):68–74.
+Source: Ribeiro AP, João SMA. The effect of short and long-term therapeutic treatment with insoles and shoes on pain, function, and plantar load parameters of women with plantar fasciitis: a randomized controlled trial. Medicina (Kaunas). 2022;58(11):1546.
+
+### Are clogs good for nurses with plantar fasciitis?
+
+There is no study of professional clogs in people with plantar fasciitis. The two closest studies were in healthy volunteers. In 8 women doing 2-hour standing and walking tasks, soft shoes rather than clogs roughly halved foot swelling and heel impact. In 10 people standing for 2 hours, an unstable, rocker-type shoe lowered lower-leg discomfort and swelling compared with a flat shoe. Neither study tested a rocker-bottom nursing clog like the ones sold today.
+
+Dansko’s product page for the Professional clog lists a rocker bottom, a contoured footbed with arch support and “APMA ACCEPTED”. **We could not find the Professional in APMA’s seal database on October 23, 2026.** If a clog suits you, the features above still apply: heel cushioning, room for an insole and a slip-resistant sole.
+
+Source: Hansen L, Winkel J, Jørgensen K. Significance of mat and shoe softness during prolonged work in upright position: based on measurements of low back muscle EMG, foot volume changes, discomfort and ground force reactions. Applied Ergonomics. 1998;29(3):217–224.
+Source: Karimi Z, Allahyari T, Azghani MR, Khalkhali H. Influence of unstable footwear on lower leg muscle activity, volume change and subjective discomfort during prolonged standing. Applied Ergonomics. 2016;53 Pt A:95–102.
+
+### Nursing shoes review sites often recommend
+
+### Should nurses rotate shoes?
+
+It is cheap to try and has some support. The factory study could not show cause and effect, but it was enough for the 2014 guideline to list shoe rotation for people who stand for long periods. More time standing on hard surfaces raised the risk in the same study.
+
+A later review of the charts of 42 patients compared shoe rotation, custom orthoses and physical therapy. All three groups improved at 4 weeks and three months, with slightly larger changes in the rotation group. It was small and not randomized. In practice, rotation means having two pairs, even two different models, and switching between them on shift days.
+
+Source: Werner RA, Gell N, Hartigan A, Wiggerman N, Keyserling WM. Risk factors for plantar fasciitis among assembly plant workers. PM&R. 2010;2(2):110–116.
+Source: Martin RL, Davenport TE, Reischl SF, et al. Heel pain-plantar fasciitis: revision 2014. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(11):A1–A33.
+Source: Koo SW, Yoon YS, Yoon MK, Choi SG, Kim DW, Jang HY. Effectiveness of shoe rotation in managing plantar fasciitis in patients. Journal of Clinical Medicine. 2024;13(16):4624.
+
+### Do slip-resistant shoes matter for nurses?
+
+Yes, for slips. This is the best footwear trial in hospital staff, but it measured slips and falls, not heel pain. A shoe company paid for the grip testing used to pick the trial shoes, which the authors disclosed.
+
+A 10-year programme in US hospitals that included slip-resistant footwear for some staff saw slip, trip and fall claims fall by 58%, and nursing and office staff made the most claims. The programme changed many things at once, so the shoes alone cannot take the credit.
+
+Source: Cockayne S, Fairhurst C, Frost G, et al. Slip-resistant footwear reduces slips among National Health Service workers in England: a randomised controlled trial. Occupational and Environmental Medicine. 2021;78(7):472–478.
+Source: Bell JL, Collins JW, Wolf L, et al. Evaluation of a comprehensive slip, trip and fall prevention programme for hospital employees. Ergonomics. 2008;51(12):1906–1925.
+
+### What do the APMA seal and “podiatrist recommended” mean?
+
+Less than they sound. APMA says its Seal of Acceptance means a product was reviewed by a group of its podiatrists, but that it “is not a testing laboratory”, only reviews products that companies submit, and does not compare products against each other. A shoe can be missing from the database because the maker never applied.
+
+“Reviewed by a podiatrist” on a review site means someone checked the article, not that the shoes were tested. Several review pages also give heel drop ranges and replacement mileages that disagree with each other and cite no study.
+
+### Shoes or exercises: what has more evidence?
+
+The exercises. Stretching has the top grade and strengthening a B; footwear advice sits at grade E, under patient education. A good shoe can make a shift more comfortable, but it is the part with the least evidence.
+
+The stretches are in [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), the heel raise and how to make it harder in [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/), and how to fit them around shifts in [foot pain for nurses](https://walkito.site/nurses-foot-pain/). If the pain is general aching after long shifts rather than first-step heel pain, start with [why feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/). If you add an insole, [best insoles for plantar fasciitis](https://walkito.site/best-insoles-for-plantar-fasciitis/) covers what the trials found.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Where does the evidence stop?
+
+- No randomized trial has tested any commercial nursing shoe, running shoe or clog for plantar fasciitis.
+- No trial has isolated the effect of heel drop, compared cushioned with stability shoes, or tested how often to replace shoes, in people with heel pain.
+- The rocker sole and heel drop studies measured pressure or pain in a single session, not over weeks.
+- The clog and unstable shoe studies were in 8 and 10 healthy volunteers in a lab.
+- The shoe rotation evidence is one cross-sectional factory study and one small chart review.
+- People with heel pain struggled more to find comfortable shoes than people without it in a study of 192 people with heel pain and 69 without, so expect some trial and error.
+
+Source: Fong DT, Pang KY, Chung MM, Hung AS, Chan KM. Evaluation of combined prescription of rocker sole shoes and custom-made foot orthoses for the treatment of plantar fasciitis. Clinical Biomechanics. 2012;27(10):1072–1077.
+Source: Franettovich Smith MM, van den Hoorn W, van den Hoek A, Kerr G, Hurn SE. Immediate effects of footwear design on in-shoe plantar pressures, impact forces and comfort in women with plantar heel pain. Journal of Foot and Ankle Research. 2025;18(2):e70055.
+Source: Hansen L, Winkel J, Jørgensen K. Significance of mat and shoe softness during prolonged work in upright position: based on measurements of low back muscle EMG, foot volume changes, discomfort and ground force reactions. Applied Ergonomics. 1998;29(3):217–224.
+Source: Karimi Z, Allahyari T, Azghani MR, Khalkhali H. Influence of unstable footwear on lower leg muscle activity, volume change and subjective discomfort during prolonged standing. Applied Ergonomics. 2016;53 Pt A:95–102.
+Source: Werner RA, Gell N, Hartigan A, Wiggerman N, Keyserling WM. Risk factors for plantar fasciitis among assembly plant workers. PM&R. 2010;2(2):110–116.
+Source: Koo SW, Yoon YS, Yoon MK, Choi SG, Kim DW, Jang HY. Effectiveness of shoe rotation in managing plantar fasciitis in patients. Journal of Clinical Medicine. 2024;13(16):4624.
+Source: Sullivan J, Pappas E, Adams R, Crosbie J, Burns J. Determinants of footwear difficulties in people with plantar heel pain. Journal of Foot and Ankle Research. 2015;8:40.
+
+### See a clinician first if
+
+- your heel pain followed an injury or a fall at work
+- you cannot put weight on the foot, or you are limping
+- the foot is numb, tingling, burning, swollen or warm
+- pain is in one pinpoint spot and gets worse with activity, which can be a stress fracture pattern
+- pain wakes you at night or keeps getting worse
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+Shoes are the part with the least evidence; the exercises are the part with the most. [Walkito](https://walkito.site/program/) is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. You pick sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week, and a morning pain check-in adjusts the session.
+
+#### What shoes do podiatrists recommend for nurses with plantar fasciitis?
+
+Review sites, some checked by podiatrists, most often name the Hoka Bondi, Dansko Professional clog, Brooks Addiction Walker 2 and ASICS Gel-Kayano. None has been tested for plantar fasciitis in a published study. The research points to features instead: a good fit, a cushioned heel, some heel raise or a rocker sole, a slip-resistant outsole and two pairs to rotate.
+
+#### Are Hoka or Brooks better for plantar fasciitis?
+
+No study has compared them or tested either brand for plantar fasciitis. Both make several models that review sites recommend for nurses, and several of those models have the APMA seal, which is a review of submitted products and not a test. Choose the one that fits your foot, feels cushioned under the heel and leaves room for an insole.
+
+#### Are Dansko clogs good for plantar fasciitis?
+
+There is no study of Dansko or any professional clog in people with plantar fasciitis. Dansko says the Professional has a rocker bottom and arch support and is APMA accepted, but we could not find it in APMA’s seal database on October 23, 2026. In one small lab study, soft shoes beat ordinary clogs for foot swelling and heel impact.
+
+#### Are zero-drop shoes OK for nurses with plantar fasciitis?
+
+They have not been tested on 12-hour shifts. In a lab study of 29 women with heel pain, a shoe with a 14 mm drop gave 15% lower heel pressure than a 4 mm shoe. Flexible and minimalist shoes have only small trials, some combined with exercise or insoles. If you try them, build up slowly on days off.
+
+#### Can the right shoes alone make plantar fasciitis go away?
+
+There is no evidence that they can. The 2023 heel pain guideline gives shoes no graded recommendation of their own, while calf and plantar fascia stretching get its top grade, A, and strength training a B. A comfortable, cushioned shoe can make a shift easier, and the exercises do the part with the stronger evidence.
+
+## Hinge Health reviews: ratings, complaints and evidence
+
+Language: English · https://walkito.site/hinge-health-reviews/ · published 2026-10-23 · updated 2026-10-23
+
+Hinge Health is rated 4.9 out of 5 on the App Store from about 172,000 ratings and 4.9 on Google Play from about 33,900 reviews, but 3.0 on Trustpilot from 77 reviews (all checked October 23, 2026). The gap is mostly about who writes where: store ratings come from people using the app, while the much smaller Trustpilot and BBB pages collect more complaints, mainly about insurance billing and marketing mail. Its published studies, almost all run by Hinge, are on back and knee pain; none is on foot or heel pain.
+
+- Hinge Health is rated 4.9 on the App Store (about 172,000 ratings) and 4.9 on Google Play (about 33,900 reviews), and 3.0 on Trustpilot (77 reviews), checked October 23, 2026.
+- The most common praise in reviews is having your own physical therapist and coach, and doing the exercises at home. The most common complaints are insurance billing for a program sold as free, and too many mailers, texts and emails.
+- Hinge says the virtual program is $0 to members. It bills your health plan per use, and its own BBB reply says this does not affect your benefits or deductible.
+- Hinge’s studies are mostly run by people who work for or consult for Hinge. Its two randomized trials of the exercise program compared it with education articles, not in-person physical therapy.
+- The independent Peterson Health Technology Institute rated the evidence certainty for this kind of program “Lower”, and found that none of the nine Hinge studies it included compared it with in-person physical therapy.
+- We found no Hinge Health study on foot, heel or ankle pain.
+
+### How is Hinge Health rated?
+
+### What do Hinge Health reviewers like?
+
+We read the 250 most recent US App Store reviews (June 18 to October 21, 2026) and the 76 Trustpilot reviews we could load (February 2022 to October 7, 2026) on October 23, 2026, and grouped them by theme using keyword counts, then spot-checked them. The reviews are public on the [App Store](https://apps.apple.com/us/app/hinge-health/id1429270372) and [Trustpilot](https://www.trustpilot.com/review/hingehealth.com). Read the counts as approximate. Of the 250 App Store reviews, 229 gave 5 stars.
+
+- **Having your own physical therapist and coach.** About 76 of the 250 App Store reviews mention them, nearly all positively. On Trustpilot, about 51 of 76 mention them, in good and bad reviews alike.
+- **Doing it at home, on your own time.** About 65 App Store reviews praise the convenience.
+- **Actually keeping up with exercises.** One App Store reviewer writes: “I’ve done a lot of PT but never succeeded in doing my exercises regularly at home. This solves that.” (5 stars, October 21, 2026).
+- **Free equipment and the Enso device**, for members who get them. Of about 21 Trustpilot reviews that mention Enso, about 12 are positive.
+
+Many happy reviewers use it for back and knee pain, which is also where Hinge’s studies are.
+
+### What are the most common Hinge Health complaints?
+
+The complaints cluster on Trustpilot and BBB. Approximate counts from the 76 Trustpilot reviews:
+
+- **Billing to insurance** (about 25 reviews, 17 of them 1 or 2 stars). Reviewers say they expected “free” and then saw claims on their insurance statements. One App Store reviewer says it “billed my insurance for $250. I was never prompted to purchase anything.” (2 stars, October 18, 2026). That is one member’s report, not a published price. See the next section for how Hinge explains it.
+- **Too much marketing** (about 20 reviews). Mailers, texts and emails, and trouble opting out. One Trustpilot reviewer says the company “will nag you worse than the IRS”.
+- **App bugs and program changes** (about 17 reviews). One App Store reviewer says “Apple health integration is broken, video tracking is finicky” (3 stars, October 8, 2026). Long-time members on Trustpilot say sessions and programs changed and got shorter.
+- **Enso problems** (about 9 negative reviews). Reports include a unit that holds a charge for one session, and no way to get gel pads after coverage ends.
+- **Generic exercises or more pain** (about 7 reviews). One Trustpilot reviewer says it “made my pain worse”; a wheelchair user says exercises kept being changed to standing ones.
+
+In the 250 recent App Store reviews, billing comes up in about 8 and marketing complaints in about 2. Most of the few non-5-star App Store reviews are about bugs or app changes.
+
+### Is Hinge Health really free? Why it shows up on insurance
+
+For most members the virtual program costs nothing out of pocket. Hinge’s [App Store listing](https://apps.apple.com/us/app/hinge-health/id1429270372) says “virtual physical therapy and virtual specialist visits are available at no cost to the member”, through 2,800+ employers and health plans. In-person care can have a cost share on a high deductible plan or outside Hinge’s network. Hinge does not publish what employers or plans pay.
+
+It is free to you, but it is not free to your plan, and that is the source of most billing complaints. In a reply on [BBB](https://www.bbb.org/us/ca/san-francisco/profile/health-consultants/hinge-health-1116-934732/complaints) (May 9, 2025), Hinge explained: “Our claims are submitted based on engagement”. It said it submits claims to your insurance company, that “This does not affect your insurance benefits or deductible”, and that “your employer reimburses the insurance company in bulk for all paid claims.” In that case the member’s claim had been denied; Hinge said the insurer “may have mis-processed” it and that the member was “not responsible for any out-of-pocket costs”.
+
+Some reviewers still object to how much their plan is charged, or worry about plan limits; those are individual reports we could not verify. If it matters to you, ask your plan how Hinge claims are billed before you start. Who can get Hinge, and what happens when you change jobs, is on [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/).
+
+### Why does Hinge Health send so much mail, and how do you stop it?
+
+Of the 10 complaints shown in full on Hinge’s [BBB page](https://www.bbb.org/us/ca/san-francisco/profile/health-consultants/hinge-health-1116-934732/complaints) on October 23, 2026, 6 are about mailers, texts or emails. One person reports “4 texts a day, 6 emails, and mailings twice a week”; another says a mailer looked as if it came from their employer’s HR department.
+
+Hinge’s replies say mailers are “approved and sent upon the request of employer health plans”, that it adds people to a do-not-contact list when asked, and that “1-2 additional pieces may still arrive” because mail is printed weeks ahead. One April 2025 complaint also says “There is no one-click opt-out/delete account”; Hinge replied that it processed the opt-out and sent the deletion request to its compliance team.
+
+### What does Hinge Health do with your health data?
+
+Hinge’s [HIPAA notice](https://www.hingehealth.com/about/hipaa/) says, in its own words:
+
+- “We can use and share your health information to bill and get payment from health plans or other entities.”
+- It may get information about “your current employer and your group health plan coverage” to check that you are eligible.
+- “We use aggregated, de-identified outcomes data to provide our customers with insight into the outcomes of their employees following their use of our services.” Its customers are the employers and plans.
+
+One health plan’s member FAQ ([BCBS of Texas HealthSelect](https://healthselect.bcbstx.com/pdf/hinge-health-faq.pdf)) says: “Your individual health information is protected and not shared with your employer(s).” Hinge’s website [privacy policy](https://www.hingehealth.com/about/privacy) says it uses cookies and pixels and works with other companies to serve advertising across the web and in mobile apps, and that giving your phone number means you agree to informational and promotional messages. On [Google Play](https://play.google.com/store/apps/details?id=com.hingehealth.phoenix), Hinge says data is encrypted in transit and that you can request deletion.
+
+A few Trustpilot reviewers raise privacy worries, and one says part of their access was locked after they declined to share with their primary care doctor. We could not verify that, and we found no privacy lawsuit or regulator action in a quick search.
+
+### What is the Enso device, and is it FDA cleared?
+
+Enso is a small wearable nerve stimulator that Hinge sends to some members “if appropriate”. The FDA’s [510(k) record K233784](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K233784) lists “ENSO (Model 2)” from Hinge Health, Inc., decided “Substantially Equivalent” on February 23, 2024, in the over-the-counter transcutaneous nerve stimulator class. That is a clearance, not an approval.
+
+Its [510(k) summary](https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233784.pdf) lists uses including “temporary relief of pain associated with sore and aching muscles in the shoulder, waist, back, neck, upper extremities (arm) and lower extremities (leg)”. It does not name the foot or heel.
+
+Hinge’s own trial of Enso compared it with a standard TENS unit and usual care in 325 Hinge members with chronic back or knee pain over 4 weeks, and reported no adverse events. When your coverage ends, Hinge told one former member on BBB (August 13, 2026) that “we do not have a separate process that allows former members to purchase replacement gel pads”.
+
+Source: Hong M, Krauss J, Wang G, Cohen K, Chaisson CE, Gulati A. Effectiveness of hybrid form impulse therapy (HFIT) compared to traditional transcutaneous electronic nerve stimulation (TENS) in patients with chronic low back and knee pain: a randomized controlled trial. Journal of Pain Research. 2024;17:2417-2430.
+
+### Does Hinge Health work? What the studies show
+
+Hinge publishes its research in peer-reviewed journals, so anyone can check it. Two things matter when you read it: who ran the studies, and what Hinge was compared with.
+
+Source: Mecklenburg G, Smittenaar P, Erhart-Hledik JC, Perez DA, Hunter S. Effects of a 12-week digital care program for chronic knee pain on pain, mobility, and surgery risk: randomized controlled trial. Journal of Medical Internet Research. 2018;20(4):e156.
+Source: Shebib R, Bailey JF, Smittenaar P, Perez DA, Mecklenburg G, Hunter S. Randomized controlled trial of a 12-week digital care program in improving low back pain. NPJ Digital Medicine. 2019;2:1.
+Source: Bailey JF, Agarwal V, Zheng P, Smuck M, Fredericson M, Kennedy DJ, et al. Digital care for chronic musculoskeletal pain: 10,000 participant longitudinal cohort study. Journal of Medical Internet Research. 2020;22(5):e18250.
+Source: Wang G, Yang M, Hong M, Krauss J, Bailey JF. Clinical outcomes after a digital musculoskeletal program for acute and subacute pain: observational, longitudinal study with comparison group. JMIR Rehabilitation and Assistive Technologies. 2022;9(2):e38214.
+Source: Hong M, Krauss J, Wang G, Cohen K, Chaisson CE, Gulati A. Effectiveness of hybrid form impulse therapy (HFIT) compared to traditional transcutaneous electronic nerve stimulation (TENS) in patients with chronic low back and knee pain: a randomized controlled trial. Journal of Pain Research. 2024;17:2417-2430.
+
+### What did the independent PHTI review find?
+
+The [Peterson Health Technology Institute](https://www.phti.org/assessment/virtual-msk-solutions) (PHTI) reviewed virtual muscle and joint programs in June 2024. It is funded entirely by the Peter G. Peterson Foundation and says it “does not accept financial contributions”. It did not test the products itself: it read the published studies and data the companies sent in.
+
+It put Hinge in its physical therapist-guided group with Omada, RecoveryOne, Sword and Vori. For that group it found: “Improves both pain and function; comparable to in-person PT”, with “Evidence Certainty: Lower”.
+
+On Hinge specifically, the [report](https://www.phti.org/wp-content/uploads/2024/10/PHTI-Virtual-MSK-Solutions-Assessment-Report-v1.3.pdf) says “Evidence for Hinge included 12 clinical references, nine of which met inclusion criteria”, and “None of the nine citations compared Hinge data with an in-person PT comparator group.” Its verdict: “the direction of evidence for the Hinge solution supports it as superior to no intervention and standard of care, though the evidence is inconclusive relative to in-person PT, as no direct comparison study exists.”
+
+### Is there a Hinge Health study on foot or heel pain?
+
+No. A PubMed search for “Hinge Health” on October 23, 2026 returned 49 records, and none is on the foot, heel, ankle or plantar fasciitis. Hinge does cover foot and ankle pain in its program, and its plantar fasciitis exercises match what the 2023 heel pain guideline recommends, as we note on [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/).
+
+Foot reviews are rare: 3 of the 250 recent App Store reviews mention the foot, heel or plantar fasciitis, all 5 stars. One says: “When my plantar fasciitis was really bad, these exercises really helped!” (August 11, 2026). That is a good sign for those members, but it is not a study.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Who is Hinge Health a good fit for?
+
+**It tends to suit you if:**
+
+- your employer or health plan covers it, so the virtual program is $0 to you;
+- you want a physical therapist and coach to message, without travelling to a clinic;
+- your pain is in your back or knee, where the studies are, or in more than one place;
+- you find it hard to keep up home exercises and like reminders and streaks.
+
+**It may not suit you if:**
+
+- you do not have it through work or a plan, or expect to change jobs soon; we found no way to buy it yourself;
+- you want to know or limit what is billed to your plan; ask your plan first;
+- you want hands-on care, or have had surgery or an injury in the painful area in the last three months, which the regulatory note on Hinge’s [Google Play](https://play.google.com/store/apps/details?id=com.hingehealth.phoenix) listing names as a reason not to use it;
+- you dislike frequent texts, emails and mail.
+
+### If you have heel or foot pain
+
+If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](https://walkito.site/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/) compares the two directly.
+
+To start at home today, our free [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) page has the stretches and strength work the 2023 guideline supports. Walkito is our app: an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. It is not a medical device, does not diagnose and has no physical therapist. It was released on October 2, 2026 and has few ratings so far.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### See a clinician first if
+
+- your pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, swelling, redness or warmth
+- pain wakes you at night or is there at rest
+- pain is getting worse week over week despite exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+If you cannot get Hinge Health and your pain is in the heel or foot, [Walkito](https://walkito.site/program/) is our exercise app. It builds a short plan from where it hurts, on 3, 5 or 7 days a week, with sessions of 3, 5 or 10 minutes, and adjusts each session to a morning pain check-in.
+
+#### Is Hinge Health legit?
+
+Yes. Hinge Health is a real virtual physical therapy company offered through employers and health plans, rated 4.9 on the App Store and Google Play as of October 23, 2026. Its Trustpilot score is 3.0 from 77 reviews, with complaints mostly about insurance billing and marketing mail, and fewer about the care itself.
+
+#### Is Hinge Health actually free?
+
+The virtual program is $0 to members whose employer or health plan covers it, according to Hinge. Hinge still bills your health plan when you use it, and says this does not affect your benefits or deductible. In-person care can have a cost share on some plans. Ask your plan if billing matters to you.
+
+#### Why did Hinge Health bill my insurance?
+
+Hinge submits claims to your insurer based on use, such as a completed exercise session, and says your employer then reimburses the insurer in bulk. In a 2025 BBB reply it told a member with a denied claim that the insurer may have mis-processed it and the member owed nothing.
+
+#### Does Hinge Health really work?
+
+For back and knee pain, its studies show pain falling more than with education articles or no program, but nearly all were run by Hinge. The independent PHTI review in 2024 rated the evidence certainty lower and called the evidence inconclusive against in-person physical therapy, as no direct comparison exists.
+
+#### Is Hinge Health good for plantar fasciitis?
+
+It may be. Hinge covers foot and ankle pain, and a few reviewers say it helped their plantar fasciitis. But we found no Hinge study on foot or heel pain among its 49 PubMed records, and its Enso device clearance names the leg, not the foot.
+
+#### How do I stop Hinge Health mailers and texts?
+
+Contact Hinge Health support and ask to be added to its do-not-contact list. In its BBB replies, Hinge says it processes these requests but that 1 or 2 more mailers may arrive, because they are printed weeks in advance. In one BBB case, Hinge asked for the mailing address the mail goes to.
 
 ## About Walkito
 

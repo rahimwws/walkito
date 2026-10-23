@@ -19,7 +19,7 @@ export const PF_COST_EN: Guide = {
   lede:
     'Home exercise costs the least: the stretches and strengthening the 2023 guideline recommends need no equipment, and the exercise apps we checked range from free to about $300 a year. Store-bought insoles cost about $40 to $60 a pair. Of the first-line options, physical therapy costs the most: in a study of US private insurance claims from 2007 to 2011, an average course of 5 to 6 visits for plantar fasciitis cost about $1,000 to $1,400. Custom orthotics, often $300 to $800, did no better than store-bought insoles in trials.',
   intro: [
-    'Walkito is an exercise app, so we are not neutral on this. We checked every price on October 11, 2026, on the page we link: official sources, maker stores, App Store pages and price guides. Some price guides come from companies that sell care themselves, and we say so.',
+    'Walkito is an exercise app, so we are not neutral on this. We checked every price on October 11, 2026, on the page we link: official sources, maker stores, App Store pages and price guides. Some price guides come from companies that sell care themselves, and we say so. If your employer offers Hinge Health, see what members report in our [Hinge Health reviews](/hinge-health-reviews/) summary.',
   ],
   takeaways: [
     'The 2026 national Medicare-approved amount for a physical therapy evaluation is $97.87; after the Part B deductible, you pay 20% of it.',

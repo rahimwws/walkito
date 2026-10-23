@@ -20,7 +20,7 @@ export const HINGE_ALT_EN: Guide = {
   lede:
     'If your employer or health plan does not offer Hinge Health, you cannot buy it yourself, and its closest rivals, Sword Health and Kaia, are not sold to individuals either. Options you can get on your own are physical therapy through your insurance, at home or in a clinic, self-pay video visits with a physical therapist (for example $89 for 30 minutes), and exercise apps, from free to about $300 a year. First, check whether your plan covers Sword, Omada or Vori Health.',
   intro: [
-    'Walkito is an exercise app, so we are one of the alternatives and not neutral. We checked every option on its own website and app listing on October 11, 2026, and we list Walkito apart at the end. None of these programs has been tested in a trial for foot or heel pain.',
+    'Walkito is an exercise app, so we are one of the alternatives and not neutral. We checked every option on its own website and app listing on October 11, 2026, and we list Walkito apart at the end. None of these programs has been tested in a trial for foot or heel pain. For ratings, complaints and the studies behind Hinge itself, see [Hinge Health reviews](/hinge-health-reviews/).',
   ],
   takeaways: [
     'Hinge Health is only for people covered through a partner employer or health plan; its own page says you are eligible \u201cas long as Hinge Health is covered by your employer or health insurance plan\u201d.',
