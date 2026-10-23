@@ -5259,3 +5259,95 @@ html[data-scrolled] .masthead-end > .masthead-get {
     filter: none;
   }
 }
+
+/* Flat feet self-check (/flat-feet-test/): same look as the recovery timeline. */
+.flat-check {
+  margin: 28px 0 8px;
+  padding: 22px 20px;
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.prose .flat-check h3 {
+  margin: 0 0 6px;
+}
+
+.prose .flat-check-intro {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.flat-check-q {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.flat-check-q legend {
+  margin-bottom: 8px;
+  padding: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.flat-check-answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flat-check-a {
+  padding: 8px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flat-check-a:hover {
+  border-color: var(--violet);
+}
+
+.flat-check-a[aria-pressed='true'] {
+  border-color: var(--violet);
+  background: var(--violet);
+  color: #fff;
+}
+
+.flat-check-result {
+  margin-top: 6px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.flat-check-result.is-incomplete {
+  background: none;
+  padding: 0;
+  color: var(--muted);
+}
+
+.flat-check-result.is-checked {
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.prose .flat-check-result p,
+.prose .flat-check-result ul {
+  margin: 0 0 10px;
+}
+
+.prose .flat-check-result .flat-check-note {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.prose .flat-check-cta p {
+  margin: 16px 0 10px;
+}

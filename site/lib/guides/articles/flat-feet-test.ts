@@ -26,7 +26,7 @@ export const FLAT_FEET_TEST_EN: Guide = {
   page: 'flatFeetTest',
   mainSource: CITE.menzMunteanu,
   published: '2026-10-18',
-  updated: '2026-10-18',
+  updated: '2026-10-23',
   title: 'Flat Feet Test at Home: 4 Simple Checks',
   description:
     'Four flat feet checks for home: wet footprint, sitting vs standing, tiptoe and big toe tests, single-leg heel raise, and what each can and cannot show.',
@@ -216,6 +216,7 @@ export const FLAT_FEET_TEST_EN: Guide = {
         },
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.guideline],
+      tool: 'flat-feet-check',
     },
   ],
   faq: [
