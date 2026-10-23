@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-18
+Last updated: 2026-10-23
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -3581,9 +3581,9 @@ Walkito is built for adults. Flat feet in young children are usually normal: in 
 
 ## Best insoles for plantar fasciitis: what the trials show
 
-Language: English · https://walkito.site/best-insoles-for-plantar-fasciitis/ · published 2026-10-11 · updated 2026-10-11
+Language: English · https://walkito.site/best-insoles-for-plantar-fasciitis/ · published 2026-10-11 · updated 2026-10-23
 
-No trial crowns a brand. In trials that compared them, custom insoles did no better than store-bought ones, so a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18) is a reasonable choice. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](https://walkito.site/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.
+Going by the trials, the best insole for plantar fasciitis to try first is a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18). No trial crowns a brand, and in trials that compared them, custom insoles did no better than store-bought ones. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](https://walkito.site/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.
 
 - The 2023 guideline grades insoles used alone for short-term pain relief B against, and says clinicians may use them combined with other care (grade C), custom or store-bought.
 - Custom insoles were no better than store-bought ones: a review of 19 trials found no difference at any time point.
@@ -3602,6 +3602,13 @@ Source: Whittaker GA, Munteanu SE, Menz HB, Tan JM, Rabusin CL, Landorf KB. Foot
 Source: Rasenberg N, Riel H, Rathleff MS, et al. Efficacy of foot orthoses for the treatment of plantar heel pain: a systematic review and meta-analysis. British Journal of Sports Medicine. 2018;52(16):1040–1046.
 Source: Rasenberg N, Bierma-Zeinstra SMA, Fuit L, et al. Custom insoles versus sham and GP-led usual care in patients with plantar heel pain: results of the STAP-study - a randomised controlled trial. British Journal of Sports Medicine. 2021;55(5):272–278.
 Source: Whittaker GA, Munteanu SE, Menz HB, et al. Effectiveness of Foot Orthoses Versus Corticosteroid Injection for Plantar Heel Pain: The SOOTHE Randomized Clinical Trial. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(7):491–500.
+
+### Plantar fasciitis insoles compared
+
+List prices on each maker’s own site, checked October 11, 2026. These are the insoles review sites pick most often; we did not test them and do not rank them. “APMA seal” means the product is in the American Podiatric Medical Association’s seal database; “No” means it is not listed, not that it failed anything. Powerstep insoles were used in a published study, and a heel cup from Medi-Dyne, the maker of Tuli’s, was given to everyone in another trial. We found no published studies of the other products, searching abstracts and open full texts.
+
+Source: Ring K, Otter S. Clinical efficacy and cost-effectiveness of bespoke and prefabricated foot orthoses for plantar heel pain: a prospective cohort study. Musculoskeletal Care. 2014;12(1):1–10.
+Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
 
 ### Are custom orthotics better than store-bought insoles?
 
@@ -3644,13 +3651,6 @@ Source: Walther M, Kratschmer B, Verschl J, et al. Effect of different orthotic 
 Source: Landorf KB, Keenan AM, Herbert RD. Effectiveness of foot orthoses to treat plantar fasciitis: a randomized trial. Archives of Internal Medicine. 2006;166(12):1305–1310.
 Source: Winemiller MH, Billow RG, Laskowski ER, et al. Effect of magnetic vs sham-magnetic insoles on plantar heel pain: a randomized controlled trial. JAMA. 2003;290(11):1474–8.
 
-### Plantar fasciitis insoles compared
-
-List prices on each maker’s own site, checked October 11, 2026. These are the insoles review sites pick most often; we did not test them and do not rank them. “APMA seal” means the product is in the American Podiatric Medical Association’s seal database; “No” means it is not listed, not that it failed anything. Powerstep insoles were used in a published study, and a heel cup from Medi-Dyne, the maker of Tuli’s, was given to everyone in another trial. We found no published studies of the other products, searching abstracts and open full texts.
-
-Source: Ring K, Otter S. Clinical efficacy and cost-effectiveness of bespoke and prefabricated foot orthoses for plantar heel pain: a prospective cohort study. Musculoskeletal Care. 2014;12(1):1–10.
-Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
-
 ### What do “clinically proven” and the APMA seal mean?
 
 Less than they sound. The PowerStep, Dr. Scholl’s and Superfeet product pages say “clinically proven” without linking a study; Superfeet’s line is brand-wide: “clinically proven to decrease fatigue, reduce injury, and improve comfort”. Dr. Scholl’s says its plantar fasciitis insole “Immediately relieves heel pain & prevents it from coming back”; we found no trial support for that claim for any insole.
@@ -3681,6 +3681,10 @@ See a podiatrist or doctor if the pain has not improved after about two weeks of
 ### Pair your insoles with the exercises
 
 [Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and strength work that gets harder over time, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+
+#### Which insoles have clinical evidence for plantar fasciitis?
+
+No brand has strong trial evidence behind it. Of the 12 insoles we compared, only two makers turned up in the published studies we found: Powerstep insoles were used in one study that was not randomized, and a heel cup from Medi-Dyne, the maker of Tuli’s, was given to everyone in a trial, so that trial does not show what the heel cup alone did. What the trials point to is a type, not a brand: a firm, contoured store-bought arch support or a silicone heel cup, used with stretching and strengthening.
 
 #### Do insoles really work for plantar fasciitis?
 
