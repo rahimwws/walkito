@@ -203,7 +203,7 @@ export const BEST_APP_PT: Guide = {
     {
       h2: 'Walkito: o que ele faz e o que não faz',
       paragraphs: [
-        'O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 2 de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.',
+        'O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 1º de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.',
         'O que ele faz:',
         {
           list: [

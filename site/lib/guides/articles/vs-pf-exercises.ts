@@ -68,7 +68,7 @@ export const VS_PF_EXERCISES_EN: Guide = {
         'Walkito is built for people with heel pain, plantar fasciitis or flat feet who want a short exercise plan that changes with how their feet feel each morning, including people on their feet all day for work.',
         'You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A morning of 7/10 pain or higher switches the day to about three minutes of seated work, and a big day on your feet makes the next strength session a lighter recovery one.',
         'Every 14 days a short test of calf raises, an arch hold and [single-leg balance](/exercises/single-leg-balance/) compares your left side with your right. The exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B.',
-        'Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 2, 2026 and has few ratings so far.',
+        'Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 1, 2026 and has few ratings so far.',
       ],
       cites: [CITE.guideline],
     },

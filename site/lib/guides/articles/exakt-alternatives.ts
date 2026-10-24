@@ -111,7 +111,7 @@ export const EXAKT_ALT_EN: Guide = {
     {
       h2: 'Is Walkito a good Exakt Health alternative?',
       paragraphs: [
-        'Only for some people. Walkito is narrower than Exakt, and newer: it launched on October 2, 2026 and has no ratings yet.',
+        'Only for some people. Walkito is narrower than Exakt, and newer: it launched on October 1, 2026 and has no ratings yet.',
       ],
       table: {
         caption: 'Walkito: best for and not for',

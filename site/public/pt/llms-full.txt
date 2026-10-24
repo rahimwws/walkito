@@ -1459,7 +1459,7 @@ Se você quer uma referência gratuita de quais alongamentos tentar, confira a p
 
 ### Walkito: o que ele faz e o que não faz
 
-O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 2 de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.
+O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 1º de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.
 
 O que ele faz:
 
@@ -9430,7 +9430,7 @@ Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de tr
 
 O Walkito testa o progresso a cada 14 dias com elevação de calcanhar, sustentação do arco e [equilíbrio em uma perna](https://walkito.site/pt/exercicios/equilibrio-uma-perna/), e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.
 
-O Walkito foi lançado em 2 de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.
+O Walkito foi lançado em 1º de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.
 
 ### Como cada app monta o seu plano?
 

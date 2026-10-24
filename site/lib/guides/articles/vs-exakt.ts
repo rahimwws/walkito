@@ -139,7 +139,7 @@ export const VS_EXAKT_EN: Guide = {
         'The app is narrower than Exakt. It does not cover knee injuries, hamstring strains or running plans. What it does differently is **adjust each day\'s session from a morning pain check-in** rather than end-of-session feedback.',
         'A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps on iPhone or Health Connect on Android) turns the next strength session into a lighter recovery one.',
         'Walkito tests progress every 14 days with calf raises, an arch hold and [single-leg balance](/exercises/single-leg-balance/), and compares your left side with your right. That left-right comparison is something most apps in this space do not track.',
-        'Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has few ratings so far. It does not have the track record or breadth that Exakt has built since 2021.',
+        'Walkito was released on October 1, 2026. It is on iPhone and, since October 2026, on Android. It is new and has few ratings so far. It does not have the track record or breadth that Exakt has built since 2021.',
       ],
     },
     {

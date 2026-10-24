@@ -108,7 +108,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
           [
             'Nota na App Store',
-            'Ainda sem nota (lançado em 2 de outubro de 2026)',
+            'Ainda sem nota (lançado em 1º de outubro de 2026)',
             '4,8 de 5 (125 avaliações)',
           ],
           [
@@ -146,7 +146,7 @@ export const VS_EXAKT_PT: Guide = {
         'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar cada sessão a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
         'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple no iPhone ou do Health Connect no Android) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
         'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e [equilíbrio em uma perna](/pt/exercicios/equilibrio-uma-perna/), e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
-        'O Walkito foi lançado em 2 de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
+        'O Walkito foi lançado em 1º de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
       ],
     },
     {

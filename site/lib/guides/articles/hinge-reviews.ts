@@ -196,7 +196,7 @@ export const HINGE_REVIEWS_EN: Guide = {
       h2: 'If you have heel or foot pain',
       paragraphs: [
         'If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](/walkito-vs-hinge-health/) compares the two directly.',
-        'To start at home today, our free [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page has the stretches and strength work the 2023 guideline supports. Walkito is our app: an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. It is not a medical device, does not diagnose and has no physical therapist. It was released on October 2, 2026 and has few ratings so far.',
+        'To start at home today, our free [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page has the stretches and strength work the 2023 guideline supports. Walkito is our app: an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. It is not a medical device, does not diagnose and has no physical therapist. It was released on October 1, 2026 and has few ratings so far.',
       ],
       cites: [CITE.guideline],
     },
