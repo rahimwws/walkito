@@ -101,7 +101,7 @@ export const VS_EXAKT_EN: Guide = {
           ],
           [
             'App Store rating',
-            'Not rated yet (launched Oct 2, 2026)',
+            'Few ratings so far (launched Oct 1, 2026)',
             '4.8 out of 5 (125 ratings)',
           ],
           [
