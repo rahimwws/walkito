@@ -1,15 +1,16 @@
 /**
  * Tells Bing (and through it ChatGPT's live search) which pages changed.
  *
- * Only English pages whose content really changed (decision with Rahman,
- * 2026-10-09). This used to send all 490 URLs of the live sitemap on every
+ * Only English and Russian pages whose content really changed (decision with
+ * Rahman, 2026-10-09: English only; Russian added 2026-10-24, because IndexNow
+ * also feeds Yandex, where Russian searches happen). This used to send all 490 URLs of the live sitemap on every
  * deploy, about 4,500 pings in ten hours on a busy day, for a domain Bing had
  * not crawled at all yet: noise that reads as spam to a search engine deciding
  * whether to trust a new site.
  *
  * "Changed" comes from the sitemaps' lastmod, which carry each page's real
  * edit date (never the build time): `deploy.mjs` reads the live sitemaps
- * before the upload and the new ones in `out/`, and passes the English URLs
+ * before the upload and the new ones in `out/`, and passes the English and Russian URLs
  * that are new or have a newer date. A change that does not touch a page's
  * date (code, layout) is left to Bing's normal crawl.
  *
@@ -28,12 +29,12 @@ const MAX = 100; // a real edit day is a handful of pages; more means something 
 const args = process.argv.slice(2);
 const urlList = args.length === 1 && args[0].endsWith('.json') ? JSON.parse(readFileSync(args[0], 'utf8')) : args;
 
-const isEnglish = (url) => !/^https:\/\/walkito\.site\/(es|ru|pt|fr|it|de)\//.test(url);
-const bad = urlList.filter((u) => !u.startsWith(`https://${HOST}/`) || !isEnglish(u));
-if (bad.length) throw new Error(`indexnow: not English walkito.site URLs: ${bad.slice(0, 5).join(', ')}`);
+const isPinged = (url) => !/^https:\/\/walkito\.site\/(es|pt|fr|it|de)\//.test(url);
+const bad = urlList.filter((u) => !u.startsWith(`https://${HOST}/`) || !isPinged(u));
+if (bad.length) throw new Error(`indexnow: not English or Russian walkito.site URLs: ${bad.slice(0, 5).join(', ')}`);
 
 if (urlList.length === 0) {
-  console.log('indexnow: no English page changed, nothing sent');
+  console.log('indexnow: no English or Russian page changed, nothing sent');
   process.exit(0);
 }
 if (urlList.length > MAX) {
