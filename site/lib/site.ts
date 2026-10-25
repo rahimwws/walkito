@@ -121,16 +121,16 @@ export const IN_SESSION_STOP = 6;
  * one date per language, so an edit to one never moves the others' dates.
  */
 export const PAGE_UPDATED = {
-  home: '2026-10-13',
-  runners: '2026-10-13',
-  program: '2026-09-28',
+  home: '2026-10-24',
+  runners: '2026-10-24',
+  program: '2026-10-24',
   science: '2026-09-28',
-  faq: '2026-10-13',
-  about: '2026-10-13',
+  faq: '2026-10-24',
+  about: '2026-10-24',
   support: '2026-10-01',
   privacy: '2026-10-09',
   terms: '2026-10-09',
-  footMap: '2026-10-12',
+  footMap: '2026-10-24',
   // The ChatGPT and Claude page, in English only like the assistant.
   ai: '2026-10-10',
   // The Spanish and Russian libraries were written on 7 October.
