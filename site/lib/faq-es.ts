@@ -22,7 +22,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     entries: [
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para iPhone y Android, que se ajusta cada mañana a cómo se sienten tus pies. Eliges tres, cinco o siete días de entrenamiento por semana y sesiones de 3, 5 o 10\u00A0minutos. Walkito no es un dispositivo médico y no tiene relación con walkito.com, un servicio de paseo de perros.',
+        a: 'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies. Eliges tres, cinco o siete días de entrenamiento por semana y sesiones de 3, 5 o 10\u00A0minutos. Walkito no es un dispositivo médico y no tiene relación con walkito.com, un servicio de paseo de perros.',
       },
       {
         q: '¿Walkito está disponible en Android?',

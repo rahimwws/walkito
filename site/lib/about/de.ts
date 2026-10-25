@@ -20,13 +20,13 @@ export const ABOUT_DE: About = {
   description:
     'Was Walkito ist, wie die Ratgeber zu Fersenschmerzen und Plattfuß geschrieben und belegt werden, was Walkito nicht tut und wie du einen Fehler meldest.',
   h1: 'Über Walkito',
-  lede: 'Walkito ist eine Übungs-App für iPhone und Android bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, die sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.',
+  lede: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß, für die ersten Schritte am Morgen und lange Tage auf den Beinen. Der Plan richtet sich jeden Morgen danach, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.',
   sections: [
     {
       h2: 'Walkito auf einen Blick',
       id: 'facts',
       bullets: [
-        '**Was es ist:** eine Übungs-App bei Fersenschmerzen, Plantarfasziitis, Plattfüßen und anderen Schmerzen in Fuß und Unterschenkel.',
+        '**Was es ist:** eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß.',
         '**Smartphones:** iPhone, im [App Store](https://apps.apple.com/app/id6813076846), und Android, bei [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
         `**Einheiten:** ${either(PROGRAM.sessionMinutes)}\u00A0Minuten, zu Hause. Walkito fragt, was du zur Hand hast, etwa ein Handtuch oder eine Stufe, und lässt Übungen weg, für die du etwas anderes brauchst.`,
         `**Wie oft:** Du wählst ${either(PROGRAM.daysPerWeek)} Trainingstage pro Woche. Jede Einheit passt sich daran an, wie dein Morgen war.`,

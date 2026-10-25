@@ -15,11 +15,11 @@ export const HOME_PT: HomeCopy = {
   meta: {
     title: 'Walkito: exercícios para dor no calcanhar e pé chato',
     description:
-      'O Walkito é um app de exercícios para iPhone e Android para dor no calcanhar, fascite plantar e pé chato, que se ajusta toda manhã aos seus pés.',
+      'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato.',
   },
   h1a: 'Já tentou de tudo?',
   h1b: 'Experimente um plano feito para os seus pés.',
-  lead: 'O Walkito é um app de exercícios para iPhone e Android, feito para dor no calcanhar, fascite plantar e pé chato, que se ajusta toda manhã a como seus pés estão.',
+  lead: 'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato, para os primeiros passos ao acordar e os longos dias em pé. Um plano que se ajusta a como seus pés estão a cada manhã.',
   small: `${MIN_A}, ${MIN_B} ou ${MIN_C} minutos por sessão, em casa.`,
   alt: {
     heroCenter: 'A tela de hoje do Walkito: uma saudação, o registro da manhã e a sessão do dia',
@@ -79,7 +79,7 @@ export const HOME_PT: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'O que é o Walkito?',
-      a: 'O Walkito é um app de exercícios para dor no calcanhar e no pé, no iPhone e no Android. Com as suas respostas, ele monta um plano com sessões de 3, 5 ou 10 minutos nos dias que você escolher (3, 5 ou 7 por semana) e o ajusta a como seus pés estão a cada manhã. Ele não tem relação com o walkito.com, um serviço de passeio com cães.',
+      a: 'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato. Com as suas respostas, ele monta um plano com sessões de 3, 5 ou 10 minutos nos dias que você escolher (3, 5 ou 7 por semana) e o ajusta a como seus pés estão a cada manhã. Ele não tem relação com o walkito.com, um serviço de passeio com cães.',
     },
     {
       q: 'Em quanto tempo vou sentir diferença?',

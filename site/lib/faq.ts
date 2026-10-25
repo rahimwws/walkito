@@ -71,7 +71,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'What is Walkito?',
-        a: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. You pick three, five or seven training days a week and sessions of 3, 5 or 10 minutes. Walkito is not a medical device, and it is not related to walkito.com, a dog-walking service.',
+        a: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning. You pick three, five or seven training days a week and sessions of 3, 5 or 10 minutes. Walkito is not a medical device, and it is not related to walkito.com, a dog-walking service.',
       },
       {
         q: 'Is Walkito available on Android?',

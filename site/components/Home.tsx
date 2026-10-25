@@ -77,7 +77,7 @@ const APP = {
   // Free to download; the plan itself is a subscription inside the app.
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
-    'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for first steps out of bed and long days on your feet.',
   inLanguage: ['en', 'ru', 'es', 'pt-BR', 'fr', 'it', 'de'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
@@ -148,11 +148,11 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: Heel Pain & Flat Feet Exercise App',
       description:
-        'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+        'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for first steps out of bed and long days on your feet.',
     },
     h1a: 'Tried everything?',
     h1b: 'Try a plan built for your feet.',
-    lead: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    lead: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning.',
     small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a session, at home.`,
     alt: {
       heroCenter: "Walkito's Today screen: a greeting, the morning check-in and today's session",
@@ -211,7 +211,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'What is Walkito?',
-        a: 'Walkito is an exercise app for heel and foot pain, on iPhone and Android. It builds a plan from your answers, with 3, 5 or 10 minute sessions on the 3, 5 or 7 days a week you pick, and adjusts it to how your feet feel each morning. It is not related to walkito.com, a dog-walking service.',
+        a: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet. It builds a plan from your answers, with 3, 5 or 10 minute sessions on the 3, 5 or 7 days a week you pick, and adjusts it to how your feet feel each morning. It is not related to walkito.com, a dog-walking service.',
       },
       {
         q: 'How long until I feel a difference?',
@@ -240,11 +240,11 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: упражнения при боли в пятке и стопе',
       description:
-        'Walkito: приложение для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии, которое подстраивается под ваши стопы.',
+        'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: для первых шагов утром и долгих дней на ногах.',
     },
     h1a: 'Всё перепробовали?',
     h1b: 'Попробуйте план, созданный для ваших стоп.',
-    lead: 'Приложение Walkito для iPhone и Android составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
+    lead: 'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: для первых шагов утром и долгих дней на ногах. Каждое утро план подстраивается под то, как чувствуют себя ваши стопы.',
     small: `Занятия по ${MIN_A}, ${MIN_B} или ${MIN_C} минут, дома.`,
     alt: {
       heroCenter: 'Главный экран Walkito: приветствие, утренняя отметка и сегодняшнее занятие',
@@ -303,7 +303,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'Что такое Walkito?',
-        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
+        a: 'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
       },
       {
         q: 'Когда я почувствую разницу?',
@@ -329,11 +329,11 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: ejercicios para el dolor de talón y pie',
       description:
-        'Walkito es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para iPhone y Android, que se ajusta cada mañana a tus pies.',
+        'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano.',
     },
     h1a: '¿Ya probaste de todo?',
     h1b: 'Prueba un plan hecho para tus pies.',
-    lead: 'Walkito es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para iPhone y Android, que se ajusta cada mañana a cómo se sienten tus pies.',
+    lead: 'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies.',
     small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos por sesión, en casa.`,
     alt: {
       heroCenter: 'La pantalla de hoy en Walkito: un saludo, el registro de la mañana y la sesión de hoy',
@@ -392,7 +392,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
+        a: 'Walkito (walkito.site) es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
       },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
