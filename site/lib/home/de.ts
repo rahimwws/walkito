@@ -17,12 +17,12 @@ export const HOME_DE: HomeCopy = {
   meta: {
     title: 'Walkito: Übungen bei Fersenschmerzen und Plattfuß',
     description:
-      'Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen.',
+      'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß.',
   },
   h1a: 'Schon alles ausprobiert?',
   h1b: 'Probier einen Plan, der zu deinen Füßen passt.',
-  lead: 'Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen.',
-  small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten am Tag, zu Hause.`,
+  lead: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß, für die ersten Schritte am Morgen und lange Tage auf den Beinen. Ein Plan, der sich jeden Morgen danach richtet, wie sich deine Füße anfühlen.',
+  small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten pro Einheit, zu Hause.`,
   alt: {
     heroCenter: 'Der Heute-Bildschirm von Walkito: eine Begrüßung, der Morgen-Check-in und die heutige Einheit',
   },
@@ -81,7 +81,7 @@ export const HOME_DE: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'Was ist Walkito?',
-      a: 'Walkito ist eine Übungs-App bei Fersen- und Fußschmerzen, für iPhone und Android. Aus deinen Antworten erstellt sie einen Plan mit Einheiten von 3, 5 oder 10\u00A0Minuten an den Tagen, die du wählst (3, 5 oder 7 pro Woche), und passt ihn jeden Morgen daran an, wie sich deine Füße anfühlen. Walkito hat nichts mit walkito.com zu tun, einem Gassi-Service für Hunde.',
+      a: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß. Aus deinen Antworten erstellt sie einen Plan mit Einheiten von 3, 5 oder 10\u00A0Minuten an den Tagen, die du wählst (3, 5 oder 7 pro Woche), und passt ihn jeden Morgen daran an, wie sich deine Füße anfühlen. Walkito hat nichts mit walkito.com zu tun, einem Gassi-Service für Hunde.',
     },
     {
       q: 'Wann merke ich einen Unterschied?',

@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/es/
-Last updated: 2026-10-18
+Last updated: 2026-10-24
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -922,7 +922,7 @@ Si quieres una referencia gratis de qué estiramientos probar, revisa la ficha d
 
 ### Walkito: lo que hace y lo que no hace
 
-Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 2 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.
+Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 1 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.
 
 Lo que hace:
 
@@ -6793,7 +6793,7 @@ Una mañana de 7/10 o más cambia el día a unos tres minutos de trabajo sentado
 
 Walkito mide tu progreso cada 14 días con elevaciones de talón, mantener el arco y equilibrio a una pierna, y compara tu lado izquierdo con el derecho. Esa comparación entre izquierda y derecha es algo que la mayoría de las apps de este tipo no mide.
 
-Walkito salió el 2 de octubre de 2026. Está en iPhone y, desde octubre de 2026, en Android. Es nueva y todavía no tiene calificaciones de usuarios. No tiene la trayectoria ni la variedad que Exakt ha construido desde 2021.
+Walkito salió el 1 de octubre de 2026. Está en iPhone y, desde octubre de 2026, en Android. Es nueva y todavía no tiene calificaciones de usuarios. No tiene la trayectoria ni la variedad que Exakt ha construido desde 2021.
 
 ### ¿Cómo arma tu plan cada app?
 
@@ -6986,7 +6986,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### ¿Es Walkito una buena alternativa a Exakt Health?
 
-Solo para algunas personas. Walkito es más limitada que Exakt, y más nueva: salió el 2 de octubre de 2026 y todavía no tiene valoraciones.
+Solo para algunas personas. Walkito es más limitada que Exakt, y más nueva: salió el 1 de octubre de 2026 y todavía no tiene valoraciones.
 
 ### ¿En qué sigue siendo mejor Exakt Health?
 
@@ -12533,7 +12533,20 @@ Ningún estudio ha seguido el dolor de talón a lo largo de la menopausia, así 
 
 https://walkito.site/es/sobre-walkito/
 
-Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.
+Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.
+
+### Walkito en pocas palabras
+
+- **Qué es:** una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano.
+- **Teléfonos:** iPhone, en el [App Store](https://apps.apple.com/app/id6813076846), y Android, en [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).
+- **Sesiones:** 3, 5 o 10 minutos, en casa. Walkito te pregunta qué tienes, como una toalla o un escalón, y deja fuera los ejercicios que necesitan otra cosa.
+- **Frecuencia:** eliges 3, 5 o 7 días de entrenamiento por semana. Cada sesión se adapta a cómo fue tu mañana.
+- **Progreso:** una prueba corta cada 14 días.
+- **Idiomas:** inglés, ruso, español, portugués, francés, italiano y alemán.
+- **Precio:** gratis para descargar, con una suscripción anual o semanal dentro de la app. El App Store o Google Play te muestra el precio en tu moneda antes de suscribirte.
+- **Quién la hace:** Rahim Hudaykulyyev y Rahman Bazarov, los dos cofundadores de Walkito.
+- **Qué no es:** un dispositivo médico. Walkito no diagnostica y no reemplaza a un profesional de la salud.
+- **Nombre:** Walkito no tiene relación con walkito.com, un servicio de paseo de perros.
 
 ### ¿Qué es Walkito?
 

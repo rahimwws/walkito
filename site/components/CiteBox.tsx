@@ -16,7 +16,9 @@ export function CiteBox({ lang, title, updated, url }: { lang: Lang; title: stri
   // No trailing period of its own ("7 октября 2026 г."): the sentence adds one.
   const date = new Date(`${updated}T00:00:00Z`).toLocaleDateString(t.locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).replace(/\.$/, '');
   return (
-    <p className="printable-box cite-box">
+    // data-nosnippet: search engines (Brave on /calf-raise-test/, Oct 22) showed this
+    // citation line as the page's snippet instead of the meta description.
+    <p className="printable-box cite-box" data-nosnippet="">
       <strong>{t.label}{lang === 'fr' ? '\u00A0:' : ':'}</strong> Walkito. {t.open}{title}{t.close}. {date}. <a href={url}>{url}</a>. {t.free}
     </p>
   );

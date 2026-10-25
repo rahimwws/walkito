@@ -18,12 +18,12 @@ export const HOME_FR: HomeCopy = {
   meta: {
     title: 'Walkito\u00A0: exercices douleur au talon et pieds plats',
     description:
-      'Walkito est un programme d’exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, qui s’adapte chaque matin à l’état de vos pieds.',
+      'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats.',
   },
   h1a: 'Vous avez tout essayé\u00A0?',
   h1b: 'Essayez un plan conçu pour vos pieds.',
-  lead: 'Walkito est un programme d’exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, qui s’adapte chaque matin à l’état de vos pieds.',
-  small: `${MIN_A}, ${MIN_B} ou ${MIN_C}\u00A0minutes par jour, à la maison.`,
+  lead: 'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, pensés pour les premiers pas au lever et les longues journées debout. Un programme qui s’adapte chaque matin à l’état de vos pieds.',
+  small: `${MIN_A}, ${MIN_B} ou ${MIN_C}\u00A0minutes par séance, à la maison.`,
   alt: {
     heroCenter: 'L’écran Aujourd’hui de Walkito\u00A0: un message d’accueil, le bilan du matin et la séance du jour',
   },
@@ -82,7 +82,7 @@ export const HOME_FR: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'Qu’est-ce que Walkito\u00A0?',
-      a: 'Walkito est une application d’exercices pour les douleurs au talon et au pied, sur iPhone et Android. À partir de vos réponses, elle crée un plan avec des séances de 3, 5 ou 10\u00A0minutes, les jours que vous choisissez (3, 5 ou 7 par semaine), et l’adapte à l’état de vos pieds chaque matin. Walkito n’a aucun lien avec walkito.com, un service de promenade de chiens.',
+      a: 'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats. À partir de vos réponses, elle crée un plan avec des séances de 3, 5 ou 10\u00A0minutes, les jours que vous choisissez (3, 5 ou 7 par semaine), et l’adapte à l’état de vos pieds chaque matin. Walkito n’a aucun lien avec walkito.com, un service de promenade de chiens.',
     },
     {
       q: 'Au bout de combien de temps vais-je sentir une différence\u00A0?',

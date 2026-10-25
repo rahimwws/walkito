@@ -13,15 +13,15 @@ export const BEST_INSOLES_EN: Guide = {
   page: 'bestInsoles',
   mainSource: CITE.guideline,
   published: '2026-10-11',
-  updated: '2026-10-11',
-  title: 'Best Insoles for Plantar Fasciitis: What Trials Show',
+  updated: '2026-10-23',
+  title: 'Best Insoles for Plantar Fasciitis 2026: What Trials Show',
   description:
-    'Which insoles help plantar fasciitis? What trials found on custom vs store-bought, heel cups vs arch supports, firm vs soft, plus 12 insoles and their claims.',
+    'The best insoles for plantar fasciitis, by the trials: custom vs store-bought, heel cup vs arch support, firm vs soft, plus 12 popular insoles compared.',
   h1: 'Best insoles for plantar fasciitis: what the trials show',
   lede:
-    'No trial crowns a brand. In trials that compared them, custom insoles did no better than store-bought ones, so a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18) is a reasonable choice. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.',
+    'Going by the trials, the best insole for plantar fasciitis to try first is a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18). No trial crowns a brand, and in trials that compared them, custom insoles did no better than store-bought ones. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.',
   intro: [
-    'We do not sell insoles, we have no affiliate links and we did not wear-test these products. Walkito is an exercise app, so we have our own bias toward exercise; this page sticks to what the trials found.',
+    'We do not sell insoles, we have no affiliate links and we did not wear-test these products. Walkito is an exercise app, so we have our own bias toward exercise; this page sticks to what the trials found. If you work long shifts on your feet, see also our guide to [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/).',
   ],
   takeaways: [
     'The 2023 guideline grades insoles used alone for short-term pain relief B against, and says clinicians may use them combined with other care (grade C), custom or store-bought.',
@@ -40,6 +40,30 @@ export const BEST_INSOLES_EN: Guide = {
         'In a trial of 103 people, a steroid injection did better at week 4 and arch-contouring insoles did better at week 12, but neither difference was large enough to matter much to patients. So expect insoles to help gradually, if at all, not overnight.',
       ],
       cites: [CITE.guideline, CITE.whittakerOrthoses, CITE.rasenbergReview2018, CITE.rasenbergStap, CITE.whittakerSoothe],
+    },
+    {
+      h2: 'Plantar fasciitis insoles compared',
+      table: {
+        head: ['Insole', 'Type', 'Price', 'APMA seal'],
+        rows: [
+          ['PowerStep Pinnacle', 'Full-length, semi-rigid', '$54.95', 'Yes'],
+          ['Superfeet All-Purpose Support High Arch', 'Full-length, firm', '$59.99', 'Yes'],
+          ['Superfeet Casual Pain Relief', 'Full-length, casual shoes', '$69.99', 'Yes'],
+          ['Spenco Total Support Max', 'Full-length, firm', '$49.99', 'Yes'],
+          ['Tread Labs Pace', 'Full-length, extra firm', '$70', 'Yes'],
+          ['CURREX SupportSTP', 'Full-length', '$59.95', 'No'],
+          ['Redi-Thotics Flex', 'Full-length, semi-rigid', '$59', 'No'],
+          ['Vionic Relief Full', 'Full-length', '$55', 'No'],
+          ['Dr. Scholl\u2019s Plantar Fasciitis All-Day', 'Full-length', '$17.96', 'No'],
+          ['WalkHero Plantar Fasciitis Relief', 'Full-length', '$19.99', 'No'],
+          ['Tuli\u2019s Heavy Duty Gel Heel Cups', 'Heel cup, soft gel', '$17.99', 'Yes'],
+          ['Heel That Pain Gel Heel Seat', 'Heel seat', '$24.95', 'No'],
+        ],
+      },
+      paragraphs: [
+        'List prices on each maker\u2019s own site, checked October 11, 2026. These are the insoles review sites pick most often; we did not test them and do not rank them. \u201cAPMA seal\u201d means the product is in the American Podiatric Medical Association\u2019s seal database; \u201cNo\u201d means it is not listed, not that it failed anything. Powerstep insoles were used in a published study, and a heel cup from Medi-Dyne, the maker of Tuli\u2019s, was given to everyone in another trial. We found no published studies of the other products, searching abstracts and open full texts.',
+      ],
+      cites: [CITE.ringPowerstep, CITE.rielHeelRaiseAdd],
     },
     {
       h2: 'Are custom orthotics better than store-bought insoles?',
@@ -82,30 +106,6 @@ export const BEST_INSOLES_EN: Guide = {
       cites: [CITE.waltherInsoles, CITE.landorf2006, CITE.winemillerMagnets],
     },
     {
-      h2: 'Plantar fasciitis insoles compared',
-      table: {
-        head: ['Insole', 'Type', 'Price', 'APMA seal'],
-        rows: [
-          ['PowerStep Pinnacle', 'Full-length, semi-rigid', '$54.95', 'Yes'],
-          ['Superfeet All-Purpose Support High Arch', 'Full-length, firm', '$59.99', 'Yes'],
-          ['Superfeet Casual Pain Relief', 'Full-length, casual shoes', '$69.99', 'Yes'],
-          ['Spenco Total Support Max', 'Full-length, firm', '$49.99', 'Yes'],
-          ['Tread Labs Pace', 'Full-length, extra firm', '$70', 'Yes'],
-          ['CURREX SupportSTP', 'Full-length', '$59.95', 'No'],
-          ['Redi-Thotics Flex', 'Full-length, semi-rigid', '$59', 'No'],
-          ['Vionic Relief Full', 'Full-length', '$55', 'No'],
-          ['Dr. Scholl\u2019s Plantar Fasciitis All-Day', 'Full-length', '$17.96', 'No'],
-          ['WalkHero Plantar Fasciitis Relief', 'Full-length', '$19.99', 'No'],
-          ['Tuli\u2019s Heavy Duty Gel Heel Cups', 'Heel cup, soft gel', '$17.99', 'Yes'],
-          ['Heel That Pain Gel Heel Seat', 'Heel seat', '$24.95', 'No'],
-        ],
-      },
-      paragraphs: [
-        'List prices on each maker\u2019s own site, checked October 11, 2026. These are the insoles review sites pick most often; we did not test them and do not rank them. \u201cAPMA seal\u201d means the product is in the American Podiatric Medical Association\u2019s seal database; \u201cNo\u201d means it is not listed, not that it failed anything. Powerstep insoles were used in a published study, and a heel cup from Medi-Dyne, the maker of Tuli\u2019s, was given to everyone in another trial. We found no published studies of the other products, searching abstracts and open full texts.',
-      ],
-      cites: [CITE.ringPowerstep, CITE.rielHeelRaiseAdd],
-    },
-    {
       h2: 'What do \u201cclinically proven\u201d and the APMA seal mean?',
       paragraphs: [
         'Less than they sound. The PowerStep, Dr. Scholl\u2019s and Superfeet product pages say \u201cclinically proven\u201d without linking a study; Superfeet\u2019s line is brand-wide: \u201cclinically proven to decrease fatigue, reduce injury, and improve comfort\u201d. Dr. Scholl\u2019s says its plantar fasciitis insole \u201cImmediately relieves heel pain & prevents it from coming back\u201d; we found no trial support for that claim for any insole.',
@@ -128,6 +128,11 @@ export const BEST_INSOLES_EN: Guide = {
     },
   ],
   faq: [
+    {
+      q: 'Which insoles have clinical evidence for plantar fasciitis?',
+      a: 'No brand has strong trial evidence behind it. Of the 12 insoles we compared, only two makers turned up in the published studies we found: Powerstep insoles were used in one study that was not randomized, and a heel cup from Medi-Dyne, the maker of Tuli\u2019s, was given to everyone in a trial, so that trial does not show what the heel cup alone did. What the trials point to is a type, not a brand: a firm, contoured store-bought arch support or a silicone heel cup, used with stretching and strengthening.',
+      cites: [CITE.ringPowerstep, CITE.rielHeelRaiseAdd, CITE.pfefferHeelPads, CITE.waltherInsoles],
+    },
     {
       q: 'Do insoles really work for plantar fasciitis?',
       a: 'Modestly, and best alongside exercise. The 2023 guideline advises against relying on insoles alone for short-term pain relief but allows them combined with other care. Trials against fake insoles are mixed, with at most a small benefit after several weeks.',

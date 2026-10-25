@@ -11,7 +11,7 @@ export const NURSES_EN: Guide = {
   page: 'nurses',
   mainSource: CITE.reedNurse,
   published: '2026-10-04',
-  updated: '2026-10-10',
+  updated: '2026-10-23',
   title: 'Foot Pain for Nurses: 12-Hour Shifts, Shoes & Exercises',
   description:
     'Why nurses get foot pain on 12-hour shifts: shoes, compression stockings, exercises, and how to fit a routine around rotating shifts.',
@@ -157,10 +157,10 @@ export const NURSES_EN: Guide = {
       h2: 'Do nursing shoes make a difference: clogs, sneakers or something else?',
       paragraphs: [
         'Footwear is one of the most discussed topics among nurses, but the evidence for one type over another is limited. A 2007 evaluation of three brands of professional nursing shoes found that the shoe with a more cushioned insole and better arch support reduced lower-extremity muscle effort compared to the other two, but the study was small and brand-specific.',
-        'What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades [orthotics](/insoles-vs-exercises/) on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.',
+        'What the research does support more broadly is that footwear comfort matters. In a survey of 366 nurses in Ethiopia, 72% of those reporting low shoe comfort had ankle or foot pain in the past 12 months, compared with 28% of those reporting high shoe comfort. The 2023 heel pain guideline grades [orthotics](/insoles-vs-exercises/) on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.',
         'A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. **Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.**',
       ],
-      cites: [CITE.guideline],
+      cites: [CITE.guideline, CITE.shoeGetie2021],
     },
     {
       h2: 'Do compression stockings help nurses with foot and leg pain?',
@@ -211,7 +211,8 @@ export const NURSES_EN: Guide = {
     },
     {
       q: 'Should nurses wear clogs or sneakers for foot pain?',
-      a: 'There is no large trial comparing nursing clogs to sneakers for foot outcomes. What the evidence does support is that footwear comfort is strongly associated with foot pain: in one survey, 72% of nurses reporting low footwear comfort also reported foot and heel pain. Choose a shoe that fits well, has some cushioning and does not pinch the toes. Shoes alone do not replace the stretching and strength work on this page.',
+      a: 'There is no large trial comparing nursing clogs to sneakers for foot outcomes. What the evidence does support is that footwear comfort is strongly associated with foot pain: in a survey of 366 nurses, 72% of those reporting low shoe comfort had ankle or foot pain in the past year, against 28% with comfortable shoes. Choose a shoe that fits well, has some cushioning and does not pinch the toes. Shoes alone do not replace the stretching and strength work on this page. Our [guide to shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/) compares the features with some evidence behind them.',
+      cites: [CITE.shoeGetie2021],
     },
     {
       q: 'Do compression socks help nurses on long shifts?',

@@ -16,12 +16,12 @@ export const HOME_IT: HomeCopy = {
   meta: {
     title: 'Walkito: esercizi per dolore al tallone e piede piatto',
     description:
-      'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
+      'Walkito è un’app per iPhone e Android con esercizi per il dolore al tallone, la fascite plantare e i piedi piatti.',
   },
   h1a: 'Hai già provato di tutto?',
   h1b: 'Prova un piano fatto per i tuoi piedi.',
-  lead: 'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
-  small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti al giorno, a casa.`,
+  lead: 'Walkito è un’app per iPhone e Android con esercizi per il dolore al tallone, la fascite plantare e i piedi piatti, dai primi passi al risveglio alle lunghe giornate in piedi. Un piano che si adatta ogni mattina a come si sentono i tuoi piedi.',
+  small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti a sessione, a casa.`,
   alt: {
     heroCenter: 'La schermata Oggi di Walkito: un saluto, il check-in del mattino e la sessione di oggi',
   },
@@ -80,7 +80,7 @@ export const HOME_IT: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'Che cos’è Walkito?',
-      a: 'Walkito è un’app di esercizi per il dolore al tallone e al piede, su iPhone e Android. Dalle tue risposte crea un piano con sessioni di 3, 5 o 10\u00A0minuti nei giorni che scegli (3, 5 o 7 a settimana) e lo adatta a come stanno i tuoi piedi ogni mattina. Non ha niente a che fare con walkito.com, un servizio di passeggiate per cani.',
+      a: 'Walkito è un’app per iPhone e Android con esercizi per il dolore al tallone, la fascite plantare e i piedi piatti. Dalle tue risposte crea un piano con sessioni di 3, 5 o 10\u00A0minuti nei giorni che scegli (3, 5 o 7 a settimana) e lo adatta a come stanno i tuoi piedi ogni mattina. Non ha niente a che fare con walkito.com, un servizio di passeggiate per cani.',
     },
     {
       q: 'Quanto ci vuole prima di sentire una differenza?',

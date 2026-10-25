@@ -77,13 +77,13 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
 }
 
 const TAGLINE: Record<Lang, string> = {
-  en: 'Exercise plans for heel, foot and leg pain, on 3, 5 or 7 days a week you choose, built on clinical guidelines.',
-  es: 'Planes de ejercicios para el dolor de talón, pie y pierna, 3, 5 o 7 días a la semana, tú eliges, basados en guías clínicas.',
-  ru: 'Планы упражнений при боли в пятке, стопе и ногах на 3, 5 или 7 дней в неделю, на ваш выбор, на основе клинических рекомендаций.',
-  pt: 'Planos de exercícios para dor no calcanhar, no pé e na perna, de 3, 5 ou 7 dias por semana, à sua escolha, baseados em diretrizes clínicas.',
-  fr: "Des programmes d’exercices pour la douleur au talon, au pied et à la jambe, 3, 5 ou 7 jours par semaine au choix, fondés sur les recommandations cliniques.",
-  it: 'Piani di esercizi per il dolore a tallone, piede e gamba, 3, 5 o 7 giorni a settimana a tua scelta, basati sulle linee guida cliniche.',
-  de: 'Übungspläne bei Fersen-, Fuß- und Beinschmerzen, an 3, 5 oder 7 Tagen pro Woche nach deiner Wahl, auf Grundlage klinischer Leitlinien.',
+  en: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet: sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week you choose, built on clinical guidelines.',
+  es: 'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano: sesiones de 3, 5 o 10 minutos, los 3, 5 o 7 días a la semana que tú elijas, basada en guías clínicas.',
+  ru: 'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: занятия по 3, 5 или 10 минут, 3, 5 или 7 дней в неделю на ваш выбор, на основе клинических рекомендаций.',
+  pt: 'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato: sessões de 3, 5 ou 10 minutos, em 3, 5 ou 7 dias por semana, à sua escolha, baseado em diretrizes clínicas.',
+  fr: "Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats\u00A0: des séances de 3, 5 ou 10\u00A0minutes, 3, 5 ou 7\u00A0jours par semaine au choix, fondée sur les recommandations cliniques.",
+  it: 'Walkito è un’app per iPhone e Android con esercizi per il dolore al tallone, la fascite plantare e i piedi piatti: sessioni da 3, 5 o 10 minuti, 3, 5 o 7 giorni a settimana a tua scelta, basata sulle linee guida cliniche.',
+  de: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß: Einheiten von 3, 5 oder 10\u00A0Minuten, an 3, 5 oder 7 Tagen pro Woche nach deiner Wahl, auf Grundlage klinischer Leitlinien.',
 };
 
 /** Folds the footer sections on a phone, before first paint of the footer. */

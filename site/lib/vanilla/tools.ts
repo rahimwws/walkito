@@ -1,6 +1,6 @@
 /**
- * The two guide tools without React: the calf raise calculator and the
- * recovery timeline, for pages served without Next's runtime
+ * The guide tools without React: the calf raise calculator, the recovery
+ * timeline and the flat feet self-check, for pages served without Next's runtime
  * (scripts/strip-js.mjs bundles this file and adds it only to pages that
  * have a tool).
  *
@@ -14,6 +14,7 @@ import { CALF_COPY, toInt } from '@/lib/tools/calf-copy';
 import { calfMedian, compareToMedian, limbSymmetry, type Sex } from '@/lib/tools/calf-norms';
 import { HANSEN_POINTS } from '@/lib/tools/pf-timeline';
 import { HIGHLIGHT, TIMELINE_COPY, type Stage } from '@/lib/tools/pf-timeline-copy';
+import { FLAT_COPY, flatResult, flatWarnings, marks, type FlatA, type FlatAnswers, type FlatQ } from '@/lib/tools/flat-check';
 
 type Child = Node | string | null | false | undefined;
 
@@ -132,5 +133,45 @@ function pfTimeline(root: HTMLElement) {
   );
 }
 
+function flatCheck(root: HTMLElement) {
+  const lang = (root.dataset.lang ?? 'en') as Lang;
+  const c = FLAT_COPY[lang];
+  const out = root.querySelector<HTMLElement>('[data-tool-result]');
+  if (!c || !out) return;
+  const answers: FlatAnswers = {};
+  const para = (text: string) => {
+    const p = document.createElement('p');
+    for (const m of marks(text)) {
+      if (m.kind === 'bold') p.append(h('b', null, m.text));
+      else if (m.kind === 'link') {
+        const a = h('a', null, m.text) as HTMLAnchorElement;
+        a.href = m.href ?? '#';
+        p.append(a);
+      } else p.append(m.text);
+    }
+    return p;
+  };
+  const render = () => {
+    const result = flatResult(answers);
+    const box = h('div', `flat-check-result is-${result}`, ...c.results[result].map(para));
+    if (result === 'checked') box.append(h('ul', null, ...flatWarnings(answers).map((q) => h('li', null, c.reasons[q]))));
+    if (result !== 'incomplete') box.append(h('p', 'flat-check-note', c.notDiagnosis));
+    out.textContent = '';
+    out.append(box);
+  };
+  root.querySelectorAll<HTMLElement>('fieldset[data-q]').forEach((set) => {
+    const q = set.dataset.q as FlatQ;
+    const buttons = [...set.querySelectorAll<HTMLButtonElement>('button[data-a]')];
+    buttons.forEach((button) =>
+      button.addEventListener('click', () => {
+        answers[q] = button.dataset.a as FlatA;
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+        render();
+      }),
+    );
+  });
+}
+
 document.querySelectorAll<HTMLElement>('[data-tool="calf-calc"]').forEach(calfCalc);
+document.querySelectorAll<HTMLElement>('[data-tool="flat-feet-check"]').forEach(flatCheck);
 document.querySelectorAll<HTMLElement>('[data-tool="pf-timeline"]').forEach(pfTimeline);

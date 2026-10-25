@@ -18,8 +18,24 @@ export const ABOUT_FR: About = {
   description:
     'Ce qu’est Walkito, comment ses guides sur la douleur au talon et les pieds plats sont écrits et sourcés, ce qu’il ne fait pas, et comment signaler une erreur.',
   h1: 'À propos de Walkito',
-  lede: 'Walkito est un programme d’exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, qui s’adapte chaque matin à l’état de vos pieds. Cette page explique comment les guides de ce site sont écrits et d’où viennent leurs chiffres. Elle dit aussi ce que Walkito ne fait pas, et comment nous prévenir quand quelque chose est faux.',
+  lede: 'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, pensés pour les premiers pas au lever et les longues journées debout. Un programme qui s’adapte chaque matin à l’état de vos pieds. Cette page explique comment les guides de ce site sont écrits et d’où viennent leurs chiffres. Elle dit aussi ce que Walkito ne fait pas, et comment nous prévenir quand quelque chose est faux.',
   sections: [
+    {
+      h2: 'Walkito en bref',
+      id: 'facts',
+      bullets: [
+        '**Ce que c’est\u00A0:** une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats.',
+        '**Téléphones\u00A0:** iPhone, sur l’[App Store](https://apps.apple.com/app/id6813076846), et Android, sur [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
+        `**Séances\u00A0:** ${or(PROGRAM.sessionMinutes)}\u00A0minutes, à la maison. Walkito vous demande ce dont vous disposez, comme une serviette ou une marche, et écarte les exercices qui demandent autre chose.`,
+        `**Fréquence\u00A0:** vous choisissez ${or(PROGRAM.daysPerWeek)}\u00A0jours d’entraînement par semaine. Chaque séance s’adapte à la façon dont s’est passée votre matinée.`,
+        `**Progrès\u00A0:** un court test tous les ${PROGRAM.testEveryDays}\u00A0jours.`,
+        '**Langues\u00A0:** anglais, russe, espagnol, portugais, français, italien et allemand.',
+        '**Prix\u00A0:** téléchargement gratuit, avec un abonnement annuel ou hebdomadaire dans l’application. L’App Store ou Google Play affiche le prix dans votre devise avant que vous ne vous abonniez.',
+        '**Qui la conçoit\u00A0:** Rahim Hudaykulyyev et Rahman Bazarov, les deux cofondateurs de Walkito.',
+        '**Ce que ce n’est pas\u00A0:** un dispositif médical. Walkito ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
+        '**Nom\u00A0:** Walkito n’a aucun lien avec walkito.com, un service de promenade de chiens.',
+      ],
+    },
     {
       h2: 'Qu’est-ce que Walkito\u00A0?',
       paragraphs: [

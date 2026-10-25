@@ -108,7 +108,7 @@ export const VS_EXAKT_IT: Guide = {
           ],
           [
             'Valutazione App Store',
-            'Ancora senza valutazioni (uscita il 2 ottobre 2026)',
+            'Ancora senza valutazioni (uscita il 1º ottobre 2026)',
             '4,8 su 5 (125\u00A0valutazioni)',
           ],
           [
@@ -146,7 +146,7 @@ export const VS_EXAKT_IT: Guide = {
         'L’app è più ristretta di Exakt. Non copre infortuni al ginocchio, stiramenti del bicipite femorale né piani di corsa. Quello che fa di diverso è **adattare ogni sessione in base a un check-in del dolore al mattino**, invece che al feedback di fine sessione.',
         'Una mattina a 7/10 o più trasforma la giornata in circa tre minuti di lavoro da seduti. Una giornata con tanti passi (misurati tramite Apple Health o Health Connect) trasforma la sessione di forza successiva in una sessione di recupero più leggera.',
         'Walkito testa i progressi ogni 14\u00A0giorni con sollevamenti sulle punte, una tenuta dell’arco ed [equilibrio su una gamba](/it/esercizi/equilibrio-su-una-gamba/), e confronta il lato sinistro con il destro. Quel confronto sinistra-destra è qualcosa che la maggior parte delle app di questo tipo non misura.',
-        'Walkito è uscita il 2 ottobre 2026. È nuova, non ha ancora valutazioni degli utenti ed è sia su iOS sia su Android. Non ha lo storico né l’ampiezza che Exakt ha costruito dal 2021.',
+        'Walkito è uscita il 1º ottobre 2026. È nuova, non ha ancora valutazioni degli utenti ed è sia su iOS sia su Android. Non ha lo storico né l’ampiezza che Exakt ha costruito dal 2021.',
       ],
     },
     {

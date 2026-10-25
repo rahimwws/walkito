@@ -53,7 +53,7 @@ if (SKIP_CHECKS) {
 // levels, rather than on every request.
 run('node', ['scripts/precompress.mjs']);
 
-// Which English pages changed, by their sitemap lastmod: read the live
+// Which English and Russian pages changed, by their sitemap lastmod: read the live
 // sitemaps now, before the upload replaces them. A page is "changed" when it
 // is new or its date moved. Works with the old single sitemap and the new
 // index alike. If the live sitemaps cannot be read, nothing is pinged.
@@ -88,11 +88,11 @@ try {
   const before = lastmods(await liveSitemaps());
   const after = lastmods(localSitemaps());
   changedEnglish = [...after]
-    .filter(([url, mod]) => !/^https:\/\/walkito\.site\/(es|ru|pt|fr|it|de)\//.test(url) && before.get(url) !== mod)
+    .filter(([url, mod]) => !/^https:\/\/walkito\.site\/(es|pt|fr|it|de)\//.test(url) && before.get(url) !== mod)
     .map(([url]) => url)
     .filter((url) => !url.endsWith('.xml'));
   writeFileSync(CHANGED, JSON.stringify(changedEnglish));
-  console.log(`deploy: ${changedEnglish.length} English page(s) new or changed by date`);
+  console.log(`deploy: ${changedEnglish.length} English or Russian page(s) new or changed by date`);
 } catch (e) {
   console.log(`deploy: could not compare sitemaps (${e.message}); IndexNow skipped`);
 }

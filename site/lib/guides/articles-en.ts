@@ -35,6 +35,8 @@ import { NURSES_EN } from './articles/nurses';
 import { PF_DURATION_EN } from './articles/pf-duration';
 import { STANDING_DESK_EN } from './articles/standing-desk';
 import { VS_EXAKT_EN } from './articles/vs-exakt';
+import { VS_PLANTARCARE_EN } from './articles/vs-plantarcare';
+import { VS_PF_EXERCISES_EN } from './articles/vs-pf-exercises';
 import { CALF_RAISES_EN } from './articles/calf-raises';
 import { SHIN_SPLINTS_EN } from './articles/shin-splints';
 import { STANDING_EN } from './articles/standing';
@@ -89,6 +91,8 @@ import { PF_KNEE_HIP_BACK_EN } from './articles/can-plantar-fasciitis-cause-knee
 import { HEEL_NOT_PF_EN } from './articles/heel-pain-not-plantar-fasciitis';
 import { PF_NOT_BETTER_EN } from './articles/plantar-fasciitis-not-getting-better';
 import { PF_MENOPAUSE_EN } from './articles/plantar-fasciitis-menopause';
+import { SHOES_NURSES_EN } from './articles/shoes-nurses';
+import { HINGE_REVIEWS_EN } from './articles/hinge-reviews';
 import type { Guide } from './types';
 
 /**
@@ -120,6 +124,8 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   bestFlatApp: BEST_FLAT_APP_EN,
   bestInsoles: BEST_INSOLES_EN,
   vsExakt: VS_EXAKT_EN,
+  vsPlantarCare: VS_PLANTARCARE_EN,
+  vsPfExercises: VS_PF_EXERCISES_EN,
   exPlantarFasciaStretch: EX_PLANTAR_FASCIA_STRETCH,
   exCalfStretch: EX_CALF_STRETCH,
   exSoleusStretch: EX_SOLEUS_STRETCH,
@@ -186,4 +192,6 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   heelNotPf: HEEL_NOT_PF_EN,
   pfNotBetter: PF_NOT_BETTER_EN,
   pfMenopause: PF_MENOPAUSE_EN,
+  shoesNurses: SHOES_NURSES_EN,
+  hingeReviews: HINGE_REVIEWS_EN,
 };

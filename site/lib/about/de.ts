@@ -20,8 +20,24 @@ export const ABOUT_DE: About = {
   description:
     'Was Walkito ist, wie die Ratgeber zu Fersenschmerzen und Plattfuß geschrieben und belegt werden, was Walkito nicht tut und wie du einen Fehler meldest.',
   h1: 'Über Walkito',
-  lede: 'Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.',
+  lede: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß, für die ersten Schritte am Morgen und lange Tage auf den Beinen. Der Plan richtet sich jeden Morgen danach, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.',
   sections: [
+    {
+      h2: 'Walkito auf einen Blick',
+      id: 'facts',
+      bullets: [
+        '**Was es ist:** eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß.',
+        '**Smartphones:** iPhone, im [App Store](https://apps.apple.com/app/id6813076846), und Android, bei [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
+        `**Einheiten:** ${either(PROGRAM.sessionMinutes)}\u00A0Minuten, zu Hause. Walkito fragt, was du zur Hand hast, etwa ein Handtuch oder eine Stufe, und lässt Übungen weg, für die du etwas anderes brauchst.`,
+        `**Wie oft:** Du wählst ${either(PROGRAM.daysPerWeek)} Trainingstage pro Woche. Jede Einheit passt sich daran an, wie dein Morgen war.`,
+        `**Fortschritt:** alle ${PROGRAM.testEveryDays}\u00A0Tage ein kurzer Test.`,
+        '**Sprachen:** Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch.',
+        '**Preis:** kostenlos zum Herunterladen, mit einem Jahres- oder Wochenabo in der App. Der App Store oder Google Play zeigt dir den Preis in deiner Währung, bevor du das Abo abschließt.',
+        '**Wer steckt dahinter:** Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito.',
+        '**Was es nicht ist:** ein Medizinprodukt. Walkito stellt keine Diagnose und ersetzt keinen Arztbesuch.',
+        '**Name:** Walkito hat nichts mit walkito.com zu tun, einem Gassi-Service für Hunde.',
+      ],
+    },
     {
       h2: 'Was ist Walkito?',
       paragraphs: [

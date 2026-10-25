@@ -138,7 +138,7 @@ export const VS_EXAKT_ES: Guide = {
         'La app es más limitada que Exakt. No cubre lesiones de rodilla, desgarros de isquiotibiales ni planes para correr. Lo que hace distinto es **ajustar cada sesión con un chequeo de dolor en la mañana**, no con tu opinión al final de la sesión.',
         'Una mañana de 7/10 o más cambia el día a unos tres minutos de trabajo sentado. Un día con mucho tiempo de pie (medido con los pasos de Apple Health en iPhone o de Health Connect en Android) convierte la siguiente sesión de fuerza en una sesión más suave de recuperación.',
         'Walkito mide tu progreso cada 14\u00A0días con elevaciones de talón, mantener el arco y equilibrio a una pierna, y compara tu lado izquierdo con el derecho. Esa comparación entre izquierda y derecha es algo que la mayoría de las apps de este tipo no mide.',
-        'Walkito salió el 2 de octubre de 2026. Está en iPhone y, desde octubre de 2026, en Android. Es nueva y todavía no tiene calificaciones de usuarios. No tiene la trayectoria ni la variedad que Exakt ha construido desde 2021.',
+        'Walkito salió el 1 de octubre de 2026. Está en iPhone y, desde octubre de 2026, en Android. Es nueva y todavía no tiene calificaciones de usuarios. No tiene la trayectoria ni la variedad que Exakt ha construido desde 2021.',
       ],
     },
     {

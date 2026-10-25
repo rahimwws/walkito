@@ -389,7 +389,7 @@ export default function Program() {
         <UpdatedLine lang="en" updated={PAGE_UPDATED.program} />
         <p className="notice">{c.notice}</p>
 
-        <p className="cta-line">Start with {PROGRAM.sessionMinutes[0]} minutes a day.</p>
+        <p className="cta-line">Start with a {PROGRAM.sessionMinutes[0]}-minute session.</p>
         <AppStoreBadge campaign="program" />
       </Prose>
 

@@ -292,7 +292,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+      'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning.',
     imageAlt: {
       side: 'Inner side of a right lower leg and foot, showing the shin, the Achilles tendon, the heel, the ankle, the arch and the big toe.',
       sole: 'Sole of a right foot showing the heel bone, the arch, the metatarsal bones and the toes.',
@@ -497,7 +497,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies.',
+      'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies.',
     imageAlt: {
       side: 'Lado interior de una pierna y un pie derechos, con la espinilla, el tendón de Aquiles, el talón, el tobillo, el arco y el dedo gordo.',
       sole: 'Planta de un pie derecho con el hueso del talón, el arco, los metatarsianos y los dedos.',
@@ -705,7 +705,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
+      'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: для первых шагов утром и долгих дней на ногах. Каждое утро план подстраивается под то, как чувствуют себя ваши стопы.',
     imageAlt: {
       side: 'Правая голень и стопа с внутренней стороны: голень, ахиллово сухожилие, пятка, лодыжка, свод и большой палец.',
       sole: 'Подошва правой стопы: пяточная кость, свод, плюсневые кости и пальцы.',

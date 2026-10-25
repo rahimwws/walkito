@@ -277,6 +277,29 @@ try {
     await ctx.close();
   }
 
+  {
+    const { ctx, page, errors, nextChunks } = await open('/flat-feet-test/');
+    const t = page.locator('[data-tool="flat-feet-check"]');
+    const start = await t.locator('[data-tool-result]').innerText();
+    const pick = async (q, a) => t.locator(`fieldset[data-q="${q}"] button[data-a="${a}"]`).click();
+    await pick('low', 'yes'); await pick('returns', 'yes'); await pick('same', 'yes'); await pick('rise', 'yes'); await pick('warn', 'no');
+    const flex = (await t.locator('[data-tool-result]').innerText()).replace(/\s+/g, ' ');
+    const link = await t.locator('[data-tool-result] a').getAttribute('href');
+    check('flat feet self-check: flexible result with exercises link, no Next runtime', start.includes('Answer all five') && flex.includes('flexible flat foot') && flex.includes('not a diagnosis') && link === '/flat-feet-exercises/' && errors.length === 0 && nextChunks.length === 0, JSON.stringify({ flex: flex.slice(0, 120), link, errors }));
+    await pick('rise', 'no');
+    const chk = (await t.locator('[data-tool-result]').innerText()).replace(/\s+/g, ' ');
+    const items = await t.locator('[data-tool-result] li').count();
+    const pressed = await t.locator('fieldset[data-q="rise"] button[aria-pressed="true"]').getAttribute('data-a');
+    check('flat feet self-check: a warning answer switches to "get it checked" with the reason', chk.includes('Get it checked') && items === 1 && pressed === 'no', JSON.stringify({ chk: chk.slice(0, 120), items, pressed }));
+    await pick('rise', 'yes'); await pick('low', 'no');
+    const notLow = await t.locator('[data-tool-result]').innerText();
+    check('flat feet self-check: no low arch points to the foot pain map', notLow.includes('don’t point to a low arch') && notLow.includes('foot pain map'), notLow.slice(0, 100));
+    await pick('low', 'yes'); await pick('rise', 'unsure');
+    const unsure = (await t.locator('[data-tool-result]').innerText()).replace(/\s+/g, ' ');
+    check('flat feet self-check: "Not sure" on a warning question never gives the reassuring result', !unsure.includes('flexible flat foot') && unsure.includes('get it checked'), unsure.slice(0, 140));
+    await ctx.close();
+  }
+
   // 10. AI referral tags App Store links.
   {
     const { ctx, page } = await open('/?utm_source=chatgpt.com');

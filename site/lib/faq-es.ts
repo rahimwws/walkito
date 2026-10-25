@@ -21,6 +21,10 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     h2: 'Sobre la app',
     entries: [
       {
+        q: '¿Qué es Walkito?',
+        a: 'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies. Eliges tres, cinco o siete días de entrenamiento por semana y sesiones de 3, 5 o 10\u00A0minutos. Walkito no es un dispositivo médico y no tiene relación con walkito.com, un servicio de paseo de perros.',
+      },
+      {
         q: '¿Walkito está disponible en Android?',
         a: 'Sí. Walkito está en Android, en Google Play, y en iPhone, en el App Store. En Android lee Health Connect para pasos, distancia y sueño. La app de iPhone lee Apple Health para pasos, sueño y asimetría al caminar. También muestra una Live Activity en la pantalla de bloqueo mientras corre una sesión. Walkito viene en inglés, ruso, español, portugués, francés, italiano y alemán.',
       },
@@ -177,7 +181,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     entries: [
       {
         q: '¿Cuánto cuesta Walkito?',
-        a: 'El precio de Walkito lo fija la tienda en la que compras, el App Store en iPhone o Google Play en Android, que te lo muestra en tu moneda antes de comprar. Hay dos suscripciones, anual y semanal, y las dos se renuevan solas hasta que canceles. El precio que muestra la tienda es el que aplica.',
+        a: 'Walkito es gratis para descargar, con una suscripción anual o semanal dentro de la app. El precio lo fija la tienda en la que compras, el App Store en iPhone o Google Play en Android, que te lo muestra en tu moneda antes de suscribirte. Las dos suscripciones, anual y semanal, se renuevan solas hasta que canceles, y el precio que muestra la tienda es el que aplica.',
       },
       {
         q: '¿Cómo cancelo mi suscripción de Walkito?',

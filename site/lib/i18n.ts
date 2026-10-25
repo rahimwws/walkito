@@ -488,11 +488,15 @@ export const EN_ONLY = {
   hairdressers: '/hairdressers-foot-pain/',
   weightPf: '/weight-and-plantar-fasciitis/',
   hikers: '/hiking-foot-pain/',
+  vsPlantarCare: '/walkito-vs-plantarcare/',
+  vsPfExercises: '/walkito-vs-plantar-fasciitis-exercises-app/',
   pfFlareUp: '/plantar-fasciitis-flare-up/',
   pfKneeHipBack: '/can-plantar-fasciitis-cause-knee-pain/',
   heelNotPf: '/heel-pain-not-plantar-fasciitis/',
   pfNotBetter: '/plantar-fasciitis-not-getting-better/',
   pfMenopause: '/plantar-fasciitis-menopause/',
+  shoesNurses: '/best-shoes-for-nurses-with-plantar-fasciitis/',
+  hingeReviews: '/hinge-health-reviews/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -588,11 +592,15 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   hairdressers: '/es/dolor-de-pies-peluqueros/',
   weightPf: '/es/peso-y-fascitis-plantar/',
   hikers: '/es/dolor-de-pies-senderismo/',
+  vsPlantarCare: '/es/walkito-vs-plantarcare/',
+  vsPfExercises: '/es/walkito-vs-plantar-fasciitis-exercises-app/',
   pfFlareUp: '/es/brote-de-fascitis-plantar/',
   pfKneeHipBack: '/es/fascitis-plantar-dolor-de-rodilla/',
   heelNotPf: '/es/dolor-de-talon-que-no-es-fascitis/',
   pfNotBetter: '/es/fascitis-plantar-no-mejora/',
   pfMenopause: '/es/fascitis-plantar-menopausia/',
+  shoesNurses: '/es/zapatos-para-enfermeras-fascitis-plantar/',
+  hingeReviews: '/es/hinge-health-opiniones/',
 };
 
 /**
@@ -685,11 +693,15 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   hairdressers: '/ru/bol-v-stopakh-u-parikmakherov/',
   weightPf: '/ru/ves-i-plantarnyy-fastsiit/',
   hikers: '/ru/bol-v-stopakh-posle-pokhoda/',
+  vsPlantarCare: '/ru/walkito-vs-plantarcare/',
+  vsPfExercises: '/ru/walkito-vs-plantar-fasciitis-exercises-app/',
   pfFlareUp: '/ru/obostrenie-plantarnogo-fastsiita/',
   pfKneeHipBack: '/ru/plantarnyy-fastsiit-i-bol-v-kolene/',
   heelNotPf: '/ru/bol-v-pyatke-ne-fastsiit/',
   pfNotBetter: '/ru/plantarnyy-fastsiit-ne-prokhodit/',
   pfMenopause: '/ru/plantarnyy-fastsiit-i-menopauza/',
+  shoesNurses: '/ru/obuv-dlya-medsester-pri-plantarnom-fastsiite/',
+  hingeReviews: '/ru/hinge-health-otzyvy/',
 };
 
 /**

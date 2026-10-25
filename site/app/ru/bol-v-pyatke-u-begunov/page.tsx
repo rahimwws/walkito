@@ -484,7 +484,7 @@ export default function HeelPainRunnersRu() {
             <UpdatedLine lang="ru" updated={PAGE_UPDATED.runners} />
             <p className="notice">{c.notice}</p>
 
-            <p className="cta-line">Начните с {MIN_A}{'\u00A0'}минут в день.</p>
+            <p className="cta-line">Начните с {MIN_A}-минутного занятия.</p>
             <AppStoreBadge campaign="runners-bottom-ru" lang="ru" />
           </section>
         </article>

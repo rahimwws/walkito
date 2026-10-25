@@ -17,8 +17,24 @@ export const ABOUT_EN: About = {
   description:
     'What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.',
   h1: 'About Walkito',
-  lede: 'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.',
+  lede: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.',
   sections: [
+    {
+      h2: 'Walkito at a glance',
+      id: 'facts',
+      bullets: [
+        '**What it is:** an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet.',
+        '**Phones:** iPhone, on the [App Store](https://apps.apple.com/app/id6813076846), and Android, on [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
+        `**Sessions:** ${or(PROGRAM.sessionMinutes)} minutes, at home. Walkito asks what you have, such as a towel or a step, and leaves out exercises that need anything else.`,
+        `**How often:** you pick ${or(PROGRAM.daysPerWeek)} training days a week. Each session adapts to how your morning went.`,
+        `**Progress:** a short test every ${PROGRAM.testEveryDays} days.`,
+        '**Languages:** English, Russian, Spanish, Portuguese, French, Italian and German.',
+        '**Price:** free to download, with a yearly or weekly subscription inside the app. The App Store or Google Play shows the price in your currency before you subscribe.',
+        '**Who makes it:** Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders.',
+        '**What it is not:** a medical device. Walkito does not diagnose and does not replace a clinician.',
+        '**Name:** Walkito is not related to walkito.com, a dog-walking service.',
+      ],
+    },
     {
       h2: 'What is Walkito?',
       paragraphs: [

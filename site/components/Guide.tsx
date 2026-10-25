@@ -25,6 +25,7 @@ import { mainClip, videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
 import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
 import { PfTimeline } from '@/components/tools/PfTimeline';
+import { FlatFeetCheck } from '@/components/tools/FlatFeetCheck';
 import { anatomySchema } from '@/lib/anatomy';
 import { SITE_URL } from '@/lib/site';
 
@@ -469,6 +470,11 @@ export function Guide({ guide }: { guide: GuideData }) {
               <PfTimeline lang={guide.lang}>
                 <AppStoreBadge campaign="tool-pf-timeline" lang={guide.lang} />
               </PfTimeline>
+            )}
+            {section.tool === 'flat-feet-check' && (
+              <FlatFeetCheck lang={guide.lang}>
+                <AppStoreBadge campaign="tool-flat-feet-check" lang={guide.lang} />
+              </FlatFeetCheck>
             )}
             {writerImageFor(guide.lang, section.tool) && <WriterImage id={writerImageFor(guide.lang, section.tool)!} />}
           </section>

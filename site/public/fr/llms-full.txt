@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/fr/
-Last updated: 2026-10-18
+Last updated: 2026-10-24
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -12268,7 +12268,20 @@ Une douleur à l’arrière du talon ou autour du tendon d’Achille peut accomp
 
 https://walkito.site/fr/a-propos/
 
-Walkito est un programme d’exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, qui s’adapte chaque matin à l’état de vos pieds. Cette page explique comment les guides de ce site sont écrits et d’où viennent leurs chiffres. Elle dit aussi ce que Walkito ne fait pas, et comment nous prévenir quand quelque chose est faux.
+Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, pensés pour les premiers pas au lever et les longues journées debout. Un programme qui s’adapte chaque matin à l’état de vos pieds. Cette page explique comment les guides de ce site sont écrits et d’où viennent leurs chiffres. Elle dit aussi ce que Walkito ne fait pas, et comment nous prévenir quand quelque chose est faux.
+
+### Walkito en bref
+
+- **Ce que c’est :** une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats.
+- **Téléphones :** iPhone, sur l’[App Store](https://apps.apple.com/app/id6813076846), et Android, sur [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).
+- **Séances :** 3, 5 ou 10 minutes, à la maison. Walkito vous demande ce dont vous disposez, comme une serviette ou une marche, et écarte les exercices qui demandent autre chose.
+- **Fréquence :** vous choisissez 3, 5 ou 7 jours d’entraînement par semaine. Chaque séance s’adapte à la façon dont s’est passée votre matinée.
+- **Progrès :** un court test tous les 14 jours.
+- **Langues :** anglais, russe, espagnol, portugais, français, italien et allemand.
+- **Prix :** téléchargement gratuit, avec un abonnement annuel ou hebdomadaire dans l’application. L’App Store ou Google Play affiche le prix dans votre devise avant que vous ne vous abonniez.
+- **Qui la conçoit :** Rahim Hudaykulyyev et Rahman Bazarov, les deux cofondateurs de Walkito.
+- **Ce que ce n’est pas :** un dispositif médical. Walkito ne pose pas de diagnostic et ne remplace pas un professionnel de santé.
+- **Nom :** Walkito n’a aucun lien avec walkito.com, un service de promenade de chiens.
 
 ### Qu’est-ce que Walkito ?
 

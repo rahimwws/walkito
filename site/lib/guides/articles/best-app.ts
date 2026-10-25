@@ -170,7 +170,7 @@ export const BEST_APP_EN: Guide = {
           ],
         },
         'The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.',
-        'PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only.',
+        'PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only. See [Walkito vs PlantarCare](/walkito-vs-plantarcare/) for the two side by side.',
       ],
     },
     {
@@ -186,13 +186,13 @@ export const BEST_APP_EN: Guide = {
       paragraphs: [
         'This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on both iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it.',
         'The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.',
-        'If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.',
+        'If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough. See [Walkito vs Plantar Fasciitis Exercises](/walkito-vs-plantar-fasciitis-exercises-app/) for the two side by side.',
       ],
     },
     {
       h2: 'Walkito: what it does and what it does not',
       paragraphs: [
-        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It is on iPhone and Android: on the App Store since October 2, 2026, and on Google Play since October 2026. It is new and has no ratings yet.',
+        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It is on iPhone and Android: on the App Store since October 1, 2026, and on Google Play since October 2026. It is new and has no ratings yet.',
         'What it does:',
         {
           list: [

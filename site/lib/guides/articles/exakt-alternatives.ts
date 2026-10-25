@@ -86,7 +86,7 @@ export const EXAKT_ALT_EN: Guide = {
             'Sports Injury Rehabilitation: phase 1 of every program is free; later phases are in-app purchases.',
             'GaitLab Coach: free for basic running form checks; the full report with a 4-week drill plan is $4.99 once.',
             'Hinge Health: $0, if your employer or health plan covers it.',
-            '[PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): free with no in-app purchases, iPhone only, for heel pain only.',
+            '[PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): free with no in-app purchases, iPhone only, for heel pain only ([Walkito vs PlantarCare](/walkito-vs-plantarcare/)).',
           ],
         },
         'Walkito is a weekly or yearly subscription. The current price for your country is shown in the App Store or Google Play before you subscribe.',
@@ -111,7 +111,7 @@ export const EXAKT_ALT_EN: Guide = {
     {
       h2: 'Is Walkito a good Exakt Health alternative?',
       paragraphs: [
-        'Only for some people. Walkito is narrower than Exakt, and newer: it launched on October 2, 2026 and has no ratings yet.',
+        'Only for some people. Walkito is narrower than Exakt, and newer: it launched on October 1, 2026 and has no ratings yet.',
       ],
       table: {
         caption: 'Walkito: best for and not for',
