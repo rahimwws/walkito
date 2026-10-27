@@ -66,49 +66,55 @@ const RATHLEFF_SOURCE =
 
 export const FAQ_GROUPS: readonly FaqGroup[] = [
   {
-    id: 'about-the-app',
-    h2: 'About the app',
+    id: 'price-and-subscription',
+    h2: 'Price and subscription',
     entries: [
       {
-        q: 'What is Walkito?',
-        a: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning. You pick three, five or seven training days a week and sessions of 3, 5 or 10 minutes. Walkito is not a medical device, and it is not related to walkito.com, a dog-walking service.',
+        q: 'Is Walkito free?',
+        a: 'Walkito is free to download from the App Store on iPhone and from Google Play on Android. Inside the app it offers a yearly or a weekly subscription, and the store shows that price in your currency before you subscribe. Both subscriptions renew on their own until you cancel, which you do in the store, not in Walkito.',
       },
       {
-        q: 'Is Walkito available on Android?',
-        a: 'Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.',
+        q: 'How much does Walkito cost?',
+        a: 'Walkito’s price is set by the store you buy from: the App Store on iPhone or Google Play on Android. The store shows the yearly and the weekly subscription in your currency before you subscribe, and the price it shows is the one that applies. A subscription bought on iPhone does not carry over to Android, because Apple and Google bill separately.',
+      },
+      {
+        q: 'How do I cancel my Walkito subscription?',
+        a: 'Cancel Walkito in the store you bought it from. On iPhone, open Settings, then your name, then Subscriptions, at least 24 hours before the period ends. On Android, open Google Play, tap your profile icon, then Payments & subscriptions, then Subscriptions. You keep access until the paid period ends. Deleting the app or account does not cancel it. Refunds are handled by Apple or Google.',
+      },
+    ],
+  },
+  {
+    id: 'phones-and-languages',
+    h2: 'Phones and languages',
+    entries: [
+      {
+        q: 'Is Walkito on iPhone or Android?',
+        a: 'Walkito is on both: on iPhone from the App Store, and on Android from Google Play. The iPhone app reads Apple Health for steps, sleep and walking asymmetry, and shows a Live Activity on the Lock Screen while a session runs. The Android app reads Health Connect for steps, distance and sleep. A subscription bought on one does not carry over to the other.',
       },
       {
         q: 'Do I need an Apple Watch?',
         a: 'No, Walkito works without an Apple Watch. The step count, walking speed and walking asymmetry it uses come from the iPhone itself. A watch adds sleep and resting heart rate. Without one, the parts that need them stay quiet, such as a short night making the next session lighter. The rest of the plan works as normal.',
       },
       {
-        q: 'How many notifications will I get?',
-        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in your phone’s settings, on iPhone or Android, and the plan works the same.',
+        q: 'What languages is Walkito in?',
+        a: 'Walkito comes in seven languages: English, Russian, Spanish, Portuguese, French, Italian and German. It is on iPhone, from the App Store, and on Android, from Google Play. In every language, sessions take 3, 5 or 10 minutes, on the 3, 5 or 7 days a week you pick.',
       },
       {
-        q: 'Will Walkito nag me if I stop using it?',
-        a: 'No, Walkito backs off when you stop opening its messages. After three unopened notifications in a row, reminders drop to two a week. After seven, it goes quiet for a month and then sends one message. Then it stays quiet unless you come back on your own. Opening Walkito at any time resets the count.',
+        q: 'Can I use Walkito in ChatGPT or Claude?',
+        a: 'Yes, Walkito can be used inside ChatGPT and Claude, where it answers with short exercise videos and a starter plan. The starter plan comes with a code that carries its settings into the Walkito app on iPhone or Android, where the plan then changes with your morning check-in. [Walkito in ChatGPT and Claude](/ai/).',
       },
       {
-        q: 'How does the streak work?',
-        a: 'The Walkito streak counts showing up, not finishing workouts. A day counts if you logged your morning pain, finished a session, or the plan gave you a rest day. A rest day the plan set can never break your streak. So choosing three training days a week costs you nothing.',
-      },
-      {
-        q: 'What happens to my streak if I have a bad week?',
-        a: 'A bad week does not have to end your streak, because Walkito gives you freezes. You earn one freeze for each week on the plan and can hold two at a time. A missed day uses one by itself. If the streak does end, Walkito never shows it as a failure. The number simply starts again.',
+        q: 'Is Walkito related to walkito.com?',
+        a: 'No, Walkito is not related to walkito.com, which is a dog-walking service. Walkito, at walkito.site, is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet. It is made by its two co-founders, Rahim Hudaykulyyev and Rahman Bazarov, and it is on the App Store and Google Play.',
       },
     ],
   },
   {
-    id: 'your-plan',
-    h2: 'Your plan',
+    id: 'sessions-and-schedule',
+    h2: 'Sessions and schedule',
     entries: [
       {
-        q: 'How long does the Walkito plan last?',
-        a: 'The Walkito plan has no fixed length. It lasts as long as you use it. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. [How the plan works](/program/).',
-      },
-      {
-        q: 'How long is a session?',
+        q: 'How long is a Walkito session?',
         a: 'A Walkito session takes 5 minutes by default, and you can switch any session to 3 or 10. Each session has 2 to 4 exercises. The exercise for the week’s focus goal always stays in, even in the 3-minute version. A test day takes about four minutes and has no training in it.',
       },
       {
@@ -118,6 +124,10 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       {
         q: 'Do I need any equipment?',
         a: 'No, you don’t need to buy anything to start Walkito. During setup, Walkito asks what you have at home: a step or stairs, a resistance band, a towel, a pillow or a massage ball. Exercises that need something you don’t have are left out of your plan. You can also answer “None of these”.',
+      },
+      {
+        q: 'How long does the Walkito plan last?',
+        a: 'The Walkito plan has no fixed length. It lasts as long as you use it. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. [How the plan works](/program/).',
       },
       {
         q: 'What happens if I miss a few days?',
@@ -131,10 +141,52 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
         q: 'What do the tests measure?',
         a: 'Walkito’s tests measure three things in about four minutes: calf raises to failure on each leg, how long you can hold your arch, and single-leg balance. The calf raises also show the gap between your left and right side. Tests come every 14 days, then every 28 once you reach your first goal. Goals are judged on these numbers and your morning pain.',
       },
+    ],
+  },
+  {
+    id: 'pain-and-safety',
+    h2: 'Pain and safety',
+    entries: [
       {
-        q: 'What happens when I reach a goal?',
-        a: 'When you reach a goal, it moves to maintaining and the next goal takes its place. A maintained goal keeps a spot in your plan at a lower dose, so the work that got you there goes on. Tests move from every 14 days to every 28 once you reach your first goal.',
+        q: 'Does Walkito diagnose foot pain?',
+        a: 'No, Walkito does not diagnose and cannot tell you what is causing your pain. It is an exercise plan, and it does not treat. See a clinician for pain that is sharp, getting worse, keeping you up at night, or that started after an injury. The warning signs are listed in [the heel pain guide](/plantar-fasciitis-exercises/#see-a-clinician).',
       },
+      {
+        q: 'Is Walkito a medical device?',
+        a: 'No, Walkito is not a medical device, and it does not replace a clinician. It is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, chosen from published research and guidelines. Walkito itself has not been tested in a trial. How the guides are sourced is on [the About page](/about/#how-we-research).',
+      },
+      {
+        q: 'Does the plan change if my pain gets worse?',
+        a: 'Yes, Walkito changes the plan the same morning. A morning pain of 7/10 or more turns the day into about three minutes of seated work. A morning three points above your average for the past week steps each exercise back a level. Pain of 6/10 or more during a session ends it and steps the next two back. A good morning never speeds the plan up.',
+      },
+      {
+        q: 'Can I keep running while I do Walkito?',
+        a: 'Yes, you can keep running while you do Walkito. The plan adjusts to your load instead of asking you to stop. When yesterday was a big day on your feet, today’s strength session becomes a lighter recovery one. Sharp pain, or pain that keeps getting worse, needs a clinician. More in [heel pain from running](/heel-pain-runners/).',
+      },
+      {
+        q: 'Should I rest completely when my heel hurts?',
+        a: 'Walkito’s answer is to change the load on your heel, not to stop everything. The 2023 guideline recommends learning to adjust the load on your feet in daily life, at work and in sport. It grades that advice E, which means it rests on theory, not trials. On a bad day, keep the stretches and drop the loaded work. In Walkito, a 7/10 morning or worse becomes three minutes of seated work.',
+        cites: [CITE.guideline],
+      },
+      {
+        q: 'Do insoles and orthotics help heel pain?',
+        a: 'The 2023 heel pain guideline advises against orthotics on their own for short-term pain relief, with a grade B. It says they may be used alongside other care, with a grade C, which means weaker evidence. Walkito does not recommend them as the only answer and does not sell any. The full table of grades is in [the heel pain guide](/plantar-fasciitis-exercises/).',
+        cites: [CITE.guideline],
+      },
+      {
+        q: 'Will the pain come back?',
+        a: 'Heel pain can come back, and Walkito does not promise it won’t. What Walkito does is keep going after the pain stops. A reached goal moves to maintaining and keeps a place in the plan at a lower dose. Tests go on every 28 days once you reach your first goal, so you can see if your numbers start to slip.',
+      },
+      {
+        q: 'Does uneven walking mean I am injured?',
+        a: 'Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time steps with one foot are faster or slower than with the other. Walkito compares it only with your own earlier readings. It can tell you that your walking has changed, never what that means. If something feels wrong, ask a clinician.',
+      },
+    ],
+  },
+  {
+    id: 'results-and-research',
+    h2: 'Results and research',
+    entries: [
       {
         q: 'How long before I notice a difference?',
         a: 'No one can honestly promise a day, but one trial gives a guide. In a trial of 48 people with plantar fasciitis, all wearing shoe inserts, the group doing heavy heel raises was clearly ahead of the stretching group at three months. By twelve months the two groups were even. Your own tests show your numbers as they change.',
@@ -163,38 +215,24 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     ],
   },
   {
-    id: 'pain-and-safety',
-    h2: 'Pain and safety',
+    id: 'reminders-and-streaks',
+    h2: 'Reminders and streaks',
     entries: [
       {
-        q: 'Can Walkito tell me what is wrong with my foot?',
-        a: 'No, Walkito cannot tell you what is causing your pain. It is an exercise plan. It does not diagnose, and it does not treat. See a clinician for pain that is sharp, getting worse, keeping you up at night, or that started after an injury. The warning signs are listed in [the heel pain guide](/plantar-fasciitis-exercises/#see-a-clinician).',
+        q: 'How many notifications will I get?',
+        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in your phone’s settings, on iPhone or Android, and the plan works the same.',
       },
       {
-        q: 'Does the plan change if my pain gets worse?',
-        a: 'Yes, Walkito changes the plan the same morning. A morning pain of 7/10 or more turns the day into about three minutes of seated work. A morning three points above your average for the past week steps each exercise back a level. Pain of 6/10 or more during a session ends it and steps the next two back. A good morning never speeds the plan up.',
+        q: 'Will Walkito nag me if I stop using it?',
+        a: 'No, Walkito backs off when you stop opening its messages. After three unopened notifications in a row, reminders drop to two a week. After seven, it goes quiet for a month and then sends one message. Then it stays quiet unless you come back on your own. Opening Walkito at any time resets the count.',
       },
       {
-        q: 'Can I keep running while I do Walkito?',
-        a: 'Yes, you can keep running while you do Walkito. The plan adjusts to your load instead of asking you to stop. When yesterday was a big day on your feet, today’s strength session becomes a lighter recovery one. Sharp pain, or pain that keeps getting worse, needs a clinician. More in [heel pain from running](/heel-pain-runners/).',
+        q: 'How does the streak work?',
+        a: 'The Walkito streak counts showing up, not finishing workouts. A day counts if you logged your morning pain, finished a session, or the plan gave you a rest day. A rest day the plan set can never break your streak. So choosing three training days a week costs you nothing.',
       },
       {
-        q: 'Should I rest completely when my heel hurts?',
-        a: 'Walkito’s answer is to change the load on your heel, not to stop everything. The 2023 guideline recommends learning to adjust the load on your feet in daily life, at work and in sport. It grades that advice E, which means it rests on theory, not trials. On a bad day, keep the stretches and drop the loaded work. In Walkito, a 7/10 morning or worse becomes three minutes of seated work.',
-        cites: [CITE.guideline],
-      },
-      {
-        q: 'Do insoles and orthotics help heel pain?',
-        a: 'The 2023 heel pain guideline advises against orthotics on their own for short-term pain relief, with a grade B. It says they may be used alongside other care, with a grade C, which means weaker evidence. Walkito does not recommend them as the only answer and does not sell any. The full table of grades is in [the heel pain guide](/plantar-fasciitis-exercises/).',
-        cites: [CITE.guideline],
-      },
-      {
-        q: 'Will the pain come back?',
-        a: 'Heel pain can come back, and Walkito does not promise it won’t. What Walkito does is keep going after the pain stops. A reached goal moves to maintaining and keeps a place in the plan at a lower dose. Tests go on every 28 days once you reach your first goal, so you can see if your numbers start to slip.',
-      },
-      {
-        q: 'Does uneven walking mean I am injured?',
-        a: 'Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people.\n\nWalkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.',
+        q: 'What happens to my streak if I have a bad week?',
+        a: 'A bad week does not have to end your streak, because Walkito gives you freezes. You earn one freeze for each week on the plan and can hold two at a time. A missed day uses one by itself. If the streak does end, Walkito never shows it as a failure. The number simply starts again.',
       },
     ],
   },
@@ -208,7 +246,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'Which Apple Health permissions does Walkito ask for?',
-        a: 'On iPhone, Walkito asks Apple Health to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts, and to write workouts and mindful minutes. On Android, it reads steps, distance and sleep from Health Connect. Every permission is optional, and you can withdraw it in your phone’s settings. The plan keeps working without them. It just adapts less to your day.',
+        a: 'Every health permission Walkito asks for is optional. On iPhone, it asks Apple Health to read steps, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts, and to write workouts and mindful minutes. On Android, it reads steps, distance and sleep from Health Connect. Without them the plan keeps working. It just adapts less to your day.',
       },
       {
         q: 'Does Walkito work offline?',
@@ -216,25 +254,11 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'What happens to my plan if I get a new phone?',
-        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back.\n\nA subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.',
+        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, use the same Apple ID and tap Restore Purchases. On Android, use the same Google account in Google Play. Apple Health readings are not part of that copy, because they stay on the phone.',
       },
       {
         q: 'How do I delete my Walkito account and data?',
         a: `Delete your account in Walkito under Profile, then Delete account. That removes your account from Walkito’s server with everything saved to it, and clears the phone. It cannot be undone. Deleting only the app leaves your account in place. Neither one cancels a subscription, which only Apple or Google can do. You can also write to ${SUPPORT_EMAIL}.`,
-      },
-    ],
-  },
-  {
-    id: 'pricing',
-    h2: 'Pricing',
-    entries: [
-      {
-        q: 'How much does Walkito cost?',
-        a: 'Walkito is free to download, with a yearly or weekly subscription inside the app. The price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you subscribe. Both subscriptions renew on their own until you cancel, and the price the store shows is the one that applies.',
-      },
-      {
-        q: 'How do I cancel my Walkito subscription?',
-        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for.\n\nOn Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period.\n\nDeleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.',
       },
     ],
   },

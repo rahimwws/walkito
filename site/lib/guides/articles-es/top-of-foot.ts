@@ -2,54 +2,41 @@ import { CITE } from '@/lib/citations';
 import type { Guide } from '../types';
 
 /*
- * Translated from `articles/top-of-foot.ts` (2026-10-07), written around the
- * Spanish queries «dolor en el empeine del pie» and «dolor empeine pie causas».
- * Figures, grades and qualifiers are identical to the English page.
+ * Translated from `articles/top-of-foot.ts` (2026-10-07). Rewritten
+ * 2026-10-26 answer-first around «dolor en el empeine del pie sin
+ * inflamación», «tendinitis pie empeine» and «por qué duele el empeine del
+ * pie». Figures, grades and qualifiers are identical to the English page;
+ * exercise doses follow the app (src/entities/program/model/exercises.ts).
  */
 
 export const TOP_OF_FOOT_ES: Guide = {
   lang: 'es',
   page: 'topOfFoot',
   published: '2026-10-07',
-  updated: '2026-10-17',
-  title: 'Dolor en el empeine del pie: causas y cuándo preocuparse',
+  updated: '2026-10-26',
+  title: 'Dolor en el empeine del pie sin inflamación: causas',
   description:
-    'Dolor en el empeine del pie: tendinitis de los extensores por cordones apretados, fractura por estrés, espolones óseos, gota y nervios. Cuándo consultar.',
-  h1: 'Dolor en el empeine del pie: qué lo causa y cuándo consultar a un profesional de la salud',
+    'Por qué duele el empeine del pie sin inflamación: tendinitis por cordones apretados, nervios, fractura por estrés. Cómo distinguirlas y qué hacer.',
+  h1: 'Dolor en el empeine del pie sin inflamación: por qué duele y qué hacer',
   lede:
-    'El dolor en el empeine del pie es menos común que el dolor de talón o de arco, pero puede hacer que cada paso moleste, sobre todo con zapatos. La causa más frecuente es la tendinitis de los extensores, una irritación de los tendones que levantan los dedos, muchas veces por cordones apretados o un aumento repentino de actividad. Otras causas incluyen la fractura por estrés, los espolones óseos, la gota y la compresión de un nervio. La mayoría responde a cambios sencillos, pero algunas necesitan estudios de imagen o una visita a un profesional de la salud.',
+    'Si te duele el empeine del pie sin hinchazón ni enrojecimiento, empieza por la causa más frecuente de dolor en el empeine en general, la **tendinitis de los extensores**: los tendones que levantan los dedos se irritan por cordones apretados, una lengüeta rígida o un aumento repentino de actividad. Si el dolor es tipo ardor u hormigueo, apunta a un nervio comprimido. Lo que hay que descartar es una fractura por estrés: dolor en un solo punto que empeora a lo largo del día.',
   intro: [
-    'El empeine del pie se llama dorso. Varios tendones, nervios y huesos pequeños están justo debajo de la superficie, lo que hace que la zona sea vulnerable a la presión de los zapatos y al sobreuso. Esta página cubre las causas más comunes, qué puedes hacer en casa, qué dice la evidencia sobre el ejercicio para esta zona y dónde están los vacíos reales de la investigación.',
+    'El primer paso más rápido para la tendinitis suele ser cambiar la forma de atar los cordones, saltándote el ojal justo sobre el punto que duele. Abajo están las causas, cómo distinguirlas y cuándo consultar a un profesional de la salud.',
   ],
   toc: true,
   takeaways: [
-    'La tendinitis de los extensores, una inflamación de los tendones que levantan los dedos, es la causa más frecuente de dolor en el empeine. Los cordones apretados y un aumento repentino de actividad son los detonantes habituales.',
-    'La fractura por estrés de un metatarsiano es la causa más importante que hay que descartar. El dolor está en un solo punto, empeora a lo largo del día y puede no verse en una radiografía durante las primeras dos o tres semanas.',
-    'Cambiar la forma de atar los cordones, saltándote el ojal justo sobre el punto que duele, suele ser el primer paso más rápido para la tendinitis de los extensores.',
-    'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine. El ejercicio aborda factores que contribuyen, como la rigidez de pantorrilla y la debilidad del tibial anterior, no el dolor del empeine directamente.',
+    'La tendinitis de los extensores, una irritación de los tendones que levantan los dedos, es la causa más frecuente de dolor en el empeine. Los cordones apretados y un aumento repentino de actividad son los detonantes habituales.',
+    'Si el empeine solo duele con zapatos y deja de doler al andar descalzo, la presión del zapato es el factor más probable.',
+    'La fractura por estrés de un metatarsiano es la causa más importante que hay que descartar: duele en un solo punto, empeora a lo largo del día y puede no verse en una radiografía durante las primeras dos o tres semanas.',
+    'Un dolor tipo ardor u hormigueo que se irradia hacia los dedos sugiere la irritación de un nervio, no una tendinitis.',
+    'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine. El ejercicio aborda factores que contribuyen, como la rigidez de pantorrilla y la debilidad del tibial anterior.',
   ],
   sections: [
     {
-      h2: '¿Dónde está el empeine?',
-      paragraphs: [
-        'El empeine es la parte de arriba del pie, entre el tobillo y el comienzo de los dedos. El [Diccionario de la lengua española](https://dle.rae.es/empeine) lo define como la «parte superior del pie, que está entre la caña de la pierna y el principio de los dedos». En medicina se llama dorso del pie. El mismo diccionario usa «empeine» también para la parte baja del vientre, entre las ingles, pero esta página trata solo del pie.',
-        'Debajo de la piel del empeine hay varias estructuras:',
-        {
-          list: [
-            '**Huesos.** Los huesos del medio del pie (el navicular, los tres cuneiformes y el cuboides) y la parte de arriba de los cinco metatarsianos, los huesos largos que llegan hasta los dedos.',
-            '**Tendones.** Los tendones extensores bajan por delante del tobillo y cruzan el empeine: el del tibial anterior, que levanta el pie, y los de los músculos que levantan el dedo gordo y los demás dedos.',
-            '**Arteria y nervio.** La arteria dorsal del pie y el nervio peroneo profundo recorren el empeine. Ese nervio da la sensibilidad de la piel entre el dedo gordo y el segundo dedo.',
-          ],
-        },
-        'Por eso un cordón apretado o una lengüeta rígida se notan tanto en esta zona. Las causas más comunes del dolor en el empeine están en la siguiente sección.',
-      ],
-      cites: [CITE.statpearlsFootBones, CITE.statpearlsFootMuscles, CITE.statpearlsFootArteries, CITE.statpearlsDeepPeroneal],
-    },
-    {
-      h2: '¿Qué causa el dolor en el empeine del pie?',
+      h2: '¿Por qué duele el empeine del pie?',
       keyFact: 'Una fractura por estrés de un metatarsiano puede no aparecer en una radiografía simple hasta dos o tres semanas después de empezar los síntomas, por lo que una resonancia magnética puede confirmarla antes (Patel y colegas, 2011).',
       paragraphs: [
-        '**Tendinitis de los extensores** es la causa más común. Los tendones extensores recorren el empeine del pie desde la tibia hasta los dedos. Levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor a lo largo del empeine que empeora con la actividad y muchas veces duele cuando jalas los dedos hacia arriba contra resistencia. Los detonantes habituales son:',
+        '**Tendinitis de los extensores (tendinitis del empeine).** Es la causa más común. Los tendones extensores recorren el empeine desde la tibia hasta los dedos y levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor amplio a lo largo del empeine que empeora con la actividad y muchas veces al levantar los dedos contra resistencia. Los detonantes habituales son:',
         {
           list: [
             'Cordones de zapato que presionan directo sobre los tendones.',
@@ -57,60 +44,56 @@ export const TOP_OF_FOOT_ES: Guide = {
             'Zapatos con una lengüeta rígida.',
           ],
         },
-        '**Fractura por estrés de un metatarsiano** es una pequeña fisura en uno de los huesos largos del pie, casi siempre en el segundo o el tercero. El dolor está más localizado que el de la tendinitis, se centra en un solo punto y tiende a empeorar a lo largo del día. La hinchazón en el empeine es común. Las fracturas por estrés pueden tardar dos o tres semanas en aparecer en una radiografía simple, así que los estudios tempranos pueden necesitar una resonancia magnética. Este caso requiere reposo, no ejercicio.',
-        '**Espolón óseo dorsal** (también llamado exostosis metatarsal) es un bulto de hueso que se forma en la parte de arriba de las articulaciones del pie medio, normalmente donde los metatarsianos se juntan con los cuneiformes. Se desarrolla gradualmente por años de compresión en esas articulaciones. El espolón en sí puede no doler, pero puede presionar contra la lengüeta del zapato o irritar un nervio que pasa por encima.',
-        '**Gota** puede causar un dolor repentino e intenso en el empeine del pie, casi siempre en la articulación del dedo gordo. La articulación se pone roja, hinchada, caliente y extremadamente sensible. La gota se produce por depósitos de cristales de ácido úrico y necesita manejo médico. El ejercicio no ayuda durante un episodio agudo de gota.',
-        '**Irritación de un nervio** puede venir de la compresión del nervio peroneo profundo o del nervio peroneo superficial por zapatos apretados, hinchazón o un espolón óseo. El dolor tiende a ser tipo ardor u hormigueo más que un dolor profundo y sordo, y puede irradiarse hacia los dedos o subir por el tobillo.',
-        '**Artritis del pie medio** involucra las articulaciones pequeñas en la parte de arriba del pie, normalmente por desgaste o una lesión previa. El dolor es rígido y sordo, empeora después de estar de pie o caminar mucho rato, y puede venir con un engrosamiento visible sobre las articulaciones.',
+        '**Irritación de un nervio.** El nervio peroneo profundo o el superficial se pueden comprimir por zapatos apretados, hinchazón o un espolón óseo. El dolor es tipo ardor u hormigueo más que un dolor sordo, y puede irradiarse hacia los dedos o subir por el tobillo.',
+        '**Fractura por estrés de un metatarsiano.** Es una pequeña fisura en uno de los huesos largos del pie, casi siempre el segundo o el tercero. El dolor se centra en un solo punto y tiende a empeorar a lo largo del día. La hinchazón en el empeine es común. Este caso requiere reposo, no ejercicio (más abajo hay una sección propia).',
+        '**Espolón óseo dorsal** (exostosis metatarsal). Es un bulto de hueso en la parte de arriba del pie medio, normalmente donde los metatarsianos se juntan con los cuneiformes, que se forma por años de compresión. Puede no doler por sí mismo, pero presiona contra la lengüeta del zapato o irrita un nervio que pasa por encima.',
+        '**Artritis del pie medio.** Afecta las articulaciones pequeñas de la parte de arriba del pie, normalmente por desgaste o una lesión previa. El dolor es rígido y sordo, empeora después de estar de pie o caminar mucho rato y puede venir con un engrosamiento visible sobre las articulaciones.',
+        '**Gota.** Aquí sí hay inflamación evidente: un dolor repentino e intenso, muchas veces de la noche a la mañana, con la articulación roja, hinchada y caliente, casi siempre la del dedo gordo, aunque puede afectar el pie medio. Se produce por cristales de ácido úrico, se confirma con análisis de sangre y a veces del líquido articular, y se maneja con medicamentos y cambios en la alimentación. El ejercicio no ayuda durante un episodio.',
       ],
       cites: [CITE.patelStressFracture],
     },
     {
       h2: '¿Cómo distinguir estas causas?',
       paragraphs: [
-        'La ubicación y el patrón son las primeras pistas:',
+        'La ubicación y el patrón del dolor son las primeras pistas:',
         {
           list: [
-            '**La tendinitis de los extensores** produce un dolor amplio a lo largo de los tendones que empeora cuando jalas los dedos hacia arriba.',
-            '**Una fractura por estrés** duele en un solo punto y empeora a lo largo del día.',
-            '**La gota** aparece de golpe, normalmente en la articulación del dedo gordo, con enrojecimiento y calor.',
-            '**El dolor de nervio** tiende a ser tipo ardor u hormigueo, no un dolor profundo y sordo.',
+            '**Tendinitis de los extensores:** dolor amplio a lo largo de los tendones que empeora al levantar los dedos.',
+            '**Nervio:** ardor u hormigueo, no un dolor profundo y sordo.',
+            '**Fractura por estrés:** un solo punto muy sensible sobre un hueso, que empeora a lo largo del día.',
+            '**Gota:** aparece de golpe, con enrojecimiento y calor sobre una articulación.',
           ],
         },
-        'Un profesional de la salud muchas veces puede notar la diferencia con un examen físico. La extensión de los dedos contra resistencia (jalar los dedos hacia arriba contra presión) reproduce el dolor de la tendinitis. Un punto muy sensible sobre un hueso con hinchazón localizada sugiere una fractura por estrés. Si se sospecha una fractura por estrés, los estudios de imagen son importantes porque seguir cargando un hueso fracturado puede empeorarlo.',
         'Si el dolor solo está presente con zapatos y se va al andar descalzo, **la presión del zapato es el factor más probable.** Si persiste en reposo o te despierta por la noche, vale la pena investigar algo más allá de una simple tendinitis.',
+        'Un profesional de la salud muchas veces puede notar la diferencia con un examen físico: la extensión de los dedos contra resistencia reproduce el dolor de la tendinitis, y un punto muy sensible sobre un hueso con hinchazón localizada sugiere una fractura por estrés.',
       ],
     },
     {
-      h2: '¿Qué ayuda con la tendinitis de los extensores?',
+      h2: '¿Qué ayuda con la tendinitis del empeine?',
       paragraphs: [
-        '**El primer paso más rápido suele ser cambiar la forma de atar los cordones.** Sáltate el ojal justo sobre el punto que duele. Muchos zapatos deportivos tienen suficientes ojales para pasar el cordón alrededor de la zona sensible sin perder soporte en el resto. Esto quita la presión directa que empezó el problema.',
-        'Los zapatos con una lengüeta acolchada o flexible comprimen menos los tendones. Si usas botas, tacos o zapatos de vestir con un empeine rígido, la presión desde arriba del zapato muchas veces es toda la historia.',
-        'Reducir temporalmente la actividad que detonó el dolor ayuda. Si el dolor empezó cuando aumentaste la distancia que caminas o corres, baja al nivel anterior por una o dos semanas y después sube de nuevo gradualmente.',
-        'Hielo sobre los tendones adoloridos por 10 a 15\u00A0minutos después de la actividad puede ayudar a calmar la irritación en los primeros días. Los antiinflamatorios son una opción a corto plazo si el dolor interfiere con la vida diaria, pero no aceleran la recuperación de fondo.',
+        '**Cambia la forma de atar los cordones.** Sáltate el ojal justo sobre el punto que duele. Muchos zapatos deportivos tienen suficientes ojales para pasar el cordón alrededor de la zona sensible sin perder sujeción en el resto. Así quitas la presión directa que empezó el problema.',
+        '**Revisa el zapato.** Una lengüeta acolchada o flexible comprime menos los tendones. Con botas, calzado deportivo de tacos o zapatos de vestir de empeine rígido, la presión desde arriba muchas veces lo explica todo.',
+        '**Baja la actividad que lo detonó.** Si el dolor empezó cuando aumentaste la distancia que caminas o corres, vuelve al nivel anterior durante una o dos semanas y después sube de nuevo poco a poco.',
+        '**Hielo y antiinflamatorios, a corto plazo.** Hielo sobre los tendones doloridos durante 10 a 15\u00A0minutos después de la actividad puede ayudar con la irritación en los primeros días. Los antiinflamatorios son una opción a corto plazo si el dolor interfiere con la vida diaria, pero no aceleran la recuperación de fondo.',
       ],
     },
     {
-      h2: '¿El ejercicio ayuda con el dolor en el empeine?',
+      h2: 'Ejercicios para los factores que contribuyen',
       paragraphs: [
-        'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine o la tendinitis de los extensores. La verdad es que **no sabemos si el ejercicio acelera la recuperación de la tendinitis de los extensores** comparado con cambiar los cordones y descansar.',
-        'Lo que el ejercicio puede abordar son los factores que contribuyen. El tibial anterior, el músculo del frente de la tibia que levanta el pie, también es un extensor. Cuando está débil en comparación con la pantorrilla, los tendones extensores más pequeños del empeine cargan más al caminar.',
-        'Fortalecer el tibial anterior con elevaciones de la punta del pie (levantar la parte delantera del pie estando de pie contra una pared) es una forma de reducir ese desequilibrio. Mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más sobre el tibial anterior.',
-        'El estiramiento de pantorrilla es relevante si la dorsiflexión del tobillo está limitada. Cuando el tobillo no se dobla lo suficiente, el pie compensa de formas que pueden aumentar el estrés en las estructuras del empeine. La pantorrilla rígida también es un factor de riesgo compartido con la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y la sobrecarga de la parte delantera del pie.',
-        'Para los espolones óseos y la artritis del pie medio, el ejercicio no cambia la anatomía ósea. El trabajo de movilidad del tobillo puede ayudar a mantener el rango, y el fortalecimiento puede reducir los síntomas, pero el espolón o la degeneración articular se quedan. Para las fracturas por estrés, el ejercicio no es el camino hasta que el hueso se haya recuperado.',
-      ],
-      cites: [CITE.patelGastrocnemius, CITE.riddle],
-    },
-    {
-      h2: 'Ejercicios que abordan los factores que contribuyen',
-      paragraphs: [
-        'Estos ejercicios no trabajan el empeine directamente. Abordan la rigidez de pantorrilla y la debilidad de la tibia, que son factores que contribuyen a la sobrecarga de los tendones extensores. Si tu dolor en el empeine es por una fractura por estrés, gota o un problema activo de nervio, sáltalos y consulta primero a un profesional de la salud.',
+        'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine o la tendinitis de los extensores, así que **no sabemos si el ejercicio acelera la recuperación** comparado con cambiar los cordones y descansar. Lo que sí puede abordar son dos factores que contribuyen:',
+        {
+          list: [
+            '**Un tibial anterior débil.** Este músculo del frente de la tibia levanta el pie y también es un extensor. Cuando está débil en comparación con la pantorrilla, los tendones extensores más pequeños del empeine cargan más al caminar. Más sobre él en [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/).',
+            '**Una pantorrilla rígida.** Si el tobillo no se dobla lo suficiente, el pie compensa de formas que pueden aumentar el estrés en el empeine. La pantorrilla rígida también es un factor de riesgo compartido con la [fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+          ],
+        },
+        'Si tu dolor en el empeine es por una fractura por estrés, gota o un problema activo de nervio, sáltate estos ejercicios y consulta primero a un profesional de la salud. Para los espolones óseos y la artritis del pie medio, el ejercicio puede ayudar a mantener el rango y reducir síntomas, pero no cambia el hueso.',
       ],
       exercises: [
         {
           name: 'Elevaciones de tibial anterior',
-          dose: '3\u00A0series de 15',
-          how: 'Párate con la espalda contra una pared y los pies como a un pie de distancia. Levanta la parte delantera de los dos pies del piso, jalando los dedos hacia las tibias. Baja despacio. Esto fortalece el tibial anterior, el músculo principal que levanta el pie.',
+          dose: '3\u00A0series de 10',
+          how: 'Ponte de pie con la espalda contra una pared y los pies a unos 30\u00A0cm de ella. Levanta la parte delantera de los dos pies del suelo, llevando los dedos hacia las tibias. Baja despacio. Fortalece el tibial anterior, el músculo principal que levanta el pie.',
           often: 'Días de fuerza',
           feel: 'Trabajo a lo largo del frente de la tibia',
           stop: 'Dolor en el empeine por encima de 4/10',
@@ -121,7 +104,7 @@ export const TOP_OF_FOOT_ES: Guide = {
         },
         {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
-          dose: '2\u00A0series de 30\u00A0segundos, cada pierna',
+          dose: '3\u00A0series de 30\u00A0segundos, cada pierna',
           how: 'Manos en la pared. Pierna de atrás estirada, talón abajo, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla. Una pantorrilla rígida limita la dorsiflexión del tobillo, lo que puede pasar estrés al empeine.',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
@@ -133,8 +116,8 @@ export const TOP_OF_FOOT_ES: Guide = {
         },
         {
           name: 'Movilidad de tobillo',
-          dose: '10\u00A0movimientos lentos, cada pie',
-          how: 'Párate frente a una pared con un pie adelante, manos en la pared. Lleva la rodilla hacia adelante sobre los dedos manteniendo el talón en el piso. Regresa y repite. Esto mejora suavemente el rango de dorsiflexión.',
+          dose: '2\u00A0series de 15, cada pie',
+          how: 'Ponte de pie frente a una pared con un pie adelante, manos en la pared. Lleva la rodilla hacia adelante sobre los dedos manteniendo el talón en el suelo. Vuelve atrás y repite. Mejora suavemente el rango de dorsiflexión.',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte delantera del tobillo',
           stop: 'Dolor en el empeine durante el movimiento',
@@ -144,72 +127,58 @@ export const TOP_OF_FOOT_ES: Guide = {
           alt: 'Una figura empuja la rodilla hacia adelante sobre los dedos en una pared, con el tobillo resaltado',
         },
       ],
-      cites: [CITE.guideline],
+      cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
     },
     {
       h2: '¿Cuándo el dolor en el empeine es una fractura por estrés?',
       paragraphs: [
-        'La fractura por estrés de un metatarsiano es la causa que más importa descartar, porque seguir cargando un hueso fracturado puede convertir una fisura pequeña en una fractura completa.',
-        'Las fracturas por estrés suelen desarrollarse gradualmente por impacto repetitivo. Son más comunes en:',
-        {
-          list: [
-            'Corredores.',
-            'Reclutas militares.',
-            'Personas que aumentaron su actividad de golpe.',
-          ],
-        },
-        'El dolor está en un solo punto, empeora con la actividad que carga peso y puede doler de noche. La hinchazón en el empeine sobre el hueso que duele es común.',
-        'Una radiografía simple puede no mostrar una fractura por estrés en las primeras dos o tres semanas. Si un profesional de la salud sospecha una, una resonancia magnética o una gammagrafía ósea puede confirmarla antes. El enfoque es reposo y carga de peso protegida, no ejercicio. Volver a la actividad demasiado pronto puede llevar a una fractura completa.',
+        'Es la causa que más importa descartar, porque seguir cargando un hueso fisurado puede convertir una fisura pequeña en una fractura completa. Suele desarrollarse poco a poco por impacto repetitivo y es más común en corredores, reclutas militares y personas que aumentaron su actividad de golpe.',
+        'El dolor está en un solo punto, empeora con la actividad que carga peso y puede doler de noche. Una radiografía simple puede no mostrarla en las primeras dos o tres semanas; si un profesional de la salud la sospecha, una resonancia magnética o una gammagrafía ósea puede confirmarla antes. El enfoque es reposo y carga de peso protegida, no ejercicio, y volver a la actividad demasiado pronto puede llevar a una fractura completa.',
         'Si el dolor apareció después de un salto en el volumen de entrenamiento, está en un solo punto y empeora a lo largo del día, **consulta a un profesional de la salud antes de hacer cualquiera de los ejercicios de esta página.**',
       ],
       cites: [CITE.patelStressFracture],
     },
     {
-      h2: '¿Y la gota en el empeine?',
+      h2: '¿Dónde está el empeine y qué hay debajo?',
       paragraphs: [
-        'La gota es una afección inflamatoria causada por cristales de ácido úrico que se depositan en una articulación. Clásicamente afecta la articulación del dedo gordo (la primera metatarsofalángica), pero puede afectar cualquier articulación del pie, incluido el pie medio.',
-        'Un episodio de gota aparece rápido, muchas veces de la noche a la mañana. La articulación se vuelve intensamente dolorosa, roja, caliente e hinchada. Se ve y se siente diferente de la tendinitis o de una fractura por estrés. Si tienes un dolor repentino e intenso en una sola articulación con enrojecimiento y calor, es una razón para consultar a un profesional de la salud pronto. Los análisis de sangre y a veces el análisis del líquido articular confirman el diagnóstico.',
-        '**La gota necesita manejo médico.** El ejercicio, los cambios de zapatos y los estiramientos no ayudan durante un episodio agudo. Entre episodios, mantener la movilidad del pie y el tobillo es razonable, pero el problema de fondo con el ácido úrico se maneja con medicamentos y cambios en la alimentación.',
+        'El empeine es la parte de arriba del pie, entre el tobillo y el comienzo de los dedos. El [Diccionario de la lengua española](https://dle.rae.es/empeine) lo define como la «parte superior del pie, que está entre la caña de la pierna y el principio de los dedos». En medicina se llama dorso del pie. Debajo de la piel hay:',
+        {
+          list: [
+            '**Huesos:** el navicular, los tres cuneiformes y el cuboides, y la parte de arriba de los cinco metatarsianos, los huesos largos que llegan hasta los dedos.',
+            '**Tendones:** el del tibial anterior, que levanta el pie, y los de los músculos que levantan el dedo gordo y los demás dedos.',
+            '**Arteria y nervio:** la arteria dorsal del pie y el nervio peroneo profundo, que da la sensibilidad de la piel entre el dedo gordo y el segundo dedo.',
+          ],
+        },
+        'Como todo está justo bajo la piel, un cordón apretado o una lengüeta rígida se notan tanto en esta zona.',
       ],
+      cites: [CITE.statpearlsFootBones, CITE.statpearlsFootMuscles, CITE.statpearlsFootArteries, CITE.statpearlsDeepPeroneal],
     },
   ],
   faq: [
     {
-      q: '¿Por qué me duele el empeine del pie al caminar?',
-      a: 'La causa más común es la tendinitis de los extensores, donde los tendones que levantan los dedos se irritan por zapatos apretados, cordones que presionan sobre los tendones o un aumento repentino en la distancia que caminas. Otras causas incluyen la fractura por estrés, los espolones óseos y la compresión de un nervio. Si el dolor solo está con zapatos y desaparece al andar descalzo, la presión del zapato es el factor más probable.',
+      q: '¿Qué puede ser cuando te duele el empeine del pie sin inflamación?',
+      a: 'La causa más común de dolor en el empeine en general es la tendinitis de los extensores, una irritación de los tendones que levantan los dedos por cordones apretados, una lengüeta rígida o más actividad de golpe. Un dolor tipo ardor u hormigueo apunta a un nervio comprimido. Si el dolor está en un solo punto y empeora durante el día, conviene descartar una fractura por estrés.',
     },
     {
-      q: '¿Los cordones apretados pueden causar dolor en el empeine?',
-      a: 'Sí. Los tendones extensores pasan justo debajo de la superficie del empeine, y los cordones apretados presionan directo sobre ellos. Saltarte el ojal sobre el punto que duele o cambiar a zapatos con una lengüeta más suave muchas veces resuelve el dolor en pocos días. Es una de las causas más comunes y más fáciles de corregir del dolor en el empeine.',
+      q: '¿Cómo quitar el dolor del empeine del pie?',
+      a: 'Si es tendinitis de los extensores, el primer paso suele ser atar los cordones saltándote el ojal sobre el punto que duele y usar zapatos con lengüeta suave. Reduce durante una o dos semanas la actividad que lo detonó. Hielo de 10 a 15\u00A0minutos tras la actividad y antiinflamatorios a corto plazo pueden ayudar, pero no aceleran la recuperación.',
+    },
+    {
+      q: '¿Cómo se siente la tendinitis en el empeine?',
+      a: 'La tendinitis de los extensores se siente como un dolor amplio a lo largo del empeine, del tobillo hacia los dedos. Empeora al levantar los dedos, al caminar o correr y con zapatos apretados. A diferencia de una fractura por estrés, el dolor se reparte a lo largo de los tendones en vez de concentrarse en un solo punto del hueso.',
     },
     {
       q: '¿Cómo saber si el dolor en el empeine es una fractura por estrés?',
       cites: [CITE.patelStressFracture],
-      a: 'Una fractura por estrés tiende a doler en un punto específico, empeora a lo largo del día y con la actividad, y puede hincharse en el empeine. Muchas veces sigue a un aumento repentino en el volumen de entrenamiento. Las fracturas por estrés tempranas pueden no verse en una radiografía durante dos o tres semanas. Si el dolor es localizado, progresivo y relacionado con la actividad, consulta a un profesional de la salud para que te hagan estudios de imagen en vez de seguir haciendo ejercicio.',
-    },
-    {
-      q: '¿El ejercicio ayuda con el dolor en el empeine?',
-      a: 'Ningún ensayo ha probado el ejercicio para el dolor en el empeine específicamente. El ejercicio puede abordar factores que contribuyen: el fortalecimiento del tibial anterior reduce la carga sobre los tendones extensores más pequeños, y el estiramiento de pantorrilla mejora la movilidad del tobillo. Pero para las fracturas por estrés, la gota o los problemas de nervios, el ejercicio es ineficaz o contraproducente. La causa determina si el ejercicio tiene sentido.',
-    },
-    {
-      q: '¿Cómo se siente la tendinitis de los extensores?',
-      a: 'La tendinitis de los extensores se siente como un dolor amplio a lo largo del empeine del pie, del tobillo hacia los dedos. Empeora cuando jalas los dedos hacia arriba, al caminar o correr, o al usar zapatos apretados. A diferencia de una fractura por estrés, el dolor se reparte a lo largo de los tendones en vez de concentrarse en un solo punto óseo.',
-    },
-    {
-      q: '¿La gota puede causar dolor en el empeine?',
-      a: 'Sí. La gota clásicamente afecta la articulación del dedo gordo, pero también puede afectar las articulaciones del pie medio. Un episodio de gota aparece de golpe, muchas veces de la noche a la mañana, con dolor intenso, enrojecimiento, calor e hinchazón en una sola articulación. Se ve diferente de la tendinitis o de una fractura por estrés. Necesita manejo médico, no ejercicio.',
-    },
-    {
-      q: '¿Debo ir al médico por dolor en el empeine?',
-      a: 'Consulta a un profesional de la salud si el dolor está en un solo punto y empeora, si hay enrojecimiento o calor sobre la zona que duele, si el dolor sigue después de una semana de reposo y cambio de zapatos, si apareció de golpe después de una lesión, o si hay entumecimiento u hormigueo. Las fracturas por estrés, la gota y los problemas de nervios se benefician de una evaluación temprana.',
+      a: 'Una fractura por estrés duele en un punto concreto, empeora a lo largo del día y con la actividad, y muchas veces sigue a un aumento repentino del entrenamiento. Puede no verse en una radiografía durante dos o tres semanas. Si el dolor es localizado y progresivo, consulta a un profesional de la salud para estudios de imagen en vez de seguir entrenando.',
     },
     {
       q: '¿Puedo seguir caminando con tendinitis de los extensores?',
-      a: 'Sí, caminar con tendinitis de los extensores suele estar bien si el dolor se mantiene leve y no empeora. Elige zapatos con una lengüeta suave y flexible, y afloja o cambia la forma de atar los cordones para quitar presión de los tendones adoloridos. Si caminar aumenta mucho el dolor o la molestia se queda horas después, reduce la distancia hasta que el cambio de cordones y el descanso lo bajen.',
+      a: 'Sí, caminar suele estar bien si el dolor se mantiene leve y no empeora. Elige zapatos con una lengüeta suave y flexible, y afloja o cambia la forma de atar los cordones para quitar presión de los tendones. Si caminar aumenta mucho el dolor o la molestia dura horas después, reduce la distancia hasta que el cambio de cordones y el descanso lo bajen.',
     },
     {
-      q: '¿Cuánto tiempo tarda en mejorar la tendinitis de los extensores del pie?',
-      a: 'Ningún ensayo ha dado seguimiento al tiempo de recuperación de la tendinitis de los extensores en concreto, así que no hay un plazo comprobado. Los casos leves causados por cordones apretados suelen calmarse en cuanto se quita la presión. Los casos ligados a un aumento de entrenamiento, o a presión constante del zapato, pueden tardar más, a veces varias semanas, sobre todo si el detonante no se resuelve del todo.',
+      q: '¿Cuánto tarda en mejorar la tendinitis del empeine?',
+      a: 'Ningún ensayo ha medido el tiempo de recuperación de la tendinitis de los extensores, así que no hay un plazo comprobado. Los casos leves causados por cordones apretados suelen calmarse en cuanto se quita la presión. Los ligados a un aumento de entrenamiento o a presión constante del zapato pueden tardar más, a veces varias semanas, sobre todo si el detonante sigue presente.',
     },
   ],
   redFlags: {
@@ -227,7 +196,7 @@ export const TOP_OF_FOOT_ES: Guide = {
   },
   program: {
     h2: 'Cómo convertirlo en un plan',
-    text: 'Walkito está construido alrededor del dolor de talón y el pie plano, no del dolor en el empeine específicamente. Pero si la sobrecarga de los tendones extensores es parte de tu panorama, el fortalecimiento del tibial anterior (elevaciones de la punta del pie) y el estiramiento de pantorrilla en la app abordan los desequilibrios musculares que contribuyen. Marcar el empeine en el mapa de dolor durante un check-in le permite a la app rastrear si el dolor está cambiando junto con tus ejercicios.',
+    text: 'Walkito está construido alrededor del dolor de talón y el pie plano, no del dolor en el empeine específicamente. Pero si la sobrecarga de los tendones extensores es parte de tu caso, las elevaciones de tibial anterior y el estiramiento de pantorrilla de la app abordan los desequilibrios musculares que contribuyen. Marcar el empeine en el mapa de dolor durante un check-in permite a la app seguir si el dolor cambia junto con tus ejercicios.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio. Walkito no diagnostica el dolor en el empeine. Si sospechas una fractura por estrés, gota o un problema de nervio, consulta a un profesional de la salud antes de empezar cualquier programa de ejercicio.',
     ],

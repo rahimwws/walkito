@@ -13,9 +13,9 @@ import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { faqSchema } from '@/lib/schema';
 import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
 
-const TITLE = 'Heel Pain Exercise App: Questions and Answers';
+const TITLE = 'Walkito FAQ: Price, Platforms, Sessions, Privacy';
 const DESCRIPTION =
-  'How the Walkito heel pain plan works: sessions, goals, tests, bad mornings, running, Apple Health, privacy and pricing, and what the research says.';
+  'Is Walkito free, iPhone or Android, which languages, how long sessions are, how often to train, pain and safety, your data, cancelling, and walkito.com.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -89,15 +89,16 @@ export default function Faq() {
       <Masthead current="faq" />
 
       <Prose className="shell prose" kicker={{ label: c.navQuestions, lang: 'en', num: String(FAQ.length) }}>
-        <h1>Heel pain exercise app: questions and answers</h1>
+        <h1>Walkito FAQ: questions and answers</h1>
         <Byline lang="en" />
 
         <p className="lede">
-          Walkito is an exercise plan for heel pain, arch pain and flexible flat
-          feet. It has no fixed length. It builds one week at a time around a
-          goal you can measure, and each day adapts to how your morning felt.
-          Below is what Walkito asks of you, what it does with what you log,
-          what the research found, and what it will never do.
+          Straight answers to the questions people ask about the Walkito app:
+          what it costs, which phones and languages it comes in, how long
+          sessions take and how often you train, what it does when pain flares,
+          what happens to your data and how to cancel. Each answer stands on
+          its own. Who makes Walkito and how the guides are written and checked
+          is on <a href="/about/">the About page</a>.
         </p>
 
         <nav className="toc" aria-label={c.contents}>

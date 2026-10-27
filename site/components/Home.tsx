@@ -211,18 +211,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'What is Walkito?',
-        a: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet. It builds a plan from your answers, with 3, 5 or 10 minute sessions on the 3, 5 or 7 days a week you pick, and adjusts it to how your feet feel each morning. It is not related to walkito.com, a dog-walking service.',
-      },
-      {
-        q: 'How long until I feel a difference?',
-        a: `It depends on the person and the pain. The plan is built one week at a time around a goal you can measure, and a test every ${testEveryDays} days shows you what’s actually changing.`,
-      },
-      {
-        q: 'Do I need equipment?',
-        // Follows the app: `EQUIPMENT` in catalogue-meta.ts lists a step, band,
-        // towel, pillow and ball, onboarding asks which you have, and exercises
-        // that need something missing are left out of the plan.
-        a: 'No. Some exercises use a towel, a step or stairs, a resistance band, a pillow or a massage ball, and Walkito asks what you have. Anything that needs something you don’t have is left out of your plan.',
+        a: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet. It builds a plan from your answers, with 3, 5 or 10-minute sessions on the 3, 5 or 7 days a week you pick, and adjusts it to how your feet feel each morning. It is not related to walkito.com, a dog-walking service.',
       },
       {
         q: 'Is it for flat feet?',
