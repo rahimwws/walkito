@@ -13,7 +13,7 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-26
+Last updated: 2026-10-27
 
 ## Key facts
 - No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
@@ -144,7 +144,7 @@ Last updated: 2026-10-26
   plan follows, with stated limitations
 - [Questions](https://walkito.site/faq/): sessions, goals, tests, Apple Health,
   notifications, the streak, and the clinical questions people ask
-- [About Walkito](https://walkito.site/about/): What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.
+- [About Walkito](https://walkito.site/about/): Walkito is made by co-founders Rahim Hudaykulyyev and Rahman Bazarov. How its guides are sourced and checked, our corrections policy, and key facts.
 - [Walkito in ChatGPT and Claude](https://walkito.site/ai/): the Walkito tools inside
   ChatGPT and Claude (exercises with short videos, a starter plan, when to see
   a doctor), example prompts, and privacy: nothing typed in the chat is stored
@@ -272,8 +272,8 @@ own full-text file.
 - [How the plan works](https://walkito.site/es/programa/)
 - [Evidence](https://walkito.site/es/evidencia/)
 - [Questions](https://walkito.site/es/preguntas-frecuentes/)
-- [Ejercicios y estiramientos para la fascitis plantar y el dolor de talón](https://walkito.site/es/ejercicios-fascitis-plantar/): Ocho ejercicios y estiramientos para la fascitis plantar y el dolor de talón que puedes hacer en casa: dosis, qué evitar y los grados de la guía de 2023.
-- [Ejercicios para el pie plano y el dolor en el arco](https://walkito.site/es/ejercicios-pie-plano/): Ejercicios para pie plano flexible y arcos caídos: dosis, frecuencia, qué debes sentir, qué encontraron los estudios y qué hacer si te duele el arco.
+- [Ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/): Los estiramientos de fascia plantar y pantorrilla con grado A y la fuerza de pantorrilla con grado B: dosis, mejor momento para estirar y qué evitar.
+- [Ejercicios para pie plano para fortalecer el arco](https://walkito.site/es/ejercicios-pie-plano/): Ejercicios para pie plano con dosis: pie corto, recoger la toalla, dedo gordo, cadera y pantorrilla. Para quién sirven y cuánto duraron los ensayos.
 - [Ejercicios para la tendinitis de Aquiles: excéntricos de talón, dosis y qué dice la investigación](https://walkito.site/es/ejercicios-tendinitis-aquiles/): Ejercicios para la tendinitis de Aquiles con dosis: excéntricos de talón, resistencia pesada y lenta, insercional vs. porción media y cuándo parar.
 - [Dolor en el arco del pie: qué lo causa y qué hacer](https://walkito.site/es/dolor-en-el-arco-del-pie/): Dolor en el arco del pie al caminar: fascitis plantar, pie plano, DTTP, pie cavo o nervio. Cómo distinguirlas, ejercicios y cuándo consultar.
 - [Dolor en la planta del pie (metatarsalgia): causas y qué ayuda](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/): Dolor en la planta del pie, detrás de los dedos: causas, metatarsalgia o neuroma de Morton, ejercicios, almohadillas metatarsales y cuándo consultar.
@@ -305,7 +305,7 @@ own full-text file.
 - [Fascitis plantar en el embarazo: por qué te duele el talón y qué es seguro hacer](https://walkito.site/es/fascitis-plantar-embarazo/): Dolor de talón en el embarazo: por qué cambia el pie, estiramientos seguros sentada o en la pared, medicamentos a evitar desde la semana 20 y alertas.
 - [Ejercicios para el espolón calcáneo: estiramientos y fortalecimiento para el dolor alrededor de un espolón](https://walkito.site/es/ejercicios-espolon-calcaneo/): Ejercicios para el espolón calcáneo: rutina de fascia plantar y pantorrilla, dosis y progresión que alivian el dolor sin disolver el espolón.
 - [Ejercicios para pie cavo: qué ayuda y qué necesita un profesional](https://walkito.site/es/ejercicios-pie-cavo/): Ejercicios para pie cavo: estiramientos de pantorrilla y fascia plantar, estabilidad de tobillo, plantillas a medida y señales de alerta neurológicas.
-- [Pie plano: qué es, qué lo causa y cuándo prestarle atención](https://walkito.site/es/pie-plano/): Qué es el pie plano, flexible o rígido, si causa problemas, pie plano adquirido del adulto, arcos caídos, ejercicios y cuándo ver a un profesional.
+- [Pie plano: qué es, qué lo causa y cuándo prestarle atención](https://walkito.site/es/pie-plano/): Qué es el pie plano, qué lo causa, flexible o rígido, cuándo consultar y dónde encontrar el test, los ejercicios y la guía de dolor en el arco.
 - [Fascitis plantar: síntomas, causas y qué ayuda según la evidencia](https://walkito.site/es/fascitis-plantar/): Qué es la fascitis plantar, sus síntomas y causas, qué recomienda la guía clínica de 2023, cuánto dura y qué ejercicios ayudan.
 - [Dolor de talón al levantarse: por qué pasa y qué hacer antes del primer paso](https://walkito.site/es/dolor-de-talon-al-levantarse/): Por qué te duele el talón al levantarte, otras causas del dolor en los primeros pasos además de la fascitis plantar y qué hacer antes de pararte.
 - [Neuroma de Morton: qué es, qué ayuda y qué dice la evidencia](https://walkito.site/es/neuroma-de-morton/): El neuroma de Morton causa ardor entre los dedos del pie. Almohadillas metatarsales, calzado, inyecciones y diferencia con la metatarsalgia.
@@ -318,11 +318,11 @@ own full-text file.
 - [Ejercicios para la periostitis tibial: qué ayuda y qué no](https://walkito.site/es/ejercicios-periostitis-tibial/): Periostitis tibial en corredores: ejercicios, dosis de inicio, qué dice la investigación, cómo distinguirla de una fractura por estrés y cuándo consultar.
 - [Dolor de pies por escritorio de pie: por qué pasa y qué ayuda](https://walkito.site/es/escritorio-de-pie-dolor-de-pies/): Por qué te duelen los pies con un escritorio de pie, cuánto tiempo estar de pie antes de sentarte, tapetes antifatiga y ejercicios para tu escritorio.
 - [¿Por qué me duelen los pies por estar de pie todo el día?](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/): Por qué te duelen los pies por estar de pie todo el día, qué ayuda (estiramientos, fuerza, medias de compresión) y cuándo consultar a un profesional.
-- [Dolor en el empeine del pie: qué lo causa y cuándo consultar a un profesional de la salud](https://walkito.site/es/dolor-en-el-empeine/): Dolor en el empeine del pie: tendinitis de los extensores por cordones apretados, fractura por estrés, espolones óseos, gota y nervios. Cuándo consultar.
+- [Dolor en el empeine del pie sin inflamación: por qué duele y qué hacer](https://walkito.site/es/dolor-en-el-empeine/): Por qué duele el empeine del pie sin inflamación: tendinitis por cordones apretados, nervios, fractura por estrés. Cómo distinguirlas y qué hacer.
 - [Walkito vs Exakt Health: ¿cuál te conviene?](https://walkito.site/es/walkito-vs-exakt-health/): ¿Buscas una alternativa a Exakt Health? Walkito vs Exakt comparadas: lesiones que cubren, precio, plataformas, cómo arman tu plan, evidencia y privacidad.
 - [Alternativas a Exakt Health: ¿qué app te conviene?](https://walkito.site/es/alternativas-a-exakt-health/): ¿Buscas una alternativa a Exakt Health? Prehab, Injurymap, Sports Injury Rehabilitation, GaitLab Coach, Hinge Health y Walkito comparadas en precio y uso.
 - [Mejor app para el pie plano: 5 apps comparadas](https://walkito.site/es/mejor-app-pie-plano/): Mejor app para el pie plano en 2026: Arch, ArchFix, Injurymap, How to Do Foot Exercises y Walkito comparadas en precio, plataformas, funciones y evidencia.
-- [Vendaje para la fascitis plantar: qué hace, cómo ponerlo y cuándo dejarlo](https://walkito.site/es/vendaje-fascitis-plantar/): Vendaje para fascitis plantar: qué dice la investigación del vendaje low-Dye y el kinesiotape, cómo ponerlos, cuánto tiempo usarlos y cuándo parar.
+- [Vendaje para la fascitis plantar: cómo ponerlo paso a paso](https://walkito.site/es/vendaje-fascitis-plantar/): Cómo poner el vendaje neuromuscular (kinesiotape) y el low-Dye para la fascitis plantar paso a paso, cuánto dejarlo y qué dicen los ensayos.
 - [Pie plano y dolor de rodilla: ¿hay relación y qué ayuda?](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/): Pie plano y dolor de rodilla: qué muestran los estudios, qué revisa un profesional, si sirven las plantillas y por qué priorizar cadera y rodilla.
 - [Pelota de masaje, rodillo o botella congelada para la fascitis plantar: qué dice la investigación](https://walkito.site/es/pelota-de-masaje-fascitis-plantar/): ¿Sirve una pelota de masaje para la fascitis plantar? Qué dicen los ensayos sobre pelotas, rodillos y botella congelada, cuánta presión y cuánto tiempo.
 - [Ejercicios para fortalecer los dedos de los pies: cómo medir su fuerza en casa y ganar fuerza de verdad](https://walkito.site/es/ejercicios-para-fortalecer-los-dedos-del-pie/): Ejercicios para fortalecer los dedos de los pies: prueba de fuerza en casa, progresión en cuatro pasos y qué dicen los estudios sobre equilibrio y caídas.
@@ -331,7 +331,7 @@ own full-text file.
 - [Ejercicios para fortalecer el tobillo: una progresión de la banda al equilibrio](https://walkito.site/es/ejercicios-para-fortalecer-el-tobillo/): Ejercicios para fortalecer el tobillo en orden: banda elástica, elevaciones y equilibrio a una pierna. Dosis, evidencia en esguinces y cuándo ir al médico.
 - [¿El pie plano empeora con la edad?](https://walkito.site/es/pie-plano-con-la-edad/): ¿El pie plano empeora con la edad? Qué cambia en el pie mayor, por qué un arco cae en la adultez, embarazo, peso, diabetes y señales para revisar.
 - [Hielo o calor para la fascitis plantar: cuál ayuda y cuándo](https://walkito.site/es/hielo-o-calor-fascitis-plantar/): ¿Hielo o calor para la fascitis plantar? Qué hace cada uno, qué hallaron los pocos ensayos, cómo usarlos con seguridad y por qué el ejercicio es la base.
-- [Ejercicios de movilidad de tobillo: cómo medir y mejorar la flexión del tobillo](https://walkito.site/es/ejercicios-de-movilidad-de-tobillo/): Ejercicios de movilidad de tobillo con dosis, la prueba de rodilla a la pared y cuándo un cambio es real, y qué dice la ciencia sobre estirar y esguinces.
+- [Ejercicios de movilidad de tobillo: 4 ejercicios y una prueba sencilla en casa](https://walkito.site/es/ejercicios-de-movilidad-de-tobillo/): 4 ejercicios de movilidad de tobillo con dosis y la evidencia de cada uno, más la prueba de rodilla a la pared para medir tu tobillo y ver si mejora.
 - [Ejercicios para fortalecer los pies: qué hacer y cómo progresar](https://walkito.site/es/ejercicios-para-fortalecer-los-pies/): Ejercicios para fortalecer los pies, músculos pequeños y grandes, de sentado a una pierna, con dosis de inicio y qué hallaron los ensayos sobre lesiones.
 - [¿Los zapatos barefoot son buenos para tus pies? Fuerza, riesgos y dolor de pie](https://walkito.site/es/zapatos-barefoot/): ¿Los zapatos barefoot son buenos para tus pies? Qué dicen los ensayos: fuerza, lesiones al cambiar, fascitis plantar, pie plano y quién debe evitarlos.
 - [¿El pie plano causa dolor de espalda? Lo que muestra la investigación](https://walkito.site/es/pie-plano-y-dolor-de-espalda/): ¿El pie plano causa dolor de espalda? Qué encontraron Framingham y los ensayos con plantillas, qué ayuda a la espalda y qué síntomas revisar primero.
