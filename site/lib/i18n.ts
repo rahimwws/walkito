@@ -43,17 +43,18 @@ export function isFullLang(lang: Lang): lang is FullLang {
 }
 
 /**
- * Languages search engines may index: the ones the app itself speaks.
+ * Languages search engines may index.
  *
- * Portuguese, French, Italian and German were kept out of search (noindex, out
- * of the sitemaps and hreflang) from 2026-10-09, until the app shipped in
- * those languages: a search visitor in French would have landed on a page for
- * an app they could not read. Walkito 1.0.3 shipped in all seven on
- * 2026-10-13, and the founders switched them on the same day. The robots tag,
- * hreflang and sitemaps all follow this one list; take a language out here to
- * hide it again. IndexNow still sends English pages only (deploy.mjs).
+ * Portuguese, French, Italian and German were out of search from 2026-10-09,
+ * on from 2026-10-13 (app shipped in all seven), and out again from
+ * 2026-10-26 (decision with Rahman): Google dropped about 186 pages from its
+ * index after the site grew to 630 pages in three weeks, and these four
+ * languages brought almost no clicks. They stay online for anyone who picks
+ * them in the menu, with `noindex`, out of the sitemaps and out of hreflang.
+ * The robots tag, hreflang and sitemaps all follow this one list; add a
+ * language back here to switch it on.
  */
-export const INDEXED_LANGS: readonly Lang[] = ['en', 'es', 'ru', 'pt', 'fr', 'it', 'de'];
+export const INDEXED_LANGS: readonly Lang[] = ['en', 'es', 'ru'];
 export function isIndexedLang(lang: string): boolean {
   return (INDEXED_LANGS as readonly string[]).includes(lang);
 }
