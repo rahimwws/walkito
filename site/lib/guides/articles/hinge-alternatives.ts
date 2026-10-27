@@ -4,26 +4,28 @@ import type { Guide } from '../types';
 /**
  * Alternatives page (plan C.7 #6). Facts: walkito-seo/research/pages/
  * hinge-alt-facts.md, verified in hinge-alt-verified.md (2026-10-11); Hinge
- * facts from hinge-facts.md (page 1). Keep the Walkito vs Hinge comparison on
- * /walkito-vs-hinge-health/ only; this page lists options. No Walkito price.
+ * facts from hinge-facts.md (page 1), cost and PHTI lines as on
+ * /hinge-health-reviews/ and /walkito-vs-hinge-health/. Keep the Walkito vs
+ * Hinge comparison on /walkito-vs-hinge-health/ only; this page lists
+ * options. No Walkito price.
  */
 export const HINGE_ALT_EN: Guide = {
   lang: 'en',
   page: 'hingeAlt',
   mainSource: CITE.cuiSwordRCT,
   published: '2026-10-11',
-  updated: '2026-10-11',
-  title: 'Hinge Health Alternatives Without an Employer Plan',
+  updated: '2026-10-26',
+  title: 'Hinge Health Alternatives: Sword, Cost and Self-Pay Options',
   description:
-    'Can\u2019t get Hinge Health? Which alternatives you can get through your plan, which you can book yourself, what they cost and what fits foot and heel pain.',
-  h1: 'Hinge Health alternatives if your employer doesn\u2019t offer it',
+    'Hinge Health alternatives compared: Sword, Omada, Vori, home and video physical therapy, apps. What Hinge costs, and what you can book without an employer.',
+  h1: 'Hinge Health alternatives, Sword Health and what Hinge costs',
   lede:
-    'If your employer or health plan does not offer Hinge Health, you cannot buy it yourself, and its closest rivals, Sword Health and Kaia, are not sold to individuals either. Options you can get on your own are physical therapy through your insurance, at home or in a clinic, self-pay video visits with a physical therapist (for example $89 for 30 minutes), and exercise apps, from free to about $300 a year. First, check whether your plan covers Sword, Omada or Vori Health.',
+    'Hinge Health\u2019s virtual program is $0 to members whose employer or health plan covers it, and you cannot buy it yourself, or buy Sword Health, its closest rival. Through a plan, the main alternatives are Sword, Omada and Vori Health. Without one, you can book a physical therapist at home or by video (Luna lists $135 a visit; Virtual Physical Therapists charges $89 for 30 minutes) or use an exercise app, from free to about $300 a year.',
   intro: [
     'Walkito is an exercise app, so we are one of the alternatives and not neutral. We checked every option on its own website and app listing on October 11, 2026, and we list Walkito apart at the end. None of these programs has been tested in a trial for foot or heel pain. For ratings, complaints and the studies behind Hinge itself, see [Hinge Health reviews](/hinge-health-reviews/).',
   ],
   takeaways: [
-    'Hinge Health is only for people covered through a partner employer or health plan; its own page says you are eligible \u201cas long as Hinge Health is covered by your employer or health insurance plan\u201d.',
+    'Hinge Health is only for people covered through a partner employer or health plan; its own page says you are eligible \u201cas long as Hinge Health is covered by your employer or health insurance plan\u201d. The virtual program is then $0 to you.',
     'Sword Health and Kaia, which agreed to join Sword in January 2026, are also only offered through employers and health plans. Omada and Vori Health go through your plan, and your usual cost share may apply.',
     'You can book some options yourself: Luna sends a physical therapist to your home ($135 a visit without insurance, or billed to insurance), and Virtual Physical Therapists charges $89 for a 30-minute video visit.',
     'In a trial of 140 people with low back pain, Sword\u2019s digital program did as well as in-person physiotherapy. No program on this page has a published trial for foot or heel pain.',
@@ -31,13 +33,6 @@ export const HINGE_ALT_EN: Guide = {
   ],
   toc: true,
   sections: [
-    {
-      h2: 'Can you get Hinge Health without your employer?',
-      paragraphs: [
-        'No. Hinge Health\u2019s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card to see whether your employer or plan covers you. There is no price and no way to pay yourself. If you are covered, Hinge says it is $0 to you.',
-        'If you lost access, for example after changing jobs, the options below are what is left. Our [Walkito vs Hinge Health](/walkito-vs-hinge-health/) page compares the two side by side.',
-      ],
-    },
     {
       h2: 'Hinge Health alternatives at a glance',
       table: {
@@ -54,25 +49,38 @@ export const HINGE_ALT_EN: Guide = {
         ],
       },
       paragraphs: [
-        'Checked October 11, 2026. We do not list Kaia separately because it is joining Sword. DarioHealth and Limber Health are also not sold to individuals; Limber works only if your physical therapy clinic enrolls you.',
+        'Checked October 11, 2026. Kaia is not listed separately because it is joining Sword. DarioHealth and Limber Health are also not sold to individuals; Limber works only if your physical therapy clinic enrolls you. First, check your benefits portal or call the number on your insurance card and ask about Sword, Omada and Vori Health by name.',
       ],
     },
     {
-      h2: 'Alternatives through your employer or health plan',
+      h2: 'How much is Hinge Health?',
       paragraphs: [
-        'Check your benefits portal or call the number on your insurance card and ask about these by name:',
+        'For most members, nothing. Hinge Health says its program \u201cis provided for free as a benefit through your employer or insurance provider\u201d with \u201cno out-of-pocket costs or copays for you\u201d. Your employer or plan pays instead, and Hinge does not publish what they pay. In-person care, where it is offered, can have a cost share on some plans.',
+        'There is no self-pay price. Hinge Health\u2019s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card. Hinge bills your health plan when you use the program and says this does not affect your benefits or deductible; billing is one of the most common complaints in [Hinge Health reviews](/hinge-health-reviews/). If you lost access, for example after changing jobs, [Walkito vs Hinge Health](/walkito-vs-hinge-health/) compares the two side by side.',
+      ],
+    },
+    {
+      h2: 'Sword Health: the closest alternative to Hinge',
+      paragraphs: [
+        '[Sword Health](https://sword.com/individuals) works much like Hinge: a Doctor of Physical Therapy plus an exercise kit that may include a tablet or sensors. Sword says it \u201cmay be offered at no cost through your employer or health plan\u201d. It does not publish a self-pay price in the US, so if your plan does not cover it you cannot buy it directly. Its [foot pain page](https://sword.com/care-explorer/foot-pain) covers pain \u201canywhere in the heel, arch, toes, or ankle\u201d.',
+        'In a trial of 140 people with low back pain, Sword\u2019s program did as well as in-person physiotherapy. The independent [Peterson Health Technology Institute](https://www.phti.org/assessment/virtual-msk-solutions) review (June 2024) put Sword and Hinge in the same physical therapist-guided group, with Omada, RecoveryOne and Vori, and found that group \u201ccomparable to in-person PT\u201d, with \u201cEvidence Certainty: Lower\u201d. For Hinge itself, PHTI found no study comparing it with in-person physical therapy.',
+        'Sword agreed to buy [Kaia Health](https://apps.apple.com/us/app/kaia-health/id1100673977) in January 2026. Kaia\u2019s App Store listing says it is \u201ccurrently not available on a self-pay basis\u201d; its app did better than physiotherapy plus online education in a German trial in low back pain. If you need an alternative to Sword Health, the rest of this page applies: the same plan-based programs, or care you can book yourself.',
+      ],
+      cites: [CITE.cuiSwordRCT, CITE.toelleKaiaRCT],
+    },
+    {
+      h2: 'Other alternatives through your employer or health plan',
+      paragraphs: [
         {
           list: [
-            '[Sword Health](https://sword.com/individuals). A Doctor of Physical Therapy plus an exercise kit that may include a tablet or sensors. Sword says it \u201cmay be offered at no cost through your employer or health plan\u201d, and its [foot pain page](https://sword.com/care-explorer/foot-pain) covers pain \u201canywhere in the heel, arch, toes, or ankle\u201d. In a trial of 140 people with low back pain, its program did as well as in-person physiotherapy.',
-            '[Kaia Health](https://apps.apple.com/us/app/kaia-health/id1100673977). Its App Store listing says it is \u201ccurrently not available on a self-pay basis\u201d. Sword agreed to buy Kaia in January 2026. Kaia\u2019s app did better than physiotherapy plus online education in a German trial in low back pain.',
             '[Omada Joint & Muscle](https://www.omadahealth.com/for-individuals/musculoskeletal), formerly Physera. A licensed physical therapist and a free exercise kit. Unlike Hinge, Omada\u2019s [resources page](https://www.omadahealth.com/resources) says the program is \u201csubject to deductibles, copays and co-insurance\u201d. Its published studies are observational, including an insurance claims analysis that found lower costs.',
             '[Vori Health](https://www.vorihealth.com/). A doctor, a physical therapist and a health coach online, billed to insurance, including Medicare Advantage and Medicaid plans. It names \u201cfoot & ankle pain\u201d. Its one study followed 100 Medicare Advantage patients without a comparison group.',
             '[RecoveryOne](https://www.recoveryone.com/). A licensed physical therapist, through doctors, health plans or employers. Names \u201cankle/foot\u201d. We found no published trial.',
           ],
         },
-        'None of these has a published trial for foot or heel pain. Their trials are mostly in back and shoulder pain.',
+        'None of these, Sword included, has a published trial for foot or heel pain. Their trials are mostly in back and shoulder pain.',
       ],
-      cites: [CITE.cuiSwordRCT, CITE.toelleKaiaRCT, CITE.napoleoneOmadaClaims, CITE.oconnorVori],
+      cites: [CITE.napoleoneOmadaClaims, CITE.oconnorVori],
     },
     {
       h2: 'Alternatives you can sign up for yourself',
@@ -117,20 +125,28 @@ export const HINGE_ALT_EN: Guide = {
   ],
   faq: [
     {
+      q: 'How much is Hinge Health?',
+      a: 'Hinge Health\u2019s virtual program is $0 to members whose employer or health plan covers it; the employer or plan pays instead, and Hinge does not publish what they pay. There is no self-pay price. Hinge bills your plan when you use it and says this does not affect your benefits or deductible.',
+    },
+    {
       q: 'Can I use Hinge Health without insurance or an employer?',
-      a: 'No. Hinge Health is only for people covered through a partner employer or health plan, and it does not sell its program to individuals. Its page for individuals is an eligibility check, not a sign-up with a price.',
+      a: 'No. Hinge Health is only for people covered through a partner employer or health plan, and it does not sell its program to individuals. Its page for individuals is an eligibility check, not a sign-up with a price. Without coverage, you can book a physical therapist yourself or use an exercise app.',
     },
     {
       q: 'Is Sword Health free?',
-      a: 'Sword says it may be offered at no cost through your employer or health plan. It does not publish a self-pay price in the US, so if your plan does not cover it you cannot buy it directly.',
+      a: 'Sword says it may be offered at no cost through your employer or health plan. It does not publish a self-pay price in the US, so if your plan does not cover it you cannot buy it directly. Kaia, which agreed to join Sword in January 2026, is also not available on a self-pay basis.',
+    },
+    {
+      q: 'What is a good alternative to Sword Health?',
+      a: 'Through a plan, Hinge Health, Omada and Vori Health offer a physical therapist much like Sword. Without one, Luna sends a physical therapist to your home ($135 a visit without insurance) and Virtual Physical Therapists charges $89 for a 30-minute video visit. Exercise apps cost from free to about $300 a year.',
     },
     {
       q: 'Is there a Hinge Health alternative for Medicare?',
-      a: 'Vori Health works with insurance including Medicare Advantage, and Luna sends a physical therapist to your home and takes Medicare. Medicare covers telehealth from home through December 31, 2027.',
+      a: 'Vori Health works with insurance including Medicare Advantage, and Luna sends a physical therapist to your home and takes Medicare. Medicare covers telehealth from home through December 31, 2027; from January 1, 2028, CMS says physical therapists can no longer provide Medicare telehealth.',
     },
     {
       q: 'What is the cheapest alternative to Hinge Health?',
-      a: 'Free home exercise, such as a good free routine or a free app, costs nothing but has no clinician. For a clinician without insurance, Virtual Physical Therapists charges $89 for 30 minutes and Luna lists $135 for a home visit.',
+      a: 'Free home exercise, such as a good free routine or a free app, costs nothing but has no clinician. For a clinician without insurance, Virtual Physical Therapists charges $89 for 30 minutes and Luna lists $135 for a home visit. Through insurance, clinic physical therapy usually costs your copay or coinsurance.',
     },
   ],
   redFlags: {

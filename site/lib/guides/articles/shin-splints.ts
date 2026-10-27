@@ -70,7 +70,7 @@ export const SHIN_SPLINTS_EN: Guide = {
   intro: [
     'That does not mean exercise is useless. The exercises below target calf endurance, shin strength and hip control, the areas where researchers have found differences between people with and without shin splints. A case-control study found runners with shin splints could do fewer calf raises to failure than matched controls without it. For runners without pain who want to build that endurance, see [foot exercises for runners](/foot-exercises-for-runners/).',
     'Whether building that endurance back up shortens recovery is still an open question. The surest lever, in every trial so far, is cutting back the running load that caused it.',
-    'The heel raise itself, including how many reps and when to add load, is covered in more depth in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). If you are on your feet all day instead of running, [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the same calf and arch exercises for that cause.',
+    'The heel raise itself, including how many reps and when to add load, is covered in more depth in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). If you are on your feet all day instead of running, [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the same calf and arch exercises for that cause. If your ankles are stiff, the [ankle mobility exercises](/ankle-mobility-exercises/) pair well with this routine.',
   ],
   toc: true,
   takeaways: [

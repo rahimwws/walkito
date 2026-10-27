@@ -21,7 +21,7 @@ export const EXAKT_ALT_EN: Guide = {
   lede:
     'The best Exakt Health alternative depends on why you want one. For a lower price, Injurymap lists $9.49 a month or $40.99 a year with a two-week free trial; for many body areas and a big video library, Prehab; for a free first phase, Sports Injury Rehabilitation; for running form, GaitLab Coach; with an employer plan, Hinge Health; and for heel pain or [flat feet](/flat-feet/) only, Walkito. For a runner who wants injury rehab and a return-to-running plan in one app, Exakt is still the strongest pick.',
   intro: [
-    'Walkito makes this page, so we are not neutral. Every fact about the other apps comes from their own App Store listing or website, checked in October 2026, and the sources are listed at the end. For a head-to-head, see [Walkito vs Exakt Health](/walkito-vs-exakt-health/).',
+    'Walkito makes this page, so we are not neutral. Every fact about the other apps comes from their own App Store listing or website, checked in October 2026, and the sources are listed at the end. For a head-to-head, see [Walkito vs Exakt Health](/walkito-vs-exakt-health/). For employer-paid programs like Hinge and Sword, see [Hinge Health alternatives](/hinge-health-alternatives/).',
   ],
   takeaways: [
     'Exakt Health costs $19.99 a month, $39.99 for 3 months or $59.99 for 6 months, with a 7-day free trial (exakthealth.com, checked October 2026).',

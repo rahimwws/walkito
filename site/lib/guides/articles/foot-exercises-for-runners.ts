@@ -32,7 +32,7 @@ export const RUNNERS_FOOT_EXERCISES_EN: Guide = {
   lede:
     'A good foot routine for runners trains four things: the small muscles of the arch (the short foot exercise), calf and soleus endurance (heel raises), toe strength and single-leg balance. It takes about 10 minutes, two to five times a week, after an easy run or on a rest day. In one trial of 118 recreational runners, those who did not do a foot core program were 2.42 times more likely to get a running injury over 12 months (Taddei and colleagues, 2020). That is one trial, so read it as promising, not settled.',
   intro: [
-    'This page is for runners who are not injured, or who have a niggle that lets them keep running. If your heel already hurts when you run, start with [heel pain from running](/heel-pain-runners/). For the full progression of every foot exercise, from seated to single leg, see [foot strengthening exercises](/foot-strengthening-exercises/).',
+    'This page is for runners who are not injured, or who have a niggle that lets them keep running. If your heel already hurts when you run, start with [heel pain from running](/heel-pain-runners/). For the full progression of every foot exercise, from seated to single leg, see [foot strengthening exercises](/foot-strengthening-exercises/). Stiff ankles are common in runners; see [ankle mobility exercises](/ankle-mobility-exercises/).',
   ],
   toc: true,
   takeaways: [
