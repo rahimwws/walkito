@@ -20,7 +20,7 @@ export const APP_VS_PT_EN: Guide = {
   lede:
     'Nobody knows yet: we found no trial comparing an exercise app with physical therapy for plantar fasciitis. What the trials do show is that home exercise did about as well as physical therapy in one trial and worse than supervised clinic care in another, and that hands-on treatment added to home exercise helps short-term pain. A sensible middle path is a clinician visit to confirm the diagnosis, then the home exercises, with or without an app.',
   intro: [
-    'Walkito is an exercise app, so we have a stake in this question. That is why this page sticks to what the studies found, including the ones that favour physical therapy. If you have Hinge Health through work, see our summary of [Hinge Health reviews](/hinge-health-reviews/).',
+    'Walkito is an exercise app, so we have a stake in this question. That is why this page sticks to what the studies found, including the ones that favour physical therapy. If you have Hinge Health through work, see our summary of [Hinge Health reviews](/hinge-health-reviews/). For other virtual physical therapy options, see [Hinge Health alternatives](/hinge-health-alternatives/).',
   ],
   takeaways: [
     'We found no randomized trial comparing an exercise app with physical therapy for plantar fasciitis. The only study comparing a digital program with physiotherapy was observational, and its authors call the results provisional.',
