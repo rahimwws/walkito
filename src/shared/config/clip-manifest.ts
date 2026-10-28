@@ -14,6 +14,10 @@
  *
  * In `shared/config` rather than beside the player because the plan engine
  * reads it too: an exercise without a clip is never scheduled.
+ *
+ * The toe spread, seated heel raise, towel scrunch, shin raise, sole massage
+ * and bent-knee raise left the plan on 28 October 2026 and their clips left
+ * the manifest; their files stay in the bucket for builds already installed.
  */
 export type ClipEntry = {
   /** Object name inside the bucket, and the filename on disk when cached. */
@@ -29,34 +33,28 @@ export type ClipEntry = {
 export const CLIP_BUCKET = 'exercise-clips';
 
 export const CLIPS: Readonly<Record<string, ClipEntry>> = {
-  fascia_stretch: { file: '01_plantar_stretch.mp4', bytes: 1108109, hash: '2844273f9d31d0d7' },
-  calf_stretch_straight: { file: '02_calf_stretch_straight.mp4', bytes: 1272504, hash: 'a5dcfa071680b817' },
+  fascia_stretch: { file: 'w_fascia_stretch.mp4', bytes: 734254, hash: '3c923eaa12ecbba2' },
+  calf_stretch_straight: { file: 'w_calf_stretch_straight.mp4', bytes: 480322, hash: 'ceb10e90014054fe' },
   calf_stretch_bent: { file: '03_calf_stretch_bent.mp4', bytes: 1187711, hash: 'c93448d72b7f1f59' },
-  toe_spread: { file: '04_toe_spread_out.mp4', bytes: 1327532, hash: 'a6c33f76ef91670e' },
-  ankle_rocks: { file: '05_ankle_rocks.mp4', bytes: 1310746, hash: '1ded039134d189da' },
-  eyes_closed_stand: { file: '06_eyes_closed_stand_v2.mp4', bytes: 1229970, hash: '46b1253d66ec9450' },
-  foot_roll: { file: '07_foot_roll_v2.mp4', bytes: 1378933, hash: 'b0cf6f839867ccb7' },
-  heel_raise_towel: { file: '09_heel_raise_towel.mp4', bytes: 1200991, hash: '7a20c30b506aa39a' },
+  ankle_rocks: { file: 'w_ankle_rocks.mp4', bytes: 630600, hash: 'fb8a595781d1d198' },
+  eyes_closed_stand: { file: 'w_eyes_closed_stand.mp4', bytes: 453073, hash: '3d6553b470b82411' },
+  foot_roll: { file: 'w_foot_roll.mp4', bytes: 494204, hash: 'df42d17e26c93785' },
+  heel_raise_towel: { file: 'w_heel_raise_towel.mp4', bytes: 573086, hash: '13c1b1bdbe1f8b2c' },
   short_foot_seated: { file: '10_short_foot_seated_v2.mp4', bytes: 1320165, hash: 'ec62cd29c34f84ad' },
-  single_leg_hold: { file: '11_single_leg_hold_v2.mp4', bytes: 1241420, hash: '16ba7582d6e51eff' },
+  single_leg_hold: { file: 'w_single_leg_hold.mp4', bytes: 496772, hash: 'f1a6498a750b9682' },
   short_foot_double: { file: '12_short_foot_double.mp4', bytes: 2054568, hash: 'b16644165a11edd0' },
-  band_inversion: { file: '14_band_inversion_v2.mp4', bytes: 1310680, hash: '8bd639a8945f5be3' },
+  band_inversion: { file: 'w_band_inversion.mp4', bytes: 700722, hash: '43c0545d186b99b6' },
   short_foot_single: { file: '13_short_foot_single.mp4', bytes: 1720622, hash: '510bebb44e272d01' },
-  hip_abduction: { file: '16_hip_abduction_side.mp4', bytes: 1263493, hash: '7febfaec60dc0ad8' },
-  heel_raise_double: { file: '19_heel_raise_double.mp4', bytes: 1197636, hash: '915862b8623a6f4a' },
-  heel_raise_seated: { file: '20_heel_raise_seated.mp4', bytes: 1297827, hash: 'e0134cfea989da5c' },
-  heel_raise_hold: { file: '21_heel_raise_hold_v2.mp4', bytes: 1174374, hash: 'b63fb1b510615d81' },
+  hip_abduction: { file: 'w_hip_abduction.mp4', bytes: 446293, hash: '290dcc6bf458f505' },
+  heel_raise_double: { file: 'w_heel_raise_double.mp4', bytes: 447994, hash: '9f5cacb7ad7e6ba9' },
+  heel_raise_hold: { file: 'w_heel_raise_hold.mp4', bytes: 578266, hash: '4aba8cfcec26af5d' },
   big_toe_lift: { file: '22_big_toe_lift_v2.mp4', bytes: 3370064, hash: 'bf52a09cb6dff491' },
-  towel_scrunch: { file: '23_towel_scrunch.mp4', bytes: 1111534, hash: 'f54b8db6d2d9330f' },
-  knee_to_wall: { file: '24_knee_to_wall.mp4', bytes: 1569937, hash: '100801e1ef20241e' },
+  knee_to_wall: { file: 'w_knee_to_wall.mp4', bytes: 561525, hash: 'de06265b82b296e4' },
   balance_pillow: { file: '25_balance_pillow.mp4', bytes: 1232604, hash: '2f1ee5a48d1c3cea' },
   heel_drop_straight: { file: '26_heel_drop_straight_knee.mp4', bytes: 1152648, hash: '37aa3bfe4ee3b43a' },
-  tibialis_raise: { file: '29_tibialis_raise_v2.mp4', bytes: 1308769, hash: 'ede69a94bd0ae0fa' },
-  step_down: { file: '34_step_down_v2.mp4', bytes: 1269606, hash: '2b372a4dc392809f' },
-  sole_massage: { file: '36_sole_massage_v2.mp4', bytes: 1344096, hash: '2edd7b9113774803' },
-  pogo_hops: { file: '37_pogo_hops_v2.mp4', bytes: 1095797, hash: '626d188022e076b6' },
-  heel_raise_plain: { file: '17_heel_raise_plain.mp4', bytes: 1260793, hash: '8372f105a3176b18' },
-  heel_raise_bent_knee: { file: '28_heel_raise_bent_knee.mp4', bytes: 1301451, hash: '6ccd09f9d5aa7ad3' },
+  step_down: { file: 'w_step_down.mp4', bytes: 563405, hash: '8f86a3f53745c42e' },
+  pogo_hops: { file: 'w_pogo_hops.mp4', bytes: 677193, hash: '2ce3583f52a63c20' },
+  heel_raise_plain: { file: 'w_heel_raise_plain.mp4', bytes: 627122, hash: '30ec39fd2c2a441a' },
   // Not a catalogue exercise: the single-leg calf raise the retest measures,
   // facing the viewer so the lifted leg and the heel rise both read.
   //
@@ -69,7 +67,36 @@ export const CLIPS: Readonly<Record<string, ClipEntry>> = {
 
 /** What a full prefetch will cost, in bytes. Printed before it starts, because
  * "downloading…" with no figure is the kind of progress nobody trusts. */
-export const CLIPS_TOTAL_BYTES = 39608071;
+export const CLIPS_TOTAL_BYTES = 21496704;
+
+/**
+ * Clips filmed wide, 16:9, framed on the legs and feet. The rest are upright,
+ * 9:16, and show the whole body. The `w_` files replaced upright ones from
+ * 28 October 2026: new object names, so builds already installed keep
+ * fetching the old files.
+ */
+export const WIDE_CLIPS: ReadonlySet<string> = new Set([
+  'ankle_rocks',
+  'band_inversion',
+  'calf_stretch_straight',
+  'eyes_closed_stand',
+  'fascia_stretch',
+  'foot_roll',
+  'heel_raise_double',
+  'heel_raise_hold',
+  'heel_raise_plain',
+  'heel_raise_towel',
+  'hip_abduction',
+  'knee_to_wall',
+  'pogo_hops',
+  'single_leg_hold',
+  'step_down',
+]);
+
+/** A clip's shape, width over height. */
+export function clipShape(exerciseId: string): number {
+  return WIDE_CLIPS.has(exerciseId) ? 16 / 9 : 9 / 16;
+}
 
 /**
  * An exercise with no entry resolves to nothing rather than to another

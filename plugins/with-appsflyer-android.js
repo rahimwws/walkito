@@ -1,5 +1,5 @@
 /**
- * The three Android changes AppsFlyer's own config plugin does not make.
+ * The four Android changes AppsFlyer's own config plugin does not make.
  *
  * 1. **No advertising id.** The AppsFlyer Android SDK declares
  *    `com.google.android.gms.permission.AD_ID` in its library manifest, and the
@@ -25,6 +25,15 @@
  *    module then fails with "Unresolved reference 'mapOf'" (1.0.3 build 11 on
  *    EAS). The AppsFlyer SDK itself only asks for 2.0.21, so the project's own
  *    version satisfies everything.
+ *
+ * 4. **The Facebook App ID, for the Meta install referrer.** On Android the SDK
+ *    asks the Facebook and Instagram apps which Meta ad led to the install, by
+ *    this App ID, read from `com.appsflyer.FacebookApplicationId` (the app has
+ *    no Facebook SDK, whose tag it would otherwise read). It is how a Meta
+ *    install is told from an organic one on the phone, which decides whether
+ *    the first paywall sells the free week (`entities/purchase/model/trial-audience.ts`).
+ *    The same App ID is the one in AppsFlyer's Meta ads integration; the
+ *    referrer also needs the Install Referrer decryption key submitted there.
  */
 const { withAndroidManifest, withMainActivity, withProjectBuildGradle } = require('@expo/config-plugins');
 
@@ -40,6 +49,21 @@ function withoutAdId(config) {
     );
     permissions.push({ $: { 'android:name': AD_ID, 'tools:node': 'remove' } });
     manifest['uses-permission'] = permissions;
+    return config;
+  });
+}
+
+/** Walkito's app on Meta (App Dashboard), the one AppsFlyer's integration names. */
+const FACEBOOK_APP_ID = '2539039176591918';
+const FACEBOOK_APP_ID_KEY = 'com.appsflyer.FacebookApplicationId';
+
+function withFacebookAppId(config) {
+  return withAndroidManifest(config, (config) => {
+    const application = config.modResults.manifest.application?.[0];
+    if (application == null) throw new Error('with-appsflyer-android: the manifest has no <application>.');
+    const data = (application['meta-data'] ?? []).filter((entry) => entry.$?.['android:name'] !== FACEBOOK_APP_ID_KEY);
+    data.push({ $: { 'android:name': FACEBOOK_APP_ID_KEY, 'android:value': FACEBOOK_APP_ID } });
+    application['meta-data'] = data;
     return config;
   });
 }
@@ -108,5 +132,5 @@ function withProjectStdlib(config) {
 }
 
 module.exports = function withAppsFlyerAndroid(config) {
-  return withProjectStdlib(withNewIntent(withoutAdId(config)));
+  return withProjectStdlib(withNewIntent(withFacebookAppId(withoutAdId(config))));
 };

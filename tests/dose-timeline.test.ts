@@ -99,15 +99,8 @@ describe('reading a move', () => {
 });
 
 describe('the doses', () => {
-  test('a towel scrunch is quick pulls, not held ones, and under two minutes', () => {
-    const dose = doseFor('towel_scrunch');
-    expect(dose.holdSec).toBeUndefined();
-    expect(doseSeconds(dose)).toBeLessThanOrEqual(120);
-  });
-
-  test('the toe work is done on both feet at once', () => {
+  test('the big toe lift is done on both feet at once', () => {
     expect(doseFor('big_toe_lift').perSide).toBe(false);
-    expect(doseFor('toe_spread').perSide).toBe(false);
   });
 
   test('no exercise at its own level runs past five minutes', () => {

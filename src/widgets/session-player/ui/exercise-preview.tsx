@@ -3,13 +3,15 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEffect, useImperativeHandle, useMemo, useRef, useState, type ReactNode, type Ref } from 'react';
-import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
+import { Image, Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
 import { useIntake } from '@/entities/profile';
+import { WIDE_CLIPS } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { clipFor } from '../config/exercise-clips';
+import { posterFor } from '../config/exercise-posters';
 import { mirroredFor } from '../model/mirror';
 import { ClipViewer } from './clip-viewer';
 
@@ -108,6 +110,16 @@ export function ExercisePreview({
    * clip from its first frame under the user.
    */
   const source = useMemo(() => clipFor(exerciseId), [exerciseId]);
+  const poster = posterFor(exerciseId);
+  /**
+   * A wide clip in a frame of its own shape fills it, over its own still until
+   * the first frame arrives. In an upright or square frame it is fitted whole
+   * on a dark panel: cropped to the frame, a clip framed on the feet loses the
+   * feet.
+   */
+  const wide = WIDE_CLIPS.has(exerciseId);
+  const wideFrame = wide && aspectRatio > 1.2;
+  const contentFit = wide ? (wideFrame ? 'cover' : 'contain') : fit;
   const player = useVideoPlayer(source, (instance) => {
     instance.loop = true;
     instance.muted = true;
@@ -185,7 +197,15 @@ export function ExercisePreview({
   }));
 
   const card = (
-    <View style={[styles.frame, { aspectRatio, backgroundColor: CLIP_BACKDROP }, style]}>
+    <View style={[styles.frame, { aspectRatio, backgroundColor: wide ? WIDE_BACKDROP : CLIP_BACKDROP }, style]}>
+      {poster != null && wideFrame && (
+        <Image
+          source={poster}
+          resizeMode="cover"
+          style={[StyleSheet.absoluteFill, mirrored && styles.mirrored]}
+          accessibilityIgnoresInvertColors
+        />
+      )}
       <Animated.View style={[StyleSheet.absoluteFill, videoStyle]} pointerEvents="none">
         <VideoView
           style={[StyleSheet.absoluteFill, mirrored && styles.mirrored]}
@@ -193,7 +213,7 @@ export function ExercisePreview({
           nativeControls={false}
           // Fitted unless the frame is the clip's own shape: the clips are
           // upright and show the whole body, and a crop takes the feet first.
-          contentFit={fit}
+          contentFit={contentFit}
           surfaceType={moving ? 'textureView' : undefined}
           onFirstFrameRender={() => {
             revealRef.current();
@@ -234,6 +254,9 @@ export function ExercisePreview({
 /** The studio backdrop the clips are filmed on. Exported for a host that
  * draws a clip's card before its player exists. */
 export const CLIP_BACKDROP = '#ECF0F1';
+
+/** The panel around a wide clip fitted into an upright frame. */
+const WIDE_BACKDROP = '#0B0B0D';
 
 /** How long the first frame takes to fade in. */
 const REVEAL_MS = 180;

@@ -278,6 +278,7 @@ export const ONBOARDING_EN = {
   'onboarding.source.blurb': 'One tap. It helps us reach people like you.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'A friend told me',
   'onboarding.source.appStore': 'Browsing the App Store',

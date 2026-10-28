@@ -3,7 +3,7 @@ import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { exerciseById } from '@/entities/program';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { ExercisePreview } from '@/widgets/session-player';
@@ -32,7 +32,11 @@ export function ExerciseSheet({ exerciseId, onClose }: { exerciseId: string | nu
         <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.fill} onPress={onClose} />
         <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]} pointerEvents="box-none">
           <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <ExercisePreview exerciseId={exercise.id} style={styles.clip} />
+            <ExercisePreview
+              exerciseId={exercise.id}
+              aspectRatio={clipShape(exercise.id)}
+              style={clipShape(exercise.id) > 1 ? styles.wideClip : styles.clip}
+            />
             <Text style={[styles.title, { color: colors.foreground }]}>{exercise.title}</Text>
             <Text style={[styles.cue, { color: meter.caption }]}>{exercise.cue}</Text>
             {/* Why it is here, said on screen rather than only to VoiceOver. */}
@@ -85,6 +89,10 @@ const styles = StyleSheet.create({
     aspectRatio: 9 / 16,
     height: 340,
     alignSelf: 'center',
+  },
+  // A wide clip, framed on the feet: the card's whole width.
+  wideClip: {
+    width: '100%',
   },
   why: {
     borderRadius: 20,

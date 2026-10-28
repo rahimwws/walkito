@@ -58,10 +58,7 @@ const TABLE: Readonly<Record<DoseClass, Bands>> = {
 /**
  * Exercises not done the way their kind is.
  *
- * - **Towel scrunch**: quick pulls, two seconds each. It sat in the arch table
- *   with the short-foot holds, so every scrunch was "held" five seconds and the
- *   exercise ran six minutes.
- * - **Big toe lift, toe spread**: a two-second hold, not five.
+ * - **Big toe lift**: a two-second hold, not five.
  * - **Short foot on one leg**: two sets at every level below the top; it is the
  *   hardest of the arch work and the longest per rep.
  * - **Heel raise on a towel**: the 3 · 2 · 3 tempo is eight seconds a rep, each
@@ -74,9 +71,7 @@ const TABLE: Readonly<Record<DoseClass, Bands>> = {
  * - **Ankle rocks**: rocked, two seconds each, not held like a stretch.
  */
 const OWN: Readonly<Record<string, Bands>> = {
-  towel_scrunch: [{ sets: 2, reps: 10, repSec: 2 }, { sets: 2, reps: 12, repSec: 2 }, { sets: 3, reps: 12, repSec: 2 }],
   big_toe_lift: [{ sets: 2, reps: 10, holdSec: 2 }, { sets: 2, reps: 12, holdSec: 2 }, { sets: 3, reps: 12, holdSec: 2 }],
-  toe_spread: [{ sets: 2, reps: 10, holdSec: 2 }, { sets: 2, reps: 12, holdSec: 2 }, { sets: 3, reps: 12, holdSec: 2 }],
   short_foot_single: [{ sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 8, holdSec: 5 }],
   heel_raise_towel: [{ sets: 2, reps: 6 }, { sets: 2, reps: 8 }, { sets: 2, reps: 8 }],
   heel_raise_plain: [{ sets: 2, reps: 6 }, { sets: 2, reps: 8 }, { sets: 2, reps: 8 }],
@@ -88,19 +83,16 @@ const OWN: Readonly<Record<string, Bands>> = {
 /**
  * Exercises done on both feet at once. The rest go one foot at a time.
  *
- * The toe work joined this list: lifting the big toes or spreading the toes is
- * done with both feet on the floor together, and running it one foot after the
+ * The big toe lift joined this list: it is done with both feet on the floor
+ * together, and running it one foot after the
  * other only doubled the time.
  */
 const BILATERAL = new Set([
   'heel_raise_double',
-  'heel_raise_seated',
   'heel_raise_hold',
-  'tibialis_raise',
   'pogo_hops',
   'short_foot_double',
   'big_toe_lift',
-  'toe_spread',
 ]);
 
 const TEMPO_IDS = new Set(['heel_raise_towel', 'heel_raise_plain']);

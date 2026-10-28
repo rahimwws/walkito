@@ -23,6 +23,7 @@
 export type AcquisitionSource =
   | 'tiktok'
   | 'instagram'
+  | 'facebook'
   | 'youtube'
   | 'friend'
   | 'app_store'

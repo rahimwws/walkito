@@ -95,7 +95,6 @@ export const HOME_ES = {
   'home.day1.title': 'Día 1',
   'home.day1.body': 'Dos minutos fáciles para despertar los pies.',
   'home.day1.start': 'Empezar',
-  'home.day1.seePlans': 'Ver planes',
   'home.noPain': 'Hoy no me duele',
   'home.logCheckIn': 'Registrar el día de hoy',
   'home.checkInAgain': 'Registrar otra vez',

@@ -15,6 +15,7 @@ import {
   devPreviewPass,
   devPreviewPaywall,
   devSetReviewMode,
+  devSetTrialAudience,
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
@@ -45,6 +46,10 @@ const SAMPLE_PARAM = /[?&]samplePrices(?:=(\w+))?\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
 const PAYWALL_PARAM = /[?&]previewPaywall\b/;
+/** `?trialAudience=meta`: answer as somebody a Meta ad brought, so the first
+ * paywall sells the free week; `=organic` as anybody else; `=off` the real
+ * answer (AppsFlyer, or the onboarding's source question). */
+const TRIAL_AUDIENCE_PARAM = /[?&]trialAudience=(meta|organic|off)\b/;
 /** `?previewHomeOffer`: the paywall skipped, the offer screen showing the
  * one-time trial (the name is from when it stood over Home). */
 const HOME_OFFER_PARAM = /[?&]previewHomeOffer\b/;
@@ -219,6 +224,8 @@ export function useDevLinks(): void {
         }
         const sample = SAMPLE_PARAM.exec(url);
         if (sample != null) setSamplePrices(sample[1] !== 'off');
+        const audience = TRIAL_AUDIENCE_PARAM.exec(url);
+        if (audience != null) devSetTrialAudience(audience[1] as 'meta' | 'organic' | 'off');
         if (PAYWALL_PARAM.test(url)) {
           lockBoost();
           devPreviewPaywall();

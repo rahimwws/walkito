@@ -26,6 +26,7 @@ import Purchases, {
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import { campaignAttributes } from './attribution';
+import { noteInstall } from './trial-audience';
 import { syncPassFromServer } from './pass';
 import {
   ENTITLEMENT,
@@ -894,6 +895,7 @@ async function collectAdAttribution(): Promise<void> {
     }
   }
   onConversionData(recordCampaign);
+  onConversionData(noteInstall);
   await linkAppsFlyer();
 }
 

@@ -838,11 +838,32 @@ export function weekPlan(now: number = Date.now()): WeekPlan {
   const start = weekStartOf(toDateKey(new Date(now)));
   const store = weeks();
   const existing = store[start];
-  if (existing != null) return withDueTest(existing, now);
+  if (existing != null) {
+    const today = toDateKey(new Date(now));
+    if (retiredTried !== today && holdsRetired(existing, today)) {
+      retiredTried = today;
+      rebuildRestOfWeek(now);
+      return withDueTest(weeks()[start] ?? existing, now);
+    }
+    return withDueTest(existing, now);
+  }
   refreshGoals(now);
   const plan = build(start, now);
   write(WEEKS_KEY, { ...weeks(), [start]: plan });
   return plan;
+}
+
+/** The day a re-plan for retired exercises was last tried. See `holdsRetired`. */
+let retiredTried: string | null = null;
+
+/**
+ * Whether a day still ahead holds an exercise the plan no longer has. Weeks
+ * stored before an exercise left the catalogue keep it until they are planned
+ * again, so the rest of the week is, once a day at most: the days already
+ * lived keep what they were.
+ */
+function holdsRetired(plan: WeekPlan, today: string): boolean {
+  return plan.days.some((day) => day.date >= today && day.exercises.some((e) => planMeta(e.id) == null));
 }
 
 /** The last day-and-due-date a re-plan was tried for. See `withDueTest`. */

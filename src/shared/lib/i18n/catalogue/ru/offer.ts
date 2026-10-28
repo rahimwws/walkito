@@ -242,4 +242,9 @@ export const OFFER_RU = {
     few: 'Все {count} упражнения сделаны. Понемногу и регулярно - так это и сдвигается.',
     many: 'Все {count} упражнений сделаны. Понемногу и регулярно - так это и сдвигается.',
   },
+  'offer.trial.todayTitle': 'Сегодня',
+  'offer.trial.todayText': 'Полный доступ, без оплаты',
+  'offer.trial.dayTitle': 'День {day}',
+  'offer.trial.remindText': 'Напомним, что пробный период заканчивается',
+  'offer.trial.chargeText': '{price} за год, если не отмените',
 };

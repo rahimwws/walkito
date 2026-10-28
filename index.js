@@ -1,6 +1,7 @@
 // The app's entry: Expo Router, the background on-feet task, plus the Android
 // home-screen widget's headless task. The launcher runs that task when the app is not open, so it has to be
 // registered here, before any screen mounts — a route file would be too late.
+import './store-clock';
 import 'expo-router/entry';
 import { Platform } from 'react-native';
 

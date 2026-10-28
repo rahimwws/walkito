@@ -243,6 +243,7 @@ export const ONBOARDING_IT = {
   'onboarding.source.blurb': 'Un tocco. Ci aiuta a raggiungere persone come te.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'Me ne ha parlato qualcuno',
   'onboarding.source.appStore': 'Cercando nell’App Store',

@@ -80,7 +80,7 @@ export const EXERCISES_ES = {
     'Mueve solo el pie contra la banda, no la pierna. La rodilla se queda quieta.',
 
   'exercises.hipAbduction.title': 'Elevación lateral de pierna',
-  'exercises.hipAbduction.rationale': 'Una cadera que cede deja la carga sobre el arco.',
+  'exercises.hipAbduction.rationale': 'Una cadera más estable facilita sostenerte sobre una pierna.',
   'exercises.hipAbduction.cue': 'Túmbate de lado. Sube la pierna de arriba, un poco hacia atrás, con la punta mirando al frente.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -101,12 +101,12 @@ export const EXERCISES_ES = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Automasaje plantar',
-  'exercises.footRoll.rationale': 'Rodar el pie calma el tejido después de trabajar.',
+  'exercises.footRoll.rationale': 'Unos minutos rodando el pie pueden aliviar la planta un rato.',
   'exercises.footRoll.cue': 'Despacio y con firmeza. Si haces muecas de dolor, afloja.',
 
   'exercises.barefootHome.title': 'Descalzo en casa',
   'exercises.barefootHome.rationale': 'Las horas descalzo son horas que el pie pasa trabajando.',
-  'exercises.barefootHome.cue': 'Solo en casa, sobre suelo liso, y ve aumentando poco a poco.',
+  'exercises.barefootHome.cue': 'Solo en casa, sobre suelo liso, y poco a poco. No mientras duela el talón.',
 
   'exercises.breathingReset.title': 'Respiración lenta',
   'exercises.breathingReset.rationale': 'Un minuto de respiración lenta cierra bien la sesión.',
@@ -130,7 +130,7 @@ export const EXERCISES_ES = {
   'exercises.bigToeLift.cue': 'Levanta solo el dedo gordo. Los otros cuatro siguen apoyados.',
 
   'exercises.towelScrunch.title': 'Recoger la toalla',
-  'exercises.towelScrunch.rationale': 'Despierta los músculos pequeños bajo el arco.',
+  'exercises.towelScrunch.rationale': 'Trabaja el agarre de los dedos. El pie corto hace más por el arco.',
   'exercises.towelScrunch.cue': 'Atrae la toalla con los dedos. El talón no se levanta.',
 
   'exercises.kneeToWall.title': 'Rodilla a la pared',
@@ -154,7 +154,7 @@ export const EXERCISES_ES = {
   'exercises.stepDown.cue': 'La rodilla va sobre los dedos. Toca el suelo con el talón, sin dejarte caer.',
 
   'exercises.soleMassage.title': 'Masaje de planta',
-  'exercises.soleMassage.rationale': 'Suelta el tejido después de un día largo.',
+  'exercises.soleMassage.rationale': 'Puede aliviar la planta cansada después de un día largo.',
   'exercises.soleMassage.cue': 'Pasadas firmes con el pulgar del talón a los dedos. Afloja si notas un dolor agudo.',
 
   'exercises.pogoHops.title': 'Saltos pogo',

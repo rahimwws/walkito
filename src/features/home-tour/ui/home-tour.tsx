@@ -16,8 +16,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
 import { planSessionDone, retestResults, todayKey } from '@/entities/program';
-import { useReviewMode, useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import { useReviewMode } from '@/entities/purchase';
 import {
+  homeTourForced,
   homeTourState,
   finishHomeTour,
   setHomeTourStage,
@@ -40,7 +41,6 @@ import { useDockHeight } from '@/shared/ui/action-dock';
 
 import type { DayOneRun } from '../model/day-one';
 
-import { askForPlans } from '../model/plans-asked';
 
 import { DayOneCard } from './day-one-card';
 import { HandNote, type Point } from './hand-note';
@@ -113,10 +113,6 @@ export type HomeTourProps = {
 export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps) {
   const state = useHomeTourState();
   const stage = useHomeTourStage();
-  /** Skipped the paywall and has not bought since: the card offers the plans. */
-  const skipped = usePaywallSkipped();
-  const entitled = useEntitled();
-  const skipper = skipped && !entitled;
   const armed = state === 'armed';
 
   // A tour armed by the build before the day-one session stored no stage.
@@ -134,7 +130,7 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
     // Somebody with history (an account signed into on a new phone, its plan
     // restored) skips the first session: it would push their due test off
     // today and file two minutes over their real day.
-    const returning = retestResults().length > 0 || planSessionDone(todayKey());
+    const returning = !homeTourForced() && (retestResults().length > 0 || planSessionDone(todayKey()));
     if (stage == null || (stage === 'day1' && returning)) setHomeTourStage(returning ? 'tour' : 'day1');
   }, [armed, stage, reviewMode]);
 
@@ -147,7 +143,6 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
         visible={clear && stage === 'day1'}
         sessionOpen={sessionOpen}
         onStart={onStartDayOne}
-        onSeePlans={skipper ? askForPlans : undefined}
       />
       <TourStops visible={clear && stage === 'tour'} />
     </>

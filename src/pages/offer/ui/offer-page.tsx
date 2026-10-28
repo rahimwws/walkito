@@ -21,17 +21,20 @@ import {
   firstChargeSavingPercent,
   grantDevAccess,
   isSamplePlan,
+  markPaywallSoldTrial,
   onSimulator,
   paywallSkipped,
   planOn,
   purchases,
   skipPaywall,
   usePaywallSkipped,
+  useTrialOnFirstPaywall,
   type PaywallPeriod,
   type Plan,
   type Shelf,
 } from '@/entities/purchase';
 import { armHomeTour } from '@/entities/session';
+import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
 import { PRIMARY, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
@@ -190,7 +193,6 @@ function Paywall() {
    */
   const winback = useBoost();
   const boosted = winback;
-  const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
    * Which step is on screen: how the plan starts, how a day works, then the
@@ -214,6 +216,26 @@ function Paywall() {
     return () => subscription.remove();
   }, [flow, step]);
   const next = () => setStep((current) => (current === 1 ? 2 : 3));
+
+  /**
+   * The free week, on a first view, for somebody a Meta ad brought (the
+   * `trial` offering; the monthly and lifetime come from the standard one,
+   * `planOn`); everybody else gets the annual at its full price, the `default`
+   * offering (`trialOnFirstPaywall`). Followed until the plans show, so an
+   * AppsFlyer report that lands during the first steps still counts, then held:
+   * the plans never change under somebody's eyes. The free week shows only when
+   * the store calls this customer eligible.
+   */
+  const trialAudience = useTrialOnFirstPaywall();
+  const [sellsTrial, setSellsTrial] = useState(trialAudience);
+  useEffect(() => {
+    if (step !== 3) setSellsTrial(trialAudience);
+  }, [step, trialAudience]);
+  const offeringId = boosted ? OFFERINGS.offer : sellsTrial ? OFFERINGS.trial : OFFERINGS.standard;
+  // Kept, so the offer after a skip does not offer the same free week again.
+  useEffect(() => {
+    if (step === 3 && offeringId === OFFERINGS.trial) markPaywallSoldTrial();
+  }, [step, offeringId]);
 
   const profileName = firstName(useProfileName());
   const settings = planSettings();
@@ -588,6 +610,9 @@ function Paywall() {
 
     if (result.status === 'purchased') {
       converted.current = true;
+      // The reminder the plans step promised, from the trial's own length.
+      const trial = freeTrialOf(plan);
+      if (trial != null) void remindBeforeTrialEnds(trial, plan.priceString);
       // No haptic here: the sheet fires its own as it lands, and two success
       // buzzes a frame apart read as a stutter rather than as emphasis.
       setCelebrating('purchased');

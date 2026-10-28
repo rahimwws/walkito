@@ -16,6 +16,7 @@ import {
   comebackEndsAt,
   markTrialMissed,
   markTrialOfferShown,
+  paywallSoldTrial,
   purchases,
   useAccessLapsed,
   useComebackEndsAt,
@@ -164,7 +165,17 @@ export function useOfferScreen(sellsPass: boolean = false): {
     setAttempt((n) => n + 1);
   };
 
-  const content = shelf != null ? contentFor(stage, shelf, endsAt, Date.now(), sellsPass) : null;
+  // When the first paywall already sold the annual with its free week (somebody
+  // a Meta ad brought), closing it was turning the trial down: the wall opens
+  // on the comeback ($29.99 the first year) and its 15 minutes start as it
+  // appears, never earlier. Everybody else saw the full price there, and the
+  // wall offers them the trial first.
+  const trialDeclined = stage === 'trial' && paywallSoldTrial();
+  useEffect(() => {
+    if (trialDeclined && eligible && revealed && front) markTrialMissed();
+  }, [trialDeclined, eligible, revealed, front]);
+  const content =
+    shelf != null && !trialDeclined ? contentFor(stage, shelf, endsAt, Date.now(), sellsPass) : null;
   // `up`: the offer has been shown, and stays on screen from then on. Still
   // drawn once access arrives, so the screen does not empty under the setup
   // screens fading in over it; `kind`, which everything below hangs on, stops

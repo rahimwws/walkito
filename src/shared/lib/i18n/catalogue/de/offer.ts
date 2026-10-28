@@ -234,4 +234,9 @@ export const OFFER_DE = {
     one: '{count} Übung geschafft. Wenig und oft bringt hier die Bewegung rein.',
     other: 'Alle {count} Übungen geschafft. Wenig und oft bringt hier die Bewegung rein.',
   },
+  'offer.trial.todayTitle': 'Heute',
+  'offer.trial.todayText': 'Voller Zugang, nichts zu zahlen',
+  'offer.trial.dayTitle': 'Tag {day}',
+  'offer.trial.remindText': 'Wir erinnern dich, dass der Test endet',
+  'offer.trial.chargeText': '{price} für das Jahr, außer du kündigst',
 };

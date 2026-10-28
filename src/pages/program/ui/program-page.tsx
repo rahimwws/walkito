@@ -83,6 +83,7 @@ import { asProgramDay, playlistOf } from '../model/week-view';
 import { ExerciseSheet } from './exercise-sheet';
 import { FinishReward } from './finish-reward';
 import { GoalStations } from './goal-stations';
+import { HelpsCard } from './helps-card';
 import { moveLook } from './kind-tone';
 import { TodayCard } from './today-card';
 import { TodayDoneCard } from './today-done-card';
@@ -629,6 +630,9 @@ export function ProgramPage() {
               />
             </Animated.View>
           )}
+
+          {/* What the moves cannot do on their own: shoes, load, time. */}
+          <HelpsCard goals={goals} />
 
           {reached != null && nextGoal != null && (
             <Card3D size="lg" material="solid" tone="violet" padding={18} contentStyle={styles.reached}>

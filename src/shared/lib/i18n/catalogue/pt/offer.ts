@@ -243,4 +243,9 @@ export const OFFER_PT = {
     one: '{count} exercício feito. Pouco e sempre é o que faz isso andar.',
     other: 'Todos os {count} exercícios feitos. Pouco e sempre é o que faz isso andar.',
   },
+  'offer.trial.todayTitle': 'Hoje',
+  'offer.trial.todayText': 'Acesso completo, sem pagar nada',
+  'offer.trial.dayTitle': 'Dia {day}',
+  'offer.trial.remindText': 'Avisamos que o teste está acabando',
+  'offer.trial.chargeText': '{price} por ano, a menos que você cancele',
 };

@@ -239,4 +239,9 @@ export const OFFER_IT = {
     one: '{count} esercizio fatto. Poco e spesso: è così che si va avanti.',
     other: 'Tutti i {count} esercizi fatti. Poco e spesso: è così che si va avanti.',
   },
+  'offer.trial.todayTitle': 'Oggi',
+  'offer.trial.todayText': 'Accesso completo, niente da pagare',
+  'offer.trial.dayTitle': 'Giorno {day}',
+  'offer.trial.remindText': 'Ti ricordiamo che la prova sta finendo',
+  'offer.trial.chargeText': '{price} per l’anno, salvo disdetta',
 };

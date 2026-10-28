@@ -78,7 +78,7 @@ export const EXERCISES_EN = {
   'exercises.bandInversion.cue': 'Move the foot, not the leg. The knee stays still.',
 
   'exercises.hipAbduction.title': 'Side-lying leg raise',
-  'exercises.hipAbduction.rationale': 'A hip that gives way lands the load on the arch.',
+  'exercises.hipAbduction.rationale': 'A steadier hip makes standing on one leg easier.',
   'exercises.hipAbduction.cue': 'Lie on your side. Lift the top leg up and slightly back, toes facing forward.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -97,12 +97,12 @@ export const EXERCISES_EN = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Foot roll',
-  'exercises.footRoll.rationale': 'Rolling settles the tissue after it has worked.',
+  'exercises.footRoll.rationale': 'A few minutes of rolling can ease the sole for a while.',
   'exercises.footRoll.cue': 'Slow and firm. If you’re wincing, ease off.',
 
   'exercises.barefootHome.title': 'Barefoot at home',
   'exercises.barefootHome.rationale': 'Hours barefoot are hours the foot spends working.',
-  'exercises.barefootHome.cue': 'Indoors only, on flat floors, and build it up slowly.',
+  'exercises.barefootHome.cue': 'Indoors only, on flat floors, built up slowly. Not while the heel hurts.',
 
   'exercises.breathingReset.title': 'Breathing reset',
   'exercises.breathingReset.rationale': 'A minute of slow breathing ends the session properly.',
@@ -126,7 +126,7 @@ export const EXERCISES_EN = {
   'exercises.bigToeLift.cue': 'Lift only the big toe. The other four stay flat on the floor.',
 
   'exercises.towelScrunch.title': 'Towel scrunch',
-  'exercises.towelScrunch.rationale': 'Wakes up the small muscles under the arch.',
+  'exercises.towelScrunch.rationale': 'Works the toes’ grip. The short foot does more for the arch itself.',
   'exercises.towelScrunch.cue': 'Pull the towel in with your toes. The heel stays down.',
 
   'exercises.kneeToWall.title': 'Knee to wall',
@@ -150,7 +150,7 @@ export const EXERCISES_EN = {
   'exercises.stepDown.cue': 'Knee tracks over the toes. Tap the heel down - don’t drop.',
 
   'exercises.soleMassage.title': 'Sole massage',
-  'exercises.soleMassage.rationale': 'Loosens the tissue after a long day.',
+  'exercises.soleMassage.rationale': 'Can ease a sore sole after a long day.',
   'exercises.soleMassage.cue': 'Firm thumb strokes from heel to toes. Ease off anything sharp.',
 
   'exercises.pogoHops.title': 'Pogo hops',

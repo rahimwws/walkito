@@ -6,6 +6,7 @@ import { kv } from '@/shared/lib/storage';
 
 import { revokeDevAccess } from './comp';
 import { OFFERINGS } from './purchase';
+import { devForgetPaywallTrial } from './trial-audience';
 
 /**
  * The paywall, skipped, and what the offer screen shows instead.
@@ -274,6 +275,7 @@ function set(next: { skipped: boolean; missed: boolean; trialShown: boolean; end
 export function devPreviewPaywall(): void {
   if (!__DEV__) return;
   revokeDevAccess();
+  devForgetPaywallTrial();
   set({ skipped: false, missed: false, trialShown: false, endsAt: null });
 }
 

@@ -331,4 +331,9 @@ export const OFFER_EN = {
     one: '{count} move done. Small and often is what moves this.',
     other: 'All {count} moves done. Small and often is what moves this.',
   },
+  'offer.trial.todayTitle': 'Today',
+  'offer.trial.todayText': 'Full access, nothing to pay',
+  'offer.trial.dayTitle': 'Day {day}',
+  'offer.trial.remindText': 'We remind you the trial is ending',
+  'offer.trial.chargeText': '{price} for the year, unless you cancel',
 } as const satisfies Record<string, SourceEntry>;

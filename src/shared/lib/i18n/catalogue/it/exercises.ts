@@ -60,7 +60,7 @@ export const EXERCISES_IT = {
   'exercises.bandInversion.cue': 'Muovi il piede, non la gamba. Il ginocchio resta fermo.',
 
   'exercises.hipAbduction.title': 'Sollevamento laterale della gamba',
-  'exercises.hipAbduction.rationale': 'Un’anca che cede scarica il peso sull’arco.',
+  'exercises.hipAbduction.rationale': 'Un’anca più stabile rende più facile stare su una gamba.',
   'exercises.hipAbduction.cue': 'Sdraiati su un fianco. Solleva la gamba sopra, un po’ indietro, con la punta in avanti.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -79,12 +79,12 @@ export const EXERCISES_IT = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Rullo sotto il piede',
-  'exercises.footRoll.rationale': 'Far rotolare il piede calma il tessuto dopo che ha lavorato.',
+  'exercises.footRoll.rationale': 'Qualche minuto di rotolamento può dare sollievo alla pianta per un po’.',
   'exercises.footRoll.cue': 'Piano e con decisione. Se fai una smorfia, alleggerisci.',
 
   'exercises.barefootHome.title': 'A piedi nudi in casa',
   'exercises.barefootHome.rationale': 'Le ore a piedi nudi sono ore in cui il piede lavora.',
-  'exercises.barefootHome.cue': 'Solo in casa, su pavimenti piani, e aumenta poco alla volta.',
+  'exercises.barefootHome.cue': 'Solo in casa, su pavimenti piani, poco alla volta. Non finché il tallone fa male.',
 
   'exercises.breathingReset.title': 'Respirazione lenta',
   'exercises.breathingReset.rationale': 'Un minuto di respiro lento chiude bene la sessione.',
@@ -108,7 +108,7 @@ export const EXERCISES_IT = {
   'exercises.bigToeLift.cue': 'Solleva solo l’alluce. Le altre quattro dita restano a terra.',
 
   'exercises.towelScrunch.title': 'Raccogli l’asciugamano',
-  'exercises.towelScrunch.rationale': 'Risveglia i piccoli muscoli sotto l’arco.',
+  'exercises.towelScrunch.rationale': 'Allena la presa delle dita. Per l’arco fa di più il piede corto.',
   'exercises.towelScrunch.cue': 'Tira a te l’asciugamano con le dita. Il tallone resta giù.',
 
   'exercises.kneeToWall.title': 'Ginocchio al muro',
@@ -132,7 +132,7 @@ export const EXERCISES_IT = {
   'exercises.stepDown.cue': 'Il ginocchio segue le dita. Appoggia il tallone - non lasciarti cadere.',
 
   'exercises.soleMassage.title': 'Massaggio della pianta',
-  'exercises.soleMassage.rationale': 'Scioglie il tessuto dopo una lunga giornata.',
+  'exercises.soleMassage.rationale': 'Può dare sollievo alla pianta stanca dopo una lunga giornata.',
   'exercises.soleMassage.cue': 'Passate decise col pollice dal tallone alle dita. Alleggerisci dove senti fitte.',
 
   'exercises.pogoHops.title': 'Saltelli pogo',

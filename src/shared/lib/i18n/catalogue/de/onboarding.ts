@@ -247,6 +247,7 @@ export const ONBOARDING_DE = {
   'onboarding.source.blurb': 'Einmal tippen. Das hilft uns, Leute wie dich zu erreichen.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'Jemand hat es mir erzählt',
   'onboarding.source.appStore': 'Im App Store gestöbert',

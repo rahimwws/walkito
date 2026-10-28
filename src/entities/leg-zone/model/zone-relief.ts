@@ -46,10 +46,10 @@ const BY_ZONE: Readonly<Record<LegZone, readonly string[]>> = {
   ankle: ['ankle_rocks', 'band_inversion'],
   inner_ankle: ['band_inversion', 'ankle_rocks'],
   heel: ['fascia_stretch', 'foot_roll', 'short_foot_seated'],
-  dorsum: ['ankle_rocks', 'toe_spread'],
+  dorsum: ['ankle_rocks', 'foot_roll'],
   arch: ['short_foot_seated', 'fascia_stretch', 'foot_roll'],
-  ball: ['toe_spread', 'fascia_stretch'],
-  toes: ['toe_spread', 'short_foot_seated'],
+  ball: ['big_toe_lift', 'fascia_stretch'],
+  toes: ['big_toe_lift', 'short_foot_seated'],
 };
 
 /**

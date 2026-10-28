@@ -38,6 +38,7 @@ import { describeCta, describePlan, splitHighlight } from '../model/plans';
 import { PlanCard, PlusPill } from './plan-card';
 import { PlansHero } from './plans-hero';
 import { PlansTable } from './plans-table';
+import { TrialTimeline } from './trial-timeline';
 import { PILL, PLUS, SHEET } from './plans-theme';
 
 /** How long after "Show all plans" "Not now" appears. Not before it: the
@@ -262,6 +263,8 @@ export function PlansStep({
                   </View>
                 </Animated.View>
               )}
+
+              {chosen.kind === 'annual' && <TrialTimeline plan={chosen.plan} />}
 
               {!expanded && (
                 <Pressable

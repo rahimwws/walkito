@@ -7,6 +7,7 @@ import { devGrantPass, passAccess, passEverBought, passServerEnd, subscribePass,
 import { type Purchases as Store, unconfigured } from './purchase';
 import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn } from './samples';
 import { storeSheetClosed, storeSheetOpened } from './skip';
+import { noteSourceAnswer } from './trial-audience';
 
 /**
  * Which store the app talks to, decided once at startup.
@@ -336,6 +337,7 @@ export async function startPurchases(): Promise<void> {
  * attach it to.
  */
 export function recordAcquisitionSource(source: string): void {
+  noteSourceAnswer(source);
   if (!purchases.configured || !keyIsUsable) return;
   const { setAcquisitionSource } = require('./revenuecat') as typeof import('./revenuecat');
   void setAcquisitionSource(source);

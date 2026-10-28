@@ -1,7 +1,7 @@
 import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import { useEffect, useState, type ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle, useReducedMotion, useSharedValue, withDelay } from 'react-native-reanimated';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 
@@ -24,6 +24,7 @@ import {
   type MascotRig,
 } from '@/shared/ui/mascot';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+import { posterFor } from '@/widgets/session-player';
 
 import {
   pathReached,
@@ -85,6 +86,8 @@ const MASCOT_NEXT = 58;
 /** Moves listed before "+3 more" opens the rest. */
 const MOVES_SHOWN = 5;
 const MOVE_EMOJI = 22;
+/** A move's still, where its clip has one, in the emoji's place. */
+const MOVE_THUMB = { width: 54, height: 36 };
 
 /**
  * Each week's own mascot, standing for its work rather than a result: the
@@ -487,7 +490,11 @@ function MoveRow({
       accessibilityLabel={t('pages.plan.chipPreviewA11y', { name })}
       onPress={() => onPreview(id)}
       style={({ pressed }) => [styles.move, pressed && styles.pressed]}>
-      <FluentIcon name={look.art} size={MOVE_EMOJI} />
+      {posterFor(id) != null ? (
+        <Image source={posterFor(id)!} resizeMode="cover" style={styles.moveThumb} accessibilityIgnoresInvertColors />
+      ) : (
+        <FluentIcon name={look.art} size={MOVE_EMOJI} />
+      )}
       <Text style={[styles.moveName, { color: colors.foreground }]} numberOfLines={2}>
         {name}
       </Text>
@@ -696,6 +703,11 @@ const styles = StyleSheet.create({
   },
   moves: {
     gap: 4,
+  },
+  moveThumb: {
+    ...MOVE_THUMB,
+    borderRadius: 10,
+    borderCurve: 'continuous',
   },
   move: {
     minHeight: 32,

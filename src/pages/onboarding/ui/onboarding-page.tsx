@@ -36,6 +36,7 @@ import {
   track,
   type AcquisitionSource,
 } from "@/shared/lib/analytics";
+import { logAppsFlyerEvent } from "@/shared/lib/appsflyer";
 import { requestTracking } from "@/shared/lib/tracking";
 import { useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
@@ -370,23 +371,19 @@ export function OnboardingPage() {
   const step = STEPS[index];
 
   /**
-   * App Tracking Transparency, asked once: a couple of screens in (the name
-   * and the role answered), as the next screen arrives, never on the first.
-   * The system sheet alone, with nothing of ours in front of it and nothing
-   * offered for the answer; AppsFlyer's start waits for it
-   * (`@/shared/lib/tracking`). Allowed, RevenueCat gets the IDFA too.
+   * App Tracking Transparency, asked once: after the last screen of the plan,
+   * on the way to the paywall (`askTracking` in `onNext`). The system sheet
+   * alone, with nothing of ours in front of it and nothing offered for the
+   * answer. AppsFlyer does not start until it is answered
+   * (`@/shared/lib/tracking`), so the install and every event before it carry
+   * the IDFA when it was allowed. Allowed, RevenueCat gets the IDFA too.
    */
-  const lastKey = useRef(step.key);
-  useEffect(() => {
-    const was = lastKey.current;
-    lastKey.current = step.key;
-    if (was !== "role" || step.key === "role") return;
-    void requestTracking().then((status) => {
+  const askTracking = () =>
+    requestTracking().then((status) => {
       if (status === "unavailable") return;
       track("att_answered", { granted: status === "granted" });
       if (status === "granted") collectAdIdentifiers();
     });
-  }, [step.key]);
   const answer = answers[step.key];
 
   const name = typeof answers.name === "string" ? answers.name : "";
@@ -1064,6 +1061,9 @@ export function OnboardingPage() {
     armOffer({ weeks: String(plan.weeks), name });
     armSetup();
     track("onboarding_completed", { skipped: false, plan_weeks: plan.weeks });
+    // Meta's backup goal (CompleteTutorial, mapped in AppsFlyer): that the
+    // onboarding was finished, nothing about the answers.
+    logAppsFlyerEvent("af_tutorial_completion", {});
     completeOnboarding();
   };
 
@@ -1088,7 +1088,10 @@ export function OnboardingPage() {
       finishing.current = true;
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       applyCoach(coachDone(step.key));
-      setTimeout(finish, reduceMotion ? 0 : FINISH_HOLD_MS);
+      setTimeout(
+        () => void askTracking().finally(finish),
+        reduceMotion ? 0 : FINISH_HOLD_MS,
+      );
       return;
     }
     // The 30-second check's experiment is decided here, as the flow reaches

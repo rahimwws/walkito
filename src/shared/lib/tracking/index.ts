@@ -5,7 +5,8 @@ import { kv } from '@/shared/lib/storage';
 
 /**
  * App Tracking Transparency: the system's "Allow Walkito to track your
- * activity…" question, asked once, on iOS, early in the first onboarding.
+ * activity…" question, asked once, on iOS, at the end of the first
+ * onboarding, after the plan and before the paywall.
  *
  * Why it is asked at all: with permission, AppsFlyer and RevenueCat receive
  * the advertising identifier, and Meta and other networks can match an
@@ -20,7 +21,10 @@ import { kv } from '@/shared/lib/storage';
  * The answer gates AppsFlyer's start (`trackingGate`): AppsFlyer v7 has no
  * "wait for ATT" option any more ("request ATT yourself before init()"), so
  * an install sent before the answer would go without the identifier. The
- * gate is held only for a first launch that will ask, and only so long.
+ * gate is held only while the onboarding (and so the question) is ahead, with
+ * no time limit: the question comes minutes in, and an install sent on a
+ * timer would go without the IDFA even for somebody who then allows it. A
+ * launch that closes before answering holds again on the next one.
  *
  * Lazily required, like every module added after a dev client was built: a
  * binary without it answers `unavailable` and holds nothing.
@@ -53,10 +57,6 @@ export async function trackingStatus(): Promise<TrackingStatus> {
 
 // ── The gate AppsFlyer waits on ─────────────────────────────────────────────
 
-/** How long a first launch holds AppsFlyer for the answer at most: past
- * this, it starts without the identifier rather than not at all. */
-export const TRACKING_WAIT_MS = 120_000;
-
 let gate: Promise<void> = Promise.resolve();
 let open: (() => void) | null = null;
 
@@ -75,13 +75,13 @@ function release(): void {
  * Holds AppsFlyer's start for the answer, on a launch that will ask: iOS, the
  * module linked, onboarding not finished, and the question never answered.
  * Called once by the app layer before AppsFlyer starts. Anything else opens
- * the gate straight away; so does the timeout.
+ * the gate straight away. No timeout: until the question is answered,
+ * AppsFlyer sends nothing, its events wait behind the gate.
  */
 export function holdForTracking(willAsk: boolean): void {
   if (!willAsk || native() == null) return;
   gate = new Promise<void>((resolve) => {
     open = resolve;
-    setTimeout(resolve, TRACKING_WAIT_MS);
   });
   // Already answered (a reinstall keeps the answer): nothing to wait for.
   void trackingStatus().then((status) => {

@@ -104,10 +104,20 @@ export function finishHomeTour(): void {
   emit();
 }
 
+/** Set by `?previewTour` in development: the card is shown even on a phone
+ * with history, which a real first run skips. This launch only. */
+let devForced = false;
+
+/** Development only: the day-one card was asked for by `?previewTour`. */
+export function homeTourForced(): boolean {
+  return devForced;
+}
+
 /** Development only (`?previewTour`, `?previewTour=tour`): armed again, from
  * the day-one card or from the tour's first stop. */
 export function devRestartHomeTour(at: HomeTourStage = 'day1'): void {
   if (!__DEV__) return;
+  devForced = true;
   state = 'armed';
   stage = at;
   step = 0;

@@ -29,7 +29,7 @@ export function usePurchases(): void {
     // On a first launch that will ask App Tracking Transparency (iOS, the
     // onboarding still ahead), AppsFlyer waits for the answer before it
     // starts, so the install carries the IDFA when it was allowed. The
-    // question itself is asked by the onboarding, a couple of screens in.
+    // question itself is asked at the end of the onboarding, before the paywall.
     holdForTracking(!onboardingDone());
     void startAppsFlyer();
     void startPurchases();

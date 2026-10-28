@@ -80,7 +80,7 @@ export const EXERCISES_RU = {
     'Двигается только стопа против резинки, а не вся нога. Колено остаётся на месте.',
 
   'exercises.hipAbduction.title': 'Подъём ноги лёжа на боку',
-  'exercises.hipAbduction.rationale': 'Когда бедро проваливается, нагрузка уходит на свод стопы.',
+  'exercises.hipAbduction.rationale': 'Когда бедро устойчивее, легче стоять на одной ноге.',
   'exercises.hipAbduction.cue': 'Лягте на бок. Поднимите верхнюю ногу вверх и чуть назад, носок смотрит вперёд.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -101,12 +101,12 @@ export const EXERCISES_RU = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Прокатывание стопы',
-  'exercises.footRoll.rationale': 'Прокатывание успокаивает ткань после нагрузки.',
+  'exercises.footRoll.rationale': 'Несколько минут прокатывания могут на время облегчить подошву.',
   'exercises.footRoll.cue': 'Медленно и с нажимом. Если морщитесь от боли - ослабьте нажим.',
 
   'exercises.barefootHome.title': 'Босиком дома',
   'exercises.barefootHome.rationale': 'Часы босиком - это часы, которые стопа проводит в работе.',
-  'exercises.barefootHome.cue': 'Только дома, на ровном полу, и увеличивайте время постепенно.',
+  'exercises.barefootHome.cue': 'Только дома, на ровном полу, и постепенно. Не пока болит пятка.',
 
   'exercises.breathingReset.title': 'Дыхательная пауза',
   'exercises.breathingReset.rationale': 'Минута медленного дыхания правильно завершает занятие.',
@@ -130,7 +130,7 @@ export const EXERCISES_RU = {
   'exercises.bigToeLift.cue': 'Поднимайте только большой палец. Остальные четыре лежат на полу.',
 
   'exercises.towelScrunch.title': 'Собирание полотенца',
-  'exercises.towelScrunch.rationale': 'Будит мелкие мышцы под сводом стопы.',
+  'exercises.towelScrunch.rationale': 'Тренирует хват пальцев. Для самого свода больше даёт «короткая стопа».',
   'exercises.towelScrunch.cue': 'Подтягивайте полотенце пальцами. Пятка остаётся на полу.',
 
   'exercises.kneeToWall.title': 'Колено к стене',
@@ -154,7 +154,7 @@ export const EXERCISES_RU = {
   'exercises.stepDown.cue': 'Колено идёт над пальцами. Касайтесь пяткой пола - не падайте.',
 
   'exercises.soleMassage.title': 'Массаж стопы',
-  'exercises.soleMassage.rationale': 'Расслабляет ткани после долгого дня.',
+  'exercises.soleMassage.rationale': 'Может облегчить уставшую подошву после долгого дня.',
   'exercises.soleMassage.cue': 'Плотные движения большим пальцем от пятки к пальцам. Где остро - ослабьте.',
 
   'exercises.pogoHops.title': 'Пружинящие прыжки',

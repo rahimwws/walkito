@@ -251,6 +251,7 @@ export const ONBOARDING_ES = {
   'onboarding.source.blurb': 'Un toque. Nos ayuda a llegar a gente como tú.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'Me lo recomendó alguien',
   'onboarding.source.appStore': 'Buscando en la App Store',

@@ -401,8 +401,9 @@ export function sessionDays(daysPerWeek: number): number[] {
 }
 
 /**
- * Week one's moves, as the plan builds it: seated, level one, nothing that
- * loads the fascia (`eligibility.ts`, `settling`). The plan picks among these
+ * Week one's moves, as the plan builds it: level one or two, nothing that
+ * loads the fascia (`eligibility.ts`, `settling`), and never the morning
+ * stretch, which the deck already shows first. The plan picks among these
  * by its own rules, so the screen shows the kind of week it is, from the
  * exercises that week is allowed to hold.
  */
@@ -410,10 +411,10 @@ export function firstWeekMoves(area: string | null): string[] {
   switch (area) {
     case 'achilles':
     case 'calf':
-      return ['heel_raise_seated', 'short_foot_seated'];
+      return ['calf_stretch_bent', 'short_foot_seated'];
     case 'shin':
-      return ['heel_raise_seated', 'toe_spread'];
+      return ['ankle_rocks', 'short_foot_seated'];
     default:
-      return ['heel_raise_seated', 'toe_spread'];
+      return ['short_foot_seated', 'calf_stretch_straight'];
   }
 }

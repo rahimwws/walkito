@@ -33,6 +33,7 @@ export {
   finishHomeTour,
   homeTourStage,
   homeTourState,
+  homeTourForced,
   setHomeTourStage,
   setHomeTourStep,
   useHomeTourStage,

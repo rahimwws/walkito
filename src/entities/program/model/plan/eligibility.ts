@@ -32,8 +32,13 @@ export type EligibilityContext = {
  */
 export const PROTECTED_FEET_EXCLUDE: ReadonlySet<string> = new Set(['pogo_hops', 'eyes_closed_stand']);
 
-/** `band_inversion` waits for the arch's own muscles: six standing short-foot sessions first. */
-export const BAND_INVERSION_AFTER = 6;
+/**
+ * `band_inversion` used to wait for six standing short-foot sessions. It works
+ * the tibialis posterior, the muscle that holds the inner arch up, which is
+ * the best-supported strength work for a flat foot that hurts (Kulig 2009), so
+ * it now waits only for week one to pass, like anything above level 2.
+ */
+export const BAND_INVERSION_AFTER = 0;
 /** How many of the last 14 mornings must be logged before pogo hops can count as "pain stayed low". */
 const POGO_MIN_READINGS = 10;
 const POGO_MAX_PAIN = 2;

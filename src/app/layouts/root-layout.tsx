@@ -32,7 +32,7 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { useDevOfferWall, usePlansAsked } from '@/features/home-tour';
+import { useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { PassSetPreview } from '@/widgets/pass-checkout';
 import { SessionDonePreview } from '@/widgets/session-player';
@@ -52,6 +52,7 @@ import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 
 import { OfferWall } from './offer-wall';
+import { runStoreShots } from '../providers/store-shots';
 
 /**
  * The app shell: fonts, theme, gesture root, routes.
@@ -85,6 +86,7 @@ import { OfferWall } from './offer-wall';
 // Before any screen mounts: the router integration has to be listening when
 // the first route is focused.
 configureObserve();
+runStoreShots();
 
 /**
  * `ObserveRoot` if the binary has it, a pass-through if it does not.
@@ -198,8 +200,7 @@ function RootLayoutInner() {
   const tourState = useHomeTourState();
   const tryingOut = onboarded && !entitled && !lapsed && skipped;
   const devWall = useDevOfferWall();
-  const plansAsked = usePlansAsked();
-  const offerWall = (tryingOut && (tourState === 'done' || plansAsked)) || devWall;
+  const offerWall = (tryingOut && tourState === 'done') || devWall;
   // A skip from before the tour existed has no tour armed: it gets one, or
   // Home would be open with nothing in front of it and no offer after.
   useEffect(() => {

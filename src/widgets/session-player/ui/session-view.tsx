@@ -63,7 +63,7 @@ import {
 } from '@/entities/program';
 import { useIntake } from '@/entities/profile';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
-import { PRIMARY, fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { PRIMARY, WIDE_CLIPS, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { setSoundPrefs, useSoundPrefs } from '@/shared/lib/sound';
@@ -76,6 +76,7 @@ import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
+import { ClipViewer } from './clip-viewer';
 import { mirroredFor } from '../model/mirror';
 import { BreakOverlay } from './break-overlay';
 import { CountInOverlay } from './count-in-overlay';
@@ -154,6 +155,10 @@ const STAGE_RADIUS = 28;
 /** The studio backdrop the clips are filmed on, so a clip fitted inside the
  * stage with room to spare blends into it rather than sitting on bars. */
 const CLIP_BACKDROP = '#ECF0F1';
+
+/** The panel behind a wide clip: the clip is fitted whole, and what is left
+ * above and below it is dark, as a video player's is. */
+const WIDE_BACKDROP = '#0B0B0D';
 
 /** The clips are filmed upright, 9:16. */
 const CLIP_SHAPE = 9 / 16;
@@ -808,6 +813,12 @@ function SessionRun({
    * like nothing at all. Null for the six moves that have no clip yet, which
    * the card below states rather than showing another exercise's video. */
   const clip = clipFor(current?.exercise?.id ?? '');
+  /** A wide clip, framed on the feet, is fitted whole on a dark panel rather
+   * than on the grey studio the upright clips were filmed in. */
+  const wideClip = WIDE_CLIPS.has(current?.exercise?.id ?? '');
+  /** A wide clip opens on its own screen, turned to fill it, rather than
+   * growing the card. */
+  const [wideViewer, setWideViewer] = useState(false);
 
   const player = useVideoPlayer(clip, (instance) => {
     instance.loop = true;
@@ -1588,6 +1599,12 @@ function SessionRun({
     [open],
   );
 
+  // A wide clip never grows the card: it opens on its own screen instead. A
+  // card left open from an upright clip closes when a wide one comes up.
+  useEffect(() => {
+    if (wideClip && expanded) setOpen(false);
+  }, [wideClip, expanded, setOpen]);
+
   // The overlay this view sits inside already pads for the notch, so every
   // rect below is measured against *this* view rather than the window. Reading
   // the screen's height here is what put the expanded card a safe area too low
@@ -2001,8 +2018,11 @@ function SessionRun({
             this column does not contain. What stays here is the space it
             occupies at rest, which is also how its resting rect is measured:
             the panel at rest is exactly this box. */}
+        {/* A wide clip's stage is its own shape, right under the header, as
+            workout players lay a video out; the room left goes above the
+            button. An upright clip's stage takes the room itself. */}
         <View
-          style={styles.stage}
+          style={[styles.stage, wideClip && styles.stageWide]}
           onLayout={(event) => setStage(event.nativeEvent.layout)}
         />
 
@@ -2122,6 +2142,8 @@ function SessionRun({
           )}
         </View>
 
+        {wideClip && <View style={styles.stageWideFill} />}
+
         {/* The whole point of the Live Activity, said once where it is
             actionable. Gated on the activity having actually started: an
             unconditional line here would be telling someone who has Live
@@ -2165,28 +2187,41 @@ function SessionRun({
           screen. Positioned rather than scaled: a scaled video is a stretched
           video, and a scaled corner radius is the wrong radius all the way. */}
       <Animated.View
-        style={[styles.card, { backgroundColor: CLIP_BACKDROP }, cardStyle]}>
-        <VideoView
-          style={[styles.video, mirrored && styles.mirrored]}
-          player={player}
-          nativeControls={false}
-          // Contain, never cover: the whole body stays in frame. The panel is
-          // wider than the clip, and the clip's backdrop is the panel's colour,
-          // so the room either side reads as more of the studio, not as bars.
-          contentFit="contain"
-        />
+        style={[styles.card, { backgroundColor: wideClip ? WIDE_BACKDROP : CLIP_BACKDROP }, cardStyle]}>
+        {wideClip ? (
+          // A wide clip: the stage is the clip's own shape (see `stageWide`),
+          // so the rounded card is the video's own edge.
+          <VideoView
+            style={[styles.video, mirrored && styles.mirrored]}
+            player={player}
+            nativeControls={false}
+            contentFit={expanded ? 'contain' : 'cover'}
+          />
+        ) : (
+          <VideoView
+            style={[styles.video, mirrored && styles.mirrored]}
+            player={player}
+            nativeControls={false}
+            // Contain, never cover: the whole body stays in frame. The panel is
+            // wider than the clip, and the clip's backdrop is the panel's colour,
+            // so the room either side reads as more of the studio, not as bars.
+            contentFit="contain"
+          />
+        )}
 
         {/* The clips are not all filmed on the same grey — one is bluer, one
             warmer — so no single panel colour meets every clip's edge without a
             seam. Each side of the clip melts into the panel instead. */}
-        <View pointerEvents="none" style={styles.edgeRow}>
-          <View style={styles.edgeSpacer} />
-          <View style={styles.edgeBox}>
-            <EdgeFade side="left" />
-            <EdgeFade side="right" />
+        {!wideClip && (
+          <View pointerEvents="none" style={styles.edgeRow}>
+            <View style={styles.edgeSpacer} />
+            <View style={styles.edgeBox}>
+              <EdgeFade side="left" />
+              <EdgeFade side="right" />
+            </View>
+            <View style={styles.edgeSpacer} />
           </View>
-          <View style={styles.edgeSpacer} />
-        </View>
+        )}
 
         {/* Over the player, not instead of it: the stage keeps its size and its
             corner, and the line sits in the space the clip would have filled.
@@ -2265,7 +2300,9 @@ function SessionRun({
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t('widgets.expandDemo')}
-            onPress={() => setOpen(true)}
+            // A wide clip opens in the system's own full-screen player, which
+            // turns with the phone; an upright one grows to fill the screen.
+            onPress={() => (wideClip ? setWideViewer(true) : setOpen(true))}
             hitSlop={10}
             style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
             <HugeiconsIcon
@@ -2301,6 +2338,15 @@ function SessionRun({
           </Pressable>
         </Animated.View>
       </Animated.View>
+
+      {wideClip && current?.exercise != null && (
+        <ClipViewer
+          clip={current.exercise.id}
+          mirrored={mirrored}
+          visible={wideViewer}
+          onClose={() => setWideViewer(false)}
+        />
+      )}
 
       {/* Under the stage, in the same seat it holds collapsed, at the same
           size. Laid over the video instead it became part of the
@@ -2479,6 +2525,11 @@ const styles = StyleSheet.create({
   video: {
     flex: 1,
   },
+  stageWide: {
+    flex: 0,
+    aspectRatio: 16 / 9,
+  },
+  stageWideFill: { flex: 1 },
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },

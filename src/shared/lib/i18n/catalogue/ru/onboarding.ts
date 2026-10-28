@@ -252,6 +252,7 @@ export const ONBOARDING_RU = {
   'onboarding.source.blurb': 'Одно касание. Так мы найдём людей вроде вас.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'Посоветовали знакомые',
   'onboarding.source.appStore': 'Поиск в App Store',

@@ -69,7 +69,7 @@ export const EXERCISES_FR = {
   'exercises.bandInversion.cue': 'Bouge le pied, pas la jambe. Le genou reste immobile.',
 
   'exercises.hipAbduction.title': 'Élévation latérale de jambe',
-  'exercises.hipAbduction.rationale': 'Une hanche qui lâche fait retomber la charge sur la voûte.',
+  'exercises.hipAbduction.rationale': 'Une hanche plus stable rend l’appui sur une jambe plus facile.',
   'exercises.hipAbduction.cue':
     'Allonge-toi sur le côté. Lève la jambe du dessus, un peu vers l’arrière, orteils tournés vers l’avant.',
 
@@ -91,12 +91,12 @@ export const EXERCISES_FR = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Roulement du pied',
-  'exercises.footRoll.rationale': 'Rouler le pied apaise les tissus après l’effort.',
+  'exercises.footRoll.rationale': 'Quelques minutes à rouler le pied peuvent soulager la plante un moment.',
   'exercises.footRoll.cue': 'Lentement et fermement. Si tu grimaces, relâche.',
 
   'exercises.barefootHome.title': 'Pieds nus à la maison',
   'exercises.barefootHome.rationale': 'Chaque heure pieds nus est une heure où le pied travaille.',
-  'exercises.barefootHome.cue': 'À l’intérieur seulement, sur un sol plat, et augmente petit à petit.',
+  'exercises.barefootHome.cue': 'À l’intérieur seulement, sur un sol plat, petit à petit. Pas tant que le talon fait mal.',
 
   'exercises.breathingReset.title': 'Respiration lente',
   'exercises.breathingReset.rationale': 'Une minute de respiration lente clôt bien la séance.',
@@ -121,7 +121,7 @@ export const EXERCISES_FR = {
   'exercises.bigToeLift.cue': 'Lève seulement le gros orteil. Les quatre autres restent à plat au sol.',
 
   'exercises.towelScrunch.title': 'Froisser la serviette',
-  'exercises.towelScrunch.rationale': 'Réveille les petits muscles sous la voûte.',
+  'exercises.towelScrunch.rationale': 'Travaille la prise des orteils. Le pied court fait plus pour la voûte.',
   'exercises.towelScrunch.cue': 'Ramène la serviette avec tes orteils. Le talon reste au sol.',
 
   'exercises.kneeToWall.title': 'Genou au mur',
@@ -146,7 +146,7 @@ export const EXERCISES_FR = {
   'exercises.stepDown.cue': 'Le genou suit l’axe des orteils. Pose le talon en douceur - ne te laisse pas tomber.',
 
   'exercises.soleMassage.title': 'Massage de la plante',
-  'exercises.soleMassage.rationale': 'Détend les tissus après une longue journée.',
+  'exercises.soleMassage.rationale': 'Peut soulager une plante fatiguée après une longue journée.',
   'exercises.soleMassage.cue':
     'Passages fermes du pouce, du talon vers les orteils. Relâche la pression dès que ça fait mal.',
 

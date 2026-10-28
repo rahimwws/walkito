@@ -239,4 +239,9 @@ export const OFFER_FR = {
     one: '{count} exercice fait. Peu mais souvent, c’est ce qui fait avancer.',
     other: 'Les {count} exercices sont faits. Peu mais souvent, c’est ce qui fait avancer.',
   },
+  'offer.trial.todayTitle': 'Aujourd’hui',
+  'offer.trial.todayText': 'Accès complet, rien à payer',
+  'offer.trial.dayTitle': 'Jour {day}',
+  'offer.trial.remindText': 'On vous rappelle que l’essai se termine',
+  'offer.trial.chargeText': '{price} pour l’année, sauf si vous annulez',
 };

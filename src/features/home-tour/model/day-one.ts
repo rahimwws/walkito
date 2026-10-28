@@ -35,30 +35,36 @@ const MOVE_SECONDS = (DAY_ONE_MINUTES * 60) / MOVES;
 
 /**
  * The first thing the app shows in motion, so both moves are clips filmed
- * with a person: a few others are a grey anatomical mannequin (the plantar
- * stretch, ankle rocks, the towel scrunch, knee to wall, the heel drop),
- * right in the plan and the wrong first impression. And both are easy for
- * anybody: nothing to hand, no load through the fascia, nothing on one leg or
- * with the eyes shut, nothing a foot may not manage (toe spreads were tried
- * here, and plenty of feet cannot spread their toes yet).
+ * with a person, never the grey anatomical mannequin a few others are, and
+ * both are easy for anybody: nothing that loads the fascia, nothing on one
+ * leg or with the eyes shut, no jumping.
+ *
+ * Ankle rocks first, the knee rocked over the toes to wake the ankle and
+ * calf; for somebody whose week one starts sitting down, the plantar stretch
+ * the plan gives every morning instead. Then rolling
+ * the sole on a ball, the one that feels best, to end on; for somebody who
+ * said in the onboarding there is no ball at home (`equipmentMissing`), the
+ * side leg raise instead, which needs only the floor.
  *
  * Two rather than three: a first session short enough to be finished is the
- * one that gets finished. A whole person at a wall in a stretch everybody
- * knows, then hands on the sole, the one that feels best, to end on.
+ * one that gets finished.
  */
-const OPENER = 'calf_stretch_straight';
+const OPENER = 'ankle_rocks';
 /** For somebody whose week one starts sitting down (`seatedStart`). */
-const OPENER_SEATED = 'heel_raise_seated';
-const CLOSER = 'sole_massage';
+const OPENER_SEATED = 'fascia_stretch';
+const CLOSER = 'foot_roll';
+/** The closer without a ball. */
+const CLOSER_NO_BALL = 'hip_abduction';
 
 /** Every clip a day-one session can play, for the prefetch to fetch first. */
-export const DAY_ONE_CLIPS: readonly string[] = [OPENER, OPENER_SEATED, CLOSER];
+export const DAY_ONE_CLIPS: readonly string[] = [OPENER, OPENER_SEATED, CLOSER, CLOSER_NO_BALL];
 
 /** The moves, as ids: the opener (seated for a `seatedStart`), then the
- * closer. Not picked by where it hurts: the first two minutes are for
- * everybody, and the plan from tomorrow is the part fitted to them. */
-export function dayOneIds(seatedOnly: boolean): string[] {
-  return [seatedOnly ? OPENER_SEATED : OPENER, CLOSER];
+ * closer (the ball, or the floor without one). Not picked by where it hurts:
+ * the first two minutes are for everybody, and the plan from tomorrow is the
+ * part fitted to them. */
+export function dayOneIds(seatedOnly: boolean, hasBall: boolean): string[] {
+  return [seatedOnly ? OPENER_SEATED : OPENER, hasBall ? CLOSER : CLOSER_NO_BALL];
 }
 
 /**
@@ -76,11 +82,12 @@ export type DayOneRun = {
 };
 
 /**
- * The session as it opens: whether week one starts seated is read now, and the
- * run is fixed once it is handed over.
+ * The session as it opens: whether week one starts seated and whether there
+ * is a ball are read now, and the run is fixed once it is handed over.
  */
 export function dayOneRun(): DayOneRun {
-  const ids = dayOneIds(planSettings().seatedStart === true);
+  const settings = planSettings();
+  const ids = dayOneIds(settings.seatedStart === true, !settings.equipmentMissing.includes('ball'));
   const n = todayDayNumber();
   return {
     day: {

@@ -15,7 +15,7 @@ import type { OfferGuard } from './use-offer-screen';
 
 /** How many days before a free trial ends its reminder lands. The trial
  * offer's own line ("We'll remind you 3 days before…") reads this number. */
-export const TRIAL_REMINDER_DAYS = 3;
+export const TRIAL_REMINDER_DAYS = 2;
 
 /**
  * How the offer sells the 3-month pass: through the pass checkout
@@ -178,7 +178,7 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>, options: O
 
 /** The reminder the trial offer promised, `TRIAL_REMINDER_DAYS` before the
  * trial ends. */
-async function remindBeforeTrialEnds(trial: FreeTrial, price: string): Promise<void> {
+export async function remindBeforeTrialEnds(trial: FreeTrial, price: string): Promise<void> {
   const endsAt = trialEndsAt(trial, Date.now());
   if (!(await requestNotificationAccess())) return;
   await scheduleTrialReminder({ trialEndsAt: endsAt, price, daysBefore: TRIAL_REMINDER_DAYS });

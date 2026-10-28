@@ -63,7 +63,7 @@ export const IN_SESSION_STOP = 6;
 export const STEP_DOWN_SESSIONS = 2;
 
 /** Seated, fascia-free work for a flare day, when the plan's own day has too little of it. */
-const FLARE_POOL = ['short_foot_seated', 'toe_spread', 'heel_raise_seated', 'fascia_stretch', 'big_toe_lift', 'sole_massage'];
+const FLARE_POOL = ['short_foot_seated', 'fascia_stretch', 'big_toe_lift', 'foot_roll'];
 
 export type AdjustedDay = PlanDay & { reason: TodayReason; steppedDown: boolean };
 

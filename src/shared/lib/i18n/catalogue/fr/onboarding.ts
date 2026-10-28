@@ -244,6 +244,7 @@ export const ONBOARDING_FR = {
   'onboarding.source.blurb': 'Un seul geste. Ça nous aide à faire connaître Walkito à des gens comme toi.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'On me l’a recommandé',
   'onboarding.source.appStore': 'En parcourant l’App Store',

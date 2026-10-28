@@ -2,6 +2,7 @@ import AppStoreIcon from '@hugeicons/core-free-icons/AppStoreIcon';
 import PlayStoreIcon from '@hugeicons/core-free-icons/PlayStoreIcon';
 import GoogleIcon from '@hugeicons/core-free-icons/GoogleIcon';
 import Infinity01Icon from '@hugeicons/core-free-icons/Infinity01Icon';
+import Facebook01Icon from '@hugeicons/core-free-icons/Facebook01Icon';
 import InstagramIcon from '@hugeicons/core-free-icons/InstagramIcon';
 import MoreHorizontalCircle01Icon from '@hugeicons/core-free-icons/MoreHorizontalCircle01Icon';
 import Stairs01Icon from '@hugeicons/core-free-icons/Stairs01Icon';
@@ -407,6 +408,7 @@ export const STEPS: readonly OnboardingStep[] = [
     options: [
       { value: 'tiktok', label: (t) => t('onboarding.source.tiktok'), icon: TiktokIcon, accent: 'violet' },
       { value: 'instagram', label: (t) => t('onboarding.source.instagram'), icon: InstagramIcon, accent: 'orange' },
+      { value: 'facebook', label: (t) => t('onboarding.source.facebook'), icon: Facebook01Icon, accent: 'blue' },
       { value: 'youtube', label: (t) => t('onboarding.source.youtube'), icon: YoutubeIcon, accent: 'amber' },
       { value: 'friend', label: (t) => t('onboarding.source.friend'), icon: UserMultipleIcon, accent: 'teal' },
       Platform.OS === 'android'

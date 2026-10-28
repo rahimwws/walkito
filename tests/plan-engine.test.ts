@@ -75,7 +75,7 @@ describe('the catalogue and the manifest', () => {
       for (const id of ids(plan)) expect(CLIPS[id]).toBeDefined();
     });
     // And with most of the manifest gone, still nothing without a clip.
-    const few = new Set(['heel_raise_seated', 'short_foot_seated', 'fascia_stretch']);
+    const few = new Set(['heel_raise_double', 'short_foot_seated', 'fascia_stretch']);
     const plan = buildWeek(input({ eligibility: { ...input().eligibility, clips: few } }));
     for (const id of ids(plan)) expect(few.has(id)).toBe(true);
   });
@@ -105,12 +105,12 @@ describe('the week', () => {
     }
   });
 
-  test('4 · band_inversion does not appear before six standing short-foot sessions', () => {
-    everyWeek((plan) => expect(ids(plan)).not.toContain('band_inversion'), {
-      eligibility: { ...input().eligibility, shortFootStandingSessions: 5 },
-    });
-    const ctx: EligibilityContext = { ...input().eligibility, settling: false, shortFootStandingSessions: 6 };
+  test('4 · band_inversion waits only for week one, then is on every arch strength day', () => {
+    const ctx: EligibilityContext = { ...input().eligibility, settling: false, shortFootStandingSessions: 0 };
     expect(allowed('band_inversion', ctx)).toBe(true);
+    expect(allowed('band_inversion', { ...ctx, settling: true })).toBe(false);
+    const plan = buildWeek(input({ weekIndex: 2, daysPerWeek: 5, defaultMinutes: 10 }));
+    for (const day of plan.days.filter((d) => d.type === 'strength')) expect(day.exercises.map((e) => e.id)).toContain('band_inversion');
   });
 
   test('5 · pogo_hops never appears if any pain above 2 in the last 14 days', () => {
@@ -164,19 +164,66 @@ describe('the week', () => {
     );
   });
 
-  test('8 · two "easy" sessions in a row → the focus exercise moves up one level', () => {
-    const base = input({ goals: [goal('arch_hold', 10)], levels: { ...DEFAULT_LEVELS, arch: 2 } });
-    const easy = buildWeek({
-      ...base,
-      lastWeekFeedback: [
-        { date: '2026-09-22', feedback: 'easy', exerciseIds: ['short_foot_seated'] },
-        { date: '2026-09-24', feedback: 'easy', exerciseIds: ['short_foot_seated'] },
-      ],
-    });
-    expect(easy.levels.arch).toBe(3);
-    expect(easy.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('short_foot_double');
-    const same = buildWeek(base);
-    expect(same.levels.arch).toBe(2);
+  test('8 · two sessions done, neither "hard", pain not rising → the focus exercise moves up one level', () => {
+    const base = input({ goals: [goal('arch_hold', 10)], levels: { ...DEFAULT_LEVELS, arch: 1 } });
+    const done = (feedback: 'easy' | 'ok' | 'hard') => [
+      { date: '2026-09-22', feedback, exerciseIds: ['short_foot_seated'] },
+      { date: '2026-09-24', feedback: 'ok' as const, exerciseIds: ['short_foot_seated'] },
+    ];
+    const up = buildWeek({ ...base, lastWeekFeedback: done('easy') });
+    expect(up.levels.arch).toBe(2);
+    expect(up.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('short_foot_double');
+    expect(buildWeek({ ...base, lastWeekFeedback: done('ok') }).levels.arch).toBe(2);
+    expect(buildWeek({ ...base, lastWeekFeedback: done('hard') }).levels.arch).toBe(0);
+    expect(buildWeek(base).levels.arch).toBe(1);
+    const sore = buildWeek({ ...base, lastWeekFeedback: done('ok'), painWeekBefore: Array(7).fill(2), painLastWeek: Array(7).fill(3) });
+    expect(sore.levels.arch).toBe(1);
+  });
+
+  test('9 · a second goal climbs its own chain too', () => {
+    const plan = buildWeek(
+      input({
+        goals: [goal('arch_hold', 10), goal('calf_raises', 12)],
+        levels: { ...DEFAULT_LEVELS, arch: 1, calf: 0 },
+        lastWeekFeedback: [
+          { date: '2026-09-22', feedback: 'ok', exerciseIds: ['heel_raise_double'] },
+          { date: '2026-09-24', feedback: 'ok', exerciseIds: ['heel_raise_double'] },
+        ],
+      }),
+    );
+    expect(plan.levels.calf).toBe(1);
+    expect(plan.levels.arch).toBe(1);
+  });
+
+  test('heel pain climbs to the single-leg raise on a towel, never to drops or hops', () => {
+    const towel = CHAINS.calf.indexOf('heel_raise_towel');
+    const at = (calf: number, id: string) =>
+      buildWeek(
+        input({
+          goals: [goal('pain_free_mornings', 5)],
+          painStart: 5,
+          levels: { ...DEFAULT_LEVELS, calf },
+          lastWeekFeedback: [
+            { date: '2026-09-22', feedback: 'ok', exerciseIds: [id] },
+            { date: '2026-09-24', feedback: 'ok', exerciseIds: [id] },
+          ],
+        }),
+      );
+    expect(at(towel - 1, 'heel_raise_plain').levels.calf).toBe(towel);
+    expect(at(towel, 'heel_raise_towel').levels.calf).toBe(towel);
+  });
+
+  test('heel pain: the plantar stretch is in every session, as ten-second holds', () => {
+    for (const defaultMinutes of [3, 5, 10] as const) {
+      for (const weekIndex of [1, 2, 6]) {
+        const plan = buildWeek(input({ goals: [goal('pain_free_mornings', 5)], painStart: 5, weekIndex, defaultMinutes, daysPerWeek: 7 }));
+        for (const day of plan.days) {
+          if (day.exercises.length === 0) continue;
+          const stretch = day.exercises.find((e) => e.id === 'fascia_stretch');
+          expect(stretch?.dose.holdSec).toBe(10);
+        }
+      }
+    }
   });
 
   test('9 · pain up two points over the week → the focus exercise moves down one level', () => {
@@ -234,7 +281,7 @@ describe('the week', () => {
     const toe = (plan: WeekPlan) =>
       plan.days
         .filter((d) => d.type === 'strength')
-        .map((d) => d.exercises.some((e) => e.id === 'big_toe_lift' || e.id === 'toe_spread'));
+        .map((d) => d.exercises.some((e) => e.id === 'big_toe_lift'));
     expect(toe(buildWeek(input({ ...calf, toeWork: true }))).every(Boolean)).toBe(true);
     expect(toe(buildWeek(input(calf))).some(Boolean)).toBe(false);
   });
@@ -441,6 +488,21 @@ describe('the exercise review fixes', () => {
     expect(CHAINS.calf[moved.calf]).toBe('heel_raise_towel');
     expect(currentLevels(moved)).toBe(moved);
     expect(currentLevels({ ...DEFAULT_LEVELS, calf: 3 }).calf).toBe(3);
+  });
+
+  test('stored arch levels from the chain that began with the towel scrunch land on the same exercise', () => {
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: 2, arch: 3 });
+    expect(CHAINS.arch[moved.arch]).toBe('short_foot_double');
+    expect(CHAINS.arch[currentLevels({ ...DEFAULT_LEVELS, _chains: 2, arch: 0 }).arch]).toBe('big_toe_lift');
+    expect(CHAINS.calf[currentLevels({ ...DEFAULT_LEVELS, _chains: 2, calf: 4 }).calf]).toBe('heel_raise_towel');
+  });
+
+  test('stored calf levels from the chain that began seated land on the same exercise', () => {
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: 3, calf: 4 });
+    expect(CHAINS.calf[moved.calf]).toBe('heel_raise_towel');
+    // The seated raise itself is gone: it lands on the first step, standing.
+    expect(CHAINS.calf[currentLevels({ ...DEFAULT_LEVELS, _chains: 3, calf: 0 }).calf]).toBe('heel_raise_double');
+    expect(CHAINS.calf).not.toContain('heel_raise_seated');
   });
 
   test('pain-free mornings: 14 of the last 16 logged at 1 or under', () => {

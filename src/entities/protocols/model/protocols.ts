@@ -102,7 +102,7 @@ export const PROTOCOLS: readonly Protocol[] = [
     steps: [
       { exerciseId: 'foot_roll', seconds: 60 },
       { exerciseId: 'fascia_stretch', seconds: 60 },
-      { exerciseId: 'toe_spread', seconds: 60 },
+      { exerciseId: 'big_toe_lift', seconds: 60 },
     ],
   },
   {

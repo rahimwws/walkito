@@ -200,11 +200,11 @@ describe('the plan screen', () => {
       weekIndex,
       focus,
       days: [
-        day(date(0), 'strength', [move('heel_raise_seated', true), move('short_foot_seated')]),
+        day(date(0), 'strength', [move('heel_raise_double', true), move('short_foot_seated')]),
         day(date(1), 'mobility', [move('fascia_stretch', true), move('calf_stretch_straight')]),
-        day(date(2), 'strength', [move('heel_raise_seated', true), move('calf_stretch_straight')]),
+        day(date(2), 'strength', [move('heel_raise_double', true), move('calf_stretch_straight')]),
         day(date(3), 'balance', [move('single_leg_hold'), move('ankle_rocks')]),
-        day(date(4), 'strength', [move('heel_raise_seated', true), move('short_foot_seated')]),
+        day(date(4), 'strength', [move('heel_raise_double', true), move('short_foot_seated')]),
         day(date(5), 'rest'),
         day(date(6), 'rest'),
       ],
@@ -258,7 +258,7 @@ describe('the plan screen', () => {
     expect(next).toMatchObject({ when: 'next', weekStart: '2026-10-19' });
     // The focus's moves first, then the ones on most days, then in order; each once.
     expect(now.moves).toEqual([
-      'heel_raise_seated',
+      'heel_raise_double',
       'fascia_stretch',
       'short_foot_seated',
       'calf_stretch_straight',
@@ -291,9 +291,9 @@ describe('the plan screen', () => {
     const change = (next: WeekPlan) => weeks(path({ thisWeek: before, nextWeek: next }))[1].change;
     // A level up on the focus chain, to a move that is in the week.
     const up = weekOf('2026-10-26', 4, 'calf_raises', { levels: { ...LEVELS, calf: 2 } });
-    up.days[0].exercises[0] = move('heel_raise_hold', true);
-    expect(change(up)).toEqual({ kind: 'up', exercise: 'heel_raise_hold' });
-    expect(weekLine(t, change(up), byId)).toBe('A step up: heel_raise_hold.');
+    up.days[0].exercises[0] = move('heel_raise_plain', true);
+    expect(change(up)).toEqual({ kind: 'up', exercise: 'heel_raise_plain' });
+    expect(weekLine(t, change(up), byId)).toBe('A step up: heel_raise_plain.');
     // A level down.
     expect(change(weekOf('2026-10-26', 4, 'calf_raises', { levels: LEVELS }))).toEqual({ kind: 'down' });
     // A new focus says what its work is.

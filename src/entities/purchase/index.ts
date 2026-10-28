@@ -103,6 +103,13 @@ export {
   type OfferStage,
 } from './model/skip';
 export {
+  devSetTrialAudience,
+  isMetaInstall,
+  markPaywallSoldTrial,
+  paywallSoldTrial,
+  useTrialOnFirstPaywall,
+} from './model/trial-audience';
+export {
   isSamplePlan,
   samplePricesOn,
   sampleRetention,

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
@@ -8,10 +8,16 @@ import { Chip3D } from '@/shared/ui/chip-3d';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { IconCircle3D } from '@/shared/ui/icon-circle-3d';
 import { ProgressBar3D } from '@/shared/ui/progress-bar-3d';
+import { posterFor } from '@/widgets/session-player';
 
 /** A move's emoji: inside the row's own height, so a row with a two-line name
  * is as tall as its text and no taller. */
 const EMOJI = 34;
+
+/** A move's still, where its clip has one: what the move looks like, before
+ * anything plays. Wide, as the clip is. */
+const THUMB_WIDTH = 84;
+const THUMB_HEIGHT = 56;
 
 export type TodayMove = {
   id: string;
@@ -81,7 +87,11 @@ export function TodayMoves({ moves, onPreview }: { moves: readonly TodayMove[]; 
                 move.done ? t('pages.plan.moveDoneA11y', { name }) : t('pages.plan.chipPreviewA11y', { name })
               }
               contentStyle={styles.row}>
-              <FluentIcon name={move.art} size={EMOJI} />
+              {posterFor(move.id) != null ? (
+                <Image source={posterFor(move.id)!} resizeMode="cover" style={styles.thumb} accessibilityIgnoresInvertColors />
+              ) : (
+                <FluentIcon name={move.art} size={EMOJI} />
+              )}
               <View style={styles.facts}>
                 <Text style={[styles.title, { color: colors.foreground }]} numberOfLines={2}>
                   {move.title}
@@ -124,6 +134,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
+  },
+  thumb: {
+    width: THUMB_WIDTH,
+    height: THUMB_HEIGHT,
+    borderRadius: 14,
+    borderCurve: 'continuous',
   },
   facts: {
     flex: 1,
