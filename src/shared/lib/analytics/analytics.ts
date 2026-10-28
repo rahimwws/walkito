@@ -46,7 +46,7 @@ function posthog(): PostHog | null {
   if (client != null) return client;
   if (KEY == null || KEY.length === 0) return null;
   // App Store screenshots: a seeded user must never reach PostHog.
-  if (__DEV__ && process.env.EXPO_PUBLIC_STORE_SHOTS === '1') return null;
+  if (process.env.EXPO_PUBLIC_STORE_SHOTS === '1' && __DEV__) return null;
   try {
     const { PostHog: Client } = require('posthog-react-native') as typeof import('posthog-react-native');
     client = new Client(KEY, {
