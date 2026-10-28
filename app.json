@@ -34,6 +34,7 @@
         "android.permission.health.READ_DISTANCE",
         "android.permission.health.WRITE_EXERCISE"
       ],
+      "blockedPermissions": ["android.permission.ACTIVITY_RECOGNITION"],
       "intentFilters": [
         {
           "action": "VIEW",
