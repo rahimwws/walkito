@@ -250,7 +250,7 @@ bun run submit:android                 # fastlane supply → internal track
 TRACK=production bun run submit:android
 ```
 
-Managed publishing is on, so a production upload still waits for "Publish" in the Play Console.
+Managed publishing is off (seen 2026-10-29), so a production release goes live by itself once Google approves it. Turn it on in Publishing overview to choose the day.
 
 **What a local build needs:**
 
@@ -264,7 +264,7 @@ Managed publishing is on, so a production upload still waits for "Publish" in th
 
 # Updates
 
-`features/app-update`, mounted once as `<AppUpdateHost>` in the root layout after fonts load. It checks on launch and on foreground (at most every 30 min, after onboarding, never in `__DEV__`). A newer App Store version (iTunes lookup, production builds only) comes first, including over an update the native launch check already downloaded: that one waits for the session's first store lookup. "Later" snoozes an offer for 24 h.
+`features/app-update`, mounted once as `<AppUpdateHost>` in the root layout after fonts load. It checks on launch and on foreground (at most every 30 min, after onboarding, never in `__DEV__`), but **offers only once Home is theirs** (`canOffer`: bought, past the setup, the "Day 1" card and the tour, no offer wall; the same condition as the third-open review prompt). Never on the paywall, the offer wall or the setup: "update first" in front of somebody who has not bought yet is a reason to leave. Until then an update is downloaded silently and launches at the next cold start. A newer App Store version (iTunes lookup, production builds only) comes first, including over an update the native launch check already downloaded: that one waits for the session's first store lookup. "Later" snoozes an offer for 24 h.
 
 - **Download first, offer after.** An EAS Update is fetched silently (`fetchUpdateAsync`), and one the native launch check already downloaded is picked up through `useUpdates().isUpdatePending`. The sheet only appears once the bytes are on the phone, so "Update now" is a restart and nothing else. Silent failures retry on the next check. The ready copy says "Later" is harmless because it is: expo-updates launches the newest download on the next cold start.
 - **The sheet** has the mascot's Lottie (the one the onboarding used to play; it now draws the traced rigs) standing on the card. It rises only after the Lottie has decoded, and nothing on it can be tapped until it does. The Lottie is unmounted with the sheet, so nothing loops while hidden; with Reduce Motion it is never mounted and the still stands in. Tapping outside is "Later", but the card and the mascot absorb taps. "Later" stays available during a retried download and goes away only once the restart has started. The store variant is the same sheet with an App Store button.
