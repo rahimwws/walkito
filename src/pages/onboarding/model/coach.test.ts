@@ -219,7 +219,10 @@ const walks = (): Walk[] => (walked ??= PATHS.map(walk));
 function runsOfPoses(moments: readonly Moment[]): { step: string; pose: CoachPose }[][] {
   const out: { step: string; pose: CoachPose }[][] = [[]];
   for (const moment of moments) {
-    if (moment.kind === 'break') out.push([]);
+    // The name step draws its own Walkito, waving above the question
+    // (`NameStep`), not the one carried over from the intro: a new figure, so
+    // waving again is a greeting rather than a pose held.
+    if (moment.kind === 'break' || (moment.kind === 'enter' && moment.step === 'name')) out.push([]);
     else if ((moment.kind === 'enter' || moment.kind === 'swap') && moment.pose != null) {
       out[out.length - 1].push({ step: moment.step, pose: moment.pose });
     }

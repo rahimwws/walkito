@@ -451,17 +451,17 @@ describe('clinical honesty', () => {
   }
 
   /** The one line about how long this takes keeps its hedge in translation —
-   * "most people" and "usually", never a promise. */
+   * "many people" and "often", never a promise. */
   test('the research line stays hedged', () => {
     const at = (language: Language) => {
       const params = briefParams(BASE, readBrief(BASE), translatorFor(language), language);
       return say(buildBrief(TABLES[language]['checkpoint-recap'][1], params, { capitalise: true }));
     };
-    expect(at('en')).toContain('Most people');
-    expect(at('en')).toContain('usually');
-    expect(at('ru')).toContain('У большинства');
-    expect(at('ru')).toContain('обычно');
-    expect(at('es')).toContain('La mayoría');
-    expect(at('es')).toContain('suele');
+    expect(at('en')).toContain('Many people');
+    expect(at('en')).toContain('often');
+    expect(at('ru')).toContain('У многих');
+    expect(at('ru')).toContain('часто');
+    expect(at('es')).toContain('Mucha gente');
+    expect(at('es')).toContain('a menudo');
   });
 });

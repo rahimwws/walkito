@@ -365,7 +365,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'hoy empieza una semana nueva. Objetivo:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
     ],
-    // El matiz del original se mantiene: «la mayoría» y «suele».
+    // El matiz del original se mantiene: «mucha gente» y «a menudo».
     [
       { k: 'frame', text: 'semana nueva hoy. Mucha gente nota las mañanas más llevaderas en' },
       { k: 'metric', icon: 'level', text: '4-6 semanas', tail: '.' },

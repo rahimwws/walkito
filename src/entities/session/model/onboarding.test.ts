@@ -36,10 +36,11 @@ describe('onboarding is reachable', () => {
     const onboarding = /guard=\{!onboarded\}\s*>\s*<Stack\.Screen\s+name="onboarding"/s;
     expect(layout).toMatch(onboarding);
 
-    // The paywall: onboarded, not paid, and no paid access that has lapsed —
-    // that last case has its own screen below.
+    // The paywall: onboarded, not paid, no paid access that has lapsed (that
+    // case has its own screen below), and not skipped: "Not now" takes the
+    // offer route away and opens the tabs for the free first run.
     const paywall =
-      /guard=\{onboarded && !entitled && !lapsed\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
+      /guard=\{onboarded && !entitled && !lapsed && !skipped\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
     expect(layout).toMatch(paywall);
 
     // Paid access that ran out, until they answer it.
@@ -51,17 +52,18 @@ describe('onboarding is reachable', () => {
     const setup = /guard=\{onboarded && entitled && setupPending\}\s*>\s*<Stack\.Screen\s+name="setup"/s;
     expect(layout).toMatch(setup);
 
-    // The app itself: paid and set up, or reading their own history after a
-    // lapse. One condition, which the links wait on too. Never for somebody
-    // who skipped the paywall: it is a hard paywall, and "Not now" leads to
-    // the one-time trial offer on the same `offer` screen, not into the app.
+    // The app itself: paid and set up, reading their own history after a
+    // lapse, or trying out the free first run after "Not now". One condition,
+    // which the links wait on too.
     const tabs = /guard=\{tabsReachable\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
     expect(layout).toMatch(tabs);
     expect(layout).toContain(
-      'const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));',
+      'const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);',
     );
-    expect(layout).not.toContain('skipper');
-    expect(layout).not.toContain('usePaywallSkipped');
+    expect(layout).toContain('const tryingOut = onboarded && !entitled && !lapsed && skipped;');
+    // It is still a hard paywall: once the first run is done, the offer wall
+    // stands over Home until a purchase.
+    expect(layout).toContain("const offerWall = (tryingOut && tourState === 'done') || devWall;");
   });
 
   /**

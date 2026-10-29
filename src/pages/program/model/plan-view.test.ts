@@ -153,7 +153,7 @@ describe('the plan screen', () => {
       goal('balance', null),
     ];
     const view = outcomeView(t, outcome, goals, 'calf_raises');
-    expect(view.headline).toEqual({ before: '', lead: 'Pain-free', after: 'tennis' });
+    expect(view.headline).toEqual({ before: '', lead: 'Less painful', after: 'tennis' });
     expect(view.current).toBe('calf_raises');
   });
 

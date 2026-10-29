@@ -461,8 +461,8 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'a new week starts today. Focus:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
     ],
-    // The one line in the file about how long this takes. "Most people" and
-    // "usually" are both doing work — translations keep the hedge.
+    // The one line in the file about how long this takes. "Many people" and
+    // "often" are both doing work — translations keep the hedge.
     [
       { k: 'frame', text: 'new week today. Many people notice mornings easing in' },
       { k: 'metric', icon: 'level', text: '4-6 weeks', tail: '.' },
