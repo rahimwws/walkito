@@ -24,7 +24,7 @@ import {
   type MascotRig,
 } from '@/shared/ui/mascot';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
-import { posterFor } from '@/widgets/session-player';
+import { thumbFor } from '@/widgets/session-player';
 
 import {
   pathReached,
@@ -490,8 +490,8 @@ function MoveRow({
       accessibilityLabel={t('pages.plan.chipPreviewA11y', { name })}
       onPress={() => onPreview(id)}
       style={({ pressed }) => [styles.move, pressed && styles.pressed]}>
-      {posterFor(id) != null ? (
-        <Image source={posterFor(id)!} resizeMode="cover" style={styles.moveThumb} accessibilityIgnoresInvertColors />
+      {thumbFor(id) != null ? (
+        <Image source={thumbFor(id)!} resizeMode="cover" style={styles.moveThumb} accessibilityIgnoresInvertColors />
       ) : (
         <FluentIcon name={look.art} size={MOVE_EMOJI} />
       )}

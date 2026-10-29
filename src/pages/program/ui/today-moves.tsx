@@ -8,7 +8,7 @@ import { Chip3D } from '@/shared/ui/chip-3d';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { IconCircle3D } from '@/shared/ui/icon-circle-3d';
 import { ProgressBar3D } from '@/shared/ui/progress-bar-3d';
-import { posterFor } from '@/widgets/session-player';
+import { thumbFor } from '@/widgets/session-player';
 
 /** A move's emoji: inside the row's own height, so a row with a two-line name
  * is as tall as its text and no taller. */
@@ -87,8 +87,8 @@ export function TodayMoves({ moves, onPreview }: { moves: readonly TodayMove[]; 
                 move.done ? t('pages.plan.moveDoneA11y', { name }) : t('pages.plan.chipPreviewA11y', { name })
               }
               contentStyle={styles.row}>
-              {posterFor(move.id) != null ? (
-                <Image source={posterFor(move.id)!} resizeMode="cover" style={styles.thumb} accessibilityIgnoresInvertColors />
+              {thumbFor(move.id) != null ? (
+                <Image source={thumbFor(move.id)!} resizeMode="cover" style={styles.thumb} accessibilityIgnoresInvertColors />
               ) : (
                 <FluentIcon name={move.art} size={EMOJI} />
               )}

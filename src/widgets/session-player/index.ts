@@ -46,7 +46,7 @@ export {
 export { mirroredFor } from './model/mirror';
 /** A still of each move cut from its clip: the rows of today's moves show it
  * before anything has downloaded. */
-export { posterFor } from './config/exercise-posters';
+export { illustrationFor, posterFor, thumbFor } from './config/exercise-posters';
 /** The test day, whole: intro, the three tests, results.
  *
  * One flow for both hosts — Home presents it in a page sheet, Plan in its

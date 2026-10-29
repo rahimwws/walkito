@@ -16,7 +16,7 @@ import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { AppState, Image, Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 import Animated, {
   Easing,
@@ -76,6 +76,7 @@ import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
+import { illustrationFor } from '../config/exercise-posters';
 import { ClipViewer } from './clip-viewer';
 import { mirroredFor } from '../model/mirror';
 import { BreakOverlay } from './break-overlay';
@@ -816,6 +817,8 @@ function SessionRun({
   /** A wide clip, framed on the feet, is fitted whole on a dark panel rather
    * than on the grey studio the upright clips were filmed in. */
   const wideClip = WIDE_CLIPS.has(current?.exercise?.id ?? '');
+  /** The move drawn: the shape to hold, beside the clip that shows the motion. */
+  const drawing = illustrationFor(current?.exercise?.id ?? '');
   /** A wide clip opens on its own screen, turned to fill it, rather than
    * growing the card. */
   const [wideViewer, setWideViewer] = useState(false);
@@ -2142,7 +2145,18 @@ function SessionRun({
           )}
         </View>
 
-        {wideClip && <View style={styles.stageWideFill} />}
+        {/* Under a wide clip, the room left above the button holds the move's
+            drawing: the clip shows how it moves, the drawing the position to
+            hold and where it should be felt. */}
+        {wideClip && (
+          <View style={styles.stageWideFill}>
+            {drawing != null && !finished && (
+              <View style={styles.drawing}>
+                <Image source={drawing} resizeMode="contain" style={styles.drawingImage} accessibilityIgnoresInvertColors />
+              </View>
+            )}
+          </View>
+        )}
 
         {/* The whole point of the Live Activity, said once where it is
             actionable. Gated on the activity having actually started: an
@@ -2529,7 +2543,18 @@ const styles = StyleSheet.create({
     flex: 0,
     aspectRatio: 16 / 9,
   },
-  stageWideFill: { flex: 1 },
+  stageWideFill: { flex: 1, justifyContent: 'center', paddingVertical: 10, marginHorizontal: STAGE_MARGIN },
+  drawing: {
+    height: '100%',
+    maxWidth: '100%',
+    aspectRatio: 16 / 9,
+    alignSelf: 'center',
+    borderRadius: 24,
+    borderCurve: 'continuous',
+    overflow: 'hidden',
+    backgroundColor: '#FFFFFF',
+  },
+  drawingImage: { width: '100%', height: '100%' },
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },

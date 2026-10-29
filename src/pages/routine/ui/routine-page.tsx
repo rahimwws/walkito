@@ -33,7 +33,7 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
-import { posterFor } from '@/widgets/session-player';
+import { thumbFor } from '@/widgets/session-player';
 
 import { POSITION_KEYS, WHY_KEYS } from '../config/copy';
 import { useStartRoutine } from '../model/use-start-routine';
@@ -216,12 +216,12 @@ function Routine({ protocol }: { protocol: Protocol }) {
               <View key={`${step.exerciseId}-${i}`}>
                 {i > 0 && <View style={[styles.separator, { backgroundColor: meter.track }]} />}
                 <View style={styles.row}>
-                  {posterFor(step.exerciseId) != null ? (
+                  {thumbFor(step.exerciseId) != null ? (
                     // The move's still, as wide as its clip, with its place
                     // in the routine on it.
                     <View>
                       <Image
-                        source={posterFor(step.exerciseId)!}
+                        source={thumbFor(step.exerciseId)!}
                         resizeMode="cover"
                         style={styles.thumb}
                         accessibilityIgnoresInvertColors
@@ -236,7 +236,7 @@ function Routine({ protocol }: { protocol: Protocol }) {
                     <View
                       style={[
                         styles.tile,
-                        protocol.steps.some((other) => posterFor(other.exerciseId) != null) && styles.thumb,
+                        protocol.steps.some((other) => thumbFor(other.exerciseId) != null) && styles.thumb,
                         { backgroundColor: tone.track },
                       ]}>
                       <Text style={[styles.tileNumber, { color: tone.fill }]}>{i + 1}</Text>
