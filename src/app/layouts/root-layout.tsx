@@ -414,8 +414,9 @@ function RootLayoutInner() {
                   sheet, and the "up to date" note after the restart. Mounted
                   with the fonts, so neither draws in a fallback face. Updates
                   are fetched quietly from the end of onboarding, and offered
-                  only once Home is theirs (`homeIsTheirs`): never on the
-                  paywall, the setup or the first run. Until then a downloaded
+                  only once Home is theirs (`homeIsTheirs`) and a day has
+                  passed since the setup: never on the paywall, the setup or
+                  the first day. Until then a downloaded
                   update installs itself at the next cold start. Its own
                   component so expo-updates' progress events re-render it rather
                   than this layout. */}

@@ -137,3 +137,20 @@ export function confirmationFor(
   if (age > APPLIED_FRESH_MS || age < -60 * 1000) return 'clear';
   return flag.from === runningId ? 'clear' : 'confirm';
 }
+
+/** How long after the setup screens an update may first be offered. */
+export const OFFER_AFTER_SETUP_MS = 24 * 60 * 60 * 1000;
+
+/**
+ * The moment an update may first be offered, given when the setup after the
+ * purchase was finished.
+ *
+ * A day after it: the first day is the purchase, the setup, the day-one
+ * session and the tour, and "update and restart" on top of that is one ask
+ * too many. An update is still downloaded in that day and launches at the next
+ * cold start; only the sheet waits. An install that finished the setup before
+ * this was recorded (null) has had its day.
+ */
+export function offerAllowedFrom(setupFinishedAt: number | null): number {
+  return setupFinishedAt == null ? 0 : setupFinishedAt + OFFER_AFTER_SETUP_MS;
+}

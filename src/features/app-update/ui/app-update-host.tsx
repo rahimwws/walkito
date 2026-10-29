@@ -20,8 +20,9 @@ const PREVIEW_NOTE_DELAY_MS = 350;
  * sheet is memoised on stable callbacks, so most of them stop even sooner.
  *
  * `enabled` is the user being past onboarding: nothing is checked for, offered
- * or confirmed before that. `canOffer` is Home being theirs: until then an
- * update is downloaded but never offered (see `useAppUpdates`).
+ * or confirmed before that. `canOffer` is Home being theirs, and the hook
+ * waits a day after the setup on top of it: until then an update is downloaded
+ * but never offered (see `useAppUpdates`).
  */
 export function AppUpdateHost({ enabled, canOffer }: { enabled: boolean; canOffer: boolean }) {
   const confirmation = useUpdateConfirmation(enabled);

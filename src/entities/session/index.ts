@@ -25,6 +25,7 @@ export {
   finishSetup,
   settleAccount,
   useAccountOwed,
+  useSetupFinishedAt,
   useSetupPending,
 } from './model/setup';
 export {

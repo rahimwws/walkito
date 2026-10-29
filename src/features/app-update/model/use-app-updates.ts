@@ -5,6 +5,7 @@ import type { ReloadScreenOptions } from 'expo-updates';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState, Linking, Platform } from 'react-native';
 
+import { useSetupFinishedAt } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
@@ -12,6 +13,7 @@ import { markApplying, unmarkApplying } from './applied';
 import {
   isSnoozed,
   nextOffer,
+  offerAllowedFrom,
   sameOffer,
   snoozeKey,
   type UpdateOffer,
@@ -43,6 +45,21 @@ const isPreview = (offer: UpdateOffer | null) => offer?.kind === 'ota' && offer.
 
 function snoozed(offer: UpdateOffer): boolean {
   return isSnoozed(kv.getNumber(snoozeKey(offer)), Date.now());
+}
+
+/** Whether `at` has passed, flipping by itself when it does. */
+function usePassed(at: number): boolean {
+  const [passed, setPassed] = useState(() => Date.now() >= at);
+  useEffect(() => {
+    const left = at - Date.now();
+    setPassed(left <= 0);
+    if (left <= 0) return undefined;
+    // Timers resume late from the background, never early, so a wait that ran
+    // out while the app was away flips on its return.
+    const timer = setTimeout(() => setPassed(true), left);
+    return () => clearTimeout(timer);
+  }, [at]);
+  return passed;
 }
 
 const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -162,16 +179,20 @@ export type AppUpdates = {
  *
  * Mounted once, at the root. `enabled` is off until the user is past
  * onboarding: the first minutes in the app are not the moment to ask them to
- * restart it. `canOffer` is off until Home is theirs (bought, set up, past the
- * first run): before that updates are still checked for and downloaded, so the
- * next cold start launches the newest code, but nothing is offered. Asking
- * somebody on the paywall to update first gives them a reason to leave.
+ * restart it. `homeIsTheirs` is off until Home is theirs (bought, set up, past
+ * the first run), and nothing is offered until a day after the setup either
+ * (`offerAllowedFrom`): before that updates are still checked for and
+ * downloaded, so the next cold start launches the newest code, but nothing is
+ * offered. Asking somebody on the paywall to update first gives them a reason
+ * to leave, and asking on their first day is one ask too many.
  */
 export function useAppUpdates(
   enabled: boolean,
-  canOffer: boolean,
+  homeIsTheirs: boolean,
   onPreviewRestarted?: () => void,
 ): AppUpdates {
+  const dayAfterSetup = usePassed(offerAllowedFrom(useSetupFinishedAt()));
+  const canOffer = homeIsTheirs && dayAfterSetup;
   const [offer, setOfferState] = useState<UpdateOffer | null>(null);
   const [phase, setPhaseState] = useState<UpdatePhase>('idle');
   // Mirrors of the two, for callbacks that must stay stable and still read the

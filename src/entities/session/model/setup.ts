@@ -7,6 +7,7 @@ import { armHomeTour } from './home-tour';
 
 const KEY = 'session/setup-pending';
 const OWED_KEY = 'session/account-owed';
+const FINISHED_KEY = 'session/setup-finished-at';
 
 /**
  * Whether the screens after the first purchase are still owed.
@@ -21,6 +22,12 @@ const OWED_KEY = 'session/account-owed';
  * the right stack.
  */
 let pending = kv.getBoolean(KEY) ?? false;
+
+/**
+ * When the last of those screens was passed, in ms. Null for an install that
+ * finished them before this was recorded, or never met them.
+ */
+let finishedAt: number | null = kv.getNumber(FINISHED_KEY) ?? null;
 
 /**
  * An account still owed: signing in is required after the purchase on
@@ -53,6 +60,8 @@ export function finishSetup(): void {
   if (!pending) return;
   pending = false;
   kv.set(KEY, false);
+  finishedAt = Date.now();
+  kv.set(FINISHED_KEY, finishedAt);
   // Home opens on the day-one session, and its short tour after it.
   armHomeTour();
   emit();
@@ -86,6 +95,14 @@ export function useSetupPending(): boolean {
     subscribe,
     () => pending,
     () => pending,
+  );
+}
+
+export function useSetupFinishedAt(): number | null {
+  return useSyncExternalStore(
+    subscribe,
+    () => finishedAt,
+    () => finishedAt,
   );
 }
 
