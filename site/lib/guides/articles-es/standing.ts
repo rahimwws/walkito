@@ -20,19 +20,19 @@ export const STANDING_ES: Guide = {
   lang: 'es',
   page: 'standing',
   published: '2026-10-07',
-  updated: '2026-10-07',
+  updated: '2026-10-29',
   title: 'Dolor de pies por estar de pie todo el día: qué ayuda',
   description:
     'Por qué te duelen los pies por estar de pie todo el día, qué ayuda (estiramientos, fuerza, medias de compresión) y cuándo consultar a un profesional.',
   h1: '¿Por qué me duelen los pies por estar de pie todo el día?',
   lede:
-    'Al final de un turno largo te duelen los pies. Te duele el arco, el talón está adolorido y sientes las piernas pesadas. Estar de pie por horas sobre un piso duro carga los mismos tejidos una y otra vez, sin el bombeo que caminar les da a tus pantorrillas y a tus venas. Estirar la pantorrilla y la fascia plantar, y ganar algo de fuerza en la pantorrilla, trabaja justo los tejidos que más se cargan.',
+    'Al final de un turno largo te duelen los pies. Te duele el arco, el talón está adolorido y sientes las piernas pesadas. Estar de pie por horas sobre un suelo duro carga los mismos tejidos una y otra vez, sin el bombeo que caminar les da a tus pantorrillas y a tus venas. Estirar la pantorrilla y la fascia plantar, y ganar algo de fuerza en la pantorrilla, trabaja justo los tejidos que más se cargan.',
   intro: [
     'No todo el dolor de pies por estar de pie es fascitis plantar, pero las dos cosas se cruzan. Un estudio de casos y controles de 2003, con 50\u00A0personas con fascitis plantar y 100 controles emparejados, encontró que estar de pie la mayor parte de la jornada laboral se asociaba con una razón de probabilidades de 3,6 para la fascitis plantar. La poca flexibilidad del tobillo fue un factor de riesgo todavía más fuerte: una razón de probabilidades de 23,3. Los ejercicios que ayudan en los dos casos son casi los mismos: estiramientos de pantorrilla y de fascia plantar, más trabajo de fuerza para la pantorrilla.',
   ],
   toc: true,
   takeaways: [
-    'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas. Los tapetes para el piso, las medias de compresión y el calzado con soporte están entre las medidas con evidencia a favor (Waters y Dick, 2015).',
+    'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas. Los tapetes para el suelo, las medias de compresión y el calzado con soporte están entre las medidas con evidencia a favor (Waters y Dick, 2015).',
     'Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. La poca flexibilidad del tobillo tuvo una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
     'En un ensayo de grupos paralelos con 40 guardias de seguridad asignados al azar a calcetines normales o a uno de dos grupos con medias de compresión, tanto las medias de 15-20\u00A0mmHg como las de 20-30\u00A0mmHg evitaron el aumento de molestias en pies y piernas que se vio con calcetines normales durante turnos de pie de 12\u00A0horas (Garcia y colegas, 2023).',
     'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de fuerza una B.',
@@ -107,7 +107,7 @@ export const STANDING_ES: Guide = {
           dose: '2\u00A0series de 30\u00A0segundos, cada pie',
           often: 'Casi todas las sesiones',
           feel: 'Un estiramiento a lo largo del arco',
-          how: 'Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento a lo largo del arco, no en la pantorrilla. Si el talón te duele más al despertar, haz este antes de que el pie toque el piso.',
+          how: 'Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento a lo largo del arco, no en la pantorrilla. Si el talón te duele más al despertar, haz este antes de que el pie toque el suelo.',
           image: 'Ejercicio: estiramiento plantar',
           media: 'fascia_stretch',
           caption: 'Estiramiento plantar: jala los dedos hacia atrás hasta sentirlo en el arco',
@@ -122,7 +122,7 @@ export const STANDING_ES: Guide = {
           dose: '3\u00A0series de 10, los dos pies',
           often: 'Días de fuerza',
           feel: 'Las pantorrillas trabajando juntas',
-          how: 'Párate sobre los dos pies, sube recto sobre los dedos gordos y baja despacio. Los dos pies comparten la carga mientras la pantorrilla gana fuerza. Apóyate en una pared o un barandal si necesitas equilibrio.',
+          how: 'Ponte de pie sobre los dos pies, sube recto sobre los dedos gordos y baja despacio. Los dos pies comparten la carga mientras la pantorrilla gana fuerza. Apóyate en una pared o un barandal si necesitas equilibrio.',
           image: 'Ejercicio: elevaciones de talón con dos pies',
           media: 'heel_raise_double',
           caption: 'Elevaciones de talón: sube recto sobre los dedos gordos y baja despacio',
@@ -137,11 +137,11 @@ export const STANDING_ES: Guide = {
           dose: '3\u00A0series de 10, mantén 5\u00A0segundos, cada pie',
           often: 'Días de fuerza',
           feel: 'El arco subiendo, con los dedos relajados',
-          how: 'Siéntate con el pie apoyado en el piso. Lleva la parte delantera del pie hacia el talón para que el arco suba, y mantén. No encojas los dedos. El pie corto entrena el músculo pequeño dentro del arco que lo sostiene durante un día largo de pie.',
+          how: 'Siéntate con el pie apoyado en el suelo. Lleva la parte delantera del pie hacia el talón para que el arco suba, y mantén. No encojas los dedos. El pie corto entrena el músculo pequeño dentro del arco que lo sostiene durante un día largo de pie.',
           image: 'Ejercicio: pie corto, sentado',
           media: 'short_foot_seated',
           caption: 'Pie corto: lleva la parte delantera del pie hacia el talón para que el arco suba',
-          alt: 'Una pierna sentada con el pie apoyado en el piso, con el arco resaltado mientras sube',
+          alt: 'Una pierna sentada con el pie apoyado en el suelo, con el arco resaltado mientras sube',
         },
         {
           name: 'Equilibrio a una pierna',
@@ -152,10 +152,10 @@ export const STANDING_ES: Guide = {
           dose: '3\u00A0series de 30\u00A0segundos, cada pierna',
           often: 'Días de equilibrio',
           feel: 'Pequeñas correcciones en el pie y el tobillo',
-          how: 'Párate en un pie y mira un punto fijo. Deja que el pie se tambalee. Ese tambaleo es el pie haciendo el trabajo de equilibrio. Ponte cerca de una pared si quieres algo de seguridad.',
+          how: 'Apóyate en un solo pie y mira un punto fijo. Deja que el pie se tambalee. Ese tambaleo es el pie haciendo el trabajo de equilibrio. Ponte cerca de una pared si quieres algo de seguridad.',
           image: 'Ejercicio: equilibrio a una pierna',
           media: 'single_leg_hold',
-          caption: 'Equilibrio a una pierna: párate en un pie y deja que haga pequeñas correcciones',
+          caption: 'Equilibrio a una pierna: apóyate en un solo pie y deja que haga pequeñas correcciones',
           alt: 'Una figura en equilibrio sobre una pierna, con los músculos de la parte baja de la pierna resaltados',
         },
         {
@@ -180,9 +180,26 @@ export const STANDING_ES: Guide = {
       h2: '¿Las plantillas o los zapatos con soporte ayudan si te duelen los pies por estar de pie?',
       paragraphs: [
         'Los zapatos con soporte y las plantillas se recomiendan mucho para el dolor de pies por estar de pie, y tiene algo de base, pero la evidencia es más débil que para los estiramientos y el trabajo de fuerza. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una **B en contra** para aliviar el dolor a corto plazo, es decir, la evidencia se inclina a no usarlas como única opción. Las plantillas combinadas con otros cuidados reciben una **C**.',
-        'Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el piso, el calzado con soporte y la opción de alternar entre sentarse y pararse aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu piso es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos. Páginas para trabajos concretos: [maestros](/es/dolor-de-pies-docentes/), [tiendas y almacenes](/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](/es/dolor-de-pies-cocineros/) y [estilistas](/es/dolor-de-pies-peluqueros/).',
+        'Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el suelo, el calzado con soporte y la opción de alternar entre sentarte y ponerte de pie aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu suelo es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos. Lo que cambia según el trabajo está en la siguiente sección.',
       ],
       cites: [CITE.guideline, CITE.waters],
+    },
+    {
+      h2: 'Dolor de pies según el trabajo: enfermería, docentes, cocina, peluquería, comercio y escritorio de pie',
+      paragraphs: [
+        'Las causas y los ejercicios de arriba sirven para cualquier trabajo de pie. Lo que cambia es el turno, el suelo y las reglas sobre el calzado:',
+        {
+          list: [
+            '**Enfermería.** De 312 enfermeras de un hospital pediátrico, el 55,3\u00A0% reportó problemas de pie o tobillo en 12\u00A0meses, y los turnos de 12\u00A0horas en cuidados intensivos aumentaron por sí solos la probabilidad de problemas de pie incapacitantes. Un estudio con podómetro contó 9360\u00A0pasos, unos 5,8\u00A0km, por turno. Entre 366 enfermeras, el 72\u00A0% de quienes tenían zapatos incómodos tenía dolor de pie o tobillo, frente al 28\u00A0% con zapatos cómodos.',
+            '**Docentes.** Los estudios de laboratorio sugieren no estar de pie más de unos 40\u00A0minutos seguidos, más o menos una clase, así que siéntate unos minutos cuando tus alumnos empiecen a trabajar solos. En un estudio, las personas con dolor de talón usaban zapatos con el talón más duro; es una relación, no una prueba, pero conviene elegir un talón acolchado.',
+            '**Cocina.** La evidencia sobre el calzado de cocina trata de resbalones, no de pies adoloridos: en un ensayo aleatorizado, dar zapatos antideslizantes gratis bajó los reclamos por lesiones por resbalón de 3,54 a 1,18 por cada 10\u00A0000 meses-trabajador. Ningún estudio compara zuecos con tenis para el dolor de pies. Usa un tapete solo si queda plano y no se mueve sobre un suelo mojado.',
+            '**Peluquería.** En el salón pasas el día de pie y quieto junto al sillón. En un ensayo cruzado con 108 peluqueros, las medias de compresión de 15 a 20\u00A0mmHg bajaron un 12\u00A0% la puntuación de dolor e hinchazón de piernas. Un taburete ayuda en los trabajos de detalle solo si te deja los brazos por debajo del hombro.',
+            '**Comercio y almacén.** Un tapete solo ayuda donde estás quieto, como la caja; si recorres la tienda o el almacén, la amortiguación tiene que ir en el zapato. En 4 estudios sobre calzado de seguridad, entre el 42,3 y el 60,8\u00A0% de los trabajadores tenía dolor de pies, sobre todo por calor, peso y suela rígida. Elige la bota aprobada más ligera que te quede bien, nunca unos tenis en su lugar.',
+            '**Escritorio de pie.** Lo que importa es alternar, no estar de pie. Una declaración de expertos sugiere ir sumando hasta 2\u00A0horas de pie y actividad ligera por jornada, en ratos cortos. Para empezar, ponte de pie de 20 a 30\u00A0minutos y luego siéntate de 20 a 30. En casa, usa un zapato acolchado y no solo calcetines.',
+          ],
+        },
+      ],
+      cites: [CITE.reedNurse, CITE.changCho, CITE.shoeGetie2021, CITE.coenen, CITE.landorfFootwear, CITE.bellSlipFootwear, CITE.blazekHosiery, CITE.kozakHairdressing, CITE.arceriSafety, CITE.buckley],
     },
     {
       h2: '¿Las medias de compresión ayudan con el dolor de pies por estar de pie?',
@@ -199,7 +216,7 @@ export const STANDING_ES: Guide = {
       h2: '¿El dolor de pies por estar de pie puede ser fascitis plantar, pie plano u otra cosa?',
       paragraphs: [
         'El dolor de pies por estar de pie puede ser cansancio general que se quita con descanso, o puede ser el inicio de un problema con nombre. El más común es la fascitis plantar: dolor agudo cerca del talón, que suele ser peor en los primeros pasos después de descansar. Si el talón te duele más en la mañana y otra vez después de estar sentado, ese patrón apunta a fascitis plantar, y la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
-        'Si al final del día sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. Un pie plano rígido, que sigue plano incluso cuando el pie no toca el piso, es estructural y necesita a un profesional de la salud, no ejercicio.',
+        'Si al final del día sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. Un pie plano rígido, que sigue plano incluso cuando el pie no toca el suelo, es estructural y necesita a un profesional de la salud, no ejercicio.',
         'Si el dolor está a lo largo de la tibia y no bajo el pie, eso apunta a periostitis tibial, y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) explica lo que dice la investigación.',
         'El dolor en la parte de atrás del talón, en el tendón de Aquiles, es otro problema. El dolor en la parte interna del tobillo puede venir del tendón tibial posterior. Los dos se explican desde el punto de vista de los corredores en [dolor de talón al correr](/es/dolor-de-talon-en-corredores/). Si el dolor está atrás del talón, en el tendón de Aquiles, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/); si quieres más detalle sobre el ejercicio de elevación de talón, mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/).',
         '**Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.**',
@@ -216,9 +233,9 @@ export const STANDING_ES: Guide = {
   ],
   faq: [
     {
-      q: '¿Por qué me duelen más los pies al final del turno de pie que al principio?',
-      a: 'La fascia plantar, los músculos de la pantorrilla y las venas de la parte baja de la pierna aguantan solo cierto tiempo una carga fija y sostenida, y esa tolerancia se gasta en horas de estar de pie. Al estar quieto de pie, la gravedad acumula sangre en los pies y la parte baja de las piernas, lo que suma al dolor y la hinchazón que crecen durante el turno. Las pausas para caminar ayudan porque el bombeo de la pantorrilla sube la sangre.',
-      cites: [CITE.waters],
+      q: '¿Por qué les duelen los pies a las enfermeras después de un turno de 12 horas?',
+      a: 'Un turno de enfermería combina estar de pie junto a la cama, caminar mucho y suelos duros. En un estudio con podómetro, las enfermeras promediaron 9360\u00A0pasos por turno, unos 5,8\u00A0km. En una encuesta a 312 enfermeras de un hospital pediátrico, el 55,3\u00A0% reportó problemas de pie o tobillo en 12\u00A0meses, y los turnos de 12\u00A0horas en cuidados intensivos fueron el factor laboral que aumentó por sí solo la probabilidad de problemas de pie incapacitantes. Los estiramientos de pantorrilla antes o después del turno, unos zapatos cómodos y las medias de compresión trabajan sobre esa carga.',
+      cites: [CITE.changCho, CITE.reedNurse],
     },
     {
       q: '¿El dolor de pies por estar de pie todo el día es lo mismo que la fascitis plantar?',
@@ -232,13 +249,13 @@ export const STANDING_ES: Guide = {
     },
     {
       q: '¿Es normal que me duelan los pies después de un turno de pie de 8 o 12 horas?',
-      a: 'Algo de cansancio y dolor después de un turno largo de pie es común y coincide con lo que reporta la investigación en salud laboral. Una revisión de 2015 encontró que estar de pie mucho tiempo se relaciona con molestias musculares y cansancio en muchos trabajos de pie. Que sea común no significa que debas ignorarlo a largo plazo: la misma revisión señala que los tapetes para el piso, las medias de compresión y mejores zapatos reducen estos problemas de forma medible.',
+      a: 'Algo de cansancio y dolor después de un turno largo de pie es común y coincide con lo que reporta la investigación en salud laboral. Una revisión de 2015 encontró que estar de pie mucho tiempo se relaciona con molestias musculares y cansancio en muchos trabajos de pie. Que sea común no significa que debas ignorarlo a largo plazo: la misma revisión señala que los tapetes para el suelo, las medias de compresión y mejores zapatos reducen estos problemas de forma medible.',
       cites: [CITE.waters],
     },
     {
-      q: '¿Qué es lo primero que debo probar para el dolor de pies por estar de pie?',
-      a: 'De las opciones de autocuidado que revisa esta página, el estiramiento de pantorrilla y de fascia plantar tiene el grado de evidencia más alto (A) en la guía de 2023 para el dolor de talón, y las medias de compresión tienen el ensayo controlado más sólido para las molestias por estar de pie. Empezar con estiramientos de pantorrilla diarios y probar medias de compresión en tu próximo turno largo cubre las dos cosas.',
-      cites: [CITE.guideline, CITE.garcia],
+      q: '¿Cuánto tiempo hay que estar de pie en un escritorio de pie?',
+      a: 'Una declaración de expertos de 2015 recomienda ir sumando hasta 2\u00A0horas de pie y actividad ligera por jornada laboral, y con el tiempo hasta 4, repartidas en ratos más cortos. Una revisión de 2017 de estudios de laboratorio encontró que las molestias se vuelven clínicamente relevantes después de unos 40\u00A0minutos de pie sin interrupción. Para empezar, ponte de pie de 20 a 30\u00A0minutos y luego siéntate de 20 a 30, y ajusta según cómo respondan tus pies.',
+      cites: [CITE.buckley, CITE.coenen],
     },
     {
       q: '¿Cuánto tiempo es demasiado estar de pie?',
@@ -247,7 +264,7 @@ export const STANDING_ES: Guide = {
     },
     {
       q: '¿Cómo puedo estar de pie 10 horas sin dolor?',
-      a: 'Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para pisos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.',
+      a: 'Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para suelos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.',
       cites: [CITE.garcia, CITE.waters],
     },
   ],

@@ -17,8 +17,8 @@ export const HOME_PT: HomeCopy = {
     description:
       'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato.',
   },
-  h1a: 'Já tentou de tudo?',
-  h1b: 'Experimente um plano feito para os seus pés.',
+  h1a: 'Walkito:',
+  h1b: 'Fascite plantar',
   lead: 'O Walkito é um app para iPhone e Android com exercícios para dor no calcanhar, fascite plantar e pé chato, para os primeiros passos ao acordar e os longos dias em pé. Um plano que se ajusta a como seus pés estão a cada manhã.',
   small: `${MIN_A}, ${MIN_B} ou ${MIN_C} minutos por sessão, em casa.`,
   alt: {

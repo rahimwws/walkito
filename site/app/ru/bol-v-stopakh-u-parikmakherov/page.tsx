@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_RU, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_RU.hairdressers!;
+/** Folded into /ru/bolyat-nogi-ot-stoyaniya/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/ru/bolyat-nogi-ot-stoyaniya/');
 
-export const metadata = guideMetadata(guide);
-
-export default function HairdressersRuPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/ru/bolyat-nogi-ot-stoyaniya/" />;
 }

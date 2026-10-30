@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.pt.retailWarehouse!;
+/** Folded into /pt/dor-nos-pes-ficar-em-pe/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/pt/dor-nos-pes-ficar-em-pe/');
 
-export const metadata = guideMetadata(guide);
-
-export default function RetailWarehousePtPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/pt/dor-nos-pes-ficar-em-pe/" />;
 }

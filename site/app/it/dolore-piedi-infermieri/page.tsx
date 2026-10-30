@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.it.nurses!;
+/** Folded into /it/dolore-piedi-stare-in-piedi/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/it/dolore-piedi-stare-in-piedi/');
 
-export const metadata = guideMetadata(guide);
-
-export default function NursesItPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/it/dolore-piedi-stare-in-piedi/" />;
 }

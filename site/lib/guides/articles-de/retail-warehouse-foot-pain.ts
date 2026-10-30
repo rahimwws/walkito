@@ -25,7 +25,7 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
   lede:
     'Im Lager und im Einzelhandel tun die Füße weh, weil stundenlanges Stehen und Gehen auf harten Böden Ferse, Gewölbe und Wade belastet, ohne dass der Untergrund nachgibt. Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine [Plantarfasziitis](/de/plantarfasziitis/) in einer Studie um das 3,6-Fache (Riddle und Kollegen, 2003). Wadendehnung und Plantarfaszien-Dehnung bekommen in der Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad, **A**, und eine kurze Version passt in etwa 3\u00A0Minuten Pause. Matten und gedämpfte Einlagen verbessern den Komfort, aber die Belege dafür sind dünner (Speed und Kollegen, 2018).',
   intro: [
-    'In diesem Ratgeber geht es um die Arbeit selbst: Beton- und Fliesenböden, Sicherheitsschuhe, lange Schichten und kurze Pausen. Für Schmerzen vom Stehen im Allgemeinen lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Wenn du im Krankenhaus arbeitest, behandelt [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) 12-Stunden-Schichten und wechselnde Dienste.',
+    'In diesem Ratgeber geht es um die Arbeit selbst: Beton- und Fliesenböden, Sicherheitsschuhe, lange Schichten und kurze Pausen. Für Schmerzen vom Stehen im Allgemeinen lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Wenn du im Krankenhaus arbeitest, behandelt [Fußschmerzen in der Pflege](/de/fussschmerzen-vom-stehen/) 12-Stunden-Schichten und wechselnde Dienste.',
   ],
   toc: true,
   takeaways: [

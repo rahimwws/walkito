@@ -1,3 +1,4 @@
+import { isGoogleHidden } from '@/lib/google-hidden';
 /**
  * The site's three languages, and every string the shared chrome needs.
  *
@@ -61,7 +62,9 @@ export function isIndexedLang(lang: string): boolean {
 
 /** An hreflang map with only the indexed languages (and `x-default`). */
 export function indexedLanguages(languages: Record<string, string>): Record<string, string> {
-  return Object.fromEntries(Object.entries(languages).filter(([l]) => l === 'x-default' || isIndexedLang(l)));
+  return Object.fromEntries(
+    Object.entries(languages).filter(([l, url]) => (l === 'x-default' || isIndexedLang(l)) && !isGoogleHidden(url)),
+  );
 }
 
 /** The language a site path belongs to: `/es/...` is Spanish, no prefix is English. */

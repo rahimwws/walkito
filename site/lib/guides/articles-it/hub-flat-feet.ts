@@ -145,7 +145,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       bullets: [
         'Il [dolore all’avampiede](/it/metatarsalgia-dolore-pianta-piede/) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un [polpaccio rigido](/it/polpacci-rigidi/) può spostare il peso in avanti.',
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega gli esercizi e le scarpe che aiutano quando una lunga giornata su un pavimento duro ti lascia l’arco dolorante.',
-        '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla dei turni da 12\u00A0ore.',
+        '[Infermieri e dolore ai piedi](/it/dolore-piedi-stare-in-piedi/) parla dei turni da 12\u00A0ore.',
       ],
     },
     {
@@ -158,7 +158,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
         '[Inversione con elastico](/it/esercizi/inversione-caviglia-elastico/) rinforza il muscolo tibiale posteriore.',
         '[Dolore all’avampiede](/it/metatarsalgia-dolore-pianta-piede/) parla del dolore nella parte anteriore del piede, che si sovrappone al piede piatto quando il carico si sposta in avanti.',
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega esercizi e scarpe per le lunghe giornate in piedi.',
-        '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla del dolore ai piedi di chi lavora in sanità.',
+        '[Infermieri e dolore ai piedi](/it/dolore-piedi-stare-in-piedi/) parla del dolore ai piedi di chi lavora in sanità.',
       ],
     },
   ],

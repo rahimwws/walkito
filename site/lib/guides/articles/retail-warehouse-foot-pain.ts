@@ -35,7 +35,7 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
   lede:
     'Warehouse and retail feet hurt because hours of standing and walking on hard floors load the heel, arch and calf with little give underneath. Standing for most of the working day raised the odds of [plantar fasciitis](/plantar-fasciitis/) 3.6 times in one study (Riddle and colleagues, 2003). Calf and plantar fascia stretches carry the top grade, **A**, in the 2023 heel pain guideline, and a short version fits in about 3 minutes on a break. Mats and cushioned insoles help comfort, but the evidence for them is thinner (Speed and colleagues, 2018).',
   intro: [
-    'This page is about the job itself: concrete and tile floors, safety boots, long shifts and short breaks. For standing pain in general, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). If you work on a hospital floor, [foot pain for nurses](/nurses-foot-pain/) covers 12-hour shifts and rotating schedules. For footwear on long shifts, see what the studies say in our guide to [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/).',
+    'This page is about the job itself: concrete and tile floors, safety boots, long shifts and short breaks. For standing pain in general, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). If you work on a hospital floor, [foot pain for nurses](/feet-hurt-standing-all-day/) covers 12-hour shifts and rotating schedules. For footwear on long shifts, see what the studies say in our guide to [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/).',
   ],
   toc: true,
   takeaways: [

@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_EN, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_EN.nurses;
+/** Folded into /feet-hurt-standing-all-day/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/feet-hurt-standing-all-day/');
 
-export const metadata = guideMetadata(guide);
-
-export default function NursesFootPain() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/feet-hurt-standing-all-day/" />;
 }

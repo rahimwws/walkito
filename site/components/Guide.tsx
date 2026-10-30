@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 
-import { AppCallout } from '@/components/AppCallout';
 import { appLine, midBoxAfter } from '@/lib/guides/app-lines';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
@@ -348,7 +347,6 @@ export function Guide({ guide }: { guide: GuideData }) {
           </aside>
         )}
 
-        <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} lead={appLine(guide)} />
 
         {guide.toc && (
           <nav className="toc" aria-label={c.contents}>
@@ -478,8 +476,13 @@ export function Guide({ guide }: { guide: GuideData }) {
             )}
             {writerImageFor(guide.lang, section.tool) && <WriterImage id={writerImageFor(guide.lang, section.tool)!} />}
           </section>
-          {si === midAfter && (
-            <AppCallout campaign={`${guide.campaign}-mid`} lang={guide.lang} lead={appLine(guide)} />
+          {/* One short line in the middle instead of two app boxes with store
+              badges: a health guide should read as help, not as a sales page.
+              The store badges sit once, in the plan block at the end. */}
+          {si === midAfter && appLine(guide) && (
+            <p className="app-nudge">
+              <Inline text={appLine(guide)!} /> <a href="#plan">{guide.program.h2}</a>
+            </p>
           )}
           </Fragment>
         ))}

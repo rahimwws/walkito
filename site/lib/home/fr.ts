@@ -20,8 +20,8 @@ export const HOME_FR: HomeCopy = {
     description:
       'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats.',
   },
-  h1a: 'Vous avez tout essayé\u00A0?',
-  h1b: 'Essayez un plan conçu pour vos pieds.',
+  h1a: 'Walkito\u00A0:',
+  h1b: 'Fasciite plantaire',
   lead: 'Walkito est une application pour iPhone et Android avec des exercices pour la douleur au talon, la fasciite plantaire et les pieds plats, pensés pour les premiers pas au lever et les longues journées debout. Un programme qui s’adapte chaque matin à l’état de vos pieds.',
   small: `${MIN_A}, ${MIN_B} ou ${MIN_C}\u00A0minutes par séance, à la maison.`,
   alt: {

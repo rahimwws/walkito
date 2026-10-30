@@ -147,7 +147,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       bullets: [
         'Check and train: [flat feet test](/flat-feet-test/), [flat feet exercises](/flat-feet-exercises/), [towel scrunch](/exercises/towel-scrunch/), [toe spread](/exercises/toe-spread/), [toe strengthening](/toe-strengthening-exercises/), [ankle mobility](/ankle-mobility-exercises/) and [tight calves](/tight-calves/).',
         'Flat feet and pain: [arch pain](/arch-pain/), [posterior tibial tendon dysfunction](/posterior-tibial-tendon-dysfunction-exercises/), [knee pain](/flat-feet-knee-pain/), [back pain](/flat-feet-back-pain/) and [ball of foot pain](/ball-of-foot-pain/). Heel pain that is sharpest on the first steps of the morning fits [plantar fasciitis](/plantar-fasciitis/) better.',
-        'Long days on your feet: [feet hurt from standing all day](/feet-hurt-standing-all-day/) and [nurses and foot pain](/nurses-foot-pain/).',
+        'Long days on your feet: [feet hurt from standing all day](/feet-hurt-standing-all-day/) and [nurses and foot pain](/feet-hurt-standing-all-day/).',
         'Kids and age: [flat feet in kids](/flat-feet-in-kids/) and [whether flat feet get worse with age](/do-flat-feet-get-worse-with-age/).',
         'Other foot shapes: [high arches](/high-arches-exercises/) and [bunions](/bunion-exercises/).',
         'Shoes and apps: [barefoot shoes](/barefoot-shoes/), [insoles vs exercises](/insoles-vs-exercises/) and the [best app for flat feet](/best-app-for-flat-feet/).',

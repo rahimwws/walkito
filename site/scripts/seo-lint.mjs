@@ -210,6 +210,9 @@ for (const file of walk(OUT)) {
   const url = `${SITE}${path}`;
   const raw = readFileSync(file, 'utf8');
   const html = clean(raw);
+  // A page folded into another (lib/google-hidden.ts, MERGED) is an instant
+  // meta-refresh redirect: no h1 and a canonical to its new home, on purpose.
+  if (/<meta http-equiv="refresh" content="0;/i.test(raw)) continue;
 
   // Internal hrefs, on every HTML file (404 included).
   for (const t of tags(html, 'a|link|area')) {

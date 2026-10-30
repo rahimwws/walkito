@@ -28,7 +28,7 @@ export const SHOES_NURSES_EN: Guide = {
   lede:
     'No trial has tested any named nursing shoe for plantar fasciitis, so no brand has evidence that it is the best. Pick by features that have some research behind them: a good fit, a cushioned heel, some heel raise or a rocker sole, a slip-resistant outsole and two pairs to rotate. The shoes below are ones review sites often recommend; the stretching and strengthening in our [exercises guide](/plantar-fasciitis-exercises/) have more evidence behind them than any shoe.',
   intro: [
-    'Walkito makes this page, so we are not neutral: we make an exercise app, not shoes. We did not wear-test these shoes, we earn nothing from them and there are no affiliate links. This page is about the shoe question only. For why shifts hurt and what to do before and after them, see [foot pain for nurses](/nurses-foot-pain/).',
+    'Walkito makes this page, so we are not neutral: we make an exercise app, not shoes. We did not wear-test these shoes, we earn nothing from them and there are no affiliate links. This page is about the shoe question only. For why shifts hurt and what to do before and after them, see [foot pain for nurses](/feet-hurt-standing-all-day/).',
   ],
   takeaways: [
     'The 2023 heel pain guideline does not grade shoes on their own. It lists footwear advice under patient education at its lowest grade, E. The 2014 version said clinicians may prescribe a rocker-bottom shoe with an orthosis, and shoe rotation for people who stand for long periods (grade C).',
@@ -148,7 +148,7 @@ export const SHOES_NURSES_EN: Guide = {
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B, while shoes get no graded recommendation of their own (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises. Stretching has the top grade and strengthening a B; footwear advice sits at grade E, under patient education. A good shoe can make a shift more comfortable, but it is the part with the least evidence.',
-        'The stretches are in [plantar fasciitis exercises](/plantar-fasciitis-exercises/), the heel raise and how to make it harder in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/), and how to fit them around shifts in [foot pain for nurses](/nurses-foot-pain/). If the pain is general aching after long shifts rather than first-step heel pain, start with [why feet hurt after standing all day](/feet-hurt-standing-all-day/). If you add an insole, [best insoles for plantar fasciitis](/best-insoles-for-plantar-fasciitis/) covers what the trials found.',
+        'The stretches are in [plantar fasciitis exercises](/plantar-fasciitis-exercises/), the heel raise and how to make it harder in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/), and how to fit them around shifts in [foot pain for nurses](/feet-hurt-standing-all-day/). If the pain is general aching after long shifts rather than first-step heel pain, start with [why feet hurt after standing all day](/feet-hurt-standing-all-day/). If you add an insole, [best insoles for plantar fasciitis](/best-insoles-for-plantar-fasciitis/) covers what the trials found.',
       ],
       cites: [CITE.guideline],
     },

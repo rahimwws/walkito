@@ -72,7 +72,8 @@ const { SITE_URL, SITE_NAME, PROGRAM, PAGE_UPDATED, SUPPORT_EMAIL } = await load
 const { TRANSLATED, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, NEW_ARTICLE_PATHS, NEW_LANGS } = await load('lib/i18n.ts');
 const { GUIDES, ARTICLES_EN, ARTICLES_ES, ARTICLES_RU, ARTICLES_NEW } = await load('lib/guides/index.ts');
 const { AUTHORS, HOW_WE_RESEARCH_ID, FOUNDERS_ID } = await load('lib/schema.ts');
-const ARTICLES = Object.values(ARTICLES_EN);
+const { MERGED } = await load('lib/google-hidden.ts');
+const ARTICLES = Object.values(ARTICLES_EN).filter((g) => !(EN_ONLY[g.page] in MERGED));
 /** A guide's path, translated or English-only, in any of the seven languages. */
 const pathOf = (g) => {
   if (TRANSLATED[g.page]) return TRANSLATED[g.page][g.lang];
@@ -84,9 +85,9 @@ const pathOf = (g) => {
 /** Every guide written in a language other than English: both main guides,
  * then that language's articles. */
 const ARTICLES_IN = {
-  ru: Object.values(ARTICLES_RU).filter(Boolean),
-  es: Object.values(ARTICLES_ES).filter(Boolean),
-  ...Object.fromEntries(NEW_LANGS.map((l) => [l, Object.values(ARTICLES_NEW[l] ?? {}).filter(Boolean)])),
+  ru: Object.values(ARTICLES_RU).filter(Boolean).filter((g) => !(RU_ARTICLES[g.page] in MERGED)),
+  es: Object.values(ARTICLES_ES).filter(Boolean).filter((g) => !(ES_ARTICLES[g.page] in MERGED)),
+  ...Object.fromEntries(NEW_LANGS.map((l) => [l, Object.values(ARTICLES_NEW[l] ?? {}).filter(Boolean).filter((g) => !(NEW_ARTICLE_PATHS[l]?.[g.page] in MERGED))])),
 };
 const OTHER_LANGS = ['ru', 'es', ...NEW_LANGS];
 const guidesIn = (lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang], ...ARTICLES_IN[lang]];
@@ -193,7 +194,7 @@ const FINDINGS = [
 const WHO = [
   `The guides on this site are written by ${AUTHORS.map((a) => `${a.name} (${a.sameAs.join(', ')})`).join(' and ')}, the two co-founders of Walkito. About them: ${url(`${TRANSLATED.about.en}#${FOUNDERS_ID}`)}`,
   'Neither is a clinician. Every exercise dose comes from the app\'s exercise catalogue and every claim from a published study cited on the page.',
-  `No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: ${url(`${TRANSLATED.about.en}#${HOW_WE_RESEARCH_ID}`)}`,
+  `The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: ${url(`${TRANSLATED.about.en}#${HOW_WE_RESEARCH_ID}`)}`,
 ];
 
 // ─── llms.txt ───────────────────────────────────────────────────────────────

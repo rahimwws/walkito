@@ -194,7 +194,7 @@ export const STANDING_DESK_EN: Guide = {
         },
         'Listen to your feet and lower back. If discomfort is building, sit down sooner instead of pushing through.',
         'Add a mat from the start if you have one. Wear shoes with some cushioning, even at home. Do the calf stretches from the table above at least once a day.',
-        'If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](/nurses-foot-pain/). There are also pages for [teachers](/teachers-foot-pain/), [retail and warehouse workers](/retail-warehouse-foot-pain/), [chefs and kitchen staff](/chefs-foot-pain/) and [hairdressers](/hairdressers-foot-pain/).',
+        'If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](/feet-hurt-standing-all-day/). There are also pages for [teachers](/feet-hurt-standing-all-day/), [retail and warehouse workers](/feet-hurt-standing-all-day/), [chefs and kitchen staff](/feet-hurt-standing-all-day/) and [hairdressers](/feet-hurt-standing-all-day/).',
       ],
       cites: [CITE.buckley],
     },

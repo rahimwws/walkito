@@ -34,6 +34,7 @@ export const ABOUT_DE: About = {
         '**Sprachen:** Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch.',
         '**Preis:** kostenlos zum Herunterladen, mit einem Jahres- oder Wochenabo in der App. Der App Store oder Google Play zeigt dir den Preis in deiner Währung, bevor du das Abo abschließt.',
         '**Wer steckt dahinter:** Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito.',
+        '**Unternehmen:** Walkito ist ein Produkt der Nemy LLC aus Sheridan, Wyoming, USA.',
         '**Was es nicht ist:** ein Medizinprodukt. Walkito stellt keine Diagnose und ersetzt keinen Arztbesuch.',
         '**Name:** Walkito hat nichts mit walkito.com zu tun, einem Gassi-Service für Hunde.',
       ],
@@ -52,7 +53,7 @@ export const ABOUT_DE: About = {
       h2: 'Wie wir recherchieren',
       id: 'how-we-research',
       paragraphs: [
-        'Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Bisher hat niemand mit ärztlicher oder physiotherapeutischer Zulassung die Ratgeber geprüft.',
+        'Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft.',
         'Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website, zum Beispiel [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) und [Übungen bei Plattfuß](/de/plattfuss-uebungen/). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.',
         'Übungen und Aussagen tragen eines von drei Labels zur Studienlage. **Stark** heißt, dass eine klinische Leitlinie sie hoch bewertet oder mehrere gute Studien übereinstimmen. **Mittel** heißt, dass mindestens eine gut angelegte Studie sie stützt. **Vorläufig** heißt, dass die Forschung klein ist oder gerade erst anfängt: einen Versuch wert, und das Label kann sich ändern, wenn mehr dazu erscheint. Eine verbreitete Regel, die eine Studie getestet und nicht bestätigt hat, ist als **Nicht belegt** markiert.',
         'Walkito hat keine Sponsoren, keine Affiliate-Links und keine bezahlten Platzierungen. Nichts steht auf einer Seite, weil jemand dafür bezahlt hat. Wir prüfen eine Seite erneut, wenn neue Forschung zu ihrem Thema erscheint. Jeder Ratgeber folgt fünf Regeln:',
@@ -63,6 +64,13 @@ export const ABOUT_DE: About = {
         '**Einschränkungen gehören zu den Zahlen.** Ein Ergebnis nach drei Monaten steht immer zusammen mit dem, was nach zwölf Monaten passiert ist. Jede Aussage zur Gewölbeform sagt, an welchen Füßen sie gemessen wurde.',
         '**Die Dosen sind die Startdosen von Walkito.** Sie zeigen, wo die Übungen von Walkito beginnen. Sie sind keine Verordnung für dich.',
         '**Kein Heilversprechen.** Die Seiten sagen, was die Forschung gefunden hat und wo ihre Belege aufhören.',
+      ],
+    },
+    {
+      h2: 'Wie wir schreiben und übersetzen',
+      id: 'how-we-write',
+      paragraphs: [
+        'Rahim und Rahman schreiben die Ratgeber mit KI-Schreibwerkzeugen (Claude), auf Grundlage veröffentlichter Studien und klinischer Leitlinien. Jede Zahl ist mit ihrer Quelle verlinkt. Bevor eine neue Seite online geht, gleichen wir ihre Angaben mit den zitierten Studien ab. Übersetzungen entstehen mit KI-Werkzeugen und werden von Muttersprachlerinnen und Muttersprachlern geprüft. Wenn wir einen Fehler finden oder du uns einen meldest, korrigieren wir die Seite: [so meldest du einen Fehler](#corrections).',
       ],
     },
     {
@@ -87,15 +95,16 @@ export const ABOUT_DE: About = {
       ],
     },
     {
-      h2: 'Hat eine Ärztin oder ein Arzt die Ratgeber von Walkito geprüft?',
+      h2: 'Wer hat Walkito fachlich geprüft?',
       id: 'clinician',
       paragraphs: [
-        'Bisher hat keine approbierte Ärztin und kein approbierter Arzt die Ratgeber von Walkito geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
-        'Wenn eine Ärztin oder ein Arzt sie prüft, nennt diese Seite Name und Qualifikation dieser Person und was geprüft wurde. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
+        'Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
+        'Wenn eine Fachperson die Ratgeber prüft, nennt diese Seite Name und Qualifikation dieser Person und was geprüft wurde. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
       ],
     },
     {
       h2: 'Wie melde ich einen Fehler?',
+      id: 'corrections',
       paragraphs: [
         `Um einen Fehler auf dieser Website zu melden, schreib an ${SUPPORT_EMAIL}. Das kann eine Zahl sein, die nicht zu ihrer Quelle passt, eine Dosis, die falsch klingt, oder ein kaputter Link. Wir korrigieren die Seite selbst.`,
         'Jede Seite zeigt das Datum, an dem sich ihr Inhalt zuletzt geändert hat. Dieses Datum ändert sich nur, wenn sich der Inhalt wirklich ändert.',

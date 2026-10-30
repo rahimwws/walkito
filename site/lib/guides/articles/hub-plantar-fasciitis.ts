@@ -137,7 +137,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
         'Prolonged standing on hard surfaces raised the odds of plantar fasciitis 3.6 times in the Riddle 2003 study, and a 2015 review linked prolonged standing at work to musculoskeletal discomfort, fatigue and leg pain. The same calf stretches and strength work apply. For runners, the 2023 guideline advises reducing mileage or intensity instead of stopping altogether (grade E, theoretical evidence, since no trial has tested it).',
       ],
       bullets: [
-        '[Feet hurt from standing all day](/feet-hurt-standing-all-day/), with job pages for [nurses](/nurses-foot-pain/), [teachers](/teachers-foot-pain/), [retail and warehouse workers](/retail-warehouse-foot-pain/), [chefs](/chefs-foot-pain/) and [hairdressers](/hairdressers-foot-pain/), plus [standing desk foot pain](/standing-desk-foot-pain/).',
+        '[Feet hurt from standing all day](/feet-hurt-standing-all-day/), with job pages for [nurses](/feet-hurt-standing-all-day/), [teachers](/feet-hurt-standing-all-day/), [retail and warehouse workers](/feet-hurt-standing-all-day/), [chefs](/feet-hurt-standing-all-day/) and [hairdressers](/feet-hurt-standing-all-day/), plus [standing desk foot pain](/feet-hurt-standing-all-day/).',
         '[Heel pain from running](/heel-pain-runners/) covers how to adjust training when the heel hurts.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],

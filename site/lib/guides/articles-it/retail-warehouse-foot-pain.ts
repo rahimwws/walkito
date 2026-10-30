@@ -24,7 +24,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
   lede:
     'In magazzino e in negozio i piedi fanno male perché le ore passate in piedi e a camminare su pavimenti duri caricano tallone, arco e polpaccio con poco ammortizzamento sotto. Stare in piedi per gran parte della giornata di lavoro ha aumentato di 3,6\u00A0volte la probabilità di [fascite plantare](/it/fascite-plantare/) in uno studio (Riddle e colleghi, 2003). Gli allungamenti del polpaccio e della fascia plantare hanno il grado più alto, **A**, nella linea guida del 2023 sul dolore al tallone, e una versione breve si fa in circa 3\u00A0minuti di pausa. Tappetini e plantari ammortizzati aiutano il comfort, ma le prove a loro favore sono più deboli (Speed e colleghi, 2018).',
   intro: [
-    'Questa pagina parla del lavoro in sé: pavimenti in cemento e piastrelle, scarpe antinfortunistiche, turni lunghi e pause brevi. Per il dolore da stazione eretta in generale, vedi [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). Se lavori in corsia d’ospedale, [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/) parla dei turni di 12\u00A0ore e dei turni a rotazione.',
+    'Questa pagina parla del lavoro in sé: pavimenti in cemento e piastrelle, scarpe antinfortunistiche, turni lunghi e pause brevi. Per il dolore da stazione eretta in generale, vedi [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). Se lavori in corsia d’ospedale, [dolore ai piedi per infermieri](/it/dolore-piedi-stare-in-piedi/) parla dei turni di 12\u00A0ore e dei turni a rotazione.',
   ],
   toc: true,
   takeaways: [

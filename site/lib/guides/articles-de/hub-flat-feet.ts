@@ -142,7 +142,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
       bullets: [
         '[Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) können von zu viel Last auf dem Vorfuß kommen, wenn das Gewölbe tief liegt. Eine [verkürzte Wade](/de/verspannte-waden/) verlagert das Gewicht nach vorn.',
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe, die helfen, wenn nach einem langen Tag auf hartem Boden das Gewölbe schmerzt.',
-        '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf die Belastung von 12-Stunden-Schichten ein.',
+        '[Fußschmerzen in der Pflege](/de/fussschmerzen-vom-stehen/) geht auf die Belastung von 12-Stunden-Schichten ein.',
       ],
     },
     {
@@ -155,7 +155,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
         '[Einwärtsdrehen mit Band](/de/uebungen/einwaertsdrehen-mit-band/) kräftigt den Tibialis posterior.',
         '[Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) behandelt Vorfußschmerzen, die sich mit Plattfüßen überschneiden, wenn sich die Last nach vorn verlagert.',
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe für lange Tage auf den Beinen.',
-        '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf Fußschmerzen bei Beschäftigten im Gesundheitswesen ein.',
+        '[Fußschmerzen in der Pflege](/de/fussschmerzen-vom-stehen/) geht auf Fußschmerzen bei Beschäftigten im Gesundheitswesen ein.',
       ],
     },
   ],

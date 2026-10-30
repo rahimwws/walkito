@@ -1,3 +1,4 @@
+import { isGoogleHidden, mergedTarget } from '@/lib/google-hidden';
 import type { Metadata } from 'next';
 
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
@@ -156,7 +157,8 @@ function stepsAfter(order: readonly GuideKey[], from: GuideKey, to: GuideKey): n
  * has one.
  */
 export function relatedGuides(guide: Guide, max = 5): Guide[] {
-  const all = guidesIn(guide.lang).filter((g) => g.page !== guide.page);
+  // Merged pages redirect elsewhere (lib/google-hidden.ts): never offer them.
+  const all = guidesIn(guide.lang).filter((g) => g.page !== guide.page && !mergedTarget(guidePath(g)));
   const own: GuideKey = guide.page;
   const group = groupOf(own);
   const topic = topicOf(own);
@@ -250,6 +252,10 @@ export function guideMetadata(guide: Guide): Metadata {
     ...(banner ? { other: { 'apple-itunes-app': banner } } : {}),
     title: pageTitle(guide.title),
     description: guide.description,
+    // Out of Google only (lib/google-hidden.ts); Bing, Yandex and Brave still index it.
+    ...(isGoogleHidden(url)
+      ? { robots: { index: true, follow: true, googleBot: { index: false, follow: true } } }
+      : {}),
     alternates: isTranslatedPage(guide.page)
       ? alternatesFor(guide.page, guide.lang)
       : languagesOf(guide)

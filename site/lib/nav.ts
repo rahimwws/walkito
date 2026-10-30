@@ -271,8 +271,9 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening', 'runnersFootExercises'],
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
-  work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers', 'hikers'],
-  compare: ['bestApp', 'vsExakt', 'vsPlantarCare', 'vsPfExercises', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'hingeReviews', 'bestInsoles', 'shoesNurses', 'ytStudy', 'aiStudy', 'appStudy'],
+  // nurses, teachers, chefs, hairdressers, retail and standing desk: merged into standing (lib/google-hidden.ts).
+  work: ['standing', 'shoesNurses', 'hikers'],
+  compare: ['bestApp', 'vsExakt', 'vsPlantarCare', 'vsPfExercises', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'hingeReviews', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
     'exTowelHeelRaise', 'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance',
@@ -326,7 +327,7 @@ export type Topic = 'pf' | 'flat' | 'calf' | 'forefoot';
 
 export const TOPICS: Record<Topic, readonly GuideKey[]> = {
   pf: [
-    'hubPlantarFasciitis', 'heelPain', 'morningHeelPain', 'pfDuration', 'standing', 'nurses', 'standingDesk', 'runners', 'calfRaises',
+    'hubPlantarFasciitis', 'heelPain', 'morningHeelPain', 'pfDuration', 'standing', 'runners', 'calfRaises',
     'pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs',
     'nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'bestInsoles',
     'bestApp', 'pfCost', 'appVsPt', 'vsHinge', 'hingeAlt', 'vsExakt', 'exaktAlt', 'ytVsApp', 'appStudy', 'ytStudy', 'aiStudy',
@@ -334,10 +335,6 @@ export const TOPICS: Record<Topic, readonly GuideKey[]> = {
     'pfVsAchilles',
     'pfVsStressFracture',
     'walkingPf',
-    'teachers',
-    'retailWarehouse',
-    'chefs',
-    'hairdressers',
     'weightPf',
     'hikers',
     'pfFlareUp',

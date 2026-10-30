@@ -10,8 +10,7 @@ import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { SocialLinks } from '@/components/SocialLinks';
 import { CHROME, CUSTOM_PAGES, NEW_ARTICLE_PATHS, isFullLang, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { ARTICLES_NEW, hasSpanish, hasRussian } from '@/lib/guides';
-import { playHref, storeHref } from '@/lib/site';
-import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type GuideKey } from '@/lib/nav';
+import { GROUP_HEADING, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type GuideKey } from '@/lib/nav';
 
 /**
  * The footer, on every page in every language.
@@ -30,16 +29,6 @@ import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type 
  * layout, so the jump is a full load either way, and saying so keeps Next from
  * prefetching two whole documents per page.
  */
-const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
-  en: { ios: 'Walkito on the App Store', android: 'Walkito on Google Play' },
-  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
-  es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
-  pt: { ios: 'Walkito na App Store', android: 'Walkito no Google Play' },
-  fr: { ios: "Walkito sur l’App Store", android: 'Walkito sur Google Play' },
-  it: { ios: "Walkito sull'App Store", android: 'Walkito su Google Play' },
-  de: { ios: 'Walkito im App Store', android: 'Walkito bei Google Play' },
-};
-
 function hrefFor(key: GuideKey, lang: Lang): string | null {
   if (key === 'runners') return isFullLang(lang) ? CUSTOM_PAGES.runners[lang] : null;
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
@@ -142,12 +131,6 @@ export function Footer({
         ]
       : []),
     // The app itself, on every page: the one link the whole site exists for.
-    ...[storeHref(lang === 'en' ? 'footer' : `footer-${lang}`)].flatMap((href) =>
-      href ? [{ href, label: FOOTER_APP[lang].ios }] : [],
-    ),
-    ...[playHref(lang === 'en' ? 'footer' : `footer-${lang}`)].flatMap((href) =>
-      href ? [{ href, label: FOOTER_APP[lang].android }] : [],
-    ),
     { href: TRANSLATED.about[lang], label: c.navAbout },
     { href: TRANSLATED.support[lang], label: c.navSupport },
     { href: TRANSLATED.privacy[lang], label: c.navPrivacy },
@@ -211,48 +194,19 @@ export function Footer({
           </div>
 
           <nav aria-label={c.guidesHeading} className="ft-cols">
-            {lang === 'en' ? (
-              /* English: a lighter footer (plan B.1). The long topic lists left:
-                 every English guide now gets at least five links from other
-                 pages' text and related guides, so the footer no longer has to
-                 carry them, and the main guides stop sharing their weight with
-                 sixty others. Kept: the main guides and tools, the hubs, and
-                 the small topics that still lean on the footer. Spanish and
-                 Russian keep the full lists until their pages get the same
-                 in-text links. */
-              <>
-                <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
-                <Column
-                  heading={h.pain}
-                  links={[...group(['hubPlantarFasciitis', 'hubFlatFeet']), ...footMap, ...group(['morningHeelPain', 'pfDuration', 'runners', 'ballOfFoot'])]}
-                />
-                <div className="ft-stack">
-                  <Column heading={h.flat} links={group(NAV_GROUPS.flat)} />
-                  <Column heading={h.work} links={group(NAV_GROUPS.work)} />
-                </div>
-                <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
-              </>
-            ) : (
-            <>
-            <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
+            {/* About 15 links (2026-10-29): the main guides and tools, then the
+                company pages. The footer used to carry 69 links, so every page
+                on the site lent weight to every weak page; the rest are reached
+                from the guides themselves and the menu. */}
             <Column
-              heading={h.heel}
-              links={group(['hubPlantarFasciitis', 'morningHeelPain', 'pfDuration', 'runners', ...NAV_GROUPS.heel])}
+              heading={h.exercises}
+              links={[
+                ...group(['hubPlantarFasciitis', 'heelPain', 'hubFlatFeet', 'flatFeet', 'morningHeelPain', 'ankleMobility', 'standing']),
+                ...(lang === 'en' ? group(['bestInsoles']) : []),
+                ...footMap,
+                ...extras.slice(0, 2),
+              ]}
             />
-            <Column heading={h.pain} links={[...footMap, ...group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])]} />
-            {group([...NAV_GROUPS.ankle, ...NAV_GROUPS.flat]).length > 0 && (
-              <div className="ft-stack">
-                <Column heading={h.ankle} links={group(NAV_GROUPS.ankle)} />
-                <Column heading={h.flat} links={group(NAV_GROUPS.flat)} />
-              </div>
-            )}
-            <div className="ft-stack">
-              <Column heading={h.tools} links={group(NAV_GROUPS.tools)} />
-              <Column heading={h.work} links={group(NAV_GROUPS.work)} />
-              <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
-            </div>
-            </>
-            )}
             <Column heading={h.walkito} links={walkito} />
           </nav>
           <script dangerouslySetInnerHTML={{ __html: FOLD_ON_PHONE }} />

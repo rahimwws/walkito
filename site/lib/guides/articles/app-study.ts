@@ -88,7 +88,7 @@ export const APP_STUDY_EN: Guide = {
         'Its weak points are real too:',
         {
           list: [
-            'No clinician is behind it: the two founders are not clinicians, and no clinician reviews the program yet.',
+            'The two founders are not clinicians; a licensed physical therapist checked the app’s exercises, but no clinician reviews the program as a whole.',
             'The app itself has not been tested in a trial; it is built on the guideline and published trials of the exercises.',
             'It is new, with no ratings yet on either store.',
           ],
