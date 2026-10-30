@@ -1,3 +1,4 @@
+import { isGoogleHidden } from '@/lib/google-hidden';
 import type { MetadataRoute } from 'next';
 
 import { ARTICLES_EN, ARTICLES_ES, ARTICLES_NEW, ARTICLES_RU, GUIDES } from '@/lib/guides';
@@ -136,7 +137,7 @@ function allEntries(): MetadataRoute.Sitemap {
 /** Every indexable page: indexed languages only, and hreflang limited to them. */
 export function indexedEntries(): MetadataRoute.Sitemap {
   return allEntries()
-    .filter((e) => isIndexedLang(langOfPath(e.url)))
+    .filter((e) => isIndexedLang(langOfPath(e.url)) && !isGoogleHidden(e.url))
     .map((e) => (e.alternates?.languages ? { ...e, alternates: { languages: indexedLanguages(e.alternates.languages as Record<string, string>) } } : e));
 }
 
@@ -166,7 +167,7 @@ export function videoEntries(): VideoEntry[] {
     ...(INDEXED_LANGS.includes('es') ? Object.values(ARTICLES_ES) : []),
     ...(INDEXED_LANGS.includes('ru') ? Object.values(ARTICLES_RU) : []),
     ...NEW_LANGS.filter((l) => INDEXED_LANGS.includes(l)).flatMap((l) => Object.values(ARTICLES_NEW[l])),
-  ].filter((g) => g != null && isExercisePage(g.page));
+  ].filter((g) => g != null && isExercisePage(g.page) && !isGoogleHidden(guidePath(g)));
   return guides.flatMap((g) => {
     const clip = mainClip(g!.sections.flatMap((s) => s.exercises ?? []));
     if (!clip) return [];

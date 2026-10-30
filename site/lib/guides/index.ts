@@ -1,3 +1,4 @@
+import { isGoogleHidden } from '@/lib/google-hidden';
 import type { Metadata } from 'next';
 
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
@@ -250,6 +251,10 @@ export function guideMetadata(guide: Guide): Metadata {
     ...(banner ? { other: { 'apple-itunes-app': banner } } : {}),
     title: pageTitle(guide.title),
     description: guide.description,
+    // Out of Google only (lib/google-hidden.ts); Bing, Yandex and Brave still index it.
+    ...(isGoogleHidden(url)
+      ? { robots: { index: true, follow: true, googleBot: { index: false, follow: true } } }
+      : {}),
     alternates: isTranslatedPage(guide.page)
       ? alternatesFor(guide.page, guide.lang)
       : languagesOf(guide)
