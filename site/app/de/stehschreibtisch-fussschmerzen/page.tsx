@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.de.standingDesk!;
+/** Folded into /de/fussschmerzen-vom-stehen/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/de/fussschmerzen-vom-stehen/');
 
-export const metadata = guideMetadata(guide);
-
-export default function StandingDeskDePage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/de/fussschmerzen-vom-stehen/" />;
 }

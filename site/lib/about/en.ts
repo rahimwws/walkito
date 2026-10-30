@@ -33,6 +33,7 @@ export const ABOUT_EN: About = {
       bullets: [
         '**What it is:** an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet.',
         '**Who makes it:** Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders.',
+        '**Company:** Walkito is made by Nemy LLC, Sheridan, Wyoming, USA.',
         '**Released:** on the App Store since October 1, 2026, and on Google Play since October 2026.',
         '**Phones:** iPhone, on the [App Store](https://apps.apple.com/app/id6813076846), and Android, on [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
         `**Sessions:** ${or(PROGRAM.sessionMinutes)} minutes, at home, on ${or(PROGRAM.daysPerWeek)} training days a week that you pick.`,
@@ -51,7 +52,7 @@ export const ABOUT_EN: About = {
       paragraphs: [
         // The one paragraph writers quote (outreach). The count is the unique studies and
         // guidelines linked on English pages (Oct 12, 2026: 261); 'more than 250' stays true as pages grow.
-        'Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. No licensed clinician has reviewed the guides yet.',
+        'Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician.',
         'Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study. Every guide follows five rules:',
       ],
       bullets: [
@@ -63,6 +64,13 @@ export const ABOUT_EN: About = {
       ],
     },
     {
+      h2: 'How we write and translate',
+      id: 'how-we-write',
+      paragraphs: [
+        'Rahim and Rahman write the guides with AI writing tools (Claude), working from published studies and clinical guidelines. Every number links to its source. Before a new page goes live, we fact-check it against the studies it cites. Translations into the other six languages are made with AI tools and checked by native-speaking reviewers. When we find a mistake, or someone reports one, we correct the page: see [our corrections policy](#corrections).',
+      ],
+    },
+    {
       h2: 'How are claims graded?',
       paragraphs: [
         'Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.',
@@ -70,11 +78,11 @@ export const ABOUT_EN: About = {
       ],
     },
     {
-      h2: 'Has a clinician reviewed Walkito’s guides?',
+      h2: 'Has a clinician reviewed Walkito?',
       id: 'clinician',
       paragraphs: [
-        'No licensed clinician has reviewed Walkito’s guides yet. Rahim and Rahman write them from the published research cited on each page.',
-        'When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
+        'The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician. Rahim and Rahman write them from the published research cited on each page.',
+        'When a clinician does review the guides, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
       ],
     },
     {

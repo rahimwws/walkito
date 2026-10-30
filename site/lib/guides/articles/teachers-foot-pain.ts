@@ -30,7 +30,7 @@ export const TEACHERS_EN: Guide = {
   lede:
     'Teacher foot pain mostly comes from hours of standing and walking the room on hard floors, and the options with the best evidence, calf and plantar fascia stretches plus calf strength work, take 3 to 5 minutes and fit between classes. The 2023 heel pain guideline grades those stretches **A**, its top grade, and strength work **B** (Koc and colleagues, 2023). Research on teachers’ feet is limited: in a 2024 review, 27 studies reported pain in the ankle region, mostly counted together with the foot, and the pooled figure was 30% of teachers (Tahernejad and colleagues, 2024).',
   intro: [
-    'This page is about the school day: standing at the board, walking between desks, hall and yard duty, and what you can do in a passing period or after the last bell. If you stand all day in another job, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) is the general guide, and [foot pain for nurses](/nurses-foot-pain/) covers long hospital shifts. If your heel hurts most on the first steps in the morning, go to [plantar fasciitis](/plantar-fasciitis/).',
+    'This page is about the school day: standing at the board, walking between desks, hall and yard duty, and what you can do in a passing period or after the last bell. If you stand all day in another job, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) is the general guide, and [foot pain for nurses](/feet-hurt-standing-all-day/) covers long hospital shifts. If your heel hurts most on the first steps in the morning, go to [plantar fasciitis](/plantar-fasciitis/).',
   ],
   toc: true,
   takeaways: [

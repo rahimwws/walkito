@@ -27,7 +27,7 @@ export const HAIRDRESSERS_EN: Guide = {
   lede:
     'Hairdresser foot pain mostly comes from standing still at the chair for hours, not from walking, so the options with some evidence target static standing: a cushioned floor or shoe, low-strength compression stockings, and a minute of calf work between clients. In a study of 384 hairdressers and 384 people in other jobs, 49.5% of hairdressers reported knee or foot pain, against 38.3% of the comparison group (Mishra and Sarkar, 2021).',
   intro: [
-    'Research on hairdressers mostly looks at shoulders, neck, wrists and back. Feet get much less attention, and this page says where the data is thin. It covers what is known about hairdressers’ feet and legs, the standing evidence that applies to salon work, and how to fit exercise into the gaps between clients. For general standing pain, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For shift work with a lot of walking, see [foot pain for nurses](/nurses-foot-pain/).',
+    'Research on hairdressers mostly looks at shoulders, neck, wrists and back. Feet get much less attention, and this page says where the data is thin. It covers what is known about hairdressers’ feet and legs, the standing evidence that applies to salon work, and how to fit exercise into the gaps between clients. For general standing pain, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For shift work with a lot of walking, see [foot pain for nurses](/feet-hurt-standing-all-day/).',
   ],
   toc: true,
   takeaways: [

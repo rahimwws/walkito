@@ -37,7 +37,7 @@ export const STANDING_EN: Guide = {
   lang: 'en',
   page: 'standing',
   published: '2026-10-04',
-  updated: '2026-10-26',
+  updated: '2026-10-29',
   title: 'Feet Hurt From Standing All Day? Causes and What Helps',
   description:
     'Why feet hurt from standing all day, and what helps: calf and arch stretches, calf strength, compression socks, shoes and mats, and when to see a doctor.',
@@ -222,9 +222,26 @@ export const STANDING_EN: Guide = {
       h2: 'Do insoles or supportive shoes help feet that hurt from standing?',
       paragraphs: [
         'Supportive shoes and [shoe inserts](/insoles-vs-exercises/) are commonly recommended, but the evidence is thinner than for stretching and strength work. The 2023 heel pain guideline grades orthotics on their own **B against** for short-term pain, meaning the evidence leans toward not using them as a standalone option. Orthotics combined with other care get a **C**.',
-        'The occupational health review lists floor mats, supportive footwear and sit-stand options among the interventions with some evidence for reducing discomfort in standing work, though none has a single large trial behind it. A reasonable approach: supportive shoes and a mat if your floor is hard, plus the stretching and strength work. Pages for specific jobs: [teachers](/teachers-foot-pain/), [retail and warehouse workers](/retail-warehouse-foot-pain/), [chefs and kitchen staff](/chefs-foot-pain/) and [hairdressers](/hairdressers-foot-pain/).',
+        'The occupational health review lists floor mats, supportive footwear and sit-stand options among the interventions with some evidence for reducing discomfort in standing work, though none has a single large trial behind it. A reasonable approach: supportive shoes and a mat if your floor is hard, plus the stretching and strength work. What changes from job to job is in the next section.',
       ],
       cites: [CITE.guideline, CITE.waters],
+    },
+    {
+      h2: 'Foot pain by job: nurses, teachers, chefs, hairdressers, retail and standing desks',
+      paragraphs: [
+        'The causes and exercises above apply to every standing job. What differs is the shift, the floor and the shoe rules:',
+        {
+          list: [
+            '**Nurses.** Of 312 paediatric hospital nurses, 55.3% reported foot or ankle problems over 12 months, and 12-hour intensive care shifts independently raised the odds of disabling foot problems. A tracker study counted 9,360 steps, about 5.8 km, per shift. Among 366 nurses, 72% with uncomfortable shoes had foot or ankle pain, against 28% with comfortable ones: see [shoes for nurses with plantar fasciitis](/best-shoes-for-nurses-with-plantar-fasciitis/).',
+            '**Teachers.** Laboratory studies suggest not standing for more than about 40 minutes at a time, roughly one lesson, so sit for a few minutes when students start independent work. People with heel pain in one study wore shoes with harder heels, a link rather than proof, so pick a cushioned heel.',
+            '**Chefs and kitchen staff.** Kitchen shoe evidence is about slips, not sore feet: in a randomized trial, free slip-resistant shoes cut slipping injury claims from 3.54 to 1.18 per 10,000 worker-months. No study compares clogs with sneakers for foot pain. Use a mat only if it lies flat on a wet floor.',
+            '**Hairdressers.** Salon work is standing still at the chair. In a crossover trial of 108 hairdressers, 15 to 20 mmHg compression stockings lowered leg pain and swelling scores by 12%. A stool helps for detail work only if it keeps your arms below shoulder level.',
+            '**Retail and warehouse.** A mat helps only where you stand still, such as a till; if you walk the floor, the cushioning has to be in the shoe. In 4 studies of safety footwear, 42.3% to 60.8% of workers had foot pain, mostly from heat, weight and stiff soles. Pick the lightest approved boot that fits, never a trainer instead.',
+            '**Standing desks.** Switching matters more than standing. An expert statement suggests building toward 2 hours of standing and light activity per working day, in shorter bouts. A practical start is 20 to 30 minutes standing, then 20 to 30 sitting. At home, wear a cushioned shoe rather than socks.',
+          ],
+        },
+      ],
+      cites: [CITE.reedNurse, CITE.changCho, CITE.shoeGetie2021, CITE.coenen, CITE.landorfFootwear, CITE.bellSlipFootwear, CITE.blazekHosiery, CITE.kozakHairdressing, CITE.arceriSafety, CITE.buckley],
     },
     {
       h2: 'Could foot pain from standing be plantar fasciitis or something else?',
@@ -256,9 +273,9 @@ export const STANDING_EN: Guide = {
       cites: [CITE.guideline, CITE.garcia, CITE.waters],
     },
     {
-      q: 'Why do my feet hurt more at the end of a standing shift than at the start?',
-      a: 'The plantar fascia, calf muscles and lower-leg veins tolerate only so much static loading, and hours of standing use that up. Gravity pools blood in the feet and lower legs while you stand still, adding to the ache and swelling that builds through a shift. Walking breaks help because the calf pump moves blood back up.',
-      cites: [CITE.waters],
+      q: 'Why do nurses’ feet hurt after a 12-hour shift?',
+      a: 'A nursing shift combines standing at the bedside, long walks and hard floors. In one tracker study nurses averaged 9,360 steps per shift, about 5.8 km. In a survey of 312 paediatric hospital nurses, 55.3% reported foot or ankle problems over 12 months, and 12-hour shifts in intensive care were the one work factor that independently raised the odds of disabling foot problems. Calf stretches before or after a shift, comfortable shoes and compression stockings all target that load.',
+      cites: [CITE.changCho, CITE.reedNurse],
     },
     {
       q: 'Is foot pain from standing all day the same as plantar fasciitis?',
@@ -266,9 +283,9 @@ export const STANDING_EN: Guide = {
       cites: [CITE.riddle],
     },
     {
-      q: 'Do compression socks help foot pain from standing?',
-      a: 'Compression socks helped in one controlled trial. Among 40 security guards on 12-hour standing shifts, both 15-20 mmHg and 20-30 mmHg stockings avoided the rise in foot and leg discomfort, fatigue and swelling seen with regular socks. It is one of the few standing-specific options with a trial behind it, though the study was small and all male.',
-      cites: [CITE.garcia],
+      q: 'How long should you stand at a standing desk?',
+      a: 'A 2015 expert statement recommends building toward 2 hours of standing and light activity per working day, eventually 4, broken into shorter bouts. A 2017 review of laboratory studies found symptoms became clinically relevant after about 40 minutes of uninterrupted standing. A practical start is 20 to 30 minutes standing, then 20 to 30 minutes sitting, adjusting as your feet adapt.',
+      cites: [CITE.buckley, CITE.coenen],
     },
     {
       q: 'Is it normal for feet to hurt after an 8 or 12-hour shift?',

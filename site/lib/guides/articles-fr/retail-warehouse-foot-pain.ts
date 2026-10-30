@@ -25,7 +25,7 @@ export const RETAIL_WAREHOUSE_FR: Guide = {
   lede:
     'En entrepôt et en magasin, les pieds font mal parce que des heures debout et à marcher sur des sols durs chargent le talon, la voûte et le mollet, sans que le sol amortisse grand-chose. Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de [fasciite plantaire](/fr/fasciite-plantaire/) dans une étude (Riddle et coll., 2003). Les étirements du mollet et du fascia plantaire ont la meilleure note, **A**, dans la recommandation de 2023 sur la douleur au talon, et une version courte tient en 3\u00A0minutes environ pendant une pause. Les tapis et les semelles amortissantes améliorent le confort, mais les données sont plus minces (Speed et coll., 2018).',
   intro: [
-    'Cette page porte sur le travail lui-même\u00A0: sols en béton ou carrelés, chaussures de sécurité, longs postes et pauses courtes. Pour la douleur liée à la station debout en général, voir [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/). Si vous travaillez à l’hôpital, [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-infirmieres/) traite des postes de 12\u00A0heures et des horaires alternés.',
+    'Cette page porte sur le travail lui-même\u00A0: sols en béton ou carrelés, chaussures de sécurité, longs postes et pauses courtes. Pour la douleur liée à la station debout en général, voir [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/). Si vous travaillez à l’hôpital, [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-debout-toute-la-journee/) traite des postes de 12\u00A0heures et des horaires alternés.',
   ],
   toc: true,
   takeaways: [

@@ -26,7 +26,7 @@ export const CHEFS_EN: Guide = {
   lede:
     'Chef foot pain often comes from long hours standing and walking on hard kitchen floors, and for heel pain the options with the best evidence are calf and plantar fascia stretches, which the 2023 heel pain guideline grades **A**, and calf strength work, graded **B** (Koc and colleagues, 2023). Slip-resistant shoes are about safety, not pain: in a randomized trial across 226 school districts, giving food service workers slip-resistant shoes at no cost lowered slipping injury claims from 3.54 to 1.18 per 10,000 worker-months (Bell and colleagues, 2019). No study has tested whether clogs or any kitchen shoe reduce foot pain itself.',
   intro: [
-    'This page is about the kitchen side of the problem: hard, wet and greasy floors, rushing during service, and shoes chosen for grip. For foot pain from standing in any job, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For hospital shifts, see [foot pain for nurses](/nurses-foot-pain/). If your heel is sharpest on the first steps after rest, that pattern points to [plantar fasciitis](/plantar-fasciitis/).',
+    'This page is about the kitchen side of the problem: hard, wet and greasy floors, rushing during service, and shoes chosen for grip. For foot pain from standing in any job, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For hospital shifts, see [foot pain for nurses](/feet-hurt-standing-all-day/). If your heel is sharpest on the first steps after rest, that pattern points to [plantar fasciitis](/plantar-fasciitis/).',
   ],
   toc: true,
   takeaways: [

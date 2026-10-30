@@ -512,7 +512,7 @@ export const HEEL_PAIN_ES: Guide = {
         ],
       },
       after: [
-        'Así que las [plantillas](/es/plantillas-o-ejercicios/) por sí solas no bastan para la mayoría de las personas, aunque pueden acompañar al estiramiento y al trabajo de fuerza. La guía no califica tipos de zapato, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) o [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/).',
+        'Así que las [plantillas](/es/plantillas-o-ejercicios/) por sí solas no bastan para la mayoría de las personas, aunque pueden acompañar al estiramiento y al trabajo de fuerza. La guía no califica tipos de zapato, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) o [dolor de pies en enfermeras](/es/dolor-de-pies-por-estar-de-pie/).',
       ],
       cites: [CITE.guideline],
     },

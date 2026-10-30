@@ -197,7 +197,7 @@ export const STANDING_DESK_PT: Guide = {
         },
         'Preste atenção nos pés e na lombar. Se o desconforto estiver aumentando, sente antes, em vez de insistir.',
         'Use um tapete desde o começo, se tiver. Use calçados com algum amortecimento, mesmo em casa. Faça os alongamentos da panturrilha da tabela acima pelo menos uma vez por dia.',
-        'Se você já tem dor nos pés de ficar em pé e quer o guia mais amplo, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor da mesa em pé e problemas como a fascite plantar se sobrepõem. Para a versão da enfermagem, veja [dor nos pés na enfermagem](/pt/dor-nos-pes-enfermagem/). Também há páginas para [professores](/pt/dor-nos-pes-professores/), [quem trabalha em loja ou depósito](/pt/dor-nos-pes-comercio-e-deposito/), [cozinheiros e equipe de cozinha](/pt/dor-nos-pes-cozinheiros/) e [cabeleireiros](/pt/dor-nos-pes-cabeleireiros/).',
+        'Se você já tem dor nos pés de ficar em pé e quer o guia mais amplo, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor da mesa em pé e problemas como a fascite plantar se sobrepõem. Para a versão da enfermagem, veja [dor nos pés na enfermagem](/pt/dor-nos-pes-ficar-em-pe/). Também há páginas para [professores](/pt/dor-nos-pes-ficar-em-pe/), [quem trabalha em loja ou depósito](/pt/dor-nos-pes-ficar-em-pe/), [cozinheiros e equipe de cozinha](/pt/dor-nos-pes-ficar-em-pe/) e [cabeleireiros](/pt/dor-nos-pes-ficar-em-pe/).',
       ],
       cites: [CITE.buckley],
     },

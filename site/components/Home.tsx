@@ -150,8 +150,8 @@ const COPY: Record<Lang, HomeCopy> = {
       description:
         'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for first steps out of bed and long days on your feet.',
     },
-    h1a: 'Tried everything?',
-    h1b: 'Try a plan built for your feet.',
+    h1a: 'Walkito:',
+    h1b: 'Heel Pain & Flat Feet',
     lead: 'Walkito is an iPhone and Android app with exercises for heel pain, plantar fasciitis and flat feet, for the first steps out of bed and long days on your feet. A plan that adjusts to how your feet feel each morning.',
     small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a session, at home.`,
     alt: {
@@ -231,8 +231,8 @@ const COPY: Record<Lang, HomeCopy> = {
       description:
         'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: для первых шагов утром и долгих дней на ногах.',
     },
-    h1a: 'Всё перепробовали?',
-    h1b: 'Попробуйте план, созданный для ваших стоп.',
+    h1a: 'Walkito:',
+    h1b: 'пятка и плоскостопие',
     lead: 'Приложение Walkito для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии: для первых шагов утром и долгих дней на ногах. Каждое утро план подстраивается под то, как чувствуют себя ваши стопы.',
     small: `Занятия по ${MIN_A}, ${MIN_B} или ${MIN_C} минут, дома.`,
     alt: {
@@ -320,8 +320,8 @@ const COPY: Record<Lang, HomeCopy> = {
       description:
         'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano.',
     },
-    h1a: '¿Ya probaste de todo?',
-    h1b: 'Prueba un plan hecho para tus pies.',
+    h1a: 'Walkito:',
+    h1b: 'Fascitis plantar',
     lead: 'Walkito es una app para iPhone y Android con ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para los primeros pasos al despertar y los días largos de pie. Un plan que se ajusta cada mañana a cómo sientes los pies.',
     small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos por sesión, en casa.`,
     alt: {

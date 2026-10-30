@@ -132,7 +132,7 @@ export const HUB_FLAT_FEET_RU: Guide = {
       bullets: [
         '[Метатарзалгия](/ru/metatarzalgiya/) может возникать из-за избыточной нагрузки на передний отдел стопы при низком своде. Зажатая икра смещает вес вперёд.',
         '[Болят ноги от стояния](/ru/bolyat-nogi-ot-stoyaniya/) разбирает упражнения и обувь, когда долгий день на твёрдом полу оставляет свод ноющим.',
-        '[Боль в стопах у медсестёр](/ru/bol-v-stopakh-u-medsester/) касается нагрузки 12-часовых смен.',
+        '[Боль в стопах у медсестёр](/ru/bolyat-nogi-ot-stoyaniya/) касается нагрузки 12-часовых смен.',
       ],
     },
     {
@@ -145,7 +145,7 @@ export const HUB_FLAT_FEET_RU: Guide = {
         '[Поворот стопы внутрь с лентой](/ru/uprazhneniya/inversiya-stopy-s-rezinkoy/) укрепляет заднюю большеберцовую мышцу.',
         '[Метатарзалгия](/ru/metatarzalgiya/) разбирает боль в переднем отделе стопы, которая пересекается с плоскостопием при смещении нагрузки вперёд.',
         '[Болят ноги от стояния](/ru/bolyat-nogi-ot-stoyaniya/) разбирает упражнения и обувь для долгих дней на ногах.',
-        '[Боль в стопах у медсестёр](/ru/bol-v-stopakh-u-medsester/) касается боли в стопах у медицинских работников.',
+        '[Боль в стопах у медсестёр](/ru/bolyat-nogi-ot-stoyaniya/) касается боли в стопах у медицинских работников.',
         'Сила и подвижность: [укрепление стопы](/ru/ukreplenie-stopy-uprazhneniya/), [укрепление пальцев ног](/ru/uprazhneniya-dlya-paltsev-nog/), [укрепление голеностопа](/ru/ukreplenie-golenostopa-uprazhneniya/), [подвижность голеностопа](/ru/podvizhnost-golenostopa-uprazhneniya/) и [забитые икры](/ru/zabitye-ikry/).',
         'Плоскостопие и боль: [боль в своде стопы](/ru/bol-v-svode-stopy/), [дисфункция заднего большеберцового сухожилия](/ru/disfunktsiya-zadnego-bolshebertsovogo-sukhozhiliya/), [боль в колене](/ru/ploskostopie-i-bol-v-kolene/) и [боль в спине](/ru/ploskostopie-i-bol-v-spine/).',
         'Дети и возраст: [плоскостопие у детей](/ru/ploskostopie-u-detey/) и [ухудшается ли плоскостопие с возрастом](/ru/ploskostopie-s-vozrastom/).',

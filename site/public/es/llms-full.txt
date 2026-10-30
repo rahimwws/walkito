@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/es/
-Last updated: 2026-10-27
+Last updated: 2026-10-29
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
+- The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Ejercicios y estiramientos para la fascitis plantar
 
@@ -4450,7 +4450,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 - Comprobar y entrenar: [test de pie plano](https://walkito.site/es/test-pie-plano/), [ejercicios para pie plano](https://walkito.site/es/ejercicios-pie-plano/), [recoger la toalla con los dedos](https://walkito.site/es/ejercicios/recoger-toalla-con-los-dedos/), [separar los dedos del pie](https://walkito.site/es/ejercicios/separar-los-dedos-del-pie/), [fortalecer los dedos de los pies](https://walkito.site/es/ejercicios-para-fortalecer-los-dedos-del-pie/), [movilidad de tobillo](https://walkito.site/es/ejercicios-de-movilidad-de-tobillo/) y [pantorrillas tensas](https://walkito.site/es/pantorrillas-tensas/).
 - Pie plano y dolor: [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/), [disfunción del tendón tibial posterior](https://walkito.site/es/ejercicios-tendon-tibial-posterior/), [dolor de rodilla](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/), [dolor de espalda](https://walkito.site/es/pie-plano-y-dolor-de-espalda/) y [dolor en la planta del pie](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/). Un dolor de talón más fuerte en los primeros pasos de la mañana encaja mejor con la [fascitis plantar](https://walkito.site/es/fascitis-plantar/).
-- Días largos de pie: [dolor de pies por estar de pie](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) y [dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/).
+- Días largos de pie: [dolor de pies por estar de pie](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) y [dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/).
 - Niños y edad: [pie plano en niños](https://walkito.site/es/pie-plano-en-ninos/) y [si el pie plano empeora con la edad](https://walkito.site/es/pie-plano-con-la-edad/).
 - Otras formas del pie: [pie cavo](https://walkito.site/es/ejercicios-pie-cavo/) y [juanetes](https://walkito.site/es/ejercicios-juanetes/).
 - Calzado y apps: [zapatos barefoot](https://walkito.site/es/zapatos-barefoot/), [plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/) y la [mejor app para el pie plano](https://walkito.site/es/mejor-app-pie-plano/).
@@ -4624,9 +4624,9 @@ Estar mucho tiempo de pie sobre superficies duras es uno de los factores de ries
 Para quienes corren, la guía de 2023 aconseja cambiar la carga en lugar de dejarlo todo. Eso significa bajar los kilómetros o la intensidad, no llegar a cero. La recomendación se basa en evidencia teórica (grado E) porque ningún ensayo la ha probado, pero coincide con cómo las guías para el tendón de Aquiles y la periostitis tibial manejan también las lesiones por sobrecarga.
 
 - [Dolor de pies por estar de pie todo el día](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica los ejercicios y el calzado para quienes trabajan de pie.
-- [Dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/) habla de los turnos largos sobre pisos duros.
-- Otros trabajos en pisos duros tienen su propia página: [maestros](https://walkito.site/es/dolor-de-pies-docentes/), [tiendas y almacenes](https://walkito.site/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](https://walkito.site/es/dolor-de-pies-cocineros/) y [estilistas](https://walkito.site/es/dolor-de-pies-peluqueros/).
-- [Dolor de pies con escritorio de pie](https://walkito.site/es/escritorio-de-pie-dolor-de-pies/) explica cómo pasar de estar sentado a estar de pie.
+- [Dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) habla de los turnos largos sobre pisos duros.
+- Otros trabajos en pisos duros tienen su propia página: [maestros](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/), [tiendas y almacenes](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/), [chefs y personal de cocina](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) y [estilistas](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/).
+- [Dolor de pies con escritorio de pie](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica cómo pasar de estar sentado a estar de pie.
 - [Dolor de talón al correr](https://walkito.site/es/dolor-de-talon-en-corredores/) explica cómo ajustar el entrenamiento cuando duele el talón.
 
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
@@ -4661,8 +4661,8 @@ Varias apps incluyen ejercicios para la fascitis plantar. Se diferencian en si s
 - [¿Cuánto dura la fascitis plantar?](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/) explica los tiempos de recuperación, qué la hace más lenta y qué hacer si el avance se frena.
 - [Dolor de talón al correr](https://walkito.site/es/dolor-de-talon-en-corredores/) explica cómo manejar la carga y cambiar el entrenamiento.
 - [Dolor de pies por estar de pie todo el día](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica los ejercicios y el calzado para cuando pasas mucho tiempo de pie.
-- [Dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/) habla de los turnos largos sobre pisos duros.
-- [Dolor de pies con escritorio de pie](https://walkito.site/es/escritorio-de-pie-dolor-de-pies/) explica cómo pasar de estar sentado a estar de pie.
+- [Dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) habla de los turnos largos sobre pisos duros.
+- [Dolor de pies con escritorio de pie](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica cómo pasar de estar sentado a estar de pie.
 - [La mejor app para la fascitis plantar](https://walkito.site/es/mejor-app-fascitis-plantar/) compara siete apps para la fascitis plantar.
 - Páginas de ejercicios: [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/), [estiramiento de pantorrilla](https://walkito.site/es/ejercicios/estiramiento-de-pantorrilla/), [elevación de talones con toalla](https://walkito.site/es/ejercicios/elevacion-de-talones-con-toalla/), [automasaje plantar](https://walkito.site/es/ejercicios/masaje-plantar-con-pelota/).
 - Ejercicios y pruebas: [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/), [pantorrillas tensas](https://walkito.site/es/pantorrillas-tensas/) y el [test de elevación de talón](https://walkito.site/es/test-de-elevacion-de-talon/).
@@ -5034,155 +5034,6 @@ La prueba de pellizco, también llamada señal de Mulder, es un examen físico q
 #### ¿Caminar es bueno para el neuroma de Morton?
 
 Caminar en sí no daña el nervio, pero los zapatos apretados o de suela delgada mientras caminas pueden aumentar la compresión y empeorar los síntomas. Caminatas cortas con zapatos anchos y acolchados suelen estar bien. Caminatas más largas sobre superficies duras o con zapatos angostos suelen aumentar el ardor u hormigueo entre los dedos. Si caminar provoca síntomas de forma constante, cambiar de zapatos ayuda más que reducir la actividad.
-
-## Dolor de pies en enfermeras: qué ayuda en turnos de 12 horas
-
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-enfermeras/ · published 2026-10-07 · updated 2026-10-07
-
-Las enfermeras caminan más en un solo turno que la mayoría de la gente en un día, y lo hacen sobre pisos duros con zapatos que quizá no les quedan bien. Los problemas de pie y tobillo son de las molestias musculares más comunes en enfermería: en una encuesta, más de la mitad de las enfermeras de hospital los reportaron en un periodo de 12 meses. Casi todo lo que ayuda, como estirar la pantorrilla, hacer ejercicios para el arco y usar medias de compresión, se puede hacer en unos minutos antes o después del turno.
-
-- En una encuesta a 312 enfermeras de un hospital pediátrico en Australia, el 55,3 % reportó problemas de pie o tobillo en los últimos 12 meses, y la tasa fue más alta entre quienes trabajaban turnos de 12 horas en cuidados intensivos (Reed y colegas, 2014).
-- En un estudio con podómetros, las enfermeras caminaron en promedio 9360 pasos por turno, unos 5,8 km en un turno de 9,4 horas, una carga muy por encima del promedio de los adultos en general (Chang y Cho, 2022).
-- En un estudio transversal con 636 enfermeras de hospitales en Japón, el 51 % reportó dolor o discapacidad en los pies en el último mes, y el 17 % tenía dolor que interfería con sus actividades diarias (Tojo y colegas, 2018).
-- La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6 (Riddle y colegas, 2003).
-- En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de 12 horas, tanto las medias de compresión de 15-20 mmHg como las de 20-30 mmHg evitaron el aumento de molestias e hinchazón que se vio con calcetines normales (Garcia y colegas, 2023).
-
-### ¿Qué tan común es el dolor de pies en enfermeras?
-
-**El dolor de pie y tobillo es una de las tres molestias musculares más comunes en enfermería**, junto con el dolor lumbar y el de cuello. En una encuesta a 312 enfermeras de un hospital pediátrico, el 55,3 % reportó problemas musculares de pie o tobillo en los últimos 12 meses, y el 43,8 % tuvo síntomas solo en los últimos siete días.
-
-Una de cada seis dijo que el dolor limitaba su actividad física. Trabajar turnos de 12 horas en la unidad de cuidados intensivos fue el único factor laboral que, por sí solo, aumentó las probabilidades de problemas de pie que limitan la vida diaria.
-
-Otro estudio con 636 enfermeras de hospitales en Japón encontró que el 51 % reportó dolor o discapacidad en los pies en el último mes, medido con un cuestionario validado. El dolor que impedía trabajar con normalidad llegó al 17 %. Un estudio con podómetros en enfermeras de Corea encontró un promedio de 5,8 km caminados por turno, una exigencia física muy por encima de la población general.
-
-Un estudio transversal con 411 enfermeras en Finlandia encontró que la piel seca, el dolor de pies y los callos eran las molestias de pies más comunes, y que los problemas de pies se asociaban con menor capacidad para trabajar. Los autores pidieron que se diera prioridad a prevenir los problemas de pies en enfermería.
-
-Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
-Source: Reed LF, Battistutta D, Young J, Newman B. Prevalence and risk factors for foot and ankle musculoskeletal disorders experienced by nurses. BMC Musculoskeletal Disorders. 2014;15:196.
-Source: Tojo M, Yamaguchi S, Amano N, et al. Prevalence and associated factors of foot and ankle pain among nurses at a university hospital in Japan: a cross-sectional study. Journal of Occupational Health. 2018;60(2):132–139.
-Source: Stolt M, Suhonen R, Kielo E, Katajisto J, Leino-Kilpi H. Foot health of nurses: a cross-sectional study. International Journal of Nursing Practice. 2017;23(4):e12560.
-
-### ¿Por qué a las enfermeras les duelen los pies en turnos de 12 horas?
-
-En un turno de enfermería se juntan tres cosas: estar mucho tiempo de pie, caminar largas distancias y los pisos duros. Estar de pie sin moverte carga la fascia plantar, los músculos de la pantorrilla y la almohadilla del talón sin el bombeo que da caminar. Caminar ayuda a que la sangre regrese de las piernas, pero en enfermería se alterna sin aviso entre estar de pie sin moverse junto a una cama y caminar pasillos largos, así que el bombeo de la pantorrilla nunca agarra un ritmo estable.
-
-Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas en muchos trabajos de pie, y menciona a las enfermeras como uno de los grupos de mayor riesgo. La revisión señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie.
-
-En los tejidos, una pantorrilla tensa es una pieza clave. Un estudio de casos y controles con 50 personas con fascitis plantar y 100 controles emparejados encontró que la poca flexibilidad del tobillo, es decir, que el tobillo no se dobla hacia arriba lo que debería porque la pantorrilla está tensa, fue el factor de riesgo independiente más fuerte para la fascitis plantar: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6. **Las enfermeras tienen los dos factores de riesgo a la vez.**
-
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Qué ejercicios ayudan a las enfermeras con el dolor de pies?
-
-Los ejercicios que ayudan son los mismos que trabajan la fascitis plantar y el dolor de pies por estar de pie: estiramientos de pantorrilla, un estiramiento plantar, elevaciones de talón para la fuerza de la pantorrilla y un ejercicio para el arco llamado pie corto. Lo distinto en enfermería es acomodarlos alrededor de los turnos rotativos, no durante el turno. **Unos minutos antes o después del turno bastan para hacer los más importantes.**
-
-La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los tejidos son los mismos que cargan el peso durante un turno de enfermería. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.
-
-- **Estiramiento de pantorrilla (rodilla estirada)** (2 series de 30 segundos, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante. Esto trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Lo puedes hacer en la sala de descanso o contra cualquier pared.
-- **Estiramiento de sóleo (rodilla doblada)** (2 series de 30 segundos, cada pierna): Misma posición contra la pared, pero dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza un pie sobre la otra rodilla. Jala los dedos hacia atrás con suavidad hasta sentir un estiramiento a lo largo del arco. Si el talón te duele más en los primeros pasos del día, haz este antes de que los pies toquen el piso en la mañana.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate sobre los dos pies, sube recto sobre los dedos gordos en unos tres segundos y baja despacio en otros tres. Apóyate en una pared o un barandal para el equilibrio. El detalle de este ejercicio, con cómo avanzar y la variante con toalla, está en [elevaciones de talón para la fascitis plantar](https://walkito.site/es/elevaciones-de-talon-fascitis-plantar/).
-- **Pie corto, sentado** (3 series de 10, mantén 5 segundos, cada pie): Siéntate con el pie apoyado en el piso. Lleva la parte delantera del pie hacia el talón para que el arco suba, sin encoger los dedos. Esto entrena los músculos pequeños dentro del arco que lo sostienen durante un día largo de pie.
-- **Separación de dedos** (3 series de 10, mantén 5 segundos): En una silla o de pie, separa los cinco dedos todo lo que puedas y mantén. Después de un turno con zapatos ajustados, esto despierta los músculos pequeños entre los dedos.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Cómo hacer los ejercicios si tienes turnos rotativos?
-
-Un turno de 12 horas deja poco tiempo para una rutina aparte, y rotar entre turnos de día y de noche lo complica todavía más. Los estiramientos de esta página toman unos 3 minutos, así que lo más simple es hacerlos justo antes o justo después del turno, siempre en el mismo momento de tu rutina. Por ejemplo, hazlos después de ponerte o quitarte los zapatos de trabajo.
-
-En los días libres, agrega los ejercicios de fuerza: elevaciones de talón y pie corto. Toman de 5 a 10 minutos. Hacer el trabajo de fuerza en los días libres, y no después de un turno pesado, le da a la pantorrilla y al arco tiempo para recuperarse antes de volver a estar de pie.
-
-Tres sesiones por semana es un buen punto de partida. Si trabajas tres turnos de 12 horas con cuatro días libres, puedes hacer fuerza en cada día libre. Si rotas entre turnos de día y de noche, la hora no importa. **Lo que importa es la constancia, no el reloj.**
-
-### ¿Los zapatos de enfermería hacen diferencia: zuecos, tenis u otra cosa?
-
-El calzado es uno de los temas que más se hablan en enfermería, pero la evidencia a favor de un tipo sobre otro es limitada. Una evaluación de 2007 de tres marcas de zapatos profesionales de enfermería encontró que el zapato con plantilla más acolchada y mejor soporte del arco redujo el esfuerzo muscular de las piernas comparado con los otros dos, pero el estudio fue pequeño y específico de esas marcas.
-
-Lo que la investigación sí respalda de forma más general es que la comodidad del calzado importa. En una encuesta a 125 enfermeras de urgencias y consulta externa, el 72 % de quienes reportaron poca comodidad en el calzado también reportó dolor de pies y de talón, frente al 28 % de quienes reportaron mucha comodidad. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una B en contra para aliviar la fascitis plantar a corto plazo, es decir, la evidencia se inclina a no usarlas como única opción.
-
-Algo práctico: elige un zapato que te quede bien, que tenga algo de amortiguación y que no te apriete los dedos. Si ya tienes dolor de talón o de arco, los ejercicios de esta página trabajan los tejidos directamente. **Los zapatos y las plantillas pueden ayudar con la comodidad durante el turno, pero no reemplazan los estiramientos ni el trabajo de fuerza.**
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Las medias de compresión ayudan a las enfermeras con el dolor de pies y piernas?
-
-Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12 horas, tanto el grupo con medias de 15-20 mmHg como el de 20-30 mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.
-
-Un ensayo piloto aleatorizado con 20 estudiantes de enfermería comparó medias de compresión hasta la rodilla y hasta el muslo, usadas durante turnos de práctica clínica de 9 horas. Los dos grupos reportaron mucha satisfacción, aunque la muestra fue demasiado pequeña para mostrar diferencias claras entre los dos largos.
-
-El ensayo de Garcia se hizo solo con guardias de seguridad hombres, no con enfermeras, y ninguno de los dos estudios fue grande. Pero las medias de compresión son de las pocas medidas específicas para estar de pie con evidencia aleatorizada.
-
-Una revisión de salud laboral de 2015 las incluye junto con los tapetes para el piso y el calzado con soporte entre las medidas con algo de evidencia para reducir las molestias en trabajos de pie. **No reemplazan los estiramientos ni el trabajo de fuerza.** Ayudan con la hinchazón y el cansancio, mientras la pantorrilla y la fascia siguen necesitando su propio trabajo.
-
-Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-
-### ¿Qué puedes hacer antes y después del turno en 3, 5 o 10 minutos?
-
-- **Si tienes 3 minutos:** haz los dos estiramientos de pantorrilla (rodilla estirada y rodilla doblada, 30 segundos de cada lado). Eso cubre el factor de riesgo modificable más fuerte, una pantorrilla tensa, y toma lo mismo que amarrarte los zapatos.
-- **Si tienes 5 minutos:** agrega el estiramiento plantar (30 segundos cada pie). Esta es la combinación a la que la guía de 2023 le da una A para la fascitis plantar. Si el talón te duele más en los primeros pasos del día, haz el estiramiento plantar antes de que los pies toquen el piso.
-- **Si tienes 10 minutos:** agrega las elevaciones de talón (3 series de 10) y el pie corto (3 series de 10, manteniendo 5 segundos). Eso cubre la parte de fuerza, con una B en la guía. En los días libres, 10 minutos alcanzan para todo lo de esta página.
-
-**La constancia importa más que la duración.** Tres minutos de estiramiento de pantorrilla cada día de turno, siempre en el mismo momento de tu rutina, sirven más que una sesión larga que te saltas cuando cambia el horario.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿El dolor de pies después de un turno puede ser fascitis plantar u otra cosa?
-
-El dolor y el cansancio general después de un turno largo son comunes y suelen quitarse con descanso. La fascitis plantar es un problema específico: dolor agudo cerca del talón, peor en los primeros pasos después de descansar (al levantarte de la cama o al pararte después de pasar mucho rato en una silla). Si tu dolor sigue ese patrón, la guía más completa es [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/), y el detalle de las elevaciones de talón está en [elevaciones de talón para la fascitis plantar](https://walkito.site/es/elevaciones-de-talon-fascitis-plantar/).
-
-Si al final del turno sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](https://walkito.site/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. El dolor a lo largo de la tibia podría ser periostitis tibial. El dolor en el tendón de Aquiles, en la parte de atrás del talón, es otro problema.
-
-Si tu pregunta principal es el dolor por estar de pie y no trabajas en enfermería, [por qué me duelen los pies por estar de pie todo el día](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) cubre los mismos ejercicios para cualquier persona. Otros trabajos tienen su propia página: [maestros](https://walkito.site/es/dolor-de-pies-docentes/), [tiendas y almacenes](https://walkito.site/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](https://walkito.site/es/dolor-de-pies-cocineros/) y [estilistas](https://walkito.site/es/dolor-de-pies-peluqueros/). Para la versión de este problema con escritorio de pie, mira [dolor de pies por escritorio de pie](https://walkito.site/es/escritorio-de-pie-dolor-de-pies/). **Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.**
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de una lesión o una caída en el trabajo
-- no puedes apoyar el pie, o cojeas
-- el pie está entumido, con hormigueo, ardor, hinchado o caliente
-- el talón o el pie está rojo, o tienes fiebre o te sientes mal
-- el dolor te despierta por la noche
-- es un dolor agudo, o empeora aunque hayas bajado la carga
-- el dolor está en un solo punto y empeora con la actividad, lo que puede ser señal de una fractura por estrés y no de cansancio por estar de pie
-- una pierna o un pie se hinchó de repente y está adolorido, rojo o caliente
-- tienes diabetes, menos sensibilidad en los pies o mala circulación
-- el dolor no ha bajado después de varias semanas con turnos más ligeros, mejores zapatos y los ejercicios de esta página
-
-### Cómo convertirlo en un plan
-
-No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14 días seguidos.
-
-#### ¿Cuántos pasos camina una enfermera en un turno de 12 horas?
-
-En un estudio con podómetros en enfermeras de hospitales de Corea, el promedio fue de unos 9360 pasos por turno, unos 5,8 km en 9,4 horas. Eso está muy por encima del promedio diario de pasos de los adultos en general, y caminar tanto sobre pisos duros es una de las causas principales del dolor de pies en enfermería.
-
-#### ¿Los turnos de 12 horas causan más dolor de pies que los de 8 horas?
-
-En una encuesta a enfermeras de un hospital pediátrico, trabajar turnos de 12 horas en la unidad de cuidados intensivos fue el único factor laboral que, por sí solo, aumentó las probabilidades de problemas de pie y tobillo que limitan la vida diaria. La carga total sobre el pie sube con la duración del turno, y el tiempo de recuperación entre turnos es más corto cuando los turnos son más largos. Aun así, el tipo de trabajo y el piso también importan, no solo las horas.
-
-#### ¿Las enfermeras deben usar zuecos o tenis para el dolor de pies?
-
-No hay un ensayo grande que compare zuecos de enfermería con tenis para los pies. Lo que sí respalda la evidencia es que la comodidad del calzado está muy relacionada con el dolor de pies: en una encuesta, el 72 % de las enfermeras que reportaron poca comodidad en el calzado también reportó dolor de pies y de talón. Elige un zapato que te quede bien, con algo de amortiguación y que no te apriete los dedos. Los zapatos solos no reemplazan los estiramientos ni el trabajo de fuerza de esta página.
-
-#### ¿Las medias de compresión ayudan a las enfermeras en turnos largos?
-
-En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de 12 horas, tanto las medias de compresión de 15-20 mmHg como las de 20-30 mmHg evitaron el aumento de molestias e hinchazón que se vio con calcetines normales. El ensayo no se hizo con enfermeras, pero el mecanismo es el mismo: la compresión ayuda a que la sangre regrese de la parte baja de las piernas cuando pasas mucho tiempo de pie. A la mayoría de los participantes la media de menor presión les resultó más fácil de poner.
-
-#### ¿El dolor de pies en enfermería es algo con lo que tienes que vivir?
-
-El dolor de pies por estar de pie y caminar es común en enfermería, pero «común» no significa inevitable. La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla y de fascia una A, y al entrenamiento de fuerza una B. Las medias de compresión tienen evidencia aleatorizada para las molestias por estar de pie. Unos minutos de estiramiento de pantorrilla antes o después de cada turno, junto con trabajo de fuerza en los días libres, trabajan los tejidos que más se cargan.
-
-#### ¿El trabajo de enfermería puede causar fascitis plantar?
-
-Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles emparejados con 50 casos y 100 controles. La poca flexibilidad del tobillo tuvo una razón de probabilidades de 23,3. Las enfermeras tienen los dos factores de riesgo, mucho tiempo de pie y poco tiempo de descanso para estirar, por eso los ejercicios de esta página se parecen tanto a los de la guía de fascitis plantar.
-
-#### ¿Qué es lo primero que puede hacer una enfermera para el dolor de pies?
-
-De las opciones que revisa esta página, el estiramiento diario de pantorrilla tiene el mayor respaldo de la guía (grado A para la fascitis plantar) y trabaja el factor de riesgo modificable más fuerte, una pantorrilla tensa. Toma unos 2 minutos, no necesita equipo y lo puedes hacer en la sala de descanso o en casa. Agregar medias de compresión en los días de turno cubre la parte de la hinchazón y el cansancio.
 
 ## ¿Cuánto dura la fascitis plantar? Lo que de verdad dice la evidencia
 
@@ -6165,172 +6016,13 @@ Una fractura por estrés de la tibia, el síndrome compartimental crónico por e
 
 Generalmente sí. Caminar es de menor impacto que correr, y muchas personas con síndrome de estrés tibial medial pueden seguir caminando sin que se dispare el dolor, siempre que se mantenga leve y se calme rápido después. Si caminar por sí solo reproduce un dolor agudo en un solo punto del hueso, detente y consúltalo, porque ese patrón se parece más a una fractura por estrés que a la periostitis tibial.
 
-## Dolor de pies por escritorio de pie: por qué pasa y qué ayuda
-
-Language: Spanish (Español) · https://walkito.site/es/escritorio-de-pie-dolor-de-pies/ · published 2026-10-07 · updated 2026-10-07
-
-Se supone que pasarte a un escritorio de pie es mejor para ti, pero tus pies y tus piernas quizá no opinen lo mismo en las primeras semanas. El dolor de pies con un escritorio de pie casi siempre viene de estar de pie demasiado tiempo en la misma posición, no del escritorio en sí. La investigación apunta a ratos de pie más cortos, un tapete, buenos zapatos y unos cuantos ejercicios que puedes hacer sin dejar tu escritorio.
-
-- Una revisión sistemática de 2017 con 25 estudios de laboratorio encontró que los síntomas musculares clínicamente relevantes aparecían después de unos 40 minutos de pie sin pausa, y a los 42 minutos en personas con tendencia al dolor de espalda. Los autores recomendaron no estar de pie más de 40 minutos seguidos (Coenen y colegas, 2017).
-- Una declaración de expertos de 2015 encargada por Public Health England recomienda sumar primero 2 horas al día de estar de pie y actividad ligera durante el trabajo, y con el tiempo llegar a 4 horas al día, repartidas en ratos más cortos (Buckley y colegas, 2015).
-- Una revisión sistemática de 2014 con 14 estudios encontró evidencia suficiente de que los escritorios para trabajar sentado o de pie reducen las molestias de espalda baja, sin bajar la productividad, pero no encontró una proporción ideal entre tiempo sentado y de pie (Karakolis y Callaghan, 2014).
-- Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo se asocia con molestias musculares, cansancio y dolor de piernas, y puso los tapetes para el piso, las medias de compresión y el calzado con soporte entre las medidas con evidencia a favor (Waters y Dick, 2015).
-- La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles de 2003: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6 (Riddle y colegas, 2003).
-
-### ¿Por qué te duelen los pies con un escritorio de pie?
-
-El dolor de pies con un escritorio de pie pasa por la misma razón que duele cualquier rato largo de pie: tus pies, pantorrillas y la parte baja de las piernas cargan un peso fijo sin el alivio que dan caminar o sentarte. Cuando estás quieto de pie:
-
-- La gravedad acumula sangre en la parte baja de las piernas.
-- Los músculos de la pantorrilla se quedan en la misma posición sin contraerse ni relajarse.
-- La fascia plantar bajo el arco absorbe una carga constante.
-
-Una revisión sistemática de 2017 con 25 estudios de laboratorio juntó datos de 591 participantes y encontró que los síntomas de espalda baja llegaban a niveles clínicamente relevantes después de unos 71 minutos de pie sin pausa en la población general, pero solo 42 minutos en personas que suelen tener dolor al estar de pie. Para los síntomas en las piernas, el panorama fue parecido. Los autores recomendaron 40 minutos como límite práctico antes de cortar el tiempo de pie.
-
-Una revisión de 2015 sobre salud laboral confirmó la relación entre estar de pie mucho tiempo y las molestias musculares, el cansancio y el dolor de piernas en muchos tipos de trabajo de pie. La revisión también encontró que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie.
-
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-
-### ¿Cuánto tiempo estar de pie en un escritorio de pie antes de sentarte?
-
-No hay una sola respuesta para todos, pero la investigación la acota. Una declaración de expertos de 2015, encargada por Public Health England y Active Working Community Interest Company, recomendó que quienes trabajan en escritorio empiecen sumando 2 horas al día de estar de pie y actividad ligera durante el horario de trabajo, y con el tiempo lleguen a 4 horas al día. La declaración especificó que el tiempo de pie debe repartirse en ratos más cortos, no hacerse de un jalón.
-
-La revisión de 2017 de estudios de laboratorio sugiere que 40 minutos de pie sin pausa es el punto en el que los síntomas empiezan a ser clínicamente relevantes. Juntando las dos cosas, **un punto de partida práctico es estar de pie de 20 a 30 minutos, sentarte de 20 a 30 minutos y repetir durante el día**, ajustando a medida que tu cuerpo se adapta.
-
-Una revisión sistemática de 2014 con 14 estudios sobre escritorios para trabajar sentado o de pie encontró evidencia suficiente de que reducen las molestias de espalda baja, sin bajar la productividad. La revisión no encontró una proporción ideal entre tiempo sentado y de pie, y los autores señalaron que la mejor proporción probablemente cambia según la persona y el trabajo. Lo que respalda la evidencia es alternar, no una regla fija.
-
-Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.
-
-### ¿Los tapetes antifatiga ayudan con el dolor de pies en un escritorio de pie?
-
-Los tapetes antifatiga tienen algo de evidencia a favor. La revisión de salud laboral de 2015 pone los tapetes para el piso entre las medidas con evidencia para reducir las molestias al estar de pie mucho tiempo. Un estudio cruzado con 38 integrantes de equipos quirúrgicos encontró que estar de pie sobre un tapete antifatiga de hule de 15 mm durante los procedimientos dio puntajes de dolor y cansancio bastante más bajos que estar de pie sobre el piso normal.
-
-El mecanismo es sencillo: una superficie más suave deja que los pies hagan pequeños ajustes y reparte parte de la carga que un piso duro concentra en el talón y la parte delantera del pie. Una revisión sistemática de 2018 sobre materiales acolchados para estar de pie mucho tiempo notó resultados consistentes de menos molestias, aunque los estudios eran pequeños y el beneficio fue en comodidad, no en prevenir un problema específico.
-
-**Un tapete no va a resolver el dolor de pies por sí solo, pero es de lo más sencillo que puedes probar.** Si ya tienes un escritorio de pie y te duelen los pies, un tapete junto con ratos de pie más cortos y los ejercicios de esta página cubre lo principal.
-
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-
-### ¿Qué zapatos usar en un escritorio de pie?
-
-Si trabajas desde casa, quizá estés de pie frente al escritorio en calcetines o pantuflas. Son muchas horas sin amortiguación ni soporte para el arco. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una B en contra para la fascitis plantar, es decir, la evidencia se inclina a no usarlas como única opción, pero eso se refiere a las plantillas solas, no a si cualquier zapato es mejor que nada.
-
-Algo razonable: **usa un zapato con algo de amortiguación y una plantilla con soporte mientras estás de pie, incluso en casa.** No necesitas un zapato especial para escritorio de pie. Si alternas entre estar de pie y sentado, puedes quitarte los zapatos mientras estás sentado.
-
-Los ejercicios de esta página trabajan los tejidos directamente. Los zapatos y los tapetes ayudan con la comodidad mientras estás de pie, pero no reemplazan los estiramientos ni el trabajo de fuerza.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Qué ejercicios puedes hacer en tu escritorio para el dolor de pies?
-
-Estos ejercicios trabajan la pantorrilla, la fascia plantar y los músculos pequeños del pie. Algunos se pueden hacer en tu escritorio durante una pausa sentado. Otros conviene hacerlos lejos del escritorio, en otro momento. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.
-
-La guía clínica de 2023 para el dolor de talón le da al estiramiento de pantorrilla y de fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los mismos tejidos cargan el peso cuando trabajas en un escritorio de pie. Para la lista completa de ejercicios para la fascitis plantar, mira [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
-
-- **Estiramiento de pantorrilla (rodilla estirada)** (2 series de 30 segundos, cada pierna): Da un paso atrás de tu escritorio, pon las manos en el borde del escritorio o en una pared, y mantén la pierna de atrás estirada con el talón abajo. Esto trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Lo puedes hacer al pasar de estar de pie a sentarte.
-- **Estiramiento de sóleo (rodilla doblada)** (2 series de 30 segundos, cada pierna): Misma posición, pero dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Elevaciones de talón sentado** (3 series de 15, los dos pies): Siéntate en tu escritorio con los pies apoyados en el piso. Sube los dos talones lo más alto que puedas, mantén un segundo y baja despacio. Esto trabaja el sóleo, el músculo más profundo de la pantorrilla, y lo puedes hacer en cualquier pausa sentado sin levantarte de la silla.
-- **Separación de dedos** (3 series de 10, mantén 5 segundos): Siéntate en tu escritorio y separa los cinco dedos todo lo que puedas, y mantén. Esto activa los músculos pequeños entre los dedos que quedan apretados dentro de los zapatos al estar de pie. Puedes hacerlo sin zapatos durante una pausa sentado.
-- **Pie corto, sentado** (3 series de 10, mantén 5 segundos, cada pie): Siéntate con el pie apoyado en el piso. Lleva la parte delantera del pie hacia el talón para que el arco suba, sin encoger los dedos. Esto entrena los músculos pequeños dentro del arco que lo sostienen mientras estás de pie.
-- **Elevaciones de talón con dos pies (de pie)** (3 series de 10, los dos pies): Párate frente a tu escritorio, sube recto sobre los dedos gordos en unos tres segundos y baja despacio. Apóyate en el borde del escritorio para el equilibrio. Cómo avanzar paso a paso, con la variante con toalla, está en [elevaciones de talón para la fascitis plantar](https://walkito.site/es/elevaciones-de-talon-fascitis-plantar/).
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Conviene cambiar el peso de pie, usar un reposapiés o moverte más?
-
-Las tres cosas ayudan, y las tres son variantes de la misma idea: romper la postura fija de pie. La declaración de expertos de 2015 insiste en que el trabajo sentado debe cortarse seguido con ratos de pie, y que el tiempo de pie debe incluir actividad ligera. Incluso pasar el peso de un pie al otro cambia qué músculos cargan y ayuda a que circule la sangre en la parte baja de las piernas.
-
-Un reposapiés pequeño o una barra baja bajo el escritorio te deja subir un pie y repartir la carga entre los dos lados. Es una estrategia vieja de las fábricas, y es una de las medidas que menciona la revisión de salud laboral. No necesitas un producto especial. Una caja firme o una repisa baja sirven.
-
-Las pausas cortas para moverte durante el tiempo sentado importan igual. Levántate, camina a la cocina y regresa, o haz una serie de elevaciones de talón sentado o de separación de dedos de la tabla de arriba. La idea no es entrenar. Es evitar la postura fija que causa el problema.
-
-Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-
-### ¿Cómo pasarte a un escritorio de pie sin que te duelan los pies?
-
-**Empieza con menos tiempo de pie del que crees que necesitas.** La declaración de expertos de 2015 recomienda ir sumando hasta 2 horas al día de estar de pie y actividad ligera, no empezar ahí. Si nunca has trabajado de pie, empieza con 15 a 20 minutos de pie por hora y sube poco a poco durante unas semanas:
-
-- **Una primera semana práctica:** 15 minutos de pie, 45 sentado, y repetir durante el día.
-- **La segunda semana:** pasa a 20 minutos de pie y 40 sentado.
-- **Para la tercera o cuarta semana:** prueba 30 y 30.
-
-Escucha a tus pies y a tu espalda baja. Si la molestia va creciendo, siéntate antes en lugar de aguantar.
-
-Pon un tapete desde el principio si tienes uno. Usa zapatos con algo de amortiguación, incluso en casa. Haz los estiramientos de pantorrilla de la tabla de arriba al menos una vez al día.
-
-Si ya te duelen los pies por estar de pie y quieres la guía más amplia, [por qué me duelen los pies por estar de pie todo el día](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica en qué se cruzan el dolor por escritorio de pie y problemas como la fascitis plantar. Para la versión para enfermeras, mira [dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/). También hay páginas para [maestros](https://walkito.site/es/dolor-de-pies-docentes/), [tiendas y almacenes](https://walkito.site/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](https://walkito.site/es/dolor-de-pies-cocineros/) y [estilistas](https://walkito.site/es/dolor-de-pies-peluqueros/).
-
-Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
-
-### ¿El dolor de pies por escritorio de pie puede ser fascitis plantar u otra cosa?
-
-El dolor de pies por escritorio de pie suele ser una molestia general por estar de pie quieto mucho tiempo. Pero si el dolor es agudo, se concentra cerca del talón y es peor en los primeros pasos después de estar sentado un rato, ese patrón apunta a fascitis plantar. Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles, así que el escritorio de pie puede estar contribuyendo.
-
-Los ejercicios que ayudan en los dos casos se parecen mucho. Si tu dolor sigue el patrón de la fascitis plantar, la guía más completa es [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Si sientes los arcos planos, mira [ejercicios para pie plano y arcos caídos](https://walkito.site/es/ejercicios-pie-plano/). Si no sabes qué es, consulta a un profesional de la salud antes de cargar el pie con ejercicio.
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de una lesión o una caída
-- no puedes apoyar el pie, o cojeas
-- el pie está entumido, con hormigueo, ardor, hinchado o caliente
-- el talón o el pie está rojo, o tienes fiebre o te sientes mal
-- el dolor te despierta por la noche
-- es un dolor agudo, o empeora aunque estés más tiempo sentado
-- el dolor está en un solo punto y empeora con la actividad, lo que puede ser señal de una fractura por estrés y no de molestias por estar de pie
-- una pierna o un pie se hinchó de repente y está adolorido, rojo o caliente
-- tienes diabetes, menos sensibilidad en los pies o mala circulación
-- el dolor no ha bajado después de varias semanas con ratos de pie más cortos, un tapete y los ejercicios de esta página
-
-### Cómo convertirlo en un plan
-
-No tienes que decidir el orden, las dosis ni cuándo avanzar. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor por escritorio de pie sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14 días seguidos.
-
-#### ¿Cuánto tiempo debo estar de pie en un escritorio de pie?
-
-Una declaración de expertos de 2015 recomienda ir sumando hasta 2 horas de estar de pie y actividad ligera por jornada laboral, y con el tiempo llegar a 4 horas, repartidas en ratos más cortos. Una revisión sistemática de 2017 encontró que los síntomas musculares se volvían clínicamente relevantes después de unos 40 minutos de pie sin pausa. Un punto de partida práctico es estar de pie de 20 a 30 minutos y luego sentarte de 20 a 30 minutos.
-
-#### ¿Los tapetes antifatiga de verdad sirven para un escritorio de pie?
-
-Una revisión de salud laboral de 2015 pone los tapetes para el piso entre las medidas con evidencia para reducir las molestias al estar de pie mucho tiempo. Un estudio cruzado con integrantes de equipos quirúrgicos encontró puntajes de dolor y cansancio más bajos con un tapete de hule de 15 mm que con el piso normal. El beneficio es en comodidad y cansancio, no en prevenir un problema específico. Un tapete junto con ratos de pie más cortos y estiramientos de pantorrilla cubre más que un tapete solo.
-
-#### ¿Un escritorio de pie puede causar fascitis plantar?
-
-Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. Un escritorio de pie suma horas de pie a tu día, así que puede contribuir si tu pantorrilla ya está tensa, que fue el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3. Los estiramientos de pantorrilla son la forma más directa de trabajar los dos factores de riesgo.
-
-#### ¿Es mejor estar sentado o de pie todo el día?
-
-Ninguna de las dos. La revisión de Karakolis y Callaghan de 2014 encontró evidencia suficiente de que los escritorios para trabajar sentado o de pie reducen las molestias de espalda baja, sin bajar la productividad, pero no encontró una proporción ideal entre tiempo sentado y de pie. La revisión de Coenen de 2017 encontró que estar de pie sin pausa causa síntomas después de unos 40 minutos. Lo que respalda la evidencia es alternar entre estar sentado y de pie, no elegir una sola.
-
-#### ¿Qué ejercicios puedo hacer en un escritorio de pie?
-
-De pie: estiramientos de pantorrilla apoyado en el borde del escritorio (2 series de 30 segundos de cada lado) y elevaciones de talón de pie (3 series de 10). En las pausas sentado: elevaciones de talón sentado (3 series de 15), separación de dedos y el ejercicio de pie corto. Trabajan la pantorrilla, la fascia plantar y los músculos propios del pie que cargan el peso al estar de pie. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.
-
-#### ¿Por qué me duelen más los pies quieto de pie que caminando?
-
-Al caminar se activa el bombeo de la pantorrilla, que sube la sangre de la parte baja de las piernas en cada paso. Estar quieto de pie quita ese bombeo, así que la sangre se acumula en los pies y la parte baja de las piernas, y los músculos se quedan en la misma posición fija en lugar de contraerse y relajarse. Una revisión sistemática de 2017 confirmó este mecanismo y encontró que los síntomas en las piernas aparecen de forma constante al estar de pie quieto en estudios de laboratorio.
-
-#### ¿Qué es la regla 20-8-2 para escritorios de pie?
-
-La regla 20-8-2 es una pauta de ergonomía: divide cada bloque de 30 minutos en 20 minutos sentado, 8 minutos de pie y 2 minutos moviéndote. Es una convención general, no una fórmula probada en ensayos, pero coincide con la idea central de esta página: ninguna posición fija por horas es ideal, y los cambios de postura cortos y frecuentes reducen la carga estática que causa el cansancio en los pies.
-
-#### ¿Estar de pie empeora la fascitis plantar?
-
-Puede hacerlo. Estar de pie mantiene la fascia plantar y la pantorrilla bajo carga constante, sin las pausas de caminar que bombean sangre y bajan la tensión. Pasar la mayor parte de la jornada de pie es un factor de riesgo independiente de fascitis plantar en la investigación sobre estar de pie por tiempo prolongado. Si ya tienes fascitis plantar, un escritorio de pie sobre piso duro sin pausas ni estiramientos puede empeorar los síntomas.
-
 ## ¿Por qué me duelen los pies por estar de pie todo el día?
 
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-por-estar-de-pie/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-por-estar-de-pie/ · published 2026-10-07 · updated 2026-10-29
 
-Al final de un turno largo te duelen los pies. Te duele el arco, el talón está adolorido y sientes las piernas pesadas. Estar de pie por horas sobre un piso duro carga los mismos tejidos una y otra vez, sin el bombeo que caminar les da a tus pantorrillas y a tus venas. Estirar la pantorrilla y la fascia plantar, y ganar algo de fuerza en la pantorrilla, trabaja justo los tejidos que más se cargan.
+Al final de un turno largo te duelen los pies. Te duele el arco, el talón está adolorido y sientes las piernas pesadas. Estar de pie por horas sobre un suelo duro carga los mismos tejidos una y otra vez, sin el bombeo que caminar les da a tus pantorrillas y a tus venas. Estirar la pantorrilla y la fascia plantar, y ganar algo de fuerza en la pantorrilla, trabaja justo los tejidos que más se cargan.
 
-- Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas. Los tapetes para el piso, las medias de compresión y el calzado con soporte están entre las medidas con evidencia a favor (Waters y Dick, 2015).
+- Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas. Los tapetes para el suelo, las medias de compresión y el calzado con soporte están entre las medidas con evidencia a favor (Waters y Dick, 2015).
 - Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. La poca flexibilidad del tobillo tuvo una razón de probabilidades de 23,3 (Riddle y colegas, 2003).
 - En un ensayo de grupos paralelos con 40 guardias de seguridad asignados al azar a calcetines normales o a uno de dos grupos con medias de compresión, tanto las medias de 15-20 mmHg como las de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que se vio con calcetines normales durante turnos de pie de 12 horas (Garcia y colegas, 2023).
 - La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de fuerza una B.
@@ -6354,10 +6046,10 @@ La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fa
 
 - **Estiramiento de pantorrilla** (2 series de 30 segundos, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento trabaja el mayor factor de riesgo que encontró el estudio de 2003.
 - **Estiramiento de sóleo** (2 series de 30 segundos, cada pierna): Ponte en la misma posición contra la pared y dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento a lo largo del arco, no en la pantorrilla. Si el talón te duele más al despertar, haz este antes de que el pie toque el piso.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate sobre los dos pies, sube recto sobre los dedos gordos y baja despacio. Los dos pies comparten la carga mientras la pantorrilla gana fuerza. Apóyate en una pared o un barandal si necesitas equilibrio.
-- **Pie corto, sentado** (3 series de 10, mantén 5 segundos, cada pie): Siéntate con el pie apoyado en el piso. Lleva la parte delantera del pie hacia el talón para que el arco suba, y mantén. No encojas los dedos. El pie corto entrena el músculo pequeño dentro del arco que lo sostiene durante un día largo de pie.
-- **Equilibrio a una pierna** (3 series de 30 segundos, cada pierna): Párate en un pie y mira un punto fijo. Deja que el pie se tambalee. Ese tambaleo es el pie haciendo el trabajo de equilibrio. Ponte cerca de una pared si quieres algo de seguridad.
+- **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento a lo largo del arco, no en la pantorrilla. Si el talón te duele más al despertar, haz este antes de que el pie toque el suelo.
+- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Ponte de pie sobre los dos pies, sube recto sobre los dedos gordos y baja despacio. Los dos pies comparten la carga mientras la pantorrilla gana fuerza. Apóyate en una pared o un barandal si necesitas equilibrio.
+- **Pie corto, sentado** (3 series de 10, mantén 5 segundos, cada pie): Siéntate con el pie apoyado en el suelo. Lleva la parte delantera del pie hacia el talón para que el arco suba, y mantén. No encojas los dedos. El pie corto entrena el músculo pequeño dentro del arco que lo sostiene durante un día largo de pie.
+- **Equilibrio a una pierna** (3 series de 30 segundos, cada pierna): Apóyate en un solo pie y mira un punto fijo. Deja que el pie se tambalee. Ese tambaleo es el pie haciendo el trabajo de equilibrio. Ponte cerca de una pared si quieres algo de seguridad.
 - **Automasaje plantar** (2 minutos): Siéntate y rueda la planta del pie despacio sobre una pelota de masaje, con presión firme. Si haces muecas de dolor, afloja. Rodar el pie después de un turno largo calma el tejido y da algo de alivio antes del día siguiente.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -6367,10 +6059,32 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Los zapatos con soporte y las plantillas se recomiendan mucho para el dolor de pies por estar de pie, y tiene algo de base, pero la evidencia es más débil que para los estiramientos y el trabajo de fuerza. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una **B en contra** para aliviar el dolor a corto plazo, es decir, la evidencia se inclina a no usarlas como única opción. Las plantillas combinadas con otros cuidados reciben una **C**.
 
-Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el piso, el calzado con soporte y la opción de alternar entre sentarse y pararse aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu piso es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos. Páginas para trabajos concretos: [maestros](https://walkito.site/es/dolor-de-pies-docentes/), [tiendas y almacenes](https://walkito.site/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](https://walkito.site/es/dolor-de-pies-cocineros/) y [estilistas](https://walkito.site/es/dolor-de-pies-peluqueros/).
+Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el suelo, el calzado con soporte y la opción de alternar entre sentarte y ponerte de pie aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu suelo es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos. Lo que cambia según el trabajo está en la siguiente sección.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### Dolor de pies según el trabajo: enfermería, docentes, cocina, peluquería, comercio y escritorio de pie
+
+Las causas y los ejercicios de arriba sirven para cualquier trabajo de pie. Lo que cambia es el turno, el suelo y las reglas sobre el calzado:
+
+- **Enfermería.** De 312 enfermeras de un hospital pediátrico, el 55,3 % reportó problemas de pie o tobillo en 12 meses, y los turnos de 12 horas en cuidados intensivos aumentaron por sí solos la probabilidad de problemas de pie incapacitantes. Un estudio con podómetro contó 9360 pasos, unos 5,8 km, por turno. Entre 366 enfermeras, el 72 % de quienes tenían zapatos incómodos tenía dolor de pie o tobillo, frente al 28 % con zapatos cómodos.
+- **Docentes.** Los estudios de laboratorio sugieren no estar de pie más de unos 40 minutos seguidos, más o menos una clase, así que siéntate unos minutos cuando tus alumnos empiecen a trabajar solos. En un estudio, las personas con dolor de talón usaban zapatos con el talón más duro; es una relación, no una prueba, pero conviene elegir un talón acolchado.
+- **Cocina.** La evidencia sobre el calzado de cocina trata de resbalones, no de pies adoloridos: en un ensayo aleatorizado, dar zapatos antideslizantes gratis bajó los reclamos por lesiones por resbalón de 3,54 a 1,18 por cada 10 000 meses-trabajador. Ningún estudio compara zuecos con tenis para el dolor de pies. Usa un tapete solo si queda plano y no se mueve sobre un suelo mojado.
+- **Peluquería.** En el salón pasas el día de pie y quieto junto al sillón. En un ensayo cruzado con 108 peluqueros, las medias de compresión de 15 a 20 mmHg bajaron un 12 % la puntuación de dolor e hinchazón de piernas. Un taburete ayuda en los trabajos de detalle solo si te deja los brazos por debajo del hombro.
+- **Comercio y almacén.** Un tapete solo ayuda donde estás quieto, como la caja; si recorres la tienda o el almacén, la amortiguación tiene que ir en el zapato. En 4 estudios sobre calzado de seguridad, entre el 42,3 y el 60,8 % de los trabajadores tenía dolor de pies, sobre todo por calor, peso y suela rígida. Elige la bota aprobada más ligera que te quede bien, nunca unos tenis en su lugar.
+- **Escritorio de pie.** Lo que importa es alternar, no estar de pie. Una declaración de expertos sugiere ir sumando hasta 2 horas de pie y actividad ligera por jornada, en ratos cortos. Para empezar, ponte de pie de 20 a 30 minutos y luego siéntate de 20 a 30. En casa, usa un zapato acolchado y no solo calcetines.
+
+Source: Reed LF, Battistutta D, Young J, Newman B. Prevalence and risk factors for foot and ankle musculoskeletal disorders experienced by nurses. BMC Musculoskeletal Disorders. 2014;15:196.
+Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
+Source: Getie K, Kahsay G, Kassaw A, Gomera G, Alamer A, Hailu T. Ankle and foot pain and associated factors among nurses at Ayder Comprehensive Specialized Hospital, Mekelle, Ethiopia: cross-sectional study. Journal of Pain Research. 2021;14:83–92.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Bell JL, Collins JW, Chiou S. Effectiveness of a no-cost-to-workers, slip-resistant footwear program for reducing slipping-related injuries in food service workers: a cluster randomized trial. Scandinavian Journal of Work, Environment & Health. 2019;45(2):194–202.
+Source: Blazek C, Amsler F, Blaettler W, Keo HH, Baumgartner I, Willenberg T. Compression hosiery for occupational leg symptoms and leg volume: a randomized crossover trial in a cohort of hairdressers. Phlebology. 2013;28(5):239-247.
+Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
 
 ### ¿Las medias de compresión ayudan con el dolor de pies por estar de pie?
 
@@ -6384,7 +6098,7 @@ Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological ef
 
 El dolor de pies por estar de pie puede ser cansancio general que se quita con descanso, o puede ser el inicio de un problema con nombre. El más común es la fascitis plantar: dolor agudo cerca del talón, que suele ser peor en los primeros pasos después de descansar. Si el talón te duele más en la mañana y otra vez después de estar sentado, ese patrón apunta a fascitis plantar, y la guía más completa es [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
 
-Si al final del día sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](https://walkito.site/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. Un pie plano rígido, que sigue plano incluso cuando el pie no toca el piso, es estructural y necesita a un profesional de la salud, no ejercicio.
+Si al final del día sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](https://walkito.site/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. Un pie plano rígido, que sigue plano incluso cuando el pie no toca el suelo, es estructural y necesita a un profesional de la salud, no ejercicio.
 
 Si el dolor está a lo largo de la tibia y no bajo el pie, eso apunta a periostitis tibial, y [ejercicios para la periostitis tibial](https://walkito.site/es/ejercicios-periostitis-tibial/) explica lo que dice la investigación.
 
@@ -6417,9 +6131,9 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 
 No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies por estar de pie es peor en la mañana, la primera meta es la misma que para el dolor de talón: dolor de 1/10 o menos por la mañana durante 14 días seguidos. Si además tienes los arcos planos, el arco tiene su propia meta y sus propios ejercicios.
 
-#### ¿Por qué me duelen más los pies al final del turno de pie que al principio?
+#### ¿Por qué les duelen los pies a las enfermeras después de un turno de 12 horas?
 
-La fascia plantar, los músculos de la pantorrilla y las venas de la parte baja de la pierna aguantan solo cierto tiempo una carga fija y sostenida, y esa tolerancia se gasta en horas de estar de pie. Al estar quieto de pie, la gravedad acumula sangre en los pies y la parte baja de las piernas, lo que suma al dolor y la hinchazón que crecen durante el turno. Las pausas para caminar ayudan porque el bombeo de la pantorrilla sube la sangre.
+Un turno de enfermería combina estar de pie junto a la cama, caminar mucho y suelos duros. En un estudio con podómetro, las enfermeras promediaron 9360 pasos por turno, unos 5,8 km. En una encuesta a 312 enfermeras de un hospital pediátrico, el 55,3 % reportó problemas de pie o tobillo en 12 meses, y los turnos de 12 horas en cuidados intensivos fueron el factor laboral que aumentó por sí solo la probabilidad de problemas de pie incapacitantes. Los estiramientos de pantorrilla antes o después del turno, unos zapatos cómodos y las medias de compresión trabajan sobre esa carga.
 
 #### ¿El dolor de pies por estar de pie todo el día es lo mismo que la fascitis plantar?
 
@@ -6431,11 +6145,11 @@ En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de 12 hor
 
 #### ¿Es normal que me duelan los pies después de un turno de pie de 8 o 12 horas?
 
-Algo de cansancio y dolor después de un turno largo de pie es común y coincide con lo que reporta la investigación en salud laboral. Una revisión de 2015 encontró que estar de pie mucho tiempo se relaciona con molestias musculares y cansancio en muchos trabajos de pie. Que sea común no significa que debas ignorarlo a largo plazo: la misma revisión señala que los tapetes para el piso, las medias de compresión y mejores zapatos reducen estos problemas de forma medible.
+Algo de cansancio y dolor después de un turno largo de pie es común y coincide con lo que reporta la investigación en salud laboral. Una revisión de 2015 encontró que estar de pie mucho tiempo se relaciona con molestias musculares y cansancio en muchos trabajos de pie. Que sea común no significa que debas ignorarlo a largo plazo: la misma revisión señala que los tapetes para el suelo, las medias de compresión y mejores zapatos reducen estos problemas de forma medible.
 
-#### ¿Qué es lo primero que debo probar para el dolor de pies por estar de pie?
+#### ¿Cuánto tiempo hay que estar de pie en un escritorio de pie?
 
-De las opciones de autocuidado que revisa esta página, el estiramiento de pantorrilla y de fascia plantar tiene el grado de evidencia más alto (A) en la guía de 2023 para el dolor de talón, y las medias de compresión tienen el ensayo controlado más sólido para las molestias por estar de pie. Empezar con estiramientos de pantorrilla diarios y probar medias de compresión en tu próximo turno largo cubre las dos cosas.
+Una declaración de expertos de 2015 recomienda ir sumando hasta 2 horas de pie y actividad ligera por jornada laboral, y con el tiempo hasta 4, repartidas en ratos más cortos. Una revisión de 2017 de estudios de laboratorio encontró que las molestias se vuelven clínicamente relevantes después de unos 40 minutos de pie sin interrupción. Para empezar, ponte de pie de 20 a 30 minutos y luego siéntate de 20 a 30, y ajusta según cómo respondan tus pies.
 
 #### ¿Cuánto tiempo es demasiado estar de pie?
 
@@ -6443,7 +6157,7 @@ No hay un límite seguro único y probado. La investigación en salud laboral en
 
 #### ¿Cómo puedo estar de pie 10 horas sin dolor?
 
-Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para pisos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.
+Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para suelos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.
 
 ## Dolor en el empeine del pie sin inflamación: por qué duele y qué hacer
 
@@ -10077,166 +9791,6 @@ Sí. La rutina está pensada para ir junto con tus carreras. Si tienes una moles
 
 En un ensayo de 2019 con corredores, caminar con zapatos minimalistas, con un aumento lento y gradual, fortaleció los pies más o menos igual que los ejercicios. Cambiar tus zapatos de correr de golpe es otra cosa y tiene sus propios riesgos, así que si lo pruebas, ve aumentando poco a poco.
 
-## Dolor de pies en maestros: qué le hace un día de clases a tus pies y qué ayuda
-
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-docentes/ · published 2026-10-18 · updated 2026-10-18
-
-El dolor de pies en maestros y docentes viene sobre todo de pasar horas de pie y caminando por el salón sobre pisos duros, y las opciones con mejor evidencia, los estiramientos de pantorrilla y de fascia plantar junto con el trabajo de fuerza de pantorrilla, toman de 3 a 5 minutos y caben entre clases. La guía clínica de 2023 para el dolor de talón les da a esos estiramientos una **A**, su grado más alto, y al trabajo de fuerza una **B** (Koc y colegas, 2023). La investigación sobre los pies de los maestros es limitada: en una revisión de 2024, 27 estudios reportaron dolor en la zona del tobillo, casi siempre contado junto con el pie, y la cifra combinada fue del 30 % de los maestros (Tahernejad y colegas, 2024).
-
-- En una revisión de 2024 con 44 estudios y 15 972 maestros, el dolor en la zona del tobillo (casi siempre contado junto con el pie) dio una cifra combinada del 30 % en 27 estudios, por debajo del cuello y la zona lumbar, con 47 % cada uno. Los resultados variaron mucho entre estudios (Tahernejad y colegas, 2024).
-- En una encuesta a 1439 maestros de una sola región de Arabia Saudita, el 85,5 % reportó dolor de pies en los últimos 12 meses, y fue más común en quienes daban 16 o más clases a la semana (Alqahtani, 2020). Otras encuestas encontraron cifras mucho más bajas, así que tómalo como el resultado de una región.
-- No encontramos ningún estudio que haya medido cuántas horas pasa de pie un maestro típico. En un estudio con 50 casos y 100 controles, estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar, y una flexibilidad del tobillo muy limitada, casi siempre por una pantorrilla tensa, las multiplicó por 23,3 (Riddle y colegas, 2003).
-- La guía de 2023 para el dolor de talón les da al estiramiento de la fascia plantar y de la pantorrilla una **A** y al trabajo de fuerza una **B**. Las plantillas por sí solas reciben una **B en contra** (Koc y colegas, 2023).
-- En 50 personas con dolor de talón y 25 sin él, quienes tenían dolor pasaban 3,4 horas más al día de pie y usaban zapatos con el talón más duro. Eso es una asociación, no una prueba de causa (Landorf y colegas, 2023).
-
-### ¿Qué le hace un día de clases a tus pies?
-
-**Un día de clases mezcla ratos de pie sin moverte con caminatas cortas, casi siempre sobre pisos duros.** Estás de pie frente al pizarrón o al escritorio, caminas entre las filas mientras los alumnos trabajan y luego vuelves a estar de pie en la guardia del pasillo o del patio. Estar de pie sin moverte carga el talón, la fascia plantar (la banda bajo el pie que sostiene el arco) y la pantorrilla durante mucho tiempo, sin el bombeo que da caminar.
-
-No encontramos ningún estudio que haya medido cuántas horas pasa de pie un maestro típico, así que esta página no da una cifra. Lo que sí está medido es estar mucho tiempo de pie en general. Una revisión de 2015 sobre el trabajo de pie lo asoció con molestias en piernas y pies, cansancio e hinchazón de las piernas, y mencionó los tapetes para el piso, el calzado con soporte, las medias de compresión y la opción de alternar entre sentarse y estar de pie entre las medidas con algo de evidencia (Waters y Dick, 2015).
-
-En una revisión de 2017 con 25 estudios de laboratorio, las molestias en la zona lumbar y en las piernas aumentaron mientras más tiempo pasaba la gente de pie sin descanso. Los autores sugirieron no estar de pie más de unos 40 minutos seguidos (Coenen y colegas, 2017). Eso es más o menos una clase.
-
-La pantorrilla también importa. En un estudio de 2003, una [pantorrilla tensa](https://walkito.site/es/pantorrillas-tensas/) fue el factor de riesgo más fuerte para la fascitis plantar, con probabilidades 23,3 veces mayores, y estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003). Un maestro que pasa todo el día de pie y tiene las pantorrillas tensas tiene los dos factores.
-
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Qué tan común es el dolor de pies en maestros?
-
-**Es común, pero se ha estudiado menos que la espalda y el cuello de los maestros.** Una revisión de 2024 combinó 44 estudios con 15 972 maestros. El dolor de cuello y el lumbar quedaron primero, con 47 % cada uno. El dolor en la zona del tobillo, que la mayoría de los estudios contó junto con el pie, dio una cifra combinada del 30 % en 27 estudios con 8634 maestros. Los estudios eran muy distintos entre sí, y los autores encontraron señales de sesgo de publicación en la cifra del tobillo, así que toma el 30 % como un punto medio aproximado, no como una tasa exacta.
-
-Una revisión anterior encontró que muy pocos estudios habían mirado las piernas y los pies de los maestros, y que el dolor de piernas y pies se reportaba con menos frecuencia que el de espalda, cuello y brazos (Erick y Smith, 2011).
-
-La encuesta más grande sobre los pies que encontramos preguntó a 1439 maestros de una región de Arabia Saudita. El 85,5 % reportó dolor de pies en los últimos 12 meses. Fue más común en quienes daban 16 o más clases a la semana (88 %) que en quienes daban menos (81,4 %), y en quienes llevaban más de 10 años dando clases (86,8 % frente a 82,6 %). Fue un cuestionario autorreportado en una sola región, y la mayoría eran maestras, así que puede no parecerse a tu escuela (Alqahtani, 2020).
-
-Source: Tahernejad S, Hejazi A, Rezaei E, Makki F, Sahebi A, Zangiabadi Z. Musculoskeletal disorders among teachers: a systematic review and meta-analysis. Frontiers in Public Health. 2024;12:1399552.
-Source: Erick PN, Smith DR. A systematic review of musculoskeletal disorders among school teachers. BMC Musculoskeletal Disorders. 2011;12:260.
-Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
-
-### ¿Qué ejercicios caben entre clases?
-
-Los ejercicios de abajo vienen de la guía clínica para la fascitis plantar. No se probaron en maestros, pero trabajan los tejidos que carga un día de pie: la pantorrilla, la fascia plantar y el talón. Casi todos solo necesitan una pared o un escritorio, así que caben en el cambio de clase o en una hora libre. Son las dosis de inicio de Walkito, no una prescripción. [Cómo se escriben estas guías](https://walkito.site/es/sobre-walkito/).
-
-Los estiramientos tienen el grado más alto de la guía, **A**. El trabajo de fuerza de pantorrilla tiene una **B**. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.
-
-- **Estiramiento de pantorrilla** (2 series de 30 segundos, cada pierna): Pon las manos en la pared o en el marco del pizarrón. Mantén la pierna de atrás estirada, el talón de atrás apoyado en el piso y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento importa aunque lo sientas más arriba.
-- **Estiramiento de sóleo** (2 series de 30 segundos, cada pierna): Ponte en la misma posición contra la pared, mantén el talón de atrás apoyado en el piso y dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Haz el primero en la orilla de la cama, antes de que el pie toque el piso, y otro en tu escritorio antes de pararte después de una hora libre.
-- **Elevaciones de talón sentado** (3 series de 10, los dos pies): Siéntate frente a tu escritorio con los pies apoyados y empuja hacia arriba con la parte delantera del pie. Las manos sobre las rodillas agregan resistencia. Con la rodilla doblada trabaja sobre todo el sóleo, casi sin carga en el talón. Lo puedes hacer debajo del escritorio mientras los alumnos trabajan en silencio.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate sobre los dos pies con una mano en el escritorio, sube recto sobre los dedos gordos y baja despacio. Los dos pies se reparten la carga. Más sobre cómo avanzar: [elevaciones de talón para la fascitis plantar](https://walkito.site/es/elevaciones-de-talon-fascitis-plantar/).
-- **Automasaje plantar** (1 minuto): Siéntate y rueda la planta del pie despacio sobre una pelota de masaje, con presión firme. Si haces gestos de dolor, afloja. Con una pelota en el cajón del escritorio, esto se vuelve un hábito de después de clases. Más en [pelota de masaje para la fascitis plantar](https://walkito.site/es/pelota-de-masaje-fascitis-plantar/).
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Cómo acomodar los ejercicios de pies en un día de clases?
-
-No necesitas una rutina aparte. Asocia cada ejercicio a un momento que ya forma parte de tu día. Las dosis son las mismas de arriba; la tabla solo dice cuándo caben.
-
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Cuáles son los mejores zapatos para maestros que pasan el día de pie?
-
-**Ningún estudio ha comparado zapatos para maestros, y ningún ensayo elige una marca o un estilo.** La guía de 2023 para el dolor de talón no califica tipos de zapato. La poca evidencia que hay apunta a la amortiguación bajo el talón y a que el zapato te quede bien.
-
-En un estudio de 2023, se comparó a 50 personas con dolor en la planta del talón con 25 personas parecidas sin ese dolor. Quienes tenían dolor de talón pasaban 3,4 horas más al día de pie y usaban zapatos con el talón más duro. El estilo del zapato, la altura del tacón y estar de pie sobre pisos duros no fueron distintos entre los grupos (Landorf y colegas, 2023). Eso muestra una asociación, no que un talón blando prevenga el dolor, pero respalda un zapato con el talón acolchado para los días largos frente al pizarrón.
-
-Una lista práctica, basada en el ajuste y la comodidad y no en un ensayo:
-
-- un talón acolchado y un contrafuerte firme (la parte de atrás del zapato no se dobla cuando la aprietas)
-- espacio para que los dedos se abran, sin que te aprieten al final del día
-- un tacón bajo y estable, no uno alto ni muy delgado
-- un segundo par para alternar, así no usas el mismo par gastado todos los días
-
-**Las plantillas pueden hacer el día más cómodo, pero no dependas solo de ellas.** La guía de 2023 les da a las plantillas por sí solas una **B en contra**, y combinadas con estiramientos y trabajo de fuerza una **C** (Koc y colegas, 2023). [Plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/) compara las dos opciones.
-
-Las medias de compresión son otra opción si al final del día sientes las piernas pesadas o hinchadas. En un ensayo con 40 guardias de seguridad en turnos largos de pie, tanto las medias de 15 a 20 mmHg como las de 20 a 30 mmHg evitaron el aumento de molestias e hinchazón en las piernas que se vio con calcetines normales (Garcia y colegas, 2023). No fue un estudio con maestros.
-
-Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
-
-### ¿Los pisos del salón y los tapetes marcan la diferencia?
-
-La mayoría de los salones tienen pisos duros: loseta, vinil sobre concreto o una alfombra delgada. Ningún estudio ha medido los pisos de los salones y los pies de los maestros. La revisión de 2015 sobre el trabajo de pie incluye los tapetes para el piso entre las medidas con algo de evidencia para reducir las molestias, junto con el calzado y la opción de alternar entre sentarse y estar de pie (Waters y Dick, 2015).
-
-Un tapete solo ayuda donde de verdad estás parado. Si das la clase desde un solo lugar, como el pizarrón, el proyector o una mesa de laboratorio, vale la pena probar ahí un tapete antifatiga. Si caminas por el salón, tu tapete es el zapato.
-
-Moverte es la otra mitad. Los estudios sobre estar de pie encontraron que las molestias aumentan con el tiempo que pasas de pie sin moverte (Coenen y colegas, 2017). Caminar entre los pupitres, sentarte durante el trabajo en silencio y cambiar el peso de un pie al otro cortan la carga estática.
-
-En casa, si te duele el talón, evita andar descalzo sobre pisos duros a primera hora de la mañana. [Dolor de talón al levantarse](https://walkito.site/es/dolor-de-talon-al-levantarse/) explica por qué importan los primeros pasos.
-
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-
-### ¿Cuándo el dolor de talón de un maestro es fascitis plantar?
-
-Un dolor general al final del día de clases que ya se fue a la mañana siguiente es cansancio por estar de pie. **La fascitis plantar tiene un patrón típico: dolor agudo bajo el talón en los primeros pasos de la mañana o después de estar sentado, que se calma al caminar y vuelve después de un día largo de pie.** En la encuesta de Arabia Saudita, el 25,8 % de los maestros con dolor de pies dijo que aparecía temprano en la mañana y después de descansar (Alqahtani, 2020). Esa encuesta no diagnosticó a nadie, así que es un patrón, no un conteo de casos de fascitis plantar.
-
-Si eso se parece a lo que te pasa, empieza con [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Alrededor del 90 % de las personas con fascitis plantar mejoran con tratamiento sin cirugía, aunque puede tardar de tres a seis meses (Latt y colegas, 2020). [Cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/) tiene los detalles.
-
-Otros patrones apuntan a otra cosa:
-
-- un dolor sordo y profundo en el centro del talón, peor descalzo sobre pisos duros: [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/)
-- dolor a lo largo del arco que aumenta durante el día: [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/)
-- dolor bajo la parte delantera de la planta: [metatarsalgia](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/)
-- dolor en la parte de atrás del talón, en el tendón: [ejercicios para la tendinitis de Aquiles](https://walkito.site/es/ejercicios-tendinitis-aquiles/)
-
-¿No sabes cuál es? El [identificador de dolor de pie](https://walkito.site/es/donde-me-duele-el-pie/) te hace unas preguntas sobre dónde y cuándo te duele. **Si sigues sin estar seguro, consulta a un profesional de la salud antes de exigirle al pie con ejercicios.**
-
-Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de una caída, una torcedura o un golpe, por ejemplo en la guardia del patio o en las escaleras
-- no puedes apoyar el pie, o cojeas
-- sientes el pie entumecido, con hormigueo o ardor, o está hinchado o caliente
-- el talón o el pie está rojo, o tienes fiebre o te sientes mal
-- el dolor te despierta por la noche o está presente en reposo
-- el dolor está en un solo punto y empeora con la actividad, lo que puede ser el patrón de una fractura por estrés
-- una pantorrilla o una pierna se hinchó de repente y está adolorida, roja o caliente
-- tienes diabetes, menos sensibilidad en los pies o mala circulación
-
-### Cómo convertirlo en un plan
-
-No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. [Walkito](https://walkito.site/es/programa/) arma un plan una semana a la vez en torno a una meta. Si tu talón sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14 días seguidos.
-
-#### ¿Por qué me duelen tanto los pies después de dar clases todo el día?
-
-Dar clases te mantiene de pie y caminando sobre pisos duros la mayor parte del día, lo que carga el talón, el arco y la pantorrilla sin mucho descanso. Las revisiones sobre el trabajo de pie asocian estar mucho tiempo de pie con molestias y cansancio en piernas y pies, y los estudios de laboratorio encontraron que las molestias aumentan mientras más tiempo pasa la gente de pie sin moverse. Sentarte un rato, estirar la pantorrilla y usar zapatos acolchados ayudan.
-
-#### ¿Qué tan común es el dolor de pies en maestros?
-
-Una revisión de 2024 dio una cifra combinada del 30 % de los maestros para el dolor en la zona del tobillo, casi siempre contado junto con el pie, en 27 estudios con resultados muy distintos entre sí. Una encuesta a 1439 maestros de una sola región de Arabia Saudita encontró que el 85,5 % tuvo dolor de pies en el último año. El dolor de cuello y el lumbar se reportan con más frecuencia que el de pies.
-
-#### ¿Cuáles son los mejores zapatos para maestros que pasan el día de pie?
-
-Ningún estudio ha probado zapatos para maestros. Busca un talón acolchado, un contrafuerte firme, espacio para los dedos y un tacón bajo y estable. En un estudio, las personas con dolor de talón usaban zapatos con el talón más duro y pasaban más tiempo de pie cada día. Las plantillas solas reciben una B en contra en la guía de 2023 para el dolor de talón, así que combínalas con estiramientos.
-
-#### ¿Qué estiramientos pueden hacer los maestros entre clases?
-
-Un estiramiento de pantorrilla y uno de sóleo contra una pared toman alrededor de un minuto por lado: 2 series de 30 segundos por pierna. El estiramiento plantar se puede hacer sentado frente a tu escritorio, 2 series de 30 segundos por pie. La guía de 2023 para el dolor de talón les da a estos estiramientos una A, aunque se escribió para la fascitis plantar, no para maestros.
-
-#### ¿Estar de pie todo el día como maestro puede causar fascitis plantar?
-
-Puede aumentar el riesgo. En un estudio de 2003 con 50 personas con fascitis plantar y 100 sin ella, estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades, y una flexibilidad del tobillo muy limitada, casi siempre por una pantorrilla tensa, las multiplicó por 23,3. El estudio no se hizo con maestros, y ningún estudio ha contado los casos de fascitis plantar en maestros en particular.
-
-#### ¿Los tapetes antifatiga ayudan a los maestros?
-
-Pueden ayudar, si estás de pie en un solo lugar. Una revisión de 2015 sobre el trabajo de pie incluye los tapetes para el piso entre las medidas con algo de evidencia para reducir las molestias. Ningún estudio ha probado tapetes en salones de clase. Si caminas por el salón la mayor parte de la clase, tus zapatos importan más que un tapete.
-
-#### ¿Los maestros deberían usar medias de compresión?
-
-Vale la pena probarlas si al final del día sientes las piernas pesadas o hinchadas. En un ensayo con 40 guardias de seguridad en turnos largos de pie, tanto las medias de 15 a 20 mmHg como las de 20 a 30 mmHg evitaron el aumento de molestias e hinchazón en las piernas que se vio con calcetines normales. El ensayo no incluyó maestros.
-
-#### ¿Cuánto tiempo debe estar de pie un maestro antes de sentarse?
-
-No hay un límite probado para maestros. Una revisión de 2017 de estudios de laboratorio sobre estar de pie encontró que las molestias aumentan con el tiempo y sugirió no estar de pie más de unos 40 minutos seguidos. En la práctica, siéntate unos minutos cuando los alumnos empiecen a trabajar por su cuenta, y camina por el salón en lugar de quedarte quieto en un solo lugar.
-
 ## Fascitis plantar o fractura por estrés del talón: cómo diferenciarlas
 
 Language: Spanish (Español) · https://walkito.site/es/fascitis-plantar-o-fractura-por-estres/ · published 2026-10-18 · updated 2026-10-18
@@ -10587,508 +10141,6 @@ Normalmente no. Un pie plano flexible que no causa dolor ni te limita es una var
 #### ¿Puedo revisar a mi hijo de la misma forma?
 
 Las pruebas de puntillas y del dedo gordo también sirven en niños, pero la mayoría de los niños pequeños tienen arcos bajos que se forman con la edad, y en un estudio las medidas de postura del pie no fueron lo bastante confiables en niños pequeños. Un pie rígido, el dolor o la cojera son motivos para ir al médico. Más información en [pie plano en niños](https://walkito.site/es/pie-plano-en-ninos/).
-
-## Dolor de pies en tiendas y almacenes: qué ayuda en pisos duros
-
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-comercio-y-almacen/ · published 2026-10-18 · updated 2026-10-18
-
-En almacenes y tiendas los pies duelen porque horas de estar de pie y caminar sobre pisos duros cargan el talón, el arco y la pantorrilla sin casi nada que amortigüe debajo. Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de [fascitis plantar](https://walkito.site/es/fascitis-plantar/) en un estudio (Riddle y colegas, 2003). Los estiramientos de pantorrilla y de fascia plantar tienen el grado más alto, **A**, en la guía de 2023 para el dolor de talón, y una versión corta cabe en unos 3 minutos de descanso. Los tapetes y las plantillas acolchadas mejoran la comodidad, pero la evidencia sobre ellos es más débil (Speed y colegas, 2018).
-
-- Pasar la mayor parte de la jornada de pie multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. Una flexibilidad del tobillo muy limitada, casi siempre por una pantorrilla tensa, las multiplicó por 23,3 (Riddle y colegas, 2003).
-- La guía de 2023 para el dolor de talón mantiene una recomendación de grado **B**: el profesional de la salud debe evaluar la carga de peso relacionada con el trabajo, sobre todo en superficies que amortiguan poco, como factor de riesgo de dolor de talón (Koc y colegas, 2023).
-- Una revisión de 10 estudios encontró evidencia moderada de que los tapetes y las plantillas acolchadas reducen la molestia y el cansancio en personas que trabajan de pie, y solo evidencia limitada de que las plantillas sean mejores que los tapetes (Speed y colegas, 2018).
-- En una revisión de 7 estudios con trabajadores que usan calzado de seguridad, los 4 que midieron el dolor encontraron dolor de pies en entre el 42,3 % y el 60,8 % de los trabajadores, y las quejas principales fueron el calor, el sudor, el peso y la rigidez (Arceri y colegas, 2024).
-- Los estiramientos de pantorrilla y de fascia plantar reciben el grado más alto de la guía, **A**, y el trabajo de fuerza una **B**. Las plantillas por sí solas reciben una **B en contra** para el dolor de talón (Koc y colegas, 2023).
-
-### ¿Por qué te duelen los pies después de un turno en almacén o tienda?
-
-El trabajo en tiendas y almacenes combina dos tipos de carga. En la caja o en una estación de empaque pasas largos ratos de pie sin moverte. En el piso de venta o surtiendo pedidos caminas, cargas, empujas carritos y giras. En los dos casos el peso queda sobre el talón y el arco casi todo el turno, y los descansos los marca el rol de turnos, no el momento en que tus pies los necesitan.
-
-Un estudio de casos y controles de 2003 con 50 personas con fascitis plantar y 100 controles pareados encontró que pasar la mayor parte de la jornada cargando peso sobre los pies multiplicó por 3,6 las probabilidades de fascitis plantar. La poca flexibilidad del tobillo, es decir, una [pantorrilla tensa](https://walkito.site/es/pantorrillas-tensas/), fue el factor más fuerte, con probabilidades 23,3 veces mayores. **Una pantorrilla tensa es algo en lo que puedes trabajar. El trabajo, por lo general, no.**
-
-Una revisión sistemática de 16 estudios sobre el dolor crónico de talón encontró cierta evidencia de relación con estar mucho tiempo de pie, junto con un peso corporal más alto, la edad y la poca flexibilidad del tobillo. Los autores pidieron estudios que sigan a las personas a lo largo del tiempo, así que esto muestra una asociación, no la prueba de que estar de pie cause dolor de talón (Irving y colegas, 2006).
-
-¿Cuánto caminas? No encontramos ningún estudio publicado que cuente los pasos por turno en almacenes o tiendas. Cifras como «12 millas (unos 19 km) por turno» aparecen en blogs del sector sin un estudio que las respalde. El dato medido más cercano viene de enfermeras: un promedio de 9360 pasos por turno en un estudio con monitor de actividad (Chang y Cho, 2022).
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
-Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
-
-### ¿De verdad el concreto es peor para los pies?
-
-Probablemente, pero nadie ha medido el concreto por sí solo. La guía de 2023 para el dolor de talón mantiene una recomendación de 2014, de grado **B**: el profesional de la salud debe evaluar las actividades de carga de peso relacionadas con el trabajo, sobre todo en condiciones de poca amortiguación, como factor de riesgo de dolor de talón y fascitis plantar. Un piso de concreto sin nada encima es de las superficies de trabajo que menos amortiguan.
-
-Lo que sí se ha probado es lo contrario: agregar algo blando. En estudios de laboratorio y en lugares de trabajo, estar de pie sobre un tapete o usar plantillas acolchadas redujo la molestia en comparación con un piso duro (Speed y colegas, 2018). Eso encaja con la idea de que la superficie dura suma carga, sin probar que el concreto cause una afección en particular.
-
-Algunos dolores de talón empeoran en pisos duros por otra razón. Si el dolor está en lo profundo del centro del talón y es claramente peor descalzo sobre loseta o concreto, vale la pena leer sobre el [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/).
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
-
-### ¿Qué ayuda más: los tapetes antifatiga o las plantillas?
-
-**Los dos mejoran la comodidad, ninguno gana con claridad y ninguno tiene evidencia fuerte.** Una revisión sistemática de 2018 encontró 10 estudios sobre tapetes y plantillas acolchadas en personas que trabajan de pie. Calificó como moderada la evidencia de que la amortiguación reduce la molestia y el cansancio, y como limitada la de que las plantillas funcionen mejor que los tapetes. Los estudios tenían diseños muy distintos, y los autores pidieron ensayos más grandes en lugares de trabajo reales.
-
-En un estudio en un lugar de trabajo, trabajadores de una línea de ensamblaje pasaron una semana de jornadas de 8 horas en cada una de cuatro condiciones: piso duro, un tapete, plantillas, y plantillas sobre un tapete. El tapete, las plantillas y la combinación fueron más cómodos que el piso duro, y no hubo una diferencia clara entre ellos (King, 2002).
-
-En una prueba de laboratorio de 4 horas, tres de cuatro tapetes antifatiga comerciales redujeron la molestia en comparación con un piso duro, pero ningún tapete superó a los demás (Wiggermann y Keyserling, 2013). Así que no se ha demostrado que un tapete sea mejor que los otros.
-
-La división práctica: **un tapete solo ayuda donde te quedas quieto**, como una caja, una mesa de empaque o una estación de trabajo. Si caminas por el piso de venta o surtes pedidos, la amortiguación tiene que ir contigo, en el zapato. Para el dolor de talón en particular, la guía de 2023 califica las plantillas por sí solas con una **B en contra**, así que no te apoyes solo en ellas. [Plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/) compara las dos opciones y los tipos de plantillas para la fascitis plantar.
-
-Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
-Source: King PM. A comparison of the effects of floor mats and shoe in-soles on standing fatigue. Applied Ergonomics. 2002;33(5):477–484.
-Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Las botas de seguridad causan dolor de pies?
-
-Las botas de seguridad protegen tus pies, y también traen quejas. Una revisión sistemática de 2024 encontró 7 estudios con trabajadores que usan calzado de seguridad. Todos reportaron molestia y dolor, y los 4 estudios que midieron el dolor encontraron dolor de pies en entre el 42,3 % y el 60,8 % de los trabajadores. Las quejas principales fueron el calor, el sudor, el peso y una suela rígida, sobre todo alrededor de los dedos y la puntera.
-
-En un estudio con 509 trabajadores de 12 fábricas metalúrgicas, todos con calzado de seguridad a diario, el 81 % tenía al menos un problema en los pies. Sus quejas más comunes sobre el calzado fueron el calor y la humedad dentro (42 %), el peso (27,5 %) y el ajuste (22,9 %) (Mancuso y colegas, 2017).
-
-Son encuestas, así que no pueden decir que las botas causen el dolor: muchas horas en pisos duros dolerían con cualquier zapato. Las sugerencias de la revisión son prácticas:
-
-- Consigue la talla y el ancho correctos, y pregunta si los modelos aprobados por tu empresa vienen en horma ancha.
-- Elige la bota más ligera que cumpla con la clasificación de seguridad de tu lugar de trabajo.
-- Busca materiales transpirables si tus pies se calientan y sudan.
-- La mayoría de las botas de seguridad tienen una plantilla removible, así que puedes poner una plantilla acolchada si no deja la bota demasiado apretada.
-
-Nunca cambies una bota de seguridad obligatoria por unos tenis porque te duelen los pies. Habla con tu supervisor o con el responsable de seguridad sobre otros modelos aprobados.
-
-Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
-Source: Mancuso G, Cavrini G, Berdondini RM, Mancuso M. Skin lesions and other foot problems associated with safety footwear [in Italian]. Giornale Italiano di Medicina del Lavoro ed Ergonomia. 2017;38(4):261–264.
-
-### ¿Qué ejercicios puedes hacer en tu descanso?
-
-Los ejercicios de abajo no necesitan equipo ni más espacio que una pared, un rack o la orilla de un mostrador. Los tres primeros se hacen de pie en la sala de descanso o en un pasillo de bodega. Los demás son para después del turno, sentado.
-
-La guía califica los estiramientos de pantorrilla y de fascia plantar con **A** y el trabajo de fuerza con **B**. Esos grados son para la fascitis plantar, pero son los mismos tejidos que carga un turno en pisos duros. Detente por hoy si algún ejercicio sube tu dolor a 6 de 10 o más.
-
-- **Estiramiento de pantorrilla** (2 estiramientos de 30 segundos, cada pierna): Pon las manos en una pared, en un poste de rack o en un mostrador. Mantén la pierna de atrás estirada, el talón de atrás pegado al piso y la cadera hacia adelante. También funciona con botas de seguridad.
-- **Estiramiento de sóleo** (2 estiramientos de 30 segundos, cada pierna): Toma la misma posición, mantén el talón de atrás pegado al piso y dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Movilidad de tobillo** (2 series de 15, cada pierna): Un pie adelante y otro atrás, manos en una pared. Lleva la rodilla de adelante hacia adelante, por encima de los dedos, mientras el talón se queda pegado al piso. Despacio, unos dos segundos en cada dirección. Más en [movilidad de tobillo](https://walkito.site/es/ejercicios/movilidad-de-tobillo/).
-- **Estiramiento plantar** (2 estiramientos de 30 segundos, cada pie): Siéntate, quítate las botas y cruza el pie sobre la rodilla contraria. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Si tus primeros pasos al levantarte duelen, haz uno en la orilla de la cama antes de que el pie toque el piso.
-- **Elevaciones de talón con dos pies** (3 series de 10, con los dos pies): Párate sobre los dos pies, sujétate de una pared, sube en línea recta sobre los dedos gordos y baja despacio. El trabajo de fuerza encaja mejor en los días de descanso, para que la pantorrilla tenga tiempo de recuperarse antes del siguiente turno. Más en [elevaciones de talón para la fascitis plantar](https://walkito.site/es/elevaciones-de-talon-fascitis-plantar/).
-- **Automasaje plantar** (1 minuto): Siéntate y rueda despacio la planta del pie sobre una pelota de masaje, con presión firme. Si estás haciendo muecas de dolor, afloja.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Cómo lo acomodas en un turno: 3, 5 o 10 minutos?
-
-La mayoría de los descansos en tiendas y almacenes son cortos y los marca el rol de turnos. Una revisión de estudios de laboratorio encontró que los síntomas por estar de pie sin interrupción se volvían clínicamente relevantes después de unos 42 minutos en personas propensas al dolor por estar de pie, y sus autores sugirieron no estar de pie quieto más de unos 40 minutos (Coenen y colegas, 2017). Muchas veces no puedes elegir cuándo sentarte, pero sí puedes cambiar de posición: camina hasta el final del pasillo, pasa el peso de un pie al otro o haz un estiramiento de pantorrilla en un rack.
-
-- **3 minutos, en un descanso:** el estiramiento de pantorrilla, 2 estiramientos de 30 segundos con cada pierna, más un estiramiento de sóleo de 30 segundos con cada pierna. Eso trabaja la pantorrilla tensa, el factor de riesgo más fuerte en el estudio de 2003.
-- **5 minutos, en un descanso más largo o al final del turno:** agrega la movilidad de tobillo, o el estiramiento plantar cuando ya te quitaste las botas.
-- **10 minutos, en un día de descanso:** agrega las elevaciones de talón (3 series de 10) y el automasaje plantar. Eso cubre la parte de fuerza, con grado **B**.
-
-**Hacer una rutina corta en la mayoría de los turnos importa más que una larga que te saltas.** Átala a algo que ya haces, como el primer descanso o el momento de quitarte las botas.
-
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Qué dice la evidencia sobre cada opción
-
-La mayoría de los consejos para el trabajo mezclan evidencia fuerte y débil. Esta tabla pone las opciones principales lado a lado, con el mejor estudio que encontramos para cada una.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
-Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
-Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
-
-### ¿Podría ser fascitis plantar u otra cosa?
-
-Un dolor general y los pies cansados después de un turno largo suelen calmarse con una noche de descanso. La fascitis plantar tiene un patrón más claro: dolor agudo cerca de la parte interna del talón, peor en los primeros pasos de la mañana o después de estar sentado. Si eso te suena, consulta [dolor de talón al levantarse](https://walkito.site/es/dolor-de-talon-al-levantarse/) y [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Cerca del 90 % de las personas con fascitis plantar mejoran con tratamiento sin cirugía, aunque puede tardar de tres a seis meses (Latt y colegas, 2020).
-
-Otros patrones apuntan a otra parte. Un dolor ardiente bajo la planta, en la parte delantera del pie, apunta a [metatarsalgia](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/). Un dolor a lo largo del arco que empeora durante el turno se trata en [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/). El dolor en la parte de arriba del pie puede venir de botas que aprietan demasiado o con las agujetas muy apretadas; consulta [dolor en el empeine](https://walkito.site/es/dolor-en-el-empeine/).
-
-Un dolor en un punto pequeño de un hueso que empeora cuanto más caminas puede ser una fractura por estrés, sobre todo después de un aumento de horas o de un trabajo nuevo con más caminata. **Eso necesita un profesional de la salud, no más ejercicio.**
-
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó con una caída, una carga que se te cayó encima o una torcedura en el trabajo
-- no puedes apoyar el pie o estás cojeando
-- el dolor está en un punto pequeño de un hueso y empeora al caminar, lo que puede ser una fractura por estrés
-- el pie está entumido, con hormigueo o ardor, o se siente frío
-- el pie o el talón está rojo, caliente o hinchado, o tienes fiebre
-- una pantorrilla o una pierna de pronto duele y se hincha
-- tienes diabetes o menos sensibilidad en los pies, y una bota te hizo una herida o una ampolla
-- el dolor te despierta por la noche o sigue empeorando después de varias semanas con los cambios de esta página
-
-### Cómo convertirlo en un plan
-
-No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. [Walkito](https://walkito.site/es/programa/) arma el plan con tus respuestas y lo ajusta según cómo se sientan tus pies ese día, así que una mañana mala después de un turno largo significa una sesión más ligera.
-
-#### ¿Por qué me duelen tanto los pies trabajando en un almacén?
-
-Muchas horas de estar de pie y caminar sobre pisos duros mantienen la carga en el talón, el arco y la pantorrilla casi todo el turno. Pasar la mayor parte de la jornada de pie multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio, y la guía de 2023 para el dolor de talón incluye la carga de peso relacionada con el trabajo en superficies que amortiguan poco como factor de riesgo.
-
-#### ¿Cuántos pasos camina un trabajador de almacén en un turno?
-
-No encontramos ningún estudio publicado que cuente los pasos en turnos de almacén o de tienda. Cifras como 12 millas (unos 19 km) por turno vienen de blogs del sector sin un estudio que las respalde. El dato medido más cercano viene de enfermeras de hospital, que promediaron 9360 pasos por turno en un estudio con monitor de actividad. Tu propio teléfono o reloj es la mejor guía para tu trabajo.
-
-#### ¿Los tapetes antifatiga de verdad funcionan?
-
-Reducen la molestia en personas que se quedan de pie en un mismo lugar, pero la evidencia es moderada, no fuerte. Una revisión de 10 estudios encontró que la amortiguación ayuda a quienes trabajan de pie. En una prueba de laboratorio de 4 horas, tres de cuatro tapetes superaron a un piso duro, y ningún tapete superó a los demás. Un tapete solo ayuda donde te quedas quieto.
-
-#### ¿Qué es mejor para estar de pie en concreto: plantillas o un tapete?
-
-Para la comodidad, más o menos lo mismo. En un estudio en un lugar de trabajo, trabajadores de ensamblaje encontraron que un tapete, las plantillas y los dos juntos eran más cómodos que un piso duro, sin una diferencia clara entre ellos. Una revisión calificó como limitada la evidencia de que las plantillas superen a los tapetes. Si te mueves mucho, las plantillas van contigo y un tapete no.
-
-#### ¿Las botas de seguridad pueden causar fascitis plantar?
-
-Ningún estudio muestra que las botas de seguridad causen fascitis plantar. Una revisión de 7 estudios con trabajadores que usan calzado de seguridad encontró dolor de pies en entre el 42,3 % y el 60,8 % de los trabajadores en los 4 que lo midieron, y las quejas principales fueron el calor, el peso y la rigidez. Las horas en pisos duros también cuentan, sea cual sea la bota. Un buen ajuste y la bota aprobada más ligera son primeros pasos razonables.
-
-#### ¿Qué estiramientos puedo hacer en el descanso del trabajo?
-
-El estiramiento de pantorrilla y el de sóleo se hacen de pie contra una pared o un rack, con las botas de trabajo puestas: dos estiramientos de 30 segundos cada uno, con cada pierna, unos 4 minutos para los dos. La guía de 2023 para el dolor de talón califica el estiramiento de pantorrilla con A. Deja el estiramiento plantar y las elevaciones de talón para después del turno o los días de descanso.
-
-#### ¿Es normal que me duelan los pies después de un turno en una tienda?
-
-Los pies cansados y adoloridos después de un turno largo de pie son comunes, y una revisión de 2015 relacionó estar de pie mucho tiempo en el trabajo con molestia, cansancio y dolor de piernas en muchos tipos de empleo. Que sea común no significa que debas ignorarlo. Vale la pena hacer algo si el dolor es agudo, sigue en tus días de descanso o es peor en los primeros pasos de la mañana.
-
-#### ¿Puedo seguir trabajando de pie con fascitis plantar?
-
-Mucha gente lo hace, con cambios. Estiramientos cortos en los descansos, botas que ajusten mejor y amortiguación donde te quedas de pie alivian la carga, y cerca del 90 % de las personas con fascitis plantar mejoran con tratamiento sin cirugía, aunque puede tardar de tres a seis meses. Si el dolor empeora a pesar de esto, consulta a un profesional de la salud.
-
-## Dolor de pies en chefs y trabajadores de cocina: qué ayuda en los turnos largos
-
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-cocineros/ · published 2026-10-18 · updated 2026-10-18
-
-El dolor de pies en cocineros suele venir de muchas horas de pie y caminando sobre pisos duros de cocina, y para el dolor de talón las opciones con mejor evidencia son los estiramientos de pantorrilla y de fascia plantar, que la guía de 2023 para el dolor de talón califica con **A**, y el trabajo de fuerza de pantorrilla, con **B** (Koc y colegas, 2023). Los zapatos antideslizantes son cuestión de seguridad, no de dolor: en un ensayo aleatorizado en 226 distritos escolares, darles sin costo zapatos antideslizantes a los trabajadores de servicio de comida bajó las reclamaciones por lesiones por resbalón de 3,54 a 1,18 por cada 10 000 meses-trabajador (Bell y colegas, 2019). Ningún estudio ha probado si los zuecos o algún zapato de cocina reducen el dolor de pies en sí.
-
-- En una encuesta a 128 trabajadores de cocina en El Cairo, el 46,1 % reportó dolor de pies en los últimos 12 meses, solo por detrás de la zona lumbar y la rodilla (Abdelsalam y colegas, 2023).
-- En 475 trabajadores de 36 restaurantes de comida rápida de Estados Unidos, usar zapatos antideslizantes se asoció con una tasa de resbalones un 54 % menor (Verma y colegas, 2011).
-- En un ensayo aleatorizado en servicios de comida escolares, las reclamaciones por lesiones por resbalón bajaron de 3,54 a 1,18 por cada 10 000 meses-trabajador donde los trabajadores recibieron zapatos antideslizantes gratis, mientras que en el grupo de comparación subieron de 2,01 a 2,30 (Bell y colegas, 2019).
-- Estar de pie la mayor parte de la jornada laboral multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles, y una pantorrilla tensa las multiplicó por 23,3 (Riddle y colegas, 2003).
-- La guía de 2023 para el dolor de talón califica con **A** los estiramientos de pantorrilla y de fascia plantar, y con **B** el entrenamiento de fuerza. Las plantillas solas reciben **B en contra** (Koc y colegas, 2023).
-
-### ¿Por qué les duelen tanto los pies a los cocineros después de un turno?
-
-**El trabajo en cocina junta lo que peor llevan los pies: horas de pie, caminatas cortas y rápidas, pisos duros y poco descanso.** En una encuesta a 128 trabajadores de cocina de dos grandes residencias estudiantiles en El Cairo, el 90,6 % reportó un problema musculoesquelético en los últimos 12 meses. El pie fue la tercera zona más afectada, con un 46,1 %, justo por detrás de la rodilla, con un 46,9 %.
-
-Las cifras varían mucho entre estudios. En 307 chefs de restaurantes en Pakistán, la mayoría con jornadas de 9 a 12 horas, 26 reportaron dolor de tobillo o de pie, muchos menos que los 101 que reportaron dolor lumbar y de rodilla (Iqbal y colegas, 2023). Las encuestas usaron grupos y preguntas distintos, así que tómalas como una imagen aproximada, no como una tasa precisa.
-
-Hay un vínculo que sí aparece con claridad. En 415 trabajadores de cocinas de hoteles y restaurantes en Etiopía, estar de pie mucho tiempo se asoció con 3,81 veces las probabilidades de tener un problema musculoesquelético relacionado con el trabajo (Abebaw y colegas, 2024). Ese estudio contó el dolor en cualquier parte del cuerpo, no solo en los pies.
-
-Source: Abdelsalam A, Wassif GO, Eldin WS, Abdel-Hamid MA, Damaty SI. Frequency and risk factors of musculoskeletal disorders among kitchen workers. Journal of the Egyptian Public Health Association. 2023;98(1):3.
-Source: Iqbal MU, Ahmad N, Khan ZSU, et al. Prevalence of musculoskeletal disorders among chefs working in restaurants of twins cities of Pakistan. Work. 2023;74(4):1507–1513.
-Source: Abebaw T, Destaw B, Yenealem DG, et al. Work-related musculoskeletal disorders: prevalence, associated factors, and impact on quality of life among kitchen workers in hospitality industry, Bahir Dar City, Northwest Ethiopia, 2023. Frontiers in Public Health. 2024;12:1358867.
-
-### ¿El dolor de pies en la cocina es fascitis plantar?
-
-Muchas veces es cansancio y molestia general que se alivia con una noche de descanso. Pero el trabajo en cocina reúne los dos factores de riesgo más fuertes de un estudio de casos y controles con 50 personas con fascitis plantar y 100 sin ella: estar de pie la mayor parte de la jornada laboral multiplicó las probabilidades por 3,6, y una [pantorrilla tensa](https://walkito.site/es/pantorrillas-tensas/) que limita cuánto se dobla el tobillo las multiplicó por 23,3.
-
-La fascitis plantar tiene un patrón típico: dolor agudo bajo el talón en los primeros pasos de la mañana o después de estar sentado, que se calma al caminar y vuelve después de un día largo. Ese patrón se explica en [dolor de talón al levantarse](https://walkito.site/es/dolor-de-talon-al-levantarse/), y la guía completa de ejercicios está en [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
-
-Otros patrones apuntan a otra cosa:
-
-- ardor bajo la parte delantera de la planta a mitad del servicio: ve [dolor en la planta del pie](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/)
-- un dolor profundo, como de moretón, en el centro del talón que empeora cuanto más tiempo estás de pie en un piso duro: ve [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/)
-- arcos que duelen o se sienten aplanados al final del turno: ve [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/)
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### Zuecos o zapatos antideslizantes: ¿qué dice la evidencia?
-
-**La evidencia más sólida sobre calzado de cocina trata de resbalones, no de pies adoloridos.** Un estudio en Estados Unidos siguió durante tres meses a 475 trabajadores de 36 restaurantes de comida rápida. Quienes usaban zapatos con una marca de antideslizante en la suela reportaron una tasa de resbalones un 54 % menor que quienes no los usaban, después de tener en cuenta la edad, el sexo, el peso corporal y otros factores (Verma y colegas, 2011).
-
-Después, un ensayo aleatorizado lo probó como programa. Se eligieron al azar distritos escolares para darles zapatos antideslizantes sin costo a sus trabajadores de servicio de comida. Las reclamaciones por lesiones por resbalón bajaron de 3,54 a 1,18 por cada 10 000 meses-trabajador en esos distritos, y subieron de 2,01 a 2,30 en los demás (Bell y colegas, 2019).
-
-Los zapatos se desgastan. En esos mismos trabajadores de restaurante, quienes ya usaban zapatos antideslizantes y cambiaron a un par nuevo tuvieron después una tasa de resbalones un 55 % menor, y los zapatos con menos de seis meses de uso funcionaron moderadamente mejor que los más viejos (Verma y colegas, 2014). El estudio no pudo decir exactamente cuándo cambiarlos.
-
-**No encontramos ningún estudio que compare zuecos con tenis, ni un zapato de cocina con otro, para el dolor de pies.** Para el dolor de talón en general, la guía de 2023 califica las [plantillas](https://walkito.site/es/plantillas-o-ejercicios/) solas con **B en contra**: la evidencia dice que no hay que confiar solo en ellas. Un orden sensato: elige un zapato con suela antideslizante que te quede bien hoy y no te apriete los dedos, cámbialo cuando la suela esté gastada, y haz los estiramientos y el trabajo de fuerza de abajo para el dolor en sí.
-
-Source: Verma SK, Chang WR, Courtney TK, et al. A prospective study of floor surface, shoes, floor cleaning and slipping in US limited-service restaurant workers. Occupational and Environmental Medicine. 2011;68(4):279–285.
-Source: Bell JL, Collins JW, Chiou S. Effectiveness of a no-cost-to-workers, slip-resistant footwear program for reducing slipping-related injuries in food service workers: a cluster randomized trial. Scandinavian Journal of Work, Environment & Health. 2019;45(2):194–202.
-Source: Verma SK, Zhao Z, Courtney TK, et al. Duration of slip-resistant shoe usage and the rate of slipping in limited-service restaurants: results from a prospective and crossover study. Ergonomics. 2014;57(12):1919–1926.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿En qué parte de la cocina ocurren más resbalones?
-
-En el estudio de restaurantes de Estados Unidos, la mayoría de los resbalones ocurrieron junto al **fregadero y la freidora**, las zonas que los trabajadores también calificaron como las más resbalosas, y había líquido o grasa en el piso en más del 70 % de los resbalones (Verma y colegas, 2010).
-
-Un segundo análisis de los mismos trabajadores se fijó en el momento de cada resbalón. La tasa de resbalones fue 14,6 veces mayor al caminar sobre un piso contaminado, 2,9 veces mayor al ir con prisa y 1,7 veces mayor al estar distraído. Los zapatos antideslizantes redujeron el efecto de las prisas y del piso sucio (Verma y colegas, 2011).
-
-También importa si el empleador da los zapatos. Donde el empleador daba zapatos antideslizantes, el 91 % de los trabajadores los usaba. Donde ni se daban ni se fomentaban, los usaba el 53,5 % (Verma y colegas, 2010). Si tu cocina tiene un programa de calzado, vale la pena aprovecharlo.
-
-Source: Verma SK, Chang WR, Courtney TK, et al. Workers' experience of slipping in U.S. limited-service restaurants. Journal of Occupational and Environmental Hygiene. 2010;7(9):491–500.
-Source: Verma SK, Lombardi DA, Chang WR, et al. Rushing, distraction, walking on contaminated floors and risk of slipping in limited-service restaurants: a case-crossover study. Occupational and Environmental Medicine. 2011;68(8):575–581.
-
-### ¿Los tapetes antifatiga y las medias de compresión ayudan en la cocina?
-
-Una revisión de 2015 sobre la investigación del trabajo de pie menciona los tapetes de piso, las medias de compresión y el calzado con soporte entre las opciones con algo de evidencia de menos molestias y cansancio (Waters y Dick, 2015). Nada de esa investigación se hizo en cocinas. Un tapete en una estación donde pasas mucho tiempo de pie, como el pase o una mesa de preparación, es algo razonable para probar. Elige uno que quede plano y no se mueva en un piso mojado, para que no se convierta en un riesgo de tropiezo por sí mismo.
-
-Las medias de compresión no se han probado en cocinas. En un ensayo aleatorizado pequeño con 40 guardias de seguridad que trabajaban de pie turnos de unas 12 horas, las medias de 15 a 20 mmHg y las de 20 a 30 mmHg evitaron el aumento de molestias e hinchazón en las piernas que se vio con calcetines normales (Garcia y colegas, 2023). Todos los guardias eran hombres y ninguno era cocinero, así que tómalo como algo que probablemente aplica, no como prueba para cocinas.
-
-**Los tapetes y las medias ayudan con la comodidad durante el turno. No sustituyen los estiramientos ni el trabajo de fuerza**, que son lo que la guía para el dolor de talón califica más alto.
-
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Qué ejercicios ayudan a los cocineros con el dolor de pies?
-
-Los ejercicios son los de la [guía de fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/), con las mismas dosis iniciales. Los estiramientos solo necesitan una pared o una silla, así que caben en un descanso, antes del servicio o después de quitarte los zapatos de trabajo. Deja el trabajo de fuerza para los días libres o para después del turno.
-
-Los grados de la guía son para la fascitis plantar y no se probaron en trabajadores de cocina, pero los tejidos son los mismos que un turno de cocina carga todo el día. Si un ejercicio lleva tu dolor a 6 de 10 o más, detente por ese día.
-
-- **Estiramiento de pantorrilla** (2 estiramientos de 30 segundos, cada pierna): Pon las manos en una pared o en una mesa de acero. Mantén la pierna de atrás estirada, el talón de atrás plano en el piso y la cadera hacia adelante. Hazlo en una parte seca del piso, no junto al fregadero.
-- **Estiramiento de sóleo** (2 estiramientos de 30 segundos, cada pierna): Toma la misma posición, mantén el talón de atrás plano en el piso y luego dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Estiramiento plantar** (2 estiramientos de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Haz el primero en la orilla de la cama, antes de que el pie toque el piso.
-- **Elevaciones de talón sentado** (3 series de 10, los dos pies): Siéntate con los pies planos y empuja hacia arriba con la parte delantera de los pies. Las manos sobre las rodillas agregan resistencia. Con la rodilla doblada, esto trabaja sobre todo el sóleo, casi sin carga sobre el talón, así que va bien en un descanso sobre una caja volteada o en una silla del área de personal.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate sobre los dos pies, sube en línea recta sobre los dedos gordos y luego baja despacio. Sujétate de una pared o un barandal. Hazlas en casa o después del turno, no en un piso de cocina mojado.
-- **Automasaje plantar** (1 minuto): Siéntate y rueda la planta del pie despacio sobre una pelota de masaje, con presión firme. Si haces muecas de dolor, afloja.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Cómo meter los ejercicios en un turno de cocina?
-
-Un turno partido o un doble turno deja poco espacio para una rutina, así que asocia los ejercicios a algo que ya haces:
-
-- **Si tienes 3 minutos:** el estiramiento de pantorrilla y el estiramiento de sóleo, 30 segundos por lado, antes del servicio o cuando te cambias de zapatos. Eso cubre la pantorrilla tensa, el factor de riesgo más fuerte en el estudio de casos y controles.
-- **Si tienes 5 minutos:** agrega el estiramiento plantar. Los estiramientos son la parte que la guía de 2023 califica con **A**.
-- **Si tienes 10 minutos:** en un día libre o después del turno, agrega las elevaciones de talón y un minuto de automasaje plantar. El trabajo de fuerza tiene grado **B**.
-
-Los descansos en sí parecen importar. En un estudio con 1909 trabajadores de cocina en Corea, las mujeres que reportaron descansos insuficientes tuvieron 1,68 veces las probabilidades de problemas musculoesqueléticos (Park y colegas, 2021). El vínculo se reportó para las mujeres, y una encuesta así no puede demostrar causa y efecto. Aun así, vale la pena defender unos minutos sentado entre rachas de trabajo.
-
-Para la fascitis plantar en general, cerca del 90 % de las personas mejora con tratamiento sin cirugía, aunque puede tardar meses; ve [cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/). La guía de 2023 también sugiere ajustar la carga sobre los pies en el trabajo, un consejo con grado **E** porque se basa en la teoría, no en ensayos.
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Park S, Lee J, Lee JH. Insufficient rest breaks at workplace and musculoskeletal disorders among Korean kitchen workers. Safety and Health at Work. 2021;12(2):225–229.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de un resbalón, una caída, una torcedura o de que algo pesado te cayera en el pie
-- no puedes apoyar el pie o estás cojeando
-- el pie está entumecido, con hormigueo o ardor, o hinchado, rojo o caliente
-- tienes en el pie una quemadura, una cortada o una ampolla que no mejora, sobre todo si tienes diabetes o menos sensibilidad en los pies
-- una pantorrilla o una pierna de repente duele y se hincha
-- el dolor te despierta por la noche o está presente en reposo
-- el dolor está en un punto muy concreto y empeora con la actividad, lo que puede ser el patrón de una fractura por estrés
-- el dolor no se ha aliviado después de varias semanas con mejores zapatos, más descansos y los ejercicios de esta página
-
-### Cómo convertirlo en un plan
-
-Walkito es una app de ejercicios para el talón y el pie en iPhone y Android. No conoce tu horario de turnos, así que tú eliges cuándo van las sesiones: antes del servicio, entre turnos o en tus días libres.
-
-#### ¿Por qué me duelen tanto los pies después de trabajar en una cocina?
-
-Los turnos de cocina combinan horas de pie, caminatas cortas y rápidas y pisos duros. En una encuesta a 128 trabajadores de cocina, el 46,1 % reportó dolor de pies en el último año. Estar de pie la mayor parte de la jornada laboral también multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles. Estirar a diario la pantorrilla y la fascia plantar trabaja justo los tejidos que más se cargan.
-
-#### ¿Los zuecos son buenos para chefs con dolor de pies?
-
-Nadie lo sabe con seguridad: no encontramos ningún estudio que compare zuecos con tenis u otros zapatos de cocina para el dolor de pies. Lo que más importa para la seguridad es una suela antideslizante. Para el dolor de talón, la guía de 2023 califica las plantillas solas con B en contra, así que combina el zapato que mejor te quede con estiramientos de pantorrilla y de fascia plantar, que califica con A.
-
-#### ¿Los zapatos antideslizantes de verdad funcionan en restaurantes?
-
-Para los resbalones, sí. En 475 trabajadores de 36 restaurantes de comida rápida de Estados Unidos, los zapatos antideslizantes se asociaron con una tasa de resbalones un 54 % menor. En un ensayo aleatorizado en servicios de comida escolares, los zapatos antideslizantes gratis bajaron las reclamaciones por lesiones por resbalón de 3,54 a 1,18 por cada 10 000 meses-trabajador. Estos estudios midieron resbalones, no dolor de pies.
-
-#### ¿Cada cuánto hay que cambiar los zapatos de cocina?
-
-No hay una regla probada. En un estudio de 475 trabajadores de restaurante, los zapatos antideslizantes con menos de seis meses de uso fueron moderadamente más eficaces contra los resbalones que los más viejos, y quienes ya usaban zapatos antideslizantes y cambiaron a un par nuevo resbalaron un 55 % menos. Revisa la suela y cambia los zapatos cuando el dibujo esté liso por el desgaste.
-
-#### ¿Los tapetes antifatiga ayudan a los trabajadores de cocina?
-
-Probablemente, para la comodidad. Una revisión de 2015 sobre el trabajo de pie menciona los tapetes de piso entre las opciones con algo de evidencia de menos molestias y cansancio, pero nada de esa investigación se hizo en cocinas. Usa un tapete donde pasas mucho tiempo de pie sin moverte, y elige uno que quede plano y no se deslice en un piso mojado.
-
-#### ¿Las medias de compresión ayudan a los chefs en turnos largos?
-
-Puede que sí. En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de unas 12 horas, las medias de 15 a 20 mmHg y las de 20 a 30 mmHg evitaron el aumento de molestias e hinchazón en las piernas que se vio con calcetines normales. El ensayo fue pequeño y no se hizo en cocinas, y las medias no sustituyen los estiramientos ni el trabajo de fuerza.
-
-#### ¿Se puede tener fascitis plantar por trabajar de chef?
-
-El trabajo en cocina tiene factores de riesgo conocidos. En un estudio de casos y controles con 50 personas con fascitis plantar y 100 sin ella, estar de pie la mayor parte de la jornada laboral multiplicó las probabilidades por 3,6 y una pantorrilla tensa las multiplicó por 23,3. Ningún estudio ha medido la fascitis plantar en chefs específicamente.
-
-#### ¿Qué puedo hacer por los pies adoloridos durante un servicio con mucho trabajo?
-
-Cambia el peso de un pie a otro, siéntate en los descansos cuando puedas y haz un estiramiento de pantorrilla de 30 segundos contra una pared en una parte seca del piso. En trabajadores de cocina en Corea, las mujeres con descansos insuficientes tuvieron 1,68 veces las probabilidades de problemas musculoesqueléticos. Deja las elevaciones de talón y las sesiones más largas para después del turno o los días libres.
-
-## Dolor de pies en estilistas: qué ayuda cuando pasas el día de pie en el mismo lugar
-
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-pies-peluqueros/ · published 2026-10-18 · updated 2026-10-18
-
-El dolor de pies en estilistas y peluqueros viene sobre todo de estar de pie sin moverte junto a la silla durante horas, no de caminar, así que las opciones con algo de evidencia apuntan a estar de pie en un solo lugar: un piso o un zapato acolchado, medias de compresión de baja presión y un minuto de trabajo de pantorrilla entre clientes. En un estudio con 384 estilistas y 384 personas de otros trabajos, el 49,5 % de los estilistas reportó dolor de rodilla o de pie, frente al 38,3 % del grupo de comparación (Mishra y Sarkar, 2021).
-
-- De 384 estilistas en la India, el 49,5 % reportó dolor de rodilla o de pie en los últimos 12 meses, frente al 38,3 % de 384 personas de otros trabajos. El estudio contó rodilla y pie juntos (Mishra y Sarkar, 2021).
-- Una revisión exploratoria de 2019 con 44 estudios encontró solo 5 que reportaron dolor de pies en estilistas, con cifras de 10 a 44 %. La mayoría de los estudios se fijó en la espalda, el cuello, los hombros y las manos, y estar de pie fue uno de los factores de riesgo frecuentes (Kozak y colegas, 2019).
-- En un ensayo cruzado aleatorizado con 108 estilistas, las medias de compresión de 15 a 20 mmHg bajaron en un 12 % la puntuación de dolor e hinchazón de piernas y en 19 mL el volumen de la parte baja de la pierna, en promedio (Blazek y colegas, 2013).
-- Una revisión de 2018 con 10 estudios encontró evidencia moderada de que los pisos más blandos y las plantillas acolchadas reducen las molestias y el cansancio en personas que trabajan de pie (Speed y colegas, 2018).
-- Una pantorrilla tensa fue el factor de riesgo más fuerte de fascitis plantar en un estudio de casos y controles de 2003, al multiplicar por 23,3 las probabilidades, y estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003).
-
-### ¿Qué tan común es el dolor de pies en estilistas?
-
-**El dolor de pies y piernas es común en estilistas, pero se ha estudiado mucho menos que el dolor de hombros o de espalda.** Una revisión exploratoria de 2019 reunió 44 estudios sobre problemas musculoesqueléticos en la peluquería. Solo 5 reportaron dolor de pies, y las cifras fueron de 10 a 44 %. El rango es amplio porque los estudios usaron preguntas, países y periodos distintos.
-
-El estudio más grande con grupo de comparación encuestó a 384 estilistas y 384 personas de otros trabajos en dos ciudades de la India. El dolor de rodilla o de pie fue la molestia más común en los dos grupos: 49,5 % de los estilistas frente a 38,3 % de los demás. El estudio contó rodilla y pie como una sola categoría, así que no puede decir cuánto de eso fue solo de los pies.
-
-Un estudio del Reino Unido con 147 estilistas y 67 personas de otros trabajos encontró dolor de pierna o de pie relacionado con el trabajo mucho más a menudo en los estilistas. Las probabilidades fueron 31 veces mayores, pero el rango estadístico fue muy amplio, de unas 4 a 267 veces, así que el tamaño real de la diferencia es incierto. En un estudio turco de 2023, después de la zona lumbar, las zonas más dolorosas fueron las piernas por debajo de la rodilla: 36,9 % del lado derecho y 32,5 % del izquierdo.
-
-Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
-Source: Mishra S, Sarkar K. Work-related musculoskeletal disorders and associated risk factors among urban metropolitan hairdressers in India. Journal of Occupational Health. 2021;63(1):e12200.
-Source: Bradshaw L, Harris-Roberts J, Bowen J, Rahman S, Fishwick D. Self-reported work-related symptoms in hairdressers. Occupational Medicine (London). 2011;61(5):328-334.
-Source: İnce Parpucu T, Ercan S, Başkurt Z, Başkurt F. The impact of lower extremity fatigue on lower quadrant dysfunction and health profile in hairdressers. La Medicina del Lavoro. 2023;114(3):e2023019.
-
-### ¿Por qué duele más estar de pie en un solo lugar que caminar?
-
-El día de un estilista es distinto del de una enfermera. No recorres grandes distancias. Te paras junto a la silla, te mueves un poco, te inclinas y vuelves a quedarte de pie. Cuando estás de pie sin moverte:
-
-- Los músculos de la pantorrilla se quedan en una sola posición, así que dejan de bombear la sangre de regreso hacia arriba por la pierna.
-- La sangre y el líquido se acumulan en la parte baja de las piernas y en los pies, y por eso los zapatos se sienten más apretados al final del día.
-- La almohadilla del talón y la fascia plantar, la banda que está debajo del arco, cargan un peso constante sin descanso.
-
-Los estudios de laboratorio muestran qué tan rápido se acumula esto. Una revisión de 2017 con 25 estudios de laboratorio encontró que los síntomas lumbares se volvían clínicamente relevantes después de unos 71 minutos de pie en promedio, y después de 42 minutos en personas propensas al dolor por estar de pie. Un solo tinte o corte puede durar más que eso. Una revisión de 2015 sobre el trabajo de pie relacionó estar de pie mucho tiempo con dolor lumbar y de piernas, molestias y cansancio en muchos trabajos.
-
-En un estudio de 2023 con estilistas turcos, quienes reportaron cansancio en la parte baja de las piernas también tenían más dolor en las rodillas y en la parte baja de las piernas, y peores puntuaciones de energía y movilidad. **La hinchazón también se puede medir:** en 38 estilistas, el contorno del tobillo pasó de 21,1 cm en la mañana a 22,1 cm al final de un día sin compresión.
-
-Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
-Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
-Source: İnce Parpucu T, Ercan S, Başkurt Z, Başkurt F. The impact of lower extremity fatigue on lower quadrant dysfunction and health profile in hairdressers. La Medicina del Lavoro. 2023;114(3):e2023019.
-Source: Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effectiveness of wearing compression stockings for prevention of occupational edema in hairdressers. Jornal Vascular Brasileiro. 2020;19:e20190028.
-
-### ¿La postura junto a la silla afecta tus pies?
-
-Los estudios sobre la postura de los estilistas se centran en la espalda y los brazos, no en los pies. Una revisión exploratoria reportó que los estilistas a menudo se inclinan hacia adelante o giran el tronco al cortar y al lavar, y que en un estudio de medición, cortar mantuvo la columna inclinada hacia adelante durante el 66 % del tiempo de la tarea. Inclinarte durante mucho tiempo suele llevar tu peso hacia la parte delantera del pie.
-
-Ningún estudio ha medido cómo cambia la postura en el salón la carga sobre los pies de los estilistas. Lo que sí puedes controlar es sencillo: sube o baja la silla del cliente para no tener que inclinarte, reparte el peso entre los dos pies y cambia de postura cada pocos minutos. En un estudio de laboratorio con cuatro horas de pie, las personas que cambiaban más su peso de un pie a otro también reportaron más molestias, así que cambiar de postura a cada rato puede ser una señal de que las molestias van en aumento, y una buena pista para tomar un descanso corto (Wiggermann y Keyserling, 2013).
-
-Si te duelen los pies junto con la espalda, la relación va en los dos sentidos. [Pie plano y dolor de espalda](https://walkito.site/es/pie-plano-y-dolor-de-espalda/) explica lo que dice la investigación.
-
-Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
-Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
-
-### ¿Cuáles son los mejores zapatos para estilistas?
-
-**Ningún estudio ha comparado tipos de zapato para estilistas.** Los consejos sobre zapatos que encuentras en internet vienen de marcas de calzado o de clínicas, no de ensayos en salones. Lo que sí respalda la investigación más amplia sobre estar de pie es la amortiguación: una revisión de 2018 con 10 estudios encontró evidencia moderada de que las plantillas acolchadas y los pisos más blandos reducen las molestias y el cansancio en personas que trabajan de pie, y evidencia limitada de que las plantillas funcionan mejor que los tapetes.
-
-En la práctica, busca:
-
-- Una suela acolchada y algo de soporte para el arco, para que el talón y el arco no carguen todo el impacto de un piso duro.
-- Un zapato cerrado que no apriete los dedos. El dolor entre los dedos puede ser un [neuroma de Morton](https://walkito.site/es/neuroma-de-morton/).
-- Un tacón bajo y estable. Los tacones altos ponen más peso en la parte delantera del pie.
-- Una suela antideslizante. Los pisos del salón se mojan y se ponen resbalosos.
-
-Algunas personas cambian de zapatos a la mitad de un día largo. Ningún estudio lo ha probado, pero un zapato distinto reparte la carga de otra forma. Si ya tienes dolor de talón o de arco, las plantillas pueden hacer el día más cómodo, pero actúan sobre la comodidad, no sobre la pantorrilla ni el arco en sí. [Plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/) compara las dos opciones.
-
-Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
-
-### ¿Los tapetes antifatiga ayudan a los estilistas?
-
-Un tapete junto a tu silla es uno de los cambios más sencillos con evidencia detrás. En un estudio de laboratorio, las personas estuvieron cuatro horas de pie sobre cuatro tapetes antifatiga distintos y sobre un piso duro. Tres de los cuatro tapetes redujeron las molestias en comparación con el piso duro, pero los tapetes no se diferenciaron mucho entre sí.
-
-No toda la evidencia es positiva. En un pequeño estudio de 1994 con 5 personas, los tapetes redujeron el cansancio muscular solo en la zona lumbar, y solo con el más blando de dos tapetes. Los músculos de las piernas no mostraron cambios. **Así que un tapete ayuda con la comodidad, pero no reemplaza moverte y estirarte.**
-
-En el salón, pon el tapete donde de verdad te paras, detrás de la silla, y mantenlo plano para no tropezar con las orillas. El cabello y el agua pueden hacer que un tapete se vuelva resbaloso, así que bárrelo seguido.
-
-Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
-Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
-Source: Kim JY, Stuart-Buttle C, Marras WS. The effects of mats on back and leg fatigue. Applied Ergonomics. 1994;25(1):29-34.
-
-### ¿Conviene que los estilistas usen un banco o un asiento para alternar?
-
-**Ningún estudio ha probado si un banco reduce el dolor de pies en estilistas.** Sentarte le quita carga a los pies, y en estudios de oficina, alternar entre estar sentado y de pie redujo las molestias lumbares sin bajar el rendimiento en el trabajo (Karakolis y Callaghan, 2014). Esa es la mejor evidencia indirecta para incluir algunos ratos sentado.
-
-Un banco tiene su lado negativo. Un estudio alemán de postura, resumido en la revisión exploratoria de 2019, encontró que los estilistas que usaban un banco con ruedas inclinaban más la zona lumbar y levantaban las manos por encima de la altura del hombro con más frecuencia. Un banco demasiado bajo puede cambiar el dolor de pies por tensión en la espalda y los hombros.
-
-Una forma práctica de hacerlo: usa el banco en las tareas en las que alcanzas sin estirarte, como los detalles en la parte de atrás de la cabeza o las mechas en las secciones bajas, y quédate de pie para lo demás. Ajusta el banco a una altura en la que tus brazos queden por debajo del hombro. Si trabajas en el lavacabezas, siéntate cuando el espacio lo permita.
-
-Source: Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.
-Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
-
-### ¿Qué ejercicios puedes hacer entre clientes?
-
-Los ejercicios son los mismos que se usan para la [fascitis plantar](https://walkito.site/es/fascitis-plantar/) y para el dolor general por estar de pie: estiramientos de pantorrilla, elevaciones de talón y un estiramiento de la fascia plantar. Lo que cambia para los estilistas es el momento. **Tienes ratos cortos entre clientes, así que elige uno o dos ejercicios por rato en lugar de una rutina completa.** Ningún estudio ha probado pausas con ejercicio para los pies de los estilistas, así que las dosis de aquí vienen de la guía principal sobre dolor de talón.
-
-La pantorrilla es lo que más importa. En un estudio de casos y controles, una pantorrilla tensa multiplicó por 23,3 las probabilidades de fascitis plantar, más que cualquier otro factor. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por ese día.
-
-- **Estiramiento de pantorrilla** (2 series de 30 segundos, cada pierna): Apoya las manos en una pared o en el respaldo de tu estación. Mantén la pierna de atrás estirada, el talón de atrás pegado al piso y la cadera hacia adelante. Dos series en cada pierna toman unos dos minutos, así que caben en un rato entre clientes.
-- **Estiramiento de sóleo** (2 series de 30 segundos, cada pierna): En la misma posición, con el talón de atrás en el piso, dobla la rodilla de atrás hasta que sientas el estiramiento más abajo, cerca del talón. El sóleo, el músculo profundo de la pantorrilla, es el que te sostiene cuando estás de pie sin moverte, y solo se suelta con la rodilla doblada.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate sobre los dos pies, sube en línea recta sobre los dedos gordos y luego baja despacio. Sostente de la estación para mantener el equilibrio. Además de dar fuerza, esto hace que la pantorrilla bombee la sangre de regreso hacia arriba por la pierna, algo que no pasa cuando estás de pie sin moverte.
-- **Elevaciones de talón sentado** (3 series de 10, los dos pies): Siéntate en tu banco con los pies planos y empuja hacia arriba con la parte delantera de los pies. Las manos sobre las rodillas agregan resistencia. Con la rodilla doblada, esto trabaja sobre todo el sóleo, casi sin carga sobre el talón. Es una buena opción cuando ya te duelen los talones.
-- **Movilidad de tobillo** (2 series de 15, cada pierna): Con un pie adelante y otro atrás y las manos en una pared, lleva la rodilla de adelante hacia el frente, por encima de los dedos, mientras el talón se queda en el piso. Hazlo despacio, unos dos segundos en cada sentido. Mueve el tobillo después de un buen rato de pie sin moverte.
-- **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza un pie sobre la rodilla contraria. Jala los dedos hacia atrás con suavidad hasta que sientas el estiramiento a lo largo del arco. Hazlo en un descanso en el que puedas sentarte, y antes de los primeros pasos de la mañana si es cuando más te duele el talón.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-
-### ¿Las medias de compresión ayudan a los estilistas?
-
-**Las medias de compresión son una de las pocas cosas que se han probado en estilistas.** En un ensayo cruzado aleatorizado en Suiza, 108 estilistas usaron medias de baja presión (15 a 20 mmHg) durante un periodo y nada durante otro. Con las medias, la puntuación de dolor de piernas y sensación de hinchazón bajó un 12 % en promedio, y el volumen de la parte baja de la pierna bajó 19 mL. Las puntuaciones de sueño y de estado de ánimo también mejoraron.
-
-Un estudio más pequeño en Brasil, con 38 estilistas, midió el tobillo. Sin medias, el contorno pasó de 21,1 cm en la mañana a 22,1 cm al final del día. Con medias, al final del día medía 21,2 cm, casi lo mismo que en la mañana.
-
-Los efectos fueron modestos, y los estudios midieron la hinchazón y los síntomas de las piernas, no problemas del pie como la fascitis plantar. Un ensayo de 2023 en guardias de seguridad encontró resultados parecidos en turnos largos de pie. **Las medias ayudan con la hinchazón y las piernas pesadas, pero la pantorrilla y el arco siguen necesitando su propio ejercicio.** Si tienes diabetes, mala circulación o los pies adormecidos, consulta a un profesional de la salud antes de usar compresión.
-
-Source: Blazek C, Amsler F, Blaettler W, Keo HH, Baumgartner I, Willenberg T. Compression hosiery for occupational leg symptoms and leg volume: a randomized crossover trial in a cohort of hairdressers. Phlebology. 2013;28(5):239-247.
-Source: Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effectiveness of wearing compression stockings for prevention of occupational edema in hairdressers. Jornal Vascular Brasileiro. 2020;19:e20190028.
-Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
-
-### ¿Podría ser fascitis plantar, várices u otra cosa?
-
-El dolor general y las piernas pesadas al final de un día en el salón son comunes y suelen aliviarse durante la noche. Algunos patrones apuntan a algo más específico:
-
-- Un dolor agudo en el talón en los primeros pasos de la mañana o después de estar sentado apunta a [fascitis plantar](https://walkito.site/es/fascitis-plantar/). La rutina completa está en [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
-- El ardor o dolor debajo de la parte delantera de la planta encaja con el [dolor en la planta del pie](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/), común con suelas delgadas o tacones.
-- Un arco que duele o se ve más bajo al final del día encaja con el [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/).
-- Las venas hinchadas, torcidas o abultadas en las piernas pueden ser várices. En una encuesta a 182 estilistas en Taiwán, el 24,2 % las tenía, y en los mayores de 45 años, muchas horas de pie al mes fueron un factor de riesgo (Chen y Guo, 2014).
-
-Si no sabes bien qué es el dolor, [dónde me duele el pie](https://walkito.site/es/donde-me-duele-el-pie/) puede ayudarte a acotarlo, y un profesional de la salud te lo puede confirmar. **Si el dolor cambia, se extiende o deja de aliviarse con el descanso, haz que lo revisen antes de cargarlo con ejercicio.**
-
-Source: Chen CL, Guo HR. Varicose veins in hairdressers and associated risk factors: a cross-sectional study. BMC Public Health. 2014;14:885.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de una caída, una torcedura o de que algo te cayera en el pie
-- no puedes apoyar el pie o estás cojeando
-- el pie está adormecido, con hormigueo o con ardor
-- una pierna se hinchó de repente y está adolorida, roja o caliente
-- el pie está rojo o caliente, o tienes fiebre o te sientes mal
-- el dolor te despierta en la noche o está ahí incluso en reposo
-- tienes diabetes, mala circulación o menos sensibilidad en los pies
-- el dolor no ha mejorado después de varias semanas con mejores zapatos, un tapete, descansos y los ejercicios de esta página
-
-### Cómo convertirlo en un plan
-
-No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. [Walkito](https://walkito.site/es/programa/) es una app de ejercicios para el talón y el pie que arma tu plan semana por semana, y las sesiones son lo bastante cortas para hacerlas antes del trabajo o en un descanso.
-
-#### ¿Por qué les duelen tanto los pies a los estilistas?
-
-Los estilistas pasan mucho tiempo de pie en un solo lugar, lo que carga el talón y el arco sin el bombeo de la pantorrilla que da caminar. En un estudio con 384 estilistas, el 49,5 % reportó dolor de rodilla o de pie en 12 meses, frente al 38,3 % de personas de otros trabajos. Inclinarse hacia adelante, los pisos duros y los zapatos sin soporte suman carga.
-
-#### ¿Cuáles son los mejores zapatos para estilistas con dolor de pies?
-
-Ningún estudio ha comparado tipos de zapato para estilistas, así que no hay un zapato que haya demostrado ser el mejor. Busca una suela acolchada, algo de soporte para el arco, un tacón bajo, espacio para los dedos y una suela antideslizante. Una revisión de 2018 con 10 estudios encontró evidencia moderada de que las plantillas acolchadas y los pisos más blandos reducen las molestias en quienes trabajan de pie.
-
-#### ¿Funcionan los tapetes antifatiga para estilistas?
-
-Ayudan con la comodidad. En un estudio de laboratorio con cuatro horas de pie, tres de cuatro tapetes antifatiga redujeron las molestias en comparación con un piso duro. Un estudio pequeño y más antiguo encontró que los tapetes reducían el cansancio de los músculos de la espalda, pero no el de las piernas. Vale la pena tener un tapete junto a tu silla, pero no reemplaza estirarte y moverte entre clientes.
-
-#### ¿Los estilistas deberían usar calcetas de compresión?
-
-La compresión de baja presión es una de las pocas opciones probadas en estilistas. En un ensayo cruzado con 108 estilistas, las medias de 15 a 20 mmHg bajaron en un 12 % la puntuación de dolor e hinchazón de piernas y en 19 mL el volumen de la parte baja de la pierna. El efecto fue modesto. Consulta primero a un profesional de la salud si tienes diabetes o mala circulación.
-
-#### ¿Es mejor que los estilistas se sienten en un banco?
-
-Sentarte parte del día le quita carga a los pies, pero ningún estudio ha probado los bancos para el dolor de pies en estilistas. Un estudio de postura encontró que quienes usaban banco inclinaban más la zona lumbar y levantaban las manos por encima del hombro más seguido. Usa un banco a una altura que mantenga tus brazos abajo, y quédate de pie para lo demás.
-
-#### ¿Qué estiramientos pueden hacer los estilistas entre clientes?
-
-El estiramiento de pantorrilla y el de sóleo, 2 series de 30 segundos en cada pierna, caben en un rato entre clientes. Las elevaciones de talón, 3 series de 10, vuelven a poner a bombear la pantorrilla después de estar de pie sin moverte. La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla y de fascia plantar una A, su grado más alto, para la fascitis plantar.
-
-#### ¿El trabajo de estilista puede causar fascitis plantar?
-
-Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles, y una pantorrilla tensa las multiplicó por 23,3. Ningún estudio ha medido la fascitis plantar en estilistas en particular, pero el trabajo en el salón implica justo ese tipo de estar de pie durante mucho tiempo.
-
-#### ¿Cuánto tiempo puede estar de pie un estilista antes de tomar un descanso?
-
-No hay un límite probado para estilistas. En una revisión de estudios de laboratorio, los síntomas lumbares se volvieron clínicamente relevantes después de unos 71 minutos de pie en promedio y después de 42 minutos en personas propensas al dolor por estar de pie. Cortar los servicios largos con un estiramiento corto, unas elevaciones de talón o un minuto en el banco es una forma razonable de hacerlo.
 
 ## Peso y fascitis plantar: qué muestra la investigación y qué ayuda desde hoy
 
@@ -12311,6 +11363,7 @@ Walkito es una app para iPhone y Android con ejercicios para el dolor de talón,
 - **Idiomas:** inglés, ruso, español, portugués, francés, italiano y alemán.
 - **Precio:** gratis para descargar, con una suscripción anual o semanal dentro de la app. El App Store o Google Play te muestra el precio en tu moneda antes de suscribirte.
 - **Quién la hace:** Rahim Hudaykulyyev y Rahman Bazarov, los dos cofundadores de Walkito.
+- **Empresa:** Walkito lo desarrolla Nemy LLC, de Sheridan, Wyoming, Estados Unidos.
 - **Qué no es:** un dispositivo médico. Walkito no diagnostica y no reemplaza a un profesional de la salud.
 - **Nombre:** Walkito no tiene relación con walkito.com, un servicio de paseo de perros.
 
@@ -12338,6 +11391,10 @@ Las guías de Walkito se escriben a partir de investigación publicada, y cada n
 - **Las dosis son las dosis iniciales de Walkito.** Muestran dónde empiezan los ejercicios de Walkito. No son una indicación médica para ti.
 - **Ninguna promesa de curación.** Las páginas dicen lo que encontró la investigación y hasta dónde llega su evidencia.
 
+### Cómo escribimos y traducimos
+
+Rahim y Rahman escriben las guías con herramientas de escritura con IA (Claude), a partir de estudios y guías clínicas publicados. Cada número enlaza a su fuente. Antes de publicar una página nueva, comprobamos sus datos con los estudios que cita. Las traducciones se hacen con herramientas de IA y las revisan hablantes nativos. Cuando encontramos un error, o alguien nos avisa de uno, corregimos la página: [cómo avisar de un error](#corrections).
+
 ### ¿Qué no hace Walkito?
 
 Walkito no diagnostica, no trata y no sustituye a un profesional de la salud. Walkito no puede decirte qué causa tu dolor. Consulta primero a un profesional de la salud si:
@@ -12355,11 +11412,11 @@ Walkito no diagnostica, no trata y no sustituye a un profesional de la salud. Wa
 - un arco se aplanó de repente en la edad adulta
 - el arco sigue plano incluso cuando el pie no toca el piso
 
-### ¿Un profesional de la salud revisó las guías de Walkito?
+### ¿Un profesional de la salud revisó Walkito?
 
-Ningún profesional de la salud con licencia ha revisado todavía las guías de Walkito. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.
+Los ejercicios de la app Walkito los revisó una fisioterapeuta con licencia. Las guías de este sitio todavía no las ha revisado un profesional de la salud. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.
 
-Cuando un profesional las revise, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.
+Cuando un profesional de la salud revise las guías, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.
 
 ### ¿Cómo aviso de un error?
 

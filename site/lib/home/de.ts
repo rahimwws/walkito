@@ -19,8 +19,8 @@ export const HOME_DE: HomeCopy = {
     description:
       'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß.',
   },
-  h1a: 'Schon alles ausprobiert?',
-  h1b: 'Probier einen Plan, der zu deinen Füßen passt.',
+  h1a: 'Walkito:',
+  h1b: 'Plantarfasziitis',
   lead: 'Walkito ist eine App für iPhone und Android mit Übungen bei Fersenschmerzen, Plantarfasziitis und Plattfuß, für die ersten Schritte am Morgen und lange Tage auf den Beinen. Ein Plan, der sich jeden Morgen danach richtet, wie sich deine Füße anfühlen.',
   small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten pro Einheit, zu Hause.`,
   alt: {

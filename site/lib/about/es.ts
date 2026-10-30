@@ -33,6 +33,7 @@ export const ABOUT_ES: About = {
         '**Idiomas:** inglés, ruso, español, portugués, francés, italiano y alemán.',
         '**Precio:** gratis para descargar, con una suscripción anual o semanal dentro de la app. El App Store o Google Play te muestra el precio en tu moneda antes de suscribirte.',
         '**Quién la hace:** Rahim Hudaykulyyev y Rahman Bazarov, los dos cofundadores de Walkito.',
+        '**Empresa:** Walkito lo desarrolla Nemy LLC, de Sheridan, Wyoming, Estados Unidos.',
         '**Qué no es:** un dispositivo médico. Walkito no diagnostica y no reemplaza a un profesional de la salud.',
         '**Nombre:** Walkito no tiene relación con walkito.com, un servicio de paseo de perros.',
       ],
@@ -63,6 +64,13 @@ export const ABOUT_ES: About = {
       ],
     },
     {
+      h2: 'Cómo escribimos y traducimos',
+      id: 'how-we-write',
+      paragraphs: [
+        'Rahim y Rahman escriben las guías con herramientas de escritura con IA (Claude), a partir de estudios y guías clínicas publicados. Cada número enlaza a su fuente. Antes de publicar una página nueva, comprobamos sus datos con los estudios que cita. Las traducciones se hacen con herramientas de IA y las revisan hablantes nativos. Cuando encontramos un error, o alguien nos avisa de uno, corregimos la página: [cómo avisar de un error](#corrections).',
+      ],
+    },
+    {
       h2: '¿Qué no hace Walkito?',
       paragraphs: [
         'Walkito no diagnostica, no trata y no sustituye a un profesional de la salud. Walkito no puede decirte qué causa tu dolor. Consulta primero a un profesional de la salud si:',
@@ -83,15 +91,16 @@ export const ABOUT_ES: About = {
       ],
     },
     {
-      h2: '¿Un profesional de la salud revisó las guías de Walkito?',
+      h2: '¿Un profesional de la salud revisó Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Ningún profesional de la salud con licencia ha revisado todavía las guías de Walkito. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.',
-        'Cuando un profesional las revise, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.',
+        'Los ejercicios de la app Walkito los revisó una fisioterapeuta con licencia. Las guías de este sitio todavía no las ha revisado un profesional de la salud. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.',
+        'Cuando un profesional de la salud revise las guías, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.',
       ],
     },
     {
       h2: '¿Cómo aviso de un error?',
+      id: 'corrections',
       paragraphs: [
         `Para avisar de un error en este sitio, escribe a ${SUPPORT_EMAIL}. Puede ser una cifra que no coincide con su fuente, una dosis que se lee mal o un enlace roto. Corregimos la página misma.`,
         'Cada página muestra la fecha del último cambio de su contenido. Esa fecha solo cambia cuando el contenido de verdad cambia.',

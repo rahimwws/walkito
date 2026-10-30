@@ -24,7 +24,7 @@ export const RETAIL_WAREHOUSE_ES: Guide = {
   lede:
     'En almacenes y tiendas los pies duelen porque horas de estar de pie y caminar sobre pisos duros cargan el talón, el arco y la pantorrilla sin casi nada que amortigüe debajo. Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de [fascitis plantar](/es/fascitis-plantar/) en un estudio (Riddle y colegas, 2003). Los estiramientos de pantorrilla y de fascia plantar tienen el grado más alto, **A**, en la guía de 2023 para el dolor de talón, y una versión corta cabe en unos 3\u00A0minutos de descanso. Los tapetes y las plantillas acolchadas mejoran la comodidad, pero la evidencia sobre ellos es más débil (Speed y colegas, 2018).',
   intro: [
-    'Esta página trata del trabajo en sí: pisos de concreto y de loseta, botas de seguridad, turnos largos y descansos cortos. Para el dolor por estar de pie en general, consulta [por qué me duelen los pies después de estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Si trabajas en un hospital, [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/) habla de los turnos de 12\u00A0horas y los horarios rotativos.',
+    'Esta página trata del trabajo en sí: pisos de concreto y de loseta, botas de seguridad, turnos largos y descansos cortos. Para el dolor por estar de pie en general, consulta [por qué me duelen los pies después de estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Si trabajas en un hospital, [dolor de pies en enfermeras](/es/dolor-de-pies-por-estar-de-pie/) habla de los turnos de 12\u00A0horas y los horarios rotativos.',
   ],
   toc: true,
   takeaways: [

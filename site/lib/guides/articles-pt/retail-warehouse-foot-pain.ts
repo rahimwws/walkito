@@ -24,7 +24,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
   lede:
     'No depósito e na loja os pés doem porque horas em pé e andando em chão duro põem carga no calcanhar, no arco e na panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6\u00A0vezes a chance de [fascite plantar](/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3\u00A0minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).',
   intro: [
-    'Esta página fala do trabalho em si: chão de concreto e de piso frio, botinas de segurança, turnos longos e intervalos curtos. Para a dor de ficar em pé em geral, veja [por que meus pés doem depois de ficar o dia todo em pé](/pt/dor-nos-pes-ficar-em-pe/). Se você trabalha em hospital, [dor nos pés na enfermagem](/pt/dor-nos-pes-enfermagem/) fala dos plantões de 12\u00A0horas e das escalas que mudam.',
+    'Esta página fala do trabalho em si: chão de concreto e de piso frio, botinas de segurança, turnos longos e intervalos curtos. Para a dor de ficar em pé em geral, veja [por que meus pés doem depois de ficar o dia todo em pé](/pt/dor-nos-pes-ficar-em-pe/). Se você trabalha em hospital, [dor nos pés na enfermagem](/pt/dor-nos-pes-ficar-em-pe/) fala dos plantões de 12\u00A0horas e das escalas que mudam.',
   ],
   toc: true,
   takeaways: [

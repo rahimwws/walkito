@@ -141,7 +141,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
       bullets: [
         'A [dor no antepé](/pt/metatarsalgia-dor-na-planta-do-pe/) pode vir de carga demais na parte da frente do pé quando o arco é baixo. Uma [panturrilha tensa](/pt/panturrilha-tensa/) joga o peso para a frente.',
         '[Pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala dos exercícios e dos calçados que ajudam quando um dia longo em piso duro deixa o arco doendo.',
-        '[Enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/) trata do peso dos plantões de 12\u00A0horas.',
+        '[Enfermagem e dor nos pés](/pt/dor-nos-pes-ficar-em-pe/) trata do peso dos plantões de 12\u00A0horas.',
       ],
     },
     {
@@ -154,7 +154,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
         '[Inversão com faixa](/pt/exercicios/inversao-tornozelo-faixa/) fortalece o tibial posterior.',
         '[Dor no antepé](/pt/metatarsalgia-dor-na-planta-do-pe/) fala da dor na parte da frente do pé, que se mistura com o pé chato quando a carga vai para a frente.',
         '[Pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala dos exercícios e dos calçados para dias longos em pé.',
-        '[Enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/) trata da dor nos pés de quem trabalha na área da saúde.',
+        '[Enfermagem e dor nos pés](/pt/dor-nos-pes-ficar-em-pe/) trata da dor nos pés de quem trabalha na área da saúde.',
       ],
     },
   ],

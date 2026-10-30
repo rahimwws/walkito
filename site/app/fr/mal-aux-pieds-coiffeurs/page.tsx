@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.fr.hairdressers!;
+/** Folded into /fr/mal-aux-pieds-debout-toute-la-journee/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/fr/mal-aux-pieds-debout-toute-la-journee/');
 
-export const metadata = guideMetadata(guide);
-
-export default function HairdressersFrPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/fr/mal-aux-pieds-debout-toute-la-journee/" />;
 }

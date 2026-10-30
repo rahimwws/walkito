@@ -504,7 +504,7 @@ export const HEEL_PAIN_EN: Guide = {
         ],
       },
       after: [
-        'So [insoles](/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people, though they can sit alongside stretching and strength work. The guideline does not grade shoe types, but unsupportive footwear is a commonly recognized risk factor. If your feet hurt after a long day on them, see [feet hurt from standing all day](/feet-hurt-standing-all-day/) or [nurses and foot pain](/nurses-foot-pain/).',
+        'So [insoles](/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people, though they can sit alongside stretching and strength work. The guideline does not grade shoe types, but unsupportive footwear is a commonly recognized risk factor. If your feet hurt after a long day on them, see [feet hurt from standing all day](/feet-hurt-standing-all-day/) or [nurses and foot pain](/feet-hurt-standing-all-day/).',
       ],
       cites: [CITE.guideline],
     },

@@ -141,7 +141,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
       bullets: [
         'La [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) peut venir d’un excès de charge sur l’avant du pied quand la voûte est basse. Un [mollet raide](/fr/mollets-tendus/) fait passer le poids vers l’avant.',
         '[Mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures qui aident quand une longue journée sur un sol dur laisse la [voûte douloureuse](/fr/douleur-voute-plantaire/).',
-        '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/) traite des gardes de 12\u00A0heures.',
+        '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-debout-toute-la-journee/) traite des gardes de 12\u00A0heures.',
       ],
     },
     {
@@ -154,7 +154,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
         'L’[inversion avec élastique](/fr/exercices/inversion-cheville-elastique/) renforce le muscle tibial postérieur.',
         'La [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) parle de la douleur de l’avant du pied, qui rejoint les pieds plats quand la charge passe vers l’avant.',
         '[Mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures pour les longues journées debout.',
-        '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/) traite de la douleur aux pieds propre aux soignants.',
+        '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-debout-toute-la-journee/) traite de la douleur aux pieds propre aux soignants.',
       ],
     },
   ],

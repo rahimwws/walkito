@@ -33,6 +33,7 @@ export const ABOUT_IT: About = {
         '**Lingue:** inglese, russo, spagnolo, portoghese, francese, italiano e tedesco.',
         '**Prezzo:** si scarica gratis, con un abbonamento annuale o settimanale dentro l’app. L’App Store o Google Play ti mostra il prezzo nella tua valuta prima che ti abboni.',
         '**Chi la fa:** Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito.',
+        '**Azienda:** Walkito è un prodotto di Nemy LLC, Sheridan, Wyoming, Stati Uniti.',
         '**Cosa non è:** un dispositivo medico. Walkito non fa diagnosi e non sostituisce un professionista sanitario.',
         '**Nome:** Walkito non ha niente a che fare con walkito.com, un servizio di passeggiate per cani.',
       ],
@@ -51,7 +52,7 @@ export const ABOUT_IT: About = {
       h2: 'Come facciamo ricerca',
       id: 'how-we-research',
       paragraphs: [
-        'Le guide di Walkito si basano su più di 250 studi pubblicati e linee guida cliniche. Leggiamo l’articolo completo, non solo l’abstract, prima che un numero finisca su una pagina, e ogni grado e ogni cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare. Nessun professionista sanitario abilitato ha ancora rivisto le guide.',
+        'Le guide di Walkito si basano su più di 250 studi pubblicati e linee guida cliniche. Leggiamo l’articolo completo, non solo l’abstract, prima che un numero finisca su una pagina, e ogni grado e ogni cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare. Gli esercizi dell’app Walkito sono stati controllati da una fisioterapista abilitata. Le guide di questo sito non sono ancora state riviste da un professionista sanitario.',
         'Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) ed [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
         'Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica gli dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto lo sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando escono nuovi studi. Una regola popolare che uno studio ha testato senza trovarle conferma ha l’etichetta **non confermato**.',
         'Walkito non ha sponsor, link di affiliazione o contenuti a pagamento. Niente è su una pagina perché qualcuno ha pagato. Ricontrolliamo una pagina quando esce nuova ricerca sul suo argomento. Ogni guida segue cinque regole:',
@@ -62,6 +63,13 @@ export const ABOUT_IT: About = {
         '**Le precisazioni viaggiano con le cifre.** Un risultato a tre mesi è sempre riportato insieme a quello che è successo a dodici mesi. Ogni affermazione sulla forma dell’arco dice su quali piedi è stata misurata.',
         '**Le dosi sono le dosi di partenza di Walkito.** Mostrano da dove partono gli esercizi di Walkito. Non sono una prescrizione per te.',
         '**Nessuna promessa di guarigione.** Le pagine dicono cosa ha trovato la ricerca e fin dove arrivano le prove.',
+      ],
+    },
+    {
+      h2: 'Come scriviamo e traduciamo',
+      id: 'how-we-write',
+      paragraphs: [
+        'Rahim e Rahman scrivono le guide con strumenti di scrittura basati sull’IA (Claude), partendo da studi e linee guida cliniche pubblicati. Ogni numero rimanda alla sua fonte. Prima che una nuova pagina vada online, ne controlliamo i dati sugli studi che cita. Le traduzioni sono fatte con strumenti di IA e controllate da revisori madrelingua. Quando troviamo un errore, o qualcuno ce lo segnala, correggiamo la pagina: [come segnalare un errore](#corrections).',
       ],
     },
     {
@@ -86,15 +94,16 @@ export const ABOUT_IT: About = {
       ],
     },
     {
-      h2: 'Un professionista sanitario ha rivisto le guide di Walkito?',
+      h2: 'Un professionista sanitario ha rivisto Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Nessun professionista sanitario abilitato ha ancora rivisto le guide di Walkito. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.',
-        'Quando un professionista le rivedrà, questa pagina riporterà il suo nome, le sue qualifiche e cosa ha controllato. Fino ad allora, nessuna pagina di questo sito dichiara una revisione medica.',
+        'Gli esercizi dell’app Walkito sono stati controllati da una fisioterapista abilitata. Le guide di questo sito non sono ancora state riviste da un professionista sanitario. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.',
+        'Quando un professionista sanitario rivedrà le guide, questa pagina riporterà il suo nome, le sue qualifiche e cosa ha controllato. Fino ad allora, nessuna pagina di questo sito dichiara una revisione medica.',
       ],
     },
     {
       h2: 'Come segnalo un errore?',
+      id: 'corrections',
       paragraphs: [
         `Per segnalare un errore su questo sito, scrivi a ${SUPPORT_EMAIL}. Può essere una cifra che non corrisponde alla sua fonte, una dose che sembra sbagliata o un link che non funziona. Correggiamo direttamente la pagina.`,
         'Ogni pagina mostra la data in cui il suo contenuto è cambiato l’ultima volta. Quella data cambia solo quando il contenuto cambia davvero.',
