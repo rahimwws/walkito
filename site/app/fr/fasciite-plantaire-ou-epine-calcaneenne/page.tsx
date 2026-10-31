@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.fr.pfVsHeelSpur!;
+/** Folded into /fr/epine-calcaneenne-exercices/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/fr/epine-calcaneenne-exercices/');
 
-export const metadata = guideMetadata(guide);
-
-export default function PfVsHeelSpurFrPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/fr/epine-calcaneenne-exercices/" />;
 }

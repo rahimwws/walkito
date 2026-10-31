@@ -188,7 +188,7 @@ export const PF_VS_ACHILLES_IT: Guide = {
         {
           list: [
             'Una sporgenza ossea dietro il tallone con una zona dolente e gonfia dove arriva la scarpa: [morbo di Haglund](/it/morbo-di-haglund/) o borsite retrocalcaneare, spesso insieme a un dolore inserzionale all’Achille.',
-            'Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/).',
+            'Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](/it/spina-calcaneare-esercizi/).',
             'Un dolore profondo, come un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri: [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/).',
             'Dolore su entrambi i lati del tallone quando lo stringi, dopo un aumento improvviso di camminata o corsa: possibile frattura da stress, che va valutata da un medico.',
             'Bruciore, formicolio o intorpidimento: forse un nervo compresso.',

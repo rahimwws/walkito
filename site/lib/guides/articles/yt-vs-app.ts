@@ -137,7 +137,7 @@ export const YT_VS_APP_EN: Guide = {
             'you want to track whether things are changing',
           ],
         },
-        'Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](/plantar-fasciitis-treatment-cost/). For two simple apps compared with Walkito, see [Walkito vs PlantarCare](/walkito-vs-plantarcare/) and [Walkito vs the Plantar Fasciitis Exercises app](/walkito-vs-plantar-fasciitis-exercises-app/).',
+        'Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](/plantar-fasciitis-treatment-cost/). For two simple apps compared with Walkito, see [Walkito vs PlantarCare](/best-app-for-plantar-fasciitis/) and [Walkito vs the Plantar Fasciitis Exercises app](/best-app-for-plantar-fasciitis/).',
       ],
     },
   ],

@@ -24,7 +24,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
   lede:
     'Übungen lösen keinen Fersensporn auf. Der Sporn ist Knochen, und Knochen schrumpft nicht durch Dehnen. Aber der Schmerz, den Menschen mit Fersensporn spüren, kommt fast immer von der Plantarfaszie am Sporn und von der Wade, die über die Achillessehne an der Ferse zieht, nicht vom Knochen selbst. Die Übungen unten zielen auf diese Weichteile. Es sind dieselben, die die Leitlinie von 2023 zu Fersenschmerzen bei [Plantarfasziitis](/de/plantarfasziitis/) empfiehlt.',
   intro: [
-    'Wenn du zuerst den Unterschied zwischen Fersensporn und Plantarfasziitis verstehen willst, lies [Plantarfasziitis oder Fersensporn](/de/plantarfasziitis-oder-fersensporn/). Diese Seite ist die praktische Routine: welche Übungen, wie viele, wie du steigerst und wann du aufhörst.',
+    'Wenn du zuerst den Unterschied zwischen Fersensporn und Plantarfasziitis verstehen willst, lies [Plantarfasziitis oder Fersensporn](/de/fersensporn-uebungen/). Diese Seite ist die praktische Routine: welche Übungen, wie viele, wie du steigerst und wann du aufhörst.',
   ],
   takeaways: [
     'Übungen bei Fersensporn wirken, indem sie an der Plantarfaszie am Sporn und an den Wadenmuskeln ansetzen, die über die Achillessehne an der Ferse ziehen, nicht indem sie den Sporn selbst verändern.',

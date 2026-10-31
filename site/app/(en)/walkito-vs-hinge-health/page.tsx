@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_EN, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_EN.vsHinge;
+/** Folded into /hinge-health-alternatives/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/hinge-health-alternatives/');
 
-export const metadata = guideMetadata(guide);
-
-export default function WalkitoVsHingeHealth() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/hinge-health-alternatives/" />;
 }

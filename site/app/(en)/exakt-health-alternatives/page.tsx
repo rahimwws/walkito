@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_EN, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_EN.exaktAlt;
+/** Folded into /walkito-vs-exakt-health/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/walkito-vs-exakt-health/');
 
-export const metadata = guideMetadata(guide);
-
-export default function ExaktHealthAlternatives() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/walkito-vs-exakt-health/" />;
 }

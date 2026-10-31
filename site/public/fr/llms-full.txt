@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/fr/
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -177,7 +177,7 @@ Les deux aident, et le renforcement agit plus vite. Dans un essai sur 48 personn
 
 #### Une épine calcanéenne, est-ce la même chose qu’une fasciite plantaire ?
 
-Pas exactement. On dit souvent « [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) » pour parler de fasciite plantaire, mais au sens strict, une épine calcanéenne est une excroissance osseuse visible à la radio. La fasciite plantaire est une douleur qui vient de la bande de tissu sous le pied. Les exercices de cette page sont ceux que la recommandation de 2023 note pour la douleur sous le talon. Les [exercices pour l’épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) reprennent la même routine quand une radio montre une épine. Seul un professionnel de santé peut dire ce qui cause la vôtre.
+Pas exactement. On dit souvent « [épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) » pour parler de fasciite plantaire, mais au sens strict, une épine calcanéenne est une excroissance osseuse visible à la radio. La fasciite plantaire est une douleur qui vient de la bande de tissu sous le pied. Les exercices de cette page sont ceux que la recommandation de 2023 note pour la douleur sous le talon. Les [exercices pour l’épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) reprennent la même routine quand une radio montre une épine. Seul un professionnel de santé peut dire ce qui cause la vôtre.
 
 #### À quelle fréquence faire les exercices pour la fasciite plantaire ?
 
@@ -6126,7 +6126,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Une revue de 2020 indique qu’environ 90 % des personnes vont mieux avec des soins non chirurgicaux, souvent en quelques mois. Un suivi plus long de 174 patients donne une image plus détaillée : environ la moitié n’avait plus de symptômes à cinq ans, et 46 % avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre eux ne signalaient que des symptômes légers.
 
-La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/), non.
+La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une [épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/), non.
 
 La question utile n’est pas « dans combien de semaines ce sera fini ? » mais « ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier ? ». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire ?](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.
 
@@ -7214,7 +7214,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 
 ### À qui une attelle de nuit peut-elle convenir, et qui devrait s’en passer ?
 
-**Une attelle de nuit convient le mieux si votre fasciite plantaire suit le schéma classique** : les premiers pas au lever sont le pire moment de la journée, et cela continue malgré des étirements réguliers. C’est exactement le groupe que cite la recommandation. Dans l’essai de Powell, la réponse à l’attelle ne dépendait ni du type de pied, ni du poids, ni de la présence d’une [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) à la radio.
+**Une attelle de nuit convient le mieux si votre fasciite plantaire suit le schéma classique** : les premiers pas au lever sont le pire moment de la journée, et cela continue malgré des étirements réguliers. C’est exactement le groupe que cite la recommandation. Dans l’essai de Powell, la réponse à l’attelle ne dépendait ni du type de pied, ni du poids, ni de la présence d’une [épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) à la radio.
 
 Une attelle a moins de sens si votre talon fait mal surtout quand vous êtes allongé au lit, ou s’il vous réveille. C’est un autre schéma, et [douleur au talon la nuit](https://walkito.site/fr/douleur-talon-la-nuit/) explique les causes à écarter. Une attelle convient mal aussi si vous avez une mauvaise sensibilité ou une mauvaise circulation dans les pieds, car les sangles et les coques peuvent frotter une peau que vous ne sentez pas.
 
@@ -7319,7 +7319,7 @@ La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée 
 - **Être une femme.** Pour 100 hommes qui devenaient asymptomatiques par an, seules 49 femmes l’étaient (rapport de risques, ou hazard ratio, 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).
 - **Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).
 
-L’[IMC](https://walkito.site/fr/poids-et-fasciite-plantaire/), l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens : une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.
+L’[IMC](https://walkito.site/fr/poids-et-fasciite-plantaire/), l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens : une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.
 
 Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](https://walkito.site/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.
 
@@ -7435,182 +7435,6 @@ Le signe le plus clair est une douleur du matin plus faible : les premiers pas s
 #### Que ne faut-il pas faire si la fasciite plantaire ne s’améliore pas ?
 
 N’arrêtez pas les exercices dès que la douleur du matin se calme, et ne courez pas après un raccourci unique au lieu des bases. Une douleur qui se calme avant que le fascia se soit adapté est une raison fréquente du retour des symptômes. Si la douleur stagne ou s’aggrave pendant plusieurs mois malgré les étirements, le renforcement et des chaussures qui soutiennent le pied, il faut consulter un professionnel de santé, pas attendre plus longtemps.
-
-## Fasciite plantaire ou épine calcanéenne : est-ce la même chose ?
-
-Language: French (Français) · https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/ · published 2026-10-08 · updated 2026-10-08
-
-Une épine calcanéenne est une excroissance osseuse sous l’os du talon. La fasciite plantaire est une irritation du fascia plantaire, l’épaisse bande de tissu qui va de cet os à vos orteils. Les deux apparaissent souvent ensemble, mais ce n’est pas le même problème, et ce n’est en général pas l’épine qui fait mal. Beaucoup de personnes avec une épine visible à la radio n’ont aucune douleur.
-
-- Dans une étude sur 216 personnes âgées de 62 à 94 ans, 55 % avaient au moins une épine calcanéenne plantaire à la radio, et l’épine était liée à l’obésité et à l’arthrose mais pas à la posture du pied (Menz et coll., 2008). C’est un échantillon de personnes âgées, pas un chiffre pour la population générale.
-- Dans une étude sur 530 personnes de 50 ans et plus ayant mal aux pieds, l’épine calcanéenne et un fascia plantaire épaissi apparaissaient en général ensemble, et une épine seule était rare (6 % des pieds). La douleur au talon était liée à la présence des deux à la fois (Menz et coll., 2019).
-- La recommandation de 2023 sur la douleur au talon fait de la fasciite plantaire la cause la plus fréquente de douleur sous le talon et note que l’imagerie n’est en général pas nécessaire quand l’examen clinique oriente déjà vers une fasciite plantaire (Koc et coll., 2023).
-- L’étude de Menz 2008 note elle-même que des travaux antérieurs en population générale situaient la fréquence de l’épine calcanéenne entre 11 et 16 %, bien en dessous des 55 % trouvés dans son propre échantillon de personnes âgées (Menz et coll., 2008).
-- Les exercices utiles contre la douleur de la fasciite plantaire agissent aussi sur le tissu mou autour d’une épine calcanéenne. L’exercice ne dissout pas l’épine, mais c’est rarement elle qui demande de l’attention.
-
-### Une épine calcanéenne, est-ce la même chose qu’une fasciite plantaire ?
-
-**Une épine calcanéenne et une fasciite plantaire ne sont pas la même chose.** La fasciite plantaire est un problème de tissu mou : le fascia plantaire, l’épaisse bande qui va de l’os du talon aux orteils, s’irrite, en général là où il s’attache à l’os. Une épine calcanéenne est une excroissance osseuse sous l’os du talon (le calcanéum). Les deux coexistent souvent, mais chacune peut apparaître sans l’autre.
-
-La fasciite plantaire donne la douleur vive, en coup de poignard, que les gens décrivent sous le talon, surtout aux premiers pas du matin ou après être resté assis. Une douleur à l’arrière du talon est un autre problème : voyez [fasciite plantaire ou tendinite d’Achille](https://walkito.site/fr/fasciite-plantaire-ou-tendinite-achille/). La recommandation de 2023 sur la douleur au talon la définit comme une douleur « plus marquée à la mise en charge au réveil ou après une période de repos ». Une épine calcanéenne, elle, est une constatation structurelle à la radio. Elle peut donner ou non ses propres symptômes.
-
-La confusion se comprend. Pendant des décennies, on a pensé que l’épine calcanéenne était la cause de la douleur sous le talon. Cette idée a été largement remplacée par des données montrant que les épines sont fréquentes chez des personnes sans douleur, et que beaucoup de personnes atteintes de fasciite plantaire n’ont aucune épine.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### L’épine calcanéenne fait-elle vraiment mal ?
-
-**La plupart des épines calcanéennes ne font pas mal.** La recherche montre de façon constante qu’on trouve des épines chez des personnes sans aucun symptôme au talon, et que retirer l’épine ne fait pas disparaître la douleur de façon fiable.
-
-Dans une étude sur 530 personnes de 50 ans et plus qui avaient mal aux pieds :
-
-- La radio a trouvé une épine calcanéenne dans 26,5 % des pieds.
-- L’échographie a trouvé un fascia plantaire épaissi dans 47,3 % des pieds.
-- Les deux allaient en général ensemble, et une épine seule était rare (6 % des pieds).
-- Les personnes qui avaient mal au talon avaient environ deux fois plus de chances d’avoir les deux à la fois (Menz et coll., 2019).
-
-Autrement dit, l’épine apparaît rarement sans le changement du tissu mou qui l’accompagne.
-
-Par ailleurs, dans une étude sur 216 personnes âgées de 62 à 94 ans, 55 % avaient au moins une épine calcanéenne plantaire à la radio. Les épines étaient liées à l’obésité, à l’arthrose et à des antécédents de douleur au talon, mais pas à la posture du pied. Les auteurs ont avancé que l’épine pourrait être une réponse d’adaptation à la compression verticale du talon, et non le résultat de la traction du fascia plantaire sur l’os (Menz et coll., 2008).
-
-L’étude de Menz 2008 note que des travaux antérieurs en population générale avaient rapporté une fréquence de l’épine calcanéenne de 11 à 16 %, bien en dessous des 55 % trouvés par les auteurs dans leur propre échantillon de personnes âgées. Dans ce même échantillon, environ 6 personnes sur 10 qui avaient une épine n’avaient jamais eu mal au talon, même si la douleur au talon restait plus fréquente chez les personnes avec une épine (40 %) que sans (12 %) (Menz et coll., 2008). L’épine augmente le risque, mais elle ne décide pas qui finira par avoir mal.
-
-Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### L’épine calcanéenne est-elle fréquente chez les personnes sans douleur ?
-
-L’épine calcanéenne est fréquente. Sa fréquence dépend de l’âge et de la méthode utilisée pour la chercher.
-
-L’étude de Menz 2008 sur des personnes âgées cite des travaux antérieurs qui rapportaient une fréquence de l’épine calcanéenne de 11 à 16 % en population générale, bien en dessous des 55 % trouvés par les auteurs dans leur propre échantillon de 216 personnes de 62 à 94 ans. Une autre étude par IRM sur 77 volontaires sans symptômes (âge moyen 48 ans, de 23 à 83 ans) a trouvé une épine calcanéenne chez 15 d’entre eux, soit 19 % (Ehrmann et coll., 2014).
-
-Le schéma est constant : une grande partie des personnes qui ont une épine n’ont aucun symptôme, et **une épine seule ne prédit pas si quelqu’un aura mal au talon.** C’est pourquoi la recommandation de 2023 sur la douleur au talon ne fait pas de l’épine calcanéenne une raison de changer d’approche pour les exercices.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### Que dit la recommandation de 2023 sur l’épine calcanéenne ?
-
-La recommandation de pratique clinique de 2023 sur la douleur au talon, publiée dans le Journal of Orthopaedic and Sports Physical Therapy, fait de la fasciite plantaire la cause la plus fréquente de douleur sous le talon. Elle cite le « syndrome de l’épine calcanéenne » parmi plusieurs diagnostics différentiels, avec :
-
-- Le [syndrome du coussinet graisseux](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/).
-- L’irritation nerveuse.
-- La fracture de fatigue du calcanéum.
-
-La recommandation ne conseille pas l’imagerie en premier quand l’examen clinique oriente déjà vers une fasciite plantaire. Elle indique que l’imagerie n’est « en général pas indiquée chez les patients qui remplissent les critères cliniques de fasciite plantaire, tant que les soins conservateurs n’ont pas échoué ». Quand l’imagerie est envisagée, la radio en charge vient en premier, puis l’échographie ou l’IRM si besoin.
-
-En pratique, un professionnel de santé qui voit le schéma typique (douleur aux premiers pas du matin, sensibilité à l’intérieur du talon et cheville peu souple) peut commencer les étirements et le renforcement sans attendre une radio. **La présence ou l’absence d’une épine sur une radio faite plus tard ne change pas le plan d’exercices.**
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Faut-il une radio pour distinguer fasciite plantaire et épine calcanéenne ?
-
-**En général, une radio n’est pas nécessaire pour une fasciite plantaire.** Le diagnostic est clinique : il repose sur l’endroit de la douleur, le moment où elle survient et ce qui l’aggrave. Une radio peut montrer une épine calcanéenne, mais en trouver une ne change pas ce que vous faites contre la douleur, et ne pas en trouver n’écarte pas une fasciite plantaire.
-
-L’imagerie devient utile :
-
-- Quand la douleur ne suit pas le schéma typique de la fasciite plantaire.
-- Quand elle ne s’est pas améliorée après plusieurs semaines de soins conservateurs.
-- Quand un professionnel de santé soupçonne autre chose, comme une [fracture de fatigue](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/), un problème nerveux ou une déchirure du fascia plantaire.
-
-L’échographie peut mesurer l’épaisseur du fascia plantaire (au-delà de 4 mm, il est en général considéré comme épaissi), et l’IRM peut montrer des détails des tissus mous que la radio ne voit pas.
-
-Si on vous a déjà dit qu’une radio montre une épine calcanéenne, l’épine elle-même n’a presque jamais besoin d’une prise en charge à part. Les exercices et étirements utiles en cas de fasciite plantaire agissent aussi sur le tissu mou autour de l’épine. Voir [épine calcanéenne : exercices](https://walkito.site/fr/epine-calcaneenne-exercices/) pour la routine complète.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Si l’épine n’est pas le problème, qu’est-ce qui l’est ?
-
-La douleur vient en général du fascia plantaire et des tissus autour, pas de l’os. Le fascia plantaire s’attache sous l’os du talon. Quand il est surchargé, surtout chez quelqu’un qui a un [mollet raide](https://walkito.site/fr/mollets-tendus/), un IMC élevé ou de longues heures debout, ce point d’attache s’irrite. Cette irritation, c’est la fasciite plantaire.
-
-Un mollet raide est l’un des facteurs de risque les plus forts. Dans une étude cas-témoins appariée sur 50 personnes atteintes de fasciite plantaire et 100 témoins :
-
-- Une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, avait l’odds ratio le plus élevé de tous les facteurs mesurés.
-- Rester debout la majeure partie de la journée de travail était aussi significatif, avec un odds ratio de 3,6 (Riddle et coll., 2003).
-
-L’épine, quand elle est là, se trouve tout près. Elle a pu se former au fil des mois ou des années en réponse au même stress mécanique qui a irrité le fascia. Mais **ce sont le fascia et le mollet qui répondent aux étirements et au renforcement, pas l’os.** C’est pourquoi la recommandation conseille l’exercice, pas l’ablation de l’épine.
-
-Pour une vue d’ensemble de la fasciite plantaire, avec les causes, les facteurs de risque et ce que conseille la recommandation, voir [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/).
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Faut-il parfois retirer une épine calcanéenne ?
-
-L’ablation chirurgicale d’une épine calcanéenne est rare et n’est pas une option de première intention. **La recommandation de 2023 ne conseille pas de retirer l’épine en cas de fasciite plantaire.** Plusieurs études ont montré que la douleur de la fasciite plantaire peut disparaître avec des soins conservateurs même quand l’épine reste visible à la radio. L’American Academy of Orthopaedic Surgeons dit clairement que « les épines calcanéennes ne causent pas la douleur de la fasciite plantaire » et que « la douleur de la fasciite plantaire peut être traitée sans retirer l’épine ».
-
-La chirurgie est parfois envisagée quand la douleur n’a pas répondu à des mois de soins conservateurs, mais l’intervention est en général une libération partielle du fascia plantaire, pas une ablation de l’épine. Si l’épine est retirée au cours de cette intervention, les données suggèrent que le bénéfice vient de la libération du fascia, pas du retrait de l’os.
-
-La grande majorité des personnes qui ont mal au talon et une épine vont mieux avec les mêmes étirements, le même travail du mollet et la même gestion de la charge que les personnes sans épine. Voir [épine calcanéenne : exercices](https://walkito.site/fr/epine-calcaneenne-exercices/) pour la routine pratique.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### Quels exercices aident quand on a une épine calcanéenne ?
-
-Les exercices contre la douleur de l’épine calcanéenne sont les mêmes que ceux que la recommandation conseille pour la fasciite plantaire : étirement du fascia plantaire, étirement du mollet et renforcement progressif du mollet. L’exercice ne dissout pas l’épine. Il agit sur le tissu mou qui cause réellement la douleur.
-
-La recommandation donne aux étirements du fascia plantaire et du mollet sa meilleure note, **A**, et au renforcement musculaire un **B**. Ces notes s’appliquent qu’il y ait une épine ou non. [Épine calcanéenne : exercices](https://walkito.site/fr/epine-calcaneenne-exercices/) présente la routine complète avec les séries, les maintiens et la progression. Voici trois exercices pour commencer.
-
-- **Étirement du fascia plantaire** (10 maintiens de 10 secondes, chaque pied): Asseyez-vous et croisez une cheville sur l’autre genou. Tirez doucement les orteils vers vous jusqu’à sentir un étirement le long de la voûte. Faites-le avant de vous lever le matin et après être resté longtemps assis.
-- **Étirement du mollet (genou tendu)** (2 maintiens de 30 secondes, chaque jambe): Mains contre un mur. Jambe arrière tendue, talon au sol, hanches vers l’avant. Un mollet raide tire sur le talon par le tendon d’Achille, ce qui ajoute de la charge au fascia.
-- **Montées sur pointes, deux pieds** (3 séries de 10, deux pieds): Debout sur les deux pieds, montez bien droit au-dessus des gros orteils, puis redescendez lentement. Cet exercice développe la capacité du mollet sans forte charge sur le talon.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
-
-### Consultez d’abord un professionnel de santé si
-
-- la douleur a commencé après une blessure ou une chute, ce qui peut évoquer une déchirure du fascia plantaire plutôt qu’une fasciite
-- vous ne pouvez pas poser le pied, ou vous boitez
-- presser les côtés du talon reproduit la douleur, ce qui peut évoquer une fracture de fatigue plutôt qu’une épine ou une fasciite
-- la douleur s’accompagne d’engourdissements, de fourmillements ou de brûlures, ce qui peut évoquer une compression nerveuse
-- le talon est rouge, chaud ou gonflé, ou vous avez de la fièvre
-- les deux talons font mal et la raideur du matin dure plus de 30 minutes, surtout si d’autres articulations sont raides ou gonflées
-- la douleur vous empêche de dormir ou est présente au repos, pas seulement en appui
-- elle ne s’est pas améliorée après plusieurs semaines d’étirements, de travail du mollet et de charge réduite
-- vous avez du diabète, une sensibilité réduite des pieds ou une mauvaise circulation
-
-### En faire un plan
-
-Que votre radio montre une épine ou non, l’approche par l’exercice est la même. Walkito construit un plan une semaine à la fois autour d’un objectif. Pour la douleur au talon, le premier objectif est une douleur du matin à 1/10 ou moins pendant 14 jours de suite. Les étirements commencent dès le premier jour. Le renforcement du mollet s’ajoute quand le premier objectif passe du calme de la douleur au développement de la capacité.
-
-#### Épine calcanéenne et fasciite plantaire, c’est pareil ?
-
-Non. Une épine calcanéenne est une excroissance osseuse sous l’os du talon. La fasciite plantaire est une irritation du fascia plantaire, l’épaisse bande de tissu qui va du talon aux orteils. Les deux apparaissent souvent ensemble, mais une épine peut exister sans douleur et une fasciite plantaire peut survenir sans épine. La recommandation de 2023 sur la douleur au talon les traite comme deux constatations séparées.
-
-#### Une épine calcanéenne fait-elle mal ?
-
-La plupart des épines calcanéennes ne font pas mal. Dans une étude sur 530 personnes de 50 ans et plus ayant mal aux pieds, une épine seule était rare, et la douleur au talon était liée à une épine accompagnée d’un fascia plantaire épaissi (Menz et coll., 2019). Dans une autre étude sur 216 personnes âgées, environ 6 sur 10 de celles qui avaient une épine n’avaient ni douleur actuelle ni douleur passée au talon (Menz et coll., 2008).
-
-#### Peut-on avoir une fasciite plantaire sans épine calcanéenne ?
-
-Oui. Beaucoup de personnes atteintes de fasciite plantaire n’ont aucune épine à la radio. La douleur vient du fascia plantaire irrité, pas de l’os. La recommandation de 2023 n’exige pas d’imagerie pour diagnostiquer une fasciite plantaire quand le schéma clinique est clair : douleur aux premiers pas du matin, sensibilité au talon et mollet raide.
-
-#### Les exercices font-ils disparaître l’épine calcanéenne ?
-
-Non. Les étirements et le renforcement ne dissolvent pas une épine calcanéenne. Ils agissent sur le tissu mou autour, surtout le fascia plantaire et les muscles du mollet, qui sont en général à l’origine de la douleur. L’épine elle-même demande rarement de l’attention, et la recommandation conseille les mêmes exercices qu’il y ait une épine ou non.
-
-#### Faut-il faire une radio si je pense avoir une épine calcanéenne ?
-
-La recommandation de 2023 indique que l’imagerie n’est en général pas nécessaire quand l’examen clinique oriente vers une fasciite plantaire. Une radio peut montrer une épine, mais en trouver une ne change pas le plan d’exercices, et ne pas en trouver n’écarte pas une fasciite plantaire. L’imagerie devient utile quand la douleur ne s’améliore pas après plusieurs semaines, ou quand un professionnel de santé soupçonne une fracture de fatigue ou un problème nerveux.
-
-#### L’épine calcanéenne est-elle fréquente ?
-
-Sa fréquence dépend de l’âge. Des travaux antérieurs cités dans l’étude de Menz 2008 rapportaient 11 à 16 % de la population générale avec une épine calcanéenne plantaire à la radio. Dans une étude sur 216 personnes de 62 à 94 ans, 55 % avaient au moins une épine plantaire (Menz et coll., 2008). L’épine devient plus fréquente avec l’âge, un IMC plus élevé et l’arthrose.
-
-#### Quand faut-il opérer une épine calcanéenne ?
-
-Presque jamais. La recommandation ne conseille pas de retirer l’épine en cas de fasciite plantaire. Environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements, le renforcement du mollet et la gestion de la charge (Latt et coll., 2020). Quand la chirurgie est envisagée après des mois de soins conservateurs sans succès, elle consiste en général à libérer le fascia plantaire, pas à retirer l’épine.
-
-#### Que se passe-t-il si on continue à marcher avec une épine calcanéenne ?
-
-Marcher ne va pas enfoncer l’épine dans les tissus voisins. Une douleur qui se réveille à la marche vient en général du fascia plantaire irrité à côté de l’épine, pas de l’os lui-même. La recommandation de 2023 conseille d’adapter la charge, comme la distance ou l’allure, plutôt que d’arrêter, si la marche aggrave le talon le lendemain matin.
-
-#### Est-il bon de masser une épine calcanéenne ?
-
-Un massage doux autour d’une épine calcanéenne peut détendre les tissus mous, mais il ne change pas l’os. Faire rouler la plante du pied avec une pression ferme, mais pas vive, peut assouplir le fascia et le mollet, les tissus qui causent en général la douleur. La recommandation note A la thérapie manuelle par un professionnel de santé ; l’automassage relève du confort et ne remplace pas les étirements.
 
 ## Strapping et fasciite plantaire : ce qu’il fait, comment le poser et quand arrêter
 
@@ -9350,7 +9174,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 Plusieurs problèmes se situent tout près et peuvent donner des sensations proches (Choo et coll., 2020 ; Tu, 2018) :
 
 - Une bosse osseuse à l’arrière du talon avec une zone douloureuse et gonflée au niveau du bord de la chaussure : [maladie de Haglund](https://walkito.site/fr/maladie-de-haglund/) ou bursite rétrocalcanéenne, souvent associée à une douleur d’Achille d’insertion.
-- Une épine calcanéenne à la radio : fréquente, et en général pas la cause de la douleur. Voir [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/).
+- Une épine calcanéenne à la radio : fréquente, et en général pas la cause de la douleur. Voir [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/).
 - Une douleur profonde, comme une contusion, au milieu du coussinet du talon, pire sur sol dur : [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/).
 - Une douleur des deux côtés du talon quand on le serre, après une hausse brutale de la marche ou de la course : possible fracture de fatigue, qui relève d’un professionnel de santé.
 - Brûlure, picotements ou engourdissement : peut-être un nerf comprimé.
@@ -9484,7 +9308,7 @@ Pour le talon en particulier, une étude finlandaise a porté sur des recrues mi
 
 Une revue systématique de 2016 sur les fractures de fatigue du membre inférieur a trouvé une sensibilité de la radio allant de 12 à 56 %, contre 68 à 99 % pour l’IRM. Les auteurs ont désigné l’IRM comme l’examen le plus sensible et le plus spécifique et ont averti que les radios risquent de donner des faux négatifs au début (Wright et coll., 2016).
 
-Un professionnel de santé qui suspecte une fracture peut donc refaire la radio après deux à trois semaines, ou demander directement une IRM si une réponse rapide compte (Patel et coll., 2011). Pour la fasciite plantaire, la recommandation de 2023 indique que l’imagerie n’est « en général pas indiquée chez les patients qui remplissent les critères de l’examen clinique de la fasciite plantaire, tant que les traitements conservateurs n’ont pas échoué » (Koc et coll., 2023). La page [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) explique pourquoi une épine visible à la radio ne tranche pas la question non plus.
+Un professionnel de santé qui suspecte une fracture peut donc refaire la radio après deux à trois semaines, ou demander directement une IRM si une réponse rapide compte (Patel et coll., 2011). Pour la fasciite plantaire, la recommandation de 2023 indique que l’imagerie n’est « en général pas indiquée chez les patients qui remplissent les critères de l’examen clinique de la fasciite plantaire, tant que les traitements conservateurs n’ont pas échoué » (Koc et coll., 2023). La page [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) explique pourquoi une épine visible à la radio ne tranche pas la question non plus.
 
 Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
@@ -10476,7 +10300,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 Une radiographie normale ne l’exclut pas : chez 30 recrues ayant une lésion de fatigue du talon à l’IRM, les radiographies standard ne la montraient que dans 15 % des cas (Sormaala et coll., 2006). La comparaison point par point se trouve dans [fasciite plantaire ou fracture de fatigue](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/).
 
-La douleur du coussinet graisseux est en général décrite comme une douleur profonde, comme un bleu, au milieu du talon, pire sur les sols durs et pieds nus. Comme la fracture de fatigue, elle est plutôt liée à l’activité (Latt et coll., 2020), et dans une clinique, elle touchait plus souvent les deux talons et était aggravée par la station debout (Yi et coll., 2011). C’était la deuxième cause la plus fréquente chez les 250 personnes citées plus haut, avec 14,8 % (Yi et coll., 2011). Une revue de 2022 n’a trouvé que sept études originales sur le sujet : une grande partie des conseils repose donc sur l’expérience, pas sur des essais (Chang et coll., 2022). Plus de détails dans [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/), et sur la place de l’épine calcanéenne, dans [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/).
+La douleur du coussinet graisseux est en général décrite comme une douleur profonde, comme un bleu, au milieu du talon, pire sur les sols durs et pieds nus. Comme la fracture de fatigue, elle est plutôt liée à l’activité (Latt et coll., 2020), et dans une clinique, elle touchait plus souvent les deux talons et était aggravée par la station debout (Yi et coll., 2011). C’était la deuxième cause la plus fréquente chez les 250 personnes citées plus haut, avec 14,8 % (Yi et coll., 2011). Une revue de 2022 n’a trouvé que sept études originales sur le sujet : une grande partie des conseils repose donc sur l’expérience, pas sur des essais (Chang et coll., 2022). Plus de détails dans [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/), et sur la place de l’épine calcanéenne, dans [fasciite plantaire ou épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.

@@ -22,7 +22,7 @@ export const VS_PLANTARCARE_EN: Guide = {
   lede:
     'PlantarCare is a free heel pain tracker for iPhone with a simple daily stretch routine, no account and no in-app purchases. Walkito is a subscription exercise app for iPhone and Android that builds a plan around goals and changes each session from a morning pain check-in. Pick PlantarCare if you want free, simple tracking; pick Walkito if you want an adaptive plan with progress tests, or an app for Android.',
   intro: [
-    'Walkito makes this page, so we are not neutral. Every PlantarCare fact comes from its App Store listing, checked October 23, 2026; we did not install or test it. Walkito facts come from the app itself. Both apps are new, and both are exercise and tracking apps, not medical devices. We also compared Walkito with [the Plantar Fasciitis Exercises app](/walkito-vs-plantar-fasciitis-exercises-app/).',
+    'Walkito makes this page, so we are not neutral. Every PlantarCare fact comes from its App Store listing, checked October 23, 2026; we did not install or test it. Walkito facts come from the app itself. Both apps are new, and both are exercise and tracking apps, not medical devices. We also compared Walkito with [the Plantar Fasciitis Exercises app](/best-app-for-plantar-fasciitis/).',
   ],
   takeaways: [
     'PlantarCare is free with no in-app purchases and no account, and keeps your records on your phone. Walkito is a weekly or yearly subscription, with the price shown in the store.',

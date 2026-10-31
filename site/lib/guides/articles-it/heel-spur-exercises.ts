@@ -28,7 +28,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
   lede:
     'L’esercizio non scioglie uno sperone calcaneare (o spina calcaneare). Lo sperone è osso, e l’osso non si riduce con lo stretching. Ma il dolore che si sente quando si ha uno sperone calcaneare viene quasi sempre dalla fascia plantare e dal polpaccio intorno, non dall’osso in sé. Gli esercizi qui sotto lavorano su quei tessuti molli. Sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la [fascite plantare](/it/fascite-plantare/).',
   intro: [
-    'Se prima vuoi capire la differenza tra sperone calcaneare e fascite plantare, vedi [fascite plantare o sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/). Questa pagina è la routine pratica: quali esercizi, quanti, come progredire e quando fermarti.',
+    'Se prima vuoi capire la differenza tra sperone calcaneare e fascite plantare, vedi [fascite plantare o sperone calcaneare](/it/spina-calcaneare-esercizi/). Questa pagina è la routine pratica: quali esercizi, quanti, come progredire e quando fermarti.',
   ],
   takeaways: [
     'Gli esercizi per lo sperone calcaneare funzionano perché lavorano sulla fascia plantare e sui muscoli del polpaccio intorno allo sperone, non perché cambiano lo sperone.',

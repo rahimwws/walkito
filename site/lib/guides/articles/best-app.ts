@@ -5,13 +5,13 @@ export const BEST_APP_EN: Guide = {
   lang: 'en',
   page: 'bestApp',
   published: '2026-10-04',
-  updated: '2026-10-26',
+  updated: '2026-10-30',
   title: 'Best App for Plantar Fasciitis (2026): 7 Apps Compared',
   description:
     'The best plantar fasciitis app for runners, for free, through your employer or for flat feet: 7 apps compared on price, platform, evidence and ratings.',
   h1: 'Best app for plantar fasciitis in 2026: 7 apps compared',
   lede:
-    'The best app for plantar fasciitis depends on your situation: [Exakt Health](/walkito-vs-exakt-health/) for runners, [Hinge Health](/walkito-vs-hinge-health/) if your employer or health plan covers it ($0, with a care team), and PlantarCare if you want a free heel pain tracker. Whichever you pick should include plantar fascia and calf stretching (grade A in the 2023 heel pain guideline) and strength training (grade B). Walkito makes this page, so we list it apart at the end.',
+    'The best app for plantar fasciitis depends on your situation: [Exakt Health](/walkito-vs-exakt-health/) for runners, Hinge Health if your employer or health plan covers it ($0, with a care team), and PlantarCare if you want a free heel pain tracker. Whichever you pick should include plantar fascia and calf stretching (grade A in the 2023 heel pain guideline) and strength training (grade B). Walkito makes this page, so we list it apart at the end.',
   intro: [
     'We compared seven apps with exercises for [plantar fasciitis](/plantar-fasciitis/), [flat feet](/flat-feet/) or general foot pain, checked against each app\u2019s App Store or Google Play listing and official website in October 2026.',
   ],
@@ -140,7 +140,8 @@ export const BEST_APP_EN: Guide = {
       h2: 'PlantarCare: the free tracker',
       paragraphs: [
         'PlantarCare is free, has no in-app purchases, and does not require an account. You log your morning first-step pain and worst daytime pain, and the app moves you through recovery stages with guided stretches, calf work, heel raises and icing reminders matched to your stage. It also trends your pain over time, logs footwear and load, and gives red-flag reminders that tell you when to see a clinician.',
-        'The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection. It is iOS only. See [Walkito vs PlantarCare](/walkito-vs-plantarcare/) for the two side by side.',
+        'It needs no account, and its listing says your health records stay on your device. Its App Store listing shows English only, though its latest release notes say it is now in 15 languages. It was first released on July 15, 2026 and last updated on July 23, 2026.',
+        'The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection. It is iOS only.',
       ],
     },
     {
@@ -154,7 +155,8 @@ export const BEST_APP_EN: Guide = {
       h2: 'Plantar Fasciitis Exercises: a basic app with a paywall',
       paragraphs: [
         'This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it. Its single iOS rating is 1 out of 5, about that charge.',
-        'The exercises have text instructions rather than video, with no progression, pain tracking or adaptation. If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing first, since some exercises may sit behind a paywall. See [Walkito vs Plantar Fasciitis Exercises](/walkito-vs-plantar-fasciitis-exercises-app/) for the two side by side.',
+        'The exercises have text instructions rather than video, with no progression, pain tracking or adaptation. If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing first, since some exercises may sit behind a paywall.',
+        'Its App Store screenshots show five exercises per level, each a drawing with step-by-step text, and the app is in English only. It came to the App Store on June 24, 2026; the Android version is older and was updated on October 6, 2026.',
       ],
     },
     {
@@ -215,8 +217,12 @@ export const BEST_APP_EN: Guide = {
       a: 'Of the apps we compared, Exakt Health is the strongest fit for runners with plantar fasciitis who want a return-to-running plan. It covers 15+ running injuries, ends each rehab plan with a return-to-running phase and is certified as a medical device in the EU. It costs $19.99 a month or $59.99 for six months, with a 7-day free trial, on iOS and Android.',
     },
     {
-      q: 'Is Hinge Health free?',
-      a: 'Hinge Health is free to members whose employer or health plan covers it. You cannot buy it directly from the App Store. Check eligibility at hinge.health/covered. If you are covered, it includes a care team with physical therapists and doctors at no cost to you.',
+      q: 'Is PlantarCare free?',
+      a: 'Yes. PlantarCare\u2019s App Store listing says it is free with no in-app purchases and needs no account. Walkito is free to download, with a yearly or weekly subscription inside the app.',
+    },
+    {
+      q: 'Is PlantarCare on Android?',
+      a: 'We could not confirm it. PlantarCare is on the App Store for iPhone. On Google Play we found only a Chinese-language app that also calls itself PlantarCare (com.zach.plantarcare), from a differently named developer, so we could not tell whether it is the same app. Walkito is on both the App Store and Google Play.',
     },
     {
       q: 'Can an app replace seeing a physical therapist for plantar fasciitis?',

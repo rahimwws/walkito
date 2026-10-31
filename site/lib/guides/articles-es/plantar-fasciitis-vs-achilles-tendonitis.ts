@@ -187,7 +187,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
         {
           list: [
             'Un bulto óseo en la parte de atrás del talón con una zona adolorida e inflamada a la altura del zapato: [deformidad de Haglund](/es/deformidad-de-haglund/) o bursitis retrocalcánea, muchas veces junto con dolor de Aquiles insercional.',
-            'Un espolón en el talón en una radiografía: es común y normalmente no es la causa del dolor. Mira [fascitis plantar vs espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/).',
+            'Un espolón en el talón en una radiografía: es común y normalmente no es la causa del dolor. Mira [fascitis plantar vs espolón calcáneo](/es/ejercicios-espolon-calcaneo/).',
             'Un dolor profundo, como de moretón, en el centro de la almohadilla del talón, peor en pisos duros: [síndrome de la almohadilla de grasa del talón](/es/sindrome-almohadilla-grasa-talon/).',
             'Dolor en los dos lados del talón al apretarlo, después de un aumento brusco de caminata o carrera: posible fractura por estrés, que debe valorar un profesional de la salud.',
             'Ardor, hormigueo o entumecimiento: posiblemente un nervio atrapado.',

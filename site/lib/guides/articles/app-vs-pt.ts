@@ -108,7 +108,7 @@ export const APP_VS_PT_EN: Guide = {
             'No promise to end the pain. In our [check of 20 heel pain apps](/heel-pain-apps-study/), 9 of 19 promised to end the pain or claimed proven results.',
           ],
         },
-        'Our [buyer\u2019s guide](/best-app-for-plantar-fasciitis/) compares the main apps, and [Walkito vs Hinge Health](/walkito-vs-hinge-health/) covers the option that includes a physical therapist.',
+        'Our [buyer\u2019s guide](/best-app-for-plantar-fasciitis/) compares the main apps, and [Walkito vs Hinge Health](/hinge-health-alternatives/) covers the option that includes a physical therapist.',
       ],
     },
     {

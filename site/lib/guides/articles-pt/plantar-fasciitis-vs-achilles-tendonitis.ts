@@ -188,7 +188,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
         {
           list: [
             'Um calombo ósseo atrás do calcanhar com uma área dolorida e inchada na linha do sapato: [deformidade de Haglund](/pt/deformidade-de-haglund/) ou bursite retrocalcânea, muitas vezes junto com dor insercional no Aquiles.',
-            'Um esporão no calcanhar no raio X: é comum, e normalmente não é a causa da dor. Veja [fascite plantar ou esporão](/pt/fascite-plantar-ou-esporao/).',
+            'Um esporão no calcanhar no raio X: é comum, e normalmente não é a causa da dor. Veja [fascite plantar ou esporão](/pt/esporao-calcaneo-exercicios/).',
             'Uma dor profunda, como de hematoma, no meio da almofada do calcanhar, pior em pisos duros: [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/).',
             'Dor dos dois lados do calcanhar quando você aperta, depois de um aumento repentino de caminhada ou corrida: possível fratura por estresse, que precisa ser vista por um profissional de saúde.',
             'Queimação, formigamento ou dormência: talvez um nervo comprimido.',

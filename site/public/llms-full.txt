@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -1464,7 +1464,7 @@ The Hansen 2018 cohort tested several baseline factors against how long symptoms
 - **Being female.** For every 100 men who became symptom-free per year, only 49 women did (hazard rate ratio 0.49, P less than 0.01). The reason is not established. The authors listed hormonal differences, footwear patterns, and physical factors as possibilities without evidence to pick among them (Hansen and colleagues, 2018).
 - **Bilateral heel pain.** People who had pain in both heels at baseline had about a third the rate of becoming symptom-free per year compared to those with one-sided pain (hazard rate ratio 0.33, P less than 0.01). The authors noted that bilateral pain could reflect an unrecognized inflammatory condition, since pain at tendon-bone attachments on both sides is a feature of some forms of arthritis. Nobody in their cohort had a known inflammatory diagnosis, but no serological screening was done (Hansen and colleagues, 2018).
 
-[BMI](https://walkito.site/weight-and-plantar-fasciitis/), age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.
+[BMI](https://walkito.site/weight-and-plantar-fasciitis/), age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](https://walkito.site/heel-spur-exercises/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.
 
 If both heels hurt and morning stiffness lasts a long time or other joints are involved, that is worth mentioning to a clinician even if the exercises are helping. See [heel pain in the morning](https://walkito.site/heel-pain-in-the-morning/) for more on when bilateral pain is a red flag.
 
@@ -1743,9 +1743,9 @@ Left unaddressed, metatarsalgia can change how you walk, since people naturally 
 
 ## Best app for plantar fasciitis in 2026: 7 apps compared
 
-Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-26
+Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-30
 
-The best app for plantar fasciitis depends on your situation: [Exakt Health](https://walkito.site/walkito-vs-exakt-health/) for runners, [Hinge Health](https://walkito.site/walkito-vs-hinge-health/) if your employer or health plan covers it ($0, with a care team), and PlantarCare if you want a free heel pain tracker. Whichever you pick should include plantar fascia and calf stretching (grade A in the 2023 heel pain guideline) and strength training (grade B). Walkito makes this page, so we list it apart at the end.
+The best app for plantar fasciitis depends on your situation: [Exakt Health](https://walkito.site/walkito-vs-exakt-health/) for runners, Hinge Health if your employer or health plan covers it ($0, with a care team), and PlantarCare if you want a free heel pain tracker. Whichever you pick should include plantar fascia and calf stretching (grade A in the 2023 heel pain guideline) and strength training (grade B). Walkito makes this page, so we list it apart at the end.
 
 - The 2023 clinical guideline for heel pain gives plantar fascia and calf stretching a grade of A and strength training a grade of B. A good app should include both.
 - Exakt Health is the strongest option for runners: 15+ rehab plans with a return-to-running phase, EU medical device certification, $19.99 a month with a 7-day free trial.
@@ -1805,7 +1805,9 @@ Prehab fits if you have pain in several areas and want one app from shoulders to
 
 PlantarCare is free, has no in-app purchases, and does not require an account. You log your morning first-step pain and worst daytime pain, and the app moves you through recovery stages with guided stretches, calf work, heel raises and icing reminders matched to your stage. It also trends your pain over time, logs footwear and load, and gives red-flag reminders that tell you when to see a clinician.
 
-The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection. It is iOS only. See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/) for the two side by side.
+It needs no account, and its listing says your health records stay on your device. Its App Store listing shows English only, though its latest release notes say it is now in 15 languages. It was first released on July 15, 2026 and last updated on July 23, 2026.
+
+The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection. It is iOS only.
 
 ### Arch: Flat Feet Trainer
 
@@ -1817,7 +1819,9 @@ A reviewer noted that the app uses illustrations instead of exercise videos. It 
 
 This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it. Its single iOS rating is 1 out of 5, about that charge.
 
-The exercises have text instructions rather than video, with no progression, pain tracking or adaptation. If you want a [free reference for what stretches to try](https://walkito.site/youtube-vs-app-plantar-fasciitis/), check the store listing first, since some exercises may sit behind a paywall. See [Walkito vs Plantar Fasciitis Exercises](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/) for the two side by side.
+The exercises have text instructions rather than video, with no progression, pain tracking or adaptation. If you want a [free reference for what stretches to try](https://walkito.site/youtube-vs-app-plantar-fasciitis/), check the store listing first, since some exercises may sit behind a paywall.
+
+Its App Store screenshots show five exercises per level, each a drawing with step-by-step text, and the app is in English only. It came to the App Store on June 24, 2026; the Android version is older and was updated on October 6, 2026.
 
 ### What should a plantar fasciitis app actually do?
 
@@ -1883,9 +1887,13 @@ The 2023 clinical guideline for heel pain gives plantar fascia and calf stretchi
 
 Of the apps we compared, Exakt Health is the strongest fit for runners with plantar fasciitis who want a return-to-running plan. It covers 15+ running injuries, ends each rehab plan with a return-to-running phase and is certified as a medical device in the EU. It costs $19.99 a month or $59.99 for six months, with a 7-day free trial, on iOS and Android.
 
-#### Is Hinge Health free?
+#### Is PlantarCare free?
 
-Hinge Health is free to members whose employer or health plan covers it. You cannot buy it directly from the App Store. Check eligibility at hinge.health/covered. If you are covered, it includes a care team with physical therapists and doctors at no cost to you.
+Yes. PlantarCare’s App Store listing says it is free with no in-app purchases and needs no account. Walkito is free to download, with a yearly or weekly subscription inside the app.
+
+#### Is PlantarCare on Android?
+
+We could not confirm it. PlantarCare is on the App Store for iPhone. On Google Play we found only a Chinese-language app that also calls itself PlantarCare (com.zach.plantarcare), from a differently named developer, so we could not tell whether it is the same app. Walkito is on both the App Store and Google Play.
 
 #### Can an app replace seeing a physical therapist for plantar fasciitis?
 
@@ -2235,105 +2243,6 @@ Because we make it. We scored it with the same checklist so you can compare, but
 
 Yes. The data file is free to download and reuse. Please cite it as: Walkito, 20 heel pain apps checked against the 2023 guideline, October 2026, walkito.site.
 
-## Walkito vs Hinge Health for heel pain and plantar fasciitis
-
-Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-11 · updated 2026-10-13
-
-If your employer or health plan offers Hinge Health, start there: it costs you nothing and comes with your own physical therapist. If it does not, you cannot buy Hinge Health on your own, and Walkito is a heel and foot focused alternative you can download on iPhone or Android. Walkito makes this page, so we say plainly where Hinge Health is stronger.
-
-- Hinge Health is free to you through an employer or health plan; we found no way to buy it on your own. Walkito is a weekly or yearly subscription anyone can download.
-- Hinge Health gives you a dedicated physical therapist, plus a health coach if your pain is chronic. Walkito has no clinician; it is a self-guided plan built on the 2023 heel pain guideline.
-- Hinge Health covers the whole body, including feet. Walkito covers only heel, foot and lower leg pain, and adjusts each day to how your feet felt that morning.
-- Hinge Health has published studies, mostly on back and knee pain; we found none on feet. Walkito has not been tested in a trial; its exercises come from published trials and the guideline.
-- Either way, see a clinician first if the pain followed an injury, comes with numbness or swelling, or wakes you at night.
-
-### Walkito vs Hinge Health side by side
-
-Hinge Health facts are from its own website and app listings, checked in October 2026. Features can differ by employer.
-
-### Is Hinge Health actually free?
-
-For most members, yes. Hinge Health says its program "is provided for free as a benefit through your employer or insurance provider" with "no out-of-pocket costs or copays for you". Your employer or health plan pays for it instead, and Hinge Health does not publish what they pay. That covers the virtual program; in-person care, where it is offered, can have a cost share on some plans.
-
-Hinge Health says it "works with either your employer group or plan to obtain reimbursement for your participation", so how it shows up depends on your plan, and a few members say in [app reviews](https://apps.apple.com/us/app/hinge-health/id1429270372) that they later saw it on their insurance statements. If that matters to you, ask your plan before you start.
-
-### Can you use Hinge Health without an employer?
-
-Not as far as we could find. Hinge Health is offered through employers and health plans, and its [eligibility check](https://www.hingehealth.com/check-eligibility/) starts with your employer or insurance details. Spouses and adult dependents can often join if the plan includes them. If you leave the job or the plan stops offering it, access ends.
-
-If you have no access, the [Hinge Health alternatives](https://walkito.site/hinge-health-alternatives/) are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer’s guide to plantar fasciitis apps](https://walkito.site/best-app-for-plantar-fasciitis/) compares the self-guided apps.
-
-### Does Hinge Health have a plantar fasciitis program?
-
-Hinge Health covers foot and ankle pain inside its general program, with a [foot and ankle page](https://www.hingehealth.com/acquisition/foot-and-ankle-pain/) and articles on plantar fasciitis. Its plantar fasciitis articles describe calf raises, calf and plantar fascia stretches and towel scrunches, which line up with the stretching and strengthening the 2023 heel pain guideline recommends.
-
-Its headline result, an average 68% drop in pain in the first three months, comes from a large study of people with chronic back and knee pain. We did not find a Hinge Health study on foot or heel pain.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### How does each plan work day to day?
-
-**Hinge Health.** You answer a questionnaire, get a physical therapist (and a health coach if your pain is chronic), and do exercise sessions of about 15 minutes or less in the app. Your therapist adjusts the plan through messages and video visits, and on some exercises the phone camera checks your form.
-
-**Walkito.** You answer a few questions about where it hurts, which side and how active you are. You pick 3, 5 or 7 training days a week. Each morning a one-tap check-in sets the day: a bad morning gets a lighter session. Sessions take 3, 5 or 10 minutes, with a video and a cue for every exercise. Every 14 days, and every 28 once you reach your first goal, a short test measures calf raises on each leg, how long you hold your arch and single-leg balance, so you can see whether things are changing. The full plan is on [how the plan works](https://walkito.site/program/).
-
-### What are the downsides of each?
-
-**Hinge Health:**
-
-- Only available if your employer or health plan offers it.
-- Built for the whole body rather than for heel pain specifically.
-- No published study on foot or heel pain that we could find.
-- Some members report app or form-tracking bugs and confusion about billing.
-
-**Walkito:**
-
-- No physical therapist or doctor behind it, and no one reviews your form.
-- New, with no ratings yet, and the app itself has not been tested in a trial.
-- You pay for it yourself.
-- Covers only heel, foot and lower leg pain.
-
-### Which should you choose?
-
-**Choose Hinge Health if** your employer or health plan offers it, you want a physical therapist to check in with, or your pain is in more than one place.
-
-**Choose Walkito if** you cannot get Hinge Health, your pain is mainly heel, arch or lower leg, your first steps in the morning are the worst part of the day, or you want short sessions of 3 to 10 minutes that adjust to how your feet feel.
-
-Neither one is a diagnosis. If you are not sure what is causing your heel pain, a clinician is the right first step.
-
-### See a clinician first if
-
-- your heel pain followed an injury or a fall
-- you cannot put weight on the foot or you are limping
-- the pain comes with numbness, tingling, swelling, redness or warmth
-- pain wakes you at night or is there at rest
-- pain is getting worse week over week despite exercise
-- you have diabetes, reduced feeling in your feet or poor circulation
-
-### If Walkito fits you
-
-[Walkito](https://walkito.site/program/) builds a short plan from where your foot hurts, on 3, 5 or 7 days a week, adjusts it each morning, and tests your calves, arch and balance every 14 days.
-
-#### Is Hinge Health good for plantar fasciitis?
-
-It can be. Hinge Health covers foot and ankle pain with a dedicated physical therapist, and its plantar fasciitis exercises match the 2023 heel pain guideline. Its published results are mainly for back and knee pain; we did not find a study on foot or heel pain.
-
-#### Is Hinge Health free?
-
-The virtual program is $0 to you when your employer or health plan offers it; the employer or plan pays instead. Hinge Health says it works with the employer or plan to be reimbursed, so ask your plan how it is billed if that matters to you.
-
-#### Can I use Hinge Health if my employer does not offer it?
-
-We found no way to buy Hinge Health on your own. It is offered through employers and health plans, and access ends if you leave the job or the plan stops offering it.
-
-#### Is Walkito covered by insurance?
-
-No. Walkito is a weekly or yearly subscription you pay through the App Store or Google Play, and the current price is shown in the store before you subscribe.
-
-#### Can I use Walkito and Hinge Health together?
-
-You can, but if you have a Hinge Health physical therapist, follow their plan first and tell them about anything else you do, so your heel is not loaded twice in one day.
-
 ## Is an exercise app as good as physical therapy for plantar fasciitis?
 
 Language: English · https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/ · published 2026-10-11 · updated 2026-10-11
@@ -2408,7 +2317,7 @@ If you go the home route with an app, check that it has:
 - Advice on when to stop and see a clinician.
 - No promise to end the pain. In our [check of 20 heel pain apps](https://walkito.site/heel-pain-apps-study/), 9 of 19 promised to end the pain or claimed proven results.
 
-Our [buyer’s guide](https://walkito.site/best-app-for-plantar-fasciitis/) compares the main apps, and [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/) covers the option that includes a physical therapist.
+Our [buyer’s guide](https://walkito.site/best-app-for-plantar-fasciitis/) compares the main apps, and [Walkito vs Hinge Health](https://walkito.site/hinge-health-alternatives/) covers the option that includes a physical therapist.
 
 ### When should you see a physical therapist or doctor?
 
@@ -2652,7 +2561,7 @@ If a free routine with all three exercise types is going well, there is no need 
 - you want the exercises to get harder without planning it yourself
 - you want to track whether things are changing
 
-Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/). For two simple apps compared with Walkito, see [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/) and [Walkito vs the Plantar Fasciitis Exercises app](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/).
+Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/). For two simple apps compared with Walkito, see [Walkito vs PlantarCare](https://walkito.site/best-app-for-plantar-fasciitis/) and [Walkito vs the Plantar Fasciitis Exercises app](https://walkito.site/best-app-for-plantar-fasciitis/).
 
 ### See a clinician first if
 
@@ -2827,7 +2736,7 @@ An app cannot diagnose you. See a clinician if pain followed an injury, comes wi
 
 ## Hinge Health alternatives, Sword Health and what Hinge costs
 
-Language: English · https://walkito.site/hinge-health-alternatives/ · published 2026-10-11 · updated 2026-10-26
+Language: English · https://walkito.site/hinge-health-alternatives/ · published 2026-10-11 · updated 2026-10-30
 
 Hinge Health’s virtual program is $0 to members whose employer or health plan covers it, and you cannot buy it yourself, or buy Sword Health, its closest rival. Through a plan, the main alternatives are Sword, Omada and Vori Health. Without one, you can book a physical therapist at home or by video (Luna lists $135 a visit; Virtual Physical Therapists charges $89 for 30 minutes) or use an exercise app, from free to about $300 a year.
 
@@ -2845,7 +2754,7 @@ Checked October 11, 2026. Kaia is not listed separately because it is joining Sw
 
 For most members, nothing. Hinge Health says its program “is provided for free as a benefit through your employer or insurance provider” with “no out-of-pocket costs or copays for you”. Your employer or plan pays instead, and Hinge does not publish what they pay. In-person care, where it is offered, can have a cost share on some plans.
 
-There is no self-pay price. Hinge Health’s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card. Hinge bills your health plan when you use the program and says this does not affect your benefits or deductible; billing is one of the most common complaints in [Hinge Health reviews](https://walkito.site/hinge-health-reviews/). If you lost access, for example after changing jobs, [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/) compares the two side by side.
+There is no self-pay price. Hinge Health’s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card. Hinge bills your health plan when you use the program and says this does not affect your benefits or deductible; billing is one of the most common complaints in [Hinge Health reviews](https://walkito.site/hinge-health-reviews/).
 
 ### Sword Health: the closest alternative to Hinge
 
@@ -2874,7 +2783,7 @@ Source: O'Connor MI, Dorak Ribaudo M, Peters KC, et al. Clinical Efficacy of Tel
 - [Luna](https://www.getluna.com/). A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.
 - [Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/). One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.
 - **Physical therapy in a clinic.** Through your insurance, a visit usually costs your copay or coinsurance. Our [plantar fasciitis cost guide](https://walkito.site/plantar-fasciitis-treatment-cost/) has typical prices and the questions to ask your plan.
-- **Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](https://walkito.site/walkito-vs-plantarcare/)) to $299.99 a year (Prehab’s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](https://walkito.site/best-apps-for-foot-pain/).
+- **Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136)) to $299.99 a year (Prehab’s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](https://walkito.site/best-apps-for-foot-pain/).
 
 ### Does Medicare cover virtual physical therapy?
 
@@ -2894,7 +2803,11 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Where Walkito fits
 
-Walkito is an exercise app you can download without an employer or insurance. It gives you a plan of stretching and strengthening for heel pain, flat feet and related foot problems, but no physical therapist, no hands-on care and no diagnosis. If your employer covers Hinge Health or Sword, start there. The full comparison is on [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/).
+Walkito is an exercise app you can download without an employer or insurance. It gives you a plan of stretching and strengthening for heel pain, flat feet and related foot problems, but no physical therapist, no hands-on care and no diagnosis. If your employer covers Hinge Health or Sword, start there.
+
+Hinge Health covers foot and ankle pain inside its general program, and its plantar fasciitis articles describe calf raises, calf and plantar fascia stretches and towel scrunches, which line up with the stretching and strengthening the 2023 heel pain guideline recommends. Its headline result, an average 68% drop in pain in the first three months, comes from a large study of people with chronic back and knee pain; we did not find a Hinge Health study on foot or heel pain. Day to day, Hinge sessions take about 15 minutes or less and your physical therapist adjusts the plan; Walkito sessions take 3, 5 or 10 minutes and a one-tap morning check-in sets the day.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### See a clinician first if
 
@@ -2920,10 +2833,6 @@ No. Hinge Health is only for people covered through a partner employer or health
 
 Sword says it may be offered at no cost through your employer or health plan. It does not publish a self-pay price in the US, so if your plan does not cover it you cannot buy it directly. Kaia, which agreed to join Sword in January 2026, is also not available on a self-pay basis.
 
-#### What is a good alternative to Sword Health?
-
-Through a plan, Hinge Health, Omada and Vori Health offer a physical therapist much like Sword. Without one, Luna sends a physical therapist to your home ($135 a visit without insurance) and Virtual Physical Therapists charges $89 for a 30-minute video visit. Exercise apps cost from free to about $300 a year.
-
 #### Is there a Hinge Health alternative for Medicare?
 
 Vori Health works with insurance including Medicare Advantage, and Luna sends a physical therapist to your home and takes Medicare. Medicare covers telehealth from home through December 31, 2027; from January 1, 2028, CMS says physical therapists can no longer provide Medicare telehealth.
@@ -2932,119 +2841,13 @@ Vori Health works with insurance including Medicare Advantage, and Luna sends a 
 
 Free home exercise, such as a good free routine or a free app, costs nothing but has no clinician. For a clinician without insurance, Virtual Physical Therapists charges $89 for 30 minutes and Luna lists $135 for a home visit. Through insurance, clinic physical therapy usually costs your copay or coinsurance.
 
-## Exakt Health alternatives: which app fits you instead?
+#### Is Walkito covered by insurance?
 
-Language: English · https://walkito.site/exakt-health-alternatives/ · published 2026-10-12 · updated 2026-10-12
+No. Walkito is a weekly or yearly subscription you pay through the App Store or Google Play, and the current price is shown in the store before you subscribe.
 
-The best Exakt Health alternative depends on why you want one. For a lower price, Injurymap lists $9.49 a month or $40.99 a year with a two-week free trial; for many body areas and a big video library, Prehab; for a free first phase, Sports Injury Rehabilitation; for running form, GaitLab Coach; with an employer plan, Hinge Health; and for heel pain or [flat feet](https://walkito.site/flat-feet/) only, Walkito. For a runner who wants injury rehab and a return-to-running plan in one app, Exakt is still the strongest pick.
+#### Can I use Walkito and Hinge Health together?
 
-- Exakt Health costs $19.99 a month, $39.99 for 3 months or $59.99 for 6 months, with a 7-day free trial (exakthealth.com, checked October 2026).
-- Injurymap is the cheapest paid alternative we found: $9.49 a month or $40.99 a year in the US App Store, with a two-week free trial. Like Exakt, it is CE-marked as a medical device.
-- Sports Injury Rehabilitation gives phase 1 of every program free; GaitLab Coach is free, with a $4.99 one-time full report.
-- Hinge Health costs $0, but only through an employer or health plan; you cannot buy it yourself.
-- Walkito covers heel pain, plantar fasciitis and flat feet only, on iPhone and Android. It is a weekly or yearly subscription, with the current price shown in the store.
-
-### Which Exakt Health alternatives are there?
-
-Prices are as each app publishes them in the US, checked in October 2026. They can differ by country and change over time, so check the store before you subscribe.
-
-### Why look for an Exakt Health alternative?
-
-Exakt Health is a good app. It has 15+ injury rehab plans, running plans from 5K to marathon, 600+ exercise videos, a 4.8 rating from 125 ratings on the App Store, and it is certified as a medical device in the EU. People still look elsewhere for a few reasons:
-
-- The price: about $120 a year for the cheapest rehab option (the 6-month plan bought twice).
-- Their pain is not from running, and they do not need a run plan.
-- They want shorter sessions than Exakt’s typical 15 to 30 minutes.
-- Their employer or health plan already covers another program.
-- They want an app that focuses on one problem, like heel pain or flat feet.
-
-### Which app is the closest alternative to Exakt Health?
-
-**Prehab** is the closest in breadth. The Prehab Guys app is built by Doctors of Physical Therapy and has 55+ programs, 170+ workouts and 4,000+ exercise videos, including a plantar fasciitis program. It costs more ($49 a month, or about $200 a year), sessions run about 20 minutes, and it is iPhone only and English only.
-
-**Injurymap** is the closest in setup. Like Exakt, it is CE-marked as a medical device. Its listing says its 350+ exercises were selected by medical specialists, that it adjusts your program as you go, and it covers Achilles, ankle, arch, back, elbow, hip, knee, neck and shoulder pain. It has no running plans. It has a 4.2 rating from 80 ratings on the App Store.
-
-**Sports Injury Rehabilitation** is the closest in rehab style. Its programs, by named sports physiotherapists Phil Pask and Paul Tanner, move you through phases when you meet set criteria, for injuries such as ankle sprain, plantar fasciitis, calf strain, shin splints and hamstring strain. Phase 1 of every program is free.
-
-### Is there a cheaper alternative to Exakt Health?
-
-Yes. Over a year, Exakt’s cheapest rehab option comes to about $120. These cost less:
-
-- Injurymap: $40.99 a year or $9.49 a month, after a two-week free trial.
-- Sports Injury Rehabilitation: phase 1 of every program is free; later phases are in-app purchases.
-- GaitLab Coach: free for basic running form checks; the full report with a 4-week drill plan is $4.99 once.
-- Hinge Health: $0, if your employer or health plan covers it.
-- [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): free with no in-app purchases, iPhone only, for heel pain only ([Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/)).
-
-Walkito is a weekly or yearly subscription. The current price for your country is shown in the App Store or Google Play before you subscribe.
-
-### What is the best Exakt alternative for runners?
-
-If you run, no alternative here replaces Exakt’s return-to-running plans. **GaitLab Coach** does something different: you film yourself running for about 60 seconds, pick up to 4 of 16 running injuries, and it ranks the form habits most likely linked to your pain. Its listing cites a 2018 trial in which new runners who retrained their gait had 62% fewer injuries over a year, and it says it is a coaching tool, not a substitute for a physio.
-
-For heel pain from running, our guide to [heel pain in runners](https://walkito.site/heel-pain-runners/) covers the exercises and when to cut back.
-
-### What is the best alternative for heel pain or flat feet?
-
-If your pain is in your heel or arch and you do not need a run plan, a foot-focused app can be enough. For [plantar fasciitis](https://walkito.site/plantar-fasciitis/), look for an app with the plantar fascia stretch, a calf stretch and strength work that gets harder, which the 2023 heel pain guideline grades A and B.
-
-Walkito is built for that: heel pain, plantar fasciitis and flat feet, in sessions of 3, 5 or 10 minutes on the 3, 5 or 7 days a week you pick. For more options, see our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and our [flat feet app guide](https://walkito.site/best-app-for-flat-feet/).
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Is Walkito a good Exakt Health alternative?
-
-Only for some people. Walkito is narrower than Exakt, and newer: it launched on October 1, 2026 and has no ratings yet.
-
-### Where is Exakt Health still better?
-
-Exakt is the better choice than any app on this page if:
-
-- You are a runner and want rehab and a return-to-running plan in one app.
-- Your injury is one of its 15+ plans, such as Achilles tendinopathy, a meniscus tear or runner’s knee.
-- You want an established app: 4.8 from 125 ratings on the App Store.
-- You want an EU-certified medical device and a 7-day free trial.
-
-### How we checked these apps
-
-On October 12, 2026 we read the US App Store listings of Injurymap, Sports Injury Rehabilitation and GaitLab Coach and Exakt’s pricing page. Prehab, Hinge Health and PlantarCare facts are from our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/), checked in October 2026, and platforms from our [heel pain apps study](https://walkito.site/heel-pain-apps-study/). We read listings and websites; we did not test the apps from the inside. Walkito facts come from its store listings and the app itself.
-
-### When an app is not enough, see a clinician
-
-- your pain followed an injury, a fall or a pop or snap
-- you cannot put weight on the foot or you are limping
-- the pain comes with numbness, tingling, burning, swelling or warmth
-- pain wakes you at night or is present at rest
-- pain is getting worse week over week despite consistent exercise
-- you have diabetes, reduced feeling in your feet or poor circulation
-
-### If your pain is in your heel or arch
-
-[Walkito](https://walkito.site/program/) builds a plan from where it hurts, which side, your activity level and your goal, on the 3, 5 or 7 days a week you pick, in sessions of 3, 5 or 10 minutes. Each morning, a one-tap check-in adjusts the day.
-
-#### What is the best alternative to Exakt Health?
-
-It depends on why you are switching. Injurymap is cheaper ($40.99 a year) and covers many joints, Prehab has the biggest library, Sports Injury Rehabilitation has a free first phase, and Hinge Health is free through some employers. For heel pain or flat feet only, Walkito is a narrower option on iPhone and Android.
-
-#### Is there a free alternative to Exakt Health?
-
-Partly. Sports Injury Rehabilitation gives phase 1 of every program free, GaitLab Coach is free for basic running form checks, and PlantarCare is free for heel pain on iPhone. Hinge Health is free only through an employer or health plan. Injurymap and Exakt both offer a free trial first.
-
-#### How much does Exakt Health cost?
-
-Exakt Health lists $19.99 for one month, $39.99 for three months or $59.99 for six months for its rehab and training plans, and up to $99.99 a year for run training plans. Every subscription starts with a 7-day free trial (exakthealth.com, checked October 2026).
-
-#### Is there an app like Exakt Health on Android?
-
-Exakt Health itself is on Android. Of the alternatives, Injurymap, Sports Injury Rehabilitation, Hinge Health and Walkito are also on Android. Prehab and GaitLab Coach were found on the iPhone App Store, and PlantarCare is iPhone only.
-
-#### Is Injurymap better than Exakt Health?
-
-Not overall, but it is cheaper. Injurymap costs $40.99 a year against about $120 for Exakt’s cheapest rehab option, and both are CE-marked medical devices. Exakt has running plans and a return-to-running phase; Injurymap does not. For runners, Exakt fits better; for joint pain without running goals, Injurymap may be enough.
-
-#### Is Walkito an alternative to Exakt Health?
-
-Only if your pain is heel pain, plantar fasciitis or flat feet. Walkito has short sessions on the 3, 5 or 7 days a week you pick and a morning check-in, but no running plans, no clinician and no medical device status. It is a weekly or yearly subscription; the price is shown in the store.
+You can, but if you have a Hinge Health physical therapist, follow their plan first and tell them about anything else you do, so your heel is not loaded twice in one day.
 
 ## Best app for flat feet: 5 apps compared
 
@@ -3279,7 +3082,7 @@ They can be. In a 1999 trial, 95% of people with a silicone heel pad improved, b
 
 ## Walkito vs Exakt Health: which one fits you?
 
-Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-13
+Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-30
 
 Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis](https://walkito.site/plantar-fasciitis/), but they are built for different people. Exakt is a runner's app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, [flat feet](https://walkito.site/flat-feet/) and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.
 
@@ -3292,8 +3095,6 @@ Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis]
 ### Side-by-side comparison
 
 Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app's own source code.
-
-Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/). Want a short fixed routine? See [Walkito vs the Plantar Fasciitis Exercises app](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/).
 
 ### Who is Exakt Health built for?
 
@@ -3345,7 +3146,7 @@ The main difference: Exakt follows a structured level-based progression. Walkito
 
 **This is where Exakt is clearly stronger.** Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner's knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.
 
-Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a [broader app like Prehab](https://walkito.site/exakt-health-alternatives/) is the right choice.
+Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -3396,6 +3197,10 @@ Each exercise in the app carries an evidence level (Strong, Moderate, or Early) 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
+### Other Exakt Health alternatives
+
+Prices are as each app publishes them in the US, checked in October 2026. **Prehab** is the closest in breadth; **Injurymap** is the closest in setup: like Exakt, it is CE-marked as a medical device.
+
 ### When is Exakt Health the better choice?
 
 Pick Exakt Health if any of the following is true:
@@ -3434,10 +3239,6 @@ If [Walkito](https://walkito.site/program/) sounds like the right fit for your s
 
 It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. Both are on iOS and Android. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.
 
-#### How is Walkito priced compared with Exakt Health?
-
-Walkito is a weekly or yearly subscription, and the current price for your country is shown in the App Store or Google Play before you subscribe. Exakt Health's cheapest rehab option is $59.99 for six months, or about $120 per year, and it starts with a 7-day free trial.
-
 #### Does Exakt Health have a plantar fasciitis plan?
 
 Yes. Exakt Health has a specific plantar fasciitis rehab plan, along with plans for Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears and more. The plantar fasciitis plan ends with a walk-run program to return to running safely, and the app adapts the plan as you progress through its levels.
@@ -3446,6 +3247,14 @@ Yes. Exakt Health has a specific plantar fasciitis rehab plan, along with plans 
 
 Yes. Walkito has been on Google Play since October 2026, as well as on the App Store for iPhone. On Android it reads Health Connect (steps, exercise sessions, distance and sleep) where the iPhone reads Apple Health; walking asymmetry and walking speed are iPhone only. Exakt Health is also on both Android and iOS.
 
+#### Is there a free alternative to Exakt Health?
+
+Partly. Sports Injury Rehabilitation gives phase 1 of every program free, GaitLab Coach is free for basic running form checks, and PlantarCare is free for heel pain on iPhone. Hinge Health is free only through an employer or health plan. Injurymap and Exakt both offer a free trial first.
+
+#### Is there an app like Exakt Health on Android?
+
+Exakt Health itself is on Android. Of the alternatives, Injurymap, Sports Injury Rehabilitation, Hinge Health and Walkito are also on Android. Prehab and GaitLab Coach were found on the iPhone App Store, and PlantarCare is iPhone only.
+
 #### Is Exakt Health a medical device?
 
 Yes. Exakt Health is certified as a medical device in the EU (Germany). This means it has passed regulatory review for safety and its intended use. Walkito is not a medical device and does not claim to diagnose or provide medical advice.
@@ -3453,171 +3262,6 @@ Yes. Exakt Health is certified as a medical device in the EU (Germany). This mea
 #### Which app adapts more to daily pain?
 
 Walkito adjusts each session from a morning pain check-in before you start. A score of 7/10 or higher makes the session lighter. A big step-count day triggers a recovery session the next day. Exakt adapts its plan from how you rate each session after you finish it. Walkito's approach is more reactive to daily pain changes; Exakt's is more focused on overall plan progression.
-
-## Walkito vs PlantarCare: which heel pain app fits you?
-
-Language: English · https://walkito.site/walkito-vs-plantarcare/ · published 2026-10-23 · updated 2026-10-23
-
-PlantarCare is a free heel pain tracker for iPhone with a simple daily stretch routine, no account and no in-app purchases. Walkito is a subscription exercise app for iPhone and Android that builds a plan around goals and changes each session from a morning pain check-in. Pick PlantarCare if you want free, simple tracking; pick Walkito if you want an adaptive plan with progress tests, or an app for Android.
-
-- PlantarCare is free with no in-app purchases and no account, and keeps your records on your phone. Walkito is a weekly or yearly subscription, with the price shown in the store.
-- PlantarCare is on iPhone; we could not confirm an Android version. Walkito is on iPhone and Android.
-- PlantarCare’s App Store listing shows English only, though its latest release notes say it is now in 15 languages. Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
-- PlantarCare logs pain, shoes, standing hours and training, and suggests a recovery stage from your pain trend. Walkito adjusts each session from a morning pain check-in and tests calf endurance, arch hold and balance every 14 days.
-- Both apps are new: PlantarCare had no ratings on the US App Store when we checked, and Walkito had 4.
-
-### Side-by-side comparison
-
-PlantarCare facts are from its [App Store listing](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136); Walkito facts are from the app and our [About page](https://walkito.site/about/#facts).
-
-### Who is PlantarCare built for?
-
-PlantarCare describes itself as a self-care and habit-tracking tool for heel pain and plantar fasciitis, made for people on their feet all day, runners and weekend athletes. Its listing names these features:
-
-- A daily check-in for morning first-step pain and your worst daytime pain.
-- Recovery stages it suggests from your pain trend, from calming things down to getting back to sport.
-- A guided daily routine of stretches, calf work, heel raises and icing reminders, matched to your stage.
-- A footwear and load log for shoes, standing hours and training.
-- Weekly trend charts and reminders to see a clinician if you log warning signs such as severe swelling, numbness or night pain.
-
-It is free, needs no sign-up, and its listing says your health records stay on your device. It was first released on July 15, 2026 and last updated on July 23, 2026.
-
-### Who is Walkito built for?
-
-Walkito is built for people with heel pain, plantar fasciitis or flat feet who want a short exercise plan that changes with how their feet feel each morning, including people on their feet all day for work.
-
-You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A morning of 7/10 pain or higher switches the day to about three minutes of seated work, and a big day on your feet makes the next strength session a lighter recovery one.
-
-Every 14 days a short test of calf raises, an arch hold and [single-leg balance](https://walkito.site/exercises/single-leg-balance/) compares your left side with your right. The exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B.
-
-Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 1, 2026 and has few ratings so far.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### When is PlantarCare the better choice?
-
-- You want a free app with no subscription.
-- You don’t want an account, and you want your records kept only on your phone.
-- You mainly want to track pain and spot what sets it off, such as certain shoes or long days standing.
-- A simple daily stretch routine is enough for you.
-
-### When is Walkito the better choice?
-
-- You use an Android phone.
-- You want the app in Russian, Spanish, Portuguese, French, Italian or German; PlantarCare’s store listing shows English only.
-- You want each session to change with your morning pain, at a length you choose.
-- You want a progress test every 14 days that compares your left and right sides.
-- You also have [flat feet](https://walkito.site/best-app-for-flat-feet/), not only heel pain.
-
-### When an app is not enough, see a clinician
-
-- your pain followed an injury or a fall
-- you cannot put weight on the foot or you are limping
-- the pain comes with numbness, tingling, burning, swelling or warmth
-- pain wakes you at night or is present at rest
-- squeezing the sides of the heel hurts, which can point to a stress fracture rather than plantar fasciitis
-- pain is getting worse week over week despite consistent exercise
-- you have diabetes, reduced feeling in your feet or poor circulation
-
-### Doing it as a plan
-
-If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around your goals.
-
-#### Is PlantarCare free?
-
-Yes. PlantarCare’s App Store listing says it is free with no in-app purchases and needs no account. Walkito is free to download, with a yearly or weekly subscription inside the app.
-
-#### Is PlantarCare on Android?
-
-We could not confirm it. PlantarCare is on the App Store for iPhone. On Google Play we found only a Chinese-language app that also calls itself PlantarCare (com.zach.plantarcare), from a differently named developer, so we could not tell whether it is the same app. Walkito is on both the App Store and Google Play.
-
-#### Which app is better for plantar fasciitis?
-
-They do different jobs. PlantarCare is a free tracker with a basic stretch routine. Walkito is a paid plan that adapts each session and tests your progress. Both are new, neither is a medical device, and the 2023 guideline puts stretching and strengthening first, which both apps include.
-
-#### Do I still need a doctor if I use one of these apps?
-
-Yes, if the pain followed an injury, comes with numbness or swelling, wakes you at night or is not improving after several weeks. Neither app diagnoses; both say to see a clinician for warning signs.
-
-## Walkito vs the Plantar Fasciitis Exercises app
-
-Language: English · https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/ · published 2026-10-23 · updated 2026-10-23
-
-Plantar Fasciitis Exercises is a simple exercise app with stretching and strengthening routines at three levels, free to download with a subscription inside the app that its reviewers say you need before you can use it. Walkito is a subscription exercise app for iPhone and Android that builds a plan around goals, changes each session from a morning pain check-in and tests your progress every 14 days. Pick Plantar Fasciitis Exercises for a short fixed routine; pick Walkito if you want the plan to adapt to how your feet feel.
-
-- Both apps are free to download and need a purchase inside the app for the full program. This page does not list prices; the store shows them before you pay.
-- Plantar Fasciitis Exercises offers routines at three levels with illustrated step-by-step text. Walkito builds a plan around goals, with short demonstration videos.
-- Walkito changes each session from a morning pain check-in and tests calf endurance, arch hold and balance every 14 days. Plantar Fasciitis Exercises has no pain tracking that we could find.
-- Plantar Fasciitis Exercises is in English. Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
-- Both have few ratings: Plantar Fasciitis Exercises had 1 rating on the US App Store when we checked, and Walkito had 4.
-
-### Side-by-side comparison
-
-Plantar Fasciitis Exercises facts are from its [App Store listing](https://apps.apple.com/us/app/plantar-fasciitis-exercises/id6779576791) and Google Play listing; Walkito facts are from the app and our [About page](https://walkito.site/about/#facts).
-
-### Who is Plantar Fasciitis Exercises built for?
-
-Its store listing describes guided stretching and strengthening workouts for the feet and lower legs, with programs for beginner, intermediate and advanced users, step-by-step instructions, no equipment and short sessions.
-
-Its Google Play listing promises 15 exercises across three levels, and its App Store screenshots show five exercises per level with a drawing and step-by-step text rather than videos. Neither listing mentions pain tracking or adaptation. It is listed as free on both stores, but both listings show in-app purchases, and the single review on the US App Store is about being asked to pay before using it.
-
-It came to the App Store on June 24, 2026, and the iPhone version was last updated on August 11, 2026. The Android version is older and was updated on October 6, 2026.
-
-### Who is Walkito built for?
-
-Walkito is built for people with heel pain, plantar fasciitis or flat feet who want a short exercise plan that changes with how their feet feel each morning, including people on their feet all day for work.
-
-You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A morning of 7/10 pain or higher switches the day to about three minutes of seated work, and a big day on your feet makes the next strength session a lighter recovery one.
-
-Every 14 days a short test of calf raises, an arch hold and [single-leg balance](https://walkito.site/exercises/single-leg-balance/) compares your left side with your right. The exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B.
-
-Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 1, 2026 and has few ratings so far.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### When is Plantar Fasciitis Exercises the better choice?
-
-- You want a short fixed routine and like choosing your own level.
-- You don’t need the app to track your pain or change the plan for you.
-- Drawings and text instructions are enough for you.
-
-### When is Walkito the better choice?
-
-- You want each session to change with your morning pain, at a length you choose.
-- You want to see each exercise in a short video.
-- You want a progress test every 14 days that compares your left and right sides.
-- You want the app in Russian, Spanish, Portuguese, French, Italian or German.
-- You also have [flat feet](https://walkito.site/best-app-for-flat-feet/), not only heel pain.
-
-### When an app is not enough, see a clinician
-
-- your pain followed an injury or a fall
-- you cannot put weight on the foot or you are limping
-- the pain comes with numbness, tingling, burning, swelling or warmth
-- pain wakes you at night or is present at rest
-- squeezing the sides of the heel hurts, which can point to a stress fracture rather than plantar fasciitis
-- pain is getting worse week over week despite consistent exercise
-- you have diabetes, reduced feeling in your feet or poor circulation
-
-### Doing it as a plan
-
-If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around your goals.
-
-#### Is the Plantar Fasciitis Exercises app free?
-
-It is free to download, but both its App Store and Google Play listings show in-app purchases, and its only US App Store review says it asked for payment before use. Walkito is also free to download, with a yearly or weekly subscription inside the app.
-
-#### Does either app show the exercises on video?
-
-Walkito shows each exercise in your plan in a short demonstration video. Plantar Fasciitis Exercises describes step-by-step instructions; its screenshots show a drawing with text steps, not video.
-
-#### Which app is better for plantar fasciitis?
-
-They do different jobs. Plantar Fasciitis Exercises gives you fixed routines at three levels. Walkito builds a plan that adapts each session and tests your progress. The 2023 guideline puts stretching and strengthening first, which both apps include. Neither is a medical device.
-
-#### Do I still need a doctor if I use one of these apps?
-
-Yes, if the pain followed an injury, comes with numbness or swelling, wakes you at night or is not improving after several weeks. Neither app diagnoses.
 
 ## Plantar fascia stretch: how to do it, sets and reps
 
@@ -5520,7 +5164,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### How long does plantar fasciitis last?
 
-A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. In a longer follow-up of 174 patients, about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms. Being female and having pain in both heels predicted slower recovery; BMI, age, fascia thickness and a [heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) did not.
+A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. In a longer follow-up of 174 patients, about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms. Being female and having pain in both heels predicted slower recovery; BMI, age, fascia thickness and a [heel spur](https://walkito.site/heel-spur-exercises/) did not.
 
 The useful milestone is whether your morning pain is lower this month than last month. [How long does plantar fasciitis last?](https://walkito.site/how-long-does-plantar-fasciitis-last/) covers the timeline evidence and what to do if progress stalls.
 
@@ -5556,7 +5200,7 @@ Conditions that share the location or the morning pattern:
 
 - **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. See [plantar fasciitis vs Achilles tendonitis](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/).
 - **Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to tell apart from plantar fasciitis without imaging. See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
-- **Heel spur.** Many people have one with no pain at all, and in the Hansen 2018 cohort a spur at baseline had no significant effect on how long symptoms lasted. See [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/).
+- **Heel spur.** Many people have one with no pain at all, and in the Hansen 2018 cohort a spur at baseline had no significant effect on how long symptoms lasted. See [plantar fasciitis vs heel spur](https://walkito.site/heel-spur-exercises/).
 - **Calcaneal stress fracture.** Pain that builds with activity instead of easing, can hurt at rest or at night, and squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot. [How to tell them apart](https://walkito.site/plantar-fasciitis-vs-stress-fracture/).
 - **Inflammatory arthritis.** Both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen. A clinician should check.
 
@@ -5788,185 +5432,9 @@ Most do. Flat feet are nearly universal in toddlers, and the arch usually develo
 
 Adult-acquired flatfoot is a progressive collapse of the arch, usually from weakening of the posterior tibial tendon (Ling and Lui, 2017). It brings pain and swelling on the inside of the ankle and difficulty rising onto the toes on one foot. Clinical guidelines recommend non-surgical management for early stages, though high-quality trial evidence is limited (Ross and colleagues, 2018).
 
-## Plantar fasciitis vs heel spur: are they the same thing?
-
-Language: English · https://walkito.site/plantar-fasciitis-vs-heel-spur/ · published 2026-10-07 · updated 2026-10-07
-
-A heel spur is a bony growth on the bottom of the heel bone. Plantar fasciitis is irritation of the plantar fascia, the thick band of tissue that runs from that bone to your toes. They often show up together, but they are not the same condition, and the spur is usually not what hurts. Many people with spurs on X-ray have no pain at all.
-
-- In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008). This is an older-adult sample, not a general-population figure.
-- In a study of 530 people aged 50 and over with foot pain, heel spurs and a thickened plantar fascia usually showed up together, and a spur on its own was rare (6% of feet). Heel pain was linked to having both findings together (Menz and colleagues, 2019).
-- The 2023 heel pain guideline focuses on plantar fasciitis as the most common cause of plantar heel pain and notes that imaging is usually not needed when the clinical exam already points to plantar fasciitis (Koc and colleagues, 2023).
-- The Menz 2008 study itself notes that earlier research in the general population had put heel spur prevalence at 11 to 16%, well below the 55% found in their own older sample (Menz and colleagues, 2008).
-- The exercises that help plantar fasciitis pain also address the soft tissue around a heel spur. Exercise does not dissolve a spur, but the spur is rarely what needs attention.
-
-### Is a heel spur the same as plantar fasciitis?
-
-**A heel spur and plantar fasciitis are not the same thing.** Plantar fasciitis is a soft tissue problem: the plantar fascia, the thick band running from the heel bone to the toes, becomes irritated, usually where it attaches to the bone. A heel spur is a bony outgrowth on the underside of the heel bone (the calcaneus). The two often coexist, but they can each appear without the other.
-
-Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. Pain at the back of the heel is a different problem: see [plantar fasciitis vs Achilles tendonitis](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/). The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.
-
-The confusion is understandable. For decades, heel spurs were thought to be the cause of plantar heel pain. That view has largely been replaced by evidence showing that spurs are common in people without pain, and that many people with plantar fasciitis have no spur at all.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Do heel spurs actually cause pain?
-
-**Most heel spurs do not cause pain.** The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.
-
-In a study of 530 people aged 50 and over who reported foot pain:
-
-- X-rays found a heel spur in 26.5% of feet.
-- Ultrasound found a thickened plantar fascia in 47.3% of feet.
-- The two usually came together, and a spur on its own was rare (6% of feet).
-- People with heel pain were about twice as likely to have both findings together (Menz and colleagues, 2019).
-
-In other words, the spur rarely shows up without the soft tissue change that goes with it.
-
-Separately, in a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray. Spurs were related to obesity, osteoarthritis and a history of heel pain, but not to foot posture. The authors suggested that spurs may be an adaptive response to vertical compression of the heel, not a result of the plantar fascia pulling on the bone (Menz and colleagues, 2008).
-
-The Menz 2008 study notes that earlier research in the general population had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, about 6 in 10 people with a spur had never had heel pain, although heel pain was still more common in people with spurs (40%) than without (12%) (Menz and colleagues, 2008). A spur raises the odds, but it does not decide who ends up with pain.
-
-Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### How common are heel spurs in people without pain?
-
-Heel spurs are common. Prevalence depends on the age group and the method used to look for them.
-
-The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in the general population, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).
-
-The pattern is consistent: a large proportion of people with spurs have no symptoms, and **a spur on its own does not predict whether someone will have heel pain.** This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### What does the 2023 heel pain guideline say about heel spurs?
-
-The 2023 clinical practice guideline for heel pain, published in the Journal of Orthopaedic and Sports Physical Therapy, focuses on plantar fasciitis as the most common cause of plantar heel pain. It mentions "heel spur syndrome" as one of several differential diagnoses, alongside:
-
-- [Fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
-- Nerve irritation.
-- Calcaneal stress fracture.
-
-The guideline does not recommend imaging as a first step when the clinical examination already points to plantar fasciitis. It states that imaging studies "are usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions." When imaging is considered, weight-bearing X-ray is the first choice, followed by ultrasound or MRI if needed.
-
-In practice, this means a clinician who sees the typical pattern, first-step pain in the morning, tenderness at the inside of the heel, and reduced ankle flexibility, can begin stretching and strength work without waiting for an X-ray. **The presence or absence of a spur on a later X-ray does not change the exercise plan.**
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Do you need an X-ray to tell plantar fasciitis from a heel spur?
-
-**You usually do not need an X-ray for plantar fasciitis.** The diagnosis is clinical: it is based on where the pain is, when it happens and what makes it worse. An X-ray can show a heel spur, but finding one does not change what you do about the pain, and not finding one does not rule out plantar fasciitis.
-
-Imaging becomes useful:
-
-- When the pain does not follow the typical plantar fasciitis pattern.
-- When it has not improved after several weeks of conservative care.
-- When a clinician suspects something else, such as a [stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/), a nerve problem or a plantar fascia tear.
-
-Ultrasound can measure plantar fascia thickness (a reading above 4 mm is generally considered thickened), and MRI can show soft tissue detail that X-rays miss.
-
-If you have already been told you have a heel spur on an X-ray, the spur itself almost never needs separate attention. The exercises and stretches that help plantar fasciitis also address the soft tissue around the spur. See [heel spur exercises](https://walkito.site/heel-spur-exercises/) for the full routine.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### If the spur is not the problem, what is?
-
-The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a [tight calf](https://walkito.site/tight-calves/), high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.
-
-A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls:
-
-- Reduced ankle dorsiflexion, how far the foot bends up toward the shin, had the highest odds ratio of any factor measured.
-- Standing for most of the working day was also significant, at 3.6 times the odds (Riddle and colleagues, 2003).
-
-The spur, when it is there, sits nearby. It may have formed over months or years in response to the same mechanical stress that irritated the fascia. But **it is the fascia and the calf that respond to stretching and strengthening, not the bone.** That is why the guideline recommends exercise, not spur removal.
-
-For a full overview of plantar fasciitis, including causes, risk factors and what the guideline recommends, see [plantar fasciitis](https://walkito.site/plantar-fasciitis/).
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Does a heel spur ever need to be removed?
-
-Surgical removal of a heel spur is rare and is not a first-line option. **The 2023 guideline does not recommend spur removal for plantar fasciitis.** Multiple studies have shown that plantar fasciitis pain can resolve with conservative care even when a spur remains on X-ray. The American Academy of Orthopaedic Surgeons states plainly that "heel spurs do not cause plantar fasciitis pain" and that "plantar fasciitis pain can be treated without removing the spur."
-
-Surgery is sometimes considered when pain has not responded to months of conservative treatment, but the procedure is typically a partial plantar fascia release, not a spur removal. If a spur happens to be taken out during that surgery, the evidence suggests the benefit came from releasing the fascia, not from removing the bone.
-
-The vast majority of people with heel pain and a spur improve with the same stretching, calf work and load management that people without a spur use. See [heel spur exercises](https://walkito.site/heel-spur-exercises/) for the practical routine.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### What exercises help when you have a heel spur?
-
-The exercises for heel spur pain are the same ones the guideline recommends for plantar fasciitis: plantar fascia stretching, calf stretching and gradual calf strengthening. Exercise does not dissolve a spur. It addresses the soft tissue that is actually producing the pain.
-
-The guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B**. These grades apply whether or not a spur is present. [Heel spur exercises](https://walkito.site/heel-spur-exercises/) covers the full routine with sets, holds and progression. Below are three starting exercises.
-
-- **Plantar fascia stretch** (10 holds of 10 seconds, each foot): Sit and cross one ankle over the other knee. Pull the toes back gently until you feel a stretch along the arch. Do this before standing in the morning and after long periods of sitting.
-- **Calf stretch (straight knee)** (2 holds of 30 seconds, each leg): Hands on a wall. Back leg straight, heel down, hips forward. A tight calf pulls on the heel through the Achilles tendon, adding load to the fascia.
-- **Heel raises, both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. This builds calf capacity without heavy load on the heel.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
-
-### See a clinician first if
-
-- the pain followed an injury or a fall, which can indicate a plantar fascia tear rather than fasciitis
-- you cannot put weight on the foot, or you are limping
-- squeezing the sides of the heel reproduces the pain, which can point toward a stress fracture rather than a spur or fasciitis
-- the pain comes with numbness, tingling or burning, which can suggest nerve entrapment
-- the heel is red, warm or swollen, or you have a fever
-- both heels hurt and morning stiffness lasts more than 30 minutes, especially if other joints are stiff or swollen
-- pain keeps you awake at night or is present at rest, not just on weight bearing
-- it has not improved after several weeks of stretching, calf work and lighter load
-- you have diabetes, reduced feeling in your feet or poor circulation
-
-### Doing it as a plan
-
-Whether your X-ray shows a spur or not, the exercise approach is the same. [Walkito](https://walkito.site/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. Calf strength work is added once the first goal moves past settling pain into building capacity.
-
-#### Is a heel spur the same as plantar fasciitis?
-
-No. A heel spur is a bony growth on the underside of the heel bone. Plantar fasciitis is irritation of the plantar fascia, the thick band of tissue that runs from the heel to the toes. They often appear together, but a spur can exist without pain and plantar fasciitis can occur without a spur. The 2023 heel pain guideline treats them as separate findings.
-
-#### Do heel spurs cause pain?
-
-Most heel spurs do not cause pain. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare, and heel pain was linked to a spur together with a thickened plantar fascia (Menz and colleagues, 2019). In a separate study of 216 older adults, about 6 in 10 of those with a spur had no current or past heel pain (Menz and colleagues, 2008).
-
-#### Can you have plantar fasciitis without a heel spur?
-
-Yes. Many people with plantar fasciitis have no spur on X-ray. The pain comes from the irritated plantar fascia, not from bone. The 2023 guideline does not require imaging to diagnose plantar fasciitis when the clinical pattern is clear: first-step pain in the morning, tenderness at the heel and a tight calf.
-
-#### Do heel spur exercises dissolve the spur?
-
-No. Stretching and strengthening exercises do not dissolve a heel spur. They address the soft tissue around it, especially the plantar fascia and the calf muscles, which are usually what produces the pain. The spur itself rarely needs attention, and the guideline recommends the same exercises whether or not a spur is present.
-
-#### Should I get an X-ray if I think I have a heel spur?
-
-The 2023 guideline says imaging is usually not needed when the clinical exam points to plantar fasciitis. An X-ray can show a spur, but finding one does not change the exercise plan, and not finding one does not rule out plantar fasciitis. Imaging becomes useful when pain does not improve after several weeks or when a clinician suspects a stress fracture or nerve issue.
-
-#### How common are heel spurs?
-
-Prevalence depends on age. Earlier research cited in the Menz 2008 study reported 11 to 16% of the general population with a plantar calcaneal spur on X-ray. In a study of 216 people aged 62 to 94, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.
-
-#### When does a heel spur need surgery?
-
-Almost never. The guideline does not recommend spur removal for plantar fasciitis. About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf strengthening and load management (Latt and colleagues, 2020). When surgery is considered after months of failed conservative care, it usually involves releasing the plantar fascia, not removing the spur.
-
-#### What happens if you keep walking on a heel spur?
-
-Walking will not drive the spur into nearby tissue. Pain that flares with walking usually comes from the irritated plantar fascia next to the spur, not the bone itself. The 2023 guideline recommends adjusting load, like distance or pace, rather than stopping, if walking makes the heel worse the next morning.
-
-#### Is it good to massage heel spurs?
-
-Gentle massage around a heel spur can ease soft tissue tightness, but it does not change the bone itself. Rolling the sole with firm, not sharp, pressure may loosen the fascia and calf, the tissues that usually cause the pain. The guideline grades clinician manual therapy an A; self massage is comfort care, not a substitute for stretching.
-
 ## Heel spur exercises and stretches: the routine, doses and progression
 
-Language: English · https://walkito.site/heel-spur-exercises/ · published 2026-10-07 · updated 2026-10-26
+Language: English · https://walkito.site/heel-spur-exercises/ · published 2026-10-07 · updated 2026-10-30
 
 The main heel spur exercises are the plantar fascia stretch (10 holds of 10 seconds, each foot), calf and soleus stretches (3 holds of 30 seconds, each leg) and calf heel raises, built up from seated raises (3 x 10) to a single-leg towel raise. They do not dissolve the spur, which is bone. They work on the plantar fascia and calf around it, where the pain almost always comes from.
 
@@ -6029,6 +5497,15 @@ The stretches and heel raises above are the core. These three are not specific t
 Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 
+### Is a heel spur the same as plantar fasciitis?
+
+**A heel spur and plantar fasciitis are not the same thing.** Plantar fasciitis is irritation of the plantar fascia, usually where it attaches to the heel bone. A heel spur is a bony outgrowth on the underside of that bone. The two often coexist, but they can each appear without the other.
+
+Spurs are common in people without pain. In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and about 6 in 10 people with a spur had never had heel pain (Menz and colleagues, 2008). An MRI study of 77 asymptomatic volunteers found a calcaneal spur in 19% (Ehrmann and colleagues, 2014).
+
+Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
+Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
+
 ### Why do exercises help if they cannot remove the spur?
 
 The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). **The pain comes from the soft tissue, and that is what exercise can reach.**
@@ -6071,13 +5548,17 @@ The exercises that help heel spur pain are the same ones the 2023 heel pain guid
 
 No. A heel spur is calcified bone and exercise does not dissolve it. The exercises address the plantar fascia and calf, the soft tissues around the spur that are almost always the source of the pain. If the pain settles with exercise, the spur on the X-ray is not a problem that needs solving.
 
-#### How often should I do heel spur stretches?
+#### Can you have plantar fasciitis without a heel spur?
 
-The plantar fascia stretch works best done every morning before standing and after long periods of sitting. Calf stretches fit into most sessions. In a trial of 101 people with chronic heel pain, the group doing the plantar fascia stretch reported better outcomes at 8 weeks than the group doing calf stretching alone (DiGiovanni and colleagues, 2003).
+Yes. Many people with plantar fasciitis have no spur on X-ray. The pain comes from the irritated plantar fascia, not from bone. The 2023 guideline does not require imaging to diagnose plantar fasciitis when the clinical pattern is clear: first-step pain in the morning, tenderness at the heel and a tight calf.
 
-#### How long does it take for heel spur pain to go away?
+#### Should I get an X-ray if I think I have a heel spur?
 
-Timelines come from plantar fasciitis studies, since fascia irritation is usually what hurts. A review reports that about 90% of people with plantar fasciitis improve with non-surgical care, often within several months (Latt 2020). In a 48-person trial, loaded heel raises showed benefit over stretching alone by three months (Rathleff 2015). No program can promise any one person a timeline.
+The 2023 guideline says imaging is usually not needed when the clinical exam points to plantar fasciitis. An X-ray can show a spur, but finding one does not change the exercise plan, and not finding one does not rule out plantar fasciitis. Imaging becomes useful when pain does not improve after several weeks or when a clinician suspects a stress fracture or nerve issue.
+
+#### When does a heel spur need surgery?
+
+Almost never. The guideline does not recommend spur removal for plantar fasciitis. About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf strengthening and load management (Latt and colleagues, 2020). When surgery is considered after months of failed conservative care, it usually involves releasing the plantar fascia, not removing the spur.
 
 #### What exercises should you avoid if you have a heel spur?
 
@@ -9895,7 +9376,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 
 ### Who might a night splint suit, and who should skip it?
 
-**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell's trial, response to the splint did not depend on foot type, body weight or whether a [heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) showed on X-ray.
+**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell's trial, response to the splint did not depend on foot type, body weight or whether a [heel spur](https://walkito.site/heel-spur-exercises/) showed on X-ray.
 
 A splint makes less sense if your heel hurts mostly while you are lying in bed, or wakes you up. That is a different pattern, and [heel pain at night](https://walkito.site/heel-pain-at-night/) explains the causes worth ruling out. A splint is also a poor fit if you have poor feeling or circulation in your feet, since straps and shells can rub skin you cannot feel.
 
@@ -10927,7 +10408,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 Several problems sit close by and can feel similar (Choo and colleagues, 2020; Tu, 2018):
 
 - A bony bump at the back of the heel with a sore, swollen area at the shoe line: [Haglund’s deformity](https://walkito.site/haglunds-deformity/) or retrocalcaneal bursitis, often together with insertional Achilles pain.
-- A heel spur on an X-ray: common, and usually not the cause of the pain. See [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/).
+- A heel spur on an X-ray: common, and usually not the cause of the pain. See [plantar fasciitis vs heel spur](https://walkito.site/heel-spur-exercises/).
 - A deep bruise-like ache in the middle of the heel pad, worse on hard floors: [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
 - Pain on both sides of the heel when you squeeze it, after a jump in walking or running: possible stress fracture, which needs a clinician.
 - Burning, tingling or numbness: possibly a trapped nerve.
@@ -11061,7 +10542,7 @@ For the heel specifically, a Finnish study looked at military recruits with exer
 
 A 2016 systematic review of stress fractures in the lower limb found X-ray sensitivity ranging from 12% to 56%, against 68% to 99% for MRI. The authors named MRI the most sensitive and specific test and warned that X-rays are likely to give false negatives early on (Wright and colleagues, 2016).
 
-So a clinician who suspects a fracture may repeat the X-ray after two to three weeks or go straight to an MRI if a quick answer matters (Patel and colleagues, 2011). For plantar fasciitis, the 2023 guideline says imaging is "usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions" (Koc and colleagues, 2023). The [heel spur page](https://walkito.site/plantar-fasciitis-vs-heel-spur/) explains why a spur on an X-ray does not settle it either.
+So a clinician who suspects a fracture may repeat the X-ray after two to three weeks or go straight to an MRI if a quick answer matters (Patel and colleagues, 2011). For plantar fasciitis, the 2023 guideline says imaging is "usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions" (Koc and colleagues, 2023). The [heel spur page](https://walkito.site/heel-spur-exercises/) explains why a spur on an X-ray does not settle it either.
 
 Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
@@ -12395,7 +11876,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 A normal X-ray does not rule it out: in 30 recruits with a heel stress injury on MRI, plain X-rays showed it in only 15% (Sormaala and colleagues, 2006). The side by side comparison is in [plantar fasciitis vs stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/).
 
-Fat pad pain is usually described as a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot. Like a stress fracture, it tends to be activity related (Latt and colleagues, 2020), and in one clinic it more often affected both heels and was made worse by standing (Yi and colleagues, 2011). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/).
+Fat pad pain is usually described as a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot. Like a stress fracture, it tends to be activity related (Latt and colleagues, 2020), and in one clinic it more often affected both heels and was made worse by standing (Yi and colleagues, 2011). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](https://walkito.site/heel-spur-exercises/).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
@@ -13076,7 +12557,7 @@ For most members the virtual program costs nothing out of pocket. Hinge’s [App
 
 It is free to you, but it is not free to your plan, and that is the source of most billing complaints. In a reply on [BBB](https://www.bbb.org/us/ca/san-francisco/profile/health-consultants/hinge-health-1116-934732/complaints) (May 9, 2025), Hinge explained: “Our claims are submitted based on engagement”. It said it submits claims to your insurance company, that “This does not affect your insurance benefits or deductible”, and that “your employer reimburses the insurance company in bulk for all paid claims.” In that case the member’s claim had been denied; Hinge said the insurer “may have mis-processed” it and that the member was “not responsible for any out-of-pocket costs”.
 
-Some reviewers still object to how much their plan is charged, or worry about plan limits; those are individual reports we could not verify. If it matters to you, ask your plan how Hinge claims are billed before you start. Who can get Hinge, and what happens when you change jobs, is on [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/).
+Some reviewers still object to how much their plan is charged, or worry about plan limits; those are individual reports we could not verify. If it matters to you, ask your plan how Hinge claims are billed before you start. Who can get Hinge, and what happens when you change jobs, is on [Walkito vs Hinge Health](https://walkito.site/hinge-health-alternatives/).
 
 ### Why does Hinge Health send so much mail, and how do you stop it?
 
@@ -13126,7 +12607,7 @@ On Hinge specifically, the [report](https://www.phti.org/wp-content/uploads/2024
 
 ### Is there a Hinge Health study on foot or heel pain?
 
-No. A PubMed search for “Hinge Health” on October 23, 2026 returned 49 records, and none is on the foot, heel, ankle or plantar fasciitis. Hinge does cover foot and ankle pain in its program, and its plantar fasciitis exercises match what the 2023 heel pain guideline recommends, as we note on [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/).
+No. A PubMed search for “Hinge Health” on October 23, 2026 returned 49 records, and none is on the foot, heel, ankle or plantar fasciitis. Hinge does cover foot and ankle pain in its program, and its plantar fasciitis exercises match what the 2023 heel pain guideline recommends, as we note on [Walkito vs Hinge Health](https://walkito.site/hinge-health-alternatives/).
 
 Foot reviews are rare: 3 of the 250 recent App Store reviews mention the foot, heel or plantar fasciitis, all 5 stars. One says: “When my plantar fasciitis was really bad, these exercises really helped!” (August 11, 2026). That is a good sign for those members, but it is not a study.
 
@@ -13150,7 +12631,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### If you have heel or foot pain
 
-If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](https://walkito.site/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/) compares the two directly.
+If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](https://walkito.site/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](https://walkito.site/hinge-health-alternatives/) compares the two directly.
 
 To start at home today, our free [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) page has the stretches and strength work the 2023 guideline supports. Walkito is our app: an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. It is not a medical device, does not diagnose and has no physical therapist. It was released on October 1, 2026 and has few ratings so far.
 

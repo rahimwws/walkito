@@ -5,16 +5,16 @@ import type { Guide } from '../types';
  * Alternatives page (plan C.7 #6). Facts: walkito-seo/research/pages/
  * hinge-alt-facts.md, verified in hinge-alt-verified.md (2026-10-11); Hinge
  * facts from hinge-facts.md (page 1), cost and PHTI lines as on
- * /hinge-health-reviews/ and /walkito-vs-hinge-health/. Keep the Walkito vs
- * Hinge comparison on /walkito-vs-hinge-health/ only; this page lists
- * options. No Walkito price.
+ * /hinge-health-reviews/ and /walkito-vs-hinge-health/ (merged into this
+ * page 2026-10-30: its Hinge plantar fasciitis lines and two FAQs moved to
+ * "Where Walkito fits" and the FAQ). This page lists options. No Walkito price.
  */
 export const HINGE_ALT_EN: Guide = {
   lang: 'en',
   page: 'hingeAlt',
   mainSource: CITE.cuiSwordRCT,
   published: '2026-10-11',
-  updated: '2026-10-26',
+  updated: '2026-10-30',
   title: 'Hinge Health Alternatives: Sword, Cost and Self-Pay Options',
   description:
     'Hinge Health alternatives compared: Sword, Omada, Vori, home and video physical therapy, apps. What Hinge costs, and what you can book without an employer.',
@@ -56,7 +56,7 @@ export const HINGE_ALT_EN: Guide = {
       h2: 'How much is Hinge Health?',
       paragraphs: [
         'For most members, nothing. Hinge Health says its program \u201cis provided for free as a benefit through your employer or insurance provider\u201d with \u201cno out-of-pocket costs or copays for you\u201d. Your employer or plan pays instead, and Hinge does not publish what they pay. In-person care, where it is offered, can have a cost share on some plans.',
-        'There is no self-pay price. Hinge Health\u2019s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card. Hinge bills your health plan when you use the program and says this does not affect your benefits or deductible; billing is one of the most common complaints in [Hinge Health reviews](/hinge-health-reviews/). If you lost access, for example after changing jobs, [Walkito vs Hinge Health](/walkito-vs-hinge-health/) compares the two side by side.',
+        'There is no self-pay price. Hinge Health\u2019s [page for individuals](https://www.hingehealth.com/for-individuals/) is an eligibility check: it asks for the name and date of birth on your health insurance card. Hinge bills your health plan when you use the program and says this does not affect your benefits or deductible; billing is one of the most common complaints in [Hinge Health reviews](/hinge-health-reviews/).',
       ],
     },
     {
@@ -90,7 +90,7 @@ export const HINGE_ALT_EN: Guide = {
             '[Luna](https://www.getluna.com/). A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.',
             '[Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/). One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.',
             '**Physical therapy in a clinic.** Through your insurance, a visit usually costs your copay or coinsurance. Our [plantar fasciitis cost guide](/plantar-fasciitis-treatment-cost/) has typical prices and the questions to ask your plan.',
-            '**Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](/walkito-vs-plantarcare/)) to $299.99 a year (Prehab\u2019s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](/best-apps-for-foot-pain/).',
+            '**Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136)) to $299.99 a year (Prehab\u2019s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](/best-apps-for-foot-pain/).',
           ],
         },
       ],
@@ -119,8 +119,10 @@ export const HINGE_ALT_EN: Guide = {
     {
       h2: 'Where Walkito fits',
       paragraphs: [
-        'Walkito is an exercise app you can download without an employer or insurance. It gives you a plan of stretching and strengthening for heel pain, flat feet and related foot problems, but no physical therapist, no hands-on care and no diagnosis. If your employer covers Hinge Health or Sword, start there. The full comparison is on [Walkito vs Hinge Health](/walkito-vs-hinge-health/).',
+        'Walkito is an exercise app you can download without an employer or insurance. It gives you a plan of stretching and strengthening for heel pain, flat feet and related foot problems, but no physical therapist, no hands-on care and no diagnosis. If your employer covers Hinge Health or Sword, start there.',
+        'Hinge Health covers foot and ankle pain inside its general program, and its plantar fasciitis articles describe calf raises, calf and plantar fascia stretches and towel scrunches, which line up with the stretching and strengthening the 2023 heel pain guideline recommends. Its headline result, an average 68% drop in pain in the first three months, comes from a large study of people with chronic back and knee pain; we did not find a Hinge Health study on foot or heel pain. Day to day, Hinge sessions take about 15 minutes or less and your physical therapist adjusts the plan; Walkito sessions take 3, 5 or 10 minutes and a one-tap morning check-in sets the day.',
       ],
+      cites: [CITE.guideline],
     },
   ],
   faq: [
@@ -137,16 +139,20 @@ export const HINGE_ALT_EN: Guide = {
       a: 'Sword says it may be offered at no cost through your employer or health plan. It does not publish a self-pay price in the US, so if your plan does not cover it you cannot buy it directly. Kaia, which agreed to join Sword in January 2026, is also not available on a self-pay basis.',
     },
     {
-      q: 'What is a good alternative to Sword Health?',
-      a: 'Through a plan, Hinge Health, Omada and Vori Health offer a physical therapist much like Sword. Without one, Luna sends a physical therapist to your home ($135 a visit without insurance) and Virtual Physical Therapists charges $89 for a 30-minute video visit. Exercise apps cost from free to about $300 a year.',
-    },
-    {
       q: 'Is there a Hinge Health alternative for Medicare?',
       a: 'Vori Health works with insurance including Medicare Advantage, and Luna sends a physical therapist to your home and takes Medicare. Medicare covers telehealth from home through December 31, 2027; from January 1, 2028, CMS says physical therapists can no longer provide Medicare telehealth.',
     },
     {
       q: 'What is the cheapest alternative to Hinge Health?',
       a: 'Free home exercise, such as a good free routine or a free app, costs nothing but has no clinician. For a clinician without insurance, Virtual Physical Therapists charges $89 for 30 minutes and Luna lists $135 for a home visit. Through insurance, clinic physical therapy usually costs your copay or coinsurance.',
+    },
+    {
+      q: 'Is Walkito covered by insurance?',
+      a: 'No. Walkito is a weekly or yearly subscription you pay through the App Store or Google Play, and the current price is shown in the store before you subscribe.',
+    },
+    {
+      q: 'Can I use Walkito and Hinge Health together?',
+      a: 'You can, but if you have a Hinge Health physical therapist, follow their plan first and tell them about anything else you do, so your heel is not loaded twice in one day.',
     },
   ],
   redFlags: {

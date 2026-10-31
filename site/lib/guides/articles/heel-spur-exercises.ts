@@ -30,7 +30,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
   page: 'heelSpurExercises',
   mainSource: CITE.guideline,
   published: '2026-10-07',
-  updated: '2026-10-26',
+  updated: '2026-10-30',
   title: 'Heel Spur Exercises and Stretches: The Routine and Doses',
   description:
     'The heel spur exercises and stretches the heel pain guideline backs, with doses: plantar fascia and calf stretches, heel raises, and how to progress.',
@@ -38,7 +38,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
   lede:
     'The main heel spur exercises are the plantar fascia stretch (10 holds of 10 seconds, each foot), calf and soleus stretches (3 holds of 30 seconds, each leg) and calf heel raises, built up from seated raises (3 x 10) to a single-leg towel raise. They do not dissolve the spur, which is bone. They work on the plantar fascia and calf around it, where the pain almost always comes from.',
   intro: [
-    'These are the same exercises the 2023 heel pain guideline recommends for [plantar fasciitis](/plantar-fasciitis/): stretching graded **A**, strength training **B**. For how a spur differs from plantar fasciitis, see [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/).',
+    'These are the same exercises the 2023 heel pain guideline recommends for [plantar fasciitis](/plantar-fasciitis/): stretching graded **A**, strength training **B**. Further down: how a spur differs from plantar fasciitis.',
   ],
   takeaways: [
     'In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet); heel pain was linked to a spur together with a thickened plantar fascia (Menz and colleagues, 2019).',
@@ -229,6 +229,14 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.cheng, CITE.brijwasi],
     },
     {
+      h2: 'Is a heel spur the same as plantar fasciitis?',
+      paragraphs: [
+        '**A heel spur and plantar fasciitis are not the same thing.** Plantar fasciitis is irritation of the plantar fascia, usually where it attaches to the heel bone. A heel spur is a bony outgrowth on the underside of that bone. The two often coexist, but they can each appear without the other.',
+        'Spurs are common in people without pain. In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and about 6 in 10 people with a spur had never had heel pain (Menz and colleagues, 2008). An MRI study of 77 asymptomatic volunteers found a calcaneal spur in 19% (Ehrmann and colleagues, 2014).',
+      ],
+      cites: [CITE.menzSpur, CITE.ehrmannSpur],
+    },
+    {
       h2: 'Why do exercises help if they cannot remove the spur?',
       keyFact: 'In a study of 530 people with foot pain, a heel spur appeared alone in only 6 percent of feet, usually alongside a thickened plantar fascia (Menz and colleagues, 2019).',
       paragraphs: [
@@ -257,14 +265,19 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       a: 'No. A heel spur is calcified bone and exercise does not dissolve it. The exercises address the plantar fascia and calf, the soft tissues around the spur that are almost always the source of the pain. If the pain settles with exercise, the spur on the X-ray is not a problem that needs solving.',
     },
     {
-      q: 'How often should I do heel spur stretches?',
-      cites: [CITE.guideline, CITE.digiovanni2003],
-      a: 'The plantar fascia stretch works best done every morning before standing and after long periods of sitting. Calf stretches fit into most sessions. In a trial of 101 people with chronic heel pain, the group doing the plantar fascia stretch reported better outcomes at 8 weeks than the group doing calf stretching alone (DiGiovanni and colleagues, 2003).',
+      q: 'Can you have plantar fasciitis without a heel spur?',
+      cites: [CITE.guideline],
+      a: 'Yes. Many people with plantar fasciitis have no spur on X-ray. The pain comes from the irritated plantar fascia, not from bone. The 2023 guideline does not require imaging to diagnose plantar fasciitis when the clinical pattern is clear: first-step pain in the morning, tenderness at the heel and a tight calf.',
     },
     {
-      q: 'How long does it take for heel spur pain to go away?',
-      cites: [CITE.latt, CITE.rathleff],
-      a: 'Timelines come from plantar fasciitis studies, since fascia irritation is usually what hurts. A review reports that about 90% of people with plantar fasciitis improve with non-surgical care, often within several months (Latt 2020). In a 48-person trial, loaded heel raises showed benefit over stretching alone by three months (Rathleff 2015). No program can promise any one person a timeline.',
+      q: 'Should I get an X-ray if I think I have a heel spur?',
+      cites: [CITE.guideline],
+      a: 'The 2023 guideline says imaging is usually not needed when the clinical exam points to plantar fasciitis. An X-ray can show a spur, but finding one does not change the exercise plan, and not finding one does not rule out plantar fasciitis. Imaging becomes useful when pain does not improve after several weeks or when a clinician suspects a stress fracture or nerve issue.',
+    },
+    {
+      q: 'When does a heel spur need surgery?',
+      cites: [CITE.latt],
+      a: 'Almost never. The guideline does not recommend spur removal for plantar fasciitis. About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf strengthening and load management (Latt and colleagues, 2020). When surgery is considered after months of failed conservative care, it usually involves releasing the plantar fascia, not removing the spur.',
     },
     {
       q: 'What exercises should you avoid if you have a heel spur?',

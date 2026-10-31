@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_ES, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_ES.pfVsHeelSpur!;
+/** Folded into /es/ejercicios-espolon-calcaneo/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/es/ejercicios-espolon-calcaneo/');
 
-export const metadata = guideMetadata(guide);
-
-export default function PfVsHeelSpurEsPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/es/ejercicios-espolon-calcaneo/" />;
 }

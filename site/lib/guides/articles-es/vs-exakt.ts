@@ -5,7 +5,7 @@ export const VS_EXAKT_ES: Guide = {
   lang: 'es',
   page: 'vsExakt',
   published: '2026-10-07',
-  updated: '2026-10-13',
+  updated: '2026-10-30',
   title: 'Walkito vs Exakt Health: alternativa y comparación (2026)',
   description:
     '¿Buscas una alternativa a Exakt Health? Walkito vs Exakt comparadas: lesiones que cubren, precio, plataformas, cómo arman tu plan, evidencia y privacidad.',
@@ -218,6 +218,25 @@ export const VS_EXAKT_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
+      h2: 'Otras alternativas a Exakt Health',
+      paragraphs: [
+        'Los precios son los que cada app publica en EE.\u00A0UU., revisados en octubre de 2026. **Prehab** es la más parecida en amplitud; **Injurymap**, en su planteamiento: como Exakt, tiene el marcado CE como dispositivo médico.',
+      ],
+      table: {
+        caption: 'Otras alternativas a Exakt Health (revisado en octubre de 2026)',
+        head: ['App', 'Precio (publicado)', 'Plataformas', 'Ideal para'],
+        rows: [
+          ['[Prehab](https://theprehabguys.com/)', '$49/mes o unos $16/mes pagando el año; 7\u00A0días de prueba gratis en el plan anual', 'iPhone', 'Dolor en varias zonas del cuerpo, una gran biblioteca de videos'],
+          ['[Injurymap](https://apps.apple.com/us/app/injurymap-physiotherapy-app/id1102375789)', '$9.49/mes o $40.99/año; 2\u00A0semanas de prueba gratis', 'iPhone, Android', 'Un precio más bajo; dolor de Aquiles, tobillo y arco, y otras articulaciones'],
+          ['[Sports Injury Rehabilitation](https://apps.apple.com/us/app/sports-injury-rehabilitation/id1538404666)', 'Fase 1 de cada programa gratis; las siguientes, con compras en la app', 'iPhone, Android', 'Probar gratis un plan de rehabilitación deportiva por fases'],
+          ['[GaitLab Coach](https://apps.apple.com/us/app/gaitlab-coach-run-pain-free/id6755685826)', 'Gratis; informe completo $4.99, sin suscripción', 'iPhone', 'Corredores que quieren trabajar su técnica'],
+          ['[Hinge Health](https://www.hingehealth.com/)', '$0 a través de tu empresa o tu seguro médico', 'iPhone, Android', 'Quien tiene cobertura por su empresa o su seguro'],
+        ],
+      },
+      sourceNote:
+        'Fuentes: fichas del App Store de Injurymap (id1102375789), Sports Injury Rehabilitation (id1538404666) y GaitLab Coach (id6755685826), revisadas el 12 de octubre de 2026; Prehab y Hinge Health según nuestra guía de apps para la fascitis plantar, revisada en octubre de 2026.',
+    },
+    {
       h2: '¿Cuándo conviene elegir Exakt Health en vez de Walkito?',
       paragraphs: [
         'Elige Exakt Health si se cumple cualquiera de estas:',
@@ -250,16 +269,20 @@ export const VS_EXAKT_ES: Guide = {
       a: 'Depende de lo que necesitas. Exakt Health cubre más de 15 lesiones de corredores e incluye planes para volver a correr. Está certificada como dispositivo médico en la UE. Walkito se enfoca en el dolor de talón y el pie plano, con adaptación al dolor de la mañana y sesiones más cortas. Las dos están en iOS y Android. Para corredores con distintos tipos de lesión, Exakt es la mejor opción. Para el dolor de talón con ajuste según cómo amaneces, Walkito se hizo para eso.',
     },
     {
-      q: '¿Cómo es el precio de Walkito comparado con Exakt Health?',
-      a: 'Walkito es una suscripción semanal o anual, y el precio actual para tu país aparece en el App Store o Google Play antes de que te suscribas. La opción de rehabilitación más barata de Exakt Health cuesta $59.99 por seis meses, o unos $120 al año, y empieza con una prueba gratis de 7\u00A0días.',
-    },
-    {
       q: '¿Exakt Health tiene un plan para la fascitis plantar?',
       a: 'Sí. Exakt Health tiene un plan de rehabilitación específico para la fascitis plantar, además de planes para la tendinopatía de Aquiles, los esguinces de tobillo, los desgarros de isquiotibiales, las roturas de menisco y más. El plan para la fascitis plantar termina con un programa de caminar y correr para volver a correr de forma segura, y la app adapta el plan a medida que subes de nivel.',
     },
     {
       q: '¿Puedo usar Walkito en Android?',
       a: 'Sí. Walkito está en Google Play desde octubre de 2026, además de en el App Store para iPhone. En Android lee Health Connect (pasos, sesiones de ejercicio, distancia y sueño) en lugar de Apple Health; la asimetría y la velocidad al caminar solo están en iPhone. Exakt Health también funciona en Android y en iOS.',
+    },
+    {
+      q: '¿Hay una alternativa gratis a Exakt Health?',
+      a: 'En parte. Sports Injury Rehabilitation da gratis la fase 1 de cada programa, GaitLab Coach es gratis para revisiones básicas de tu técnica de carrera y PlantarCare es gratis para el dolor de talón en iPhone. Hinge Health es gratis solo a través de tu empresa o tu seguro. Injurymap y Exakt ofrecen primero una prueba gratis.',
+    },
+    {
+      q: '¿Hay una app como Exakt Health para Android?',
+      a: 'Exakt Health ya está en Android. De las alternativas, Injurymap, Sports Injury Rehabilitation, Hinge Health y Walkito también están en Android. Prehab y GaitLab Coach los encontramos en el App Store de iPhone, y PlantarCare es solo para iPhone.',
     },
     {
       q: '¿Exakt Health es un dispositivo médico?',

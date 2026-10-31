@@ -15,7 +15,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
   page: 'heelSpurExercises',
   mainSource: CITE.guideline,
   published: '2026-10-07',
-  updated: '2026-10-07',
+  updated: '2026-10-30',
   title: 'Ejercicios para el espolón calcáneo: estiramientos y fuerza',
   description:
     'Ejercicios para el espolón calcáneo: rutina de fascia plantar y pantorrilla, dosis y progresión que alivian el dolor sin disolver el espolón.',
@@ -23,7 +23,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
   lede:
     'El ejercicio no disuelve un espolón calcáneo. El espolón es hueso, y el hueso no se encoge con estiramientos. Pero el dolor que sienten las personas con un espolón casi siempre viene de la fascia plantar y la pantorrilla a su alrededor, no del hueso en sí. Los ejercicios de abajo trabajan esos tejidos blandos. Son los mismos que la guía clínica de 2023 para el dolor de talón recomienda para la fascitis plantar.',
   intro: [
-    'Si primero quieres entender la diferencia entre un espolón calcáneo y la fascitis plantar, mira [fascitis plantar vs espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/). Esta página es la rutina práctica: qué ejercicios, cuántos, cómo progresar y cuándo parar.',
+    'Esta página es la rutina práctica: qué ejercicios, cuántos, cómo progresar y cuándo parar. Más abajo también explicamos en qué se diferencia un espolón calcáneo de la fascitis plantar.',
   ],
   takeaways: [
     'Los ejercicios para el espolón calcáneo funcionan porque trabajan la fascia plantar y los músculos de la pantorrilla alrededor del espolón, no porque cambien el espolón en sí.',
@@ -43,6 +43,14 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
         'Ningún programa de ejercicios va a hacer que un espolón desaparezca de la radiografía. Pero la mayoría de las personas con un espolón calcáneo no necesitan que el espolón desaparezca. Necesitan que el dolor se calme, y eso viene de que la fascia y la pantorrilla se vuelvan más fuertes y más flexibles.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
+    },
+    {
+      h2: '¿Un espolón calcáneo es lo mismo que la fascitis plantar?',
+      paragraphs: [
+        '**Un espolón calcáneo y la fascitis plantar no son lo mismo.** La fascitis plantar es una irritación de la fascia plantar, generalmente donde se une al hueso del talón. Un espolón calcáneo es un crecimiento de hueso en la parte inferior de ese hueso. Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.',
+        'Los espolones son comunes en personas sin dolor. En un estudio con 216\u00A0adultos mayores de 62 a 94\u00A0años, el 55\u00A0% tenía al menos un espolón calcáneo plantar en la radiografía, y cerca de 6 de cada 10\u00A0personas con espolón nunca habían tenido dolor de talón (Menz y colegas, 2008). Un estudio de resonancia magnética con 77\u00A0voluntarios sin síntomas encontró un espolón calcáneo en el 19\u00A0% (Ehrmann y colegas, 2014).',
+      ],
+      cites: [CITE.menzSpur, CITE.ehrmannSpur],
     },
     {
       h2: '¿Qué estiramientos ayudan con el espolón calcáneo?',
@@ -264,19 +272,19 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       a: 'No. Un espolón calcáneo es hueso calcificado y el ejercicio no lo disuelve. Los ejercicios trabajan la fascia plantar y la pantorrilla, los tejidos blandos alrededor del espolón que casi siempre son la fuente del dolor. Si el dolor se calma con el ejercicio, el espolón en la radiografía no es un problema que haga falta resolver.',
     },
     {
-      q: '¿Con qué frecuencia debo hacer los estiramientos para el espolón?',
-      cites: [CITE.guideline, CITE.digiovanni2003],
-      a: 'El estiramiento de la fascia plantar funciona mejor si lo haces cada mañana antes de pararte y después de estar sentado mucho rato. Los estiramientos de pantorrilla encajan en la mayoría de las sesiones. En un ensayo con 101\u00A0personas con dolor de talón crónico, el grupo que hizo el estiramiento de la fascia plantar reportó mejores resultados a las 8\u00A0semanas que el grupo que solo estiró la pantorrilla (DiGiovanni y colegas, 2003).',
-    },
-    {
-      q: '¿Cuánto tarda en mejorar el dolor del espolón calcáneo?',
-      cites: [CITE.latt, CITE.rathleff],
-      a: 'La mayoría de los plazos vienen de estudios de fascitis plantar, ya que la irritación de la fascia suele ser lo que duele. Una revisión indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un ensayo con 48\u00A0personas, las elevaciones de talón con carga mostraron beneficios sobre solo estirar a los tres meses (Rathleff y colegas, 2015). Ningún programa puede prometer un plazo para ninguna persona.',
-    },
-    {
-      q: '¿Debo dejar de hacer ejercicio si tengo un espolón calcáneo?',
+      q: '¿Se puede tener fascitis plantar sin espolón calcáneo?',
       cites: [CITE.guideline],
-      a: 'No necesariamente. La guía recomienda el ejercicio como parte del enfoque, no el descanso completo. Detente por el resto del día si el dolor llega a 6 de 10 o más en algún ejercicio, o si la mañana siguiente está claramente peor. Baja un nivel en lugar de parar del todo. Si el dolor empeora semana a semana a pesar de ajustar, consulta a un profesional de la salud.',
+      a: 'Sí. Muchas personas con fascitis plantar no tienen espolón en la radiografía. El dolor viene de la fascia plantar irritada, no del hueso. La guía de 2023 no exige estudios de imagen para diagnosticar fascitis plantar cuando el patrón clínico es claro: dolor en los primeros pasos de la mañana, sensibilidad en el talón y pantorrilla tensa.',
+    },
+    {
+      q: '¿Debería hacerme una radiografía si creo que tengo un espolón calcáneo?',
+      cites: [CITE.guideline],
+      a: 'La guía de 2023 dice que los estudios de imagen por lo general no hacen falta cuando la exploración clínica apunta a fascitis plantar. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia el plan de ejercicios, y no encontrar uno no descarta la fascitis plantar. Los estudios de imagen se vuelven útiles cuando el dolor no mejora después de varias semanas o se sospecha una fractura por estrés o un problema nervioso.',
+    },
+    {
+      q: '¿Cuándo necesita cirugía un espolón calcáneo?',
+      cites: [CITE.latt],
+      a: 'Casi nunca. La guía no recomienda la remoción del espolón para la fascitis plantar. Cerca del 90\u00A0% de las personas con fascitis plantar mejoran con cuidados no quirúrgicos como estiramientos, fortalecimiento de pantorrilla y manejo de la carga (Latt y colegas, 2020). Cuando se considera la cirugía después de meses de cuidados conservadores sin resultado, normalmente implica liberar la fascia plantar, no quitar el espolón.',
     },
     {
       q: '¿Caminar es bueno para el espolón calcáneo?',
@@ -287,11 +295,6 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       q: '¿Qué ejercicios debo evitar si tengo un espolón calcáneo?',
       cites: [CITE.guideline],
       a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté irritado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
-    },
-    {
-      q: '¿Qué dispara el dolor de un espolón calcáneo?',
-      cites: [CITE.guideline, CITE.riddle],
-      a: 'El golpeteo repetido sobre una superficie dura es el disparador más común: correr, saltar o estar de pie varias horas irrita el tejido blando junto al espolón igual que irrita la fascitis plantar normal. Un aumento repentino de actividad, zapatos gastados y caminar descalzo sobre baldosa también pueden provocarlo. Ajustar la carga, no el hueso, es lo que calma un brote.',
     },
   ],
   redFlags: {

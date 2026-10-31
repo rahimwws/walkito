@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/it/
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -177,7 +177,7 @@ Aiutano entrambi; nello studio citato, con il lavoro di forza il miglioramento �
 
 #### Lo sperone calcaneare è la stessa cosa della fascite plantare?
 
-Non proprio. Spesso si dice «[sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/)» (o spina calcaneare) intendendo la fascite plantare, ma a rigore lo sperone calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Gli [esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) spiegano la stessa routine quando una radiografia mostra uno sperone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.
+Non proprio. Spesso si dice «[sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/)» (o spina calcaneare) intendendo la fascite plantare, ma a rigore lo sperone calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Gli [esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) spiegano la stessa routine quando una radiografia mostra uno sperone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.
 
 #### Quanto spesso devo fare gli esercizi per la fascite plantare?
 
@@ -6126,7 +6126,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche, spesso nel giro di alcuni mesi. Un follow-up più lungo su 174 pazienti dà un quadro più dettagliato: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.
 
-I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di uno [sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/) non lo erano.
+I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di uno [sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) non lo erano.
 
 La domanda utile non è «quante settimane mancano alla fine?» ma «il mio dolore del mattino è più basso questo mese rispetto al mese scorso?». **Quella tendenza è il vero traguardo.** [Quanto dura la fascite plantare?](https://walkito.site/it/quanto-dura-fascite-plantare/) raccoglie tutte le prove sui tempi.
 
@@ -7214,7 +7214,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 
 ### A chi può essere utile un tutore notturno, e chi dovrebbe evitarlo?
 
-**Un tutore notturno è più adatto se la tua fascite plantare ha l’andamento classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di uno [sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/) alla radiografia.
+**Un tutore notturno è più adatto se la tua fascite plantare ha l’andamento classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di uno [sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) alla radiografia.
 
 Un tutore ha meno senso se il tallone ti fa male soprattutto mentre sei sdraiato a letto, o ti sveglia. È un quadro diverso, e [dolore al tallone di notte](https://walkito.site/it/dolore-tallone-di-notte/) spiega le cause da escludere. Un tutore è poco adatto anche se hai una sensibilità o una circolazione ridotte ai piedi, perché cinghie e gusci possono sfregare la pelle che non senti.
 
@@ -7319,7 +7319,7 @@ La coorte di Hansen del 2018 ha messo alla prova diversi fattori di partenza ris
 - **Essere donna.** Per ogni 100 uomini che ogni anno arrivavano a non avere più sintomi, ci arrivavano solo 49 donne (hazard rate ratio 0,49, P minore di 0,01). Il motivo non è noto. Gli autori hanno elencato differenze ormonali, abitudini nelle calzature e fattori fisici come possibilità, senza prove per scegliere tra queste (Hansen e colleghi, 2018).
 - **Dolore a entrambi i talloni.** Chi all’inizio aveva dolore a entrambi i talloni arrivava a non avere più sintomi a circa un terzo della velocità annua di chi aveva dolore da un lato solo (hazard rate ratio 0,33, P minore di 0,01). Gli autori hanno notato che il dolore a entrambi i lati potrebbe riflettere un problema infiammatorio non riconosciuto, perché il dolore nei punti di attacco tra tendine e osso su entrambi i lati è una caratteristica di alcune forme di artrite. Nessuno nella loro coorte aveva una diagnosi infiammatoria nota, ma non sono stati fatti esami del sangue specifici (Hansen e colleghi, 2018).
 
-[Indice di massa corporea](https://walkito.site/it/peso-e-fascite-plantare/), età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.
+[Indice di massa corporea](https://walkito.site/it/peso-e-fascite-plantare/), età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.
 
 Se ti fanno male entrambi i talloni e la rigidità del mattino dura a lungo o sono coinvolte altre articolazioni, vale la pena dirlo a un professionista sanitario anche se gli esercizi stanno aiutando. Vedi [dolore al tallone al mattino](https://walkito.site/it/dolore-tallone-al-mattino/) per sapere quando il dolore a entrambi i talloni è un campanello d’allarme.
 
@@ -7435,182 +7435,6 @@ Il segnale più chiaro è meno dolore al mattino: i primi passi sono rigidi inve
 #### Cosa non fare se la fascite plantare non migliora?
 
 Non smettere con gli esercizi appena il dolore del mattino si calma, e non inseguire una sola scorciatoia al posto delle basi. Un dolore che si calma prima che la fascia si sia adattata è un motivo comune per cui i sintomi tornano. Se il dolore resta fermo o peggiora per diversi mesi nonostante stretching, rinforzo e scarpe con un buon sostegno, serve un professionista sanitario, non un’attesa più lunga.
-
-## Fascite plantare o sperone calcaneare: sono la stessa cosa?
-
-Language: Italian (Italiano) · https://walkito.site/it/fascite-plantare-o-spina-calcaneare/ · published 2026-10-08 · updated 2026-10-08
-
-Lo sperone calcaneare (o spina calcaneare) è una crescita ossea sulla parte inferiore dell’osso del tallone. La fascite plantare è un’irritazione della fascia plantare, la banda spessa di tessuto che va da quell’osso alle dita. Spesso si presentano insieme, ma non sono lo stesso problema, e di solito non è lo sperone a fare male. Molte persone con uno sperone visibile ai raggi X non hanno alcun dolore.
-
-- In uno studio su 216 anziani tra i 62 e i 94 anni, il 55% aveva almeno uno sperone calcaneare plantare ai raggi X, e la presenza dello sperone era legata all’obesità e all’artrosi ma non alla forma del piede (Menz e colleghi, 2008). È un campione di anziani, non un dato sulla popolazione generale.
-- In uno studio su 530 persone dai 50 anni in su con dolore al piede, lo sperone calcaneare e una fascia plantare ispessita di solito comparivano insieme, e uno sperone da solo era raro (6% dei piedi). Il dolore al tallone era legato alla presenza di entrambe insieme (Menz e colleghi, 2019).
-- La linea guida del 2023 sul dolore al tallone si concentra sulla fascite plantare come causa più comune del dolore sotto il tallone e nota che di solito non servono esami di imaging quando la visita clinica indica già una fascite plantare (Koc e colleghi, 2023).
-- Lo stesso studio di Menz del 2008 nota che ricerche precedenti nella popolazione generale avevano stimato la frequenza dello sperone calcaneare tra l’11 e il 16%, molto sotto il 55% trovato nel loro campione di anziani (Menz e colleghi, 2008).
-- Gli esercizi che aiutano il dolore da fascite plantare lavorano anche sul tessuto molle intorno a uno sperone calcaneare. L’esercizio non scioglie lo sperone, ma lo sperone raramente è ciò che richiede attenzione.
-
-### Lo sperone calcaneare è la stessa cosa della fascite plantare?
-
-**Sperone calcaneare e fascite plantare non sono la stessa cosa.** La fascite plantare è un problema del tessuto molle: la fascia plantare, la banda spessa che va dall’osso del tallone alle dita, si irrita, di solito dove si attacca all’osso. Lo sperone calcaneare è una sporgenza ossea sulla parte inferiore dell’osso del tallone (il calcagno). Le due spesso convivono, ma ognuna può comparire senza l’altra.
-
-La fascite plantare dà il dolore acuto, a fitta, che le persone descrivono sotto il tallone, soprattutto ai primi passi del mattino o dopo essere state sedute. Il dolore nella parte posteriore del tallone è un altro problema: vedi [fascite plantare o tendinite d’Achille](https://walkito.site/it/fascite-plantare-o-tendinite-achille/). La linea guida del 2023 sul dolore al tallone la definisce come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo sperone calcaneare invece è un reperto strutturale in una radiografia. Può dare sintomi propri oppure no.
-
-La confusione è comprensibile. Per decenni si è pensato che lo sperone calcaneare fosse la causa del dolore sotto il tallone. Quell’idea è stata in gran parte sostituita da prove che mostrano che gli speroni sono comuni in persone senza dolore, e che molte persone con fascite plantare non hanno alcuno sperone.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Lo sperone calcaneare fa davvero male?
-
-**La maggior parte degli speroni calcaneari non fa male.** La ricerca mostra in modo coerente che gli speroni si trovano in persone senza sintomi al tallone, e che togliere lo sperone non fa passare il dolore in modo affidabile.
-
-In uno studio su 530 persone dai 50 anni in su con dolore al piede:
-
-- Le radiografie hanno trovato uno sperone calcaneare nel 26,5% dei piedi.
-- L’ecografia ha trovato una fascia plantare ispessita nel 47,3% dei piedi.
-- I due reperti di solito comparivano insieme, e uno sperone da solo era raro (6% dei piedi).
-- Nelle persone con dolore al tallone, avere entrambe insieme aveva un odds ratio di circa 2 (Menz e colleghi, 2019).
-
-In altre parole, lo sperone raramente compare senza il cambiamento del tessuto molle che lo accompagna.
-
-In un altro studio, su 216 anziani tra i 62 e i 94 anni, il 55% aveva almeno uno sperone calcaneare plantare ai raggi X. Gli speroni erano legati all’obesità, all’artrosi e a una storia di dolore al tallone, ma non alla forma del piede. Gli autori hanno ipotizzato che gli speroni possano essere una risposta di adattamento alla compressione verticale del tallone, non il risultato della fascia plantare che tira sull’osso (Menz e colleghi, 2008).
-
-Lo studio di Menz del 2008 nota che ricerche precedenti nella popolazione generale avevano riportato una frequenza dello sperone calcaneare tra l’11 e il 16%, molto sotto il 55% trovato dagli autori nel loro campione di anziani. In quello stesso campione, circa 6 persone su 10 con uno sperone non avevano mai avuto dolore al tallone, anche se il dolore al tallone era comunque più comune in chi aveva uno sperone (40%) che in chi non l’aveva (12%) (Menz e colleghi, 2008). Uno sperone aumenta le probabilità, ma non decide chi avrà dolore.
-
-Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### Quanto è comune lo sperone calcaneare in chi non ha dolore?
-
-Gli speroni calcaneari sono comuni. La frequenza dipende dalla fascia d’età e dal metodo usato per cercarle.
-
-Lo studio di Menz del 2008 sugli anziani cita ricerche precedenti che riportavano una frequenza dello sperone calcaneare tra l’11 e il 16% nella popolazione generale, un intervallo molto sotto il 55% trovato dagli autori nel loro campione di 216 persone tra i 62 e i 94 anni. Un altro studio con risonanza magnetica su 77 volontari senza sintomi (età media 48 anni, tra i 23 e gli 83) ha trovato uno sperone calcaneare in 15 di loro, il 19% (Ehrmann e colleghi, 2014).
-
-Il quadro è coerente: una gran parte delle persone con uno sperone non ha sintomi, e **uno sperone da solo non predice se qualcuno avrà dolore al tallone.** Per questo la linea guida del 2023 sul dolore al tallone non indica lo sperone calcaneare come motivo per cambiare l’approccio con gli esercizi.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### Cosa dice la linea guida del 2023 sullo sperone calcaneare?
-
-La linea guida di pratica clinica del 2023 sul dolore al tallone, pubblicata sul Journal of Orthopaedic and Sports Physical Therapy, si concentra sulla fascite plantare come causa più comune del dolore sotto il tallone. Cita la «heel spur syndrome» (sindrome da sperone calcaneare) come una delle diagnosi da distinguere, insieme a:
-
-- La [sindrome del cuscinetto adiposo](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/).
-- L’irritazione dei nervi.
-- La frattura da stress del calcagno.
-
-La linea guida non raccomanda esami di imaging come primo passo quando la visita clinica indica già una fascite plantare. Dice che gli esami di imaging «di solito non sono indicati per i pazienti che soddisfano i criteri clinici della fascite plantare, finché le cure conservative non falliscono». Quando si valuta un esame, la prima scelta è la radiografia sotto carico, poi l’ecografia o la risonanza magnetica se servono.
-
-In pratica, un professionista sanitario che vede il quadro tipico, dolore ai primi passi del mattino, dolorabilità nella parte interna del tallone e caviglia meno flessibile, può far iniziare stretching e lavoro di forza senza aspettare una radiografia. **La presenza o l’assenza di uno sperone in una radiografia fatta dopo non cambia il piano di esercizi.**
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Serve una radiografia per distinguere fascite plantare e sperone calcaneare?
-
-**Di solito per la fascite plantare non serve una radiografia.** La diagnosi è clinica: si basa su dove fa male, quando fa male e cosa lo peggiora. Una radiografia può mostrare uno sperone calcaneare, ma trovarlo non cambia cosa fai per il dolore, e non trovarlo non esclude la fascite plantare.
-
-Gli esami di imaging diventano utili:
-
-- Quando il dolore non ha l’andamento tipico della fascite plantare.
-- Quando non è migliorato dopo diverse settimane di cure conservative.
-- Quando un professionista sanitario sospetta altro, come una [frattura da stress](https://walkito.site/it/fascite-plantare-o-frattura-da-stress/), un problema ai nervi o una rottura della fascia plantare.
-
-L’ecografia può misurare lo spessore della fascia plantare (un valore sopra i 4 mm di solito si considera ispessito), e la risonanza magnetica può mostrare dettagli dei tessuti molli che la radiografia non vede.
-
-Se ti hanno già detto che hai uno sperone calcaneare in una radiografia, lo sperone in sé quasi mai richiede un’attenzione a parte. Gli esercizi e gli allungamenti che aiutano la fascite plantare lavorano anche sul tessuto molle intorno allo sperone. Vedi [esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) per la routine completa.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Se il problema non è lo sperone, cos’è?
-
-Il dolore di solito viene dalla fascia plantare e dai tessuti intorno, non dall’osso. La fascia plantare si attacca alla parte inferiore dell’osso del tallone. Quando è sovraccaricata, soprattutto in chi ha un [polpaccio rigido](https://walkito.site/it/polpacci-rigidi/), un indice di massa corporea alto o passa molte ore in piedi, quel punto di attacco si irrita. Quell’irritazione è la fascite plantare.
-
-Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50 persone con fascite plantare e 100 controlli:
-
-- Una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, aveva l’odds ratio più alto tra tutti i fattori misurati.
-- Anche stare in piedi per gran parte della giornata di lavoro era significativo, con un odds ratio di 3,6 (Riddle e colleghi, 2003).
-
-Lo sperone, quando c’è, sta lì vicino. Potrebbe essersi formato in mesi o anni in risposta allo stesso stress meccanico che ha irritato la fascia. Ma **sono la fascia e il polpaccio a rispondere a stretching e rinforzo, non l’osso.** Per questo la linea guida raccomanda l’esercizio, non la rimozione dello sperone.
-
-Per una panoramica completa sulla fascite plantare, con cause, fattori di rischio e raccomandazioni della linea guida, vedi [fascite plantare](https://walkito.site/it/fascite-plantare/).
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Lo sperone calcaneare va mai tolto?
-
-La rimozione chirurgica di uno sperone calcaneare è rara e non è un’opzione di prima scelta. **La linea guida del 2023 non raccomanda di togliere lo sperone nella fascite plantare.** Diversi studi hanno mostrato che il dolore da fascite plantare può risolversi con cure conservative anche quando lo sperone resta nella radiografia. L’American Academy of Orthopaedic Surgeons dice chiaramente che «gli speroni calcaneari non causano il dolore della fascite plantare» e che «il dolore della fascite plantare si può trattare senza togliere lo sperone».
-
-A volte si valuta la chirurgia quando il dolore non ha risposto a mesi di trattamento conservativo, ma l’intervento di solito è un rilascio parziale della fascia plantare, non una rimozione dello sperone. Se durante quell’intervento viene tolto anche lo sperone, le prove suggeriscono che il beneficio venga dal rilascio della fascia, non dalla rimozione dell’osso.
-
-La grande maggioranza delle persone con dolore al tallone e uno sperone migliora con lo stesso stretching, lo stesso lavoro sul polpaccio e la stessa gestione del carico di chi non ha lo sperone. Vedi [esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) per la routine pratica.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### Quali esercizi aiutano quando hai uno sperone calcaneare?
-
-Gli esercizi per il dolore da sperone calcaneare sono gli stessi che la linea guida raccomanda per la fascite plantare: allungamento della fascia plantare, allungamento del polpaccio e rinforzo graduale del polpaccio. L’esercizio non scioglie lo sperone. Lavora sul tessuto molle che dà davvero il dolore.
-
-La linea guida dà all’allungamento della fascia plantare e del polpaccio il grado più alto, **A**, e al lavoro di forza una **B**. Questi gradi valgono che lo sperone ci sia o no. [Esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) ha la routine completa con serie, tenute e progressione. Qui sotto ci sono tre esercizi per iniziare.
-
-- **Allungamento della fascia plantare** (10 tenute da 10 secondi, ogni piede): Siediti e accavalla una caviglia sull’altro ginocchio. Tira indietro le dita con delicatezza finché senti un allungamento lungo l’arco. Fallo prima di alzarti al mattino e dopo essere stato seduto a lungo.
-- **Allungamento del polpaccio (ginocchio teso)** (2 tenute da 30 secondi, ogni gamba): Mani al muro. Gamba dietro tesa, tallone giù, fianchi in avanti. Un polpaccio rigido tira il tallone attraverso il tendine d’Achille e aggiunge carico alla fascia.
-- **Sollevamenti sulle punte su due piedi** (3 serie da 10, entrambi i piedi): Stai su entrambi i piedi, sali dritto sopra gli alluci, poi scendi piano. Questo aumenta la capacità del polpaccio senza un carico pesante sul tallone.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
-
-### Rivolgiti prima a un professionista sanitario se
-
-- il dolore è iniziato dopo un infortunio o una caduta, che può indicare una rottura della fascia plantare invece di una fascite
-- non riesci a caricare il peso sul piede, o zoppichi
-- stringere i lati del tallone riproduce il dolore, il che può far pensare a una frattura da stress più che a uno sperone o a una fascite
-- il dolore si accompagna a intorpidimento, formicolio o bruciore, che possono far pensare a un nervo compresso
-- il tallone è arrossato, caldo o gonfio, o hai la febbre
-- ti fanno male entrambi i talloni e la rigidità del mattino dura più di 30 minuti, soprattutto se altre articolazioni sono rigide o gonfie
-- il dolore ti tiene sveglio di notte o c’è anche a riposo, non solo quando carichi il peso
-- non è migliorato dopo diverse settimane di stretching, lavoro sul polpaccio e meno carico
-- hai il diabete, meno sensibilità ai piedi o una cattiva circolazione
-
-### Come trasformarlo in un piano
-
-Che la radiografia mostri uno sperone o no, l’approccio con gli esercizi è lo stesso. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è un dolore del mattino a 1 su 10 o meno per 14 giorni di fila. Lo stretching inizia dal primo giorno. Il lavoro di forza per il polpaccio si aggiunge quando il primo obiettivo passa dal calmare il dolore al costruire capacità.
-
-#### Lo sperone calcaneare è la stessa cosa della fascite plantare?
-
-No. Lo sperone calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. La fascite plantare è un’irritazione della fascia plantare, la banda spessa di tessuto che va dal tallone alle dita. Spesso compaiono insieme, ma uno sperone può esserci senza dolore e la fascite plantare può esserci senza sperone. La linea guida del 2023 sul dolore al tallone li considera due reperti separati.
-
-#### Lo sperone calcaneare fa male?
-
-La maggior parte degli speroni calcaneari non fa male. In uno studio su 530 persone dai 50 anni in su con dolore al piede, uno sperone calcaneare da solo era raro, e il dolore al tallone era legato a uno sperone insieme a una fascia plantare ispessita (Menz e colleghi, 2019). In un altro studio su 216 anziani, circa 6 su 10 di quelli con uno sperone non avevano dolore al tallone, né attuale né passato (Menz e colleghi, 2008).
-
-#### Si può avere la fascite plantare senza sperone calcaneare?
-
-Sì. Molte persone con fascite plantare non hanno alcuno sperone nella radiografia. Il dolore viene dalla fascia plantare irritata, non dall’osso. La linea guida del 2023 non richiede esami di imaging per la diagnosi di fascite plantare quando il quadro clinico è chiaro: dolore ai primi passi del mattino, dolorabilità al tallone e polpaccio rigido.
-
-#### Gli esercizi per lo sperone calcaneare lo sciolgono?
-
-No. Gli esercizi di allungamento e rinforzo non sciolgono uno sperone calcaneare. Lavorano sul tessuto molle intorno, soprattutto sulla fascia plantare e sui muscoli del polpaccio, che di solito sono ciò che fa male. Lo sperone in sé raramente richiede attenzione, e la linea guida raccomanda gli stessi esercizi che lo sperone ci sia o no.
-
-#### Devo fare una radiografia se penso di avere uno sperone calcaneare?
-
-La linea guida del 2023 dice che di solito non servono esami di imaging quando la visita clinica indica una fascite plantare. Una radiografia può mostrare uno sperone, ma trovarlo non cambia il piano di esercizi, e non trovarlo non esclude la fascite plantare. Gli esami diventano utili quando il dolore non migliora dopo diverse settimane o quando un professionista sanitario sospetta una frattura da stress o un problema ai nervi.
-
-#### Quanto è comune lo sperone calcaneare?
-
-La frequenza dipende dall’età. Ricerche precedenti citate nello studio di Menz del 2008 riportavano uno sperone calcaneare plantare ai raggi X nell’11-16% della popolazione generale. In uno studio su 216 persone tra i 62 e i 94 anni, il 55% aveva almeno uno sperone plantare (Menz e colleghi, 2008). Gli speroni diventano più comuni con l’età, con un indice di massa corporea più alto e con l’artrosi.
-
-#### Quando lo sperone calcaneare va operato?
-
-Quasi mai. La linea guida non raccomanda di togliere lo sperone nella fascite plantare. Circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching, rinforzo del polpaccio e gestione del carico (Latt e colleghi, 2020). Quando si valuta la chirurgia dopo mesi di cure conservative senza risultati, di solito si tratta di un rilascio della fascia plantare, non della rimozione dello sperone.
-
-#### Cosa succede se continui a camminare con lo sperone calcaneare?
-
-Camminare non spingerà lo sperone nei tessuti vicini. Il dolore che si accende camminando di solito viene dalla fascia plantare irritata accanto allo sperone, non dall’osso. La linea guida del 2023 raccomanda di regolare il carico, per esempio distanza o ritmo, invece di fermarti, se camminare ti peggiora il tallone la mattina dopo.
-
-#### Fa bene massaggiare lo sperone calcaneare?
-
-Un massaggio delicato intorno a uno sperone calcaneare può sciogliere la rigidità dei tessuti molli, ma non cambia l’osso. Far rotolare la pianta del piede con una pressione decisa, non dolorosa, può rilassare fascia e polpaccio, i tessuti che di solito danno il dolore. La linea guida dà alla terapia manuale fatta da un professionista una A; l’automassaggio dà sollievo, ma non sostituisce lo stretching.
 
 ## Taping per la fascite plantare: cosa fa, come applicarlo e quando smettere
 
@@ -9350,7 +9174,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 Diversi problemi si trovano lì vicino e possono dare sensazioni simili (Choo e colleghi, 2020; Tu, 2018):
 
 - Una sporgenza ossea dietro il tallone con una zona dolente e gonfia dove arriva la scarpa: [morbo di Haglund](https://walkito.site/it/morbo-di-haglund/) o borsite retrocalcaneare, spesso insieme a un dolore inserzionale all’Achille.
-- Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/).
+- Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/).
 - Un dolore profondo, come un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri: [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/).
 - Dolore su entrambi i lati del tallone quando lo stringi, dopo un aumento improvviso di camminata o corsa: possibile frattura da stress, che va valutata da un medico.
 - Bruciore, formicolio o intorpidimento: forse un nervo compresso.
@@ -9484,7 +9308,7 @@ Per il tallone in particolare, uno studio finlandese ha esaminato reclute milita
 
 Una revisione sistematica del 2016 sulle fratture da stress dell’arto inferiore ha trovato una sensibilità della radiografia dal 12 al 56%, contro valori dal 68 al 99% della risonanza magnetica. Gli autori hanno indicato la risonanza come l’esame più sensibile e specifico e hanno avvertito che all’inizio le radiografie danno facilmente falsi negativi (Wright e colleghi, 2016).
 
-Per questo, se sospetta una frattura, il professionista può ripetere la radiografia dopo due o tre settimane oppure passare subito alla risonanza magnetica se serve una risposta rapida (Patel e colleghi, 2011). Per la fascite plantare, la linea guida del 2023 dice che gli esami di imaging «di solito non sono indicati nei pazienti che soddisfano i criteri clinici della fascite plantare finché non falliscono i trattamenti conservativi» (Koc e colleghi, 2023). La pagina sullo [sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/) spiega perché nemmeno uno sperone visto in radiografia chiude la questione.
+Per questo, se sospetta una frattura, il professionista può ripetere la radiografia dopo due o tre settimane oppure passare subito alla risonanza magnetica se serve una risposta rapida (Patel e colleghi, 2011). Per la fascite plantare, la linea guida del 2023 dice che gli esami di imaging «di solito non sono indicati nei pazienti che soddisfano i criteri clinici della fascite plantare finché non falliscono i trattamenti conservativi» (Koc e colleghi, 2023). La pagina sullo [sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) spiega perché nemmeno uno sperone visto in radiografia chiude la questione.
 
 Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
@@ -10476,7 +10300,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 Una radiografia normale non la esclude: in 30 reclute con una lesione da stress del calcagno vista alla risonanza magnetica, le radiografie semplici la mostravano solo nel 15% (Sormaala e colleghi, 2006). Il confronto completo è in [fascite plantare o frattura da stress](https://walkito.site/it/fascite-plantare-o-frattura-da-stress/).
 
-Il dolore del cuscinetto adiposo di solito viene descritto come un dolore profondo, simile a un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri e a piedi nudi. Come la frattura da stress, tende a essere legato all’attività (Latt e colleghi, 2020), e in un ambulatorio colpiva più spesso entrambi i talloni e peggiorava stando in piedi (Yi e colleghi, 2011). Era la seconda causa più comune nelle 250 persone citate sopra, con il 14,8% (Yi e colleghi, 2011). Una revisione del 2022 ha trovato solo sette studi originali su questa condizione, quindi gran parte dei consigli si basa sull’esperienza e non su studi clinici (Chang e colleghi, 2022). Altro in [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/) e, su che ruolo ha lo sperone, in [fascite plantare o spina calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/).
+Il dolore del cuscinetto adiposo di solito viene descritto come un dolore profondo, simile a un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri e a piedi nudi. Come la frattura da stress, tende a essere legato all’attività (Latt e colleghi, 2020), e in un ambulatorio colpiva più spesso entrambi i talloni e peggiorava stando in piedi (Yi e colleghi, 2011). Era la seconda causa più comune nelle 250 persone citate sopra, con il 14,8% (Yi e colleghi, 2011). Una revisione del 2022 ha trovato solo sette studi originali su questa condizione, quindi gran parte dei consigli si basa sull’esperienza e non su studi clinici (Chang e colleghi, 2022). Altro in [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/) e, su che ruolo ha lo sperone, in [fascite plantare o spina calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.

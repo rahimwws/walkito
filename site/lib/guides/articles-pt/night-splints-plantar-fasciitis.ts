@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
     {
       h2: 'Para quem a tala noturna pode servir, e quem deve pular?',
       paragraphs: [
-        '**A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico**: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um [esporão](/pt/fascite-plantar-ou-esporao/) no raio-X.',
+        '**A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico**: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um [esporão](/pt/esporao-calcaneo-exercicios/) no raio-X.',
         'A tala faz menos sentido se o seu calcanhar dói principalmente enquanto você está deitado na cama, ou se a dor acorda você. Esse é outro padrão, e [dor no calcanhar à noite](/pt/dor-no-calcanhar-a-noite/) explica as causas que vale descartar. A tala também não é uma boa escolha se você tem pouca sensibilidade ou má circulação nos pés, porque as tiras e as estruturas podem machucar uma pele que você não sente.',
         'A fascite plantar muitas vezes melhora ao longo de meses, seja lá o que você use, e esse é um dos motivos pelos quais os ensaios com tala são difíceis de interpretar. Para prazos realistas, veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
       ],

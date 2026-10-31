@@ -89,7 +89,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       h2: 'How long does plantar fasciitis last?',
       keyFact: 'In a cohort of 174 people, about half were symptom-free by five years, and 46 percent still had some pain at ten years, most only minor (Hansen and colleagues, 2018).',
       paragraphs: [
-        'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. In a longer follow-up of 174 patients, about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms. Being female and having pain in both heels predicted slower recovery; BMI, age, fascia thickness and a [heel spur](/plantar-fasciitis-vs-heel-spur/) did not.',
+        'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. In a longer follow-up of 174 patients, about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms. Being female and having pain in both heels predicted slower recovery; BMI, age, fascia thickness and a [heel spur](/heel-spur-exercises/) did not.',
         'The useful milestone is whether your morning pain is lower this month than last month. [How long does plantar fasciitis last?](/how-long-does-plantar-fasciitis-last/) covers the timeline evidence and what to do if progress stalls.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -122,7 +122,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
           list: [
             '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. See [plantar fasciitis vs Achilles tendonitis](/plantar-fasciitis-vs-achilles-tendonitis/).',
             '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to tell apart from plantar fasciitis without imaging. See [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
-            '**Heel spur.** Many people have one with no pain at all, and in the Hansen 2018 cohort a spur at baseline had no significant effect on how long symptoms lasted. See [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/).',
+            '**Heel spur.** Many people have one with no pain at all, and in the Hansen 2018 cohort a spur at baseline had no significant effect on how long symptoms lasted. See [plantar fasciitis vs heel spur](/heel-spur-exercises/).',
             '**Calcaneal stress fracture.** Pain that builds with activity instead of easing, can hurt at rest or at night, and squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot. [How to tell them apart](/plantar-fasciitis-vs-stress-fracture/).',
             '**Inflammatory arthritis.** Both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen. A clinician should check.',
           ],
