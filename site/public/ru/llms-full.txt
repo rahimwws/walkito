@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/ru/
-Last updated: 2026-10-30
+Last updated: 2026-10-31
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
+- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist (Washington State license PT60477690); her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Упражнения и растяжка при плантарном фасциите и боли в пятке
 
@@ -11323,7 +11323,7 @@ Walkito не ставит диагноз, не лечит и не заменяе
 
 ### Кто проверял Walkito?
 
-Упражнения в приложении Walkito проверил лицензированный физиотерапевт. Гайды на этом сайте пока не проверял ни один врач. Рахим и Рахман пишут их по опубликованным исследованиям, которые указаны на каждой странице.
+Упражнения Walkito проверяет [Карла Шейман (Dr. Carla Shayman), PT, DPT, OCS](#reviewer), доктор физической терапии и сертифицированный специалист по ортопедии. Рахим и Рахман пишут их по опубликованным исследованиям, которые указаны на каждой странице.
 
 Когда врач проверит гайды, на этой странице появятся его имя, квалификация и то, что именно он проверил. До тех пор ни одна страница сайта не заявляет о медицинской проверке.
 

@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+import { WIDE_MEDIA } from '@/lib/exercise-media';
+
 /**
  * One exercise, shown the way the app shows it: the app's own demonstration
  * clip, cut to a single repetition, looping, muted.
@@ -16,7 +18,19 @@ import { useEffect, useRef, useState } from 'react';
  * Files come from `scripts/exercise-media.mjs`, named by the app's exercise id:
  * `/exercises/<id>.webp` (+ `@2x`), `.webm` and `.mp4`.
  */
-export function ExerciseMedia({ id, alt, caption }: { id: string; alt: string; caption?: string }) {
+
+const DRAWING_ALT: Record<string, string> = {
+  en: 'Drawing of the same move, with the working area highlighted',
+  es: 'Dibujo del mismo movimiento, con la zona que trabaja resaltada',
+  ru: 'Рисунок того же движения, рабочая зона выделена',
+  pt: 'Desenho do mesmo movimento, com a área trabalhada destacada',
+  fr: 'Dessin du même mouvement, avec la zone sollicitée mise en évidence',
+  it: 'Disegno dello stesso movimento, con la zona che lavora evidenziata',
+  de: 'Zeichnung derselben Bewegung, der beanspruchte Bereich hervorgehoben',
+};
+
+export function ExerciseMedia({ id, alt, caption, lang = 'en' }: { id: string; alt: string; caption?: string; lang?: string }) {
+  const wide = WIDE_MEDIA.has(id);
   const ref = useRef<HTMLElement>(null);
   const [play, setPlay] = useState(false);
 
@@ -44,13 +58,14 @@ export function ExerciseMedia({ id, alt, caption }: { id: string; alt: string; c
   const still = `/exercises/${id}.webp`;
 
   return (
-    <figure ref={ref} className="exercise-media" data-exercise={id}>
+    <figure ref={ref} className={wide ? 'exercise-media wide' : 'exercise-media'} data-exercise={id}>
+      <div className="exercise-media-pair">
       <div className="exercise-media-frame">
         <img
           src={still}
           srcSet={`${still} 1x, /exercises/${id}@2x.webp 2x`}
-          width={720}
-          height={900}
+          width={wide ? 800 : 720}
+          height={wide ? 450 : 900}
           alt={alt}
           loading="lazy"
           decoding="async"
@@ -70,6 +85,20 @@ export function ExerciseMedia({ id, alt, caption }: { id: string; alt: string; c
             <source src={`/exercises/${id}.mp4`} type="video/mp4" />
           </video>
         )}
+      </div>
+      {wide && (
+        <div className="exercise-media-frame exercise-drawing">
+          <img
+            src={`/exercises/${id}-drawing.webp`}
+            srcSet={`/exercises/${id}-drawing.webp 1x, /exercises/${id}-drawing@2x.webp 2x`}
+            width={688}
+            height={384}
+            alt={DRAWING_ALT[lang] ?? DRAWING_ALT.en}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      )}
       </div>
       {caption && <figcaption>{caption}</figcaption>}
     </figure>

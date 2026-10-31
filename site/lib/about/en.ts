@@ -52,7 +52,7 @@ export const ABOUT_EN: About = {
       paragraphs: [
         // The one paragraph writers quote (outreach). The count is the unique studies and
         // guidelines linked on English pages (Oct 12, 2026: 261); 'more than 250' stays true as pages grow.
-        'Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician.',
+        'Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. Walkito’s exercises are reviewed by [Dr. Carla Shayman, PT, DPT, OCS](#reviewer), a doctor of physical therapy and board-certified orthopedic clinical specialist.',
         'Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study. Every guide follows five rules:',
       ],
       bullets: [
@@ -81,7 +81,7 @@ export const ABOUT_EN: About = {
       h2: 'Has a clinician reviewed Walkito?',
       id: 'clinician',
       paragraphs: [
-        'The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician. Rahim and Rahman write them from the published research cited on each page.',
+        'Walkito’s exercises are reviewed by [Dr. Carla Shayman, PT, DPT, OCS](#reviewer), a doctor of physical therapy and board-certified orthopedic clinical specialist. Rahim and Rahman write them from the published research cited on each page.',
         'When a clinician does review the guides, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
       ],
     },

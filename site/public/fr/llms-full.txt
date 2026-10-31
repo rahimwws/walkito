@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/fr/
-Last updated: 2026-10-30
+Last updated: 2026-10-31
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
+- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist (Washington State license PT60477690); her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Exercices et étirements pour la fasciite plantaire et la douleur au talon
 
@@ -11152,7 +11152,7 @@ Walkito s’utilise aussi directement dans ChatGPT et Claude, où il répond ave
 
 ### Notre méthode de recherche
 
-Les guides de Walkito s’appuient sur plus de 250 études publiées et recommandations cliniques. Nous lisons l’article en entier, pas seulement son résumé (abstract), avant d’en reprendre un chiffre sur une page, et chaque note et chaque chiffre renvoient à l’étude qui les soutient, pour que vous puissiez l’ouvrir et vérifier. Les exercices de l’application Walkito ont été vérifiés par une kinésithérapeute diplômée. Les guides de ce site n’ont pas encore été relus par un professionnel de santé.
+Les guides de Walkito s’appuient sur plus de 250 études publiées et recommandations cliniques. Nous lisons l’article en entier, pas seulement son résumé (abstract), avant d’en reprendre un chiffre sur une page, et chaque note et chaque chiffre renvoient à l’étude qui les soutient, pour que vous puissiez l’ouvrir et vérifier. Les exercices de Walkito sont vérifiés par la [Dre Carla Shayman, PT, DPT, OCS](#reviewer), docteure en physiothérapie et spécialiste certifiée en orthopédie.
 
 Rahim Hudaykulyyev et Rahman Bazarov, les deux cofondateurs de Walkito, écrivent les guides de ce site, dont [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/) et [exercices pour pieds plats](https://walkito.site/fr/exercices-pieds-plats/). Nous les construisons à partir de recommandations de pratique clinique, d’essais randomisés et de revues systématiques. Nous n’utilisons pas d’articles de blog, de forums ni de synthèses d’autres sites comme source. Quand une synthèse cite une étude, nous allons lire l’étude elle-même.
 
@@ -11189,7 +11189,7 @@ Walkito ne pose pas de diagnostic, ne soigne pas et ne remplace pas un professio
 
 ### Un professionnel de santé a-t-il relu Walkito ?
 
-Les exercices de l’application Walkito ont été vérifiés par une kinésithérapeute diplômée. Les guides de ce site n’ont pas encore été relus par un professionnel de santé. Rahim et Rahman les écrivent à partir des recherches publiées citées sur chaque page.
+Les exercices de Walkito sont vérifiés par la [Dre Carla Shayman, PT, DPT, OCS](#reviewer), docteure en physiothérapie et spécialiste certifiée en orthopédie. Rahim et Rahman les écrivent à partir des recherches publiées citées sur chaque page.
 
 Quand un professionnel de santé relira les guides, cette page indiquera son nom, ses diplômes et ce qu’il a vérifié. D’ici là, aucune page de ce site ne prétend avoir été relue par un médecin.
 

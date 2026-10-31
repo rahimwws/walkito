@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
@@ -68,6 +69,7 @@ export default function ProgramEs() {
       <Prose className="shell prose" kicker={{ label: c.navProgram, lang: 'es' }}>
         <h1>Un plan de ejercicios para el dolor de talón que se adapta cada semana</h1>
         <Byline lang="es" cites={[]} />
+        <ExercisesReviewed lang="es" />
 
         <p className="lede">
           Walkito arma tu plan de ejercicios para el dolor de talón una semana a la vez, en torno a

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
@@ -68,6 +69,7 @@ export default function ProgramRu() {
       <Prose className="shell prose" kicker={{ label: c.navProgram, lang: 'ru' }}>
         <h1>План упражнений при боли в пятке, который подстраивается каждую неделю</h1>
         <Byline lang="ru" cites={[]} />
+        <ExercisesReviewed lang="ru" />
 
         <p className="lede">
           Walkito строит ваш план упражнений при боли в пятке по одной неделе, вокруг

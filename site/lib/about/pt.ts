@@ -54,7 +54,7 @@ export const ABOUT_PT: About = {
       h2: 'Como pesquisamos',
       id: 'how-we-research',
       paragraphs: [
-        'Os guias do Walkito são feitos a partir de mais de 250 estudos publicados e diretrizes clínicas. Lemos o artigo completo, não só o resumo, antes de um número entrar numa página, e cada grau e número tem link para o estudo por trás dele, para você abrir e conferir. Os exercícios do app Walkito foram conferidos por uma fisioterapeuta habilitada. Os guias deste site ainda não foram revisados por um profissional de saúde.',
+        'Os guias do Walkito são feitos a partir de mais de 250 estudos publicados e diretrizes clínicas. Lemos o artigo completo, não só o resumo, antes de um número entrar numa página, e cada grau e número tem link para o estudo por trás dele, para você abrir e conferir. Os exercícios do Walkito são revisados pela [Dra. Carla Shayman, PT, DPT, OCS](#reviewer), doutora em fisioterapia e especialista certificada em ortopedia.',
         'Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site, entre eles [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) e [exercícios para pé chato](/pt/exercicios-pe-chato/). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.',
         'Exercícios e afirmações recebem um de três selos de evidência. **Forte** quer dizer que uma diretriz clínica dá um grau alto, ou que vários bons ensaios concordam. **Moderada** quer dizer que pelo menos um ensaio bem desenhado apoia. **Inicial** quer dizer que a pesquisa é pequena ou está começando: vale tentar, e o selo pode mudar conforme sair mais pesquisa. Uma regra popular que um ensaio testou e não confirmou é marcada como **Sem respaldo**.',
         'O Walkito não tem patrocinadores, links de afiliado nem conteúdo pago. Nada está numa página porque alguém pagou por isso. Revisamos uma página quando sai pesquisa nova sobre o tema dela. Todo guia segue cinco regras:',
@@ -99,7 +99,7 @@ export const ABOUT_PT: About = {
       h2: 'Algum profissional de saúde revisou o Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Os exercícios do app Walkito foram conferidos por uma fisioterapeuta habilitada. Os guias deste site ainda não foram revisados por um profissional de saúde. Rahim e Rahman os escrevem a partir da pesquisa publicada citada em cada página.',
+        'Os exercícios do Walkito são revisados pela [Dra. Carla Shayman, PT, DPT, OCS](#reviewer), doutora em fisioterapia e especialista certificada em ortopedia. Rahim e Rahman os escrevem a partir da pesquisa publicada citada em cada página.',
         'Quando um profissional de saúde revisar os guias, esta página vai mostrar o nome, as credenciais e o que foi conferido. Até lá, nenhuma página deste site diz ter revisão médica.',
       ],
     },

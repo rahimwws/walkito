@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/it/
-Last updated: 2026-10-30
+Last updated: 2026-10-31
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
+- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist (Washington State license PT60477690); her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Esercizi e allungamenti per la fascite plantare e il dolore al tallone
 
@@ -11152,7 +11152,7 @@ Puoi usare Walkito anche dentro ChatGPT e Claude, dove risponde con brevi video 
 
 ### Come facciamo ricerca
 
-Le guide di Walkito si basano su più di 250 studi pubblicati e linee guida cliniche. Leggiamo l’articolo completo, non solo l’abstract, prima che un numero finisca su una pagina, e ogni grado e ogni cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare. Gli esercizi dell’app Walkito sono stati controllati da una fisioterapista abilitata. Le guide di questo sito non sono ancora state riviste da un professionista sanitario.
+Le guide di Walkito si basano su più di 250 studi pubblicati e linee guida cliniche. Leggiamo l’articolo completo, non solo l’abstract, prima che un numero finisca su una pagina, e ogni grado e ogni cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare. Gli esercizi di Walkito sono rivisti dalla [Dott.ssa Carla Shayman, PT, DPT, OCS](#reviewer), dottoressa in fisioterapia e specialista certificata in ortopedia.
 
 Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/) ed [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.
 
@@ -11189,7 +11189,7 @@ Walkito non fa diagnosi, non cura e non sostituisce un professionista sanitario.
 
 ### Un professionista sanitario ha rivisto Walkito?
 
-Gli esercizi dell’app Walkito sono stati controllati da una fisioterapista abilitata. Le guide di questo sito non sono ancora state riviste da un professionista sanitario. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.
+Gli esercizi di Walkito sono rivisti dalla [Dott.ssa Carla Shayman, PT, DPT, OCS](#reviewer), dottoressa in fisioterapia e specialista certificata in ortopedia. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.
 
 Quando un professionista sanitario rivedrà le guide, questa pagina riporterà il suo nome, le sue qualifiche e cosa ha controllato. Fino ad allora, nessuna pagina di questo sito dichiara una revisione medica.
 

@@ -27,10 +27,21 @@ export type Reviewer = {
   reviewed: Partial<Record<TranslatedPage | EnglishPage | 'runners' | 'science', string>>;
 };
 
-export const REVIEWER: Reviewer | null = null;
+export const REVIEWER: Reviewer | null = {
+  name: 'Dr. Carla Shayman',
+  credentials: 'PT, DPT, OCS',
+  affiliation: 'Doctor of Physical Therapy, board-certified orthopedic clinical specialist (Washington State license PT60477690)',
+  photo: '/team/carla-shayman.webp',
+  // Her own words (Upwork message, 2026-10-30), with her written OK to use them.
+  bio: 'Dr. Carla Shayman is a doctor of physical therapy who treats patients across the lifespan with a specialization in orthopedics. She combines evidence based treatment with a patient-centered approach to deliver individualized care.',
+  sameAs: ['https://www.linkedin.com/in/carla-shayman-pt-dpt-ocs-cscs-6170a0197'],
+  // The two English guides she read in full (Upwork contract, Oct 30, 2026).
+  reviewed: { heelPain: '2026-10-30', flatFeet: '2026-10-30' },
+};
 
-export function reviewFor(page: string): { reviewer: Reviewer; date: string } | null {
-  if (!REVIEWER) return null;
+/** She read the English pages: the translations do not carry her name. */
+export function reviewFor(page: string, lang = 'en'): { reviewer: Reviewer; date: string } | null {
+  if (!REVIEWER || lang !== 'en') return null;
   const date = REVIEWER.reviewed[page as keyof Reviewer['reviewed']];
   return date ? { reviewer: REVIEWER, date } : null;
 }

@@ -15,6 +15,12 @@
 //               720 wide, so the 2x is the same frame kept at full quality)
 // All crops are 4:5, 720 x 900, taken from the 720 x 1280 source at a per-clip
 // height so the working part of the body stays in frame. No text, no audio.
+//
+// Only the four exercises without a new clip are listed here now. The other
+// sixteen were re-filmed close up for app 1.0.8 (wide 16:9 clips, 1280 x 720)
+// and are encoded at 800 x 450 as the whole 8-second loop, with the app's
+// drawing beside them: see WIDE_MEDIA in components/ExerciseMedia.tsx. Do not
+// add them back here, the 4:5 crops would cut the feet out of frame.
 
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
@@ -43,25 +49,9 @@ const H = 900; // 4:5
  * y: top of the 900 px crop inside the 1280 px frame
  */
 const EXERCISES = [
-  { id: 'fascia_stretch', file: '01_plantar_stretch.mp4', start: 1.2, dur: 4.6, poster: 3.4, y: 330 },
-  { id: 'calf_stretch_straight', file: '02_calf_stretch_knee_straight.mp4', start: 1.0, dur: 4.4, poster: 3.1, y: 380 },
-  { id: 'calf_stretch_bent', file: '03_soleus_stretch_knee_bent.mp4', start: 0.6, dur: 4.0, poster: 2.2, y: 380 },
-  { id: 'heel_raise_towel', file: '09_heel_raises_with_towel.mp4', start: 1.6, dur: 4.4, poster: 3.2, y: 380 },
-  { id: 'short_foot_seated', file: '10_short_foot_seated.mp4', start: 0.6, dur: 4.8, poster: 2.6, y: 300 },
-  { id: 'short_foot_double', file: '12_short_foot_standing.mp4', start: 0.6, dur: 4.4, poster: 2.4, y: 380 },
-  { id: 'short_foot_single', file: '13_short_foot_one_leg.mp4', start: 0.6, dur: 4.0, poster: 2.6, y: 380 },
   { id: 'toe_spread', file: '04_toe_spread.mp4', start: 0.6, dur: 4.0, poster: 2.2, y: 380 },
-  { id: 'single_leg_hold', file: '11_single_leg_hold.mp4', start: 1.0, dur: 4.0, poster: 3.0, y: 380 },
-  { id: 'foot_roll', file: '07_foot_roll.mp4', start: 0.8, dur: 4.0, poster: 2.5, y: 380 },
   { id: 'heel_raise_seated', file: '20_seated_heel_raise.mp4', start: 0.3, dur: 3.2, poster: 2.1, y: 300 },
-  { id: 'heel_raise_double', file: '19_double_leg_heel_raise.mp4', start: 1.0, dur: 4.4, poster: 2.9, y: 380 },
-  { id: 'heel_raise_hold', file: '21_heel_raise_hold.mp4', start: 1.0, dur: 4.0, poster: 2.9, y: 380 },
   { id: 'towel_scrunch', file: '23_towel_scrunch.mp4', start: 1.0, dur: 4.4, poster: 2.2, y: 300 },
-  { id: 'big_toe_lift', file: '22_big_toe_lift.mp4', start: 0.8, dur: 3.4, poster: 1.4, y: 300 },
-  { id: 'band_inversion', file: '14_band_inversion.mp4', start: 0.8, dur: 4.0, poster: 1.5, y: 260 },
-  { id: 'hip_abduction', file: '16_hip_abduction.mp4', start: 0.6, dur: 4.4, poster: 1.4, y: 380 },
-  { id: 'ankle_rocks', file: '05_ankle_rocks.mp4', start: 0.6, dur: 4.4, poster: 2.4, y: 380 },
-  { id: 'heel_drop_straight', file: '26_heel_drop_straight_knee.mp4', start: 1.0, dur: 4.4, poster: 2.6, y: 380 },
   { id: 'tibialis_raise', file: '29_tibialis_raise.mp4', start: 0.8, dur: 4.4, poster: 3.0, y: 380 },
 ];
 

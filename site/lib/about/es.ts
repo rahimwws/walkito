@@ -94,7 +94,7 @@ export const ABOUT_ES: About = {
       h2: '¿Un profesional de la salud revisó Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Los ejercicios de la app Walkito los revisó una fisioterapeuta con licencia. Las guías de este sitio todavía no las ha revisado un profesional de la salud. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.',
+        'Los ejercicios de Walkito los revisa la [Dra. Carla Shayman, PT, DPT, OCS](#reviewer), doctora en fisioterapia y especialista certificada en ortopedia. Rahim y Rahman las escriben a partir de la investigación publicada que se cita en cada página.',
         'Cuando un profesional de la salud revise las guías, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.',
       ],
     },

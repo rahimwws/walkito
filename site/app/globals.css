@@ -5361,3 +5361,59 @@ html[data-scrolled] .masthead-end > .masthead-get {
   border-radius: 0 12px 12px 0;
   font-size: 16px;
 }
+
+/* "Exercises reviewed by" line (components/ExercisesReviewed.tsx). */
+.exercises-reviewed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 16px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.exercises-reviewed img {
+  border-radius: 50%;
+  flex: none;
+}
+.exercises-reviewed a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.hero .exercises-reviewed {
+  justify-content: center;
+  margin: 18px auto 0;
+  max-width: 460px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Wide exercise cards (components/ExerciseMedia.tsx, WIDE_MEDIA): the 16:9
+   close-up clip and the app's drawing side by side above the steps. */
+.prose .exercise-detail.exercise-wide:has(.exercise-media),
+.pg .prose .exercise-detail.exercise-wide:has(.exercise-media) {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+figure.exercise-media.wide {
+  max-width: none;
+}
+.exercise-media.wide .exercise-media-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.exercise-media.wide .exercise-media-frame {
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+}
+.exercise-media.wide .exercise-drawing {
+  background: #fff;
+}
+.exercise-media.wide .exercise-drawing img {
+  object-fit: contain;
+}
+@media (max-width: 560px) {
+  .exercise-media.wide .exercise-media-pair {
+    grid-template-columns: 1fr;
+  }
+}
