@@ -328,3 +328,13 @@
   font-size: 16px;
   border-radius: var(--radius-button);
 }
+
+/* Laptop and up: each column as wide as its links, the four spread from edge
+   to edge, so the block sits balanced instead of hugging the left of four
+   equal tracks. */
+@media (min-width: 1101px) {
+  .ft-cols {
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+  }
+}
