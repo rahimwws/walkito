@@ -194,7 +194,7 @@ const FINDINGS = [
 const WHO = [
   `The guides on this site are written by ${AUTHORS.map((a) => `${a.name} (${a.sameAs.join(', ')})`).join(' and ')}, the two co-founders of Walkito. About them: ${url(`${TRANSLATED.about.en}#${FOUNDERS_ID}`)}`,
   'Neither is a clinician. Every exercise dose comes from the app\'s exercise catalogue and every claim from a published study cited on the page.',
-  `The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: ${url(`${TRANSLATED.about.en}#${HOW_WE_RESEARCH_ID}`)}`,
+  `Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist; her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: ${url(`${TRANSLATED.about.en}#${HOW_WE_RESEARCH_ID}`)}`,
 ];
 
 // ─── llms.txt ───────────────────────────────────────────────────────────────

@@ -52,7 +52,7 @@ export const ABOUT_FR: About = {
       id: 'how-we-research',
       paragraphs: [
         // The one paragraph writers quote (outreach), as in `en.ts`: 'more than 250' studies and guidelines.
-        'Les guides de Walkito s’appuient sur plus de 250\u00A0études publiées et recommandations cliniques. Nous lisons l’article en entier, pas seulement son résumé (abstract), avant d’en reprendre un chiffre sur une page, et chaque note et chaque chiffre renvoient à l’étude qui les soutient, pour que vous puissiez l’ouvrir et vérifier. Les exercices de l’application Walkito ont été vérifiés par une kinésithérapeute diplômée. Les guides de ce site n’ont pas encore été relus par un professionnel de santé.',
+        'Les guides de Walkito s’appuient sur plus de 250\u00A0études publiées et recommandations cliniques. Nous lisons l’article en entier, pas seulement son résumé (abstract), avant d’en reprendre un chiffre sur une page, et chaque note et chaque chiffre renvoient à l’étude qui les soutient, pour que vous puissiez l’ouvrir et vérifier. Les exercices de Walkito sont vérifiés par la [Dre Carla Shayman, PT, DPT, OCS](#reviewer), docteure en physiothérapie et spécialiste certifiée en orthopédie.',
         'Rahim Hudaykulyyev et Rahman Bazarov, les deux cofondateurs de Walkito, écrivent les guides de ce site, dont [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) et [exercices pour pieds plats](/fr/exercices-pieds-plats/). Nous les construisons à partir de recommandations de pratique clinique, d’essais randomisés et de revues systématiques. Nous n’utilisons pas d’articles de blog, de forums ni de synthèses d’autres sites comme source. Quand une synthèse cite une étude, nous allons lire l’étude elle-même.',
         'Les exercices et les affirmations portent l’un des trois niveaux de preuve. **Solide** veut dire qu’une recommandation clinique lui donne une bonne note, ou que plusieurs bons essais concordent. **Modéré** veut dire qu’au moins un essai bien conçu le soutient. **Préliminaire** veut dire que les études sont peu nombreuses ou toutes récentes\u00A0: ça vaut la peine d’essayer, et le niveau peut changer avec de nouvelles études. Une règle populaire qu’un essai a testée sans la confirmer est marquée **Non étayé**.',
         'Walkito n’a pas de sponsors, pas de liens d’affiliation et pas de placements payants. Aucun contenu n’est publié contre paiement. Nous revérifions une page quand de nouvelles recherches sortent sur son sujet. Chaque guide suit cinq règles\u00A0:',
@@ -97,7 +97,7 @@ export const ABOUT_FR: About = {
       h2: 'Un professionnel de santé a-t-il relu Walkito\u00A0?',
       id: 'clinician',
       paragraphs: [
-        'Les exercices de l’application Walkito ont été vérifiés par une kinésithérapeute diplômée. Les guides de ce site n’ont pas encore été relus par un professionnel de santé. Rahim et Rahman les écrivent à partir des recherches publiées citées sur chaque page.',
+        'Les exercices de Walkito sont vérifiés par la [Dre Carla Shayman, PT, DPT, OCS](#reviewer), docteure en physiothérapie et spécialiste certifiée en orthopédie. Rahim et Rahman les écrivent à partir des recherches publiées citées sur chaque page.',
         'Quand un professionnel de santé relira les guides, cette page indiquera son nom, ses diplômes et ce qu’il a vérifié. D’ici là, aucune page de ce site ne prétend avoir été relue par un médecin.',
       ],
     },

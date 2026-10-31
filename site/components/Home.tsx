@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
@@ -597,6 +598,7 @@ export function Home({ lang }: { lang: Lang }) {
               <AppleGlyph />
               {c.headerButton}
             </GetAppButton>
+            <ExercisesReviewed lang={lang} className="hero-reviewed" />
           </div>
         </InView>
       </div>

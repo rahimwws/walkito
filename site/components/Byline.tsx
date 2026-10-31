@@ -105,7 +105,7 @@ export function Byline({
   page?: string;
 }) {
   const line = sourceLine(lang, cites, main);
-  const review = page ? reviewFor(page) : null;
+  const review = page ? reviewFor(page, lang) : null;
   // Drawn as chips under the title (app/pages.css). The separators stay in the
   // text, visually hidden, so the line still reads as one sentence to a screen
   // reader and to anything that reads the page as text.

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
@@ -101,6 +102,7 @@ export default function Program() {
       <Prose className="shell prose" kicker={{ label: c.navProgram, lang: 'en' }}>
         <h1>A heel pain exercise plan that adapts every week</h1>
         <Byline lang="en" cites={[]} />
+        <ExercisesReviewed lang="en" />
 
         {/*
           Answer first. AI engines lift the first self-contained passage that

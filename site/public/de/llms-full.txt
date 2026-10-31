@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/de/
-Last updated: 2026-10-30
+Last updated: 2026-10-31
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- The exercises in the Walkito app were checked by a licensed physical therapist. The guides on this site have not yet been reviewed by a clinician; when one does review them, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
+- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist; her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Übungen und Dehnungen bei Plantarfasziitis und Fersenschmerzen
 
@@ -11152,7 +11152,7 @@ Du kannst Walkito auch in ChatGPT und Claude nutzen. Dort antwortet es mit kurze
 
 ### Wie wir recherchieren
 
-Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft.
+Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Die Übungen von Walkito prüft [Carla Shayman, PT, DPT, OCS](#reviewer), Doctor of Physical Therapy (USA) und zertifizierte Spezialistin für Orthopädie.
 
 Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website, zum Beispiel [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/) und [Übungen bei Plattfuß](https://walkito.site/de/plattfuss-uebungen/). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.
 
@@ -11189,7 +11189,7 @@ Walkito stellt keine Diagnose, ist keine Behandlung und ersetzt keinen Arztbesuc
 
 ### Wer hat Walkito fachlich geprüft?
 
-Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.
+Die Übungen von Walkito prüft [Carla Shayman, PT, DPT, OCS](#reviewer), Doctor of Physical Therapy (USA) und zertifizierte Spezialistin für Orthopädie. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.
 
 Wenn eine Fachperson die Ratgeber prüft, nennt diese Seite Name und Qualifikation dieser Person und was geprüft wurde. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.
 

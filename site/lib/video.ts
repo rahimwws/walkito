@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { WIDE_MEDIA } from '@/lib/exercise-media';
 import { join } from 'node:path';
 import type { Lang } from '@/lib/i18n';
 import { ORG_REF, OWN_IMAGE_LICENSE, SITE_URL, isoDateTime } from '@/lib/site';
@@ -93,8 +94,8 @@ export function imageSchema(
       name: e.name,
       ...(e.alt ? { caption: e.alt } : {}),
       inLanguage: lang,
-      width: 720,
-      height: 900,
+      width: WIDE_MEDIA.has(e.media) ? 1280 : 720,
+      height: WIDE_MEDIA.has(e.media) ? 720 : 900,
       creator: ORG_REF,
       creditText: 'Walkito',
       copyrightNotice: '© Walkito',

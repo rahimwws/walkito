@@ -11,6 +11,7 @@ import { Cite } from '@/components/Cite';
 import { CiteBox } from '@/components/CiteBox';
 import { WriterImage, writerImageFor } from '@/components/WriterImage';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
+import { WIDE_MEDIA } from '@/lib/exercise-media';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FaqRows, Prose, typeset } from '@/components/Prose';
@@ -432,8 +433,8 @@ export function Guide({ guide }: { guide: GuideData }) {
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.
-                <div key={e.name} className={e.media ? 'exercise-detail' : 'exercise-detail exercise-text'}>
-                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ? `${e.name}. ${e.alt}` : e.name} caption={e.caption} />}
+                <div key={e.name} className={e.media ? (WIDE_MEDIA.has(e.media) ? 'exercise-detail exercise-wide' : 'exercise-detail') : 'exercise-detail exercise-text'}>
+                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ? `${e.name}. ${e.alt}` : e.name} caption={e.caption} lang={guide.lang} />}
                   <div>
                     <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     {libraryLink(e)}

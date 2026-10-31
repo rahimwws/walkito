@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
@@ -80,6 +81,7 @@ export default function ExerciseLibrary() {
         kicker={{ label: 'Exercises', lang: 'en', num: String(GROUPS.reduce((n, g) => n + g.keys.length, 0)) }}
       >
         <h1>Exercise library</h1>
+        <ExercisesReviewed lang="en" />
         <p className="lede">
           Every exercise in the Walkito plan, one page each. You get how to do it, the starting dose, the mistakes people
           make, easier and harder versions, and what the research says. Each page has a short video of the movement.

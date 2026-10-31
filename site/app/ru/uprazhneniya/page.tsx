@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ExercisesReviewed } from '@/components/ExercisesReviewed';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
@@ -93,6 +94,7 @@ export default function ExerciseLibraryRu() {
         kicker={{ label: 'Упражнения', lang: 'ru', num: String(GROUPS.reduce((n, g) => n + g.keys.length, 0)) }}
       >
         <h1>Библиотека упражнений</h1>
+        <ExercisesReviewed lang="ru" />
         <p className="lede">
           Каждое упражнение из плана Walkito на отдельной странице. Здесь описано, как
           выполнять, стартовая дозировка, типичные ошибки, упрощённые и усложнённые

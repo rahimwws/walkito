@@ -53,7 +53,7 @@ export const ABOUT_DE: About = {
       h2: 'Wie wir recherchieren',
       id: 'how-we-research',
       paragraphs: [
-        'Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft.',
+        'Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Die Übungen von Walkito prüft [Carla Shayman, PT, DPT, OCS](#reviewer), Doctor of Physical Therapy (USA) und zertifizierte Spezialistin für Orthopädie.',
         'Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website, zum Beispiel [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) und [Übungen bei Plattfuß](/de/plattfuss-uebungen/). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.',
         'Übungen und Aussagen tragen eines von drei Labels zur Studienlage. **Stark** heißt, dass eine klinische Leitlinie sie hoch bewertet oder mehrere gute Studien übereinstimmen. **Mittel** heißt, dass mindestens eine gut angelegte Studie sie stützt. **Vorläufig** heißt, dass die Forschung klein ist oder gerade erst anfängt: einen Versuch wert, und das Label kann sich ändern, wenn mehr dazu erscheint. Eine verbreitete Regel, die eine Studie getestet und nicht bestätigt hat, ist als **Nicht belegt** markiert.',
         'Walkito hat keine Sponsoren, keine Affiliate-Links und keine bezahlten Platzierungen. Nichts steht auf einer Seite, weil jemand dafür bezahlt hat. Wir prüfen eine Seite erneut, wenn neue Forschung zu ihrem Thema erscheint. Jeder Ratgeber folgt fünf Regeln:',
@@ -98,7 +98,7 @@ export const ABOUT_DE: About = {
       h2: 'Wer hat Walkito fachlich geprüft?',
       id: 'clinician',
       paragraphs: [
-        'Die Übungen in der Walkito-App hat eine zugelassene Physiotherapeutin geprüft. Die Ratgeber auf dieser Website hat noch keine Fachperson aus Medizin oder Physiotherapie geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
+        'Die Übungen von Walkito prüft [Carla Shayman, PT, DPT, OCS](#reviewer), Doctor of Physical Therapy (USA) und zertifizierte Spezialistin für Orthopädie. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
         'Wenn eine Fachperson die Ratgeber prüft, nennt diese Seite Name und Qualifikation dieser Person und was geprüft wurde. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
       ],
     },

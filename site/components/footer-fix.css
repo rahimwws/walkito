@@ -77,10 +77,9 @@
 
 /* ---- columns ---- */
 
-/* Six tracks: exercises, the two long guide lists two tracks each, Walkito;
-   the "on your feet" and "compare" pair sits under them side by side. */
+/* Four even tracks: heel pain, flat feet, tools, Walkito. */
 .ft-cols {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-flow: row dense;
   gap: 44px 36px;
 }
@@ -328,4 +327,14 @@
   color: #111114;
   font-size: 16px;
   border-radius: var(--radius-button);
+}
+
+/* Laptop and up: each column as wide as its links, the four spread from edge
+   to edge, so the block sits balanced instead of hugging the left of four
+   equal tracks. */
+@media (min-width: 1101px) {
+  .ft-cols {
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+  }
 }

@@ -122,7 +122,7 @@ export function articleSchema(input: {
       : `${SITE_URL}${shareCard(input.lang)}`,
     citation: input.cites.map((i) => citationSchema(CITATIONS[i])),
   };
-  const review = input.page ? reviewFor(input.page) : null;
+  const review = input.page ? reviewFor(input.page, input.lang ?? 'en') : null;
   if (!review) return { '@context': 'https://schema.org', ...article };
   return {
     '@context': 'https://schema.org',

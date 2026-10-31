@@ -14,13 +14,13 @@ import { REVIEWER } from '@/lib/reviewer';
 import { ORG_REF, PAGE_UPDATED, SITE_URL, isoDateTime } from '@/lib/site';
 
 const REVIEWER_HEADING = {
-  en: 'Who reviews our guides',
-  ru: 'Кто проверяет наши гайды',
-  es: 'Quién revisa nuestras guías',
-  pt: 'Quem revisa nossos guias',
-  fr: 'Qui relit nos guides',
-  it: 'Chi rivede le nostre guide',
-  de: 'Wer unsere Ratgeber prüft',
+  en: 'Who reviews our exercises',
+  ru: 'Кто проверяет наши упражнения',
+  es: 'Quién revisa nuestros ejercicios',
+  pt: 'Quem revisa nossos exercícios',
+  fr: 'Qui vérifie nos exercices',
+  it: 'Chi rivede i nostri esercizi',
+  de: 'Wer unsere Übungen prüft',
 } as const;
 
 /** `[label](/path/)` and `**bold**`, the same two marks the guides allow. */
