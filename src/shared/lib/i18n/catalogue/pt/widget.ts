@@ -13,7 +13,7 @@ export const WIDGET_PT = {
 
   'widget.goalTitle': 'Meta de hoje',
   'widget.goalValue': '{done}/{total}',
-  'widget.goalUnknown': '–',
+  'widget.goalUnknown': '-',
   'widget.goalRest': 'Descanso',
   'widget.goalTest': 'Reavaliação',
   'widget.checkin': 'Check-in',

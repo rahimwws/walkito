@@ -1,12 +1,10 @@
-import Award01Icon from '@hugeicons/core-free-icons/Award01Icon';
-import FireIcon from '@hugeicons/core-free-icons/FireIcon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
 import type { DayAttendance } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
 import { formatDateKey } from '../model/format';
 import { heatSummary } from '../model/progress-data';
@@ -89,8 +87,7 @@ export function ConsistencyCard({
 
       <View style={[styles.stats, { borderTopColor: meter.divider }]}>
         <Stat
-          icon={FireIcon}
-          tint={accents[scheme].orange.fill}
+          emoji="fire"
           value={t('streak.dayCount', { count: current })}
           label={t('progress.currentStreak')}
           color={colors.foreground}
@@ -98,8 +95,7 @@ export function ConsistencyCard({
         />
         <View style={[styles.rule, { backgroundColor: meter.divider }]} />
         <Stat
-          icon={Award01Icon}
-          tint={accents[scheme].amber.fill}
+          emoji="trophy"
           value={t('streak.dayCount', { count: longest })}
           label={t('progress.longestStreak')}
           color={colors.foreground}
@@ -112,15 +108,14 @@ export function ConsistencyCard({
 }
 
 function Stat({
-  icon,
-  tint,
+  emoji,
   value,
   label,
   color,
   caption,
 }: {
-  icon: typeof FireIcon;
-  tint: string;
+  /** The streak's own emoji, in its colours: 🔥 now, 🏆 the longest. */
+  emoji: FluentName;
   value: string;
   label: string;
   color: string;
@@ -129,7 +124,7 @@ function Stat({
   const t = useT();
   return (
     <View style={styles.stat} accessible accessibilityLabel={t('streak.tileA11y', { label, days: value })}>
-      <HugeiconsIcon icon={icon} size={22} color={tint} strokeWidth={2} />
+      <FluentIcon name={emoji} size={24} />
       <View style={styles.statCopy}>
         <Text style={[styles.statValue, { color }]} numberOfLines={1}>
           {value}

@@ -1,5 +1,6 @@
 import * as Haptics from 'expo-haptics';
-import { useState } from 'react';
+import { useIsFocused } from 'expo-router';
+import { useEffect, useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
 
 import { LegMap, ZONE_LABEL_KEYS, painAreasOf, toggleZone, type LegZone } from '@/entities/leg-zone';
@@ -22,8 +23,10 @@ import {
 } from '@/entities/program';
 import { lastSyncAt } from '@/entities/program/sync';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { mix } from '@/shared/lib/color';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, reminderRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
@@ -35,6 +38,27 @@ const DAYS: readonly DaysPerWeek[] = [3, 5, 7];
 const MINUTES: readonly SessionMinutes[] = [3, 5, 10];
 const SIDES = ['left', 'right', 'both'] as const;
 const SIDE_KEYS = { left: 'settings.footLeft', right: 'settings.footRight', both: 'settings.footBoth' } as const;
+
+/** The mascot beside "Reminder time", ringing his bell. Drawn a little taller
+ * than the row's 40 pt and let overhang it, so the row keeps its height. */
+const BELL = 46;
+const ROW = 40;
+/** Once the sheet has risen: the bell rung once, as it will be at that time. */
+const RING_MS = 600;
+/** A new time rings it again, once the picker has settled on one. */
+const SETTLE_MS = 500;
+
+/**
+ * The group's colour as one solid colour. `meter.track` is a wash over the
+ * sheet, and the mascot's outline and face are drawn in what he stands on in
+ * the dark: a wash there would draw his eyes see-through.
+ */
+function solidOn(wash: string, under: string): string {
+  const match = /^rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)$/.exec(wash.trim());
+  if (match == null) return wash;
+  const hex = `#${[match[1], match[2], match[3]].map((v) => Number(v).toString(16).padStart(2, '0')).join('')}`;
+  return mix(under, hex, Number(match[4]));
+}
 
 /**
  * What onboarding asked, answerable again — section 8 of the plan spec.
@@ -64,6 +88,22 @@ export function PlanSettings() {
   // The reminder: set by hand, or the habit (the median of the last ten
   // session starts), or a quarter of an hour after waking before there is one.
   const reminderAt = settings.reminderMinutes ?? usualStartMinute() ?? wakeMinutes() + 15;
+
+  // The bell rung once as the sheet arrives, and once more for a new time;
+  // still while the leg map covers the sheet or the sheet is not in front.
+  // Each change restarts the wait, so a picker turned through ten times
+  // rings once, for the time it stopped on.
+  const focused = useIsFocused();
+  const bell = useRef<MascotHandle>(null);
+  const [changes, setChanges] = useState(0);
+  useEffect(() => {
+    const timer = setTimeout(() => bell.current?.play('wave'), changes === 0 ? RING_MS : SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [changes]);
+  const setReminder = (minutes: number) => {
+    setPlanSettings({ reminderMinutes: minutes });
+    setChanges((n) => n + 1);
+  };
 
   const pain = (intake?.pain ?? []).filter((zone): zone is LegZone => zone in ZONE_LABEL_KEYS);
   const painLine =
@@ -151,11 +191,22 @@ export function PlanSettings() {
         </Pressable>
 
         <View style={styles.row}>
-          <Text style={[styles.label, { color: colors.foreground }]}>{t('settings.reminder')}</Text>
-          <TimePicker
-            minutes={reminderAt}
-            onChange={(minutes) => setPlanSettings({ reminderMinutes: minutes })}
-          />
+          <View style={styles.reminderLabel}>
+            <Text style={[styles.label, styles.reminderText, { color: colors.foreground }]}>
+              {t('settings.reminder')}
+            </Text>
+            {/* Decoration: hidden from anyone listening. */}
+            <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.bell}>
+              <Mascot
+                ref={bell}
+                rig={reminderRig}
+                size={BELL}
+                surface={solidOn(meter.track, colors.background)}
+                paused={!focused || mapOpen}
+              />
+            </View>
+          </View>
+          <TimePicker minutes={reminderAt} onChange={setReminder} />
         </View>
       </View>
 
@@ -270,6 +321,20 @@ const styles = StyleSheet.create({
     minHeight: 40,
   },
   label: fonts.semibold(16, -0.2),
+  /** "Reminder time" and the mascot after it, the label where every other
+   * label is. */
+  reminderLabel: {
+    flexShrink: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 2,
+  },
+  reminderText: { flexShrink: 1 },
+  bell: {
+    width: BELL,
+    height: BELL,
+    marginVertical: (ROW - BELL) / 2,
+  },
   value: {
     flexShrink: 1,
     ...fonts.medium(14),

@@ -13,10 +13,10 @@ export const QUICK_RU = {
   'quick.morning.title': 'Утро до первого шага',
 
   'quick.flare.cue': 'Мягко. Это облегчение, а не тренировка.',
-  'quick.preRun.cue': 'Разбуди стопу. Долго не тяни.',
-  'quick.postRun.cue': 'Держи растяжку. Без пружинок.',
+  'quick.preRun.cue': 'Разбудите стопу. Без долгой растяжки.',
+  'quick.postRun.cue': 'Держите каждую растяжку. Без пружинящих движений.',
   'quick.atWork.cue': 'Никто не заметит. Обувь можно не снимать.',
-  'quick.morning.cue': 'До того, как стопа коснётся пола.',
+  'quick.morning.cue': 'До того, как стопа коснётся пола. Держите 10 секунд, отпустите, 10 раз на каждую стопу.',
 
   'quick.seated': 'сидя',
   'quick.standing': 'стоя',
@@ -31,7 +31,7 @@ export const QUICK_RU = {
   'quick.positionLabel': 'Положение',
 
   'quick.start': 'Начать',
-  'quick.switch': 'Смени ногу',
+  'quick.switch': 'Смените ногу',
   'quick.done.title': 'Готово.',
   'quick.done.body': {
     one: '{count} минута для стоп.',
@@ -69,9 +69,9 @@ export const QUICK_RU = {
     many: '{count} секунд',
   },
   'quick.stepSwitch': {
-    one: '{count} секунда, на середине смени ногу',
-    few: '{count} секунды, на середине смени ногу',
-    many: '{count} секунд, на середине смени ногу',
+    one: '{count} секунда, на середине смените ногу',
+    few: '{count} секунды, на середине смените ногу',
+    many: '{count} секунд, на середине смените ногу',
   },
   'quick.startMinutes': {
     one: 'Начать · {count} минута',

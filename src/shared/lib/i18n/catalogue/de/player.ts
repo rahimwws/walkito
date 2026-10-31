@@ -19,7 +19,7 @@ export const PLAYER_DE = {
 
   // ── "It hurt", after the session ──────────────────────────────────────────
   'player.afterPain.lowHint':
-    'Notiert. Etwas Muskelkater nach dieser Arbeit ist normal. Ist er morgen früh noch da, macht der Check-in den Plan leichter.',
+    'Notiert. Leichte Beschwerden nach diesem Training sind normal. Sind sie morgen früh noch da, macht der Check-in den Plan leichter.',
   'player.afterPain.highHint':
     'Das ist mehr, als diese Arbeit auslösen sollte. Deine nächste Einheit startet eine Stufe leichter.',
   'player.afterPain.save': 'Speichern',
@@ -49,4 +49,17 @@ export const PLAYER_DE = {
   'player.cta.pause': 'Pause',
   'player.cta.resume': 'Fortsetzen',
   'player.cta.done': 'Fertig',
+  'player.line.plainSet': 'Wdh. {rep} von {reps} · Satz {set} von {sets}',
+  'player.line.plain': 'Wdh. {rep} von {reps}',
+  'player.line.set': 'Satz {set} von {sets}',
+  'player.repCount': '{rep}/{reps}',
+  'player.unit.reps': { one: 'Wdh.', other: 'Wdh.' },
+  'player.phase.relax': 'Lockern',
+  'player.cta.setDone': 'Fertig',
+  'player.break.rest': 'Pause',
+  'player.break.restNext': 'Dann: Satz {set} von {sets}',
+  'player.break.switchLeft': 'Wechsel auf den linken Fuß',
+  'player.break.switchRight': 'Wechsel auf den rechten Fuß',
+  'player.break.skipRest': 'Pause überspringen',
+  'player.break.ready': 'Jetzt starten',
 };

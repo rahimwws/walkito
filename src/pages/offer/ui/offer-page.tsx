@@ -1,17 +1,13 @@
-import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
-import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
-import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
-import Notification01Icon from '@hugeicons/core-free-icons/Notification01Icon';
-import Route02Icon from '@hugeicons/core-free-icons/Route02Icon';
-import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
-import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
-import { AppState, BackHandler, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
+import { StatusBar } from 'expo-status-bar';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { AppState, BackHandler, ScrollView, StyleSheet, View } from 'react-native';
+import Animated, { Easing, FadeIn, FadeOut, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { OfferScreen, type PassSale } from '@/features/home-offer';
+import { usePassCheckout } from '@/widgets/pass-checkout';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
@@ -20,34 +16,38 @@ import { planSettings } from '@/entities/program';
 import {
   OFFERINGS,
   PACKAGES,
-  PRINTED_PRICES as PRINTED,
-  annualSavingPercent,
-  discountPercent,
   fetchShelf,
+  firstCharge,
+  firstChargeSavingPercent,
   grantDevAccess,
+  isSamplePlan,
+  markPaywallSoldTrial,
   onSimulator,
-  perWeek,
+  paywallSkipped,
   planOn,
   purchases,
+  skipPaywall,
+  usePaywallSkipped,
+  useTrialOnFirstPaywall,
+  type PaywallPeriod,
   type Plan,
-  type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
-import { PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { armHomeTour } from '@/entities/session';
+import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
+import { PRIMARY, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
-import { formatPrice } from '@/shared/lib/money';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
-import { PlanChip } from '@/shared/ui/plan-chip';
-import { PlanOption } from '@/shared/ui/plan-option';
-import { PrimaryButton } from '@/shared/ui/primary-button';
-import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 import { introSeen, markIntroSeen } from '../model/intro';
-import { IntroHow, IntroPlan, StepBar } from './offer-intro';
+import { EXTRA_PLANS } from '../model/plans';
+import { OfferHero } from './offer-hero';
+import { IntroHow, IntroNext, IntroPlan, StepBar } from './offer-intro';
+import { PlansStep, type PlansStepRow } from './plans-step';
 
 /** The goal they picked, in the words onboarding offered it in. */
 const GOAL_WORDS: Readonly<Record<string, Key>> = {
@@ -67,82 +67,84 @@ const DURATION: Readonly<Record<string, Key>> = {
   longer: 'onboarding.duration.longer',
 };
 
-/**
- * The three arguments the screen opens on, as catalogue keys rather than copy.
- *
- * `as const satisfies` rather than a plain annotation: the keys have to survive
- * as literal types for `t()` to accept them, and widening them to `Key` would
- * make every call here demand the union of every placeholder in the app.
- */
-const FEATURES = [
-  {
-    icon: Route02Icon,
-    accent: 'violet',
-    title: 'offer.featurePlanTitle',
-    blurb: 'offer.featurePlanBlurb',
-  },
-  {
-    icon: FlashIcon,
-    accent: 'orange',
-    title: 'offer.featureAdaptiveTitle',
-    blurb: 'offer.featureAdaptiveBlurb',
-  },
-  {
-    icon: ChartIncreaseIcon,
-    accent: 'teal',
-    title: 'offer.featureProgressTitle',
-    blurb: 'offer.featureProgressBlurb',
-  },
-] as const satisfies readonly {
-  icon: IconSvgElement;
-  accent: AccentName;
-  title: Key;
-  blurb: Key;
-}[];
+/** A first progress check is the second test: the first is tomorrow (today is
+ * the two-minute first session), the next a fortnight after it. */
+const FIRST_CHECK_DAYS = 1 + 14;
+
+/** A step arriving: a slow fade over the one leaving, so the two overlap. */
+const STEP_IN = FadeIn.duration(460)
+  .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
+  .reduceMotion(ReduceMotion.System);
+/** A step leaving: quicker, so the new one is the one you read. */
+const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMotion(ReduceMotion.System);
 
 /**
- * What Premium holds, as the app's own chips, on the first view's plans.
- * The same chip, tint and glyph size as the plan screen's.
- */
-const CHIPS = [
-  { icon: Calendar03Icon, accent: 'violet', label: 'offer.chipWeekly' },
-  { icon: FlashIcon, accent: 'orange', label: 'offer.chipSessions' },
-  { icon: ChartIncreaseIcon, accent: 'teal', label: 'offer.chipTests' },
-  { icon: RunningShoesIcon, accent: 'blue', label: 'offer.chipRoutines' },
-  { icon: Notification01Icon, accent: 'amber', label: 'offer.chipReminders' },
-] as const satisfies readonly { icon: IconSvgElement; accent: AccentName; label: Key }[];
-
-const GIFT_ART = require('@assets/home/mascot-gift.png');
-
-/** A first progress check is the second test, a fortnight after today's. */
-const FIRST_CHECK_DAYS = 14;
-
-/** Long enough that the number lands before the rest arrives under it. */
-const STAGGER_MS = 90;
-
-/**
- * The paywall: Walkito Premium, as an annual or a weekly subscription.
+ * The `offer` route: the hard paywall, and the offers after its "Not now".
  *
- * It opens on what the app is for, not on a percentage. The annual plan is
- * preselected and marked as the best value — but only while the store's own
- * prices make it one — and the weekly plan sits under it as the alternative.
- *
- * Every price is the store's. Each row leads with the billed amount and its
- * period ("$44.99 per year"), which App Review Guideline 3.1.2 requires to be
- * the most prominent price on a subscription screen; the annual plan's weekly
- * equivalent is a smaller line underneath. The disclosure Apple asks for —
- * what is included, each plan's length and price, auto-renewal, where payment
- * is charged, how to cancel — sits under the plans, the selected plan's price
- * and renewal are repeated directly above the button, and Terms of Use,
- * Privacy Policy and Restore Purchases are on the line under it.
- *
- * A full screen, and the only way past it is to buy or to restore. It used to
- * be a form sheet over Home — but a sheet has something behind it, iOS knows
- * that, and every version finds one more way back to what it can see. It is a
- * guarded state of the root stack, so there is nothing behind it to reach. That
- * is why the top padding comes from the safe-area inset rather than a constant.
+ * A full screen, a guarded state of the root stack, so there is nothing behind
+ * it to reach, and no way into the app without buying. Somebody who has not
+ * skipped the plans sees them (`Paywall`). "Not now" (`skipPaywall`) does not
+ * leave this screen: the plans fade out where they stand and the one-time
+ * trial offer arrives in their place (`OfferScreen` from `features/home-offer`),
+ * then the comeback price against its deadline, then the standard plans. That
+ * is what the screen shows from then on, at every launch, until a purchase
+ * (or a restore) hands over to the setup screens.
  */
 export function OfferPage() {
+  const skipped = usePaywallSkipped();
+  // The limited offer's 3-month pass, bought through the pass checkout. Its
+  // sheets cannot outlive this route, and need not: the root guards take the
+  // route away the moment the paywall is skipped (the offers then stand over
+  // Home, in `OfferWall`, which keeps itself up while its checkout is busy),
+  // so the offers drawn here are only ever a route on its way out. A pass
+  // bought here anyway opens the app and takes the route with it; the
+  // server's days are still asked for, and nobody this gate is for holds a
+  // renewing subscription to be told about (that would be access).
+  const checkout = usePassCheckout();
+  const pass: PassSale = {
+    buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
+    signInToRestore: checkout.signInToRestore,
+    busy: checkout.busy,
+    notice: checkout.notice,
+  };
+  // The plans fade out where they stand (`STEP_OUT`) while the offers fade in
+  // over them (`STEP_IN`); the offer's own entrance starts once they are gone.
+  // The plans have no entrance of their own here: each step brings its own.
+  return (
+    <View style={styles.full}>
+      {skipped ? (
+        <Animated.View key="offers" entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
+          <OfferScreen pass={pass} />
+        </Animated.View>
+      ) : (
+        <Animated.View key="plans" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
+          <Paywall />
+        </Animated.View>
+      )}
+      {checkout.sheet}
+    </View>
+  );
+}
+
+/**
+ * The paywall: Walkito Plus, as an annual or a monthly subscription or a
+ * lifetime purchase (Android: whatever its offerings still hold, the weekly
+ * subscription among them).
+ *
+ * The plans themselves are the third step (`plans-step.tsx`, BitePal's
+ * paywall with our mascot): the annual plan leads and is chosen, and "Show
+ * all plans" opens the others under it. Every price is the store's, and each
+ * card's largest figure is the amount billed, which App Review Guideline
+ * 3.1.2 requires to be the most prominent price on a subscription screen. What
+ * it charges, that it renews and where to cancel sit under the button, with
+ * Terms of Use, Privacy Policy and Restore Purchases.
+ *
+ * Its one way past without buying is "Not now" (`skipPaywall`), which appears
+ * three seconds after "Show all plans" and leads to the one-time trial offer
+ * on this same screen (`OfferPage`), never into the app. The top padding
+ * comes from the safe-area inset rather than a constant.
+ */
+function Paywall() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
@@ -153,10 +155,12 @@ export function OfferPage() {
   const { name } = useLocalSearchParams<{ name?: string }>();
   /** Which plan is selected. The annual one, by default — see the note on the
    * component. */
-  const [tier, setTier] = useState<PlanPeriod>('annual');
+  const [tier, setTier] = useState<PaywallPeriod>('annual');
   /** True from the tap until the store answers. Locks the button rather than
    * letting a second tap open a second transaction. */
   const [busy, setBusy] = useState(false);
+  /** How tall step two's sheet came out, so the hero keeps its pieces above it. */
+  const [sheetHeight, setSheetHeight] = useState(0);
   /**
    * The one line the store gets to say, for both buying and restoring.
    *
@@ -189,7 +193,6 @@ export function OfferPage() {
    */
   const winback = useBoost();
   const boosted = winback;
-  const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
    * Which step is on screen: how the plan starts, how a day works, then the
@@ -213,6 +216,26 @@ export function OfferPage() {
     return () => subscription.remove();
   }, [flow, step]);
   const next = () => setStep((current) => (current === 1 ? 2 : 3));
+
+  /**
+   * The free week, on a first view, for somebody a Meta ad brought (the
+   * `trial` offering; the monthly and lifetime come from the standard one,
+   * `planOn`); everybody else gets the annual at its full price, the `default`
+   * offering (`trialOnFirstPaywall`). Followed until the plans show, so an
+   * AppsFlyer report that lands during the first steps still counts, then held:
+   * the plans never change under somebody's eyes. The free week shows only when
+   * the store calls this customer eligible.
+   */
+  const trialAudience = useTrialOnFirstPaywall();
+  const [sellsTrial, setSellsTrial] = useState(trialAudience);
+  useEffect(() => {
+    if (step !== 3) setSellsTrial(trialAudience);
+  }, [step, trialAudience]);
+  const offeringId = boosted ? OFFERINGS.offer : sellsTrial ? OFFERINGS.trial : OFFERINGS.standard;
+  // Kept, so the offer after a skip does not offer the same free week again.
+  useEffect(() => {
+    if (step === 3 && offeringId === OFFERINGS.trial) markPaywallSoldTrial();
+  }, [step, offeringId]);
 
   const profileName = firstName(useProfileName());
   const settings = planSettings();
@@ -340,9 +363,10 @@ export function OfferPage() {
    * The win-back's promise, from the store, once this view has seen it.
    *
    * The notification is scheduled as the app goes to the background, and it
-   * says what the comeback price takes off. That figure is the discounted
-   * annual against the standard annual, both from the store; until both have
-   * been read there is no honest number to send, and no notification goes.
+   * says what the comeback price takes off. That figure is the comeback
+   * annual's first year (paid up front) against the standard annual, both from
+   * the store; until both have been read there is no honest number to send,
+   * and no notification goes.
    */
   const winbackPercent = useRef<number | null>(null);
 
@@ -363,23 +387,20 @@ export function OfferPage() {
     if (!loaded || recorded.current) return;
     recorded.current = true;
     let live = true;
-    void Promise.all([
-      purchases.offering(OFFERINGS.offer),
-      purchases.offering(OFFERINGS.standard),
-    ]).then(
+    void Promise.all([purchases.offering(OFFERINGS.offer), purchases.offering(OFFERINGS.standard)]).then(
       ([cheap, full]) => {
         if (!live) return;
         const low = cheap?.annual ?? null;
         const high = full?.annual ?? null;
-        const percent =
-          low != null && high != null
-            ? discountPercent(low.product.price, high.product.price)
-            : null;
+        // The comeback annual is the same yearly subscription with its first
+        // year paid up front at less: what it saves is that first payment
+        // against the standard year, and the price the emails quote is it.
+        const percent = firstChargeSavingPercent(low, high);
         winbackPercent.current = percent;
         void recordAppEvent('paywall_viewed', {
           offering: offeringId,
           plan: 'annual',
-          offer_price: low != null && percent != null ? low.product.display : null,
+          offer_price: low != null && percent != null ? firstCharge(low).display : null,
           standard_price: high?.product.display ?? null,
           percent,
         });
@@ -412,35 +433,51 @@ export function OfferPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const annualPlan = planOn(shelf, 'annual');
-  /** The weekly plan at its ordinary price — see `planOn`. */
-  const weeklyPlan = planOn(shelf, 'weekly');
-  const currency = annualPlan?.product.currencyCode ?? weeklyPlan?.product.currencyCode;
-  const money = (amount: number) => formatPrice(amount, currency);
+  /**
+   * Each plan the offering holds, by kind, from the store. The annual is the
+   * offering's own (its price is what the offering is for); the others fall
+   * back to the standard offering's, the same product at its ordinary price
+   * (`planOn`). iOS sells annual, monthly and lifetime; Android's offerings
+   * still hold the first line-up, annual and weekly, until its own versions
+   * of the new products exist, and the step draws whatever is there.
+   */
+  const plans: Readonly<Record<PaywallPeriod, Plan | null>> = {
+    annual: planOn(shelf, 'annual'),
+    monthly: planOn(shelf, 'monthly'),
+    weekly: planOn(shelf, 'weekly'),
+    lifetime: planOn(shelf, 'lifetime'),
+  };
+  const annualPlan = plans.annual;
 
   /**
-   * A plan the store answered about and had nothing for.
+   * The annual plan, which the store answered about and had nothing for.
    *
-   * Not the user's problem: it is an offering with no `$rc_annual` or
-   * `$rc_weekly` package. The row stays visible but cannot be picked, so the
-   * failure is a greyed row rather than a Continue that says the App Store is
-   * unreachable when it plainly answered. Guarded on `loaded` so a row is never
-   * disabled merely because the fetch has not landed.
+   * Not the user's problem: it is an offering with no `$rc_annual` package.
+   * The card stays visible but cannot be picked, so the failure is a greyed
+   * card rather than a Continue that says the App Store is unreachable when it
+   * plainly answered. Guarded on `loaded` so a card is never disabled merely
+   * because the fetch has not landed. The other plans are simply left out when
+   * the store has none of them.
    */
   const annualMissing = loaded && annualPlan == null;
-  const weeklyMissing = loaded && weeklyPlan == null;
+  /** The plans "Show all plans" opens. Before the store answers, the ones iOS
+   * sells, with no figure yet; after, the ones it really has. */
+  const extraKinds = EXTRA_PLANS.filter((kind) => (loaded ? plans[kind] != null : kind !== 'weekly'));
 
   useEffect(() => {
     if (!loaded) return;
-    // Never leave the selection on a row that cannot be bought.
-    if (annualMissing && !weeklyMissing && tier === 'annual') setTier('weekly');
-    else if (weeklyMissing && !annualMissing && tier === 'weekly') setTier('annual');
-  }, [loaded, annualMissing, weeklyMissing, tier]);
+    // Never leave the selection on a plan that cannot be bought.
+    if (tier === 'annual' && annualMissing && extraKinds.length > 0) setTier(extraKinds[0]);
+    else if (tier !== 'annual' && plans[tier] == null && !annualMissing) setTier('annual');
+    // `plans` and `extraKinds` follow `shelf`, which only changes with `loaded`
+    // or a fresh answer; the tier is what this watches.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded, annualMissing, tier, shelf]);
 
   useEffect(() => {
     if (!__DEV__ || !loaded) return;
     // The diagnosis, at the moment it is knowable. Without it this
-    // misconfiguration surfaces as a greyed row nobody can explain.
+    // misconfiguration surfaces as a greyed card nobody can explain.
     const id = shelf.offering?.identifier ?? offeringId;
     if (annualMissing) {
       console.error(
@@ -449,64 +486,31 @@ export function OfferPage() {
           'Packages → Annual) and attach the annual product to it.',
       );
     }
-    if (weeklyMissing) {
-      console.error(
-        `[paywall] Neither "${id}" nor "${OFFERINGS.standard}" has a ${PACKAGES.weekly} ` +
-          'package, so the weekly subscription cannot be sold.',
-      );
-    }
-  }, [loaded, annualMissing, weeklyMissing, shelf, offeringId]);
+  }, [loaded, annualMissing, shelf, offeringId]);
 
   /**
-   * What each plan costs, from the store, with the printed figures as a
-   * fallback for a build that has no store to ask.
+   * The comeback discount, computed rather than asserted.
    *
-   * `display` is the store's own string wherever one exists — it knows where
-   * the symbol goes and which separator the locale uses. The per-week figure
-   * has to be computed, so it is formatted from the numeric price.
-   */
-  const annualAmount = annualPlan?.product.price ?? PRINTED.annual;
-  const annualText = annualPlan?.product.display ?? money(PRINTED.annual);
-  const weeklyText = weeklyPlan?.product.display ?? money(PRINTED.weekly);
-
-  /**
-   * The invite or comeback discount, computed rather than asserted.
-   *
-   * The discounted annual against the standard annual, both from the store, so
-   * changing either price in App Store Connect moves the badge instead of
-   * leaving it advertising a percentage nobody is getting. Null when there is
-   * no store, when `offer` is missing and the standard plan stands in, or when
-   * the two cost the same — and then nothing on screen claims a discount.
+   * The comeback annual's first payment against the standard annual, both
+   * from the store, so changing either price in App Store Connect moves the
+   * claim instead of leaving it advertising a saving nobody is getting. Null
+   * when there is no store, when `offer` is missing and the standard plan
+   * stands in, or when the two cost the same; then nothing on screen claims a
+   * discount.
    */
   const fullAnnual = shelf.standard?.annual ?? null;
-  const offerPct =
-    annualPlan != null && fullAnnual != null
-      ? discountPercent(annualPlan.product.price, fullAnnual.product.price)
-      : null;
+  const offerPct = firstChargeSavingPercent(annualPlan, fullAnnual);
   const discounted = offerPct != null;
 
   /**
-   * Whether this view presents itself as the offer: the badge and the headline
-   * about a price.
+   * Whether this view presents itself as the offer: the comeback badge and
+   * headline.
    *
    * While the store is still answering, a returning visitor is
    * assumed to be getting the offer, so the screen does not open plain and then
    * change its mind. Once it has answered, only a real discount keeps it.
    */
   const offerShown = boosted && (discounted || (purchases.configured && !loaded));
-
-  /**
-   * How much the annual plan saves against a year of the weekly one.
-   *
-   * Only from two store prices — a saving computed from the printed fallbacks
-   * would be a claim with no product behind it. Null when the annual plan is
-   * not actually cheaper, and then neither the "Best value" badge nor the
-   * saving line is drawn.
-   */
-  const savingPct =
-    annualPlan != null && weeklyPlan != null
-      ? annualSavingPercent(annualPlan.product.price, weeklyPlan.product.price)
-      : null;
 
   // Arriving on the better price is worth marking. A tap, not a sound.
   useEffect(() => {
@@ -522,13 +526,16 @@ export function OfferPage() {
    * came back by themselves has not earned a "come back" message, and sending
    * one anyway is how an app teaches people to turn its notifications off.
    *
-   * Once only, and never after the discount has already been given.
+   * Once only, and never after the discount has already been given. Never for
+   * somebody who skipped the paywall either: the offer screen carries their
+   * offers (the one-time trial, then the comeback with its own pushes), and a
+   * second "come back" nudge from here would talk over them.
    */
   const sent = useRef(false);
   useEffect(() => {
     const subscription = AppState.addEventListener('change', (next) => {
       if (next === 'background') {
-        if (sent.current || boosted) return;
+        if (sent.current || boosted || paywallSkipped()) return;
         const percent = winbackPercent.current;
         // No store figure, no promise. See `winbackPercent`.
         if (percent == null) return;
@@ -559,20 +566,21 @@ export function OfferPage() {
    */
   const start = async () => {
     if (busy) return;
-    // A simulator in development has no StoreKit purchase to make. "Start my
-    // plan" plays the purchase's ending instead, so the flow after it — the
-    // setup screens — can be walked through.
-    if (__DEV__ && onSimulator) {
+    // The plan object, not a product identifier. It came out of the same fetch
+    // that produced the price on screen, so the two cannot be for different
+    // things.
+    const plan = plans[tier];
+    // A simulator in development has no StoreKit purchase to make. The button
+    // plays the purchase's ending instead, so the flow after it — the setup
+    // screens — can be walked through. Sample prices (`?samplePrices`) buy
+    // through the store's own path, which grants the pretend purchase.
+    if (__DEV__ && onSimulator && (plan == null || !isSamplePlan(plan))) {
       converted.current = true;
       setCelebrating('purchased');
       return;
     }
     setNotice(null);
     setBusy(true);
-    // The plan object, not a product identifier. It came out of the same fetch
-    // that produced the price on screen, so the two cannot be for different
-    // things.
-    const plan = tier === 'annual' ? annualPlan : weeklyPlan;
     if (plan == null) {
       if (purchases.configured && !loaded) {
         // The store has not answered this screen yet. Ask it again now rather
@@ -602,6 +610,9 @@ export function OfferPage() {
 
     if (result.status === 'purchased') {
       converted.current = true;
+      // The reminder the plans step promised, from the trial's own length.
+      const trial = freeTrialOf(plan);
+      if (trial != null) void remindBeforeTrialEnds(trial, plan.priceString);
       // No haptic here: the sheet fires its own as it lands, and two success
       // buzzes a frame apart read as a stutter rather than as emphasis.
       setCelebrating('purchased');
@@ -651,291 +662,146 @@ export function OfferPage() {
     // `unavailable` says nothing: there was no store to ask.
   };
 
-  const select = (period: PlanPeriod) => {
+  const select = (period: PaywallPeriod) => {
+    if (period === tier) return;
     Haptics.selectionAsync();
     setTier(period);
     track('paywall_plan_selected', { plan: period });
   };
 
   /**
-   * Whether a plan's price is one the store gave.
+   * "Not now", and the close over the sky: on to Home, for the "Day 1"
+   * card's two-minute session and the tour after it, which are free; the
+   * one-time trial offer follows the tour (`OfferWall` in the root layout).
    *
-   * With no store at all — a simulator, a build without a key — the printed
-   * fallbacks stand in so the layout is whole. With a store that has not
-   * answered, they do not: the disclosure and the line over the button are
-   * the terms of a charge, and a fallback there would quote a figure, in
-   * dollars, that this storefront may not charge.
+   * `skipPaywall` records it (and tracks `paywall_skipped`, once per person);
+   * the root guards then take this route away and open the tabs, so this
+   * does not navigate. Leaving unmounts this view, which counts as
+   * `paywall_dismissed` as any other way out does.
    */
-  const priced = (plan: Plan | null) => plan != null || !purchases.configured;
+  const skip = () => {
+    armHomeTour();
+    skipPaywall();
+  };
 
-  /** The plans this screen is offering, for the disclosure — the same strings
-   * the rows print, so the two cannot quote different figures. */
-  const disclosed: DisclosedPlan[] = [
-    ...(annualMissing || !priced(annualPlan) ? [] : [{ period: 'annual' as const, price: annualText }]),
-    ...(weeklyMissing || !priced(weeklyPlan) ? [] : [{ period: 'weekly' as const, price: weeklyText }]),
-  ];
-  const ctaPriced = priced(tier === 'annual' ? annualPlan : weeklyPlan);
+  /** The simulator has no store: the plans still look and select as they will. */
+  const devPreview = __DEV__ && onSimulator;
   /** What the store said last, or that it could not be reached. */
   const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
 
-  if (step < 3) {
-    return (
+  // One page per step. They cross-fade in place over each other (`STEP_IN`,
+  // `STEP_OUT` below), with the bar and the button where they were, so moving
+  // on reads as the page changing under them rather than a new screen.
+  let page: ReactNode;
+  if (step === 2) {
+    page = (
+      <View style={styles.full}>
+        <StatusBar style="light" />
+        <OfferHero top={insets.top + 52} covered={sheetHeight} />
+        <View style={[styles.skyBar, { paddingTop: insets.top + 16 }]}>
+          <StepBar step={2} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} />
+        </View>
+        {/* The step's copy as a sheet over the hero, the button at its foot. */}
+        <Animated.View
+          onLayout={(event) => setSheetHeight(Math.round(event.nativeEvent.layout.height))}
+          style={[
+            styles.sheet,
+            { backgroundColor: colors.background, paddingBottom: Math.max(insets.bottom, 16) + 4 },
+          ]}>
+          <View style={[styles.grabber, { backgroundColor: meter.track }]} />
+          <IntroHow />
+          <IntroNext onPress={next} />
+        </Animated.View>
+      </View>
+    );
+  } else if (step === 1) {
+    page = (
       <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={step} />
+        <StepBar step={step} onSelect={(target) => setStep(target as 1 | 2 | 3)} />
         <ScrollView
           style={styles.body}
           contentContainerStyle={styles.introContent}
           showsVerticalScrollIndicator={false}>
           {/* Keyed on the step, so the next one arrives rather than appears. */}
-          <Animated.View key={step} entering={FadeIn.duration(280).reduceMotion(ReduceMotion.System)}>
-            {step === 1 ? (
-              <IntroPlan
-                name={profileName}
-                strip={strip}
-                why={why}
-                minutes={settings.defaultMinutes}
-                daysPerWeek={settings.daysPerWeek}
-                checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
-              />
-            ) : (
-              <IntroHow />
-            )}
+          <Animated.View entering={FadeIn.duration(280).reduceMotion(ReduceMotion.System)}>
+            <IntroPlan
+              name={profileName}
+              strip={strip}
+              why={why}
+              minutes={settings.defaultMinutes}
+              daysPerWeek={settings.daysPerWeek}
+              checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
+            />
           </Animated.View>
         </ScrollView>
         <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-          <PrimaryButton label={t('offer.next')} onPress={next} />
+          <IntroNext onPress={next} />
         </View>
       </View>
+    );
+  } else {
+    /** A row for the step: the plan, and whether the store answered without it. */
+    const row = (kind: PaywallPeriod): PlansStepRow => ({
+      kind,
+      plan: plans[kind],
+      missing: loaded && plans[kind] == null && !devPreview,
+    });
+    page = (
+      <PlansStep
+        stepBar={flow ? <StepBar step={3} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} /> : undefined}
+        lead={row('annual')}
+        extras={extraKinds.map(row)}
+        selected={tier}
+        onSelect={select}
+        leadBadge={offerShown ? t('offer.comebackBadge') : t('offer.plans.mostPopular')}
+        comeback={offerShown}
+        busy={busy}
+        onBuy={start}
+        notice={shownNotice}
+        onRestore={restore}
+        // For somebody holding an App Store offer code: Apple's own sheet,
+        // which redeems it in the store, and the subscription it starts
+        // arrives through the usual purchase listener. Never a field of ours:
+        // a code typed into the app that unlocks or discounts anything is what
+        // App Review rejected 1.0.3 (35) for (Guideline 3.1.1). Only where the
+        // store has such a sheet (iOS).
+        onRedeemCode={
+          purchases.canRedeemCode
+            ? () => {
+                Haptics.selectionAsync();
+                track('paywall_code_opened');
+                void purchases.redeemCode();
+              }
+            : undefined
+        }
+        covered={busy || celebrating != null}
+        onExpand={() => track('paywall_plans_expanded')}
+        onSkip={skip}>
+        {/* Owns the dismissal. The paywall vanishing into Home is what backing out
+          looks like too, so the one moment worth marking was the one that read
+          as nothing having happened. */}
+        <CelebrationSheet
+          visible={celebrating != null}
+          title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
+          headline={celebrating === 'restored' ? undefined : t('offer.plans.name')}
+          headlineColor={PRIMARY}
+          blurb={t(celebrating === 'restored' ? 'offer.restoredBlurb' : 'offer.purchasedBlurb')}
+          ctaLabel={t('offer.start')}
+          onClose={() => {
+            setCelebrating(null);
+            if (__DEV__ && onSimulator) grantDevAccess();
+            close();
+          }}
+        />
+      </PlansStep>
     );
   }
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-      {flow && <StepBar step={3} />}
-      {/* The body scrolls and the button does not, so on a short phone or at a
-          large text size Continue is never pushed off a screen that has no
-          other way out. */}
-      <ScrollView
-        style={styles.body}
-        contentContainerStyle={styles.bodyContent}
-        showsVerticalScrollIndicator={false}>
-        {boosted ? (
-          <>
-            {/* Only once the better price is in. A badge that was always there would
-                make the standard price look like the discounted one.
-
-                No percentage at display size above it any more. It was set at
-                108pt over a billed amount at 22pt, and App Review Guideline 3.1.2
-                wants the amount charged to be the most prominent price on a
-                subscription screen. The discount is still on the row, as a badge
-                and a struck-through price, beside the figure it comes from. */}
-            {offerShown && (
-              <Animated.View
-                entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
-                style={styles.badge}>
-                <Text style={styles.badgeText}>
-                  {t('offer.comebackBadge')}
-                </Text>
-              </Animated.View>
-            )}
-
-            <Animated.Text
-              entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
-              style={[offerShown ? styles.headline : styles.title, { color: colors.foreground }]}>
-              {!offerShown ? t('offer.headline') : t('offer.headlineComeback')}
-            </Animated.Text>
-            <Animated.Text
-              entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
-              style={[styles.sub, { color: meter.caption }]}>
-              {t('offer.sub')}
-            </Animated.Text>
-
-            <View style={styles.features}>
-              {FEATURES.map((feature, i) => {
-                const tone = accents[scheme][feature.accent];
-                return (
-                  <Animated.View
-                    key={feature.title}
-                    entering={FadeInDown.delay(STAGGER_MS * (3 + i))
-                      .duration(360)
-                      .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
-                      .reduceMotion(ReduceMotion.System)}
-                    style={styles.feature}>
-                    <View style={[styles.tile, { backgroundColor: tone.track }]}>
-                      <HugeiconsIcon icon={feature.icon} size={19} color={tone.fill} strokeWidth={2.6} />
-                    </View>
-                    <View style={styles.featureCopy}>
-                      <Text style={[styles.featureTitle, { color: colors.foreground }]}>
-                        {t(feature.title)}
-                      </Text>
-                      <Text style={[styles.featureBlurb, { color: meter.caption }]}>
-                        {t(feature.blurb)}
-                      </Text>
-                    </View>
-                  </Animated.View>
-                );
-              })}
-            </View>
-          </>
-        ) : (
-          <View style={styles.start}>
-            {/* White, so the dark scheme takes it as drawn; the light one inks it. */}
-            <Animated.Image
-              entering={FadeInDown.duration(360).reduceMotion(ReduceMotion.System)}
-              source={GIFT_ART}
-              style={[styles.gift, scheme === 'light' && { tintColor: colors.foreground }]}
-              resizeMode="contain"
-            />
-            <Animated.Text
-              entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
-              style={[styles.title, styles.startTitle, { color: colors.foreground }]}>
-              {t('offer.startTitle')}
-            </Animated.Text>
-            <Animated.Text
-              entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
-              style={[styles.sub, styles.startSub, { color: meter.caption }]}>
-              {t('offer.startSub')}
-            </Animated.Text>
-            <Animated.View
-              entering={FadeInDown.delay(STAGGER_MS * 3)
-                .duration(360)
-                .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
-                .reduceMotion(ReduceMotion.System)}
-              style={styles.chips}>
-              {CHIPS.map((chip) => (
-                <PlanChip
-                  key={chip.label}
-                  label={t(chip.label)}
-                  icon={chip.icon}
-                  tone={accents[scheme][chip.accent]}
-                  accessibilityRole="text"
-                />
-              ))}
-            </Animated.View>
-          </View>
-        )}
-
-        <Animated.View
-          accessibilityRole="radiogroup"
-          entering={FadeInDown.delay(STAGGER_MS * 6)
-            .duration(360)
-            .reduceMotion(ReduceMotion.System)}
-          style={styles.tiers}>
-          {/* The annual plan first, and selected. `price` is the billed amount
-              and `note` the per-week figure, in that order of prominence. */}
-          <PlanOption
-            title={t('offer.annualTitle')}
-            badge={
-              offerShown && offerPct != null
-                ? t('offer.badgeOff', { percent: offerPct })
-                : // "Best value" is a claim, so it waits for the store's prices
-                  // to make it one.
-                  savingPct != null
-                  ? t('offer.badgeBest')
-                  : undefined
-            }
-            price={t('offer.annualPrice', { price: annualText })}
-            was={
-              // Only when there is something to strike through, and only the
-              // store's own standard price.
-              offerShown && offerPct != null && fullAnnual != null
-                ? fullAnnual.product.display
-                : undefined
-            }
-            note={
-              !offerShown && savingPct != null
-                ? t('offer.annualNoteSave', {
-                    perWeek: money(perWeek(annualAmount)),
-                    percent: savingPct,
-                  })
-                : t('offer.annualNote', { perWeek: money(perWeek(annualAmount)) })
-            }
-            disabled={annualMissing}
-            selected={tier === 'annual' && !annualMissing}
-            onPress={() => select('annual')}
-          />
-          <PlanOption
-            title={t('offer.weeklyTitle')}
-            price={t('offer.weeklyPrice', { price: weeklyText })}
-            note={t('offer.weeklyNote')}
-            disabled={weeklyMissing}
-            selected={tier === 'weekly' && !weeklyMissing}
-            onPress={() => select('weekly')}
-          />
-        </Animated.View>
-
-        {/* One line of trust under the plans, and true: "Before your first
-            step" in Library is free and keeps playing after access ends. */}
-        <Animated.Text
-          entering={FadeIn.delay(STAGGER_MS * 6.5).duration(320).reduceMotion(ReduceMotion.System)}
-          style={[styles.freeLine, { color: meter.label }]}>
-          {t('offer.freeLine')}
-        </Animated.Text>
-
-        <Animated.View
-          entering={FadeInDown.delay(STAGGER_MS * 7)
-            .duration(360)
-            .reduceMotion(ReduceMotion.System)}>
-          <SubscriptionTerms plans={disclosed} style={styles.termsBlock} />
-        </Animated.View>
-      </ScrollView>
-
-      {/* Outside the scroll, so the one action this screen exists for — and what
-          it will charge — is always on screen. */}
-      <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-        {shownNotice != null && (
-          <Text style={[styles.notice, { color: meter.label }]}>{shownNotice}</Text>
-        )}
-        {ctaPriced && (
-          <Text style={[styles.ctaTerms, { color: meter.label }]}>
-            {tier === 'annual'
-              ? t('offer.ctaAnnual', { price: annualText })
-              : t('offer.ctaWeekly', { price: weeklyText })}
-          </Text>
-        )}
-        <PrimaryButton
-          label={busy ? t('offer.processing') : t('offer.startPlan')}
-          disabled={busy}
-          onPress={start}
-        />
-        <LegalLinks onRestore={restore} disabled={busy} />
-        {/* For somebody holding an App Store offer code: Apple's own sheet,
-            which redeems it in the store, and the subscription it starts
-            arrives through the usual purchase listener. Never a field of
-            ours: a code typed into the app that unlocks or discounts anything
-            is what App Review rejected 1.0.3 (35) for (Guideline 3.1.1).
-            Only where the store has such a sheet (iOS). */}
-        {purchases.canRedeemCode && (
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => {
-              Haptics.selectionAsync();
-              track('paywall_code_opened');
-              void purchases.redeemCode();
-            }}
-            hitSlop={8}
-            style={({ pressed }) => [styles.codeLink, pressed && { opacity: 0.6 }]}>
-            <Text style={[styles.codeText, { color: meter.label }]}>{t('offer.haveCode')}</Text>
-          </Pressable>
-        )}
-      </View>
-
-      {/* Owns the dismissal. The paywall vanishing into Home is what backing out
-          looks like too, so the one moment worth marking was the one that read
-          as nothing having happened. */}
-      <CelebrationSheet
-        visible={celebrating != null}
-        title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
-        headline={celebrating === 'restored' ? undefined : t('offer.premium')}
-        headlineColor={PRIMARY}
-        blurb={t(celebrating === 'restored' ? 'offer.restoredBlurb' : 'offer.purchasedBlurb')}
-        ctaLabel={t('offer.start')}
-        onClose={() => {
-          setCelebrating(null);
-          if (__DEV__ && onSimulator) grantDevAccess();
-          close();
-        }}
-      />
+    <View style={styles.full}>
+      <Animated.View key={step} entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
+        {page}
+      </Animated.View>
     </View>
   );
 }
@@ -950,116 +816,28 @@ const styles = StyleSheet.create({
   /** The scrolling half. `flex: 1` so it yields to the pinned button below
    * rather than pushing it off the screen. */
   body: { flex: 1 },
-  bodyContent: { gap: 16, paddingBottom: 16 },
   /** Pinned. Padding rather than margin so the safe-area inset is part of the
    * block's own box. */
   cta: {
     paddingTop: 4,
     gap: 10,
   },
-  /** The selected plan's billed amount and renewal, right above the button. */
-  ctaTerms: {
-    ...fonts.medium(13),
-    lineHeight: 17,
-    textAlign: 'center',
-  },
-  notice: {
-    ...fonts.medium(13),
-    lineHeight: 17,
-    textAlign: 'center',
-  },
-  termsBlock: {
-    paddingTop: 10,
-  },
-  freeLine: {
-    ...fonts.semibold(14),
-    lineHeight: 19,
-    textAlign: 'center',
-  },
-  codeLink: {
-    alignSelf: 'center',
-    paddingVertical: 2,
-  },
-  codeText: fonts.semibold(14),
-  badge: {
-    alignSelf: 'center',
-    marginTop: -4,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 999,
-    borderCurve: 'continuous',
-    backgroundColor: PRIMARY,
-  },
-  badgeText: {
-    ...fonts.bold(11, 0.9),
-    color: '#FFFFFF',
-  },
-  /** The standard sheet's opening line, with no figure above it. */
-  title: {
-    marginTop: 8,
-    ...fonts.heavy(30, -0.8),
-    lineHeight: 34,
-    textAlign: 'center',
-  },
-  /** The offer's opening line, under the badge. A size smaller than `title`
-   * because it is a longer sentence. It names no figure: the billed amount on
-   * the row stays the most prominent price on the screen. */
-  headline: {
-    marginTop: 4,
-    ...fonts.bold(22, -0.4),
-    lineHeight: 28,
-    textAlign: 'center',
-  },
-  sub: {
-    marginTop: -6,
-    ...fonts.regular(16),
-    lineHeight: 22,
-    textAlign: 'center',
-  },
-  features: {
-    marginTop: 10,
-    gap: 20,
-  },
-  feature: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 12,
-  },
-  tile: {
-    width: 36,
-    height: 36,
-    borderRadius: 12,
-    borderCurve: 'continuous',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  featureCopy: {
-    flex: 1,
-    gap: 2,
-  },
-  featureTitle: fonts.semibold(16),
-  featureBlurb: {
-    ...fonts.regular(15),
-    lineHeight: 20,
-  },
-  tiers: {
-    marginTop: 4,
-  },
   /** The two steps before the plans: room under the bar. */
   introContent: { paddingTop: 22, paddingBottom: 16 },
-  /** The first view's opening, over the plans: the mascot, a line, the chips. */
-  start: {
-    alignItems: 'center',
-    gap: 6,
+  /** Step two: the hero edge to edge, under the bar and the sheet. */
+  full: { flex: 1 },
+  skyBar: { paddingHorizontal: 22 },
+  sheet: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    paddingTop: 10,
+    paddingHorizontal: 22,
+    gap: 20,
+    borderTopLeftRadius: 36,
+    borderTopRightRadius: 36,
+    borderCurve: 'continuous',
   },
-  gift: { width: 104, height: 104 },
-  startTitle: { marginTop: 4 },
-  startSub: { marginTop: 0 },
-  chips: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: 8,
-    marginTop: 12,
-  },
+  grabber: { alignSelf: 'center', width: 40, height: 5, borderRadius: 2.5, marginBottom: -6 },
 });

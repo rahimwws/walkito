@@ -24,11 +24,11 @@ export const OFFER_PT = {
   'offer.featureProgressBlurb': 'Veja seu preparo subir semana a semana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Preço de retorno',
+  'offer.comebackBadge': 'Preço especial',
   'offer.inviteBadge': 'Seu preço de convite',
   'offer.headline': 'Desbloqueie o Walkito Premium',
   'offer.headlineInvite': 'Seu preço de convite em um ano de Walkito Premium',
-  'offer.headlineComeback': 'Seu preço de retorno em um ano de Walkito Premium',
+  'offer.headlineComeback': 'Seu preço especial para voltar: um ano de Walkito Premium',
   'offer.sub': 'Seu plano, e tudo em volta dele.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -38,21 +38,25 @@ export const OFFER_PT = {
   'offer.annualNoteSave': '{perWeek} por semana · Economize {percent}% em relação ao semanal',
   'offer.weeklyTitle': 'Semanal',
   'offer.weeklyPrice': '{price} por semana',
+  'offer.monthlyPrice': '{price} por mês',
+  'offer.lifetimePrice': '{price}, pagamento único',
   'offer.weeklyNote': 'Cobrado semanalmente · Cancele quando quiser',
   'offer.badgeBest': 'Melhor custo-benefício',
+  'offer.badgeRecommended': 'Recomendado',
   'offer.badgeOff': '{percent}% de desconto',
 
   // ── Paywall: billing terms ───────────────────────────────────────────────
   'offer.ctaAnnual': '{price} por ano, renovação automática. Cancele quando quiser.',
   'offer.ctaWeekly': '{price} por semana, renovação automática. Cancele quando quiser.',
-  'offer.termsIncluded':
-    'O Walkito Premium dá acesso completo: seu plano adaptativo, todas as sessões e rotinas, as reavaliações e o acompanhamento do seu progresso.',
+  'offer.ctaMonthly': '{price} por mês, renovação automática. Cancele quando quiser.',
+  'offer.ctaLifetime': '{price} uma única vez. Sem assinatura, nada é renovado.',
   'offer.termsAnnual': 'Assinatura anual: {price} por ano.',
   'offer.termsWeekly': 'Assinatura semanal: {price} por semana.',
-  'offer.termsRenewal':
-    'O pagamento é cobrado na sua Conta Apple na confirmação da compra. A assinatura é renovada automaticamente pelo mesmo período e preço, a menos que seja cancelada pelo menos 24 horas antes do fim do período atual, e a renovação é cobrada nas 24 horas antes desse fim. Gerencie ou cancele em Ajustes → Conta Apple → Assinaturas.',
-  'offer.termsRenewalAndroid':
-    'O pagamento é cobrado na sua conta do Google Play na confirmação da compra. A assinatura é renovada automaticamente pelo mesmo período e preço, a menos que seja cancelada pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele em Google Play → Pagamentos e assinaturas → Assinaturas.',
+  'offer.termsMonthly': 'Assinatura mensal: {price} por mês.',
+  'offer.termsLifetime':
+    'Acesso vitalício: um único pagamento de {price}, cobrado na confirmação da compra. Nada é renovado.',
+  'offer.termsRenewal': 'Renova automaticamente. Cancele quando quiser nos Ajustes.',
+  'offer.termsRenewalAndroid': 'Renova automaticamente. Cancele quando quiser no Google Play.',
   'offer.linkTerms': 'Termos de uso',
   'offer.linkPrivacy': 'Política de privacidade',
   'offer.restore': 'Restaurar compras',
@@ -64,9 +68,9 @@ export const OFFER_PT = {
   'offer.restoreFailed': 'Não deu certo. Nada foi cobrado.',
   'offer.purchaseFailed': 'Não deu certo. Nada foi cobrado.',
   'offer.purchaseNotAllowed': 'As compras estão desativadas neste aparelho.',
-  'offer.alreadyOwned': 'Você já tem isso. Toque em "Restaurar compras".',
+  'offer.alreadyOwned': 'Você já tem isso. Toque em “Restaurar compras”.',
   'offer.pending': 'Aguardando aprovação. Você terá acesso assim que for concluído.',
-  'offer.notUnlocked': 'A compra foi concluída, mas o acesso não foi liberado. Toque em "Restaurar compras".',
+  'offer.notUnlocked': 'A compra foi concluída, mas o acesso não foi liberado. Toque em “Restaurar compras”.',
   'offer.continue': 'Continuar',
   'offer.processing': 'Processando…',
 
@@ -108,7 +112,7 @@ export const OFFER_PT = {
   'offer.howTestTitle': 'Reavaliação a cada duas semanas',
   'offer.howTestBody': 'Panturrilhas, arco e equilíbrio, medidos. Veja os números mudarem.',
   'offer.howQuote': '“Os exercícios que ajudam são bem conhecidos. Ninguém diz quais, nem quantos. Então foi isso que fizemos.”',
-  'offer.howQuoteBy': 'Rahim, que faz o Walkito com seu amigo Rahman',
+  'offer.howQuoteBy': 'Rahim, que faz o Walkito com o amigo Rahman',
   'offer.startTitle': 'Comece seu plano hoje',
   'offer.startSub': 'Sua primeira semana está pronta. Ela começa com um teste curto.',
   'offer.chipWeekly': 'Seu plano semanal',
@@ -116,6 +120,53 @@ export const OFFER_PT = {
   'offer.chipTests': 'Um teste a cada duas semanas',
   'offer.chipRoutines': 'Rotinas para crises e para corrida',
   'offer.chipReminders': 'Lembretes',
+
+  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // See `../en/offer.ts`. The words in square brackets in the headline are
+  // drawn in the Plus colour: put them round the word that carries it here.
+  'offer.plans.brand': 'Walkito',
+  'offer.plans.badge': 'Plus',
+  'offer.plans.name': 'Walkito Plus',
+  'offer.plans.headline': 'Seus pés, [mais fortes] a cada dia',
+  'offer.plans.headlineComeback': 'Walkito Plus, agora [mais barato]',
+  'offer.plans.mostPopular': 'Mais popular',
+  'offer.plans.yearly': 'Anual',
+  'offer.plans.monthly': 'Mensal',
+  'offer.plans.lifetime': 'Vitalício',
+  'offer.plans.perYear': 'por ano',
+  'offer.plans.perMonth': 'por mês',
+  'offer.plans.perWeek': 'por semana',
+  'offer.plans.once': 'pagamento único',
+  'offer.plans.firstYear': 'primeiro ano',
+  'offer.plans.yearlyNote': '{perMonth} por mês, cobrado anualmente',
+  'offer.plans.monthlyNote': 'Cobrado mensalmente',
+  'offer.plans.weeklyNote': 'Cobrado semanalmente',
+  'offer.plans.lifetimeNote': 'Pagamento único, seu para sempre',
+  'offer.plans.upfrontNote': 'Depois, {price} por ano',
+  'offer.plans.trialNote': '{period} grátis, depois {price} por ano',
+  'offer.plans.days': { one: '{count} dia', other: '{count} dias' },
+  'offer.plans.weeks': { one: '{count} semana', other: '{count} semanas' },
+  'offer.plans.months': { one: '{count} mês', other: '{count} meses' },
+  'offer.plans.years': { one: '{count} ano', other: '{count} anos' },
+  'offer.plans.showAll': 'Ver todos os planos',
+  'offer.plans.tableTitle': 'O que você recebe',
+  'offer.plans.rowPlan': 'Um plano diário que se adapta a você',
+  'offer.plans.rowSessions': 'Todas as sessões guiadas, com vídeo',
+  'offer.plans.rowTests': 'Um teste de progresso a cada duas semanas',
+  'offer.plans.rowStreaks': 'Sequências e figurinhas',
+  'offer.plans.rowMorning': 'O alongamento da manhã',
+  'offer.plans.rowA11y': '{feature}. Incluído no Plus.',
+  'offer.plans.ctaLifetime': 'Obter o Walkito Plus',
+  'offer.plans.ctaTrial': 'Começar meu teste grátis',
+  'offer.plans.renewsYearly': 'Renova por {price} por ano.',
+  'offer.plans.renewsMonthly': 'Renova por {price} por mês.',
+  'offer.plans.renewsWeekly': 'Renova por {price} por semana.',
+  'offer.plans.renewsUpfront': '{intro} no primeiro ano, depois {price} por ano.',
+  'offer.plans.renewsTrial': 'Sem pagamento agora. {period} grátis, depois {price} por ano.',
+  'offer.plans.cancel': 'Cancele quando quiser nos Ajustes.',
+  'offer.plans.cancelAndroid': 'Cancele quando quiser no Google Play.',
+  'offer.plans.oneTime': 'Pagamento único, sem assinatura.',
+  'offer.plans.skip': 'Agora não',
 
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Sua assinatura terminou',
@@ -125,18 +176,18 @@ export const OFFER_PT = {
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Sua meta',
-  'widgets.retestGoal.painfree': 'Você veio aqui por manhãs que não começam com dor no calcanhar. Esses números são o pé caminhando para isso.',
+  'widgets.retestGoal.painfree': 'Você veio aqui por manhãs com menos dor no calcanhar. Esses números mostram seu pé no caminho certo.',
   'widgets.retestGoal.race': 'Você está se preparando para uma prova. Uma panturrilha mais forte e um pé mais firme são o que te levam até a largada.',
   'widgets.retestGoal.consistent': 'Você disse que a meta era constância. É nisso que aparecer todo dia vai somando.',
   'widgets.retestGoal.stronger': 'Você queria ficar mais forte. É aqui que isso aparece primeiro.',
   'widgets.retestGoal.injuryfree': 'Você queria evitar lesões. Um pé que se mostra mais forte nos testes se machuca com menos facilidade.',
 
-  'widgets.retestGoal.flatfeet': 'Você veio aqui por causa do pé chato. A sustentação do arco e um equilíbrio mais firme são onde o treino aparece.',
+  'widgets.retestGoal.flatfeet': 'Você veio aqui por causa do pé chato. O treino aparece na sustentação do arco e num equilíbrio mais firme.',
   'widgets.retestGoal.ankles': 'Você queria tornozelos mais firmes. O equilíbrio é onde isso aparece primeiro.',
   'widgets.retestGoal.jump': 'Você queria pular mais alto. Uma panturrilha mais forte é a mola por trás disso.',
   'widgets.retestGoal.allday': 'Você queria aguentar o dia em pé. Os músculos que sustentam seu arco são o que isso treina.',
   'widgets.retestGoal.comeback': 'Você está voltando de uma lesão. A diferença entre as suas pernas é o número a acompanhar.',
-  'widgets.retestGoal.steady': 'Você queria andar com confiança. Equilíbrio e um pé forte são como isso se sente.',
+  'widgets.retestGoal.steady': 'Você queria andar com confiança. Na prática, isso é equilíbrio e um pé forte.',
   // ── Session player: the counter line ─────────────────────────────────────
   // One word per phase: read at two metres, and it changes every three seconds.
   'widgets.phaseUp': 'Sobe',
@@ -192,4 +243,9 @@ export const OFFER_PT = {
     one: '{count} exercício feito. Pouco e sempre é o que faz isso andar.',
     other: 'Todos os {count} exercícios feitos. Pouco e sempre é o que faz isso andar.',
   },
+  'offer.trial.todayTitle': 'Hoje',
+  'offer.trial.todayText': 'Acesso completo, sem pagar nada',
+  'offer.trial.dayTitle': 'Dia {day}',
+  'offer.trial.remindText': 'Avisamos que o teste está acabando',
+  'offer.trial.chargeText': '{price} por ano, a menos que você cancele',
 };

@@ -24,6 +24,7 @@ import {
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, thinkingRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
@@ -33,10 +34,19 @@ import { TEST_META } from './test-meta';
 /** The 0–10 scale every check-in in the app is out of. */
 const PAIN_SCALE = Array.from({ length: 11 }, (_, i) => i);
 
+/** The thinking mascot beside the title: hand on the chin, working out what
+ * the next four minutes are, the same as the person reading. */
+const MASCOT_SIZE = 76;
+/** After the flow's own fade-in, so his nod is seen rather than half-faded. */
+const NOD_MS = 450;
+
 export type TestDayIntroProps = {
   onStart: () => void;
   /** "Test tomorrow": nothing measured, and the host moves the test a day on. */
   onTomorrow: () => void;
+  /** Off once the flow is on its way out: the mascot holds still while the
+   * host slides it away or keeps it mounted out of sight. */
+  active?: boolean;
 };
 
 /**
@@ -55,7 +65,7 @@ export type TestDayIntroProps = {
  * test day that finished with Home still asking how the foot was that morning
  * was one of the ways the app disagreed with itself.
  */
-export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
+export function TestDayIntro({ onStart, onTomorrow, active = true }: TestDayIntroProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -139,10 +149,17 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={[styles.eyebrow, { color: meter.label }]}>{t('testday.intro.eyebrow')}</Text>
-        <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
-          {t('testday.intro.title')}
-        </Text>
+        <View style={styles.head}>
+          <View style={styles.headCopy}>
+            <Text style={[styles.eyebrow, { color: meter.label }]}>{t('testday.intro.eyebrow')}</Text>
+            <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
+              {t('testday.intro.title')}
+            </Text>
+          </View>
+          <View style={styles.mascot} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+            <ThinkingMascot surface={colors.background} paused={!active} />
+          </View>
+        </View>
         <Text style={[styles.body, { color: meter.caption }]}>
           {t('testday.intro.body', { count: RETEST_MINUTES })}
         </Text>
@@ -256,6 +273,22 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   );
 }
 
+/**
+ * Beside the title, thinking: calm, since the screen below may ask how the
+ * foot is this morning. One nod as he arrives, then the thinking idle, which
+ * fidgets less and only calmly. The still drawing with Reduce Motion.
+ */
+function ThinkingMascot({ surface, paused }: { surface: string; paused: boolean }) {
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    const timer = setTimeout(() => mascot.current?.play('nod'), NOD_MS);
+    return () => clearTimeout(timer);
+  }, []);
+  return (
+    <Mascot ref={mascot} rig={thinkingRig} state="thinking" size={MASCOT_SIZE} surface={surface} paused={paused} />
+  );
+}
+
 const styles = StyleSheet.create({
   root: { flex: 1 },
   content: {
@@ -263,6 +296,13 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 24,
   },
+  head: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    gap: 8,
+  },
+  headCopy: { flex: 1 },
+  mascot: { width: MASCOT_SIZE, height: MASCOT_SIZE },
   eyebrow: fonts.bold(13, 0.4),
   title: {
     ...fonts.heavy(32, -0.8),

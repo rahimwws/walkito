@@ -1,9 +1,10 @@
 import { describe, expect, test } from 'bun:test';
 
 import { CLIPS } from '../src/shared/config/clip-manifest';
-import { PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
+import { CHAINS, currentLevels, PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
+import { doseFor, doseSeconds } from '../src/entities/program/model/plan/dose';
 import { allowed, playableId, pogoAllowed, type EligibilityContext } from '../src/entities/program/model/plan/eligibility';
-import { advanceGoals, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
+import { advanceGoals, painGoalReached, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
 import { adjustToday, twoMinuteVersion } from '../src/entities/program/model/plan/today';
 import {
   addDays,
@@ -49,6 +50,15 @@ function input(patch: Partial<WeekInput> = {}): WeekInput {
 
 const ids = (plan: WeekPlan) => plan.days.flatMap((d) => d.exercises.map((e) => e.id));
 
+/** Seconds a day's doses take, as the player counts them down. */
+const daySeconds = (exercises: readonly { dose: Parameters<typeof doseSeconds>[0] }[]) =>
+  exercises.reduce((sum, e) => sum + doseSeconds(e.dose), 0);
+
+/** A day fits its minutes, or has nothing left to take off: one set of each. */
+function fitsOrFloored(exercises: readonly { dose: Parameters<typeof doseSeconds>[0] }[], minutes: number) {
+  return daySeconds(exercises) <= minutes * 60 || exercises.every((e) => e.dose.sets === 1);
+}
+
 function everyWeek(check: (plan: WeekPlan) => void, patch: Partial<WeekInput> = {}) {
   for (const daysPerWeek of [3, 5, 7] as const) {
     for (const weekIndex of [1, 2, 3, 6]) {
@@ -65,7 +75,7 @@ describe('the catalogue and the manifest', () => {
       for (const id of ids(plan)) expect(CLIPS[id]).toBeDefined();
     });
     // And with most of the manifest gone, still nothing without a clip.
-    const few = new Set(['heel_raise_seated', 'short_foot_seated', 'fascia_stretch']);
+    const few = new Set(['heel_raise_double', 'short_foot_seated', 'fascia_stretch']);
     const plan = buildWeek(input({ eligibility: { ...input().eligibility, clips: few } }));
     for (const id of ids(plan)) expect(few.has(id)).toBe(true);
   });
@@ -95,12 +105,12 @@ describe('the week', () => {
     }
   });
 
-  test('4 · band_inversion does not appear before six standing short-foot sessions', () => {
-    everyWeek((plan) => expect(ids(plan)).not.toContain('band_inversion'), {
-      eligibility: { ...input().eligibility, shortFootStandingSessions: 5 },
-    });
-    const ctx: EligibilityContext = { ...input().eligibility, settling: false, shortFootStandingSessions: 6 };
+  test('4 · band_inversion waits only for week one, then is on every arch strength day', () => {
+    const ctx: EligibilityContext = { ...input().eligibility, settling: false, shortFootStandingSessions: 0 };
     expect(allowed('band_inversion', ctx)).toBe(true);
+    expect(allowed('band_inversion', { ...ctx, settling: true })).toBe(false);
+    const plan = buildWeek(input({ weekIndex: 2, daysPerWeek: 5, defaultMinutes: 10 }));
+    for (const day of plan.days.filter((d) => d.type === 'strength')) expect(day.exercises.map((e) => e.id)).toContain('band_inversion');
   });
 
   test('5 · pogo_hops never appears if any pain above 2 in the last 14 days', () => {
@@ -126,19 +136,94 @@ describe('the week', () => {
     );
   });
 
-  test('8 · two "easy" sessions in a row → the focus exercise moves up one level', () => {
-    const base = input({ goals: [goal('arch_hold', 10)], levels: { ...DEFAULT_LEVELS, arch: 2 } });
-    const easy = buildWeek({
-      ...base,
-      lastWeekFeedback: [
-        { date: '2026-09-22', feedback: 'easy', exerciseIds: ['short_foot_seated'] },
-        { date: '2026-09-24', feedback: 'easy', exerciseIds: ['short_foot_seated'] },
-      ],
-    });
-    expect(easy.levels.arch).toBe(3);
-    expect(easy.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('short_foot_double');
-    const same = buildWeek(base);
-    expect(same.levels.arch).toBe(2);
+  test('8 · every day fits its minutes, cutting sets but never below one', () => {
+    for (const defaultMinutes of [3, 5, 10] as const) {
+      everyWeek(
+        (plan) => {
+          for (const day of plan.days) {
+            if (day.exercises.length === 0) continue;
+            expect(fitsOrFloored(day.exercises, day.minutes)).toBe(true);
+            for (const e of day.exercises) expect(e.dose.sets).toBeGreaterThanOrEqual(1);
+          }
+        },
+        { defaultMinutes, toeWork: true },
+      );
+    }
+  });
+
+  test('8 · a three-minute day is close to three minutes, not six', () => {
+    // The day that ran "3 min · 2 moves" with a six-minute towel scrunch in it.
+    everyWeek(
+      (plan) => {
+        for (const day of plan.days) {
+          if (day.exercises.length === 0) continue;
+          expect(daySeconds(day.exercises)).toBeLessThanOrEqual(3 * 60 * 1.15);
+        }
+      },
+      { defaultMinutes: 3, toeWork: true },
+    );
+  });
+
+  test('8 · two sessions done, neither "hard", pain not rising → the focus exercise moves up one level', () => {
+    const base = input({ goals: [goal('arch_hold', 10)], levels: { ...DEFAULT_LEVELS, arch: 1 } });
+    const done = (feedback: 'easy' | 'ok' | 'hard') => [
+      { date: '2026-09-22', feedback, exerciseIds: ['short_foot_seated'] },
+      { date: '2026-09-24', feedback: 'ok' as const, exerciseIds: ['short_foot_seated'] },
+    ];
+    const up = buildWeek({ ...base, lastWeekFeedback: done('easy') });
+    expect(up.levels.arch).toBe(2);
+    expect(up.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('short_foot_double');
+    expect(buildWeek({ ...base, lastWeekFeedback: done('ok') }).levels.arch).toBe(2);
+    expect(buildWeek({ ...base, lastWeekFeedback: done('hard') }).levels.arch).toBe(0);
+    expect(buildWeek(base).levels.arch).toBe(1);
+    const sore = buildWeek({ ...base, lastWeekFeedback: done('ok'), painWeekBefore: Array(7).fill(2), painLastWeek: Array(7).fill(3) });
+    expect(sore.levels.arch).toBe(1);
+  });
+
+  test('9 · a second goal climbs its own chain too', () => {
+    const plan = buildWeek(
+      input({
+        goals: [goal('arch_hold', 10), goal('calf_raises', 12)],
+        levels: { ...DEFAULT_LEVELS, arch: 1, calf: 0 },
+        lastWeekFeedback: [
+          { date: '2026-09-22', feedback: 'ok', exerciseIds: ['heel_raise_double'] },
+          { date: '2026-09-24', feedback: 'ok', exerciseIds: ['heel_raise_double'] },
+        ],
+      }),
+    );
+    expect(plan.levels.calf).toBe(1);
+    expect(plan.levels.arch).toBe(1);
+  });
+
+  test('heel pain climbs to the single-leg raise on a towel, never to drops or hops', () => {
+    const towel = CHAINS.calf.indexOf('heel_raise_towel');
+    const at = (calf: number, id: string) =>
+      buildWeek(
+        input({
+          goals: [goal('pain_free_mornings', 5)],
+          painStart: 5,
+          levels: { ...DEFAULT_LEVELS, calf },
+          lastWeekFeedback: [
+            { date: '2026-09-22', feedback: 'ok', exerciseIds: [id] },
+            { date: '2026-09-24', feedback: 'ok', exerciseIds: [id] },
+          ],
+        }),
+      );
+    expect(at(towel - 1, 'heel_raise_plain').levels.calf).toBe(towel);
+    expect(at(towel, 'heel_raise_towel').levels.calf).toBe(towel);
+  });
+
+  test('heel pain: the plantar stretch is in every session, as ten-second holds', () => {
+    for (const defaultMinutes of [3, 5, 10] as const) {
+      for (const weekIndex of [1, 2, 6]) {
+        const plan = buildWeek(input({ goals: [goal('pain_free_mornings', 5)], painStart: 5, weekIndex, defaultMinutes, daysPerWeek: 7 }));
+        for (const day of plan.days) {
+          if (day.exercises.length === 0) continue;
+          const stretch = day.exercises.find((e) => e.id === 'fascia_stretch');
+          expect(stretch?.dose.holdSec).toBe(10);
+        }
+      }
+    }
   });
 
   test('9 · pain up two points over the week → the focus exercise moves down one level', () => {
@@ -196,7 +281,7 @@ describe('the week', () => {
     const toe = (plan: WeekPlan) =>
       plan.days
         .filter((d) => d.type === 'strength')
-        .map((d) => d.exercises.some((e) => e.id === 'big_toe_lift' || e.id === 'toe_spread'));
+        .map((d) => d.exercises.some((e) => e.id === 'big_toe_lift'));
     expect(toe(buildWeek(input({ ...calf, toeWork: true }))).every(Boolean)).toBe(true);
     expect(toe(buildWeek(input(calf))).some(Boolean)).toBe(false);
   });
@@ -224,6 +309,46 @@ describe('today', () => {
     buildWeek(input({ goals: [goal('calf_raises', 10)], levels: { ...DEFAULT_LEVELS, calf: 3 } })).days.find(
       (d) => d.type === 'strength',
     )!;
+
+  test('health · a big workout yesterday turns a strength day into recovery', () => {
+    const day = adjustToday(strengthDay(), { ...signals, bigWorkoutYesterday: true }, ctx);
+    expect(day.reason).toBe('big-workout');
+    expect(day.type).toBe('recovery');
+  });
+
+  test('health · past the personal on-feet limit turns a strength day into recovery', () => {
+    const day = adjustToday(strengthDay(), { ...signals, onFeetYesterday: 10, onFeetThreshold: 8 }, ctx);
+    expect(day.reason).toBe('on-feet');
+    expect(day.type).toBe('recovery');
+    const under = adjustToday(strengthDay(), { ...signals, onFeetYesterday: 6, onFeetThreshold: 8 }, ctx);
+    expect(under.reason).toBeNull();
+  });
+
+  test('health · sleep is a week, not a night, when the week is known', () => {
+    const oneNight = adjustToday(strengthDay(), { ...signals, sleepHours: 5, sleepShort: false }, ctx);
+    expect(oneNight.reason).toBeNull();
+    const week = adjustToday(strengthDay(), { ...signals, sleepHours: 7.5, sleepShort: true }, ctx);
+    expect(week.reason).toBe('short-sleep');
+    expect(week.steppedDown).toBe(true);
+    // Without the week, the old one-night rule stands.
+    expect(adjustToday(strengthDay(), { ...signals, sleepHours: 5 }, ctx).reason).toBe('short-sleep');
+  });
+
+  test('health · resting heart rate up steps a strength day down, keeping it strength', () => {
+    const day = adjustToday(strengthDay(), { ...signals, restingHRElevated: true }, ctx);
+    expect(day.reason).toBe('resting-hr');
+    expect(day.type).toBe('strength');
+    expect(day.steppedDown).toBe(true);
+  });
+
+  test('health · pain outranks every Health signal', () => {
+    const day = adjustToday(
+      strengthDay(),
+      { ...signals, painToday: 8, bigWorkoutYesterday: true, restingHRElevated: true },
+      ctx,
+    );
+    expect(day.reason).toBe('flare');
+  });
 
   test('7 · pain 8 → seated only, 3 minutes, nothing that loads the fascia', () => {
     const day = adjustToday(strengthDay(), { ...signals, painToday: 8 }, ctx);
@@ -258,6 +383,18 @@ describe('today', () => {
     const short = twoMinuteVersion(strengthDay());
     expect(short.exercises).toHaveLength(1);
     expect(short.exercises[0].focus).toBe(true);
+    expect(fitsOrFloored(short.exercises, 2)).toBe(true);
+  });
+
+  test('a day stored at full doses is cut to its minutes when it is opened', () => {
+    // Weeks built before the week fitted its doses are still in storage.
+    const day = strengthDay();
+    const stored = { ...day, minutes: 3, exercises: day.exercises.map((e) => ({ ...e, dose: { ...e.dose, sets: 4 } })) };
+    expect(daySeconds(stored.exercises)).toBeGreaterThan(3 * 60);
+    const adjusted = adjustToday(stored, signals, ctx);
+    expect(adjusted.minutes).toBe(3);
+    expect(fitsOrFloored(adjusted.exercises, 3)).toBe(true);
+    expect(adjusted.exercises.map((e) => e.id)).toEqual(stored.exercises.map((e) => e.id));
   });
 });
 
@@ -289,5 +426,90 @@ describe('goals', () => {
     expect(reached).toEqual(['arch_hold']);
     expect(goals.find((g) => g.type === 'arch_hold')?.status).toBe('maintaining');
     expect(added).toEqual(['pain_free_mornings']);
+  });
+});
+
+describe('the exercise review fixes', () => {
+  const calm = { painLast14: Array(14).fill(0) };
+  const easyWith = (id: string) => [
+    { date: '2026-09-22', feedback: 'easy' as const, exerciseIds: [id] },
+    { date: '2026-09-24', feedback: 'easy' as const, exerciseIds: [id] },
+  ];
+  const noStep = (patch: Partial<WeekInput> = {}) =>
+    input({
+      goals: [goal('calf_raises', 10)],
+      painLastWeek: Array(7).fill(0),
+      painWeekBefore: Array(7).fill(0),
+      eligibility: { ...input().eligibility, ...calm, equipmentMissing: ['step'] },
+      ...patch,
+    });
+
+  test('the single-leg floor raise comes after the two-foot hold', () => {
+    const hold = CHAINS.calf.indexOf('heel_raise_hold');
+    expect(CHAINS.calf[hold + 1]).toBe('heel_raise_plain');
+    const plan = buildWeek(noStep({ levels: { ...DEFAULT_LEVELS, calf: hold }, lastWeekFeedback: easyWith('heel_raise_hold') }));
+    expect(CHAINS.calf[plan.levels.calf]).toBe('heel_raise_plain');
+  });
+
+  test('with no step the calf work never jumps from the floor raise to hops', () => {
+    const plain = CHAINS.calf.indexOf('heel_raise_plain');
+    const plan = buildWeek(noStep({ levels: { ...DEFAULT_LEVELS, calf: plain }, lastWeekFeedback: easyWith('heel_raise_plain') }));
+    expect(CHAINS.calf[plan.levels.calf]).toBe('heel_raise_plain');
+    expect(ids(plan)).not.toContain('pogo_hops');
+  });
+
+  test('hops never carry a backpack; the slow work on a step does', () => {
+    expect(doseFor('pogo_hops', 5, true).addWeight).toBeUndefined();
+    expect(doseFor('heel_drop_straight', 4, true).addWeight).toBe(true);
+    expect(doseFor('heel_raise_plain').tempo).toBeDefined();
+  });
+
+  test('no towel still gets arch work, from the step above at the same level', () => {
+    const plan = buildWeek(
+      input({
+        goals: [goal('arch_hold', 10)],
+        levels: { ...DEFAULT_LEVELS, arch: 0 },
+        eligibility: { ...input().eligibility, equipmentMissing: ['towel'] },
+      }),
+    );
+    expect(plan.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('big_toe_lift');
+  });
+
+  test('numb feet or diabetes: no hops and no eyes-closed balance, ever', () => {
+    const ctx: EligibilityContext = { ...input().eligibility, ...calm, settling: false, protectFeet: true };
+    expect(allowed('pogo_hops', ctx)).toBe(false);
+    expect(allowed('eyes_closed_stand', ctx)).toBe(false);
+    expect(allowed('pogo_hops', { ...ctx, protectFeet: false })).toBe(true);
+  });
+
+  test('stored levels from the old calf chain land on the same exercise', () => {
+    // Old layout: seated, double, hold, towel, drop, hops. Index 3 was the towel raise.
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: undefined, calf: 3 });
+    expect(CHAINS.calf[moved.calf]).toBe('heel_raise_towel');
+    expect(currentLevels(moved)).toBe(moved);
+    expect(currentLevels({ ...DEFAULT_LEVELS, calf: 3 }).calf).toBe(3);
+  });
+
+  test('stored arch levels from the chain that began with the towel scrunch land on the same exercise', () => {
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: 2, arch: 3 });
+    expect(CHAINS.arch[moved.arch]).toBe('short_foot_double');
+    expect(CHAINS.arch[currentLevels({ ...DEFAULT_LEVELS, _chains: 2, arch: 0 }).arch]).toBe('big_toe_lift');
+    expect(CHAINS.calf[currentLevels({ ...DEFAULT_LEVELS, _chains: 2, calf: 4 }).calf]).toBe('heel_raise_towel');
+  });
+
+  test('stored calf levels from the chain that began seated land on the same exercise', () => {
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: 3, calf: 4 });
+    expect(CHAINS.calf[moved.calf]).toBe('heel_raise_towel');
+    // The seated raise itself is gone: it lands on the first step, standing.
+    expect(CHAINS.calf[currentLevels({ ...DEFAULT_LEVELS, _chains: 3, calf: 0 }).calf]).toBe('heel_raise_double');
+    expect(CHAINS.calf).not.toContain('heel_raise_seated');
+  });
+
+  test('pain-free mornings: 14 of the last 16 logged at 1 or under', () => {
+    const fine = Array(16).fill(1);
+    expect(painGoalReached(fine)).toBe(true);
+    expect(painGoalReached([...fine.slice(0, 14), null, null])).toBe(true);
+    expect(painGoalReached([...fine.slice(0, 13), null, null, null])).toBe(false);
+    expect(painGoalReached([...fine.slice(0, 15), 2])).toBe(false);
   });
 });

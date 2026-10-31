@@ -1,5 +1,5 @@
 import * as Haptics from 'expo-haptics';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
@@ -10,23 +10,34 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
-import { useLanguage, useT } from '@/shared/lib/i18n';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { settle } from '@/shared/lib/motion';
 
-import { painBandReaction } from '../model/journey';
-import { InlineReaction } from './inline-reaction';
+import { Mascot, MascotStill, idleRig, painRig, playMascotSound, preloadMascotSounds, type MascotHandle } from '@/shared/ui/mascot';
+
+import { mascotCue, mascotRest } from '../model/mascot-reaction';
 
 const MAX = 10;
-const KNOB = 32;
+/** The thumb: large, round, with Walkito's little face in it. */
+const KNOB = 56;
+/** The rounded track the thumb rides, and its evenly spaced point marks. */
+const TRACK = 32;
+const DOT = 5;
+/** Walkito inside the thumb. */
+const THUMB_MASCOT = 40;
 const PAD = KNOB / 2;
 /** The numbers under the slider: a tap lands exactly where a thumb on a
  * slider lands only roughly, which matters most to the people over 35 this
  * question is mostly asked of. */
 const CELL = 28;
-/** The first progress check, a fortnight from today: the same date the
- * paywall and the plan name. */
-const RECHECK_DAYS = 14;
+/** The mascot, alone above the figure: big enough to read his face. */
+const MASCOT = 200;
+/** A tap on a number glides the knob there in 280 ms, and a drag crosses
+ * bands in a few frames: the sound waits until the score has held this
+ * long, so it is the sound of where it landed, not of a band passed on the
+ * way. */
+const SOUND_SETTLE_MS = 320;
 
 export type MorningPainStepProps = {
   score: number;
@@ -37,8 +48,9 @@ export type MorningPainStepProps = {
  * The first steps this morning, 0 to 10 — the daily check-in's own question,
  * so the first point on the progress chart is this answer.
  *
- * The figure is always ink: colour never judges a value. The line under it
- * changes with the band, so the screen answers while the thumb is still on it.
+ * The figure is always ink: colour never judges a value. The mascot above it
+ * answers with the band, without a word, so the screen reacts while the thumb
+ * is still on it.
  */
 export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
   const scheme = useColorScheme();
@@ -76,18 +88,37 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
     });
 
   const knob = useAnimatedStyle(() => ({ transform: [{ translateX: at.value * span }] }));
-  const fill = useAnimatedStyle(() => ({ width: PAD + at.value * span }));
 
   const nudge = (by: number) => {
     const next = Math.min(Math.max(score + by, 0), MAX);
     if (next !== score) at.value = next / MAX;
   };
 
-  const reaction = painBandReaction(score);
-  const language = useLanguage();
-  const recheck = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(
-    new Date(Date.now() + RECHECK_DAYS * 86_400_000),
-  );
+  // The mascot answers the scale as it moves: the middle wonders and past
+  // seven hurts, each with its sound; anything else is a silent nod, or a
+  // wince as it climbs. Never a jump or a happy sound for a low score.
+  // Answers to the person, never to the screen arriving, so the first score
+  // sets nothing off.
+  const mascot = useRef<MascotHandle>(null);
+  const shown = useRef<number | null>(null);
+  /** The score the last sound answered: the next one is for leaving its band. */
+  const heard = useRef<number | null>(null);
+  useEffect(() => {
+    preloadMascotSounds(['sad', 'hmm', 'boing']);
+  }, []);
+  useEffect(() => {
+    const cue = mascotCue(score, shown.current);
+    if (heard.current == null) heard.current = score;
+    shown.current = score;
+    if (cue.shot != null) mascot.current?.play(cue.shot);
+    const timer = setTimeout(() => {
+      const landed = mascotCue(score, heard.current);
+      heard.current = score;
+      if (landed.sound != null) playMascotSound(landed.sound);
+    }, SOUND_SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [score]);
+  const rest = mascotRest(score);
   const pick = (n: number) => {
     if (n === score) return;
     at.value = settle(n / MAX, 280);
@@ -95,6 +126,20 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
 
   return (
     <View style={styles.root}>
+      <View style={styles.mascot}>
+        <Mascot
+          ref={mascot}
+          rig={painRig}
+          state={rest.state}
+          intensity={rest.intensity}
+          size={MASCOT}
+          surface={colors.background}
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+            playMascotSound('boing');
+          }}
+        />
+      </View>
       <Text
         accessibilityElementsHidden
         importantForAccessibility="no"
@@ -112,10 +157,21 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
           onAccessibilityAction={(event) => nudge(event.nativeEvent.actionName === 'increment' ? 1 : -1)}
           onLayout={(event) => setWidth(event.nativeEvent.layout.width)}
           style={styles.hit}>
-          <View style={[styles.track, { backgroundColor: meter.track }]}>
-            <Animated.View style={[styles.fill, { backgroundColor: PRIMARY }, fill]} />
+          <View style={[styles.track, { backgroundColor: scheme === 'dark' ? colors.card : meter.track }]}>
+            {width > 0 &&
+              Array.from({ length: MAX + 1 }, (_, n) => (
+                <View
+                  key={n}
+                  style={[styles.dot, { left: PAD + (n / MAX) * span - DOT / 2, backgroundColor: meter.unit }]}
+                />
+              ))}
           </View>
-          <Animated.View style={[styles.knob, knob]} />
+          <Animated.View style={[styles.knob, { backgroundColor: colors.foreground }, knob]}>
+            {/* His face on the thumb, in the page's colour: dark on the light
+                thumb in the dark, light on the dark one in the light. Still, so
+                nothing loops here. */}
+            <MascotStill rig={idleRig} size={THUMB_MASCOT} paper={colors.foreground} ink={colors.background} />
+          </Animated.View>
         </View>
       </GestureDetector>
 
@@ -140,8 +196,6 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
         <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.min')}</Text>
         <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.max')}</Text>
       </View>
-
-      <InlineReaction id={reaction.key} text={t(reaction.text)} sub={t('onboarding.react.painRecheck', { date: recheck })} />
     </View>
   );
 }
@@ -152,6 +206,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingBottom: 24,
   },
+  mascot: { alignItems: 'center', marginBottom: 8 },
   figure: {
     ...fonts.heavy(104, -3),
     lineHeight: 112,
@@ -160,17 +215,20 @@ const styles = StyleSheet.create({
     marginBottom: 18,
   },
   hit: {
-    height: KNOB + 16,
+    height: KNOB + 12,
     justifyContent: 'center',
   },
   track: {
-    height: 10,
-    borderRadius: 5,
-    overflow: 'hidden',
+    height: TRACK,
+    borderRadius: TRACK / 2,
+    justifyContent: 'center',
   },
-  fill: {
-    height: '100%',
-    borderRadius: 5,
+  dot: {
+    position: 'absolute',
+    top: (TRACK - DOT) / 2,
+    width: DOT,
+    height: DOT,
+    borderRadius: DOT / 2,
   },
   knob: {
     position: 'absolute',
@@ -178,7 +236,8 @@ const styles = StyleSheet.create({
     width: KNOB,
     height: KNOB,
     borderRadius: KNOB / 2,
-    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
     shadowColor: '#000000',
     shadowOpacity: 0.22,
     shadowRadius: 6,

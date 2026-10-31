@@ -1,11 +1,12 @@
 import type { ErrorBoundaryProps } from 'expo-router';
 import { useEffect } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /**
@@ -20,6 +21,9 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
  *
  * `retry` renders the tree again, which is the right answer to almost every
  * error a user can cause by tapping. The error is reported, never shown.
+ *
+ * The mascot is the still drawing, the one with the unplugged cable: nothing
+ * here loops, since whatever failed may still be failing underneath.
  */
 export function AppErrorBoundary({ error, retry }: ErrorBoundaryProps) {
   const scheme = useColorScheme();
@@ -34,7 +38,9 @@ export function AppErrorBoundary({ error, retry }: ErrorBoundaryProps) {
 
   return (
     <View style={[styles.root, { backgroundColor: colors.background }]}>
-      <Image source={require('@assets/update/mascot-handoff.png')} style={styles.mascot} resizeMode="contain" />
+      <View style={styles.mascot} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        <MascotStill rig={noInternetRig} size={MASCOT_SIZE} surface={colors.background} />
+      </View>
       <Text style={[styles.title, { color: colors.foreground }]}>{t('error.title')}</Text>
       <Text style={[styles.body, { color: meter.caption }]}>{t('error.body')}</Text>
       <View style={styles.button}>
@@ -44,6 +50,8 @@ export function AppErrorBoundary({ error, retry }: ErrorBoundaryProps) {
   );
 }
 
+const MASCOT_SIZE = 120;
+
 const styles = StyleSheet.create({
   root: {
     flex: 1,
@@ -52,7 +60,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     gap: 12,
   },
-  mascot: { width: 120, height: 120, marginBottom: 8 },
+  mascot: { width: MASCOT_SIZE, height: MASCOT_SIZE, marginBottom: 8 },
   title: { ...fonts.heavy(24, -0.6), textAlign: 'center' },
   body: { ...fonts.medium(16), lineHeight: 22, textAlign: 'center' },
   button: { alignSelf: 'stretch', marginTop: 16 },

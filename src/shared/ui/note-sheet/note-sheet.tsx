@@ -2,9 +2,8 @@ import Mail01Icon from '@hugeicons/core-free-icons/Mail01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
-  Image,
   Modal,
   Pressable,
   ScrollView,
@@ -28,13 +27,16 @@ import { noteFonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { queueReview } from '@/shared/lib/review';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, heartRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { Signature } from './signature';
 
-/** 150 px, 3x the 50 pt it is drawn at. Not `icon.png`, which is app.json's
- * 1254 px home-screen source and would ship its 1.1 MB again in the bundle. */
-const APP_ICON = require('@assets/icon-small.webp');
+/** The mascot hugging his heart, beside the title where the app icon was.
+ * Drawn a little larger than the 50 pt square he keeps in the row (the
+ * drawing carries its own margin), so the row is as tall as it was. */
+const HEART = 60;
+const HEART_SLOT = 50;
 
 /** Matches `StreakSheet` exactly. Two sheets in the same app that arrive at
  * different speeds read as two different apps. */
@@ -243,19 +245,14 @@ export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
             contentContainerStyle={styles.cardBody}
             bounces={false}
             showsVerticalScrollIndicator={false}>
-            {/* The icon sits right, with the heading given the left. The two
-                read as a letterhead: who it is from on one side, whose paper it
-                is on the other. */}
+            {/* The mascot sits right, with the heading given the left, where
+                the app icon was: who it is from on one side, the app's own
+                face on the other. */}
             <View style={styles.head}>
               <Text style={[styles.title, { color: colors.foreground }]}>
                 {t('onboarding.note.title')}
               </Text>
-              <Image
-                source={APP_ICON}
-                resizeMode="contain"
-                accessible={false}
-                style={styles.icon}
-              />
+              <HeartMascot surface={colors.card} />
             </View>
 
             <Animated.View style={[styles.body, content]}>
@@ -297,6 +294,25 @@ export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
   );
 }
 
+/**
+ * Hugging the heart, and squeezing it once as the note settles in: the note is
+ * the one place the app speaks as a person, and that is all he adds to it.
+ * Mounted with the sheet and gone with it, so he never breathes behind a
+ * closed one; Reduce Motion gets the still drawing.
+ */
+function HeartMascot({ surface }: { surface: string }) {
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    const timer = setTimeout(() => mascot.current?.play('present'), IN_MS + 300);
+    return () => clearTimeout(timer);
+  }, []);
+  return (
+    <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.heart}>
+      <Mascot ref={mascot} rig={heartRig} size={HEART} surface={surface} />
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   /** A trace of ink over the blur — blur alone leaves a bright page bright. */
@@ -333,7 +349,13 @@ const styles = StyleSheet.create({
   },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   title: { flex: 1, fontSize: 25, fontFamily: noteFonts.bold, letterSpacing: -0.5 },
-  icon: { width: 50, height: 50, borderRadius: 12, borderCurve: 'continuous' },
+  /** The 50 pt the icon held; the larger drawing overhangs it evenly. */
+  heart: {
+    width: HEART_SLOT,
+    height: HEART_SLOT,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   body: { gap: 12 },
   line: { fontSize: 17, fontFamily: noteFonts.regular, lineHeight: 26, letterSpacing: -0.1 },
   close: { gap: 14 },

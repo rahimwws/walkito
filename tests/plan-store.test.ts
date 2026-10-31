@@ -87,6 +87,6 @@ describe('"can\'t do this"', () => {
   test('a missing ball takes the ball out everywhere', () => {
     markCantDo('foot_roll', 'no_ball', WEDNESDAY);
     expect(planSettings().equipmentMissing).toContain('ball');
-    expect(swapFor('foot_roll', WEDNESDAY)).toBe('sole_massage');
+    expect(swapFor('foot_roll', WEDNESDAY)).toBeNull();
   });
 });

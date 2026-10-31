@@ -1,7 +1,5 @@
-import FireIcon from '@hugeicons/core-free-icons/FireIcon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import { useEffect, useMemo, useRef } from 'react';
-import { Image, StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
+import { StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -9,7 +7,6 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withDelay,
-  withSequence,
   withTiming,
 } from 'react-native-reanimated';
 import Svg, { Defs, Path, RadialGradient, Rect, Stop } from 'react-native-svg';
@@ -25,22 +22,26 @@ import {
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useCountdown } from '@/shared/lib/clock';
 import { useLanguage, useT } from '@/shared/lib/i18n';
+import { usePlanOver } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { waitPhrase } from '@/shared/lib/wait';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { Mascot, thumbsUpRig, type MascotHandle } from '@/shared/ui/mascot';
 import { useSplashRevealed } from '@/shared/ui/splash';
 import { settle } from '@/shared/lib/motion';
 
-/**
- * The mascot laughing and waving: the same still the update handoff and the
- * splash draw, and the happiest pose the app owns. The check-in's own "no
- * pain" drawing is deliberately not reused here — both blocks are on Home at
+/*
+ * The mascot giving a thumbs up: "well done" without a party, for work that
+ * was done rather than a number that went somewhere. The check-in's own "no
+ * pain" figure is deliberately not reused here — both blocks are on Home at
  * once, and the same figure twice would read as one thing said twice.
  */
-const MASCOT = require('@assets/update/mascot-handoff.png');
 
 /** The artwork's box, and how far it stands up out of the card's top edge. */
 const MASCOT_SIZE = 104;
 const MASCOT_LIFT = 26;
+/** When his hop starts, as the still's hop did: just before today's dot pops. */
+const HOP_DELAY_MS = 120;
 
 const DOT = 30;
 /** The check inside a dot, drawn on a 30pt grid, and its length for the dash. */
@@ -64,6 +65,9 @@ export type DoneCardProps = {
   tickedMoves: number;
   /** Today was a test day, so the work is counted in tests rather than moves. */
   retest: boolean;
+  /** Something is over Home (a sheet, a player): the mascot holds still under
+   * it and the one-shot waits until it is gone. */
+  covered?: boolean;
 };
 
 /**
@@ -76,11 +80,13 @@ export type DoneCardProps = {
  * the evening of a trained day is asking.
  *
  * Motion plays once, the first time the card is seen: the mascot hops, today's
- * dot springs in and its check draws. Nothing loops. Home stays mounted under
- * the other tabs, and the card waits for focus and for the splash so the one
- * time it plays is a time somebody is looking.
+ * dot springs in and its check draws. Nothing loops but his breathing, and that
+ * only while Home is in front with nothing over it. Home stays mounted under
+ * the other tabs and under the plan, and the card waits for focus, for the plan
+ * to be down and for the splash, so the one time it plays is a time somebody is
+ * looking.
  */
-export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, retest }: DoneCardProps) {
+export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, retest, covered = false }: DoneCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -119,35 +125,34 @@ export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, rete
   });
 
   // ── The one-shot ──────────────────────────────────────────────────────────
-  const hop = useSharedValue(0);
+  const planOver = usePlanOver();
+  /** Home is in front with nothing over it: he breathes, and his hop may play. */
+  const seen = active && !covered && !planOver;
+  const mascot = useRef<MascotHandle>(null);
+  const hopTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pop = useSharedValue(0);
   const draw = useSharedValue(0);
   const played = useRef(false);
 
   useEffect(() => {
-    if (played.current || !active || !revealed) return;
+    if (played.current || !seen || !revealed) return;
     played.current = true;
-    hop.value = withDelay(
-      120,
-      withSequence(
-        withTiming(-14, { duration: 190, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
-        settle(0, 360),
-      ),
-    );
+    // The hop the still used to make, now his own: two little hops, once. Not
+    // cleared when `seen` flips: it is one move, already on its way.
+    hopTimer.current = setTimeout(() => mascot.current?.play('hop'), HOP_DELAY_MS);
     pop.value = withDelay(260, settle(1, 380));
     draw.value = withDelay(
       380,
       withTiming(1, { duration: 350, easing: Easing.out(Easing.cubic), reduceMotion: ReduceMotion.System }),
     );
-  }, [active, revealed, hop, pop, draw]);
+  }, [seen, revealed, pop, draw]);
+  useEffect(
+    () => () => {
+      if (hopTimer.current != null) clearTimeout(hopTimer.current);
+    },
+    [],
+  );
 
-  const mascotStyle = useAnimatedStyle(() => ({
-    transform: [
-      { translateY: hop.value },
-      // A touch of stretch at the top of the hop, paid back on landing.
-      { scaleY: 1 - hop.value * 0.004 },
-    ],
-  }));
   const todayDotStyle = useAnimatedStyle(() => ({
     transform: [{ scale: 0.6 + pop.value * 0.4 }],
     opacity: 0.4 + Math.min(pop.value, 1) * 0.6,
@@ -204,7 +209,7 @@ export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, rete
         <View style={[styles.divider, { backgroundColor: meter.divider }]} />
 
         <View style={styles.streak}>
-          <HugeiconsIcon icon={FireIcon} size={18} color={accents[scheme].orange.fill} strokeWidth={2} />
+          <FluentIcon name="fire" size={20} />
           <Text style={[styles.streakText, { color: colors.foreground }]}>
             {streak.current >= 2
               ? t('home.doneStreak', { count: streak.current })
@@ -214,14 +219,15 @@ export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, rete
       </View>
 
       {/* Outside the card, so it can stand out of its top edge. Decoration:
-          the words beside him say everything. */}
-      <Animated.View
+          the words beside him say everything. Most of him is on the card, so
+          that is what his outline is drawn in, in the dark. */}
+      <View
         pointerEvents="none"
         accessibilityElementsHidden
         importantForAccessibility="no-hide-descendants"
-        style={[styles.mascot, mascotStyle]}>
-        <Image source={MASCOT} style={styles.mascotImage} resizeMode="contain" />
-      </Animated.View>
+        style={styles.mascot}>
+        <Mascot ref={mascot} rig={thumbsUpRig} size={MASCOT_SIZE} surface={colors.card} paused={!seen} />
+      </View>
     </View>
   );
 }
@@ -284,7 +290,6 @@ const styles = StyleSheet.create({
     width: MASCOT_SIZE,
     height: MASCOT_SIZE,
   },
-  mascotImage: { width: MASCOT_SIZE, height: MASCOT_SIZE },
   /** Today: a ring with air between it and the filled dot inside. */
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   titleText: { flexShrink: 1 },

@@ -44,7 +44,7 @@ export const CORE_FR = {
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Ton plan',
   'settings.outcome': 'Ton objectif',
-  'settings.outcome.painfree': 'Sans douleur',
+  'settings.outcome.painfree': 'Moins de douleur',
   'settings.outcome.flat_feet': 'Des voûtes plus fortes',
   'settings.outcome.stronger': 'Des jambes plus fortes',
   'settings.outcome.injury_free': 'Des jambes solides',
@@ -66,7 +66,10 @@ export const CORE_FR = {
   'settings.sound.tempo': 'Son pendant la séance',
   'settings.sound.tempoHint': 'Chaque exercice expliqué à voix haute au départ, et un battement pour les répétitions lentes.',
   'settings.sound.voice': 'Décompte à voix haute',
-  'settings.sound.voiceHint': 'Dit « monte, 2, 3, tiens, descends » au lieu des bips.',
+  'settings.sound.voiceHint': 'Dit « monte, 2, 3, tiens, descends » au lieu des bips.',
+  'settings.notifications.title': 'Notifications',
+  'settings.notifications.offers': 'Offres et réductions',
+  'settings.notifications.offersHint': 'De temps en temps, un prix plus bas sur Walkito Plus.',
   'settings.equipment': 'Ce que j’ai à la maison',
   'settings.equipment.step': 'Une marche',
   'settings.equipment.band': 'Élastique de résistance',
@@ -77,7 +80,7 @@ export const CORE_FR = {
   'settings.account.saveBody': 'Connecte-toi avec Apple et ton plan, tes bilans et tes tests reviennent sur un nouveau téléphone ou après une réinstallation.',
   'settings.account.saveBodyGoogle': 'Connecte-toi avec Google et ton plan, tes bilans et tes tests reviennent sur un nouveau téléphone ou après une réinstallation.',
   'settings.account.signedIn': 'Connexion avec Apple active. Tes progrès sont enregistrés dans ton compte.',
-  'settings.lastSync': 'Dernière synchro : {time}',
+  'settings.lastSync': 'Dernière synchro : {time}',
   'settings.lastSyncNever': 'Pas encore synchronisé',
   'settings.reminder': 'Heure du rappel',
   'settings.disclaimer': 'Walkito n’est pas un dispositif médical et ne diagnostique, ne traite, ne guérit ni ne prévient aucune affection. Si la douleur est vive, s’aggrave, ou s’accompagne de gonflement, d’engourdissement ou de fièvre, arrête et consulte un médecin.',
@@ -87,7 +90,7 @@ export const CORE_FR = {
   'streak.milestoneBlurb': 'Chacun de ces jours a compté.',
   'streak.milestoneBigBlurb': 'Dix jours. C’est là qu’une habitude commence à tenir.',
   'streak.rule':
-    'Un jour compte quand tu fais ton bilan, t’entraînes, termines une routine de la bibliothèque, ou quand le plan te donne un jour de repos.',
+    'Un jour compte quand tu fais ton bilan, t’entraînes ou termines une routine de la bibliothèque. Un jour de repos, ton bilan suffit.',
   'streak.total': { one: '{count} jour jusqu’ici.', other: '{count} jours jusqu’ici.' },
   'streak.dismiss': 'Compris',
   'streak.dayCount': { one: '{count} jour', other: '{count} jours' },
@@ -103,11 +106,11 @@ export const CORE_FR = {
   },
 
   // ── Referral / gift sheet ────────────────────────────────────────────────
-  'gift.title': 'Invite un ami',
-  'gift.blurb': 'Partage ton code. Un ami qui s’inscrit avec obtient {percent} % de réduction sur l’abonnement annuel.',
+  'gift.title': 'Invite un proche',
+  'gift.blurb': 'Partage ton code. La personne qui s’inscrit avec ce code obtient {percent} % de réduction sur l’abonnement annuel.',
   'gift.unavailable': 'Les invitations ne sont pas disponibles dans cette version.',
   'gift.shareMessage':
-    'Utilise mon code {code} dans Walkito pour avoir {percent} % de réduction sur l’abonnement annuel.',
+    'Utilise mon code {code} dans Walkito pour avoir {percent} % de réduction sur l’abonnement annuel.',
   'gift.share': 'Partager le code',
   'gift.shared': 'Copié',
   'gift.copy': 'Copier plutôt',
@@ -124,7 +127,7 @@ export const CORE_FR = {
 
   // ── The next session ───────────────────────────────────────────────────────
   'nextSession.in': 'Prochaine séance dans {time}',
-  'nextSession.on': 'Prochaine séance : {day}',
+  'nextSession.on': 'Prochaine séance : {day}',
 
   // ── Dock / cards ───────────────────────────────────────────────────────────
   'dock.startWorkout': 'Commencer la séance',
@@ -140,11 +143,11 @@ export const CORE_FR = {
   'purchase.unavailable': 'Cette formule n’est pas disponible pour le moment.',
 
   'quick.deleteTitle': '{name}, attends.',
-  'quick.deleteBody': 'Je suis sur le point de supprimer l’app.\n\nCe qui m’a fait partir :\n\n',
+  'quick.deleteBody': 'Je suis sur le point de supprimer l’app.\n\nCe qui m’a fait partir :\n\n',
   'quick.deleteSubject': 'Avant de supprimer Walkito',
   'quick.talkSubject': 'Quelque chose cloche dans Walkito',
-  'quick.talkBody': 'Salut -\n\nCe qui se passe :\n\n',
-  'quick.deleteSubtitle': 'Tu supprimes ? Dis-nous ce qui n’a pas marché.',
+  'quick.talkBody': 'Salut -\n\nCe qui se passe :\n\n',
+  'quick.deleteSubtitle': 'Tu supprimes ? Dis-nous ce qui n’a pas marché.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
   'tabs.home': 'Accueil',
@@ -152,27 +155,30 @@ export const CORE_FR = {
 
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Cette version n’a pas de serveur de comptes. Utilise Continuer avec Apple.',
+  'auth.noServer': 'Cette version n’a pas de serveur de comptes.',
   'auth.missingFields': 'Saisis un e-mail et un mot de passe.',
   'auth.invalidCredentials': 'Cet e-mail et ce mot de passe ne correspondent pas.',
   'auth.notConfirmed':
     'Ce compte n’est pas encore confirmé. Confirme l’adresse e-mail, puis réessaie.',
   'auth.banned': 'Ce compte est désactivé.',
-  'auth.providerDisabled':
-    'La connexion par e-mail est désactivée pour cette app. Utilise Continuer avec Apple.',
+  'auth.providerDisabled': 'La connexion par e-mail est désactivée pour cette app.',
   'auth.rateLimited': 'Trop de tentatives. Attends une minute et réessaie.',
   'auth.badEmail': 'Ça ne ressemble pas à une adresse e-mail.',
   'auth.noAccount': 'Aucun compte n’a été renvoyé.',
   'auth.generic': 'Ça n’est pas passé.',
   'auth.unreachable': 'Impossible de joindre le serveur.',
+  'auth.badCode': 'Ce code n’a pas marché. Vérifie-le ou demandes-en un nouveau.',
+  'auth.codeRateLimited': 'Un code vient d’être envoyé. Attends une minute avant d’en demander un autre.',
+  'auth.emailUndeliverable': 'L’e-mail n’a pas pu partir pour l’instant. Réessaie dans un moment.',
+  'auth.noAccountForEmail': 'Aucun compte n’utilise cet e-mail.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, tu as tout terminé.',
   'maintenance.through': 'Tu as tout terminé.',
   'maintenance.calfGain': '{opening} Ton mollet est passé ↗ de {before} à {after}.',
-  'maintenance.relapse': 'Environ la moitié des gens perdent cet acquis en cinq ans.',
-  'maintenance.staying': 'Deux séances par semaine, c’est comme ça qu’on reste dans l’autre moitié.',
-  'maintenance.regression': 'Tes chiffres ont glissé. Tu veux refaire {block} ?',
+  'maintenance.relapse': 'La douleur au talon persiste ou revient souvent : environ la moitié des gens ont encore des symptômes cinq ans après.',
+  'maintenance.staying': 'Deux séances par semaine t’aident à garder ce que tu as construit.',
+  'maintenance.regression': 'Tes résultats ont baissé. Tu veux reprendre cet objectif : {block} ?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   'block.settle': 'Apaiser',

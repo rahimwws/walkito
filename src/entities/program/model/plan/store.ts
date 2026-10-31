@@ -8,13 +8,15 @@ import { kv } from '@/shared/lib/storage';
 
 import { retestResults, type RetestResult } from '../program';
 import { dayNumberFor, firstStepOn, fromDateKey, logFor, painLatestOn, programState, toDateKey, writeLog } from '../state';
-import { CHAINS, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
+import { CHAINS, currentLevels, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
+import { doseFor, fitDoses } from './dose';
 import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import {
   advanceGoals,
   MAX_ACTIVE_GOALS,
   measuredGoalReached,
   painGoalReached,
+  PAIN_FREE_WINDOW,
   startingGoals,
   type Goal,
   type GoalType,
@@ -77,6 +79,12 @@ export type PlanSettings = {
    * for the same reason as `seatedStart`.
    */
   toeWork?: boolean;
+  /**
+   * Numb feet or diabetes, from the safety check: no hopping and no balancing
+   * with the eyes closed, for as long as the plan runs. Health data: never
+   * sent to analytics. Optional for the same reason as `seatedStart`.
+   */
+  protectFeet?: boolean;
 };
 
 const SETTINGS_KEY = 'plan/settings';
@@ -164,8 +172,9 @@ export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date
   const next = { ...planSettings(), ...patch };
   write(SETTINGS_KEY, next);
   for (const field of Object.keys(patch) as (keyof PlanSettings)[]) {
-    // Set once by onboarding, never from Settings; nothing to chart.
-    if (field !== 'seatedStart' && field !== 'toeWork') track('plan_settings_changed', { field });
+    // Set once by onboarding, never from Settings; nothing to chart, and
+    // `protectFeet` says something about the body.
+    if (field !== 'seatedStart' && field !== 'toeWork' && field !== 'protectFeet') track('plan_settings_changed', { field });
   }
   // A rigid foot drops the arch step; a flexible one gets it back.
   const set = outcome();
@@ -528,7 +537,7 @@ export function refreshGoals(now: number = Date.now()): GoalType[] {
   const latest = results[results.length - 1];
   const firstM = measurementsFrom(first);
   const latestM = measurementsFrom(latest);
-  const pain14 = painSeries(today, 14);
+  const pain14 = painSeries(today, PAIN_FREE_WINDOW);
   const pain7 = mean(painSeries(today, 7));
   const painFirstWeek = mean(painSeries(addDays(programState().startDate, 6), 7));
 
@@ -633,6 +642,29 @@ export function postponeTest(now: number = Date.now()): string {
   return tomorrow;
 }
 
+/**
+ * The test kept off today, with nobody having put it off: the first day is
+ * the two-minute day-one session over Home (`features/home-tour`), and the
+ * first test is the day after it.
+ *
+ * Called just before that session is recorded, never after. The same record
+ * as "Test tomorrow" (a day the test may not come before), so every rebuild
+ * from here on places it the same way, and the rebuild runs while today is
+ * still open: today is planned again from the week's shape and the test goes
+ * on tomorrow. Recorded first, today would be a finished day, which every
+ * rebuild keeps as it was (`build`), and the week would carry a "Test · Done"
+ * nobody took. Only ever moves the day later, so a test put off further is
+ * left where it is. No `retest_postponed`: nobody postponed anything, and the
+ * chart of people who put a test off would fill with everyone's first day.
+ */
+export function keepTestOffToday(now: number = Date.now()): string {
+  const tomorrow = addDays(toDateKey(new Date(now)), 1);
+  const putOff = kv.getString(TEST_NOT_BEFORE_KEY);
+  if (putOff == null || putOff < tomorrow) kv.set(TEST_NOT_BEFORE_KEY, tomorrow);
+  rebuildRestOfWeek(now);
+  return tomorrow;
+}
+
 // ── Weeks ────────────────────────────────────────────────────────────────────
 
 type WeekStore = Record<string, WeekPlan>;
@@ -646,12 +678,68 @@ type WeekStore = Record<string, WeekPlan>;
 const WEEKS_SCHEMA = 2;
 const WEEKS_SCHEMA_KEY = 'plan/weeks-schema';
 
+/**
+ * The dose tables a stored week was written with. Bumped when `dose.ts`
+ * changes how much of an exercise a level means, so the weeks already stored
+ * are re-dosed in place: the same exercises at the same levels, with the new
+ * doses, fitted to each day's minutes. Not a schema bump, which would drop the
+ * weeks and with them the chain levels the next week progresses from.
+ */
+const WEEKS_DOSES = 3;
+const WEEKS_DOSES_KEY = 'plan/weeks-doses';
+
+function redosed(store: WeekStore): WeekStore {
+  const hasStep = !planSettings().equipmentMissing.includes('step');
+  const out: WeekStore = {};
+  for (const [start, plan] of Object.entries(store)) {
+    out[start] = {
+      ...plan,
+      days: plan.days.map((day) =>
+        day.exercises.length === 0
+          ? day
+          : {
+              ...day,
+              exercises: fitDoses(
+                day.exercises.map((e) => ({ ...e, dose: doseFor(e.id, e.level, hasStep) })),
+                day.minutes,
+              ),
+            },
+      ),
+    };
+  }
+  return out;
+}
+
+/**
+ * Every week's levels in the current chain layout. Weeks stored, or restored
+ * from the server, before the single-leg floor raise joined the calf chain
+ * count their calf level in the old layout; `currentLevels` moves each to the
+ * same exercise. Idempotent, so it runs on every read and needs no flag.
+ */
+function withCurrentLevels(store: WeekStore): WeekStore {
+  let changed = false;
+  const out: WeekStore = {};
+  for (const [start, plan] of Object.entries(store)) {
+    const levels = plan.levels == null ? plan.levels : currentLevels(plan.levels);
+    if (levels !== plan.levels) changed = true;
+    out[start] = levels === plan.levels ? plan : { ...plan, levels };
+  }
+  return changed ? out : store;
+}
+
 function weeks(): WeekStore {
   if (Number(kv.getString(WEEKS_SCHEMA_KEY) ?? 0) !== WEEKS_SCHEMA) {
     kv.remove(WEEKS_KEY);
     kv.set(WEEKS_SCHEMA_KEY, String(WEEKS_SCHEMA));
   }
-  return read<WeekStore>(WEEKS_KEY, {});
+  const store = withCurrentLevels(read<WeekStore>(WEEKS_KEY, {}));
+  if (Number(kv.getString(WEEKS_DOSES_KEY) ?? 0) !== WEEKS_DOSES) {
+    kv.set(WEEKS_DOSES_KEY, String(WEEKS_DOSES));
+    const next = redosed(store);
+    write(WEEKS_KEY, next);
+    return next;
+  }
+  return store;
 }
 
 /** The eligibility inputs that come from stored data, for a given day. */
@@ -667,6 +755,7 @@ export function eligibilityFor(dateKey: string): Omit<EligibilityContext, 'settl
     painLast14: painSeries(dateKey, 14),
     shortFootStandingSessions: standing,
     ...(settings.seatedStart === true ? { seatedOnly: true } : {}),
+    ...(settings.protectFeet === true ? { protectFeet: true } : {}),
   };
 }
 
@@ -749,11 +838,32 @@ export function weekPlan(now: number = Date.now()): WeekPlan {
   const start = weekStartOf(toDateKey(new Date(now)));
   const store = weeks();
   const existing = store[start];
-  if (existing != null) return withDueTest(existing, now);
+  if (existing != null) {
+    const today = toDateKey(new Date(now));
+    if (retiredTried !== today && holdsRetired(existing, today)) {
+      retiredTried = today;
+      rebuildRestOfWeek(now);
+      return withDueTest(weeks()[start] ?? existing, now);
+    }
+    return withDueTest(existing, now);
+  }
   refreshGoals(now);
   const plan = build(start, now);
   write(WEEKS_KEY, { ...weeks(), [start]: plan });
   return plan;
+}
+
+/** The day a re-plan for retired exercises was last tried. See `holdsRetired`. */
+let retiredTried: string | null = null;
+
+/**
+ * Whether a day still ahead holds an exercise the plan no longer has. Weeks
+ * stored before an exercise left the catalogue keep it until they are planned
+ * again, so the rest of the week is, once a day at most: the days already
+ * lived keep what they were.
+ */
+function holdsRetired(plan: WeekPlan, today: string): boolean {
+  return plan.days.some((day) => day.date >= today && day.exercises.some((e) => planMeta(e.id) == null));
 }
 
 /** The last day-and-due-date a re-plan was tried for. See `withDueTest`. */
@@ -873,7 +983,17 @@ export function scheduledIds(): string[] {
 
 // ── Today ────────────────────────────────────────────────────────────────────
 
-export type TodayHealth = Pick<TodaySignals, 'stepsYesterday' | 'steps28Avg' | 'sleepHours'>;
+export type TodayHealth = Pick<
+  TodaySignals,
+  | 'stepsYesterday'
+  | 'steps28Avg'
+  | 'sleepHours'
+  | 'sleepShort'
+  | 'onFeetYesterday'
+  | 'onFeetThreshold'
+  | 'bigWorkoutYesterday'
+  | 'restingHRElevated'
+>;
 
 /** Today's day from this week's plan, adjusted to this morning. */
 export function todayPlan(
@@ -891,9 +1011,7 @@ export function todayPlan(
     {
       painToday: painForToday(today),
       pain7Avg: mean(pains.slice(0, 7)),
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.steps28Avg,
-      sleepHours: health.sleepHours,
+      ...health,
       stepDownOwed: stepDownOwed(),
       minutesChoice,
       defaultMinutes: settings.defaultMinutes,
@@ -973,6 +1091,8 @@ export function importPlan(snapshot: Partial<PlanSnapshot>): void {
   if (snapshot.weeks != null) {
     kv.set(WEEKS_SCHEMA_KEY, String(WEEKS_SCHEMA));
     kv.set(WEEKS_KEY, JSON.stringify(snapshot.weeks));
+    // A backup can predate the current doses; the next read re-doses it.
+    kv.remove(WEEKS_DOSES_KEY);
   }
   write(SETTINGS_KEY, planSettings());
 }

@@ -32,7 +32,7 @@ export const CORE_IT = {
   'settings.email.section': 'Email',
   'settings.email.address': 'Inviate a {email}',
   'settings.email.none': 'Ancora nessun indirizzo email. Accedendo se ne aggiunge uno.',
-  'settings.email.unavailable': 'Impossibile caricare le impostazioni email. Riprova con una connessione.',
+  'settings.email.unavailable': 'Impossibile caricare le impostazioni email. Controlla la connessione e riprova.',
   'settings.email.tips': 'Consigli e promemoria',
   'settings.email.weekly': 'Riepilogo settimanale',
   'settings.email.unsubscribeAll': 'Annulla tutte le iscrizioni',
@@ -43,7 +43,7 @@ export const CORE_IT = {
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Il tuo piano',
   'settings.outcome': 'Il tuo obiettivo',
-  'settings.outcome.painfree': 'Senza dolore',
+  'settings.outcome.painfree': 'Meno dolore',
   'settings.outcome.flat_feet': 'Arcate più forti',
   'settings.outcome.stronger': 'Gambe più forti',
   'settings.outcome.injury_free': 'Gambe solide',
@@ -66,6 +66,9 @@ export const CORE_IT = {
   'settings.sound.tempoHint': 'Ogni esercizio spiegato a voce all’inizio, e un battito per le ripetizioni lente.',
   'settings.sound.voice': 'Conteggio a voce',
   'settings.sound.voiceHint': 'Dice «su, 2, 3, tieni, giù» al posto dei toni.',
+  'settings.notifications.title': 'Notifiche',
+  'settings.notifications.offers': 'Offerte e sconti',
+  'settings.notifications.offersHint': 'Ogni tanto, un prezzo più basso su Walkito Plus.',
   'settings.equipment': 'Cosa ho a casa',
   'settings.equipment.step': 'Un gradino',
   'settings.equipment.band': 'Elastico',
@@ -79,14 +82,14 @@ export const CORE_IT = {
   'settings.lastSync': 'Ultima sincronizzazione: {time}',
   'settings.lastSyncNever': 'Nessuna sincronizzazione ancora',
   'settings.reminder': 'Ora del promemoria',
-  'settings.disclaimer': 'Walkito non è un dispositivo medico e non diagnostica, tratta, cura né previene alcuna condizione medica. Se il dolore è acuto, peggiora o arriva con gonfiore, intorpidimento o febbre, fermati e consulta un medico.',
+  'settings.disclaimer': 'Walkito non è un dispositivo medico e non diagnostica, tratta, cura né previene alcuna patologia. Se il dolore è acuto, peggiora o è accompagnato da gonfiore, intorpidimento o febbre, fermati e consulta un medico.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: '{count} giorno di fila', other: '{count} giorni di fila' },
   'streak.milestoneBlurb': 'Ognuno di quei giorni è contato.',
   'streak.milestoneBigBlurb': 'Dieci giorni. È qui che un’abitudine comincia a tenere.',
   'streak.rule':
-    'Un giorno conta quando fai il check-in, ti alleni, finisci una routine della libreria o il piano ti dà un giorno di riposo.',
+    'Un giorno conta quando fai il check-in, ti alleni o finisci una routine della libreria. In un giorno di riposo basta il check-in.',
   'streak.total': { one: '{count} giorno finora.', other: '{count} giorni finora.' },
   'streak.dismiss': 'Ho capito',
   'streak.dayCount': { one: '{count} giorno', other: '{count} giorni' },
@@ -150,27 +153,30 @@ export const CORE_IT = {
   'tabs.progress': 'Progressi',
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Questa versione non ha un server per gli account. Usa Continua con Apple.',
+  'auth.noServer': 'Questa versione non ha un server per gli account.',
   'auth.missingFields': 'Inserisci sia l’email sia la password.',
   'auth.invalidCredentials': 'Email e password non corrispondono.',
   'auth.notConfirmed':
     'Questo account non è ancora confermato. Conferma l’indirizzo email, poi riprova.',
   'auth.banned': 'Questo account è disattivato.',
-  'auth.providerDisabled':
-    'L’accesso con email è disattivato per questa app. Usa Continua con Apple.',
+  'auth.providerDisabled': 'L’accesso con email è disattivato per questa app.',
   'auth.rateLimited': 'Troppi tentativi. Aspetta un minuto e riprova.',
   'auth.badEmail': 'Non sembra un indirizzo email.',
   'auth.noAccount': 'Non è arrivato nessun account.',
   'auth.generic': 'Non è andato a buon fine.',
   'auth.unreachable': 'Impossibile raggiungere il server.',
+  'auth.badCode': 'Il codice non funziona. Controllalo o richiedine uno nuovo.',
+  'auth.codeRateLimited': 'Abbiamo appena inviato un codice. Aspetta un minuto prima di chiederne un altro.',
+  'auth.emailUndeliverable': 'Ora non siamo riusciti a inviare l’email. Riprova tra poco.',
+  'auth.noAccountForEmail': 'Nessun account usa questa email.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, ce l’hai fatta.',
   'maintenance.through': 'Ce l’hai fatta.',
   'maintenance.calfGain': '{opening} Il tuo polpaccio è passato ↗ da {before} a {after}.',
-  'maintenance.relapse': 'Circa metà delle persone lo perde di nuovo entro cinque anni.',
-  'maintenance.staying': 'Due sessioni a settimana sono il modo per restare nell’altra metà.',
-  'maintenance.regression': 'I tuoi numeri sono scesi. Vuoi rifare {block}?',
+  'maintenance.relapse': 'Il dolore al tallone spesso resta o ritorna: circa metà delle persone ha ancora sintomi dopo cinque anni.',
+  'maintenance.staying': 'Due sessioni a settimana ti aiutano a mantenere i risultati.',
+  'maintenance.regression': 'I tuoi numeri sono scesi. Vuoi rifare il blocco «{block}»?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   'block.settle': 'Assestamento',

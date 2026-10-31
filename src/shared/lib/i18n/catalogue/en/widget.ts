@@ -18,7 +18,7 @@ export const WIDGET_EN = {
   // ── Medium: the goal and the week ────────────────────────────────────────
   'widget.goalTitle': 'Today’s goal',
   'widget.goalValue': '{done}/{total}',
-  'widget.goalUnknown': '–',
+  'widget.goalUnknown': '-',
   'widget.goalRest': 'Rest',
   'widget.goalTest': 'Retest',
   'widget.checkin': 'Check-in',

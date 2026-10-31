@@ -29,8 +29,9 @@ export const PROFILE_IT = {
   'profile.deleteSubscriptionAndroid':
     'Eliminare l’account non annulla l’abbonamento. Viene addebitato da Google Play e si rinnova finché non lo annulli lì.',
   'profile.manageSubscription': 'Gestisci abbonamento',
+  'profile.deletePass': 'Il tuo pass di 3 mesi resta in questo account e finisce quando elimini l’account.',
   'profile.deleteLocalOnly':
-    'I tuoi dati sono stati eliminati da questo dispositivo, ma non è stato possibile raggiungere il server. Riapri l’app con una connessione per completare, oppure scrivi all’assistenza.',
+    'I tuoi dati sono stati eliminati da questo dispositivo, ma non è stato possibile raggiungere il server. Riapri l’app quando sei online per completare l’eliminazione, oppure scrivi all’assistenza.',
   'profile.deleteConfirm': 'Elimina tutto',
   'profile.deleting': 'Eliminazione…',
   'profile.keepAccount': 'Tieni il mio account',

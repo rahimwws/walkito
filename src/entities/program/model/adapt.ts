@@ -88,7 +88,7 @@ export type ResolveInput = {
  * empty session — and an empty session on the worst morning is the same as
  * cancelling it. Both of these are seated, neither loads the fascia.
  */
-const OFFLOAD_FALLBACK = ['short_foot_seated', 'toe_spread'] as const;
+const OFFLOAD_FALLBACK = ['short_foot_seated', 'big_toe_lift'] as const;
 
 /** Whether the jump from the recent average counts as a spike. */
 export function isSpike(painToday: number | null, pain7dAvg: number | null): boolean {

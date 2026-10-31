@@ -30,12 +30,22 @@ describe('verdictOf', () => {
   test('names the one test that went up', () => {
     expect(
       verdictOf([
-        { type: 'calf_raises', change: 3 },
+        { type: 'calf_raises', change: 6 },
         { type: 'arch_hold', change: -2 },
         { type: 'balance', change: 0 },
         { type: 'symmetry', change: 5 },
       ]),
     ).toEqual({ kind: 'one', type: 'calf_raises' });
+  });
+
+  test('a gain inside the test\'s own noise is not news', () => {
+    expect(
+      verdictOf([
+        { type: 'calf_raises', change: 5 },
+        { type: 'arch_hold', change: 4 },
+        { type: 'balance', change: 1 },
+      ]),
+    ).toEqual({ kind: 'steady' });
   });
 
   test('never names a dip', () => {
@@ -51,16 +61,16 @@ describe('verdictOf', () => {
   test('two and all three', () => {
     expect(
       verdictOf([
-        { type: 'calf_raises', change: 1 },
-        { type: 'arch_hold', change: 2 },
+        { type: 'calf_raises', change: 6 },
+        { type: 'arch_hold', change: 5 },
         { type: 'balance', change: 0 },
       ]).kind,
     ).toBe('two');
     expect(
       verdictOf([
-        { type: 'calf_raises', change: 1 },
-        { type: 'arch_hold', change: 2 },
-        { type: 'balance', change: 3 },
+        { type: 'calf_raises', change: 7 },
+        { type: 'arch_hold', change: 5 },
+        { type: 'balance', change: 8 },
       ]).kind,
     ).toBe('all');
   });

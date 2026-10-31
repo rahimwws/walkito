@@ -3,7 +3,7 @@
 export const QUICK_DE = {
   'quick.tab': 'Schnell',
   'quick.title': 'Schnell',
-  'quick.subtitle': 'Für wenn du es jetzt brauchst',
+  'quick.subtitle': 'Wenn du es gerade brauchst',
   'quick.featured': 'Gerade jetzt',
 
   'quick.flare.title': 'Tut gerade weh',
@@ -16,7 +16,7 @@ export const QUICK_DE = {
   'quick.preRun.cue': 'Weck den Fuß auf. Nicht lange dehnen.',
   'quick.postRun.cue': 'Halte jede Dehnung. Nicht wippen.',
   'quick.atWork.cue': 'Niemand merkt es. Die Schuhe bleiben an.',
-  'quick.morning.cue': 'Bevor dein Fuß den Boden berührt.',
+  'quick.morning.cue': 'Bevor dein Fuß den Boden berührt. 10 Sekunden halten, lösen, 10-mal pro Fuß.',
 
   'quick.seated': 'im Sitzen',
   'quick.standing': 'im Stehen',

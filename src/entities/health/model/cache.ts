@@ -31,6 +31,9 @@ export type HealthCache = {
    * recomputed on every refresh. */
   wasElevated: boolean;
   wasSlow: boolean;
+  /** The step had been shorter than usual as of yesterday: what "your step
+   * length is back" is said against. Rolled forward like the two above. */
+  wasShorter?: boolean;
   /**
    * Both heels hurt, as the user answered in onboarding.
    *
@@ -101,6 +104,11 @@ export function healthSignals(): HealthSignals {
   return cache.signals;
 }
 
+/** The step was shorter than usual as of yesterday. */
+export function strideWasShorter(): boolean {
+  return cache.wasShorter === true;
+}
+
 /** Home subscribes to this and nothing else. */
 export function useHealthSignals(): HealthSignals {
   return useSyncExternalStore(
@@ -153,6 +161,13 @@ function strip(day: DailyMetric): Partial<DailyMetric> {
   if (day.longestRunKm != null) out.longestRunKm = day.longestRunKm;
   if (day.lastRunEndAt != null) out.lastRunEndAt = day.lastRunEndAt;
   if (day.hoursOnFeet != null) out.hoursOnFeet = day.hoursOnFeet;
+  if (day.stepLengthCm != null) out.stepLengthCm = day.stepLengthCm;
+  if (day.doubleSupportPct != null) out.doubleSupportPct = day.doubleSupportPct;
+  if (day.distanceKm != null) out.distanceKm = day.distanceKm;
+  if (day.standHours != null) out.standHours = day.standHours;
+  if (day.sportMin != null) out.sportMin = day.sportMin;
+  if (day.runContactMs != null) out.runContactMs = day.runContactMs;
+  if (day.runStrideM != null) out.runStrideM = day.runStrideM;
   return out;
 }
 
@@ -234,6 +249,9 @@ export function recomputeSignals(
   const wasSlow = newDay
     ? cache.computedOn != null && cache.signals.walkingSpeedTrend === 'slower'
     : cache.wasSlow;
+  const wasShorter = newDay
+    ? cache.computedOn != null && cache.signals.stepLengthTrend === 'shorter'
+    : cache.wasShorter === true;
 
   const days = contiguous(cache.days, today);
   const signals = signalsFrom(days, {
@@ -243,7 +261,7 @@ export function recomputeSignals(
     painNextMorning:
       painNextMorning == null ? undefined : (index) => painNextMorning(days[index].date),
   });
-  commit({ ...cache, days, signals, wasElevated, wasSlow, computedOn: today });
+  commit({ ...cache, days, signals, wasElevated, wasSlow, wasShorter, computedOn: today });
   return signals;
 }
 

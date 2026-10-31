@@ -40,7 +40,7 @@ export const EXERCISES_PT = {
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Elevação de calcanhar',
   'exercises.heelRaiseTowel.rationale':
-    'Em um estudo, elevações lentas e pesadas aliviaram a dor mais cedo do que só alongar.',
+    'Em um estudo clínico, elevações lentas e pesadas aliviaram a dor mais cedo do que só alongar.',
   'exercises.heelRaiseTowel.cue':
     'Toalha embaixo dos dedos. Sem ela, você só está treinando panturrilha.',
 
@@ -75,7 +75,7 @@ export const EXERCISES_PT = {
   'exercises.bandInversion.cue': 'Mexa o pé, não a perna. O joelho fica parado.',
 
   'exercises.hipAbduction.title': 'Elevação lateral de perna',
-  'exercises.hipAbduction.rationale': 'Um quadril que cede joga a carga no arco.',
+  'exercises.hipAbduction.rationale': 'Um quadril mais estável facilita ficar em uma perna só.',
   'exercises.hipAbduction.cue':
     'Deite de lado. Levante a perna de cima, um pouco para trás, com os dedos apontando para a frente.',
 
@@ -97,12 +97,12 @@ export const EXERCISES_PT = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Rolar o pé',
-  'exercises.footRoll.rationale': 'Rolar o pé acalma o tecido depois do trabalho.',
+  'exercises.footRoll.rationale': 'Alguns minutos rolando o pé podem aliviar a sola por um tempo.',
   'exercises.footRoll.cue': 'Devagar e com firmeza. Se estiver fazendo careta, alivie.',
 
   'exercises.barefootHome.title': 'Descalço em casa',
   'exercises.barefootHome.rationale': 'Horas descalço são horas em que o pé está trabalhando.',
-  'exercises.barefootHome.cue': 'Só dentro de casa, em piso liso, e aumente aos poucos.',
+  'exercises.barefootHome.cue': 'Só dentro de casa, em piso liso, e aos poucos. Não enquanto o calcanhar doer.',
 
   'exercises.breathingReset.title': 'Respiração lenta',
   'exercises.breathingReset.rationale': 'Um minuto de respiração lenta fecha bem a sessão.',
@@ -127,7 +127,7 @@ export const EXERCISES_PT = {
   'exercises.bigToeLift.cue': 'Levante só o dedão. Os outros quatro ficam apoiados no chão.',
 
   'exercises.towelScrunch.title': 'Puxar a toalha',
-  'exercises.towelScrunch.rationale': 'Acorda os músculos pequenos embaixo do arco.',
+  'exercises.towelScrunch.rationale': 'Trabalha a pegada dos dedos. O pé curto faz mais pelo arco.',
   'exercises.towelScrunch.cue': 'Puxe a toalha com os dedos. O calcanhar fica no chão.',
 
   'exercises.kneeToWall.title': 'Joelho na parede',
@@ -155,9 +155,9 @@ export const EXERCISES_PT = {
     'O joelho acompanha a linha dos dedos. Encoste o calcanhar no chão, sem despencar.',
 
   'exercises.soleMassage.title': 'Massagem na sola',
-  'exercises.soleMassage.rationale': 'Solta o tecido depois de um dia longo.',
+  'exercises.soleMassage.rationale': 'Pode aliviar a sola cansada depois de um dia longo.',
   'exercises.soleMassage.cue':
-    'Passadas firmes com o polegar, do calcanhar aos dedos. Alivie onde for pontiagudo.',
+    'Passadas firmes com o polegar, do calcanhar aos dedos. Se sentir dor aguda, alivie a pressão.',
 
   'exercises.pogoHops.title': 'Saltinhos pogo',
   'exercises.pogoHops.rationale': 'Ensina o pé a impulsionar de novo, só quando a dor já passou.',

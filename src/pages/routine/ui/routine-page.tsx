@@ -33,6 +33,7 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
+import { thumbFor } from '@/widgets/session-player';
 
 import { POSITION_KEYS, WHY_KEYS } from '../config/copy';
 import { useStartRoutine } from '../model/use-start-routine';
@@ -215,9 +216,32 @@ function Routine({ protocol }: { protocol: Protocol }) {
               <View key={`${step.exerciseId}-${i}`}>
                 {i > 0 && <View style={[styles.separator, { backgroundColor: meter.track }]} />}
                 <View style={styles.row}>
-                  <View style={[styles.tile, { backgroundColor: tone.track }]}>
-                    <Text style={[styles.tileNumber, { color: tone.fill }]}>{i + 1}</Text>
-                  </View>
+                  {thumbFor(step.exerciseId) != null ? (
+                    // The move's still, as wide as its clip, with its place
+                    // in the routine on it.
+                    <View>
+                      <Image
+                        source={thumbFor(step.exerciseId)!}
+                        resizeMode="cover"
+                        style={styles.thumb}
+                        accessibilityIgnoresInvertColors
+                      />
+                      <View style={[styles.thumbNumber, { backgroundColor: tone.fill }]}>
+                        <Text style={[styles.thumbNumberText, { color: colors.card }]}>{i + 1}</Text>
+                      </View>
+                    </View>
+                  ) : (
+                    // No still yet: the number, in a tile the still's size
+                    // whenever the routine has stills, so the names line up.
+                    <View
+                      style={[
+                        styles.tile,
+                        protocol.steps.some((other) => thumbFor(other.exerciseId) != null) && styles.thumb,
+                        { backgroundColor: tone.track },
+                      ]}>
+                      <Text style={[styles.tileNumber, { color: tone.fill }]}>{i + 1}</Text>
+                    </View>
+                  )}
                   <View style={styles.rowText}>
                     <Text style={[styles.moveName, { color: colors.foreground }]} numberOfLines={2}>
                       {t(exerciseById(step.exerciseId).titleKey)}
@@ -385,6 +409,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   tileNumber: fonts.heavy(20, -0.4),
+  thumb: {
+    width: 96,
+    height: 64,
+    borderRadius: 14,
+    borderCurve: 'continuous',
+  },
+  thumbNumber: {
+    position: 'absolute',
+    left: 6,
+    top: 6,
+    minWidth: 22,
+    height: 22,
+    borderRadius: 11,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
+  },
+  thumbNumberText: fonts.heavy(13),
   rowText: { flex: 1, gap: 2 },
   moveName: fonts.semibold(16),
   moveDose: fonts.medium(14),

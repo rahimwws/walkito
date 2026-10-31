@@ -44,6 +44,7 @@ export function playlistOf(exercises: readonly PlannedExercise[]): PlaylistStep[
     exerciseId: e.id,
     seconds: doseSeconds(e.dose),
     perSide: e.dose.perSide,
+    dose: e.dose,
     ...(e.dose.tempo != null && e.dose.reps != null
       ? { cadence: { tempo: e.dose.tempo, reps: e.dose.reps, sets: e.dose.sets } }
       : {}),

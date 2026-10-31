@@ -56,6 +56,12 @@ export type PainEntry = {
   at: number;
   /** Zone ids from the leg map. Absent when nobody pointed at anything. */
   zones?: string[];
+  /**
+   * `flare`: "it hurts right now", any time of day, which leads to relief and
+   * never stands for the day's check-in. Absent: the day's check-in, of which
+   * there is one, corrected in place (`logPain`).
+   */
+  kind?: 'flare';
 };
 
 export type DayLog = {
@@ -476,17 +482,20 @@ export function dateKeyForDay(dayNumber: number, from: ProgramState = state): st
 
 // ---------------------------------------------------------------------------
 /**
- * Record a check-in, without discarding the last one.
+ * The day's check-in: written once, then corrected in place.
  *
- * Appends rather than overwrites, which is the whole point: a foot that hurt at
- * seven, settled by noon and hurt again after a walk has given three true
- * answers, and a model with one slot per day makes the user pick which of them
- * counts. It also keeps `painMorning` honest — that field is the day's *first*
- * reading, so it is written once and then left alone however many times
- * somebody checks in after it.
+ * One per day, the way the pain apps people already use work (Hinge Health,
+ * Sword, Kaia, Bearable): asked, answered, then shown as the day's answer with
+ * a way to change it. It used to append, so "No pain today" tapped five times
+ * was five zeros and the question never looked answered. A second answer now
+ * replaces the first (a correction keeps the first one's time, because it is
+ * about the same moment), and `painMorning` follows it: the plan adapts off
+ * what they meant, not what they tapped first.
  *
- * `painZones` tracks the newest entry, because it answers "where does it hurt"
- * in the present tense and the session offered next is built from it.
+ * "It hurts right now" later in the day is a different thing, `logFlare`.
+ *
+ * `painZones` tracks the newest reading, because it answers "where does it
+ * hurt" in the present tense and the session offered next is built from it.
  */
 export function logPain(
   dayNumber: number,
@@ -495,28 +504,85 @@ export function logPain(
   now: number = Date.now(),
 ): DayLog {
   const existing = logs[dayNumber];
-  const entry: PainEntry = { score, at: now, ...(zones.length > 0 ? { zones: [...zones] } : {}) };
-  const entries = [...(existing?.painEntries ?? []), entry];
-  // That a check-in happened, and how many there have been today. Never the
-  // score or the zones — see the note at the top of `shared/lib/analytics`.
-  track('checkin_logged', { day: dayNumber, entries_today: entries.length });
+  const prior = entriesOf(existing);
+  const index = prior.findIndex((entry) => entry.kind !== 'flare');
+  const entry: PainEntry = {
+    score,
+    at: index < 0 ? now : prior[index].at,
+    ...(zones.length > 0 ? { zones: [...zones] } : {}),
+  };
+  const entries = index < 0 ? [...prior, entry] : prior.map((old, i) => (i === index ? entry : old));
+  // That a check-in happened, and whether it was a correction. Never the score
+  // or the zones — see the note at the top of `shared/lib/analytics`.
+  track('checkin_logged', { day: dayNumber, entries_today: entries.length, kind: index < 0 ? 'checkin' : 'edit' });
 
-  const log = writeLog(
-    dayNumber,
-    {
-      painEntries: entries,
-      // First wins. An entry already on file means the morning reading has been
-      // taken, whatever the clock says now.
-      painMorning: existing?.painMorning ?? score,
-      painZones: [...zones],
-    },
-    now,
-  );
+  const log = writeLog(dayNumber, { painEntries: entries, painMorning: score, painZones: [...zones] }, now);
   // Straight up rather than after the debounce: a check-in answered from the
   // widget or just before the phone is locked is otherwise the one write that
   // never reaches the server that day.
   requestPlanPush();
   return log;
+}
+
+/** Two flares this close together are one flare said twice: the second
+ * replaces the first. */
+const FLARE_MERGE_MS = 10 * 60 * 1000;
+
+/**
+ * "It hurts right now": a reading taken to get help, any time of day.
+ *
+ * Kept with the day's readings so Progress and the "now" figures see it, but
+ * never as the day's check-in: it does not touch `painMorning`, the streak or
+ * the plan's settling. Two within ten minutes are one, corrected.
+ */
+export function logFlare(
+  dayNumber: number,
+  score: number,
+  zones: readonly string[] = [],
+  now: number = Date.now(),
+): DayLog {
+  const existing = logs[dayNumber];
+  const prior = entriesOf(existing);
+  const last = prior[prior.length - 1];
+  const merge = last?.kind === 'flare' && now - last.at < FLARE_MERGE_MS;
+  const entry: PainEntry = { score, at: now, kind: 'flare', ...(zones.length > 0 ? { zones: [...zones] } : {}) };
+  const entries = merge ? [...prior.slice(0, -1), entry] : [...prior, entry];
+  track('checkin_logged', { day: dayNumber, entries_today: entries.length, kind: 'flare' });
+  const log = writeLog(
+    dayNumber,
+    { painEntries: entries, painMorning: existing?.painMorning ?? null, painZones: [...zones] },
+    now,
+  );
+  requestPlanPush();
+  return log;
+}
+
+/** A log's readings, with one written before readings were a list back-filled. */
+function entriesOf(log: DayLog | undefined): PainEntry[] {
+  if (log?.painEntries != null) return log.painEntries;
+  if (log?.painMorning != null) return [{ score: log.painMorning, at: 0 }];
+  return [];
+}
+
+/** Development only (`?resetCheckIn`): today's check-in unanswered again,
+ * its flares kept, so the first answer of a day can be tried over. */
+export function devClearCheckIn(dayNumber: number): void {
+  if (!__DEV__) return;
+  const existing = logs[dayNumber];
+  if (existing == null) return;
+  const flares = entriesOf(existing).filter((entry) => entry.kind === 'flare');
+  writeLog(dayNumber, { painEntries: flares, painMorning: null, painZones: [] });
+}
+
+/** The day's check-in, or null when it has not been answered. */
+export function checkInOn(dayNumber: number): PainEntry | null {
+  return entriesOf(logs[dayNumber]).find((entry) => entry.kind !== 'flare') ?? null;
+}
+
+/** The day's last "it hurts right now", or null. */
+export function lastFlareOn(dayNumber: number): PainEntry | null {
+  const flares = entriesOf(logs[dayNumber]).filter((entry) => entry.kind === 'flare');
+  return flares[flares.length - 1] ?? null;
 }
 
 // Derived history
@@ -571,7 +637,7 @@ export function firstStepOn(dayNumber: number): number | null {
   if (log == null) return null;
   const entries = log.painEntries;
   if (entries == null || entries.length === 0) return log.painMorning ?? null;
-  const morning = entries.find((entry) => entry.at === 0 || isFirstStepTime(entry.at));
+  const morning = entries.find((entry) => entry.kind !== 'flare' && (entry.at === 0 || isFirstStepTime(entry.at)));
   return morning?.score ?? null;
 }
 

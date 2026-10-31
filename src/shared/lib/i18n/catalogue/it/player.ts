@@ -21,7 +21,7 @@ export const PLAYER_IT = {
   'player.afterPain.lowHint':
     'Segnato. Un po’ di indolenzimento dopo questo lavoro è normale. Se c’è ancora domattina, il check-in alleggerisce il piano.',
   'player.afterPain.highHint':
-    'È più di quanto questo lavoro dovrebbe causare. La prossima sessione riparte un passo indietro.',
+    'È più di quanto questo lavoro dovrebbe causare. La prossima sessione riparte da un livello più leggero.',
   'player.afterPain.save': 'Salva',
   'player.cantDo.button': 'Non riesco a farlo',
   'player.cantDo.title': 'Cosa te lo impedisce?',
@@ -49,4 +49,17 @@ export const PLAYER_IT = {
   'player.cta.pause': 'Pausa',
   'player.cta.resume': 'Riprendi',
   'player.cta.done': 'Fatto',
+  'player.line.plainSet': 'Rip. {rep} di {reps} · Serie {set} di {sets}',
+  'player.line.plain': 'Rip. {rep} di {reps}',
+  'player.line.set': 'Serie {set} di {sets}',
+  'player.repCount': '{rep}/{reps}',
+  'player.unit.reps': { one: 'rip.', other: 'rip.' },
+  'player.phase.relax': 'Rilassa',
+  'player.cta.setDone': 'Fatto',
+  'player.break.rest': 'Riposo',
+  'player.break.restNext': 'Poi: serie {set} di {sets}',
+  'player.break.switchLeft': 'Passa al piede sinistro',
+  'player.break.switchRight': 'Passa al piede destro',
+  'player.break.skipRest': 'Salta il riposo',
+  'player.break.ready': 'Inizia ora',
 };

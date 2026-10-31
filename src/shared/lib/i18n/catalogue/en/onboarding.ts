@@ -68,6 +68,22 @@ export const ONBOARDING_EN = {
   'onboarding.email.password': 'Password',
   'onboarding.email.submit': 'Sign in',
   'onboarding.email.submitting': 'Signing in…',
+  'onboarding.email.createTitle': 'Save your plan',
+  'onboarding.email.createBlurb': 'We’ll email you a code. Your plan is kept under this address.',
+  'onboarding.email.signInBlurb': 'We’ll email you a code to sign in.',
+  'onboarding.email.sendCode': 'Send code',
+  'onboarding.email.sending': 'Sending…',
+  'onboarding.email.codeTitle': 'Check your email',
+  'onboarding.email.codeBlurb': 'Enter the code we sent to {email}.',
+  'onboarding.email.code': 'Code',
+  'onboarding.email.verify': 'Confirm',
+  'onboarding.email.verifying': 'Checking…',
+  'onboarding.email.resend': 'Send a new code',
+  'onboarding.email.resendIn': 'New code in {seconds} s',
+  'onboarding.email.changeAddress': 'Use a different email',
+  'onboarding.email.existing': 'This email already has an account. The code signs you in to it.',
+  'onboarding.email.usePassword': 'Use a password instead',
+  'onboarding.email.useCode': 'Email me a code instead',
 
   // ── Name ─────────────────────────────────────────────────────────────────
   // The newline is a deliberate break in the heading, not a wrap — each
@@ -80,8 +96,11 @@ export const ONBOARDING_EN = {
   'onboarding.passport.title': 'Foot Passport',
   'onboarding.passport.owner': '{name}’s Foot Passport',
   'onboarding.passport.empty': 'Your answers will show up here',
-  'onboarding.passport.issued': 'Issued {date}',
   'onboarding.passport.edit': 'Anything to fix? Tap to edit.',
+  // The first stamp, on the halfway screen. The edition line is set in small
+  // capitals by the screen; written here in sentence case.
+  'onboarding.passport.stampEdition': 'Foot passport · first edition',
+  'onboarding.passport.firstStamp': 'Your first stamp',
   'onboarding.passport.heading': 'Your Foot Passport, {name}',
   // Who they are, in the passport's words: the role question's own
   // answers ("Both") mean nothing out of it.
@@ -143,7 +162,7 @@ export const ONBOARDING_EN = {
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.title': '{name}, what are you working toward?',
   'onboarding.goal.blurb': 'Pick the one that matters most right now. You can change it later.',
-  'onboarding.goal.painfree': 'Run pain-free',
+  'onboarding.goal.painfree': 'Run with less pain',
   'onboarding.goal.race': 'Train for a race',
   'onboarding.goal.consistent': 'Run more consistently',
   'onboarding.goal.stronger': 'Build stronger legs',
@@ -154,26 +173,21 @@ export const ONBOARDING_EN = {
   'onboarding.goal.allday': 'Stay on my feet all day',
   'onboarding.goal.comeback': 'Come back after an injury',
   'onboarding.goal.steady': 'Walk with confidence',
-  // Days and minutes, one screen: a heading over two short lists.
-  'onboarding.schedule.title': 'How much time do you have, {name}?',
-  'onboarding.schedule.days': 'Days a week',
-  'onboarding.schedule.minutes': 'Minutes per session',
-  'onboarding.schedule.kit': 'At home?',
+  // Days, minutes and what is at home: a screen each, the cards under a
+  // drawing of the answer. The kit's question is `onboarding.equipment.title`.
+  'onboarding.days.title': 'How many days a week?',
+  'onboarding.minutes.title': 'How long per session?',
   // Under the kit: the exercises it brings into the plan, as they are picked.
   'onboarding.schedule.adds': 'Adds to your plan',
+  // The badge on the recommended days and minutes cards.
+  'onboarding.schedule.recommended': 'Recommended',
   'onboarding.days.days3': '3 days',
-  'onboarding.days.days3Caption': 'An easy start',
   'onboarding.days.days5': '5 days',
-  'onboarding.days.days5Caption': 'Recommended',
   'onboarding.days.days7': 'Every day',
-  'onboarding.days.days7Caption': 'Short and daily',
   'onboarding.minutes.blurb': 'Change it any day - busy days still count.',
   'onboarding.minutes.min3': '3 minutes',
-  'onboarding.minutes.min3Caption': 'Even on busy days',
   'onboarding.minutes.min5': '5 minutes',
-  'onboarding.minutes.min5Caption': 'Recommended',
   'onboarding.minutes.min10': '10 minutes',
-  'onboarding.minutes.min10Caption': 'For faster progress',
   'onboarding.equipment.title': 'What do you have at home?',
   'onboarding.equipment.blurb': 'Pick all you have.',
   'onboarding.equipment.step': 'A step or stairs',
@@ -232,16 +246,16 @@ export const ONBOARDING_EN = {
   /** Distance bands. `{unit}` so the scale can change without the five labels
    * being rewritten — every language keeps the number range and moves only the
    * unit. */
-  'onboarding.load.km0': '0–5 {unit}',
-  'onboarding.load.km1': '5–15 {unit}',
-  'onboarding.load.km2': '15–30 {unit}',
-  'onboarding.load.km3': '30–50 {unit}',
+  'onboarding.load.km0': '0-5 {unit}',
+  'onboarding.load.km1': '5-15 {unit}',
+  'onboarding.load.km2': '15-30 {unit}',
+  'onboarding.load.km3': '30-50 {unit}',
   'onboarding.load.km4': '50+ {unit}',
   'onboarding.load.unitKm': 'km',
   'onboarding.load.hours0': 'Under 1 hour',
-  'onboarding.load.hours1': '1–3 hours',
-  'onboarding.load.hours2': '3–5 hours',
-  'onboarding.load.hours3': '5–8 hours',
+  'onboarding.load.hours1': '1-3 hours',
+  'onboarding.load.hours2': '3-5 hours',
+  'onboarding.load.hours3': '5-8 hours',
   'onboarding.load.hours4': '8+ hours',
   'onboarding.load.perWeek': 'per week',
   'onboarding.load.runsPerWeek': 'Runs per week',
@@ -252,7 +266,7 @@ export const ONBOARDING_EN = {
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': 'What’s hardest right now, {name}?',
   'onboarding.challenge.blurb': 'Up to two. The plan leans toward whatever you pick.',
-  'onboarding.challenge.painfree': 'Staying pain-free',
+  'onboarding.challenge.painfree': 'Keeping pain down',
   'onboarding.challenge.back': 'Getting back to running',
   'onboarding.challenge.distance': 'Increasing distance',
   'onboarding.challenge.recovery': 'Recovering faster',
@@ -264,6 +278,7 @@ export const ONBOARDING_EN = {
   'onboarding.source.blurb': 'One tap. It helps us reach people like you.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'A friend told me',
   'onboarding.source.appStore': 'Browsing the App Store',
@@ -298,7 +313,7 @@ export const ONBOARDING_EN = {
   'onboarding.health.openingAndroid': 'Opening Health Connect…',
   /** The objection every user has at this exact moment, answered before they
    * can voice it. */
-  'onboarding.health.promise': 'Your health data never leaves this device.',
+  'onboarding.health.promise': 'Your steps, sleep and runs stay on this phone.',
   'onboarding.health.unavailable': 'Health isn’t available here - you can carry on without it.',
   'onboarding.health.declined': 'Health access was declined. Your plan will work without it.',
   'onboarding.health.empty': 'Connected - no data yet. It will fill in as you move.',
@@ -335,10 +350,6 @@ export const ONBOARDING_EN = {
   'onboarding.notify.blurb': 'So your plan can tell you when it needs you.',
   'onboarding.notify.askNamed': 'Don’t go it alone, {name}',
   'onboarding.notify.ask': 'Don’t go it alone',
-  'onboarding.notify.askBlurb': 'Only on days your plan has a session.',
-  'onboarding.notify.promise1': 'A nudge on the days your plan has a session',
-  'onboarding.notify.promise2': 'A heads-up when it changes what you are doing',
-  'onboarding.notify.promise3': 'And now and then a discount - nothing more.',
   /** The mock banner. `bannerApp` is the app's own name and stays as it is. */
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'now',
@@ -347,6 +358,7 @@ export const ONBOARDING_EN = {
   'onboarding.notify.opening': 'Opening…',
   'onboarding.notify.notNow': 'Not now',
   'onboarding.notify.declined': 'No problem - you can turn these on later in Settings.',
+  'onboarding.notify.consent': 'Reminders, progress and occasional offers.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Building your plan',
@@ -365,9 +377,9 @@ export const ONBOARDING_EN = {
   'onboarding.building.reflectionVolume': '{volume}.',
   /** What the programme knows about each complaint, in one sentence. Each names
    * the mechanism rather than the symptom. */
-  'onboarding.pattern.heel': 'This is the most common pattern there is. It also responds fastest.',
+  'onboarding.pattern.heel': 'This is the most common pattern there is. It often responds well to training.',
   'onboarding.pattern.foot': 'The arch isn’t weak on its own. What holds it up is.',
-  'onboarding.pattern.achilles': 'Load built faster than the tendon adapted. That’s fixable.',
+  'onboarding.pattern.achilles': 'Load built faster than the tendon adapted. That can change.',
   'onboarding.pattern.shin': 'Volume outran your legs. The plan walks that back, then builds.',
   'onboarding.pattern.calf': 'The calf pulls on everything below it. Loosen it and the rest follows.',
   'onboarding.pattern.none': 'You’re here before it hurts. That’s the cheap way to do this.',
@@ -407,7 +419,7 @@ export const ONBOARDING_EN = {
     other: '{count} sessions a week',
   },
   'onboarding.plan.week': 'Week {n}',
-  'onboarding.plan.weeks': 'Weeks {from}–{to}',
+  'onboarding.plan.weeks': 'Weeks {from}-{to}',
   /** The last row, left open: the plan carries on past it. "Weeks 9+". */
   'onboarding.plan.weeksOn': 'Weeks {from}+',
   'onboarding.plan.phaseSettle': 'settle the irritation',

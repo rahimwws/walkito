@@ -1,6 +1,6 @@
 import Search01Icon from '@hugeicons/core-free-icons/Search01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { useEffect, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -15,22 +15,47 @@ import Animated, {
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, MascotStill, phoneRig, type MascotHandle } from '@/shared/ui/mascot';
+import { useSplashRevealed } from '@/shared/ui/splash';
 
-const MASCOT = require('@assets/update/mascot-handoff.png');
 const APP_ICON = require('@assets/icon-small.webp');
+
+/** The widget's face: always dark, as the real one is (`DailyCheck`). */
+const WIDGET_FACE = palette.dark.card;
+/** Once the step has faded in (the page's 260 ms), so the move is seen. */
+const PRESENT_MS = 520;
 
 /**
  * The small widget, drawn as it looks on the Home Screen: the mascot, the
  * morning question and its two answers. The real one is `DailyCheck` in
  * `features/home-widget`; this is a picture of it, in the same words.
+ *
+ * The mascot is the one holding up his phone, drawn as the widget draws its
+ * own: white, on the widget's dark face, in either appearance. `alive` on the
+ * step that asks for the widget, where it is the screen's one figure: he
+ * holds the phone out once and breathes. A still drawing anywhere else (the
+ * last step of the walkthrough draws it small, inside a phone).
  */
-export function WidgetPreview({ scale = 1 }: { scale?: number }) {
+export function WidgetPreview({ scale = 1, alive = false }: { scale?: number; alive?: boolean }) {
   const t = useT();
   const size = 158 * scale;
+  const figure = 40 * scale;
   return (
     <View style={[styles.widget, { width: size, height: size, borderRadius: 26 * scale }]}>
       <View style={styles.widgetTop}>
-        <Image source={MASCOT} style={{ width: 40 * scale, height: 40 * scale }} resizeMode="contain" />
+        <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          {alive ? (
+            <WidgetMascot size={figure} />
+          ) : (
+            <MascotStill
+              rig={phoneRig}
+              size={figure}
+              surface={WIDGET_FACE}
+              paper={palette.dark.foreground}
+              ink={WIDGET_FACE}
+            />
+          )}
+        </View>
         <Text style={[styles.widgetQuestion, { fontSize: 14 * scale, lineHeight: 17 * scale }]} numberOfLines={2}>
           {t('widget.question')}
         </Text>
@@ -48,6 +73,35 @@ export function WidgetPreview({ scale = 1 }: { scale?: number }) {
         </View>
       </View>
     </View>
+  );
+}
+
+/** The widget's mascot, alive: mounted and unmounted with the step, so
+ * nothing breathes once it has gone, and still under the launch splash (setup
+ * can be the first screen) until it has gone. Reduce Motion gets the still
+ * drawing. */
+function WidgetMascot({ size }: { size: number }) {
+  const mascot = useRef<MascotHandle>(null);
+  const revealed = useSplashRevealed();
+  const presented = useRef(false);
+  useEffect(() => {
+    if (presented.current || !revealed) return undefined;
+    const timer = setTimeout(() => {
+      presented.current = true;
+      mascot.current?.play('present');
+    }, PRESENT_MS);
+    return () => clearTimeout(timer);
+  }, [revealed]);
+  return (
+    <Mascot
+      ref={mascot}
+      rig={phoneRig}
+      size={size}
+      surface={WIDGET_FACE}
+      paper={palette.dark.foreground}
+      ink={WIDGET_FACE}
+      paused={!revealed}
+    />
   );
 }
 
@@ -153,7 +207,7 @@ export function WidgetGuideArt({ step }: { step: GuideStep }) {
 
 const styles = StyleSheet.create({
   widget: {
-    backgroundColor: '#1C1C1F',
+    backgroundColor: WIDGET_FACE,
     padding: 12,
     justifyContent: 'space-between',
     shadowColor: '#000000',

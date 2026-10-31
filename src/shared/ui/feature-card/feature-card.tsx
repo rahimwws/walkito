@@ -12,11 +12,15 @@ import {
 
 import { accents, faces, fonts, type AccentName } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
 /** Width ÷ height. Taken from the design's pair of side-by-side cards. */
 const ASPECT = 0.93;
 const RADIUS = 26;
 const BADGE_SIZE = 34;
+/** The emoji beside the title: a little over the glyph's 20pt, since the
+ * drawing keeps a margin inside its square. */
+const EMOJI_SIZE = 24;
 
 /** Media cards stay dark in both schemes, the way Music and Fitness tiles do —
  * artwork sits behind the text, and a scheme-following surface would leave the
@@ -30,14 +34,17 @@ export type FeatureCardProps = {
   image?: ImageSourcePropType;
   /** Small circular glyph pinned to the top-left corner. */
   badgeIcon?: IconSvgElement;
-  /** Line above the title. Ignored when `icon` is set. */
+  /** Line above the title. Ignored when `icon` or `emoji` is set. */
   eyebrow?: string;
   /** Emphasised opening fragment of the title, e.g. "1" in "1 for 20 Days". */
   titleLead?: string;
   title: string;
-  /** Glyph beside the title. Renders the footer as one row instead of a
-   * stacked eyebrow + title. */
+  /** Glyph beside the title, for a state such as a lock. Renders the footer
+   * as one row instead of a stacked eyebrow + title. */
   icon?: IconSvgElement;
+  /** Or a Fluent emoji beside the title, for what the card is about, in its
+   * own colours. Wins over `icon` when both are set. */
+  emoji?: FluentName;
   /** Tints both the badge and the stand-in wash. */
   accent?: AccentName;
   onPress?: () => void;
@@ -58,6 +65,7 @@ export function FeatureCard({
   titleLead,
   title,
   icon,
+  emoji,
   accent = 'violet',
   onPress,
   style,
@@ -110,9 +118,13 @@ export function FeatureCard({
       )}
 
       <View style={styles.footer}>
-        {icon != null ? (
+        {emoji != null || icon != null ? (
           <View style={styles.inlineRow}>
-            <HugeiconsIcon icon={icon} size={20} color={INK} strokeWidth={1.9} />
+            {emoji != null ? (
+              <FluentIcon name={emoji} size={EMOJI_SIZE} />
+            ) : (
+              icon != null && <HugeiconsIcon icon={icon} size={20} color={INK} strokeWidth={1.9} />
+            )}
             <Text style={[styles.title, styles.inlineTitle]} numberOfLines={2}>
               {title}
             </Text>

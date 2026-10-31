@@ -3,6 +3,8 @@
     "CFBundleDisplayName": "Walkito",
     "NSHealthShareUsageDescription": "walkito liest deine Schritte, dein Gangbild und deinen Schlaf, damit dein Plan bei dem ansetzt, was du wirklich gemacht hast.",
     "NSHealthUpdateUsageDescription": "walkito speichert deine Einheiten in Health, damit sie zu deiner Aktivität zählen.",
+    "NSMotionUsageDescription": "walkito zählt die Stunden auf den Beinen, um dich nach langer Zeit an eine Minute für deine Füße zu erinnern.",
+    "NSUserTrackingUsageDescription": "walkito nutzt das, um zu sehen, welche Werbung Menschen zur App bringt. Deine Gesundheitsdaten werden nie geteilt.",
     "\"SOMETHING OFF?\"": "STIMMT WAS NICHT?",
     "\"Tell us. A person replies.\"": "Schreib uns. Ein Mensch antwortet."
   },

@@ -1,11 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { AppState } from 'react-native';
 
 import { useHealthSignals } from '@/entities/health';
 import { useLogsVersion, usePlanVersion, useProgramState } from '@/entities/program';
 import { useLanguage } from '@/shared/lib/i18n';
 
+import { checkWidgetPresence } from './presence-tracking';
 import { resetWidget, syncWidget, widgetModule } from './sync';
+
+/** How long after a change the widget is synced. */
+const CHANGE_SYNC_MS = 1200;
 
 /**
  * Keeps the home-screen widget in step with the app, and the app with it.
@@ -35,12 +39,35 @@ export function useHomeWidget(enabled: boolean): void {
     widgetModule();
   }, []);
 
+  // Whether the widget is on the Home Screen, for PostHog: on launch and on
+  // every return, which is when a widget added or removed outside the app is
+  // first seen.
+  useEffect(() => {
+    void checkWidgetPresence();
+    const foreground = AppState.addEventListener('change', (next) => {
+      if (next === 'active') void checkWidgetPresence();
+    });
+    return () => foreground.remove();
+  }, []);
+
+  // A change (a check-in, a task ticked) is synced a beat later rather than
+  // in the same moment: the write and the widget reload are file and native
+  // work, and in that moment Home is animating the answer in. The first sync
+  // of a launch goes at once.
+  const synced = useRef(false);
   useEffect(() => {
     if (!enabled) {
+      synced.current = false;
       void resetWidget();
-      return;
+      return undefined;
     }
-    void syncWidget();
+    if (!synced.current) {
+      synced.current = true;
+      void syncWidget();
+      return undefined;
+    }
+    const timer = setTimeout(() => void syncWidget(), CHANGE_SYNC_MS);
+    return () => clearTimeout(timer);
   }, [enabled, logs, state, plan, health, language]);
 
   useEffect(() => {
@@ -56,4 +83,17 @@ export function useHomeWidget(enabled: boolean): void {
       presses?.remove();
     };
   }, [enabled]);
+}
+
+/**
+ * `useHomeWidget` as a component that draws nothing.
+ *
+ * The hook subscribes to the logs, the plan, health and the language, so the
+ * component holding it re-renders on every check-in. Held by the root layout
+ * itself, that was the whole navigation stack re-rendering in the tap that
+ * logs an answer, while Home animates it; a leaf re-renders only itself.
+ */
+export function HomeWidgetSync({ enabled }: { enabled: boolean }): null {
+  useHomeWidget(enabled);
+  return null;
 }

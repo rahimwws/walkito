@@ -22,11 +22,11 @@ export const OFFER_IT = {
   'offer.featureProgressBlurb': 'Guarda la tua preparazione crescere settimana dopo settimana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Prezzo di ritorno',
+  'offer.comebackBadge': 'Offerta per chi torna',
   'offer.inviteBadge': 'Il tuo prezzo su invito',
   'offer.headline': 'Sblocca Walkito Premium',
   'offer.headlineInvite': 'Il tuo prezzo su invito per un anno di Walkito Premium',
-  'offer.headlineComeback': 'Il tuo prezzo di ritorno per un anno di Walkito Premium',
+  'offer.headlineComeback': 'La tua offerta per il ritorno: un anno di Walkito Premium',
   'offer.sub': 'Il tuo piano, e tutto quello che gli sta intorno.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -36,21 +36,25 @@ export const OFFER_IT = {
   'offer.annualNoteSave': '{perWeek} a settimana · Risparmi il {percent}% rispetto al settimanale',
   'offer.weeklyTitle': 'Settimanale',
   'offer.weeklyPrice': '{price} a settimana',
+  'offer.monthlyPrice': '{price} al mese',
+  'offer.lifetimePrice': '{price} una tantum',
   'offer.weeklyNote': 'Addebito settimanale · Disdici quando vuoi',
   'offer.badgeBest': 'Più conveniente',
+  'offer.badgeRecommended': 'Consigliato',
   'offer.badgeOff': 'Sconto del {percent}%',
 
   // ── Paywall: billing terms ───────────────────────────────────────────────
   'offer.ctaAnnual': '{price} all’anno, si rinnova automaticamente. Disdici quando vuoi.',
   'offer.ctaWeekly': '{price} a settimana, si rinnova automaticamente. Disdici quando vuoi.',
-  'offer.termsIncluded':
-    'Walkito Premium ti dà accesso completo: il tuo piano adattivo, tutte le sessioni e le routine, le verifiche e il monitoraggio dei progressi.',
+  'offer.ctaMonthly': '{price} al mese, si rinnova automaticamente. Disdici quando vuoi.',
+  'offer.ctaLifetime': '{price} una sola volta. Nessun abbonamento, non si rinnova nulla.',
   'offer.termsAnnual': 'Abbonamento annuale: {price} all’anno.',
   'offer.termsWeekly': 'Abbonamento settimanale: {price} a settimana.',
-  'offer.termsRenewal':
-    'Il pagamento viene addebitato sul tuo Account Apple alla conferma dell’acquisto. L’abbonamento si rinnova automaticamente per lo stesso periodo e allo stesso prezzo, a meno che non venga disdetto almeno 24 ore prima della fine del periodo in corso; il rinnovo viene addebitato nelle 24 ore precedenti alla scadenza. Gestiscilo o disdicilo in Impostazioni → Account Apple → Abbonamenti.',
-  'offer.termsRenewalAndroid':
-    'Il pagamento viene addebitato sul tuo account Google Play alla conferma dell’acquisto. L’abbonamento si rinnova automaticamente per lo stesso periodo e allo stesso prezzo, a meno che non venga disdetto almeno 24 ore prima della fine del periodo in corso. Gestiscilo o disdicilo in Google Play → Pagamenti e abbonamenti → Abbonamenti.',
+  'offer.termsMonthly': 'Abbonamento mensile: {price} al mese.',
+  'offer.termsLifetime':
+    'Accesso a vita: un unico pagamento di {price}, addebitato alla conferma dell’acquisto. Non si rinnova nulla.',
+  'offer.termsRenewal': 'Si rinnova automaticamente. Puoi disdire quando vuoi in Impostazioni.',
+  'offer.termsRenewalAndroid': 'Si rinnova automaticamente. Puoi disdire quando vuoi in Google Play.',
   'offer.linkTerms': 'Termini di utilizzo',
   'offer.linkPrivacy': 'Informativa sulla privacy',
   'offer.restore': 'Ripristina acquisti',
@@ -111,8 +115,55 @@ export const OFFER_IT = {
   'offer.chipWeekly': 'Il tuo piano settimanale',
   'offer.chipSessions': 'Sessioni brevi',
   'offer.chipTests': 'Un test ogni due settimane',
-  'offer.chipRoutines': 'Routine per le riacutizzazioni e per la corsa',
+  'offer.chipRoutines': 'Routine per quando fa male e per la corsa',
   'offer.chipReminders': 'Promemoria',
+
+  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // See `../en/offer.ts`. The words in square brackets in the headline are
+  // drawn in the Plus colour: put them round the word that carries it here.
+  'offer.plans.brand': 'Walkito',
+  'offer.plans.badge': 'Plus',
+  'offer.plans.name': 'Walkito Plus',
+  'offer.plans.headline': 'I tuoi piedi, [più forti] ogni giorno',
+  'offer.plans.headlineComeback': 'Walkito Plus, ora [costa meno]',
+  'offer.plans.mostPopular': 'Il più scelto',
+  'offer.plans.yearly': 'Annuale',
+  'offer.plans.monthly': 'Mensile',
+  'offer.plans.lifetime': 'A vita',
+  'offer.plans.perYear': 'all’anno',
+  'offer.plans.perMonth': 'al mese',
+  'offer.plans.perWeek': 'a settimana',
+  'offer.plans.once': 'una volta sola',
+  'offer.plans.firstYear': 'primo anno',
+  'offer.plans.yearlyNote': '{perMonth} al mese, addebito annuale',
+  'offer.plans.monthlyNote': 'Addebito mensile',
+  'offer.plans.weeklyNote': 'Addebito settimanale',
+  'offer.plans.lifetimeNote': 'Un solo pagamento, tuo per sempre',
+  'offer.plans.upfrontNote': 'Poi {price} all’anno',
+  'offer.plans.trialNote': '{period} gratis, poi {price} all’anno',
+  'offer.plans.days': { one: '{count} giorno', other: '{count} giorni' },
+  'offer.plans.weeks': { one: '{count} settimana', other: '{count} settimane' },
+  'offer.plans.months': { one: '{count} mese', other: '{count} mesi' },
+  'offer.plans.years': { one: '{count} anno', other: '{count} anni' },
+  'offer.plans.showAll': 'Mostra tutti i piani',
+  'offer.plans.tableTitle': 'Cosa ottieni',
+  'offer.plans.rowPlan': 'Un piano quotidiano che si adatta a te',
+  'offer.plans.rowSessions': 'Tutte le sessioni guidate, con video',
+  'offer.plans.rowTests': 'Un test dei progressi ogni due settimane',
+  'offer.plans.rowStreaks': 'Serie e figurine',
+  'offer.plans.rowMorning': 'Lo stretching del mattino',
+  'offer.plans.rowA11y': '{feature}. Incluso in Plus.',
+  'offer.plans.ctaLifetime': 'Ottieni Walkito Plus',
+  'offer.plans.ctaTrial': 'Inizia la prova gratuita',
+  'offer.plans.renewsYearly': 'Si rinnova a {price} all’anno.',
+  'offer.plans.renewsMonthly': 'Si rinnova a {price} al mese.',
+  'offer.plans.renewsWeekly': 'Si rinnova a {price} a settimana.',
+  'offer.plans.renewsUpfront': '{intro} il primo anno, poi {price} all’anno.',
+  'offer.plans.renewsTrial': 'Nessun pagamento ora. {period} gratis, poi {price} all’anno.',
+  'offer.plans.cancel': 'Disdici quando vuoi in Impostazioni.',
+  'offer.plans.cancelAndroid': 'Disdici quando vuoi su Google Play.',
+  'offer.plans.oneTime': 'Un solo pagamento, nessun abbonamento.',
+  'offer.plans.skip': 'Non ora',
 
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Il tuo abbonamento è terminato',
@@ -122,11 +173,11 @@ export const OFFER_IT = {
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Il tuo obiettivo',
-  'widgets.retestGoal.painfree': 'Sei qui per mattine che non iniziano con il dolore al tallone. Questi numeri sono il piede che ci si avvicina.',
+  'widgets.retestGoal.painfree': 'Sei qui per mattine con meno dolore al tallone. Questi numeri mostrano che il piede è sulla buona strada.',
   'widgets.retestGoal.race': 'Ti stai preparando per una gara. Polpacci più forti e un piede più stabile sono ciò che ti porta alla partenza.',
   'widgets.retestGoal.consistent': 'Hai detto che l’obiettivo era la costanza. Ecco a cosa porta esserci.',
   'widgets.retestGoal.stronger': 'Volevi diventare più forte. È qui che si vede per primo.',
-  'widgets.retestGoal.injuryfree': 'Volevi evitare infortuni. Un piede che risulta più forte è più difficile da ferire.',
+  'widgets.retestGoal.injuryfree': 'Volevi evitare infortuni. Un piede che nei test risulta più forte regge meglio i carichi.',
 
   'widgets.retestGoal.flatfeet': 'Sei qui per i tuoi piedi piatti. La tenuta dell’arco e un equilibrio più stabile sono dove si vede il lavoro.',
   'widgets.retestGoal.ankles': 'Volevi caviglie più stabili. È nell’equilibrio che si vede per primo.',
@@ -168,7 +219,7 @@ export const OFFER_IT = {
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Ottimo lavoro.',
   'widgets.sessionStoppedTitle': 'Ci fermiamo qui.',
-  'widgets.sessionStoppedBlurb': 'Conta comunque come sessione di oggi. Domani si riparte un passo indietro.',
+  'widgets.sessionStoppedBlurb': 'Conta comunque come sessione di oggi. Domani si riparte con un livello più leggero.',
 
   'widgets.painButton': 'Fa male',
   'widgets.painTitle': 'Quanto, in questo momento?',
@@ -188,4 +239,9 @@ export const OFFER_IT = {
     one: '{count} esercizio fatto. Poco e spesso: è così che si va avanti.',
     other: 'Tutti i {count} esercizi fatti. Poco e spesso: è così che si va avanti.',
   },
+  'offer.trial.todayTitle': 'Oggi',
+  'offer.trial.todayText': 'Accesso completo, niente da pagare',
+  'offer.trial.dayTitle': 'Giorno {day}',
+  'offer.trial.remindText': 'Ti ricordiamo che la prova sta finendo',
+  'offer.trial.chargeText': '{price} per l’anno, salvo disdetta',
 };

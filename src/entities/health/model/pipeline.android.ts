@@ -11,8 +11,9 @@ import { dayKey, foldSleep } from './sleep';
  * Differences from iOS:
  * - No walking asymmetry or walking speed: Health Connect has no such types.
  *   Those fields stay null and the gait signals never speak.
- * - No floors or resting heart rate: not asked for (`READ_TYPES`), so those
- *   stay null too.
+ * - No floors, resting heart rate, step length, stand hours or running form:
+ *   not asked for (`READ_TYPES`), so those stay null too. Distance and the
+ *   minutes of other sport come from records already granted.
  * - No background wakes: Health Connect has no observer queries. The app layer
  *   already refreshes on every return to the foreground, which is when the
  *   numbers are looked at anyway.
@@ -71,7 +72,18 @@ async function readDaily(from: Date, to: Date): Promise<DailyMetric[]> {
       for (const g of groups) if (g.result.COUNT_TOTAL > 0) steps.set(dayKey(new Date(g.startTime)), g.result.COUNT_TOTAL);
     })
     .catch(() => {});
-  return days('steps', steps);
+  // Distance is already granted (runs need it): the day's load in kilometres.
+  const distance = new Map<string, number>();
+  await hc
+    .aggregateGroupByPeriod({ recordType: 'Distance', timeRangeFilter: range(from, to), timeRangeSlicer: slicer })
+    .then((groups) => {
+      for (const g of groups) {
+        const km = g.result.DISTANCE?.inKilometers;
+        if (km != null && km > 0) distance.set(dayKey(new Date(g.startTime)), km);
+      }
+    })
+    .catch(() => {});
+  return [...days('steps', steps), ...days('distanceKm', distance)];
 }
 
 /** Hours on foot per day, from hourly step totals — the iOS rule, unchanged. */
@@ -139,13 +151,31 @@ async function readSleep(from: Date, to: Date): Promise<DailyMetric[]> {
 }
 
 const RUNNING = new Set([56, 57]);
+/** Health Connect's exercise types that are sport on the feet, as on iOS:
+ * badminton, baseball, basketball, boot camp, calisthenics, dancing,
+ * elliptical, exercise class, both footballs, golf, gymnastics, handball,
+ * HIIT, hiking, jumping jack, jump rope, racquetball, rugby, snowshoeing,
+ * soccer, softball, squash, stair climbing (and machine), strength training,
+ * table tennis, tennis, volleyball, walking. */
+const ON_FEET_SPORTS = new Set([
+  2, 4, 5, 10, 13, 16, 25, 26, 28, 29, 32, 34, 35, 36, 37, 40, 41, 50, 55, 63, 64, 65, 66, 68, 69, 70, 75, 76, 78, 79,
+]);
 
-/** Runs: the longest per day and when the last one ended, as on iOS. */
+/** Runs (the longest per day, when the last ended) and minutes of other
+ * sport on the feet, as on iOS. */
 async function readRuns(from: Date, to: Date): Promise<DailyMetric[]> {
   const hc = healthConnect();
   if (hc == null) return [];
   try {
-    const sessions = (await readAll('ExerciseSession', from, to)).filter((s) => RUNNING.has(s.exerciseType));
+    const all = await readAll('ExerciseSession', from, to);
+    const sport = new Map<string, number>();
+    for (const session of all) {
+      if (!ON_FEET_SPORTS.has(session.exerciseType)) continue;
+      const minutes = (new Date(session.endTime).getTime() - new Date(session.startTime).getTime()) / 60_000;
+      const key = dayKey(new Date(session.startTime));
+      if (Number.isFinite(minutes) && minutes > 0) sport.set(key, (sport.get(key) ?? 0) + Math.round(minutes));
+    }
+    const sessions = all.filter((s) => RUNNING.has(s.exerciseType));
     const longest = new Map<string, number>();
     const lastEnd = new Map<string, number>();
     for (const session of sessions) {
@@ -158,7 +188,7 @@ async function readRuns(from: Date, to: Date): Promise<DailyMetric[]> {
         .catch(() => null);
       if (distance != null && distance > 0) longest.set(key, Math.max(longest.get(key) ?? 0, distance));
     }
-    return [...days('longestRunKm', longest), ...days('lastRunEndAt', lastEnd)];
+    return [...days('longestRunKm', longest), ...days('lastRunEndAt', lastEnd), ...days('sportMin', sport)];
   } catch {
     return [];
   }

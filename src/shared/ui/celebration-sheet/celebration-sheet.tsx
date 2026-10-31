@@ -41,8 +41,9 @@ export type CelebrationSheetProps = {
   /** The colour that line takes. Supplied by the caller because what is being
    * celebrated decides it — a streak is orange, a subscription is not. */
   headlineColor?: string;
-  /** The sentence under it. */
-  blurb: string;
+  /** The sentence under it. Optional for a sheet whose children already say
+   * it: a row of tiles under the title needs no sentence repeating them. */
+  blurb?: string;
   ctaLabel?: string;
   /** Anything the host needs asked before the sheet closes, between the blurb and the button. */
   children?: ReactNode;
@@ -53,6 +54,14 @@ export type CelebrationSheetProps = {
   /** Off with the confetti, for the same reason: a trophy over "we stopped
    * because it hurt" reads as a prize for pain. */
   emblem?: boolean;
+  /**
+   * A character standing on the card's top edge, in place of the emblem: the
+   * session's end has the mascot jumping there. Drawn above the card, so feet
+   * pulled down onto the edge (a negative bottom margin on the node) stand on
+   * it rather than behind it. Mounted with the sheet and gone with it, so
+   * nothing it does keeps running once the sheet is down.
+   */
+  mascot?: ReactNode;
   onClose: () => void;
 };
 
@@ -91,9 +100,12 @@ export function CelebrationSheet({
   ctaLabel,
   children,
   confetti = true,
-  emblem = true,
+  emblem: emblemWanted = true,
+  mascot,
   onClose,
 }: CelebrationSheetProps) {
+  // One figure on the card's edge: a mascot takes the emblem's place.
+  const emblem = emblemWanted && mascot == null;
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -188,6 +200,14 @@ export function CelebrationSheet({
           />
         )}
 
+        {/* Takes the touches that land on it, like the card: a tap on the
+            mascot is not a tap on the scrim, and should not close the sheet. */}
+        {mascot != null && (
+          <View style={styles.mascot} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+            {mascot}
+          </View>
+        )}
+
         <View style={[styles.card, { backgroundColor: colors.card }, !emblem && { paddingTop: 24 }]}>
           <TypedText text={title} style={[styles.title, { color: colors.foreground }]} />
 
@@ -197,7 +217,7 @@ export function CelebrationSheet({
             </Text>
           )}
 
-          <Text style={[styles.blurb, { color: meter.caption }]}>{blurb}</Text>
+          {blurb != null && <Text style={[styles.blurb, { color: meter.caption }]}>{blurb}</Text>}
 
           {children}
 
@@ -237,6 +257,11 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: BADGE,
     height: BADGE,
+    zIndex: 2,
+  },
+  /** Above the card in the stack, so feet set onto its edge stand on it. */
+  mascot: {
+    alignSelf: 'center',
     zIndex: 2,
   },
   card: {

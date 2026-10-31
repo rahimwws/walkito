@@ -112,8 +112,14 @@ function appsflyerProblems(variant, config) {
   const missing = expected.filter((id) => !declared.includes(id));
   if (missing.length > 0) out.push(`${variant}: SKAdNetworkItems lacks ${missing.length} id(s), e.g. ${missing[0]}`);
   if (new Set(declared).size !== declared.length) out.push(`${variant}: SKAdNetworkItems has duplicates`);
-  if (plist.NSUserTrackingUsageDescription != null) {
-    out.push(`${variant}: NSUserTrackingUsageDescription is set, but the app never asks to track (no ATT)`);
+  // The onboarding asks App Tracking Transparency once; iOS refuses the
+  // request (and App Review the build) without the sheet's text.
+  // The plugin writes the text into Info.plist at prebuild, so it is read
+  // from the plugin's own options here.
+  const att = (config.plugins ?? []).find((plugin) => Array.isArray(plugin) && plugin[0] === 'expo-tracking-transparency');
+  const attText = att?.[1]?.userTrackingPermission;
+  if (typeof attText !== 'string' || attText.length === 0) {
+    out.push(`${variant}: expo-tracking-transparency with a userTrackingPermission text is missing, but the onboarding asks to track (ATT)`);
   }
   const domains = config.ios?.associatedDomains ?? [];
   for (const domain of ['applinks:walkito.site', `applinks:${ONELINK_HOST}`]) {

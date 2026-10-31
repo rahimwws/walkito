@@ -1,88 +1,32 @@
-import type { Icon } from 'phosphor-react-native';
-import { ArrowsClockwiseIcon } from 'phosphor-react-native/src/icons/ArrowsClockwise';
-import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
-import { CheckCircleIcon } from 'phosphor-react-native/src/icons/CheckCircle';
-import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
-import { LockIcon } from 'phosphor-react-native/src/icons/Lock';
-import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
-import { ScalesIcon } from 'phosphor-react-native/src/icons/Scales';
-import { TargetIcon } from 'phosphor-react-native/src/icons/Target';
-import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import LockIcon from '@hugeicons/core-free-icons/LockIcon';
+import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import {
   movePlanFor,
   movesFor,
   RETEST_TESTS,
   type DayStatus,
-  type ExerciseCategory,
   type ProgramDay,
   type SessionKind,
 } from '@/entities/program';
-import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Card3D } from '@/shared/ui/card-3d';
+import { Chip3D } from '@/shared/ui/chip-3d';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
-import { artFor } from '../config/kind-art';
+import { KIND_LOOK, REST_ART, TEST_LOOK, moveLook } from './kind-tone';
 import { RestButton } from './rest-button';
 
-const RADIUS = 26;
-
-/**
- * How strongly a card carries its kind's colour.
- *
- * The accents' own `track` alpha is tuned for a chip — a small shape where a
- * fifth of the hue still registers. Spread across a whole card the same value
- * came out grey and dead, so the card mixes its own, heavier tint. Today's is
- * heavier again, because it is the one card the screen is about.
- */
-const TINT = 0.34;
-const TINT_TODAY = 0.46;
-
-/**
- * A palette accent at a chosen strength.
- *
- * The accents store `fill` as hex and `track` as one fixed alpha, and neither
- * is what a card needs. Parsed rather than hand-written so a change to the
- * palette carries through here instead of being silently ignored.
- */
-function tint(hex: string, alpha: number): string {
-  const r = Number.parseInt(hex.slice(1, 3), 16);
-  const g = Number.parseInt(hex.slice(3, 5), 16);
-  const b = Number.parseInt(hex.slice(5, 7), 16);
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-}
-
-/**
- * The sticker for each session kind.
- *
- * Solid and coloured, from the pack the questionnaire already uses — the same
- * glyphs the user has been answering with for twelve screens, so a strength day
- * here is recognisably the strength they picked back there. The accent names
- * the kind and never rates it: a recovery day is amber because it is recovery,
- * not because it counts for less.
- */
-const KIND_STICKER: Record<SessionKind, { icon: Icon; accent: AccentName }> = {
-  strength: { icon: BarbellIcon, accent: 'violet' },
-  mobility: { icon: WavesIcon, accent: 'teal' },
-  balance: { icon: ScalesIcon, accent: 'blue' },
-  recovery: { icon: MoonIcon, accent: 'amber' },
-};
-
-/**
- * The tone each exercise category wears, matching Home's task list exactly.
- *
- * Same four accents, same four glyphs, same meaning — a Fitness chip is violet
- * on both screens or the two lists are describing the same session in two
- * different languages. The accent names the kind of effort and never rates it:
- * Recovery is amber because it is recovery, not because it counts for less.
- */
-const CATEGORY_TONE: Record<ExerciseCategory, { icon: Icon; accent: AccentName }> = {
-  Fitness: { icon: BarbellIcon, accent: 'violet' },
-  Mobility: { icon: WavesIcon, accent: 'teal' },
-  Recovery: { icon: MoonIcon, accent: 'amber' },
-  Habit: { icon: ArrowsClockwiseIcon, accent: 'blue' },
-};
+/** The day's emoji, where the mascot pose used to stand: one figure on the
+ * screen is the rule, and it is on today's card. */
+const EMOJI = 34;
 
 /** What a day's work is called. The day sheet reads these same keys — a card
  * that says "Strength" and a sheet that says something else would be describing
@@ -129,13 +73,17 @@ export type DayCardProps = {
 };
 
 /**
- * One day of the program.
+ * One day of the plan, as a solid 3D card.
  *
- * Three states in one shape: today's card carries what the session is and the
- * button that begins it, days behind carry a check, days ahead carry a lock.
- * The row above the button is identical in all three, which is what lets the
- * list be read down the left edge as a column of day numbers rather than as a
- * stack of unrelated cards.
+ * The day's emoji at the left, the day and its kind beside it, its minutes as
+ * a chip, and at the right what tapping does: a chevron for a day to read, a
+ * lock or a tick where the old program still draws them. Toned by kind, so the
+ * list can be read as a column of colours before a word of it is read; the
+ * accent names the kind and never rates it, and a rest day is the plain card.
+ *
+ * An open card (today's, or the next one up) also lists what the session is
+ * made of, as 3D chips, and the next one up counts down on the button it
+ * becomes.
  */
 export function DayCard({ day, status, onOpen, unlockAt, onStart, label: dayLabel, locks = true, rest = false }: DayCardProps) {
   const scheme = useColorScheme();
@@ -147,32 +95,17 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart, label: dayLabe
   const t = useT();
 
   /**
-   * Whether the card shows what the session is made of.
-   *
-   * Today and the day just finished, and nothing else. A finished day keeps its
-   * list because the first question after a session is what was in it — and
-   * once the status turns over, hiding the chips would make the card go blank
-   * at the exact moment the user looks back at it.
-   *
-   * An upcoming day stays shut on purpose: the programme adapts to what the
+   * Whether the card shows what the session is made of: today, and the next
+   * one up. An upcoming day stays shut on purpose: the plan adapts to what the
    * check-in says, so its exercises are a guess until the morning it arrives.
-   * Printing them would be a promise the plan has not made.
-   */
-  /**
-   * Whether the card shows what the session is made of.
-   *
-   * Today, and the next one up. A finished day drops its list: the question
-   * after a session is what comes next, not what was just done — and the answer
-   * to that is on the card below it, where the list now is.
    */
   const open = status === 'today' || unlockAt != null;
-  const art = day.checkpoint ? null : artFor(day.kind);
 
-  const sticker = day.checkpoint
-    ? { icon: TargetIcon, accent: 'amber' as AccentName }
-    : KIND_STICKER[day.kind];
-  const tone = accents[scheme][sticker.accent];
-  const Sticker = sticker.icon;
+  const look: { art: FluentName; accent: AccentName | null } = day.checkpoint
+    ? TEST_LOOK
+    : rest
+      ? { art: REST_ART, accent: null }
+      : KIND_LOOK[day.kind];
 
   const label = day.checkpoint ? t('pages.program.retest') : rest ? t('pages.plan.restDay') : t(KIND_KEY[day.kind]);
   const items = day.checkpoint
@@ -180,17 +113,11 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart, label: dayLabe
     : t('session.moveCount', { count: movesFor(day).length });
 
   return (
-    // The card itself is the target, rather than a control added beside the
-    // content: a fourteen-row list where thirteen rows are inert has no way to
-    // say so, and the row already looks like the thing you would press. A
-    // `Pressable` lays out exactly as the `View` it replaces, so the card is
-    // unchanged — it only answers now.
-    <Pressable
-      // One element again. Every card now opens the same sheet and nothing
-      // inside one acts on its own, so there is no nested control for
-      // `Pressable` to swallow.
-      accessible
-      accessibilityRole="button"
+    <Card3D
+      material="solid"
+      tone={look.accent ?? undefined}
+      padding={14}
+      onPress={onOpen}
       accessibilityLabel={t('pages.program.dayCardA11y', {
         day: day.day,
         kind: label,
@@ -198,203 +125,85 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart, label: dayLabe
         // an abbreviation is a syllable.
         minutes: t('pages.program.minuteCount', { count: day.minutes }),
       })}
-      onPress={onOpen}
-      style={[
-        styles.card,
-        {
-          // Tinted by kind, so the list can be read as a column of colours
-          // before a word of it is read. The accent names the kind and never
-          // rates it — a rest day is amber because it is a rest, not because it
-          // counts for less.
-          backgroundColor: tint(tone.fill, open ? TINT_TODAY : TINT),
-          // Today is the one card with an edge. It used to be the one card made
-          // of glass, and glass under a coloured fill reads as neither — so the
-          // marker moved to the border, which the tint cannot swallow.
-          borderColor: open ? tone.fill : 'transparent',
-          borderWidth: open ? 1.5 : StyleSheet.hairlineWidth,
-        },
-      ]}>
-
+      contentStyle={styles.content}>
       <View style={styles.row}>
-        {/* The day's own figure, at the left where the day number used to be.
-            A rest day has none and the row simply closes up — that absence is
-            the point rather than a gap, because a rest day is the one day with
-            no work to illustrate. */}
-        {art != null && (
-          <Image source={art} resizeMode="contain" accessible={false} style={styles.art} />
-        )}
+        <FluentIcon name={look.art} size={EMOJI} />
 
         <View style={styles.facts}>
-          {/* The day number, back where the list can be read down its own left
-              edge without a second column to carry it. */}
-          <Text style={[styles.dayLabel, { color: meter.label }]}>
-            {dayLabel ?? t('session.day', { day: day.day })}
+          <Text style={[styles.dayLabel, { color: meter.caption }]}>{dayLabel ?? t('session.day', { day: day.day })}</Text>
+          <Text style={[styles.kind, { color: colors.foreground }]} numberOfLines={1}>
+            {label}
           </Text>
-
-          <View style={styles.fact}>
-            <Sticker size={19} weight="fill" color={tone.fill} />
-            <Text style={[styles.factText, { color: meter.caption }]}>{label}</Text>
-          </View>
-          {!rest && (
-            <View style={styles.fact}>
-              <ClockIcon size={19} weight="fill" color={meter.unit} />
-              <Text style={[styles.factText, { color: meter.caption }]}>
-                {t('session.minutes', { count: day.minutes })}
-              </Text>
-            </View>
-          )}
         </View>
 
-        {locks || status !== 'upcoming' ? (
-          <Mark status={status} tint={colors.foreground} dim={meter.unit} />
-        ) : (
-          <View style={styles.blank} />
-        )}
+        {!rest && <Chip3D icon={Clock01Icon} accent="neutral" label={t('session.minutes', { count: day.minutes })} />}
+
+        <Mark status={status} locks={locks} ink={colors.foreground} dim={meter.unit} />
       </View>
 
-      {/* Why the lock is there, and for how long. Without it a finished user
-          sees the next day shut with no explanation and reads it as broken —
-          which is exactly what happened. The programme runs on dates, not on
-          completions, and that is a rule worth saying out loud once rather
-          than leaving to be inferred from a padlock. */}
-
-
       {open && (
-        <>
-          {/* What the session actually is, as chips. The card no longer offers
-              to start it — that button lives in the sheet the card opens — so
-              these are the whole of what today's card has to say. */}
-          <View style={styles.tags}>
-            {day.checkpoint
-              ? // The three tests wear the checkpoint's own amber rather than a
-                // category tone. They are not exercises and have no category —
-                // colouring them as though they did would invent one.
-                RETEST_ZONE_KEYS.map((zone) => (
-                  <Chip key={zone} label={t(zone)} icon={TargetIcon} tone={tone} />
-                ))
-              : // The dose rides in the chip it belongs to. "Heel raises" is a
-                // movement and "Heel raises · 3 × 12" is the prescription, and
-                // the prescription is what actually changes from block to block
-                // — without it every card in the plan reads the same. The row
-                // already wraps, so a longer chip costs no layout.
-                movePlanFor(day).map((move) => {
-                  const category = CATEGORY_TONE[move.category];
-                  return (
-                    <Chip
-                      key={move.id}
-                      label={
-                        move.dose == null
-                          ? move.title
-                          : t('pages.program.moveWithDose', {
-                              title: move.title,
-                              dose: move.dose,
-                            })
-                      }
-                      icon={category.icon}
-                      tone={accents[scheme][category.accent]}
-                    />
-                  );
-                })}
-            {/* The count is the one chip that names no category, so it is the
-                one chip that stays grey — which is also what keeps it from
-                competing with the exercises it is counting. */}
-            <View style={[styles.tag, { backgroundColor: meter.track }]}>
-              <Text style={[styles.tagText, { color: meter.caption }]}>{items}</Text>
-            </View>
-          </View>
-
-        </>
+        <View style={styles.tags}>
+          {day.checkpoint
+            ? // The three tests wear the checkpoint's own amber: they are not
+              // exercises and have no kind.
+              RETEST_ZONE_KEYS.map((zone) => <Chip3D key={zone} label={t(zone)} icon={Target01Icon} accent="amber" />)
+            : // The dose rides in the chip it belongs to: the prescription is
+              // what changes from week to week.
+              movePlanFor(day).map((move) => (
+                <Chip3D
+                  key={move.id}
+                  label={
+                    move.dose == null
+                      ? move.title
+                      : t('pages.program.moveWithDose', { title: move.title, dose: move.dose })
+                  }
+                  accent={moveLook(move.id, move.category).accent}
+                />
+              ))}
+          {/* The count names no kind, so it is the one neutral chip. */}
+          <Chip3D label={items} accent="neutral" />
+        </View>
       )}
 
       {/* Last, under what the session is, because it is what to do about it.
-          The countdown lives inside the button rather than beside it: a clock
-          on a line of its own is information, and the same clock on the control
-          it will become is the control saying when it works. */}
+          The countdown lives inside the button rather than beside it. */}
       {unlockAt != null && <RestButton unlockAt={unlockAt} onStart={onStart ?? (() => {})} />}
-    </Pressable>
+    </Card3D>
   );
 }
 
 /**
- * One exercise, as a chip.
- *
- * Built to Home's task-list chip so the two screens describe a session the same
- * way: tinted fill, glyph and label in the accent, same gap and radius. Someone
- * moving between the two tabs should recognise a Mobility chip without reading
- * it, and that only works if it is literally the same chip.
+ * What the trailing edge says. A day of the weekly plan opens a sheet, so it
+ * gets the chevron; the old program's locks and ticks are kept for the days it
+ * still draws. Missed days get nothing: nothing here is red and nothing scolds.
  */
-function Chip({
-  label,
-  icon: Glyph,
-  tone,
-}: {
-  label: string;
-  icon: Icon;
-  tone: { fill: string; track: string };
-}) {
-  return (
-    <View style={[styles.tag, { backgroundColor: tone.track }]}>
-      <Glyph size={13} weight="fill" color={tone.fill} />
-      <Text style={[styles.tagText, { color: tone.fill }]}>{label}</Text>
-    </View>
-  );
-}
-
-/** Behind, ahead, or neither — today needs no badge, it has the button. */
-function Mark({ status, tint, dim }: { status: DayStatus; tint: string; dim: string }) {
-  // A solid padlock with a keyhole rather than the simple one: that glyph's
-  // shackle is a thin arc and read as a sharp hook at this size.
-  if (status === 'upcoming') return <LockIcon size={24} weight="fill" color={dim} />;
-  if (status === 'done' || status === 'rest') {
-    return <CheckCircleIcon size={26} weight="fill" color={tint} />;
+function Mark({ status, locks, ink, dim }: { status: DayStatus; locks: boolean; ink: string; dim: string }) {
+  if (!locks && status === 'upcoming') {
+    return <HugeiconsIcon icon={ArrowRight01Icon} size={20} color={dim} strokeWidth={2.2} />;
   }
-  // Missed days get a hole rather than a mark. Nothing here is red and nothing
-  // scolds: a day that went by is information, and the list simply moves on.
+  if (status === 'upcoming') return <HugeiconsIcon icon={LockIcon} size={22} color={dim} strokeWidth={2} />;
+  if (status === 'done' || status === 'rest') {
+    return <HugeiconsIcon icon={CheckmarkCircle02Icon} size={24} color={ink} strokeWidth={2} />;
+  }
   return <View style={styles.blank} />;
 }
 
 const styles = StyleSheet.create({
-  card: {
-    borderRadius: RADIUS,
-    borderCurve: 'continuous',
-    borderWidth: StyleSheet.hairlineWidth,
-    padding: 16,
-    overflow: 'hidden',
+  content: {
+    gap: 12,
   },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 16,
-  },
-  /**
-   * Bigger than the row it sits in, and deliberately not allowed to say so.
-   *
-   * The negative margins take roughly two thirds of the figure back out of the
-   * layout, so the facts column stays the tallest thing in the row and keeps
-   * deciding the card's height. What is left overhangs into the card's own
-   * padding, which is why the pose reads large without the card growing an inch.
-   *
-   * Fixed width, so the facts beside it start on the same line down the whole
-   * list however wide a given pose happens to draw.
-   */
-  art: {
-    width: 84,
-    height: 84,
-    marginVertical: -14,
-    marginLeft: -8,
+    gap: 12,
   },
   facts: {
     flex: 1,
-    gap: 6,
+    gap: 2,
   },
   dayLabel: fonts.bold(12, 0.1),
-  fact: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 7,
-  },
-  factText: fonts.semibold(16, -0.2),
-  /** Holds the trailing column's width open on days with no badge, so the
+  kind: fonts.semibold(17, -0.2),
+  /** Holds the trailing column's width open on days with no mark, so the
    * facts beside them do not widen and the list stays in one grid. */
   blank: {
     width: 22,
@@ -404,19 +213,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 6,
-    marginTop: 14,
   },
-  /** Home's chip, to the point. Same gap, padding, radius and weight — the two
-   * lists have to look like one system or the colour means nothing. */
-  tag: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5,
-    paddingHorizontal: 11,
-    paddingVertical: 7,
-    borderRadius: 12,
-    borderCurve: 'continuous',
-  },
-  tagText: fonts.bold(14, -0.1),
-
 });

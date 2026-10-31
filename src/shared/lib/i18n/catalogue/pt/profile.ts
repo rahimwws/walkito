@@ -29,6 +29,7 @@ export const PROFILE_PT = {
   'profile.deleteSubscriptionAndroid':
     'Excluir sua conta não cancela sua assinatura. Ela é cobrada pelo Google Play e se renova até você cancelar lá.',
   'profile.manageSubscription': 'Gerenciar assinatura',
+  'profile.deletePass': 'Seu passe de 3 meses fica guardado nesta conta e termina quando você excluir a conta.',
   'profile.deleteLocalOnly':
     'Seus dados foram apagados deste aparelho, mas não foi possível falar com o servidor. Abra o app com conexão para terminar, ou escreva para o suporte.',
   'profile.deleteConfirm': 'Apagar tudo',

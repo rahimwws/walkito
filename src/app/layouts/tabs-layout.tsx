@@ -11,6 +11,7 @@ import { useCountdown } from '@/shared/lib/clock';
 import { ProgramProvider, useProgram } from '@/shared/lib/program';
 import { waitPhrase } from '@/shared/lib/wait';
 import { ActionDock, DOCK_OVERLAP, useDockHeight } from '@/shared/ui/action-dock';
+import { OverlayHost } from '@/shared/ui/overlay-host';
 
 import { ProgramOverlay } from './program-overlay';
 import {
@@ -137,6 +138,10 @@ function TabsChrome() {
             ))}
           </GlassTabBar>
         </TabList>
+        {/* Last, so over the pill and the dock: what a screen in the tabs
+            shows above them (Home's streak milestone), still in the tree so
+            any sheet presents over it. */}
+        <OverlayHost />
       </Tabs>
     </TabBarMinimizeProvider>
   );

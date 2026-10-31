@@ -1,27 +1,35 @@
 /**
  * The streak, which counts attention rather than completion.
  *
- * One rule decides everything here: **a day is attended if the user showed up,
- * not if they trained.** Three things satisfy it —
+ * One rule decides everything here: **a day is attended if the user did
+ * something for their feet that day, not only if they trained.** Three things
+ * satisfy it:
  *
- *   • they logged their morning pain, or
- *   • they finished a session, or
- *   • the program itself called that day a rest.
- *
- * The third is the one that makes the other two safe to count. A plan that
- * prescribes recovery days and then breaks your streak on them is punishing the
- * user for following it, which is the same failure as marking a missed day red.
- * Rest is assigned by the program, never chosen, so it can never be held
- * against anyone.
+ *   • they logged their morning pain (0, "no pain at all", counts), or
+ *   • they finished a plan session, or
+ *   • they finished a Library routine.
  *
  * The first is why this is not a training streak. Opening the app on a bad
- * morning and saying "it hurts today" is attention — arguably more of it than
- * grinding through a session — and the number that greets the user has to agree
- * with that or it will quietly teach them to skip the honest answer.
+ * morning and saying "it hurts today" is attention, arguably more of it than
+ * grinding through a session, and the number that greets the user has to agree
+ * with that or it will quietly teach them to skip the honest answer. It is also
+ * what keeps a rest day safe: the plan's rest is never held against anyone,
+ * because a check-in is all a rest day asks for.
+ *
+ * **A planned rest day used to count on its own.** It no longer does, from the
+ * first launch of the build that changed it (`streakCutover`). Days before that
+ * keep the old rule, so nobody's run drops on the update: the rest days they
+ * already banked stay banked, and only the days from then on ask for a
+ * check-in.
+ *
+ * Two levels, for the week strip (`attendedLevel`): a check-in alone is
+ * `checkin`, a plan session or a Library routine is `full`. Both count the same
+ * for the run; the level only says which flame the day gets.
  */
 
-import { useMemo } from 'react';
+import { useEffect, useMemo, useSyncExternalStore } from 'react';
 
+import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
 import { plannedRest } from './plan/store';
@@ -35,6 +43,7 @@ import {
   programState,
   toDateKey,
   useLogsVersion,
+  type DayLog,
 } from './state';
 
 export type DayAttendance = {
@@ -47,7 +56,11 @@ export type DayAttendance = {
    * render a week. */
   dayOfMonth: number;
   attended: boolean;
-  /** Attended only because the program prescribed rest — nothing was logged. */
+  /** How it counted: a check-in alone, or a session or routine done. `none`
+   * for a day that did not count, and for every day still to come. */
+  level: StreakLevel;
+  /** Attended only because the program prescribed rest, nothing logged: only
+   * ever a day before `streakCutover`. */
   rest: boolean;
   isToday: boolean;
   /** Later than today. Nothing can be known about it yet. */
@@ -62,26 +75,61 @@ export type Streak = {
   longest: number;
   /** Every attended day since the plan began. */
   total: number;
+  /** Freezes still banked after the walk: what the sheet and the header show.
+   * Zero when freezes were not asked for. */
+  freezes: number;
+  /** Program days a freeze covered, oldest first. */
+  frozen: readonly number[];
 };
+
+export type StreakLevel = 'none' | 'checkin' | 'full';
+
+/** What a day's level is read from. */
+export type LevelInput = {
+  log: Pick<DayLog, 'painMorning' | 'sessionCompleted' | 'libraryDone'> | null | undefined;
+  /** The plan said rest that day. */
+  rest: boolean;
+  /** The day falls before `streakCutover`, where a rest day still counts on
+   * its own. */
+  beforeCutover: boolean;
+};
+
+/**
+ * The rule, as a pure function.
+ *
+ * `full` for a plan session or a Library routine, `checkin` for a morning
+ * check-in alone, `none` otherwise. A rest day with nothing on it is `checkin`
+ * only before the cutover (the old rule, kept for the days already banked);
+ * from the cutover on it is `none` until somebody checks in.
+ */
+export function attendanceLevel({ log, rest, beforeCutover }: LevelInput): StreakLevel {
+  if (log != null && (log.sessionCompleted || log.libraryDone === true)) return 'full';
+  // `painMorning` is nullable and 0 is a real answer, "no pain at all", so
+  // this has to be a null check and not a truthiness one.
+  if (log?.painMorning != null) return 'checkin';
+  if (rest && beforeCutover) return 'checkin';
+  return 'none';
+}
+
+/** How one program day counted. Days before the plan are `none`. */
+export function attendedLevel(dayNumber: number): StreakLevel {
+  if (dayNumber < 1) return 'none';
+  return attendanceLevel({
+    log: logFor(dayNumber),
+    rest: restScheduled(dayNumber),
+    beforeCutover: dateKeyForDay(dayNumber) < streakCutover(),
+  });
+}
 
 /**
  * Whether one program day counts.
  *
  * Days beyond the plan's length, and days the user has not reached, are not
- * attended — absence of a log in the future is not a missed day, and callers
+ * attended: absence of a log in the future is not a missed day, and callers
  * must not walk past today.
  */
 export function attended(dayNumber: number): boolean {
-  if (dayNumber < 1) return false;
-
-  if (restScheduled(dayNumber)) return true;
-
-  const log = logFor(dayNumber);
-  if (log == null) return false;
-  // `painMorning` is nullable and 0 is a real answer — "no pain at all" is a
-  // logged morning, so this has to be a null check and not a truthiness one.
-  // A Library routine counts too — section 6 of the plan spec.
-  return log.painMorning != null || log.sessionCompleted || log.libraryDone === true;
+  return attendedLevel(dayNumber) !== 'none';
 }
 
 /**
@@ -95,11 +143,46 @@ function restScheduled(dayNumber: number): boolean {
   return day != null && isSystemRest(day);
 }
 
-/** Attended because the plan said rest, with nothing of the user's own on it. */
+/** Attended because the plan said rest, with nothing of the user's own on it.
+ * Only ever before the cutover. */
 function restOnly(dayNumber: number): boolean {
   if (!restScheduled(dayNumber)) return false;
+  if (dateKeyForDay(dayNumber) >= streakCutover()) return false;
   const log = logFor(dayNumber);
-  return log == null || (log.painMorning == null && !log.sessionCompleted);
+  return log == null || (log.painMorning == null && !log.sessionCompleted && log.libraryDone !== true);
+}
+
+// ---------------------------------------------------------------------------
+// The cutover
+// ---------------------------------------------------------------------------
+
+/**
+ * The first day of the rule without rest-only days: the date this build first
+ * asked, written once and never moved. Lazily, from the first read, which is
+ * the first launch of a build with this code (Home reads the streak as it
+ * mounts, and so does the widget's and the notifications' background work).
+ */
+const CUTOVER_KEY = 'streak/rest-cutover';
+const DATE_KEY = /^\d{4}-\d{2}-\d{2}$/;
+let cutover: string | null = null;
+
+export function streakCutover(today: string = toDateKey(new Date())): string {
+  if (cutover != null) return cutover;
+  const stored = kv.getString(CUTOVER_KEY);
+  if (stored != null && DATE_KEY.test(stored)) {
+    cutover = stored;
+    return stored;
+  }
+  kv.set(CUTOVER_KEY, today);
+  cutover = today;
+  return today;
+}
+
+/** For the tests, and a full reset: set (or with null, forget) the cutover. */
+export function setStreakCutover(dateKey: string | null): void {
+  cutover = null;
+  if (dateKey == null) kv.remove(CUTOVER_KEY);
+  else kv.set(CUTOVER_KEY, dateKey);
 }
 
 /**
@@ -155,7 +238,7 @@ export function streakThrough(
   const holds = (d: number) => counts(d) || bridged.has(d);
   const current = counts(today) ? run : trailingRun(today - 1, holds, counts);
 
-  return { current, longest: Math.max(longest, current), total };
+  return { current, longest: Math.max(longest, current), total, freezes: bank, frozen: [...bridged].sort((a, b) => a - b) };
 }
 
 /** Attended days in the unbroken run ending at `day`, walking backwards.
@@ -216,14 +299,15 @@ export function weekAttendance(
     const dayNumber = dayNumberFor(state, key);
     const inPlan = dayNumber >= 1 && dayNumber <= PROGRAM.length;
     const future = date.getTime() > today.getTime();
+    // Nothing in the future is attended, whatever the plan says about it.
+    const level: StreakLevel = inPlan && !future ? attendedLevel(dayNumber) : 'none';
 
     return {
       dayNumber: inPlan ? dayNumber : null,
       date: key,
       dayOfMonth: date.getDate(),
-      // Nothing in the future is attended, whatever the plan says about it —
-      // a recovery day next Thursday has not happened yet.
-      attended: inPlan && !future && attended(dayNumber),
+      attended: level !== 'none',
+      level,
       rest: inPlan && !future && restOnly(dayNumber),
       isToday: key === todayKey,
       future,
@@ -239,10 +323,20 @@ export type StreakView = Streak & {
    *
    * Asked for rather than rotated out of `week`. The Sunday sitting at the end
    * of a Monday-first week is the Sunday still to come, so moving it to the
-   * front puts a future day where the Sunday just gone belongs — which renders
+   * front puts a future day where the Sunday just gone belongs, which renders
    * as a day the user missed. Two windows, both taken from the source.
    */
   strip: boolean[];
+  /** The same Sunday-first week as levels: which flame each day gets. */
+  levels: StreakLevel[];
+  /** Sunday-first: counted only by the old rule's rest (`DayAttendance.rest`). */
+  rest: boolean[];
+  /** A freeze covered a day in the seven ending today. Said kindly, never as
+   * a day missed. */
+  freezeSpentThisWeek: boolean;
+  /** A pretend streak from a dev link: nothing may be tracked or recorded
+   * from it. Never set in a release build. */
+  preview?: boolean;
 };
 
 /**
@@ -254,22 +348,123 @@ export type StreakView = Streak & {
  * appears in two places stays the same number.
  *
  * Recomputed on every log write. `useLogsVersion` returns a counter rather than
- * the data because the log map is mutated in place — logging a morning pain
+ * the data because the log map is mutated in place: logging a morning pain
  * moves the header immediately instead of on the next cold start.
+ *
+ * Every freeze the walk spent is written to the ledger (`spendFreeze`) and
+ * tracked once (`freeze_spent`), so "has this week been covered", which the
+ * streak push asks, reads what really happened.
  */
 export function useStreak(): StreakView {
   const version = useLogsVersion();
+  const dev = useDevStreak();
 
-  return useMemo(() => {
+  const view = useMemo((): StreakView => {
+    const today = currentDay();
+    const streak = streakThrough(today, attended, true);
+    const sunday = weekAttendance(Date.now(), 0);
+    const todayKey = toDateKey(new Date());
     return {
-      ...streakThrough(currentDay(), attended, true),
+      ...streak,
       week: weekAttendance(),
-      strip: weekAttendance(Date.now(), 0).map((day) => day.attended),
+      strip: sunday.map((day) => day.attended),
+      levels: sunday.map((day) => day.level),
+      rest: sunday.map((day) => day.rest),
+      freezeSpentThisWeek: streak.frozen.some((day) => {
+        const gap = daysBetween(dateKeyForDay(day), todayKey);
+        return gap >= 0 && gap < 7;
+      }),
     };
     // The version is the only dependency that can change: the logs are mutated
     // in place, so nothing else here changes identity when one is written.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [version]);
+
+  const frozenKey = view.frozen.join(',');
+  useEffect(() => {
+    recordSpentFreezes(view.frozen.map((day) => dateKeyForDay(day)));
+    // Keyed on the days themselves: a new array on every walk is not news.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [frozenKey]);
+
+  return useMemo(() => (__DEV__ ? withDevStreak(view, dev) : view), [view, dev]);
+}
+
+const RECORD_WINDOW_DAYS = 14;
+
+/**
+ * Writes the days a freeze covered to the ledger, and tracks each one the
+ * first time it is seen. Idempotent: several screens read the streak at once.
+ */
+function recordSpentFreezes(dateKeys: readonly string[]): void {
+  const known = spentDays();
+  const today = toDateKey(new Date());
+  for (const key of dateKeys) {
+    // Only the last fortnight, which is all the ledger keeps and all anything
+    // asks of it: an older day dropped from the ledger must not come back as
+    // a new event.
+    const age = daysBetween(key, today);
+    if (age < 0 || age >= RECORD_WINDOW_DAYS) continue;
+    if (known.includes(key)) continue;
+    spendFreeze(key);
+    track('freeze_spent');
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Development overrides
+// ---------------------------------------------------------------------------
+
+/**
+ * `walkito.dev://?streakPreview=<n>`, `?freezes=<n>` and `?longestStreak=<n>`
+ * (`=off` for each): a pretend streak for screenshots, held in memory only and
+ * never written. The week gets a mix of check-in and full days ending today.
+ */
+export type DevStreak = { current: number | null; freezes: number | null; longest: number | null };
+
+let devStreak: DevStreak = { current: null, freezes: null, longest: null };
+const devListeners = new Set<() => void>();
+
+export function devSetStreak(next: Partial<DevStreak>): void {
+  if (!__DEV__) return;
+  devStreak = { ...devStreak, ...next };
+  devListeners.forEach((listener) => listener());
+}
+
+function useDevStreak(): DevStreak {
+  return useSyncExternalStore(
+    (listener) => {
+      devListeners.add(listener);
+      return () => devListeners.delete(listener);
+    },
+    () => devStreak,
+    () => devStreak,
+  );
+}
+
+function withDevStreak(view: StreakView, dev: DevStreak): StreakView {
+  let next = view;
+  if (dev.current != null) {
+    const n = dev.current;
+    const todayIndex = new Date().getDay();
+    // The last `n` days of this week up to today, a check-in every third day.
+    const levels = view.levels.map((_, i): StreakLevel => {
+      if (i > todayIndex || todayIndex - i >= n) return 'none';
+      return (todayIndex - i) % 3 === 1 ? 'checkin' : 'full';
+    });
+    next = {
+      ...next,
+      current: n,
+      total: Math.max(view.total, n),
+      longest: Math.max(view.longest, n),
+      levels,
+      strip: levels.map((level) => level !== 'none'),
+      rest: levels.map(() => false),
+    };
+  }
+  if (dev.freezes != null) next = { ...next, freezes: dev.freezes };
+  if (dev.longest != null) next = { ...next, longest: Math.max(dev.longest, next.current) };
+  return next === view ? view : { ...next, preview: true };
 }
 
 // ---------------------------------------------------------------------------
@@ -369,7 +564,7 @@ export { dateKeyForDay };
  * The streak lengths that get a moment. Day 10 gets the biggest one — early
  * enough to arrive, late enough to mean it.
  */
-export const STREAK_MILESTONES = [3, 7, 10, 30, 100] as const;
+export const STREAK_MILESTONES = [3, 7, 10, 14, 30, 100] as const;
 export const BIG_MILESTONE = 10;
 
 /** The milestone `current` has just reached, or null. */
@@ -377,4 +572,41 @@ export function milestoneFor(current: number): (typeof STREAK_MILESTONES)[number
   return (STREAK_MILESTONES as readonly number[]).includes(current)
     ? (current as (typeof STREAK_MILESTONES)[number])
     : null;
+}
+
+/** The milestones whose moment Home has shown: each one once, ever. */
+const MILESTONES_KEY = 'streak/milestones-seen';
+
+function milestonesSeen(): number[] {
+  try {
+    const seen: unknown = JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]');
+    return Array.isArray(seen) ? seen.filter((n): n is number => typeof n === 'number') : [];
+  } catch {
+    return [];
+  }
+}
+
+export function milestoneSeen(days: number): boolean {
+  return milestonesSeen().includes(days);
+}
+
+export function markMilestoneSeen(days: number): void {
+  kv.set(MILESTONES_KEY, JSON.stringify([...new Set([...milestonesSeen(), days])]));
+}
+
+/** Development only (`?previewMilestone`): every milestone unseen again, so
+ * the one the streak stands on rises on Home. Read at Home's next render. */
+export function devForgetMilestones(): void {
+  if (!__DEV__) return;
+  kv.remove(MILESTONES_KEY);
+}
+
+/**
+ * Whether the streak stands on a milestone whose moment has not been shown.
+ * Read outside Home too: Apple's review prompt waits for the milestone, and
+ * at a cold start it is asked before Home has mounted.
+ */
+export function milestoneOwed(current: number): boolean {
+  const milestone = milestoneFor(current);
+  return milestone != null && !milestoneSeen(milestone);
 }

@@ -85,7 +85,7 @@ export const JOURNEY_EN = {
 
   'onboarding.react.weeksTitle': 'Early is the best time.',
   'onboarding.react.weeksBody': 'We’ll start gently.',
-  'onboarding.react.monthsTitle': 'It won’t fade on its own.',
+  'onboarding.react.monthsTitle': 'Very common at this stage.',
   'onboarding.react.monthsBody': 'We’ll start with what helps first.',
   'onboarding.react.yearTitle': 'That’s a long time.',
   'onboarding.react.yearBody': 'Usually the load never changed. We’ll change it.',
@@ -110,11 +110,13 @@ export const JOURNEY_EN = {
   'onboarding.safety.blurb': 'A quick safety check.',
   'onboarding.safety.calf': 'Calf swollen, warm or red on one side',
   'onboarding.safety.pop': 'A sudden pop at the back of the ankle',
-  'onboarding.safety.diabetes': 'Diabetes with a hot, red foot or an open sore',
+  'onboarding.safety.diabetes': 'Diabetes and a foot that is hot, red or has an open sore',
   'onboarding.safety.fall': 'Hurt it in a fall and can’t put weight on it',
   'onboarding.safety.numb': 'Numbness, tingling or burning',
   'onboarding.safety.none': 'None of these',
   'onboarding.react.safetySeated': 'Week one starts seated.',
+  /** A calf, a pop or a diabetic foot: the plan still starts seated, and the doctor's advice is said with it, as Home's safety sheet does. */
+  'onboarding.react.safetyDoctor': 'Week one starts seated. Please see a doctor about this first - if it’s sudden or severe, call emergency services.',
   'onboarding.react.safetyNumb': 'Noted. We’ll watch it.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -128,7 +130,7 @@ export const JOURNEY_EN = {
   'onboarding.tried.none': 'Nothing yet',
 
   'onboarding.react.insolesTitle': 'Insoles take load off.',
-  'onboarding.react.insolesBody': 'Your plan adds the strength they can’t.',
+  'onboarding.react.insolesBody': 'Keep them if they help. Your plan adds strength.',
   'onboarding.react.restTitle': 'Rest calms it down.',
   'onboarding.react.restBody': 'Your plan adds the strength rest can’t.',
   'onboarding.react.stretchingTitle': 'Stretching is a good start.',
@@ -145,14 +147,14 @@ export const JOURNEY_EN = {
   'onboarding.goal.titleShort': 'What matters most?',
   'onboarding.goal.mornings': 'Easier mornings',
   'onboarding.goal.backToRunning': 'Back to running',
-  'onboarding.goal.shift': 'Get through a shift without aching',
+  'onboarding.goal.shift': 'Get through a shift with less aching',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Hours on your feet a day?',
   'onboarding.load.blurbFeet': 'Your usual day, not your longest.',
   'onboarding.load.feet0': 'Under 4 hours',
-  'onboarding.load.feet1': '4–8 hours',
-  'onboarding.load.feet2': '8–12 hours',
+  'onboarding.load.feet1': '4-8 hours',
+  'onboarding.load.feet2': '8-12 hours',
   'onboarding.load.feet3': '12+ hours',
   /** `{band}` is the label they picked on the load step. */
   'onboarding.reflection.feetDaily': '{band} a day on your feet',
@@ -171,10 +173,10 @@ export const JOURNEY_EN = {
   'onboarding.why.patternCalf': 'A tight calf pulls on the heel and foot.',
   'onboarding.why.patternShin': 'Load rose faster than the legs.',
   'onboarding.why.lingersWeeks': 'Only weeks in. Easiest to turn around.',
-  'onboarding.why.lingersMonths': 'Months in. It won’t just fade.',
+  'onboarding.why.lingersMonths': 'Months in. Steady work helps most here.',
   'onboarding.why.lingersYear': 'Months in. The load never changed.',
   'onboarding.why.lingersLonger': 'Over a year. The load never changed.',
-  'onboarding.why.triedInsoles': 'Insoles take load off, but don’t build strength.',
+  'onboarding.why.triedInsoles': 'Insoles ease the load. Keep them, and add strength.',
   'onboarding.why.triedRest': 'Rest calms it, but doesn’t build strength.',
   'onboarding.why.triedStretching': 'Stretching alone doesn’t build strength.',
   'onboarding.why.triedShoes': 'Shoes change the load, not what carries it.',
@@ -223,12 +225,6 @@ export const JOURNEY_EN = {
   'onboarding.test.left': 'Left',
   'onboarding.test.right': 'Right',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Your starting point',
-  'onboarding.test.archYes': 'Flexible foot. It responds well to strength work.',
-  'onboarding.test.archNo': 'No arch. We’ll focus on calf and ankle.',
-  'onboarding.test.archUnsure': 'Hard to tell. Your first retest will measure it.',
-  'onboarding.test.balanceHead': 'On one leg',
-  'onboarding.test.resultFoot': 'Your plan uses this from day one.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Building your plan',
@@ -243,17 +239,42 @@ export const JOURNEY_EN = {
   'onboarding.building.choosing': 'Choosing your first week…',
   'onboarding.building.ctaWeek': 'See my first week',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  // His own lines, in the bubble beside the question: a beat as a part of
+  // the flow begins, halfway (printed on the passport's first stamp) and the
+  // plan ready. They speak to the flow, never to an answer: nothing here
+  // judges what was said.
+  'onboarding.coach.toeTry': 'Try it now: lift just your big toe.',
+  'onboarding.coach.beatFeet': 'Now, your feet.',
+  'onboarding.coach.beatGoal': 'Now, what you want from this.',
+  'onboarding.coach.midway': 'Halfway there, {name}.',
+  'onboarding.coach.planReady': 'Your plan is ready, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Your first week',
   'onboarding.week.blurb': 'Short sessions on the days you picked. Each one adjusts to how your foot feels that morning.',
-  'onboarding.week.morningMeta': 'Every morning, before you stand · 2 min',
-  'onboarding.week.sessionMeta': 'In your sessions this week',
+  /** Under the title: the days and the minutes picked on the schedule screen. */
+  'onboarding.week.cadence': {
+    one: '{count} session a week, {minutes} min each',
+    other: '{count} sessions a week, {minutes} min each',
+  },
+  'onboarding.week.everyMorning': 'Every morning',
+  'onboarding.week.sessionDays': 'On session days',
+  /** What VoiceOver reads for a card of the deck: one whole sentence for each
+   * kind of move, `{cue}` being the move’s own sentence. */
+  'onboarding.week.moveA11yMorning': 'Move {index} of {total}. {title}, {dose}, every morning. {cue}',
+  'onboarding.week.moveA11ySession': 'Move {index} of {total}. {title}, {dose}, on session days. {cue}',
+  'onboarding.week.deckHint': 'Swipe up or down to switch moves. Double-tap to watch it full screen.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'You’re in, {name}',
   'setup.save.title': 'You’re in',
   'setup.save.blurb': 'So it’s safe on a new phone.',
   'setup.save.later': 'Not now',
+  'setup.save.email': 'Continue with email',
+  'setup.save.googleUnavailable': 'Google sign-in isn’t available on this phone. Use your email instead.',
+  'setup.save.deferred': 'Continue for now',
+  'setup.save.deferredNote': 'We couldn’t sign you in right now. We’ll ask again next time you open Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Send your plan to your email?',
@@ -275,20 +296,40 @@ export const JOURNEY_EN = {
   'setup.widget.mockEdit': 'Edit',
   'setup.widget.mockAdd': 'Add Widget',
   'setup.widget.mockSearch': 'Search Widgets',
+  /** The widget step checked and found no widget: asked again, kindly. */
+  'setup.widget.nudgeTitle': 'The widget isn’t there yet',
+  'setup.widget.nudgeBody': 'No rush. It takes three taps, and it’s the easiest way back each morning. Shall I show you again?',
+  'setup.widget.nudgeAgain': 'Show me again',
+  'setup.widget.nudgeLater': 'Maybe later',
+  /** The widget step checked and found it on the Home Screen. */
+  'setup.widget.addedTitle': 'It’s on your Home Screen',
+  'setup.widget.addedBlurb': 'See you there tomorrow morning.',
+  'setup.widget.addedCta': 'Continue',
   'setup.next': 'Next',
   'setup.done': 'Done',
-  'setup.finish': 'Start my first session',
+  /** The last step's button. Setup ends on Home; nothing is started for them. */
+  'setup.finish': 'Finish',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   // Before the plans: their own numbers on top, tomorrow morning first, then
   // the product itself and what it rests on.
   'offer.stripMornings': 'Mornings {score}/10',
   'offer.introTomorrowWhen': 'Tomorrow, before you stand',
-  'offer.introTomorrowBody': 'Two minutes, before your foot touches the floor.',
+  'offer.introTomorrowBody': 'A few minutes, before your foot touches the floor.',
   'offer.howTitleShort': 'Here is how it works',
   'offer.howCheckinShort': '10-second morning check-in',
-  'offer.howSessionShort': '3–10 minute session, adjusted every day',
+  'offer.howSessionShort': '3-10 minute session, adjusted every day',
   'offer.howRetestShort': 'The same test every two weeks',
+  'offer.goldPlan': 'How your plan works',
+  'offer.goldHow': 'What you get every day',
+  'offer.goldStart': 'Everything unlocked',
+  'offer.tomorrowWhen': 'Tomorrow',
+  'offer.tomorrowBody': 'A few minutes, still in bed',
+  'offer.weekBody': '{minutes} min a day',
+  'offer.sundayBody': 'Adjusts to how it felt',
+  'offer.checkBody': 'See what changed',
+  'offer.howHeadline': 'A few minutes a day, made for your feet',
+  'offer.builtShort': 'Moves from published research',
   'offer.builtTitle': 'What it’s built on',
   'offer.builtBody':
     'Exercises from published research and the 2023 heel pain guideline. Walkito itself hasn’t been tested in a trial.',

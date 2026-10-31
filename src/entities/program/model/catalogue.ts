@@ -21,7 +21,7 @@ export type BlockPlan = Readonly<Record<DayKind, readonly string[]>>;
 export const BLOCK_PLANS: Readonly<Record<number, BlockPlan>> = {
   // Settle — nothing loaded yet. The foot is being asked to move, not to work.
   1: {
-    strength: ['fascia_stretch', 'calf_stretch_straight', 'toe_spread'],
+    strength: ['fascia_stretch', 'calf_stretch_straight', 'big_toe_lift'],
     mobility: ['calf_stretch_straight', 'calf_stretch_bent', 'ankle_rocks'],
     balance: ['eyes_closed_stand', 'ankle_rocks'],
     recovery: ['foot_roll', 'breathing_reset'],
@@ -31,14 +31,14 @@ export const BLOCK_PLANS: Readonly<Record<number, BlockPlan>> = {
     strength: ['heel_raise_towel', 'short_foot_seated'],
     mobility: ['calf_stretch_straight', 'short_foot_seated'],
     balance: ['short_foot_seated', 'single_leg_hold'],
-    recovery: ['foot_roll', 'toe_spread'],
+    recovery: ['foot_roll', 'big_toe_lift'],
   },
   // Load — short foot comes off the chair and takes bodyweight.
   3: {
     strength: ['heel_raise_towel', 'short_foot_double'],
     mobility: ['calf_stretch_bent', 'short_foot_double'],
     balance: ['short_foot_double', 'single_leg_hold'],
-    recovery: ['foot_roll', 'toe_spread'],
+    recovery: ['foot_roll', 'big_toe_lift'],
   },
   // Build — one leg at a time, and the first band work.
   4: {

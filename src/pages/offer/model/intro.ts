@@ -11,6 +11,9 @@ import { kv } from '@/shared/lib/storage';
 const KEY = 'offer/intro-seen';
 
 export function introSeen(): boolean {
+  // Development builds show the two steps every time: once per phone would
+  // hide them after the first look, and they are what is being worked on.
+  if (__DEV__) return false;
   return kv.getBoolean(KEY) === true;
 }
 

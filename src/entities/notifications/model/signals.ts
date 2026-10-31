@@ -8,7 +8,7 @@
  * week costs no HealthKit round trips.
  */
 
-import { healthSignals } from '@/entities/health';
+import { healthSignals, todayHealthInputs } from '@/entities/health';
 import {
   currentDay,
   dateKeyForDay,
@@ -46,16 +46,13 @@ function planned(dateKey: string, isToday: boolean): { day: PlanDay | undefined;
   if (!isToday) return { day: planDayOn(dateKey), reason: null };
   const health = healthSignals();
   const adjusted = todayPlan(
-    {
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.stepsBaseline,
-      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-    },
+    todayHealthInputs(health),
     null,
   );
   // Short sleep steps a level down quietly; only the reasons with a sentence
   // of their own become a plan notification.
-  const reason = adjusted.reason === 'short-sleep' ? null : adjusted.reason;
+  // Sleep and heart rate change the dose quietly: not news worth a push.
+  const reason = adjusted.reason === 'short-sleep' || adjusted.reason === 'resting-hr' ? null : adjusted.reason;
   return { day: adjusted, reason };
 }
 
@@ -111,7 +108,7 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
 
     // A load warning is only honest when the plan actually backed off, which
     // is exactly what these two reasons mean.
-    loadAdjusted: reason === 'spike' || reason === 'heavy-day',
+    loadAdjusted: reason === 'spike' || reason === 'heavy-day' || reason === 'on-feet' || reason === 'big-workout',
     planChanged: reason != null,
     planReason: reason,
 

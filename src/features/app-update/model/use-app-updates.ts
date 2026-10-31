@@ -5,6 +5,7 @@ import type { ReloadScreenOptions } from 'expo-updates';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState, Linking, Platform } from 'react-native';
 
+import { useSetupFinishedAt } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
@@ -12,6 +13,7 @@ import { markApplying, unmarkApplying } from './applied';
 import {
   isSnoozed,
   nextOffer,
+  offerAllowedFrom,
   sameOffer,
   snoozeKey,
   type UpdateOffer,
@@ -43,6 +45,21 @@ const isPreview = (offer: UpdateOffer | null) => offer?.kind === 'ota' && offer.
 
 function snoozed(offer: UpdateOffer): boolean {
   return isSnoozed(kv.getNumber(snoozeKey(offer)), Date.now());
+}
+
+/** Whether `at` has passed, flipping by itself when it does. */
+function usePassed(at: number): boolean {
+  const [passed, setPassed] = useState(() => Date.now() >= at);
+  useEffect(() => {
+    const left = at - Date.now();
+    setPassed(left <= 0);
+    if (left <= 0) return undefined;
+    // Timers resume late from the background, never early, so a wait that ran
+    // out while the app was away flips on its return.
+    const timer = setTimeout(() => setPassed(true), left);
+    return () => clearTimeout(timer);
+  }, [at]);
+  return passed;
 }
 
 const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -162,9 +179,20 @@ export type AppUpdates = {
  *
  * Mounted once, at the root. `enabled` is off until the user is past
  * onboarding: the first minutes in the app are not the moment to ask them to
- * restart it.
+ * restart it. `homeIsTheirs` is off until Home is theirs (bought, set up, past
+ * the first run), and nothing is offered until a day after the setup either
+ * (`offerAllowedFrom`): before that updates are still checked for and
+ * downloaded, so the next cold start launches the newest code, but nothing is
+ * offered. Asking somebody on the paywall to update first gives them a reason
+ * to leave, and asking on their first day is one ask too many.
  */
-export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void): AppUpdates {
+export function useAppUpdates(
+  enabled: boolean,
+  homeIsTheirs: boolean,
+  onPreviewRestarted?: () => void,
+): AppUpdates {
+  const dayAfterSetup = usePassed(offerAllowedFrom(useSetupFinishedAt()));
+  const canOffer = homeIsTheirs && dayAfterSetup;
   const [offer, setOfferState] = useState<UpdateOffer | null>(null);
   const [phase, setPhaseState] = useState<UpdatePhase>('idle');
   // Mirrors of the two, for callbacks that must stay stable and still read the
@@ -204,6 +232,8 @@ export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void)
   const [firstStoreLookup] = useState(settleOnce);
   const previewRestarted = useRef(onPreviewRestarted);
   previewRestarted.current = onPreviewRestarted;
+  const canOfferRef = useRef(canOffer);
+  canOfferRef.current = canOffer;
 
   const native = Updates.useUpdates();
   const pendingId = native.isUpdatePending
@@ -214,7 +244,7 @@ export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void)
 
   const present = useCallback(
     (found: UpdateOffer) => {
-      if (!alive.current) return;
+      if (!alive.current || !canOfferRef.current) return;
       if (found.kind === 'ota' && found.id === Updates.updateId) return;
       if (snoozed(found)) return;
       const current = offerRef.current;
@@ -232,7 +262,7 @@ export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void)
   // The native launch check found and downloaded one by itself. Offered after
   // the store has had its say; `present` then keeps a store offer on top.
   useEffect(() => {
-    if (!enabled || __DEV__ || pendingId == null) return undefined;
+    if (!enabled || !canOffer || __DEV__ || pendingId == null) return undefined;
     downloaded.current.add(pendingId);
     let cancelled = false;
     void firstStoreLookup.done.then(() => {
@@ -241,7 +271,7 @@ export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void)
     return () => {
       cancelled = true;
     };
-  }, [enabled, pendingId, present, firstStoreLookup]);
+  }, [enabled, canOffer, pendingId, present, firstStoreLookup]);
 
   const check = useCallback(async () => {
     if (checking.current || Date.now() - lastCheck.current < CHECK_EVERY_MS) return;
@@ -280,12 +310,16 @@ export function useAppUpdates(enabled: boolean, onPreviewRestarted?: () => void)
 
   useEffect(() => {
     if (!enabled) return undefined;
+    // The moment Home becomes theirs, ask again at once: a check made while
+    // nothing could be offered would otherwise hold the next one off for half
+    // an hour.
+    if (canOffer) lastCheck.current = 0;
     void check();
     const subscription = AppState.addEventListener('change', (state) => {
       if (state === 'active') void check();
     });
     return () => subscription.remove();
-  }, [enabled, check]);
+  }, [enabled, canOffer, check]);
 
   const dismiss = useCallback(() => {
     // Once the restart has started the screen is on its way to being covered;

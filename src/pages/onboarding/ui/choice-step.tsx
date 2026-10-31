@@ -1,32 +1,44 @@
 import * as Haptics from 'expo-haptics';
 import { CheckCircleIcon as CheckCircle } from 'phosphor-react-native/src/icons/CheckCircle';
-import { Fragment, useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
-  LinearTransition,
   ReduceMotion,
   interpolateColor,
   useAnimatedStyle,
   useDerivedValue,
+  useReducedMotion,
   useSharedValue,
+  withSequence,
   withTiming,
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Badge } from '@/shared/ui/badge';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { OptionCard3D } from '@/shared/ui/option-card-3d';
 
-import { OPTION_ICONS, SPORT_ICONS, VERDICT_ICONS } from '../config/option-icons';
+import { SPORT_ICONS, VERDICT_ICONS } from '../config/option-icons';
 import { FeetGlyph, type FeetSide } from './feet-glyph';
+import { KitTile } from './kit-tile';
+import { PEEK_WIDTH, PeekMascot } from './peek-mascot';
 import type { ResolvedOption } from '../model/steps';
 
-/** Small on purpose — the reference rows are barely taller than their label,
- * which is what lets five of them sit above the fold without scrolling. */
-const HEIGHT = 58;
-const RADIUS = 16;
-const ICON = 24;
-const CHECK = 22;
+/** The glyph in a row's tile: the kit's own tile size and glyph size. */
+const TILE = 40;
+const ICON = 22;
+/** A chosen row pops as it is picked: up from just under its size, a touch
+ * past it, and back. */
+const POP_IN_MS = 60;
+const POP_OUT_MS = 120;
+/** And its emoji pops with it, further: up past its size and settling back.
+ * Less on a question about the body, where the coach only nods. */
+const EMOJI_POP = { lively: 1.15, calm: 1.08 } as const;
+const EMOJI_UP_MS = 110;
+const EMOJI_DOWN_MS = 190;
 
 const SELECT_MS = 180;
 const PRESS_MS = 90;
@@ -46,44 +58,56 @@ const PICKED_FILL = {
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-/** Neutral check before selection: a filled disc the same value as the row,
- * so the control reads as present-but-off rather than as a second accent. */
-const IDLE_CHECK = { light: '#D3D3D8', dark: '#3A3A3E' } as const;
+/** The foot that is not the sore one, on the side question's glyph. */
+const IDLE_FOOT = { light: '#D3D3D8', dark: '#3A3A3E' } as const;
+
+/**
+ * What leads each answer.
+ *
+ * - `fluent` (the default): the option's colourful Fluent emoji, or the card's
+ *   own tile where the option brings a glyph (the platforms' logos), or nothing.
+ * - `peek`: Walkito peeking up over the card's bottom edge (`PeekMascot`).
+ * - `side`: the pair of feet, the sore one lit.
+ * - `verdict`: how full a circle is, for an observation about the foot.
+ * - `sport`: wrapping capsules, with the sport's own glyph.
+ * - `kit`: a grid of coloured 3D tiles, two to a row (`KitTile`).
+ */
+export type ChoiceArt = 'fluent' | 'peek' | 'sport' | 'side' | 'verdict' | 'kit';
 
 export type ChoiceStepProps = {
   options: readonly ResolvedOption[];
   selected: readonly string[];
   multi: boolean;
   max?: number;
-  /** Which artwork map to read. The sport question uses its own so the glyph
-   * that follows the answer through the flow is the sport's, not an answer's. */
-  art?: 'option' | 'sport' | 'side' | 'verdict';
+  art?: ChoiceArt;
+  /** A question about the body: a chosen answer's figure nods rather than
+   * boinging (`PeekMascot`), and its emoji pops less. */
+  calm?: boolean;
   onChange: (next: string[]) => void;
-  /** Something said back about an answer, drawn straight under that answer
-   * (`reactAfter`) rather than under the whole list, where on a long list it
-   * landed below the fold and was never seen. */
-  reaction?: ReactNode;
-  reactAfter?: string | null;
 };
 
 /**
  * The answer list.
  *
- * Copied from the reference in structure, not in colour: a compact row, one
- * small filled glyph in the option's own hue on the left, label, and a check
- * disc pinned right. The row surface never changes — selection is carried
- * entirely by that disc turning violet, which is why the list stays calm as
- * you tap down it instead of lighting up like a control panel.
+ * Each answer is the kit's glass card (`OptionCard3D`): a colourful Fluent
+ * emoji at the leading edge (`FluentIcon`), the label, and a box for a
+ * question with several answers or a radio for one at the trailing edge. Two
+ * questions, who they are and what matters most, have Walkito peeking up over
+ * each card instead, in that answer's own colour (`PeekMascot`). Where the art
+ * means something it stays: the side question's pair of feet, the foot checks'
+ * verdict circles, the platforms' own logos. Selection is the kit's own, the
+ * same for every answer, so no answer looks like the one that earns something.
+ * A row pops once as it is picked, its emoji or figure answers the tap, and
+ * the coach in the corner nods (the page's, through `onChange`).
  */
 export function ChoiceStep({
   options,
   selected,
   multi,
   max,
-  art = 'option',
+  art = 'fluent',
+  calm = false,
   onChange,
-  reaction,
-  reactAfter,
 }: ChoiceStepProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
@@ -94,7 +118,7 @@ export function ChoiceStep({
    *
    * Dropping the oldest silently is worse than refusing the tap: the answer
    * the user made two taps ago disappears from a list they are not looking at,
-   * and the only evidence is a disc that quietly went grey somewhere above.
+   * and the only evidence is a box that quietly emptied somewhere above.
    * Saying which one left turns a glitch into a rule.
    *
    * The cap travels with the label rather than being read off `max` at render
@@ -109,8 +133,14 @@ export function ChoiceStep({
   const optionKey = options.map((o) => o.value).join('|');
   useEffect(() => setSwapped(null), [optionKey]);
 
-  const toggle = (value: string) => {
-    Haptics.selectionAsync();
+  /** The answer picked last: its figure is the one left breathing. */
+  const [lastPicked, setLastPicked] = useState<string | null>(null);
+  useEffect(() => setLastPicked(null), [optionKey]);
+
+  /** The card ticks on its own tap; a chip has no haptic of its own. */
+  const toggle = (value: string, haptic = true) => {
+    if (haptic) Haptics.selectionAsync();
+    if (!selected.includes(value)) setLastPicked(value);
     if (!multi) {
       onChange([value]);
       setSwapped(null);
@@ -142,6 +172,23 @@ export function ChoiceStep({
     setSwapped(label == null || max == null ? null : { label, cap: max });
   };
 
+  // What is at home: things rather than answers, so tiles to tap on and
+  // off, each in its own colour, with "none of these" exclusive as above.
+  if (art === 'kit') {
+    return (
+      <View style={styles.grid}>
+        {options.map((option) => (
+          <KitTile
+            key={option.value}
+            option={option}
+            selected={selected.includes(option.value)}
+            onPress={() => toggle(option.value)}
+          />
+        ))}
+      </View>
+    );
+  }
+
   // The sport question is the one with eight short, single-word answers.
   // Eight full-width rows run past the fold and turn a two-word choice into a
   // scroll, so it lays out as wrapping capsules instead — every option visible
@@ -163,20 +210,18 @@ export function ChoiceStep({
 
   return (
     <View style={styles.list}>
-      {options.map((option) => (
-        <Fragment key={option.value}>
-          {/* The rows under an arriving reaction slide down to make room
-              rather than jumping. */}
-          <Animated.View layout={LinearTransition.duration(240).reduceMotion(ReduceMotion.System)}>
-            <ChoiceRow
-              option={option}
-              selected={selected.includes(option.value)}
-              art={art}
-              onPress={() => toggle(option.value)}
-            />
-          </Animated.View>
-          {reaction != null && reactAfter === option.value && reaction}
-        </Fragment>
+      {options.map((option, index) => (
+        <ChoiceRow
+          key={option.value}
+          option={option}
+          index={index}
+          selected={selected.includes(option.value)}
+          live={option.value === lastPicked}
+          multi={multi}
+          art={art}
+          calm={calm}
+          onPress={() => toggle(option.value, false)}
+        />
       ))}
 
       {/* Under the list, in the caption colour: it reports what happened, it
@@ -195,8 +240,8 @@ export function ChoiceStep({
  *
  * No check disc: in a wrapped set the chips sit side by side, so a filled
  * outline reads as chosen at a glance and a per-chip tick would just add
- * clutter to something already unambiguous. The row form needs its disc
- * because full-width rows give the eye nothing to compare against.
+ * clutter to something already unambiguous. The row form needs its box or
+ * radio because full-width rows give the eye nothing to compare against.
  */
 function ChoiceChip({
   option,
@@ -271,99 +316,123 @@ function ChoiceChip({
   );
 }
 
+/**
+ * One answer, on the kit's card.
+ *
+ * The art is the answer's own: its Fluent emoji, bare at the leading edge with
+ * no tile behind it; a step's Hugeicons glyph and accent (the platforms they
+ * heard about the app on); the side question's pair of feet; the verdict
+ * circles on the foot checks. On the two `peek` questions there is no icon at
+ * all, only Walkito peeking in from the bottom edge.
+ */
 function ChoiceRow({
   option,
+  index,
   selected,
+  live,
+  multi,
   art: artKind,
+  calm,
   onPress,
 }: {
   option: ResolvedOption;
+  index: number;
   selected: boolean;
-  art: 'option' | 'sport' | 'side' | 'verdict';
+  live: boolean;
+  multi: boolean;
+  art: ChoiceArt;
+  calm: boolean;
   onPress: () => void;
 }) {
   const scheme = useColorScheme();
-  const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const reduceMotion = useReducedMotion();
+  const t = useT();
+  const badge = option.recommended === true ? t('onboarding.schedule.recommended') : null;
 
-  const map = artKind === 'sport' ? SPORT_ICONS : artKind === 'verdict' ? VERDICT_ICONS : OPTION_ICONS;
-  const art = map[option.value] ?? map.default;
-  const side = artKind === 'side' ? (option.value as FeetSide) : null;
-  const Glyph = art.icon;
+  // The pop plays on being picked, never on being let go or on arrival.
+  const pop = useSharedValue(1);
+  const emojiPop = useSharedValue(1);
+  const was = useRef(selected);
+  useEffect(() => {
+    if (selected && !was.current && !reduceMotion) {
+      pop.value = withSequence(
+        withTiming(0.97, { duration: 0 }),
+        withTiming(1.02, { duration: POP_IN_MS, easing: Easing.out(Easing.quad) }),
+        withTiming(1, { duration: POP_OUT_MS, easing: Easing.bezier(0.23, 1, 0.32, 1) }),
+      );
+      emojiPop.value = withSequence(
+        withTiming(calm ? EMOJI_POP.calm : EMOJI_POP.lively, {
+          duration: EMOJI_UP_MS,
+          easing: Easing.out(Easing.quad),
+        }),
+        withTiming(1, { duration: EMOJI_DOWN_MS, easing: Easing.bezier(0.23, 1, 0.32, 1) }),
+      );
+    }
+    was.current = selected;
+  }, [selected, reduceMotion, calm, pop, emojiPop]);
+  const popStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
+  const emojiStyle = useAnimatedStyle(() => ({ transform: [{ scale: emojiPop.value }] }));
 
-  const pressed = useSharedValue(0);
-  const chosen = useDerivedValue(
-    () =>
-      withTiming(selected ? 1 : 0, {
-        duration: SELECT_MS,
-        easing: Easing.bezier(0.23, 1, 0.32, 1),
-        reduceMotion: ReduceMotion.System,
-      }),
-    [selected],
-  );
+  const peeks = artKind === 'peek' && option.icon == null;
 
-  // Press feedback is a scale, not a colour change: the row's fill is doing
-  // one job already (surface) and the check disc is doing the other (state).
-  const rowStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: 1 - pressed.value * 0.02 }],
-  }));
-
-  const checkStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(
-      chosen.value,
-      [0, 1],
-      [IDLE_CHECK[scheme], PRIMARY],
-    ),
-  }));
+  const art = ((): ReactNode => {
+    // An option's own glyph is drawn by the card, on its tile.
+    if (option.icon != null || peeks) return undefined;
+    if (artKind === 'fluent') {
+      return option.emoji == null ? undefined : (
+        <Animated.View style={emojiStyle}>
+          <FluentIcon name={option.emoji} />
+        </Animated.View>
+      );
+    }
+    if (artKind === 'side') {
+      return (
+        <View style={[styles.tile, { backgroundColor: meter.iconTile }]}>
+          <FeetGlyph side={option.value as FeetSide} size={ICON + 4} active={PRIMARY} idle={IDLE_FOOT[scheme]} />
+        </View>
+      );
+    }
+    const map = artKind === 'sport' ? SPORT_ICONS : VERDICT_ICONS;
+    const glyph = map[option.value] ?? map.default;
+    const Glyph = glyph.icon;
+    // Weight "fill" and the answer's own hue: small, solid, colourful — an
+    // outline at this size disappears against the tile.
+    return (
+      <View style={[styles.tile, { backgroundColor: meter.iconTile }]}>
+        <Glyph size={ICON} color={glyph.color} weight={glyph.weight ?? 'fill'} />
+      </View>
+    );
+  })();
 
   return (
-    <Animated.View style={rowStyle}>
-      <Pressable
-        accessibilityRole="checkbox"
-        accessibilityState={{ selected }}
-        accessibilityLabel={option.label}
+    <Animated.View style={popStyle}>
+      <OptionCard3D
+        label={option.label}
+        caption={option.caption}
+        icon={option.icon}
+        accent={option.accent}
+        art={art}
+        peek={peeks ? <PeekMascot index={index} selected={selected} calm={calm} live={live} /> : undefined}
+        peekWidth={PEEK_WIDTH}
+        selected={selected}
+        mode={multi ? 'multi' : 'single'}
         onPress={onPress}
-        onPressIn={() => {
-          pressed.value = withTiming(1, { duration: PRESS_MS });
-        }}
-        onPressOut={() => {
-          pressed.value = withTiming(0, {
-            duration: PRESS_MS * 2,
-            easing: Easing.bezier(0.23, 1, 0.32, 1),
-          });
-        }}
-        style={[styles.row, { backgroundColor: colors.card }]}>
-        {/* Weight "fill" and the option's own hue: small, solid, colourful —
-            an outline at this size disappears against the row. */}
-        {side != null ? (
-          <FeetGlyph side={side} size={ICON + 4} active={PRIMARY} idle={IDLE_CHECK[scheme]} />
-        ) : (
-          <Glyph size={ICON} color={art.color} weight={art.weight ?? 'fill'} />
-        )}
-
-        {option.caption == null ? (
-          // Two lines at most: the safety check's answers are whole sentences,
-          // and an ellipsis there would hide the part that matters.
-          <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={2}>
-            {option.label}
-          </Text>
-        ) : (
-          // A qualifier under the label — "Recommended", "An easy start" —
-          // in the caption colour, so the row still reads as one choice.
-          <View style={styles.labels}>
-            <Text style={[styles.labelTight, { color: colors.foreground }]} numberOfLines={1}>
-              {option.label}
-            </Text>
-            <Text style={[styles.caption, { color: meter.caption }]} numberOfLines={1}>
-              {option.caption}
-            </Text>
-          </View>
-        )}
-
-        <Animated.View style={[styles.check, checkStyle]}>
-          <CheckCircle size={CHECK} color={colors.card} weight="bold" />
-        </Animated.View>
-      </Pressable>
+        // The badge stands outside the card, so the card says it too.
+        accessibilityLabel={
+          badge == null ? undefined : [option.label, option.caption, badge].filter((part) => part != null).join(', ')
+        }
+      />
+      {/* The recommended pick's badge, standing on the card's top edge. */}
+      {badge != null && (
+        <View
+          pointerEvents="none"
+          accessibilityElementsHidden
+          importantForAccessibility="no-hide-descendants"
+          style={styles.badge}>
+          <Badge label={badge} accent="orange" raised />
+        </View>
+      )}
     </Animated.View>
   );
 }
@@ -372,20 +441,29 @@ const styles = StyleSheet.create({
   list: {
     gap: 10,
   },
-  row: {
-    // A floor, not a height, so a two-line answer grows the row instead of
-    // being cut. One-line rows are exactly as tall as before.
-    minHeight: HEIGHT,
-    paddingVertical: 8,
+  /** Kit tiles, two to a row (`KitTile` sizes itself to half). Room above
+   * for a picked tile's lift. */
+  grid: {
     flexDirection: 'row',
-    alignItems: 'center',
+    flexWrap: 'wrap',
     gap: 12,
-    paddingLeft: 14,
-    paddingRight: 12,
-    borderRadius: RADIUS,
-    // Corner smoothing, per the reference — the squircle is what stops a 16pt
-    // radius reading as a plain rounded rect.
+    paddingTop: 6,
+  },
+  /** Half over the card's top edge, at its trailing end, clear of the card
+   * above it in the list's gap. */
+  badge: {
+    position: 'absolute',
+    top: -9,
+    right: 16,
+  },
+  /** The kit's icon tile, for art it draws as given. */
+  tile: {
+    width: TILE,
+    height: TILE,
+    borderRadius: 12,
     borderCurve: 'continuous',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   chips: {
     flexDirection: 'row',
@@ -407,31 +485,4 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   chipLabel: fonts.semibold(15, -0.2),
-  label: {
-    flex: 1,
-    ...fonts.semibold(16, -0.2),
-    lineHeight: 21,
-  },
-  labels: {
-    flex: 1,
-    gap: 1,
-  },
-  labelTight: {
-    ...fonts.semibold(16, -0.2),
-    lineHeight: 20,
-    includeFontPadding: false,
-  },
-  caption: {
-    ...fonts.medium(13),
-    lineHeight: 17,
-    includeFontPadding: false,
-  },
-  check: {
-    width: CHECK,
-    height: CHECK,
-    borderRadius: CHECK / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-  },
 });

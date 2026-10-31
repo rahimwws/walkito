@@ -29,7 +29,7 @@ export const EXERCISES_IT = {
   'exercises.ankleRocks.cue': 'Il ginocchio va oltre le dita, il tallone resta a terra.',
 
   // ── The loaded work ──────────────────────────────────────────────────────
-  'exercises.heelRaiseTowel.title': 'Sollevamenti sui talloni',
+  'exercises.heelRaiseTowel.title': 'Sollevamenti dei talloni',
   'exercises.heelRaiseTowel.rationale': 'In uno studio, sollevamenti lenti e con carico hanno alleviato il dolore prima del solo stretching.',
   'exercises.heelRaiseTowel.cue': 'Asciugamano sotto le dita. Senza, stai allenando solo il polpaccio.',
 
@@ -60,7 +60,7 @@ export const EXERCISES_IT = {
   'exercises.bandInversion.cue': 'Muovi il piede, non la gamba. Il ginocchio resta fermo.',
 
   'exercises.hipAbduction.title': 'Sollevamento laterale della gamba',
-  'exercises.hipAbduction.rationale': 'Un’anca che cede scarica il peso sull’arco.',
+  'exercises.hipAbduction.rationale': 'Un’anca più stabile rende più facile stare su una gamba.',
   'exercises.hipAbduction.cue': 'Sdraiati su un fianco. Solleva la gamba sopra, un po’ indietro, con la punta in avanti.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -79,27 +79,27 @@ export const EXERCISES_IT = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Rullo sotto il piede',
-  'exercises.footRoll.rationale': 'Far rotolare il piede calma il tessuto dopo che ha lavorato.',
+  'exercises.footRoll.rationale': 'Qualche minuto di rotolamento può dare sollievo alla pianta per un po’.',
   'exercises.footRoll.cue': 'Piano e con decisione. Se fai una smorfia, alleggerisci.',
 
   'exercises.barefootHome.title': 'A piedi nudi in casa',
   'exercises.barefootHome.rationale': 'Le ore a piedi nudi sono ore in cui il piede lavora.',
-  'exercises.barefootHome.cue': 'Solo in casa, su pavimenti piani, e aumenta poco alla volta.',
+  'exercises.barefootHome.cue': 'Solo in casa, su pavimenti piani, poco alla volta. Non finché il tallone fa male.',
 
   'exercises.breathingReset.title': 'Respirazione lenta',
   'exercises.breathingReset.rationale': 'Un minuto di respiro lento chiude bene la sessione.',
   'exercises.breathingReset.cue': 'Espira più a lungo di quanto inspiri. Tutto qui.',
 
   // ── The weekly plan's additions ──────────────────────────────────────────
-  'exercises.heelRaiseDouble.title': 'Sollevamenti sui talloni a due piedi',
+  'exercises.heelRaiseDouble.title': 'Sollevamenti dei talloni a due piedi',
   'exercises.heelRaiseDouble.rationale': 'I due piedi si dividono il carico mentre il polpaccio si risveglia.',
   'exercises.heelRaiseDouble.cue': 'Sali in verticale sopra gli alluci, poi scendi piano.',
 
-  'exercises.heelRaiseSeated.title': 'Sollevamenti sui talloni da seduto',
+  'exercises.heelRaiseSeated.title': 'Sollevamenti dei talloni da seduti',
   'exercises.heelRaiseSeated.rationale': 'Lavoro per il polpaccio quasi senza carico sul tallone.',
   'exercises.heelRaiseSeated.cue': 'Spingi con l’avampiede. Le mani sulle ginocchia aggiungono resistenza.',
 
-  'exercises.heelRaiseHold.title': 'Tenuta sui talloni sollevati',
+  'exercises.heelRaiseHold.title': 'Tenuta a talloni sollevati',
   'exercises.heelRaiseHold.rationale': 'Restare in alto carica il tendine senza rimbalzo.',
   'exercises.heelRaiseHold.cue': 'Sali, poi tieni la posizione in alto - non lasciarti ricadere.',
 
@@ -108,7 +108,7 @@ export const EXERCISES_IT = {
   'exercises.bigToeLift.cue': 'Solleva solo l’alluce. Le altre quattro dita restano a terra.',
 
   'exercises.towelScrunch.title': 'Raccogli l’asciugamano',
-  'exercises.towelScrunch.rationale': 'Risveglia i piccoli muscoli sotto l’arco.',
+  'exercises.towelScrunch.rationale': 'Allena la presa delle dita. Per l’arco fa di più il piede corto.',
   'exercises.towelScrunch.cue': 'Tira a te l’asciugamano con le dita. Il tallone resta giù.',
 
   'exercises.kneeToWall.title': 'Ginocchio al muro',
@@ -132,7 +132,7 @@ export const EXERCISES_IT = {
   'exercises.stepDown.cue': 'Il ginocchio segue le dita. Appoggia il tallone - non lasciarti cadere.',
 
   'exercises.soleMassage.title': 'Massaggio della pianta',
-  'exercises.soleMassage.rationale': 'Scioglie il tessuto dopo una lunga giornata.',
+  'exercises.soleMassage.rationale': 'Può dare sollievo alla pianta stanca dopo una lunga giornata.',
   'exercises.soleMassage.cue': 'Passate decise col pollice dal tallone alle dita. Alleggerisci dove senti fitte.',
 
   'exercises.pogoHops.title': 'Saltelli pogo',

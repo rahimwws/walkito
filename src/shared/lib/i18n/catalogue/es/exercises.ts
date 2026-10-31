@@ -43,12 +43,12 @@ export const EXERCISES_ES = {
     'La rodilla pasa por delante de los dedos y el talón no se despega del suelo.',
 
   // ── The loaded work ──────────────────────────────────────────────────────
-  'exercises.heelRaiseTowel.title': 'Elevación de talones',
-  'exercises.heelRaiseTowel.rationale': 'En un estudio, las elevaciones lentas con peso aliviaron el dolor antes que solo estirar.',
+  'exercises.heelRaiseTowel.title': 'Elevaciones de talón',
+  'exercises.heelRaiseTowel.rationale': 'En un ensayo, las elevaciones lentas con peso aliviaron el dolor antes que estirar solamente.',
   'exercises.heelRaiseTowel.cue':
     'Toalla bajo los dedos. Sin ella solo estás trabajando la pantorrilla.',
 
-  'exercises.heelRaisePlain.title': 'Elevación a una pierna',
+  'exercises.heelRaisePlain.title': 'Elevaciones a una pierna',
   'exercises.heelRaisePlain.rationale': 'La versión sencilla que mantiene la fuerza que has ganado.',
   'exercises.heelRaisePlain.cue':
     'Tres segundos al subir y tres al bajar. La velocidad es lo que lo vuelve inútil.',
@@ -57,7 +57,7 @@ export const EXERCISES_ES = {
   'exercises.shortFootSeated.title': 'Pie corto',
   'exercises.shortFootSeated.rationale': 'El músculo que sostiene tu arco está dentro del propio pie.',
   'exercises.shortFootSeated.cue':
-    'No dobles los dedos. Acerca la almohadilla del pie hacia el talón.',
+    'No dobles los dedos. Acerca la base de los dedos hacia el talón.',
 
   'exercises.shortFootDouble.title': 'Pie corto, de pie',
   'exercises.shortFootDouble.rationale': 'El mismo músculo, ahora sosteniendo tu peso.',
@@ -80,7 +80,7 @@ export const EXERCISES_ES = {
     'Mueve solo el pie contra la banda, no la pierna. La rodilla se queda quieta.',
 
   'exercises.hipAbduction.title': 'Elevación lateral de pierna',
-  'exercises.hipAbduction.rationale': 'Una cadera que cede deja la carga sobre el arco.',
+  'exercises.hipAbduction.rationale': 'Una cadera más estable facilita sostenerte sobre una pierna.',
   'exercises.hipAbduction.cue': 'Túmbate de lado. Sube la pierna de arriba, un poco hacia atrás, con la punta mirando al frente.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -101,12 +101,12 @@ export const EXERCISES_ES = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Automasaje plantar',
-  'exercises.footRoll.rationale': 'Rodar el pie calma el tejido después de trabajar.',
+  'exercises.footRoll.rationale': 'Unos minutos rodando el pie pueden aliviar la planta un rato.',
   'exercises.footRoll.cue': 'Despacio y con firmeza. Si haces muecas de dolor, afloja.',
 
   'exercises.barefootHome.title': 'Descalzo en casa',
   'exercises.barefootHome.rationale': 'Las horas descalzo son horas que el pie pasa trabajando.',
-  'exercises.barefootHome.cue': 'Solo en casa, sobre suelo liso, y ve aumentando poco a poco.',
+  'exercises.barefootHome.cue': 'Solo en casa, sobre suelo liso, y poco a poco. No mientras duela el talón.',
 
   'exercises.breathingReset.title': 'Respiración lenta',
   'exercises.breathingReset.rationale': 'Un minuto de respiración lenta cierra bien la sesión.',
@@ -114,11 +114,11 @@ export const EXERCISES_ES = {
 
   // ── The weekly plan's additions ──────────────────────────────────────────
   'exercises.heelRaiseDouble.title': 'Elevaciones de talón con dos pies',
-  'exercises.heelRaiseDouble.rationale': 'Los dos pies comparten la carga mientras el gemelo despierta.',
+  'exercises.heelRaiseDouble.rationale': 'Los dos pies comparten la carga mientras la pantorrilla se activa.',
   'exercises.heelRaiseDouble.cue': 'Sube recto sobre los dedos gordos y baja despacio.',
 
   'exercises.heelRaiseSeated.title': 'Elevaciones de talón sentado',
-  'exercises.heelRaiseSeated.rationale': 'Trabajo de gemelo casi sin carga en el talón.',
+  'exercises.heelRaiseSeated.rationale': 'Trabajo de pantorrilla casi sin carga en el talón.',
   'exercises.heelRaiseSeated.cue': 'Empuja con la parte delantera del pie. Las manos en las rodillas añaden resistencia.',
 
   'exercises.heelRaiseHold.title': 'Elevación de talón sostenida',
@@ -130,7 +130,7 @@ export const EXERCISES_ES = {
   'exercises.bigToeLift.cue': 'Levanta solo el dedo gordo. Los otros cuatro siguen apoyados.',
 
   'exercises.towelScrunch.title': 'Recoger la toalla',
-  'exercises.towelScrunch.rationale': 'Despierta los músculos pequeños bajo el arco.',
+  'exercises.towelScrunch.rationale': 'Trabaja el agarre de los dedos. El pie corto hace más por el arco.',
   'exercises.towelScrunch.cue': 'Atrae la toalla con los dedos. El talón no se levanta.',
 
   'exercises.kneeToWall.title': 'Rodilla a la pared',
@@ -142,8 +142,8 @@ export const EXERCISES_ES = {
   'exercises.balancePillow.cue': 'Ponte junto a una pared. Rodilla suelta, mirada al frente.',
 
   'exercises.heelDropStraight.title': 'Descensos de talón',
-  'exercises.heelDropStraight.rationale': 'Bajar despacio es lo que reconstruye el gemelo y el Aquiles.',
-  'exercises.heelDropStraight.cue': 'Sube con los dos pies y baja despacio con uno. Deja que el talón pase del escalón.',
+  'exercises.heelDropStraight.rationale': 'Bajar despacio es lo que fortalece la pantorrilla y el Aquiles.',
+  'exercises.heelDropStraight.cue': 'Sube con los dos pies y baja despacio con uno. Deja que el talón baje por debajo del escalón.',
 
   'exercises.tibialisRaise.title': 'Elevaciones de puntas',
   'exercises.tibialisRaise.rationale': 'Fortalece el músculo de la espinilla que estabiliza cada paso.',
@@ -154,11 +154,11 @@ export const EXERCISES_ES = {
   'exercises.stepDown.cue': 'La rodilla va sobre los dedos. Toca el suelo con el talón, sin dejarte caer.',
 
   'exercises.soleMassage.title': 'Masaje de planta',
-  'exercises.soleMassage.rationale': 'Suelta el tejido después de un día largo.',
-  'exercises.soleMassage.cue': 'Pasadas firmes con el pulgar del talón a los dedos. Afloja si algo duele agudo.',
+  'exercises.soleMassage.rationale': 'Puede aliviar la planta cansada después de un día largo.',
+  'exercises.soleMassage.cue': 'Pasadas firmes con el pulgar del talón a los dedos. Afloja si notas un dolor agudo.',
 
   'exercises.pogoHops.title': 'Saltos pogo',
-  'exercises.pogoHops.rationale': 'Enseña al pie a rebotar de nuevo, solo cuando el dolor ya no está.',
+  'exercises.pogoHops.rationale': 'Enseña al pie a rebotar de nuevo, solo cuando ya no haya dolor.',
   'exercises.pogoHops.cue': 'Saltos pequeños y rápidos con tobillos firmes. Para si duele el talón.',
 
   // ── The morning stretch ──────────────────────────────────────────────────

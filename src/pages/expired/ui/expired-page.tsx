@@ -1,5 +1,5 @@
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -14,8 +14,9 @@ import {
   planOn,
   purchases,
   startBrowsingLapsed,
+  usePassWindow,
   type Plan,
-  type PlanPeriod,
+  type PaywallPeriod,
   type Shelf,
 } from '@/entities/purchase';
 import { fonts, meterColors, palette } from '@/shared/config';
@@ -23,15 +24,17 @@ import { useT } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { formatPrice } from '@/shared/lib/money';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, premiumRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PlanOption } from '@/shared/ui/plan-option';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { useSplashRevealed } from '@/shared/ui/splash';
 import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 /**
  * A subscription that ended.
  *
  * Shown instead of the paywall to somebody who has paid before and no longer
- * does — a subscription cancelled or lapsed, or a legacy pass that ran out —
+ * does — a subscription cancelled or lapsed, or a 3-month pass that ran out —
  * and the distinction is the point: this person is not being pitched, they are
  * being shown what they did. Every number at the top is one they produced —
  * their first retest against their last, their first logged morning against
@@ -39,11 +42,20 @@ import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/s
  * marketing figure, and anything without two real readings behind it is left
  * out rather than filled in.
  *
- * Below it, the same two plans the paywall sells, described the same way and
- * with the same disclosure, then "Not now". That is a real door — it opens the
+ * Below it, the plans the standard offering sells (the annual first, then the
+ * monthly and lifetime ones, or Android's weekly one: whatever the store
+ * holds), each with the disclosure for it, then "Not now". That is a real door — it opens the
  * app read-only, so their own history is never held hostage to a renewal. Only
  * new sessions lock, which is enforced in the session player rather than here.
  */
+
+/** The mascot beside the title: the crown on, the key held up. */
+const FIGURE = 72;
+
+/** The plans under the annual one, in this order, when the offering has them. */
+const OTHERS: readonly PaywallPeriod[] = ['monthly', 'weekly', 'lifetime'];
+/** He holds the key out once, as the screen settles. */
+const PRESENT_MS = 650;
 
 type Props = {
   /** Called once access is restored, so the router can leave this screen. The
@@ -76,6 +88,17 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   // them while this screen is open, and re-deriving them on every render would
   // re-scan the whole log for nothing.
   const [summary] = useState<ProgramSummary>(() => programSummary());
+
+  /**
+   * What ended was a 3-month pass, which never was a subscription: the title
+   * and the button say "3 months" and "Keep going", never "subscription" or
+   * "renew". The pass's end is the evidence, since its days end last: a pass
+   * bought beside a subscription is queued behind it (`pass.ts`). The entity
+   * keeps no record of a subscription that has lapsed, so somebody who
+   * subscribed after a pass ran out reads the pass's words too.
+   */
+  const pass = usePassWindow();
+  const passEnded = pass.expiresAt != null && pass.expiresAt <= Date.now();
 
   // Never the win-back offering: that belongs to somebody who walked away
   // from a first purchase, and quoting it to a customer who has paid and
@@ -123,14 +146,38 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     return () => subscription.remove();
   }, [loaded]);
 
-  const annualPlan = planOn(shelf, 'annual');
-  const weeklyPlan = planOn(shelf, 'weekly');
-  const currency = annualPlan?.product.currencyCode ?? weeklyPlan?.product.currencyCode;
+  /** Each plan the standard offering holds, from the store. */
+  const plans: Readonly<Record<PaywallPeriod, Plan | null>> = {
+    annual: planOn(shelf, 'annual'),
+    monthly: planOn(shelf, 'monthly'),
+    weekly: planOn(shelf, 'weekly'),
+    lifetime: planOn(shelf, 'lifetime'),
+  };
+  const annualPlan = plans.annual;
+  const currency = annualPlan?.product.currencyCode ?? plans.weekly?.product.currencyCode;
   const money = (amount: number) => formatPrice(amount, currency);
 
-  const annualAmount = annualPlan?.product.price ?? PRINTED.annual;
-  const annualText = annualPlan?.product.display ?? money(PRINTED.annual);
-  const weeklyText = weeklyPlan?.product.display ?? money(PRINTED.weekly);
+  /**
+   * No store at all (a build without a usable key): the first line-up's
+   * printed figures hold the layout, as they always did. With a store, no
+   * figure is quoted until it has answered, so nobody sees a price the store
+   * would not charge.
+   */
+  const noStore = !purchases.configured;
+  /** A plan's billed amount, the store's own string, or null until there is one. */
+  const priceText = (kind: PaywallPeriod): string | null => {
+    const plan = plans[kind];
+    if (plan != null) return plan.priceString;
+    if (!noStore) return null;
+    if (kind === 'annual') return money(PRINTED.annual);
+    if (kind === 'weekly') return money(PRINTED.weekly);
+    return null;
+  };
+  const annualAmount = annualPlan?.product.price ?? (noStore ? PRINTED.annual : null);
+  const annualText = priceText('annual');
+  /** The plans offered under the annual one: whatever the offering holds (iOS
+   * sells monthly and lifetime, Android still weekly). */
+  const others = OTHERS.filter((kind) => priceText(kind) != null);
 
   /** The invite discount, from two store prices, or null — see the paywall. */
   const fullAnnual = shelf.standard?.annual ?? null;
@@ -140,17 +187,35 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
       : null;
 
   const annualMissing = loaded && annualPlan == null;
-  const weeklyMissing = loaded && weeklyPlan == null;
 
-  const [tier, setTier] = useState<PlanPeriod>('annual');
+  const [tier, setTier] = useState<PaywallPeriod>('annual');
   useEffect(() => {
     if (!loaded) return;
-    if (annualMissing && !weeklyMissing && tier === 'annual') setTier('weekly');
-    else if (weeklyMissing && !annualMissing && tier === 'weekly') setTier('annual');
-  }, [loaded, annualMissing, weeklyMissing, tier]);
+    // Never leave the selection on a plan that cannot be bought.
+    if (tier === 'annual' && annualMissing && others.length > 0) setTier(others[0]);
+    else if (tier !== 'annual' && plans[tier] == null && !annualMissing) setTier('annual');
+    // `plans` and `others` follow `shelf`.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded, annualMissing, tier, shelf]);
 
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
+
+  // The key held out once, as an invitation and nothing more; then he only
+  // breathes, and holds still while the store's own sheet is up. This screen
+  // is often the first at launch: under the splash he holds still and keeps
+  // his move until it has gone.
+  const mascot = useRef<MascotHandle>(null);
+  const revealed = useSplashRevealed();
+  const presented = useRef(false);
+  useEffect(() => {
+    if (presented.current || !revealed) return undefined;
+    const timer = setTimeout(() => {
+      presented.current = true;
+      mascot.current?.play('present');
+    }, PRESENT_MS);
+    return () => clearTimeout(timer);
+  }, [revealed]);
 
   const unlocked = () => {
     // Re-arm the read-only concession, so a *second* lapse meets this screen
@@ -164,7 +229,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     if (busy) return;
     setNotice(null);
 
-    const plan = tier === 'annual' ? annualPlan : weeklyPlan;
+    const plan = plans[tier];
     // No plan means the store never answered, or answered without this
     // package. Reporting a failed charge here would describe a transaction
     // that was never attempted.
@@ -243,7 +308,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     onDismiss?.();
   };
 
-  const select = (period: PlanPeriod) => {
+  const select = (period: PaywallPeriod) => {
     Haptics.selectionAsync();
     setTier(period);
   };
@@ -253,11 +318,40 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
    * while a real store has not answered. */
   const priced = (plan: Plan | null) => plan != null || !purchases.configured;
 
-  const disclosed: DisclosedPlan[] = [
-    ...(annualMissing || !priced(annualPlan) ? [] : [{ period: 'annual' as const, price: annualText }]),
-    ...(weeklyMissing || !priced(weeklyPlan) ? [] : [{ period: 'weekly' as const, price: weeklyText }]),
-  ];
-  const ctaPriced = priced(tier === 'annual' ? annualPlan : weeklyPlan);
+  const disclosed: DisclosedPlan[] = (['annual', ...others] as const).flatMap((kind) => {
+    const price = priceText(kind);
+    if (price == null || !priced(plans[kind]) || (kind === 'annual' && annualMissing)) return [];
+    return [{ period: kind, price }];
+  });
+  /** The line over the button, for the plan chosen: what it charges, and that
+   * it renews (or that it is one payment). */
+  const ctaLine = (() => {
+    const price = priceText(tier);
+    if (price == null || !priced(plans[tier])) return null;
+    switch (tier) {
+      case 'annual':
+        return t('offer.ctaAnnual', { price });
+      case 'monthly':
+        return t('offer.ctaMonthly', { price });
+      case 'weekly':
+        return t('offer.ctaWeekly', { price });
+      case 'lifetime':
+        return t('offer.ctaLifetime', { price });
+    }
+  })();
+  /** One plan under the annual one, as its row says it. */
+  const rowFor = (kind: PaywallPeriod, price: string) => {
+    switch (kind) {
+      case 'monthly':
+        return { title: t('offer.plans.monthly'), price: t('offer.monthlyPrice', { price }), note: t('offer.plans.monthlyNote') };
+      case 'weekly':
+        return { title: t('offer.weeklyTitle'), price: t('offer.weeklyPrice', { price }), note: t('offer.weeklyNote') };
+      case 'lifetime':
+        return { title: t('offer.plans.lifetime'), price: t('offer.lifetimePrice', { price }), note: t('offer.plans.lifetimeNote') };
+      case 'annual':
+        return { title: t('offer.annualTitle'), price: t('offer.annualPrice', { price }), note: undefined };
+    }
+  };
   const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
 
   return (
@@ -265,7 +359,21 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
       <ScrollView
         contentContainerStyle={[styles.scroll, { paddingTop: insets.top + 32, paddingBottom: 24 }]}
         showsVerticalScrollIndicator={false}>
-        <Text style={[styles.title, { color: meter.ink }]}>{t('pages.expired.title')}</Text>
+        <View style={styles.head}>
+          <Text style={[styles.title, styles.headTitle, { color: meter.ink }]}>
+            {passEnded ? t('pages.expired.titlePass') : t('pages.expired.title')}
+          </Text>
+          {/* Decoration: hidden from anyone listening. */}
+          <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.figure}>
+            <Mascot
+              ref={mascot}
+              rig={premiumRig}
+              size={FIGURE}
+              surface={colors.background}
+              paused={busy || !revealed}
+            />
+          </View>
+        </View>
         <Text style={[styles.lede, { color: meter.caption }]}>
           {summary.sessions > 0
             ? t('pages.expired.lede', { count: summary.sessions })
@@ -307,21 +415,31 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           <PlanOption
             title={t('offer.annualTitle')}
             badge={offerPct != null ? t('offer.badgeOff', { percent: offerPct }) : undefined}
-            price={t('offer.annualPrice', { price: annualText })}
+            // Blank until the store has answered: no figure it has not given.
+            price={annualText != null ? t('offer.annualPrice', { price: annualText }) : ''}
             was={offerPct != null && fullAnnual != null ? fullAnnual.product.display : undefined}
-            note={t('offer.annualNote', { perWeek: money(perWeek(annualAmount)) })}
+            note={
+              annualAmount != null
+                ? t('offer.annualNote', { perWeek: annualPlan?.pricePerWeekString ?? money(perWeek(annualAmount)) })
+                : undefined
+            }
             disabled={annualMissing}
             selected={tier === 'annual' && !annualMissing}
             onPress={() => select('annual')}
           />
-          <PlanOption
-            title={t('offer.weeklyTitle')}
-            price={t('offer.weeklyPrice', { price: weeklyText })}
-            note={t('offer.weeklyNote')}
-            disabled={weeklyMissing}
-            selected={tier === 'weekly' && !weeklyMissing}
-            onPress={() => select('weekly')}
-          />
+          {others.map((kind) => {
+            const row = rowFor(kind, priceText(kind) ?? '');
+            return (
+              <PlanOption
+                key={kind}
+                title={row.title}
+                price={row.price}
+                note={row.note}
+                selected={tier === kind}
+                onPress={() => select(kind)}
+              />
+            );
+          })}
         </View>
 
         <SubscriptionTerms plans={disclosed} style={styles.terms} />
@@ -331,16 +449,12 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
         {shownNotice != null ? (
           <Text style={[styles.notice, { color: meter.label }]}>{shownNotice}</Text>
         ) : null}
-        {ctaPriced ? (
-          <Text style={[styles.ctaTerms, { color: meter.label }]}>
-            {tier === 'annual'
-              ? t('offer.ctaAnnual', { price: annualText })
-              : t('offer.ctaWeekly', { price: weeklyText })}
-          </Text>
-        ) : null}
+        {ctaLine != null ? <Text style={[styles.ctaTerms, { color: meter.label }]}>{ctaLine}</Text> : null}
 
         <PrimaryButton
-          label={busy ? t('pages.expired.busy') : t('pages.expired.renew')}
+          label={
+            busy ? t('pages.expired.busy') : passEnded ? t('pages.expired.keepGoing') : t('pages.expired.renew')
+          }
           onPress={() => void buy()}
           disabled={busy}
         />
@@ -392,6 +506,10 @@ function Change({
 const styles = StyleSheet.create({
   host: { flex: 1 },
   scroll: { paddingHorizontal: 24, gap: 8 },
+  /** The title and the mascot beside it. */
+  head: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  headTitle: { flex: 1 },
+  figure: { width: FIGURE, height: FIGURE },
   title: { ...fonts.heavy(30, -0.8), lineHeight: 34 },
   lede: fonts.medium(15, -0.2),
   card: { marginTop: 20, borderRadius: 20, padding: 20, gap: 18 },

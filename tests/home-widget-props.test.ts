@@ -1,10 +1,11 @@
 import { describe, expect, mock, test } from 'bun:test';
 
-import { NO_SIGNALS } from '../src/entities/health/model/metrics';
+import { NO_SIGNALS, todayHealthInputs } from '../src/entities/health/model/metrics';
 
 // The health slice's public API pulls in the HealthKit bridge and React
-// Native, which bun cannot load. The widget only reads the cached signals.
-mock.module('@/entities/health', () => ({ healthSignals: () => NO_SIGNALS }));
+// Native, which bun cannot load. The widget only reads the cached signals and
+// the plan inputs drawn from them.
+mock.module('@/entities/health', () => ({ healthSignals: () => NO_SIGNALS, todayHealthInputs }));
 
 const { buildWidgetProps } = await import('../src/features/home-widget/model/props');
 const { weekPlan } = await import('../src/entities/program');

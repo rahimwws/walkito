@@ -3,21 +3,20 @@ import { useEffect, useRef, useState } from 'react';
 import { Image, StyleSheet, View, type ImageSourcePropType } from 'react-native';
 import Animated, {
   Easing,
+  ReduceMotion,
   useAnimatedStyle,
   useReducedMotion,
   useSharedValue,
   withDelay,
-  withRepeat,
   withSequence,
   withTiming,
+  type SharedValue,
 } from 'react-native-reanimated';
 
-import { meterColors } from '@/shared/config';
+import { accents, meterColors, type AccentName } from '@/shared/config';
 import { settle } from '@/shared/lib/motion';
 import { useColorScheme } from '@/shared/lib/theme';
-
-/** The mascot mid-stride, cut out: 120 px for a 40 pt slot at 3x. */
-const RUNNER = require('@assets/onboarding/mascot-run.webp');
+import { MascotStill, runningRig, walkingRig } from '@/shared/ui/mascot';
 
 /**
  * What waits at the start of each part of the flow, and at the end: the same
@@ -37,11 +36,29 @@ const FILL = 'linear-gradient(90deg, #7C5CFF 0%, #A47BFF 55%, #E879F9 100%)';
 
 const BAR = 8;
 const ROOT = 30;
-const RUNNER_SIZE = 30;
+const RUNNER_SIZE = 28;
 const ART = 22;
 const RUN_MS = 640;
-const STRIDE_MS = 110;
+/** One hop as he sets off: up, and down again. */
+const HOP_MS = 110;
+const HOP = 6;
 const SHINE = 46;
+
+/** A part of the flow reached: the art swells and settles, and six dots fly
+ * off it and fade. Half a second at most, and nothing waits for it. */
+const POP_UP_MS = 120;
+const POP_DOWN_MS = 200;
+const BURST_MS = 420;
+/** The dots, round the clock from the right: which accent, how far (pt). */
+const DOTS: readonly { accent: AccentName; reach: number }[] = [
+  { accent: 'violet', reach: 14 },
+  { accent: 'teal', reach: 11 },
+  { accent: 'amber', reach: 16 },
+  { accent: 'orange', reach: 12 },
+  { accent: 'blue', reach: 15 },
+  { accent: 'teal', reach: 10 },
+];
+const DOT = 4;
 
 export type StepProgressProps = {
   /** 0-based index of the current step. */
@@ -49,6 +66,8 @@ export type StepProgressProps = {
   count: number;
   /** Where each new part of the flow starts, as a share of the bar (0–1). */
   checkpoints: readonly number[];
+  /** Somebody who runs: he runs along the bar. Everyone else, he walks. */
+  runner: boolean;
 };
 
 /**
@@ -56,15 +75,18 @@ export type StepProgressProps = {
  *
  * One bar that creeps, never a segment per question (segments invite
  * counting). It fills in the brand gradient, and a glint runs along the fill
- * each time it grows. The mascot runs over it to wherever it has reached:
- * forward he hops a few strides leaning in; back, he turns and runs the other
- * way. At the start of each part waits a piece of 3D art, faint until he gets
- * there and then lit, with a tap; the star at the end is the plan.
+ * each time it grows. The mascot goes over it to wherever it has reached,
+ * running for a runner and walking for everyone else: forward he hops once as
+ * he sets off; back, he turns and goes the other way. At the start of each
+ * part waits a piece of 3D art, faint until he gets there and then lit, with
+ * a tap and a small burst of dots; the star at the end is the plan.
  *
- * Every move plays once and ends still: no loop, no overshoot. With Reduce
- * Motion he moves without the hops and nothing glints.
+ * He is the still drawing, not the live rig: the coach in the corner is the
+ * one that moves, and two idle loops on one screen would be one too many.
+ * Every move plays once and ends still: no loop. With Reduce Motion he moves
+ * without the hop, nothing glints, and a part reached only flashes.
  */
-export function StepProgress({ index, count, checkpoints }: StepProgressProps) {
+export function StepProgress({ index, count, checkpoints, runner }: StepProgressProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const reduceMotion = useReducedMotion();
@@ -75,43 +97,40 @@ export function StepProgress({ index, count, checkpoints }: StepProgressProps) {
   const fill = useSharedValue(progress);
   const x = useSharedValue(progress);
   const hop = useSharedValue(0);
-  const lean = useSharedValue(0);
   const facing = useSharedValue(1);
   const shine = useSharedValue(-1);
   const last = useRef(progress);
 
   useEffect(() => {
-    const forward = progress >= last.current;
+    if (progress === last.current) return;
+    const forward = progress > last.current;
     last.current = progress;
     fill.value = settle(progress, RUN_MS);
     x.value = settle(progress, RUN_MS);
     facing.value = forward ? 1 : -1;
-    if (reduceMotion) return;
-    if (forward) {
-      shine.value = -1;
-      shine.value = withDelay(RUN_MS - 120, withTiming(1, { duration: 620, easing: Easing.inOut(Easing.quad) }));
-    }
-    const strides = Math.max(2, Math.round(RUN_MS / (STRIDE_MS * 2)));
-    hop.value = withRepeat(
-      withSequence(
-        withTiming(1, { duration: STRIDE_MS, easing: Easing.out(Easing.quad) }),
-        withTiming(0, { duration: STRIDE_MS, easing: Easing.in(Easing.quad) }),
-      ),
-      strides,
+    if (reduceMotion || !forward) return;
+    shine.value = -1;
+    shine.value = withDelay(RUN_MS - 120, withTiming(1, { duration: 620, easing: Easing.inOut(Easing.quad) }));
+    hop.value = withSequence(
+      withTiming(1, { duration: HOP_MS, easing: Easing.out(Easing.quad) }),
+      withTiming(0, { duration: HOP_MS, easing: Easing.in(Easing.quad) }),
     );
-    lean.value = withSequence(
-      withTiming(1, { duration: 160, easing: Easing.out(Easing.quad) }),
-      withTiming(1, { duration: RUN_MS - 320 }),
-      settle(0, 260),
-    );
-  }, [progress, reduceMotion, fill, x, hop, lean, facing, shine]);
+  }, [progress, reduceMotion, fill, x, hop, facing, shine]);
 
   const passed = checkpoints.filter((at) => progress >= at).length + (progress >= 1 ? 1 : 0);
   const lastPassed = useRef(passed);
+  /** The part just reached, and a count that only grows, so reaching the same
+   * one again (back, then forward) bursts again. The star at the end only
+   * lights: it is the end of the questions, not the start of a part. */
+  const [burst, setBurst] = useState<{ at: number; n: number } | null>(null);
   useEffect(() => {
-    if (passed > lastPassed.current) void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    if (passed > lastPassed.current) {
+      void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      const at = passed - 1;
+      if (at < checkpoints.length) setBurst((prev) => ({ at, n: (prev?.n ?? 0) + 1 }));
+    }
     lastPassed.current = passed;
-  }, [passed]);
+  }, [passed, checkpoints.length]);
 
   const fillStyle = useAnimatedStyle(() => ({ transform: [{ scaleX: fill.value }] }));
   // The glint crosses the filled part only, from its start to its end.
@@ -122,8 +141,7 @@ export function StepProgress({ index, count, checkpoints }: StepProgressProps) {
   const runnerStyle = useAnimatedStyle(() => ({
     transform: [
       { translateX: x.value * width - RUNNER_SIZE / 2 },
-      { translateY: -hop.value * 5 },
-      { rotate: `${lean.value * 7 * facing.value}deg` },
+      { translateY: -hop.value * HOP },
       { scaleX: facing.value },
     ],
   }));
@@ -142,14 +160,15 @@ export function StepProgress({ index, count, checkpoints }: StepProgressProps) {
             art={CHECKPOINT_ART[i] ?? CHECKPOINT_ART[CHECKPOINT_ART.length - 1]}
             left={at * width - ART / 2}
             lit={progress >= at}
+            burst={burst?.at === i ? burst.n : 0}
           />
         ))}
 
       {width > 0 && <Checkpoint art={FINISH_ART} left={width - ART + 4} lit={progress >= 1} size={ART + 4} />}
 
       {width > 0 && (
-        <Animated.View pointerEvents="none" style={[styles.runner, runnerStyle]}>
-          <Image source={RUNNER} style={styles.fillImage} resizeMode="contain" accessibilityElementsHidden />
+        <Animated.View pointerEvents="none" accessibilityElementsHidden style={[styles.runner, runnerStyle]}>
+          <MascotStill rig={runner ? runningRig : walkingRig} size={RUNNER_SIZE} />
         </Animated.View>
       )}
     </View>
@@ -157,23 +176,89 @@ export function StepProgress({ index, count, checkpoints }: StepProgressProps) {
 }
 
 /** One piece of art on the bar: faint and small ahead of the runner, then lit
- * and full size once he reaches it, on the settle curve. */
-function Checkpoint({ art, left, lit, size = ART }: { art: ImageSourcePropType; left: number; lit: boolean; size?: number }) {
+ * and full size once he reaches it, on the settle curve. `burst` counts the
+ * times he has reached it going forward; each new count swells it and throws
+ * the dots. */
+function Checkpoint({
+  art,
+  left,
+  lit,
+  size = ART,
+  burst = 0,
+}: {
+  art: ImageSourcePropType;
+  left: number;
+  lit: boolean;
+  size?: number;
+  burst?: number;
+}) {
+  const reduceMotion = useReducedMotion();
   const on = useSharedValue(lit ? 1 : 0);
+  const pop = useSharedValue(1);
+  const flash = useSharedValue(1);
   useEffect(() => {
     on.value = settle(lit ? 1 : 0, 420);
   }, [lit, on]);
+  useEffect(() => {
+    if (burst === 0) return;
+    if (reduceMotion) {
+      // A flash, and nothing that moves.
+      flash.value = withSequence(
+        withTiming(0.35, { duration: 100, reduceMotion: ReduceMotion.Never }),
+        withTiming(1, { duration: 220, reduceMotion: ReduceMotion.Never }),
+      );
+      return;
+    }
+    pop.value = withSequence(
+      withTiming(1.3, { duration: POP_UP_MS, easing: Easing.out(Easing.quad) }),
+      settle(1, POP_DOWN_MS),
+    );
+  }, [burst, reduceMotion, pop, flash]);
   const style = useAnimatedStyle(() => ({
-    opacity: 0.5 + on.value * 0.5,
-    transform: [{ scale: 0.78 + on.value * 0.22 }],
+    opacity: (0.5 + on.value * 0.5) * flash.value,
+    transform: [{ scale: (0.78 + on.value * 0.22) * pop.value }],
   }));
   return (
-    <Animated.View
+    <View
       pointerEvents="none"
-      style={[styles.checkpoint, { left, width: size, height: size, top: ROOT / 2 - size / 2 }, style]}>
-      <Image source={art} style={styles.fillImage} resizeMode="contain" accessibilityElementsHidden />
-    </Animated.View>
+      style={[styles.checkpoint, { left, width: size, height: size, top: ROOT / 2 - size / 2 }]}>
+      <Animated.View style={[styles.fillImage, style]}>
+        <Image source={art} style={styles.fillImage} resizeMode="contain" accessibilityElementsHidden />
+      </Animated.View>
+      {burst > 0 && !reduceMotion && <Burst key={burst} />}
+    </View>
   );
+}
+
+/** Six dots thrown off a part reached. Played once on mount, then gone to
+ * nothing; the next burst is a fresh one (keyed by its count). */
+function Burst() {
+  const scheme = useColorScheme();
+  const t = useSharedValue(0);
+  useEffect(() => {
+    t.value = withTiming(1, { duration: BURST_MS, easing: Easing.out(Easing.quad) });
+  }, [t]);
+  return (
+    <View style={styles.burst}>
+      {DOTS.map((dot, i) => (
+        <BurstDot
+          key={i}
+          t={t}
+          angle={(i / DOTS.length) * Math.PI * 2}
+          reach={dot.reach}
+          color={accents[scheme][dot.accent].fill}
+        />
+      ))}
+    </View>
+  );
+}
+
+function BurstDot({ t, angle, reach, color }: { t: SharedValue<number>; angle: number; reach: number; color: string }) {
+  const style = useAnimatedStyle(() => ({
+    opacity: 1 - t.value,
+    transform: [{ translateX: Math.cos(angle) * reach * t.value }, { translateY: Math.sin(angle) * reach * t.value }],
+  }));
+  return <Animated.View style={[styles.dot, { backgroundColor: color }, style]} />;
 }
 
 const styles = StyleSheet.create({
@@ -203,6 +288,20 @@ const styles = StyleSheet.create({
   },
   checkpoint: {
     position: 'absolute',
+  },
+  /** The dots start at the art's centre. */
+  burst: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+  },
+  dot: {
+    position: 'absolute',
+    left: -DOT / 2,
+    top: -DOT / 2,
+    width: DOT,
+    height: DOT,
+    borderRadius: DOT / 2,
   },
   runner: {
     position: 'absolute',

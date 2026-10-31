@@ -30,8 +30,8 @@ import {
   resolveMaintenanceDay,
 } from '@/entities/program/model/maintenance';
 import { retestBranch } from '@/entities/program/model/program';
-import { attended } from '@/entities/program/model/streak';
-import { dayNumberFor, writeLog, type ProgramState } from '@/entities/program/model/state';
+import { attended, setStreakCutover } from '@/entities/program/model/streak';
+import { dateKeyForDay, dayNumberFor, writeLog, type ProgramState } from '@/entities/program/model/state';
 
 /** A day resolved with nothing adapting it, so each test varies one thing. */
 function input(overrides: Partial<ResolveInput> & { dayNumber: number }): ResolveInput {
@@ -282,10 +282,19 @@ describe('13 — the streak counts attention', () => {
 });
 
 describe('14 — rest the app assigned cannot be held against you', () => {
-  test('a system-assigned rest day is green with nothing logged', () => {
-    // Day 21 is the seventh slot of week three: a recovery day, and far enough
-    // out that the seeded history has not written anything on it.
+  // Day 21 is the seventh slot of week three: a recovery day, and far enough
+  // out that the seeded history has not written anything on it.
+  test('before the cutover, a system-assigned rest day is green with nothing logged', () => {
     expect(kindFor(21)).toBe('recovery');
+    setStreakCutover(dateKeyForDay(22));
     expect(attended(21)).toBe(true);
+  });
+
+  test('from the cutover, a rest day asks for a check-in, and one is enough', () => {
+    setStreakCutover(dateKeyForDay(21));
+    expect(attended(21)).toBe(false);
+    writeLog(21, { painMorning: 0, sessionCompleted: false });
+    expect(attended(21)).toBe(true);
+    setStreakCutover(null);
   });
 });

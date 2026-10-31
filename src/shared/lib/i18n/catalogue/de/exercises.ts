@@ -60,7 +60,7 @@ export const EXERCISES_DE = {
   'exercises.bandInversion.cue': 'Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig.',
 
   'exercises.hipAbduction.title': 'Seitliches Beinheben',
-  'exercises.hipAbduction.rationale': 'Eine Hüfte, die nachgibt, lädt die Last auf das Gewölbe ab.',
+  'exercises.hipAbduction.rationale': 'Eine stabilere Hüfte macht den Stand auf einem Bein leichter.',
   'exercises.hipAbduction.cue': 'Leg dich auf die Seite. Heb das obere Bein hoch und leicht nach hinten, Zehen zeigen nach vorn.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
@@ -79,12 +79,12 @@ export const EXERCISES_DE = {
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Fuß rollen',
-  'exercises.footRoll.rationale': 'Rollen beruhigt das Gewebe, nachdem es gearbeitet hat.',
+  'exercises.footRoll.rationale': 'Ein paar Minuten Rollen können die Sohle eine Weile entlasten.',
   'exercises.footRoll.cue': 'Langsam und fest. Wenn du das Gesicht verziehst, nimm Druck raus.',
 
   'exercises.barefootHome.title': 'Barfuß zu Hause',
   'exercises.barefootHome.rationale': 'Jede Stunde barfuß ist eine Stunde, in der der Fuß arbeitet.',
-  'exercises.barefootHome.cue': 'Nur drinnen, auf ebenem Boden, und langsam steigern.',
+  'exercises.barefootHome.cue': 'Nur drinnen, auf ebenem Boden, langsam steigern. Nicht, solange die Ferse schmerzt.',
 
   'exercises.breathingReset.title': 'Ruhig atmen',
   'exercises.breathingReset.rationale': 'Eine Minute langsames Atmen schließt die Einheit richtig ab.',
@@ -108,7 +108,7 @@ export const EXERCISES_DE = {
   'exercises.bigToeLift.cue': 'Heb nur den großen Zeh. Die anderen vier bleiben flach am Boden.',
 
   'exercises.towelScrunch.title': 'Handtuch greifen',
-  'exercises.towelScrunch.rationale': 'Weckt die kleinen Muskeln unter dem Gewölbe.',
+  'exercises.towelScrunch.rationale': 'Trainiert den Griff der Zehen. Für das Gewölbe selbst bringt der kurze Fuß mehr.',
   'exercises.towelScrunch.cue': 'Zieh das Handtuch mit den Zehen zu dir. Die Ferse bleibt unten.',
 
   'exercises.kneeToWall.title': 'Knie zur Wand',
@@ -132,7 +132,7 @@ export const EXERCISES_DE = {
   'exercises.stepDown.cue': 'Das Knie bleibt über den Zehen. Tipp die Ferse ab - nicht fallen lassen.',
 
   'exercises.soleMassage.title': 'Fußsohlen-Massage',
-  'exercises.soleMassage.rationale': 'Lockert das Gewebe nach einem langen Tag.',
+  'exercises.soleMassage.rationale': 'Kann eine müde Sohle nach einem langen Tag entlasten.',
   'exercises.soleMassage.cue': 'Feste Daumenstriche von der Ferse zu den Zehen. Bei Stechendem nachlassen.',
 
   'exercises.pogoHops.title': 'Pogo-Sprünge',

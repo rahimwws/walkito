@@ -15,6 +15,15 @@ import { PLAYER_FR } from './player';
 import { TESTDAY_FR } from './testday';
 import { WIDGET_FR } from './widget';
 import { UPDATE_FR } from './update';
+import { DONE_FR } from './done';
+import { STREAKS_FR } from './streaks';
+import { STICKERS_FR } from './stickers';
+import { RECAP_FR } from './recap';
+import { HOME_OFFER_FR } from './home-offer';
+import { CANCEL_FR } from './cancel';
+import { PASS_FR } from './pass';
+import { COMMUNITY_FR } from './community';
+import { INSIGHTS_FR } from './insights';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -40,4 +49,13 @@ export const fr: CatalogueFor<'fr'> = {
   ...PLAYER_FR,
   ...TESTDAY_FR,
   ...UPDATE_FR,
+  ...DONE_FR,
+  ...STREAKS_FR,
+  ...STICKERS_FR,
+  ...RECAP_FR,
+  ...HOME_OFFER_FR,
+  ...CANCEL_FR,
+  ...PASS_FR,
+  ...COMMUNITY_FR,
+  ...INSIGHTS_FR,
 };

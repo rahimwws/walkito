@@ -4,3 +4,17 @@
 
 [functions.site-subscribe]
 verify_jwt = false
+
+# RevenueCat calls it with no Supabase JWT; it checks REVENUECAT_WEBHOOK_AUTH
+# itself when set, and grants only what RevenueCat's API confirms.
+[functions.revenuecat-webhook]
+verify_jwt = false
+
+# Called by the app with the signed-in (or anonymous) user's token.
+[functions.pass-sync]
+verify_jwt = true
+
+# Apple's Retention Messaging calls it with no Supabase JWT; it checks Apple's
+# own signature on the request instead.
+[functions.retention-message]
+verify_jwt = false

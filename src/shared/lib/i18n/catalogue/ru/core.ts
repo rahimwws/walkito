@@ -7,7 +7,7 @@
  * covers 2, 3, 4, 22, 23, 24, and without it the app renders "2 дней".
  *
  * Sentences are rewritten rather than transposed. `streak.title` is the
- * clearest case: English's "3 Days Streak" has no Russian word order, so the
+ * clearest case: English's "3-day streak" has no Russian word order, so the
  * idiom Russians actually use for a streak — "{count} дней подряд", days in a
  * row — is what is written, and the fact that it shares no structure with the
  * English is the point of holding whole templates per language.
@@ -46,11 +46,11 @@ export const CORE_RU = {
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Ваш план',
   'settings.outcome': 'Ваша цель',
-  'settings.outcome.painfree': 'Без боли',
-  'settings.outcome.flat_feet': 'Плоскостопие',
+  'settings.outcome.painfree': 'Меньше боли',
+  'settings.outcome.flat_feet': 'Крепкие своды стоп',
   'settings.outcome.stronger': 'Сильные ноги',
   'settings.outcome.injury_free': 'Крепкие ноги',
-  'settings.outcome.stable_ankles': 'Устойчивые лодыжки',
+  'settings.outcome.stable_ankles': 'Устойчивый голеностоп',
   'settings.outcome.jump_higher': 'Прыгать выше',
   'settings.outcome.race_ready': 'К забегу',
   'settings.outcome.all_day': 'Весь день на ногах',
@@ -69,6 +69,9 @@ export const CORE_RU = {
   'settings.sound.tempoHint': 'Голос объясняет каждое упражнение в начале, плюс ритм для медленных повторов.',
   'settings.sound.voice': 'Голосовой счёт',
   'settings.sound.voiceHint': 'Говорит «вверх, два, три, держим, вниз» вместо сигналов.',
+  'settings.notifications.title': 'Уведомления',
+  'settings.notifications.offers': 'Акции и скидки',
+  'settings.notifications.offersHint': 'Иногда, когда Walkito Plus дешевле обычного.',
   'settings.equipment': 'Что есть дома',
   'settings.equipment.step': 'Ступенька',
   'settings.equipment.band': 'Эспандер-лента',
@@ -93,7 +96,7 @@ export const CORE_RU = {
   'streak.milestoneBlurb': 'Каждый из этих дней засчитан.',
   'streak.milestoneBigBlurb': 'Десять дней. Здесь привычка начинает держаться.',
   'streak.rule':
-    'День засчитан, если вы отметили боль, провели сессию, прошли комплекс из библиотеки или план сам назначил отдых.',
+    'День засчитан, если вы отметили боль, провели занятие или прошли комплекс из библиотеки. В день отдыха достаточно отметить боль.',
   'streak.total': {
     one: 'Всего {count} день.',
     few: 'Всего {count} дня.',
@@ -156,9 +159,9 @@ export const CORE_RU = {
   'card.getStarted': 'Начать',
   'card.last7Days': 'Последние 7 дней',
   'band.excellent': 'Отлично',
-  'band.strong': 'Сильно',
-  'band.steady': 'Ровно',
-  'band.building': 'Набираете',
+  'band.strong': 'Хорошо',
+  'band.steady': 'Стабильно',
+  'band.building': 'Набираем форму',
 
   // ── Quick actions (long-press the app icon) ────────────────────────────────
   'purchase.unavailable': 'Этот план сейчас недоступен.',
@@ -176,26 +179,30 @@ export const CORE_RU = {
 
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'В этой сборке нет сервера аккаунтов. Войдите через Apple.',
+  'auth.noServer': 'В этой сборке нет сервера аккаунтов.',
   'auth.missingFields': 'Введите и почту, и пароль.',
   'auth.invalidCredentials': 'Почта и пароль не совпадают.',
   'auth.notConfirmed':
     'Аккаунт ещё не подтверждён. Подтвердите адрес почты и попробуйте снова.',
   'auth.banned': 'Этот аккаунт отключён.',
-  'auth.providerDisabled': 'Вход по почте в этом приложении выключен. Войдите через Apple.',
+  'auth.providerDisabled': 'Вход по почте в этом приложении выключен.',
   'auth.rateLimited': 'Слишком много попыток. Подождите минуту и попробуйте снова.',
   'auth.badEmail': 'Это не похоже на адрес почты.',
   'auth.noAccount': 'Аккаунт не вернулся.',
   'auth.generic': 'Не получилось.',
   'auth.unreachable': 'Сервер недоступен.',
+  'auth.badCode': 'Код не подошёл. Проверьте его или отправьте новый.',
+  'auth.codeRateLimited': 'Код только что отправлен. Подождите минуту, прежде чем просить новый.',
+  'auth.emailUndeliverable': 'Сейчас не получилось отправить письмо. Попробуйте чуть позже.',
+  'auth.noAccountForEmail': 'Аккаунта с этой почтой нет.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, вы прошли программу.',
   'maintenance.through': 'Вы прошли программу.',
-  'maintenance.calfGain': '{opening} Икра выросла ↗ с {before} до {after}.',
-  'maintenance.relapse': 'Примерно половина людей теряет результат в течение пяти лет.',
-  'maintenance.staying': 'Две сессии в неделю - то, что оставляет вас во второй половине.',
-  'maintenance.regression': 'Показатели просели. Пройти блок «{block}» ещё раз?',
+  'maintenance.calfGain': '{opening} Подъёмы на носки: ↗ с {before} до {after}.',
+  'maintenance.relapse': 'Боль в пятке часто держится или возвращается: примерно у половины людей симптомы есть и через пять лет.',
+  'maintenance.staying': 'Два занятия в неделю помогают сохранить результат.',
+  'maintenance.regression': 'Показатели просели. Повторить неделю с фокусом «{block}»?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   // Отглагольные существительные, а не императивы: это названия этапов плана,

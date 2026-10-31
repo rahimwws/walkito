@@ -29,8 +29,9 @@ export const PROFILE_DE = {
   'profile.deleteSubscriptionAndroid':
     'Wenn du dein Konto löschst, wird dein Abo nicht gekündigt. Es wird über Google Play abgerechnet und verlängert sich, bis du es dort kündigst.',
   'profile.manageSubscription': 'Abo verwalten',
+  'profile.deletePass': 'Dein 3-Monats-Pass ist in diesem Konto gespeichert und endet, wenn du das Konto löschst.',
   'profile.deleteLocalOnly':
-    'Deine Daten wurden von diesem Gerät entfernt, aber der Server war nicht erreichbar. Öffne die App mit Verbindung erneut, um es abzuschließen, oder schreib dem Support.',
+    'Deine Daten wurden von diesem Gerät entfernt, aber der Server war nicht erreichbar. Öffne die App erneut, wenn du online bist, um das Löschen abzuschließen, oder schreib dem Support.',
   'profile.deleteConfirm': 'Alles löschen',
   'profile.deleting': 'Wird gelöscht…',
   'profile.keepAccount': 'Konto behalten',

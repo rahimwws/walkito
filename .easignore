@@ -94,3 +94,6 @@ assets/exercises/
 /.agents/
 /.expo-code-review/
 /supabase/
+
+# Local store builds
+.builds/

@@ -16,11 +16,11 @@ export const QUICK_IT = {
   'quick.preRun.cue': 'Sveglia il piede. Non tenere gli allungamenti a lungo.',
   'quick.postRun.cue': 'Tieni ogni allungamento. Niente molleggi.',
   'quick.atWork.cue': 'Nessuno se ne accorgerà. Tieni pure le scarpe.',
-  'quick.morning.cue': 'Prima che il piede tocchi il pavimento.',
+  'quick.morning.cue': 'Prima che il piede tocchi il pavimento. Tieni 10 secondi, rilascia, 10 volte per piede.',
 
   // Invariable where Italian allows: «da seduti» would pick a number, so the
   // positions are written as places rather than participles.
-  'quick.seated': 'da seduto',
+  'quick.seated': 'da seduti',
   'quick.standing': 'in piedi',
   'quick.inBed': 'a letto',
 

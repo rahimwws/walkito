@@ -15,6 +15,15 @@ import { PLAYER_IT } from './player';
 import { TESTDAY_IT } from './testday';
 import { WIDGET_IT } from './widget';
 import { UPDATE_IT } from './update';
+import { DONE_IT } from './done';
+import { STREAKS_IT } from './streaks';
+import { STICKERS_IT } from './stickers';
+import { RECAP_IT } from './recap';
+import { HOME_OFFER_IT } from './home-offer';
+import { CANCEL_IT } from './cancel';
+import { PASS_IT } from './pass';
+import { COMMUNITY_IT } from './community';
+import { INSIGHTS_IT } from './insights';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -40,4 +49,13 @@ export const it: CatalogueFor<'it'> = {
   ...PLAYER_IT,
   ...TESTDAY_IT,
   ...UPDATE_IT,
+  ...DONE_IT,
+  ...STREAKS_IT,
+  ...STICKERS_IT,
+  ...RECAP_IT,
+  ...HOME_OFFER_IT,
+  ...CANCEL_IT,
+  ...PASS_IT,
+  ...COMMUNITY_IT,
+  ...INSIGHTS_IT,
 };

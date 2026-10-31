@@ -43,8 +43,8 @@ export const JOURNEY_IT = {
   'onboarding.react.areaHeel': 'Il più comune qui.',
   'onboarding.react.areaFoot': 'È da lì che parte il piano.',
   'onboarding.react.areaAchilles': 'Risponde bene al carico lento.',
-  'onboarding.react.areaCalf': 'Tira su tutto quello che sta sotto.',
-  'onboarding.react.areaShin': 'Il carico è salito più in fretta delle gambe.',
+  'onboarding.react.areaCalf': 'Mette in tensione tutto quello che sta sotto.',
+  'onboarding.react.areaShin': 'Il carico è cresciuto troppo in fretta per le gambe.',
   'onboarding.react.areaNone': 'Buon momento per rinforzare.',
 
   'onboarding.where.heelLeft': 'Tallone sinistro',
@@ -73,11 +73,11 @@ export const JOURNEY_IT = {
 
   'onboarding.react.weeksTitle': 'Presto è il momento migliore.',
   'onboarding.react.weeksBody': 'Partiremo con calma.',
-  'onboarding.react.monthsTitle': 'Non passerà da solo.',
+  'onboarding.react.monthsTitle': 'Molto comune in questa fase.',
   'onboarding.react.monthsBody': 'Partiamo da ciò che aiuta per primo.',
   'onboarding.react.yearTitle': 'È tanto tempo.',
   'onboarding.react.yearBody': 'Di solito il carico non è mai cambiato. Lo cambieremo.',
-  'onboarding.react.longerTitle': 'Più di un anno. È reale.',
+  'onboarding.react.longerTitle': 'Più di un anno. Lo prendiamo sul serio.',
   'onboarding.react.longerBody': 'Serve un carico diverso, non più riposo.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
@@ -98,11 +98,12 @@ export const JOURNEY_IT = {
   'onboarding.safety.blurb': 'Un rapido controllo di sicurezza.',
   'onboarding.safety.calf': 'Polpaccio gonfio, caldo o arrossato da un lato',
   'onboarding.safety.pop': 'Uno schiocco improvviso dietro la caviglia',
-  'onboarding.safety.diabetes': 'Diabete con il piede caldo e arrossato o una ferita aperta',
-  'onboarding.safety.fall': 'Me lo sono fatto cadendo e non riesco ad appoggiarlo',
+  'onboarding.safety.diabetes': 'Diabete e piede caldo, arrossato o con una ferita aperta',
+  'onboarding.safety.fall': 'Dolore dopo una caduta e non riesco a caricarci il peso',
   'onboarding.safety.numb': 'Intorpidimento, formicolio o bruciore',
   'onboarding.safety.none': 'Nessuno di questi',
   'onboarding.react.safetySeated': 'La prima settimana si parte da seduti.',
+  'onboarding.react.safetyDoctor': 'La prima settimana si parte da seduti. Prima di iniziare, fatti vedere da un medico. Se è improvviso o forte, chiama i soccorsi o vai al pronto soccorso.',
   'onboarding.react.safetyNumb': 'Segnato. Lo terremo d’occhio.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -116,7 +117,7 @@ export const JOURNEY_IT = {
   'onboarding.tried.none': 'Ancora niente',
 
   'onboarding.react.insolesTitle': 'I plantari tolgono carico.',
-  'onboarding.react.insolesBody': 'Il tuo piano aggiunge la forza che non danno.',
+  'onboarding.react.insolesBody': 'Tienili, se ti aiutano. Il tuo piano aggiunge forza.',
   'onboarding.react.restTitle': 'Il riposo lo calma.',
   'onboarding.react.restBody': 'Il tuo piano aggiunge la forza che il riposo non dà.',
   'onboarding.react.stretchingTitle': 'Lo stretching è un buon inizio.',
@@ -133,7 +134,7 @@ export const JOURNEY_IT = {
   'onboarding.goal.titleShort': 'Cosa conta di più?',
   'onboarding.goal.mornings': 'Mattine più facili',
   'onboarding.goal.backToRunning': 'Tornare a correre',
-  'onboarding.goal.shift': 'Arrivare a fine turno senza dolori',
+  'onboarding.goal.shift': 'Arrivare a fine turno con meno dolori',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Quante ore in piedi al giorno?',
@@ -156,12 +157,12 @@ export const JOURNEY_IT = {
   'onboarding.why.patternFoot': 'I muscoli dell’arco si stancano prima della fine della giornata.',
   'onboarding.why.patternAchilles': 'Il carico è salito più in fretta di quanto il tendine si sia adattato.',
   'onboarding.why.patternCalf': 'Un polpaccio rigido tira sul tallone e sul piede.',
-  'onboarding.why.patternShin': 'Il carico è salito più in fretta delle gambe.',
+  'onboarding.why.patternShin': 'Il carico è cresciuto troppo in fretta per le gambe.',
   'onboarding.why.lingersWeeks': 'Solo qualche settimana. Il momento più facile per invertire la rotta.',
-  'onboarding.why.lingersMonths': 'Ormai da mesi. Non passerà da solo.',
+  'onboarding.why.lingersMonths': 'Ormai da mesi. Qui aiuta soprattutto la costanza.',
   'onboarding.why.lingersYear': 'Ormai da mesi. Il carico non è mai cambiato.',
   'onboarding.why.lingersLonger': 'Più di un anno. Il carico non è mai cambiato.',
-  'onboarding.why.triedInsoles': 'I plantari tolgono carico, ma non costruiscono forza.',
+  'onboarding.why.triedInsoles': 'I plantari tolgono carico. Tienili e aggiungi forza.',
   'onboarding.why.triedRest': 'Il riposo lo calma, ma non costruisce forza.',
   'onboarding.why.triedStretching': 'Lo stretching da solo non costruisce forza.',
   'onboarding.why.triedShoes': 'Le scarpe cambiano il carico, non ciò che lo regge.',
@@ -210,12 +211,6 @@ export const JOURNEY_IT = {
   'onboarding.test.left': 'Sinistra',
   'onboarding.test.right': 'Destra',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Il tuo punto di partenza',
-  'onboarding.test.archYes': 'Piede flessibile. Risponde bene al lavoro di forza.',
-  'onboarding.test.archNo': 'Nessun arco. Ci concentreremo su polpaccio e caviglia.',
-  'onboarding.test.archUnsure': 'Difficile da dire. La tua prima verifica lo misurerà.',
-  'onboarding.test.balanceHead': 'Su una gamba',
-  'onboarding.test.resultFoot': 'Il tuo piano lo usa dal primo giorno.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Stiamo creando il tuo piano',
@@ -230,17 +225,35 @@ export const JOURNEY_IT = {
   'onboarding.building.choosing': 'Scegliamo la tua prima settimana…',
   'onboarding.building.ctaWeek': 'Vedi la mia prima settimana',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  'onboarding.coach.toeTry': 'Prova subito: solleva solo l’alluce.',
+  'onboarding.coach.beatFeet': 'Ora, i tuoi piedi.',
+  'onboarding.coach.beatGoal': 'Ora, quello che vuoi ottenere.',
+  'onboarding.coach.midway': 'Sei a metà strada, {name}.',
+  'onboarding.coach.planReady': 'Il tuo piano è pronto, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'La tua prima settimana',
   'onboarding.week.blurb': 'Sessioni brevi nei giorni che hai scelto. Ognuna si adatta a come sta il piede quella mattina.',
-  'onboarding.week.morningMeta': 'Ogni mattina, prima di alzarti · 2 min',
-  'onboarding.week.sessionMeta': 'Nelle tue sessioni di questa settimana',
+  'onboarding.week.cadence': {
+    one: '{count} sessione a settimana, da {minutes} min ciascuna',
+    other: '{count} sessioni a settimana, da {minutes} min ciascuna',
+  },
+  'onboarding.week.everyMorning': 'Ogni mattina',
+  'onboarding.week.sessionDays': 'Nei giorni di sessione',
+  'onboarding.week.moveA11yMorning': 'Esercizio {index} di {total}. {title}, {dose}, ogni mattina. {cue}',
+  'onboarding.week.moveA11ySession': 'Esercizio {index} di {total}. {title}, {dose}, nei giorni di sessione. {cue}',
+  'onboarding.week.deckHint': 'Scorri in su o in giù per cambiare esercizio. Tocca due volte per vederlo a schermo intero.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'Ci sei, {name}',
   'setup.save.title': 'Ci sei',
   'setup.save.blurb': 'Così è al sicuro anche su un nuovo telefono.',
   'setup.save.later': 'Non ora',
+  'setup.save.email': 'Continua con email',
+  'setup.save.googleUnavailable': 'L’accesso con Google non è disponibile su questo telefono. Usa la tua email.',
+  'setup.save.deferred': 'Continua per ora',
+  'setup.save.deferredNote': 'Ora non siamo riusciti a farti accedere. Te lo chiederemo di nuovo la prossima volta che apri Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Ti mandiamo il piano via email?',
@@ -261,18 +274,35 @@ export const JOURNEY_IT = {
   'setup.widget.mockEdit': 'Modifica',
   'setup.widget.mockAdd': 'Aggiungi widget',
   'setup.widget.mockSearch': 'Cerca widget',
+  'setup.widget.nudgeTitle': 'Il widget non c’è ancora',
+  'setup.widget.nudgeBody': 'Nessuna fretta. Bastano tre tocchi, ed è il modo più facile per tornare ogni mattina. Te lo mostro di nuovo?',
+  'setup.widget.nudgeAgain': 'Mostramelo di nuovo',
+  'setup.widget.nudgeLater': 'Magari dopo',
+  'setup.widget.addedTitle': 'È nella tua schermata Home',
+  'setup.widget.addedBlurb': 'Ci vediamo lì domani mattina.',
+  'setup.widget.addedCta': 'Continua',
   'setup.next': 'Avanti',
   'setup.done': 'Fine',
-  'setup.finish': 'Inizia la mia prima sessione',
+  'setup.finish': 'Fine',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   'offer.stripMornings': 'Mattine {score}/10',
   'offer.introTomorrowWhen': 'Domani, prima di alzarti',
-  'offer.introTomorrowBody': 'Due minuti, prima che il piede tocchi terra.',
+  'offer.introTomorrowBody': 'Pochi minuti, prima che il piede tocchi terra.',
   'offer.howTitleShort': 'Ecco come funziona',
   'offer.howCheckinShort': 'Check-in mattutino di 10 secondi',
   'offer.howSessionShort': 'Sessione di 3-10 minuti, adattata ogni giorno',
   'offer.howRetestShort': 'Lo stesso test ogni due settimane',
+  'offer.goldPlan': 'Come funziona il tuo piano',
+  'offer.goldHow': 'Cosa ottieni ogni giorno',
+  'offer.goldStart': 'Tutto sbloccato',
+  'offer.tomorrowWhen': 'Domani',
+  'offer.tomorrowBody': 'Pochi minuti, ancora a letto',
+  'offer.weekBody': '{minutes} min al giorno',
+  'offer.sundayBody': 'Si adatta a come è andata',
+  'offer.checkBody': 'Guarda cosa è cambiato',
+  'offer.howHeadline': 'Pochi minuti al giorno, pensati per i tuoi piedi',
+  'offer.builtShort': 'Esercizi da studi pubblicati',
   'offer.builtTitle': 'Su cosa si basa',
   'offer.builtBody':
     'Esercizi dalla ricerca pubblicata e dalle linee guida del 2023 sul dolore al tallone. Walkito in sé non è stato testato in uno studio clinico.',

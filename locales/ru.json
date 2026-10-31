@@ -3,6 +3,8 @@
     "CFBundleDisplayName": "Walkito",
     "NSHealthShareUsageDescription": "walkito читает ваши шаги, походку и сон, чтобы план начинался с того, что вы на самом деле делали.",
     "NSHealthUpdateUsageDescription": "walkito сохраняет ваши занятия в Здоровье, чтобы они шли в зачёт вашей активности.",
+    "NSMotionUsageDescription": "walkito считает часы, которые вы проводите на ногах, чтобы после долгого стояния напомнить дать стопам минуту.",
+    "NSUserTrackingUsageDescription": "walkito использует это, чтобы понимать, какая реклама приводит людей в приложение. Данные о здоровье никогда никому не передаются.",
     "\"SOMETHING OFF?\"": "ЧТО-ТО НЕ ТАК?",
     "\"Tell us. A person replies.\"": "Напишите нам. Ответит человек."
   },

@@ -13,9 +13,11 @@ import { accountFor } from './account';
  *
  * Needs `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` — the *Web* OAuth client, which is
  * the audience Supabase checks the token against — and an Android OAuth client
- * registered with the app's package name and signing SHA-1. Without the id, or
- * in a binary built before the module was linked, it reports `unavailable` and
- * the caller lets the user through, as it does for Apple on a simulator.
+ * registered with the app's package name and signing SHA-1. Without the id,
+ * without Play Services, or in a binary built before the module was linked, it
+ * reports `unavailable`. The intro lets the user through on that, as it does
+ * for Apple on a simulator; the save screen after the purchase, where an
+ * account is required on Android, hides the button and leaves email.
  */
 const WEB_CLIENT_ID = process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID;
 

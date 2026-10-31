@@ -3,4 +3,5 @@ export {
   QUESTION_LINE_MS,
   TypedText,
   type TypedTextProps,
+  typingDuration,
 } from './typed-text';

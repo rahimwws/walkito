@@ -47,9 +47,9 @@ export const PROGRESS_RU = {
   'progress.longestStreak': 'Лучшая серия',
 
   // ── The path ─────────────────────────────────────────────────────────────
-  'progress.retestToday': 'Ретест сегодня',
+  'progress.retestToday': 'Замеры сегодня',
   'progress.todayMinutes': 'Сегодня · {minutes} мин',
-  'progress.retest': 'Ретест',
+  'progress.retest': 'Замеры',
   'progress.blockDivider': 'Блок {block} · {name}',
   'progress.weekDivider': 'Неделя {week}',
 
@@ -63,10 +63,10 @@ export const PROGRESS_RU = {
   'progress.strengthEmpty': 'Эти цифры появятся после первого теста.',
   'progress.strengthSince': 'Первый тест и последний.',
   'progress.strengthOnce': 'Первый тест. Следующий покажет изменения.',
-  'progress.calfChange': 'Подъёмы на носок {from} → {to}',
+  'progress.calfChange': 'Подъёмы на носки {from} → {to}',
   'progress.balanceChange': 'Баланс {from} с → {to} с',
   'progress.archChange': 'Удержание свода {from} с → {to} с',
-  'progress.calfOnce': 'Подъёмы на носок: {value}',
+  'progress.calfOnce': 'Подъёмы на носки: {value}',
   'progress.balanceOnce': 'Баланс: {value} с',
   'progress.archOnce': 'Удержание свода: {value} с',
   'progress.painTitle': 'Боль по утрам',
@@ -76,7 +76,7 @@ export const PROGRESS_RU = {
   'progress.goalsTitle': 'Цели',
   'progress.goalsEmpty': 'Цели появятся после первого теста.',
   'progress.goalReached': 'Достигнута',
-  'progress.streakCaption': 'Дни отдыха, тяжёлые дни и дни по 2 минуты тоже считаются.',
+  'progress.streakCaption': 'Тяжёлые дни и дни по 2 минуты тоже считаются.',
   // ── The redesigned screen ────────────────────────────────────────────────
   'progress.avgWeek': 'В среднем за последние 7 дней',
   'progress.avgMonth': 'В среднем за последний месяц',
@@ -94,7 +94,7 @@ export const PROGRESS_RU = {
   'progress.painNoneInRange': 'За этот период утренних отметок пока нет.',
   'progress.painToGo': { one: 'Ещё {count} утренняя отметка, и появится график.', few: 'Ещё {count} утренние отметки, и появится график.', many: 'Ещё {count} утренних отметок, и появится график.' },
   'progress.painToGoSteps': '{done} из {total} отметок',
-  'progress.calfName': 'Подъёмы на носок',
+  'progress.calfName': 'Подъёмы на носки',
   'progress.balanceName': 'Баланс',
   'progress.archName': 'Удержание свода',
   'progress.repsUnit': { one: 'повтор', few: 'повтора', many: 'повторов' },

@@ -64,6 +64,11 @@ export function resetOnboarding(): void {
   for (const listener of subscribers) listener();
 }
 
+/** Whether onboarding is done, read once (outside React). */
+export function onboardingDone(): boolean {
+  return completed;
+}
+
 export function useOnboarded(): boolean {
   return useSyncExternalStore(subscribe, snapshot, snapshot);
 }

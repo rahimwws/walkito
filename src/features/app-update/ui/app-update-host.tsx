@@ -20,9 +20,11 @@ const PREVIEW_NOTE_DELAY_MS = 350;
  * sheet is memoised on stable callbacks, so most of them stop even sooner.
  *
  * `enabled` is the user being past onboarding: nothing is checked for, offered
- * or confirmed before that.
+ * or confirmed before that. `canOffer` is Home being theirs, and the hook
+ * waits a day after the setup on top of it: until then an update is downloaded
+ * but never offered (see `useAppUpdates`).
  */
-export function AppUpdateHost({ enabled }: { enabled: boolean }) {
+export function AppUpdateHost({ enabled, canOffer }: { enabled: boolean; canOffer: boolean }) {
   const confirmation = useUpdateConfirmation(enabled);
 
   const noteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -37,7 +39,7 @@ export function AppUpdateHost({ enabled }: { enabled: boolean }) {
     noteTimer.current = setTimeout(show, PREVIEW_NOTE_DELAY_MS);
   }, [show]);
 
-  const updates = useAppUpdates(enabled, onPreviewRestarted);
+  const updates = useAppUpdates(enabled, canOffer, onPreviewRestarted);
   useDevPreviewMenu(updates.preview);
 
   return (

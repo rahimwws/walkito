@@ -13,15 +13,15 @@ export const PROFILE_FR = {
   'profile.sectionDanger': 'Zone sensible',
 
   // ── Rows ─────────────────────────────────────────────────────────────────
-  'profile.referFriend': 'Invite un ami',
+  'profile.referFriend': 'Invite un proche',
   'profile.invitesJoined': { one: '{count} inscription', other: '{count} inscriptions' },
-  'profile.inviteHint': 'Tes amis ont {percent} % de réduction sur l’abonnement annuel',
+  'profile.inviteHint': 'Tes proches ont {percent} % de réduction sur l’abonnement annuel',
   'profile.rate': 'Noter Walkito',
   'profile.contactSupport': 'Contacter le support',
   'profile.deleteAccount': 'Supprimer le compte',
 
   // ── Delete account sheet ─────────────────────────────────────────────────
-  'profile.deleteTitle': 'Supprimer le compte ?',
+  'profile.deleteTitle': 'Supprimer le compte ?',
   'profile.deleteBlurb':
     'Ça supprime ton programme, ton suivi de la douleur, ta série de jours et ton code d’invitation, de cet appareil et de nos serveurs. C’est irréversible.',
   'profile.deleteSubscription':
@@ -29,6 +29,7 @@ export const PROFILE_FR = {
   'profile.deleteSubscriptionAndroid':
     'Supprimer ton compte n’annule pas ton abonnement. Il est facturé par Google Play et se renouvelle jusqu’à ce que tu l’annules là-bas.',
   'profile.manageSubscription': 'Gérer l’abonnement',
+  'profile.deletePass': 'Ton Pass 3 mois est gardé sur ce compte et prend fin quand tu supprimes le compte.',
   'profile.deleteLocalOnly':
     'Tes données ont été supprimées de cet appareil, mais le serveur n’a pas pu être joint. Rouvre l’app avec une connexion pour terminer, ou écris au support.',
   'profile.deleteConfirm': 'Tout supprimer',
@@ -39,7 +40,7 @@ export const PROFILE_FR = {
   'profile.resetLabel': 'Revenir au premier écran',
   'profile.resetHint': 'Version de développement uniquement',
   'profile.resetA11y': 'Revenir au premier écran',
-  'profile.resetAlertTitle': 'Recommencer depuis le premier écran ?',
+  'profile.resetAlertTitle': 'Recommencer depuis le premier écran ?',
   'profile.resetAlertBody':
     'Efface l’onboarding, le programme, le suivi de la douleur et les clips en cache sur cet appareil. Ton compte et ton code d’invitation restent. Développement uniquement.',
   'profile.resetCancel': 'Annuler',

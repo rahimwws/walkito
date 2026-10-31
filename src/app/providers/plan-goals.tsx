@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
-import { buildUpcomingWeek, ensureGoals, refreshGoals, retestResults } from '@/entities/program';
+import { buildUpcomingWeek, ensureGoals, planSettings, refreshGoals, retestResults, setPlanSettings } from '@/entities/program';
 import { painAreasOf } from '@/entities/leg-zone';
 import { getIntake } from '@/entities/profile';
 
@@ -9,6 +9,13 @@ import { getIntake } from '@/entities/profile';
 const PLANTAR = ['heel', 'foot'];
 /** Runner answers that mean the feet carry real weekly load. */
 const LOADS_FEET = ['regular', 'racing', 'serious'];
+/**
+ * Safety answers that keep hops and eyes-closed balance out of the plan. The
+ * same list as onboarding's `PROTECTED_FEET`, which sets the setting for
+ * everyone onboarded since; this carries it to those onboarded before, whose
+ * answers were saved and read by nothing.
+ */
+const PROTECTED_FEET = ['numb', 'diabetes'];
 
 /**
  * The weekly plan's goals: written once from what onboarding learned, then
@@ -24,10 +31,15 @@ export function usePlanGoals(onboarded: boolean): void {
     const intake = getIntake();
     // Onboarding stores complaints, the Settings map stores zones; both read as complaints here.
     const areas = painAreasOf(intake?.pain ?? []);
+    if (intake?.safety?.some((answer) => PROTECTED_FEET.includes(answer)) === true && planSettings().protectFeet !== true) {
+      setPlanSettings({ protectFeet: true });
+    }
     const first = retestResults()[0];
     ensureGoals({
       painReported: areas.length > 0,
-      footType: 'unknown',
+      // The 30-second check's arch answer, when it was taken: it picks the
+      // arch goal over the general one.
+      footType: planSettings().footType ?? 'unknown',
       plantarPain: areas.some((area) => PLANTAR.includes(area)),
       loadsFeet: intake?.runner != null && LOADS_FEET.includes(intake.runner),
       firstGapPct: first?.symmetryPct ?? null,

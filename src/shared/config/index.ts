@@ -18,6 +18,7 @@ export {
   type AccentName,
 } from './theme';
 export { APPLE_APP_ID, APP_STORE_REVIEW_URL, LEGAL, PLAY_STORE_URL, SUPPORT_EMAIL } from './legal';
+export { PLAY_PACKAGE, RETENTION_OFFERS, SUBSCRIPTIONS_URL, playSubscriptionUrl } from './subscriptions';
 export { SUPERWALL_KEYS } from './superwall';
 export { APPSFLYER } from './appsflyer';
 export {
@@ -25,6 +26,17 @@ export {
   CLIPS_TOTAL_BYTES,
   CLIP_BUCKET,
   clipEntry,
+  clipShape,
+  WIDE_CLIPS,
   type ClipEntry,
 } from './clip-manifest';
 export { VOICE, VOICE_TOTAL_BYTES, voiceEntry, type VoiceEntry } from './voice-manifest';
+export {
+  DEPTH,
+  RAISED_BORDER,
+  filled,
+  raised,
+  type DepthSize,
+  type FilledFace,
+  type RaisedColors,
+} from './raised';

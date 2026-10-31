@@ -58,8 +58,10 @@ const SPORTS = {
   hiking: 'onboarding.sport.hiking',
 } as const satisfies Record<string, Key>;
 
-/** Days from the first test to the next, as `testDue` counts them. */
-const FIRST_RETEST_DAYS = 14;
+/** Days from today to the second test: the first is tomorrow (today is the
+ * two-minute first session), the next a fortnight after it, as `testDue`
+ * counts them. */
+const FIRST_RETEST_DAYS = 1 + 14;
 
 export type Personalisation = Record<string, string>;
 
@@ -104,7 +106,7 @@ export function paywallPersonalisation(input: PersonalisationInput): Personalisa
 
   out.days_per_week = String(input.daysPerWeek);
   out.minutes = String(input.minutes);
-  // The first test is today, so the first one that can show a change is a
+  // The first test is tomorrow, so the first one that can show a change is a
   // fortnight on.
   out.progress_check_date = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(
     new Date(input.now + FIRST_RETEST_DAYS * 86_400_000),

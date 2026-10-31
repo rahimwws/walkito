@@ -7,10 +7,15 @@ import {
   onHealthAsked,
   refreshHealth,
   requestHealthAccess,
+  requestMotionAccess,
   startHealthPipeline,
+  todayOnFeetHours,
   type RefreshOptions,
 } from '@/entities/health';
-import { maybeSendStepCheck } from '@/entities/notifications';
+import { maybeSendOnFeetCheck, maybeSendStepCheck } from '@/entities/notifications';
+import { kv } from '@/shared/lib/storage';
+
+import { registerOnFeetTask } from './on-feet-task';
 import {
   currentDay,
   dayNumberFor,
@@ -67,6 +72,28 @@ async function afterRefresh(): Promise<void> {
   // week before Monday — see `buildUpcomingWeek`.
   buildUpcomingWeek();
   await maybeSendStepCheck();
+  // Four hours on the feet: decided on the same wake, from today's hours.
+  await maybeSendOnFeetCheck(await todayOnFeetHours(new Date()), Date.now(), AppState.currentState === 'active');
+}
+
+const MOTION_ASKED_KEY = 'health/motion-asked';
+/** Days without a step from Health before the phone's own counter is asked
+ * for instead. */
+const NO_STEPS_DAYS = 3;
+
+/**
+ * Motion & Fitness, asked once, only for someone Health gives no steps: they
+ * were asked for Health and said no to steps (or have no data), and the
+ * four-hours push has nothing else to read. Then the background task is
+ * registered, which is what reads it.
+ */
+async function askMotionIfHealthIsSilent(): Promise<void> {
+  if (AppState.currentState !== 'active' || kv.getBoolean(MOTION_ASKED_KEY) === true) return;
+  if ((await healthAccess()) === 'never') return;
+  const recent = healthCache().days.slice(-NO_STEPS_DAYS);
+  if (recent.some((day) => (day.steps ?? 0) > 0)) return;
+  kv.set(MOTION_ASKED_KEY, true);
+  if (await requestMotionAccess()) await registerOnFeetTask();
 }
 
 const OPTIONS: RefreshOptions = { painNextMorning, onRefreshed: afterRefresh };
@@ -113,6 +140,8 @@ export function useHealthPipeline(): void {
       await requestHealthAccess();
     };
     void askAgainIfOutdated();
+    void askMotionIfHealthIsSilent();
+    void registerOnFeetTask();
 
     // The documented fallback for background delivery, which can be switched
     // off by Low Power Mode or by the user and which no app can detect.
@@ -120,6 +149,7 @@ export function useHealthPipeline(): void {
     const sub = AppState.addEventListener('change', (state) => {
       if (state !== 'active') return;
       void askAgainIfOutdated();
+      void askMotionIfHealthIsSilent();
       void refreshHealth(new Date(), OPTIONS);
     });
     return () => {

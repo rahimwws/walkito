@@ -43,16 +43,35 @@ export type Verdict =
   | { kind: 'all' };
 
 /**
+ * The smallest change that is more than a test taken twice gives anyway.
+ *
+ * Calf raises: about six, the change a home calf-raise test can tell from its
+ * own noise. One more raise than last time was "New best" and "More calf
+ * raises than last time", and the next test could as easily be one fewer. The
+ * holds have no published figure for a home test; five seconds is the same
+ * share of their goals, and well past a slow start of the timer.
+ *
+ * Below it a change still shows on its card, as information. It just does not
+ * make the headline.
+ */
+export const REAL_GAIN: Readonly<Record<CardGoal, number>> = { calf_raises: 6, arch_hold: 5, balance: 5 };
+
+/** Whether a card's change is a real gain rather than the test's own noise. */
+export function realGain(type: CardGoal, change: number | null): boolean {
+  return change != null && change >= REAL_GAIN[type];
+}
+
+/**
  * What the headline says. It names what went up and never what went down: a
- * dip is on its card, in grey, as information. With nothing up it says only
- * that the tests are done.
+ * dip is on its card, in grey, as information. With nothing up by more than
+ * the test's noise (`REAL_GAIN`) it says only that the tests are done.
  */
 export function verdictOf(rows: readonly Pick<ResultRow, 'type' | 'change'>[]): Verdict {
   const cards = rows.filter((row): row is typeof row & { type: CardGoal } =>
     (CARD_ORDER as readonly MeasuredGoal[]).includes(row.type),
   );
   if (cards.length === 0 || cards.every((row) => row.change == null)) return { kind: 'first' };
-  const up = CARD_ORDER.filter((type) => cards.some((row) => row.type === type && row.change != null && row.change > 0));
+  const up = CARD_ORDER.filter((type) => cards.some((row) => row.type === type && realGain(type, row.change)));
   if (up.length === 0) return { kind: 'steady' };
   if (up.length === 1) return { kind: 'one', type: up[0] };
   if (up.length === CARD_ORDER.length) return { kind: 'all' };

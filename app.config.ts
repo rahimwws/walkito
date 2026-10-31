@@ -198,10 +198,10 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       // (no IDFA code at all), which AppsFlyer documents for apps directed at
       // children and nowhere else — and what this app measures with is Apple
       // Ads (AdServices) and SKAdNetwork, neither of which AppsFlyer documents
-      // for the strict build. The standard build gains nothing over it here
-      // anyway: the app never shows the App Tracking Transparency prompt, so
-      // iOS hands the SDK an all-zero IDFA. If the app is ever opened to
-      // children, turn it on (and expect Apple Ads to need re-verifying).
+      // for the strict build. It would also throw away the IDFA that the
+      // onboarding's App Tracking Transparency question now lets through for
+      // people who allow it. If the app is ever opened to children, turn it
+      // on, drop the ATT question, and expect Apple Ads to need re-verifying.
       ['react-native-appsflyer', { shouldUseStrictMode: false }],
       // What AppsFlyer's plugin leaves out on Android: AD_ID removed from the
       // merged manifest, and `setIntent` in `onNewIntent` so a OneLink opened

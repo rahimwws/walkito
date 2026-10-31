@@ -6,7 +6,7 @@ import { unlockBoost } from '@/entities/offer';
 import { recordEmailLinkOpened } from '@/entities/profile';
 import { requestProtocol } from '@/entities/protocols';
 import { clearBrowsingLapsed, useAccessLapsed, useEntitled } from '@/entities/purchase';
-import { useOnboarded } from '@/entities/session';
+import { useAccountOwed, useOnboarded, useSetupPending } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 import { requestProgram } from '@/shared/lib/program';
 
@@ -34,7 +34,12 @@ import { linkTarget } from '../model/route';
 export function OpenLinkPage() {
   const router = useRouter();
   const onboarded = useOnboarded();
+  // The screens after the purchase (or an account still owed) stand in front
+  // of the tabs: a link waits for them the way it waits for onboarding.
+  const setupPending = useSetupPending();
+  const accountOwed = useAccountOwed();
   const entitled = useEntitled();
+  const tabsAhead = !onboarded || (entitled && (setupPending || accountOwed));
   const lapsed = useAccessLapsed();
   const params = useLocalSearchParams<{ path?: string | string[]; src?: string; e?: string; minutes?: string; offering?: string }>();
   const handled = useRef(false);
@@ -50,7 +55,7 @@ export function OpenLinkPage() {
       void recordEmailLinkOpened(params.e, path);
     }
 
-    if (!onboarded) {
+    if (tabsAhead) {
       if (path.length > 0) {
         const query = new URLSearchParams();
         if (params.minutes != null) query.set('minutes', params.minutes);
@@ -107,7 +112,7 @@ export function OpenLinkPage() {
       case 'home':
         router.replace('/');
     }
-  }, [onboarded, entitled, lapsed, params, router]);
+  }, [onboarded, tabsAhead, entitled, lapsed, params, router]);
 
   return null;
 }

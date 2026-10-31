@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 
 import { Notifications, REFERRAL_KIND, registerPushToken } from '@/entities/notifications';
 import { syncStoredEmail } from '@/entities/profile';
-import { purchases } from '@/entities/purchase';
-import { refresh, referralBonusDays, useReferral } from '@/entities/referral';
+import { refresh } from '@/entities/referral';
 
 /**
  * Keeps the invite state in step with the server, and makes the push land.
@@ -12,7 +11,7 @@ import { refresh, referralBonusDays, useReferral } from '@/entities/referral';
  * reason `useOfferNotifications` is here: the notification can be the thing
  * that launches the app, in which case no screen has mounted yet to hear it.
  *
- * 1. Re-reads the status on launch. The discount is earned on someone *else's*
+ * 1. Re-reads the status on launch. An invite is redeemed on someone *else's*
  *    device — the owner's app is never told at the moment it happens, so the
  *    only way it ever learns is by asking.
  * 2. Hands over this device's push address, so the server has somewhere to send
@@ -23,32 +22,18 @@ import { refresh, referralBonusDays, useReferral } from '@/entities/referral';
  *    time can miss — offline, or before the anonymous identity exists — and
  *    nothing else would ever retry it.
  * 3. Listens for that push and re-reads again, so an owner who taps the
- *    notification finds the discount already applied rather than a screen that
+ *    notification finds the status already current rather than a screen that
  *    has not caught up.
  *
- * 4. Hands the free days earned by invites to the store. Here because this is
- *    the one layer allowed to know about both: the invite entity cannot import
- *    the purchase one, and should not — the store only needs a number of days,
- *    not where they came from.
- *
- *    What the days do today is narrow: they lengthen a legacy one-time pass,
- *    the only access the app dates itself. An App Store subscription cannot be
- *    extended from the device — that takes a server-side grant (a RevenueCat
- *    promotional entitlement) or an Apple offer code — so for a subscriber the
- *    call is a harmless no-op. Which is why nothing in the app, the push or
- *    the Terms promises the code's owner free weeks any more: only legacy pass
- *    holders, all of them sandbox and TestFlight buyers, could ever get them.
- *    Promise the reward again only once a server-side grant delivers it.
+ * Invites unlock nothing and lengthen nothing. Their free days used to be
+ * handed to the store here, where they lengthened a one-time pass on this
+ * phone; no code or invite may unlock or extend access (AGENTS.md, "Codes:
+ * only Apple's"), so the store is never told about invites at all.
  *
  * Every step is silent on failure. None of this is worth an error in front of
  * someone who did not ask for any of it.
  */
 export function useReferralSync(): void {
-  const { invites } = useReferral();
-  useEffect(() => {
-    purchases.setBonusDays(referralBonusDays(invites));
-  }, [invites]);
-
   useEffect(() => {
     void refresh();
     void registerPushToken();

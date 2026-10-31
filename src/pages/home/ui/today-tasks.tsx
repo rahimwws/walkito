@@ -1,19 +1,14 @@
 import ChartLineData02Icon from '@hugeicons/core-free-icons/ChartLineData02Icon';
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
-import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
-import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
-import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
-import RulerIcon from '@hugeicons/core-free-icons/RulerIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
-import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
-import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
-import { useMemo, useState } from 'react';
-import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
-import { useHealthSignals, type HealthSignals } from '@/entities/health';
+import { useHealthSignals, type HealthSignals, todayHealthInputs } from '@/entities/health';
 import {
   PROGRAM,
   RETEST_MINUTES,
@@ -40,20 +35,23 @@ import {
   type PlannedExercise,
   type ProgramDay,
   type TodayReason,
+  planReasonLine,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
-import { PROGRAM_MS } from '@/shared/lib/program';
+import { PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Chip3D } from '@/shared/ui/chip-3d';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { Mascot, walkingRig } from '@/shared/ui/mascot';
 import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
 
 import { DoneCard } from './done-card';
 
-/** The mascot, mid-stride. It belongs to this block rather than to the screen:
- * the list is the one place on Home that asks for work, and a character running
- * off the end of its title is the cheapest way to make that read as a start
- * rather than as a chore. */
-const MASCOT = require('@assets/home/mascot-tasks.png');
+/* The mascot, stretching on one leg. It belongs to this block rather than to
+ * the screen: the list is the one place on Home that asks for work, and a
+ * character warming up beside its title is the cheapest way to make that read
+ * as a start rather than as a chore. */
 
 /** The heading's line box and the artwork's, both pinned: the mascot is centred
  * on the title by arithmetic, and arithmetic needs two known numbers. */
@@ -68,20 +66,27 @@ const MASCOT_SIZE = 64;
  * only that you remember. The colour is what lets that be read down the column
  * without reading a word — and it names the kind, never rates it.
  *
- * Colour and glyph only. The *word* comes from `exerciseCategoryLabel`, which
+ * Colour and emoji only. The *word* comes from `exerciseCategoryLabel`, which
  * is the catalogue's own translation of the same four categories — a second
  * copy of them under `home.` would be two places to change and one place to
  * forget.
+ *
+ * The emoji is the kind of work, in Fluent's own colours (💪 strength, 🧘 a
+ * stretch, 🌿 easing off, 🌱 a habit growing); the accent stays on the words.
  */
 const CATEGORIES = {
-  fitness: { accent: 'violet' as AccentName, icon: Dumbbell01Icon },
-  mobility: { accent: 'teal' as AccentName, icon: Yoga01Icon },
-  recovery: { accent: 'amber' as AccentName, icon: Moon02Icon },
-  habit: { accent: 'blue' as AccentName, icon: RepeatIcon },
-} satisfies Record<string, { accent: AccentName; icon: IconSvgElement }>;
+  fitness: { accent: 'violet' as AccentName, emoji: 'strength' },
+  mobility: { accent: 'teal' as AccentName, emoji: 'stretch' },
+  recovery: { accent: 'amber' as AccentName, emoji: 'relief' },
+  habit: { accent: 'blue' as AccentName, emoji: 'seedling' },
+} satisfies Record<string, { accent: AccentName; emoji: FluentName }>;
 
-/** The glyphs on a row's second line. Heavier than the set's default stroke:
- * at 13pt a 1.5 line thins to nothing against the tinted text beside it. */
+/** The emoji on a row's second line: a touch over the 14pt words beside it,
+ * since the drawing keeps a margin inside its square. */
+const CATEGORY_EMOJI = 16;
+
+/** The "See results" chip's glyph. Heavier than the set's default stroke: at
+ * 13pt a 1.5 line thins to nothing against the tinted text beside it. */
 const GLYPH_STROKE = 2.2;
 
 type CategoryKey = keyof typeof CATEGORIES;
@@ -157,11 +162,7 @@ type TodayWork = {
  */
 function tasksForToday(t: Translate, health: HealthSignals): TodayWork {
   const day = todayPlan(
-    {
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.stepsBaseline,
-      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-    },
+    todayHealthInputs(health),
     null,
   );
   if (day.type === 'test') {
@@ -225,6 +226,7 @@ function stepOf(planned: PlannedExercise): PlaylistStep {
     exerciseId: planned.id,
     seconds: planDoseSeconds(dose),
     perSide: dose.perSide,
+    dose,
     ...(dose.tempo != null && dose.reps != null
       ? { cadence: { tempo: dose.tempo, reps: dose.reps, sets: dose.sets } }
       : {}),
@@ -257,7 +259,15 @@ function chipFor(seconds: number, t: Translate): string | undefined {
  * can be skimmed twice — once down the white titles for the work, once down the
  * colours for how hard the day is going to be.
  */
-export function TodayTasks() {
+export function TodayTasks({
+  covered = false,
+  onSheet,
+}: {
+  /** A sheet is over Home (the streak, a milestone): the mascots hold still under it. */
+  covered?: boolean;
+  /** A session's sheet opened or closed: Home holds what would rise over it. */
+  onSheet?: (open: boolean) => void;
+} = {}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -273,6 +283,12 @@ export function TodayTasks() {
   const [testing, setTesting] = useState<'take' | 'review' | null>(null);
   /** The 2-minute version, playing. */
   const [short, setShort] = useState<ProgramDay | null>(null);
+  const sheetOpen = open != null || testing != null || short != null;
+  const sheetRef = useRef(onSheet);
+  sheetRef.current = onSheet;
+  useEffect(() => {
+    sheetRef.current?.(sheetOpen);
+  }, [sheetOpen]);
 
   /**
    * Today's work, recomputed whenever the record behind it moves.
@@ -423,21 +439,17 @@ export function TodayTasks() {
         {/* Not when the day is done: the done card brings its own mascot, and
             two on one heading read as a sticker sheet. */}
         {!allDone && (
-          <Image
-            source={MASCOT}
-            accessibilityElementsHidden
-            importantForAccessibility="no"
-            style={styles.mascot}
-            resizeMode="contain"
-          />
+          <View accessibilityElementsHidden importantForAccessibility="no" style={styles.mascot}>
+            {/* Breathes and now and then looks up while Home is in front;
+                still under another tab, a player, a sheet or the plan. */}
+            <HeadingMascot surface={colors.background} paused={!focused || open != null || covered} />
+          </View>
         )}
       </View>
 
       {/* Why today is not the day as planned — said, rather than done silently. */}
-      {!allDone && (reason === 'heavy-day' || reason === 'short-sleep') && (
-        <Text style={[styles.reason, { color: meter.caption }]}>
-          {reason === 'heavy-day' ? t('pages.plan.reasonHeavyDay') : t('pages.plan.reasonShortSleep')}
-        </Text>
+      {!allDone && planReasonLine(t, reason) != null && (
+        <Text style={[styles.reason, { color: meter.caption }]}>{planReasonLine(t, reason)}</Text>
       )}
 
       {/* Above the list, not instead of it. The rows stay readable — somebody
@@ -452,6 +464,9 @@ export function TodayTasks() {
           plannedMinutes={minutes}
           tickedMoves={dayDone ? tasks.length : ticked.length}
           retest={retest}
+          // The player and the results open as a page sheet over Home, which
+          // leaves Home the focused tab underneath.
+          covered={covered || open != null || testing != null || short != null}
         />
       )}
 
@@ -534,7 +549,7 @@ export function TodayTasks() {
       <Modal
         animationType="slide"
         presentationStyle="pageSheet"
-        visible={open != null || testing != null || short != null}
+        visible={sheetOpen}
         onRequestClose={() => {
           setOpen(null);
           setTesting(null);
@@ -597,6 +612,18 @@ export function TodayTasks() {
 }
 
 /**
+ * The heading's mascot, still under the plan as well as under a player.
+ *
+ * Its own component so the plan overlay's coming and going re-renders the
+ * mascot and not the list: Home stays the focused tab under the overlay, so
+ * `useIsFocused` alone left him breathing behind a full-screen plan.
+ */
+function HeadingMascot({ surface, paused }: { surface: string; paused: boolean }) {
+  const planOver = usePlanOver();
+  return <Mascot rig={walkingRig} size={MASCOT_SIZE} surface={surface} paused={paused || planOver} />;
+}
+
+/**
  * The day's retest, as a row of the list.
  *
  * The same two lines and the same trailing chip as a task, tinted with the
@@ -638,10 +665,12 @@ function RetestRow({
       onPress={done ? (onResults ?? undefined) : onOpen}
       style={({ pressed }) => [styles.retestCard, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}
     >
-      {/* The tile carries the kind of work the way a task row's tinted line
-          does, so the one row on a test day still reads at a glance. */}
-      <View style={[styles.iconTile, { backgroundColor: tone.track }]}>
-        <HugeiconsIcon icon={RulerIcon} size={22} color={tone.fill} strokeWidth={2} />
+      {/* The tile carries the kind of work the way a task row's emoji does,
+          so the one row on a test day still reads at a glance. A neutral
+          tile: the ruler brings its own colour, and on the orange wash its
+          violet fought the line beside it. */}
+      <View style={[styles.iconTile, { backgroundColor: meter.iconTile }]}>
+        <FluentIcon name="test" size={28} />
       </View>
       <View style={styles.copy}>
         <Text
@@ -672,12 +701,8 @@ function RetestRow({
           <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.background} strokeWidth={2.5} />
         </View>
       ) : (
-        <View style={[styles.chip, { backgroundColor: tone.track }]}>
-          <HugeiconsIcon icon={Clock01Icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
-          <Text style={[styles.chipText, { color: tone.fill }]}>
-            {t('home.chipMinutes', { count: RETEST_MINUTES })}
-          </Text>
-        </View>
+        // The time it costs, standing on its lip in the checkpoint's orange.
+        <Chip3D icon={Clock01Icon} accent="orange" label={t('home.chipMinutes', { count: RETEST_MINUTES })} />
       )}
     </Pressable>
   );
@@ -745,16 +770,15 @@ function TaskRow({
           {task.title}
         </Text>
         <View style={styles.category}>
-          <HugeiconsIcon icon={category.icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
+          <FluentIcon name={category.emoji} size={CATEGORY_EMOJI} />
           <Text style={[styles.categoryText, { color: tone.fill }]}>{subtitle}</Text>
         </View>
       </View>
 
       {task.chip != null && !done ? (
-        <View style={[styles.chip, { backgroundColor: tone.track }]}>
-          <HugeiconsIcon icon={Clock01Icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
-          <Text style={[styles.chipText, { color: tone.fill }]}>{task.chip}</Text>
-        </View>
+        // The cost, as a solid chip in the category's own accent. Inert: the
+        // row around it is what opens the exercise.
+        <Chip3D icon={Clock01Icon} accent={category.accent} label={task.chip} />
       ) : (
         // Its own target, so the box can record something already done without
         // making the user sit through a player for it. Dashed while empty,
@@ -820,7 +844,7 @@ const styles = StyleSheet.create({
    */
   mascot: {
     position: 'absolute',
-    // A style rather than a prop: `Image` does not take `pointerEvents`. It
+    // A style rather than a prop, as it was on the image this replaced. It
     // overhangs the first task row, and on Android that overhang would be
     // hit-testable — iOS clips touches to the parent's bounds, Android does
     // not.

@@ -1,5 +1,5 @@
 import { CHAINS, PROGRESSING, planMeta, type ChainName } from './catalogue-meta';
-import { doseFor, doseSeconds, scaleSets } from './dose';
+import { doseFor, fitDoses, scaleSets } from './dose';
 import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import type { PlanDay, PlannedExercise, SessionMinutes } from './week';
 
@@ -11,7 +11,15 @@ import type { PlanDay, PlannedExercise, SessionMinutes } from './week';
  * session, then the user's own choice of minutes.
  */
 
-export type TodayReason = 'flare' | 'spike' | 'heavy-day' | 'short-sleep' | null;
+export type TodayReason =
+  | 'flare'
+  | 'spike'
+  | 'heavy-day'
+  | 'on-feet'
+  | 'big-workout'
+  | 'short-sleep'
+  | 'resting-hr'
+  | null;
 
 export type TodaySignals = {
   painToday: number | null;
@@ -22,6 +30,22 @@ export type TodaySignals = {
   steps28Avg: number | null;
   /** Hours slept last night, when Health has it. */
   sleepHours: number | null;
+  /**
+   * The seven-night mean under seven hours (`HealthSignals.sleepShort`).
+   * When given, this decides `short-sleep` instead of one night: the evidence
+   * is about sustained short sleep, not about Tuesday. Absent, the old
+   * one-night rule stands.
+   */
+  sleepShort?: boolean;
+  /** Hours on foot yesterday, and the person's own learned limit past which
+   * their next mornings get worse. Both from Health; null while unknown. */
+  onFeetYesterday?: number | null;
+  onFeetThreshold?: number | null;
+  /** A run or a session of sport on the feet bigger than anything in the past
+   * four weeks, yesterday. */
+  bigWorkoutYesterday?: boolean;
+  /** Resting heart rate 3+ bpm over the person's own usual this morning. */
+  restingHRElevated?: boolean;
   /** Sessions still owed a step back after in-session pain ≥ 6. */
   stepDownOwed: number;
   /** The user's pick on the today card; null keeps the plan's minutes. */
@@ -39,7 +63,7 @@ export const IN_SESSION_STOP = 6;
 export const STEP_DOWN_SESSIONS = 2;
 
 /** Seated, fascia-free work for a flare day, when the plan's own day has too little of it. */
-const FLARE_POOL = ['short_foot_seated', 'toe_spread', 'heel_raise_seated', 'fascia_stretch', 'big_toe_lift', 'sole_massage'];
+const FLARE_POOL = ['short_foot_seated', 'fascia_stretch', 'big_toe_lift', 'foot_roll'];
 
 export type AdjustedDay = PlanDay & { reason: TodayReason; steppedDown: boolean };
 
@@ -82,6 +106,21 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
     signals.steps28Avg != null &&
     signals.steps28Avg > 0 &&
     signals.stepsYesterday > HEAVY_DAY_RATIO * signals.steps28Avg;
+  /** Yesterday was more than the foot is used to, by the first measure that
+   * says so: a session bigger than the past month's, the person's own limit
+   * of hours on foot, then the step count. Each turns a strength day into
+   * recovery, the same way. */
+  const overLimit =
+    signals.onFeetYesterday != null &&
+    signals.onFeetThreshold != null &&
+    signals.onFeetYesterday >= signals.onFeetThreshold;
+  const recoveryDay: TodayReason = signals.bigWorkoutYesterday === true
+    ? 'big-workout'
+    : overLimit
+      ? 'on-feet'
+      : heavy
+        ? 'heavy-day'
+        : null;
 
   if (pain != null && pain >= FLARE_PAIN) {
     reason = 'flare';
@@ -99,15 +138,15 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
     // Keep the focus goal present if any seated exercise serves it.
     if (!exercises.some((e) => e.focus) && exercises.length > 0) exercises = [{ ...exercises[0], focus: true }, ...exercises.slice(1)];
     minutes = FLARE_MINUTES;
-    exercises = fitTo(exercises, minutes);
+    exercises = fitDoses(exercises, minutes);
     return { ...day, exercises, minutes, reason, steppedDown };
   }
   if (spike) {
     reason = 'spike';
     exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
     steppedDown = true;
-  } else if (heavy && type === 'strength') {
-    reason = 'heavy-day';
+  } else if (recoveryDay !== null && type === 'strength') {
+    reason = recoveryDay;
     type = 'recovery';
     const focus = exercises.find((e) => e.focus);
     const recovery = CHAINS.recovery.filter((id) => allowed(id, ctx)).slice(0, 1);
@@ -116,8 +155,17 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
       ...(focus != null ? [stepDown(focus, ctx, hasStep)] : []),
       ...[...recovery, ...stretch].map((id) => ({ id, level: 1, dose: doseFor(id, 1, hasStep), focus: false })),
     ];
-  } else if (signals.sleepHours != null && signals.sleepHours < SHORT_SLEEP_HOURS) {
+  } else if (
+    signals.sleepShort != null
+      ? signals.sleepShort
+      : signals.sleepHours != null && signals.sleepHours < SHORT_SLEEP_HOURS
+  ) {
     reason = 'short-sleep';
+    exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
+    steppedDown = true;
+  } else if (signals.restingHRElevated === true && type === 'strength') {
+    // A nudge, not a verdict: the strength day stays, one level lighter.
+    reason = 'resting-hr';
     exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
     steppedDown = true;
   }
@@ -131,6 +179,10 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
   if (signals.minutesChoice != null && signals.minutesChoice !== signals.defaultMinutes) {
     exercises = scaleToMinutes(exercises, signals.minutesChoice, signals.defaultMinutes);
   }
+  // Fitted here as well as when the week is built, so a week stored before the
+  // week did it (and any step-down or choice above) still runs in the minutes
+  // the header promises.
+  exercises = fitDoses(exercises, minutes);
   return { ...day, type, exercises, minutes, reason, steppedDown };
 }
 
@@ -149,14 +201,6 @@ export function scaleToMinutes(exercises: PlannedExercise[], minutes: SessionMin
   return list;
 }
 
-function fitTo(exercises: PlannedExercise[], minutes: number): PlannedExercise[] {
-  const total = exercises.reduce((sum, e) => sum + doseSeconds(e.dose), 0);
-  const budget = minutes * 60;
-  if (total <= budget || total === 0) return exercises;
-  const factor = budget / total;
-  return exercises.map((e) => ({ ...e, dose: scaleSets(e.dose, factor) }));
-}
-
 /**
  * The two-minute version — section 4.6. The focus exercise only, a set or two.
  * Offered when pain is 7 or more, or the day is nearly over and nothing has
@@ -166,7 +210,7 @@ export function twoMinuteVersion(day: PlanDay): PlanDay {
   const focus = day.exercises.find((e) => e.focus) ?? day.exercises[0];
   if (focus == null) return { ...day, minutes: 2 };
   const one: PlannedExercise = { ...focus, dose: { ...focus.dose, sets: Math.min(2, focus.dose.sets) } };
-  return { ...day, exercises: [one], minutes: 2 };
+  return { ...day, exercises: fitDoses([one], 2), minutes: 2 };
 }
 
 /** Evening, from this hour on, a day with nothing started offers the short version. */

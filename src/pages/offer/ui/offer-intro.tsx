@@ -1,30 +1,44 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 
-import { ExercisePreview } from '@/widgets/session-player';
-import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
+import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { readableOn } from '@/shared/lib/color';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Button3D } from '@/shared/ui/button-3d';
+import { Card3D, cardColours } from '@/shared/ui/card-3d';
+import { Chip3D } from '@/shared/ui/chip-3d';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { pointingRig } from '@/shared/ui/mascot';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+
+import { GoldText } from './glow';
+import { IntroMascot } from './intro-mascot';
+import { IntroRail, type IntroRailStep } from './intro-rail';
+import { IntroTile } from './intro-tile';
 
 /**
  * The two screens before the first paywall.
  *
  * The first says how this person's plan starts — their own numbers across the
- * top, tomorrow morning's stretch, the gentle first week, the new week every
- * Sunday, the first progress check on its date — and the second shows the
- * product and what it rests on. Then the plans. Each fact is the
- * plan's own: the plan is open-ended, so nothing here names a length or an
- * end.
+ * top, tomorrow morning's stretch, the gentle first week, the first progress
+ * check on its date — and the second shows the product and what it rests on.
+ * Then the plans. Each fact is the plan's own: the plan is open-ended, so
+ * nothing here names a length or an end.
+ *
+ * Drawn in the onboarding's 3D kit, solid rather than glass: Fluent emoji on
+ * raised tiles for what each line is about, chips standing on their lips, the
+ * filled violet button. One live mascot, on step one: step two's hero is a
+ * picture of Home, which already has him in it, so it gets none of its own
+ * (one mascot in frame).
  */
 
-const WAVE = require('@assets/update/mascot-handoff.png');
-/** The Foot Passport's cover art, the same 3D foot onboarding built it with. */
-const FOOT = require('@assets/onboarding/building/foot.webp');
-const COVER = 'linear-gradient(135deg, #9B7BFF 0%, #7C5CFF 45%, #5B3FD6 100%)';
-const MOBILITY = require('@assets/program/mascot-mobility.png');
-const STRENGTH = require('@assets/program/mascot-strength.png');
-const BALANCE = require('@assets/program/mascot-balance.png');
+/** Step one's mascot, beside the title he points at. */
+const POINTER_SIZE = 84;
+/** The tiles leading step two's rows. */
+const HOW_TILE = 44;
+/** The Foot Passport's emoji. */
+const PASSPORT_ART = 44;
 
 const STAGGER_MS = 80;
 
@@ -34,23 +48,54 @@ const rise = (i: number) =>
     .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
     .reduceMotion(ReduceMotion.System);
 
-/** Three segments across the top, filled up to the step on screen. */
-export function StepBar({ step, total = 3 }: { step: number; total?: number }) {
+/**
+ * Three segments across the top, filled up to the step on screen. A segment
+ * already passed is a way back to it. `onSky` is white on the hero's blue.
+ */
+export function StepBar({
+  step,
+  total = 3,
+  onSelect,
+  onSky = false,
+}: {
+  step: number;
+  total?: number;
+  onSelect?: (step: number) => void;
+  onSky?: boolean;
+}) {
   const scheme = useColorScheme();
   const t = useT();
-  const done = palette[scheme].foreground;
-  const todo = meterColors[scheme].track;
+  const done = onSky ? '#FFFFFF' : palette[scheme].foreground;
+  const todo = onSky ? 'rgba(255, 255, 255, 0.35)' : meterColors[scheme].track;
   return (
-    <View
-      accessible
-      accessibilityRole="progressbar"
-      accessibilityLabel={t('offer.stepA11y', { step, total })}
-      style={styles.bar}>
-      {Array.from({ length: total }, (_, i) => (
-        <View key={i} style={[styles.segment, { backgroundColor: i < step ? done : todo }]} />
-      ))}
+    <View accessibilityRole="progressbar" accessibilityLabel={t('offer.stepA11y', { step, total })} style={styles.bar}>
+      {Array.from({ length: total }, (_, i) => {
+        const target = i + 1;
+        const back = onSelect != null && target < step;
+        return (
+          <Pressable
+            key={i}
+            disabled={!back}
+            accessibilityRole="button"
+            accessibilityLabel={t('offer.stepA11y', { step: target, total })}
+            onPress={() => onSelect?.(target)}
+            hitSlop={{ top: 14, bottom: 14 }}
+            style={styles.segmentHit}>
+            <View style={[styles.segment, { backgroundColor: i < step ? done : todo }]} />
+          </Pressable>
+        );
+      })}
     </View>
   );
+}
+
+/**
+ * The button at the foot of steps one and two: the onboarding's own call to
+ * action, the filled violet 3D button at `xl`, in a fixed dock.
+ */
+export function IntroNext({ onPress }: { onPress: () => void }) {
+  const t = useT();
+  return <Button3D label={t('offer.next')} onPress={onPress} size="xl" docked />;
 }
 
 export type IntroPlanProps = {
@@ -67,146 +112,133 @@ export type IntroPlanProps = {
 };
 
 /** Step one: how the plan starts. */
-export function IntroPlan({ name, strip, why, minutes, daysPerWeek, checkOn }: IntroPlanProps) {
+export function IntroPlan({ name, strip, why, minutes, checkOn }: IntroPlanProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const language = useLanguage();
   const date = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(new Date(checkOn));
 
-  const rows = [
-    // Tomorrow morning first: nearer and more real than a test, and the one
-    // thing that helps most, before the first step.
+  // Short on purpose: when, what, and a few words. The detail belongs to the
+  // plan itself, not to the screen that sells it. The emoji are the app's
+  // own for each: the morning stretch's sunrise, the herb of a settling,
+  // recovery week, and the ruler every test is measured with.
+  const steps: IntroRailStep[] = [
     {
-      when: t('offer.introTomorrowWhen'),
+      art: 'morning',
+      tone: 'orange',
+      when: t('offer.tomorrowWhen'),
       title: t('quick.morning.title'),
-      body: t('offer.introTomorrowBody'),
+      body: t('offer.tomorrowBody'),
     },
     {
+      art: 'relief',
+      tone: 'teal',
       when: t('offer.introWeekWhen'),
       title: t('offer.introWeekTitle'),
-      body: t('offer.introWeekBody', { count: daysPerWeek, minutes }),
+      body: t('offer.weekBody', { minutes }),
     },
-    {
-      when: t('offer.introSundayWhen'),
-      title: t('offer.introSundayTitle'),
-      body: t('offer.introSundayBody'),
-    },
-    { when: date, title: t('offer.introCheckTitle'), body: t('offer.introCheckBody') },
+    { art: 'test', tone: 'amber', when: date, title: t('offer.introCheckTitle'), body: t('offer.checkBody') },
   ];
 
   return (
     <View style={styles.page}>
-      {/* The passport they built in onboarding, as the paywall's header:
-          what the plan is for, before anything about the plan. */}
-      {strip.length > 0 ? (
-        <Animated.View
-          {...REPLAY_MASK}
-          entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
-          style={[styles.passport, { experimental_backgroundImage: COVER }]}>
-          <View style={styles.passportCopy}>
-            <Text style={styles.passportEyebrow}>{t('onboarding.passport.title')}</Text>
-            <Text style={styles.passportLine} numberOfLines={2}>
-              {strip.join('  ·  ')}
-            </Text>
-          </View>
-          <Image source={FOOT} style={styles.passportArt} resizeMode="contain" />
+      {/* The title, and him beside it pointing at it: here is your plan. */}
+      <View style={styles.headRow}>
+        <Animated.View entering={FadeIn.delay(60).duration(320).reduceMotion(ReduceMotion.System)} style={styles.heading}>
+          <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+            {name !== '' ? t('offer.introTitleNamed', { name }) : t('offer.introTitle')}
+          </Text>
         </Animated.View>
-      ) : (
-        <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}>
-          <Image source={WAVE} style={styles.wave} resizeMode="contain" />
+        <IntroMascot rig={pointingRig} shot="wave" size={POINTER_SIZE} surface={colors.background} mirrored />
+      </View>
+
+      {why != null && (
+        <Animated.View
+          entering={FadeIn.delay(120).duration(320).reduceMotion(ReduceMotion.System)}
+          style={[styles.why, { borderLeftColor: accents[scheme].violet.fill }]}>
+          <Text style={[styles.quoteWhy, { color: colors.foreground }]}>{t('offer.introWhy', { why })}</Text>
         </Animated.View>
       )}
-      <Animated.View entering={FadeIn.delay(60).duration(320).reduceMotion(ReduceMotion.System)} style={styles.heading}>
-        <Text style={[styles.title, { color: colors.foreground }]}>
-          {name !== '' ? t('offer.introTitleNamed', { name }) : t('offer.introTitle')}
-        </Text>
-        {why != null && (
-          <View style={[styles.why, { borderLeftColor: PRIMARY }]}>
-            <Text style={[styles.quoteWhy, { color: colors.foreground }]}>{t('offer.introWhy', { why })}</Text>
-          </View>
-        )}
-      </Animated.View>
 
-      <View>
-        {rows.map((row, i) => {
-          const first = i === 0;
-          const last = i === rows.length - 1;
-          return (
-            <Animated.View key={row.title} entering={rise(i + 1)} style={styles.row}>
-              <View style={styles.rail}>
-                <View
-                  style={
-                    first
-                      ? [styles.dotNow, { backgroundColor: PRIMARY, shadowColor: PRIMARY }]
-                      : [styles.dot, { borderColor: meter.unit, backgroundColor: colors.background }]
-                  }
-                />
-                {!last && <View style={[styles.line, { backgroundColor: meter.track }]} />}
-              </View>
-              <View style={styles.rowCopy}>
-                <Text style={[styles.when, { color: accents[scheme].violet.fill }]}>{row.when}</Text>
-                <Text style={[styles.rowTitle, { color: colors.foreground }]}>{row.title}</Text>
-                <Text style={[styles.rowBody, { color: meter.caption }]}>{row.body}</Text>
-              </View>
-            </Animated.View>
-          );
-        })}
-      </View>
+      {/* The passport they built in onboarding: what the plan is for, before
+          anything about the plan. */}
+      {strip.length > 0 && <Passport strip={strip} />}
+
+      <Animated.View entering={rise(2)}>
+        <IntroRail title={t('offer.goldPlan')} steps={steps} />
+      </Animated.View>
     </View>
   );
 }
 
 /**
- * Step two: the product itself, playing, and what it rests on.
- *
- * A looping clip of the morning stretch rather than a description of one, two
- * lines on how a day works, and an honest card on the evidence: the moves come
- * from published research and the guideline; the app itself has not been
- * trialled, and it says so. The founders' line stays, under it.
+ * The Foot Passport, as a raised violet card: its name, their own numbers as
+ * chips, and the foot. Masked from recordings: it shows where it hurts and
+ * this morning's score.
+ */
+function Passport({ strip }: { strip: readonly string[] }) {
+  const scheme = useColorScheme();
+  const t = useT();
+  const ink = readableOn(accents[scheme].violet.fill, cardColours(scheme, 'violet').face);
+  return (
+    <Animated.View {...REPLAY_MASK} entering={FadeIn.delay(160).duration(320).reduceMotion(ReduceMotion.System)}>
+      <Card3D material="solid" tone="violet" padding={14} contentStyle={styles.passport}>
+        <View style={styles.passportCopy}>
+          <Text style={[styles.passportEyebrow, { color: ink }]} numberOfLines={1}>
+            {t('onboarding.passport.title')}
+          </Text>
+          <View style={styles.passportChips}>
+            {strip.map((item, i) => (
+              <Chip3D key={i} label={item} accent="violet" style={styles.passportChip} />
+            ))}
+          </View>
+        </View>
+        <FluentIcon name="foot" size={PASSPORT_ART} />
+      </Card3D>
+    </Animated.View>
+  );
+}
+
+/**
+ * Step two's copy: how a day works, and what it rests on. It is the sheet laid
+ * over the hero (`offer-hero.tsx`), which shows the product itself.
  */
 export function IntroHow() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
 
-  const rows = [
-    { art: MOBILITY, title: t('offer.howCheckinShort') },
-    { art: STRENGTH, title: t('offer.howSessionShort') },
-    { art: BALANCE, title: t('offer.howRetestShort') },
+  // Each row's emoji on a tile of its colour, the onboarding answers' look,
+  // so the three read at a glance: the morning check-in, the day's timed
+  // session, and the ruler of the test that comes back every two weeks.
+  const rows: { art: FluentName; tone: AccentName; title: string }[] = [
+    { art: 'sun', tone: 'orange', title: t('offer.howCheckinShort') },
+    { art: 'timer', tone: 'violet', title: t('offer.howSessionShort') },
+    { art: 'test', tone: 'amber', title: t('offer.howRetestShort') },
   ];
 
   return (
-    <View style={styles.page}>
-      <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}>
-        <ExercisePreview exerciseId="fascia_stretch" style={styles.clip} expandable />
-      </Animated.View>
-      <Animated.Text
-        entering={FadeIn.delay(80).duration(320).reduceMotion(ReduceMotion.System)}
-        style={[styles.title, { color: colors.foreground }]}>
-        {t('offer.howTitleShort')}
-      </Animated.Text>
+    <View style={styles.sheetCopy}>
+      <View style={styles.sheetHead}>
+        <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)} style={styles.sheetHeading}>
+          <GoldText>{t('offer.goldHow')}</GoldText>
+          <Text accessibilityRole="header" style={[styles.sheetTitle, { color: colors.foreground }]}>
+            {t('offer.howHeadline')}
+          </Text>
+        </Animated.View>
+      </View>
 
-      <View style={styles.cards}>
+      <View style={styles.sheetRows}>
         {rows.map((row, i) => (
-          <Animated.View key={row.title} entering={rise(i + 1)} style={[styles.howRow, { backgroundColor: colors.card }]}>
-            <Image source={row.art} style={styles.howArt} resizeMode="contain" />
-            <Text style={[styles.cardTitle, styles.cardCopy, { color: colors.foreground }]}>{row.title}</Text>
+          <Animated.View key={row.title} entering={rise(i + 1)} style={styles.sheetRow}>
+            <IntroTile art={row.art} tone={row.tone} size={HOW_TILE} />
+            <Text style={[styles.sheetRowText, { color: colors.foreground }]} numberOfLines={2}>
+              {row.title}
+            </Text>
           </Animated.View>
         ))}
       </View>
-
-      <Animated.View entering={rise(4)} style={[styles.built, { backgroundColor: colors.card }]}>
-        <Text style={[styles.when, { color: accents[scheme].violet.fill }]}>{t('offer.builtTitle')}</Text>
-        <Text style={[styles.rowBody, { color: colors.foreground }]}>{t('offer.builtBody')}</Text>
-      </Animated.View>
-
-      <Animated.View entering={rise(5)} style={styles.quote}>
-        <Text style={[styles.quoteText, { color: colors.foreground }]}>{t('offer.howQuote')}</Text>
-        <Text style={[styles.quoteBy, { color: meter.caption }]}>{t('offer.howQuoteBy')}</Text>
-      </Animated.View>
     </View>
   );
 }
@@ -216,112 +248,47 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 6,
   },
+  segmentHit: { flex: 1, paddingVertical: 4 },
   segment: {
-    flex: 1,
     height: 4,
     borderRadius: 2,
   },
   page: {
-    gap: 22,
+    gap: 20,
   },
-  heading: {
-    gap: 12,
-  },
-  passport: {
+  headRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
-    paddingVertical: 14,
-    paddingLeft: 16,
-    paddingRight: 10,
-    borderRadius: 22,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
+    gap: 8,
   },
-  passportCopy: { flex: 1, gap: 4 },
-  passportEyebrow: { ...fonts.bold(11, 1.4), textTransform: 'uppercase', color: 'rgba(255,255,255,0.72)' },
-  passportLine: { ...fonts.bold(16, -0.2), lineHeight: 21, color: '#FFFFFF' },
-  passportArt: { width: 56, height: 56 },
+  heading: {
+    flex: 1,
+  },
+  title: {
+    ...fonts.heavy(28, -0.7),
+    lineHeight: 32,
+  },
   why: {
+    marginTop: -6,
     borderLeftWidth: 3,
     paddingLeft: 12,
     paddingVertical: 2,
   },
   quoteWhy: { ...fonts.semibold(17, -0.2), lineHeight: 23 },
-  wave: { width: 78, height: 78 },
-  title: {
-    ...fonts.heavy(28, -0.7),
-    lineHeight: 32,
-  },
-  row: {
-    flexDirection: 'row',
-    gap: 14,
-  },
-  rail: {
-    width: 22,
-    alignItems: 'center',
-  },
-  dotNow: {
-    width: 14,
-    height: 14,
-    borderRadius: 7,
-    marginTop: 3,
-    shadowOpacity: 0.6,
-    shadowRadius: 6,
-    shadowOffset: { width: 0, height: 0 },
-  },
-  dot: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    borderWidth: 2,
-    marginTop: 4,
-  },
-  line: {
-    flex: 1,
-    width: 2,
-    marginTop: 4,
-  },
-  rowCopy: {
-    flex: 1,
-    gap: 2,
-    paddingBottom: 20,
-  },
-  when: fonts.heavy(13),
-  rowTitle: fonts.heavy(17, -0.2),
-  rowBody: {
-    ...fonts.semibold(14),
-    lineHeight: 19,
-  },
-  cards: { gap: 10 },
-  cardCopy: { flex: 1, gap: 2 },
-  cardTitle: fonts.heavy(16, -0.2),
-  clip: { aspectRatio: 16 / 10 },
-  howRow: {
+  passport: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-    paddingVertical: 6,
-    paddingLeft: 6,
-    paddingRight: 16,
-    borderRadius: 20,
-    borderCurve: 'continuous',
+    gap: 12,
   },
-  howArt: { width: 52, height: 52 },
-  built: {
-    gap: 6,
-    padding: 16,
-    borderRadius: 20,
-    borderCurve: 'continuous',
-  },
-  quote: {
-    gap: 8,
-    paddingHorizontal: 4,
-  },
-  quoteText: {
-    ...fonts.semibold(15),
-    lineHeight: 22,
-    opacity: 0.85,
-  },
-  quoteBy: fonts.bold(13),
+  passportCopy: { flex: 1, gap: 8 },
+  passportEyebrow: { ...fonts.heavy(11, 1.4), textTransform: 'uppercase' },
+  passportChips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+  passportChip: { maxWidth: '100%' },
+  sheetCopy: { gap: 16 },
+  sheetHead: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  sheetHeading: { flex: 1, gap: 8 },
+  sheetTitle: { ...fonts.heavy(23, -0.6), lineHeight: 27 },
+  sheetRows: { gap: 10 },
+  sheetRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  sheetRowText: { flex: 1, ...fonts.bold(16, -0.2), lineHeight: 20 },
 });

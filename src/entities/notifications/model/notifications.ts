@@ -5,6 +5,10 @@ import { Platform } from 'react-native';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 
+import { scheduleWithArt } from './attachment';
+import type { Message } from './copy';
+import { offerPushesAllowed } from './offer-prefs';
+
 /**
  * Local notifications: the permission ask, and the one message we send.
  *
@@ -151,6 +155,22 @@ export async function requestNotificationAccess(): Promise<boolean> {
 }
 
 /**
+ * What the win-back says. Apart from `scheduleWinback` so the development
+ * preview shows exactly these words.
+ */
+export function winbackMessage(percent: number, name?: string): Message {
+  const t = translatorFor(getLanguage());
+  const who = name != null && name.trim().length > 0 ? name.trim() : null;
+  return {
+    title:
+      who != null
+        ? t('notifications.offerWaitNamed', { name: who, percent })
+        : t('notifications.offerWait', { percent }),
+    body: t('notifications.offerWaitBody'),
+  };
+}
+
+/**
  * The win-back: one message, sent as the app goes to the background.
  *
  * It says what is on offer and nothing else. It used to be two banners a second
@@ -166,18 +186,17 @@ export async function requestNotificationAccess(): Promise<boolean> {
  * since there is no screen left to show a failure on.
  */
 export async function scheduleWinback(percent: number, name?: string): Promise<boolean> {
+  // An offer: held when offers are turned off in Settings (guideline 4.5.4).
+  if (!offerPushesAllowed()) return false;
   await ensureNotificationChannel();
-  const t = translatorFor(getLanguage());
-  const who = name != null && name.trim().length > 0 ? name.trim() : null;
+  const message = winbackMessage(percent, name);
   try {
-    await Notifications.scheduleNotificationAsync({
+    // The gift on iPhone; see `attachment.ts`.
+    await scheduleWithArt('offer', {
       identifier: WINBACK_ID,
       content: {
-        title:
-          who != null
-            ? t('notifications.offerWaitNamed', { name: who, percent })
-            : t('notifications.offerWait', { percent }),
-        body: t('notifications.offerWaitBody'),
+        title: message.title,
+        body: message.body,
         sound: true,
         data: { kind: WINBACK_KIND },
       },
@@ -229,6 +248,13 @@ const EXPIRY_ID = 'program-expiry-notice';
  * decide and short enough to still be about something happening. */
 const EXPIRY_NOTICE_DAYS = 7;
 
+/** What the expiry notice says. Apart from `syncExpiryNotice` so the
+ * development preview shows exactly these words. */
+export function expiryMessage(): Message {
+  const t = translatorFor(getLanguage());
+  return { title: t('notifications.expiryTitle'), body: t('notifications.expiryBody') };
+}
+
 /**
  * Warn, once, a week before access with a fixed end date runs out.
  *
@@ -263,13 +289,14 @@ export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
   // which would greet them with a warning the instant they launched.
   if (at.getTime() <= Date.now()) return;
 
-  const t = translatorFor(getLanguage());
+  const message = expiryMessage();
   try {
-    await Notifications.scheduleNotificationAsync({
+    // The crown and key on iPhone; see `attachment.ts`.
+    await scheduleWithArt('expiry', {
       identifier: EXPIRY_ID,
       content: {
-        title: t('notifications.expiryTitle'),
-        body: t('notifications.expiryBody'),
+        title: message.title,
+        body: message.body,
         sound: true,
         data: { kind: EXPIRY_KIND },
       },

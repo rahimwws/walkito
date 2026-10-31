@@ -1,8 +1,10 @@
+import { router } from 'expo-router';
 import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import {
   Notifications,
+  ON_FEET_KIND,
   PLAN_KIND,
   markDelivered,
   onAppOpen,
@@ -87,9 +89,24 @@ export function useNotificationScheduler(): void {
       markDelivered(data.notification as never, data.date);
     });
 
+    /**
+     * "Four hours on your feet" opens the minute it asks for: the at-work
+     * routine, straight away. From a cold start too, once the router exists.
+     */
+    const openOnFeet = (response: Notifications.NotificationResponse | null) => {
+      const data = response?.notification.request.content.data as { kind?: string } | undefined;
+      if (data?.kind !== ON_FEET_KIND) return;
+      setTimeout(() => router.push({ pathname: '/routine/[id]', params: { id: 'at_work' } }), 400);
+    };
+    const tapped = Notifications.addNotificationResponseReceivedListener(openOnFeet);
+    void Notifications.getLastNotificationResponseAsync().then((last) => {
+      if (last != null && Date.now() - last.notification.date < 60_000) openOnFeet(last);
+    });
+
     return () => {
       app.remove();
       delivered.remove();
+      tapped.remove();
       // Returns its own unsubscribe rather than an emitter subscription.
       language();
     };

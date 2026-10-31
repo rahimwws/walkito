@@ -65,4 +65,27 @@ export const PLAYER_EN = {
   'player.cta.pause': 'Pause',
   'player.cta.resume': 'Resume',
   'player.cta.done': 'Done',
+  // The line under the move's name while a set of a planned dose runs: which
+  // rep of which set. Whole lines per language; "Set 1 of 1" is left out for
+  // one-set moves. `plain` is also the pill over the clock for plain reps.
+  'player.line.plainSet': 'Rep {rep} of {reps} · Set {set} of {sets}',
+  'player.line.plain': 'Rep {rep} of {reps}',
+  'player.line.set': 'Set {set} of {sets}',
+  // The big number during a set of counted reps, and its unit beside it:
+  // "4/10 reps". The count is the rep under way, out of the set.
+  'player.repCount': '{rep}/{reps}',
+  'player.unit.reps': { one: 'rep', other: 'reps' },
+  // Letting go between two holds inside a set.
+  'player.phase.relax': 'Relax',
+  // The small button beside Pause during a set: this set is done now.
+  'player.cta.setDone': 'Done',
+  // The rest between sets and the change of foot, each a screen of its own
+  // with a ring that empties. "Start now" skips the few seconds left of a
+  // change of foot.
+  'player.break.rest': 'Rest',
+  'player.break.restNext': 'Next: set {set} of {sets}',
+  'player.break.switchLeft': 'Switch to your left foot',
+  'player.break.switchRight': 'Switch to your right foot',
+  'player.break.skipRest': 'Skip rest',
+  'player.break.ready': 'Start now',
 } as const satisfies Record<string, SourceEntry>;

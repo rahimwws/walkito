@@ -3,13 +3,16 @@ import { daysBetween, fromDateKey, toDateKey } from '../state';
 
 import {
   CHAINS,
+  CHAINS_VERSION,
+  currentLevels,
   PLAN_META,
   planMeta,
+  PROGRESSING,
   type ChainName,
   type PlanKind,
 } from './catalogue-meta';
-import { doseFor, doseSeconds, type PlanDose } from './dose';
-import { allowed, atOrBelow, nextAbove, type EligibilityContext } from './eligibility';
+import { doseFor, doseSeconds, fitDoses, type PlanDose } from './dose';
+import { allowed, atOrBelow, nearestOn, nextAbove, type EligibilityContext } from './eligibility';
 import { GOAL_SPECS, pickFocus, type Goal, type GoalType } from './goals';
 
 /**
@@ -47,7 +50,8 @@ export type RationaleKind = 'first' | 'painUp' | 'hard' | 'easy' | 'painLow' | '
 
 export type Rationale = { kind: RationaleKind; /** The pain figure for `painLow`. */ n?: number };
 
-export type ChainLevels = Record<ChainName, number>;
+/** Indices into `CHAINS`. `_chains` is the layout they count in; see `currentLevels`. */
+export type ChainLevels = Record<ChainName, number> & { _chains?: number };
 
 export type WeekPlan = {
   /** Monday, `YYYY-MM-DD`. */
@@ -122,7 +126,7 @@ export const WEEK_SHAPES: Readonly<Record<DaysPerWeek, readonly DayType[]>> = {
 export const MIN_EXERCISES = 2;
 export const MAX_EXERCISES = 4;
 
-export const DEFAULT_LEVELS: ChainLevels = { calf: 0, arch: 0, balance: 0, hip: 0, mobility: 0, recovery: 0 };
+export const DEFAULT_LEVELS: ChainLevels = { calf: 0, arch: 0, balance: 0, hip: 0, mobility: 0, recovery: 0, _chains: CHAINS_VERSION };
 
 /** Test cadence: every two weeks until the first goal is reached, then every four. */
 export const TEST_EVERY_DAYS = 14;
@@ -151,29 +155,36 @@ function mean(values: readonly (number | null)[]): number | null {
   return logged.reduce((sum, v) => sum + v, 0) / logged.length;
 }
 
-/** The chain a goal's focus exercise climbs on strength days. */
-function focusChainOf(goal: GoalType): ChainName {
-  // Pain is worked by mobility and low calf work; on a strength day that means
-  // the calf chain, held to its first two levels.
+/** The chain a goal's focus exercise climbs on strength days. Exported so the
+ * plan screen can say when a week stepped up or back on it. */
+export function focusChainOf(goal: GoalType): ChainName {
+  // Pain is worked by the calf chain on a strength day: slow, heavy calf
+  // raises are the loading the heel-pain evidence rests on (Rathleff 2014).
   return goal === 'pain_free_mornings' ? 'calf' : GOAL_SPECS[goal].chain;
 }
 
-/** The highest index on the calf chain the pain goal allows (level ≤ 2). */
+/**
+ * The highest index on a chain a goal may climb to.
+ *
+ * Pain climbs the calf chain up to the single-leg raise on a towel, the
+ * high-load raise from Rathleff 2014, and no further: the heel drop off a step
+ * and hopping wait until pain is no longer the focus. It used to stop at level
+ * 2, the two-foot hold, so the work with the best evidence for heel pain was
+ * never reached while the heel hurt.
+ */
 function capFor(goal: GoalType | null, chain: ChainName): number {
   if (goal !== 'pain_free_mornings' || chain !== 'calf') return CHAINS[chain].length - 1;
-  let cap = 0;
-  CHAINS.calf.forEach((id, i) => {
-    if ((planMeta(id)?.level ?? 5) <= 2) cap = i;
-  });
-  return cap;
+  return CHAINS.calf.indexOf('heel_raise_towel');
 }
 
 /**
- * Rule 9: move the focus chain one step.
+ * Rule 9: move a chain one step.
  *
- * Up when the last two sessions with that exercise were both "easy" and pain
- * did not rise over the week; down when pain rose by two or any session last
- * week was "hard". Otherwise it stays.
+ * Guided by pain, as the heel-pain guidance asks, rather than by how easy it
+ * felt: up when the last two sessions with that exercise were done and neither
+ * was "hard" and morning pain did not rise over the week; down when pain rose
+ * by two or any session last week was "hard". Otherwise it stays. It used to
+ * want two "easy" in a row, which most weeks never gave, so the load sat still.
  */
 export function progress(
   levels: ChainLevels,
@@ -194,7 +205,7 @@ export function progress(
   }
   const withIt = input.lastWeekFeedback.filter((s) => s.exerciseIds.includes(current));
   const lastTwo = withIt.slice(-2);
-  if (lastTwo.length === 2 && lastTwo.every((s) => s.feedback === 'easy') && rise <= 0) {
+  if (lastTwo.length === 2 && lastTwo.every((s) => s.feedback === 'easy' || s.feedback === 'ok') && rise <= 0) {
     const up = nextAbove(chain, at, ctx);
     if (up != null && up.index <= cap) return { ...levels, [chain]: up.index };
   }
@@ -209,7 +220,7 @@ function planned(id: string, focus: boolean, hasStep: boolean, level?: number, m
 /** The exercise a chain is at, clamped to what is allowed. Null when nothing on it is. */
 function chainExercise(chain: ChainName, levels: ChainLevels, ctx: EligibilityContext, cap?: number): string | null {
   const at = Math.min(levels[chain], cap ?? CHAINS[chain].length - 1);
-  return atOrBelow(chain, at, ctx)?.id ?? null;
+  return nearestOn(chain, at, ctx)?.id ?? null;
 }
 
 /** A rotating pick from a pool, so consecutive days and weeks differ. */
@@ -232,7 +243,9 @@ function focusFromPool(pool: readonly string[], goal: GoalType, ctx: Eligibility
 
 /**
  * Rule 8: two to four exercises that fit the minutes. The focus exercise goes
- * first and is never cut; the rest are added in order while there is time.
+ * first and is never cut; the rest are added in order while there is time, and
+ * the doses are then cut to the minutes (`fitDoses`), since the focus exercise
+ * and the minimum of two can take longer than the day has on their own.
  */
 function fit(candidates: PlannedExercise[], minutes: number): PlannedExercise[] {
   const unique: PlannedExercise[] = [];
@@ -248,10 +261,18 @@ function fit(candidates: PlannedExercise[], minutes: number): PlannedExercise[] 
       used += cost;
     }
   }
-  return out;
+  return fitDoses(out, minutes);
 }
 
 const MOBILITY_POOL = CHAINS.mobility;
+
+/** The plantar stretch done every day for heel pain. */
+const MORNING_STRETCH_ID = 'fascia_stretch';
+
+/** Ten ten-second holds a foot, fewer on a short day so the session keeps its other work. */
+function dailyStretchDose(minutes: SessionMinutes): PlanDose {
+  return { sets: 1, reps: minutes >= 10 ? 10 : minutes >= 5 ? 6 : 4, holdSec: 10, perSide: true };
+}
 const RECOVERY_POOL = CHAINS.recovery;
 
 export function buildWeek(input: WeekInput): WeekPlan {
@@ -266,20 +287,30 @@ export function buildWeek(input: WeekInput): WeekPlan {
     order: input.steps,
   });
 
-  // Progression on the focus chain, then every chain clamped to what is allowed
-  // this week — week one and missing equipment can both pull a chain back.
-  let levels = { ...input.levels };
+  // Progression on every chain an active goal climbs, then every chain clamped
+  // to what is allowed this week — week one and missing equipment can both
+  // pull a chain back. Only the focus chain used to move, so a second goal's
+  // exercise stayed at its first dose for good.
+  let levels: ChainLevels = { ...currentLevels(input.levels), _chains: CHAINS_VERSION };
   if (focus != null && input.weekIndex > 1) {
-    const chain = focusChainOf(focus);
-    levels = progress(levels, chain, input, ctx, capFor(focus, chain));
+    const climbed = new Set<ChainName>();
+    const active = [focus, ...input.goals.filter((g) => g.status === 'active' && g.type !== focus).map((g) => g.type)];
+    for (const goal of active) {
+      const chain = goal === focus ? focusChainOf(goal) : GOAL_SPECS[goal].chain;
+      if (climbed.has(chain) || !PROGRESSING.includes(chain)) continue;
+      climbed.add(chain);
+      levels = progress(levels, chain, input, ctx, capFor(focus, chain));
+    }
   }
   for (const chain of Object.keys(CHAINS) as ChainName[]) {
-    const clamped = atOrBelow(chain, levels[chain], ctx);
+    const clamped = nearestOn(chain, levels[chain], ctx);
     if (clamped != null) levels[chain] = clamped.index;
   }
 
   const secondary = input.goals.filter((g) => g.status === 'active' && g.type !== focus).map((g) => g.type);
   const maintaining = input.goals.filter((g) => g.status === 'maintaining').map((g) => g.type);
+
+  const painActive = input.goals.some((g) => g.type === 'pain_free_mornings' && g.status === 'active');
 
   const shape = WEEK_SHAPES[input.daysPerWeek];
   const testDay = testDateIn(input);
@@ -303,6 +334,14 @@ export function buildWeek(input: WeekInput): WeekPlan {
     const focusExercise = focus == null ? null : focusFor(slot, focus, levels, ctx, seed);
     if (focusExercise != null) candidates.push(planned(focusExercise, true, hasStep));
 
+    // Heel pain: the plantar stretch every day, ten holds of ten seconds
+    // (DiGiovanni), not only when the mobility rotation comes round to it.
+    if (painActive && allowed(MORNING_STRETCH_ID, ctx)) {
+      const at = candidates.findIndex((c) => c.id === MORNING_STRETCH_ID);
+      if (at >= 0) candidates[at] = { ...candidates[at], dose: dailyStretchDose(input.defaultMinutes) };
+      else candidates.push({ id: MORNING_STRETCH_ID, level: 1, dose: dailyStretchDose(input.defaultMinutes), focus: focus === 'pain_free_mornings' });
+    }
+
     if (slot === 'strength') {
       strengthCount += 1;
       // Rule 4: secondary goals rotate across the other slots.
@@ -321,11 +360,16 @@ export function buildWeek(input: WeekInput): WeekPlan {
         }
       }
       if (focus === 'arch_hold') {
-        for (const id of rotate(['toe_spread', 'band_inversion'], seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
+        // The band works the tibialis posterior, which holds the inner arch up:
+        // every strength day once it is allowed, the arch's own seated work
+        // the day does not already hold until then.
+        const taken = candidates.map((c) => c.id);
+        const id = allowed('band_inversion', ctx) ? 'band_inversion' : rotate(['big_toe_lift', 'short_foot_seated'], seed, 1, ctx, taken)[0];
+        if (id != null) candidates.push(planned(id, false, hasStep));
       } else if (input.toeWork === true) {
         // A big toe that will not lift, or a bunion: the toe's own strength,
         // seated and level one. The arch focus above already carries it.
-        for (const id of rotate(['big_toe_lift', 'toe_spread'], seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
+        for (const id of rotate(['big_toe_lift'], seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
       }
       for (const id of rotate(MOBILITY_POOL, seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
     } else if (slot === 'mobility') {
@@ -333,7 +377,7 @@ export function buildWeek(input: WeekInput): WeekPlan {
     } else if (slot === 'balance') {
       const id = chainExercise('balance', levels, ctx);
       if (id != null) candidates.push(planned(id, false, hasStep));
-      for (const acc of rotate(['tibialis_raise', 'ankle_rocks'], seed, 1, ctx)) candidates.push(planned(acc, false, hasStep));
+      for (const acc of rotate(['ankle_rocks', 'hip_abduction'], seed, 1, ctx)) candidates.push(planned(acc, false, hasStep));
     } else if (slot === 'recovery') {
       for (const id of rotate(RECOVERY_POOL, seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
       for (const id of rotate(MOBILITY_POOL, seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
@@ -363,12 +407,12 @@ function focusFor(slot: PlanKind, goal: GoalType, levels: ChainLevels, ctx: Elig
   if (slot === 'strength') {
     return chainExercise(chain, levels, ctx, capFor(goal, chain)) ?? focusFromPool(MOBILITY_POOL, goal, ctx, seed);
   }
-  const pool = slot === 'mobility' ? MOBILITY_POOL : slot === 'recovery' ? [...RECOVERY_POOL, ...MOBILITY_POOL] : [...CHAINS.balance, 'ankle_rocks', 'tibialis_raise'];
+  const pool = slot === 'mobility' ? MOBILITY_POOL : slot === 'recovery' ? [...RECOVERY_POOL, ...MOBILITY_POOL] : [...CHAINS.balance, 'ankle_rocks', 'hip_abduction'];
   const tagged = focusFromPool(pool, goal, ctx, seed);
   if (tagged != null) return tagged;
   // Nothing of the day's own kind serves the goal: bring the goal's exercise,
   // at the bottom of its chain — a mobility day stays light.
-  return atOrBelow(chain, 0, ctx)?.id ?? null;
+  return nearestOn(chain, 0, ctx)?.id ?? null;
 }
 
 /** A secondary or maintained goal's exercise on a strength day. */

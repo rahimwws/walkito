@@ -45,9 +45,9 @@ export const JOURNEY_PT = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'O mais comum por aqui.',
   'onboarding.react.areaFoot': 'É por aí que o plano começa.',
-  'onboarding.react.areaAchilles': 'Ele responde bem a carga lenta.',
+  'onboarding.react.areaAchilles': 'Ele responde bem à carga lenta.',
   'onboarding.react.areaCalf': 'Ela puxa tudo o que está abaixo.',
-  'onboarding.react.areaShin': 'A carga subiu mais rápido que as pernas.',
+  'onboarding.react.areaShin': 'A carga subiu mais rápido do que as pernas se adaptaram.',
   'onboarding.react.areaNone': 'Boa hora para ganhar força.',
 
   'onboarding.where.heelLeft': 'Calcanhar esquerdo',
@@ -76,11 +76,11 @@ export const JOURNEY_PT = {
 
   'onboarding.react.weeksTitle': 'Cedo é a melhor hora.',
   'onboarding.react.weeksBody': 'A gente começa com calma.',
-  'onboarding.react.monthsTitle': 'Não vai passar sozinho.',
+  'onboarding.react.monthsTitle': 'Muito comum nessa fase.',
   'onboarding.react.monthsBody': 'A gente começa pelo que ajuda primeiro.',
   'onboarding.react.yearTitle': 'É bastante tempo.',
   'onboarding.react.yearBody': 'Em geral a carga nunca mudou. A gente vai mudar.',
-  'onboarding.react.longerTitle': 'Mais de um ano. É real.',
+  'onboarding.react.longerTitle': 'Mais de um ano. Isso pesa.',
   'onboarding.react.longerBody': 'Precisa de outra carga, não de mais descanso.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
@@ -101,11 +101,12 @@ export const JOURNEY_PT = {
   'onboarding.safety.blurb': 'Uma checagem rápida de segurança.',
   'onboarding.safety.calf': 'Panturrilha inchada, quente ou vermelha de um lado',
   'onboarding.safety.pop': 'Um estalo repentino atrás do tornozelo',
-  'onboarding.safety.diabetes': 'Diabetes com o pé quente e vermelho ou uma ferida aberta',
-  'onboarding.safety.fall': 'Machuquei numa queda e não consigo apoiar o peso',
+  'onboarding.safety.diabetes': 'Diabetes e o pé quente, vermelho ou com uma ferida aberta',
+  'onboarding.safety.fall': 'Me machuquei numa queda e não consigo apoiar o pé no chão',
   'onboarding.safety.numb': 'Dormência, formigamento ou queimação',
   'onboarding.safety.none': 'Nada disso',
   'onboarding.react.safetySeated': 'A primeira semana é feita na cadeira.',
+  'onboarding.react.safetyDoctor': 'A primeira semana é feita na cadeira. Antes, procure um médico por isso; se for súbito ou forte, ligue para a emergência.',
   'onboarding.react.safetyNumb': 'Anotado. Vamos ficar de olho.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -119,7 +120,7 @@ export const JOURNEY_PT = {
   'onboarding.tried.none': 'Nada ainda',
 
   'onboarding.react.insolesTitle': 'Palmilhas tiram carga.',
-  'onboarding.react.insolesBody': 'Seu plano soma a força que elas não dão.',
+  'onboarding.react.insolesBody': 'Se ajudam, continue com elas. Seu plano soma força.',
   'onboarding.react.restTitle': 'Descanso acalma.',
   'onboarding.react.restBody': 'Seu plano soma a força que o descanso não dá.',
   'onboarding.react.stretchingTitle': 'Alongar é um bom começo.',
@@ -136,14 +137,14 @@ export const JOURNEY_PT = {
   'onboarding.goal.titleShort': 'O que importa mais?',
   'onboarding.goal.mornings': 'Manhãs mais leves',
   'onboarding.goal.backToRunning': 'Voltar a correr',
-  'onboarding.goal.shift': 'Aguentar um turno sem dor',
+  'onboarding.goal.shift': 'Aguentar o turno com menos dor',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Quantas horas em pé por dia?',
   'onboarding.load.blurbFeet': 'Seu dia comum, não o mais longo.',
   'onboarding.load.feet0': 'Menos de 4 horas',
-  'onboarding.load.feet1': '4–8 horas',
-  'onboarding.load.feet2': '8–12 horas',
+  'onboarding.load.feet1': '4-8 horas',
+  'onboarding.load.feet2': '8-12 horas',
   'onboarding.load.feet3': '12+ horas',
   'onboarding.reflection.feetDaily': '{band} em pé por dia',
 
@@ -159,12 +160,12 @@ export const JOURNEY_PT = {
   'onboarding.why.patternFoot': 'Os músculos do arco cansam antes do fim do dia.',
   'onboarding.why.patternAchilles': 'A carga subiu mais rápido do que o tendão se adaptou.',
   'onboarding.why.patternCalf': 'Uma panturrilha tensa puxa o calcanhar e o pé.',
-  'onboarding.why.patternShin': 'A carga subiu mais rápido que as pernas.',
+  'onboarding.why.patternShin': 'A carga subiu mais rápido do que as pernas se adaptaram.',
   'onboarding.why.lingersWeeks': 'Só algumas semanas. Mais fácil de virar o jogo.',
-  'onboarding.why.lingersMonths': 'Já são meses. Não vai simplesmente passar.',
+  'onboarding.why.lingersMonths': 'Já são meses. Aqui o que mais ajuda é constância.',
   'onboarding.why.lingersYear': 'Já são meses. A carga nunca mudou.',
   'onboarding.why.lingersLonger': 'Mais de um ano. A carga nunca mudou.',
-  'onboarding.why.triedInsoles': 'Palmilhas tiram carga, mas não constroem força.',
+  'onboarding.why.triedInsoles': 'Palmilhas aliviam a carga. Continue com elas e some força.',
   'onboarding.why.triedRest': 'Descanso acalma, mas não constrói força.',
   'onboarding.why.triedStretching': 'Só alongar não constrói força.',
   'onboarding.why.triedShoes': 'O tênis muda a carga, não o que a segura.',
@@ -179,7 +180,7 @@ export const JOURNEY_PT = {
 
   // ── When ─────────────────────────────────────────────────────────────────
   'onboarding.habit.title': 'Quando você vai fazer?',
-  'onboarding.habit.blurb': 'Ligue a algo que você já faz todo dia.',
+  'onboarding.habit.blurb': 'Associe a algo que você já faz todo dia.',
   'onboarding.habit.wake': 'Ao acordar, antes de levantar',
   'onboarding.habit.coffee': 'Com o café da manhã',
   'onboarding.habit.shift': 'Depois do meu turno',
@@ -213,12 +214,6 @@ export const JOURNEY_PT = {
   'onboarding.test.left': 'Esquerda',
   'onboarding.test.right': 'Direita',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Seu ponto de partida',
-  'onboarding.test.archYes': 'Pé flexível. Responde bem ao trabalho de força.',
-  'onboarding.test.archNo': 'Sem arco. Vamos focar em panturrilha e tornozelo.',
-  'onboarding.test.archUnsure': 'Difícil dizer. Sua primeira reavaliação vai medir isso.',
-  'onboarding.test.balanceHead': 'Em uma perna só',
-  'onboarding.test.resultFoot': 'Seu plano usa isso desde o primeiro dia.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Montando seu plano',
@@ -233,17 +228,35 @@ export const JOURNEY_PT = {
   'onboarding.building.choosing': 'Escolhendo sua primeira semana…',
   'onboarding.building.ctaWeek': 'Ver minha primeira semana',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  'onboarding.coach.toeTry': 'Tente agora: levante só o dedão.',
+  'onboarding.coach.beatFeet': 'Agora, seus pés.',
+  'onboarding.coach.beatGoal': 'Agora, o que você quer conquistar.',
+  'onboarding.coach.midway': 'Metade do caminho, {name}.',
+  'onboarding.coach.planReady': 'Seu plano está pronto, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Sua primeira semana',
   'onboarding.week.blurb': 'Sessões curtas nos dias que você escolheu. Cada uma se ajusta a como seu pé está naquela manhã.',
-  'onboarding.week.morningMeta': 'Toda manhã, antes de levantar · 2 min',
-  'onboarding.week.sessionMeta': 'Nas suas sessões desta semana',
+  'onboarding.week.cadence': {
+    one: '{count} sessão por semana, de {minutes} min cada',
+    other: '{count} sessões por semana, de {minutes} min cada',
+  },
+  'onboarding.week.everyMorning': 'Toda manhã',
+  'onboarding.week.sessionDays': 'Nos dias de sessão',
+  'onboarding.week.moveA11yMorning': 'Exercício {index} de {total}. {title}, {dose}, toda manhã. {cue}',
+  'onboarding.week.moveA11ySession': 'Exercício {index} de {total}. {title}, {dose}, nos dias de sessão. {cue}',
+  'onboarding.week.deckHint': 'Deslize para cima ou para baixo para trocar de exercício. Toque duas vezes para ver em tela cheia.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'Tudo pronto, {name}',
   'setup.save.title': 'Tudo pronto',
   'setup.save.blurb': 'Para ficar seguro se você trocar de celular.',
   'setup.save.later': 'Agora não',
+  'setup.save.email': 'Continuar com e-mail',
+  'setup.save.googleUnavailable': 'O login com Google não está disponível neste celular. Use seu e-mail.',
+  'setup.save.deferred': 'Continuar por enquanto',
+  'setup.save.deferredNote': 'Não deu para entrar agora. Vamos pedir de novo na próxima vez que você abrir o Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Enviar seu plano para o seu email?',
@@ -265,18 +278,35 @@ export const JOURNEY_PT = {
   'setup.widget.mockEdit': 'Editar',
   'setup.widget.mockAdd': 'Adicionar Widget',
   'setup.widget.mockSearch': 'Buscar Widgets',
+  'setup.widget.nudgeTitle': 'O widget ainda não está lá',
+  'setup.widget.nudgeBody': 'Sem pressa. São três toques, e é o jeito mais fácil de voltar toda manhã. Quer que eu mostre de novo?',
+  'setup.widget.nudgeAgain': 'Mostrar de novo',
+  'setup.widget.nudgeLater': 'Talvez depois',
+  'setup.widget.addedTitle': 'Está na sua Tela de Início',
+  'setup.widget.addedBlurb': 'Até amanhã de manhã, lá mesmo.',
+  'setup.widget.addedCta': 'Continuar',
   'setup.next': 'Próximo',
   'setup.done': 'Pronto',
-  'setup.finish': 'Começar minha primeira sessão',
+  'setup.finish': 'Concluir',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   'offer.stripMornings': 'Manhãs {score}/10',
   'offer.introTomorrowWhen': 'Amanhã, antes de levantar',
-  'offer.introTomorrowBody': 'Dois minutos, antes de o pé tocar o chão.',
+  'offer.introTomorrowBody': 'Alguns minutos, antes de o pé tocar o chão.',
   'offer.howTitleShort': 'É assim que funciona',
   'offer.howCheckinShort': 'Check-in de 10 segundos pela manhã',
-  'offer.howSessionShort': 'Sessão de 3–10 minutos, ajustada todo dia',
+  'offer.howSessionShort': 'Sessão de 3-10 minutos, ajustada todo dia',
   'offer.howRetestShort': 'O mesmo teste a cada duas semanas',
+  'offer.goldPlan': 'Como funciona o seu plano',
+  'offer.goldHow': 'O que você ganha todo dia',
+  'offer.goldStart': 'Tudo liberado',
+  'offer.tomorrowWhen': 'Amanhã',
+  'offer.tomorrowBody': 'Alguns minutos, ainda na cama',
+  'offer.weekBody': '{minutes} min por dia',
+  'offer.sundayBody': 'Se ajusta ao que você sentiu',
+  'offer.checkBody': 'Veja o que mudou',
+  'offer.howHeadline': 'Poucos minutos por dia, feitos para os seus pés',
+  'offer.builtShort': 'Exercícios de estudos publicados',
   'offer.builtTitle': 'No que ele se baseia',
   'offer.builtBody':
     'Exercícios de pesquisas publicadas e da diretriz de 2023 sobre dor no calcanhar. O Walkito em si não foi testado em um estudo clínico.',

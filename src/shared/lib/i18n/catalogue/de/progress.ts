@@ -37,9 +37,9 @@ export const PROGRESS_DE = {
   'progress.longestStreak': 'Beste Serie',
 
   // ── The path ─────────────────────────────────────────────────────────────
-  'progress.retestToday': 'Retest heute',
+  'progress.retestToday': 'Heute Testtag',
   'progress.todayMinutes': 'Heute · {minutes} Min.',
-  'progress.retest': 'Retest',
+  'progress.retest': 'Test',
   'progress.blockDivider': 'Block {block} · {name}',
   'progress.weekDivider': 'Woche {week}',
 
@@ -66,7 +66,7 @@ export const PROGRESS_DE = {
   'progress.goalsTitle': 'Ziele',
   'progress.goalsEmpty': 'Deine Ziele erscheinen nach deinem ersten Test.',
   'progress.goalReached': 'Erreicht',
-  'progress.streakCaption': 'Ruhetage, schwere Tage und 2-Minuten-Tage zählen alle.',
+  'progress.streakCaption': 'Schwere Tage und 2-Minuten-Tage zählen alle.',
   // ── The redesigned screen ────────────────────────────────────────────────
   'progress.avgWeek': 'Schnitt der letzten 7 Tage',
   'progress.avgMonth': 'Schnitt des letzten Monats',

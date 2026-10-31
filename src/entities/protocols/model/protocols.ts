@@ -102,7 +102,7 @@ export const PROTOCOLS: readonly Protocol[] = [
     steps: [
       { exerciseId: 'foot_roll', seconds: 60 },
       { exerciseId: 'fascia_stretch', seconds: 60 },
-      { exerciseId: 'toe_spread', seconds: 60 },
+      { exerciseId: 'big_toe_lift', seconds: 60 },
     ],
   },
   {
@@ -152,11 +152,13 @@ export const PROTOCOLS: readonly Protocol[] = [
   },
   {
     id: 'morning',
-    // Two minutes, not one, and the steps add to exactly two — but the reason
-    // to say two is clinical rather than arithmetic. The version that works is
-    // ten ten-second holds per foot; a one-minute label would be a promise this
-    // protocol could not keep.
-    minutes: 2,
+    // The version that works is ten ten-second holds per foot, the dose the
+    // stretch is studied at and the one `exercises.morningStretch.copy` and the
+    // cue say. It ran as one minute per foot, which is six holds' worth, while
+    // the copy said ten. A hundred seconds a foot, with the cue counting the
+    // holds, is the studied dose; the card says three, 3:20 rounded as every
+    // card is.
+    minutes: 3,
     position: 'in_bed',
     // Retest amber: sunrise, and this is the single highest-value instruction
     // in the whole programme.
@@ -168,10 +170,9 @@ export const PROTOCOLS: readonly Protocol[] = [
     free: true,
     steps: [
       // One entry per foot rather than one entry switching at half. The switch
-      // is the point of the protocol, not an aside inside a longer move, and a
-      // full minute on each is what the evidence uses.
-      { exerciseId: 'fascia_stretch', seconds: 60 },
-      { exerciseId: 'fascia_stretch', seconds: 60 },
+      // is the point of the protocol, not an aside inside a longer move.
+      { exerciseId: 'fascia_stretch', seconds: 100 },
+      { exerciseId: 'fascia_stretch', seconds: 100 },
     ],
   },
 ];

@@ -6,10 +6,10 @@ import { useCountdown } from '@/shared/lib/clock';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { waitPhrase, waitTime } from '@/shared/lib/wait';
-import { PrimaryButton } from '@/shared/ui/primary-button';
+import { Button3D } from '@/shared/ui/button-3d';
 
 /**
- * The wait until the next session, on the plan screen.
+ * The waits until the next session, on the plan screen and its day sheet.
  *
  * It used to count twelve hours from the end of the last session, to the
  * second. The rule now is the week's own: the next session opens at midnight
@@ -71,7 +71,9 @@ export function RestButton({ unlockAt, onStart, style }: RestButtonProps) {
   const ready = left <= 0;
 
   return (
-    <PrimaryButton
+    // The filled violet one, the screen's only primary: flat and grey while it
+    // counts, standing on its lip once the session opens.
+    <Button3D
       label={ready ? t('pages.plan.start') : t('nextSession.in', { time: waitTime(t, left) })}
       disabled={!ready}
       onPress={onStart}
@@ -96,6 +98,23 @@ export function WaitCaption({ at, style }: { at: number; style?: StyleProp<TextS
       {phrase.kind === 'in' ? t('nextSession.in', { time: phrase.time }) : t('nextSession.on', { day: phrase.day })}
     </Text>
   );
+}
+
+/**
+ * When tomorrow's session opens, for the card that names it: "Opens in 1h
+ * 50m". Always counted, never a weekday: the card says "Tomorrow" over it, and
+ * the wait to tomorrow's midnight is never more than a day (a clock-change
+ * night's extra hour still reads as hours). Nothing once it has opened, which
+ * is the moment the page moves on to the new day and the card goes.
+ *
+ * Its own component for the same reason as the others here: the tick
+ * re-renders one line, not the card.
+ */
+export function OpensCaption({ at, style }: { at: number; style?: StyleProp<TextStyle> }) {
+  const t = useT();
+  const left = useCountdown(at, usePlanShown()) ?? 0;
+  if (left <= 0) return null;
+  return <Text style={style}>{t('pages.plan.opensIn', { time: waitTime(t, left) })}</Text>;
 }
 
 const styles = StyleSheet.create({

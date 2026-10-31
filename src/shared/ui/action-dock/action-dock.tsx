@@ -8,6 +8,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useT } from '@/shared/lib/i18n';
 import { accents, fonts } from '@/shared/config';
 import { useProgram } from '@/shared/lib/program';
+import { useSpotlightAnchor } from '@/shared/lib/spotlight';
 
 /**
  * How tall the slab stands above the very bottom of the display, before the
@@ -103,6 +104,7 @@ export function ActionDock({ label }: ActionDockProps) {
   const t = useT();
   const text = label ?? t('dock.startWorkout');
   const program = useProgram();
+  const tourAnchor = useSpotlightAnchor('dock.start');
   const room = bottomRoom(insets.bottom);
   const dockHeight = BODY_HEIGHT + room;
 
@@ -139,6 +141,8 @@ export function ActionDock({ label }: ActionDockProps) {
         leave,
       ]}>
       <Pressable
+        // The Home tour's last stop.
+        ref={tourAnchor}
         accessibilityRole="button"
         accessibilityLabel={text}
         onPress={() => {

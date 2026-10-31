@@ -19,6 +19,7 @@ import {
   useAppUsage,
   useQueuedReview,
   useReviewAtWin,
+  useReviewOnThirdOpen,
   useProgramClock,
   useClipPrefetch,
   useLiveActivityCleanup,
@@ -26,19 +27,32 @@ import {
   useScreenTracking,
   useReferralSync,
   useQuickActions,
+  useDevLinks,
   useOneLinks,
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { useHomeWidget } from '@/features/home-widget';
-import { useAccessLapsed, useBrowsingLapsed, useEntitled } from '@/entities/purchase';
-import { useOnboarded, useSetupPending } from '@/entities/session';
+import { useDevOfferWall } from '@/features/home-tour';
+import { HomeWidgetSync } from '@/features/home-widget';
+import { PassSetPreview } from '@/widgets/pass-checkout';
+import { SessionDonePreview } from '@/widgets/session-player';
+import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import {
+  armHomeTour,
+  useAccountOwed,
+  useHomeTourState,
+  useOnboarded,
+  useSetupPending,
+} from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
 // stored preference applies the saved appearance before the first render.
 import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
+
+import { OfferWall } from './offer-wall';
+import { runStoreShots } from '../providers/store-shots';
 
 /**
  * The app shell: fonts, theme, gesture root, routes.
@@ -72,6 +86,7 @@ import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 // Before any screen mounts: the router integration has to be listening when
 // the first route is focused.
 configureObserve();
+runStoreShots();
 
 /**
  * `ObserveRoot` if the binary has it, a pass-through if it does not.
@@ -119,7 +134,7 @@ function RootLayoutInner() {
   const entitled = useEntitled();
   /**
    * The fourth state, between paid and never-paid: a subscription that ended
-   * (or a legacy pass that ran out). It gets its own door — the expiry screen —
+   * (or a 3-month pass that ran out). It gets its own door — the expiry screen —
    * because a pitch is the wrong thing to show somebody who already paid and
    * has their own measurements in the app.
    *
@@ -135,7 +150,12 @@ function RootLayoutInner() {
    * watch, the founders' note and the widget (`pages/setup`). Armed when the
    * new onboarding finishes, so an install from before never sees them.
    */
-  const setupPending = useSetupPending();
+  // The screens after the first purchase, or, on Android, an account still
+  // owed from a launch where signing in failed (`deferAccount`): either keeps
+  // the setup stack in front of the tabs.
+  const setupArmed = useSetupPending();
+  const accountOwed = useAccountOwed();
+  const setupPending = setupArmed || accountOwed;
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
@@ -153,6 +173,7 @@ function RootLayoutInner() {
   // The plan copied to Supabase in the background; local stays the record.
   usePlanSync(onboarded);
   useAppUsage();
+  useDevLinks();
   // Apple's review prompt, at a win only — never during onboarding.
   useReviewAtWin(onboarded);
   // The rating asked for in the founders' note, raised over the screen after it.
@@ -169,9 +190,31 @@ function RootLayoutInner() {
   // are reachable — the same condition as the tabs' own guard below — and
   // otherwise kept and opened once they are. Email links tapped before the
   // onboarding was done open through the second hook too.
-  const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));
+  //
+  // Somebody who skipped the paywall gets the tabs too, for what is free: the
+  // "Day 1" card's two-minute session and the Home tour after it
+  // (`tryingOut`). Once the tour is done the offer wall stands over Home
+  // (`OfferWall`) until a purchase, so the rest of the app stays behind it, as
+  // it stayed behind the paywall.
+  const skipped = usePaywallSkipped();
+  const tourState = useHomeTourState();
+  const tryingOut = onboarded && !entitled && !lapsed && skipped;
+  const devWall = useDevOfferWall();
+  const offerWall = (tryingOut && tourState === 'done') || devWall;
+  // A skip from before the tour existed has no tour armed: it gets one, or
+  // Home would be open with nothing in front of it and no offer after.
+  useEffect(() => {
+    if (tryingOut && tourState === 'off') armHomeTour();
+  }, [tryingOut, tourState]);
+  const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
+  // Home is theirs: bought, past the setup, the "Day 1" card and the tour, and
+  // no offer over it. Apple's review prompt at the third open waits for it, and
+  // so does any offer to update the app: somebody on the paywall is not yet a
+  // customer, and "update first" there is a reason to leave.
+  const homeIsTheirs = tabsReachable && entitled && tourState !== 'armed' && !offerWall;
+  useReviewOnThirdOpen(homeIsTheirs);
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
   // root because the earliest moment is the point — the player swept these too,
   // but only when a new session began.
@@ -190,8 +233,6 @@ function RootLayoutInner() {
   useNotificationScheduler();
   // A `$screen` per route, for the paths and retention charts in PostHog.
   useScreenTracking();
-  // The home-screen widget: reads back answers given on it, then redraws it.
-  useHomeWidget(onboarded);
 
   // Interactive once the fonts have resolved and the first real screen has had
   // a frame to paint — the end of the `tti` measurement in EAS Observe.
@@ -252,8 +293,15 @@ function RootLayoutInner() {
 
                       Not shown to somebody whose paid access has ended: they get
                       `expired` below instead. This door is for a first
-                      purchase. */}
-                  <Stack.Protected guard={onboarded && !entitled && !lapsed}>
+                      purchase.
+
+                      A hard paywall: there is no way into the app without
+                      buying. "Not now" on it leads to the one-time trial offer
+                      and the offers after it, on this same screen
+                      (`pages/offer` draws them in place of the plans), so
+                      somebody who skipped it is still here, and still without
+                      the tabs. */}
+                  <Stack.Protected guard={onboarded && !entitled && !lapsed && !skipped}>
                     <Stack.Screen
                       name="offer"
                       options={{
@@ -300,7 +348,10 @@ function RootLayoutInner() {
                     />
                   </Stack.Protected>
 
-                  <Stack.Protected guard={onboarded && ((entitled && !setupPending) || (lapsed && browsing))}>
+                  {/* The tabs: paid and past setup, or browsing after access
+                      ended (above). `tabsReachable`, so the links wait for the
+                      same thing. */}
+                  <Stack.Protected guard={tabsReachable}>
                     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                     {/* A routine from the Quick tab or Home's row: a pushed
                         page over the tabs, under the same guard, so it goes
@@ -361,11 +412,28 @@ function RootLayoutInner() {
               <StatusBar style="auto" />
               {/* An over-the-air update or a new App Store build, offered in a
                   sheet, and the "up to date" note after the restart. Mounted
-                  with the fonts, so neither draws in a fallback face; not during
-                  onboarding, where the first minutes are not the moment to ask
-                  for a restart. Its own component so expo-updates' progress
-                  events re-render it rather than this layout. */}
-              {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
+                  with the fonts, so neither draws in a fallback face. Updates
+                  are fetched quietly from the end of onboarding, and offered
+                  only once Home is theirs (`homeIsTheirs`) and a day has
+                  passed since the setup: never on the paywall, the setup or
+                  the first day. Until then a downloaded
+                  update installs itself at the next cold start. Its own
+                  component so expo-updates' progress events re-render it rather
+                  than this layout. */}
+              {/* The home-screen widget: reads back answers given on it, then
+                  redraws it. A leaf, so a check-in re-renders it alone rather
+                  than this whole layout. */}
+              <HomeWidgetSync enabled={onboarded} />
+              {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} canOffer={homeIsTheirs} />}
+              {/* The offer after the free first run (the day-one session and the
+                  tour), over a blurred Home. */}
+              {(fontsReady || fontError) && <OfferWall visible={offerWall} />}
+              {/* Development only: the end-of-session sheet without finishing a
+                  session (`?previewDone`, `?previewDone=stopped`). */}
+              {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}
+              {/* Development only: the pass checkout's "Your 3 months are set"
+                  (`?previewPassSet`). */}
+              {__DEV__ && (fontsReady || fontError) && <PassSetPreview />}
             </PaywallRoot>
           </NavThemeProvider>
         </IntroRevealProvider>

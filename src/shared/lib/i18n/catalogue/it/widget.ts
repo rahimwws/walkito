@@ -11,7 +11,7 @@ export const WIDGET_IT = {
 
   'widget.goalTitle': 'Obiettivo di oggi',
   'widget.goalValue': '{done}/{total}',
-  'widget.goalUnknown': '–',
+  'widget.goalUnknown': '-',
   'widget.goalRest': 'Riposo',
   'widget.goalTest': 'Verifica',
   'widget.checkin': 'Check-in',

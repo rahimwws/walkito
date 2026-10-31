@@ -16,7 +16,7 @@ export const QUICK_ES = {
   'quick.preRun.cue': 'Despierta el pie. No estires mucho tiempo.',
   'quick.postRun.cue': 'Mantén cada estiramiento. Sin rebotes.',
   'quick.atWork.cue': 'Nadie lo notará. Puedes dejarte los zapatos.',
-  'quick.morning.cue': 'Antes de que el pie toque el suelo.',
+  'quick.morning.cue': 'Antes de que el pie toque el suelo. Aguanta 10 segundos, suelta, 10 veces cada pie.',
 
   'quick.seated': 'sentado',
   'quick.standing': 'de pie',
@@ -47,11 +47,11 @@ export const QUICK_ES = {
   'quick.kicker': 'Rutina',
   'quick.whyTitle': 'Por qué ayuda',
   'quick.flare.why':
-    'Tres ejercicios sentado que casi no exigen nada a la zona que duele. Rodar y estirar con suavidad alivian la tensión sin cargar peso en el pie.',
+    'Tres ejercicios sentados que casi no exigen nada a la zona que duele. Rodar y estirar con suavidad alivian la tensión sin cargar peso en el pie.',
   'quick.preRun.why':
     'Dos minutos para despertar el tobillo y los músculos pequeños bajo el arco, y que el pie esté listo desde la primera zancada.',
   'quick.postRun.why':
-    'Después de correr, gemelos y plantas se tensan. Estiramientos lentos y mantenidos, mientras sigues en calor, los ayudan a relajarse.',
+    'Después de correr, pantorrillas y plantas se tensan. Estiramientos lentos y mantenidos, mientras el cuerpo sigue caliente, ayudan a relajarlas.',
   'quick.atWork.why':
     'Pasar horas de pie cansa los pies. Unos movimientos discretos mantienen el arco activo y el tobillo en movimiento, sin moverte de tu sitio.',
   'quick.morning.why':

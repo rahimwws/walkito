@@ -5,8 +5,8 @@ import { purchases } from './store';
  * What a selling screen has on offer: the offering it sells from, and the
  * standard one it measures a discount against.
  *
- * Shared by the two screens that sell — the paywall and the expiry screen — so
- * both fetch, fall back and pick a plan the same way.
+ * Shared by the screens that sell — the paywall, the Home offer and the expiry
+ * screen — so all of them fetch, fall back and pick a plan the same way.
  */
 export type Shelf = {
   /** The offering being sold. The standard one when the named offering is
@@ -35,11 +35,13 @@ export async function fetchShelf(identifier: string): Promise<Shelf> {
 /**
  * One plan off the shelf.
  *
- * The weekly plan is always sold at its ordinary price. The `offer` offering
- * may carry one too; when it does not, the standard offering's is the same
- * product.
+ * The annual plan only ever comes from the offering being sold: its price is
+ * what the offering is for (standard, trial or comeback). The others fall back
+ * to the standard offering's, which is the same product at its ordinary price:
+ * the trial offering carries only the annual, and a comeback offering without
+ * a lifetime still sells the standard one.
  */
 export function planOn(shelf: Shelf, period: PlanPeriod): Plan | null {
   if (period === 'annual') return shelf.offering?.annual ?? null;
-  return shelf.offering?.weekly ?? shelf.standard?.weekly ?? null;
+  return shelf.offering?.[period] ?? shelf.standard?.[period] ?? null;
 }

@@ -26,7 +26,7 @@ export const QUICK_EN = {
   'quick.preRun.cue': 'Wake the foot up. Don’t stretch it long.',
   'quick.postRun.cue': 'Hold each stretch. Don’t bounce.',
   'quick.atWork.cue': 'Nobody will notice. Keep your shoes on.',
-  'quick.morning.cue': 'Before your foot touches the floor.',
+  'quick.morning.cue': 'Before your foot touches the floor. Hold 10 seconds, let go, 10 times a foot.',
 
   // ── Where you will be ─────────────────────────────────────────────────────
   'quick.seated': 'seated',

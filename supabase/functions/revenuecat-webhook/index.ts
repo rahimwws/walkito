@@ -11,9 +11,18 @@
  *
  * RevenueCat knows the buyer by its own anonymous id; `revenuecat_links` maps
  * that to our user, written by the app through `link_revenuecat`.
+ *
+ * It also grants the 3-month pass (NON_RENEWING_PURCHASE of a pass product):
+ * 90 days, queued behind whatever is still running, counted once per store
+ * transaction (`_shared/pass.ts`, `grant_pass`). The same rule holds: the
+ * purchase is looked up in RevenueCat's record of that customer, never taken
+ * from the event, so a forged event grants nothing. A pass bought before its
+ * buyer was linked to an account is picked up later by `pass-sync`.
  */
 
 import { createClient } from 'npm:@supabase/supabase-js@2';
+
+import { isPassProduct, premiumUntilFor, grantPass, subscriberOf } from '../_shared/pass.ts';
 
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? '';
 const SERVICE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
@@ -30,6 +39,8 @@ type RcEvent = {
   transferred_to?: string[];
   transferred_from?: string[];
   product_id?: string;
+  /** The store's transaction id (Play's order id). */
+  transaction_id?: string;
 };
 
 type Entitlement = { expires_date: string | null; product_identifier?: string };
@@ -91,6 +102,28 @@ Deno.serve(async (req) => {
   for (const id of rcIds) if (UUID.test(id) && !users.has(id)) users.set(id, id);
   if (users.size === 0) return json({ ok: true, note: 'no linked user yet' });
 
+  // ── A pass ──────────────────────────────────────────────────────────────
+  const passes: string[] = [];
+  if (event.type === 'NON_RENEWING_PURCHASE' && isPassProduct(event.product_id)) {
+    for (const [userId, rcId] of users) {
+      const subscriber = await subscriberOf(RC_KEY, rcId);
+      // RevenueCat retries a delivery that fails: a lookup that did not answer
+      // is worth another try rather than a pass never granted.
+      if (subscriber == null) return json({ error: 'lookup failed' }, 502);
+      const purchase = subscriber.passes.find(
+        (p) => p.transactionId === event.transaction_id && p.productId.split(':')[0] === event.product_id?.split(':')[0],
+      );
+      if (purchase == null) {
+        // Not in RevenueCat's record (yet, or ever): nothing is granted.
+        console.warn('[revenuecat] pass purchase not found for', event.product_id);
+        continue;
+      }
+      const window = await grantPass(db, userId, rcId, purchase, premiumUntilFor(purchase, subscriber));
+      if (window == null) return json({ error: 'grant failed' }, 500);
+      passes.push(`${userId}:${window.granted ? 'granted' : 'already'}:${window.expiresAt}`);
+    }
+  }
+
   const written: string[] = [];
   for (const [userId, rcId] of users) {
     const status = await statusOf(rcId);
@@ -101,5 +134,5 @@ Deno.serve(async (req) => {
     // A UUID-shaped RevenueCat id that is not one of our users fails the foreign key; that is fine.
     if (upsertError == null) written.push(`${userId}:${status.status}`);
   }
-  return json({ ok: true, type: event.type ?? null, written });
+  return json({ ok: true, type: event.type ?? null, written, passes });
 });

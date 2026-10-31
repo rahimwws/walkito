@@ -112,7 +112,7 @@ export const HOME_EN = {
   'home.duration': '{hours}h {minutes}m',
 
   // ── Today's list ─────────────────────────────────────────────────────────
-  'home.tasksTitle': 'Today’s Tasks',
+  'home.tasksTitle': 'Today’s tasks',
   'home.libraryTitle': 'For right now',
   'home.allDoneTitle': 'Done for today',
   /** Under the title when there is no next session to count down to - three
@@ -135,7 +135,7 @@ export const HOME_EN = {
   'home.retestTaskSub': 'Checkpoint · {tests}',
   /** On the retest row once today's tests are saved: opens them again, read-only. */
   'home.seeResults': 'See results',
-  'home.nothingScheduled': 'Nothing scheduled today. Rest counts.',
+  'home.nothingScheduled': 'Nothing scheduled today. A check-in keeps your streak.',
   'home.markDone': 'Mark done',
   'home.markNotDone': 'Mark not done',
   /** A row's second line: what kind of thing it is, and how much of it. The
@@ -149,12 +149,40 @@ export const HOME_EN = {
 
   // ── The check-in ─────────────────────────────────────────────────────────
   'home.itHurts': 'It hurts today',
+  /** The Home tour's handwritten notes (Caveat), one per stop, and its controls. */
+  'home.tour.overview': 'Your feet at a glance, every morning',
+  'home.tour.pain': 'Something hurts? Tap here and note it',
+  'home.tour.session': 'Your sessions start here',
+  'home.tour.next': 'Next',
+  'home.tour.stepOf': 'Step {n} of {total}',
+  /** The "Day 1" card over Home before the tour: the first session, two easy
+   * minutes. The line is written for two (`DAY_ONE_MINUTES`); the chip
+   * counts them. */
+  'home.day1.title': 'Day 1',
+  'home.day1.body': 'Two easy minutes to wake your feet up.',
+  'home.day1.start': 'Start',
   'home.noPain': 'No pain today',
   'home.logCheckIn': 'Log today’s check-in',
   'home.checkInAgain': 'Check in again',
+  /** The check-in once answered (one a day, corrected in place), and "it hurts right now", which leads to relief. */
+  'home.todayNoPain': 'Today: no pain',
+  'home.todayPain': 'Today: {score} out of 10',
+  'home.todayWhere': 'Where: {zones}',
+  'home.checkInEdit': 'Edit',
+  'home.checkInUpdate': 'Save the change',
+  'home.ackUpdated': 'Updated.',
+  'home.flareTitle': 'Hurts right now?',
+  'home.flareBody': 'Show me where, and I’ll give you 3 minutes of relief',
+  'home.flareLast': 'Earlier today it hurt: {score} out of 10',
+  'home.flareSheetTitle': 'Where does it hurt right now?',
+  'home.flareSheetSub': 'Mark the spot and how much. Relief comes next.',
+  'home.flareSave': 'Help me now',
   'home.checkInTitle': 'Today’s check-in',
   'home.checkInSub': 'How does the foot feel?',
   'home.checkInSubMorning': 'How bad were your first steps out of bed this morning?',
+  /** The check-in's heading on Home: short, the cards under it say the rest.
+   * The sheet's longer line (`home.checkInSubMorning`) explains the scale. */
+  'home.checkInQuestionMorning': 'How were your first steps today?',
   'home.checkInSubDay': 'How’s your foot today?',
   'home.somethingNew': 'Something new? (swelling, numbness, a pop)',
   /** Above the check-in question: what this is, and what it costs. */
@@ -248,7 +276,7 @@ export const HOME_EN = {
   'home.rangeAboveChip': 'Above usual range',
   'home.rangeBelowChip': 'Below usual range',
   'home.rangeWithinChip': 'Within usual range',
-  'home.usualRangeLegend': 'Usual range {low}–{high}',
+  'home.usualRangeLegend': 'Usual range {low}-{high}',
   'home.usualRangeA11y': 'Usual range, {low} to {high}',
 
   /**
@@ -275,6 +303,75 @@ export const HOME_EN = {
   'home.bandHurtsBlurb': 'It is deciding things for you now.',
   'home.bandSevere': 'Severe',
   'home.bandSevereBlurb': 'Standing on it is the problem, not running.',
+  // ── Legs ready today: the readiness gauge ──
+  'home.readiness.empty': 'Check in to see today’s score',
+  'home.readiness.bandEasy': 'Easy day',
+  'home.readiness.bandSteady': 'Steady',
+  'home.readiness.bandReady': 'Ready',
+  'home.readiness.bandPush': 'Ready to push',
+  'home.readiness.partPain': 'Morning feet: {value} of 100',
+  'home.readiness.partPainMissing': 'Morning feet: not checked in yet',
+  'home.readiness.partSleep': 'Sleep: {value} of 100',
+  'home.readiness.partSleepMissing': 'Sleep: not known yet',
+  'home.readiness.partSteps': 'Steps: {value} of 100',
+  'home.readiness.partStepsMissing': 'Steps: not known yet',
+  'home.legState.unknown': 'How do your feet feel this morning?',
+  'home.legState.sore': 'Your feet are sore today. Let’s keep it gentle.',
+  'home.legState.calmer': 'Your feet feel calmer than yesterday.',
+  'home.legState.tender': 'Your feet are a bit more tender than yesterday.',
+  'home.legState.worked': 'Your legs worked hard yesterday.',
+  'home.legState.tired': 'Short night. Your legs may feel heavy.',
+  'home.legState.achy': 'Your feet are a little achy this morning.',
+  'home.legState.fine': 'Your feet feel pretty good today.',
+  'home.legState.fresh': 'Your feet feel fresh today.',
+  'home.readiness.sayTap': 'Hi! Glad you’re here.',
+  'home.readiness.mascotHint': 'Tap Walkito to say hi',
+  'home.readiness.partHint': 'Shows how today’s score is made',
+  'home.readiness.scoreA11y': 'Legs ready today: {score} of 100, {band}',
+  // ── The small sheets over the readiness score: one per part, one for the score ──
+  'home.readinessInfo.painTitle': 'Morning feet',
+  'home.readinessInfo.sleepTitle': 'Sleep',
+  'home.readinessInfo.stepsTitle': 'Steps',
+  'home.readinessInfo.painWhen': 'This morning',
+  'home.readinessInfo.sleepWhen': 'Last night',
+  'home.readinessInfo.stepsWhen': 'Yesterday',
+  'home.readinessInfo.painNone': 'No pain',
+  'home.readinessInfo.painValueA11y': '{value} of 10',
+  'home.readinessInfo.sleepValue': '{hours} h {minutes} min',
+  'home.readinessInfo.stepsValue': {
+    one: '{steps} step',
+    other: '{steps} steps',
+  },
+  'home.readinessInfo.unknown': 'Not known yet',
+  'home.readinessInfo.painCalm': 'Calm',
+  'home.readinessInfo.painAchy': 'Achy',
+  'home.readinessInfo.painSore': 'Sore',
+  'home.readinessInfo.sleepShort': 'Short',
+  'home.readinessInfo.sleepOk': 'OK',
+  'home.readinessInfo.sleepGood': 'Good',
+  'home.readinessInfo.sleepFull': 'Full',
+  'home.readinessInfo.stepsLight': 'Light',
+  'home.readinessInfo.stepsUsualZone': 'Usual',
+  'home.readinessInfo.stepsBig': 'Big day',
+  'home.readinessInfo.stepsVeryBig': 'Very big',
+  'home.readinessInfo.stepsUsual': 'Your usual {usual}',
+  'home.readinessInfo.stepsNoUsual': 'Your usual takes a few more days to learn.',
+  'home.readinessInfo.painLine': 'Half of today’s score. Less pain, higher score.',
+  'home.readinessInfo.sleepLine': 'A quarter of today’s score. 8 hours gives the full 100.',
+  'home.readinessInfo.stepsLine': 'A quarter of today’s score. Close to your usual is best.',
+  'home.readinessInfo.painAsk': 'Answer the morning check-in on Home to add it.',
+  'home.readinessInfo.sleepAskIos': 'Sleep comes from Apple Health: wear your Apple Watch to bed, or set a sleep schedule in the Health app.',
+  'home.readinessInfo.sleepAskAndroid': 'Sleep comes from Health Connect: wear your watch to bed with a sleep app that saves to it.',
+  'home.readinessInfo.stepsAskIos': 'Steps come from Apple Health: carry your phone or wear your Apple Watch.',
+  'home.readinessInfo.stepsAskAndroid': 'Steps come from Health Connect: carry your phone or wear your watch.',
+  'home.readinessInfo.week': 'Last 7 days',
+  'home.readinessInfo.footer': 'A guide for today, not a medical measure.',
+  'home.readinessInfo.weightHalf': 'Half of the score',
+  'home.readinessInfo.weightQuarter': 'A quarter of the score',
+  'home.readinessInfo.valueA11y': '{title}, {when}: {value}, {zone}.',
+  'home.readinessInfo.valueNoZoneA11y': '{title}, {when}: {value}.',
+  'home.readinessInfo.unknownA11y': '{title}: not known yet. {line}',
+  'home.readinessInfo.rowA11y': '{title}: {value}. {weight}.',
 } as const satisfies Record<string, SourceEntry>;
 
 /**
@@ -364,15 +461,15 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'a new week starts today. Focus:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
     ],
-    // The one line in the file about how long this takes. "Most people" and
-    // "usually" are both doing work — translations keep the hedge.
+    // The one line in the file about how long this takes. "Many people" and
+    // "often" are both doing work — translations keep the hedge.
     [
-      { k: 'frame', text: 'new week today. Most people notice mornings easing in' },
+      { k: 'frame', text: 'new week today. Many people notice mornings easing in' },
       { k: 'metric', icon: 'level', text: '4-6 weeks', tail: '.' },
-      { k: 'frame', text: 'The biggest change usually comes by 3 months.' },
+      { k: 'frame', text: 'The biggest change often comes by 3 months.' },
     ],
     [
-      { k: 'frame', text: 'this week works on' },
+      { k: 'frame', text: 'this week’s focus:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'The plan is built around it.' },
     ],
@@ -765,16 +862,16 @@ export const BRIEF_EN = {
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'the best protection from injury is a little every day. Today:' },
+      { k: 'frame', text: 'a little every day is what makes a foot stronger. Today:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'a strong foot gets hurt less. Today it gets' },
+      { k: 'frame', text: 'a strong foot handles load better. Today it gets' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'a day is enough to stay ahead of injuries.' },
+      { k: 'frame', text: 'a day is enough to look after your feet.' },
     ],
   ],
 

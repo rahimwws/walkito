@@ -163,6 +163,8 @@ const PLAN_LINES: Readonly<Record<string, Line>> = {
   flare: (t) => t('notifications.planFlare'),
   spike: (t) => t('notifications.planSpike'),
   'heavy-day': (t) => t('notifications.planHeavyDay'),
+  'on-feet': (t) => t('notifications.planOnFeet'),
+  'big-workout': (t) => t('notifications.planBigWorkout'),
   return: (t) => t('notifications.planReturn'),
   plan: (t) => t('notifications.planBackUp'),
 };
@@ -283,6 +285,12 @@ export function stepsCheckMessage(steps: number, language: Language = getLanguag
       steps: group(Math.round(steps), language),
     }),
   };
+}
+
+/** Four hours or more on the feet: a minute for them, not a session. */
+export function onFeetMessage(hours: number, language: Language = getLanguage()): Message {
+  const t = translatorFor(language);
+  return { title: APP_NAME, body: t('notifications.onFeetCheck', { count: Math.max(4, Math.round(hours)) }) };
 }
 
 /** The retest tail, six hours after the morning nudge. Lives here rather than

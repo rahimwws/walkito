@@ -18,7 +18,8 @@ import { currentDay, nextSession, painEntriesOn, toDateKey } from '@/entities/pr
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
-import { messageFor, retestFollowUpBody, stepsCheckMessage } from './copy';
+import { scheduleWithArt } from './attachment';
+import { messageFor, onFeetMessage, retestFollowUpBody, stepsCheckMessage } from './copy';
 import {
   FOLLOW_UP_HOURS,
   PRIORITY,
@@ -38,10 +39,22 @@ import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './n
 import { recordOpen } from './opens';
 import { signalsFor, windowDays } from './signals';
 import { STEP_CHECK, stepCheckBlocked, type StepCheckBlocked } from './steps-check';
+import {
+  ON_FEET_CHECK,
+  onFeetCheckBlocked,
+  onFeetStreak,
+  type OnFeetCheckBlocked,
+  type OnFeetHourInput,
+} from './on-feet-check';
 
 /** Marks the step check-in, which is not a plan item: no rebuild cancels it
  * and the delivery listener does not count it a second time. */
 export const STEP_CHECK_KIND = 'steps-check';
+/** The four-hours-on-your-feet push; a tap opens the at-work routine. */
+export const ON_FEET_KIND = 'on-feet-check';
+/** When today's step check-in went out, so the on-feet push does not follow
+ * it within the same couple of hours. */
+const STEP_CHECK_AT_KEY = 'notify/step-check-at';
 
 /** Marks every notification this scheduler owns, so a tap can be routed and so
  * the window can be cancelled without touching the offer's own messages. */
@@ -317,7 +330,8 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
 
     const id = identifierFor(item);
     try {
-      await Notifications.scheduleNotificationAsync({
+      // The mascot for the kind rides along on iPhone; see `attachment.ts`.
+      await scheduleWithArt(item.kind, {
         identifier: id,
         content: {
           title: item.title,
@@ -475,7 +489,7 @@ export async function maybeSendStepCheck(
   writeDelivery(recordSent(delivery, STEP_CHECK, dateKey));
   const message = stepsCheckMessage(stepsToday ?? 0, getLanguage());
   try {
-    await Notifications.scheduleNotificationAsync({
+    await scheduleWithArt('steps', {
       identifier: `steps-${dateKey}`,
       content: {
         title: message.title,
@@ -490,6 +504,68 @@ export async function maybeSendStepCheck(
     console.warn('[notify] step check-in failed', error);
     return 'failed';
   }
+  kv.set(STEP_CHECK_AT_KEY, String(now));
   await standDownToday(now);
   return 'sent';
+}
+
+/**
+ * The four-hours-on-your-feet push, decided from today's hours (Health's, or
+ * CoreMotion's when Health has none). Called on every Health wake and from
+ * the background task; does nothing while the app is in front, where the
+ * person is looking at Walkito already.
+ */
+export async function maybeSendOnFeetCheck(
+  hours: readonly OnFeetHourInput[],
+  now: number = Date.now(),
+  appActive = false,
+): Promise<OnFeetCheckBlocked | 'sent' | 'not-allowed' | 'failed' | 'in-app'> {
+  if (appActive) return 'in-app';
+  const date = new Date(now);
+  const dateKey = toDateKey(date);
+  const delivery = reconcile(now, readDelivery());
+  writeDelivery(delivery);
+  const stepCheckAt = Number(kv.getString(STEP_CHECK_AT_KEY) ?? 0);
+  const blocked = onFeetCheckBlocked({
+    hours,
+    dateKey,
+    minuteOfDay: date.getHours() * 60 + date.getMinutes(),
+    now,
+    delivery,
+    stepCheckAt: stepCheckAt > 0 && toDateKey(new Date(stepCheckAt)) === dateKey ? stepCheckAt : null,
+  });
+  if (blocked != null) return blocked;
+  if (!(await notificationsAllowed())) return 'not-allowed';
+
+  writeDelivery(recordSent(delivery, ON_FEET_CHECK, dateKey));
+  const message = onFeetMessage(onFeetStreak(hours, now), getLanguage());
+  try {
+    await scheduleWithArt('steps', {
+      identifier: `on-feet-${dateKey}`,
+      content: {
+        title: message.title,
+        body: message.body,
+        data: { kind: ON_FEET_KIND, date: dateKey },
+      },
+      trigger: null,
+    });
+  } catch (error) {
+    writeDelivery(delivery);
+    console.warn('[notify] on-feet check failed', error);
+    return 'failed';
+  }
+  return 'sent';
+}
+
+/** Development only (`?previewOnFeet`): the on-feet push in five seconds,
+ * with four hours behind it, whatever today held. */
+export async function devPreviewOnFeet(): Promise<void> {
+  if (!__DEV__) return;
+  await ensureNotificationChannel();
+  const message = onFeetMessage(4, getLanguage());
+  await scheduleWithArt('steps', {
+    identifier: 'on-feet-preview',
+    content: { title: message.title, body: message.body, data: { kind: ON_FEET_KIND } },
+    trigger: { type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL, seconds: 5, channelId: CHANNEL_ID },
+  });
 }

@@ -1,7 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { AppState } from 'react-native';
 
-import { goals, retestResults, useStreak, type Goal } from '@/entities/program';
-import { askForReview, reviewNow, takeQueuedReview, useReviewQueued, type ReviewWin } from '@/shared/lib/review';
+import { goals, milestoneOwed, retestResults, useStreak, type Goal } from '@/entities/program';
+import {
+  THIRD_OPEN,
+  askAtThirdOpen,
+  askForReview,
+  countAppOpens,
+  reviewHeld,
+  reviewNow,
+  takeQueuedReview,
+  thirdOpenAsked,
+  useAppOpens,
+  useReviewHeld,
+  useReviewQueued,
+  type ReviewWin,
+} from '@/shared/lib/review';
+import { useSplashRevealed } from '@/shared/ui/splash';
 
 /**
  * The first win worth asking about, or null — section 6 of the plan spec:
@@ -23,14 +38,62 @@ export function reviewWin(streak: number, all: readonly Goal[], tests: ReturnTyp
   return null;
 }
 
-/** Asks Apple for a review at a win. Never before onboarding is finished. */
+/** Asks Apple for a review at a win. Never before onboarding is finished,
+ * only in front, and never over the app's own celebration: a streak of seven
+ * is a milestone sheet first, and the prompt comes once it has closed. */
 export function useReviewAtWin(onboarded: boolean): void {
   const streak = useStreak();
+  const held = useReviewHeld();
   useEffect(() => {
-    if (!onboarded) return;
+    // Home holds it while the milestone's sheet is up (`holdReview`). A
+    // milestone still owed is read here as well: at a cold start this asks
+    // before Home has mounted to hold it. Once it is shown and closed, the
+    // hold's release runs this again.
+    if (!onboarded || reviewHeld() || milestoneOwed(streak.current) || AppState.currentState !== 'active') return;
     const win = reviewWin(streak.current, goals(), retestResults());
     if (win != null) void askForReview(win);
-  }, [onboarded, streak.current]);
+  }, [onboarded, streak.current, held]);
+}
+
+/** How long the app is in front, ready, before the prompt at the third open:
+ * long enough for the screen to have arrived and been looked at, short
+ * enough to still be the moment they came back. */
+const THIRD_OPEN_DELAY_MS = 2500;
+
+/**
+ * Apple's review prompt at the third time the app is opened, once ever.
+ *
+ * Counts the opens wherever the app is (`countAppOpens`: a cold start, or a
+ * return after half an hour away), and asks only when `ready`: Home and the
+ * tabs are theirs, with nothing of the first run over them. Never during
+ * onboarding, the setup after the purchase, the "Day 1" card or the tour, the
+ * offer over Home, or a streak milestone's sheet (`holdReview`); an open that
+ * lands on one of those waits for the first moment after it that is ready. Asked 2.5 s in, and not at all if
+ * `ready` drops before then. The 120-day gap in `askForReview` still holds.
+ */
+export function useReviewOnThirdOpen(ready: boolean): void {
+  const opens = useAppOpens();
+  const revealed = useSplashRevealed();
+  /** The app's own celebration is up or about to rise: the prompt waits. */
+  const held = useReviewHeld();
+  const streak = useStreak();
+  // In front, not merely mounted: the root also mounts for HealthKit's
+  // background relaunches.
+  const [front, setFront] = useState(AppState.currentState === 'active');
+  useEffect(() => countAppOpens(), []);
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', (next) => setFront(next === 'active'));
+    return () => subscription.remove();
+  }, []);
+  useEffect(() => {
+    if (!ready || held || !front || !revealed || opens < THIRD_OPEN || thirdOpenAsked()) return undefined;
+    const timer = setTimeout(() => {
+      // A milestone owed rises on Home within this delay and holds it; one
+      // that has not risen yet must not be landed on either.
+      if (!reviewHeld() && !milestoneOwed(streak.current)) void askAtThirdOpen();
+    }, THIRD_OPEN_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [ready, held, front, revealed, opens, streak.current]);
 }
 
 /** How long after the note closes the sheet rises: the next screen's arrival, settled. */

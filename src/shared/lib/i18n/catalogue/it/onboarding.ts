@@ -46,6 +46,22 @@ export const ONBOARDING_IT = {
   'onboarding.email.password': 'Password',
   'onboarding.email.submit': 'Accedi',
   'onboarding.email.submitting': 'Accesso in corso…',
+  'onboarding.email.createTitle': 'Salva il tuo piano',
+  'onboarding.email.createBlurb': 'Ti mandiamo un codice via email. Il tuo piano resta salvato con questo indirizzo.',
+  'onboarding.email.signInBlurb': 'Ti mandiamo un codice via email per accedere.',
+  'onboarding.email.sendCode': 'Invia il codice',
+  'onboarding.email.sending': 'Invio in corso…',
+  'onboarding.email.codeTitle': 'Controlla la tua email',
+  'onboarding.email.codeBlurb': 'Inserisci il codice che abbiamo inviato a {email}.',
+  'onboarding.email.code': 'Codice',
+  'onboarding.email.verify': 'Conferma',
+  'onboarding.email.verifying': 'Verifica in corso…',
+  'onboarding.email.resend': 'Invia un nuovo codice',
+  'onboarding.email.resendIn': 'Nuovo codice tra {seconds} s',
+  'onboarding.email.changeAddress': 'Usa un’altra email',
+  'onboarding.email.existing': 'Questa email ha già un account. Con il codice accedi a quello.',
+  'onboarding.email.usePassword': 'Usa una password',
+  'onboarding.email.useCode': 'Mandami un codice',
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': 'Come vuoi\nche ti chiamiamo?',
@@ -56,8 +72,11 @@ export const ONBOARDING_IT = {
   'onboarding.passport.title': 'Passaporto del piede',
   'onboarding.passport.owner': 'Passaporto del piede di {name}',
   'onboarding.passport.empty': 'Qui compariranno le tue risposte',
-  'onboarding.passport.issued': 'Rilasciato il {date}',
   'onboarding.passport.edit': 'Qualcosa da correggere? Tocca per modificare.',
+  // The first stamp, on the halfway screen. The edition line is set in small
+  // capitals by the screen; written here in sentence case.
+  'onboarding.passport.stampEdition': 'Passaporto del piede · prima edizione',
+  'onboarding.passport.firstStamp': 'Il tuo primo francobollo',
   'onboarding.passport.heading': 'Il tuo passaporto del piede, {name}',
   // Who they are, in the passport's words: the role question's own
   // answers ("Both") mean nothing out of it.
@@ -90,7 +109,7 @@ export const ONBOARDING_IT = {
   'onboarding.bunion.no': 'No',
   'onboarding.bunion.little': 'Leggero',
   'onboarding.bunion.yes': 'Sì',
-  'onboarding.bunion.unsure': 'Non sono sicuro',
+  'onboarding.bunion.unsure': 'Non saprei',
   'onboarding.bunion.note': 'Un’immagine per confrontare, non una diagnosi.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
@@ -115,9 +134,9 @@ export const ONBOARDING_IT = {
     'Il numero di scarpe sta per la lunghezza della leva che il tuo polpaccio deve muovere.',
 
   // ── Goal ─────────────────────────────────────────────────────────────────
-  'onboarding.goal.title': '{name}, a cosa stai lavorando?',
+  'onboarding.goal.title': '{name}, qual è il tuo obiettivo?',
   'onboarding.goal.blurb': 'Scegli quello che conta di più adesso. Puoi cambiarlo più avanti.',
-  'onboarding.goal.painfree': 'Correre senza dolore',
+  'onboarding.goal.painfree': 'Correre con meno dolore',
   'onboarding.goal.race': 'Prepararmi per una gara',
   'onboarding.goal.consistent': 'Correre con più costanza',
   'onboarding.goal.stronger': 'Rinforzare le gambe',
@@ -128,26 +147,21 @@ export const ONBOARDING_IT = {
   'onboarding.goal.allday': 'Reggere in piedi tutto il giorno',
   'onboarding.goal.comeback': 'Ripartire dopo un infortunio',
   'onboarding.goal.steady': 'Camminare con sicurezza',
-  // Days and minutes, one screen: a heading over two short lists.
-  'onboarding.schedule.title': 'Quanto tempo hai, {name}?',
-  'onboarding.schedule.days': 'Giorni a settimana',
-  'onboarding.schedule.minutes': 'Minuti a sessione',
-  'onboarding.schedule.kit': 'A casa?',
+  // Days, minutes and what is at home: a screen each, the cards under a
+  // drawing of the answer. The kit's question is `onboarding.equipment.title`.
+  'onboarding.days.title': 'Quanti giorni a settimana?',
+  'onboarding.minutes.title': 'Quanto dura ogni sessione?',
   // Under the kit: the exercises it brings into the plan, as they are picked.
   'onboarding.schedule.adds': 'Si aggiunge al piano',
+  // The badge on the recommended days and minutes cards.
+  'onboarding.schedule.recommended': 'Consigliato',
   'onboarding.days.days3': '3 giorni',
-  'onboarding.days.days3Caption': 'Un inizio tranquillo',
   'onboarding.days.days5': '5 giorni',
-  'onboarding.days.days5Caption': 'Consigliato',
   'onboarding.days.days7': 'Ogni giorno',
-  'onboarding.days.days7Caption': 'Breve e quotidiano',
   'onboarding.minutes.blurb': 'Puoi cambiarlo ogni giorno - anche i giorni pieni contano.',
   'onboarding.minutes.min3': '3 minuti',
-  'onboarding.minutes.min3Caption': 'Anche nei giorni pieni',
   'onboarding.minutes.min5': '5 minuti',
-  'onboarding.minutes.min5Caption': 'Consigliato',
   'onboarding.minutes.min10': '10 minuti',
-  'onboarding.minutes.min10Caption': 'Per progredire più in fretta',
   'onboarding.equipment.title': 'Cosa hai a casa?',
   'onboarding.equipment.blurb': 'Scegli tutto quello che hai.',
   'onboarding.equipment.step': 'Un gradino o delle scale',
@@ -164,7 +178,7 @@ export const ONBOARDING_IT = {
   'onboarding.pain.full': 'Fino a {count} alla volta. Toccane uno per cambiarlo.',
   'onboarding.pain.none': 'Ora non mi fa male niente',
   'onboarding.pain.disclaimer':
-    'Non è un consiglio medico. Se il dolore è acuto, peggiora o arriva con gonfiore o intorpidimento, consulta un medico.',
+    'Non è un consiglio medico. Se il dolore è acuto, peggiora o è accompagnato da gonfiore o intorpidimento, consulta un medico.',
 
   'onboarding.side.title': 'Quale lato, {name}?',
   'onboarding.side.blurb': 'I test confrontano una gamba con l’altra, quindi dobbiamo sapere su quale lavoriamo.',
@@ -218,7 +232,7 @@ export const ONBOARDING_IT = {
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': 'Cosa ti pesa di più adesso, {name}?',
   'onboarding.challenge.blurb': 'Fino a due. Il piano si orienta su quello che scegli.',
-  'onboarding.challenge.painfree': 'Restare senza dolore',
+  'onboarding.challenge.painfree': 'Avere meno dolore',
   'onboarding.challenge.back': 'Tornare a correre',
   'onboarding.challenge.distance': 'Aumentare la distanza',
   'onboarding.challenge.recovery': 'Recuperare più in fretta',
@@ -229,6 +243,7 @@ export const ONBOARDING_IT = {
   'onboarding.source.blurb': 'Un tocco. Ci aiuta a raggiungere persone come te.',
   'onboarding.source.tiktok': 'TikTok',
   'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.facebook': 'Facebook',
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'Me ne ha parlato qualcuno',
   'onboarding.source.appStore': 'Cercando nell’App Store',
@@ -257,7 +272,7 @@ export const ONBOARDING_IT = {
   'onboarding.health.opening': 'Apertura di Salute…',
   'onboarding.health.connectAndroid': 'Collega Health Connect',
   'onboarding.health.openingAndroid': 'Apertura di Health Connect…',
-  'onboarding.health.promise': 'I tuoi dati di salute non lasciano mai questo dispositivo.',
+  'onboarding.health.promise': 'Passi, sonno e corse restano su questo telefono.',
   'onboarding.health.unavailable': 'Salute non è disponibile qui - puoi andare avanti senza.',
   'onboarding.health.declined': 'L’accesso a Salute è stato negato. Il tuo piano funziona anche senza.',
   'onboarding.health.empty': 'Collegato - ancora nessun dato. Si riempirà man mano che ti muovi.',
@@ -280,23 +295,19 @@ export const ONBOARDING_IT = {
   'onboarding.watchSync.blurb': 'Un interruttore dentro l’app che usi già.',
   'onboarding.watchSync.open': 'Apri {app}',
   'onboarding.watchSync.garminApp': 'Garmin Connect',
-  'onboarding.watchSync.garmin1': 'Apri Garmin Connect e vai su Altro.',
-  'onboarding.watchSync.garmin2': 'Tocca Impostazioni, poi Apple Salute.',
+  'onboarding.watchSync.garmin1': 'Apri Garmin Connect e vai su «Altro».',
+  'onboarding.watchSync.garmin2': 'Tocca «Impostazioni», poi «Salute Apple».',
   'onboarding.watchSync.garmin3': 'Attiva le categorie che vuoi condividere.',
   'onboarding.watchSync.whoopApp': 'Whoop',
-  'onboarding.watchSync.whoop1': 'Apri Whoop e tocca More.',
-  'onboarding.watchSync.whoop2': 'Apri App Settings, poi Integrations.',
-  'onboarding.watchSync.whoop3': 'Tocca Apple Health e attivalo.',
+  'onboarding.watchSync.whoop1': 'Apri Whoop e tocca «Altro».',
+  'onboarding.watchSync.whoop2': 'Apri «Impostazioni app», poi «Integrazioni».',
+  'onboarding.watchSync.whoop3': 'Tocca «Salute di Apple» e collegalo.',
 
   // ── Notifications ────────────────────────────────────────────────────────
   'onboarding.notify.title': 'Attiva le notifiche',
   'onboarding.notify.blurb': 'Così il tuo piano può avvisarti quando ha bisogno di te.',
   'onboarding.notify.askNamed': '{name}, facciamolo insieme',
   'onboarding.notify.ask': 'Facciamolo insieme',
-  'onboarding.notify.askBlurb': 'Solo nei giorni in cui il tuo piano ha una sessione.',
-  'onboarding.notify.promise1': 'Un promemoria nei giorni in cui il tuo piano ha una sessione',
-  'onboarding.notify.promise2': 'Un avviso quando cambia quello che stai facendo',
-  'onboarding.notify.promise3': 'E ogni tanto uno sconto - niente di più.',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'ora',
   'onboarding.notify.bannerBody': 'Oggi forza del piede - 7 minuti. Le tue tibie ti ringrazieranno.',
@@ -304,6 +315,7 @@ export const ONBOARDING_IT = {
   'onboarding.notify.opening': 'Apertura…',
   'onboarding.notify.notNow': 'Non ora',
   'onboarding.notify.declined': 'Nessun problema - puoi attivarle più tardi nelle Impostazioni.',
+  'onboarding.notify.consent': 'Promemoria, progressi e qualche offerta ogni tanto.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Sto costruendo il tuo piano',
@@ -314,13 +326,13 @@ export const ONBOARDING_IT = {
   'onboarding.building.reflectionBoth': '{pain}, {volume}.',
   'onboarding.building.reflectionPain': '{pain}.',
   'onboarding.building.reflectionVolume': '{volume}.',
-  'onboarding.pattern.heel': 'È lo schema più comune che ci sia. Ed è anche quello che risponde più in fretta.',
+  'onboarding.pattern.heel': 'È lo schema più comune che ci sia. E spesso risponde bene all’allenamento.',
   'onboarding.pattern.foot': 'L’arco non è debole di per sé. È debole ciò che lo sostiene.',
   'onboarding.pattern.achilles':
-    'Il carico è cresciuto più in fretta di quanto il tendine si sia adattato. Si può sistemare.',
+    'Il carico è cresciuto più in fretta di quanto il tendine si sia adattato. Ci si può lavorare.',
   'onboarding.pattern.shin':
     'Il volume ha superato le tue gambe. Il piano fa un passo indietro, poi costruisce.',
-  'onboarding.pattern.calf': 'Il polpaccio tira tutto ciò che sta sotto. Scioglilo e il resto segue.',
+  'onboarding.pattern.calf': 'Il polpaccio mette in tensione tutto ciò che sta sotto. Scioglilo e il resto segue.',
   'onboarding.pattern.none': 'Sei qui prima che faccia male. È il modo più economico di farlo.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
@@ -349,7 +361,7 @@ export const ONBOARDING_IT = {
   'onboarding.plan.weeks': 'Settimane {from}-{to}',
   'onboarding.plan.weeksOn': 'Settimane {from}+',
   'onboarding.plan.phaseSettle': 'calmare l’irritazione',
-  'onboarding.plan.phaseBuild': 'costruire l’arco',
+  'onboarding.plan.phaseBuild': 'rinforzare l’arco',
   'onboarding.plan.phaseLoad': 'tornare al carico pieno',
   'onboarding.plan.reflectionBoth':
     '{pain} e {volume}. Le prime due settimane calmano le cose prima di qualsiasi carico.',
@@ -381,7 +393,7 @@ export const ONBOARDING_IT = {
   'onboarding.testimonial2.lead': 'a casa o al lavoro',
   'onboarding.testimonial2.after': ' - bastano un pavimento e un muro.',
   'onboarding.testimonial2.name': 'Ogni sessione',
-  'onboarding.testimonial3.before': 'Un retest di un minuto',
+  'onboarding.testimonial3.before': 'Una verifica di un minuto',
   'onboarding.testimonial3.lead': 'mostra cosa è cambiato davvero',
   'onboarding.testimonial3.after': ', con i numeri invece che con le sensazioni.',
   'onboarding.testimonial3.name': 'Ogni due settimane',

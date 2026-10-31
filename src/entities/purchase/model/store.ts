@@ -2,8 +2,12 @@ import Constants from 'expo-constants';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
-import { compAccess, subscribeComp } from './comp';
+import { compAccess, grantDevAccess, subscribeComp } from './comp';
+import { devGrantPass, passAccess, passEverBought, passServerEnd, subscribePass, syncPassFromServer } from './pass';
 import { type Purchases as Store, unconfigured } from './purchase';
+import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn } from './samples';
+import { storeSheetClosed, storeSheetOpened } from './skip';
+import { noteSourceAnswer } from './trial-audience';
 
 /**
  * Which store the app talks to, decided once at startup.
@@ -131,6 +135,13 @@ const simulator: Store = {
   entitled: () => true,
 };
 
+/**
+ * Whether the store's own access, a pass aside, goes on past a date: the
+ * RevenueCat adapter's `storeAccessOutlasts`, set by `pick` when that adapter
+ * is the store. Never true without it.
+ */
+let storeOutlasts: (end: Date) => boolean = () => false;
+
 function pick(): Store {
   // The real store first, even on the simulator. With a Test Store key the
   // whole flow works there — sheet, purchase, entitlement — and exercising the
@@ -145,7 +156,8 @@ function pick(): Store {
     // store" rather than crash on launch — the difference between a broken
     // paywall and a broken app.
     try {
-      const { revenueCatStore } = require('./revenuecat') as typeof import('./revenuecat');
+      const { revenueCatStore, storeAccessOutlasts } = require('./revenuecat') as typeof import('./revenuecat');
+      storeOutlasts = storeAccessOutlasts;
       // The real store, on a simulator too.
       //
       // This used to hand the simulator an unlocked copy, so the paywall could
@@ -171,7 +183,120 @@ function pick(): Store {
  * branches were all written against this contract before there was anything
  * behind it, so none of them needed touching when there was.
  */
-export const purchases: Store = withComp(pick());
+export const purchases: Store = withSamplePrices(withComp(withPass(withSheetCount(pick()))));
+
+/**
+ * The store, counting its own sheets: a purchase, a restore, the offer-code
+ * sheet and the cancel flow's (a promotional offer, Apple's subscription
+ * management) each hold `skip.ts` from reading the app going to
+ * the background as the person leaving it — on Android the Play billing sheet
+ * is reported that way, and leaving is what ends the one-time trial offer.
+ */
+function withSheetCount(store: Store): Store {
+  const held =
+    <A extends unknown[], R>(call: (...args: A) => Promise<R>) =>
+    async (...args: A): Promise<R> => {
+      storeSheetOpened();
+      try {
+        return await call(...args);
+      } finally {
+        storeSheetClosed();
+      }
+    };
+  return {
+    ...store,
+    buy: held(store.buy),
+    buyProduct: held(store.buyProduct),
+    restore: held(store.restore),
+    redeemCode: held(store.redeemCode),
+    manageSubscriptions: held(store.manageSubscriptions),
+    buyRetentionOffer: held(store.buyRetentionOffer),
+  };
+}
+
+/**
+ * Development only: sample prices instead of the store (`samples.ts`), while
+ * `?samplePrices` is on. `configured` reads true then, so every screen draws
+ * as it will against a store; buying a sample plan grants the simulator's
+ * pretend purchase (a sample pass, a pretend pass window: `devGrantPass`). The
+ * cancel flow's preview (`?previewCancel`) hands out sample offers and plans
+ * whatever the setting, and taking one "goes through" the same way. A release
+ * build gets the store untouched.
+ */
+function withSamplePrices(store: Store): Store {
+  if (!__DEV__) return store;
+  return {
+    ...store,
+    get configured() {
+      return store.configured || samplePricesOn();
+    },
+    offering: (identifier) =>
+      samplePricesOn() ? Promise.resolve(sampleOffering(identifier)) : store.offering(identifier),
+    buy: async (plan) => {
+      if (!isSamplePlan(plan)) return store.buy(plan);
+      if (plan.isPass) devGrantPass();
+      else grantDevAccess();
+      return { status: 'purchased' };
+    },
+    buyRetentionOffer: async (offer) => {
+      if (!isSampleOffer(offer)) return store.buyRetentionOffer(offer);
+      return { status: 'purchased' };
+    },
+  };
+}
+
+/**
+ * The store, with the 3-month pass on top (`pass.ts`): the days the server
+ * counted open the app as well, so access for the whole app is still
+ * `purchases.entitled()` and nothing that gates on it needed to change.
+ *
+ * - `entitled`: the store's access, or a pass window running now.
+ * - `hadAccess`: also true once the server says a pass was ever bought, so a
+ *   pass that ran out meets the expiry screen, not the paywall.
+ * - `passEndsAt`: the later of the store's record and the server's end (a
+ *   pass queued behind a subscription ends later than its purchase says).
+ *   The 7-day expiry push is laid from it, so it is null when access does not
+ *   end with the pass: a subscription that renews past it, a lifetime
+ *   purchase or a grant that outlasts it (`storeAccessOutlasts`), or access
+ *   granted by account (`compAccess`). A subscription whose renewal is off and
+ *   that ends first leaves the end standing: the pass is then what is left.
+ * - `restore`: asks the server too (`pass-sync`), so a pass bought on another
+ *   phone, or one the webhook missed, arrives with the restore.
+ */
+function withPass(store: Store): Store {
+  return {
+    ...store,
+    entitled: () => store.entitled() || passAccess(),
+    hadAccess: () => store.hadAccess() || passEverBought(),
+    passEndsAt: () => {
+      const local = store.passEndsAt();
+      const server = passServerEnd();
+      const end = local == null || (server != null && server.getTime() > local.getTime()) ? server : local;
+      if (end == null) return null;
+      // Comp is read here rather than in `withComp`, which sits outside this
+      // one; its changes reach the reminder through `withComp`'s `subscribe`.
+      if (compAccess() || storeOutlasts(end)) return null;
+      return end;
+    },
+    restore: async () => {
+      const result = await store.restore();
+      const id = await store.appUserId().catch(() => null);
+      await syncPassFromServer(id);
+      // A pass the store's own record did not show (bought on another phone,
+      // granted by the server) is a restore too.
+      if (result.status === 'nothing-found' && passAccess()) return { status: 'restored' };
+      return result;
+    },
+    subscribe: (listener) => {
+      const offStore = store.subscribe(listener);
+      const offPass = subscribePass(listener);
+      return () => {
+        offStore();
+        offPass();
+      };
+    },
+  };
+}
 
 /**
  * The store, unlocked as well for an account granted access (`comp.ts`): the
@@ -212,9 +337,21 @@ export async function startPurchases(): Promise<void> {
  * attach it to.
  */
 export function recordAcquisitionSource(source: string): void {
+  noteSourceAnswer(source);
   if (!purchases.configured || !keyIsUsable) return;
   const { setAcquisitionSource } = require('./revenuecat') as typeof import('./revenuecat');
   void setAcquisitionSource(source);
+}
+
+/**
+ * After "Allow" on App Tracking Transparency: hands RevenueCat the device's
+ * identifiers again, the IDFA now among them, and links AppsFlyer, so the
+ * install and every later purchase carry the advertising id.
+ */
+export function collectAdIdentifiers(): void {
+  if (!purchases.configured || !keyIsUsable) return;
+  const { collectAdIdentifiersNow } = require('./revenuecat') as typeof import('./revenuecat');
+  void collectAdIdentifiersNow();
 }
 
 /**

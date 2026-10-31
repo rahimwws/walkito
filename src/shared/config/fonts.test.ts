@@ -2,10 +2,15 @@ import { describe, expect, mock, test } from 'bun:test';
 
 import { systemTracking } from './font-faces';
 
-// `fonts.ts` requires the Inter files for `fontAssets`, which the test runner
-// cannot parse. Nothing here reads them.
-for (const file of ['400Regular/Inter_400Regular', '500Medium/Inter_500Medium', '700Bold/Inter_700Bold']) {
-  mock.module(`@expo-google-fonts/inter/${file}.ttf`, () => ({ default: 0 }));
+// `fonts.ts` requires the Inter and Caveat files for `fontAssets`, which the
+// test runner cannot parse. Nothing here reads them.
+for (const file of [
+  'inter/400Regular/Inter_400Regular',
+  'inter/500Medium/Inter_500Medium',
+  'inter/700Bold/Inter_700Bold',
+  'caveat/700Bold/Caveat_700Bold',
+]) {
+  mock.module(`@expo-google-fonts/${file}.ttf`, () => ({ default: 0 }));
 }
 const { faces, fonts } = await import('./fonts');
 

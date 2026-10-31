@@ -161,8 +161,8 @@ describe('the maintenance handover', () => {
     expect(text).toContain('11');
     expect(text).toContain('24');
     // The framing is the whole point of the screen and must survive edits.
-    expect(text).toContain('About half of people lose this again within five years.');
-    expect(text).toContain('Two sessions a week is how you stay in the other half.');
+    expect(text).toContain('about half of people still have symptoms five years on.');
+    expect(text).toContain('Two sessions a week help you keep what you’ve built.');
   });
 
   test('with no name it still reads as a sentence', () => {

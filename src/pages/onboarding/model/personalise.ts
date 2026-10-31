@@ -87,13 +87,18 @@ type LoadQuestion = {
 const PER_WEEK: Phrase = (t) => t('onboarding.load.perWeek');
 
 /** Distance-based sports are asked in kilometres; the rest in hours, because
- * nobody knows how many kilometres they covered on a tennis court. */
+ * nobody knows how many kilometres they covered on a tennis court. No "per
+ * week" under each band: the question already says a week, in every language.
+ *
+ * The emoji go further from home as the bands grow (the house, the park, off
+ * exploring, the hills, the world): a trip, not a score, so no band looks like
+ * the one to have. */
 const KM = (unit: Phrase): readonly OnboardingOption[] => [
-  { value: '0-5', label: (t) => t('onboarding.load.km0', { unit: unit(t) }), caption: PER_WEEK },
-  { value: '5-15', label: (t) => t('onboarding.load.km1', { unit: unit(t) }), caption: PER_WEEK },
-  { value: '15-30', label: (t) => t('onboarding.load.km2', { unit: unit(t) }), caption: PER_WEEK },
-  { value: '30-50', label: (t) => t('onboarding.load.km3', { unit: unit(t) }), caption: PER_WEEK },
-  { value: '50+', label: (t) => t('onboarding.load.km4', { unit: unit(t) }), caption: PER_WEEK },
+  { value: '0-5', label: (t) => t('onboarding.load.km0', { unit: unit(t) }), emoji: 'house' },
+  { value: '5-15', label: (t) => t('onboarding.load.km1', { unit: unit(t) }), emoji: 'tree' },
+  { value: '15-30', label: (t) => t('onboarding.load.km2', { unit: unit(t) }), emoji: 'compass' },
+  { value: '30-50', label: (t) => t('onboarding.load.km3', { unit: unit(t) }), emoji: 'mountain' },
+  { value: '50+', label: (t) => t('onboarding.load.km4', { unit: unit(t) }), emoji: 'globe' },
 ];
 
 const UNIT_KM: Phrase = (t) => t('onboarding.load.unitKm');
@@ -162,15 +167,17 @@ export function loadQuestionFor(sport: string | null): LoadQuestion {
   return LOAD[(sport ?? 'running') as SportKey] ?? LOAD.running;
 }
 
-/** Hours on their feet on a working day — the load a standing job puts on them. */
+/** Hours on their feet on a working day — the load a standing job puts on them.
+ * The emoji follow the sky through a shift (morning, midday, sunset, night):
+ * how long the day is, not how good. */
 const FEET: LoadQuestion = {
   title: (t) => t('onboarding.load.titleFeet'),
   blurb: (t) => t('onboarding.load.blurbFeet'),
   options: [
-    { value: 'under4', label: (t) => t('onboarding.load.feet0') },
-    { value: '4-8', label: (t) => t('onboarding.load.feet1') },
-    { value: '8-12', label: (t) => t('onboarding.load.feet2') },
-    { value: '12+', label: (t) => t('onboarding.load.feet3') },
+    { value: 'under4', label: (t) => t('onboarding.load.feet0'), emoji: 'sunCloud' },
+    { value: '4-8', label: (t) => t('onboarding.load.feet1'), emoji: 'sun' },
+    { value: '8-12', label: (t) => t('onboarding.load.feet2'), emoji: 'sunset' },
+    { value: '12+', label: (t) => t('onboarding.load.feet3'), emoji: 'moon' },
   ],
   extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
 };

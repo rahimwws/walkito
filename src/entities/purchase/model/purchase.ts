@@ -11,13 +11,28 @@
  * when no store was ever contacted is lying about a charge that was never
  * attempted, and the screen behaves exactly as it did before — it closes.
  *
- * **What Walkito sells.** Two auto-renewing subscriptions in one App Store
- * subscription group: an annual one, which the paywall leads with, and a weekly
- * one. Both unlock the same thing, the `premium` entitlement. The discounted
- * price an invite or a comeback earns is the annual subscription again, as a
- * separate, cheaper product in the same group, sold from the `offer` offering.
+ * **What Walkito sells.** One level of access, the `premium` entitlement, three
+ * ways: an annual subscription (what the paywall leads with), a monthly one,
+ * and a lifetime one-time purchase (a non-consumable, which never expires). All
+ * three are attached to the same entitlement in RevenueCat. The other prices
+ * are products of their own: the annual with a one-week free trial as its App
+ * Store introductory offer (the Home offer after the paywall is skipped), and
+ * the annual with its first year paid up front at a lower price plus a cheaper
+ * lifetime (the comeback offer). Apple has no "the same product, cheaper", so
+ * each is its own product, sold from its own offering (`OFFERINGS`; on the App
+ * Store all six sit in one dashboard offering, `v2`, and the adapter cuts the
+ * three out of it).
  * The plan itself never ends, so nothing here has a length beyond its billing
  * period.
+ *
+ * **And the 3-month pass**, which is not a subscription and grants no
+ * entitlement on purpose: one payment for 90 days of access, counted on our
+ * server (`pass.ts`, `supabase/migrations/0017_three_month_pass.sql`) because
+ * RevenueCat would hold a one-time product as owned for ever. It sits in the
+ * `pass` slot, and only on the offerings that sell it: the comeback's `offer`
+ * (the limited offer's third card) and `retention_budget` (the cancel flow's
+ * budget answer, cheaper). The standard, trial and paywall shelves never carry
+ * one.
  */
 
 /** What a purchase attempt can come back as. */
@@ -65,8 +80,61 @@ export type Product = {
   display: string;
 };
 
-/** How often a plan bills. One per slot on `Offering`. */
-export type PlanPeriod = 'annual' | 'weekly';
+/**
+ * How a plan bills: one slot per kind on `Offering`. `lifetime` is a one-time
+ * purchase, not a subscription; `pass` is the 3-month pass, a one-time
+ * purchase that opens the app for 90 days and is never a lifetime plan. Also
+ * the `plan` of every purchase event.
+ */
+export type PlanPeriod = 'annual' | 'monthly' | 'weekly' | 'lifetime' | 'pass';
+
+/**
+ * The kinds of plan the paywall and the expiry screen sell: every one but the
+ * pass, which only the limited offer and the cancel flow sell. Those screens
+ * keep a record of plans by kind, and a pass slot there would be a plan they
+ * have no words for.
+ */
+export type PaywallPeriod = Exclude<PlanPeriod, 'pass'>;
+
+/** A stretch of time as the store states it: "1 week", "1 year". */
+export type StorePeriod = {
+  readonly unit: 'day' | 'week' | 'month' | 'year';
+  /** How many `unit`s, at least 1. */
+  readonly count: number;
+};
+
+/**
+ * An App Store (or Google Play) introductory offer on a subscription, as the
+ * store reports it for **this customer**.
+ *
+ * Only present when the product has one and the store says this customer can
+ * have it: Apple gives an introductory offer once per subscription group, so
+ * someone who already had a trial gets none, and a screen that still said
+ * "free" would be promising something the sheet will not give. On iOS that is
+ * RevenueCat's eligibility check; where it cannot tell, the offer is left out
+ * (RevenueCat's own advice). Google Play only lists offers the account can
+ * take.
+ *
+ * - `free-trial`: nothing is charged for `period`; then the plan's own price.
+ * - `pay-up-front`: one payment of `priceString` covers `period`; then the
+ *   plan's own price. The comeback annual: $29.99 for the first year.
+ * - `pay-as-you-go`: `priceString` each billing `period`, `cycles` times.
+ */
+export type IntroOffer =
+  | { readonly kind: 'free-trial'; readonly period: StorePeriod }
+  | {
+      readonly kind: 'pay-up-front';
+      readonly price: number;
+      readonly priceString: string;
+      readonly period: StorePeriod;
+    }
+  | {
+      readonly kind: 'pay-as-you-go';
+      readonly price: number;
+      readonly priceString: string;
+      readonly period: StorePeriod;
+      readonly cycles: number;
+    };
 
 /**
  * What one plan costs and how to buy it, as one object.
@@ -77,107 +145,366 @@ export type PlanPeriod = 'annual' | 'weekly';
  * relationship, and a price changed in App Store Connect would have left the
  * sheet advertising the old one. Here the number shown and the thing bought
  * come out of the same fetch, and cannot disagree.
+ *
+ * Every string here is the store's own, formatted for this storefront: only
+ * the store knows where the symbol goes and which separator the locale uses.
  */
 export type Plan = {
   /** Opaque handle the store uses to start the purchase. */
   readonly token: string;
   readonly period: PlanPeriod;
   readonly product: Product;
+  /** The regular price, as billed each period (or once, for lifetime).
+   * The same string as `product.display`. */
+  readonly priceString: string;
+  /** The regular price over a month ("$4.99" for $59.99 a year), the store's
+   * own division. Null for lifetime and the pass. Always secondary on screen:
+   * Apple wants the billed amount to be the most prominent price. */
+  readonly pricePerMonthString: string | null;
+  /** The same over a week. Null for lifetime and the pass. */
+  readonly pricePerWeekString: string | null;
+  /** How long one billing period is (1 year, 1 month, 1 week). Null for
+   * lifetime and the pass, which bill once. */
+  readonly billingPeriod: StorePeriod | null;
+  /** A one-time purchase that never renews and never expires. */
+  readonly isLifetime: boolean;
+  /**
+   * The 3-month pass: one payment, 90 days of access, nothing renews. Never
+   * also `isLifetime`, though both are one-time purchases: a pass sold as
+   * "Lifetime" would be a promise the server's 90 days break. Buying one goes
+   * through the pass checkout (`widgets/pass-checkout`), store first, account
+   * after.
+   */
+  readonly isPass: boolean;
+  /** The introductory offer this customer would get, or null. Trial or
+   * "first year" wording belongs only on a plan where this is set. */
+  readonly intro: IntroOffer | null;
 };
 
 /**
  * The plans on offer under one name.
  *
- * Named because this app sells the same year at more than one price — the
- * standard one, and the one an invite or a comeback earns. Apple has no concept
- * of "the same product, cheaper": a discount is a different product. RevenueCat
- * models that as offerings, so each price is an offering configured in its
- * dashboard and the app asks for one by name rather than doing arithmetic on a
- * constant.
+ * Named because this app sells the same access at more than one price — the
+ * standard one, the trial after the paywall is skipped, and the comeback
+ * price. Apple has no concept of "the same product, cheaper": a discount is a
+ * different product. RevenueCat models that as offerings, so each price is an
+ * offering configured in its dashboard and the app asks for one by name rather
+ * than doing arithmetic on a constant.
+ *
+ * Any slot can be null: an offering only holds what its dashboard entry holds.
+ * Android's offerings still hold the first line-up (annual and weekly) until
+ * its own versions of the new products exist, so a screen must draw whatever
+ * slots are filled and hide the rest.
  */
 export type Offering = {
   readonly identifier: string;
-  /** Auto-renewing, billed once a year. RevenueCat's `$rc_annual` package. */
+  /** Auto-renewing, billed once a year. RevenueCat's `$rc_annual` package
+   * (in `v2`, the trial's and the comeback's annual are custom packages:
+   * `V2_SHELVES`). */
   readonly annual: Plan | null;
-  /** Auto-renewing, billed every week. RevenueCat's `$rc_weekly` package. */
+  /** Auto-renewing, billed every month. RevenueCat's `$rc_monthly` package. */
+  readonly monthly: Plan | null;
+  /** Auto-renewing, billed every week. RevenueCat's `$rc_weekly` package.
+   * Only Android's offerings still carry one. */
   readonly weekly: Plan | null;
+  /** One payment, access for good. RevenueCat's `$rc_lifetime` package
+   * (in `v2`, the comeback's is `lifetime_offer`). */
+  readonly lifetime: Plan | null;
+  /** The 3-month pass, one payment for 90 days. A custom package, read by its
+   * identifier only (`PASS_PACKAGES`), and only on the offerings that sell it:
+   * null on every other. */
+  readonly pass: Plan | null;
 };
 
-/** The offerings this app asks for. Each must exist in the RevenueCat
- * dashboard; a missing one resolves to null and the sheet falls back to the
- * standard price rather than inventing a discount. */
+/**
+ * The offerings this app asks for, by these names everywhere: screens, purchase
+ * tokens and the `offering` of every purchase event.
+ *
+ * Where they come from is the adapter's business. On the App Store all three
+ * are cut out of the one dashboard offering `OFFERING_V2` (`V2_SHELVES` says
+ * which package goes where); without it (Android, older dashboards) each is a
+ * dashboard offering of this name. A missing one resolves to null and the
+ * screen falls back to the standard offering rather than inventing a discount.
+ * The package names below are the ones the by-name offerings use.
+ */
 export const OFFERINGS = {
-  /** `$rc_annual` → the annual product, `$rc_weekly` → the weekly product. */
+  /** `$rc_annual` walkito_annual, `$rc_monthly` walkito_monthly,
+   * `$rc_lifetime` walkito_lifetime. The paywall, "See all plans", and the
+   * Home offer once the comeback deadline has passed. */
   standard: 'default',
-  /** `$rc_annual` → the discounted annual product, shown to somebody invited
-   * or coming back. `$rc_weekly` here is optional and, when present, is the
-   * ordinary weekly product. Never on a first view — see the paywall. */
+  /** `$rc_annual` walkito_annual_trial: the annual with a one-week free
+   * trial. The one-time Home offer after the paywall is skipped. */
+  trial: 'trial',
+  /** `$rc_annual` walkito_annual_offer (the first year paid up front, cheaper)
+   * and `$rc_lifetime` walkito_lifetime_offer, and in `v2` the 3-month pass
+   * (`three_month_pass`). The comeback offer, the limited offer: the 15-minute
+   * one on Home, the win-back push and the offer emails. The id is fixed —
+   * email links (`paywall?offering=offer`) and older builds ask for it. */
   offer: 'offer',
+  /** `three_month_pass_offer`: the 3-month pass at the retention price
+   * (pass_12wk_1499 on the App Store, pass_3mo_offer on Google Play), and
+   * nothing else. The cancel flow's answer to "It doesn't fit my budget". Read
+   * by its own name: it is not in `v2`. */
+  retentionBudget: 'retention_budget',
 } as const;
 
 /**
  * The package identifiers the app reads, in every offering.
  *
  * RevenueCat's own predefined packages, so the SDK exposes them as
- * `offering.annual` and `offering.weekly` with no custom lookup. Written down
+ * `offering.annual`, `offering.monthly` … with no custom lookup. Written down
  * because they are typed into the dashboard by hand (Offerings → Packages →
- * "Annual" / "Weekly"), and a custom identifier there would leave a slot empty.
+ * "Annual" / "Monthly" / "Lifetime"), and a custom identifier there would leave
+ * a slot empty. `v2` uses these for the standard plans and custom ones beside
+ * them (`V2_PACKAGES`).
  */
 export const PACKAGES = {
   annual: '$rc_annual',
+  monthly: '$rc_monthly',
   weekly: '$rc_weekly',
+  lifetime: '$rc_lifetime',
 } as const;
 
 /**
- * The product identifiers the offerings are expected to point at.
+ * The one RevenueCat offering the App Store line-up lives in: all six
+ * `PRODUCTS`, attached to `premium`, and the 3-month pass beside them
+ * (`three_month_pass`, attached to nothing). `default` stays as it was, for
+ * the builds already out and for Android, whose only product in `v2` is its
+ * pass (`pass_3mo`): its plans are read by name, the pass kept beside them.
+ *
+ * Read by this name, never as RevenueCat's "current" offering, so making `v2`
+ * current after the release changes nothing here. Renaming it would.
+ */
+export const OFFERING_V2 = 'v2';
+
+/**
+ * `v2`'s packages under custom identifiers, typed into the dashboard by hand.
+ * They sit beside `$rc_annual` and `$rc_lifetime` in the same offering, so they
+ * cannot take RevenueCat's predefined slots.
+ */
+export const V2_PACKAGES = {
+  /** walkito_annual_trial: the annual with a one-week free trial. */
+  annualTrial: 'annual_trial',
+  /** walkito_annual_offer: the annual, its first year paid up front for less. */
+  annualOffer: 'annual_offer',
+  /** walkito_lifetime_offer: the cheaper lifetime. */
+  lifetimeOffer: 'lifetime_offer',
+  /** The 3-month pass at its own price: pass_12wk_4999 on the App Store,
+   * pass_3mo on Google Play. The limited offer's third card. */
+  threeMonthPass: 'three_month_pass',
+} as const;
+
+/**
+ * Which package carries the 3-month pass in each offering that sells one, by
+ * the offering's name: the comeback's (in `v2`, or in a by-name `offer`) and
+ * the retention offering. An offering not named here never has a pass,
+ * whatever its dashboard holds: the standard plans, the trial and the paywall
+ * do not sell it.
+ */
+export const PASS_PACKAGES: Readonly<Record<string, string>> = {
+  [OFFERINGS.offer]: V2_PACKAGES.threeMonthPass,
+  [OFFERINGS.retentionBudget]: 'three_month_pass_offer',
+};
+
+/**
+ * Which of `v2`'s packages fill each slot of each offering the app asks for. A
+ * slot not named here stays empty.
+ */
+export const V2_SHELVES: Readonly<Record<string, Readonly<Partial<Record<PlanPeriod, string>>>>> = {
+  [OFFERINGS.standard]: { annual: PACKAGES.annual, monthly: PACKAGES.monthly, lifetime: PACKAGES.lifetime },
+  [OFFERINGS.trial]: { annual: V2_PACKAGES.annualTrial },
+  [OFFERINGS.offer]: {
+    annual: V2_PACKAGES.annualOffer,
+    lifetime: V2_PACKAGES.lifetimeOffer,
+    pass: V2_PACKAGES.threeMonthPass,
+  },
+};
+
+/**
+ * The product identifiers the offerings are expected to point at, in App
+ * Store Connect.
  *
  * Nothing buys these directly — purchases go through a `Plan` from an
  * offering, so the price shown and the product charged come from one fetch, and
  * access is decided by the `premium` entitlement rather than by product id. They
  * are the written-down contract with App Store Connect, and what a diagnostic
- * can check the dashboard against.
- *
- * TODO(store): confirm these against App Store Connect once the products exist.
- * They follow the naming of the products that came before them and are
- * informational only — a different identifier changes no behaviour, as long as
- * the RevenueCat packages point at it.
+ * can check the dashboard against. US prices in the comments; the store's own
+ * figure is the only one ever shown.
  */
 export const PRODUCTS = {
-  /** Auto-renewable, 1 year, group "Walkito Premium". $44.99 in the US. */
+  /** Auto-renewable, 1 year, $59.99. No introductory offer. */
+  annual: 'walkito_annual',
+  /** Auto-renewable, 1 month, $14.99. */
+  monthly: 'walkito_monthly',
+  /** Non-consumable, one time, $99.99. */
+  lifetime: 'walkito_lifetime',
+  /** Auto-renewable, 1 year, $59.99, with a one-week free trial as its
+   * introductory offer. */
+  annualTrial: 'walkito_annual_trial',
+  /** Auto-renewable, 1 year, $59.99, with the first year paid up front at
+   * $29.99 as its introductory offer. */
+  annualOffer: 'walkito_annual_offer',
+  /** Non-consumable, one time, $59.99. */
+  lifetimeOffer: 'walkito_lifetime_offer',
+} as const;
+
+/** The lifetime products: one-time purchases that grant `premium` for good. */
+export const LIFETIME_PRODUCT_IDS: readonly string[] = [PRODUCTS.lifetime, PRODUCTS.lifetimeOffer];
+
+/**
+ * The first line-up of subscriptions: still what Google Play sells until
+ * Android has its own versions of `PRODUCTS`, and still renewing for the App
+ * Store subscribers who bought them. All attached to `premium`.
+ */
+export const FIRST_PRODUCTS = {
+  /** Auto-renewable, 1 year. $44.99 in the US. */
   annual: 'sub_annual_4499',
-  /** Auto-renewable, 1 week, same group. $7.99 in the US. */
+  /** Auto-renewable, 1 week. $7.99 in the US. */
   weekly: 'sub_weekly_799',
-  /** Auto-renewable, 1 year, same group, at the invite and comeback price. A
-   * separate product rather than an introductory offer, so the price the store
-   * reports is the price it renews at. */
+  /** Auto-renewable, 1 year, the old comeback price, as a separate product. */
   annualOffer: 'sub_annual_offer',
 } as const;
 
 /**
+ * The products already sold at a discount: the comeback's annual and lifetime,
+ * and the first line-up's comeback annual. The cancel flow makes no retention
+ * offer to somebody on one of these, so a discount never lands on another.
+ */
+export const OFFER_PRODUCT_IDS: readonly string[] = [
+  PRODUCTS.annualOffer,
+  PRODUCTS.lifetimeOffer,
+  FIRST_PRODUCTS.annualOffer,
+];
+
+/**
+ * The 3-month pass, per store: non-renewing on the App Store, one-time
+ * products (purchase option `buy`, consumable in RevenueCat) on Google Play.
+ * Attached to no entitlement, on purpose: RevenueCat would treat a one-time
+ * product as owned for ever, so the 90 days are counted on our server.
+ */
+export const PASS_PRODUCTS = {
+  /** The App Store's pass, $39.99. The same id as the old 12-week pass, so a
+   * sandbox purchase of that one reads as a pass too. */
+  ios: 'pass_12wk_4999',
+  /** The App Store's retention price, $24.99: the cancel flow's budget offer. */
+  iosOffer: 'pass_12wk_1499',
+  /** Google Play's pass, $39.99. */
+  android: 'pass_3mo',
+  /** Google Play's retention price, $24.99. */
+  androidOffer: 'pass_3mo_offer',
+} as const;
+
+/** Every pass product, both stores, both prices. A purchase of any grants the
+ * same 90 days. */
+export const PASS_PRODUCT_IDS: readonly string[] = [
+  PASS_PRODUCTS.ios,
+  PASS_PRODUCTS.iosOffer,
+  PASS_PRODUCTS.android,
+  PASS_PRODUCTS.androidOffer,
+];
+
+/**
+ * Whether a store product is a 3-month pass. Google Play may name a one-time
+ * product with its purchase option (`pass_3mo:buy`), so the part before a
+ * colon is what is compared, as the server does (`_shared/pass.ts`).
+ */
+export function isPassProduct(id: string | null | undefined): boolean {
+  if (id == null) return false;
+  return PASS_PRODUCT_IDS.includes(id.split(':')[0]);
+}
+
+/**
  * What used to be sold, kept only so the people who bought it keep access.
  *
- * The one-time pass and the monthly subscription are no longer on sale and no
- * screen mentions them. The pass needs its ids for one reason: Apple puts no
- * expiry on a non-renewing purchase and RevenueCat therefore never ends the
- * entitlement it grants, so the app dates that access itself — see `passEnd`
- * in `access.ts`. Only sandbox and TestFlight buyers ever held one.
+ * The first monthly subscription (not `walkito_monthly`) is no longer on sale
+ * and no screen mentions it. The pass ids are the 3-month pass's again
+ * (`PASS_PRODUCTS`): the old 12-week pass shared them, and is read the same
+ * way.
  */
 export const LEGACY_PRODUCTS = {
   monthly: 'sub_monthly_2499',
-  pass: 'pass_12wk_4999',
-  passOffer: 'pass_12wk_1499',
+  pass: PASS_PRODUCTS.ios,
+  passOffer: PASS_PRODUCTS.iosOffer,
 } as const;
 
-/** Both pass products — a purchase of either granted the same access for the
- * same length of time. */
-export const LEGACY_PASS_IDS: readonly string[] = [LEGACY_PRODUCTS.pass, LEGACY_PRODUCTS.passOffer];
+/** Every pass product, under its old name: what `access.ts` dates a pass by
+ * from the store's own record. */
+export const LEGACY_PASS_IDS: readonly string[] = PASS_PRODUCT_IDS;
 
 /**
- * How long a legacy pass granted access for, from its purchase date.
+ * How long a pass grants access for: from its purchase date when the app
+ * dates it from the store's record (`passEnd` in `access.ts`), and on the
+ * server's grant (`grant_pass`, 0017).
  *
- * Fixed at what was sold, so nobody who bought one loses a day of it.
+ * Fixed at what is sold, so nobody who bought one loses a day of it.
  */
 export const PASS_ACCESS_DAYS = 90;
+
+/**
+ * What this customer holds in a store, as the store last said: the plan, and
+ * whether it renews. What Settings → Manage subscription is drawn from.
+ *
+ * Only what a store bills. Access granted by account (`comp.ts`), a grant
+ * made in RevenueCat's dashboard and a 3-month pass are not here: there is
+ * nothing of theirs a store could cancel.
+ */
+export type Subscription = {
+  /** `subscription` renews until it is cancelled in its store. `lifetime` was
+   * one payment: there is nothing to renew or cancel. */
+  readonly kind: 'subscription' | 'lifetime';
+  /** The store's product id. On Google Play, the subscription id. */
+  readonly productId: string;
+  /** Never `pass`: a pass is not a subscription. */
+  readonly period: PaywallPeriod;
+  /** False once renewal was turned off in the store: access runs to
+   * `expiresAt`, then ends. Always false for lifetime. */
+  readonly willRenew: boolean;
+  /** When the period paid for (or the free trial) ends, epoch ms. Null for
+   * lifetime. */
+  readonly expiresAt: number | null;
+  /**
+   * The kind of period it is in: the full price (`normal`), a free trial, an
+   * introductory price, or a Google Play prepaid plan that does not renew by
+   * itself. Only `normal` may be offered anything to stay: a discount on top of
+   * a trial or an introductory price is two discounts.
+   */
+  readonly periodType: 'normal' | 'trial' | 'intro' | 'prepaid';
+  /** Which store bills it. Only that store can change it. */
+  readonly store: 'app_store' | 'play_store' | 'other';
+  /** Shared by a family organiser rather than bought by this person, who
+   * can neither cancel it nor take an offer on it. */
+  readonly familyShared: boolean;
+  /** The store's page for it, as RevenueCat reports it, or null. */
+  readonly managementUrl: string | null;
+};
+
+/**
+ * An App Store promotional offer on the subscription held, signed for this
+ * customer: what the cancel flow may offer in the place of cancelling
+ * (`RETENTION_OFFERS` in `shared/config`).
+ *
+ * Every figure is the store's: the offer's own price for each of its periods,
+ * and the product's regular price beside it in the same currency, so a
+ * percentage on screen compares two prices the store will really charge. Like
+ * `Plan`, it carries a token rather than the SDK's objects; the adapter keeps
+ * the signed offer behind it.
+ */
+export type RetentionOffer = {
+  readonly token: string;
+  /** Its identifier in App Store Connect. */
+  readonly offerId: string;
+  readonly productId: string;
+  /** What each period of the offer costs: 0 is free. */
+  readonly price: number;
+  readonly priceString: string;
+  /** One period of the offer, and how many of them it lasts. */
+  readonly period: StorePeriod;
+  readonly cycles: number;
+  /** The product's regular price, as billed each period after the offer. */
+  readonly regularPrice: number;
+  readonly regularPriceString: string;
+  readonly currencyCode: string;
+};
 
 export type Purchases = {
   /** Whether a real store is wired up. Everything below is a no-op when false. */
@@ -231,6 +558,35 @@ export type Purchases = {
   appUserId(): Promise<string | null>;
 
   /**
+   * What this customer holds, asked of the store. Null with no store, or when
+   * nothing a store bills is held. `fresh` drops the store's cached answer
+   * first: after the person comes back from the store's own subscription page,
+   * where a cancellation is made, the cache would still say it renews.
+   *
+   * Never rejects: with the store unreachable it answers from the last thing
+   * the store said.
+   */
+  subscription(fresh?: boolean): Promise<Subscription | null>;
+  /**
+   * The store's own subscription management, over the app: Apple's sheet.
+   * Resolves true once the store has shown it and it was closed, false when
+   * the caller should open the store's page itself — on Google Play, which
+   * manages subscriptions in its own app; with no store; when the sheet would
+   * not present.
+   */
+  manageSubscriptions(): Promise<boolean>;
+  /**
+   * An App Store promotional offer on a subscription held, signed for this
+   * customer, or null: no such offer on that product, not eligible, Google
+   * Play (promotional offers are Apple's), no store, or the store unreachable.
+   * Never rejects. A screen shows an offer only when this returns one.
+   */
+  retentionOffer(offerId: string, productId: string): Promise<RetentionOffer | null>;
+  /** Take a promotional offer from `retentionOffer`. On the subscription
+   * already held, so Apple applies it from the next renewal. */
+  buyRetentionOffer(offer: RetentionOffer): Promise<PurchaseResult>;
+
+  /**
    * Whether the subscription is live, right now, synchronously.
    *
    * Synchronous on purpose. Anything gated on this is gated during render, and
@@ -241,7 +597,7 @@ export type Purchases = {
   entitled(): boolean;
   /** Fires whenever `entitled()`, `hadAccess()` or `passEndsAt()` would return
    * something new. The store pushes these: a subscription can lapse, or renew,
-   * while the app is open. */
+   * while the app is open, and a pass window can start or end. */
   subscribe(listener: () => void): () => void;
   /** Re-ask the store. Resolves once `entitled()` is current. */
   refresh(): Promise<void>;
@@ -258,12 +614,14 @@ export type Purchases = {
   hadAccess(): boolean;
 
   /**
-   * When a legacy pass runs out, or null if none was bought.
+   * When a 3-month pass runs out, or null if none was bought.
    *
-   * Computed from the purchase date rather than read from an entitlement,
-   * because RevenueCat cannot expire a non-renewing purchase on its own. Null
-   * for every subscriber: a subscription has no fixed end — it renews, and
-   * RevenueCat ends it when it stops.
+   * The later of two answers: the store's own record, dated from the purchase
+   * (RevenueCat cannot expire a non-renewing purchase on its own), and the
+   * server's grant, which queues a pass behind a subscription still running
+   * (`pass.ts`). Null for a subscriber with no pass: a subscription has no
+   * fixed end — it renews, and RevenueCat ends it when it stops. The 7-day
+   * expiry push is laid from this.
    */
   passEndsAt(): Date | null;
 
@@ -298,6 +656,10 @@ export const unconfigured: Purchases = {
   canRedeemCode: false,
   redeemCode: async () => {},
   appUserId: async () => null,
+  subscription: async () => null,
+  manageSubscriptions: async () => false,
+  retentionOffer: async () => null,
+  buyRetentionOffer: async () => ({ status: 'unavailable' }),
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one
   // that does not hand out the paid product to everybody.
@@ -313,8 +675,10 @@ export const unconfigured: Purchases = {
  * The identifier configured in the RevenueCat dashboard.
  *
  * One entitlement for the whole app: there are no tiers of access here, only
- * tiers of billing. Both subscriptions, and the discounted annual, are attached
- * to it. That is also why the adapter treats *any* active entitlement not
+ * tiers of billing. Every product in `PRODUCTS` and `FIRST_PRODUCTS` is
+ * attached to it (the 3-month pass is not: its days are the server's), the
+ * lifetime purchases included — a non-consumable attached
+ * to an entitlement unlocks it with no expiry, which is what lifetime means. That is also why the adapter treats *any* active entitlement not
  * granted by a legacy pass as access — with a single tier there is nothing to
  * confuse it with, and a name that drifts out of step with the dashboard should
  * not lock out someone who has paid. This constant is what the development
@@ -338,6 +702,11 @@ export const ENTITLEMENT = 'premium';
  *
  * Here rather than in the paywall because two screens sell these plans: the
  * paywall and the expiry screen.
+ *
+ * Not for new screens: they show no figure until the store answers,
+ * and in development the sample prices (`setSamplePrices`) stand in for a
+ * store. These are the first line-up's prices and only the old screens read
+ * them.
  */
 export const PRINTED_PRICES = {
   /** Auto-renewing, billed yearly. */

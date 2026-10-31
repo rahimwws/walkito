@@ -9,6 +9,7 @@ import {
   type EntitlementFacts,
 } from '../src/entities/purchase/model/access';
 import {
+  FIRST_PRODUCTS,
   LEGACY_PRODUCTS,
   PASS_ACCESS_DAYS,
   PRODUCTS,
@@ -67,7 +68,7 @@ describe('a subscription', () => {
   });
 
   test('the weekly one is enough on its own', () => {
-    const info = customer({ activeSubscriptions: [PRODUCTS.weekly] });
+    const info = customer({ activeSubscriptions: [FIRST_PRODUCTS.weekly] });
     expect(decideAccess(info, NOW)).toEqual({ entitled: true, reason: 'subscription' });
   });
 
@@ -96,8 +97,8 @@ describe('a subscription', () => {
   test('ends when RevenueCat says it does, not on a clock of ours', () => {
     // Lapsed: no longer active, entitlement only in `all`.
     const info = customer({
-      allPurchasedProductIdentifiers: [PRODUCTS.weekly],
-      entitlements: { active: {}, all: premium(PRODUCTS.weekly) },
+      allPurchasedProductIdentifiers: [FIRST_PRODUCTS.weekly],
+      entitlements: { active: {}, all: premium(FIRST_PRODUCTS.weekly) },
     });
     expect(decideAccess(info, NOW)).toEqual({ entitled: false, reason: 'nothing' });
   });
@@ -117,6 +118,44 @@ describe('a subscription', () => {
     expect(subscriptionActive(customer({ activeSubscriptions: [LEGACY_PRODUCTS.pass] }))).toBe(
       false,
     );
+  });
+});
+
+/**
+ * Lifetime: a non-consumable attached to `premium`, which RevenueCat grants
+ * with no expiry. Unlike the legacy pass it is meant to last for good, so the
+ * entitlement is taken at its word — and only the entitlement: RevenueCat
+ * revokes it on a refund while the purchase stays in the transaction list.
+ */
+describe('a lifetime purchase', () => {
+  const bought = (id: string) => ({ productIdentifier: id, purchaseDate: new Date(NOW - 400 * DAY).toISOString() });
+
+  test('is access for good through its entitlement', () => {
+    const info = customer({
+      allPurchasedProductIdentifiers: [PRODUCTS.lifetime],
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetime)],
+      entitlements: { active: premium(PRODUCTS.lifetime, NOW - 400 * DAY), all: premium(PRODUCTS.lifetime) },
+    });
+    expect(decideAccess(info, NOW)).toEqual({ entitled: true, reason: 'entitlement' });
+    expect(passEnd(info)).toBeNull();
+  });
+
+  test('the comeback lifetime grants exactly the same access', () => {
+    const info = customer({
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetimeOffer)],
+      entitlements: { active: premium(PRODUCTS.lifetimeOffer), all: premium(PRODUCTS.lifetimeOffer) },
+    });
+    expect(decideAccess(info, NOW).entitled).toBe(true);
+  });
+
+  test('is nothing once the entitlement is gone, as after a refund', () => {
+    const info = customer({
+      allPurchasedProductIdentifiers: [PRODUCTS.lifetime],
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetime)],
+      entitlements: { active: {}, all: premium(PRODUCTS.lifetime) },
+    });
+    expect(decideAccess(info, NOW)).toEqual({ entitled: false, reason: 'nothing' });
+    expect(hadAccess(info)).toBe(true);
   });
 });
 
@@ -230,37 +269,16 @@ describe('passEnd', () => {
   });
 });
 
-describe('free days from invites', () => {
-  test('carry a pass past its access window', () => {
-    const info = customer({ nonSubscriptionTransactions: [pass(PASS_ACCESS_DAYS + 10)] });
-    expect(decideAccess(info, NOW).entitled).toBe(false);
-    expect(decideAccess(info, NOW, 28)).toEqual({ entitled: true, reason: 'pass-active' });
-  });
-
-  test('move the end date by exactly the days earned', () => {
-    const info = customer({ nonSubscriptionTransactions: [pass(0)] });
-    const plain = passEnd(info)!.getTime();
-    expect(passEnd(info, 28)!.getTime() - plain).toBe(28 * DAY);
-  });
-
-  test('never create access where nothing was bought', () => {
-    expect(decideAccess(customer(), NOW, 84)).toEqual({ entitled: false, reason: 'nothing' });
-    expect(passEnd(customer(), 84)).toBeNull();
-  });
-
-  test('do nothing for a subscriber whose subscription ended', () => {
-    // An App Store subscription cannot be extended from the device. The days
-    // must not quietly turn a lapsed subscription back on.
-    const info = customer({
-      allPurchasedProductIdentifiers: [PRODUCTS.annual],
-      entitlements: { active: {}, all: premium(PRODUCTS.annual) },
-    });
-    expect(decideAccess(info, NOW, 84).entitled).toBe(false);
-  });
-
-  test('cannot take time away', () => {
-    const info = customer({ nonSubscriptionTransactions: [pass(10)] });
-    expect(passEnd(info, -500)!.getTime()).toBe(passEnd(info)!.getTime());
+/**
+ * Nothing but a purchase dates a pass. Invite days once lengthened one on the
+ * phone; no code or invite may unlock or lengthen access (AGENTS.md, "Codes:
+ * only Apple's").
+ */
+describe('the pass has no extra days', () => {
+  test('ends exactly its access window after the purchase', () => {
+    const info = customer({ nonSubscriptionTransactions: [pass(PASS_ACCESS_DAYS - 1)] });
+    expect(decideAccess(info, NOW)).toEqual({ entitled: true, reason: 'pass-active' });
+    expect(decideAccess(info, NOW + 2 * DAY)).toEqual({ entitled: false, reason: 'pass-expired' });
   });
 });
 
@@ -276,7 +294,7 @@ describe('hadAccess', () => {
   });
 
   test('is true for a subscription that has ended', () => {
-    const info = customer({ entitlements: { active: {}, all: premium(PRODUCTS.weekly) } });
+    const info = customer({ entitlements: { active: {}, all: premium(FIRST_PRODUCTS.weekly) } });
     expect(hadAccess(info)).toBe(true);
     expect(decideAccess(info, NOW).entitled).toBe(false);
   });

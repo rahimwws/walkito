@@ -70,7 +70,7 @@ export const CORE_EN = {
   // ── Your plan: what onboarding asked, changeable ─────────────────────────
   'settings.planSection': 'Your plan',
   'settings.outcome': 'Your goal',
-  'settings.outcome.painfree': 'Pain-free',
+  'settings.outcome.painfree': 'Less pain',
   'settings.outcome.flat_feet': 'Stronger arches',
   'settings.outcome.stronger': 'Stronger legs',
   'settings.outcome.injury_free': 'Sturdy legs',
@@ -93,6 +93,9 @@ export const CORE_EN = {
   'settings.sound.tempoHint': 'Each exercise explained out loud as it starts, and a beat for slow reps.',
   'settings.sound.voice': 'Voice counting',
   'settings.sound.voiceHint': 'Says “up, 2, 3, hold, down” instead of tones.',
+  'settings.notifications.title': 'Notifications',
+  'settings.notifications.offers': 'Offers and discounts',
+  'settings.notifications.offersHint': 'Now and then, a lower price on Walkito Plus.',
   'settings.equipment': 'What I have at home',
   'settings.equipment.step': 'A step',
   'settings.equipment.band': 'Resistance band',
@@ -112,12 +115,12 @@ export const CORE_EN = {
   // `streak.title` is the clearest example of why fragments had to go: English
   // puts the count first and the noun last, Russian puts "подряд" (in a row)
   // after both, and Spanish needs "de" between them.
-  'streak.title': { one: '{count} Day Streak', other: '{count} Days Streak' },
+  'streak.title': { one: '{count}-day streak', other: '{count}-day streak' },
   /** The milestone moment: 3, 7, 10, 30 and 100 days. Ten is the big one. */
   'streak.milestoneBlurb': 'Every one of those days counted.',
   'streak.milestoneBigBlurb': 'Ten days. This is where a habit starts to hold.',
   'streak.rule':
-    'A day counts when you check in, train, finish a Library routine, or the plan gives you a rest day.',
+    'A day counts when you check in, train or finish a Library routine. On a rest day, a check-in is enough.',
   'streak.total': { one: '{count} day so far.', other: '{count} days so far.' },
   'streak.dismiss': 'Got it',
   'streak.dayCount': { one: '{count} day', other: '{count} days' },
@@ -207,18 +210,22 @@ export const CORE_EN = {
   // that says what to do next. `auth.invalidCredentials` deliberately does not
   // say which half was wrong — that would tell anyone trying addresses which
   // ones have accounts.
-  'auth.noServer': 'This build has no account server. Use Continue with Apple.',
+  'auth.noServer': 'This build has no account server.',
   'auth.missingFields': 'Enter both an email and a password.',
   'auth.invalidCredentials': 'That email and password don’t match.',
   'auth.notConfirmed':
     'That account hasn’t been confirmed yet. Confirm the email address, then try again.',
   'auth.banned': 'That account is disabled.',
-  'auth.providerDisabled': 'Email sign-in is switched off for this app. Use Continue with Apple.',
+  'auth.providerDisabled': 'Email sign-in is switched off for this app.',
   'auth.rateLimited': 'Too many attempts. Wait a minute and try again.',
   'auth.badEmail': 'That doesn’t look like an email address.',
   'auth.noAccount': 'No account came back.',
   'auth.generic': 'That didn’t go through.',
   'auth.unreachable': 'The server could not be reached.',
+  'auth.badCode': 'That code didn’t work. Check it, or send a new one.',
+  'auth.codeRateLimited': 'A code was just sent. Wait a minute before asking for another.',
+  'auth.emailUndeliverable': 'We couldn’t send the email right now. Try again in a little while.',
+  'auth.noAccountForEmail': 'No account uses this email.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   // Said once, on the day the twelve weeks end. The five-year figure travels
@@ -227,9 +234,9 @@ export const CORE_EN = {
   'maintenance.throughNamed': '{name}, you’re through.',
   'maintenance.through': 'You’re through.',
   'maintenance.calfGain': '{opening} Your calf went ↗ from {before} to {after}.',
-  'maintenance.relapse': 'About half of people lose this again within five years.',
-  'maintenance.staying': 'Two sessions a week is how you stay in the other half.',
-  'maintenance.regression': 'Your numbers slipped. Want to run {block} again?',
+  'maintenance.relapse': 'Heel pain often lingers or comes back: about half of people still have symptoms five years on.',
+  'maintenance.staying': 'Two sessions a week help you keep what you’ve built.',
+  'maintenance.regression': 'Your numbers slipped. Want to repeat this focus: {block}?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   // The six phases of the plan, in order; the six-week plan uses the first

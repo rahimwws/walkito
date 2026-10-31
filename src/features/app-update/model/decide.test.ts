@@ -5,6 +5,8 @@ import {
   confirmationFor,
   isSnoozed,
   nextOffer,
+  OFFER_AFTER_SETUP_MS,
+  offerAllowedFrom,
   parseAppliedFlag,
   sameOffer,
   snoozeKey,
@@ -132,5 +134,17 @@ describe('confirmationFor', () => {
 
   test('a flag right at the edge of fresh still confirms', () => {
     expect(confirmationFor({ from: 'a', at: now - APPLIED_FRESH_MS }, 'b', now)).toBe('confirm');
+  });
+});
+
+describe('offerAllowedFrom', () => {
+  test('a day after the setup was finished', () => {
+    const finished = Date.UTC(2026, 9, 29, 9, 0);
+    expect(offerAllowedFrom(finished)).toBe(finished + OFFER_AFTER_SETUP_MS);
+    expect(OFFER_AFTER_SETUP_MS).toBe(24 * 60 * 60 * 1000);
+  });
+
+  test('at once for a setup finished before it was recorded', () => {
+    expect(offerAllowedFrom(null)).toBe(0);
   });
 });

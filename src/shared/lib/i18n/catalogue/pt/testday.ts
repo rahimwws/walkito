@@ -30,7 +30,7 @@ export const TESTDAY_PT = {
   'testday.intro.needWall': 'Uma parede para tocar e se equilibrar',
   'testday.intro.needPhone': 'O celular num lugar onde você consiga ver',
   'testday.intro.checkin': 'Como está o pé agora?',
-  'testday.intro.checkinHint': 'Isso conta como o registro de hoje.',
+  'testday.intro.checkinHint': 'Isso conta como o check-in de hoje.',
   'testday.intro.painNone': 'Sem dor',
   'testday.intro.painWorst': 'Máxima',
   'testday.intro.painA11y': '{score} de 10',
@@ -185,7 +185,7 @@ export const TESTDAY_PT = {
   'testday.results.explain.calf_raises':
     'As elevações de calcanhar mostram quanto trabalho a panturrilha e o tendão de Aquiles aguentam antes de cansar. Mais elevações significa que a panturrilha carrega mais de cada passo em caminhadas e corridas longas.',
   'testday.results.explain.arch_hold':
-    'O arco sustentado mostra por quanto tempo os pequenos músculos da sola mantêm o arco elevado. Um tempo maior significa que o pé fica apoiado por mais tempo ao longo do dia.',
+    'O arco sustentado mostra por quanto tempo os pequenos músculos da sola mantêm o arco elevado. Um tempo maior significa que o arco fica sustentado por mais tempo ao longo do dia.',
   'testday.results.explain.balance':
     'Ficar em uma perna de olhos fechados mostra o quanto o pé e o tornozelo sentem o chão. Mais segundos significa passos mais firmes em terreno irregular e quando você está cansado.',
   'testday.results.explainA11y': 'O que isto mostra',

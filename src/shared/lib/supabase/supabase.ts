@@ -94,11 +94,32 @@ function keepRefreshToken(session: Session | null): void {
   void write.catch(() => {});
 }
 
+/**
+ * That this device has been signed in to a real account, written down the
+ * moment it is. Read without the network: offline, with an expired token,
+ * `getSession` hands back no session at all, which would read as anonymous
+ * and put someone already signed in back in front of a sign-in screen that
+ * has no skip.
+ */
+const ACCOUNT_KEY = 'session/account-saved';
+
+export function signedInBefore(): boolean {
+  return kv.getBoolean(ACCOUNT_KEY) ?? false;
+}
+
 // Every new or refreshed token replaces the spare, so the one kept is always
 // the one the server will still accept; signing out removes it.
 supabase?.auth.onAuthStateChange((event, session) => {
-  if (event === 'SIGNED_OUT') keepRefreshToken(null);
-  else if (session != null) keepRefreshToken(session);
+  if (event === 'SIGNED_OUT') {
+    keepRefreshToken(null);
+    kv.remove(ACCOUNT_KEY);
+  } else if (session != null) {
+    keepRefreshToken(session);
+    // Every session says which it is, so a device that ends up anonymous by a
+    // way other than signing out stops claiming an account. A launch with no
+    // session at all (offline, an expired token) says nothing and keeps it.
+    kv.set(ACCOUNT_KEY, session.user.is_anonymous !== true);
+  }
   if (event === 'INITIAL_SESSION' || event === 'SIGNED_IN' || event === 'USER_UPDATED') describePerson(session);
 });
 

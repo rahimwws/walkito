@@ -184,7 +184,7 @@ describe('translator', () => {
    * what fragment-based composition would have required.
    */
   test('whole templates let word order differ per language', () => {
-    expect(translatorFor('en')('streak.title', { count: 3 })).toBe('3 Days Streak');
+    expect(translatorFor('en')('streak.title', { count: 3 })).toBe('3-day streak');
     expect(translatorFor('ru')('streak.title', { count: 3 })).toBe('3 дня подряд');
     expect(translatorFor('es')('streak.title', { count: 3 })).toBe('Racha de 3 días');
   });

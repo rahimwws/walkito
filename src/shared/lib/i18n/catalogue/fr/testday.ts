@@ -3,7 +3,7 @@
 export const TESTDAY_FR = {
   // ── Chrome ────────────────────────────────────────────────────────────────
   'testday.close': 'Fermer',
-  'testday.leave.title': 'Quitter le test ?',
+  'testday.leave.title': 'Quitter le test ?',
   'testday.leave.body': 'Rien n’est enregistré avant la fin du dernier test. Le test reste à faire.',
   'testday.leave.stay': 'Continuer le test',
   'testday.leave.confirm': 'Quitter',
@@ -29,10 +29,10 @@ export const TESTDAY_FR = {
   'testday.intro.needBarefoot': 'Les pieds nus',
   'testday.intro.needWall': 'Un mur à toucher pour l’équilibre',
   'testday.intro.needPhone': 'Le téléphone à portée de vue',
-  'testday.intro.checkin': 'Comment va ton pied, là ?',
+  'testday.intro.checkin': 'Comment va ton pied, là ?',
   'testday.intro.checkinHint': 'Ça compte comme ton bilan du jour.',
   'testday.intro.painNone': 'Aucune douleur',
-  'testday.intro.painWorst': 'Pire',
+  'testday.intro.painWorst': 'Le pire',
   'testday.intro.painA11y': '{score} sur 10',
   'testday.intro.sore':
     'Un jour où ça fait mal, les chiffres sortent plus bas que ce dont ton pied est vraiment capable, et les deux semaines suivantes seraient planifiées à partir d’eux. Le test peut attendre demain.',
@@ -86,12 +86,12 @@ export const TESTDAY_FR = {
   'testday.paused.restart': 'Recommencer ce test',
 
   'testday.confirm.raises': {
-    one: '{count} montée - c’est bien ça ?',
-    other: '{count} montées - c’est bien ça ?',
+    one: '{count} montée - c’est bien ça ?',
+    other: '{count} montées - c’est bien ça ?',
   },
   'testday.confirm.seconds': {
-    one: '{count} seconde - c’est bien ça ?',
-    other: '{count} secondes - c’est bien ça ?',
+    one: '{count} seconde - c’est bien ça ?',
+    other: '{count} secondes - c’est bien ça ?',
   },
   'testday.confirm.hint': 'Corrige si le compte n’est pas bon.',
   'testday.confirm.holdHint': 'Si tu as mis un moment à atteindre le téléphone, retire ces secondes.',
@@ -109,10 +109,10 @@ export const TESTDAY_FR = {
   'testday.results.name.symmetry': 'Symétrie',
   'testday.results.unitSeconds': { one: 'seconde', other: 'secondes' },
   'testday.results.unitRaises': { one: 'montée', other: 'montées' },
-  'testday.results.percent': '{n} %',
+  'testday.results.percent': '{n} %',
   'testday.results.gapUnit': 'd’écart entre les jambes',
   'testday.results.legs': 'Gauche {left} · droite {right}',
-  'testday.results.goalGap': 'Objectif : moins de {n} %',
+  'testday.results.goalGap': 'Objectif : moins de {n} %',
   'testday.results.toGoSeconds': { one: 'Encore {count} s', other: 'Encore {count} s' },
   'testday.results.toGoRaises': { one: 'Encore {count} montée', other: 'Encore {count} montées' },
   'testday.results.toGoGap': { one: 'Encore {count} point', other: 'Encore {count} points' },
@@ -143,7 +143,7 @@ export const TESTDAY_FR = {
   },
   'testday.results.same': 'Comme la dernière fois',
   'testday.results.first': 'Première mesure',
-  'testday.results.nextTest': 'Prochain test : {date}',
+  'testday.results.nextTest': 'Prochain test : {date}',
   'testday.results.planUpdated': 'Ton plan pour les deux semaines à venir est à jour.',
   'testday.results.done': 'Terminé',
 
@@ -168,7 +168,7 @@ export const TESTDAY_FR = {
   'testday.results.share': 'Partager',
   'testday.results.shareTitle': 'Mon test des pieds',
   'testday.results.shareBrand': 'Walkito',
-  'testday.results.shareMessage': 'Mon test des pieds sur Walkito : montées sur pointes {calf} · voûte {arch} s · équilibre {balance} s',
+  'testday.results.shareMessage': 'Mon test des pieds sur Walkito : montées sur pointes {calf} · voûte {arch} s · équilibre {balance} s',
   // A figure in seconds on its own: the unit beside the big number, and the share card.
   'testday.results.secondsShort': 's',
   'testday.results.valueSeconds': '{n} s',
@@ -176,17 +176,17 @@ export const TESTDAY_FR = {
     one: '{date} · comparé à il y a {count} jour',
     other: '{date} · comparé à il y a {count} jours',
   },
-  'testday.results.dateFirst': '{date} · votre point de départ',
+  'testday.results.dateFirst': '{date} · ton point de départ',
   'testday.results.chipBaseline': 'Point de départ',
   'testday.results.chipSame': 'Identique',
   'testday.results.chipSeconds': '{delta} s',
   'testday.results.chipRaises': { one: '{delta} montée', other: '{delta} montées' },
-  'testday.results.gapBetween': 'Écart entre les jambes {n} %',
+  'testday.results.gapBetween': 'Écart entre les jambes {n} %',
   'testday.results.explain.calf_raises':
-    'Les montées sur pointes montrent combien de travail votre mollet et votre tendon d’Achille fournissent avant de fatiguer. Plus de montées veut dire que le mollet porte une plus grande part de chaque pas lors des longues marches et sorties de course.',
+    'Les montées sur pointes montrent combien de travail ton mollet et ton tendon d’Achille peuvent fournir avant de fatiguer. Plus de montées veut dire que ton mollet porte une plus grande part de chaque pas lors des longues marches et sorties de course.',
   'testday.results.explain.arch_hold':
     'Le maintien de la voûte montre combien de temps les petits muscles sous le pied gardent la voûte levée. Un maintien plus long veut dire que le pied reste soutenu plus longtemps dans la journée.',
   'testday.results.explain.balance':
-    'Tenir sur une jambe les yeux fermés montre à quel point votre pied et votre cheville sentent le sol. Plus de secondes veut dire des pas plus sûrs sur un terrain inégal et quand vous êtes fatigué.',
+    'Tenir sur une jambe les yeux fermés montre à quel point ton pied et ta cheville sentent le sol. Plus de secondes veut dire des pas plus sûrs sur un terrain inégal et quand la fatigue arrive.',
   'testday.results.explainA11y': 'Ce que cela montre',
 };

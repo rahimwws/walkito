@@ -138,6 +138,10 @@ export {
   logFor,
   painAverage,
   logPain,
+  logFlare,
+  checkInOn,
+  devClearCheckIn,
+  lastFlareOn,
   FIRST_STEP_CUTOFF_HOUR,
   firstStepOn,
   isFirstStepTime,
@@ -162,18 +166,35 @@ export {
 } from './model/state';
 
 export {
+  attendanceLevel,
   attended,
+  attendedLevel,
+  devSetStreak,
   freezeUsedThisWeek,
   freezesLeft,
   resetFreezes,
+  setStreakCutover,
   spendFreeze,
+  streakCutover,
   streakThrough,
   useStreak,
   weekAttendance,
   type DayAttendance,
+  type DevStreak,
+  type LevelInput,
   type Streak,
+  type StreakLevel,
   type StreakView,
 } from './model/streak';
+export {
+  devSetWeekGoal,
+  goalOfWeek,
+  sessionsDoneIn,
+  useWeeklyGoal,
+  weeksInARow,
+  type WeekGoalRecord,
+  type WeeklyGoal,
+} from './model/weekly-goal';
 
 export {
   FIRST_MORNING_STRETCH_BLOCK,
@@ -232,6 +253,15 @@ export {
   type PlanMeta,
 } from './model/plan/catalogue-meta';
 export { doseFor, doseSeconds, type PlanDose } from './model/plan/dose';
+export {
+  doseTimeline,
+  timelineAt,
+  timelineSeconds,
+  type RepReading,
+  type Segment,
+  type TimelineReading,
+  type TimelineSide,
+} from './model/plan/timeline';
 export { allowed, playableId, pogoAllowed, type EligibilityContext } from './model/plan/eligibility';
 export {
   GOAL_ORDER,
@@ -259,9 +289,12 @@ export {
   type AdjustedDay,
   type TodayReason,
 } from './model/plan/today';
+export { planReasonLine } from './model/plan/reason-line';
 export {
+  WEEK_SHAPES,
   addDays,
   buildWeek,
+  focusChainOf,
   weekIndexFor,
   weekStartOf,
   type DayType,
@@ -283,6 +316,7 @@ export {
   noteSessionFeedback,
   exercisePrefs,
   goals,
+  keepTestOffToday,
   libraryFavourites,
   markCantDo,
   nextWeekPreview,
@@ -303,6 +337,7 @@ export {
   setOutcomeAreas,
   setOutcomeKind,
   setPlanSettings,
+  storedWeeks,
   swapFor,
   testDue,
   todayKey,
@@ -328,4 +363,12 @@ export {
 } from './model/plan/finish';
 export { NEXT_SESSION_HORIZON_DAYS, nextSession, useNextSession, type NextSession } from './model/plan/next-session';
 export { requestPlanPush } from './model/plan/push-request';
-export { BIG_MILESTONE, STREAK_MILESTONES, milestoneFor } from './model/streak';
+export {
+  BIG_MILESTONE,
+  STREAK_MILESTONES,
+  devForgetMilestones,
+  markMilestoneSeen,
+  milestoneFor,
+  milestoneOwed,
+  milestoneSeen,
+} from './model/streak';

@@ -3,7 +3,7 @@
     "name": "Walkito",
     "slug": "tread",
     "scheme": "walkito",
-    "version": "1.0.3",
+    "version": "1.0.8",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -15,7 +15,7 @@
         "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/"
       },
       "bundleIdentifier": "com.walkito.app",
-      "appleTeamId": "HWGBXV8W4Z",
+      "appleTeamId": "JDZGGZQJ7T",
       "associatedDomains": ["applinks:walkito.site", "applinks:walkito.onelink.me"]
     },
     "android": {
@@ -34,6 +34,7 @@
         "android.permission.health.READ_DISTANCE",
         "android.permission.health.WRITE_EXERCISE"
       ],
+      "blockedPermissions": ["android.permission.ACTIVITY_RECOGNITION"],
       "intentFilters": [
         {
           "action": "VIEW",
@@ -49,6 +50,7 @@
     },
     "plugins": [
       "./plugins/with-strip-frameworks",
+      "./plugins/with-scene-delegate",
       "expo-router",
       [
         "expo-font",
@@ -107,6 +109,19 @@
         {
           "color": "#8B5CF6",
           "defaultChannel": "default"
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "walkito counts the hours you spend on your feet, so it can remind you to give them a minute after a long stretch."
+        }
+      ],
+      "expo-background-task",
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "walkito uses this to learn which ads bring people to the app. Your health data is never shared."
         }
       ],
       [

@@ -126,7 +126,7 @@ export const NOTIFICATIONS_EN = {
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'A new week starts today. Focus: {block}.',
   'notifications.blockLoadUp': 'This week works on {block}.',
-  'notifications.blockOpens': 'New week, same foot. This one is about {block}.',
+  'notifications.blockOpens': 'New week, same foot. This week’s focus: {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   // One line per reason, because the whole value of this row is that it explains
@@ -162,14 +162,15 @@ export const NOTIFICATIONS_EN = {
   // switched offers on. Says what is on offer and asks for nothing more — it
   // names the annual subscription, because "{percent}% off" alone does not say
   // off what, and the annual is the one the offer price applies to.
-  'notifications.offerWaitNamed': '{name}, before you go - {percent}% off',
-  'notifications.offerWait': 'Before you go - {percent}% off',
+  'notifications.offerWaitNamed': '{name}, before you go - {percent}% off your first year',
+  'notifications.offerWait': 'Before you go - {percent}% off your first year',
   'notifications.offerWaitBody': 'The annual subscription is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  // The body is the part that matters. Somebody who reads "your access ends"
-  // and nothing else has to assume their logs go with it, and they do not — so
-  // the reassurance travels in the same breath.
-  'notifications.expiryTitle': 'Your program access ends in a week',
+  // A week before a 3-month pass ends: the only access with a fixed end (a
+  // subscription renews). The body is the part that matters. Somebody who
+  // reads "your access ends" and nothing else has to assume their logs go with
+  // it, and they do not — so the reassurance travels in the same breath.
+  'notifications.expiryTitle': 'Your 3-month pass ends in a week',
   'notifications.expiryBody': 'Your progress stays either way.',
 } as const satisfies Record<string, SourceEntry>;

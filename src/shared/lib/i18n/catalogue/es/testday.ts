@@ -28,7 +28,7 @@ export const TESTDAY_ES = {
   'testday.intro.need': 'Necesitas',
   'testday.intro.needBarefoot': 'Los pies descalzos',
   'testday.intro.needWall': 'Una pared para apoyarte',
-  'testday.intro.needPhone': 'El móvil donde puedas verlo',
+  'testday.intro.needPhone': 'El teléfono donde puedas verlo',
   'testday.intro.checkin': '¿Cómo está el pie ahora mismo?',
   'testday.intro.checkinHint': 'Cuenta como tu registro de hoy.',
   'testday.intro.painNone': 'Sin dolor',
@@ -43,7 +43,7 @@ export const TESTDAY_ES = {
   // ── The three tests ───────────────────────────────────────────────────────
   'testday.test.eyebrow': 'Prueba {current} de {total}',
   'testday.test.calf.name': 'Elevaciones de talón',
-  'testday.test.arch.name': 'Mantener el arco',
+  'testday.test.arch.name': 'Arco sostenido',
   'testday.test.balance.name': 'Equilibrio',
 
   'testday.side.left': 'Pierna izquierda',
@@ -93,7 +93,7 @@ export const TESTDAY_ES = {
     one: '{count} segundo, ¿es correcto?',
     other: '{count} segundos, ¿es correcto?',
   },
-  'testday.confirm.hint': 'Ajústalo si has perdido la cuenta.',
+  'testday.confirm.hint': 'Ajústalo si el número no es correcto.',
   'testday.confirm.holdHint': 'Si tardaste en llegar al teléfono, quita esos segundos.',
   'testday.confirm.less': 'Menos',
   'testday.confirm.more': 'Más',
@@ -103,7 +103,7 @@ export const TESTDAY_ES = {
 
   // ── Results ───────────────────────────────────────────────────────────────
   'testday.results.firstBlurb': 'La próxima prueba mostrará cuánto has avanzado.',
-  'testday.results.name.arch_hold': 'Mantener el arco',
+  'testday.results.name.arch_hold': 'Arco sostenido',
   'testday.results.name.calf_raises': 'Elevaciones de talón',
   'testday.results.name.balance': 'Equilibrio',
   'testday.results.name.symmetry': 'Simetría',
@@ -151,7 +151,7 @@ export const TESTDAY_ES = {
   'testday.results.verdictSteady': 'Las tres se mantienen',
   'testday.results.verdictUp.calf_raises': 'Más elevaciones que la última vez',
   'testday.results.verdictUp.arch_hold': 'Tu arco aguantó más',
-  'testday.results.verdictUp.balance': 'Te equilibraste más tiempo',
+  'testday.results.verdictUp.balance': 'Aguantaste más tiempo en equilibrio',
   'testday.results.verdictUpTwo': 'Dos de tres subieron',
   'testday.results.verdictUpAll': 'Las tres subieron',
   // The line over the headline, and the headline when a goal was reached.
@@ -185,7 +185,7 @@ export const TESTDAY_ES = {
   'testday.results.explain.calf_raises':
     'Las elevaciones de talón muestran cuánto trabajo aguantan tu pantorrilla y tu tendón de Aquiles antes de cansarse. Más elevaciones significa que la pantorrilla lleva más de cada paso en caminatas y carreras largas.',
   'testday.results.explain.arch_hold':
-    'Mantener el arco muestra cuánto tiempo los músculos pequeños de la planta sostienen el arco levantado. Un tiempo más largo significa que el pie se mantiene apoyado durante más parte del día.',
+    'El arco sostenido muestra cuánto tiempo los pequeños músculos de la planta mantienen el arco levantado. Un tiempo más largo significa que el arco se mantiene sostenido durante más tiempo a lo largo del día.',
   'testday.results.explain.balance':
     'Estar sobre una pierna con los ojos cerrados muestra lo bien que tu pie y tu tobillo sienten el suelo. Más segundos significa pasos más firmes en caminos irregulares y cuando estás cansado.',
   'testday.results.explainA11y': 'Qué muestra esto',

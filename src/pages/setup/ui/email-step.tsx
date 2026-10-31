@@ -19,8 +19,9 @@ const LOOKS_LIKE_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 /**
  * "Send your plan to your email?" — once the plan is paid for.
  *
- * Optional, and skipped for anyone whose address came with Apple or Google
- * sign-in. The address is stored on the phone and beside the anonymous
+ * Optional (App Review 5.1.1(x)), and skipped when signing in gave a real
+ * address: Google, an emailed code, or Apple when the address was not hidden
+ * behind `@privaterelay.appleid.com`. The address is stored on the phone and beside the anonymous
  * account on the server (`setProfileEmail` → `save_email_contact`), which is
  * what lets the welcome and the first fortnight's emails reach a person who
  * never made an account. Asked after the purchase rather than before the

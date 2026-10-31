@@ -1,8 +1,9 @@
 import { usePathname, useRouter } from 'expo-router';
 import { useEffect, useRef } from 'react';
 
-import { Notifications, WINBACK_KIND } from '@/entities/notifications';
+import { Notifications, WINBACK_KIND, cancelComebackPushes } from '@/entities/notifications';
 import { unlockBoost } from '@/entities/offer';
+import { useEntitled } from '@/entities/purchase';
 
 /**
  * Whether the launch-time response has already been dealt with.
@@ -20,6 +21,11 @@ function isWinback(response: Notifications.NotificationResponse): boolean {
 
 /**
  * Turns a tapped win-back notification into the better price.
+ *
+ * A tapped comeback push (the one sent on leaving the trial offer, and the
+ * one before its deadline) needs nothing here: whoever gets one skipped the
+ * paywall and has not bought, so the offer screen, showing the comeback, is
+ * the only screen they have.
  *
  * Mounted at the root, not on the offer screen, for the case that matters
  * most: the app may have been killed while it was in the background, and the
@@ -60,24 +66,32 @@ export function useOfferNotifications(): void {
       // sure the better price is applied, which `armOffer` above has done.
     };
 
+    const respond = (response: Notifications.NotificationResponse) => {
+      if (isWinback(response)) open();
+    };
+
     // A tap that launched the app from cold. Consulted once per run.
     if (!launchResponseHandled) {
       launchResponseHandled = true;
       void Notifications.getLastNotificationResponseAsync().then((response) => {
-        if (!alive || response == null || !isWinback(response)) return;
-        open();
+        if (!alive || response == null) return;
+        respond(response);
       });
     }
 
     // A tap while the app was merely backgrounded.
-    const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
-      if (!isWinback(response)) return;
-      open();
-    });
+    const subscription = Notifications.addNotificationResponseReceivedListener(respond);
 
     return () => {
       alive = false;
       subscription.remove();
     };
   }, [router]);
+
+  // Bought (anywhere: the trial offer, the paywall, a restore): a push about
+  // a lower price is wrong from now on, scheduled or in the tray.
+  const entitled = useEntitled();
+  useEffect(() => {
+    if (entitled) void cancelComebackPushes();
+  }, [entitled]);
 }

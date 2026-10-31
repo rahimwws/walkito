@@ -118,10 +118,15 @@ if (decision.verdict === 'update') {
   console.log(
     dim('  A build is required, so this goes through the store rather than over the air.\n'),
   );
+  // Store builds are made on this Mac, never on EAS's builders: see "Builds and
+  // releases" in AGENTS.md. `--local` runs the same steps here and only asks
+  // EAS for the signing credentials, the environment and the build number.
   const profile = channel === 'production' ? 'production' : channel;
-  const build = easArgs(['build', '--platform', platform, '--profile', profile, '--non-interactive']);
+  const build = easArgs(['build', '--local', '--platform', platform, '--profile', profile, '--non-interactive']);
+  process.env.EAS_LOCAL_BUILD_ARTIFACTS_DIR ??= '.builds';
+  if (channel === 'production') process.env.APP_VARIANT ??= 'production';
   run(build.file, build.argv);
   console.log(
-    `\n${bold('Built.')} Submit with: eas submit --platform ${platform} --profile ${profile}\n`,
+    `\n${bold('Built')} into .builds/. Upload with: bun run submit:${platform}\n`,
   );
 }
