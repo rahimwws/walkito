@@ -78,6 +78,15 @@ const TAGLINE: Record<Lang, string> = {
 /** Folds the footer sections on a phone, before first paint of the footer. */
 const FOLD_ON_PHONE = `if(matchMedia("(max-width: 760px)").matches){document.querySelectorAll(".ft details[open]").forEach(function(d){d.removeAttribute("open")})}`;
 
+const TOOLS_HEADING: Record<Lang, string> = { en: 'Tools', es: 'Herramientas', ru: 'Инструменты', pt: 'Ferramentas', fr: 'Outils', it: 'Strumenti', de: 'Werkzeuge' };
+
+/** The two exercise guides, named as exercises so they do not repeat the
+ * condition pages above them ("Pie plano" twice). */
+const EXERCISE_GUIDE_LABEL: Partial<Record<Lang, { heelPain: string; flatFeet: string }>> = {
+  es: { heelPain: 'Ejercicios para la fascitis plantar', flatFeet: 'Ejercicios para pie plano' },
+  ru: { heelPain: 'Упражнения при фасциите', flatFeet: 'Упражнения при плоскостопии' },
+};
+
 const FOOT_MAP_LINK = { en: 'Where does your foot hurt?', es: '¿Dónde te duele el pie?', ru: 'Где болит стопа?' } as const;
 
 export function Footer({
@@ -99,7 +108,8 @@ export function Footer({
       const href = hrefFor(key, lang);
       if (!href) return [];
       const label =
-        key === 'heelPain' && lang !== 'en'
+        EXERCISE_GUIDE_LABEL[lang]?.[key as 'heelPain' | 'flatFeet'] ??
+        (key === 'heelPain' && lang !== 'en'
           ? c.navHeelPain
           : key === 'flatFeet' && lang !== 'en'
             ? c.navFlatFeet
@@ -109,7 +119,7 @@ export function Footer({
                 ? NAV_LABEL_RU[key]
                 : lang === 'en'
                   ? NAV_LABEL[key]
-                  : ARTICLES_NEW[lang][key as EnglishPage]?.crumb;
+                  : ARTICLES_NEW[lang][key as EnglishPage]?.crumb);
       return label ? [{ href, label }] : [];
     });
 
@@ -198,15 +208,14 @@ export function Footer({
                 company pages. The footer used to carry 69 links, so every page
                 on the site lent weight to every weak page; the rest are reached
                 from the guides themselves and the menu. */}
+            {/* Four even columns across the full width: the same links as
+                before, grouped so no column runs twice the length of another. */}
+            <Column heading={h.heel} links={group(['hubPlantarFasciitis', 'heelPain', 'morningHeelPain', 'standing'])} />
             <Column
-              heading={h.exercises}
-              links={[
-                ...group(['hubPlantarFasciitis', 'heelPain', 'hubFlatFeet', 'flatFeet', 'morningHeelPain', 'ankleMobility', 'standing']),
-                ...(lang === 'en' ? group(['bestInsoles']) : []),
-                ...footMap,
-                ...extras.slice(0, 2),
-              ]}
+              heading={h.flat}
+              links={[...group(['hubFlatFeet', 'flatFeet', 'ankleMobility']), ...(lang === 'en' ? group(['bestInsoles']) : [])]}
             />
+            <Column heading={TOOLS_HEADING[lang]} links={[...extras.slice(0, 1), ...footMap, ...extras.slice(1, 2)]} />
             <Column heading={h.walkito} links={walkito} />
           </nav>
           <script dangerouslySetInnerHTML={{ __html: FOLD_ON_PHONE }} />
