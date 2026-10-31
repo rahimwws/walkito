@@ -30,7 +30,7 @@ export type Reviewer = {
 export const REVIEWER: Reviewer | null = {
   name: 'Dr. Carla Shayman',
   credentials: 'PT, DPT, OCS',
-  affiliation: 'Doctor of Physical Therapy, board-certified orthopedic clinical specialist (Washington State license PT60477690)',
+  affiliation: 'Doctor of Physical Therapy, board-certified orthopedic clinical specialist',
   photo: '/team/carla-shayman.webp',
   // Her own words (Upwork message, 2026-10-30), with her written OK to use them.
   bio: 'Dr. Carla Shayman is a doctor of physical therapy who treats patients across the lifespan with a specialization in orthopedics. She combines evidence based treatment with a patient-centered approach to deliver individualized care.',

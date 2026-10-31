@@ -21,7 +21,7 @@ should be seen by a clinician.
 
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
-- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist (Washington State license PT60477690); her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
+- Walkito's exercises are reviewed by Dr. Carla Shayman, PT, DPT, OCS, a doctor of physical therapy and board-certified orthopedic clinical specialist; her profile is on the About page. The plantar fasciitis exercises and flat feet exercises guides carry her medical review. How the guides are researched: https://walkito.site/about/#how-we-research
 
 ## Esercizi e allungamenti per la fascite plantare e il dolore al tallone
 
