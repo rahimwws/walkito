@@ -188,7 +188,7 @@ export const PF_VS_ACHILLES_FR: Guide = {
         {
           list: [
             'Une bosse osseuse à l’arrière du talon avec une zone douloureuse et gonflée au niveau du bord de la chaussure\u00A0: [maladie de Haglund](/fr/maladie-de-haglund/) ou bursite rétrocalcanéenne, souvent associée à une douleur d’Achille d’insertion.',
-            'Une épine calcanéenne à la radio\u00A0: fréquente, et en général pas la cause de la douleur. Voir [fasciite plantaire ou épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/).',
+            'Une épine calcanéenne à la radio\u00A0: fréquente, et en général pas la cause de la douleur. Voir [fasciite plantaire ou épine calcanéenne](/fr/epine-calcaneenne-exercices/).',
             'Une douleur profonde, comme une contusion, au milieu du coussinet du talon, pire sur sol dur\u00A0: [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/).',
             'Une douleur des deux côtés du talon quand on le serre, après une hausse brutale de la marche ou de la course\u00A0: possible fracture de fatigue, qui relève d’un professionnel de santé.',
             'Brûlure, picotements ou engourdissement\u00A0: peut-être un nerf comprimé.',

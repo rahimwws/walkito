@@ -601,7 +601,7 @@ export const HEEL_PAIN_DE: Guide = {
     },
     {
       q: 'Ist ein Fersensporn dasselbe wie Plantarfasziitis?',
-      a: 'Nicht ganz. Viele sagen „[Fersensporn](/de/plantarfasziitis-oder-fersensporn/)“, wenn sie Plantarfasziitis meinen, aber genau genommen ist ein Fersensporn ein knöcherner Auswuchs, der auf dem Röntgenbild zu sehen ist. Plantarfasziitis ist ein Schmerz in der Plantarfaszie, der Sehnenplatte an der Fußsohle. Die Übungen auf dieser Seite sind die, die die Leitlinie von 2023 für Fersenschmerzen unter dem Fuß bewertet. Wenn ein Röntgenbild einen Sporn zeigt, findest du dieselbe Routine unter [Übungen bei Fersensporn](/de/fersensporn-uebungen/). Was hinter deinen Fersenschmerzen steckt, kann nur eine Ärztin oder ein Arzt klären.',
+      a: 'Nicht ganz. Viele sagen „[Fersensporn](/de/fersensporn-uebungen/)“, wenn sie Plantarfasziitis meinen, aber genau genommen ist ein Fersensporn ein knöcherner Auswuchs, der auf dem Röntgenbild zu sehen ist. Plantarfasziitis ist ein Schmerz in der Plantarfaszie, der Sehnenplatte an der Fußsohle. Die Übungen auf dieser Seite sind die, die die Leitlinie von 2023 für Fersenschmerzen unter dem Fuß bewertet. Wenn ein Röntgenbild einen Sporn zeigt, findest du dieselbe Routine unter [Übungen bei Fersensporn](/de/fersensporn-uebungen/). Was hinter deinen Fersenschmerzen steckt, kann nur eine Ärztin oder ein Arzt klären.',
     },
     {
       q: 'Wie oft sollte ich Übungen bei Plantarfasziitis machen?',

@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
     {
       h2: 'A chi può essere utile un tutore notturno, e chi dovrebbe evitarlo?',
       paragraphs: [
-        '**Un tutore notturno è più adatto se la tua fascite plantare ha l’andamento classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) alla radiografia.',
+        '**Un tutore notturno è più adatto se la tua fascite plantare ha l’andamento classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di uno [sperone calcaneare](/it/spina-calcaneare-esercizi/) alla radiografia.',
         'Un tutore ha meno senso se il tallone ti fa male soprattutto mentre sei sdraiato a letto, o ti sveglia. È un quadro diverso, e [dolore al tallone di notte](/it/dolore-tallone-di-notte/) spiega le cause da escludere. Un tutore è poco adatto anche se hai una sensibilità o una circolazione ridotte ai piedi, perché cinghie e gusci possono sfregare la pelle che non senti.',
         'La fascite plantare spesso si calma nel giro di mesi qualunque cosa usi, ed è uno dei motivi per cui gli studi sui tutori sono difficili da interpretare. Per tempi realistici, vedi [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/).',
       ],

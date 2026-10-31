@@ -197,7 +197,7 @@ export const PF_VS_ACHILLES_EN: Guide = {
         {
           list: [
             'A bony bump at the back of the heel with a sore, swollen area at the shoe line: [Haglund’s deformity](/haglunds-deformity/) or retrocalcaneal bursitis, often together with insertional Achilles pain.',
-            'A heel spur on an X-ray: common, and usually not the cause of the pain. See [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/).',
+            'A heel spur on an X-ray: common, and usually not the cause of the pain. See [plantar fasciitis vs heel spur](/heel-spur-exercises/).',
             'A deep bruise-like ache in the middle of the heel pad, worse on hard floors: [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
             'Pain on both sides of the heel when you squeeze it, after a jump in walking or running: possible stress fracture, which needs a clinician.',
             'Burning, tingling or numbness: possibly a trapped nerve.',

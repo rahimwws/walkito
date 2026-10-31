@@ -31,7 +31,7 @@ export const HINGE_REVIEWS_EN: Guide = {
   lede:
     'Hinge Health is rated 4.9 out of 5 on the App Store from about 172,000 ratings and 4.9 on Google Play from about 33,900 reviews, but 3.0 on Trustpilot from 77 reviews (all checked October 23, 2026). The gap is mostly about who writes where: store ratings come from people using the app, while the much smaller Trustpilot and BBB pages collect more complaints, mainly about insurance billing and marketing mail. Its published studies, almost all run by Hinge, are on back and knee pain; none is on foot or heel pain.',
   intro: [
-    'Walkito makes this page, and we are not neutral: we make an exercise app for heel and foot pain. We did not use Hinge Health ourselves. Every rating, count and quote below comes from a public page we checked on October 23, 2026, and every reviewer quote is one person\u2019s report, not a fact we verified. For how Hinge compares with our app, see [Walkito vs Hinge Health](/walkito-vs-hinge-health/); if you cannot get Hinge, see [Hinge Health alternatives](/hinge-health-alternatives/).',
+    'Walkito makes this page, and we are not neutral: we make an exercise app for heel and foot pain. We did not use Hinge Health ourselves. Every rating, count and quote below comes from a public page we checked on October 23, 2026, and every reviewer quote is one person\u2019s report, not a fact we verified. For how Hinge compares with our app, see [Walkito vs Hinge Health](/hinge-health-alternatives/); if you cannot get Hinge, see [Hinge Health alternatives](/hinge-health-alternatives/).',
   ],
   takeaways: [
     'Hinge Health is rated 4.9 on the App Store (about 172,000 ratings) and 4.9 on Google Play (about 33,900 reviews), and 3.0 on Trustpilot (77 reviews), checked October 23, 2026.',
@@ -96,7 +96,7 @@ export const HINGE_REVIEWS_EN: Guide = {
       paragraphs: [
         'For most members the virtual program costs nothing out of pocket. Hinge\u2019s [App Store listing](https://apps.apple.com/us/app/hinge-health/id1429270372) says \u201cvirtual physical therapy and virtual specialist visits are available at no cost to the member\u201d, through 2,800+ employers and health plans. In-person care can have a cost share on a high deductible plan or outside Hinge\u2019s network. Hinge does not publish what employers or plans pay.',
         'It is free to you, but it is not free to your plan, and that is the source of most billing complaints. In a reply on [BBB](https://www.bbb.org/us/ca/san-francisco/profile/health-consultants/hinge-health-1116-934732/complaints) (May 9, 2025), Hinge explained: \u201cOur claims are submitted based on engagement\u201d. It said it submits claims to your insurance company, that \u201cThis does not affect your insurance benefits or deductible\u201d, and that \u201cyour employer reimburses the insurance company in bulk for all paid claims.\u201d In that case the member\u2019s claim had been denied; Hinge said the insurer \u201cmay have mis-processed\u201d it and that the member was \u201cnot responsible for any out-of-pocket costs\u201d.',
-        'Some reviewers still object to how much their plan is charged, or worry about plan limits; those are individual reports we could not verify. If it matters to you, ask your plan how Hinge claims are billed before you start. Who can get Hinge, and what happens when you change jobs, is on [Walkito vs Hinge Health](/walkito-vs-hinge-health/).',
+        'Some reviewers still object to how much their plan is charged, or worry about plan limits; those are individual reports we could not verify. If it matters to you, ask your plan how Hinge claims are billed before you start. Who can get Hinge, and what happens when you change jobs, is on [Walkito vs Hinge Health](/hinge-health-alternatives/).',
       ],
     },
     {
@@ -164,7 +164,7 @@ export const HINGE_REVIEWS_EN: Guide = {
     {
       h2: 'Is there a Hinge Health study on foot or heel pain?',
       paragraphs: [
-        'No. A PubMed search for \u201cHinge Health\u201d on October 23, 2026 returned 49 records, and none is on the foot, heel, ankle or plantar fasciitis. Hinge does cover foot and ankle pain in its program, and its plantar fasciitis exercises match what the 2023 heel pain guideline recommends, as we note on [Walkito vs Hinge Health](/walkito-vs-hinge-health/).',
+        'No. A PubMed search for \u201cHinge Health\u201d on October 23, 2026 returned 49 records, and none is on the foot, heel, ankle or plantar fasciitis. Hinge does cover foot and ankle pain in its program, and its plantar fasciitis exercises match what the 2023 heel pain guideline recommends, as we note on [Walkito vs Hinge Health](/hinge-health-alternatives/).',
         'Foot reviews are rare: 3 of the 250 recent App Store reviews mention the foot, heel or plantar fasciitis, all 5 stars. One says: \u201cWhen my plantar fasciitis was really bad, these exercises really helped!\u201d (August 11, 2026). That is a good sign for those members, but it is not a study.',
       ],
       cites: [CITE.guideline],
@@ -195,7 +195,7 @@ export const HINGE_REVIEWS_EN: Guide = {
     {
       h2: 'If you have heel or foot pain',
       paragraphs: [
-        'If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](/walkito-vs-hinge-health/) compares the two directly.',
+        'If your employer or plan offers Hinge Health, it is a sensible place to start: it costs you nothing and you get a physical therapist. If you cannot get it, our [Hinge Health alternatives](/hinge-health-alternatives/) page lists options you can get through your plan or book yourself, and [Walkito vs Hinge Health](/hinge-health-alternatives/) compares the two directly.',
         'To start at home today, our free [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page has the stretches and strength work the 2023 guideline supports. Walkito is our app: an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet. It is not a medical device, does not diagnose and has no physical therapist. It was released on October 1, 2026 and has few ratings so far.',
       ],
       cites: [CITE.guideline],

@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_EN, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_EN.vsPlantarCare;
+/** Folded into /best-app-for-plantar-fasciitis/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/best-app-for-plantar-fasciitis/');
 
-export const metadata = guideMetadata(guide);
-
-export default function WalkitoVsPlantarCare() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/best-app-for-plantar-fasciitis/" />;
 }

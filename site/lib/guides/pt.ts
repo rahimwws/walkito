@@ -597,7 +597,7 @@ export const HEEL_PAIN_PT: Guide = {
     },
     {
       q: 'Esporão no calcanhar é a mesma coisa que fascite plantar?',
-      a: 'Não exatamente. Muita gente fala “[esporão](/pt/fascite-plantar-ou-esporao/)” quando quer dizer fascite plantar, mas, a rigor, o esporão é um crescimento de osso que aparece no raio-X. A fascite plantar é dor na faixa de tecido embaixo do pé. Os exercícios desta página são os que a diretriz de 2023 avalia para dor na sola do calcanhar. Os [exercícios para esporão](/pt/esporao-calcaneo-exercicios/) mostram a mesma rotina quando o raio-X mostra um esporão. Só um profissional de saúde pode dizer o que está por trás da sua.',
+      a: 'Não exatamente. Muita gente fala “[esporão](/pt/esporao-calcaneo-exercicios/)” quando quer dizer fascite plantar, mas, a rigor, o esporão é um crescimento de osso que aparece no raio-X. A fascite plantar é dor na faixa de tecido embaixo do pé. Os exercícios desta página são os que a diretriz de 2023 avalia para dor na sola do calcanhar. Os [exercícios para esporão](/pt/esporao-calcaneo-exercicios/) mostram a mesma rotina quando o raio-X mostra um esporão. Só um profissional de saúde pode dizer o que está por trás da sua.',
     },
     {
       q: 'Com que frequência devo fazer exercícios para fascite plantar?',

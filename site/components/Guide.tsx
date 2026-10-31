@@ -192,6 +192,30 @@ function Table({ table }: { table: GuideTable }) {
  * ask to be cited: each carries a ready citation. */
 const CITE_BOX_PAGES: readonly string[] = ['calfRaiseTest', 'pfDuration', 'nurses', 'ytStudy', 'aiStudy', 'appStudy'];
 
+/**
+ * The plan block without the sentences every guide repeated word for word
+ * (2026-10-30): the schedule line (on the program page, the home page and the
+ * footer) and the "does not diagnose" line (in the footer notice on every
+ * page). What is left is what Walkito does for this page's problem.
+ */
+const PLAN_REPEATS = [
+  'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
+  'It does not diagnose and is not a substitute for a clinician.',
+  'Walkito is an exercise program, not a diagnosis or a substitute for a clinician.',
+  'Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos.',
+  'No diagnostica y no reemplaza a un profesional de la salud.',
+  'Вы выбираете 3, 5 или 7 дней в неделю и занятия по 3, 5 или 10 минут.',
+  'Walkito не ставит диагнозов и не заменяет врача.',
+];
+function planOnly(text: string): string {
+  let out = text;
+  for (const r of PLAN_REPEATS) {
+    const i = out.replace(/\u00A0/g, ' ').indexOf(r);
+    if (i >= 0) out = (out.slice(0, i) + out.slice(i + r.length)).replace(/\s{2,}/g, ' ').trim();
+  }
+  return out;
+}
+
 export function Guide({ guide }: { guide: GuideData }) {
   const c = CHROME[guide.lang];
   const url = `${SITE_URL}${guidePath(guide)}`;
@@ -510,10 +534,7 @@ export function Guide({ guide }: { guide: GuideData }) {
         </ul>
 
         <h2 id="plan">{guide.program.h2}</h2>
-        <p>
-          <Inline text={guide.program.text} />
-        </p>
-        {guide.program.more?.map((p) => (
+        {[guide.program.text, ...(guide.program.more ?? [])].map(planOnly).filter(Boolean).map((p) => (
           <p key={p}>
             <Inline text={p} />
           </p>
@@ -523,7 +544,7 @@ export function Guide({ guide }: { guide: GuideData }) {
         {/* The calf raise test is the page others are most likely to quote
             (its norms by age): a ready citation makes linking to it easy. */}
         {CITE_BOX_PAGES.includes(guide.page) && <CiteBox lang={guide.lang} title={guide.title} updated={guide.updated} url={url} />}
-        <p className="notice">{c.notice}</p>
+        {/* The safety notice sits in the footer of every page: not repeated here. */}
 
         {guide.program.cta && <p className="cta-line">{guide.program.cta}</p>}
         <AppStoreBadge campaign={guide.campaign} lang={guide.lang} />

@@ -89,7 +89,7 @@ export const PF_COST_EN: Guide = {
       table: {
         head: ['App', 'Price'],
         rows: [
-          ['[PlantarCare](/walkito-vs-plantarcare/)', 'Free'],
+          ['[PlantarCare](/best-app-for-plantar-fasciitis/)', 'Free'],
           ['Arch: Flat Feet Trainer', '$9.99 a month or $39.99 a year'],
           ['Exakt Health', '$19.99 a month or $99.99 a year'],
           ['Prehab', '$49.99 a month; yearly $199.99 or $299.99'],

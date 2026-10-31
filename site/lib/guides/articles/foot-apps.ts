@@ -21,7 +21,7 @@ export const FOOT_APPS_EN: Guide = {
   lede:
     'No foot pain app has been tested in a published trial, so there is no proven best one. We checked 16 apps for flat feet, Achilles pain, ankle sprains, bunions and ball of foot pain: 2 named a licensed clinician as the creator, 5 promised to end pain or gave a quick timeline, and only 1 cited a specific study. The research supports the exercises, not any one app, so pick an app that gives the right exercises for your problem.',
   intro: [
-    'Walkito is a foot exercise app, so we are not neutral. We list it apart at the end and do not count it in any total. For plantar fasciitis apps, see our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [Walkito vs the Plantar Fasciitis Exercises app](/walkito-vs-plantar-fasciitis-exercises-app/).',
+    'Walkito is a foot exercise app, so we are not neutral. We list it apart at the end and do not count it in any total. For plantar fasciitis apps, see our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [Walkito vs the Plantar Fasciitis Exercises app](/best-app-for-plantar-fasciitis/).',
   ],
   takeaways: [
     'Of 16 foot pain apps we checked in the App Store and Google Play, none had a published trial, 2 named a licensed clinician as the creator and 1 cited a specific study.',

@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_NEW.de.pfVsHeelSpur!;
+/** Folded into /de/fersensporn-uebungen/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/de/fersensporn-uebungen/');
 
-export const metadata = guideMetadata(guide);
-
-export default function PfVsHeelSpurDePage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/de/fersensporn-uebungen/" />;
 }

@@ -5,7 +5,7 @@ export const VS_EXAKT_EN: Guide = {
   lang: 'en',
   page: 'vsExakt',
   published: '2026-10-04',
-  updated: '2026-10-13',
+  updated: '2026-10-30',
   title: 'Walkito vs Exakt Health (2026): Which Heel Pain App Fits?',
   description:
     'Walkito vs Exakt Health side by side: conditions covered, how each builds your plan, evidence, platforms, languages and privacy. Checked October 2026.',
@@ -28,7 +28,6 @@ export const VS_EXAKT_EN: Guide = {
       h2: 'Side-by-side comparison',
       paragraphs: [
         'Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app\'s own source code.',
-        'Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](/walkito-vs-plantarcare/). Want a short fixed routine? See [Walkito vs the Plantar Fasciitis Exercises app](/walkito-vs-plantar-fasciitis-exercises-app/).',
       ],
       table: {
         caption: 'Walkito vs Exakt Health (checked October 2026)',
@@ -165,7 +164,7 @@ export const VS_EXAKT_EN: Guide = {
       keyFact: 'Walkito\'s exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         '**This is where Exakt is clearly stronger.** Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner\'s knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.',
-        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a [broader app like Prehab](/exakt-health-alternatives/) is the right choice.',
+        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -219,6 +218,25 @@ export const VS_EXAKT_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
+      h2: 'Other Exakt Health alternatives',
+      paragraphs: [
+        'Prices are as each app publishes them in the US, checked in October 2026. **Prehab** is the closest in breadth; **Injurymap** is the closest in setup: like Exakt, it is CE-marked as a medical device.',
+      ],
+      table: {
+        caption: 'Other Exakt Health alternatives (checked October 2026)',
+        head: ['App', 'Price (as published)', 'Platforms', 'Best for'],
+        rows: [
+          ['[Prehab](https://theprehabguys.com/)', '$49/mo or about $16/mo billed yearly; 7-day free trial on the yearly plan', 'iPhone', 'Pain in several body areas, a big video library'],
+          ['[Injurymap](https://apps.apple.com/us/app/injurymap-physiotherapy-app/id1102375789)', '$9.49/mo or $40.99/yr; 2-week free trial', 'iPhone, Android', 'A lower price; Achilles, ankle and arch pain plus other joints'],
+          ['[Sports Injury Rehabilitation](https://apps.apple.com/us/app/sports-injury-rehabilitation/id1538404666)', 'Phase 1 of every program free; later phases by in-app purchase', 'iPhone, Android', 'Trying a phase-by-phase sports rehab plan for free'],
+          ['[GaitLab Coach](https://apps.apple.com/us/app/gaitlab-coach-run-pain-free/id6755685826)', 'Free; full report $4.99 once', 'iPhone', 'Runners who want to work on running form'],
+          ['[Hinge Health](https://www.hingehealth.com/)', '$0 through an employer or health plan', 'iPhone, Android', 'People whose employer or plan covers it'],
+        ],
+      },
+      sourceNote:
+        'Sources: App Store listings for Injurymap (id1102375789), Sports Injury Rehabilitation (id1538404666) and GaitLab Coach (id6755685826), checked October 12, 2026; Prehab and Hinge Health as on our plantar fasciitis app guide, checked October 2026.',
+    },
+    {
       h2: 'When is Exakt Health the better choice?',
       paragraphs: [
         'Pick Exakt Health if any of the following is true:',
@@ -251,16 +269,20 @@ export const VS_EXAKT_EN: Guide = {
       a: 'It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. Both are on iOS and Android. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.',
     },
     {
-      q: 'How is Walkito priced compared with Exakt Health?',
-      a: 'Walkito is a weekly or yearly subscription, and the current price for your country is shown in the App Store or Google Play before you subscribe. Exakt Health\'s cheapest rehab option is $59.99 for six months, or about $120 per year, and it starts with a 7-day free trial.',
-    },
-    {
       q: 'Does Exakt Health have a plantar fasciitis plan?',
       a: 'Yes. Exakt Health has a specific plantar fasciitis rehab plan, along with plans for Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears and more. The plantar fasciitis plan ends with a walk-run program to return to running safely, and the app adapts the plan as you progress through its levels.',
     },
     {
       q: 'Can I use Walkito on Android?',
       a: 'Yes. Walkito has been on Google Play since October 2026, as well as on the App Store for iPhone. On Android it reads Health Connect (steps, exercise sessions, distance and sleep) where the iPhone reads Apple Health; walking asymmetry and walking speed are iPhone only. Exakt Health is also on both Android and iOS.',
+    },
+    {
+      q: 'Is there a free alternative to Exakt Health?',
+      a: 'Partly. Sports Injury Rehabilitation gives phase 1 of every program free, GaitLab Coach is free for basic running form checks, and PlantarCare is free for heel pain on iPhone. Hinge Health is free only through an employer or health plan. Injurymap and Exakt both offer a free trial first.',
+    },
+    {
+      q: 'Is there an app like Exakt Health on Android?',
+      a: 'Exakt Health itself is on Android. Of the alternatives, Injurymap, Sports Injury Rehabilitation, Hinge Health and Walkito are also on Android. Prehab and GaitLab Coach were found on the iPhone App Store, and PlantarCare is iPhone only.',
     },
     {
       q: 'Is Exakt Health a medical device?',

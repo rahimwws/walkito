@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
     {
       h2: 'Für wen passt eine Nachtschiene, und wer sollte sie lassen?',
       paragraphs: [
-        '**Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt**: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) zu sehen war.',
+        '**Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt**: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein [Fersensporn](/de/fersensporn-uebungen/) zu sehen war.',
         'Weniger Sinn ergibt eine Schiene, wenn deine Ferse vor allem wehtut, während du im Bett liegst, oder dich weckt. Das ist ein anderes Muster, und [Fersenschmerzen nachts](/de/fersenschmerzen-nachts/) erklärt, welche Ursachen abgeklärt werden sollten. Eine Schiene passt auch schlecht, wenn du wenig Gefühl oder eine schlechte Durchblutung in den Füßen hast, denn Bänder und Schalen können an Haut scheuern, die du nicht spürst.',
         'Eine Plantarfasziitis klingt oft über Monate ab, egal was du nutzt, und das ist ein Grund, warum Studien zu Schienen schwer zu deuten sind. Realistische Zeiträume findest du unter [Wie lange dauert eine Plantarfasziitis](/de/wie-lange-dauert-plantarfasziitis/).',
       ],

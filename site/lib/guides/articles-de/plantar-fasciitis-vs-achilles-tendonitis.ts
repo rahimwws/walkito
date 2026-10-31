@@ -188,7 +188,7 @@ export const PF_VS_ACHILLES_DE: Guide = {
         {
           list: [
             'Ein Knochenvorsprung hinten an der Ferse mit einer schmerzenden, geschwollenen Stelle am Schuhrand: [Haglundferse](/de/haglundferse/) oder eine Schleimbeutelentzündung hinter dem Fersenbein (retrokalkaneale Bursitis), oft zusammen mit Schmerzen am Ansatz der Achillessehne.',
-            'Ein Fersensporn auf dem Röntgenbild: häufig und meist nicht die Ursache des Schmerzes. Siehe [Plantarfasziitis oder Fersensporn](/de/plantarfasziitis-oder-fersensporn/).',
+            'Ein Fersensporn auf dem Röntgenbild: häufig und meist nicht die Ursache des Schmerzes. Siehe [Plantarfasziitis oder Fersensporn](/de/fersensporn-uebungen/).',
             'Ein tiefer Schmerz wie von einer Prellung mitten im Fersenpolster, schlimmer auf hartem Boden: [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
             'Schmerz an beiden Seiten der Ferse, wenn du sie zusammendrückst, nach einer plötzlichen Steigerung beim Gehen oder Laufen: möglicher Ermüdungsbruch, lass das ärztlich abklären.',
             'Brennen, Kribbeln oder Taubheit: möglicherweise ein eingeklemmter Nerv.',

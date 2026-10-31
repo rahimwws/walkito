@@ -218,7 +218,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
     {
       h2: 'Who might a night splint suit, and who should skip it?',
       paragraphs: [
-        '**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a [heel spur](/plantar-fasciitis-vs-heel-spur/) showed on X-ray.',
+        '**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a [heel spur](/heel-spur-exercises/) showed on X-ray.',
         'A splint makes less sense if your heel hurts mostly while you are lying in bed, or wakes you up. That is a different pattern, and [heel pain at night](/heel-pain-at-night/) explains the causes worth ruling out. A splint is also a poor fit if you have poor feeling or circulation in your feet, since straps and shells can rub skin you cannot feel.',
         'Plantar fasciitis often settles over months whatever you use, which is one reason splint trials are hard to read. For realistic timelines, see [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/).',
       ],

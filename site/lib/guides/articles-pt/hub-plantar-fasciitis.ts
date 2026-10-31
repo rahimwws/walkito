@@ -133,7 +133,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       keyFact: 'Em um grupo de 174\u00A0pessoas, cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor aos dez anos, a maioria só leve (Hansen e colegas, 2018).',
       paragraphs: [
         'Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento sem cirurgia, muitas vezes em alguns meses. Um acompanhamento mais longo de 174\u00A0pacientes dá um quadro mais detalhado: cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor depois de dez anos em média, embora a maioria deles relatasse só sintomas leves.',
-        'A recuperação depende de há quanto tempo você tem a dor, do que você faz a respeito, e de alguns fatores que você não controla. O grupo de Hansen 2018 encontrou que ser mulher e ter dor nos dois calcanhares eram preditores significativos de recuperação mais lenta. IMC, idade, espessura da fáscia e presença de [esporão](/pt/fascite-plantar-ou-esporao/) não eram.',
+        'A recuperação depende de há quanto tempo você tem a dor, do que você faz a respeito, e de alguns fatores que você não controla. O grupo de Hansen 2018 encontrou que ser mulher e ter dor nos dois calcanhares eram preditores significativos de recuperação mais lenta. IMC, idade, espessura da fáscia e presença de [esporão](/pt/esporao-calcaneo-exercicios/) não eram.',
         'A pergunta útil não é “quantas semanas até acabar”, e sim “a minha dor da manhã está menor este mês do que no mês passado?”. **Essa tendência é o marco de verdade.** [Quanto tempo dura a fascite plantar?](/pt/quanto-tempo-dura-fascite-plantar/) traz toda a evidência sobre o tempo de recuperação.',
       ],
       cites: [CITE.latt, CITE.hansen],

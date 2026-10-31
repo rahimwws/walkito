@@ -1,10 +1,8 @@
-import { Guide } from '@/components/Guide';
-import { ARTICLES_RU, guideMetadata } from '@/lib/guides';
+import { MergedRedirect, mergedMetadata } from '@/components/MergedRedirect';
 
-const guide = ARTICLES_RU.pfVsHeelSpur!;
+/** Folded into /ru/pyatochnaya-shpora-uprazhneniya/ (lib/google-hidden.ts, MERGED). */
+export const metadata = mergedMetadata('/ru/pyatochnaya-shpora-uprazhneniya/');
 
-export const metadata = guideMetadata(guide);
-
-export default function PfVsHeelSpurRuPage() {
-  return <Guide guide={guide} />;
+export default function Moved() {
+  return <MergedRedirect to="/ru/pyatochnaya-shpora-uprazhneniya/" />;
 }

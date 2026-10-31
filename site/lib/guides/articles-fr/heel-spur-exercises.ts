@@ -24,7 +24,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
   lede:
     'L’exercice ne dissout pas une épine calcanéenne (aussi appelée épine de Lenoir). L’épine est de l’os, et l’os ne rétrécit pas avec les étirements. Mais la douleur ressentie quand on a une épine calcanéenne vient presque toujours du fascia plantaire et du mollet autour d’elle, pas de l’os lui-même. Les exercices ci-dessous visent ces tissus mous. Ce sont les mêmes que ceux que la recommandation de 2023 sur la douleur au talon conseille pour la [fasciite plantaire](/fr/fasciite-plantaire/).',
   intro: [
-    'Si vous voulez d’abord comprendre la différence entre une épine calcanéenne et une fasciite plantaire, voir [fasciite plantaire ou épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/). Cette page est la routine pratique\u00A0: quels exercices, combien, comment progresser et quand arrêter.',
+    'Si vous voulez d’abord comprendre la différence entre une épine calcanéenne et une fasciite plantaire, voir [fasciite plantaire ou épine calcanéenne](/fr/epine-calcaneenne-exercices/). Cette page est la routine pratique\u00A0: quels exercices, combien, comment progresser et quand arrêter.',
   ],
   takeaways: [
     'Les exercices pour l’épine calcanéenne agissent sur le fascia plantaire et les muscles du mollet autour de l’épine, pas sur l’épine elle-même.',

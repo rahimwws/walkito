@@ -24,7 +24,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
   lede:
     'Exercício não dissolve um esporão no calcanhar. O esporão é osso, e osso não diminui com alongamento. Mas a dor que as pessoas sentem quando têm esporão quase sempre vem da fáscia plantar e da panturrilha em volta dele, não do osso em si. Os exercícios abaixo trabalham esses tecidos moles. São os mesmos que a diretriz de 2023 para dor no calcanhar recomenda para [fascite plantar](/pt/fascite-plantar/).',
   intro: [
-    'Se você quer entender primeiro a diferença entre esporão e fascite plantar, veja [fascite plantar ou esporão](/pt/fascite-plantar-ou-esporao/). Esta página é a rotina prática: quais exercícios, quantas repetições, como progredir e quando parar.',
+    'Se você quer entender primeiro a diferença entre esporão e fascite plantar, veja [fascite plantar ou esporão](/pt/esporao-calcaneo-exercicios/). Esta página é a rotina prática: quais exercícios, quantas repetições, como progredir e quando parar.',
   ],
   takeaways: [
     'Os exercícios para esporão funcionam trabalhando a fáscia plantar e os músculos da panturrilha em volta do esporão, não mudando o esporão em si.',

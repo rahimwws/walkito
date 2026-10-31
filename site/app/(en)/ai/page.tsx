@@ -15,6 +15,8 @@ import { SITE_NAME, SUPPORT_EMAIL } from '@/lib/site';
  * like the assistant.
  */
 export const metadata: Metadata = {
+  // Out of Google only (page audit 2026-10-30): Bing and the AI engines still index it.
+  robots: { index: true, follow: true, googleBot: { index: false, follow: true } },
   title: 'Walkito in ChatGPT and Claude',
   description:
     'Use Walkito inside ChatGPT and Claude: short foot and calf exercises with videos, a 7-day starter plan, and when to see a doctor. Nothing you type is stored.',

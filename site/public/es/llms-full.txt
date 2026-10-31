@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/es/
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -4009,7 +4009,7 @@ Pregunta a tu médico. La Sociedad Internacional de Tratamiento Médico con Onda
 
 ## Ejercicios para el espolón calcáneo: estiramientos y fortalecimiento para el dolor alrededor de un espolón
 
-Language: Spanish (Español) · https://walkito.site/es/ejercicios-espolon-calcaneo/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-espolon-calcaneo/ · published 2026-10-07 · updated 2026-10-30
 
 El ejercicio no disuelve un espolón calcáneo. El espolón es hueso, y el hueso no se encoge con estiramientos. Pero el dolor que sienten las personas con un espolón casi siempre viene de la fascia plantar y la pantorrilla a su alrededor, no del hueso en sí. Los ejercicios de abajo trabajan esos tejidos blandos. Son los mismos que la guía clínica de 2023 para el dolor de talón recomienda para la fascitis plantar.
 
@@ -4029,6 +4029,15 @@ Ningún programa de ejercicios va a hacer que un espolón desaparezca de la radi
 
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### ¿Un espolón calcáneo es lo mismo que la fascitis plantar?
+
+**Un espolón calcáneo y la fascitis plantar no son lo mismo.** La fascitis plantar es una irritación de la fascia plantar, generalmente donde se une al hueso del talón. Un espolón calcáneo es un crecimiento de hueso en la parte inferior de ese hueso. Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.
+
+Los espolones son comunes en personas sin dolor. En un estudio con 216 adultos mayores de 62 a 94 años, el 55 % tenía al menos un espolón calcáneo plantar en la radiografía, y cerca de 6 de cada 10 personas con espolón nunca habían tenido dolor de talón (Menz y colegas, 2008). Un estudio de resonancia magnética con 77 voluntarios sin síntomas encontró un espolón calcáneo en el 19 % (Ehrmann y colegas, 2014).
+
+Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
+Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
 
 ### ¿Qué estiramientos ayudan con el espolón calcáneo?
 
@@ -4140,17 +4149,17 @@ Los ejercicios que ayudan con el dolor del espolón calcáneo son los mismos que
 
 No. Un espolón calcáneo es hueso calcificado y el ejercicio no lo disuelve. Los ejercicios trabajan la fascia plantar y la pantorrilla, los tejidos blandos alrededor del espolón que casi siempre son la fuente del dolor. Si el dolor se calma con el ejercicio, el espolón en la radiografía no es un problema que haga falta resolver.
 
-#### ¿Con qué frecuencia debo hacer los estiramientos para el espolón?
+#### ¿Se puede tener fascitis plantar sin espolón calcáneo?
 
-El estiramiento de la fascia plantar funciona mejor si lo haces cada mañana antes de pararte y después de estar sentado mucho rato. Los estiramientos de pantorrilla encajan en la mayoría de las sesiones. En un ensayo con 101 personas con dolor de talón crónico, el grupo que hizo el estiramiento de la fascia plantar reportó mejores resultados a las 8 semanas que el grupo que solo estiró la pantorrilla (DiGiovanni y colegas, 2003).
+Sí. Muchas personas con fascitis plantar no tienen espolón en la radiografía. El dolor viene de la fascia plantar irritada, no del hueso. La guía de 2023 no exige estudios de imagen para diagnosticar fascitis plantar cuando el patrón clínico es claro: dolor en los primeros pasos de la mañana, sensibilidad en el talón y pantorrilla tensa.
 
-#### ¿Cuánto tarda en mejorar el dolor del espolón calcáneo?
+#### ¿Debería hacerme una radiografía si creo que tengo un espolón calcáneo?
 
-La mayoría de los plazos vienen de estudios de fascitis plantar, ya que la irritación de la fascia suele ser lo que duele. Una revisión indica que cerca del 90 % de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un ensayo con 48 personas, las elevaciones de talón con carga mostraron beneficios sobre solo estirar a los tres meses (Rathleff y colegas, 2015). Ningún programa puede prometer un plazo para ninguna persona.
+La guía de 2023 dice que los estudios de imagen por lo general no hacen falta cuando la exploración clínica apunta a fascitis plantar. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia el plan de ejercicios, y no encontrar uno no descarta la fascitis plantar. Los estudios de imagen se vuelven útiles cuando el dolor no mejora después de varias semanas o se sospecha una fractura por estrés o un problema nervioso.
 
-#### ¿Debo dejar de hacer ejercicio si tengo un espolón calcáneo?
+#### ¿Cuándo necesita cirugía un espolón calcáneo?
 
-No necesariamente. La guía recomienda el ejercicio como parte del enfoque, no el descanso completo. Detente por el resto del día si el dolor llega a 6 de 10 o más en algún ejercicio, o si la mañana siguiente está claramente peor. Baja un nivel en lugar de parar del todo. Si el dolor empeora semana a semana a pesar de ajustar, consulta a un profesional de la salud.
+Casi nunca. La guía no recomienda la remoción del espolón para la fascitis plantar. Cerca del 90 % de las personas con fascitis plantar mejoran con cuidados no quirúrgicos como estiramientos, fortalecimiento de pantorrilla y manejo de la carga (Latt y colegas, 2020). Cuando se considera la cirugía después de meses de cuidados conservadores sin resultado, normalmente implica liberar la fascia plantar, no quitar el espolón.
 
 #### ¿Caminar es bueno para el espolón calcáneo?
 
@@ -4159,10 +4168,6 @@ Caminar en sí no es el problema. Caminar con zapatos de buen soporte a un ritmo
 #### ¿Qué ejercicios debo evitar si tengo un espolón calcáneo?
 
 Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté irritado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.
-
-#### ¿Qué dispara el dolor de un espolón calcáneo?
-
-El golpeteo repetido sobre una superficie dura es el disparador más común: correr, saltar o estar de pie varias horas irrita el tejido blando junto al espolón igual que irrita la fascitis plantar normal. Un aumento repentino de actividad, zapatos gastados y caminar descalzo sobre baldosa también pueden provocarlo. Ajustar la carga, no el hueso, es lo que calma un brote.
 
 ## Ejercicios para pie cavo: qué ayuda y qué necesita un profesional
 
@@ -4639,7 +4644,7 @@ Varias afecciones duelen en el mismo lugar o siguen el mismo patrón de la maña
 
 - **Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. La rigidez en los primeros pasos es común, pero el dolor está más arriba. [Cómo distinguir las dos](https://walkito.site/es/fascitis-plantar-o-tendinitis-de-aquiles/). Mira [ejercicios para la tendinitis de Aquiles](https://walkito.site/es/ejercicios-tendinitis-aquiles/).
 - **Síndrome de la almohadilla grasa del talón.** Un dolor profundo en el centro del talón, peor sobre superficies duras y descalzo. Una revisión exploratoria de 2022 señaló que puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen. El dolor de la almohadilla grasa está justo en el centro, y el de la fascitis en la parte interna y delantera.
-- **Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174 pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor. Mira [fascitis plantar vs espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/) y [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/).
+- **Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174 pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor. Mira [fascitis plantar vs espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) y [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/).
 - **Fractura por estrés del calcáneo.** Un dolor que aumenta con la actividad en lugar de calmarse cuando entras en calor. [Cómo diferenciarla de la fascitis plantar](https://walkito.site/es/fascitis-plantar-o-fractura-por-estres/). Puede doler en reposo o de noche. Apretar los lados del talón suele provocar el dolor. Consulta a un profesional de la salud antes de ejercitar el pie.
 - **Artritis inflamatoria.** Cuando duelen los dos talones, la rigidez de la mañana dura más de 30 minutos y otras articulaciones están rígidas o hinchadas, el patrón apunta a algo que afecta a todo el cuerpo. Debe revisarlo un profesional de la salud.
 
@@ -4667,7 +4672,7 @@ Varias apps incluyen ejercicios para la fascitis plantar. Se diferencian en si s
 - Páginas de ejercicios: [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/), [estiramiento de pantorrilla](https://walkito.site/es/ejercicios/estiramiento-de-pantorrilla/), [elevación de talones con toalla](https://walkito.site/es/ejercicios/elevacion-de-talones-con-toalla/), [automasaje plantar](https://walkito.site/es/ejercicios/masaje-plantar-con-pelota/).
 - Ejercicios y pruebas: [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/), [pantorrillas tensas](https://walkito.site/es/pantorrillas-tensas/) y el [test de elevación de talón](https://walkito.site/es/test-de-elevacion-de-talon/).
 - Tratamientos y herramientas: [vendaje](https://walkito.site/es/vendaje-fascitis-plantar/), [hielo o calor](https://walkito.site/es/hielo-o-calor-fascitis-plantar/), [pelota de masaje o botella congelada](https://walkito.site/es/pelota-de-masaje-fascitis-plantar/), [férula nocturna](https://walkito.site/es/ferula-nocturna-fascitis-plantar/) y [plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/).
-- Otros dolores de talón: [fascitis plantar vs espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/), [dolor de talón al caminar](https://walkito.site/es/dolor-de-talon-al-caminar/), [dolor de talón por la noche](https://walkito.site/es/dolor-de-talon-por-la-noche/), [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/), [deformidad de Haglund](https://walkito.site/es/deformidad-de-haglund/) y [enfermedad de Sever](https://walkito.site/es/enfermedad-de-sever/) en niños.
+- Otros dolores de talón: [fascitis plantar vs espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/), [dolor de talón al caminar](https://walkito.site/es/dolor-de-talon-al-caminar/), [dolor de talón por la noche](https://walkito.site/es/dolor-de-talon-por-la-noche/), [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/), [deformidad de Haglund](https://walkito.site/es/deformidad-de-haglund/) y [enfermedad de Sever](https://walkito.site/es/enfermedad-de-sever/) en niños.
 - El [identificador de dolor de pie](https://walkito.site/es/donde-me-duele-el-pie/) muestra las afecciones que con más frecuencia causan dolor en cada zona del pie.
 
 ### Consulta primero a un profesional de la salud si
@@ -5208,182 +5213,6 @@ La señal más clara es menos dolor por la mañana: los primeros pasos se siente
 #### ¿Qué no se debe hacer si la fascitis plantar no mejora?
 
 No dejes de hacer los ejercicios en cuanto el dolor de la mañana se calme, y no persigas un solo atajo en lugar de lo básico. Que el dolor baje antes de que la fascia se haya adaptado es una razón común de que los síntomas vuelvan. Si el dolor se mantiene igual o empeora durante varios meses a pesar de estirar, fortalecer y usar calzado con soporte, eso pide un profesional, no esperar más.
-
-## Fascitis plantar vs espolón calcáneo: ¿son la misma afección?
-
-Language: Spanish (Español) · https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/ · published 2026-10-07 · updated 2026-10-07
-
-Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va de ese hueso hasta los dedos. Suelen aparecer juntos, pero no son la misma afección, y el espolón casi nunca es lo que duele. Muchas personas con espolón en la radiografía no sienten ningún dolor.
-
-- En un estudio con 216 adultos mayores de 62 a 94 años, el 55 % tenía al menos un espolón calcáneo plantar en la radiografía, y la presencia de espolón se relacionó con obesidad y artrosis, pero no con la postura del pie (Menz y colegas, 2008). Es una muestra de adultos mayores, no una cifra de la población general.
-- En un estudio con 530 personas de 50 años o más con dolor de pie, los espolones y una fascia plantar engrosada casi siempre aparecían juntos, y un espolón solo era raro (6 % de los pies). El dolor de talón se asoció con tener los dos hallazgos a la vez (Menz y colegas, 2019).
-- La guía clínica de 2023 para el dolor de talón se centra en la fascitis plantar como la causa más común de dolor plantar del talón y señala que los estudios de imagen por lo general no hacen falta cuando la exploración clínica ya apunta a fascitis plantar (Koc y colegas, 2023).
-- El propio estudio de Menz de 2008 señala que investigaciones anteriores en la población general habían puesto la frecuencia del espolón calcáneo entre el 11 y el 16 %, muy por debajo del 55 % que encontraron en su muestra de adultos mayores (Menz y colegas, 2008).
-- Los ejercicios que ayudan con el dolor de la fascitis plantar también trabajan el tejido blando alrededor del espolón. El ejercicio no disuelve un espolón, pero el espolón rara vez es lo que necesita atención.
-
-### ¿Un espolón calcáneo es lo mismo que la fascitis plantar?
-
-**Un espolón calcáneo y la fascitis plantar no son lo mismo.** La fascitis plantar es un problema de tejido blando: la fascia plantar, la banda gruesa que va del hueso del talón a los dedos, se irrita, generalmente donde se une al hueso. Un espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón (el calcáneo). Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.
-
-La fascitis plantar provoca el dolor agudo y punzante que la gente describe en la parte de abajo del talón, sobre todo en los primeros pasos de la mañana o después de estar sentado un rato. El dolor en la parte de atrás del talón es otro problema: mira [fascitis plantar o tendinitis de Aquiles](https://walkito.site/es/fascitis-plantar-o-tendinitis-de-aquiles/). La guía de 2023 la define como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Un espolón calcáneo, en cambio, es un hallazgo estructural en una radiografía. Puede o no producir síntomas por sí solo.
-
-La confusión es comprensible. Durante décadas se pensó que los espolones eran la causa del dolor plantar del talón. Esa visión ha sido reemplazada en gran medida por evidencia que muestra que los espolones son comunes en personas sin dolor, y que muchas personas con fascitis plantar no tienen ningún espolón.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Los espolones calcáneos realmente causan dolor?
-
-**La mayoría de los espolones calcáneos no causan dolor.** La investigación muestra de forma consistente que los espolones aparecen en personas sin síntomas de talón, y que quitar el espolón no detiene el dolor de manera confiable.
-
-En un estudio con 530 personas de 50 años o más que reportaron dolor de pie:
-
-- Las radiografías encontraron un espolón calcáneo en el 26,5 % de los pies.
-- El ultrasonido encontró una fascia plantar engrosada en el 47,3 % de los pies.
-- Los dos hallazgos casi siempre iban juntos, y un espolón solo era raro (6 % de los pies).
-- Las personas con dolor de talón tenían el doble de probabilidades de tener los dos hallazgos juntos (Menz y colegas, 2019).
-
-Dicho de otra forma, el espolón rara vez aparece sin el cambio de tejido blando que lo acompaña.
-
-Por separado, en un estudio con 216 adultos mayores de 62 a 94 años, el 55 % tenía al menos un espolón calcáneo plantar en la radiografía. Los espolones se relacionaron con obesidad, artrosis e historial de dolor de talón, pero no con la postura del pie. Los autores sugirieron que los espolones pueden ser una respuesta adaptativa a la compresión vertical del talón, no un resultado de la fascia plantar jalando del hueso (Menz y colegas, 2008).
-
-El estudio de Menz de 2008 señala que investigaciones anteriores en la población general habían reportado una frecuencia de espolón calcáneo del 11 al 16 %, muy por debajo del 55 % que los autores encontraron en su muestra de adultos mayores. En esa misma muestra, cerca de 6 de cada 10 personas con espolón nunca habían tenido dolor de talón, aunque el dolor de talón sí fue más común en personas con espolón (40 %) que sin él (12 %) (Menz y colegas, 2008). Un espolón aumenta las probabilidades, pero no decide quién termina con dolor.
-
-Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### ¿Qué tan común es tener un espolón calcáneo sin dolor?
-
-Los espolones calcáneos son comunes. La frecuencia depende del grupo de edad y del método que se use para buscarlos.
-
-El estudio de Menz de 2008 con adultos mayores cita investigaciones anteriores que reportaron una frecuencia de espolón calcáneo del 11 al 16 % en la población general, un rango muy por debajo del 55 % que los autores encontraron en su muestra de 216 personas de 62 a 94 años. Un estudio de resonancia magnética aparte, con 77 voluntarios sin síntomas (edad promedio 48, rango de 23 a 83), encontró un espolón calcáneo en 15 de ellos, el 19 % (Ehrmann y colegas, 2014).
-
-El patrón es consistente: una proporción grande de personas con espolón no tiene síntomas, y **un espolón solo no predice si alguien va a tener dolor de talón.** Por eso la guía de 2023 no incluye el espolón calcáneo como razón para cambiar el enfoque de ejercicios.
-
-Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
-Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
-
-### ¿Qué dice la guía de 2023 sobre los espolones calcáneos?
-
-La guía de práctica clínica de 2023 para el dolor de talón, publicada en el Journal of Orthopaedic and Sports Physical Therapy, se centra en la fascitis plantar como la causa más común de dolor plantar del talón. Menciona el «síndrome de espolón calcáneo» como uno de varios diagnósticos diferenciales, junto con:
-
-- El síndrome de la almohadilla grasa.
-- La irritación nerviosa.
-- La fractura por estrés del calcáneo.
-
-La guía no recomienda estudios de imagen como primer paso cuando la exploración clínica ya apunta a fascitis plantar. Señala que los estudios de imagen «por lo general no están indicados en pacientes que cumplen los criterios de exploración clínica para fascitis plantar hasta que no responden a intervenciones conservadoras». Cuando se consideran, la radiografía con apoyo es la primera opción, seguida del ultrasonido o la resonancia magnética si hace falta.
-
-En la práctica, esto significa que un profesional que ve el patrón típico, dolor en los primeros pasos de la mañana, sensibilidad al presionar la parte interna del talón y menos flexibilidad del tobillo, puede empezar con estiramientos y trabajo de fuerza sin esperar una radiografía. **Que haya o no un espolón en una radiografía posterior no cambia el plan de ejercicios.**
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Necesitas una radiografía para distinguir la fascitis plantar de un espolón?
-
-**Por lo general no necesitas una radiografía para la fascitis plantar.** El diagnóstico es clínico: se basa en dónde está el dolor, cuándo aparece y qué lo empeora. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia lo que haces contra el dolor, y no encontrar uno no descarta la fascitis plantar.
-
-Los estudios de imagen se vuelven útiles:
-
-- Cuando el dolor no sigue el patrón típico de la fascitis plantar.
-- Cuando no ha mejorado después de varias semanas de cuidados conservadores.
-- Cuando el profesional sospecha algo distinto, como una [fractura por estrés](https://walkito.site/es/fascitis-plantar-o-fractura-por-estres/), un problema nervioso o un desgarro de la fascia plantar.
-
-El ultrasonido puede medir el grosor de la fascia plantar (una lectura por encima de 4 mm generalmente se considera engrosada), y la resonancia magnética puede mostrar detalles de tejido blando que la radiografía no capta.
-
-Si ya te dijeron que tienes un espolón en una radiografía, el espolón en sí casi nunca necesita atención aparte. Los ejercicios y estiramientos que ayudan con la fascitis plantar también trabajan el tejido blando alrededor del espolón. En [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) está la rutina completa.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### Si el espolón no es el problema, ¿qué es?
-
-El dolor suele venir de la fascia plantar y los tejidos que la rodean, no del hueso. La fascia plantar se une a la parte inferior del hueso del talón. Cuando se sobrecarga, sobre todo en alguien con la pantorrilla tensa, un IMC alto o muchas horas de pie, ese punto de unión se irrita. Esa irritación es la fascitis plantar.
-
-Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50 personas con fascitis plantar y 100 controles:
-
-- Una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos.
-- Estar de pie la mayor parte de la jornada laboral también fue significativo, con una razón de probabilidades de 3,6 (Riddle y colegas, 2003).
-
-El espolón, cuando está, se encuentra cerca. Puede haberse formado a lo largo de meses o años como respuesta al mismo estrés mecánico que irritó la fascia. Pero **es la fascia y la pantorrilla lo que responde al estiramiento y al trabajo de fuerza, no el hueso.** Por eso la guía recomienda ejercicio, no la remoción del espolón.
-
-Para una visión general completa de la fascitis plantar, incluyendo causas, factores de riesgo y lo que recomienda la guía, mira [fascitis plantar](https://walkito.site/es/fascitis-plantar/).
-
-Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Alguna vez es necesario quitar un espolón calcáneo?
-
-La remoción quirúrgica de un espolón calcáneo es rara y no es una opción de primera línea. **La guía de 2023 no recomienda la remoción del espolón para la fascitis plantar.** Varios estudios han demostrado que el dolor de la fascitis plantar puede resolverse con cuidados conservadores aunque el espolón siga en la radiografía. La Academia Americana de Cirujanos Ortopédicos señala directamente que «los espolones del talón no causan el dolor de la fascitis plantar» y que «el dolor de la fascitis plantar puede abordarse sin quitar el espolón».
-
-La cirugía a veces se considera cuando el dolor no ha respondido a meses de cuidados conservadores, pero el procedimiento típico es una liberación parcial de la fascia plantar, no una remoción del espolón. Si el espolón se retira durante esa cirugía, la evidencia sugiere que el beneficio vino de la liberación de la fascia, no de quitar el hueso.
-
-La gran mayoría de las personas con dolor de talón y un espolón mejoran con los mismos estiramientos, trabajo de pantorrilla y manejo de la carga que usan las personas sin espolón. En [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) está la rutina práctica.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
-
-### ¿Qué ejercicios ayudan cuando tienes un espolón calcáneo?
-
-Los ejercicios para el dolor del espolón calcáneo son los mismos que la guía recomienda para la fascitis plantar: estiramiento de la fascia plantar, estiramiento de la pantorrilla y fortalecimiento gradual de la pantorrilla. El ejercicio no disuelve un espolón. Trabaja el tejido blando que realmente produce el dolor.
-
-La guía le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Estos grados aplican haya o no un espolón. En [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) está la rutina completa con series, tiempos y progresión. Aquí hay tres ejercicios de inicio.
-
-- **Estiramiento de la fascia plantar** (10 repeticiones de 10 segundos, cada pie): Siéntate y cruza un tobillo sobre la otra rodilla. Jala los dedos hacia atrás con suavidad hasta sentir un estiramiento a lo largo del arco. Hazlo antes de pararte en la mañana y después de estar sentado mucho rato.
-- **Estiramiento de pantorrilla (rodilla estirada)** (2 repeticiones de 30 segundos, cada pierna): Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Una pantorrilla tensa jala del talón a través del tendón de Aquiles, añadiendo carga a la fascia.
-- **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate en los dos pies, sube recto sobre los dedos gordos y baja despacio. Esto fortalece la pantorrilla sin una carga pesada sobre el talón.
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
-
-### Consulta primero a un profesional de la salud si
-
-- el dolor empezó después de una lesión o una caída
-- no puedes apoyar el pie, o cojeas
-- te duele al apretar los lados del talón, lo que puede apuntar a una fractura por estrés
-- viene con entumecimiento, hormigueo o ardor
-- el talón está rojo, caliente o hinchado, o tienes fiebre
-- te duelen los dos talones y la rigidez de la mañana dura más de 30 minutos, sobre todo si otras articulaciones están afectadas
-- el dolor te despierta por la noche o está presente en reposo
-- no ha mejorado después de varias semanas de estiramiento diario y trabajo de pantorrilla
-- tienes diabetes, menos sensibilidad en los pies o mala circulación
-
-### Cómo convertirlo en un plan
-
-Tenga o no espolón en la radiografía, el enfoque de ejercicio es el mismo. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14 días seguidos. Los estiramientos empiezan desde el día uno. El trabajo de fuerza de pantorrilla se agrega una vez que la primera meta pasa de calmar el dolor a construir capacidad.
-
-#### ¿Un espolón calcáneo es lo mismo que la fascitis plantar?
-
-No. Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va del talón a los dedos. Suelen aparecer juntos, pero un espolón puede existir sin dolor y la fascitis plantar puede darse sin espolón. La guía clínica de 2023 los trata como hallazgos distintos.
-
-#### ¿Los espolones calcáneos causan dolor?
-
-La mayoría de los espolones calcáneos no causan dolor. En un estudio con 530 personas de 50 años o más con dolor de pie, un espolón solo era raro, y el dolor de talón se asoció con tener un espolón junto con una fascia plantar engrosada (Menz y colegas, 2019). En otro estudio con 216 adultos mayores, cerca de 6 de cada 10 con espolón no tenían dolor de talón actual ni pasado (Menz y colegas, 2008).
-
-#### ¿Se puede tener fascitis plantar sin espolón calcáneo?
-
-Sí. Muchas personas con fascitis plantar no tienen espolón en la radiografía. El dolor viene de la fascia plantar irritada, no del hueso. La guía de 2023 no exige estudios de imagen para diagnosticar fascitis plantar cuando el patrón clínico es claro: dolor en los primeros pasos de la mañana, sensibilidad en el talón y pantorrilla tensa.
-
-#### ¿Los ejercicios para el espolón calcáneo disuelven el espolón?
-
-No. Los estiramientos y el fortalecimiento no disuelven un espolón calcáneo. Trabajan el tejido blando alrededor de él, sobre todo la fascia plantar y los músculos de la pantorrilla, que suelen ser lo que produce el dolor. El espolón en sí rara vez necesita atención aparte, y la guía recomienda los mismos ejercicios haya o no un espolón.
-
-#### ¿Debería hacerme una radiografía si creo que tengo un espolón calcáneo?
-
-La guía de 2023 dice que los estudios de imagen por lo general no hacen falta cuando la exploración clínica apunta a fascitis plantar. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia el plan de ejercicios, y no encontrar uno no descarta la fascitis plantar. Los estudios de imagen se vuelven útiles cuando el dolor no mejora después de varias semanas o se sospecha una fractura por estrés o un problema nervioso.
-
-#### ¿Qué tan comunes son los espolones calcáneos?
-
-La frecuencia depende de la edad. Investigaciones anteriores citadas en el estudio de Menz de 2008 reportaron del 11 al 16 % de la población general con un espolón calcáneo plantar en la radiografía. En un estudio con 216 personas de 62 a 94 años, el 55 % tenía al menos un espolón plantar (Menz y colegas, 2008). Los espolones se vuelven más comunes con la edad, un IMC más alto y la artrosis.
-
-#### ¿Cuándo necesita cirugía un espolón calcáneo?
-
-Casi nunca. La guía no recomienda la remoción del espolón para la fascitis plantar. Cerca del 90 % de las personas con fascitis plantar mejoran con cuidados no quirúrgicos como estiramientos, fortalecimiento de pantorrilla y manejo de la carga (Latt y colegas, 2020). Cuando se considera la cirugía después de meses de cuidados conservadores sin resultado, normalmente implica liberar la fascia plantar, no quitar el espolón.
-
-#### ¿Qué pasa si sigo caminando con un espolón calcáneo?
-
-Caminar no va a meter el espolón más adentro del tejido cercano. El dolor que se dispara al caminar casi siempre viene de la fascia plantar irritada junto al espolón, no del hueso en sí. La guía de 2023 recomienda ajustar la carga, como la distancia o el ritmo, en lugar de dejar de caminar, si al día siguiente el talón empeora.
-
-#### ¿Es bueno masajear un espolón calcáneo?
-
-Un masaje suave alrededor del espolón calcáneo puede aliviar la tensión del tejido blando, pero no cambia el hueso en sí. Rodar la planta con presión firme, nunca aguda, puede soltar la fascia y la pantorrilla, los tejidos que suelen causar el dolor. La guía califica la terapia manual de un profesional con grado A; el automasaje es solo alivio, no un sustituto del estiramiento.
 
 ## Ejercicios para la disfunción del tendón tibial posterior: qué ayuda y cuándo
 
@@ -6297,7 +6126,7 @@ Ningún ensayo ha medido el tiempo de recuperación de la tendinitis de los exte
 
 ## Walkito vs Exakt Health: ¿cuál te conviene?
 
-Language: Spanish (Español) · https://walkito.site/es/walkito-vs-exakt-health/ · published 2026-10-07 · updated 2026-10-13
+Language: Spanish (Español) · https://walkito.site/es/walkito-vs-exakt-health/ · published 2026-10-07 · updated 2026-10-30
 
 Walkito y Exakt Health ofrecen planes de ejercicio para la fascitis plantar, pero están hechas para personas distintas. Exakt es una app para corredores, con más de 15 planes de rehabilitación de lesiones y un programa para volver a correr. Walkito es una app más limitada, enfocada en el dolor de talón, el pie plano y la adaptación al dolor de la mañana. Esta página las compara con honestidad, dice cuándo Exakt es la mejor opción y explica qué hace distinto Walkito.
 
@@ -6412,6 +6241,10 @@ Cada ejercicio de la app lleva un nivel de evidencia (Fuerte, Moderada o Inicial
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
+### Otras alternativas a Exakt Health
+
+Los precios son los que cada app publica en EE. UU., revisados en octubre de 2026. **Prehab** es la más parecida en amplitud; **Injurymap**, en su planteamiento: como Exakt, tiene el marcado CE como dispositivo médico.
+
 ### ¿Cuándo conviene elegir Exakt Health en vez de Walkito?
 
 Elige Exakt Health si se cumple cualquiera de estas:
@@ -6450,10 +6283,6 @@ Si Walkito parece lo correcto para tu situación, así funciona. Respondes pregu
 
 Depende de lo que necesitas. Exakt Health cubre más de 15 lesiones de corredores e incluye planes para volver a correr. Está certificada como dispositivo médico en la UE. Walkito se enfoca en el dolor de talón y el pie plano, con adaptación al dolor de la mañana y sesiones más cortas. Las dos están en iOS y Android. Para corredores con distintos tipos de lesión, Exakt es la mejor opción. Para el dolor de talón con ajuste según cómo amaneces, Walkito se hizo para eso.
 
-#### ¿Cómo es el precio de Walkito comparado con Exakt Health?
-
-Walkito es una suscripción semanal o anual, y el precio actual para tu país aparece en el App Store o Google Play antes de que te suscribas. La opción de rehabilitación más barata de Exakt Health cuesta $59.99 por seis meses, o unos $120 al año, y empieza con una prueba gratis de 7 días.
-
 #### ¿Exakt Health tiene un plan para la fascitis plantar?
 
 Sí. Exakt Health tiene un plan de rehabilitación específico para la fascitis plantar, además de planes para la tendinopatía de Aquiles, los esguinces de tobillo, los desgarros de isquiotibiales, las roturas de menisco y más. El plan para la fascitis plantar termina con un programa de caminar y correr para volver a correr de forma segura, y la app adapta el plan a medida que subes de nivel.
@@ -6462,6 +6291,14 @@ Sí. Exakt Health tiene un plan de rehabilitación específico para la fascitis 
 
 Sí. Walkito está en Google Play desde octubre de 2026, además de en el App Store para iPhone. En Android lee Health Connect (pasos, sesiones de ejercicio, distancia y sueño) en lugar de Apple Health; la asimetría y la velocidad al caminar solo están en iPhone. Exakt Health también funciona en Android y en iOS.
 
+#### ¿Hay una alternativa gratis a Exakt Health?
+
+En parte. Sports Injury Rehabilitation da gratis la fase 1 de cada programa, GaitLab Coach es gratis para revisiones básicas de tu técnica de carrera y PlantarCare es gratis para el dolor de talón en iPhone. Hinge Health es gratis solo a través de tu empresa o tu seguro. Injurymap y Exakt ofrecen primero una prueba gratis.
+
+#### ¿Hay una app como Exakt Health para Android?
+
+Exakt Health ya está en Android. De las alternativas, Injurymap, Sports Injury Rehabilitation, Hinge Health y Walkito también están en Android. Prehab y GaitLab Coach los encontramos en el App Store de iPhone, y PlantarCare es solo para iPhone.
+
 #### ¿Exakt Health es un dispositivo médico?
 
 Sí. Exakt Health está certificada como dispositivo médico en la UE (Alemania). Eso significa que pasó una revisión regulatoria de seguridad y de su uso previsto. Walkito no es un dispositivo médico y no dice diagnosticar ni dar consejo médico.
@@ -6469,120 +6306,6 @@ Sí. Exakt Health está certificada como dispositivo médico en la UE (Alemania)
 #### ¿Qué app se adapta más al dolor de cada día?
 
 Walkito ajusta cada sesión con un chequeo de dolor en la mañana, antes de empezar. Una puntuación de 7/10 o más hace la sesión más suave. Un día con muchos pasos activa una sesión de recuperación al día siguiente. Exakt adapta su plan según cómo calificas cada sesión al terminarla. Walkito reacciona más a los cambios de dolor de cada día; Exakt se enfoca más en el avance general del plan.
-
-## Alternativas a Exakt Health: ¿qué app te conviene?
-
-Language: Spanish (Español) · https://walkito.site/es/alternativas-a-exakt-health/ · published 2026-10-12 · updated 2026-10-12
-
-La mejor alternativa a Exakt Health depende de por qué la buscas. Si quieres pagar menos, Injurymap publica $9.49 al mes o $40.99 al año con dos semanas de prueba gratis; para muchas zonas del cuerpo y una gran biblioteca de videos, Prehab; para una primera fase gratis, Sports Injury Rehabilitation; para la técnica de carrera, GaitLab Coach; con un plan de tu empresa, Hinge Health; y solo para dolor de talón o [pie plano](https://walkito.site/es/pie-plano/), Walkito. Para un corredor que quiere rehabilitación y un plan para volver a correr en una sola app, Exakt sigue siendo la opción más fuerte.
-
-- Exakt Health cuesta $19.99 al mes, $39.99 por 3 meses o $59.99 por 6 meses, con 7 días de prueba gratis (exakthealth.com, revisado en octubre de 2026).
-- Injurymap es la alternativa de pago más barata que encontramos: $9.49 al mes o $40.99 al año en el App Store de EE. UU., con dos semanas de prueba gratis. Como Exakt, tiene el marcado CE como dispositivo médico.
-- Sports Injury Rehabilitation da gratis la fase 1 de cada programa; GaitLab Coach es gratis, con un informe completo de $4.99, sin suscripción.
-- Hinge Health cuesta $0, pero solo a través de tu empresa o tu seguro médico; no puedes comprarla por tu cuenta.
-- Walkito cubre solo el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Es una suscripción semanal o anual, y el precio actual aparece en la tienda.
-
-### ¿Qué alternativas a Exakt Health hay?
-
-Los precios son los que cada app publica en EE. UU., revisados en octubre de 2026. Pueden cambiar según el país y con el tiempo, así que revisa la tienda antes de suscribirte.
-
-### ¿Por qué buscar una alternativa a Exakt Health?
-
-Exakt Health es una buena app. Tiene más de 15 planes de rehabilitación de lesiones, planes para correr de 5K a maratón, más de 600 videos de ejercicios, una calificación de 4.8 con 125 valoraciones en el App Store, y está certificada como dispositivo médico en la UE. Aun así, la gente busca otras opciones por algunas razones:
-
-- El precio: unos $120 al año por la opción de rehabilitación más barata (el plan de 6 meses comprado dos veces).
-- Su dolor no viene de correr y no necesitan un plan para correr.
-- Quieren sesiones más cortas que las de Exakt, que suelen durar de 15 a 30 minutos.
-- Su empresa o su seguro médico ya cubre otro programa.
-- Quieren una app enfocada en un solo problema, como el dolor de talón o el pie plano.
-
-### ¿Cuál es la alternativa más parecida a Exakt Health?
-
-**Prehab** es la más parecida en amplitud. La app de The Prehab Guys está hecha por doctores en fisioterapia y tiene más de 55 programas, más de 170 rutinas y más de 4.000 videos de ejercicios, incluido un programa para la fascitis plantar. Cuesta más ($49 al mes, o unos $200 al año), las sesiones duran unos 20 minutos y solo está en iPhone y en inglés.
-
-**Injurymap** es la más parecida en su planteamiento. Como Exakt, tiene el marcado CE como dispositivo médico. Su ficha dice que sus más de 350 ejercicios fueron elegidos por médicos especialistas, que ajusta tu programa sobre la marcha, y cubre dolor de Aquiles, tobillo, arco, espalda, codo, cadera, rodilla, cuello y hombro. No tiene planes para correr. Tiene una calificación de 4.2 con 80 valoraciones en el App Store.
-
-**Sports Injury Rehabilitation** es la más parecida en su forma de rehabilitar. Sus programas, de los fisioterapeutas deportivos Phil Pask y Paul Tanner, te hacen avanzar por fases cuando cumples ciertos criterios, para lesiones como el esguince de tobillo, la fascitis plantar, la distensión de pantorrilla, la periostitis tibial y la lesión de isquiotibiales. La fase 1 de cada programa es gratis.
-
-### ¿Hay una alternativa más barata que Exakt Health?
-
-Sí. En un año, la opción de rehabilitación más barata de Exakt suma unos $120. Estas cuestan menos:
-
-- Injurymap: $40.99 al año o $9.49 al mes, después de dos semanas de prueba gratis.
-- Sports Injury Rehabilitation: la fase 1 de cada programa es gratis; las siguientes fases son compras en la app.
-- GaitLab Coach: gratis para revisiones básicas de tu técnica de carrera; el informe completo con un plan de ejercicios de 4 semanas cuesta $4.99 una sola vez.
-- Hinge Health: $0, si tu empresa o tu seguro médico la cubre.
-- [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): gratis y sin compras en la app, solo en iPhone, solo para el dolor de talón.
-
-Walkito es una suscripción semanal o anual. El precio actual para tu país aparece en el App Store o en Google Play antes de suscribirte.
-
-### ¿Cuál es la mejor alternativa a Exakt para corredores?
-
-Si corres, ninguna alternativa de esta página reemplaza los planes de Exakt para volver a correr. **GaitLab Coach** hace algo distinto: te grabas corriendo unos 60 segundos, eliges hasta 4 de 16 lesiones de corredores, y la app ordena los hábitos de técnica que más se relacionan con tu dolor. Su ficha cita un ensayo de 2018 en el que corredores principiantes que cambiaron su forma de correr tuvieron un 62 % menos de lesiones en un año, y aclara que es una herramienta de entrenamiento, no un reemplazo del fisioterapeuta.
-
-Para el dolor de talón al correr, nuestra guía sobre el [dolor de talón en corredores](https://walkito.site/es/dolor-de-talon-en-corredores/) explica los ejercicios y cuándo bajar la carga.
-
-### ¿Cuál es la mejor alternativa para el dolor de talón o el pie plano?
-
-Si te duele el talón o el arco y no necesitas un plan para correr, una app enfocada en el pie puede bastar. Para la [fascitis plantar](https://walkito.site/es/fascitis-plantar/), busca una app con el estiramiento de la fascia plantar, un estiramiento de pantorrilla y ejercicios de fuerza que se vuelvan más difíciles, a los que la guía clínica de 2023 da un grado A y B.
-
-Walkito está hecha para eso: dolor de talón, fascitis plantar y pie plano, en sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana). Para más opciones, mira nuestra [guía de apps para la fascitis plantar](https://walkito.site/es/mejor-app-fascitis-plantar/) y nuestra [guía de apps para el pie plano](https://walkito.site/es/mejor-app-pie-plano/).
-
-Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
-
-### ¿Es Walkito una buena alternativa a Exakt Health?
-
-Solo para algunas personas. Walkito es más limitada que Exakt, y más nueva: salió el 1 de octubre de 2026 y todavía no tiene valoraciones.
-
-### ¿En qué sigue siendo mejor Exakt Health?
-
-Exakt es mejor opción que cualquier app de esta página si:
-
-- Corres y quieres rehabilitación y un plan para volver a correr en una sola app.
-- Tu lesión está entre sus más de 15 planes, como la tendinopatía de Aquiles, una lesión de menisco o la rodilla del corredor.
-- Quieres una app con trayectoria: 4.8 con 125 valoraciones en el App Store.
-- Quieres un dispositivo médico certificado en la UE y 7 días de prueba gratis.
-
-### Cómo revisamos estas apps
-
-El 12 de octubre de 2026 leímos las fichas del App Store de EE. UU. de Injurymap, Sports Injury Rehabilitation y GaitLab Coach, y la página de precios de Exakt. Los datos de Prehab, Hinge Health y PlantarCare vienen de nuestra [guía de apps para la fascitis plantar](https://walkito.site/es/mejor-app-fascitis-plantar/), revisada en octubre de 2026, y las plataformas, de nuestro estudio de apps para el dolor de talón. Leímos fichas y sitios web; no probamos las apps por dentro. Los datos de Walkito vienen de sus fichas en las tiendas y de la propia app.
-
-### Cuando una app no basta, consulta a un profesional de la salud
-
-- el dolor empezó después de una lesión, una caída o un chasquido
-- no puedes apoyar el pie, o cojeas
-- el dolor viene con entumecimiento, hormigueo, ardor, hinchazón o calor
-- el dolor te despierta por la noche o está presente en reposo
-- el dolor empeora semana tras semana aunque hagas ejercicio con constancia
-- tienes diabetes, menos sensibilidad en los pies o mala circulación
-
-### Si te duele el talón o el arco
-
-[Walkito](https://walkito.site/es/programa/) arma un plan según dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta, los días que elijas (3, 5 o 7 a la semana), en sesiones de 3, 5 o 10 minutos. Cada mañana, una pregunta rápida ajusta el día.
-
-#### ¿Cuál es la mejor alternativa a Exakt Health?
-
-Depende de por qué quieres cambiar. Injurymap es más barata ($40.99 al año) y cubre muchas articulaciones, Prehab tiene la biblioteca más grande, Sports Injury Rehabilitation tiene una primera fase gratis y Hinge Health es gratis con algunas empresas. Solo para dolor de talón o pie plano, Walkito es una opción más limitada en iPhone y Android.
-
-#### ¿Hay una alternativa gratis a Exakt Health?
-
-En parte. Sports Injury Rehabilitation da gratis la fase 1 de cada programa, GaitLab Coach es gratis para revisiones básicas de tu técnica de carrera y PlantarCare es gratis para el dolor de talón en iPhone. Hinge Health es gratis solo a través de tu empresa o tu seguro. Injurymap y Exakt ofrecen primero una prueba gratis.
-
-#### ¿Cuánto cuesta Exakt Health?
-
-Exakt Health publica $19.99 por un mes, $39.99 por tres meses o $59.99 por seis meses para sus planes de rehabilitación y entrenamiento, y hasta $99.99 al año para los planes para correr. Cada suscripción empieza con 7 días de prueba gratis (exakthealth.com, revisado en octubre de 2026).
-
-#### ¿Hay una app como Exakt Health para Android?
-
-Exakt Health ya está en Android. De las alternativas, Injurymap, Sports Injury Rehabilitation, Hinge Health y Walkito también están en Android. Prehab y GaitLab Coach los encontramos en el App Store de iPhone, y PlantarCare es solo para iPhone.
-
-#### ¿Es Injurymap mejor que Exakt Health?
-
-No en general, pero es más barata. Injurymap cuesta $40.99 al año frente a unos $120 por la opción de rehabilitación más barata de Exakt, y las dos tienen el marcado CE como dispositivo médico. Exakt tiene planes para correr y una fase para volver a correr; Injurymap no. Para corredores, Exakt encaja mejor.
-
-#### ¿Es Walkito una alternativa a Exakt Health?
-
-Solo si tu dolor es de talón, fascitis plantar o pie plano. Walkito tiene sesiones cortas los días que elijas (3, 5 o 7 a la semana) y una pregunta cada mañana, pero no tiene planes para correr, ni profesional de la salud, ni es un dispositivo médico. Es una suscripción semanal o anual; el precio aparece en la tienda.
 
 ## Mejor app para el pie plano: 5 apps comparadas
 
@@ -9572,7 +9295,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 Varios problemas están cerca y pueden sentirse parecido (Choo y colegas, 2020; Tu, 2018):
 
 - Un bulto óseo en la parte de atrás del talón con una zona adolorida e inflamada a la altura del zapato: [deformidad de Haglund](https://walkito.site/es/deformidad-de-haglund/) o bursitis retrocalcánea, muchas veces junto con dolor de Aquiles insercional.
-- Un espolón en el talón en una radiografía: es común y normalmente no es la causa del dolor. Mira [fascitis plantar vs espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/).
+- Un espolón en el talón en una radiografía: es común y normalmente no es la causa del dolor. Mira [fascitis plantar vs espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/).
 - Un dolor profundo, como de moretón, en el centro de la almohadilla del talón, peor en pisos duros: [síndrome de la almohadilla de grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/).
 - Dolor en los dos lados del talón al apretarlo, después de un aumento brusco de caminata o carrera: posible fractura por estrés, que debe valorar un profesional de la salud.
 - Ardor, hormigueo o entumecimiento: posiblemente un nervio atrapado.
@@ -9858,7 +9581,7 @@ En el caso concreto del talón, un estudio finlandés analizó a reclutas milita
 
 Una revisión sistemática de 2016 sobre fracturas por estrés en la pierna y el pie encontró una sensibilidad de la radiografía del 12 % al 56 %, frente al 68 % al 99 % de la resonancia. Los autores señalaron la resonancia como la prueba más sensible y específica y advirtieron que la radiografía probablemente da falsos negativos al principio (Wright y colegas, 2016).
 
-Por eso, un profesional de la salud que sospecha una fractura puede repetir la radiografía después de dos o tres semanas o pedir directamente una resonancia si importa tener una respuesta rápida (Patel y colegas, 2011). Para la fascitis plantar, la guía de 2023 dice que la imagen «normalmente no está indicada en pacientes que cumplen los criterios de la exploración clínica para fascitis plantar hasta que fallan las intervenciones conservadoras» (Koc y colegas, 2023). La [página sobre el espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/) explica por qué un espolón en la radiografía tampoco resuelve la duda.
+Por eso, un profesional de la salud que sospecha una fractura puede repetir la radiografía después de dos o tres semanas o pedir directamente una resonancia si importa tener una respuesta rápida (Patel y colegas, 2011). Para la fascitis plantar, la guía de 2023 dice que la imagen «normalmente no está indicada en pacientes que cumplen los criterios de la exploración clínica para fascitis plantar hasta que fallan las intervenciones conservadoras» (Koc y colegas, 2023). La [página sobre el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) explica por qué un espolón en la radiografía tampoco resuelve la duda.
 
 Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
@@ -10695,7 +10418,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 Una radiografía normal no la descarta: en 30 reclutas con una lesión por estrés del talón en la resonancia, la radiografía simple la mostró solo en el 15 % (Sormaala y colegas, 2006). La comparación lado a lado está en [fascitis plantar o fractura por estrés](https://walkito.site/es/fascitis-plantar-o-fractura-por-estres/).
 
-El dolor de la almohadilla grasa se suele describir como un dolor profundo, como de moretón, en el centro de la almohadilla del talón, peor en pisos duros y descalzo. Igual que una fractura por estrés, suele estar ligado a la actividad (Latt y colegas, 2020), y en una clínica afectaba con más frecuencia a los dos talones y empeoraba al estar de pie (Yi y colegas, 2011). Fue la segunda causa más común en las 250 personas de arriba, con el 14,8 % (Yi y colegas, 2011). Una revisión de 2022 encontró solo siete estudios originales sobre ella, así que gran parte de los consejos se basa en la experiencia, no en ensayos (Chang y colegas, 2022). Más en [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/), y sobre el papel del espolón, en [fascitis plantar o espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/).
+El dolor de la almohadilla grasa se suele describir como un dolor profundo, como de moretón, en el centro de la almohadilla del talón, peor en pisos duros y descalzo. Igual que una fractura por estrés, suele estar ligado a la actividad (Latt y colegas, 2020), y en una clínica afectaba con más frecuencia a los dos talones y empeoraba al estar de pie (Yi y colegas, 2011). Fue la segunda causa más común en las 250 personas de arriba, con el 14,8 % (Yi y colegas, 2011). Una revisión de 2022 encontró solo siete estudios originales sobre ella, así que gran parte de los consejos se basa en la experiencia, no en ensayos (Chang y colegas, 2022). Más en [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/), y sobre el papel del espolón, en [fascitis plantar o espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.

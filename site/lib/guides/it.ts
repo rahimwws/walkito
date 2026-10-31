@@ -597,7 +597,7 @@ export const HEEL_PAIN_IT: Guide = {
     },
     {
       q: 'Lo sperone calcaneare è la stessa cosa della fascite plantare?',
-      a: 'Non proprio. Spesso si dice «[sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/)» (o spina calcaneare) intendendo la fascite plantare, ma a rigore lo sperone calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Gli [esercizi per lo sperone calcaneare](/it/spina-calcaneare-esercizi/) spiegano la stessa routine quando una radiografia mostra uno sperone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.',
+      a: 'Non proprio. Spesso si dice «[sperone calcaneare](/it/spina-calcaneare-esercizi/)» (o spina calcaneare) intendendo la fascite plantare, ma a rigore lo sperone calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Gli [esercizi per lo sperone calcaneare](/it/spina-calcaneare-esercizi/) spiegano la stessa routine quando una radiografia mostra uno sperone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.',
     },
     {
       q: 'Quanto spesso devo fare gli esercizi per la fascite plantare?',

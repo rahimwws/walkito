@@ -596,7 +596,7 @@ export const HEEL_PAIN_FR: Guide = {
     },
     {
       q: 'Une épine calcanéenne, est-ce la même chose qu’une fasciite plantaire\u00A0?',
-      a: 'Pas exactement. On dit souvent «\u00A0[épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/)\u00A0» pour parler de fasciite plantaire, mais au sens strict, une épine calcanéenne est une excroissance osseuse visible à la radio. La fasciite plantaire est une douleur qui vient de la bande de tissu sous le pied. Les exercices de cette page sont ceux que la recommandation de 2023 note pour la douleur sous le talon. Les [exercices pour l’épine calcanéenne](/fr/epine-calcaneenne-exercices/) reprennent la même routine quand une radio montre une épine. Seul un professionnel de santé peut dire ce qui cause la vôtre.',
+      a: 'Pas exactement. On dit souvent «\u00A0[épine calcanéenne](/fr/epine-calcaneenne-exercices/)\u00A0» pour parler de fasciite plantaire, mais au sens strict, une épine calcanéenne est une excroissance osseuse visible à la radio. La fasciite plantaire est une douleur qui vient de la bande de tissu sous le pied. Les exercices de cette page sont ceux que la recommandation de 2023 note pour la douleur sous le talon. Les [exercices pour l’épine calcanéenne](/fr/epine-calcaneenne-exercices/) reprennent la même routine quand une radio montre une épine. Seul un professionnel de santé peut dire ce qui cause la vôtre.',
     },
     {
       q: 'À quelle fréquence faire les exercices pour la fasciite plantaire\u00A0?',
