@@ -36,6 +36,15 @@ export default function robots(): MetadataRoute.Robots {
        */
       { userAgent: '*', allow: '/' },
 
+      /*
+       * Bing only: skip the four languages every page already marks noindex
+       * (PT/FR/IT/DE). Bing still spent its crawl visits re-reading them and
+       * flagged "limited crawl capacity"; this sends those visits to the
+       * pages it can show. Google ignores a bingbot group, so nothing changes
+       * for Google. A crawler obeys only its own group, so Allow / is repeated.
+       */
+      { userAgent: 'bingbot', allow: '/', disallow: ['/pt/', '/fr/', '/it/', '/de/'] },
+
       // Retrieval — these are the ones that produce citations.
       { userAgent: 'OAI-SearchBot', allow: '/' },
       { userAgent: 'ChatGPT-User', allow: '/' },
