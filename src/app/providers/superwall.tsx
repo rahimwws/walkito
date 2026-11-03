@@ -51,7 +51,9 @@ function personalisation(name: string) {
 /** Present in a binary built with `expo-superwall`; null in an older dev client. */
 const nativeModule = requireOptionalNativeModule('SuperwallExpo');
 const platformKey = Platform.OS === 'ios' ? SUPERWALL_KEYS.ios : Platform.OS === 'android' ? SUPERWALL_KEYS.android : undefined;
-const enabled = nativeModule != null && platformKey != null && platformKey !== '';
+// Not in the demo build for recordings, whose seeded users must not count.
+const enabled =
+  nativeModule != null && platformKey != null && platformKey !== '' && process.env.EXPO_PUBLIC_DEMO_BUILD !== '1';
 
 /** The Superwall events worth a line in PostHog: what was shown, and what came of it. */
 const FORWARDED = new Set([

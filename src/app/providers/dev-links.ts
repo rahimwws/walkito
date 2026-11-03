@@ -23,6 +23,11 @@ import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
 import { armSetup, completeOnboarding, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
 
+import { reseedStoreShots } from './store-shots';
+
+/** `walkito.dev://?seedPersona=jess|maria` seeds that store-shots user again
+ * (Metro with `EXPO_PUBLIC_STORE_SHOTS=1` only). */
+const PERSONA_PARAM = /[?&]seedPersona=(\w+)/;
 /** `walkito.dev://?resetOnboarding` puts onboarding back in front;
  * `?finishOnboarding` takes it away again, answers as they are. */
 const RESET_PARAM = /[?&]resetOnboarding\b/;
@@ -216,6 +221,8 @@ export function useDevLinks(): void {
     if (__DEV__) {
       const onUrl = (url: string | null) => {
         if (url == null) return;
+        const persona = PERSONA_PARAM.exec(url);
+        if (persona != null) reseedStoreShots(persona[1]);
         if (RESET_PARAM.test(url)) resetOnboarding();
         if (FINISH_PARAM.test(url)) completeOnboarding();
         if (SETUP_PARAM.test(url)) {

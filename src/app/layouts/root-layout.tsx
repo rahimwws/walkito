@@ -52,7 +52,7 @@ import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 
 import { OfferWall } from './offer-wall';
-import { runStoreShots } from '../providers/store-shots';
+import { runStoreShots, useDemoLinks } from '../providers/store-shots';
 
 /**
  * The app shell: fonts, theme, gesture root, routes.
@@ -174,6 +174,7 @@ function RootLayoutInner() {
   usePlanSync(onboarded);
   useAppUsage();
   useDevLinks();
+  useDemoLinks();
   // Apple's review prompt, at a win only — never during onboarding.
   useReviewAtWin(onboarded);
   // The rating asked for in the founders' note, raised over the screen after it.

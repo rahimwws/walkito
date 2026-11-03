@@ -45,6 +45,8 @@ const storage = {
  * error the user caused.
  */
 export const supabase: SupabaseClient | null =
+  // The demo build for recordings: seeded users stay on the phone.
+  process.env.EXPO_PUBLIC_DEMO_BUILD !== '1' &&
   URL != null && URL.length > 0 && ANON_KEY != null && ANON_KEY.length > 0
     ? createClient(URL, ANON_KEY, {
         auth: {

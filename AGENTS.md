@@ -252,6 +252,8 @@ TRACK=production bun run submit:android
 
 Managed publishing is off (seen 2026-10-29), so a production release goes live by itself once Google approves it. Turn it on in Publishing overview to choose the day.
 
+**Demo build for recordings:** `bun run build:ios:demo` (profile `demo`: production with `EXPO_PUBLIC_DEMO_BUILD=1` and its own channel `demo`, so no production update replaces its JS), uploaded with `submit:ios` to TestFlight and **never attached to a version for review**. It sends nothing to PostHog, AppsFlyer, Superwall or Supabase, and opens past the paywall once a user is seeded. It starts as a fresh install; `walkito://?demo=jess|test|day1|new` swaps in a seeded user (`src/app/providers/store-shots.ts` says who each is), dated back from today.
+
 **What a local build needs:**
 
 - Xcode, CocoaPods and fastlane (`brew install fastlane`; eas-cli calls it for the iOS archive), the Android SDK and NDK, and **JDK 17**: the Mac's default Java is 27, which Gradle for React Native does not take, so `build:android` sets `JAVA_HOME` itself.

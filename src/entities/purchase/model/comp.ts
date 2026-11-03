@@ -39,13 +39,15 @@ const listeners = new Set<() => void>();
  * Development only: "bought" on a simulator, where StoreKit has no purchase
  * flow, so the screens after the first purchase can be walked through. Kept
  * on disk so a reload does not drop back to the paywall. Never read in a
- * release build.
+ * release build, except the demo build for recordings (`EXPO_PUBLIC_DEMO_BUILD`,
+ * TestFlight only), whose seeded users are already past the paywall.
  */
 const DEV_KEY = 'purchase/dev-granted';
-let devGranted = __DEV__ && kv.getBoolean(DEV_KEY) === true;
+const DEV_ACCESS = __DEV__ || process.env.EXPO_PUBLIC_DEMO_BUILD === '1';
+let devGranted = DEV_ACCESS && kv.getBoolean(DEV_KEY) === true;
 
 export function grantDevAccess(): void {
-  if (!__DEV__ || devGranted) return;
+  if (!DEV_ACCESS || devGranted) return;
   devGranted = true;
   kv.set(DEV_KEY, true);
   for (const listener of listeners) listener();

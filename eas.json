@@ -28,6 +28,13 @@
           "ios/build/sourcemaps/main.jsbundle.map"
         ]
       }
+    },
+    "demo": {
+      "extends": "production",
+      "channel": "demo",
+      "env": {
+        "EXPO_PUBLIC_DEMO_BUILD": "1"
+      }
     }
   },
   "submit": {

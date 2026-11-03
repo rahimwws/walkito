@@ -72,6 +72,8 @@ function load(): Sdk | null {
     const { Platform, TurboModuleRegistry } = require('react-native') as typeof import('react-native');
     if (Platform.OS !== 'ios' && Platform.OS !== 'android') return null;
     if (variant() !== 'production') return null;
+    // The demo build for recordings is a production build no ad brought.
+    if (process.env.EXPO_PUBLIC_DEMO_BUILD === '1') return null;
     if (APPSFLYER.devKey.length === 0) {
       console.warn('[appsflyer] EXPO_PUBLIC_APPSFLYER_DEV_KEY is not set; attribution is off in this build');
       return null;
