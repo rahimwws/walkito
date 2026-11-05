@@ -22,4 +22,11 @@ export const WIDGET_EN = {
   'widget.goalRest': 'Rest',
   'widget.goalTest': 'Retest',
   'widget.checkin': 'Check-in',
+  // ── Live Activity: an onboarding left half-way ───────────────────────────
+  /** The Lock Screen line while the onboarding is unfinished. `count` is the
+   * minutes left, rounded up from the screens still to come. */
+  'widget.resumeTitle': { one: '{count} minute from your plan', other: '{count} minutes from your plan' },
+  'widget.resumeReady': 'Your plan is ready',
+  'widget.resumeCta': 'Pick up here',
+  'widget.resumeReadyCta': 'See my plan',
 } as const satisfies Record<string, SourceEntry>;

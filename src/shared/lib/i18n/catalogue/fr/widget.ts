@@ -15,4 +15,8 @@ export const WIDGET_FR = {
   'widget.goalRest': 'Repos',
   'widget.goalTest': 'Réévaluation',
   'widget.checkin': 'Bilan',
+  'widget.resumeTitle': { one: 'À {count} minute de ton plan', other: 'À {count} minutes de ton plan' },
+  'widget.resumeReady': 'Ton plan est prêt',
+  'widget.resumeCta': 'Reprendre ici',
+  'widget.resumeReadyCta': 'Voir mon plan',
 };

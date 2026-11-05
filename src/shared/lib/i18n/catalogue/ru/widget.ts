@@ -15,4 +15,12 @@ export const WIDGET_RU = {
   'widget.goalRest': 'Отдых',
   'widget.goalTest': 'Замеры',
   'widget.checkin': 'Отметка',
+  'widget.resumeTitle': {
+    one: '{count} минута до вашего плана',
+    few: '{count} минуты до вашего плана',
+    many: '{count} минут до вашего плана',
+  },
+  'widget.resumeReady': 'Ваш план готов',
+  'widget.resumeCta': 'Продолжить',
+  'widget.resumeReadyCta': 'Открыть мой план',
 };

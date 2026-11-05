@@ -34,6 +34,7 @@ import {
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
+import { endResumeActivities } from '@/pages/onboarding';
 import { PassSetPreview } from '@/widgets/pass-checkout';
 import { SessionDonePreview } from '@/widgets/session-player';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
@@ -209,6 +210,12 @@ function RootLayoutInner() {
   const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
+  // The onboarding's Lock Screen reminder has done its job once they have
+  // bought or are inside the app.
+  const pastOnboarding = onboarded && (entitled || tabsReachable);
+  useEffect(() => {
+    if (pastOnboarding) endResumeActivities();
+  }, [pastOnboarding]);
   // Home is theirs: bought, past the setup, the "Day 1" card and the tour, and
   // no offer over it. Apple's review prompt at the third open waits for it, and
   // so does any offer to update the app: somebody on the paywall is not yet a

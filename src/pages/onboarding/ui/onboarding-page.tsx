@@ -131,6 +131,7 @@ import {
   type ResolvedOption,
 } from "../model/steps";
 import { BuildingStep, type BuildingRow } from "./building-step";
+import { readyResumeActivity, useResumeActivity } from "./resume-activity";
 import { ChoiceStep } from "./choice-step";
 import { CoachBubble } from "./coach-bubble";
 import { rigFor } from "./coach-rigs";
@@ -369,6 +370,7 @@ export function OnboardingPage() {
   const stamp = useSharedValue(0);
 
   const step = STEPS[index];
+  useResumeActivity(t, index);
 
   /**
    * App Tracking Transparency, asked once: after the last screen of the plan,
@@ -1064,6 +1066,7 @@ export function OnboardingPage() {
     // Meta's backup goal (CompleteTutorial, mapped in AppsFlyer): that the
     // onboarding was finished, nothing about the answers.
     logAppsFlyerEvent("af_tutorial_completion", {});
+    readyResumeActivity(t);
     completeOnboarding();
   };
 

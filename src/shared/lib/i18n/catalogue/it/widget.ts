@@ -15,4 +15,8 @@ export const WIDGET_IT = {
   'widget.goalRest': 'Riposo',
   'widget.goalTest': 'Verifica',
   'widget.checkin': 'Check-in',
+  'widget.resumeTitle': { one: 'A {count} minuto dal tuo piano', other: 'A {count} minuti dal tuo piano' },
+  'widget.resumeReady': 'Il tuo piano è pronto',
+  'widget.resumeCta': 'Riprendi da qui',
+  'widget.resumeReadyCta': 'Vedi il mio piano',
 };

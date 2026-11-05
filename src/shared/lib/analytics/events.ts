@@ -117,6 +117,8 @@ export type AnalyticsEvents = {
    * already had an account, so the code signs in to it (always false from the
    * intro, where every code signs in). */
   sign_in_code_sent: { resend: boolean; existing: boolean };
+  /** The onboarding's Live Activity went up on the Lock Screen, after the first answer. */
+  onboarding_activity_started: Record<string, never>;
   /** Left the flow — by finishing it, or by the header's Skip. */
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 

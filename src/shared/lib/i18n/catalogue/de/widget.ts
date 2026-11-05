@@ -18,4 +18,8 @@ export const WIDGET_DE = {
   'widget.goalRest': 'Ruhetag',
   'widget.goalTest': 'Test',
   'widget.checkin': 'Check-in',
+  'widget.resumeTitle': { one: '{count} Minute bis zu deinem Plan', other: '{count} Minuten bis zu deinem Plan' },
+  'widget.resumeReady': 'Dein Plan ist fertig',
+  'widget.resumeCta': 'Hier weitermachen',
+  'widget.resumeReadyCta': 'Meinen Plan ansehen',
 };

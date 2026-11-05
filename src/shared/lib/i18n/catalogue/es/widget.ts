@@ -15,4 +15,8 @@ export const WIDGET_ES = {
   'widget.goalRest': 'Descanso',
   'widget.goalTest': 'Pruebas',
   'widget.checkin': 'Registro',
+  'widget.resumeTitle': { one: 'A {count} minuto de tu plan', other: 'A {count} minutos de tu plan' },
+  'widget.resumeReady': 'Tu plan está listo',
+  'widget.resumeCta': 'Seguir aquí',
+  'widget.resumeReadyCta': 'Ver mi plan',
 };
