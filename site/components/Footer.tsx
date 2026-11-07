@@ -223,6 +223,9 @@ export function Footer({
           <div className="ft-bottom">
             <div className="ft-meta">
               <p className="ft-copy">© {new Date().getFullYear()} Walkito</p>
+              {/* Legal business name and address: Meta business verification checks
+                  that the site shows them exactly as in the company documents. */}
+              <p className="ft-copy ft-legal">Nemy LLC, 30 N Gould St Ste N, Sheridan, WY 82801, United States</p>
               {switcher && (
                 <LangPicker
                   label={c.language}

@@ -272,6 +272,11 @@
   font-size: 15px;
 }
 
+.ft-legal {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* SocialLinks on the dark panel: each profile as its real app icon
    (components/BrandIcons.tsx), filling the 44px target, like a row of icons on
    a home screen. Two classes beat globals.css's one, so its round hover wash
