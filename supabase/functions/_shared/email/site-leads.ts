@@ -101,7 +101,7 @@ const RU = URLS.ru;
 /** App Store link with a campaign per language, so installs show up by language. */
 function appStoreLink(lang: SiteLang): string {
   const ct = lang === 'en' ? 'email-7day' : `email-7day-${lang}`;
-  return `https://apps.apple.com/app/id6813076846?pt=126870927&ct=${ct}&mt=8`;
+  return `https://apps.apple.com/app/id6813076846?pt=129573652&ct=${ct}&mt=8`;
 }
 
 /** The footer line saying why the email came, in the email's language. */

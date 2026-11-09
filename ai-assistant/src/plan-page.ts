@@ -19,7 +19,7 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
 function storeLink(source: PlanCodeParams['source']): string {
   const url = new URL(APP_STORE);
-  url.searchParams.set('pt', '126870927');
+  url.searchParams.set('pt', '129573652');
   url.searchParams.set('ct', `ai-${source}`);
   url.searchParams.set('mt', '8');
   url.searchParams.set('utm_source', source);
