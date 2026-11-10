@@ -93,7 +93,7 @@ export const PAGES_IT = {
   'pages.welcome.phrase1': 'che fanno male ogni mattina',
   'pages.welcome.phrase2': 'dopo 3 paia di plantari',
   'pages.welcome.phrase3': 'così il prossimo lungo non ti costa una settimana',
-  'pages.welcome.phrase4': 'per tornare a correre',
+  'pages.welcome.phrase4': 'per tornare a camminare bene',
   'pages.welcome.cta': 'Andiamo',
 
   // ── Expired ──────────────────────────────────────────────────────────────

@@ -15,6 +15,7 @@ describe('who a Meta ad brought', () => {
     expect(isMetaInstall({ af_status: 'Non-organic', is_fb: 'true' })).toBe(true);
     expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'Facebook Ads' })).toBe(true);
     expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'instagram_bio' })).toBe(true);
+    expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'restricted' })).toBe(true);
   });
 
   test('anything else is not', () => {
@@ -22,7 +23,7 @@ describe('who a Meta ad brought', () => {
     expect(isMetaInstall({ af_status: 'Organic', is_fb: true })).toBe(false);
     expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'tiktokglobal_int' })).toBe(false);
     expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'Apple Search Ads' })).toBe(false);
-    expect(isMetaInstall({ af_status: 'Non-organic', media_source: 'restricted' })).toBe(false);
+    expect(isMetaInstall({ af_status: 'Organic', media_source: 'restricted' })).toBe(false);
   });
 
   test('the survey answer and the AppsFlyer report, either one, sell the trial', async () => {

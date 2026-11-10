@@ -112,7 +112,7 @@ export const PAGES_RU = {
   'pages.welcome.phrase1': 'которые болят каждое утро',
   'pages.welcome.phrase2': 'после трёх пар стелек',
   'pages.welcome.phrase3': 'чтобы долгая пробежка не стоила вам недели',
-  'pages.welcome.phrase4': 'чтобы снова бегать',
+  'pages.welcome.phrase4': 'чтобы ходить снова было легко',
   'pages.welcome.cta': 'Поехали',
 
   // ── Expired ──────────────────────────────────────────────────────────────

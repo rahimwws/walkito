@@ -225,7 +225,7 @@ export const JOURNEY_RU = {
 
   // ── The coach ────────────────────────────────────────────────────────────
   'onboarding.coach.toeTry': 'Попробуйте прямо сейчас: поднимите только большой палец.',
-  'onboarding.coach.beatFeet': 'Теперь о ваших стопах.',
+  'onboarding.coach.beatFeet': 'Нажмите там, где болит.',
   'onboarding.coach.beatGoal': 'Теперь о том, чего вы хотите.',
   'onboarding.coach.midway': 'Полпути позади, {name}.',
   'onboarding.coach.planReady': 'Ваш план готов, {name}.',

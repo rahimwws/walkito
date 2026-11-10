@@ -227,7 +227,7 @@ export const JOURNEY_IT = {
 
   // ── The coach ────────────────────────────────────────────────────────────
   'onboarding.coach.toeTry': 'Prova subito: solleva solo l’alluce.',
-  'onboarding.coach.beatFeet': 'Ora, i tuoi piedi.',
+  'onboarding.coach.beatFeet': 'Tocca dove fa male.',
   'onboarding.coach.beatGoal': 'Ora, quello che vuoi ottenere.',
   'onboarding.coach.midway': 'Sei a metà strada, {name}.',
   'onboarding.coach.planReady': 'Il tuo piano è pronto, {name}.',

@@ -371,9 +371,10 @@ export const ONBOARDING_FR = {
     '{volume}. Les deux premières semaines posent une base avant toute charge.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Faisons un contrat, {name}',
-  'onboarding.contract.blurb': 'Pas avec moi. Avec toi-même.',
-  'onboarding.contract.hint': 'Signe ici',
+  'onboarding.contract.title': 'Une promesse, {name}',
+  'onboarding.contract.blurb': 'Pas à moi. À toi-même.',
+  'onboarding.contract.hint': 'Signe ici, si tu veux',
+  'onboarding.contract.cta': 'Je m’engage',
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Engagement',
   'onboarding.contract.stampLine1': 'Jour un',

@@ -96,7 +96,7 @@ export const PAGES_ES = {
   'pages.welcome.phrase1': 'que te duelen cada mañana',
   'pages.welcome.phrase2': 'después de 3 pares de plantillas',
   'pages.welcome.phrase3': 'para que tu próxima carrera larga no te cueste una semana',
-  'pages.welcome.phrase4': 'para volver a correr',
+  'pages.welcome.phrase4': 'para volver a caminar a gusto',
   'pages.welcome.cta': 'Vamos',
 
   // ── Expired ──────────────────────────────────────────────────────────────

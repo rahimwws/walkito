@@ -37,8 +37,11 @@ const PAYWALL_TRIAL_KEY = 'purchase/paywall-sold-trial';
 const META_ANSWERS = new Set(['instagram', 'facebook']);
 
 /** AppsFlyer's media source for Meta is "Facebook Ads"; the rest cover
- * Instagram-named and Meta-named sources set by hand on a link. */
-const META_SOURCE = /facebook|instagram|^meta/i;
+ * Instagram-named and Meta-named sources set by hand on a link. "restricted"
+ * is what AppsFlyer reports for a Meta install while Meta withholds the
+ * campaign detail (its Advanced Mobile Measurement terms not accepted): the
+ * only paid sources are Meta and Apple Ads, and Apple Ads is never restricted. */
+const META_SOURCE = /facebook|instagram|^meta|^restricted$/i;
 
 /** Whether AppsFlyer's conversion data says a Meta ad brought this install:
  * its `is_fb` flag, which AppsFlyer sets on Meta installs only, or a Meta media

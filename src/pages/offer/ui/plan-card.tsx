@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, { ReduceMotion, interpolateColor, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
@@ -25,6 +25,8 @@ export type PlanCardProps = {
   /** The store answered and has no such plan: shown, never chosen. */
   disabled?: boolean;
   onPress: () => void;
+  /** Under the plan's own line, inside the card: the free week, day by day. */
+  children?: ReactNode;
 };
 
 /**
@@ -36,7 +38,7 @@ export type PlanCardProps = {
  * Until the store answers there is no figure: a quiet bar holds its place,
  * so nothing is quoted that the store has not said.
  */
-export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress }: PlanCardProps) {
+export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress, children }: PlanCardProps) {
   const on = useSharedValue(selected ? 1 : 0);
   useEffect(() => {
     on.value = withTiming(selected ? 1 : 0, { duration: SELECT_MS, reduceMotion: ReduceMotion.System });
@@ -112,6 +114,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
           </Text>
         </View>
       </View>
+      {children}
     </Raised>
   );
 }

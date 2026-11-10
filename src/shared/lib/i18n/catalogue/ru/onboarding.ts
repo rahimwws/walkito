@@ -379,9 +379,10 @@ export const ONBOARDING_RU = {
     '{volume}. Первые две недели строим базу - до любой нагрузки.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Давайте заключим договор, {name}',
-  'onboarding.contract.blurb': 'Не со мной. С собой.',
-  'onboarding.contract.hint': 'Распишитесь здесь',
+  'onboarding.contract.title': 'Одно обещание, {name}',
+  'onboarding.contract.blurb': 'Не мне. Себе.',
+  'onboarding.contract.hint': 'Распишитесь, если хотите',
+  'onboarding.contract.cta': 'Обещаю',
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Обязуюсь',
   'onboarding.contract.stampLine1': 'День первый',

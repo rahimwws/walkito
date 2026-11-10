@@ -1,4 +1,5 @@
 import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
+import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
 import SecurityCheckIcon from '@hugeicons/core-free-icons/SecurityCheckIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -36,19 +37,29 @@ import { ReviewerLine } from '@/shared/ui/reviewer';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 
 import { describeCta, describePlan, splitHighlight } from '../model/plans';
+import { cloudEdgeHeight } from './cloud-edge';
 import { PlanCard, PlusPill } from './plan-card';
 import { PlansHero } from './plans-hero';
 import { PlansTable } from './plans-table';
-import { TrialTimeline } from './trial-timeline';
-import { PILL, PLUS, SHEET } from './plans-theme';
+import { TrialTimeline, trialDays } from './trial-timeline';
+import { PLUS, SHEET } from './plans-theme';
 
-/** How long after "Show all plans" "Not now" appears. Not before it: the
- * founders' rule is that the plans are seen in full before anyone is offered
- * a way past them. */
-export const CLOSE_AFTER_MS = 3000;
+/**
+ * How long the plans stand before "Not now" and the close appear.
+ *
+ * From the step arriving, not from "Show all plans" as it was: nobody a Meta
+ * ad brought ever tapped "Show all plans", so for them the way on never
+ * appeared, and all of them left the app from this screen instead. Long
+ * enough to read the plan and the free week first.
+ */
+export const CLOSE_AFTER_MS = 6000;
 
 /** The sky's share of the screen. */
 const SKY = 0.45;
+/** Over a free week, whose days have to be read without scrolling, the sky is
+ * only as tall as he needs at his smallest: this much under the status bar,
+ * plus the cloud edge. */
+const SKY_TRIAL_ROOM = 112;
 /** "Show all plans": the rows open over this long, each a beat after the last. */
 const OPEN_MS = 420;
 const ROW_STAGGER = 0.18;
@@ -98,15 +109,21 @@ export type PlansStepProps = {
  *
  * BitePal's paywall, with our mascot: a sky with him in it, a white sheet with
  * a cloud edge over his legs, "Walkito Plus", one headline, the annual plan,
- * "Show all plans", what Plus includes, and a black button floating over the
- * foot of it all. The sheet stays white in the dark appearance, as the
- * reference's does, so the kit under it is drawn light.
+ * "Show all plans", what Plus includes, and the button floating over the
+ * foot of it all, in the violet every button on the way here was. The sheet
+ * stays white in the dark appearance, as the reference's does, so the kit
+ * under it is drawn light.
  *
- * A hard paywall: there is no way into the app without buying. Three seconds
- * after "Show all plans", a close button fades in over the sky and "Not now"
- * appears at the very bottom; both lead to the one-time trial offer, the
- * offer screen's next state (`skipPaywall`), never to the app. Nothing here
- * may say or imply the app can be used without Plus.
+ * When the annual starts with a free trial the step is about that week: a
+ * shorter sky, a headline that says it, the three days that matter inside the
+ * plan's own card, and "No payment due today" over the button, all in the
+ * first screenful.
+ *
+ * A hard paywall: there is no way into the app without buying. A few seconds
+ * after the step arrives (`CLOSE_AFTER_MS`), a close button fades in over
+ * the sky and "Not now" appears at the very bottom; both lead to the
+ * one-time trial offer, the offer screen's next state (`skipPaywall`), never
+ * to the app. Nothing here may say or imply the app can be used without Plus.
  */
 export function PlansStep({
   stepBar,
@@ -132,19 +149,23 @@ export function PlansStep({
   const focused = useIsFocused();
   const revealed = useSplashRevealed();
   const width = frame.width;
+  /** The lead plan starts with a free trial: the step is then about that
+   * week, day by day, and everything else makes room for it. */
+  const freeDays = comeback ? null : trialDays(lead.plan);
+  const trial = freeDays != null;
   // Its share of the screen, but never so much that the lead plan starts
   // under the floating button on a short phone.
-  const skyHeight = Math.round(Math.max(Math.min(frame.height * SKY, frame.height - 420), 240));
+  const skyHeight = trial
+    ? insets.top + SKY_TRIAL_ROOM + cloudEdgeHeight(width)
+    : Math.round(Math.max(Math.min(frame.height * SKY, frame.height - 420), 240));
 
-  // ── "Show all plans", and "Not now" three seconds after it ──────────────
+  // ── "Show all plans", and "Not now" a few seconds after the step arrives ─
   const [expanded, setExpanded] = useState(false);
-  const [waited, setWaited] = useState(false);
+  const [closable, setClosable] = useState(false);
   useEffect(() => {
-    if (!expanded || waited) return undefined;
-    const timer = setTimeout(() => setWaited(true), CLOSE_AFTER_MS);
+    const timer = setTimeout(() => setClosable(true), CLOSE_AFTER_MS);
     return () => clearTimeout(timer);
-  }, [expanded, waited]);
-  const closable = waited;
+  }, []);
 
   const open = useSharedValue(0);
   // Measured off-flow (the rows sit absolutely inside the clip), so the
@@ -170,7 +191,11 @@ export function PlansStep({
 
   const chosen = selected === lead.kind ? lead : (extras.find((row) => row.kind === selected) ?? lead);
   const cta = describeCta(chosen.kind, chosen.plan, t, Platform.OS === 'android');
-  const headline = splitHighlight(t(comeback ? 'offer.plans.headlineComeback' : 'offer.plans.headline'));
+  const headline = splitHighlight(
+    freeDays != null
+      ? t('offer.plans.headlineTrial', { count: freeDays })
+      : t(comeback ? 'offer.plans.headlineComeback' : 'offer.plans.headline'),
+  );
   const many = extras.length > 0 && expanded;
 
   return (
@@ -201,7 +226,7 @@ export function PlansStep({
 
           {/* The room under the last row for the floating dock is the sheet's own
               padding, so it stays white rather than showing the screen under it. */}
-          <View style={[styles.sheet, { backgroundColor: SHEET.surface, paddingBottom: dockHeight + 12 }]}>
+          <View style={[styles.sheet, trial && styles.sheetTrial, { backgroundColor: SHEET.surface, paddingBottom: dockHeight + 12 }]}>
             <View style={styles.brand}>
               <Text style={[styles.wordmark, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
                 {t('offer.plans.brand')}
@@ -216,7 +241,7 @@ export function PlansStep({
               numberOfLines={2}
               adjustsFontSizeToFit
               minimumFontScale={0.7}
-              style={[width < 360 ? styles.headlineSmall : styles.headline, { color: SHEET.ink }]}
+              style={[width < 360 || trial ? styles.headlineSmall : styles.headline, { color: SHEET.ink }]}
               maxFontSizeMultiplier={1.25}>
               {headline.map((run, i) =>
                 run.lit ? (
@@ -229,17 +254,22 @@ export function PlansStep({
               )}
             </Text>
 
-            <ReviewerLine long color={SHEET.caption} />
+            {!trial && <ReviewerLine long color={SHEET.caption} />}
 
             <View accessibilityRole="radiogroup" style={styles.plans}>
               <PlanCard
                 copy={describePlan(lead.kind, lead.plan, t)}
-                badge={leadBadge}
+                // Over a free week the pill waits for the other plans: "most
+                // popular" of one says nothing, and its row is the room the
+                // week's last day needs.
+                badge={trial && !many ? null : leadBadge}
                 selected={selected === lead.kind}
                 radio={many}
                 disabled={lead.missing}
-                onPress={() => onSelect(lead.kind)}
-              />
+                onPress={() => onSelect(lead.kind)}>
+                {/* The free week, in the card of the plan it belongs to. */}
+                {chosen.kind === lead.kind && <TrialTimeline plan={lead.plan} />}
+              </PlanCard>
 
               {extras.length > 0 && (
                 <Animated.View
@@ -267,8 +297,6 @@ export function PlansStep({
                 </Animated.View>
               )}
 
-              {chosen.kind === 'annual' && <TrialTimeline plan={chosen.plan} />}
-
               {!expanded && (
                 <Pressable
                   accessibilityRole="button"
@@ -282,6 +310,8 @@ export function PlansStep({
                 </Pressable>
               )}
             </View>
+
+            {trial && <ReviewerLine long color={SHEET.caption} />}
 
             <PlansTable />
 
@@ -315,11 +345,21 @@ export function PlansStep({
           Terms and Privacy stay with it rather than at the end of a scroll. */}
         <View
           onLayout={(event) => setDockHeight(Math.round(event.nativeEvent.layout.height))}
-          style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 12) + 2 }]}>
+          style={[styles.dock, cta.free === true && styles.dockFree, { paddingBottom: Math.max(insets.bottom, 12) + 2 }]}>
           {notice != null && <Text style={[styles.notice, { color: SHEET.label }]}>{notice}</Text>}
+          {/* The answer to the first question a free trial raises, in the one
+            place nobody misses: over the button. */}
+          {cta.free === true && notice == null && (
+            <View style={styles.free}>
+              <HugeiconsIcon icon={CheckmarkCircle02Icon} size={18} color={PLUS.accent} strokeWidth={2.2} />
+              <Text style={[styles.freeText, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
+                {t('offer.plans.noPaymentToday')}
+              </Text>
+            </View>
+          )}
           <Raised
-            face={PILL.face}
-            lip={PILL.lip}
+            face={PLUS.accent}
+            lip={PLUS.accentLip}
             depth={5}
             radius={30}
             haptic="medium"
@@ -331,9 +371,9 @@ export function PlansStep({
             style={styles.pillOuter}
             contentStyle={styles.pillFace}>
             {busy ? (
-              <ActivityIndicator color={PILL.label} />
+              <ActivityIndicator color={PLUS.onAccent} />
             ) : (
-              <Text style={[styles.pillLabel, { color: PILL.label }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.3}>
+              <Text style={[styles.pillLabel, { color: PLUS.onAccent }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.3}>
                 {cta.label}
               </Text>
             )}
@@ -377,6 +417,8 @@ const styles = StyleSheet.create({
     paddingTop: 2,
     gap: 18,
   },
+  /** A free week: closer set, so its last day clears the button. */
+  sheetTrial: { gap: 14 },
   brand: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -421,19 +463,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     experimental_backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.94) 22%, #FFFFFF 40%)',
   },
+  /** Solid from the "no payment" line down, so the plans link scrolled
+   * under it cannot show through the words. */
+  dockFree: {
+    experimental_backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, #FFFFFF 11%)',
+  },
   notice: {
     ...fonts.medium(13),
     lineHeight: 17,
     textAlign: 'center',
   },
-  pillOuter: { alignSelf: 'center', minWidth: '72%', maxWidth: '100%' },
+  free: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6 },
+  freeText: fonts.bold(16, -0.2),
+  pillOuter: { alignSelf: 'stretch' },
   pillFace: {
-    height: 56,
+    height: 58,
     paddingHorizontal: 28,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  pillLabel: fonts.heavy(18, -0.2),
+  pillLabel: fonts.heavy(19, -0.2),
   terms: {
     flexDirection: 'row',
     alignItems: 'center',

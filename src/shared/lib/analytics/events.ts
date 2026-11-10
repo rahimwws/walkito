@@ -72,6 +72,9 @@ export type AnalyticsEvents = {
   // ── Onboarding ───────────────────────────────────────────────────────────
   /** The first screen of the flow appeared. The top of every funnel. */
   onboarding_started: Record<string, never>;
+  /** The flow opened on the question it was left on, with the answers kept:
+   * a return after the process was dropped, not a second start. */
+  onboarding_resumed: { step: string; index: number };
   /** A step appeared. `step` is its stable key from `STEPS`, never its title. */
   onboarding_step_viewed: { step: string; index: number; act: number };
   /** Only for the few answers that segment a funnel without describing a body. */
@@ -124,8 +127,13 @@ export type AnalyticsEvents = {
 
   // ── Paywall ──────────────────────────────────────────────────────────────
   paywall_viewed: { offering: string; boosted: boolean };
-  /** A step of the first paywall: the two screens before it, then the plans. */
-  paywall_step_viewed: { step: 1 | 2 | 3 };
+  /** A step of the first paywall: the two screens before it, then the plans.
+   * `story` is which two they are: the free week, or how the plan starts. */
+  paywall_step_viewed: { step: 1 | 2 | 3; story: 'trial' | 'plan' };
+  /** The plans, once the store had answered. `trial` is whether the annual
+   * they showed started with a free trial for this customer, which the
+   * offering's name alone does not say. Once per view. */
+  paywall_plans_shown: { offering: string; trial: boolean };
   paywall_plan_selected: { plan: PlanTier };
   /** "Have a code?" under the plans. */
   paywall_code_opened: Record<string, never>;

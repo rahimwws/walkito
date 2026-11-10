@@ -245,7 +245,7 @@ export const JOURNEY_EN = {
   // plan ready. They speak to the flow, never to an answer: nothing here
   // judges what was said.
   'onboarding.coach.toeTry': 'Try it now: lift just your big toe.',
-  'onboarding.coach.beatFeet': 'Now, your feet.',
+  'onboarding.coach.beatFeet': 'Tap where it hurts.',
   'onboarding.coach.beatGoal': 'Now, what you want from this.',
   'onboarding.coach.midway': 'Halfway there, {name}.',
   'onboarding.coach.planReady': 'Your plan is ready, {name}.',

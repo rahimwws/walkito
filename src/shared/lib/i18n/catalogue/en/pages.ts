@@ -141,7 +141,7 @@ export const PAGES_EN = {
   'pages.welcome.phrase1': 'that hurt every morning',
   'pages.welcome.phrase2': 'after 3 pairs of insoles',
   'pages.welcome.phrase3': 'so your next long run doesn’t cost you a week',
-  'pages.welcome.phrase4': 'so you can run again',
+  'pages.welcome.phrase4': 'so walking feels good again',
   'pages.welcome.cta': 'Let’s go',
 
   // ── Expired ──────────────────────────────────────────────────────────────

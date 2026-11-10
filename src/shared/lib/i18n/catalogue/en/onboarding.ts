@@ -444,9 +444,11 @@ export const ONBOARDING_EN = {
     '{volume}. The first two weeks build a base before any loading.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Let’s make a contract, {name}',
-  'onboarding.contract.blurb': 'Not with me. With yourself.',
-  'onboarding.contract.hint': 'Sign here',
+  'onboarding.contract.title': 'One promise, {name}',
+  'onboarding.contract.blurb': 'Not to me. To yourself.',
+  'onboarding.contract.hint': 'Sign here, if you like',
+  /** The button: it agrees with or without a signature. */
+  'onboarding.contract.cta': 'I’m in',
   /** The rubber stamp. Two bottom lines because it is set as two stacked rows
    * of small caps — each language splits its own phrase across them, and the
    * halves are not the same halves. Keep them short: the ring is 132pt wide. */

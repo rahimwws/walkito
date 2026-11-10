@@ -37,7 +37,7 @@ import {
   type AcquisitionSource,
 } from "@/shared/lib/analytics";
 import { logAppsFlyerEvent } from "@/shared/lib/appsflyer";
-import { requestTracking } from "@/shared/lib/tracking";
+import { requestTracking, trackingStatus } from "@/shared/lib/tracking";
 import { useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
@@ -119,6 +119,7 @@ import { PLANS, recommendedIndex } from "../model/plans";
 import { primaryPain } from "../model/reflection";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
+import { clearProgress, loadProgress, saveProgress } from "../model/progress";
 import {
   RECOMMENDED,
   STEPS,
@@ -336,8 +337,15 @@ export function OnboardingPage() {
   const reduceMotion = useReducedMotion();
   const { height: windowHeight } = useWindowDimensions();
 
-  const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<Answers>(seedAnswers);
+  /** Where a return to the flow lands: the question it was left on, with the
+   * answers given so far (`model/progress`). Read once, as the screen mounts. */
+  const [resumed] = useState(() => {
+    const saved = loadProgress();
+    const at = saved == null ? -1 : STEPS.findIndex((candidate) => candidate.key === saved.step);
+    return saved != null && at > 0 ? { ...saved, index: at } : null;
+  });
+  const [index, setIndex] = useState(resumed?.index ?? 0);
+  const [answers, setAnswers] = useState<Answers>(() => ({ ...seedAnswers(), ...resumed?.answers }));
   /** The answers as last written, ahead of the render that shows them: two
    * taps in one frame, or a tap and then Next, each build on the one before,
    * and the coach compares an answer with the one it replaced. */
@@ -345,8 +353,8 @@ export function OnboardingPage() {
   answersRef.current = answers;
   /** The daily reminder, minutes past midnight. Follows the habit they pick
    * until they change it by hand. */
-  const [reminder, setReminder] = useState(() => wakeMinutes() + 15);
-  const reminderTouched = useRef(false);
+  const [reminder, setReminder] = useState(() => resumed?.reminder ?? wakeMinutes() + 15);
+  const reminderTouched = useRef(resumed?.reminder != null);
   const [notify, setNotify] = useState<boolean | null>(null);
   /** The welcome screen introduces itself before it asks for anything. */
   const [introReady, setIntroReady] = useState(false);
@@ -363,8 +371,7 @@ export function OnboardingPage() {
   const [habitPicking, setHabitPicking] = useState(false);
   const [clipViewerOpen, setClipViewerOpen] = useState(false);
 
-  /** Whether the contract has been signed, and how far its stamp has come down. */
-  const [signed, setSigned] = useState(false);
+  /** How far the contract's stamp has come down. */
   const [, setDrawing] = useState(false);
   const [sealing, setSealing] = useState(false);
   const stamp = useSharedValue(0);
@@ -373,19 +380,33 @@ export function OnboardingPage() {
   useResumeActivity(t, index);
 
   /**
-   * App Tracking Transparency, asked once: after the last screen of the plan,
-   * on the way to the paywall (`askTracking` in `onNext`). The system sheet
+   * App Tracking Transparency, asked once: as the welcome screen is left, the
+   * first tap of a first launch (`askTracking` in `onNext`). The system sheet
    * alone, with nothing of ours in front of it and nothing offered for the
    * answer. AppsFlyer does not start until it is answered
-   * (`@/shared/lib/tracking`), so the install and every event before it carry
+   * (`@/shared/lib/tracking`), so the install and every event after it carry
    * the IDFA when it was allowed. Allowed, RevenueCat gets the IDFA too.
+   *
+   * It used to be asked after the last screen, on the way to the paywall. Two
+   * things were wrong with that. AppsFlyer never started for anyone who left
+   * the questions early, so on the first day of paid installs it reported 19
+   * of some 40: the ad network was told about half of what it had bought. And
+   * "track your activity across other companies' apps" was the last thing
+   * read before a price, by people deciding whether to trust the app.
+   *
+   * Called again at the end, where it only opens AppsFlyer's gate for an
+   * install that got past the welcome on a version that did not ask there.
    */
-  const askTracking = () =>
-    requestTracking().then((status) => {
-      if (status === "unavailable") return;
-      track("att_answered", { granted: status === "granted" });
-      if (status === "granted") collectAdIdentifiers();
-    });
+  const askTracking = async () => {
+    const asking = (await trackingStatus()) === "undetermined";
+    const status = await requestTracking();
+    if (!asking || (status !== "granted" && status !== "denied")) return;
+    track("att_answered", { granted: status === "granted" });
+    if (status === "granted") collectAdIdentifiers();
+  };
+  /** Set from the welcome's tap until the question is answered, so a second
+   * tap under the system sheet does not move the flow twice. */
+  const leavingWelcome = useRef(false);
   const answer = answers[step.key];
 
   const name = typeof answers.name === "string" ? answers.name : "";
@@ -734,6 +755,26 @@ export function OnboardingPage() {
   const arriveRef = useRef(arrive);
   arriveRef.current = arrive;
 
+  // A return to the flow: the coach takes his place on the question it lands
+  // on, as he would have on arriving from the one before.
+  useEffect(() => {
+    if (resumed == null) return;
+    track("onboarding_resumed", { step: STEPS[resumed.index].key, index: resumed.index });
+    arriveRef.current(resumed.index, answersRef.current);
+    // Once, as the screen mounts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Kept as it is answered, so leaving is never starting over.
+  useEffect(() => {
+    if (index === 0) return;
+    saveProgress({
+      step: step.key,
+      answers,
+      reminder: reminderTouched.current ? reminder : null,
+    });
+  }, [index, step.key, answers, reminder]);
+
   /** The name as typed, once typing has paused: said back then, rather than
    * retyped on every keystroke. */
   const [settledName, setSettledName] = useState("");
@@ -831,8 +872,11 @@ export function OnboardingPage() {
         return list(answer).length > 0;
       case "test-balance":
         return balance.left != null && balance.right != null;
+      // Signing is an invitation, not a gate: on the first day of paid
+      // installs five of the 25 people who reached the pad never got past
+      // it, some after opening the app eight times.
       case "contract":
-        return signed && !sealing;
+        return !sealing;
       default:
         return true;
     }
@@ -1067,11 +1111,24 @@ export function OnboardingPage() {
     // onboarding was finished, nothing about the answers.
     logAppsFlyerEvent("af_tutorial_completion", {});
     readyResumeActivity(t);
+    clearProgress();
     completeOnboarding();
   };
 
   const onNext = () => {
     if (!canAdvance) return;
+
+    // The tracking question, on the way out of the welcome: the flow moves on
+    // once it is answered, whatever the answer.
+    if (step.kind === "welcome") {
+      if (leavingWelcome.current) return;
+      leavingWelcome.current = true;
+      void askTracking().finally(() => {
+        leavingWelcome.current = false;
+        move(true);
+      });
+      return;
+    }
 
     // The stamp is the acknowledgement, so it plays before the screen leaves.
     if (step.kind === "contract") {
@@ -1149,10 +1206,11 @@ export function OnboardingPage() {
         return t("onboarding.why.cta");
       case "test-intro":
         return t("onboarding.test.start");
+      case "contract":
+        return t("onboarding.contract.cta");
       case "midway":
       case "first-week":
       case "outlook":
-      case "contract":
         return t("onboarding.cta.continue");
       default:
         return t("onboarding.cta.next");
@@ -1455,7 +1513,6 @@ export function OnboardingPage() {
                 <View style={styles.scroll}>
                   <ContractStep
                     name={name}
-                    onSignedChange={setSigned}
                     onDrawingChange={setDrawing}
                     stamp={stamp}
                     sealing={sealing}

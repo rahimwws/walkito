@@ -371,9 +371,10 @@ export const ONBOARDING_IT = {
     '{volume}. Le prime due settimane costruiscono una base prima di qualsiasi carico.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Facciamo un patto, {name}',
-  'onboarding.contract.blurb': 'Non con me. Con te.',
-  'onboarding.contract.hint': 'Firma qui',
+  'onboarding.contract.title': 'Una promessa, {name}',
+  'onboarding.contract.blurb': 'Non a me. A te.',
+  'onboarding.contract.hint': 'Firma qui, se vuoi',
+  'onboarding.contract.cta': 'Ci sto',
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Impegno',
   'onboarding.contract.stampLine1': 'Giorno uno',

@@ -83,6 +83,9 @@ function toBox(rig: MascotRig, size: number, [x, y]: readonly [number, number]) 
   return { x: (x - rig.box.x) * k, y: (y - rig.box.y) * k };
 }
 
+/** His smallest: the short sky over a free week (`plans-step.tsx`). */
+const MIN_SIZE = 110;
+
 /** Where everything goes, from the size of the sky. */
 export function heroGeometry(width: number, height: number, topInset: number) {
   const edge = cloudEdgeHeight(width);
@@ -90,7 +93,7 @@ export function heroGeometry(width: number, height: number, topInset: number) {
   const crown = height - edge + CLOUD_PEAK.crown * edge;
   // Under the step bar and the close button, and never wider than half the phone.
   const room = crown - (topInset + 64);
-  const size = Math.round(Math.min(Math.max(Math.min(width * 0.54, room / (SINK - HEAD)), 140), 240));
+  const size = Math.round(Math.min(Math.max(Math.min(width * 0.54, room / (SINK - HEAD)), MIN_SIZE), 240));
   const body = toBox(RIG, size, RIG.bodyCentre);
   return {
     edge,
