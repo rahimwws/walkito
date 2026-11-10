@@ -60,6 +60,10 @@ export const PLAYER_EN = {
   'player.header.meta': '{minutes} · {moves}',
   // The chip on the demonstration: which move of the session this is.
   'player.chip.position': '{index} of {total}',
+  // The switch on the demonstration: the clip of the motion, or the drawing
+  // of the position to hold. One at a time, never both on the screen.
+  'player.media.video': 'Video',
+  'player.media.pose': 'Pose',
   // The one button under the readout. It is an action in every state: pause
   // the move, pick it up again, or close a session that is over.
   'player.cta.pause': 'Pause',
