@@ -20,7 +20,7 @@
 export const ONBOARDING_PT = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   'onboarding.act.about': 'Sobre você',
-  'onboarding.act.sport': 'Seu esporte',
+  'onboarding.act.sport': 'Seu dia',
   'onboarding.act.health': 'Sua saúde',
   'onboarding.act.plan': 'Seu plano',
 
@@ -146,12 +146,12 @@ export const ONBOARDING_PT = {
   'onboarding.goal.consistent': 'Correr com mais constância',
   'onboarding.goal.stronger': 'Fortalecer as pernas',
   'onboarding.goal.injuryfree': 'Evitar lesões',
-  'onboarding.goal.flatfeet': 'Arcos mais fortes',
+  'onboarding.goal.flatfeet': 'Arcos mais fortes (pé chato)',
   'onboarding.goal.ankles': 'Tornozelos mais firmes',
   'onboarding.goal.jump': 'Pular mais alto',
-  'onboarding.goal.allday': 'Aguentar o dia todo de pé',
+  'onboarding.goal.allday': 'Passar o dia sem dor',
   'onboarding.goal.comeback': 'Voltar depois de uma lesão',
-  'onboarding.goal.steady': 'Andar com confiança',
+  'onboarding.goal.steady': 'Caminhar mais, com mais conforto',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'Quantos dias por semana?',
@@ -178,10 +178,10 @@ export const ONBOARDING_PT = {
   'onboarding.reminder.title': 'Quando devemos lembrar você?',
   'onboarding.reminder.blurb': 'Um lembrete por dia. Escolha um horário em que você costuma ter cinco minutos livres.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Onde costuma doer, {name}?',
+  'onboarding.pain.title': 'Onde dói na maioria dos dias, {name}?',
   'onboarding.pain.blurb': 'Toque nos pontos da perna, até {count}.',
   'onboarding.pain.full': 'Até {count} por vez. Toque em um para trocar.',
-  'onboarding.pain.none': 'Nada dói agora',
+  'onboarding.pain.none': 'Quero prevenir dores',
   'onboarding.pain.disclaimer':
     'Não é orientação médica. Se a dor for aguda, estiver piorando ou vier com inchaço ou dormência, procure um médico.',
 
@@ -313,8 +313,7 @@ export const ONBOARDING_PT = {
   'onboarding.notify.ask': 'Conte com a gente',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'agora',
-  'onboarding.notify.bannerBody':
-    'Hoje é dia de força nos pés - 7 minutos. Suas canelas vão agradecer.',
+  'onboarding.notify.bannerBody': 'Hoje: 5 minutos para os seus calcanhares, antes do primeiro passo.',
   'onboarding.notify.turnOn': 'Ativar notificações',
   'onboarding.notify.opening': 'Abrindo…',
   'onboarding.notify.notNow': 'Agora não',
@@ -375,9 +374,10 @@ export const ONBOARDING_PT = {
     '{volume}. As duas primeiras semanas constroem uma base antes de qualquer carga.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Vamos fazer um contrato, {name}',
-  'onboarding.contract.blurb': 'Não comigo. Com você.',
-  'onboarding.contract.hint': 'Assine aqui',
+  'onboarding.contract.title': 'Uma promessa, {name}',
+  'onboarding.contract.blurb': 'Não para mim. Para você.',
+  'onboarding.contract.hint': 'Assine aqui, se quiser',
+  'onboarding.contract.cta': 'Estou dentro',
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Compromisso',
   'onboarding.contract.stampLine1': 'Dia um',

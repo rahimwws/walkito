@@ -48,6 +48,8 @@ import { EXTRA_PLANS } from '../model/plans';
 import { OfferHero } from './offer-hero';
 import { IntroHow, IntroNext, IntroPlan, StepBar } from './offer-intro';
 import { PlansStep, type PlansStepRow } from './plans-step';
+import { TrialGift, TrialNext, TrialReminder } from './trial-intro';
+import { trialDays } from './trial-timeline';
 
 /** The goal they picked, in the words onboarding offered it in. */
 const GOAL_WORDS: Readonly<Record<string, Key>> = {
@@ -70,6 +72,10 @@ const DURATION: Readonly<Record<string, Key>> = {
 /** A first progress check is the second test: the first is tomorrow (today is
  * the two-minute first session), the next a fortnight after it. */
 const FIRST_CHECK_DAYS = 1 + 14;
+
+/** How long the first step waits for the store before it stops waiting to
+ * hear whether there is a free week to speak of. */
+const STORY_WAIT_MS = 2500;
 
 /** A step arriving: a slow fade over the one leaving, so the two overlap. */
 const STEP_IN = FadeIn.duration(460)
@@ -201,10 +207,6 @@ function Paywall() {
    */
   const [flow] = useState(() => !boosted && !introSeen());
   const [step, setStep] = useState<1 | 2 | 3>(flow ? 1 : 3);
-  useEffect(() => {
-    if (flow) track('paywall_step_viewed', { step });
-    if (step === 3) markIntroSeen();
-  }, [flow, step]);
   // Android's back button walks the steps back. On the first one it does what
   // it always did on the gate.
   useEffect(() => {
@@ -237,6 +239,29 @@ function Paywall() {
     if (step === 3 && offeringId === OFFERINGS.trial) markPaywallSoldTrial();
   }, [step, offeringId]);
 
+  /**
+   * Which story the two steps before the plans tell: the free week
+   * (`trial-intro.tsx`) or how the plan starts (`offer-intro.tsx`).
+   *
+   * The free week only once the store has said this customer gets one, so
+   * nothing is promised that the plans then do not offer. Until the store
+   * answers there is nothing on the first step but its bar; an answer that
+   * does not come (`STORY_WAIT_MS`) settles it on the plan, which promises
+   * nothing. Settled once: the story never changes under somebody's eyes.
+   */
+  const [story, setStory] = useState<'trial' | 'plan' | null>(() => (flow && trialAudience ? null : 'plan'));
+  useEffect(() => {
+    if (story != null) return undefined;
+    const timer = setTimeout(() => setStory((current) => current ?? 'plan'), STORY_WAIT_MS);
+    return () => clearTimeout(timer);
+  }, [story]);
+  useEffect(() => {
+    if (!flow || story == null) return;
+    track('paywall_step_viewed', { step, story });
+  }, [flow, step, story]);
+  useEffect(() => {
+    if (step === 3) markIntroSeen();
+  }, [step]);
   const profileName = firstName(useProfileName());
   const settings = planSettings();
 
@@ -448,6 +473,20 @@ function Paywall() {
     lifetime: planOn(shelf, 'lifetime'),
   };
   const annualPlan = plans.annual;
+  const freeDays = sellsTrial ? trialDays(annualPlan) : null;
+  useEffect(() => {
+    if (story != null) return;
+    if (loaded) setStory(freeDays != null ? 'trial' : 'plan');
+    else if (unreachable) setStory('plan');
+  }, [story, loaded, unreachable, freeDays]);
+  // Whether the plans that were shown carried the free week: the offering's
+  // name says who was meant to get it, this says who the store gave it to.
+  const plansShown = useRef(false);
+  useEffect(() => {
+    if (step !== 3 || !loaded || plansShown.current) return;
+    plansShown.current = true;
+    track('paywall_plans_shown', { offering: offeringId, trial: trialDays(annualPlan) != null });
+  }, [step, loaded, offeringId, annualPlan]);
 
   /**
    * The annual plan, which the store answered about and had nothing for.
@@ -566,6 +605,7 @@ function Paywall() {
    */
   const start = async () => {
     if (busy) return;
+    track('paywall_cta_tapped', { offering: offeringId, plan: tier });
     // The plan object, not a product identifier. It came out of the same fetch
     // that produced the price on screen, so the two cannot be for different
     // things.
@@ -693,7 +733,31 @@ function Paywall() {
   // `STEP_OUT` below), with the bar and the button where they were, so moving
   // on reads as the page changing under them rather than a new screen.
   let page: ReactNode;
-  if (step === 2) {
+  if (step !== 3 && story == null) {
+    // The store has not said yet whether there is a free week: the bar, and
+    // nothing promised under it.
+    page = (
+      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
+        <StepBar step={step} />
+      </View>
+    );
+  } else if (step !== 3 && story === 'trial' && freeDays != null && annualPlan != null) {
+    page = (
+      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
+        <StepBar step={step} onSelect={(target) => setStep(target as 1 | 2 | 3)} />
+        <View style={styles.trialBody}>
+          {step === 1 ? (
+            <TrialGift name={profileName} days={freeDays} />
+          ) : (
+            <TrialReminder days={freeDays} price={annualPlan.priceString} />
+          )}
+        </View>
+        <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
+          <TrialNext first={step === 1} onPress={next} />
+        </View>
+      </View>
+    );
+  } else if (step === 2) {
     page = (
       <View style={styles.full}>
         <StatusBar style="light" />
@@ -755,6 +819,7 @@ function Paywall() {
         onSelect={select}
         leadBadge={offerShown ? t('offer.comebackBadge') : t('offer.plans.mostPopular')}
         comeback={offerShown}
+        name={profileName.length > 0 ? profileName : null}
         busy={busy}
         onBuy={start}
         notice={shownNotice}
@@ -824,6 +889,8 @@ const styles = StyleSheet.create({
   },
   /** The two steps before the plans: room under the bar. */
   introContent: { paddingTop: 22, paddingBottom: 16 },
+  /** The free week's two steps: one screenful each, nothing to scroll. */
+  trialBody: { flex: 1, paddingTop: 18, paddingBottom: 12 },
   /** Step two: the hero edge to edge, under the bar and the sheet. */
   full: { flex: 1 },
   skyBar: { paddingHorizontal: 22 },

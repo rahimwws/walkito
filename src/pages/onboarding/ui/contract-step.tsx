@@ -51,14 +51,8 @@ const CEREMONY_FPS = 24;
 
 const AnimatedLottie = Animated.createAnimatedComponent(LottieView);
 
-/** Long enough to read as ink, short enough that a stray tap is not a
- * signature. Below this the Continue button stays disabled. */
-const MIN_POINTS = 12;
-
 export type ContractStepProps = {
   name: string;
-  /** Whether anything has been drawn. The page's button reads this. */
-  onSignedChange: (signed: boolean) => void;
   /** True while a finger is down on the pad. The page freezes its ScrollView
    * for the duration — otherwise the scroll claims the drag and the stroke
    * never gets past a few points. */
@@ -76,17 +70,16 @@ export type ContractStepProps = {
 /**
  * The commitment contract.
  *
- * A signature is the point, and it is theatre on purpose: nothing is sent
- * anywhere and nothing is stored. What it buys is a moment where the person
- * has to physically do something to agree, which is a far stronger commitment
- * than a checkbox — the same reason paper contracts are still signed by hand.
+ * The promise is the point, and the signature is theatre on purpose: nothing
+ * is sent anywhere and nothing is stored. It is offered, never required: the
+ * button under it agrees with or without ink, and the stamp lands either way.
+ * As a gate it cost a fifth of the people who reached it.
  *
  * Said plainly under the pad, because implying a drawing is a legal signature
  * would be a lie.
  */
 export function ContractStep({
   name,
-  onSignedChange,
   onDrawingChange,
   stamp,
   sealing,
@@ -137,14 +130,8 @@ export function ContractStep({
   const [paths, setPaths] = useState<string[]>([]);
   const [current, setCurrent] = useState('');
   const [size, setSize] = useState({ width: 0, height: PAD_HEIGHT });
-  const points = useRef(0);
 
   const onLayout = (e: LayoutChangeEvent) => setSize(e.nativeEvent.layout);
-
-  const report = useCallback(
-    (n: number) => onSignedChange(n >= MIN_POINTS),
-    [onSignedChange],
-  );
 
   // PanResponder rather than a gesture handler: this needs the raw touch
   // stream and nothing else — no pan/tap disambiguation, no worklet, and it
@@ -167,7 +154,6 @@ export function ContractStep({
       },
       onPanResponderMove: (e) => {
         const { locationX, locationY } = e.nativeEvent;
-        points.current += 1;
         setCurrent((d) => `${d} L ${locationX.toFixed(1)} ${locationY.toFixed(1)}`);
       },
       onPanResponderRelease: () => {
@@ -175,7 +161,6 @@ export function ContractStep({
           if (d.length > 0) setPaths((prev) => [...prev, d]);
           return '';
         });
-        report(points.current);
         drawing.current(false);
       },
       onPanResponderTerminate: () => {
@@ -187,8 +172,6 @@ export function ContractStep({
   const clear = () => {
     setPaths([]);
     setCurrent('');
-    points.current = 0;
-    onSignedChange(false);
   };
 
   const hasInk = paths.length > 0 || current.length > 0;

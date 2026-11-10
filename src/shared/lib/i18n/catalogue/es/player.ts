@@ -46,6 +46,8 @@ export const PLAYER_ES = {
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',
   'player.chip.position': '{index} de {total}',
+  'player.media.video': 'Vídeo',
+  'player.media.pose': 'Postura',
   'player.cta.pause': 'Pausar',
   'player.cta.resume': 'Reanudar',
   'player.cta.done': 'Listo',

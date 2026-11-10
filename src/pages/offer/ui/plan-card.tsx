@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, { ReduceMotion, interpolateColor, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
@@ -25,6 +25,8 @@ export type PlanCardProps = {
   /** The store answered and has no such plan: shown, never chosen. */
   disabled?: boolean;
   onPress: () => void;
+  /** Under the plan's own line, inside the card: the free week, day by day. */
+  children?: ReactNode;
 };
 
 /**
@@ -36,7 +38,7 @@ export type PlanCardProps = {
  * Until the store answers there is no figure: a quiet bar holds its place,
  * so nothing is quoted that the store has not said.
  */
-export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress }: PlanCardProps) {
+export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress, children }: PlanCardProps) {
   const on = useSharedValue(selected ? 1 : 0);
   useEffect(() => {
     on.value = withTiming(selected ? 1 : 0, { duration: SELECT_MS, reduceMotion: ReduceMotion.System });
@@ -112,24 +114,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
           </Text>
         </View>
       </View>
-    </Raised>
-  );
-}
-
-/** The "Plus" pill by the wordmark: the Plus colour, raised on its lip. */
-export function PlusPill({ label }: { label: string }) {
-  return (
-    <Raised
-      face={PLUS.accent}
-      lip={PLUS.accentLip}
-      depth={3}
-      radius={10}
-      accessibilityRole="text"
-      accessibilityLabel={label}
-      contentStyle={styles.pill}>
-      <Text style={styles.pillText} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-        {label}
-      </Text>
+      {children}
     </Raised>
   );
 }
@@ -173,11 +158,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   radioDot: { width: 10, height: 10, borderRadius: 5 },
-  pill: {
-    height: 26,
-    paddingHorizontal: 9,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pillText: { ...fonts.heavy(16, -0.1), color: PLUS.onAccent },
 });

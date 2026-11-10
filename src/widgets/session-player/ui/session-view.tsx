@@ -76,7 +76,7 @@ import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
-import { illustrationFor } from '../config/exercise-posters';
+import { illustrationFor, thumbFor } from '../config/exercise-posters';
 import { ClipViewer } from './clip-viewer';
 import { mirroredFor } from '../model/mirror';
 import { BreakOverlay } from './break-overlay';
@@ -189,6 +189,9 @@ function EdgeFade({ side }: { side: 'left' | 'right' }) {
  * against a wall a couple of metres away — and no longer the biggest thing on
  * the screen. The demonstration is. */
 const CLOCK_SIZE = 64;
+/** The window height from which a wide clip's stage grows to 4:3 and the next
+ * move is shown above the button: every iPhone but the SE. */
+const ROOMY_SCREEN = 800;
 /** The phase and foot pills over the clock. */
 const PILL_HEIGHT = 38;
 /** SwiftUI hosts do not self-size reliably inside flex, so the digits get a
@@ -225,6 +228,8 @@ const STAGE_CHIP = 28;
  * drawn in the light scheme's colours whatever the app is in. */
 const CHIP_FILL = 'rgba(255,255,255,0.92)';
 const CHIP_INK = palette.light.foreground;
+/** Edges the white chips against the drawings, which are white themselves. */
+const CHIP_SHADOW = '0px 1px 6px rgba(17, 17, 20, 0.16)';
 /** The unplugged mascot over a clip that did not load: small, so the line under
  * it still sits where the clip would have been. */
 const CLIP_FAILED_MASCOT = 64;
@@ -817,8 +822,23 @@ function SessionRun({
   /** A wide clip, framed on the feet, is fitted whole on a dark panel rather
    * than on the grey studio the upright clips were filmed in. */
   const wideClip = WIDE_CLIPS.has(current?.exercise?.id ?? '');
-  /** The move drawn: the shape to hold, beside the clip that shows the motion. */
+  /** The move drawn: the shape to hold and where it is felt. */
   const drawing = illustrationFor(current?.exercise?.id ?? '');
+  /**
+   * What the stage shows: the clip of the motion, or the drawing of the
+   * position. One picture of the move at a time. Both on screen at once, one
+   * over the clock and one under it, split the eye between two pictures of the
+   * same move. Null until somebody picks: then a clip that cannot load gives
+   * way to the drawing, which is bundled and always there. Kept for the whole
+   * session, so whoever prefers the drawing keeps it on the next move.
+   */
+  const [media, setMedia] = useState<'video' | 'pose' | null>(null);
+  const showPose = wideClip && drawing != null && (media === 'pose' || (media == null && clipFailed));
+  const nextMove = swaps[step + 1] != null ? (plan[step + 1]?.exercise?.title ?? moves[step + 1]) : moves[step + 1];
+  const nextThumb = thumbFor(plan[step + 1]?.exercise?.id ?? '');
+  /** A phone with the height for a taller stage and the row of what is next.
+   * On a small one the clip keeps its own 16:9 and the readout its room. */
+  const roomy = height >= ROOMY_SCREEN;
   /** A wide clip opens on its own screen, turned to fill it, rather than
    * growing the card. */
   const [wideViewer, setWideViewer] = useState(false);
@@ -1878,6 +1898,17 @@ function SessionRun({
     />
   );
 
+  /** The drawing crossfades over the clip, in the same frame. */
+  const poseOn = useSharedValue(0);
+  useEffect(() => {
+    poseOn.value = withTiming(showPose ? 1 : 0, {
+      duration: 220,
+      easing: Easing.out(Easing.quad),
+      reduceMotion: ReduceMotion.System,
+    });
+  }, [showPose, poseOn]);
+  const poseStyle = useAnimatedStyle(() => ({ opacity: poseOn.value }));
+
   /** The readings, which the expanded state exists to get rid of. */
   const chromeStyle = useAnimatedStyle(() => ({ opacity: 1 - open.value }));
   /** Exit and Continue, which only the expanded state has. */
@@ -2025,11 +2056,11 @@ function SessionRun({
             workout players lay a video out; the room left goes above the
             button. An upright clip's stage takes the room itself. */}
         <View
-          style={[styles.stage, wideClip && styles.stageWide]}
+          style={[styles.stage, wideClip && styles.stageWide, wideClip && roomy && styles.stageWideRoomy]}
           onLayout={(event) => setStage(event.nativeEvent.layout)}
         />
 
-        <View style={styles.readout}>
+        <View style={[styles.readout, wideClip && styles.readoutWide]}>
           {/* What to do this second, in a pill big enough to read from the
               floor, and the foot beside it. The row keeps its height for the
               whole of a planned move, so the stage does not jump each time a
@@ -2145,16 +2176,21 @@ function SessionRun({
           )}
         </View>
 
-        {/* Under a wide clip, the room left above the button holds the move's
-            drawing: the clip shows how it moves, the drawing the position to
-            hold and where it should be felt. */}
-        {wideClip && (
-          <View style={styles.stageWideFill}>
-            {drawing != null && !finished && (
-              <View style={styles.drawing}>
-                <Image source={drawing} resizeMode="contain" style={styles.drawingImage} accessibilityIgnoresInvertColors />
-              </View>
+        {/* What comes after this move, as workout players show it: the stage
+            keeps the one picture of the move being done, and this row says
+            what to get ready for. Under an upright clip the stage takes the
+            room instead. */}
+        {wideClip && roomy && nextMove != null && !finished && (
+          <View accessible style={[styles.next, { backgroundColor: colors.card }]}>
+            {nextThumb != null && (
+              <Image source={nextThumb} resizeMode="cover" style={styles.nextThumb} accessibilityIgnoresInvertColors />
             )}
+            <View style={styles.nextText}>
+              <Text style={[styles.nextLabel, { color: meter.caption }]}>{t('player.countIn.nextUp')}</Text>
+              <Text style={[styles.nextTitle, { color: colors.foreground }]} numberOfLines={1}>
+                {nextMove}
+              </Text>
+            </View>
           </View>
         )}
 
@@ -2242,7 +2278,13 @@ function SessionRun({
             The unplugged mascot above it is the still drawing, in the light
             scheme's colours like the chips, because the studio is light in
             both. Gone once the session is over: the done sheet brings its own. */}
-        {clipFailed && (
+        {wideClip && drawing != null && (
+          <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
+            <Image source={drawing} resizeMode="cover" style={styles.poseImage} accessibilityIgnoresInvertColors />
+          </Animated.View>
+        )}
+
+        {clipFailed && !showPose && (
           <View style={styles.clipFallback} pointerEvents="none">
             {!finished && (
               <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
@@ -2310,7 +2352,38 @@ function SessionRun({
             and a white glyph would vanish into it. The chip is what makes that
             safe on the frames where it is not — it carries its own background
             rather than trusting the video. */}
-        <Animated.View style={[styles.expand, expandStyle]} pointerEvents={expanded ? 'none' : 'auto'}>
+        {/* Video or drawing, on the picture it switches. */}
+        {wideClip && drawing != null && !finished && (
+          <View style={styles.mediaSwitch} pointerEvents="box-none">
+            <View accessibilityRole="tablist" style={styles.mediaTrack}>
+              {(['video', 'pose'] as const).map((option) => {
+                const on = (option === 'pose') === showPose;
+                return (
+                  <Pressable
+                    key={option}
+                    accessibilityRole="tab"
+                    accessibilityState={{ selected: on }}
+                    onPress={() => {
+                      if (on) return;
+                      Haptics.selectionAsync();
+                      setMedia(option);
+                    }}
+                    hitSlop={6}
+                    style={[styles.mediaOption, on && styles.mediaOptionOn]}>
+                    <Text style={[styles.mediaLabel, { color: on ? '#FFFFFF' : CHIP_INK }]}>
+                      {t(option === 'pose' ? 'player.media.pose' : 'player.media.video')}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
+          </View>
+        )}
+
+        {/* Full screen is the clip's, so it goes while the drawing is up. */}
+        <Animated.View
+          style={[styles.expand, expandStyle, showPose && styles.hidden]}
+          pointerEvents={expanded || showPose ? 'none' : 'auto'}>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t('widgets.expandDemo')}
@@ -2543,18 +2616,61 @@ const styles = StyleSheet.create({
     flex: 0,
     aspectRatio: 16 / 9,
   },
-  stageWideFill: { flex: 1, justifyContent: 'center', paddingVertical: 10, marginHorizontal: STAGE_MARGIN },
-  drawing: {
-    height: '100%',
-    maxWidth: '100%',
-    aspectRatio: 16 / 9,
-    alignSelf: 'center',
-    borderRadius: 24,
+  /** 4:3: the clip loses an eighth at each side and nothing at the feet.
+   * Checked against every clip's still: the move stays in the middle three
+   * quarters, at worst a hand on the wall meets the edge. Full screen shows
+   * the clip whole. */
+  stageWideRoomy: { aspectRatio: 4 / 3 },
+  /** The drawings are made on white. */
+  pose: { backgroundColor: '#FFFFFF' },
+  poseImage: { width: '100%', height: '100%' },
+  mediaSwitch: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 8,
+    alignItems: 'center',
+  },
+  mediaTrack: {
+    height: EXPAND_CHIP,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 3,
+    borderRadius: EXPAND_CHIP / 2,
+    backgroundColor: CHIP_FILL,
+    boxShadow: CHIP_SHADOW,
+  },
+  mediaOption: {
+    height: EXPAND_CHIP - 6,
+    minWidth: 64,
+    paddingHorizontal: 14,
+    borderRadius: (EXPAND_CHIP - 6) / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  mediaOptionOn: { backgroundColor: CHIP_INK },
+  mediaLabel: fonts.bold(13),
+  next: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginHorizontal: SIDE,
+    marginBottom: 12,
+    padding: 8,
+    paddingRight: 16,
+    borderRadius: 20,
     borderCurve: 'continuous',
-    overflow: 'hidden',
+  },
+  nextThumb: {
+    width: 64,
+    aspectRatio: 16 / 9,
+    borderRadius: 12,
+    borderCurve: 'continuous',
     backgroundColor: '#FFFFFF',
   },
-  drawingImage: { width: '100%', height: '100%' },
+  nextText: { flex: 1, gap: 1 },
+  nextLabel: fonts.semibold(12),
+  nextTitle: fonts.bold(16, -0.2),
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },
@@ -2591,6 +2707,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: CHIP_FILL,
+    boxShadow: CHIP_SHADOW,
   },
   textChipLabel: {
     ...fonts.semibold(13),
@@ -2616,7 +2733,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: CHIP_FILL,
+    boxShadow: CHIP_SHADOW,
   },
+  readoutWide: { flex: 1, justifyContent: 'center' },
   readout: {
     alignItems: 'center',
     paddingHorizontal: SIDE,
