@@ -230,6 +230,7 @@ export const OFFER_EN = {
   /** The headline over an annual that starts with a free trial; `{count}`
    * is its length in days. Brackets as in `offer.plans.headline`. */
   'offer.plans.headlineTrial': { one: '{count} day [free].\nThen you decide.', other: '{count} days [free].\nThen you decide.' },
+  'offer.plans.headlineTrialNamed': { one: '{name}, {count} day [free].\nThen you decide.', other: '{name}, {count} days [free].\nThen you decide.' },
   'offer.plans.renewsYearly': 'Renews at {price} per year.',
   'offer.plans.renewsMonthly': 'Renews at {price} per month.',
   'offer.plans.renewsWeekly': 'Renews at {price} per week.',

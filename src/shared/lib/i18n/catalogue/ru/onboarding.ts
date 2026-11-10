@@ -24,7 +24,7 @@
 export const ONBOARDING_RU = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   'onboarding.act.about': 'О вас',
-  'onboarding.act.sport': 'Ваш спорт',
+  'onboarding.act.sport': 'Ваш день',
   'onboarding.act.health': 'Ваше здоровье',
   'onboarding.act.plan': 'Ваш план',
 
@@ -150,12 +150,12 @@ export const ONBOARDING_RU = {
   'onboarding.goal.consistent': 'Бегать регулярнее',
   'onboarding.goal.stronger': 'Укрепить ноги',
   'onboarding.goal.injuryfree': 'Обойтись без травм',
-  'onboarding.goal.flatfeet': 'Укрепить своды стоп',
+  'onboarding.goal.flatfeet': 'Укрепить своды (плоскостопие)',
   'onboarding.goal.ankles': 'Устойчивый голеностоп',
   'onboarding.goal.jump': 'Прыгать выше',
-  'onboarding.goal.allday': 'Выдерживать весь день на ногах',
+  'onboarding.goal.allday': 'Весь день на ногах без ноющей боли',
   'onboarding.goal.comeback': 'Вернуться после травмы',
-  'onboarding.goal.steady': 'Уверенно ходить',
+  'onboarding.goal.steady': 'Ходить дальше и с комфортом',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'Сколько дней в неделю?',
@@ -182,10 +182,10 @@ export const ONBOARDING_RU = {
   'onboarding.reminder.title': 'Когда вам напоминать?',
   'onboarding.reminder.blurb': 'Одно напоминание в день. Выберите время, когда обычно есть пять свободных минут.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Где обычно болит, {name}?',
+  'onboarding.pain.title': 'Где болит чаще всего, {name}?',
   'onboarding.pain.blurb': 'Отметьте места на ноге, до {count}.',
   'onboarding.pain.full': 'Не больше {count} сразу. Нажмите на отмеченное, чтобы заменить.',
-  'onboarding.pain.none': 'Сейчас ничего не болит',
+  'onboarding.pain.none': 'Боли нет, для профилактики',
   'onboarding.pain.disclaimer':
     'Это не медицинская рекомендация. Если боль острая, усиливается или есть отёк либо онемение, обратитесь к врачу.',
 
@@ -318,7 +318,7 @@ export const ONBOARDING_RU = {
   'onboarding.notify.ask': 'Не надо в одиночку',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'сейчас',
-  'onboarding.notify.bannerBody': 'Сегодня сила стопы - 7 минут. Голени скажут спасибо.',
+  'onboarding.notify.bannerBody': 'Сегодня: 5 минут для пяток, до первого шага.',
   'onboarding.notify.turnOn': 'Включить уведомления',
   'onboarding.notify.opening': 'Открываем…',
   'onboarding.notify.notNow': 'Не сейчас',

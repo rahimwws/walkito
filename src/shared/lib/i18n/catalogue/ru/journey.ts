@@ -130,7 +130,7 @@ export const JOURNEY_RU = {
 
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.titleShort': 'Что важнее всего?',
-  'onboarding.goal.mornings': 'Утро полегче',
+  'onboarding.goal.mornings': 'Утро без боли на первых шагах',
   'onboarding.goal.backToRunning': 'Вернуться к бегу',
   'onboarding.goal.shift': 'Легче выдерживать смену',
 
@@ -144,8 +144,7 @@ export const JOURNEY_RU = {
   'onboarding.reflection.feetDaily': 'На ногах {band} в день',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.nothing': 'Сейчас ничего не болит',
-
+  'onboarding.midway.nothing': 'Для профилактики',
   // ── Why it still hurts ───────────────────────────────────────────────────
   'onboarding.why.title': 'Почему всё ещё болит, {name}',
   'onboarding.why.patternHead': 'Картина',
@@ -225,7 +224,7 @@ export const JOURNEY_RU = {
 
   // ── The coach ────────────────────────────────────────────────────────────
   'onboarding.coach.toeTry': 'Попробуйте прямо сейчас: поднимите только большой палец.',
-  'onboarding.coach.beatFeet': 'Нажмите там, где болит.',
+  'onboarding.coach.beatFeet': 'Нажмите на место или выберите название.',
   'onboarding.coach.beatGoal': 'Теперь о том, чего вы хотите.',
   'onboarding.coach.midway': 'Полпути позади, {name}.',
   'onboarding.coach.planReady': 'Ваш план готов, {name}.',

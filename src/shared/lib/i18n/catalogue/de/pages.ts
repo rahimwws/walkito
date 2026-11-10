@@ -95,7 +95,7 @@ export const PAGES_DE = {
   // Each phrase continues «…deine Füße».
   'pages.welcome.phrase1': 'die jeden Morgen wehtun',
   'pages.welcome.phrase2': 'nach 3 Paar Einlagen',
-  'pages.welcome.phrase3': 'damit dich dein nächster langer Lauf keine Woche kostet',
+  'pages.welcome.phrase3': 'die nach einem langen Tag wehtun',
   'pages.welcome.phrase4': 'damit Gehen wieder leichtfällt',
   'pages.welcome.cta': 'Los geht’s',
 

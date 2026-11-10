@@ -5,7 +5,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import {
   ActivityIndicator,
   Platform,
@@ -38,28 +38,18 @@ import { LegalLinks } from '@/shared/ui/subscription-terms';
 
 import { describeCta, describePlan, splitHighlight } from '../model/plans';
 import { cloudEdgeHeight } from './cloud-edge';
-import { PlanCard, PlusPill } from './plan-card';
+import { PlanCard } from './plan-card';
 import { PlansHero } from './plans-hero';
 import { PlansTable } from './plans-table';
 import { TrialTimeline, trialDays } from './trial-timeline';
 import { PLUS, SHEET } from './plans-theme';
-
-/**
- * How long the plans stand before "Not now" and the close appear.
- *
- * From the step arriving, not from "Show all plans" as it was: nobody a Meta
- * ad brought ever tapped "Show all plans", so for them the way on never
- * appeared, and all of them left the app from this screen instead. Long
- * enough to read the plan and the free week first.
- */
-export const CLOSE_AFTER_MS = 6000;
 
 /** The sky's share of the screen. */
 const SKY = 0.45;
 /** Over a free week, whose days have to be read without scrolling, the sky is
  * only as tall as he needs at his smallest: this much under the status bar,
  * plus the cloud edge. */
-const SKY_TRIAL_ROOM = 112;
+const SKY_TRIAL_ROOM = 80;
 /** "Show all plans": the rows open over this long, each a beat after the last. */
 const OPEN_MS = 420;
 const ROW_STAGGER = 0.18;
@@ -86,6 +76,8 @@ export type PlansStepProps = {
   leadBadge: string;
   /** The comeback view: its own headline. */
   comeback: boolean;
+  /** Their first name, for the free week's headline; null without one. */
+  name: string | null;
   busy: boolean;
   onBuy: () => void;
   /** What the store said last, over the button. */
@@ -119,11 +111,13 @@ export type PlansStepProps = {
  * plan's own card, and "No payment due today" over the button, all in the
  * first screenful.
  *
- * A hard paywall: there is no way into the app without buying. A few seconds
- * after the step arrives (`CLOSE_AFTER_MS`), a close button fades in over
- * the sky and "Not now" appears at the very bottom; both lead to the
- * one-time trial offer, the offer screen's next state (`skipPaywall`), never
- * to the app. Nothing here may say or imply the app can be used without Plus.
+ * A hard paywall: there is no way into the app without buying. The close over
+ * the sky and "Not now" under the button are there from the first moment:
+ * when the way out appeared only after "Show all plans", nobody a Meta ad
+ * brought ever saw one, and every one of them left by killing the app. Both
+ * lead to Home's day-one session and then the one-time trial offer
+ * (`skipPaywall`), never into the app. Nothing here may say or imply the app
+ * can be used without paying.
  */
 export function PlansStep({
   stepBar,
@@ -133,6 +127,7 @@ export function PlansStep({
   onSelect,
   leadBadge,
   comeback,
+  name,
   busy,
   onBuy,
   notice,
@@ -159,13 +154,8 @@ export function PlansStep({
     ? insets.top + SKY_TRIAL_ROOM + cloudEdgeHeight(width)
     : Math.round(Math.max(Math.min(frame.height * SKY, frame.height - 420), 240));
 
-  // ── "Show all plans", and "Not now" a few seconds after the step arrives ─
+  // ── "Show all plans" ─────────────────────────────────────────────────────
   const [expanded, setExpanded] = useState(false);
-  const [closable, setClosable] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => setClosable(true), CLOSE_AFTER_MS);
-    return () => clearTimeout(timer);
-  }, []);
 
   const open = useSharedValue(0);
   // Measured off-flow (the rows sit absolutely inside the clip), so the
@@ -193,7 +183,9 @@ export function PlansStep({
   const cta = describeCta(chosen.kind, chosen.plan, t, Platform.OS === 'android');
   const headline = splitHighlight(
     freeDays != null
-      ? t('offer.plans.headlineTrial', { count: freeDays })
+      ? name != null
+        ? t('offer.plans.headlineTrialNamed', { count: freeDays, name })
+        : t('offer.plans.headlineTrial', { count: freeDays })
       : t(comeback ? 'offer.plans.headlineComeback' : 'offer.plans.headline'),
   );
   const many = extras.length > 0 && expanded;
@@ -220,19 +212,16 @@ export function PlansStep({
             topInset={insets.top}
             live={focused && revealed && !covered}
             top={stepBar}
-            closable={closable}
+            closable
             onClose={onSkip}
           />
 
           {/* The room under the last row for the floating dock is the sheet's own
               padding, so it stays white rather than showing the screen under it. */}
           <View style={[styles.sheet, trial && styles.sheetTrial, { backgroundColor: SHEET.surface, paddingBottom: dockHeight + 12 }]}>
-            <View style={styles.brand}>
-              <Text style={[styles.wordmark, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
-                {t('offer.plans.brand')}
-              </Text>
-              <PlusPill label={t('offer.plans.badge')} />
-            </View>
+            <Text style={[styles.wordmark, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
+              {t('offer.plans.brand')}
+            </Text>
 
             {/* Two lines at most: a long language comes down a few sizes rather
               than pushing the plan under the button. */}
@@ -324,19 +313,6 @@ export function PlansStep({
                 <Text style={[styles.quietText, { color: SHEET.label }]}>{t('offer.haveCode')}</Text>
               </Pressable>
             )}
-
-            {closable && (
-              <Pressable
-                accessibilityRole="button"
-                onPress={() => {
-                  void Haptics.selectionAsync();
-                  onSkip();
-                }}
-                hitSlop={8}
-                style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.quietText, { color: SHEET.caption }]}>{t('offer.plans.skip')}</Text>
-              </Pressable>
-            )}
           </View>
         </ScrollView>
 
@@ -378,6 +354,19 @@ export function PlansStep({
               </Text>
             )}
           </Raised>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => {
+              void Haptics.selectionAsync();
+              onSkip();
+            }}
+            disabled={busy}
+            hitSlop={8}
+            style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
+            <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+              {t('offer.plans.skip')}
+            </Text>
+          </Pressable>
           {cta.terms != null && (
             <View style={styles.terms}>
               <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />
@@ -419,13 +408,7 @@ const styles = StyleSheet.create({
   },
   /** A free week: closer set, so its last day clears the button. */
   sheetTrial: { gap: 14 },
-  brand: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 6,
-  },
-  wordmark: fonts.heavy(24, -0.6),
+  wordmark: { ...fonts.heavy(24, -0.6), textAlign: 'center' },
   headline: {
     ...fonts.heavy(40, -1.4),
     lineHeight: 42,

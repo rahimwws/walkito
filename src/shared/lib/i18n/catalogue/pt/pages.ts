@@ -92,7 +92,7 @@ export const PAGES_PT = {
   // Each phrase continues «…seus pés», so they agree with it.
   'pages.welcome.phrase1': 'que doem toda manhã',
   'pages.welcome.phrase2': 'depois de 3 pares de palmilhas',
-  'pages.welcome.phrase3': 'para o próximo longão não custar uma semana',
+  'pages.welcome.phrase3': 'que doem no fim do dia',
   'pages.welcome.phrase4': 'para voltar a caminhar bem',
   'pages.welcome.cta': 'Vamos lá',
 

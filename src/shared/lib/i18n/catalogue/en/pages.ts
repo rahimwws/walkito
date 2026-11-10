@@ -140,7 +140,7 @@ export const PAGES_EN = {
   // than transpose the English.
   'pages.welcome.phrase1': 'that hurt every morning',
   'pages.welcome.phrase2': 'after 3 pairs of insoles',
-  'pages.welcome.phrase3': 'so your next long run doesn’t cost you a week',
+  'pages.welcome.phrase3': 'that ache after a long day',
   'pages.welcome.phrase4': 'so walking feels good again',
   'pages.welcome.cta': 'Let’s go',
 

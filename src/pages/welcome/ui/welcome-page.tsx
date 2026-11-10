@@ -5,8 +5,7 @@ import { useT } from '@/shared/lib/i18n';
 import { AstroGlassWelcome, type CookbookCopy } from './liquid-glass';
 
 export type WelcomePageProps = {
-  /** Fired when the user takes the screen's one action — the swipe-up gate
-   * resolving into "Let's go". */
+  /** Fired when the user takes the screen's one action, "Let's go". */
   onDone: () => void;
 };
 
@@ -52,5 +51,7 @@ export function WelcomePage({ onDone }: WelcomePageProps) {
     [t],
   );
 
-  return <AstroGlassWelcome copy={copy} onActionPress={onDone} />;
+  // Open from the first frame: the swipe-up gate in front of it lost one in six
+  // of the first paid installs before they read a word.
+  return <AstroGlassWelcome copy={copy} initialState="open" onActionPress={onDone} />;
 }

@@ -44,7 +44,13 @@ import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
 import { setBilateral } from "@/entities/health";
 import { whereKey } from "@/entities/leg-zone";
 import { armOffer } from "@/entities/offer";
-import { collectAdIdentifiers, recordAcquisitionSource } from "@/entities/purchase";
+import {
+  OFFERINGS,
+  collectAdIdentifiers,
+  fetchShelf,
+  purchases,
+  recordAcquisitionSource,
+} from "@/entities/purchase";
 import {
   saveIntake,
   setProfileEmail,
@@ -338,11 +344,16 @@ export function OnboardingPage() {
   const { height: windowHeight } = useWindowDimensions();
 
   /** Where a return to the flow lands: the question it was left on, with the
-   * answers given so far (`model/progress`). Read once, as the screen mounts. */
+   * answers given so far (`model/progress`). Read once, as the screen mounts.
+   * A step that no longer applies (retired since, as the contract was) hands
+   * over to the next one that does. */
   const [resumed] = useState(() => {
     const saved = loadProgress();
     const at = saved == null ? -1 : STEPS.findIndex((candidate) => candidate.key === saved.step);
-    return saved != null && at > 0 ? { ...saved, index: at } : null;
+    if (saved == null || at <= 0) return null;
+    const given = { ...seedAnswers(), ...saved.answers };
+    const index = STEPS[at].skipWhen?.(given) === true ? (stepAfter(at, true, given) ?? stepAfter(at, false, given)) : at;
+    return index != null && index > 0 ? { ...saved, index } : null;
   });
   const [index, setIndex] = useState(resumed?.index ?? 0);
   const [answers, setAnswers] = useState<Answers>(() => ({ ...seedAnswers(), ...resumed?.answers }));
@@ -437,7 +448,7 @@ export function OnboardingPage() {
       recommended: option.recommended,
     }));
 
-  const goalValues = goalValuesFor(role, painless);
+  const goalValues = goalValuesFor(role);
   const goalOptions: ResolvedOption[] = goalValues.map((value) => ({
     value,
     label: t(goalLabel(value, role === "feet" || role === "both")),
@@ -986,7 +997,12 @@ export function OnboardingPage() {
 
   /** One event per screen shown, keyed by the step's stable `key`. */
   useEffect(() => {
-    if (index === 0) track("onboarding_started");
+    if (index === 0) {
+      track("onboarding_started");
+      // Ask the store early, so the paywall's free week is known the moment
+      // it arrives instead of after a wait on an empty first step.
+      if (purchases.configured) void fetchShelf(OFFERINGS.trial).catch(() => undefined);
+    }
     track("onboarding_step_viewed", { step: step.key, index, act: step.act });
     // A whole-screen reaction, counted only when its id says nothing about a
     // body: how long it has hurt and what was tried never leave the device.

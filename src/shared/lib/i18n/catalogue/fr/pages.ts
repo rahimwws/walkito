@@ -96,7 +96,7 @@ export const PAGES_FR = {
   // Each phrase continues «…tes pieds», so they agree with it.
   'pages.welcome.phrase1': 'qui font mal chaque matin',
   'pages.welcome.phrase2': 'après 3 paires de semelles',
-  'pages.welcome.phrase3': 'pour que ta prochaine sortie longue ne te coûte pas une semaine',
+  'pages.welcome.phrase3': 'qui font mal en fin de journée',
   'pages.welcome.phrase4': 'pour remarcher avec plaisir',
   'pages.welcome.cta': 'C’est parti',
 

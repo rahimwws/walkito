@@ -76,12 +76,28 @@ export function noteSourceAnswer(source: string): void {
   emit();
 }
 
-/** Whether the first paywall sells the annual with its free week. */
-export function trialOnFirstPaywall(): boolean {
-  if (devForced != null) return devForced;
+/**
+ * The free week goes to everybody, not only to somebody a Meta ad brought.
+ *
+ * On iPhone AppsFlyer sees a Meta install only when tracking was allowed (5 of
+ * 21 on the first paid day), so the split leaned on the survey answer, and 4
+ * of 32 people the ads brought answered something else and were shown full
+ * price. Apple decides eligibility per Apple ID anyway (`trialDays` in
+ * `pages/offer`). False puts the split back.
+ */
+const TRIAL_FOR_EVERYONE = true;
+
+/** Whether a Meta ad brought this install, by AppsFlyer or the survey. */
+export function fromMetaAd(): boolean {
   if (kv.getBoolean(META_INSTALL_KEY) === true) return true;
   const answer = kv.getString(SOURCE_ANSWER_KEY);
   return answer != null && META_ANSWERS.has(answer);
+}
+
+/** Whether the first paywall sells the annual with its free week. */
+export function trialOnFirstPaywall(): boolean {
+  if (devForced != null) return devForced;
+  return TRIAL_FOR_EVERYONE || fromMetaAd();
 }
 
 export function useTrialOnFirstPaywall(): boolean {

@@ -130,7 +130,7 @@ export const JOURNEY_DE = {
 
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.titleShort': 'Was ist dir am wichtigsten?',
-  'onboarding.goal.mornings': 'Leichtere Morgen',
+  'onboarding.goal.mornings': 'Morgens ohne Schmerz bei den ersten Schritten',
   'onboarding.goal.backToRunning': 'Zurück zum Laufen',
   'onboarding.goal.shift': 'Eine Schicht mit weniger Schmerzen schaffen',
 
@@ -144,8 +144,7 @@ export const JOURNEY_DE = {
   'onboarding.reflection.feetDaily': '{band} am Tag auf den Beinen',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.nothing': 'Gerade tut nichts weh',
-
+  'onboarding.midway.nothing': 'Zur Vorbeugung',
   // ── Why it still hurts ───────────────────────────────────────────────────
   'onboarding.why.title': 'Warum es noch wehtut, {name}',
   'onboarding.why.patternHead': 'Das Muster',
@@ -225,7 +224,7 @@ export const JOURNEY_DE = {
 
   // ── The coach ────────────────────────────────────────────────────────────
   'onboarding.coach.toeTry': 'Probier es gleich aus und heb nur den großen Zeh an.',
-  'onboarding.coach.beatFeet': 'Tippe dorthin, wo es wehtut.',
+  'onboarding.coach.beatFeet': 'Tippe auf die Stelle oder wähle einen Namen.',
   'onboarding.coach.beatGoal': 'Jetzt zu dem, was du dir wünschst.',
   'onboarding.coach.midway': 'Die Hälfte ist geschafft, {name}.',
   'onboarding.coach.planReady': 'Dein Plan ist fertig, {name}.',

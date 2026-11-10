@@ -33,7 +33,7 @@ export const ONBOARDING_EN = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   // The four named stretches the progress bar fills within.
   'onboarding.act.about': 'About you',
-  'onboarding.act.sport': 'Your sport',
+  'onboarding.act.sport': 'Your day',
   'onboarding.act.health': 'Your health',
   'onboarding.act.plan': 'Your plan',
 
@@ -167,12 +167,12 @@ export const ONBOARDING_EN = {
   'onboarding.goal.consistent': 'Run more consistently',
   'onboarding.goal.stronger': 'Build stronger legs',
   'onboarding.goal.injuryfree': 'Stay injury-free',
-  'onboarding.goal.flatfeet': 'Stronger arches',
+  'onboarding.goal.flatfeet': 'Stronger arches (flat feet)',
   'onboarding.goal.ankles': 'Steadier ankles',
   'onboarding.goal.jump': 'Jump higher',
-  'onboarding.goal.allday': 'Stay on my feet all day',
+  'onboarding.goal.allday': 'Get through the day without aching',
   'onboarding.goal.comeback': 'Come back after an injury',
-  'onboarding.goal.steady': 'Walk with confidence',
+  'onboarding.goal.steady': 'Walk further, more comfortably',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'How many days a week?',
@@ -199,11 +199,11 @@ export const ONBOARDING_EN = {
   'onboarding.reminder.title': 'When should we remind you?',
   'onboarding.reminder.blurb': 'One reminder a day. Pick a time you usually have five free minutes.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Where does it usually hurt, {name}?',
+  'onboarding.pain.title': 'Where does it hurt most days, {name}?',
   /** `{count}` is the most the map takes at once — three. */
   'onboarding.pain.blurb': 'Tap the spots on the leg, up to {count}.',
   'onboarding.pain.full': 'Up to {count} at a time. Tap one to swap it.',
-  'onboarding.pain.none': 'Nothing hurts right now',
+  'onboarding.pain.none': 'I’m here to prevent pain',
   // Shown where pain is first reported. The full wording is in Settings.
   'onboarding.pain.disclaimer':
     'Not medical advice. If pain is sharp, getting worse, or comes with swelling or numbness, see a doctor.',
@@ -353,7 +353,7 @@ export const ONBOARDING_EN = {
   /** The mock banner. `bannerApp` is the app's own name and stays as it is. */
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'now',
-  'onboarding.notify.bannerBody': 'Today is foot strength - 7 minutes. Your shins will thank you.',
+  'onboarding.notify.bannerBody': 'Today: 5 minutes for your heels, before your first step.',
   'onboarding.notify.turnOn': 'Turn on notifications',
   'onboarding.notify.opening': 'Opening…',
   'onboarding.notify.notNow': 'Not now',

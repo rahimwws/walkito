@@ -31,21 +31,21 @@ const CHIP_HEIGHT = 46;
 const PLACE_HEIGHT = 36;
 
 /**
- * The places named beside the leg, from the calf down to the toes: the ones
- * people come with, and as many as stand beside the leg on an ordinary phone
+ * The places named beside the leg, the heel first because it is what the ads
+ * and the app's name are about: the ones people come with, and as many as stand beside the leg on an ordinary phone
  * without scrolling. The rest (the soleus, the front of the shin, the top of
  * the foot) stay on the drawing only; marked there, they are named in the
  * line under it. The inner ankle answers to "Ankle", the word for it.
  */
 const PLACES: readonly { zone: LegZone; label: Key }[] = [
-  { zone: 'calf', label: 'home.zone.calf' },
-  { zone: 'tibia', label: 'home.zone.tibia' },
-  { zone: 'achilles', label: 'home.zone.achilles' },
-  { zone: 'inner_ankle', label: 'home.zone.ankle' },
   { zone: 'heel', label: 'home.zone.heel' },
   { zone: 'arch', label: 'home.zone.arch' },
   { zone: 'ball', label: 'home.zone.ball' },
+  { zone: 'achilles', label: 'home.zone.achilles' },
+  { zone: 'inner_ankle', label: 'home.zone.ankle' },
   { zone: 'toes', label: 'home.zone.toes' },
+  { zone: 'calf', label: 'home.zone.calf' },
+  { zone: 'tibia', label: 'home.zone.tibia' },
 ];
 const NAMED = new Set<LegZone>(PLACES.map((place) => place.zone));
 

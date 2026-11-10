@@ -161,6 +161,7 @@ export const OFFER_PT = {
   'offer.plans.ctaTrialWeek': 'Começar minha semana grátis',
   'offer.plans.noPaymentToday': 'Nada a pagar hoje',
   'offer.plans.headlineTrial': { one: '{count} dia [grátis].\nDepois você decide.', other: '{count} dias [grátis].\nDepois você decide.' },
+  'offer.plans.headlineTrialNamed': { one: '{name}, {count} dia [grátis].\nDepois você decide.', other: '{name}, {count} dias [grátis].\nDepois você decide.' },
   'offer.plans.renewsYearly': 'Renova por {price} por ano.',
   'offer.plans.renewsMonthly': 'Renova por {price} por mês.',
   'offer.plans.renewsWeekly': 'Renova por {price} por semana.',

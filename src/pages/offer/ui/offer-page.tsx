@@ -605,6 +605,7 @@ function Paywall() {
    */
   const start = async () => {
     if (busy) return;
+    track('paywall_cta_tapped', { offering: offeringId, plan: tier });
     // The plan object, not a product identifier. It came out of the same fetch
     // that produced the price on screen, so the two cannot be for different
     // things.
@@ -818,6 +819,7 @@ function Paywall() {
         onSelect={select}
         leadBadge={offerShown ? t('offer.comebackBadge') : t('offer.plans.mostPopular')}
         comeback={offerShown}
+        name={profileName.length > 0 ? profileName : null}
         busy={busy}
         onBuy={start}
         notice={shownNotice}

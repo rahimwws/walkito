@@ -15,7 +15,7 @@
 export const ONBOARDING_IT = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   'onboarding.act.about': 'Su di te',
-  'onboarding.act.sport': 'Il tuo sport',
+  'onboarding.act.sport': 'La tua giornata',
   'onboarding.act.health': 'La tua salute',
   'onboarding.act.plan': 'Il tuo piano',
 
@@ -141,12 +141,12 @@ export const ONBOARDING_IT = {
   'onboarding.goal.consistent': 'Correre con più costanza',
   'onboarding.goal.stronger': 'Rinforzare le gambe',
   'onboarding.goal.injuryfree': 'Evitare infortuni',
-  'onboarding.goal.flatfeet': 'Arcate più forti',
+  'onboarding.goal.flatfeet': 'Arcate più forti (piede piatto)',
   'onboarding.goal.ankles': 'Caviglie più stabili',
   'onboarding.goal.jump': 'Saltare più in alto',
-  'onboarding.goal.allday': 'Reggere in piedi tutto il giorno',
+  'onboarding.goal.allday': 'Arrivare a sera senza dolori',
   'onboarding.goal.comeback': 'Ripartire dopo un infortunio',
-  'onboarding.goal.steady': 'Camminare con sicurezza',
+  'onboarding.goal.steady': 'Camminare di più, più comodamente',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'Quanti giorni a settimana?',
@@ -173,10 +173,10 @@ export const ONBOARDING_IT = {
   'onboarding.reminder.title': 'Quando te lo ricordiamo?',
   'onboarding.reminder.blurb': 'Un promemoria al giorno. Scegli un’ora in cui di solito hai cinque minuti liberi.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Dove ti fa male di solito, {name}?',
+  'onboarding.pain.title': 'Dove ti fa male quasi ogni giorno, {name}?',
   'onboarding.pain.blurb': 'Tocca i punti sulla gamba, fino a {count}.',
   'onboarding.pain.full': 'Fino a {count} alla volta. Toccane uno per cambiarlo.',
-  'onboarding.pain.none': 'Ora non mi fa male niente',
+  'onboarding.pain.none': 'Sono qui per prevenire il dolore',
   'onboarding.pain.disclaimer':
     'Non è un consiglio medico. Se il dolore è acuto, peggiora o è accompagnato da gonfiore o intorpidimento, consulta un medico.',
 
@@ -310,7 +310,7 @@ export const ONBOARDING_IT = {
   'onboarding.notify.ask': 'Facciamolo insieme',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'ora',
-  'onboarding.notify.bannerBody': 'Oggi forza del piede - 7 minuti. Le tue tibie ti ringrazieranno.',
+  'onboarding.notify.bannerBody': 'Oggi: 5 minuti per i tuoi talloni, prima del primo passo.',
   'onboarding.notify.turnOn': 'Attiva le notifiche',
   'onboarding.notify.opening': 'Apertura…',
   'onboarding.notify.notNow': 'Non ora',

@@ -119,24 +119,6 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
   );
 }
 
-/** The "Plus" pill by the wordmark: the Plus colour, raised on its lip. */
-export function PlusPill({ label }: { label: string }) {
-  return (
-    <Raised
-      face={PLUS.accent}
-      lip={PLUS.accentLip}
-      depth={3}
-      radius={10}
-      accessibilityRole="text"
-      accessibilityLabel={label}
-      contentStyle={styles.pill}>
-      <Text style={styles.pillText} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-        {label}
-      </Text>
-    </Raised>
-  );
-}
-
 const styles = StyleSheet.create({
   face: {
     paddingHorizontal: 16,
@@ -176,11 +158,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   radioDot: { width: 10, height: 10, borderRadius: 5 },
-  pill: {
-    height: 26,
-    paddingHorizontal: 9,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pillText: { ...fonts.heavy(16, -0.1), color: PLUS.onAccent },
 });

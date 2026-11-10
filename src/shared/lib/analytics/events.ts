@@ -135,6 +135,9 @@ export type AnalyticsEvents = {
    * offering's name alone does not say. Once per view. */
   paywall_plans_shown: { offering: string; trial: boolean };
   paywall_plan_selected: { plan: PlanTier };
+  /** The plans' main button, before the store is asked: a tap that dies in
+   * StoreKit still counts here, where `purchase_started` may not. */
+  paywall_cta_tapped: { offering: string; plan: PlanTier };
   /** "Have a code?" under the plans. */
   paywall_code_opened: Record<string, never>;
   paywall_dismissed: { offering: string };

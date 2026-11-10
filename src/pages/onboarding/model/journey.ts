@@ -54,24 +54,22 @@ export function sportFor(answers: Answers): string | null {
 /**
  * The goals offered, by who they are.
  *
- * Five at most: eleven was a list nobody reads to the end. Pain first, and
- * only when something hurts. The values are analytics identifiers and map to
- * outcomes in `entities/program` (`GOAL_ANSWER`): `comeback` and `allday`
- * keep their old values under new words, so nothing downstream moves.
+ * Five at most: eleven was a list nobody reads to the end. Mornings first,
+ * for everybody: it is what the ads promise, and hiding it from whoever said
+ * nothing hurts left most of the first paid audience without their reason to
+ * be here. "Stay injury-free" is a runner's goal and stays with runners. The
+ * values are analytics identifiers and map to outcomes in `entities/program`
+ * (`GOAL_ANSWER`): `comeback` and `allday` keep their old values under new
+ * words, so nothing downstream moves.
  */
-export function goalValuesFor(role: Role | null, painless: boolean): string[] {
-  const pain = painless ? [] : ['mornings'];
+export function goalValuesFor(role: Role | null): string[] {
   switch (role) {
     case 'running':
-      return [...pain, 'comeback', 'race', 'flatfeet', 'injuryfree'];
-    case 'feet':
-      return [...pain, 'allday', 'flatfeet', 'injuryfree'];
+      return ['mornings', 'comeback', 'race', 'flatfeet', 'injuryfree'];
     case 'both':
-      return [...pain, 'comeback', 'allday', 'flatfeet', 'injuryfree'];
-    case 'walking':
-      return [...pain, 'steady', 'allday', 'flatfeet', 'injuryfree'];
+      return ['mornings', 'comeback', 'allday', 'flatfeet'];
     default:
-      return [...pain, 'flatfeet', 'injuryfree'];
+      return ['mornings', 'allday', 'steady', 'flatfeet'];
   }
 }
 

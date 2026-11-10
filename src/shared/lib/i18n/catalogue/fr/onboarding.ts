@@ -16,7 +16,7 @@
 export const ONBOARDING_FR = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   'onboarding.act.about': 'À propos de toi',
-  'onboarding.act.sport': 'Ton sport',
+  'onboarding.act.sport': 'Ta journée',
   'onboarding.act.health': 'Ta santé',
   'onboarding.act.plan': 'Ton plan',
 
@@ -142,12 +142,12 @@ export const ONBOARDING_FR = {
   'onboarding.goal.consistent': 'Courir plus régulièrement',
   'onboarding.goal.stronger': 'Renforcer mes jambes',
   'onboarding.goal.injuryfree': 'Éviter les blessures',
-  'onboarding.goal.flatfeet': 'Des voûtes plus fortes',
+  'onboarding.goal.flatfeet': 'Des voûtes plus fortes (pieds plats)',
   'onboarding.goal.ankles': 'Des chevilles plus stables',
   'onboarding.goal.jump': 'Sauter plus haut',
-  'onboarding.goal.allday': 'Tenir debout toute la journée',
+  'onboarding.goal.allday': 'Passer la journée sans douleur',
   'onboarding.goal.comeback': 'Reprendre après une blessure',
-  'onboarding.goal.steady': 'Marcher avec assurance',
+  'onboarding.goal.steady': 'Marcher plus loin, plus confortablement',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'Combien de jours par semaine ?',
@@ -174,10 +174,10 @@ export const ONBOARDING_FR = {
   'onboarding.reminder.title': 'Quand veux-tu qu’on te le rappelle ?',
   'onboarding.reminder.blurb': 'Un rappel par jour. Choisis une heure où tu as souvent cinq minutes de libre.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Où as-tu mal d’habitude, {name} ?',
+  'onboarding.pain.title': 'Où as-tu mal la plupart du temps, {name} ?',
   'onboarding.pain.blurb': 'Touche les points sur la jambe, jusqu’à {count}.',
   'onboarding.pain.full': 'Jusqu’à {count} à la fois. Touches-en un pour l’échanger.',
-  'onboarding.pain.none': 'Rien ne me fait mal en ce moment',
+  'onboarding.pain.none': 'Je viens pour prévenir la douleur',
   'onboarding.pain.disclaimer':
     'Ce n’est pas un avis médical. Si la douleur est vive, s’aggrave, ou s’accompagne de gonflement ou d’engourdissement, consulte un médecin.',
 
@@ -309,8 +309,7 @@ export const ONBOARDING_FR = {
   'onboarding.notify.ask': 'On avance ensemble',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'maintenant',
-  'onboarding.notify.bannerBody':
-    'Aujourd’hui, renforcement du pied - 7 minutes. Tes tibias te remercieront.',
+  'onboarding.notify.bannerBody': 'Aujourd’hui : 5 minutes pour tes talons, avant ton premier pas.',
   'onboarding.notify.turnOn': 'Activer les notifications',
   'onboarding.notify.opening': 'Ouverture…',
   'onboarding.notify.notNow': 'Pas maintenant',

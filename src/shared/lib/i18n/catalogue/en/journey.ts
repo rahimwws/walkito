@@ -145,7 +145,7 @@ export const JOURNEY_EN = {
 
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.titleShort': 'What matters most?',
-  'onboarding.goal.mornings': 'Easier mornings',
+  'onboarding.goal.mornings': 'Mornings without first-step pain',
   'onboarding.goal.backToRunning': 'Back to running',
   'onboarding.goal.shift': 'Get through a shift with less aching',
 
@@ -160,8 +160,7 @@ export const JOURNEY_EN = {
   'onboarding.reflection.feetDaily': '{band} a day on your feet',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.nothing': 'Nothing hurts right now',
-
+  'onboarding.midway.nothing': 'Here to prevent pain',
   // ── Why it still hurts ───────────────────────────────────────────────────
   'onboarding.why.title': 'Why it still hurts, {name}',
   'onboarding.why.patternHead': 'The pattern',
@@ -245,7 +244,7 @@ export const JOURNEY_EN = {
   // plan ready. They speak to the flow, never to an answer: nothing here
   // judges what was said.
   'onboarding.coach.toeTry': 'Try it now: lift just your big toe.',
-  'onboarding.coach.beatFeet': 'Tap where it hurts.',
+  'onboarding.coach.beatFeet': 'Tap the spot, or pick a name.',
   'onboarding.coach.beatGoal': 'Now, what you want from this.',
   'onboarding.coach.midway': 'Halfway there, {name}.',
   'onboarding.coach.planReady': 'Your plan is ready, {name}.',

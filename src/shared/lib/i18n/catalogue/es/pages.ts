@@ -95,7 +95,7 @@ export const PAGES_ES = {
   // Each phrase continues «…tus pies», so they agree with it.
   'pages.welcome.phrase1': 'que te duelen cada mañana',
   'pages.welcome.phrase2': 'después de 3 pares de plantillas',
-  'pages.welcome.phrase3': 'para que tu próxima carrera larga no te cueste una semana',
+  'pages.welcome.phrase3': 'que te duelen al final del día',
   'pages.welcome.phrase4': 'para volver a caminar a gusto',
   'pages.welcome.cta': 'Vamos',
 
