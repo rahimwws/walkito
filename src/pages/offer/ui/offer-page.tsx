@@ -8,7 +8,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { OfferScreen, type PassSale } from '@/features/home-offer';
 import { usePassCheckout } from '@/widgets/pass-checkout';
-import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
+import {
+  cancelWinback,
+  notificationsAllowed,
+  scheduleNextDayPush,
+  scheduleWinback,
+  wakeMinutes,
+} from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
 import { firstName, getIntake, useProfileName } from '@/entities/profile';
@@ -33,7 +39,7 @@ import {
   type Plan,
   type Shelf,
 } from '@/entities/purchase';
-import { armHomeTour } from '@/entities/session';
+import { armHomeTour, setHomeTourStage } from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
 import { PRIMARY, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
@@ -43,8 +49,12 @@ import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 
+import { firstSession } from '../model/first-session';
 import { introSeen, markIntroSeen } from '../model/intro';
+import { nextDay } from '../model/next-day';
 import { EXTRA_PLANS } from '../model/plans';
+import { FirstSession } from './first-session';
+import { NextDay } from './next-day';
 import { OfferHero } from './offer-hero';
 import { IntroHow, IntroNext, IntroPlan, StepBar } from './offer-intro';
 import { PlansStep, type PlansStepRow } from './plans-step';
@@ -98,6 +108,13 @@ const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMot
  */
 export function OfferPage() {
   const skipped = usePaywallSkipped();
+  // Before the plans, once: the first session (`FirstSession`), two free
+  // minutes of the plan and "How did that feel?". Done or passed on, the
+  // plans follow; it is offered at every launch until one or the other, and
+  // never to somebody arriving for the comeback price.
+  const comeback = useBoost();
+  const profileName = firstName(useProfileName());
+  const [tasting, setTasting] = useState(() => firstSession() == null);
   // The limited offer's 3-month pass, bought through the pass checkout. Its
   // sheets cannot outlive this route, and need not: the root guards take the
   // route away the moment the paywall is skipped (the offers then stand over
@@ -121,6 +138,10 @@ export function OfferPage() {
       {skipped ? (
         <Animated.View key="offers" entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
           <OfferScreen pass={pass} />
+        </Animated.View>
+      ) : tasting && !comeback ? (
+        <Animated.View key="first" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
+          <FirstSession name={profileName} onDone={() => setTasting(false)} />
         </Animated.View>
       ) : (
         <Animated.View key="plans" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
@@ -205,7 +226,14 @@ function Paywall() {
    * plans. Only on a first, full-price view, and only once on this phone (see
    * `introSeen`); every other view opens on the plans.
    */
-  const [flow] = useState(() => !boosted && !introSeen());
+  /**
+   * The first session was done before this view (`FirstSession`): the plans
+   * carry on from it ("Day 1 done", the day that comes next) instead of
+   * opening with the two story steps, which would start over what the session
+   * already showed. Read once, as the view opens.
+   */
+  const [afterSession] = useState(() => !boosted && firstSession() === 'done');
+  const [flow] = useState(() => !boosted && !afterSession && !introSeen());
   const [step, setStep] = useState<1 | 2 | 3>(flow ? 1 : 3);
   // Android's back button walks the steps back. On the first one it does what
   // it always did on the gate.
@@ -450,7 +478,7 @@ function Paywall() {
    */
   const converted = useRef(false);
   useEffect(() => {
-    track('paywall_viewed', { offering: offeringId, boosted });
+    track('paywall_viewed', { offering: offeringId, boosted, after_session: afterSession });
     return () => {
       if (!converted.current) track('paywall_dismissed', { offering: offeringId });
     };
@@ -502,6 +530,13 @@ function Paywall() {
   /** The plans "Show all plans" opens. Before the store answers, the ones iOS
    * sells, with no figure yet; after, the ones it really has. */
   const extraKinds = EXTRA_PLANS.filter((kind) => (loaded ? plans[kind] != null : kind !== 'weekly'));
+  /**
+   * The weekly, where the store has one, stands under the annual from the
+   * start, the two as a choice: a year is a lot to agree to on a first day,
+   * and a week at its own price is the other honest way in. Never on the
+   * comeback view, which is about one price.
+   */
+  const secondKind: PaywallPeriod | null = !boosted && plans.weekly != null ? 'weekly' : null;
 
   useEffect(() => {
     if (!loaded) return;
@@ -588,6 +623,26 @@ function Paywall() {
     });
     return () => subscription.remove();
   }, [boosted, name]);
+
+  /**
+   * The morning after: "Day 2 is ready", for somebody who did the first
+   * session and left this screen without buying. Laid as the app goes to the
+   * background, for the plan's next day at the time their reminder was set
+   * for (or the hour they wake), and taken back by a purchase, wherever it
+   * is made (`useOfferNotifications`). Not for a day that has already
+   * opened: there is no morning left to arrive on.
+   */
+  useEffect(() => {
+    if (!afterSession) return undefined;
+    const subscription = AppState.addEventListener('change', (state) => {
+      if (state !== 'background' || converted.current) return;
+      const next = nextDay();
+      if (next == null || next.ahead === 0) return;
+      const minutes = planSettings().reminderMinutes ?? wakeMinutes(next.at);
+      void scheduleNextDayPush({ at: next.at + minutes * 60_000, day: next.day, name });
+    });
+    return () => subscription.remove();
+  }, [afterSession, name]);
 
   /** Paid, or as good as: the entitlement guard takes the screen away; this is
    * for the case where it was pushed. */
@@ -721,6 +776,9 @@ function Paywall() {
    */
   const skip = () => {
     armHomeTour();
+    // The day-one session is already done, before this screen: Home opens on
+    // the tour, not on the "Day 1" card again.
+    if (afterSession) setHomeTourStage('tour');
     skipPaywall();
   };
 
@@ -814,7 +872,23 @@ function Paywall() {
       <PlansStep
         stepBar={flow ? <StepBar step={3} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} /> : undefined}
         lead={row('annual')}
-        extras={extraKinds.map(row)}
+        second={secondKind != null ? row(secondKind) : null}
+        // Two plans are the whole choice: with the weekly under the annual
+        // there is no "Show all plans" behind them.
+        extras={secondKind != null ? [] : extraKinds.map(row)}
+        after={
+          afterSession
+            ? {
+                title: profileName.length > 0 ? t('offer.next.titleNamed', { name: profileName }) : t('offer.next.title'),
+                // The free week is the annual's: with the weekly chosen the
+                // line promises only the day.
+                line: t(freeDays != null && tier === 'annual' ? 'offer.next.lineTrial' : 'offer.next.line', {
+                  day: nextDay()?.day ?? 2,
+                }),
+                picture: <NextDay covered={busy || celebrating != null} />,
+              }
+            : null
+        }
         selected={tier}
         onSelect={select}
         leadBadge={offerShown ? t('offer.comebackBadge') : t('offer.plans.mostPopular')}

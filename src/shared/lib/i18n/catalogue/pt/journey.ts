@@ -195,6 +195,19 @@ export const JOURNEY_PT = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Checagem rápida: fique em pé',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'Um dos movimentos do seu plano',
+  'onboarding.test.introBodyOne': 'Uma checagem, alguns segundos.',
+  'onboarding.result.title': 'O que vimos',
+  'onboarding.result.body': 'E o que o seu plano faz com isso.',
+  'onboarding.result.archYes': 'Um arco aparece quando o dedão sobe.',
+  'onboarding.result.archYesPlan': 'Sustentar melhor o arco é uma das metas do seu plano.',
+  'onboarding.result.archNo': 'Seu arco fica como está quando o dedão sobe.',
+  'onboarding.result.archNoPlan': 'Seu plano põe as metas no que o treino pode mudar.',
+  'onboarding.result.archUnsure': 'O arco estava difícil de ver. É comum.',
+  'onboarding.result.archUnsurePlan': 'Seu plano mantém as metas de sempre. Seu primeiro teste olha de novo.',
+  'onboarding.result.balance': 'Em uma perna: esquerda {left} s, direita {right} s.',
+  'onboarding.result.balancePlan': 'Guardado como ponto de partida. Seu primeiro teste mede de novo.',
   'onboarding.test.introBody': 'Duas checagens, 30 segundos.',
   'onboarding.test.introBalance': 'Em uma perna só',
   'onboarding.test.start': 'Começar a checagem',

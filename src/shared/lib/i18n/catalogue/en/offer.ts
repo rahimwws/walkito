@@ -243,6 +243,25 @@ export const OFFER_EN = {
    * the one-time trial offer, never into the app: say nothing that implies
    * the app can be used without Plus. */
   'offer.plans.skip': 'Not now',
+  // The first session before the paywall (`FirstSession`), "How did that
+  // feel?" after it, and the plans that carry on from it. Brackets in the
+  // `offer.next.line*` keys mark the lit words, as in `offer.plans.headline`.
+  'offer.first.title': { one: 'Try the first\n{count} minute now', other: 'Try the first\n{count} minutes now' },
+  'offer.first.titleNamed': { one: '{name}, try the first\n{count} minute now', other: '{name}, try the first\n{count} minutes now' },
+  'offer.first.body': 'Easy moves from Day 1 of your plan.',
+  'offer.first.start': 'Start Day 1',
+  'offer.felt.question': 'How did that feel?',
+  'offer.felt.easy': 'Easy',
+  'offer.felt.ok': 'Just right',
+  'offer.felt.hard': 'Hard',
+  'offer.felt.note': 'Your answer shapes the days that follow.',
+  'offer.next.title': 'Day 1 done.',
+  'offer.next.titleNamed': 'Day 1 done, {name}.',
+  'offer.next.lineTrial': 'Your [free week] starts with Day {day}.',
+  'offer.next.line': '[Day {day}] is ready when you are.',
+  'offer.next.today': 'Today · Day {day}',
+  'offer.next.tomorrow': 'Tomorrow · Day {day}',
+  'offer.next.later': 'Next · Day {day}',
 
   // ── Session player: the locked state ─────────────────────────────────────
   // Only ever seen by somebody whose subscription ended and who answered the
@@ -345,6 +364,9 @@ export const OFFER_EN = {
   'offer.trial.dayTitle': 'Day {day}',
   'offer.trial.remindText': 'We remind you the trial is ending',
   'offer.trial.chargeText': '{price} for the year, unless you cancel',
+  'offer.trial.todayShort': 'Nothing to pay',
+  'offer.trial.remindShort': 'We remind you',
+  'offer.trial.chargeShort': 'First payment',
 
   // ── Paywall: the free week's two steps (`trial-intro.tsx`) ──────────────
   // Shown before the plans to somebody the store gives a free trial. Only

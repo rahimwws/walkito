@@ -233,6 +233,7 @@ function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMom
     case 'planDays':
     case 'equipment':
     case 'test-toe':
+    case 'pain-move':
       return speaker('pointing');
     case 'planMinutes':
       // The clock rings as the question arrives, and at every pick.

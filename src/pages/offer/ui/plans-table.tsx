@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
-import { PLUS, SHEET } from './plans-theme';
+import { usePlansTheme } from './plans-theme';
 
 /**
  * "What you get": a plain list of what the plan includes, in her words.
@@ -21,6 +21,7 @@ const MARK = 22;
 
 export function PlansTable() {
   const t = useT();
+  const { PLUS, SHEET } = usePlansTheme();
   return (
     <View style={styles.list}>
       <Text style={[styles.heading, { color: SHEET.ink }]} accessibilityRole="header" maxFontSizeMultiplier={1.4}>

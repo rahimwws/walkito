@@ -166,6 +166,25 @@ export const OFFER_DE = {
   'offer.plans.cancelAndroid': 'Jederzeit in Google Play kündbar.',
   'offer.plans.oneTime': 'Einmalige Zahlung, kein Abo.',
   'offer.plans.skip': 'Nicht jetzt',
+  // The first session before the paywall (`FirstSession`), "How did that
+  // feel?" after it, and the plans that carry on from it. Brackets in the
+  // `offer.next.line*` keys mark the lit words, as in `offer.plans.headline`.
+  'offer.first.title': { one: 'Probier jetzt die\nerste {count} Minute', other: 'Probier jetzt die\nersten {count} Minuten' },
+  'offer.first.titleNamed': { one: '{name}, probier jetzt\ndie erste {count} Minute', other: '{name}, probier jetzt\ndie ersten {count} Minuten' },
+  'offer.first.body': 'Leichte Übungen aus Tag 1 deines Plans.',
+  'offer.first.start': 'Tag 1 starten',
+  'offer.felt.question': 'Wie hat sich das angefühlt?',
+  'offer.felt.easy': 'Leicht',
+  'offer.felt.ok': 'Genau richtig',
+  'offer.felt.hard': 'Schwer',
+  'offer.felt.note': 'Deine Antwort passt die nächsten Tage an.',
+  'offer.next.title': 'Tag 1 geschafft.',
+  'offer.next.titleNamed': 'Tag 1 geschafft, {name}.',
+  'offer.next.lineTrial': 'Deine [Gratiswoche] beginnt mit Tag {day}.',
+  'offer.next.line': '[Tag {day}] ist bereit, wenn du es bist.',
+  'offer.next.today': 'Heute · Tag {day}',
+  'offer.next.tomorrow': 'Morgen · Tag {day}',
+  'offer.next.later': 'Als Nächstes · Tag {day}',
 
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Dein Abo ist abgelaufen',
@@ -243,6 +262,9 @@ export const OFFER_DE = {
   'offer.trial.dayTitle': 'Tag {day}',
   'offer.trial.remindText': 'Wir erinnern dich, dass der Test endet',
   'offer.trial.chargeText': '{price} für das Jahr, außer du kündigst',
+  'offer.trial.todayShort': 'Nichts zu zahlen',
+  'offer.trial.remindShort': 'Wir erinnern dich',
+  'offer.trial.chargeShort': 'Erste Zahlung',
   'offer.trial.eyebrow': 'Dein Plan ist fertig',
   'offer.trial.giftTitle': { one: 'Teste Walkito\n{count} Tag gratis', other: 'Teste Walkito\n{count} Tage gratis' },
   'offer.trial.giftTitleNamed': { one: '{name}, teste Walkito {count} Tag gratis', other: '{name}, teste Walkito {count} Tage gratis' },

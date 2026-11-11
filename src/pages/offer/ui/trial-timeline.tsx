@@ -5,7 +5,7 @@ import { freeTrialOf, TRIAL_REMINDER_DAYS } from '@/features/home-offer';
 import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
-import { PLUS, SHEET } from './plans-theme';
+import { usePlansTheme } from './plans-theme';
 
 /**
  * How many days the plan's free trial runs, when it is one the paywall tells
@@ -31,9 +31,14 @@ export function trialDays(plan: Plan | null): number | null {
  * floating button. The first twenty people a Meta ad brought to the plans saw
  * the year's price and a button, and left within seconds without starting
  * the trial.
+ *
+ * With a second plan under the card (`compact`) the same three days run
+ * across it on one rail, a few words each, so the other plan is on the first
+ * screenful too: a choice nobody scrolls to is not a choice.
  */
-export function TrialTimeline({ plan }: { plan: Plan | null }) {
+export function TrialTimeline({ plan, compact = false }: { plan: Plan | null; compact?: boolean }) {
   const t = useT();
+  const { PLUS, SHEET } = usePlansTheme();
   const days = trialDays(plan);
   if (plan == null || days == null) return null;
 
@@ -42,6 +47,33 @@ export function TrialTimeline({ plan }: { plan: Plan | null }) {
     { title: t('offer.trial.dayTitle', { day: days - TRIAL_REMINDER_DAYS }), text: t('offer.trial.remindText') },
     { title: t('offer.trial.dayTitle', { day: days }), text: t('offer.trial.chargeText', { price: plan.priceString }) },
   ];
+
+  if (compact) {
+    const stops = [
+      { title: rows[0].title, text: t('offer.trial.todayShort') },
+      { title: rows[1].title, text: t('offer.trial.remindShort') },
+      { title: rows[2].title, text: t('offer.trial.chargeShort') },
+    ];
+    return (
+      <View style={[styles.wrap, styles.across, { borderTopColor: PLUS.washEdge }]}>
+        <View style={[styles.track, { backgroundColor: PLUS.washEdge }]} />
+        {stops.map((stop, i) => (
+          <View key={stop.title} style={[styles.stop, i === 1 && styles.stopMiddle, i === 2 && styles.stopLast]}>
+            <View style={[styles.stopDot, { backgroundColor: i === 0 ? PLUS.accent : PLUS.washEdge }]} />
+            <Text style={[styles.stopTitle, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+              {stop.title}
+            </Text>
+            <Text
+              style={[styles.stopText, { color: SHEET.label }, i === 1 && styles.textMiddle, i === 2 && styles.textLast]}
+              numberOfLines={2}
+              maxFontSizeMultiplier={1.3}>
+              {stop.text}
+            </Text>
+          </View>
+        ))}
+      </View>
+    );
+  }
 
   return (
     <View style={[styles.wrap, { borderTopColor: PLUS.washEdge }]}>
@@ -75,4 +107,15 @@ const styles = StyleSheet.create({
   last: { paddingBottom: 0 },
   title: fonts.bold(16),
   text: { ...fonts.medium(15), lineHeight: 19 },
+  across: { flexDirection: 'row', gap: 6, paddingTop: 12 },
+  // Through the dots' centres, from the first to the last.
+  track: { position: 'absolute', top: 17, left: 6, right: 6, height: 2, borderRadius: 1 },
+  stop: { flex: 1, alignItems: 'flex-start' },
+  stopMiddle: { alignItems: 'center' },
+  stopLast: { alignItems: 'flex-end' },
+  stopDot: { width: 12, height: 12, borderRadius: 6, marginBottom: 6 },
+  stopTitle: fonts.bold(14),
+  stopText: { ...fonts.medium(13), lineHeight: 16 },
+  textMiddle: { textAlign: 'center' },
+  textLast: { textAlign: 'right' },
 });

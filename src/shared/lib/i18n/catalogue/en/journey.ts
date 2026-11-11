@@ -206,6 +206,19 @@ export const JOURNEY_EN = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Quick check: stand up',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'One of the moves in your plan',
+  'onboarding.test.introBodyOne': 'One check, a few seconds.',
+  'onboarding.result.title': 'What we saw',
+  'onboarding.result.body': 'And what your plan does about it.',
+  'onboarding.result.archYes': 'An arch appears when your big toe lifts.',
+  'onboarding.result.archYesPlan': 'A stronger arch hold is one of your plan’s goals.',
+  'onboarding.result.archNo': 'Your arch stays as it is when your big toe lifts.',
+  'onboarding.result.archNoPlan': 'Your plan sets its goals on what training can change.',
+  'onboarding.result.archUnsure': 'The arch was hard to read. That’s common.',
+  'onboarding.result.archUnsurePlan': 'Your plan keeps its usual goals. Your first test looks again.',
+  'onboarding.result.balance': 'One leg: left {left} s, right {right} s.',
+  'onboarding.result.balancePlan': 'Saved as your starting point. Your first test measures it again.',
   'onboarding.test.introBody': 'Two checks, 30 seconds.',
   'onboarding.test.introBalance': 'Standing on one leg',
   'onboarding.test.start': 'Start the check',

@@ -202,7 +202,7 @@ export function ExercisePreview({
         <Image
           source={poster}
           resizeMode="cover"
-          style={[StyleSheet.absoluteFill, mirrored && styles.mirrored]}
+          style={[styles.poster, mirrored && styles.mirrored]}
           accessibilityIgnoresInvertColors
         />
       )}
@@ -270,6 +270,9 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
     overflow: 'hidden',
   },
+  // Sized in so many words: with only the insets of an absolute fill the
+  // still was drawn at several times the frame and showed a corner of itself.
+  poster: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' },
   mirrored: {
     transform: [{ scaleX: -1 }],
   },

@@ -5,13 +5,15 @@ import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import { ExercisePreview } from '@/widgets/session-player';
-import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, accents, clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Card3D } from '@/shared/ui/card-3d';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import {
   Mascot,
   handsUpRig,
+  thumbsUpRig,
   type MascotHandle,
   type MascotRig,
   type MascotShot,
@@ -22,13 +24,13 @@ import type { ResolvedOption } from '../model/steps';
 import { ChoiceStep } from './choice-step';
 
 /**
- * The 30-second check, behind the `onboarding_mini_test` flag.
+ * The 30-second check, for everybody it is safe for (`miniTestEligible`).
  *
  * GOWOD's lesson: somebody who has tested themselves with their own hands has
  * invested in the result, and the plan that follows is visibly theirs. Two
  * checks only — the big toe lift, which tells a flexible flat foot from a
- * rigid one, and, on a quiet morning, standing on one leg. No result screen:
- * the plan built from it is the next thing they see.
+ * rigid one, and, on a quiet morning, standing on one leg. Then what they
+ * showed, and what the plan does about it (`TestResult`).
  */
 
 /** The mascot on the check's first screen. */
@@ -38,22 +40,27 @@ const HERO_SHOT_MS = 300;
 
 /** The page's side padding: the clip's column is measured inside it. */
 const PAGE_GUTTER = 24;
-/** The clip's share of the window's height, at most. Upright and whole, the
- * feet stay in frame, and there is still room for the question under it. */
+/** The clip's share of the window's height, at most: whole, the feet stay in
+ * frame, and there is still room for the question under it. */
 const CLIP_SHARE = 0.46;
-const CLIP_ASPECT = 9 / 16;
 
 /**
- * The clip's box: the films' own 9:16, so `cover` crops under one percent, as
- * tall as the share allows, and narrow enough to clear the coach in the top
- * corner on both sides, so it stays centred. A full-width box would have to
- * crop the clip, and the feet are what goes first.
+ * The clip's box, in the film's own shape, so `cover` crops under one
+ * percent and the feet stay in frame. A wide film lies across the page under
+ * the heading and the coach. An upright one stands beside him, as tall as the
+ * share allows and narrow enough to clear him on both sides, so it stays
+ * centred.
+ *
+ * The check's films were upright when this was drawn and wide ones were
+ * fitted into the same upright box: a strip of film between two black bands,
+ * with the question pushed under the fold.
  */
-function useClipBox(clear: number) {
+function useClipBox(exerciseId: string, clear: number) {
   const { width, height } = useWindowDimensions();
-  const room = width - PAGE_GUTTER * 2 - clear * 2;
-  const tall = Math.min(height * CLIP_SHARE, room / CLIP_ASPECT);
-  return { width: Math.round(tall * CLIP_ASPECT), height: Math.round(tall) };
+  const shape = clipShape(exerciseId);
+  const page = width - PAGE_GUTTER * 2;
+  const wide = Math.round(Math.min(shape > 1 ? page : page - clear * 2, height * CLIP_SHARE * shape));
+  return { width: wide, height: Math.round(wide / shape) };
 }
 
 /**
@@ -84,7 +91,7 @@ export function TestIntro({ withBalance, onSkip }: { withBalance: boolean; onSki
         <Text style={[styles.title, styles.centerText, { color: colors.foreground }]}>
           {t('onboarding.test.introTitle')}
         </Text>
-        <Text style={[styles.body, styles.centerText, { color: meter.caption }]}>{t('onboarding.test.introBody')}</Text>
+        <Text style={[styles.body, styles.centerText, { color: meter.caption }]}>{t(withBalance ? 'onboarding.test.introBody' : 'onboarding.test.introBodyOne')}</Text>
         <Card3D style={styles.card} contentStyle={styles.cardFace}>
           {rows.map((row, i) => (
             <View key={row} style={styles.listRow}>
@@ -109,15 +116,18 @@ export function TestToe({
   answer,
   onAnswer,
   speakerInset = 0,
+  speakerSize = 0,
   onViewerChange,
 }: {
   total: number;
   options: readonly ResolvedOption[];
   answer: string | null;
   onAnswer: (next: string) => void;
-  /** Room the coach takes in the top-right corner. The heading here is under
-   * the clip, so it is the clip's column that has to clear him. */
+  /** Room the coach takes in the top-right corner, beside the heading. */
   speakerInset?: number;
+  /** How tall he is there: the heading is at least that, so the clip starts
+   * under his feet. */
+  speakerSize?: number;
   /** The clip opened full screen, or closed: the coach stops under it. */
   onViewerChange?: (open: boolean) => void;
 }) {
@@ -125,13 +135,17 @@ export function TestToe({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const clip = useClipBox(speakerInset);
+  const clip = useClipBox('big_toe_lift', speakerInset);
 
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+      <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
+        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 1, total })}</Text>
+        <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+          {t('exercises.bigToeLift.title')}
+        </Text>
+      </View>
       <CheckClip exerciseId="big_toe_lift" box={clip} onViewerChange={onViewerChange} />
-      <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 1, total })}</Text>
-      <Text style={[styles.title, { color: colors.foreground }]}>{t('exercises.bigToeLift.title')}</Text>
       <View style={styles.steps}>
         {[t('onboarding.test.toeStep1'), t('onboarding.test.toeStep2')].map((line) => (
           <View key={line} style={styles.stepRow}>
@@ -166,6 +180,7 @@ export function TestBalance({
   onResult,
   onStart,
   speakerInset = 0,
+  speakerSize = 0,
   onViewerChange,
 }: {
   total: number;
@@ -174,15 +189,16 @@ export function TestBalance({
   onResult: (side: Side, seconds: number) => void;
   /** A side's count has started: the coach hops along. */
   onStart?: (side: Side) => void;
-  /** As on the toe check: the clip's column clears the coach. */
+  /** As on the toe check: the heading clears the coach. */
   speakerInset?: number;
+  speakerSize?: number;
   onViewerChange?: (open: boolean) => void;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const clip = useClipBox(speakerInset);
+  const clip = useClipBox('single_leg_hold', speakerInset);
   const [running, setRunning] = useState<Side | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const started = useRef(0);
@@ -223,9 +239,13 @@ export function TestBalance({
 
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+      <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
+        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 2, total })}</Text>
+        <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+          {t('exercises.singleLegHold.title')}
+        </Text>
+      </View>
       <CheckClip exerciseId="single_leg_hold" box={clip} onViewerChange={onViewerChange} />
-      <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 2, total })}</Text>
-      <Text style={[styles.title, { color: colors.foreground }]}>{t('exercises.singleLegHold.title')}</Text>
       <Text style={[styles.body, { color: meter.caption }]}>{t('onboarding.test.balanceBody')}</Text>
 
       <View style={styles.sides}>
@@ -288,12 +308,54 @@ function CheckClip({
       <ExercisePreview
         exerciseId={exerciseId}
         style={box}
-        aspectRatio={CLIP_ASPECT}
+        aspectRatio={clipShape(exerciseId)}
         fit="cover"
         expandPlacement="top-right"
         expandable
         onViewerChange={onViewerChange}
       />
+    </View>
+  );
+}
+
+/** One thing the check showed, and what the plan does about it. */
+export type TestFinding = { emoji: FluentName; saw: string; plan: string };
+
+/**
+ * What the check showed, and what the plan does about it.
+ *
+ * The check used to end without a word: the plan it changed was "the next
+ * thing they see", and nobody could tell it had changed. Thirty seconds of
+ * somebody's own foot deserve an answer, so each thing they looked at is said
+ * back with what the plan does because of it. An observation and a
+ * consequence, never a diagnosis and never a promise; nothing here is sent
+ * anywhere.
+ */
+export function TestResult({ findings }: { findings: readonly TestFinding[] }) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+
+  return (
+    <View style={styles.fill}>
+      <View style={styles.center}>
+        <Hero rig={thumbsUpRig} shot="nod" />
+        <Text style={[styles.title, styles.centerText, { color: colors.foreground }]}>{t('onboarding.result.title')}</Text>
+        <Text style={[styles.body, styles.centerText, { color: meter.caption }]}>{t('onboarding.result.body')}</Text>
+        {findings.map((finding) => (
+          <Card3D key={finding.saw} style={styles.card} contentStyle={styles.finding}>
+            <FluentIcon name={finding.emoji} size={34} />
+            <View style={styles.findingCopy}>
+              <Text style={[styles.listText, { color: colors.foreground }]}>{finding.saw}</Text>
+              <View style={styles.stepRow}>
+                <HugeiconsIcon icon={ArrowRight01Icon} size={18} color={PRIMARY} strokeWidth={2.2} />
+                <Text style={[styles.findingPlan, { color: meter.caption }]}>{finding.plan}</Text>
+              </View>
+            </View>
+          </Card3D>
+        ))}
+      </View>
     </View>
   );
 }
@@ -305,7 +367,8 @@ const styles = StyleSheet.create({
   centerText: { textAlign: 'center' },
   title: { ...fonts.heavy(26, -0.6), lineHeight: 31 },
   body: { ...fonts.regular(16), lineHeight: 22 },
-  meta: { ...fonts.semibold(13), marginTop: 4 },
+  head: { gap: 4, justifyContent: 'center' },
+  meta: fonts.semibold(13),
   clipColumn: { alignItems: 'center' },
   card: { alignSelf: 'stretch' },
   cardFace: { gap: 8 },
@@ -313,6 +376,9 @@ const styles = StyleSheet.create({
   badge: { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
   badgeText: fonts.heavy(14),
   listText: fonts.semibold(16),
+  finding: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  findingCopy: { flex: 1, gap: 6 },
+  findingPlan: { ...fonts.medium(15), lineHeight: 20, flex: 1 },
   skip: { alignSelf: 'center', paddingVertical: 10 },
   skipText: fonts.semibold(15),
   steps: { gap: 8 },

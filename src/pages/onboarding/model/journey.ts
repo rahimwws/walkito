@@ -157,25 +157,52 @@ export function painBandOf(score: number): PainBand {
 
 // ── The 30-second check ─────────────────────────────────────────────────────
 
-/** The PostHog flag the check is rolled out behind. */
-export const MINI_TEST_FLAG = 'onboarding_mini_test';
-
 /** The most a balance hold is counted for; past it, it is not a test any more. */
 export const BALANCE_CAP_SECONDS = 30;
 
 /**
- * Who the check is for: a goal about the arch, or nothing hurting. A sore foot
- * is not asked to stand on one leg to be measured.
+ * Who the check is for: everybody it is safe for. Nothing hurting; or a foot
+ * that hurts, on a morning that is not a hard one (7 and over), with none of
+ * the safety answers that start week one sitting down or want a doctor's
+ * look. It was an experiment for people without pain and for an arch goal;
+ * it is now the one thing in the flow somebody does with their own foot, so
+ * everybody who can stand for it gets it.
  */
 export function miniTestEligible(answers: Answers, painless: boolean): boolean {
-  return painless || first(answers, 'goal') === 'flatfeet';
+  if (painless) return true;
+  const safety = safetyPlan(answers);
+  if (safety.seated || safety.doctor) return false;
+  const score = morningPainOf(answers);
+  return score == null || painBandOf(score) !== 'hard';
 }
 
-/** Balance on one leg only with little pain this morning. */
+/** Balance on one leg only with little pain this morning, and never on a
+ * foot that has gone numb. A sore foot is not asked to stand on one leg to be
+ * measured. */
 export function balanceAllowed(answers: Answers, painless: boolean): boolean {
   if (painless) return true;
+  if (safetyPlan(answers).numb) return false;
   const score = morningPainOf(answers);
   return score != null && score <= 3;
+}
+
+/**
+ * What the big toe check showed, and what the plan does about it, as two
+ * whole sentences. True to `footTypeFor` and the plan's goals: a flexible
+ * foot gets the arch hold as a goal, a rigid one does not, and "not sure"
+ * leaves the plan as it was. Never a diagnosis, and never sent anywhere.
+ */
+export function archFinding(arch: string | null): { saw: Key; plan: Key } | null {
+  switch (arch) {
+    case 'yes':
+      return { saw: 'onboarding.result.archYes', plan: 'onboarding.result.archYesPlan' };
+    case 'no':
+      return { saw: 'onboarding.result.archNo', plan: 'onboarding.result.archNoPlan' };
+    case 'unsure':
+      return { saw: 'onboarding.result.archUnsure', plan: 'onboarding.result.archUnsurePlan' };
+    default:
+      return null;
+  }
 }
 
 /** The arch answer as the plan's foot type. */

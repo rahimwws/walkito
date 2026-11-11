@@ -124,6 +124,10 @@ export const NOTIFICATIONS_FR = {
   'notifications.offerWaitNamed': '{name}, avant de partir - {percent} % de réduction la première année',
   'notifications.offerWait': 'Avant de partir - {percent} % de réduction la première année',
   'notifications.offerWaitBody': 'L’abonnement annuel t’attend à prix réduit. Touche pour le voir.',
+  // The morning after the first session, for somebody who left the paywall.
+  'notifications.nextDay': 'Le jour {day} est prêt',
+  'notifications.nextDayNamed': '{name}, le jour {day} est prêt',
+  'notifications.nextDayBody': 'Le jour 1 est fait. Le suivant prend quelques minutes.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Ton Pass 3 mois se termine dans une semaine',

@@ -190,6 +190,19 @@ export const JOURNEY_RU = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Быстрая проверка: встаньте',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'Одно из движений вашего плана',
+  'onboarding.test.introBodyOne': 'Одна проверка, несколько секунд.',
+  'onboarding.result.title': 'Что мы увидели',
+  'onboarding.result.body': 'И что с этим делает ваш план.',
+  'onboarding.result.archYes': 'Свод появляется, когда поднимается большой палец.',
+  'onboarding.result.archYesPlan': 'Одна из целей вашего плана: дольше удерживать свод.',
+  'onboarding.result.archNo': 'Свод остаётся как есть, когда поднимается большой палец.',
+  'onboarding.result.archNoPlan': 'Цели вашего плана стоят там, где тренировка может что-то изменить.',
+  'onboarding.result.archUnsure': 'Свод было трудно разглядеть. Так бывает часто.',
+  'onboarding.result.archUnsurePlan': 'Цели плана остаются обычными. Первый тест посмотрит ещё раз.',
+  'onboarding.result.balance': 'На одной ноге: левая {left} с, правая {right} с.',
+  'onboarding.result.balancePlan': 'Сохранили как точку отсчёта. Первый тест измерит ещё раз.',
   'onboarding.test.introBody': 'Две проверки, 30 секунд.',
   'onboarding.test.introBalance': 'Стойка на одной ноге',
   'onboarding.test.start': 'Начать проверку',

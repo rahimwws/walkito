@@ -6,7 +6,15 @@ import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
 import { devOpenReadinessInfo, devSetLegState, devSetReadinessScore } from '@/pages/home';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { devPreviewOnFeet, previewNotification } from '@/entities/notifications';
-import { currentDay, devClearCheckIn, devForgetMilestones, devSetStreak, devSetWeekGoal } from '@/entities/program';
+import {
+  currentDay,
+  devClearCheckIn,
+  devForgetMilestones,
+  devSetStreak,
+  devSetWeekGoal,
+  programState,
+  startProgram,
+} from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
 import {
   devPreviewComeback,
@@ -19,6 +27,7 @@ import {
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
+import { devSetFirstSession } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
 import { armSetup, completeOnboarding, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
@@ -46,6 +55,12 @@ const SAMPLE_PARAM = /[?&]samplePrices(?:=(\w+))?\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
 const PAYWALL_PARAM = /[?&]previewPaywall\b/;
+/** `?firstSession=offer`: the first session before the paywall offered
+ * again, with the plan started over today, as it is for somebody who has just
+ * finished the onboarding; `=done` as if it had been done there (the paywall that carries on
+ * from it); `=declined` as if passed on. Read as the paywall opens, so send
+ * it before `?previewPaywall`. */
+const FIRST_SESSION_PARAM = /[?&]firstSession=(offer|done|declined)\b/;
 /** `?trialAudience=meta`: answer as somebody a Meta ad brought, so the first
  * paywall sells the free week; `=organic` as anybody else; `=off` the real
  * answer (AppsFlyer, or the onboarding's source question). */
@@ -224,6 +239,11 @@ export function useDevLinks(): void {
         }
         const sample = SAMPLE_PARAM.exec(url);
         if (sample != null) setSamplePrices(sample[1] !== 'off');
+        const first = FIRST_SESSION_PARAM.exec(url);
+        if (first != null) {
+          if (first[1] === 'offer') startProgram(programState());
+          devSetFirstSession(first[1] as 'offer' | 'done' | 'declined');
+        }
         const audience = TRIAL_AUDIENCE_PARAM.exec(url);
         if (audience != null) devSetTrialAudience(audience[1] as 'meta' | 'organic' | 'off');
         if (PAYWALL_PARAM.test(url)) {

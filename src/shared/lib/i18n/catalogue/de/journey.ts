@@ -190,6 +190,19 @@ export const JOURNEY_DE = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Kurzer Check: steh auf',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'Eine der Übungen aus deinem Plan',
+  'onboarding.test.introBodyOne': 'Ein Check, ein paar Sekunden.',
+  'onboarding.result.title': 'Was wir gesehen haben',
+  'onboarding.result.body': 'Und was dein Plan daraus macht.',
+  'onboarding.result.archYes': 'Ein Fußgewölbe zeigt sich, wenn dein großer Zeh hochgeht.',
+  'onboarding.result.archYesPlan': 'Das Gewölbe länger zu halten ist eines der Ziele deines Plans.',
+  'onboarding.result.archNo': 'Dein Fußgewölbe bleibt, wie es ist, wenn dein großer Zeh hochgeht.',
+  'onboarding.result.archNoPlan': 'Dein Plan setzt seine Ziele dort, wo Training etwas ändern kann.',
+  'onboarding.result.archUnsure': 'Das Gewölbe war schwer zu erkennen. Das ist häufig so.',
+  'onboarding.result.archUnsurePlan': 'Dein Plan behält seine üblichen Ziele. Dein erster Test schaut noch einmal hin.',
+  'onboarding.result.balance': 'Auf einem Bein: links {left} s, rechts {right} s.',
+  'onboarding.result.balancePlan': 'Als Ausgangspunkt gespeichert. Dein erster Test misst es noch einmal.',
   'onboarding.test.introBody': 'Zwei Checks, 30 Sekunden.',
   'onboarding.test.introBalance': 'Auf einem Bein stehen',
   'onboarding.test.start': 'Check starten',

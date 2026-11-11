@@ -1,7 +1,7 @@
 import { usePathname, useRouter } from 'expo-router';
 import { useEffect, useRef } from 'react';
 
-import { Notifications, WINBACK_KIND, cancelComebackPushes } from '@/entities/notifications';
+import { Notifications, WINBACK_KIND, cancelComebackPushes, cancelNextDayPush } from '@/entities/notifications';
 import { unlockBoost } from '@/entities/offer';
 import { useEntitled } from '@/entities/purchase';
 
@@ -89,9 +89,12 @@ export function useOfferNotifications(): void {
   }, [router]);
 
   // Bought (anywhere: the trial offer, the paywall, a restore): a push about
-  // a lower price is wrong from now on, scheduled or in the tray.
+  // a lower price is wrong from now on, scheduled or in the tray. So is the
+  // morning after the first session: the plan's own reminders speak now.
   const entitled = useEntitled();
   useEffect(() => {
-    if (entitled) void cancelComebackPushes();
+    if (!entitled) return;
+    void cancelComebackPushes();
+    void cancelNextDayPush();
   }, [entitled]);
 }

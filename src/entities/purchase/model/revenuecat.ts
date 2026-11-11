@@ -1120,7 +1120,16 @@ export const revenueCatStore: Store = {
     // with no plan beside its pass is read by name, the pass kept.
     const v2 = all.all[OFFERING_V2];
     const cut = v2 == null ? null : v2Slots(v2, identifier);
-    if (cut != null && BILLED.some((period) => cut[period] != null)) return toOffering(identifier, cut);
+    if (cut != null && BILLED.some((period) => cut[period] != null)) {
+      // The weekly subscription is not in `v2`: it is the first line-up's
+      // (sub_weekly_799, still approved in the "Walkito Premium" group), in
+      // the by-name `default` offering. The standard shelf takes it from
+      // there, so the paywall can show it beside the annual; a store that
+      // does not return it leaves the slot empty, as before.
+      const byName = identifier === OFFERINGS.standard && cut.weekly == null ? all.all[OFFERINGS.standard] : null;
+      const weekly = byName == null ? null : slot(byName, 'weekly');
+      return toOffering(identifier, weekly == null ? cut : { ...cut, weekly });
+    }
     const v2Pass = cut?.pass ?? null;
     // By name first, then whatever the dashboard marks current. The fallback
     // matters for `default`, which RevenueCat exposes as `current` rather than

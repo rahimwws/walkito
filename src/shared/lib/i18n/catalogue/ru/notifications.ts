@@ -147,6 +147,10 @@ export const NOTIFICATIONS_RU = {
   'notifications.offerWaitNamed': '{name}, подождите - скидка {percent}% на первый год',
   'notifications.offerWait': 'Подождите - скидка {percent}% на первый год',
   'notifications.offerWaitBody': 'Годовая подписка ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
+  // The morning after the first session, for somebody who left the paywall.
+  'notifications.nextDay': 'День {day} готов',
+  'notifications.nextDayNamed': '{name}, День {day} готов',
+  'notifications.nextDayBody': 'День 1 позади. Следующий займёт несколько минут.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Пропуск на 3 месяца закончится через неделю',

@@ -139,6 +139,8 @@ export type OnboardingStep = StepBase &
     | { kind: 'test-intro' }
     | { kind: 'test-toe' }
     | { kind: 'test-balance' }
+    /** What the check showed, and what the plan does about it. */
+    | { kind: 'test-result' }
     /** The liquid-glass gate that opens the app. */
     | { kind: 'welcome' }
     /** Signing the commitment contract. */
@@ -149,6 +151,9 @@ export type OnboardingStep = StepBase &
     | { kind: 'first-week' }
     /** Where it hurts, on the leg. Up to `MAX_ZONES` zones, or "nothing". */
     | { kind: 'pain-map' }
+    /** One move of the plan for where it hurts, playing: the first thing the
+     * flow gives back, straight after the map. */
+    | { kind: 'move-preview' }
     /** The marked zones again, beside what the plan changes and when. */
     | { kind: 'outlook' }
   );
@@ -174,7 +179,8 @@ export function hurts(answers: Readonly<Record<string, unknown>>): boolean {
   return Array.isArray(pain) && pain.some((value) => value !== 'none');
 }
 
-/** In the 30-second check's experiment, and somebody it is for. */
+/** Given the 30-second check (not "Not now" on its first screen), and
+ * somebody it is for. */
 function testing(answers: Readonly<Record<string, unknown>>): boolean {
   return chose(answers, 'miniTest', 'test') && miniTestEligible(answers, !hurts(answers));
 }
@@ -230,7 +236,12 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'walking', label: (t) => t('onboarding.role.walking') },
     ],
   },
-  { kind: 'reaction', of: 'role', key: 'role-reaction', act: 0, title: UNUSED, blurb: UNUSED, skipWhen: (a) => roleOf(a) == null },
+  // The three reactions are no longer screens of their own: a full screen to
+  // tap through after an answer was three taps that asked nothing. What each
+  // said is now the coach's line over the next question (`carried` in the
+  // page). Kept in the table, as the other retired steps are, so the indices
+  // and a saved place stay where they were.
+  { kind: 'reaction', of: 'role', key: 'role-reaction', act: 0, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   {
     // Only for somebody who runs. The values are analytics identifiers.
     kind: 'choice',
@@ -291,6 +302,9 @@ export const STEPS: readonly OnboardingStep[] = [
     title: (t) => t('onboarding.pain.title', NAME_SLOT),
     blurb: (t) => t('onboarding.pain.blurb', { count: MAX_ZONES }),
   },
+  // Value before the next question: they said where it hurts, and the flow
+  // answers with a move for it, playing, instead of with another question.
+  { kind: 'move-preview', key: 'pain-move', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
   {
     // Which side: the retest compares the sore leg with the other, and "both"
     // switches the asymmetry signals off rather than leaving them dead.
@@ -323,7 +337,7 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
     skipWhen: (a) => !hurts(a),
   },
-  { kind: 'reaction', of: 'duration', key: 'duration-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
+  { kind: 'reaction', of: 'duration', key: 'duration-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   {
     kind: 'morning-pain',
     key: 'morningPain',
@@ -371,7 +385,7 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
     skipWhen: (a) => !hurts(a),
   },
-  { kind: 'reaction', of: 'tried', key: 'tried-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
+  { kind: 'reaction', of: 'tried', key: 'tried-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   {
     // Options swapped in by the page from `goalValuesFor`: five at most, pain
     // first, worded for who they are. Values are analytics identifiers.
@@ -504,6 +518,7 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: UNUSED,
     skipWhen: (a) => !testing(a) || !balanceAllowed(a, !hurts(a)),
   },
+  { kind: 'test-result', key: 'test-result', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
   { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },
   // Retired: a signature before a price read as a trick, and lost one in five

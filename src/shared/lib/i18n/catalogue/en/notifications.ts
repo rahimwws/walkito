@@ -165,6 +165,10 @@ export const NOTIFICATIONS_EN = {
   'notifications.offerWaitNamed': '{name}, before you go - {percent}% off your first year',
   'notifications.offerWait': 'Before you go - {percent}% off your first year',
   'notifications.offerWaitBody': 'The annual subscription is waiting at a lower price. Tap to see it.',
+  // The morning after the first session, for somebody who left the paywall.
+  'notifications.nextDay': 'Day {day} is ready',
+  'notifications.nextDayNamed': '{name}, Day {day} is ready',
+  'notifications.nextDayBody': 'Day 1 is done. The next one takes a few minutes.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   // A week before a 3-month pass ends: the only access with a fixed end (a

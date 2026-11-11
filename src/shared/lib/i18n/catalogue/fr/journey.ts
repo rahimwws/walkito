@@ -196,6 +196,19 @@ export const JOURNEY_FR = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Petit test : lève-toi',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'Un des mouvements de ton plan',
+  'onboarding.test.introBodyOne': 'Un seul test, quelques secondes.',
+  'onboarding.result.title': 'Ce qu’on a vu',
+  'onboarding.result.body': 'Et ce que ton plan en fait.',
+  'onboarding.result.archYes': 'Une voûte apparaît quand ton gros orteil se lève.',
+  'onboarding.result.archYesPlan': 'Mieux tenir la voûte est l’un des objectifs de ton plan.',
+  'onboarding.result.archNo': 'Ta voûte reste comme elle est quand ton gros orteil se lève.',
+  'onboarding.result.archNoPlan': 'Ton plan place ses objectifs là où l’entraînement peut changer quelque chose.',
+  'onboarding.result.archUnsure': 'La voûte était difficile à voir. C’est courant.',
+  'onboarding.result.archUnsurePlan': 'Ton plan garde ses objectifs habituels. Ton premier test regarde à nouveau.',
+  'onboarding.result.balance': 'Sur une jambe : gauche {left} s, droite {right} s.',
+  'onboarding.result.balancePlan': 'Gardé comme point de départ. Ton premier test le mesure à nouveau.',
   'onboarding.test.introBody': 'Deux tests, 30 secondes.',
   'onboarding.test.introBalance': 'Sur une jambe',
   'onboarding.test.start': 'Commencer le test',

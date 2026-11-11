@@ -31,7 +31,6 @@ import { LanguageBadge } from "@/features/language-switch";
 import { SignInSheet } from "@/features/sign-in";
 import { fonts, meterColors, palette } from "@/shared/config";
 import {
-  featureFlag,
   setPersonOnce,
   track,
   type AcquisitionSource,
@@ -95,8 +94,8 @@ import {
   type MiniTestAnswers,
 } from "../model/intake";
 import {
-  MINI_TEST_FLAG,
   MORNING_PAIN_SEED,
+  archFinding,
   areaReaction,
   balanceAllowed,
   durationOf,
@@ -123,6 +122,7 @@ import {
 import { loadQuestionForRole, withName } from "../model/personalise";
 import { PLANS, recommendedIndex } from "../model/plans";
 import { primaryPain } from "../model/reflection";
+import { painMove } from "../model/first-week-deck";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
 import { clearProgress, loadProgress, saveProgress } from "../model/progress";
@@ -155,7 +155,14 @@ import { IntroStep } from "./intro-step";
 import { KitAdds } from "./kit-tile";
 import { PassportCard, type PassportStamp } from "./foot-passport";
 import { MidwayStep } from "./midway-step";
-import { TestBalance, TestIntro, TestToe } from "./mini-test";
+import {
+  TestBalance,
+  TestIntro,
+  TestResult,
+  TestToe,
+  type TestFinding,
+} from "./mini-test";
+import { MovePreviewStep } from "./move-preview-step";
 import { MorningPainStep } from "./morning-pain-step";
 import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
@@ -217,6 +224,7 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "toe",
   "bunion",
   "pain",
+  "pain-move",
   "side",
   "duration",
   "duration-reaction",
@@ -228,6 +236,7 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "why",
   "test-toe",
   "test-balance",
+  "test-result",
   "first-week",
   "outlook",
 ]);
@@ -800,6 +809,32 @@ export function OnboardingPage() {
     return () => clearTimeout(timer);
   }, [name, step.kind]);
 
+  /**
+   * What a reaction screen used to say, carried to the question after it:
+   * the three are skipped now (`steps.ts`), and their two sentences are the
+   * coach's line here instead. Found by walking back over the steps this run
+   * stepped over, so it lands on whichever question really came next.
+   */
+  const carried = (() => {
+    for (let i = index - 1; i >= 0; i -= 1) {
+      const before = STEPS[i];
+      if (before.kind === "reaction") {
+        const found =
+          before.of === "role"
+            ? roleReaction(role)
+            : before.of === "duration"
+              ? durationReaction(durationOf(answers))
+              : triedReaction(triedKey(answers));
+        // Two whole sentences, each complete in every language.
+        return found != null
+          ? { id: found.key, text: `${t(found.title)} ${t(found.body)}` }
+          : null;
+      }
+      if (before.skipWhen?.(answers) !== true) return null;
+    }
+    return null;
+  })();
+
   /** The line under the question, for the questions that get one. */
   const inline = (() => {
     if (step.kind === "pain-map" && list(answer).length > 0) {
@@ -814,7 +849,7 @@ export function OnboardingPage() {
       const found = equipmentReaction(answers);
       return found != null ? { id: found.key, text: t(found.text) } : null;
     }
-    return null;
+    return carried;
   })();
   /** In the coach's bubble: the answer said back, or else his own line (a
    * beat as a part of the flow begins, "try it now"). */
@@ -844,6 +879,25 @@ export function OnboardingPage() {
         }
       : null;
 
+  /** What the check showed, each with what the plan does about it. On the
+   * device only, as the answers themselves are. */
+  const testFindings: TestFinding[] = (() => {
+    const out: TestFinding[] = [];
+    const arch = archFinding(miniTestAnswers?.arch ?? null);
+    if (arch != null)
+      out.push({ emoji: "foot", saw: t(arch.saw), plan: t(arch.plan) });
+    if (balance.left != null && balance.right != null)
+      out.push({
+        emoji: "balance",
+        saw: t("onboarding.result.balance", {
+          left: balance.left,
+          right: balance.right,
+        }),
+        plan: t("onboarding.result.balancePlan"),
+      });
+    return out;
+  })();
+
   /** Screens that own their whole canvas, with no header over them. */
   const bare =
     step.kind === "intro" ||
@@ -865,6 +919,7 @@ export function OnboardingPage() {
     step.kind === "midway" ||
     step.kind === "why" ||
     step.kind === "first-week" ||
+    step.kind === "move-preview" ||
     step.kind.startsWith("test-");
 
   const canAdvance = (() => {
@@ -973,7 +1028,7 @@ export function OnboardingPage() {
   // Development: `walkito.dev://?onboardingStep=<key>` jumps to that step, so
   // a screen can be reached on the simulator without tapping through, and
   // `globalThis.__onboarding` does the same from the JS console (with no
-  // "Open in" prompt), plus setting an answer.
+  // "Open in" prompt), plus setting an answer. The link takes answers too.
   useEffect(() => {
     if (!__DEV__) return undefined;
     const jump = (key: string) => {
@@ -985,6 +1040,23 @@ export function OnboardingPage() {
       answer: (key: string, value: Answer) => setAnswers((prev) => ({ ...prev, [key]: value })),
     };
     const onUrl = (url: string | null) => {
+      // `&answers=miniTest:=test,test-toe:no` gives answers before the jump
+      // (a choice by its value, a bare string after `=`), and
+      // `&balance=12:21` the one-leg seconds, left then right: the screens
+      // that depend on earlier ones, without tapping through them.
+      const given = url?.match(/[?&]answers=([\w:,=-]+)/)?.[1];
+      if (given != null)
+        setAnswers((prev) => ({
+          ...prev,
+          ...Object.fromEntries(
+            given.split(",").map((pair) => {
+              const [name, value = ""] = pair.split(":");
+              return [name, value.startsWith("=") ? value.slice(1) : [value]];
+            }),
+          ),
+        }));
+      const held = url?.match(/[?&]balance=(\d{1,2}):(\d{1,2})/);
+      if (held != null) setBalance({ left: Number(held[1]), right: Number(held[2]) });
       const key = url?.match(/[?&]onboardingStep=([\w-]+)/)?.[1];
       if (key != null) jump(key);
     };
@@ -1170,22 +1242,20 @@ export function OnboardingPage() {
       );
       return;
     }
-    // The 30-second check's experiment is decided here, as the flow reaches
-    // it, and only for somebody it is for: reading the flag records the
-    // exposure, and an ineligible person must not count in either arm.
+    // The 30-second check, for everybody it is safe for. It was an
+    // experiment behind a flag; the event keeps its name and its one arm, so
+    // the count of people offered the check carries on.
     if (
       step.key === "equipment" &&
       answers.miniTest == null &&
       miniTestEligible(answers, painless)
     ) {
-      const variant =
-        featureFlag(MINI_TEST_FLAG) === "test" ? "test" : "control";
-      track("mini_test_assigned", { variant });
-      move(true, { miniTest: variant });
+      track("mini_test_assigned", { variant: "test" });
+      move(true, { miniTest: "test" });
       return;
     }
-    // The check's last screen: the toe, or one leg after it. There is no
-    // result screen; the plan it changes is what comes next.
+    // The check's last screen: the toe, or one leg after it. What it showed
+    // is the next screen.
     if (
       step.kind === "test-balance" ||
       (step.kind === "test-toe" && !balanceAllowed(answers, painless))
@@ -1227,6 +1297,8 @@ export function OnboardingPage() {
       case "midway":
       case "first-week":
       case "outlook":
+      case "move-preview":
+      case "test-result":
         return t("onboarding.cta.continue");
       default:
         return t("onboarding.cta.next");
@@ -1322,7 +1394,7 @@ export function OnboardingPage() {
                   key={step.key}
                   id={bubble.id}
                   text={bubble.text}
-                  tail="top-right"
+                  tail={speakerHere ? "top-right" : "none"}
                   delay={bubble.id.startsWith("coach_") ? COACH_LINE_DELAY_MS : 0}
                   style={styles.reaction}
                 />
@@ -1495,6 +1567,7 @@ export function OnboardingPage() {
                   answer={list(answer)[0] ?? null}
                   onAnswer={(next) => setAnswer([next])}
                   speakerInset={inset}
+                  speakerSize={speakerHere ? speakerSize : 0}
                   onViewerChange={setClipViewerOpen}
                 />
               )}
@@ -1513,6 +1586,20 @@ export function OnboardingPage() {
                     )
                   }
                   speakerInset={inset}
+                  speakerSize={speakerHere ? speakerSize : 0}
+                  onViewerChange={setClipViewerOpen}
+                />
+              )}
+
+              {step.kind === "test-result" && (
+                <TestResult findings={testFindings} />
+              )}
+
+              {step.kind === "move-preview" && (
+                <MovePreviewStep
+                  exerciseId={painMove(area)}
+                  speakerInset={inset}
+                  speakerSize={speakerHere ? speakerSize : 0}
                   onViewerChange={setClipViewerOpen}
                 />
               )}

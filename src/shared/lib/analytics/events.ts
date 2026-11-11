@@ -126,7 +126,9 @@ export type AnalyticsEvents = {
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 
   // ── Paywall ──────────────────────────────────────────────────────────────
-  paywall_viewed: { offering: string; boosted: boolean };
+  /** `after_session`: the view that carries on from the first session done
+   * before it ("Day 1 done"), rather than the one that opens cold. */
+  paywall_viewed: { offering: string; boosted: boolean; after_session: boolean };
   /** A step of the first paywall: the two screens before it, then the plans.
    * `story` is which two they are: the free week, or how the plan starts. */
   paywall_step_viewed: { step: 1 | 2 | 3; story: 'trial' | 'plan' };
@@ -240,6 +242,19 @@ export type AnalyticsEvents = {
    * pill, or the score's. Which one only, never a value or the score: they
    * are made of pain, sleep and steps. */
   readiness_info_opened: { part: 'pain' | 'sleep' | 'steps' | 'score' };
+
+  // ── The first session, before the paywall ────────────────────────────────
+  /** "Try the first 2 minutes now", the screen between the onboarding and
+   * the paywall, was shown. Once per arrival on it. */
+  first_session_offered: Record<string, never>;
+  /** Its button: the two-minute session opened. Finishing it is
+   * `day1_session_completed`, the same session as Home's "Day 1" card. */
+  first_session_started: Record<string, never>;
+  /** "Not now" on it: straight to the paywall, with no session done. */
+  first_session_declined: Record<string, never>;
+  /** "How did that feel?" after it, answered: the session player's own three
+   * answers (`session_feedback`), about the session and never about pain. */
+  first_session_felt: { feedback: 'easy' | 'ok' | 'hard' };
 
   // ── Home tour ────────────────────────────────────────────────────────────
   /** "Start" on the "Day 1" card over Home, after the purchase or the skip:

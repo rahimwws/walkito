@@ -2,7 +2,7 @@ import { describe, expect, test } from 'bun:test';
 
 import { CLIPS } from '@/shared/config/clip-manifest';
 
-import { DECK_SIZE, MORNING_MOVE, firstWeekDeck } from './first-week-deck';
+import { DECK_SIZE, MORNING_MOVE, firstWeekDeck, painMove } from './first-week-deck';
 
 const AREAS = [null, 'heel', 'foot', 'arch', 'achilles', 'calf', 'shin', 'knee', 'hip'] as const;
 
@@ -23,6 +23,18 @@ describe('firstWeekDeck', () => {
     expect(deck[0]).toEqual({ id: MORNING_MOVE, when: 'morning' });
     expect(deck[1].when).toBe('session');
     expect(deck[2].when).toBe('session');
+  });
+
+  test('the move shown after the pain map is one the deck shows again, whatever the toe answers', () => {
+    for (const area of AREAS) {
+      const move = painMove(area);
+      expect(CLIPS[move]).toBeDefined();
+      for (const toeWork of [false, true]) {
+        expect(firstWeekDeck(area, toeWork).map((card) => card.id)).toContain(move);
+      }
+    }
+    expect(painMove('heel')).toBe(MORNING_MOVE);
+    expect(painMove('foot')).toBe(MORNING_MOVE);
   });
 
   test('toe work puts the big toe lift in the week', () => {

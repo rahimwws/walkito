@@ -1,6 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 
 import {
+  archFinding,
   balanceAllowed,
   durationReaction,
   equipmentReaction,
@@ -85,16 +86,30 @@ describe('reactions and bands', () => {
 });
 
 describe('the 30-second check', () => {
-  test('for an arch goal or nothing hurting', () => {
-    expect(miniTestEligible({ goal: ['flatfeet'] }, false)).toBe(true);
-    expect(miniTestEligible({ goal: ['mornings'] }, false)).toBe(false);
+  test('for everybody it is safe for', () => {
     expect(miniTestEligible({}, true)).toBe(true);
+    expect(miniTestEligible({ goal: ['mornings'], morningPain: '5' }, false)).toBe(true);
+    expect(miniTestEligible({ safety: ['none'], morningPain: '6' }, false)).toBe(true);
+    expect(miniTestEligible({ safety: ['numb'], morningPain: '2' }, false)).toBe(true);
   });
 
-  test('one leg only on a quiet morning', () => {
+  test('not on a hard morning, and not with a safety answer that seats week one', () => {
+    expect(miniTestEligible({ morningPain: '7' }, false)).toBe(false);
+    for (const flag of ['calf', 'pop', 'diabetes', 'fall']) {
+      expect(miniTestEligible({ safety: [flag], morningPain: '1' }, false)).toBe(false);
+    }
+  });
+
+  test('one leg only on a quiet morning, and never on a numb foot', () => {
     expect(balanceAllowed({ morningPain: '3' }, false)).toBe(true);
     expect(balanceAllowed({ morningPain: '4' }, false)).toBe(false);
+    expect(balanceAllowed({ morningPain: '1', safety: ['numb'] }, false)).toBe(false);
     expect(balanceAllowed({}, true)).toBe(true);
+  });
+
+  test('every arch answer has something seen and something the plan does', () => {
+    for (const arch of ['yes', 'no', 'unsure']) expect(archFinding(arch)).not.toBeNull();
+    expect(archFinding(null)).toBeNull();
   });
 
   test('the arch answer sets the foot type', () => {

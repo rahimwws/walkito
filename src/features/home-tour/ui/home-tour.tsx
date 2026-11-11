@@ -15,7 +15,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
-import { planSessionDone, retestResults, todayKey } from '@/entities/program';
+import { retestResults, sessions } from '@/entities/program';
 import { useReviewMode } from '@/entities/purchase';
 import {
   homeTourForced,
@@ -129,8 +129,9 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
     if (!armed || reviewMode) return;
     // Somebody with history (an account signed into on a new phone, its plan
     // restored) skips the first session: it would push their due test off
-    // today and file two minutes over their real day.
-    const returning = !homeTourForced() && (retestResults().length > 0 || planSessionDone(todayKey()));
+    // today and file two minutes over their real day. So does somebody who
+    // did it before the paywall, today or on a day before they bought.
+    const returning = !homeTourForced() && (retestResults().length > 0 || sessions().length > 0);
     if (stage == null || (stage === 'day1' && returning)) setHomeTourStage(returning ? 'tour' : 'day1');
   }, [armed, stage, reviewMode]);
 

@@ -5,6 +5,7 @@ import { kv } from '@/shared/lib/storage';
 
 import {
   OFFERINGS,
+  FIRST_PRODUCTS,
   PASS_PRODUCTS,
   PRODUCTS,
   type IntroOffer,
@@ -112,7 +113,7 @@ export function sampleOffering(identifier: string): Offering | null {
         identifier,
         annual: plan(identifier, 'annual', PRODUCTS.annual, 59.99),
         monthly: plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
-        weekly: null,
+        weekly: plan(identifier, 'weekly', FIRST_PRODUCTS.weekly, 7.99),
         lifetime: plan(identifier, 'lifetime', PRODUCTS.lifetime, 99.99),
         pass: null,
       };

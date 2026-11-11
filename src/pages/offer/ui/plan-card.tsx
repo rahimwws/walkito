@@ -6,7 +6,7 @@ import { fonts } from '@/shared/config';
 import { Raised } from '@/shared/ui/raised';
 
 import type { PlanCopy } from '../model/plans';
-import { PLUS, SHEET } from './plans-theme';
+import { usePlansTheme } from './plans-theme';
 
 /** Colours cross over as fast as the kit's answer cards do. */
 const SELECT_MS = 120;
@@ -39,13 +39,14 @@ export type PlanCardProps = {
  * so nothing is quoted that the store has not said.
  */
 export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress, children }: PlanCardProps) {
+  const { PLUS, SHEET } = usePlansTheme();
   const on = useSharedValue(selected ? 1 : 0);
   useEffect(() => {
     on.value = withTiming(selected ? 1 : 0, { duration: SELECT_MS, reduceMotion: ReduceMotion.System });
   }, [selected, on]);
 
   const face = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(on.value, [0, 1], [SHEET.surface, PLUS.wash]),
+    backgroundColor: interpolateColor(on.value, [0, 1], [SHEET.card, PLUS.wash]),
     borderColor: interpolateColor(on.value, [0, 1], [SHEET.edge, PLUS.accent]),
   }));
   const lip = useAnimatedStyle(() => ({
@@ -62,7 +63,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
 
   return (
     <Raised
-      face={SHEET.surface}
+      face={SHEET.card}
       edge={SHEET.edge}
       lip={SHEET.edge}
       depth={LIP}
@@ -78,7 +79,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
       contentStyle={[styles.face, disabled && styles.dimmed]}>
       {badge != null && badge !== '' && (
         <View style={[styles.badge, { backgroundColor: PLUS.accent }]}>
-          <Text style={styles.badgeText} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+          <Text style={[styles.badgeText, { color: PLUS.onAccent }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
             {badge}
           </Text>
         </View>
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
     justifyContent: 'center',
   },
-  badgeText: { ...fonts.heavy(13, 0.1), color: PLUS.onAccent },
+  badgeText: fonts.heavy(13, 0.1),
   row: {
     flexDirection: 'row',
     alignItems: 'center',

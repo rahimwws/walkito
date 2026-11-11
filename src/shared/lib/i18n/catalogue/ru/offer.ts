@@ -168,6 +168,25 @@ export const OFFER_RU = {
   'offer.plans.cancelAndroid': 'Отменить можно в любой момент в Google Play.',
   'offer.plans.oneTime': 'Один платёж, без подписки.',
   'offer.plans.skip': 'Не сейчас',
+  // The first session before the paywall (`FirstSession`), "How did that
+  // feel?" after it, and the plans that carry on from it. Brackets in the
+  // `offer.next.line*` keys mark the lit words, as in `offer.plans.headline`.
+  'offer.first.title': { one: 'Попробуйте первую\n{count} минуту сейчас', few: 'Попробуйте первые\n{count} минуты сейчас', many: 'Попробуйте первые\n{count} минут сейчас' },
+  'offer.first.titleNamed': { one: '{name}, попробуйте\nпервую {count} минуту сейчас', few: '{name}, попробуйте\nпервые {count} минуты сейчас', many: '{name}, попробуйте\nпервые {count} минут сейчас' },
+  'offer.first.body': 'Простые движения из Дня 1 вашего плана.',
+  'offer.first.start': 'Начать День 1',
+  'offer.felt.question': 'Как ощущения?',
+  'offer.felt.easy': 'Легко',
+  'offer.felt.ok': 'В самый раз',
+  'offer.felt.hard': 'Тяжело',
+  'offer.felt.note': 'Ваш ответ влияет на следующие дни.',
+  'offer.next.title': 'День 1 сделан.',
+  'offer.next.titleNamed': 'День 1 сделан, {name}.',
+  'offer.next.lineTrial': 'Ваша [бесплатная неделя] начинается с Дня {day}.',
+  'offer.next.line': '[День {day}] готов, когда будете готовы вы.',
+  'offer.next.today': 'Сегодня · День {day}',
+  'offer.next.tomorrow': 'Завтра · День {day}',
+  'offer.next.later': 'Дальше · День {day}',
 
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Ваша подписка закончилась',
@@ -251,6 +270,9 @@ export const OFFER_RU = {
   'offer.trial.dayTitle': 'День {day}',
   'offer.trial.remindText': 'Напомним, что пробный период заканчивается',
   'offer.trial.chargeText': '{price} за год, если не отмените',
+  'offer.trial.todayShort': 'Без оплаты',
+  'offer.trial.remindShort': 'Напомним',
+  'offer.trial.chargeShort': 'Первая оплата',
   'offer.trial.eyebrow': 'Ваш план готов',
   'offer.trial.giftTitle': { one: 'Попробуйте Walkito\nбесплатно {count} день', few: 'Попробуйте Walkito\nбесплатно {count} дня', many: 'Попробуйте Walkito\nбесплатно {count} дней' },
   'offer.trial.giftTitleNamed': { one: '{name}, попробуйте Walkito бесплатно {count} день', few: '{name}, попробуйте Walkito бесплатно {count} дня', many: '{name}, попробуйте Walkito бесплатно {count} дней' },

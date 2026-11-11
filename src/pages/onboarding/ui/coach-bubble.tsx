@@ -27,8 +27,9 @@ export type CoachBubbleProps = {
    * new words (the name, typed on) only retypes. */
   id: string;
   text: string;
-  /** Which corner the coach is in. */
-  tail: 'top-right' | 'top-left';
+  /** Which corner the coach is in. `none` where he is not in a corner (the
+   * step draws him itself), so the line stands without pointing at nobody. */
+  tail: 'top-right' | 'top-left' | 'none';
   /** Types itself in, as the questions do. Never under Reduce Motion. */
   typed?: boolean;
   /** Held back from the step's arrival: a line he says once the question is
@@ -79,7 +80,7 @@ export function CoachBubble({ id, text, tail, typed = true, delay = 0, style }: 
       {/* Its outer half outlined on the two sides that face out, so it reads
           as the bubble's own edge drawn to a point; the inner half lies over
           the bubble and hides the border where they meet. */}
-      <View style={[styles.tail, skin, tail === 'top-right' ? styles.tailRight : styles.tailLeft]} />
+      {tail !== 'none' && <View style={[styles.tail, skin, tail === 'top-right' ? styles.tailRight : styles.tailLeft]} />}
       {/* The first line arrives with the bubble; only a later one crossfades
           in, once the last has gone. */}
       <LayoutAnimationConfig skipEntering>

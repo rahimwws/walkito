@@ -1,7 +1,13 @@
 import * as Haptics from 'expo-haptics';
 import { StyleSheet, Switch, Text, View } from 'react-native';
 
-import { cancelComebackPushes, cancelWinback, setOfferPushes, useOfferPushes } from '@/entities/notifications';
+import {
+  cancelComebackPushes,
+  cancelNextDayPush,
+  cancelWinback,
+  setOfferPushes,
+  useOfferPushes,
+} from '@/entities/notifications';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -37,6 +43,7 @@ export function OfferSettings() {
               setOfferPushes(next);
               if (!next) {
                 void cancelComebackPushes();
+                void cancelNextDayPush();
                 void cancelWinback();
               }
             }}

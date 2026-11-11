@@ -192,6 +192,19 @@ export const JOURNEY_IT = {
 
   // ── The 30-second check ──────────────────────────────────────────────────
   'onboarding.test.introTitle': 'Controllo rapido: alzati in piedi',
+  // The move shown after the pain map, and what the 30-second check showed.
+  'onboarding.move.eyebrow': 'Uno dei movimenti del tuo piano',
+  'onboarding.test.introBodyOne': 'Un controllo, pochi secondi.',
+  'onboarding.result.title': 'Cosa abbiamo visto',
+  'onboarding.result.body': 'E cosa ne fa il tuo piano.',
+  'onboarding.result.archYes': 'Compare un arco quando sollevi l’alluce.',
+  'onboarding.result.archYesPlan': 'Tenere meglio l’arco è uno degli obiettivi del tuo piano.',
+  'onboarding.result.archNo': 'Il tuo arco resta com’è quando sollevi l’alluce.',
+  'onboarding.result.archNoPlan': 'Il tuo piano mette gli obiettivi dove l’allenamento può cambiare qualcosa.',
+  'onboarding.result.archUnsure': 'L’arco era difficile da vedere. È comune.',
+  'onboarding.result.archUnsurePlan': 'Il tuo piano mantiene i soliti obiettivi. Il tuo primo test guarda di nuovo.',
+  'onboarding.result.balance': 'Su una gamba: sinistra {left} s, destra {right} s.',
+  'onboarding.result.balancePlan': 'Salvato come punto di partenza. Il tuo primo test lo misura di nuovo.',
   'onboarding.test.introBody': 'Due controlli, 30 secondi.',
   'onboarding.test.introBalance': 'Su una gamba',
   'onboarding.test.start': 'Inizia il controllo',

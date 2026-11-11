@@ -33,6 +33,17 @@ export const DECK_SIZE = 3;
 export const MORNING_MOVE = 'fascia_stretch';
 
 /**
+ * The one move shown straight after the pain map, for where it hurts: the
+ * morning stretch for a heel or the sole (it is in every plan, every day),
+ * and otherwise the first of the week's own moves for that place. Always a
+ * move the first-week deck shows again later, so "one of the moves in your
+ * plan" is true of it.
+ */
+export function painMove(area: string | null): string {
+  return area === 'heel' || area === 'foot' ? MORNING_MOVE : firstWeekMoves(area)[0];
+}
+
+/**
  * The deck for these answers.
  *
  * The morning stretch first, because it is the one thing in the plan that
