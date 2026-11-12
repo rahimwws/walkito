@@ -1,4 +1,13 @@
-export { analyticsClient, featureFlag, identify, screen, setPerson, setPersonOnce, track } from './analytics';
+export {
+  analyticsClient,
+  featureFlag,
+  identify,
+  markInternal,
+  screen,
+  setPerson,
+  setPersonOnce,
+  track,
+} from './analytics';
 export type {
   AcquisitionSource,
   AppUpdateKind,

@@ -67,9 +67,9 @@ export const PAGES_PT = {
   'pages.program.blockAbout1':
     'Acalmar o pé. Alongamentos e movimento leve - ainda sem carga.',
   'pages.program.blockAbout2':
-    'Começa o trabalho de força. A elevação de calcanhar com toalha é a que mais ajuda com a dor; o pé curto na cadeira fortalece o arco. Muita gente sente uma primeira melhora por volta do dia 20.',
+    'Começa o trabalho de força. A elevação de calcanhar com toalha é a que mais ajuda com a dor; o pé curto na cadeira fortalece o arco.',
   'pages.program.blockAbout3':
-    'A carga sobe: elevação de calcanhar 4 × 10 com mochila, e o pé curto sai da cadeira - agora o arco trabalha com o peso do corpo. As primeiras mudanças no arco podem aparecer a partir da sexta semana.',
+    'A carga sobe: elevação de calcanhar 4 × 10 com mochila, e o pé curto sai da cadeira - agora o arco trabalha com o peso do corpo.',
   'pages.program.blockAbout4':
     'A elevação de calcanhar chega a 5 × 8, a mais pesada do programa. O pé curto passa para uma perna e o elástico entra - só agora, quando os músculos pequenos de dentro do pé já sustentam.',
   'pages.program.blockAbout5':

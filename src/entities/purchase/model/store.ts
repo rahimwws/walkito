@@ -5,8 +5,7 @@ import { Platform } from 'react-native';
 import { compAccess, grantDevAccess, subscribeComp } from './comp';
 import { devGrantPass, passAccess, passEverBought, passServerEnd, subscribePass, syncPassFromServer } from './pass';
 import { type Purchases as Store, unconfigured } from './purchase';
-import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn } from './samples';
-import { storeSheetClosed, storeSheetOpened } from './skip';
+import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn, sampleSheetCloses } from './samples';
 import { noteSourceAnswer } from './trial-audience';
 
 /**
@@ -183,36 +182,7 @@ function pick(): Store {
  * branches were all written against this contract before there was anything
  * behind it, so none of them needed touching when there was.
  */
-export const purchases: Store = withSamplePrices(withComp(withPass(withSheetCount(pick()))));
-
-/**
- * The store, counting its own sheets: a purchase, a restore, the offer-code
- * sheet and the cancel flow's (a promotional offer, Apple's subscription
- * management) each hold `skip.ts` from reading the app going to
- * the background as the person leaving it — on Android the Play billing sheet
- * is reported that way, and leaving is what ends the one-time trial offer.
- */
-function withSheetCount(store: Store): Store {
-  const held =
-    <A extends unknown[], R>(call: (...args: A) => Promise<R>) =>
-    async (...args: A): Promise<R> => {
-      storeSheetOpened();
-      try {
-        return await call(...args);
-      } finally {
-        storeSheetClosed();
-      }
-    };
-  return {
-    ...store,
-    buy: held(store.buy),
-    buyProduct: held(store.buyProduct),
-    restore: held(store.restore),
-    redeemCode: held(store.redeemCode),
-    manageSubscriptions: held(store.manageSubscriptions),
-    buyRetentionOffer: held(store.buyRetentionOffer),
-  };
-}
+export const purchases: Store = withSamplePrices(withComp(withPass(pick())));
 
 /**
  * Development only: sample prices instead of the store (`samples.ts`), while
@@ -234,6 +204,7 @@ function withSamplePrices(store: Store): Store {
       samplePricesOn() ? Promise.resolve(sampleOffering(identifier)) : store.offering(identifier),
     buy: async (plan) => {
       if (!isSamplePlan(plan)) return store.buy(plan);
+      if (sampleSheetCloses()) return { status: 'cancelled' };
       if (plan.isPass) devGrantPass();
       else grantDevAccess();
       return { status: 'purchased' };

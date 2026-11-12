@@ -128,7 +128,7 @@ export type AnalyticsEvents = {
   // ── Paywall ──────────────────────────────────────────────────────────────
   /** `after_session`: the view that carries on from the first session done
    * before it ("Day 1 done"), rather than the one that opens cold. */
-  paywall_viewed: { offering: string; boosted: boolean; after_session: boolean };
+  paywall_viewed: { offering: string; boosted: boolean; after_session: boolean; wall: boolean };
   /** A step of the first paywall: the two screens before it, then the plans.
    * `story` is which two they are: the free week, or how the plan starts. */
   paywall_step_viewed: { step: 1 | 2 | 3; story: 'trial' | 'plan' };
@@ -149,7 +149,23 @@ export type AnalyticsEvents = {
   /** Waiting on Ask to Buy or a bank's confirmation. Not a failure; if it
    * goes through, RevenueCat reports the purchase server-side. */
   purchase_pending: PurchaseProps;
-  purchase_failed: PurchaseProps & { reason: string };
+  /** `reason` is RevenueCat's error code, `readable` its name for it and
+   * `underlying` the store's own message under it. */
+  purchase_failed: PurchaseProps & { reason: string; readable?: string; underlying?: string };
+  /** A purchase that was started and never answered (the app closed under
+   * the store's sheet), said at the next launch. */
+  purchase_unresolved: PurchaseProps;
+  /** The answer to "What stopped you?", asked once after the store's sheet
+   * was closed without buying. `dismissed`: the question was closed
+   * unanswered. */
+  purchase_cancel_reason: {
+    reason: 'subscription' | 'price' | 'charge' | 'try' | 'other' | 'dismissed';
+    plan: PlanTier;
+    offering: string;
+  };
+  /** Both ankles were measured by the phone (the Foot Check). That it
+   * happened and where, never the degrees: they stay on the phone. */
+  ankle_measured: { place: 'onboarding' | 'progress' };
   restore_completed: { status: 'restored' | 'nothing-found' | 'failed' };
   /** "See all plans" on the paywall: the monthly and lifetime plans shown
    * under the annual one. */
@@ -374,6 +390,22 @@ export type AnalyticsEvents = {
   /** The launch after an accepted over-the-air restart is running a different
    * update than the one it left. The funnel's last step: accepted → applied. */
   app_update_applied: { kind: 'ota' };
+
+  // ── The check-in's history and time on the feet ──────────────────────────
+  // That a card was seen or tapped, nothing more: never an answer, a count of
+  // answers, hours on foot or steps.
+  /** "See your full history" under Home's answered check-in opened Progress. */
+  checkin_history_opened: Record<string, never>;
+  /** Home's card for the morning after a long day on the feet was seen. Once
+   * per day it is seen. */
+  on_feet_card_viewed: Record<string, never>;
+  /** Its button opened the relief routine. */
+  on_feet_card_opened: Record<string, never>;
+  /** It was closed with its cross. */
+  on_feet_card_dismissed: Record<string, never>;
+  /** "Connect Health" on Progress's "Your week on your feet", and how the
+   * system's request went, as the setup step names it. Never a reading. */
+  on_feet_connect_tapped: { outcome: 'unavailable' | 'declined' | 'empty' | 'ready' };
 };
 
 export type AppUpdateKind = 'ota' | 'store';

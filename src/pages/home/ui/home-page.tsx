@@ -48,6 +48,7 @@ import { MilestoneMascot } from './milestone-mascot';
 import { CHECK_IN_GAP, PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
+import { LongDayCard } from './long-day-card';
 import { PassEndingCard } from './pass-ending-card';
 import { dayStory } from '../model/day-story';
 import { legState, readinessParts, readinessScore } from '../model/readiness';
@@ -119,7 +120,12 @@ export function HomePage() {
    * for the stack, so the list under it never lags a frame behind. */
   const checkInViews = useSharedValue(0);
   const checkInRow = useSharedValue(0);
-  const checkInHeight = useDerivedValue(() => checkInViews.value + CHECK_IN_GAP + checkInRow.value);
+  /** The room the long-day card takes under the check-in, nothing when it is
+   * not there: part of the same block, so today's tasks follow it too. */
+  const longDayRoom = useSharedValue(0);
+  const checkInHeight = useDerivedValue(
+    () => checkInViews.value + CHECK_IN_GAP + checkInRow.value + longDayRoom.value,
+  );
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
@@ -333,19 +339,29 @@ export function HomePage() {
           <DailyStack
             firstHeight={checkInHeight}
             first={
-              <PainCheck
-                onLogged={(painless, origin) => {
-                  // Only for a day with no pain in it. Confetti for logging a
-                  // seven would be the app celebrating at someone who just told
-                  // it they are hurting. Thrown from the mascot, on his hop.
-                  if (!painless) return;
-                  setBurstFrom(origin ?? null);
-                  setBurst((n) => n + 1);
-                }}
-                covered={milestoneOpen || streakOpen || dayOne != null}
-                onSheet={setCheckSheet}
-                heights={{ views: checkInViews, row: checkInRow }}
-              />
+              <>
+                <PainCheck
+                  onLogged={(painless, origin) => {
+                    // Only for a day with no pain in it. Confetti for logging a
+                    // seven would be the app celebrating at someone who just told
+                    // it they are hurting. Thrown from the mascot, on his hop.
+                    if (!painless) return;
+                    setBurstFrom(origin ?? null);
+                    setBurst((n) => n + 1);
+                  }}
+                  covered={milestoneOpen || streakOpen || dayOne != null}
+                  onSheet={setCheckSheet}
+                  heights={{ views: checkInViews, row: checkInRow }}
+                />
+                {/* The morning after a long day on the feet: what Health saw,
+                    and three seated minutes. Not during the first run or
+                    under the offer wall: Home is not theirs yet. */}
+                <LongDayCard
+                  allowed={!walled && !lapsed && tourState !== 'armed'}
+                  seen={focused && revealed}
+                  room={longDayRoom}
+                />
+              </>
             }
             second={
               <TodayTasks

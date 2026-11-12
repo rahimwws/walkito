@@ -102,12 +102,6 @@ export const HOME_OFFER_RU = {
   'homeOffer.terms.monthly': 'Подписка на месяц: {price} в месяц.',
   'homeOffer.terms.lifetime': 'Один платёж {price}. Ничего не продлевается.',
 
-  'homeOffer.push.lastChanceTitle': 'Не переживайте, вот последний шанс',
-  'homeOffer.push.lastChanceBoth': 'Год Walkito Plus дешевле или доступ навсегда.',
-  'homeOffer.push.lastChanceYear': 'Год Walkito Plus по сниженной цене, но только недолго.',
-  'homeOffer.push.lastChanceLifetime': 'Walkito Plus навсегда за один платёж, но только недолго.',
-  'homeOffer.push.endsSoonTitle': 'Предложение скоро закончится',
-  'homeOffer.push.endsSoonBody': 'Сниженная цена на Walkito Plus пропадёт через несколько часов.',
   'homeOffer.push.trialEndsTitle': {
     one: 'Пробный период закончится через {count} день',
     few: 'Пробный период закончится через {count} дня',

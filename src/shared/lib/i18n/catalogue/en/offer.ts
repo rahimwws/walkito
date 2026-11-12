@@ -243,6 +243,16 @@ export const OFFER_EN = {
    * the one-time trial offer, never into the app: say nothing that implies
    * the app can be used without Plus. */
   'offer.plans.skip': 'Not now',
+  // Asked once, after Apple's sheet was closed without buying
+  // (`CancelQuestion`). The title is a fact, not a comfort: nothing was
+  // charged. The answers are reasons in the person's own voice.
+  'offer.cancel.title': 'No charge was made.',
+  'offer.cancel.question': 'What stopped you?',
+  'offer.cancel.subscription': 'I don’t want a subscription',
+  'offer.cancel.price': 'It costs too much',
+  'offer.cancel.charge': 'I wasn’t sure when I’d be charged',
+  'offer.cancel.try': 'I want to try it first',
+  'offer.cancel.other': 'Something else',
   // The first session before the paywall (`FirstSession`), "How did that
   // feel?" after it, and the plans that carry on from it. Brackets in the
   // `offer.next.line*` keys mark the lit words, as in `offer.plans.headline`.

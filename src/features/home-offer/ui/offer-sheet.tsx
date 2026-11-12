@@ -9,8 +9,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Glow } from '@/shared/ui/glow';
 
-import type { PassSale } from '../model/use-offer-purchase';
-import type { OfferGuard } from '../model/use-offer-screen';
+import type { OfferGuard, PassSale } from '../model/use-offer-purchase';
 import { useOfferSheet, type OfferSheetKind } from '../model/use-offer-sheet';
 
 import { OfferPanel } from './offer-panel';

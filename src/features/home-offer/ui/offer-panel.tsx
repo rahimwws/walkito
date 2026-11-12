@@ -4,7 +4,6 @@ import { useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { notificationsPossible } from '@/entities/notifications';
-import { expectReturn } from '@/entities/purchase';
 import { faces, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
@@ -17,10 +16,10 @@ import { TypedText } from '@/shared/ui/typed-text';
 import type { OfferContent } from '../model/content';
 import { firstSlot, viewFor } from '../model/offer-view';
 import type { Slot } from '../model/plan-terms';
-import type { OfferGuard } from '../model/use-offer-screen';
 import {
   TRIAL_REMINDER_DAYS,
   useOfferPurchase,
+  type OfferGuard,
   type OfferPurchaseOptions,
   type PassSale,
 } from '../model/use-offer-purchase';
@@ -281,7 +280,6 @@ export function OfferPanel({
           <View
             onTouchStart={() => {
               guard.current.linkAt = Date.now();
-              expectReturn();
             }}>
             <LegalLinks onRestore={() => void restore()} disabled={busy || passBusy} />
           </View>

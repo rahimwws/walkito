@@ -54,6 +54,7 @@ import { SafetySheet } from '@/features/safety-check';
 
 import { LegMap, MAX_ZONES, ZONE_LABEL_KEYS, reliefIdsFor, toggleZone, type LegZone } from '@/entities/leg-zone';
 
+import { CheckInHistory } from './check-in-history';
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 
 /** Between the question (or the answer) and the "Something new?" row. */
@@ -828,6 +829,9 @@ function SomethingNewRow({ onPress }: { onPress: () => void }) {
  * the way the pain apps show it, with "Edit" to correct it in place. The
  * mascot wears the answer: hands up for no pain, holding the sore foot
  * otherwise, never cheering a number.
+ *
+ * Under the answer, in the same card, the days it joins: how many of the last
+ * two weeks carry a check-in, as a count and a row of dots (`CheckInHistory`).
  */
 function CheckInSummary({
   score,
@@ -880,39 +884,42 @@ function CheckInSummary({
   }, [reaction, paused, score, width, height]);
   return (
     <View style={[styles.summary, { backgroundColor: colors.card }]}>
-      <View
-        ref={art}
-        accessibilityElementsHidden
-        importantForAccessibility="no-hide-descendants"
-        style={styles.summaryArt}>
-        <CardMascot
-          ref={mascot}
-          rig={score === 0 ? handsUpRig : painRig}
-          size={76}
-          surface={colors.card}
-          paused={paused}
-        />
-      </View>
-      <View style={styles.summaryCopy}>
-        <Text style={[styles.summaryTitle, { color: colors.foreground }]}>
-          {score === 0 ? t('home.todayNoPain') : t('home.todayPain', { score })}
-        </Text>
-        {where !== '' && (
-          <Text numberOfLines={2} style={[styles.summaryLine, { color: meter.caption }]}>
-            {t('home.todayWhere', { zones: where })}
+      <View style={styles.summaryRow}>
+        <View
+          ref={art}
+          accessibilityElementsHidden
+          importantForAccessibility="no-hide-descendants"
+          style={styles.summaryArt}>
+          <CardMascot
+            ref={mascot}
+            rig={score === 0 ? handsUpRig : painRig}
+            size={76}
+            surface={colors.card}
+            paused={paused}
+          />
+        </View>
+        <View style={styles.summaryCopy}>
+          <Text style={[styles.summaryTitle, { color: colors.foreground }]}>
+            {score === 0 ? t('home.todayNoPain') : t('home.todayPain', { score })}
           </Text>
-        )}
-        {flareScore != null && (
-          <Text style={[styles.summaryLine, { color: meter.caption }]}>{t('home.flareLast', { score: flareScore })}</Text>
-        )}
+          {where !== '' && (
+            <Text numberOfLines={2} style={[styles.summaryLine, { color: meter.caption }]}>
+              {t('home.todayWhere', { zones: where })}
+            </Text>
+          )}
+          {flareScore != null && (
+            <Text style={[styles.summaryLine, { color: meter.caption }]}>{t('home.flareLast', { score: flareScore })}</Text>
+          )}
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          hitSlop={10}
+          onPress={onEdit}
+          style={({ pressed }) => [styles.editChip, { backgroundColor: meter.iconTile }, pressed && { opacity: 0.6 }]}>
+          <Text style={[styles.editText, { color: colors.foreground }]}>{t('home.checkInEdit')}</Text>
+        </Pressable>
       </View>
-      <Pressable
-        accessibilityRole="button"
-        hitSlop={10}
-        onPress={onEdit}
-        style={({ pressed }) => [styles.editChip, { backgroundColor: meter.iconTile }, pressed && { opacity: 0.6 }]}>
-        <Text style={[styles.editText, { color: colors.foreground }]}>{t('home.checkInEdit')}</Text>
-      </Pressable>
+      <CheckInHistory />
     </View>
   );
 }
@@ -1437,11 +1444,13 @@ const styles = StyleSheet.create({
   },
   newCopy: { flex: 1, gap: 2 },
   summary: {
+    borderRadius: CARD_RADIUS,
+    borderCurve: 'continuous',
+  },
+  summaryRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    borderRadius: CARD_RADIUS,
-    borderCurve: 'continuous',
     paddingVertical: 14,
     paddingLeft: 10,
     paddingRight: 16,

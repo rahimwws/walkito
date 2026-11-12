@@ -25,6 +25,7 @@ import { PASS_ES } from './pass';
 import { COMMUNITY_ES } from './community';
 import { INSIGHTS_ES } from './insights';
 import { REVIEWER_ES } from './reviewer';
+import { FOOT_CHECK_ES } from './foot-check';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -60,4 +61,5 @@ export const es: CatalogueFor<'es'> = {
   ...COMMUNITY_ES,
   ...INSIGHTS_ES,
   ...REVIEWER_ES,
+  ...FOOT_CHECK_ES,
 };

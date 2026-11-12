@@ -137,6 +137,8 @@ export type OnboardingStep = StepBase &
     /** The 30-second check, behind a PostHog flag: what it is, the big toe
      * lift and one leg. No result screen: the plan it changes is shown next. */
     | { kind: 'test-intro' }
+    /** The ankle bend, measured by the phone on the shin (the Foot Check). */
+    | { kind: 'test-ankle' }
     | { kind: 'test-toe' }
     | { kind: 'test-balance' }
     /** What the check showed, and what the plan does about it. */
@@ -509,6 +511,16 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
+  // Only on a phone that can measure: `ankleCheck` is written with
+  // `miniTest`, by the page, which is where the sensor is asked.
+  {
+    kind: 'test-ankle',
+    key: 'test-ankle',
+    act: 3,
+    title: UNUSED,
+    blurb: UNUSED,
+    skipWhen: (a) => !testing(a) || !chose(a, 'ankleCheck', 'on'),
+  },
   { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   {
     kind: 'test-balance',

@@ -1,13 +1,11 @@
-import { BlurView } from 'expo-blur';
 import { useEffect, useRef, useState } from 'react';
-import { Modal, Platform, StyleSheet, View } from 'react-native';
+import { Modal, StyleSheet } from 'react-native';
 import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
-import { OfferScreen, type PassSale } from '@/features/home-offer';
+import { PaywallWall } from '@/pages/offer';
+import { palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
-import { usePassCheckout } from '@/widgets/pass-checkout';
 
-const BLUR = 36;
 const IN_MS = 520;
 /** Raised by the tour's last tap, it waits for the tour: the last stop fades
  * out (220 ms) and only then takes its modal down, and one modal presenting
@@ -16,41 +14,29 @@ const IN_MS = 520;
 const PRESENT_AFTER_MS = 360;
 
 /**
- * The offer after the free first run (the "Day 1" session and the Home tour),
- * for somebody who skipped the paywall: Home stays where it was, blurred, and
- * the one-time trial offer (and the offers after it, `OfferScreen`) stands
- * over it.
+ * The plans after the free first run (the "Day 1" session and the Home tour),
+ * for somebody who said "Not now" on the paywall: the same plans at the same
+ * prices (`PaywallWall`), carrying on from the day they have done.
+ *
+ * Nothing else is offered here: no second price and no deadline. An offer
+ * that appears because the first was turned down is what App Review rejects
+ * under Guideline 5.6, and a countdown is not a reason anybody trusts.
  *
  * A hard wall, as the paywall is: no close, and Android's back does nothing.
  * Buying or restoring makes `entitled` true, the root stops rendering this and
  * Home is theirs; leaving the app is the other way out, and it comes back on
- * the next launch. A modal rather than a route, so the blurred page under it
- * is their own Home, the thing the offer is for.
- *
- * The limited offer's 3-month pass is bought through the pass checkout, whose
- * sheets are mounted here, inside this modal, so they rise over the offer.
- * The wall stays up while its checkout is busy: a pass bought opens the app
- * at once (the store's own record), which takes `visible` away in the middle
- * of "Setting up your 3 months", "Your 3 months are set" and the store's page
- * over them, all of which this modal holds.
+ * the next launch. A modal rather than a route, so Home stays mounted under
+ * it and is there the moment the purchase lands.
  */
 export function OfferWall({ visible }: { visible: boolean }) {
   const scheme = useColorScheme();
-  const checkout = usePassCheckout();
-  const pass: PassSale = {
-    buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
-    signInToRestore: checkout.signInToRestore,
-    busy: checkout.busy,
-    notice: checkout.notice,
-  };
-  const shown = visible || checkout.busy;
-  const [mounted, setMounted] = useState(shown);
+  const [mounted, setMounted] = useState(visible);
   const progress = useSharedValue(0);
   /** Up from the first frame: a launch onto the wall, not the tour's end. */
-  const atLaunch = useRef(shown);
+  const atLaunch = useRef(visible);
 
   useEffect(() => {
-    if (!shown) {
+    if (!visible) {
       atLaunch.current = false;
       setMounted(false);
       progress.value = 0;
@@ -78,7 +64,7 @@ export function OfferWall({ visible }: { visible: boolean }) {
       clearTimeout(timer);
       cancelAnimationFrame(frame);
     };
-  }, [shown, progress]);
+  }, [visible, progress]);
 
   const fade = useAnimatedStyle(() => ({ opacity: progress.value }));
 
@@ -86,19 +72,9 @@ export function OfferWall({ visible }: { visible: boolean }) {
 
   return (
     <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={() => undefined}>
-      <Animated.View style={[StyleSheet.absoluteFill, fade]}>
-        {Platform.OS === 'ios' ? (
-          <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={StyleSheet.absoluteFill} />
-        ) : null}
-        <View
-          style={[
-            StyleSheet.absoluteFill,
-            { backgroundColor: scheme === 'dark' ? 'rgba(10,10,12,0.62)' : 'rgba(250,250,252,0.7)' },
-          ]}
-        />
-        <OfferScreen pass={pass} />
+      <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: palette[scheme].background }, fade]}>
+        <PaywallWall />
       </Animated.View>
-      {checkout.sheet}
     </Modal>
   );
 }

@@ -7,7 +7,7 @@ import { recordEmailLinkOpened } from '@/entities/profile';
 import { requestProtocol } from '@/entities/protocols';
 import { clearBrowsingLapsed, useAccessLapsed, useEntitled } from '@/entities/purchase';
 import { useAccountOwed, useOnboarded, useSetupPending } from '@/entities/session';
-import { track } from '@/shared/lib/analytics';
+import { markInternal, track } from '@/shared/lib/analytics';
 import { requestProgram } from '@/shared/lib/program';
 
 import { savePendingLink } from '../model/pending';
@@ -53,6 +53,15 @@ export function OpenLinkPage() {
     if (params.src === 'email' && params.e) {
       track('email_link_opened', { email_key: params.e, path });
       void recordEmailLinkOpened(params.e, path);
+    }
+
+    // A phone of the team's, marked so its events are not counted as a
+    // customer's (`markInternal`). Never kept for later: it has to hold from
+    // the onboarding on.
+    if (path === 'internal' || path === 'internal/off') {
+      markInternal(path === 'internal');
+      router.replace('/');
+      return;
     }
 
     if (tabsAhead) {

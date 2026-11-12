@@ -5,7 +5,6 @@ import { kv } from '@/shared/lib/storage';
 
 import {
   OFFERINGS,
-  FIRST_PRODUCTS,
   PASS_PRODUCTS,
   PRODUCTS,
   type IntroOffer,
@@ -46,6 +45,19 @@ export function setSamplePrices(on: boolean): void {
   if (!__DEV__) return;
   if (on) kv.set(KEY, true);
   else kv.remove(KEY);
+}
+
+let sheetCloses = false;
+
+/** Development only (`?samplePrices=cancel`): a sample purchase answers as
+ * the store's sheet closed without buying, so what follows that can be seen
+ * on a simulator. Until the app restarts or the link is sent again. */
+export function setSampleSheetCloses(on: boolean): void {
+  sheetCloses = __DEV__ && on;
+}
+
+export function sampleSheetCloses(): boolean {
+  return sheetCloses;
 }
 
 /** Whether a plan came from here rather than from a store. */
@@ -113,7 +125,7 @@ export function sampleOffering(identifier: string): Offering | null {
         identifier,
         annual: plan(identifier, 'annual', PRODUCTS.annual, 59.99),
         monthly: plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
-        weekly: plan(identifier, 'weekly', FIRST_PRODUCTS.weekly, 7.99),
+        weekly: null,
         lifetime: plan(identifier, 'lifetime', PRODUCTS.lifetime, 99.99),
         pass: null,
       };

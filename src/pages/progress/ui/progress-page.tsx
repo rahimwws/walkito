@@ -4,9 +4,11 @@ import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { healthAvailable } from '@/entities/health';
 import {
   addDays,
   currentDay,
+  fromDateKey,
   goals as planGoals,
   painSeries,
   programState,
@@ -36,16 +38,20 @@ import {
   RANGE_ORDER,
   countReadings,
   painBars,
+  painCounts,
   painStart,
   painSummary,
   strengthTrends,
   type RangeKey,
 } from '../model/progress-data';
+import { useDevOnFeetWeek } from '../model/on-feet-dev';
 import { useSeedDemoTrigger } from '../model/seed-demo';
 import { weekRecap } from '../model/week-recap';
 import { GaitCard, PatternsCard, ShoesCard, hasGaitData } from './body-cards';
+import { AnkleCard } from './ankle-card';
 import { ConsistencyCard } from './consistency-card';
 import { GoalsCard } from './goals-card';
+import { OnFeetWeekCard } from './on-feet-week-card';
 import { PainCard } from './pain-card';
 import { StrengthCard } from './strength-card';
 import { WeekRecapCard } from './week-recap-card';
@@ -84,6 +90,7 @@ export function ProgressPage() {
   usePlanVersion();
   useLogsVersion();
   useSeedDemoTrigger();
+  const devOnFeet = useDevOnFeetWeek();
   const t = useT();
 
   /** What the streak means, opened from the capsule that shows it. */
@@ -104,6 +111,7 @@ export function ProgressPage() {
   const twice = painSeries(today, days * 2);
   const summary = painSummary(twice, days);
   const bars = painBars(twice.slice(-days), today, range);
+  const counts = painCounts(twice.slice(-days), currentDay(now));
   const total = countReadings(painSeries(today, Math.max(1, Math.min(HISTORY_DAYS, currentDay(now)))));
   const start = painStart(painSeries(addDays(programState().startDate, 6), 7));
 
@@ -168,7 +176,15 @@ export function ProgressPage() {
         </IntroReveal>
 
         <IntroReveal order={3} style={styles.gap}>
-          <PainCard range={range} bars={bars} summary={summary} start={start} total={total} paused={covered} />
+          <PainCard
+            range={range}
+            bars={bars}
+            summary={summary}
+            start={start}
+            total={total}
+            counts={counts}
+            paused={covered}
+          />
         </IntroReveal>
 
         {/* What their own days say about their mornings, under the chart
@@ -177,8 +193,22 @@ export function ProgressPage() {
           <PatternsCard />
         </IntroReveal>
 
+        {/* The days themselves, under what they say about the mornings: the
+            last seven on foot. Not where there is no Health to read. */}
+        {(healthAvailable() || (__DEV__ && devOnFeet != null)) && (
+          <IntroReveal order={4} style={styles.next}>
+            <OnFeetWeekCard />
+          </IntroReveal>
+        )}
+
         <IntroReveal order={4} style={styles.next}>
           <StrengthCard trends={trends} nextTest={nextTest} today={today} mascot={!painWaiting} paused={covered} />
+        </IntroReveal>
+
+        {/* The ankle bend the phone measures, beside the tests it is
+            measured with. */}
+        <IntroReveal order={4} style={styles.next}>
+          <AnkleCard nextTestAt={nextTest != null ? fromDateKey(nextTest).getTime() : null} />
         </IntroReveal>
 
         <IntroReveal order={5} style={styles.next}>

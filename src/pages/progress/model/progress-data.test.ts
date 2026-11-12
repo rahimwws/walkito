@@ -4,6 +4,7 @@ import {
   countReadings,
   heatSummary,
   painBars,
+  painCounts,
   painStart,
   painSummary,
   readingsToGo,
@@ -44,6 +45,20 @@ describe('painBars', () => {
 
   test('nothing logged means nothing is picked out', () => {
     expect(painBars(Array(30).fill(null), '2026-10-08', 'month').some((b) => b.latest)).toBe(false);
+  });
+});
+
+describe('painCounts', () => {
+  test('no pain, pain and not logged, each morning counted once', () => {
+    expect(painCounts([0, 3, null, 0, 7, null, null])).toEqual({ none: 2, pain: 2, unlogged: 3 });
+  });
+  test('an empty range counts nothing', () => {
+    expect(painCounts([])).toEqual({ none: 0, pain: 0, unlogged: 0 });
+  });
+  test('days before the plan began are not mornings left unlogged', () => {
+    expect(painCounts([null, null, null, 0, 3, null], 3)).toEqual({ none: 1, pain: 1, unlogged: 1 });
+    expect(painCounts([null, 4], 0)).toEqual({ none: 0, pain: 0, unlogged: 0 });
+    expect(painCounts([null, 4], 90)).toEqual({ none: 0, pain: 1, unlogged: 1 });
   });
 });
 

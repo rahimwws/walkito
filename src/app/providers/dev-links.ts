@@ -3,7 +3,14 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
-import { devOpenReadinessInfo, devSetLegState, devSetReadinessScore } from '@/pages/home';
+import {
+  devOpenReadinessInfo,
+  devSeedCheckins,
+  devSetLegState,
+  devSetReadinessScore,
+  devShowOnFeetCard,
+} from '@/pages/home';
+import { devSeedOnFeetWeek, devSetOnFeetWeekState } from '@/pages/progress';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { devPreviewOnFeet, previewNotification } from '@/entities/notifications';
 import {
@@ -15,22 +22,29 @@ import {
   programState,
   startProgram,
 } from '@/entities/program';
+import { devSeedAnkle, setFootCheckMeasured } from '@/entities/foot-check';
 import { lockBoost } from '@/entities/offer';
 import {
-  devPreviewComeback,
   devPreviewHomeOffer,
-  devPreviewOfferEnded,
   devPreviewPass,
   devPreviewPaywall,
   devSetReviewMode,
   devSetTrialAudience,
   grantDevAccess,
   setSamplePrices,
+  setSampleSheetCloses,
 } from '@/entities/purchase';
-import { devSetFirstSession } from '@/pages/offer';
+import { devForgetCancelQuestion, devSetFirstSession } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
-import { armSetup, completeOnboarding, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
+import {
+  armSetup,
+  completeOnboarding,
+  devRestartHomeTour,
+  finishHomeTour,
+  finishSetup,
+  resetOnboarding,
+} from '@/entities/session';
 
 /** `walkito.dev://?resetOnboarding` puts onboarding back in front;
  * `?finishOnboarding` takes it away again, answers as they are. */
@@ -40,6 +54,8 @@ const FINISH_PARAM = /[?&]finishOnboarding\b/;
  * with the simulator's pretend purchase. The setup page answers
  * `?authPreview=<state>` from there. */
 const SETUP_PARAM = /[?&]previewSetup\b/;
+/** `?skipSetup` ends those screens as if the last were done: Home. */
+const SKIP_SETUP_PARAM = /[?&]skipSetup\b/;
 /** `walkito.dev://?previewPush=<kind>` sends that notification, picture and
  * all, four seconds later: any ladder kind (`session`, `plan`, `checkin`,
  * `streak`, `retest`, `flare`, `load`, `gait`, `block`, `winback`), or
@@ -50,7 +66,9 @@ const PERCENT_PARAM = /[?&]percent=(\d{1,2})\b/;
 /** `walkito.dev://?samplePrices` makes every offering answer with sample
  * prices (the products' US prices), so the paywall and the trial offer draw on
  * a simulator before the products exist; buying one grants the pretend
- * purchase. `?samplePrices=off` goes back to the store. */
+ * purchase. `?samplePrices=cancel` makes buying one answer as the store's
+ * sheet closed without buying ("What stopped you?", asked again after every
+ * `?previewPaywall`). `?samplePrices=off` goes back to the store. */
 const SAMPLE_PARAM = /[?&]samplePrices(?:=(\w+))?\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
@@ -65,15 +83,9 @@ const FIRST_SESSION_PARAM = /[?&]firstSession=(offer|done|declined)\b/;
  * paywall sells the free week; `=organic` as anybody else; `=off` the real
  * answer (AppsFlyer, or the onboarding's source question). */
 const TRIAL_AUDIENCE_PARAM = /[?&]trialAudience=(meta|organic|off)\b/;
-/** `?previewHomeOffer`: the paywall skipped, the offer screen showing the
- * one-time trial (the name is from when it stood over Home). */
+/** `?previewHomeOffer`: the paywall skipped, so the plans stand over Home
+ * once the tour is done (`?previewTour=done`). */
 const HOME_OFFER_PARAM = /[?&]previewHomeOffer\b/;
-/** `?previewComeback`: skipped, the trial missed, a fresh 15 minutes of the
- * comeback price on the offer screen. */
-const COMEBACK_PARAM = /[?&]previewComeback\b/;
-/** `?previewOfferEnded`: skipped, the comeback's minutes up, the standard
- * plans on the offer screen. */
-const OFFER_ENDED_PARAM = /[?&]previewOfferEnded\b/;
 /** `walkito.dev://?previewTour` arms the first run again from the "Day 1"
  * card; `?previewTour=tour` from the tour's first stop, past the session;
  * `?previewTour=done` ends it. */
@@ -84,8 +96,8 @@ const TOUR_PARAM = /[?&]previewTour(?:=(\w+))?/;
 const MILESTONE_PARAM = /[?&]previewMilestone\b/;
 /** `walkito.dev://?resetCheckIn` leaves today's check-in unanswered again. */
 const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
-/** `walkito.dev://?previewOfferWall` raises the offer that follows the tour
- * over Home (`=off` to drop it); add `previewHomeOffer` for the trial stage. */
+/** `walkito.dev://?previewOfferWall` raises the plans that follow the tour
+ * over Home (`=off` to drop them). */
 const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
 /** `walkito.dev://?previewCancel` opens Settings with the cancel flow over it,
  * as a yearly subscriber with an improvement to show; `?previewCancel=monthly`
@@ -114,6 +126,22 @@ const FOLLOW_PARAM = /[?&]previewFollow\b/;
 /** `walkito.dev://?previewOnFeet` sends the four-hours-on-your-feet push in
  * five seconds; leave the app to see it arrive, tap it to open the routine. */
 const ON_FEET_PARAM = /[?&]previewOnFeet\b/;
+/** `walkito.dev://?ankleHistory=<n>` writes n ankle measurements a fortnight
+ * apart for Progress's "Ankle bend" (`=0` none); `?footCheck=<n>` says the
+ * onboarding measured n of the Foot Check's five, for the paywall's first
+ * screen (`=0` none). */
+const ANKLE_HISTORY_PARAM = /[?&]ankleHistory=(\d{1,2})\b/;
+const FOOT_CHECK_PARAM = /[?&]footCheck=(\d)\b/;
+/** `?seedCheckins` writes thirteen days of check-ins before today (nine
+ * answered): Home's row of days once today is answered, and Progress's
+ * counts. `?onFeetCard=<hours>` raises Home's long-day card (`=off` the
+ * real rule). `?seedOnFeetWeek` fills "Your week on your feet" with sample
+ * Health days; `?onFeetWeek=connect|waiting` forces its empty states
+ * (`=off` the real data). */
+const SEED_CHECKINS_PARAM = /[?&]seedCheckins\b/;
+const ON_FEET_CARD_PARAM = /[?&]onFeetCard=(\d{1,2}|off)\b/;
+const SEED_ON_FEET_WEEK_PARAM = /[?&]seedOnFeetWeek\b/;
+const ON_FEET_WEEK_PARAM = /[?&]onFeetWeek=(connect|waiting|off)\b/;
 /** `walkito.dev://?readinessScore=NN` forces Home's readiness value for
  * screenshots, `=off` lets the real one through. `?legState=<id>` forces what
  * Walkito says about the legs (an id from `LEG_STATES`, e.g. `sore`,
@@ -237,8 +265,15 @@ export function useDevLinks(): void {
           grantDevAccess();
           armSetup();
         }
+        if (SKIP_SETUP_PARAM.test(url)) {
+          grantDevAccess();
+          finishSetup();
+        }
         const sample = SAMPLE_PARAM.exec(url);
-        if (sample != null) setSamplePrices(sample[1] !== 'off');
+        if (sample != null) {
+          setSamplePrices(sample[1] !== 'off');
+          setSampleSheetCloses(sample[1] === 'cancel');
+        }
         const first = FIRST_SESSION_PARAM.exec(url);
         if (first != null) {
           if (first[1] === 'offer') startProgram(programState());
@@ -249,10 +284,9 @@ export function useDevLinks(): void {
         if (PAYWALL_PARAM.test(url)) {
           lockBoost();
           devPreviewPaywall();
+          devForgetCancelQuestion();
         }
         if (HOME_OFFER_PARAM.test(url)) devPreviewHomeOffer();
-        if (COMEBACK_PARAM.test(url)) devPreviewComeback();
-        if (OFFER_ENDED_PARAM.test(url)) devPreviewOfferEnded();
         if (RESET_CHECKIN_PARAM.test(url)) devClearCheckIn(currentDay());
         if (MILESTONE_PARAM.test(url)) devForgetMilestones();
         const wall = WALL_PARAM.exec(url);
@@ -267,6 +301,16 @@ export function useDevLinks(): void {
         if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
         if (FOLLOW_PARAM.test(url)) devResetFollowOffer();
         if (ON_FEET_PARAM.test(url)) void devPreviewOnFeet();
+        const ankles = ANKLE_HISTORY_PARAM.exec(url);
+        if (ankles != null) devSeedAnkle(Number(ankles[1]));
+        const footCheck = FOOT_CHECK_PARAM.exec(url);
+        if (footCheck != null) setFootCheckMeasured(Number(footCheck[1]));
+        if (SEED_CHECKINS_PARAM.test(url)) devSeedCheckins();
+        const onFeetCard = ON_FEET_CARD_PARAM.exec(url);
+        if (onFeetCard != null) devShowOnFeetCard(onFeetCard[1] === 'off' ? null : Number(onFeetCard[1]));
+        if (SEED_ON_FEET_WEEK_PARAM.test(url)) devSeedOnFeetWeek();
+        const onFeetWeek = ON_FEET_WEEK_PARAM.exec(url);
+        if (onFeetWeek != null) devSetOnFeetWeekState(onFeetWeek[1] as 'connect' | 'waiting' | 'off');
         const pass = PASS_PARAM.exec(url);
         if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
         const forced = READINESS_SCORE_PARAM.exec(url);

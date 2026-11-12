@@ -70,9 +70,9 @@ export const PAGES_DE = {
   'pages.program.blockAbout1':
     'Den Fuß beruhigen. Dehnungen und sanfte Bewegung - noch keine Last.',
   'pages.program.blockAbout2':
-    'Das Krafttraining beginnt. Fersenheben mit Handtuch hilft am meisten gegen den Schmerz; der kurze Fuß im Sitzen kräftigt das Gewölbe. Viele spüren um Tag 20 eine erste echte Erleichterung.',
+    'Das Krafttraining beginnt. Fersenheben mit Handtuch hilft am meisten gegen den Schmerz; der kurze Fuß im Sitzen kräftigt das Gewölbe.',
   'pages.program.blockAbout3':
-    'Die Last steigt: Fersenheben 4 × 10 mit Rucksack, und der kurze Fuß kommt vom Stuhl - das Gewölbe arbeitet jetzt unter deinem Körpergewicht. Erste Veränderungen am Gewölbe zeigen sich oft ab Woche sechs.',
+    'Die Last steigt: Fersenheben 4 × 10 mit Rucksack, und der kurze Fuß kommt vom Stuhl - das Gewölbe arbeitet jetzt unter deinem Körpergewicht.',
   'pages.program.blockAbout4':
     'Fersenheben erreicht 5 × 8, das Schwerste im Programm. Der kurze Fuß wechselt auf ein Bein, und das Band kommt dazu - erst jetzt, wenn die kleinen Muskeln im Fuß halten können.',
   'pages.program.blockAbout5':

@@ -133,12 +133,6 @@ export const HOME_OFFER_EN = {
   // ── Pushes ───────────────────────────────────────────────────────────────
   // Sent as somebody leaves the trial offer, and before the comeback's
   // deadline. No figure: the store's price is on the screen the tap opens.
-  'homeOffer.push.lastChanceTitle': 'Don’t worry, here’s one last chance',
-  'homeOffer.push.lastChanceBoth': 'A year of Walkito Plus at a lower price, or keep it for good.',
-  'homeOffer.push.lastChanceYear': 'A year of Walkito Plus at a lower price, for a short time.',
-  'homeOffer.push.lastChanceLifetime': 'Keep Walkito Plus for good with a single payment, for a short time.',
-  'homeOffer.push.endsSoonTitle': 'Your offer ends soon',
-  'homeOffer.push.endsSoonBody': 'Your lower price on Walkito Plus is gone in a few hours.',
   /** The reminder the trial offer promises, before the trial ends. */
   'homeOffer.push.trialEndsTitle': {
     one: 'Your free trial ends in {count} day',

@@ -27,11 +27,13 @@ export function formatSigned(value: number, language: string, digits = 1): strin
   return `${value > 0 ? '+' : '-'}${formatNumber(Math.abs(value), language, digits)}`;
 }
 
-export type DateShape = 'weekday' | 'dayMonth' | 'full';
+export type DateShape = 'weekday' | 'weekdayName' | 'dayMonth' | 'full';
 
 const SHAPES: Record<DateShape, Intl.DateTimeFormatOptions> = {
   /** The letter under a bar: "M", "П". */
   weekday: { weekday: 'narrow' },
+  /** A day named in a sentence: "Tuesday", "вторник". */
+  weekdayName: { weekday: 'long' },
   /** A tick or a range end: "Oct 12", "12 окт.". */
   dayMonth: { day: 'numeric', month: 'short' },
   /** A tooltip: "Mon, Oct 12". */

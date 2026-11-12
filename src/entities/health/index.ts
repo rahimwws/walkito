@@ -65,4 +65,18 @@ export {
   type RefreshOptions,
 } from './model/pipeline';
 export { devSeedHealth } from './model/dev-seed';
+export {
+  LONG_DAY_DEFAULT_HOURS,
+  LONG_DAY_FLOOR_HOURS,
+  LONG_DAY_RATIO,
+  ON_FEET_WEEK_DAYS,
+  ON_FEET_WEEK_MIN_DAYS,
+  longDayLimit,
+  longDayYesterday,
+  onFeetWeek,
+  wasLongDay,
+  type LongDayInput,
+  type OnFeetDay,
+  type OnFeetWeek,
+} from './model/on-feet';
 export { motionReadable, requestMotionAccess, todayOnFeetHours, type OnFeetHour } from './model/hourly';

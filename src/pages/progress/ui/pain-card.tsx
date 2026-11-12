@@ -12,7 +12,14 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { Mascot, peekBottomRig, type MascotHandle } from '@/shared/ui/mascot';
 
 import { formatDateKey, formatNumber, formatSigned } from '../model/format';
-import { CHART_MIN_READINGS, tickIndices, type PainBar, type PainSummary, type RangeKey } from '../model/progress-data';
+import {
+  CHART_MIN_READINGS,
+  tickIndices,
+  type PainBar,
+  type PainCounts,
+  type PainSummary,
+  type RangeKey,
+} from '../model/progress-data';
 import { useCountUp } from '../model/use-count-up';
 import { CARD_PADDING, Card, DeltaChip, useGrowIn } from './card';
 import { peekFigure } from './peek-bounds';
@@ -57,6 +64,8 @@ export type PainCardProps = {
   start: number | null;
   /** Mornings logged since the plan began. Under three, the card waits. */
   total: number;
+  /** The range's mornings counted: no pain, pain, not logged. */
+  counts: PainCounts;
   /** A sheet is over the page: the waiting mascot holds still under it. */
   paused?: boolean;
 };
@@ -68,8 +77,12 @@ export type PainCardProps = {
  * The bars are ink and the newest is violet — the accent says "this is the
  * pain metric, and this is now", never "this is good". The only green on the
  * card is the delta chip, and only when the average fell.
+ *
+ * Under the chart, the range's mornings as three plain counts in the
+ * check-in's own two answers and the days it was not answered: ink, every
+ * one, because a count is not a grade.
  */
-export function PainCard({ range, bars, summary, start, total, paused = false }: PainCardProps) {
+export function PainCard({ range, bars, summary, start, total, counts, paused = false }: PainCardProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
@@ -110,6 +123,22 @@ export function PainCard({ range, bars, summary, start, total, paused = false }:
           </View>
           <Text style={[styles.sub, { color: meter.caption }]}>{t(AVERAGE_KEY[range])}</Text>
           <PainChart range={range} bars={bars} start={start} />
+          <View style={[styles.counts, { borderTopColor: meter.divider }]}>
+            {(
+              [
+                ['progress.painRowNoPain', counts.none],
+                ['progress.painRowPain', counts.pain],
+                ['progress.painRowNone', counts.unlogged],
+              ] as const
+            ).map(([key, value]) => (
+              <View key={key} accessible accessibilityLabel={`${t(key)}: ${value}`} style={styles.countRow}>
+                <Text style={[styles.countLabel, { color: meter.ink }]} numberOfLines={1}>
+                  {t(key)}
+                </Text>
+                <Text style={[styles.countValue, { color: meter.ink }]}>{formatNumber(value, language, 0)}</Text>
+              </View>
+            ))}
+          </View>
         </>
       )}
     </Card>
@@ -457,6 +486,10 @@ const styles = StyleSheet.create({
   tick: { ...fonts.medium(12), position: 'absolute', width: TICK_WIDTH, textAlign: 'center' },
   tickLit: fonts.bold(12),
   a11yList: { position: 'absolute', width: 1, height: 1, opacity: 0 },
+  counts: { marginTop: 14, paddingTop: 6, borderTopWidth: StyleSheet.hairlineWidth },
+  countRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12, minHeight: 36 },
+  countLabel: { ...fonts.medium(16), flexShrink: 1 },
+  countValue: { ...fonts.bold(16), fontVariant: ['tabular-nums'] },
   clipped: { overflow: 'hidden' },
   waiting: { marginTop: 12, gap: 14 },
   waitingRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },

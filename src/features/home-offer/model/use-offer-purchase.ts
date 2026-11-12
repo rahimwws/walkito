@@ -11,11 +11,14 @@ import { accountSaved, armSetup } from '@/entities/session';
 import { useT } from '@/shared/lib/i18n';
 
 import { priceOf, trialEndsAt, type FreeTrial } from './plan-terms';
-import type { OfferGuard } from './use-offer-screen';
 
 /** How many days before a free trial ends its reminder lands. The trial
  * offer's own line ("We'll remind you 3 days before…") reads this number. */
 export const TRIAL_REMINDER_DAYS = 2;
+
+/** Set while a store sheet is in flight, and when the legal line under the
+ * button was last touched. */
+export type OfferGuard = { busy: boolean; linkAt: number };
 
 /**
  * How the offer sells the 3-month pass: through the pass checkout

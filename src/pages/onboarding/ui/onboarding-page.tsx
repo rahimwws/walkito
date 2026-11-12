@@ -40,6 +40,13 @@ import { requestTracking, trackingStatus } from "@/shared/lib/tracking";
 import { useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
+import {
+  countMeasured,
+  remeasureAt,
+  saveAnkle,
+  setFootCheckMeasured,
+  useCanMeasure,
+} from "@/entities/foot-check";
 import { setBilateral } from "@/entities/health";
 import { whereKey } from "@/entities/leg-zone";
 import { armOffer } from "@/entities/offer";
@@ -156,6 +163,7 @@ import { KitAdds } from "./kit-tile";
 import { PassportCard, type PassportStamp } from "./foot-passport";
 import { MidwayStep } from "./midway-step";
 import {
+  TestAnkle,
   TestBalance,
   TestIntro,
   TestResult,
@@ -234,6 +242,7 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "tried-reaction",
   "midway",
   "why",
+  "test-ankle",
   "test-toe",
   "test-balance",
   "test-result",
@@ -386,6 +395,15 @@ export function OnboardingPage() {
     left: number | null;
     right: number | null;
   }>({ left: null, right: null });
+  /** The ankle bend, in degrees, per side: measured by the phone, kept on it. */
+  const [ankle, setAnkle] = useState<{
+    left: number | null;
+    right: number | null;
+  }>({ left: null, right: null });
+  const canMeasure = useCanMeasure();
+  /** The day of the first progress check, when the ankles are measured
+   * again: fixed for the visit, so the date does not move under a reader. */
+  const [remeasureOn] = useState(() => remeasureAt(Date.now(), null));
   /** The habit's time wheel, and a clip open full screen: both cover the
    * coach in the corner, who stops breathing under them. */
   const [habitPicking, setHabitPicking] = useState(false);
@@ -879,11 +897,21 @@ export function OnboardingPage() {
         }
       : null;
 
+  /** The ankle step is in this visit's flow: a phone that can measure. */
+  const ankleOn = chose(answers, "ankleCheck", "on");
+  /** How many checks the Foot Check has here: the toe, and around it the
+   * ankles and one leg where each is asked. */
+  const checkTotal =
+    1 + (ankleOn ? 1 : 0) + (balanceAllowed(answers, painless) ? 1 : 0);
+  const toeArch = archFinding(miniTestAnswers?.arch ?? null);
+  /** What the big toe lift showed, for its row on the Foot Check card. */
+  const toeSaw = toeArch != null ? t(toeArch.saw) : null;
+
   /** What the check showed, each with what the plan does about it. On the
    * device only, as the answers themselves are. */
   const testFindings: TestFinding[] = (() => {
     const out: TestFinding[] = [];
-    const arch = archFinding(miniTestAnswers?.arch ?? null);
+    const arch = toeArch;
     if (arch != null)
       out.push({ emoji: "foot", saw: t(arch.saw), plan: t(arch.plan) });
     if (balance.left != null && balance.right != null)
@@ -934,6 +962,8 @@ export function OnboardingPage() {
         return list(answer).length > 0;
       case "habit":
         return habitOf(answers) != null;
+      case "test-ankle":
+        return ankle.left != null && ankle.right != null;
       case "test-toe":
         return list(answer).length > 0;
       case "test-balance":
@@ -1057,6 +1087,9 @@ export function OnboardingPage() {
         }));
       const held = url?.match(/[?&]balance=(\d{1,2}):(\d{1,2})/);
       if (held != null) setBalance({ left: Number(held[1]), right: Number(held[2]) });
+      // `&ankle=31:38` the ankle bend in degrees, left then right.
+      const bent = url?.match(/[?&]ankle=(\d{1,2}):(\d{1,2})/);
+      if (bent != null) setAnkle({ left: Number(bent[1]), right: Number(bent[2]) });
       const key = url?.match(/[?&]onboardingStep=([\w-]+)/)?.[1];
       if (key != null) jump(key);
     };
@@ -1182,6 +1215,15 @@ export function OnboardingPage() {
     setBilateral(intake.side === "both");
     if (!painless && intake.morningPain != null)
       logPain(todayDayNumber(), intake.morningPain, painZones);
+    // The Foot Check: the ankles on file, and how much of the five the
+    // paywall's first screen can say has been measured. Nothing without the
+    // ankles: a count of one is not a check to finish.
+    if (ankle.left != null && ankle.right != null) {
+      saveAnkle(ankle.left, ankle.right);
+      setFootCheckMeasured(
+        countMeasured(true, miniTestAnswers != null, balance.left != null && balance.right != null),
+      );
+    } else setFootCheckMeasured(0);
   };
 
   /** Set by the last Continue, which holds a moment for the coach's cheer. */
@@ -1251,7 +1293,7 @@ export function OnboardingPage() {
       miniTestEligible(answers, painless)
     ) {
       track("mini_test_assigned", { variant: "test" });
-      move(true, { miniTest: "test" });
+      move(true, { miniTest: "test", ankleCheck: canMeasure === true ? "on" : "off" });
       return;
     }
     // The check's last screen: the toe, or one leg after it. What it showed
@@ -1548,6 +1590,7 @@ export function OnboardingPage() {
 
               {step.kind === "test-intro" && (
                 <TestIntro
+                  withAnkle={ankleOn}
                   withBalance={balanceAllowed(answers, painless)}
                   onSkip={() => {
                     Haptics.selectionAsync();
@@ -1556,9 +1599,32 @@ export function OnboardingPage() {
                 />
               )}
 
+              {step.kind === "test-ankle" && (
+                <TestAnkle
+                  index={1}
+                  total={checkTotal}
+                  left={ankle.left}
+                  right={ankle.right}
+                  onResult={(which, degrees) => {
+                    const next = { ...ankle, [which]: degrees };
+                    setAnkle(next);
+                    // That it happened, never what it read.
+                    if (next.left != null && next.right != null)
+                      track("ankle_measured", { place: "onboarding" });
+                  }}
+                  onReset={() => setAnkle({ left: null, right: null })}
+                  onSkip={() => {
+                    Haptics.selectionAsync();
+                    setAnkle({ left: null, right: null });
+                    move(true);
+                  }}
+                />
+              )}
+
               {step.kind === "test-toe" && (
                 <TestToe
-                  total={balanceAllowed(answers, painless) ? 2 : 1}
+                  index={ankleOn ? 2 : 1}
+                  total={checkTotal}
                   options={[
                     { value: "yes", label: t("onboarding.test.toeYes") },
                     { value: "no", label: t("onboarding.test.toeNo") },
@@ -1574,7 +1640,8 @@ export function OnboardingPage() {
 
               {step.kind === "test-balance" && (
                 <TestBalance
-                  total={2}
+                  index={checkTotal}
+                  total={checkTotal}
                   left={balance.left}
                   right={balance.right}
                   onResult={(which, seconds) =>
@@ -1592,7 +1659,21 @@ export function OnboardingPage() {
               )}
 
               {step.kind === "test-result" && (
-                <TestResult findings={testFindings} />
+                <TestResult
+                  findings={testFindings}
+                  ankle={
+                    ankle.left != null && ankle.right != null
+                      ? { left: ankle.left, right: ankle.right }
+                      : null
+                  }
+                  toe={toeSaw}
+                  balance={
+                    balance.left != null && balance.right != null
+                      ? { left: balance.left, right: balance.right }
+                      : null
+                  }
+                  again={remeasureOn}
+                />
               )}
 
               {step.kind === "move-preview" && (

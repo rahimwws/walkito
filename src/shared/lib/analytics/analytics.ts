@@ -1,6 +1,7 @@
 import type PostHog from 'posthog-react-native';
 
 import { logObserveEvent } from '@/shared/lib/observe';
+import { kv } from '@/shared/lib/storage';
 
 import type { AnalyticsEvent, AnalyticsEvents } from './events';
 
@@ -30,6 +31,34 @@ const HOST = process.env.EXPO_PUBLIC_POSTHOG_HOST ?? 'https://us.i.posthog.com';
 function variant(): string {
   const { default: Constants } = require('expo-constants') as typeof import('expo-constants');
   return (Constants.expoConfig?.extra?.variant as string | undefined) ?? 'development';
+}
+
+/**
+ * One of ours: a phone of the team's with the store build on it.
+ *
+ * A TestFlight or App Store install is a production build like anybody's, so
+ * `app_variant` cannot tell it from a customer, and five test phones walking
+ * the paywall all day are a real share of a small funnel. `is_internal` goes
+ * on every event and on the person (RevenueCat's server-side events carry no
+ * super properties, so only the person can mark those), and the PostHog
+ * project filters it out as a test account.
+ *
+ * Set by opening `walkito://open/internal` once on the phone
+ * (`…/internal/off` takes it back). It stays with the install.
+ */
+const INTERNAL_KEY = 'analytics/internal';
+
+function internal(): { is_internal?: true } {
+  return kv.getBoolean(INTERNAL_KEY) === true ? { is_internal: true } : {};
+}
+
+export function markInternal(on: boolean): void {
+  kv.set(INTERNAL_KEY, on);
+  const ph = posthog();
+  if (ph == null) return;
+  if (on) ph.register({ is_internal: true });
+  else void ph.unregister('is_internal');
+  setPerson({ is_internal: on });
 }
 
 let client: PostHog | null = null;
@@ -75,7 +104,7 @@ function posthog(): PostHog | null {
       // on its side; this keeps the request from asking for it at all.
       disableGeoip: true,
     });
-    client.register({ app_variant: variant() });
+    client.register({ app_variant: variant(), ...internal() });
     return client;
   } catch (error) {
     // `typeof` first: the stores that call `track` are loaded under bun, where
@@ -112,8 +141,8 @@ export function identify(id: string): void {
   // RevenueCat's server-side revenue events carry none of the app's super
   // properties, so the only way PostHog's test-account filter can drop a
   // development build's test purchases is by the person they land on.
-  if (ph.getDistinctId() !== id) ph.identify(id, { app_variant: variant() });
-  else setPerson({ app_variant: variant() });
+  if (ph.getDistinctId() !== id) ph.identify(id, { app_variant: variant(), ...internal() });
+  else setPerson({ app_variant: variant(), ...internal() });
 }
 
 /**

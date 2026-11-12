@@ -67,9 +67,9 @@ export const PAGES_IT = {
   'pages.program.blockAbout1':
     'Calmare il piede. Allungamenti e movimento dolce - ancora nessun carico.',
   'pages.program.blockAbout2':
-    'Inizia il lavoro di forza. I sollevamenti dei talloni con l’asciugamano sono l’esercizio che aiuta di più con il dolore; il piede corto da seduti rinforza l’arco. Molte persone sentono un primo vero sollievo intorno al giorno 20.',
+    'Inizia il lavoro di forza. I sollevamenti dei talloni con l’asciugamano sono l’esercizio che aiuta di più con il dolore; il piede corto da seduti rinforza l’arco.',
   'pages.program.blockAbout3':
-    'Il carico sale: sollevamenti 4 × 10 con lo zaino, e il piede corto si fa in piedi - ora l’arco lavora sotto il peso del corpo. I primi cambiamenti nell’arco spesso si vedono dalla sesta settimana.',
+    'Il carico sale: sollevamenti 4 × 10 con lo zaino, e il piede corto si fa in piedi - ora l’arco lavora sotto il peso del corpo.',
   'pages.program.blockAbout4':
     'I sollevamenti arrivano a 5 × 8, il carico più alto del programma. Il piede corto passa su una gamba, ed entra l’elastico - solo ora, quando i piccoli muscoli dentro il piede riescono a tenere.',
   'pages.program.blockAbout5':

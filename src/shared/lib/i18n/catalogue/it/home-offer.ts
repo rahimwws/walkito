@@ -76,12 +76,6 @@ export const HOME_OFFER_IT = {
   'homeOffer.terms.monthly': 'Abbonamento mensile: {price} al mese.',
   'homeOffer.terms.lifetime': 'Un solo pagamento di {price}. Nessun rinnovo.',
 
-  'homeOffer.push.lastChanceTitle': 'Niente paura, ecco un’ultima possibilità',
-  'homeOffer.push.lastChanceBoth': 'Un anno di Walkito Plus a un prezzo più basso, o tienilo per sempre.',
-  'homeOffer.push.lastChanceYear': 'Un anno di Walkito Plus a un prezzo più basso, solo per poco.',
-  'homeOffer.push.lastChanceLifetime': 'Walkito Plus per sempre con un solo pagamento, solo per poco.',
-  'homeOffer.push.endsSoonTitle': 'La tua offerta sta per finire',
-  'homeOffer.push.endsSoonBody': 'Il tuo prezzo più basso per Walkito Plus sparisce tra poche ore.',
   'homeOffer.push.trialEndsTitle': {
     one: 'La tua prova gratuita finisce tra {count} giorno',
     other: 'La tua prova gratuita finisce tra {count} giorni',

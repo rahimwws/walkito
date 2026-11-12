@@ -328,6 +328,44 @@ function wasPending(error: unknown): boolean {
 }
 
 /**
+ * Why a purchase failed, as the store said it: RevenueCat's code, its name
+ * for it, and StoreKit's own words under it. "It failed" is no use the week
+ * every purchase fails; this is what tells a declined card from a product the
+ * store would not sell.
+ */
+function failureOf(error: unknown): { reason: string; readable?: string; underlying?: string } {
+  const failure = error as PurchasesError | undefined;
+  return {
+    reason: String(failure?.code ?? 'unknown'),
+    readable: failure?.readableErrorCode,
+    underlying: failure?.underlyingErrorMessage?.slice(0, 160),
+  };
+}
+
+const IN_FLIGHT_KEY = 'purchase/in-flight';
+
+/** A purchase is with the store: kept until it answers. */
+function holdInFlight(props: PurchaseProps): void {
+  kv.set(IN_FLIGHT_KEY, JSON.stringify(props));
+}
+
+/**
+ * A purchase that was started and never answered: the app was closed, or
+ * killed, under the store's sheet. Said at the next launch, so "started, and
+ * then nothing" is a count rather than a gap in the funnel.
+ */
+function reportUnresolved(): void {
+  const raw = kv.getString(IN_FLIGHT_KEY);
+  if (raw == null) return;
+  kv.remove(IN_FLIGHT_KEY);
+  try {
+    track('purchase_unresolved', JSON.parse(raw) as PurchaseProps);
+  } catch {
+    // Not ours to read: nothing to say.
+  }
+}
+
+/**
  * What to tell the user about a store error, in their language.
  *
  * Never the SDK's own message: that is English whatever the app is set to, and
@@ -800,7 +838,7 @@ async function retentionPurchase(props: PurchaseProps, run: () => Promise<MakePu
       track('purchase_pending', props);
       return { status: 'pending' };
     }
-    track('purchase_failed', { ...props, reason: String((error as PurchasesError | undefined)?.code ?? 'unknown') });
+    track('purchase_failed', { ...props, ...failureOf(error) });
     return { status: 'failed', message: messageFor(error) };
   }
 }
@@ -818,6 +856,7 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   // paywall and noise in a shipped build.
   Purchases.setLogLevel(verbose ? LOG_LEVEL.VERBOSE : LOG_LEVEL.WARN);
   Purchases.configure({ apiKey });
+  reportUnresolved();
 
   // Registered before the first fetch, so a renewal that lands between
   // configure and the fetch is not missed.
@@ -1120,16 +1159,7 @@ export const revenueCatStore: Store = {
     // with no plan beside its pass is read by name, the pass kept.
     const v2 = all.all[OFFERING_V2];
     const cut = v2 == null ? null : v2Slots(v2, identifier);
-    if (cut != null && BILLED.some((period) => cut[period] != null)) {
-      // The weekly subscription is not in `v2`: it is the first line-up's
-      // (sub_weekly_799, still approved in the "Walkito Premium" group), in
-      // the by-name `default` offering. The standard shelf takes it from
-      // there, so the paywall can show it beside the annual; a store that
-      // does not return it leaves the slot empty, as before.
-      const byName = identifier === OFFERINGS.standard && cut.weekly == null ? all.all[OFFERINGS.standard] : null;
-      const weekly = byName == null ? null : slot(byName, 'weekly');
-      return toOffering(identifier, weekly == null ? cut : { ...cut, weekly });
-    }
+    if (cut != null && BILLED.some((period) => cut[period] != null)) return toOffering(identifier, cut);
     const v2Pass = cut?.pass ?? null;
     // By name first, then whatever the dashboard marks current. The fallback
     // matters for `default`, which RevenueCat exposes as `current` rather than
@@ -1163,8 +1193,10 @@ export const revenueCatStore: Store = {
     const props = purchaseProps(pkg, period, offering);
     const pass = period === 'pass' || isPassProduct(pkg.product.identifier);
     track('purchase_started', props);
+    holdInFlight(props);
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);
+      kv.remove(IN_FLIGHT_KEY);
       announce(customerInfo);
       // Reported against the entitlement rather than against the call
       // returning. A purchase that completes without granting the entitlement
@@ -1192,6 +1224,7 @@ export const revenueCatStore: Store = {
         message: translatorFor(getLanguage())('offer.notUnlocked'),
       };
     } catch (error) {
+      kv.remove(IN_FLIGHT_KEY);
       if (wasCancelled(error)) {
         track('purchase_cancelled', props);
         return { status: 'cancelled' };
@@ -1200,10 +1233,7 @@ export const revenueCatStore: Store = {
         track('purchase_pending', props);
         return { status: 'pending' };
       }
-      track('purchase_failed', {
-        ...props,
-        reason: String((error as PurchasesError | undefined)?.code ?? 'unknown'),
-      });
+      track('purchase_failed', { ...props, ...failureOf(error) });
       return { status: 'failed', message: messageFor(error) };
     }
   },
@@ -1236,6 +1266,7 @@ export const revenueCatStore: Store = {
       currency: product.currencyCode,
     };
     track('purchase_started', props);
+    holdInFlight(props);
     try {
       // On Google Play the paywall chose a base plan and maybe an offer; buying
       // the bare product would let the store pick its default offer instead.
@@ -1244,6 +1275,7 @@ export const revenueCatStore: Store = {
           ? product.subscriptionOptions?.find((o) => o.id === (offerId ? `${basePlanId}:${offerId}` : basePlanId))
           : undefined;
       const { customerInfo } = option != null ? await Purchases.purchaseSubscriptionOption(option) : await Purchases.purchaseStoreProduct(product);
+      kv.remove(IN_FLIGHT_KEY);
       announce(customerInfo);
       if (props.plan === 'pass' || entitledIn(customerInfo)) {
         track('purchase_completed', props);
@@ -1254,6 +1286,7 @@ export const revenueCatStore: Store = {
       explainMissingEntitlement(customerInfo);
       return { status: 'failed', message: translatorFor(getLanguage())('offer.notUnlocked') };
     } catch (error) {
+      kv.remove(IN_FLIGHT_KEY);
       if (wasCancelled(error)) {
         track('purchase_cancelled', props);
         return { status: 'cancelled' };
@@ -1262,7 +1295,7 @@ export const revenueCatStore: Store = {
         track('purchase_pending', props);
         return { status: 'pending' };
       }
-      track('purchase_failed', { ...props, reason: String((error as PurchasesError | undefined)?.code ?? 'unknown') });
+      track('purchase_failed', { ...props, ...failureOf(error) });
       return { status: 'failed', message: messageFor(error) };
     }
   },

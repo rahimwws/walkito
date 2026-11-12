@@ -70,24 +70,14 @@ export { setAudience, type Audience } from './model/audience';
 export { NOTIFICATION_ART, type NotificationArt } from './model/art';
 export { PREVIEW_KIND, previewNotification, type PreviewOptions } from './model/preview';
 export {
-  COMEBACK_KIND,
   NEXT_DAY_KIND,
   TRIAL_ENDING_KIND,
   cancelComebackPushes,
   cancelNextDayPush,
-  dismissLastChance,
-  endsSoonMessage,
-  lastChanceMessage,
   nextDayMessage,
   notificationsPossible,
-  prepareComebackPush,
-  releaseComebackPush,
-  scheduleEndsSoonPush,
   scheduleNextDayPush,
   scheduleTrialReminder,
-  sendComebackPush,
   trialEndingMessage,
-  type ComebackDeals,
-  type ReadyComeback,
 } from './model/offer-pushes';
 export { offerPushesAllowed, setOfferPushes, useOfferPushes } from './model/offer-prefs';

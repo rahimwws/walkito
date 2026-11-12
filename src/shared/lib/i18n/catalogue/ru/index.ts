@@ -25,6 +25,7 @@ import { PASS_RU } from './pass';
 import { COMMUNITY_RU } from './community';
 import { INSIGHTS_RU } from './insights';
 import { REVIEWER_RU } from './reviewer';
+import { FOOT_CHECK_RU } from './foot-check';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -60,4 +61,5 @@ export const ru: CatalogueFor<'ru'> = {
   ...COMMUNITY_RU,
   ...INSIGHTS_RU,
   ...REVIEWER_RU,
+  ...FOOT_CHECK_RU,
 };

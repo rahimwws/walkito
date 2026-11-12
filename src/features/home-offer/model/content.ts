@@ -1,9 +1,6 @@
-import type { Offering, Plan, useOfferStage } from '@/entities/purchase';
+import type { Offering, Plan } from '@/entities/purchase';
 
-import { freeTrialOf, plansOf, type FreeTrial, type SlottedPlan } from './plan-terms';
-
-/** The stage `entities/purchase` reports: trial, comeback or standard. */
-export type OfferStage = ReturnType<typeof useOfferStage>;
+import { plansOf, type FreeTrial, type SlottedPlan } from './plan-terms';
 
 /** The three offerings Home can sell from, as the store answered. */
 export type OfferShelf = {
@@ -72,30 +69,6 @@ function comeback(
     standardLifetime: shelf.standard?.lifetime ?? null,
     endsAt,
   };
-}
-
-/**
- * What the offer screen shows for this stage. `sellsPass`: a pass checkout is
- * mounted beside the screen, so the comeback may carry the 3-month pass as
- * its third card; without one there is no way to buy it and it is left out.
- */
-export function contentFor(
-  stage: OfferStage,
-  shelf: OfferShelf,
-  comebackEndsAt: number | null,
-  now: number = Date.now(),
-  sellsPass: boolean = false,
-): OfferContent | null {
-  if (stage === 'trial') {
-    const plan = shelf.trial?.annual ?? null;
-    const trial = plan != null ? freeTrialOf(plan) : null;
-    if (plan != null && trial != null) return { kind: 'trial', plan, trial };
-  }
-  if (stage === 'comeback' && comebackEndsAt != null && comebackEndsAt > now) {
-    const limited = comeback(shelf, comebackEndsAt, sellsPass);
-    if (limited != null) return limited;
-  }
-  return standardContent(shelf.standard);
 }
 
 /**

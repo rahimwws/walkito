@@ -2,12 +2,10 @@ import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { AppState, BackHandler, ScrollView, StyleSheet, View } from 'react-native';
+import { AppState, BackHandler, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeOut, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { OfferScreen, type PassSale } from '@/features/home-offer';
-import { usePassCheckout } from '@/widgets/pass-checkout';
 import {
   cancelWinback,
   notificationsAllowed,
@@ -15,10 +13,11 @@ import {
   scheduleWinback,
   wakeMinutes,
 } from '@/entities/notifications';
+import { footCheckMeasured } from '@/entities/foot-check';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
 import { firstName, getIntake, useProfileName } from '@/entities/profile';
-import { planSettings } from '@/entities/program';
+import { planSettings, sessions } from '@/entities/program';
 import {
   OFFERINGS,
   PACKAGES,
@@ -27,13 +26,11 @@ import {
   firstChargeSavingPercent,
   grantDevAccess,
   isSamplePlan,
-  markPaywallSoldTrial,
   onSimulator,
   paywallSkipped,
   planOn,
   purchases,
   skipPaywall,
-  usePaywallSkipped,
   useTrialOnFirstPaywall,
   type PaywallPeriod,
   type Plan,
@@ -41,7 +38,7 @@ import {
 } from '@/entities/purchase';
 import { armHomeTour, setHomeTourStage } from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
-import { PRIMARY, meterColors, palette } from '@/shared/config';
+import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
@@ -52,10 +49,11 @@ import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { firstSession } from '../model/first-session';
 import { introSeen, markIntroSeen } from '../model/intro';
 import { nextDay } from '../model/next-day';
-import { EXTRA_PLANS } from '../model/plans';
+import { EXTRA_PLANS, describeCta } from '../model/plans';
 import { FirstSession } from './first-session';
 import { NextDay } from './next-day';
 import { OfferHero } from './offer-hero';
+import { CancelQuestion, takeCancelQuestion } from './cancel-question';
 import { IntroHow, IntroNext, IntroPlan, StepBar } from './offer-intro';
 import { PlansStep, type PlansStepRow } from './plans-step';
 import { TrialGift, TrialNext, TrialReminder } from './trial-intro';
@@ -99,47 +97,24 @@ const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMot
  *
  * A full screen, a guarded state of the root stack, so there is nothing behind
  * it to reach, and no way into the app without buying. Somebody who has not
- * skipped the plans sees them (`Paywall`). "Not now" (`skipPaywall`) does not
- * leave this screen: the plans fade out where they stand and the one-time
- * trial offer arrives in their place (`OfferScreen` from `features/home-offer`),
- * then the comeback price against its deadline, then the standard plans. That
- * is what the screen shows from then on, at every launch, until a purchase
- * (or a restore) hands over to the setup screens.
+ * skipped the plans sees them (`Paywall`). "Not now" (`skipPaywall`) leads to
+ * Home's free first run, and the root guards take this route away; the same
+ * plans then stand over Home (`PaywallWall`, in `OfferWall`) at every launch
+ * until a purchase (or a restore) hands over to the setup screens. Nothing
+ * else is offered on the way: no second price, no deadline.
  */
 export function OfferPage() {
-  const skipped = usePaywallSkipped();
   // Before the plans, once: the first session (`FirstSession`), two free
   // minutes of the plan and "How did that feel?". Done or passed on, the
   // plans follow; it is offered at every launch until one or the other, and
-  // never to somebody arriving for the comeback price.
+  // never to somebody arriving for the comeback price, or who has already
+  // been past the plans.
   const comeback = useBoost();
   const profileName = firstName(useProfileName());
-  const [tasting, setTasting] = useState(() => firstSession() == null);
-  // The limited offer's 3-month pass, bought through the pass checkout. Its
-  // sheets cannot outlive this route, and need not: the root guards take the
-  // route away the moment the paywall is skipped (the offers then stand over
-  // Home, in `OfferWall`, which keeps itself up while its checkout is busy),
-  // so the offers drawn here are only ever a route on its way out. A pass
-  // bought here anyway opens the app and takes the route with it; the
-  // server's days are still asked for, and nobody this gate is for holds a
-  // renewing subscription to be told about (that would be access).
-  const checkout = usePassCheckout();
-  const pass: PassSale = {
-    buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
-    signInToRestore: checkout.signInToRestore,
-    busy: checkout.busy,
-    notice: checkout.notice,
-  };
-  // The plans fade out where they stand (`STEP_OUT`) while the offers fade in
-  // over them (`STEP_IN`); the offer's own entrance starts once they are gone.
-  // The plans have no entrance of their own here: each step brings its own.
+  const [tasting, setTasting] = useState(() => firstSession() == null && !paywallSkipped());
   return (
     <View style={styles.full}>
-      {skipped ? (
-        <Animated.View key="offers" entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
-          <OfferScreen pass={pass} />
-        </Animated.View>
-      ) : tasting && !comeback ? (
+      {tasting && !comeback ? (
         <Animated.View key="first" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
           <FirstSession name={profileName} onDone={() => setTasting(false)} />
         </Animated.View>
@@ -148,9 +123,18 @@ export function OfferPage() {
           <Paywall />
         </Animated.View>
       )}
-      {checkout.sheet}
     </View>
   );
+}
+
+/**
+ * The plans over Home, for somebody who said "Not now" and has had the free
+ * first run (`OfferWall`): the same plans at the same prices as the paywall,
+ * opening on them, with no way past. Whatever was offered before is what is
+ * offered here.
+ */
+export function PaywallWall() {
+  return <Paywall wall />;
 }
 
 /**
@@ -171,7 +155,7 @@ export function OfferPage() {
  * on this same screen (`OfferPage`), never into the app. The top padding
  * comes from the safe-area inset rather than a constant.
  */
-function Paywall() {
+function Paywall({ wall = false }: { wall?: boolean }) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
@@ -203,6 +187,8 @@ function Paywall() {
    * marking look like nothing happening.
    */
   const [celebrating, setCelebrating] = useState<'purchased' | 'restored' | null>(null);
+  /** "What stopped you?" is up, for the plan whose sheet was closed. */
+  const [asking, setAsking] = useState<PaywallPeriod | null>(null);
 
   /**
    * Which offering to sell, by name.
@@ -218,7 +204,7 @@ function Paywall() {
    * a code typed into the app). A code is now only ever Apple's own offer code,
    * redeemed in Apple's sheet ("Have a code?" below).
    */
-  const winback = useBoost();
+  const winback = useBoost() && !wall;
   const boosted = winback;
 
   /**
@@ -227,13 +213,14 @@ function Paywall() {
    * `introSeen`); every other view opens on the plans.
    */
   /**
-   * The first session was done before this view (`FirstSession`): the plans
-   * carry on from it ("Day 1 done", the day that comes next) instead of
-   * opening with the two story steps, which would start over what the session
-   * already showed. Read once, as the view opens.
+   * The first session was done before this view (`FirstSession`, or Home's
+   * "Day 1" card for the wall): the plans carry on from it ("Day 1 done", the
+   * day that comes next) instead of opening with the two story steps, which
+   * would start over what the session already showed. Read once, as the view
+   * opens.
    */
-  const [afterSession] = useState(() => !boosted && firstSession() === 'done');
-  const [flow] = useState(() => !boosted && !afterSession && !introSeen());
+  const [afterSession] = useState(() => !boosted && (firstSession() === 'done' || (wall && sessions().length > 0)));
+  const [flow] = useState(() => !wall && !boosted && !afterSession && !introSeen());
   const [step, setStep] = useState<1 | 2 | 3>(flow ? 1 : 3);
   // Android's back button walks the steps back. On the first one it does what
   // it always did on the gate.
@@ -258,14 +245,12 @@ function Paywall() {
    */
   const trialAudience = useTrialOnFirstPaywall();
   const [sellsTrial, setSellsTrial] = useState(trialAudience);
+  /** How much of the Foot Check the onboarding measured: read once. */
+  const [footCheck] = useState(footCheckMeasured);
   useEffect(() => {
     if (step !== 3) setSellsTrial(trialAudience);
   }, [step, trialAudience]);
   const offeringId = boosted ? OFFERINGS.offer : sellsTrial ? OFFERINGS.trial : OFFERINGS.standard;
-  // Kept, so the offer after a skip does not offer the same free week again.
-  useEffect(() => {
-    if (step === 3 && offeringId === OFFERINGS.trial) markPaywallSoldTrial();
-  }, [step, offeringId]);
 
   /**
    * Which story the two steps before the plans tell: the free week
@@ -342,6 +327,8 @@ function Paywall() {
     // A simulator in development cannot buy through Superwall (no StoreKit
     // products), so our own paywall stays up and its button carries on.
     if (__DEV__ && onSimulator) return;
+    // Never over Home: the wall is ours alone.
+    if (wall) return;
     const placement = winback ? 'paywall_comeback' : 'paywall_first';
     const timer = setTimeout(() => paywall.register(placement, { offering: offeringId }), 600);
     return () => clearTimeout(timer);
@@ -478,7 +465,7 @@ function Paywall() {
    */
   const converted = useRef(false);
   useEffect(() => {
-    track('paywall_viewed', { offering: offeringId, boosted, after_session: afterSession });
+    track('paywall_viewed', { offering: offeringId, boosted, after_session: afterSession, wall });
     return () => {
       if (!converted.current) track('paywall_dismissed', { offering: offeringId });
     };
@@ -531,12 +518,19 @@ function Paywall() {
    * sells, with no figure yet; after, the ones it really has. */
   const extraKinds = EXTRA_PLANS.filter((kind) => (loaded ? plans[kind] != null : kind !== 'weekly'));
   /**
-   * The weekly, where the store has one, stands under the annual from the
-   * start, the two as a choice: a year is a lot to agree to on a first day,
-   * and a week at its own price is the other honest way in. Never on the
-   * comeback view, which is about one price.
+   * The monthly stands under the annual from the start, the two as a choice:
+   * a year is a lot to agree to on a first day, and a month at its own price,
+   * with no trial to distrust, is the other honest way in. The weekly takes
+   * its place only where the store has no monthly (Android's first line-up).
+   * Never on the comeback view, which is about one price.
    */
-  const secondKind: PaywallPeriod | null = !boosted && plans.weekly != null ? 'weekly' : null;
+  const secondKind: PaywallPeriod | null = boosted
+    ? null
+    : plans.monthly != null
+      ? 'monthly'
+      : plans.weekly != null
+        ? 'weekly'
+        : null;
 
   useEffect(() => {
     if (!loaded) return;
@@ -647,7 +641,7 @@ function Paywall() {
   /** Paid, or as good as: the entitlement guard takes the screen away; this is
    * for the case where it was pushed. */
   const close = () => {
-    if (router.canGoBack()) router.back();
+    if (!wall && router.canGoBack()) router.back();
   };
 
   /**
@@ -713,9 +707,13 @@ function Paywall() {
       setCelebrating('purchased');
       return;
     }
-    // The user backed out of Apple's own sheet. They know what they did; a
-    // message here would be the app commenting on their decision.
-    if (result.status === 'cancelled') return;
+    // The user backed out of the store's own sheet. Once, they are told that
+    // nothing was charged and asked what stopped them (`CancelQuestion`);
+    // after that, nothing: they know what they did.
+    if (result.status === 'cancelled') {
+      if (takeCancelQuestion()) setAsking(tier);
+      return;
+    }
     // Ask to Buy, or a bank confirming. Nothing went wrong, so no error buzz;
     // if it is approved, the store pushes the entitlement and the guard takes
     // this screen away on its own.
@@ -775,6 +773,9 @@ function Paywall() {
    * `paywall_dismissed` as any other way out does.
    */
   const skip = () => {
+    // Already past the plans once (the route was opened over the app): back
+    // to where they were.
+    if (paywallSkipped()) return close();
     armHomeTour();
     // The day-one session is already done, before this screen: Home opens on
     // the tour, not on the "Day 1" card again.
@@ -805,13 +806,24 @@ function Paywall() {
         <StepBar step={step} onSelect={(target) => setStep(target as 1 | 2 | 3)} />
         <View style={styles.trialBody}>
           {step === 1 ? (
-            <TrialGift name={profileName} days={freeDays} />
+            <TrialGift name={profileName} days={freeDays} footCheck={footCheck} />
           ) : (
             <TrialReminder days={freeDays} price={annualPlan.priceString} />
           )}
         </View>
         <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
           <TrialNext first={step === 1} onPress={next} />
+          <NotNow onPress={skip} />
+          {/* What the week costs after it, before anybody is asked to go on:
+              the plans' own line, in the days the headline counts in. */}
+          <Text style={[styles.terms, { color: meter.label }]} maxFontSizeMultiplier={1.4}>
+            {t('offer.plans.noPaymentToday')}.{' '}
+            {t('offer.plans.renewsTrial', {
+              period: t('offer.plans.days', { count: freeDays }),
+              price: annualPlan.priceString,
+            })}{' '}
+            {t(Platform.OS === 'android' ? 'offer.plans.cancelAndroid' : 'offer.plans.cancel')}
+          </Text>
         </View>
       </View>
     );
@@ -833,6 +845,7 @@ function Paywall() {
           <View style={[styles.grabber, { backgroundColor: meter.track }]} />
           <IntroHow />
           <IntroNext onPress={next} />
+          <NotNow onPress={skip} />
         </Animated.View>
       </View>
     );
@@ -853,11 +866,13 @@ function Paywall() {
               minutes={settings.defaultMinutes}
               daysPerWeek={settings.daysPerWeek}
               checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
+              footCheck={footCheck}
             />
           </Animated.View>
         </ScrollView>
         <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
           <IntroNext onPress={next} />
+          <NotNow onPress={skip} />
         </View>
       </View>
     );
@@ -873,14 +888,13 @@ function Paywall() {
         stepBar={flow ? <StepBar step={3} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} /> : undefined}
         lead={row('annual')}
         second={secondKind != null ? row(secondKind) : null}
-        // Two plans are the whole choice: with the weekly under the annual
-        // there is no "Show all plans" behind them.
-        extras={secondKind != null ? [] : extraKinds.map(row)}
+        // The plan under the annual is not listed again behind "Show all plans".
+        extras={extraKinds.filter((kind) => kind !== secondKind).map(row)}
         after={
           afterSession
             ? {
                 title: profileName.length > 0 ? t('offer.next.titleNamed', { name: profileName }) : t('offer.next.title'),
-                // The free week is the annual's: with the weekly chosen the
+                // The free week is the annual's: with another plan chosen the
                 // line promises only the day.
                 line: t(freeDays != null && tier === 'annual' ? 'offer.next.lineTrial' : 'offer.next.line', {
                   day: nextDay()?.day ?? 2,
@@ -915,10 +929,17 @@ function Paywall() {
         }
         covered={busy || celebrating != null}
         onExpand={() => track('paywall_plans_expanded')}
-        onSkip={skip}>
+        onSkip={wall ? undefined : skip}>
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
           as nothing having happened. */}
+        <CancelQuestion
+          visible={asking != null}
+          onAnswer={(reason) => {
+            if (asking != null) track('purchase_cancel_reason', { reason: reason ?? 'dismissed', plan: asking, offering: offeringId });
+            setAsking(null);
+          }}
+        />
         <CelebrationSheet
           visible={celebrating != null}
           title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
@@ -945,7 +966,35 @@ function Paywall() {
   );
 }
 
+/**
+ * "Not now" under a step's button, as the plans have it: the way past is
+ * there from the first screen. Of the first Meta installs on 1.0.11, more than
+ * half left the app on step one, which had a single button and no way on but
+ * through it; a visible way out is what makes the button safe to press.
+ */
+function NotNow({ onPress }: { onPress: () => void }) {
+  const scheme = useColorScheme();
+  const t = useT();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      hitSlop={8}
+      onPress={() => {
+        void Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.notNow, pressed && { opacity: 0.6 }]}>
+      <Text style={[styles.notNowText, { color: meterColors[scheme].caption }]} maxFontSizeMultiplier={1.3}>
+        {t('offer.plans.skip')}
+      </Text>
+    </Pressable>
+  );
+}
+
 const styles = StyleSheet.create({
+  notNow: { alignSelf: 'center', paddingVertical: 6 },
+  notNowText: fonts.semibold(15),
+  terms: { ...fonts.regular(13), lineHeight: 18, textAlign: 'center', paddingHorizontal: 12 },
   screen: {
     flex: 1,
     // `paddingTop` comes from the safe-area inset at the call site.

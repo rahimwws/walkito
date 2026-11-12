@@ -4,6 +4,7 @@ import { Image, Platform, StyleSheet, Text, View, useWindowDimensions } from 're
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 
 import { TRIAL_REMINDER_DAYS } from '@/features/home-offer';
+import { FootCheckStrip } from '@/entities/foot-check';
 import { filled, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -54,10 +55,13 @@ export type TrialGiftProps = {
   name: string;
   /** The trial's length in days. */
   days: number;
+  /** How much of the Foot Check the onboarding measured, or 0: the rest is
+   * what the free week finishes. */
+  footCheck?: number;
 };
 
 /** Step one: the week is free, and the three things that make it safe. */
-export function TrialGift({ name, days }: TrialGiftProps) {
+export function TrialGift({ name, days, footCheck = 0 }: TrialGiftProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const t = useT();
@@ -94,6 +98,14 @@ export function TrialGift({ name, days }: TrialGiftProps) {
           </Animated.View>
         ))}
       </View>
+
+      {/* Her own measurements are on the screen before this one, in full;
+          this only counts them and says where the rest is measured. */}
+      {footCheck > 0 && (
+        <Animated.View entering={rise(promises.length)}>
+          <FootCheckStrip done={footCheck} line={t('footCheck.paywallFinish')} />
+        </Animated.View>
+      )}
     </View>
   );
 }

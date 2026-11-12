@@ -82,37 +82,13 @@ export {
   useBrowsingLapsed,
   useSessionsLocked,
 } from './model/lapse';
-export {
-  COMEBACK_MINUTES,
-  comebackEndsAt,
-  devPreviewComeback,
-  devPreviewHomeOffer,
-  devPreviewOfferEnded,
-  devPreviewPaywall,
-  expectReturn,
-  markTrialMissed,
-  markTrialOfferShown,
-  offerStage,
-  offeringForStage,
-  paywallSkipped,
-  skipPaywall,
-  subscribeOfferStage,
-  useComebackEndsAt,
-  useOfferStage,
-  usePaywallSkipped,
-  type OfferStage,
-} from './model/skip';
-export {
-  devSetTrialAudience,
-  isMetaInstall,
-  markPaywallSoldTrial,
-  paywallSoldTrial,
-  useTrialOnFirstPaywall,
-} from './model/trial-audience';
+export { devPreviewHomeOffer, devPreviewPaywall, paywallSkipped, skipPaywall, usePaywallSkipped } from './model/skip';
+export { devSetTrialAudience, isMetaInstall, useTrialOnFirstPaywall } from './model/trial-audience';
 export {
   isSamplePlan,
   samplePricesOn,
   sampleRetention,
   setSamplePrices,
+  setSampleSheetCloses,
   type SampleRetention,
 } from './model/samples';

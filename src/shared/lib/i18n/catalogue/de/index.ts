@@ -25,6 +25,7 @@ import { PASS_DE } from './pass';
 import { COMMUNITY_DE } from './community';
 import { INSIGHTS_DE } from './insights';
 import { REVIEWER_DE } from './reviewer';
+import { FOOT_CHECK_DE } from './foot-check';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -60,4 +61,5 @@ export const de: CatalogueFor<'de'> = {
   ...COMMUNITY_DE,
   ...INSIGHTS_DE,
   ...REVIEWER_DE,
+  ...FOOT_CHECK_DE,
 };

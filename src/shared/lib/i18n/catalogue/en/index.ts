@@ -23,6 +23,7 @@ import { PASS_EN } from './pass';
 import { COMMUNITY_EN } from './community';
 import { INSIGHTS_EN } from './insights';
 import { REVIEWER_EN } from './reviewer';
+import { FOOT_CHECK_EN } from './foot-check';
 
 /**
  * English, assembled from its domain files.
@@ -62,4 +63,5 @@ export const en = {
   ...COMMUNITY_EN,
   ...INSIGHTS_EN,
   ...REVIEWER_EN,
+  ...FOOT_CHECK_EN,
 };

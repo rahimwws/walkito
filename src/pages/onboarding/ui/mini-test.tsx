@@ -5,6 +5,16 @@ import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import { ExercisePreview } from '@/widgets/session-player';
+import {
+  AnkleMeasure,
+  AnkleSteps,
+  FootCheckCard,
+  ankleGap,
+  useCanMeasure,
+  useJolt,
+  type AnkleSide,
+  type FootCheckSides,
+} from '@/entities/foot-check';
 import { PRIMARY, accents, clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -77,21 +87,36 @@ function Hero({ rig, shot }: { rig: MascotRig; shot: MascotShot }) {
   return <Mascot ref={mascot} rig={rig} size={HERO} surface={colors.background} />;
 }
 
-export function TestIntro({ withBalance, onSkip }: { withBalance: boolean; onSkip: () => void }) {
+export function TestIntro({
+  withAnkle,
+  withBalance,
+  onSkip,
+}: {
+  /** The phone measures the ankle bend first: the check is the Foot Check. */
+  withAnkle: boolean;
+  withBalance: boolean;
+  onSkip: () => void;
+}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const rows = [t('exercises.bigToeLift.title'), ...(withBalance ? [t('onboarding.test.introBalance')] : [])];
+  const rows = [
+    ...(withAnkle ? [t('footCheck.ankle.title')] : []),
+    t('exercises.bigToeLift.title'),
+    ...(withBalance ? [t('onboarding.test.introBalance')] : []),
+  ];
 
   return (
     <View style={styles.fill}>
       <View style={styles.center}>
         <Hero rig={handsUpRig} shot="present" />
         <Text style={[styles.title, styles.centerText, { color: colors.foreground }]}>
-          {t('onboarding.test.introTitle')}
+          {t(withAnkle ? 'footCheck.intro.title' : 'onboarding.test.introTitle')}
         </Text>
-        <Text style={[styles.body, styles.centerText, { color: meter.caption }]}>{t(withBalance ? 'onboarding.test.introBody' : 'onboarding.test.introBodyOne')}</Text>
+        <Text style={[styles.body, styles.centerText, { color: meter.caption }]}>
+          {t(withAnkle ? 'footCheck.intro.body' : withBalance ? 'onboarding.test.introBody' : 'onboarding.test.introBodyOne')}
+        </Text>
         <Card3D style={styles.card} contentStyle={styles.cardFace}>
           {rows.map((row, i) => (
             <View key={row} style={styles.listRow}>
@@ -102,6 +127,9 @@ export function TestIntro({ withBalance, onSkip }: { withBalance: boolean; onSki
             </View>
           ))}
         </Card3D>
+        {withAnkle && (
+          <Text style={[styles.safety, styles.centerText, { color: meter.caption }]}>{t('footCheck.intro.safety')}</Text>
+        )}
       </View>
       <Pressable accessibilityRole="button" onPress={onSkip} hitSlop={10} style={styles.skip}>
         <Text style={[styles.skipText, { color: meter.caption }]}>{t('onboarding.test.notNow')}</Text>
@@ -110,7 +138,58 @@ export function TestIntro({ withBalance, onSkip }: { withBalance: boolean; onSki
   );
 }
 
+/**
+ * The ankle bend, measured by the phone on the shin: left, then right.
+ *
+ * The one check here that gives a number nobody could have guessed, which is
+ * why it comes first. Sitting down, so it is asked of everybody the check is
+ * for; "Skip this one" goes on to the toe with nothing measured.
+ */
+export function TestAnkle({
+  index,
+  total,
+  left,
+  right,
+  onResult,
+  onReset,
+  onSkip,
+}: {
+  index: number;
+  total: number;
+  left: number | null;
+  right: number | null;
+  onResult: (side: AnkleSide, degrees: number) => void;
+  onReset: () => void;
+  onSkip: () => void;
+}) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+
+  return (
+    <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+      <View style={styles.head}>
+        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: index, total })}</Text>
+        <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+          {t('footCheck.ankle.title')}
+        </Text>
+      </View>
+      <AnkleSteps />
+      <View style={styles.measure}>
+        <AnkleMeasure left={left} right={right} onResult={onResult} onReset={onReset} />
+      </View>
+      {(left == null || right == null) && (
+        <Pressable accessibilityRole="button" onPress={onSkip} hitSlop={10} style={styles.skip}>
+          <Text style={[styles.skipText, { color: meter.caption }]}>{t('footCheck.ankle.skip')}</Text>
+        </Pressable>
+      )}
+    </ScrollView>
+  );
+}
+
 export function TestToe({
+  index,
   total,
   options,
   answer,
@@ -119,6 +198,8 @@ export function TestToe({
   speakerSize = 0,
   onViewerChange,
 }: {
+  /** Which check of the `total` this is. */
+  index: number;
   total: number;
   options: readonly ResolvedOption[];
   answer: string | null;
@@ -140,7 +221,7 @@ export function TestToe({
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
-        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 1, total })}</Text>
+        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: index, total })}</Text>
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
           {t('exercises.bigToeLift.title')}
         </Text>
@@ -169,11 +250,20 @@ export function TestToe({
 
 type Side = 'left' | 'right';
 
+/** Time to get the phone from the hand to the chest before the count. */
+const BALANCE_READY_SECONDS = 3;
+
 /**
  * One leg, then the other. A tap starts the count, a tap stops it, and the
  * count stops itself at the cap — past thirty seconds it is no longer a test.
+ *
+ * On a phone with a motion sensor the count also stops by itself: held
+ * against the chest, the phone feels the other foot come down (`useJolt`),
+ * so nobody has to find a button while standing on one leg. Three ticks
+ * first, to get it there. "Stop" stays, for a landing too soft to feel.
  */
 export function TestBalance({
+  index,
   total,
   left,
   right,
@@ -183,6 +273,7 @@ export function TestBalance({
   speakerSize = 0,
   onViewerChange,
 }: {
+  index: number;
   total: number;
   left: number | null;
   right: number | null;
@@ -199,9 +290,34 @@ export function TestBalance({
   const meter = meterColors[scheme];
   const t = useT();
   const clip = useClipBox('single_leg_hold', speakerInset);
+  const auto = useCanMeasure() === true;
+  const [ready, setReady] = useState<Side | null>(null);
+  const [count, setCount] = useState(BALANCE_READY_SECONDS);
   const [running, setRunning] = useState<Side | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const started = useRef(0);
+
+  useEffect(() => {
+    if (ready == null) return undefined;
+    setCount(BALANCE_READY_SECONDS);
+    let remaining = BALANCE_READY_SECONDS;
+    const timer = setInterval(() => {
+      remaining -= 1;
+      if (remaining <= 0) {
+        clearInterval(timer);
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+        setReady(null);
+        setRunning(ready);
+        onStart?.(ready);
+        return;
+      }
+      Haptics.selectionAsync();
+      setCount(remaining);
+    }, 1000);
+    return () => clearInterval(timer);
+    // As below: keyed on the side alone.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready]);
 
   useEffect(() => {
     if (running == null) return;
@@ -229,8 +345,14 @@ export function TestBalance({
     setRunning(null);
   };
 
+  useJolt(auto && running != null, stop);
+
   const start = (side: Side) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    if (auto) {
+      setReady(side);
+      return;
+    }
     setRunning(side);
     onStart?.(side);
   };
@@ -240,23 +362,29 @@ export function TestBalance({
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
-        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: 2, total })}</Text>
+        <Text style={[styles.meta, { color: meter.caption }]}>{t('onboarding.test.meta', { n: index, total })}</Text>
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
           {t('exercises.singleLegHold.title')}
         </Text>
       </View>
       <CheckClip exerciseId="single_leg_hold" box={clip} onViewerChange={onViewerChange} />
-      <Text style={[styles.body, { color: meter.caption }]}>{t('onboarding.test.balanceBody')}</Text>
+      <Text style={[styles.body, { color: meter.caption }]}>
+        {t(auto ? 'footCheck.balance.body' : 'onboarding.test.balanceBody')}
+      </Text>
 
       <View style={styles.sides}>
         {(['left', 'right'] as const).map((side) => {
           const value = side === 'left' ? left : right;
           const live = running === side;
           return (
-            <View key={side} style={[styles.side, { backgroundColor: colors.card }, live && { borderColor: PRIMARY }]}>
+            <View
+              key={side}
+              style={[styles.side, { backgroundColor: colors.card }, (live || ready === side) && { borderColor: PRIMARY }]}>
               <Text style={[styles.sideLabel, { color: meter.caption }]}>{t(side === 'left' ? 'onboarding.test.left' : 'onboarding.test.right')}</Text>
-              <Text style={[styles.sideValue, { color: colors.foreground }]}>
-                {live
+              <Text style={[styles.sideValue, { color: ready === side ? meter.caption : colors.foreground }]}>
+                {ready === side
+                  ? String(count)
+                  : live
                   ? t('onboarding.test.seconds', { count: Math.floor(elapsed) })
                   : value != null
                     ? t('onboarding.test.seconds', { count: value })
@@ -274,6 +402,10 @@ export function TestBalance({
           style={({ pressed }) => [styles.timerButton, { backgroundColor: PRIMARY }, pressed && { opacity: 0.8 }]}>
           <Text style={styles.timerLabel}>{t('onboarding.test.stop')}</Text>
         </Pressable>
+      ) : ready != null ? (
+        <View style={[styles.timerButton, { backgroundColor: colors.card }]} accessibilityLiveRegion="polite">
+          <Text style={[styles.timerLabel, { color: meter.label }]}>{t('footCheck.balance.ready')}</Text>
+        </View>
       ) : next != null ? (
         <Pressable
           accessibilityRole="button"
@@ -331,11 +463,63 @@ export type TestFinding = { emoji: FluentName; saw: string; plan: string };
  * consequence, never a diagnosis and never a promise; nothing here is sent
  * anywhere.
  */
-export function TestResult({ findings }: { findings: readonly TestFinding[] }) {
+export function TestResult({
+  findings,
+  ankle = null,
+  toe = null,
+  balance = null,
+  again = null,
+}: {
+  findings: readonly TestFinding[];
+  /** The ankle bend in degrees, when the phone measured it: the screen is
+   * then the Foot Check's result, the two figures first. */
+  ankle?: FootCheckSides | null;
+  /** What the big toe lift showed, as a sentence. */
+  toe?: string | null;
+  /** Seconds on one leg. */
+  balance?: FootCheckSides | null;
+  /** When the ankles are measured again, epoch ms. */
+  again?: number | null;
+}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
+
+  if (ankle != null) {
+    const gap = ankleGap(ankle.left, ankle.right);
+    return (
+      <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+        <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+          {t('footCheck.result.title')}
+        </Text>
+        <View style={styles.sides}>
+          {(['left', 'right'] as const).map((side) => (
+            <View key={side} style={[styles.side, { backgroundColor: colors.card }]} accessible>
+              <Text style={[styles.sideLabel, { color: meter.caption }]}>
+                {t(side === 'left' ? 'onboarding.test.left' : 'onboarding.test.right')}
+              </Text>
+              <Text style={[styles.degrees, { color: colors.foreground }]} maxFontSizeMultiplier={1.2}>
+                {t('footCheck.degrees', { value: ankle[side] })}
+              </Text>
+            </View>
+          ))}
+        </View>
+        <Text style={[styles.question, styles.said, { color: colors.foreground }]}>
+          {gap.side == null
+            ? t('footCheck.result.same')
+            : t(gap.side === 'left' ? 'footCheck.result.leftLess' : 'footCheck.result.rightLess', { diff: gap.diff })}
+        </Text>
+        <View style={styles.stepRow}>
+          <HugeiconsIcon icon={ArrowRight01Icon} size={18} color={PRIMARY} strokeWidth={2.2} />
+          <Text style={[styles.planLine, { color: meter.caption }]}>{t('footCheck.result.plan')}</Text>
+        </View>
+        <View style={styles.checkCard}>
+          <FootCheckCard ankle={ankle} toe={toe} balance={balance} again={again} />
+        </View>
+      </ScrollView>
+    );
+  }
 
   return (
     <View style={styles.fill}>
@@ -379,6 +563,12 @@ const styles = StyleSheet.create({
   finding: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   findingCopy: { flex: 1, gap: 6 },
   findingPlan: { ...fonts.medium(15), lineHeight: 20, flex: 1 },
+  safety: { ...fonts.medium(14), lineHeight: 19, paddingHorizontal: 12 },
+  measure: { marginTop: 6 },
+  degrees: { ...fonts.heavy(44, -1.4), lineHeight: 48, fontVariant: ['tabular-nums'] },
+  said: { marginTop: 4 },
+  planLine: { ...fonts.medium(16), lineHeight: 22, flex: 1 },
+  checkCard: { marginTop: 8 },
   skip: { alignSelf: 'center', paddingVertical: 10 },
   skipText: fonts.semibold(15),
   steps: { gap: 8 },

@@ -88,13 +88,17 @@ export function useOfferNotifications(): void {
     };
   }, [router]);
 
-  // Bought (anywhere: the trial offer, the paywall, a restore): a push about
-  // a lower price is wrong from now on, scheduled or in the tray. So is the
-  // morning after the first session: the plan's own reminders speak now.
+  // The timed comeback price is gone: whatever an earlier build scheduled
+  // for it is taken back at every launch.
+  useEffect(() => {
+    void cancelComebackPushes();
+  }, []);
+
+  // Bought (anywhere: the paywall, the plans over Home, a restore): the
+  // morning after the first session is no longer theirs to hear about, the
+  // plan's own reminders speak now.
   const entitled = useEntitled();
   useEffect(() => {
-    if (!entitled) return;
-    void cancelComebackPushes();
-    void cancelNextDayPush();
+    if (entitled) void cancelNextDayPush();
   }, [entitled]);
 }

@@ -1,7 +1,9 @@
 /**
  * What the app knows about a person's days, said back to them: Walkito's line
  * about yesterday, the "why today's plan" sheet, the history in each part's
- * sheet, and Progress's patterns, gait and shoes cards.
+ * sheet, the days under the answered check-in, the card for the morning after
+ * a long day on the feet, and Progress's morning counts, patterns, gait,
+ * shoes and week-on-your-feet cards.
  *
  * Every figure here is from Health or the morning check-in and stays on the
  * phone. Never a diagnosis: "you may be sparing a foot", not a condition.
@@ -105,4 +107,45 @@ export const INSIGHTS_EN = {
   'progress.shoes.fresh': 'Plenty left. Most pairs start to soften in about {value} km.',
   'progress.shoes.soon': 'Getting there. Most pairs soften between 500 and 800 km.',
   'progress.shoes.due': 'Past 800 km. Time to look at a new pair.',
+
+  // ── Under Home's answered check-in: the days it joins ────────────────────
+  // A count, never a verdict: how many days were answered, not how they went.
+  // `{days}` is 2 to 14 (day one has its own line), so no plural is needed.
+  'home.checkInHistory.count': 'You’ve checked in on {count} of the last {days} days.',
+  'home.checkInHistory.first': 'Your first check-in is in. Your days will line up here.',
+  'home.checkInHistory.link': 'See your full history',
+
+  // ── Home, the morning after a long day on the feet ───────────────────────
+  // An observation from motion data, so "about", never a measurement, and
+  // never what the day did to the feet. The routine is offered, not promised.
+  'home.longDay.title': {
+    one: 'Yesterday you were on your feet for about {count} hour.',
+    other: 'Yesterday you were on your feet for about {count} hours.',
+  },
+  'home.longDay.body': 'A short seated routine is here if your feet would like it.',
+  'home.longDay.cta': { one: '{count} minute of relief', other: '{count} minutes of relief' },
+
+  // ── Morning pain card: the range's mornings, counted ─────────────────────
+  // The check-in's own two answers and the days nobody answered. Counts.
+  'progress.painRowNoPain': 'Mornings with no pain',
+  'progress.painRowPain': 'Mornings it hurt',
+  'progress.painRowNone': 'Mornings not logged',
+
+  // ── Your week on your feet ───────────────────────────────────────────────
+  // `{hours}` is a whole number, already formatted; the unit is abbreviated,
+  // so it does not agree. `{weekday}` is the day's full name from the system.
+  'progress.onFeet.title': 'Your week on your feet',
+  'progress.onFeet.average': 'about {hours} h',
+  'progress.onFeet.averageCaption': 'On your feet a day, on average',
+  /** The small tag on the dashed line across the bars. */
+  'progress.onFeet.avgTag': 'avg',
+  'progress.onFeet.busiest': 'Your busiest day was {weekday}, about {hours} h.',
+  'progress.onFeet.note': 'An estimate from your steps. It stays on your phone.',
+  'progress.onFeet.waiting': 'After two days of walking with your phone, your week shows up here.',
+  'progress.onFeet.connectIos': 'Connect Apple Health and your week on your feet shows up here.',
+  'progress.onFeet.connectAndroid': 'Connect Health Connect and your week on your feet shows up here.',
+  'progress.onFeet.connectCtaIos': 'Connect Apple Health',
+  'progress.onFeet.connectCtaAndroid': 'Connect Health Connect',
+  'progress.onFeet.dayA11y': '{weekday}: about {hours} h',
+  'progress.onFeet.dayEmptyA11y': '{weekday}: nothing recorded',
 } as const satisfies Record<string, SourceEntry>;

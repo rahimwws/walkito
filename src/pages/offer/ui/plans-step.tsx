@@ -101,9 +101,10 @@ export type PlansStepProps = {
    * sky holds still. */
   covered: boolean;
   onExpand: () => void;
-  /** "Not now", and the close over the sky: on to the one-time trial offer
-   * (`skipPaywall`), never into the app. */
-  onSkip: () => void;
+  /** "Not now", and the close over the sky: on to Home's free first run
+   * (`skipPaywall`). Left out over Home (`PaywallWall`), where there is no
+   * way past: then neither is drawn. */
+  onSkip?: () => void;
   /** Laid over everything: the celebration. */
   children?: ReactNode;
 };
@@ -247,17 +248,19 @@ export function PlansStep({
                   maxFontSizeMultiplier={1.25}>
                   {after.title}
                 </Text>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel={t('common.close')}
-                  hitSlop={12}
-                  onPress={() => {
-                    void Haptics.selectionAsync();
-                    onSkip();
-                  }}
-                  style={({ pressed }) => [styles.afterClose, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
-                  <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.caption} strokeWidth={2.4} />
-                </Pressable>
+                {onSkip != null && (
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel={t('common.close')}
+                    hitSlop={12}
+                    onPress={() => {
+                      void Haptics.selectionAsync();
+                      onSkip();
+                    }}
+                    style={({ pressed }) => [styles.afterClose, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
+                    <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.caption} strokeWidth={2.4} />
+                  </Pressable>
+                )}
               </View>
               <Text style={[styles.afterLine, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
                 {splitHighlight(after.line).map((run, i) =>
@@ -279,8 +282,8 @@ export function PlansStep({
               topInset={insets.top}
               live={focused && revealed && !covered}
               top={stepBar}
-              closable
-              onClose={onSkip}
+              closable={onSkip != null}
+              onClose={() => onSkip?.()}
             />
           )}
 
@@ -449,19 +452,21 @@ export function PlansStep({
               </Text>
             )}
           </Raised>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => {
-              void Haptics.selectionAsync();
-              onSkip();
-            }}
-            disabled={busy}
-            hitSlop={8}
-            style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
-            <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-              {t('offer.plans.skip')}
-            </Text>
-          </Pressable>
+          {onSkip != null && (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                void Haptics.selectionAsync();
+                onSkip();
+              }}
+              disabled={busy}
+              hitSlop={8}
+              style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
+              <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+                {t('offer.plans.skip')}
+              </Text>
+            </Pressable>
+          )}
           {cta.terms != null && (
             <View style={styles.terms}>
               <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />

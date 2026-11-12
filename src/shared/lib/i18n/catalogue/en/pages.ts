@@ -109,9 +109,9 @@ export const PAGES_EN = {
   'pages.program.blockAbout1':
     'Calming the foot down. Stretches and gentle movement - nothing is loaded yet.',
   'pages.program.blockAbout2':
-    'Strength work starts. Towel heel raises help most with the pain; seated short foot strengthens the arch. Many people notice the first real relief around day 20.',
+    'Strength work starts. Towel heel raises help most with the pain; seated short foot strengthens the arch.',
   'pages.program.blockAbout3':
-    'The load goes up: heel raises 4 × 10 with a backpack, and short foot comes off the chair - the arch now works under your bodyweight. The first changes in the arch often show from week six.',
+    'The load goes up: heel raises 4 × 10 with a backpack, and short foot comes off the chair - the arch now works under your bodyweight.',
   'pages.program.blockAbout4':
     'Heel raises reach 5 × 8, the heaviest in the program. Short foot moves to one leg, and the band joins - only now, once the small muscles inside the foot can hold.',
   'pages.program.blockAbout5':

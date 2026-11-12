@@ -22,16 +22,10 @@ import { kv } from '@/shared/lib/storage';
  * once App Tracking Transparency is answered, just before the paywall, so its
  * report may come during the paywall's first steps; the paywall settles on its
  * answer when the plans step shows (`pages/offer`), never after.
- *
- * Whether the first paywall did sell the trial is kept apart from who it is
- * for (`paywallSoldTrial`): the offer screen after a skip offers the trial
- * only to somebody the paywall did not, and an AppsFlyer report arriving
- * after the paywall must not change what it already showed.
  */
 
 const META_INSTALL_KEY = 'purchase/meta-install';
 const SOURCE_ANSWER_KEY = 'purchase/source-answer';
-const PAYWALL_TRIAL_KEY = 'purchase/paywall-sold-trial';
 
 /** The survey answers that mean a Meta app (`AcquisitionSource` values). */
 const META_ANSWERS = new Set(['instagram', 'facebook']);
@@ -102,23 +96,6 @@ export function trialOnFirstPaywall(): boolean {
 
 export function useTrialOnFirstPaywall(): boolean {
   return useSyncExternalStore(subscribe, trialOnFirstPaywall, () => false);
-}
-
-/** The first paywall's plans showed the trial. */
-export function markPaywallSoldTrial(): void {
-  kv.set(PAYWALL_TRIAL_KEY, true);
-}
-
-/** Whether the first paywall's plans showed the trial, so the offer after a
- * skip goes past it. */
-export function paywallSoldTrial(): boolean {
-  return kv.getBoolean(PAYWALL_TRIAL_KEY) === true;
-}
-
-/** Development only: forget what the paywall showed (`?previewPaywall`). */
-export function devForgetPaywallTrial(): void {
-  if (!__DEV__) return;
-  kv.remove(PAYWALL_TRIAL_KEY);
 }
 
 /** Development only (`?trialAudience=meta|organic|off`): answer as somebody

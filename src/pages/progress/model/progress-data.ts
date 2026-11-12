@@ -133,6 +133,33 @@ export function painStart(firstWeek: readonly (number | null)[]): number | null 
   return value == null ? null : round1(value);
 }
 
+export type PainCounts = {
+  /** Mornings logged as no pain: a zero, which is an answer. */
+  none: number;
+  /** Mornings logged with any pain. */
+  pain: number;
+  /** Mornings with no check-in. */
+  unlogged: number;
+};
+
+/**
+ * The mornings of a range, counted three ways, for the plain rows under the
+ * chart. The check-in's own two answers ("No pain today", "It hurts today")
+ * and the days nobody answered: counts, never grades. `series` is one value
+ * per day, as `painBars` takes it; `inPlan` is how many of its last days fall
+ * inside the plan, since a day before it began is not a morning left unlogged.
+ */
+export function painCounts(series: readonly (number | null)[], inPlan: number = series.length): PainCounts {
+  const counts: PainCounts = { none: 0, pain: 0, unlogged: 0 };
+  const from = series.length - Math.max(0, Math.min(series.length, Math.floor(inPlan)));
+  for (const value of series.slice(from)) {
+    if (value == null) counts.unlogged += 1;
+    else if (value <= 0) counts.none += 1;
+    else counts.pain += 1;
+  }
+  return counts;
+}
+
 /** Mornings still to log before the chart starts. 0 once it has. */
 export function readingsToGo(total: number): number {
   return Math.max(0, CHART_MIN_READINGS - total);

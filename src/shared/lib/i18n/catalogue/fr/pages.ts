@@ -70,9 +70,9 @@ export const PAGES_FR = {
   'pages.program.blockAbout1':
     'Calmer le pied. Étirements et mouvements doux - aucune charge pour l’instant.',
   'pages.program.blockAbout2':
-    'Le travail de force commence. Les montées sur pointes avec serviette sont ce qui aide le plus contre la douleur ; le pied court assis renforce la voûte. Beaucoup de gens sentent un premier vrai soulagement vers le jour 20.',
+    'Le travail de force commence. Les montées sur pointes avec serviette sont ce qui aide le plus contre la douleur ; le pied court assis renforce la voûte.',
   'pages.program.blockAbout3':
-    'La charge augmente : montées sur pointes 4 × 10 avec un sac à dos, et le pied court quitte la chaise - la voûte travaille maintenant sous le poids du corps. Les premiers changements de la voûte se voient souvent à partir de la sixième semaine.',
+    'La charge augmente : montées sur pointes 4 × 10 avec un sac à dos, et le pied court quitte la chaise - la voûte travaille maintenant sous le poids du corps.',
   'pages.program.blockAbout4':
     'Les montées sur pointes passent à 5 × 8, le plus lourd du programme. Le pied court passe sur une jambe, et l’élastique arrive - seulement maintenant, une fois que les petits muscles du pied tiennent.',
   'pages.program.blockAbout5':

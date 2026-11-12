@@ -171,6 +171,13 @@ export const OFFER_PT = {
   'offer.plans.cancelAndroid': 'Cancele quando quiser no Google Play.',
   'offer.plans.oneTime': 'Pagamento único, sem assinatura.',
   'offer.plans.skip': 'Agora não',
+  'offer.cancel.title': 'Nada foi cobrado.',
+  'offer.cancel.question': 'O que fez você parar?',
+  'offer.cancel.subscription': 'Não quero uma assinatura',
+  'offer.cancel.price': 'Custa caro demais',
+  'offer.cancel.charge': 'Não ficou claro quando viria a cobrança',
+  'offer.cancel.try': 'Quero experimentar primeiro',
+  'offer.cancel.other': 'Outro motivo',
   // The first session before the paywall (`FirstSession`), "How did that
   // feel?" after it, and the plans that carry on from it. Brackets in the
   // `offer.next.line*` keys mark the lit words, as in `offer.plans.headline`.

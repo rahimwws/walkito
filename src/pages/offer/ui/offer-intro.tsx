@@ -11,6 +11,7 @@ import { Chip3D } from '@/shared/ui/chip-3d';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { pointingRig } from '@/shared/ui/mascot';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+import { FootCheckStrip } from '@/entities/foot-check';
 
 import { GoldText } from './glow';
 import { IntroMascot } from './intro-mascot';
@@ -109,10 +110,12 @@ export type IntroPlanProps = {
   daysPerWeek: number;
   /** The first progress check, epoch ms. */
   checkOn: number;
+  /** How much of the Foot Check the onboarding measured, or 0. */
+  footCheck?: number;
 };
 
 /** Step one: how the plan starts. */
-export function IntroPlan({ name, strip, why, minutes, checkOn }: IntroPlanProps) {
+export function IntroPlan({ name, strip, why, minutes, checkOn, footCheck = 0 }: IntroPlanProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const t = useT();
@@ -164,6 +167,12 @@ export function IntroPlan({ name, strip, why, minutes, checkOn }: IntroPlanProps
       {/* The passport they built in onboarding: what the plan is for, before
           anything about the plan. */}
       {strip.length > 0 && <Passport strip={strip} />}
+
+      {footCheck > 0 && (
+        <Animated.View entering={rise(1)}>
+          <FootCheckStrip done={footCheck} line={t('footCheck.card.rest')} />
+        </Animated.View>
+      )}
 
       <Animated.View entering={rise(2)}>
         <IntroRail title={t('offer.goldPlan')} steps={steps} />
