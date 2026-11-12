@@ -1,0 +1,2100 @@
+{
+ "age": [
+  {
+   "spend": "7.19",
+   "impressions": "536",
+   "reach": "440",
+   "inline_link_clicks": "6",
+   "ctr": "1.679104",
+   "cpm": "13.414179",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "6"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "3"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "206"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "6"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "206"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "6"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "3"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "194"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "25-34"
+  },
+  {
+   "spend": "16.2",
+   "impressions": "1203",
+   "reach": "907",
+   "inline_link_clicks": "27",
+   "ctr": "1.995012",
+   "cpm": "13.466334",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "2"
+    },
+    {
+     "action_type": "link_click",
+     "value": "27"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "7"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "451"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "13"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "451"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "12"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "6"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "2"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "video_view",
+     "value": "411"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "2"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "2"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "35-44"
+  },
+  {
+   "spend": "27.38",
+   "impressions": "1766",
+   "reach": "1408",
+   "inline_link_clicks": "50",
+   "ctr": "2.831257",
+   "cpm": "15.503964",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "6"
+    },
+    {
+     "action_type": "link_click",
+     "value": "50"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "30"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "8"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "10"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "776"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "14"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "776"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "14"
+    },
+    {
+     "action_type": "post",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "4"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "4"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "8"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "2"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "30"
+    },
+    {
+     "action_type": "video_view",
+     "value": "712"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "6"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "10"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "45-54"
+  },
+  {
+   "spend": "52.82",
+   "impressions": "2645",
+   "reach": "2085",
+   "inline_link_clicks": "110",
+   "ctr": "4.007561",
+   "cpm": "19.969754",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "20"
+    },
+    {
+     "action_type": "link_click",
+     "value": "110"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "80"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "21"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "25"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "1312"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "22"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "1312"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "21"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "20"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "4"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "80"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1180"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "20"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "25"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "55-64"
+  },
+  {
+   "spend": "64.73",
+   "impressions": "2427",
+   "reach": "1975",
+   "inline_link_clicks": "124",
+   "ctr": "4.779563",
+   "cpm": "26.670787",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "14"
+    },
+    {
+     "action_type": "link_click",
+     "value": "124"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "82"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "16"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "31"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "1327"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "18"
+    },
+    {
+     "action_type": "comment",
+     "value": "1"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "1327"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "18"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_comment",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "16"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "7"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "82"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1185"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "14"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "31"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "65+"
+  }
+ ],
+ "gender": [
+  {
+   "spend": "109.93",
+   "impressions": "5081",
+   "reach": "3970",
+   "inline_link_clicks": "217",
+   "ctr": "4.074001",
+   "cpm": "21.635505",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "28"
+    },
+    {
+     "action_type": "link_click",
+     "value": "217"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "144"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "37"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "51"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "2638"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "45"
+    },
+    {
+     "action_type": "comment",
+     "value": "1"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "2638"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "44"
+    },
+    {
+     "action_type": "post",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_comment",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "36"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "8"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "144"
+    },
+    {
+     "action_type": "video_view",
+     "value": "2376"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "28"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "51"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "gender": "female"
+  },
+  {
+   "spend": "56.85",
+   "impressions": "3428",
+   "reach": "2773",
+   "inline_link_clicks": "97",
+   "ctr": "2.771295",
+   "cpm": "16.584014",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "14"
+    },
+    {
+     "action_type": "link_click",
+     "value": "97"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "57"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "18"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "17"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "1399"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "28"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "1399"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "27"
+    },
+    {
+     "action_type": "post",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "8"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "8"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "17"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "8"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "57"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1274"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "14"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "17"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "gender": "male"
+  },
+  {
+   "spend": "1.54",
+   "impressions": "68",
+   "reach": "54",
+   "inline_link_clicks": "3",
+   "ctr": "4.411765",
+   "cpm": "22.647059",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "3"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "35"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "35"
+    },
+    {
+     "action_type": "video_view",
+     "value": "32"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "gender": "unknown"
+  }
+ ],
+ "age,gender": [
+  {
+   "spend": "4.25",
+   "impressions": "296",
+   "reach": "247",
+   "inline_link_clicks": "3",
+   "ctr": "2.027027",
+   "cpm": "14.358108",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "3"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "114"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "2"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "114"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "109"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "25-34",
+   "gender": "female"
+  },
+  {
+   "spend": "2.86",
+   "impressions": "236",
+   "reach": "192",
+   "inline_link_clicks": "3",
+   "ctr": "1.271186",
+   "cpm": "12.118644",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "3"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "90"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "4"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "90"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "4"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "2"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "83"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "25-34",
+   "gender": "male"
+  },
+  {
+   "spend": "0.08",
+   "impressions": "4",
+   "reach": "4",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "20",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "2"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "2"
+    },
+    {
+     "action_type": "video_view",
+     "value": "2"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "25-34",
+   "gender": "unknown"
+  },
+  {
+   "spend": "9.42",
+   "impressions": "663",
+   "reach": "499",
+   "inline_link_clicks": "16",
+   "ctr": "2.262443",
+   "cpm": "14.208145",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "2"
+    },
+    {
+     "action_type": "link_click",
+     "value": "16"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "5"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "256"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "7"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "256"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "6"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "video_view",
+     "value": "233"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "2"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "2"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "35-44",
+   "gender": "female"
+  },
+  {
+   "spend": "6.6",
+   "impressions": "534",
+   "reach": "435",
+   "inline_link_clicks": "11",
+   "ctr": "1.685393",
+   "cpm": "12.359551",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "11"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "193"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "6"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "193"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "6"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "2"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "176"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "35-44",
+   "gender": "male"
+  },
+  {
+   "spend": "0.18",
+   "impressions": "6",
+   "reach": "5",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "30",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "2"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "2"
+    },
+    {
+     "action_type": "video_view",
+     "value": "2"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "35-44",
+   "gender": "unknown"
+  },
+  {
+   "spend": "17.78",
+   "impressions": "1011",
+   "reach": "794",
+   "inline_link_clicks": "42",
+   "ctr": "4.055391",
+   "cpm": "17.586548",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "6"
+    },
+    {
+     "action_type": "link_click",
+     "value": "42"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "30"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "10"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "492"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "6"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "492"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "6"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "30"
+    },
+    {
+     "action_type": "video_view",
+     "value": "444"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "6"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "10"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "45-54",
+   "gender": "female"
+  },
+  {
+   "spend": "9.44",
+   "impressions": "745",
+   "reach": "617",
+   "inline_link_clicks": "8",
+   "ctr": "1.208054",
+   "cpm": "12.671141",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "8"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "280"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "8"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "280"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "8"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "264"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "45-54",
+   "gender": "male"
+  },
+  {
+   "spend": "0.16",
+   "impressions": "10",
+   "reach": "8",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "16",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "4"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "4"
+    },
+    {
+     "action_type": "video_view",
+     "value": "4"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "45-54",
+   "gender": "unknown"
+  },
+  {
+   "spend": "34.77",
+   "impressions": "1609",
+   "reach": "1294",
+   "inline_link_clicks": "70",
+   "ctr": "4.039776",
+   "cpm": "21.609695",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "link_click",
+     "value": "70"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "48"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "15"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "15"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "881"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "16"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "881"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "16"
+    },
+    {
+     "action_type": "post",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "15"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "48"
+    },
+    {
+     "action_type": "video_view",
+     "value": "795"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "15"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "55-64",
+   "gender": "female"
+  },
+  {
+   "spend": "17.8",
+   "impressions": "1017",
+   "reach": "791",
+   "inline_link_clicks": "38",
+   "ctr": "3.834808",
+   "cpm": "17.502458",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "link_click",
+     "value": "38"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "32"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "6"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "10"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "419"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "6"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "419"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "5"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "3"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "32"
+    },
+    {
+     "action_type": "video_view",
+     "value": "375"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "10"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "55-64",
+   "gender": "male"
+  },
+  {
+   "spend": "0.25",
+   "impressions": "19",
+   "reach": "15",
+   "inline_link_clicks": "2",
+   "ctr": "10.526316",
+   "cpm": "13.157895",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "12"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "12"
+    },
+    {
+     "action_type": "video_view",
+     "value": "10"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "55-64",
+   "gender": "unknown"
+  },
+  {
+   "spend": "43.71",
+   "impressions": "1502",
+   "reach": "1196",
+   "inline_link_clicks": "86",
+   "ctr": "5.326232",
+   "cpm": "29.101198",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "link_click",
+     "value": "86"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "57"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "12"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "24"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "895"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "14"
+    },
+    {
+     "action_type": "comment",
+     "value": "1"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "895"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "14"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_comment",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "12"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "5"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "57"
+    },
+    {
+     "action_type": "video_view",
+     "value": "795"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "10"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "24"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "65+",
+   "gender": "female"
+  },
+  {
+   "spend": "20.15",
+   "impressions": "896",
+   "reach": "726",
+   "inline_link_clicks": "37",
+   "ctr": "3.90625",
+   "cpm": "22.488839",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "4"
+    },
+    {
+     "action_type": "link_click",
+     "value": "37"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "25"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "7"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "417"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "4"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "417"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "4"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "2"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "25"
+    },
+    {
+     "action_type": "video_view",
+     "value": "376"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "4"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "7"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "65+",
+   "gender": "male"
+  },
+  {
+   "spend": "0.87",
+   "impressions": "29",
+   "reach": "22",
+   "inline_link_clicks": "1",
+   "ctr": "3.448276",
+   "cpm": "30",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "15"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "15"
+    },
+    {
+     "action_type": "video_view",
+     "value": "14"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "age": "65+",
+   "gender": "unknown"
+  }
+ ],
+ "publisher_platform,platform_position": [
+  {
+   "spend": "0.010003",
+   "impressions": "1",
+   "reach": "1",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "10.002971",
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "facebook_notification"
+  },
+  {
+   "spend": "0.130039",
+   "impressions": "7",
+   "reach": "7",
+   "inline_link_clicks": "2",
+   "ctr": "14.285714",
+   "cpm": "18.576947",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "6"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "6"
+    },
+    {
+     "action_type": "video_view",
+     "value": "4"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "facebook_profile_feed"
+  },
+  {
+   "spend": "84.405073",
+   "impressions": "4286",
+   "reach": "3544",
+   "inline_link_clicks": "156",
+   "ctr": "3.359776",
+   "cpm": "19.693204",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "24"
+    },
+    {
+     "action_type": "link_click",
+     "value": "156"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "123"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "43"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "41"
+    },
+    {
+     "action_type": "onsite_conversion.post_unlike",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "2107"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "53"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "2107"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "51"
+    },
+    {
+     "action_type": "post",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "8"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "8"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "41"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "12"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "123"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1898"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "24"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "41"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "facebook_reels"
+  },
+  {
+   "spend": "6.201842",
+   "impressions": "99",
+   "reach": "96",
+   "inline_link_clicks": "19",
+   "ctr": "19.191919",
+   "cpm": "62.644871",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "19"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "3"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "83"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "83"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "1"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "3"
+    },
+    {
+     "action_type": "video_view",
+     "value": "64"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "1"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "facebook_stories"
+  },
+  {
+   "spend": "47.43409",
+   "impressions": "2656",
+   "reach": "2130",
+   "inline_link_clicks": "95",
+   "ctr": "3.200301",
+   "cpm": "17.859221",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "12"
+    },
+    {
+     "action_type": "link_click",
+     "value": "95"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "61"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "22"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "1121"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "8"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "1121"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "8"
+    },
+    {
+     "action_type": "post",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "2"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_store_visit",
+     "value": "3"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "61"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1018"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "12"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "22"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "feed"
+  },
+  {
+   "spend": "4.541349",
+   "impressions": "132",
+   "reach": "121",
+   "inline_link_clicks": "7",
+   "ctr": "5.30303",
+   "cpm": "34.404159",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "7"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "2"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "79"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "79"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "2"
+    },
+    {
+     "action_type": "video_view",
+     "value": "72"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "instream_video"
+  },
+  {
+   "spend": "0.140042",
+   "impressions": "5",
+   "reach": "5",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "28.00832",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "1"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "1"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "facebook",
+   "platform_position": "search"
+  },
+  {
+   "spend": "9.312766",
+   "impressions": "557",
+   "reach": "492",
+   "inline_link_clicks": "18",
+   "ctr": "4.308797",
+   "cpm": "16.719509",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "5"
+    },
+    {
+     "action_type": "link_click",
+     "value": "18"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "omni_app_install",
+     "value": "4"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "270"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "7"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "270"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "7"
+    },
+    {
+     "action_type": "onsite_conversion.post_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_save",
+     "value": "3"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "9"
+    },
+    {
+     "action_type": "video_view",
+     "value": "245"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "5"
+    },
+    {
+     "action_type": "mobile_app_install",
+     "value": "4"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "instagram",
+   "platform_position": "feed"
+  },
+  {
+   "spend": "0.010003",
+   "impressions": "7",
+   "reach": "7",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "1.428996",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "5"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "5"
+    },
+    {
+     "action_type": "video_view",
+     "value": "5"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "instagram",
+   "platform_position": "instagram_explore_grid_home"
+  },
+  {
+   "spend": "11.633456",
+   "impressions": "619",
+   "reach": "556",
+   "inline_link_clicks": "16",
+   "ctr": "3.231018",
+   "cpm": "18.793951",
+   "actions": [
+    {
+     "action_type": "omni_tutorial_completion",
+     "value": "1"
+    },
+    {
+     "action_type": "link_click",
+     "value": "16"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "post_reaction",
+     "value": "4"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "309"
+    },
+    {
+     "action_type": "post_interaction_gross",
+     "value": "5"
+    },
+    {
+     "action_type": "comment",
+     "value": "1"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "309"
+    },
+    {
+     "action_type": "post_interaction_net",
+     "value": "5"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_comment",
+     "value": "1"
+    },
+    {
+     "action_type": "onsite_conversion.post_net_like",
+     "value": "4"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "288"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_tutorial_completion",
+     "value": "1"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "instagram",
+   "platform_position": "instagram_reels"
+  },
+  {
+   "spend": "2.450728",
+   "impressions": "89",
+   "reach": "83",
+   "inline_link_clicks": "2",
+   "ctr": "3.370787",
+   "cpm": "27.53627",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "2"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "30"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "30"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "28"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "instagram",
+   "platform_position": "instagram_stories"
+  },
+  {
+   "spend": "1.620481",
+   "impressions": "100",
+   "reach": "95",
+   "inline_link_clicks": "2",
+   "ctr": "2",
+   "cpm": "16.204814",
+   "actions": [
+    {
+     "action_type": "link_click",
+     "value": "2"
+    },
+    {
+     "action_type": "omni_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "post_engagement",
+     "value": "53"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "53"
+    },
+    {
+     "action_type": "app_custom_event.fb_mobile_activate_app",
+     "value": "1"
+    },
+    {
+     "action_type": "video_view",
+     "value": "51"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "threads",
+   "platform_position": "threads_feed"
+  },
+  {
+   "spend": "0.430128",
+   "impressions": "19",
+   "reach": "18",
+   "inline_link_clicks": "0",
+   "ctr": "0",
+   "cpm": "22.638304",
+   "actions": [
+    {
+     "action_type": "post_engagement",
+     "value": "8"
+    },
+    {
+     "action_type": "page_engagement",
+     "value": "8"
+    },
+    {
+     "action_type": "video_view",
+     "value": "8"
+    }
+   ],
+   "date_start": "2026-11-09",
+   "date_stop": "2026-11-12",
+   "publisher_platform": "unknown",
+   "platform_position": "unknown"
+  }
+ ]
+}
