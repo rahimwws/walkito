@@ -5,7 +5,7 @@ import { Platform } from 'react-native';
 import { getIntake, useIntake, useProfileName } from '@/entities/profile';
 import { outcome, planSettings } from '@/entities/program';
 import { ENTITLEMENT, grantDevAccess, isPassProduct, onSimulator, purchases, useEntitled } from '@/entities/purchase';
-import { SUPERWALL_KEYS } from '@/shared/config';
+import { SUPERWALL_KEYS, SUPERWALL_ON } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, useLanguage } from '@/shared/lib/i18n';
 import { PaywallApiProvider, type PaywallApi } from '@/shared/lib/paywall';
@@ -51,7 +51,9 @@ function personalisation(name: string) {
 /** Present in a binary built with `expo-superwall`; null in an older dev client. */
 const nativeModule = requireOptionalNativeModule('SuperwallExpo');
 const platformKey = Platform.OS === 'ios' ? SUPERWALL_KEYS.ios : Platform.OS === 'android' ? SUPERWALL_KEYS.android : undefined;
-const enabled = nativeModule != null && platformKey != null && platformKey !== '';
+// `SUPERWALL_ON` first: off, the SDK is never configured, `usePaywall()`
+// answers with its no-op and every `register` leaves our screen where it is.
+const enabled = SUPERWALL_ON && nativeModule != null && platformKey != null && platformKey !== '';
 
 /** The Superwall events worth a line in PostHog: what was shown, and what came of it. */
 const FORWARDED = new Set([
