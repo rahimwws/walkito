@@ -41,7 +41,7 @@ export const ONBOARDING_ES = {
   'onboarding.intro.title': 'Corre sin dudar de cada paso',
   'onboarding.intro.blurb': 'Un plan diario que cambia cuando cambian tus piernas.',
   'onboarding.intro.greeting': 'Hola, soy Walkito',
-  'onboarding.intro.headline': 'Vamos a ver por qué todavía te duele.',
+  'onboarding.intro.headline': 'Vamos a crear un plan para tus pies.',
   'onboarding.intro.cta': 'Continuar con Apple',
   'onboarding.intro.ctaGoogle': 'Continuar con Google',
   'onboarding.intro.signInFailed': 'El inicio de sesión no se completó. Inténtalo otra vez.',
@@ -321,7 +321,7 @@ export const ONBOARDING_ES = {
   'onboarding.notify.opening': 'Abriendo…',
   'onboarding.notify.notNow': 'Ahora no',
   'onboarding.notify.declined': 'Sin problema: puedes activarlas más tarde en Ajustes.',
-  'onboarding.notify.consent': 'Recordatorios, progreso y alguna oferta de vez en cuando.',
+  'onboarding.notify.consent': 'Recordatorios y progreso de tu plan. Puedes desactivarlos cuando quieras.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Construyendo tu plan',

@@ -60,7 +60,7 @@ import {
   setProfileEmail,
   setProfileName,
 } from "@/entities/profile";
-import { wakeMinutes } from "@/entities/notifications";
+import { wakeMinutes, withholdOfferPushes } from "@/entities/notifications";
 import {
   EQUIPMENT,
   PLAN_META,
@@ -446,7 +446,7 @@ export function OnboardingPage() {
   const side = list(answers.side)[0] ?? null;
   const score = morningPainOf(answers) ?? MORNING_PAIN_SEED;
   const load = loadQuestionForRole(role);
-  const isLast = index === STEP_COUNT - 1;
+  const isLast = stepAfter(index, true, answers) == null;
   const runner = list(answers.runner)[0] ?? null;
   // Decided from what they said about themselves, not offered.
   const plan = PLANS[recommendedIndex(runner)];
@@ -1201,6 +1201,8 @@ export function OnboardingPage() {
   const finish = () => {
     Keyboard.dismiss();
     commit();
+    // The notification ask names reminders and progress, not offers.
+    withholdOfferPushes();
     armOffer({ weeks: String(plan.weeks), name });
     armSetup();
     track("onboarding_completed", { skipped: false, plan_weeks: plan.weeks });

@@ -40,7 +40,7 @@ export const JOURNEY_RU = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'Самое частое здесь.',
   'onboarding.react.areaFoot': 'С этого план и начнётся.',
-  'onboarding.react.areaAchilles': 'Хорошо отвечает на медленную нагрузку.',
+  'onboarding.react.areaAchilles': 'План даёт нагрузку постепенно.',
   'onboarding.react.areaCalf': 'Тянет за собой всё, что ниже.',
   'onboarding.react.areaShin': 'Нагрузка росла быстрее, чем ноги привыкали.',
   'onboarding.react.areaNone': 'Хорошее время укрепиться.',
@@ -76,7 +76,7 @@ export const JOURNEY_RU = {
   'onboarding.react.yearTitle': 'Это долго.',
   'onboarding.react.yearBody': 'Обычно нагрузка так и не менялась. Изменим её.',
   'onboarding.react.longerTitle': 'Больше года. Понимаем, это непросто.',
-  'onboarding.react.longerBody': 'Нужна другая нагрузка, а не ещё больше отдыха.',
+  'onboarding.react.longerBody': 'План начинается мягко и наращивает нагрузку постепенно.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': 'Боль на первых шагах сегодня?',

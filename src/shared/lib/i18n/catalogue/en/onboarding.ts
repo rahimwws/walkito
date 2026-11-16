@@ -53,7 +53,7 @@ export const ONBOARDING_EN = {
   'onboarding.intro.title': 'Run without second-guessing',
   'onboarding.intro.blurb': 'A daily plan that changes when your legs do.',
   'onboarding.intro.greeting': 'Hi, I’m Walkito',
-  'onboarding.intro.headline': 'Let’s find out why it still hurts.',
+  'onboarding.intro.headline': 'Let’s build a plan for your feet.',
   'onboarding.intro.cta': 'Continue with Apple',
   'onboarding.intro.ctaGoogle': 'Continue with Google',
   /** A genuine failure, not a cancel. No blame and no error code — there is
@@ -358,7 +358,7 @@ export const ONBOARDING_EN = {
   'onboarding.notify.opening': 'Opening…',
   'onboarding.notify.notNow': 'Not now',
   'onboarding.notify.declined': 'No problem - you can turn these on later in Settings.',
-  'onboarding.notify.consent': 'Reminders, progress and occasional offers.',
+  'onboarding.notify.consent': 'Reminders and progress for your plan. You can turn them off any time.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Building your plan',

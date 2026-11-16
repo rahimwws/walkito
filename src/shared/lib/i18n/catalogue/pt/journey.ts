@@ -45,7 +45,7 @@ export const JOURNEY_PT = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'O mais comum por aqui.',
   'onboarding.react.areaFoot': 'É por aí que o plano começa.',
-  'onboarding.react.areaAchilles': 'Ele responde bem à carga lenta.',
+  'onboarding.react.areaAchilles': 'O plano dá carga aos poucos.',
   'onboarding.react.areaCalf': 'Ela puxa tudo o que está abaixo.',
   'onboarding.react.areaShin': 'A carga subiu mais rápido do que as pernas se adaptaram.',
   'onboarding.react.areaNone': 'Boa hora para ganhar força.',
@@ -81,7 +81,7 @@ export const JOURNEY_PT = {
   'onboarding.react.yearTitle': 'É bastante tempo.',
   'onboarding.react.yearBody': 'Em geral a carga nunca mudou. A gente vai mudar.',
   'onboarding.react.longerTitle': 'Mais de um ano. Isso pesa.',
-  'onboarding.react.longerBody': 'Precisa de outra carga, não de mais descanso.',
+  'onboarding.react.longerBody': 'O plano começa leve e avança devagar.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': 'Dor nos primeiros passos hoje?',
