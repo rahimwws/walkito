@@ -369,6 +369,11 @@ export type AnalyticsEvents = {
   /** App Tracking Transparency answered, once, in the onboarding. Only
    * whether it was allowed. */
   att_answered: { granted: boolean };
+  /** The system's notification prompt answered: from the onboarding's
+   * `notify` step, or from the trial reminder for somebody not yet asked.
+   * Only whether it was allowed, and only when the system really asked: a
+   * permission already given or already refused sends nothing. */
+  notifications_answered: { granted: boolean };
 
   // ── Instagram ────────────────────────────────────────────────────────────
   /** The "follow Walkito on Instagram" sheet came up: by itself on the third

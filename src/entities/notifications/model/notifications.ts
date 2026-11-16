@@ -2,6 +2,7 @@ import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
 
+import { track } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 
@@ -138,6 +139,10 @@ export async function notificationsAllowed(): Promise<boolean> {
  * the flow spends a screen explaining what the app will send before calling
  * it. A silent request behind a "Continue" would spend the one ask the app
  * gets on a user who has not been told anything.
+ *
+ * The answer is tracked (`notifications_answered`), from the one place the
+ * system is asked: until 1.0.13 nothing recorded it, so nobody could say what
+ * share of the people a reminder is meant for can receive one.
  */
 export async function requestNotificationAccess(): Promise<boolean> {
   try {
@@ -148,6 +153,7 @@ export async function requestNotificationAccess(): Promise<boolean> {
     const result = await Notifications.requestPermissionsAsync({
       ios: { allowAlert: true, allowSound: true, allowBadge: false },
     });
+    track('notifications_answered', { granted: result.granted });
     return result.granted;
   } catch {
     return false;
