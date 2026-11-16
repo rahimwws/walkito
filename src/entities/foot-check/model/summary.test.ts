@@ -1,30 +1,9 @@
 import { describe, expect, test } from 'bun:test';
 
-import { ankleGap, countMeasured, remeasureAt, remeasureDue } from './summary';
+import { remeasureAt, remeasureDue } from './summary';
 
 const DAY = 86_400_000;
 const START = new Date(2026, 10, 12, 20, 0).getTime();
-
-describe('countMeasured', () => {
-  test('counts what the onboarding measured', () => {
-    expect(countMeasured(true, true, false)).toBe(2);
-    expect(countMeasured(true, true, true)).toBe(3);
-    expect(countMeasured(false, true, false)).toBe(1);
-  });
-});
-
-describe('ankleGap', () => {
-  test('names the ankle that bends less', () => {
-    expect(ankleGap(31, 38)).toEqual({ side: 'left', diff: 7 });
-    expect(ankleGap(40, 33)).toEqual({ side: 'right', diff: 7 });
-  });
-
-  test('a gap inside the noise of the reading is no gap', () => {
-    expect(ankleGap(35, 37).side).toBeNull();
-    expect(ankleGap(36, 36).side).toBeNull();
-    expect(ankleGap(34, 37).side).toBe('left');
-  });
-});
 
 describe('remeasureAt', () => {
   test('the first progress check, before any test is on the calendar', () => {

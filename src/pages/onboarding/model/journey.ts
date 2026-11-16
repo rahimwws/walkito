@@ -155,35 +155,51 @@ export function painBandOf(score: number): PainBand {
   return 'hard';
 }
 
-// ── The 30-second check ─────────────────────────────────────────────────────
-
-/** The most a balance hold is counted for; past it, it is not a test any more. */
-export const BALANCE_CAP_SECONDS = 30;
+// ── The Foot Check ──────────────────────────────────────────────────────────
 
 /**
- * Who the check is for: everybody it is safe for. Nothing hurting; or a foot
- * that hurts, on a morning that is not a hard one (7 and over), with none of
- * the safety answers that start week one sitting down or want a doctor's
- * look. It was an experiment for people without pain and for an arch goal;
- * it is now the one thing in the flow somebody does with their own foot, so
- * everybody who can stand for it gets it.
+ * The answers that leave the heel question out: a fall, a calf red flag or a
+ * pop at the back of the ankle. Sliding a foot back until the heel lifts loads
+ * the calf and the Achilles, which is the one thing not to ask of any of the
+ * three before a doctor or a fortnight has had a look. They get the toe alone.
  */
-export function miniTestEligible(answers: Answers, painless: boolean): boolean {
-  if (painless) return true;
-  const safety = safetyPlan(answers);
-  if (safety.seated || safety.doctor) return false;
-  const score = morningPainOf(answers);
-  return score == null || painBandOf(score) !== 'hard';
+const HEEL_LEFT_OUT = ['fall', 'calf', 'pop'];
+
+/**
+ * Whether the Foot Check asks which heel lifts first. Everybody but the three
+ * answers above: a seated question, as far as feels easy, with nothing held at
+ * the end, so a hard morning or a diabetic foot is asked it too.
+ */
+export function heelAsked(answers: Answers): boolean {
+  return !list(answers, 'safety').some((value) => HEEL_LEFT_OUT.includes(value));
 }
 
-/** Balance on one leg only with little pain this morning, and never on a
- * foot that has gone numb. A sore foot is not asked to stand on one leg to be
- * measured. */
-export function balanceAllowed(answers: Answers, painless: boolean): boolean {
-  if (painless) return true;
-  if (safetyPlan(answers).numb) return false;
-  const score = morningPainOf(answers);
-  return score != null && score <= 3;
+export type HeelAnswer = 'left' | 'right' | 'both' | 'unsure';
+
+export function heelOf(answers: Answers): HeelAnswer | null {
+  const value = first(answers, 'test-heel');
+  return value === 'left' || value === 'right' || value === 'both' || value === 'unsure' ? value : null;
+}
+
+/**
+ * What the heel answer is said back as: the sentence on the result, what the
+ * plan does about it, and the row on the Foot Check card. Whole sentences per
+ * language. "Bends a little less" is as far as an answer by eye goes: never a
+ * number, never "tight", and the plan is the one she would have had anyway.
+ */
+export function heelFinding(heel: HeelAnswer | null): { said: Key; plan: Key; row: Key } | null {
+  switch (heel) {
+    case 'left':
+      return { said: 'footCheck.heel.leftSaid', plan: 'footCheck.result.plan', row: 'footCheck.heel.leftRow' };
+    case 'right':
+      return { said: 'footCheck.heel.rightSaid', plan: 'footCheck.result.plan', row: 'footCheck.heel.rightRow' };
+    case 'both':
+      return { said: 'footCheck.heel.bothSaid', plan: 'footCheck.heel.bothPlan', row: 'footCheck.heel.bothRow' };
+    case 'unsure':
+      return { said: 'footCheck.heel.unsureSaid', plan: 'footCheck.heel.unsurePlan', row: 'footCheck.card.checked' };
+    default:
+      return null;
+  }
 }
 
 /**

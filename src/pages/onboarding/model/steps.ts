@@ -20,7 +20,7 @@ import type { Translate } from '@/shared/lib/i18n';
 import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { chose } from './answers';
-import { balanceAllowed, miniTestEligible, roleOf, runs, standsAtWork } from './journey';
+import { heelAsked, roleOf, runs, standsAtWork } from './journey';
 
 /**
  * One line of copy, resolved against whatever language is current.
@@ -134,11 +134,14 @@ export type OnboardingStep = StepBase &
     | { kind: 'notify' }
     /** The moment of the day the session is tied to, and the reminder it sets. */
     | { kind: 'habit'; options: readonly OnboardingOption[] }
-    /** The 30-second check, behind a PostHog flag: what it is, the big toe
-     * lift and one leg. No result screen: the plan it changes is shown next. */
+    /** Retired, kept so the indices and a saved place hold: the Foot Check's
+     * intro, the ankle measured on the shin (now in Progress) and one leg
+     * (now in the first test, on day 2). */
     | { kind: 'test-intro' }
-    /** The ankle bend, measured by the phone on the shin (the Foot Check). */
     | { kind: 'test-ankle' }
+    /** The Foot Check, sitting down: which heel lifts first as both feet
+     * slide back, then whether an arch appears as the big toe lifts. */
+    | { kind: 'test-heel' }
     | { kind: 'test-toe' }
     | { kind: 'test-balance' }
     /** What the check showed, and what the plan does about it. */
@@ -181,10 +184,10 @@ export function hurts(answers: Readonly<Record<string, unknown>>): boolean {
   return Array.isArray(pain) && pain.some((value) => value !== 'none');
 }
 
-/** Given the 30-second check (not "Not now" on its first screen), and
- * somebody it is for. */
+/** In the Foot Check: everybody from the kit question on. An answer of
+ * "skipped" is a visit begun on a build whose intro could turn it down. */
 function testing(answers: Readonly<Record<string, unknown>>): boolean {
-  return chose(answers, 'miniTest', 'test') && miniTestEligible(answers, !hurts(answers));
+  return chose(answers, 'miniTest', 'test');
 }
 
 /**
@@ -514,26 +517,23 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'none', label: (t) => t('onboarding.equipment.none'), emoji: 'sparkles', accent: 'teal' },
     ],
   },
-  { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
-  // Only on a phone that can measure: `ankleCheck` is written with
-  // `miniTest`, by the page, which is where the sensor is asked.
+  // The Foot Check: two things she does sitting down and answers herself,
+  // the same for everybody (no intro, nothing held, no phone on a shin). The
+  // retired steps stay in the table, skipped, as the contract does: the keys
+  // are analytics identifiers and a saved place may name one.
+  { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
+  { kind: 'test-ankle', key: 'test-ankle', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
+  // Not for a fall, a calf red flag or a pop: they get the toe alone (`heelAsked`).
   {
-    kind: 'test-ankle',
-    key: 'test-ankle',
+    kind: 'test-heel',
+    key: 'test-heel',
     act: 3,
     title: UNUSED,
     blurb: UNUSED,
-    skipWhen: (a) => !testing(a) || !chose(a, 'ankleCheck', 'on'),
+    skipWhen: (a) => !testing(a) || !heelAsked(a),
   },
   { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
-  {
-    kind: 'test-balance',
-    key: 'test-balance',
-    act: 3,
-    title: UNUSED,
-    blurb: UNUSED,
-    skipWhen: (a) => !testing(a) || !balanceAllowed(a, !hurts(a)),
-  },
+  { kind: 'test-balance', key: 'test-balance', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   { kind: 'test-result', key: 'test-result', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
   { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },

@@ -2,16 +2,17 @@ import { kv } from '@/shared/lib/storage';
 
 /**
  * The Foot Check as a whole: five things about a pair of feet, of which the
- * onboarding measures two or three (the ankle bend, the big toe lift and, on
- * a quiet morning, one leg) and the plan's first test the rest (calves, arch,
- * balance). The count is what the result card and the paywall's first screen
- * show, and it is kept on the phone.
+ * onboarding does two sitting down (which heel lifts first, the big toe lift)
+ * and the plan's first test, on day 2, the rest (calves, arch, balance). The
+ * count is what the result card and the paywall's first screen show, and it
+ * is kept on the phone. Under 1.0.13 it counted what the phone measured; the
+ * key is the same, and "done" is true of both.
  */
 export const FOOT_CHECK_TOTAL = 5;
 
 const KEY = 'foot-check/measured';
 
-/** How many of the five have been measured, or 0 before the check. */
+/** How many of the five are done, or 0 before the check. */
 export function footCheckMeasured(): number {
   return Math.max(0, Math.min(FOOT_CHECK_TOTAL, kv.getNumber(KEY) ?? 0));
 }
@@ -19,25 +20,6 @@ export function footCheckMeasured(): number {
 export function setFootCheckMeasured(count: number): void {
   if (count <= 0) kv.remove(KEY);
   else kv.set(KEY, Math.min(FOOT_CHECK_TOTAL, count));
-}
-
-/** What the onboarding's part of the check came to. */
-export function countMeasured(ankle: boolean, toe: boolean, balance: boolean): number {
-  return [ankle, toe, balance].filter(Boolean).length;
-}
-
-/** Two readings of the same ankle differ by a degree or two, so a gap
- * smaller than this is not said to be one. */
-const SAME_WITHIN = 3;
-
-/**
- * Which ankle bends less, and by how much; `side` null when they bend about
- * the same. An observation, in degrees: never which one is "the bad one".
- */
-export function ankleGap(left: number, right: number): { side: 'left' | 'right' | null; diff: number } {
-  const diff = Math.abs(left - right);
-  if (diff < SAME_WITHIN) return { side: null, diff };
-  return { side: left < right ? 'left' : 'right', diff };
 }
 
 const DAY_MS = 86_400_000;

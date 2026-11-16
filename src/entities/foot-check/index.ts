@@ -9,14 +9,12 @@ export {
 } from './model/store';
 export {
   FOOT_CHECK_TOTAL,
-  ankleGap,
-  countMeasured,
   footCheckMeasured,
   remeasureAt,
   remeasureDue,
   setFootCheckMeasured,
 } from './model/summary';
+export { devSeedSelfCheck, saveSelfCheck, selfCheck, type HeelLift, type SelfCheck } from './model/self';
 export { useCanMeasure } from './lib/use-ankle-reading';
-export { useJolt } from './lib/use-jolt';
 export { AnkleMeasure, AnkleSteps, type AnkleSide } from './ui/ankle-measure';
-export { FootCheckCard, FootCheckStrip, type FootCheckSides } from './ui/foot-check-card';
+export { FootCheckCard, FootCheckStrip } from './ui/foot-check-card';

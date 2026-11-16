@@ -22,7 +22,7 @@ import {
   programState,
   startProgram,
 } from '@/entities/program';
-import { devSeedAnkle, setFootCheckMeasured } from '@/entities/foot-check';
+import { devSeedAnkle, devSeedSelfCheck, setFootCheckMeasured } from '@/entities/foot-check';
 import { lockBoost } from '@/entities/offer';
 import {
   devPreviewHomeOffer,
@@ -128,10 +128,13 @@ const FOLLOW_PARAM = /[?&]previewFollow\b/;
 const ON_FEET_PARAM = /[?&]previewOnFeet\b/;
 /** `walkito.dev://?ankleHistory=<n>` writes n ankle measurements a fortnight
  * apart for Progress's "Ankle bend" (`=0` none); `?footCheck=<n>` says the
- * onboarding measured n of the Foot Check's five, for the paywall's first
- * screen (`=0` none). */
+ * onboarding did n of the Foot Check's five, for the paywall's first screen
+ * (`=0` none). */
 const ANKLE_HISTORY_PARAM = /[?&]ankleHistory=(\d{1,2})\b/;
 const FOOT_CHECK_PARAM = /[?&]footCheck=(\d)\b/;
+/** `?footCheckHeel=left|right|both|unsure` is the heel answer Progress's
+ * "Ankle bend" opens on (`=off` none). */
+const FOOT_CHECK_HEEL_PARAM = /[?&]footCheckHeel=(left|right|both|unsure|off)\b/;
 /** `?seedCheckins` writes thirteen days of check-ins before today (nine
  * answered): Home's row of days once today is answered, and Progress's
  * counts. `?onFeetCard=<hours>` raises Home's long-day card (`=off` the
@@ -305,6 +308,8 @@ export function useDevLinks(): void {
         if (ankles != null) devSeedAnkle(Number(ankles[1]));
         const footCheck = FOOT_CHECK_PARAM.exec(url);
         if (footCheck != null) setFootCheckMeasured(Number(footCheck[1]));
+        const footCheckHeel = FOOT_CHECK_HEEL_PARAM.exec(url);
+        if (footCheckHeel != null) devSeedSelfCheck(footCheckHeel[1] as 'left' | 'right' | 'both' | 'unsure' | 'off');
         if (SEED_CHECKINS_PARAM.test(url)) devSeedCheckins();
         const onFeetCard = ON_FEET_CARD_PARAM.exec(url);
         if (onFeetCard != null) devShowOnFeetCard(onFeetCard[1] === 'off' ? null : Number(onFeetCard[1]));

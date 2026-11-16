@@ -89,10 +89,19 @@ export type AnalyticsEvents = {
     reaction: 'name' | `role_${string}` | `habit_${string}` | `equipment_${string}`;
     full: boolean;
   };
-  /** The 30-second check: whether this person is in it, then that they did it.
-   * Never the result — an arch or a balance time is a body measurement. */
-  mini_test_assigned: { variant: 'test' | 'control' };
-  mini_test_completed: { balance: boolean };
+  /** The Foot Check: that this person is in it, then that they did it.
+   * Never the result — an arch, a heel or a balance time is about a body.
+   * `flow` is the check they got: `self_check`, the two seated questions.
+   * Events without it are 1.0.13's sensor flow; an update over the air keeps
+   * the app version, so only this tells the two apart. `balance` is false
+   * from `self_check` on: one leg moved to the first test, on day 2. */
+  mini_test_assigned: { variant: 'test' | 'control'; flow: 'self_check' };
+  mini_test_completed: { balance: boolean; flow: 'self_check' };
+  /** One of the Foot Check's questions was answered: which check, never
+   * the answer (which heel, whether an arch appeared). */
+  foot_check_answered: { check: 'ankle' | 'toe' };
+  /** "Skip it" on the heel question: on to the toe with nothing answered. */
+  foot_check_skipped: { at: 'ankle' };
   /** The first week's deck: a card came to the front, by a swipe or by itself
    * (`auto`). Its place in the deck, never the move: the deck is always three
    * cards, so a place says nothing, while which moves fill it follows the
@@ -163,8 +172,9 @@ export type AnalyticsEvents = {
     plan: PlanTier;
     offering: string;
   };
-  /** Both ankles were measured by the phone (the Foot Check). That it
-   * happened and where, never the degrees: they stay on the phone. */
+  /** Both ankles were measured by the phone, in Progress (`onboarding` is
+   * 1.0.13's sensor flow). That it happened and where, never the degrees:
+   * they stay on the phone. */
   ankle_measured: { place: 'onboarding' | 'progress' };
   restore_completed: { status: 'restored' | 'nothing-found' | 'failed' };
   /** "See all plans" on the paywall: the monthly and lifetime plans shown

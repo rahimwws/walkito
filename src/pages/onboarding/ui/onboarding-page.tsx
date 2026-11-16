@@ -41,9 +41,7 @@ import { useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
 import {
-  countMeasured,
-  remeasureAt,
-  saveAnkle,
+  saveSelfCheck,
   setFootCheckMeasured,
   useCanMeasure,
 } from "@/entities/foot-check";
@@ -104,14 +102,15 @@ import {
   MORNING_PAIN_SEED,
   archFinding,
   areaReaction,
-  balanceAllowed,
   durationOf,
   durationReaction,
   equipmentReaction,
   goalValuesFor,
   habitOf,
   habitReaction,
-  miniTestEligible,
+  heelAsked,
+  heelFinding,
+  heelOf,
   morningPainOf,
   reminderFor,
   roleOf,
@@ -163,12 +162,9 @@ import { KitAdds } from "./kit-tile";
 import { PassportCard, type PassportStamp } from "./foot-passport";
 import { MidwayStep } from "./midway-step";
 import {
-  TestAnkle,
-  TestBalance,
-  TestIntro,
+  TestHeel,
   TestResult,
   TestToe,
-  type TestFinding,
 } from "./mini-test";
 import { MovePreviewStep } from "./move-preview-step";
 import { MorningPainStep } from "./morning-pain-step";
@@ -243,6 +239,7 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "midway",
   "why",
   "test-ankle",
+  "test-heel",
   "test-toe",
   "test-balance",
   "test-result",
@@ -390,20 +387,8 @@ export function OnboardingPage() {
   const ctaSquash = useSharedValue(0);
   /** "Already have an account?" */
   const [signIn, setSignIn] = useState(false);
-  /** The one-leg check, in seconds, per side. */
-  const [balance, setBalance] = useState<{
-    left: number | null;
-    right: number | null;
-  }>({ left: null, right: null });
-  /** The ankle bend, in degrees, per side: measured by the phone, kept on it. */
-  const [ankle, setAnkle] = useState<{
-    left: number | null;
-    right: number | null;
-  }>({ left: null, right: null });
+  /** Whether this phone can measure the ankle bend: the result says where. */
   const canMeasure = useCanMeasure();
-  /** The day of the first progress check, when the ankles are measured
-   * again: fixed for the visit, so the date does not move under a reader. */
-  const [remeasureOn] = useState(() => remeasureAt(Date.now(), null));
   /** The habit's time wheel, and a clip open full screen: both cover the
    * coach in the corner, who stops breathing under them. */
   const [habitPicking, setHabitPicking] = useState(false);
@@ -892,39 +877,24 @@ export function OnboardingPage() {
       ? {
           arch:
             (list(answers["test-toe"])[0] as MiniTestAnswers["arch"]) ?? null,
-          balanceLeft: balance.left,
-          balanceRight: balance.right,
+          balanceLeft: null,
+          balanceRight: null,
         }
       : null;
 
-  /** The ankle step is in this visit's flow: a phone that can measure. */
-  const ankleOn = chose(answers, "ankleCheck", "on");
-  /** How many checks the Foot Check has here: the toe, and around it the
-   * ankles and one leg where each is asked. */
-  const checkTotal =
-    1 + (ankleOn ? 1 : 0) + (balanceAllowed(answers, painless) ? 1 : 0);
+  /** The Foot Check here: the heel, unless a fall, a calf or a pop leaves it
+   * out, then the toe. */
+  const checkTotal = heelAsked(answers) ? 2 : 1;
+  const heel = heelOf(answers);
+  const heelSaw = heelFinding(heel);
   const toeArch = archFinding(miniTestAnswers?.arch ?? null);
-  /** What the big toe lift showed, for its row on the Foot Check card. */
-  const toeSaw = toeArch != null ? t(toeArch.saw) : null;
-
-  /** What the check showed, each with what the plan does about it. On the
-   * device only, as the answers themselves are. */
-  const testFindings: TestFinding[] = (() => {
-    const out: TestFinding[] = [];
-    const arch = toeArch;
-    if (arch != null)
-      out.push({ emoji: "foot", saw: t(arch.saw), plan: t(arch.plan) });
-    if (balance.left != null && balance.right != null)
-      out.push({
-        emoji: "balance",
-        saw: t("onboarding.result.balance", {
-          left: balance.left,
-          right: balance.right,
-        }),
-        plan: t("onboarding.result.balancePlan"),
-      });
-    return out;
-  })();
+  /** What the result leads with: the heel when it was answered, else the toe. */
+  const lead =
+    heelSaw != null
+      ? { said: t(heelSaw.said), plan: t(heelSaw.plan) }
+      : toeArch != null
+        ? { said: t(toeArch.saw), plan: t(toeArch.plan) }
+        : null;
 
   /** Screens that own their whole canvas, with no header over them. */
   const bare =
@@ -962,12 +932,9 @@ export function OnboardingPage() {
         return list(answer).length > 0;
       case "habit":
         return habitOf(answers) != null;
-      case "test-ankle":
-        return ankle.left != null && ankle.right != null;
+      case "test-heel":
       case "test-toe":
         return list(answer).length > 0;
-      case "test-balance":
-        return balance.left != null && balance.right != null;
       // Signing is an invitation, not a gate: on the first day of paid
       // installs five of the 25 people who reached the pad never got past
       // it, some after opening the app eight times.
@@ -1070,9 +1037,8 @@ export function OnboardingPage() {
       answer: (key: string, value: Answer) => setAnswers((prev) => ({ ...prev, [key]: value })),
     };
     const onUrl = (url: string | null) => {
-      // `&answers=miniTest:=test,test-toe:no` gives answers before the jump
-      // (a choice by its value, a bare string after `=`), and
-      // `&balance=12:21` the one-leg seconds, left then right: the screens
+      // `&answers=miniTest:=test,test-heel:left` gives answers before the
+      // jump (a choice by its value, a bare string after `=`): the screens
       // that depend on earlier ones, without tapping through them.
       const given = url?.match(/[?&]answers=([\w:,=-]+)/)?.[1];
       if (given != null)
@@ -1085,11 +1051,6 @@ export function OnboardingPage() {
             }),
           ),
         }));
-      const held = url?.match(/[?&]balance=(\d{1,2}):(\d{1,2})/);
-      if (held != null) setBalance({ left: Number(held[1]), right: Number(held[2]) });
-      // `&ankle=31:38` the ankle bend in degrees, left then right.
-      const bent = url?.match(/[?&]ankle=(\d{1,2}):(\d{1,2})/);
-      if (bent != null) setAnkle({ left: Number(bent[1]), right: Number(bent[2]) });
       const key = url?.match(/[?&]onboardingStep=([\w-]+)/)?.[1];
       if (key != null) jump(key);
     };
@@ -1215,15 +1176,10 @@ export function OnboardingPage() {
     setBilateral(intake.side === "both");
     if (!painless && intake.morningPain != null)
       logPain(todayDayNumber(), intake.morningPain, painZones);
-    // The Foot Check: the ankles on file, and how much of the five the
-    // paywall's first screen can say has been measured. Nothing without the
-    // ankles: a count of one is not a check to finish.
-    if (ankle.left != null && ankle.right != null) {
-      saveAnkle(ankle.left, ankle.right);
-      setFootCheckMeasured(
-        countMeasured(true, miniTestAnswers != null, balance.left != null && balance.right != null),
-      );
-    } else setFootCheckMeasured(0);
+    // The Foot Check: the heel answer on file for Progress, and how much of
+    // the five the paywall's first screen can say is done.
+    if (heel != null) saveSelfCheck(heel);
+    setFootCheckMeasured((heel != null ? 1 : 0) + (miniTestAnswers != null ? 1 : 0));
   };
 
   /** Set by the last Continue, which holds a moment for the coach's cheer. */
@@ -1284,25 +1240,21 @@ export function OnboardingPage() {
       );
       return;
     }
-    // The 30-second check, for everybody it is safe for. It was an
-    // experiment behind a flag; the event keeps its name and its one arm, so
-    // the count of people offered the check carries on.
-    if (
-      step.key === "equipment" &&
-      answers.miniTest == null &&
-      miniTestEligible(answers, painless)
-    ) {
-      track("mini_test_assigned", { variant: "test" });
-      move(true, { miniTest: "test", ankleCheck: canMeasure === true ? "on" : "off" });
+    // The Foot Check, for everybody. It was an experiment behind a flag;
+    // the event keeps its name and its one arm, so the count of people
+    // offered the check carries on, and `flow` tells this one from the
+    // sensor's, which an update over the air cannot (same app version).
+    if (step.key === "equipment" && answers.miniTest == null) {
+      track("mini_test_assigned", { variant: "test", flow: "self_check" });
+      move(true, { miniTest: "test" });
       return;
     }
-    // The check's last screen: the toe, or one leg after it. What it showed
-    // is the next screen.
-    if (
-      step.kind === "test-balance" ||
-      (step.kind === "test-toe" && !balanceAllowed(answers, painless))
-    ) {
-      track("mini_test_completed", { balance: balance.left != null });
+    // That she answered, never which heel or what the arch did. The toe is
+    // the check's last screen; what it showed is the next.
+    if (step.kind === "test-heel") track("foot_check_answered", { check: "ankle" });
+    if (step.kind === "test-toe") {
+      track("foot_check_answered", { check: "toe" });
+      track("mini_test_completed", { balance: false, flow: "self_check" });
     }
     move(true);
   };
@@ -1332,8 +1284,6 @@ export function OnboardingPage() {
         return t("onboarding.intro.ctaStart");
       case "why":
         return t("onboarding.why.cta");
-      case "test-intro":
-        return t("onboarding.test.start");
       case "contract":
         return t("onboarding.contract.cta");
       case "midway":
@@ -1588,42 +1538,29 @@ export function OnboardingPage() {
                 />
               )}
 
-              {step.kind === "test-intro" && (
-                <TestIntro
-                  withAnkle={ankleOn}
-                  withBalance={balanceAllowed(answers, painless)}
-                  onSkip={() => {
-                    Haptics.selectionAsync();
-                    move(true, { miniTest: "skipped" });
-                  }}
-                />
-              )}
-
-              {step.kind === "test-ankle" && (
-                <TestAnkle
+              {step.kind === "test-heel" && (
+                <TestHeel
                   index={1}
                   total={checkTotal}
-                  left={ankle.left}
-                  right={ankle.right}
-                  onResult={(which, degrees) => {
-                    const next = { ...ankle, [which]: degrees };
-                    setAnkle(next);
-                    // That it happened, never what it read.
-                    if (next.left != null && next.right != null)
-                      track("ankle_measured", { place: "onboarding" });
-                  }}
-                  onReset={() => setAnkle({ left: null, right: null })}
+                  options={(["left", "right", "both", "unsure"] as const).map((value) => ({
+                    value,
+                    label: t(`footCheck.heel.${value}`),
+                  }))}
+                  answer={list(answer)[0] ?? null}
+                  onAnswer={(next) => setAnswer([next])}
                   onSkip={() => {
                     Haptics.selectionAsync();
-                    setAnkle({ left: null, right: null });
-                    move(true);
+                    track("foot_check_skipped", { at: "ankle" });
+                    move(true, { "test-heel": [] });
                   }}
+                  speakerInset={inset}
+                  speakerSize={speakerHere ? speakerSize : 0}
                 />
               )}
 
               {step.kind === "test-toe" && (
                 <TestToe
-                  index={ankleOn ? 2 : 1}
+                  index={checkTotal}
                   total={checkTotal}
                   options={[
                     { value: "yes", label: t("onboarding.test.toeYes") },
@@ -1638,41 +1575,13 @@ export function OnboardingPage() {
                 />
               )}
 
-              {step.kind === "test-balance" && (
-                <TestBalance
-                  index={checkTotal}
-                  total={checkTotal}
-                  left={balance.left}
-                  right={balance.right}
-                  onResult={(which, seconds) =>
-                    setBalance((prev) => ({ ...prev, [which]: seconds }))
-                  }
-                  onStart={() =>
-                    applyCoach(
-                      coachAnswer(step.key, answersRef.current, answersRef.current),
-                    )
-                  }
-                  speakerInset={inset}
-                  speakerSize={speakerHere ? speakerSize : 0}
-                  onViewerChange={setClipViewerOpen}
-                />
-              )}
-
               {step.kind === "test-result" && (
                 <TestResult
-                  findings={testFindings}
-                  ankle={
-                    ankle.left != null && ankle.right != null
-                      ? { left: ankle.left, right: ankle.right }
-                      : null
-                  }
-                  toe={toeSaw}
-                  balance={
-                    balance.left != null && balance.right != null
-                      ? { left: balance.left, right: balance.right }
-                      : null
-                  }
-                  again={remeasureOn}
+                  said={lead?.said ?? null}
+                  plan={lead?.plan ?? null}
+                  ankle={heelSaw != null ? t(heelSaw.row) : null}
+                  toe={toeArch != null ? t(toeArch.saw) : null}
+                  canMeasure={canMeasure === true}
                 />
               )}
 

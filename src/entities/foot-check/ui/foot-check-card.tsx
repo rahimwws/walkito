@@ -4,16 +4,14 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
-import { useLanguage, useT } from '@/shared/lib/i18n';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Card3D } from '@/shared/ui/card-3d';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 import { FOOT_CHECK_TOTAL } from '../model/summary';
 
-export type FootCheckSides = { left: number; right: number };
-
-/** Five segments, one per thing the check measures: filled for each one done. */
+/** Five segments, one per thing the check covers: filled for each one done. */
 function Segments({ done }: { done: number }) {
   const meter = meterColors[useColorScheme()];
   return (
@@ -26,38 +24,31 @@ function Segments({ done }: { done: number }) {
 }
 
 /**
- * The Foot Check so far: what has been measured, in full, and what the plan's
- * first test measures next.
+ * The Foot Check so far: what she has done, in full, and what the plan's
+ * first test does next.
  *
- * The lock is an honest one. Everything this person has measured is theirs
- * and is printed whole; the rows with a lock are things nobody has measured
- * yet, with where they will be. Nothing of theirs is blurred or held back.
+ * The lock is an honest one. Everything this person has done is theirs and is
+ * printed whole; the rows with a lock are things nobody has looked at yet,
+ * with where they will be. Nothing of theirs is blurred or held back.
  */
 export function FootCheckCard({
   ankle,
   toe,
-  balance,
-  again,
 }: {
-  /** Degrees, or null if the ankles were not measured. */
-  ankle: FootCheckSides | null;
+  /** Which heel lifted first, as the row says it, or null if it was not asked. */
+  ankle: string | null;
   /** What the big toe lift showed, as a sentence, or null if it was not done. */
   toe: string | null;
-  /** Seconds on one leg, or null if it was not asked. */
-  balance: FootCheckSides | null;
-  /** When the ankles are measured again, epoch ms. */
-  again: number | null;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const language = useLanguage();
 
   const rows = [
-    { key: 'ankle', label: t('footCheck.card.ankle'), value: ankle != null ? t('footCheck.card.sides', ankle) : null },
+    { key: 'ankle', label: t('footCheck.card.ankle'), value: ankle },
     { key: 'toe', label: t('footCheck.card.toe'), value: toe },
-    { key: 'balance', label: t('footCheck.card.balance'), value: balance != null ? t('footCheck.card.seconds', balance) : null },
+    { key: 'balance', label: t('footCheck.card.balance'), value: null },
     { key: 'calf', label: t('footCheck.card.calf'), value: null },
     { key: 'arch', label: t('footCheck.card.arch'), value: null },
   ];
@@ -98,23 +89,13 @@ export function FootCheckCard({
       </View>
 
       <Text style={[styles.rest, { color: meter.caption }]}>{t('footCheck.card.rest')}</Text>
-      {again != null && (
-        <View style={[styles.again, { backgroundColor: meter.iconTile }]}>
-          <FluentIcon name="calendar" size={22} />
-          <Text style={[styles.againText, { color: colors.foreground }]}>
-            {t('footCheck.card.again', {
-              date: new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(new Date(again)),
-            })}
-          </Text>
-        </View>
-      )}
     </Card3D>
   );
 }
 
 /**
  * The same count in one glance, for the paywall's first screen: how much of
- * the check is measured, and `line`, what happens to the rest.
+ * the check is done, and `line`, what happens to the rest.
  */
 export function FootCheckStrip({ done, line }: { done: number; line: string }) {
   const scheme = useColorScheme();
@@ -151,16 +132,6 @@ const styles = StyleSheet.create({
   rowLabel: fonts.bold(16, -0.2),
   rowValue: { ...fonts.medium(15), lineHeight: 20 },
   rest: { ...fonts.medium(15), lineHeight: 20 },
-  again: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    paddingVertical: 12,
-    paddingHorizontal: 14,
-    borderRadius: 18,
-    borderCurve: 'continuous',
-  },
-  againText: { ...fonts.semibold(15, -0.2), lineHeight: 20, flex: 1 },
   strip: { borderRadius: 24, borderCurve: 'continuous', paddingVertical: 16, paddingHorizontal: 18, gap: 10 },
   stripHead: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   stripTitle: { ...fonts.bold(17, -0.2), lineHeight: 22, flex: 1 },

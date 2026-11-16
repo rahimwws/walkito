@@ -2,13 +2,14 @@ import { describe, expect, test } from 'bun:test';
 
 import {
   archFinding,
-  balanceAllowed,
   durationReaction,
   equipmentReaction,
   firstWeekMoves,
   footTypeFor,
   goalValuesFor,
-  miniTestEligible,
+  heelAsked,
+  heelFinding,
+  heelOf,
   painBandOf,
   reminderFor,
   safetyPlan,
@@ -85,26 +86,29 @@ describe('reactions and bands', () => {
   });
 });
 
-describe('the 30-second check', () => {
-  test('for everybody it is safe for', () => {
-    expect(miniTestEligible({}, true)).toBe(true);
-    expect(miniTestEligible({ goal: ['mornings'], morningPain: '5' }, false)).toBe(true);
-    expect(miniTestEligible({ safety: ['none'], morningPain: '6' }, false)).toBe(true);
-    expect(miniTestEligible({ safety: ['numb'], morningPain: '2' }, false)).toBe(true);
-  });
+describe('the Foot Check', () => {
+  const SAFETY = ['none', 'numb', 'diabetes', 'calf', 'pop', 'fall'];
 
-  test('not on a hard morning, and not with a safety answer that seats week one', () => {
-    expect(miniTestEligible({ morningPain: '7' }, false)).toBe(false);
-    for (const flag of ['calf', 'pop', 'diabetes', 'fall']) {
-      expect(miniTestEligible({ safety: [flag], morningPain: '1' }, false)).toBe(false);
+  test('the heel question for everybody but a fall, a calf red flag or a pop, whatever the morning', () => {
+    for (const morning of [undefined, '0', '3', '6', '7', '10']) {
+      for (const flag of SAFETY) {
+        const answers = { safety: [flag], ...(morning == null ? {} : { morningPain: morning }) };
+        expect(heelAsked(answers), `${flag} at ${morning}`).toBe(!['fall', 'calf', 'pop'].includes(flag));
+      }
     }
+    expect(heelAsked({})).toBe(true);
+    expect(heelAsked({ safety: ['numb', 'pop'] })).toBe(false);
   });
 
-  test('one leg only on a quiet morning, and never on a numb foot', () => {
-    expect(balanceAllowed({ morningPain: '3' }, false)).toBe(true);
-    expect(balanceAllowed({ morningPain: '4' }, false)).toBe(false);
-    expect(balanceAllowed({ morningPain: '1', safety: ['numb'] }, false)).toBe(false);
-    expect(balanceAllowed({}, true)).toBe(true);
+  test('every heel answer is said back with what the plan does, and a row on the card', () => {
+    for (const heel of ['left', 'right', 'both', 'unsure'] as const) {
+      const finding = heelFinding(heel);
+      expect(finding).not.toBeNull();
+      expect(heelOf({ 'test-heel': [heel] })).toBe(heel);
+    }
+    expect(heelFinding(heelOf({}))).toBeNull();
+    expect(heelOf({ 'test-heel': [] })).toBeNull();
+    expect(heelOf({ 'test-heel': ['up'] })).toBeNull();
   });
 
   test('every arch answer has something seen and something the plan does', () => {

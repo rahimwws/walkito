@@ -232,9 +232,15 @@ function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMom
     case 'side':
     case 'planDays':
     case 'equipment':
-    case 'test-toe':
     case 'pain-move':
       return speaker('pointing');
+    // The Foot Check's two questions follow the kit, whose pointing or
+    // thumbs up they must not repeat, and each other; the building screen's
+    // thinking comes after the toe.
+    case 'test-heel':
+      return speaker('thinking');
+    case 'test-toe':
+      return speaker('idle');
     case 'planMinutes':
       // The clock rings as the question arrives, and at every pick.
       return speaker('reminder', RING);
@@ -255,7 +261,6 @@ function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMom
       return speaker('thinking');
     case 'safety':
     case 'source':
-    case 'test-balance':
       return speaker('idle');
     case 'pain':
       return speaker(painStance(answers));
@@ -280,8 +285,6 @@ function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMom
       return hero('pain');
     case 'midway':
       return again ? hero('celebrate', 'nod') : { ...hero('celebrate', 'celebrate'), sound: 'cheer' };
-    case 'test-intro':
-      return hero('handsUp', 'present');
     case 'building':
       return hero('thinking');
     case 'first-week':
@@ -313,7 +316,6 @@ function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMom
  *   kit, pointing again, with a nod.
  * - `planDays`, like every other question: a nod.
  * - `goal`: a hop, the same for every goal.
- * - `test-balance`: a hop as each side's timer starts.
  */
 export function coachAnswer(stepKey: string, answers: Answers, prev: Answers): CoachReply {
   switch (stepKey) {
@@ -328,7 +330,6 @@ export function coachAnswer(stepKey: string, answers: Answers, prev: Answers): C
     case 'equipment':
       return swap(kitStance(answers), kitStance(prev), kitNone(answers) && !kitNone(prev) ? 'happy' : 'nod');
     case 'goal':
-    case 'test-balance':
       return { shot: 'hop' };
     case 'welcome':
     case 'intro':
@@ -337,7 +338,6 @@ export function coachAnswer(stepKey: string, answers: Answers, prev: Answers): C
     case 'morningPain':
     case 'tried-reaction':
     case 'midway':
-    case 'test-intro':
     case 'notify':
     case 'building':
     case 'first-week':

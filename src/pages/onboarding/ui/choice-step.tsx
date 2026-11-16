@@ -67,7 +67,8 @@ const IDLE_FOOT = { light: '#D3D3D8', dark: '#3A3A3E' } as const;
  * - `fluent` (the default): the option's colourful Fluent emoji, or the card's
  *   own tile where the option brings a glyph (the platforms' logos), or nothing.
  * - `peek`: Walkito peeking up over the card's bottom edge (`PeekMascot`).
- * - `side`: the pair of feet, the sore one lit.
+ * - `side`: the pair of feet, the sore one (or the heel that lifts first) lit;
+ *   none for "not sure".
  * - `verdict`: how full a circle is, for an observation about the foot.
  * - `sport`: wrapping capsules, with the sport's own glyph.
  * - `kit`: a grid of coloured 3D tiles, two to a row (`KitTile`).
@@ -389,7 +390,12 @@ function ChoiceRow({
     if (artKind === 'side') {
       return (
         <View style={[styles.tile, { backgroundColor: meter.iconTile }]}>
-          <FeetGlyph side={option.value as FeetSide} size={ICON + 4} active={PRIMARY} idle={IDLE_FOOT[scheme]} />
+          <FeetGlyph
+            side={option.value === 'unsure' ? 'none' : (option.value as FeetSide)}
+            size={ICON + 4}
+            active={PRIMARY}
+            idle={IDLE_FOOT[scheme]}
+          />
         </View>
       );
     }

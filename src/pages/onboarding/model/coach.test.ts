@@ -43,8 +43,9 @@ type Path = {
   tried: string;
   habit: string;
   kit: 'none' | 'some';
-  /** The 30-second check: not in it, in it, in it with the one-leg balance. */
-  check: 'off' | 'toe' | 'balance';
+  /** The Foot Check: not in it (a visit begun before it was for everybody),
+   * the toe alone (a fall, a calf or a pop), or the heel and then the toe. */
+  check: 'off' | 'toe' | 'heel';
 };
 
 const PAIN_TAPS: Record<Path['pain'], readonly string[][]> = {
@@ -155,15 +156,12 @@ function walk(path: Path): Walk {
   enter('equipment');
   answer('equipment', { equipment: path.kit === 'none' ? ['none'] : ['towel'] });
   if (path.check !== 'off') {
-    enter('test-intro');
+    if (path.check === 'heel') {
+      enter('test-heel');
+      answer('test-heel', { 'test-heel': ['left'] });
+    }
     enter('test-toe');
     answer('test-toe', { 'test-toe': ['yes'] });
-    if (path.check === 'balance') {
-      enter('test-balance');
-      // Each side's timer starting.
-      answer('test-balance', {});
-      answer('test-balance', {});
-    }
   }
   enter('building');
   reply('building', coachDone('building'));
@@ -190,7 +188,7 @@ const PATHS: Path[] = ROLES.flatMap((role) =>
         TRIED.flatMap((tried) =>
           HABITS.flatMap((habit) =>
             (['none', 'some'] as const).flatMap((kit) =>
-              (['off', 'toe', 'balance'] as const).map((check) => ({
+              (['off', 'toe', 'heel'] as const).map((check) => ({
                 role,
                 name,
                 pain,
@@ -453,9 +451,8 @@ describe('where he stands', () => {
       'planDays',
       'planMinutes',
       'equipment',
-      'test-intro',
+      'test-heel',
       'test-toe',
-      'test-balance',
       'building',
       'first-week',
       'outlook',

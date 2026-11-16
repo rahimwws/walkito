@@ -204,39 +204,24 @@ export const JOURNEY_EN = {
   'onboarding.react.equipmentNone': 'Nothing needed.',
   'onboarding.react.equipmentSome': 'We’ll plan around it.',
 
-  // ── The 30-second check ──────────────────────────────────────────────────
-  'onboarding.test.introTitle': 'Quick check: stand up',
-  // The move shown after the pain map, and what the 30-second check showed.
+  // ── The Foot Check ───────────────────────────────────────────────────────
+  // The move shown after the pain map, and what the big toe lift showed.
   'onboarding.move.eyebrow': 'One of the moves in your plan',
-  'onboarding.test.introBodyOne': 'One check, a few seconds.',
-  'onboarding.result.title': 'What we saw',
-  'onboarding.result.body': 'And what your plan does about it.',
   'onboarding.result.archYes': 'An arch appears when your big toe lifts.',
   'onboarding.result.archYesPlan': 'A stronger arch hold is one of your plan’s goals.',
   'onboarding.result.archNo': 'Your arch stays as it is when your big toe lifts.',
   'onboarding.result.archNoPlan': 'Your plan sets its goals on what training can change.',
   'onboarding.result.archUnsure': 'The arch was hard to read. That’s common.',
   'onboarding.result.archUnsurePlan': 'Your plan keeps its usual goals. Your first test looks again.',
-  'onboarding.result.balance': 'One leg: left {left} s, right {right} s.',
-  'onboarding.result.balancePlan': 'Saved as your starting point. Your first test measures it again.',
-  'onboarding.test.introBody': 'Two checks, 30 seconds.',
-  'onboarding.test.introBalance': 'Standing on one leg',
-  'onboarding.test.start': 'Start the check',
   'onboarding.test.notNow': 'Skip it',
-  'onboarding.test.meta': 'Check {n} of {total}',
-  'onboarding.test.toeStep1': 'Stand with your feet flat and relaxed.',
+  'onboarding.test.toeStep1': 'Stay seated, both feet flat on the floor.',
   'onboarding.test.toeStep2': 'Lift only your big toe. Keep the others down.',
   'onboarding.test.toeQuestion': 'Does an arch appear under your foot?',
   'onboarding.test.toeYes': 'Yes, an arch appears',
   'onboarding.test.toeNo': 'No',
   'onboarding.test.toeUnsure': 'Not sure',
-  'onboarding.test.balanceBody': 'Lift one foot. Tap Stop when it touches down.',
-  'onboarding.test.startLeft': 'Start left leg',
-  'onboarding.test.startRight': 'Start right leg',
-  'onboarding.test.stop': 'Stop',
   'onboarding.test.left': 'Left',
   'onboarding.test.right': 'Right',
-  'onboarding.test.seconds': '{count} s',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Building your plan',

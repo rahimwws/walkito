@@ -9,6 +9,7 @@ import {
   remeasureAt,
   remeasureDue,
   saveAnkle,
+  selfCheck,
   useAnkleRecords,
   useCanMeasure,
   type AnkleRecord,
@@ -39,6 +40,9 @@ function dayMonth(at: number, language: string): string {
  * they are measured again; on that day, or before the first, the button that
  * measures them from here.
  *
+ * On top, when the onboarding asked it, which heel lifted first: a line of
+ * her own words, never on the chart, which holds degrees alone.
+ *
  * Degrees only: no normal range, no goal line. Colour says which side a bar
  * is, never whether it is good.
  */
@@ -51,6 +55,9 @@ export function AnkleCard({ nextTestAt }: { nextTestAt: number | null }) {
   const records = useAnkleRecords();
   const canMeasure = useCanMeasure();
   const [measuring, setMeasuring] = useState(false);
+  /** Which heel lifted first in the onboarding's Foot Check, said on top:
+   * where she started, by her own eye, before any degrees. */
+  const [heel] = useState(() => selfCheck()?.heel ?? null);
 
   // A phone that cannot measure, with nothing measured, has nothing to show.
   if (records.length === 0 && canMeasure !== true) return null;
@@ -76,6 +83,11 @@ export function AnkleCard({ nextTestAt }: { nextTestAt: number | null }) {
         ) : undefined
       }>
       <View {...REPLAY_MASK}>
+        {heel === 'left' || heel === 'right' || heel === 'both' ? (
+          <Text style={[styles.start, { color: colors.foreground }]}>
+            {t(heel === 'left' ? 'footCheck.progress.heelLeft' : heel === 'right' ? 'footCheck.progress.heelRight' : 'footCheck.progress.heelBoth')}
+          </Text>
+        ) : null}
         {latest == null ? (
           <Text style={[styles.empty, { color: meter.caption }]}>{t('footCheck.progress.empty')}</Text>
         ) : (
@@ -224,6 +236,7 @@ function MeasureSheet({ visible, onClose }: { visible: boolean; onClose: () => v
 }
 
 const styles = StyleSheet.create({
+  start: { ...fonts.semibold(16), lineHeight: 22, marginTop: 8 },
   empty: { ...fonts.medium(16), lineHeight: 22, marginTop: 8 },
   figures: { flexDirection: 'row', gap: 24, marginTop: 10 },
   figure: { gap: 2 },

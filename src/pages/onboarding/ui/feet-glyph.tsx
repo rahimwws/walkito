@@ -1,9 +1,10 @@
 import Svg, { Circle, G, Path } from 'react-native-svg';
 
-export type FeetSide = 'left' | 'right' | 'both';
+export type FeetSide = 'left' | 'right' | 'both' | 'none';
 
 export type FeetGlyphProps = {
-  /** Which foot is the sore one — that one is filled, the other is not. */
+  /** Which foot is lit: the sore one, or the heel that lifts first; `none`
+   * for "not sure". */
   side: FeetSide;
   /** Height of the pair; the width follows. */
   size?: number;
