@@ -59,6 +59,11 @@ export const FOOT_CHECK_EN = {
   'footCheck.card.again': 'We measure your ankles again on {date}.',
   'footCheck.paywall': 'Your Foot Check: {done} of {total} done',
   'footCheck.paywallFinish': 'Finish it in your free week',
+  'footCheck.paywall.degrees': 'Left {left}°, right {right}°',
+  'footCheck.paywall.leftLess': 'Your left ankle bends {delta}° less than your right.',
+  'footCheck.paywall.rightLess': 'Your right ankle bends {delta}° less than your left.',
+  'footCheck.paywall.sameBend': 'Both ankles bend the same.',
+  'footCheck.paywall.balance': 'On one leg: left {left} s, right {right} s',
   // The first line of Progress's "Ankle bend": what she answered at the start.
   'footCheck.progress.heelLeft': 'At the start, your left heel lifted first.',
   'footCheck.progress.heelRight': 'At the start, your right heel lifted first.',
