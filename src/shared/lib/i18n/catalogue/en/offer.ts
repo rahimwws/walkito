@@ -214,7 +214,6 @@ export const OFFER_EN = {
   'offer.plans.rowPlan': 'A daily plan that adapts to you',
   'offer.plans.rowSessions': 'Every guided session, with video',
   'offer.plans.rowTests': 'A progress test every two weeks',
-  'offer.plans.rowStreaks': 'Streaks and stickers',
   'offer.plans.rowMorning': 'The morning stretch',
   /** What a screen reader says for one row of the table. */
   'offer.plans.rowA11y': '{feature}. Included with Plus.',

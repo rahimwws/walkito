@@ -148,7 +148,6 @@ export const OFFER_DE = {
   'offer.plans.rowPlan': 'Ein täglicher Plan, der sich dir anpasst',
   'offer.plans.rowSessions': 'Alle angeleiteten Einheiten, mit Video',
   'offer.plans.rowTests': 'Alle zwei Wochen ein Fortschrittstest',
-  'offer.plans.rowStreaks': 'Serien und Sticker',
   'offer.plans.rowMorning': 'Die Morgendehnung',
   'offer.plans.rowA11y': '{feature}. In Plus enthalten.',
   'offer.plans.ctaLifetime': 'Walkito Plus holen',

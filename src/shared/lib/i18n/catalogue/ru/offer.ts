@@ -150,7 +150,6 @@ export const OFFER_RU = {
   'offer.plans.rowPlan': 'План на каждый день, который подстраивается под вас',
   'offer.plans.rowSessions': 'Все занятия с видео и подсказками',
   'offer.plans.rowTests': 'Тест прогресса раз в две недели',
-  'offer.plans.rowStreaks': 'Серии дней и наклейки',
   'offer.plans.rowMorning': 'Утренняя растяжка',
   'offer.plans.rowA11y': '{feature}. Входит в Plus.',
   'offer.plans.ctaLifetime': 'Получить Walkito Plus',
