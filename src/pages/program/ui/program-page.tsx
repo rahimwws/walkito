@@ -58,6 +58,8 @@ import {
 } from '@/entities/program';
 import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
+import { askForPlans, lookingAround } from '@/entities/purchase';
+import { answerLockedPlanTap } from '@/features/home-tour';
 import { fonts, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
@@ -258,6 +260,19 @@ export function ProgramPage() {
 
   const start = useCallback(
     (running: Running) => {
+      // Looking around without buying, a session is locked. Day 1 is free
+      // while it is ahead: the plan goes down and Home's "Day 1" card comes
+      // up. Past it, the plans rise over the plan. A test's results stay
+      // readable.
+      if (lookingAround() && !(running.kind === 'test' && running.review)) {
+        if (running.kind === 'test') {
+          askForPlans('test');
+          return;
+        }
+        if (sessions().length === 0) program?.close();
+        answerLockedPlanTap('session');
+        return;
+      }
       startedAt.current = Date.now();
       setSession(running);
       setRun((n) => n + 1);

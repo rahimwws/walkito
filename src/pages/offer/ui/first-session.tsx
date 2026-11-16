@@ -35,7 +35,8 @@ type Feedback = 'easy' | 'ok' | 'hard';
 const FEELINGS: readonly { value: Feedback; emoji: FluentName; label: 'offer.felt.easy' | 'offer.felt.ok' | 'offer.felt.hard' }[] = [
   { value: 'easy', emoji: 'feather', label: 'offer.felt.easy' },
   { value: 'ok', emoji: 'check', label: 'offer.felt.ok' },
-  { value: 'hard', emoji: 'fire', label: 'offer.felt.hard' },
+  // A hill, not a flame: "hard" in a pain app must not read as "it burned".
+  { value: 'hard', emoji: 'mountain', label: 'offer.felt.hard' },
 ];
 
 const STAGE_IN = FadeIn.duration(420)
@@ -143,7 +144,7 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
             </View>
           </View>
           <Animated.View entering={FadeInDown.delay(120).duration(380).reduceMotion(ReduceMotion.System)} style={styles.head}>
-            <GoldText style={styles.eyebrow}>{t('offer.trial.eyebrow')}</GoldText>
+            <GoldText style={styles.eyebrow}>{t('offer.first.eyebrow')}</GoldText>
             <Text
               accessibilityRole="header"
               numberOfLines={3}

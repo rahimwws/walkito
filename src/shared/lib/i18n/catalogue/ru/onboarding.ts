@@ -42,7 +42,7 @@ export const ONBOARDING_RU = {
   'onboarding.intro.title': 'Бегайте без сомнений',
   'onboarding.intro.blurb': 'Ежедневный план, который меняется вместе с вашими ногами.',
   'onboarding.intro.greeting': 'Привет, я Walkito',
-  'onboarding.intro.headline': 'Давайте разберёмся, почему всё ещё болит.',
+  'onboarding.intro.headline': 'Давайте составим план для ваших стоп.',
   'onboarding.intro.cta': 'Продолжить с Apple',
   'onboarding.intro.ctaGoogle': 'Продолжить с Google',
   'onboarding.intro.signInFailed': 'Вход не завершился. Попробуйте ещё раз.',
@@ -323,7 +323,7 @@ export const ONBOARDING_RU = {
   'onboarding.notify.opening': 'Открываем…',
   'onboarding.notify.notNow': 'Не сейчас',
   'onboarding.notify.declined': 'Ничего страшного - их можно включить позже в Настройках.',
-  'onboarding.notify.consent': 'Напоминания, прогресс и иногда спецпредложения.',
+  'onboarding.notify.consent': 'Напоминания и прогресс по вашему плану. Их можно выключить в любой момент.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Собираем ваш план',

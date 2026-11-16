@@ -11,7 +11,9 @@ export { HomeTour, type HomeTourProps } from './ui/home-tour';
 export {
   DAY_ONE_CLIPS,
   DAY_ONE_MINUTES,
+  answerLockedPlanTap,
   dayOneRun,
+  dayOneWentWell,
   finishDayOne,
   type DayOneRun,
   type DayOneStep,

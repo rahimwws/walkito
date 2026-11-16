@@ -13,7 +13,7 @@ import {
 import { firstName, useProfileName } from '@/entities/profile';
 import { planSettings, sessions } from '@/entities/program';
 import { accessLapsed, purchases } from '@/entities/purchase';
-import { onboardingDone } from '@/entities/session';
+import { askForDayOne, onboardingDone } from '@/entities/session';
 import { offerFirstSessionAgain } from '@/pages/offer';
 import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
@@ -37,10 +37,13 @@ holdPlanNudgesWhile(dayOneOwed);
 
 function opened(reminder: 1 | 2): void {
   track('day_one_reminder_opened', { reminder });
+  if (!dayOneAhead()) return;
   // On the paywall after "Not now" to the first session: the two minutes
   // again, in front of the plans. After "Not now" on the paywall the tabs are
-  // open and Home's "Day 1" card is already what she lands on.
-  if (dayOneAhead()) offerFirstSessionAgain();
+  // open: Home's "Day 1" card is what she lands on during the first run, and
+  // after it ("Later") the card is raised again.
+  offerFirstSessionAgain();
+  askForDayOne();
 }
 
 /** The tap that launched the app is read once, as the root first renders and

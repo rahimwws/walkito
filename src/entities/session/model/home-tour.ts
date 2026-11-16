@@ -104,6 +104,34 @@ export function finishHomeTour(): void {
   emit();
 }
 
+/**
+ * Day 1 asked for again once the tour is behind them: somebody looking
+ * around without buying who passed on it ("Later") and has now tapped the
+ * plan's session or a task, or a Day 1 reminder. Home raises its "Day 1" card
+ * again. This launch only: the card is never put up on its own.
+ */
+let dayOneAsk = false;
+
+export function askForDayOne(): void {
+  if (dayOneAsk) return;
+  dayOneAsk = true;
+  emit();
+}
+
+export function dropDayOneAsk(): void {
+  if (!dayOneAsk) return;
+  dayOneAsk = false;
+  emit();
+}
+
+export function dayOneAsked(): boolean {
+  return dayOneAsk;
+}
+
+export function useDayOneAsked(): boolean {
+  return useSyncExternalStore(subscribe, dayOneAsked, dayOneAsked);
+}
+
 /** Set by `?previewTour` in development: the card is shown even on a phone
  * with history, which a real first run skips. This launch only. */
 let devForced = false;

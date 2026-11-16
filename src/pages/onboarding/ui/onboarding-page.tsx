@@ -60,7 +60,7 @@ import {
   setProfileEmail,
   setProfileName,
 } from "@/entities/profile";
-import { wakeMinutes } from "@/entities/notifications";
+import { wakeMinutes, withholdOfferPushes } from "@/entities/notifications";
 import {
   EQUIPMENT,
   PLAN_META,
@@ -446,7 +446,7 @@ export function OnboardingPage() {
   const side = list(answers.side)[0] ?? null;
   const score = morningPainOf(answers) ?? MORNING_PAIN_SEED;
   const load = loadQuestionForRole(role);
-  const isLast = index === STEP_COUNT - 1;
+  const isLast = stepAfter(index, true, answers) == null;
   const runner = list(answers.runner)[0] ?? null;
   // Decided from what they said about themselves, not offered.
   const plan = PLANS[recommendedIndex(runner)];
@@ -605,7 +605,9 @@ export function OnboardingPage() {
     else if (where != null)
       rows.push({
         art: "foot",
-        title: where,
+        // Her own answer, said as one: a bare "Right shin" under a foot read
+        // as the app getting it wrong.
+        title: t("onboarding.building.whereTitle", { where }),
         caption: t("onboarding.building.mornings", { score }),
       });
     if (!painless)
@@ -623,7 +625,11 @@ export function OnboardingPage() {
         title: t("onboarding.passport.planValue", { days, minutes }),
         ...(kitLine != null ? { caption: kitLine } : {}),
       });
-    rows.push({ art: "clipboard", title: t("onboarding.building.choosing") });
+    rows.push({
+      art: "clipboard",
+      title: t("onboarding.building.choosing"),
+      doneTitle: t("onboarding.building.chosen"),
+    });
     return rows;
   })();
 
@@ -1201,6 +1207,8 @@ export function OnboardingPage() {
   const finish = () => {
     Keyboard.dismiss();
     commit();
+    // The notification ask names reminders and progress, not offers.
+    withholdOfferPushes();
     armOffer({ weeks: String(plan.weeks), name });
     armSetup();
     track("onboarding_completed", { skipped: false, plan_weeks: plan.weeks });

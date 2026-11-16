@@ -42,7 +42,7 @@ export const JOURNEY_IT = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'Il più comune qui.',
   'onboarding.react.areaFoot': 'È da lì che parte il piano.',
-  'onboarding.react.areaAchilles': 'Risponde bene al carico lento.',
+  'onboarding.react.areaAchilles': 'Il piano lo carica poco alla volta.',
   'onboarding.react.areaCalf': 'Mette in tensione tutto quello che sta sotto.',
   'onboarding.react.areaShin': 'Il carico è cresciuto troppo in fretta per le gambe.',
   'onboarding.react.areaNone': 'Buon momento per rinforzare.',
@@ -78,7 +78,7 @@ export const JOURNEY_IT = {
   'onboarding.react.yearTitle': 'È tanto tempo.',
   'onboarding.react.yearBody': 'Di solito il carico non è mai cambiato. Lo cambieremo.',
   'onboarding.react.longerTitle': 'Più di un anno. Lo prendiamo sul serio.',
-  'onboarding.react.longerBody': 'Serve un carico diverso, non più riposo.',
+  'onboarding.react.longerBody': 'Il piano inizia con calma e cresce piano piano.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': 'Dolore nei primi passi di oggi?',
@@ -213,13 +213,15 @@ export const JOURNEY_IT = {
   'onboarding.building.heading': 'Stiamo creando il tuo piano',
   'onboarding.building.where': '{where} · mattine {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'Primi passi {score}/10',
+  'onboarding.building.mornings': 'Dolore nei primi passi: {score} su 10',
+  'onboarding.building.whereTitle': 'Dove fa male: {where}',
   'onboarding.building.safety': 'Controllo di sicurezza superato',
   'onboarding.building.seated': 'La prima settimana si parte da seduti',
   'onboarding.building.kitAll': 'Tutto quello che ti serve è a casa',
   'onboarding.building.kitWithout': 'Pianificato senza: {items}',
   'onboarding.building.kitNone': 'Nessuna attrezzatura necessaria',
   'onboarding.building.choosing': 'Scegliamo la tua prima settimana…',
+  'onboarding.building.chosen': 'La tua prima settimana è scelta',
   'onboarding.building.ctaWeek': 'Vedi la mia prima settimana',
 
   // ── The coach ────────────────────────────────────────────────────────────

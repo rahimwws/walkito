@@ -7,28 +7,29 @@ import { palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 const IN_MS = 520;
-/** Raised by the tour's last tap, it waits for the tour: the last stop fades
- * out (220 ms) and only then takes its modal down, and one modal presenting
- * while another is still up does not show on iOS. A launch onto the wall has
- * nothing to wait for and presents at once, as it always did. */
+/** Raised by a tap, it waits a beat: whatever the tap was on (a sheet, the
+ * plan) may still be going, and one modal presenting while another is still
+ * up does not show on iOS. A launch onto it (the development preview) has
+ * nothing to wait for and presents at once. */
 const PRESENT_AFTER_MS = 360;
 
 /**
- * The plans after the free first run (the "Day 1" session and the Home tour),
- * for somebody who said "Not now" on the paywall: the same plans at the same
- * prices (`PaywallWall`), carrying on from the day they have done.
+ * The plans over Home, for somebody who said "Not now" on the paywall and is
+ * looking around: raised by a tap on something locked (`askForPlans`), never
+ * on its own. The same plans at the same prices (`PaywallWall`), carrying on
+ * from the day they have done.
  *
  * Nothing else is offered here: no second price and no deadline. An offer
  * that appears because the first was turned down is what App Review rejects
  * under Guideline 5.6, and a countdown is not a reason anybody trusts.
  *
- * A hard wall, as the paywall is: no close, and Android's back does nothing.
- * Buying or restoring makes `entitled` true, the root stops rendering this and
- * Home is theirs; leaving the app is the other way out, and it comes back on
- * the next launch. A modal rather than a route, so Home stays mounted under
- * it and is there the moment the purchase lands.
+ * Still a hard paywall: nothing locked opens without buying. "Not now", the
+ * close and Android's back put the plans down (`onClose`) and leave them where
+ * they were. Buying or restoring makes `entitled` true, the root stops
+ * rendering this and Home is theirs. A modal rather than a route, so Home
+ * stays mounted under it and is there the moment the purchase lands.
  */
-export function OfferWall({ visible }: { visible: boolean }) {
+export function OfferWall({ visible, onClose }: { visible: boolean; onClose: () => void }) {
   const scheme = useColorScheme();
   const [mounted, setMounted] = useState(visible);
   const progress = useSharedValue(0);
@@ -71,9 +72,9 @@ export function OfferWall({ visible }: { visible: boolean }) {
   if (!mounted) return null;
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={() => undefined}>
+    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={onClose}>
       <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: palette[scheme].background }, fade]}>
-        <PaywallWall />
+        <PaywallWall onClose={onClose} />
       </Animated.View>
     </Modal>
   );

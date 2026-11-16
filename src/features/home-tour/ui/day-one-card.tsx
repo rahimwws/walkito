@@ -1,6 +1,6 @@
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import { useEffect, useRef, useState } from 'react';
-import { Modal, StyleSheet, Text, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -59,21 +59,24 @@ export type DayOneCardProps = {
   /** The session's sheet is up: the card stays down until it has gone. */
   sessionOpen: boolean;
   onStart: (run: DayOneRun) => void;
+  /** "Later": the card goes down without the session. Day 1 stays free and
+   * is offered again from the plan's session or a task. */
+  onLater: () => void;
 };
 
 /**
  * "Day 1": the card over the blurred Home that the first session starts from.
  *
  * Walkito standing on its edge and waving, the day, one line on what it is,
- * how long, and one button. No close: it is the one thing on the screen, and
- * it asks for two minutes. Home under it is blurred in the same dark the tour
- * after it uses, so the card and the tour read as one surface.
+ * how long, its button, and "Later" under it: nobody is held in front of two
+ * minutes they do not want right now. Home under it is blurred in the same
+ * dark the tour after it uses, so the card and the tour read as one surface.
  *
  * Rises in once Home has appeared (a fade and a short rise, or the fade alone
  * with Reduce Motion), and goes down before the session's sheet comes up.
  * Comes back if the session is closed before its end.
  */
-export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
+export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCardProps) {
   const t = useT();
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -142,6 +145,17 @@ export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
     }, LAUNCH_AFTER_MS);
   };
 
+  // The tour's stops are a modal too, and they would not show if asked for
+  // while this one is still going down: the same wait as Start's.
+  const later = () => {
+    if (launching) return;
+    setLaunching(true);
+    launch.current = setTimeout(() => {
+      launch.current = null;
+      onLater();
+    }, LAUNCH_AFTER_MS);
+  };
+
   const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
   const rise = useAnimatedStyle(() => ({
     opacity: progress.value,
@@ -175,6 +189,14 @@ export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
             <Text style={[styles.body, { color: meter.caption }]}>{t('home.day1.body')}</Text>
             <Chip3D icon={Clock01Icon} accent="blue" label={t('session.minutes', { count: DAY_ONE_MINUTES })} style={styles.chip} />
             <PrimaryButton label={t('home.day1.start')} onPress={start} disabled={launching} style={styles.cta} />
+            <Pressable
+              accessibilityRole="button"
+              hitSlop={8}
+              disabled={launching}
+              onPress={later}
+              style={({ pressed }) => [styles.later, pressed && styles.pressed]}>
+              <Text style={[styles.laterText, { color: meter.caption }]}>{t('home.day1.later')}</Text>
+            </Pressable>
           </View>
         </Animated.View>
       </View>
@@ -215,4 +237,7 @@ const styles = StyleSheet.create({
   },
   chip: { marginTop: 14 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
+  later: { marginTop: 12, paddingVertical: 6, paddingHorizontal: 16 },
+  laterText: fonts.semibold(16),
+  pressed: { opacity: 0.5 },
 });

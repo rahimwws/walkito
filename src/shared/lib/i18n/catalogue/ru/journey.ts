@@ -40,7 +40,7 @@ export const JOURNEY_RU = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'Самое частое здесь.',
   'onboarding.react.areaFoot': 'С этого план и начнётся.',
-  'onboarding.react.areaAchilles': 'Хорошо отвечает на медленную нагрузку.',
+  'onboarding.react.areaAchilles': 'План даёт нагрузку постепенно.',
   'onboarding.react.areaCalf': 'Тянет за собой всё, что ниже.',
   'onboarding.react.areaShin': 'Нагрузка росла быстрее, чем ноги привыкали.',
   'onboarding.react.areaNone': 'Хорошее время укрепиться.',
@@ -76,7 +76,7 @@ export const JOURNEY_RU = {
   'onboarding.react.yearTitle': 'Это долго.',
   'onboarding.react.yearBody': 'Обычно нагрузка так и не менялась. Изменим её.',
   'onboarding.react.longerTitle': 'Больше года. Понимаем, это непросто.',
-  'onboarding.react.longerBody': 'Нужна другая нагрузка, а не ещё больше отдыха.',
+  'onboarding.react.longerBody': 'План начинается мягко и наращивает нагрузку постепенно.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': 'Боль на первых шагах сегодня?',
@@ -211,13 +211,15 @@ export const JOURNEY_RU = {
   'onboarding.building.heading': 'Собираем ваш план',
   'onboarding.building.where': '{where} · по утрам {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'Первые шаги {score}/10',
+  'onboarding.building.mornings': 'Боль при первых шагах: {score} из 10',
+  'onboarding.building.whereTitle': 'Где болит: {where}',
   'onboarding.building.safety': 'Проверка безопасности пройдена',
   'onboarding.building.seated': 'Первая неделя - сидя',
   'onboarding.building.kitAll': 'Всё нужное есть дома',
   'onboarding.building.kitWithout': 'Без: {items}',
   'onboarding.building.kitNone': 'Инвентарь не нужен',
   'onboarding.building.choosing': 'Подбираем первую неделю…',
+  'onboarding.building.chosen': 'Первая неделя подобрана',
   'onboarding.building.ctaWeek': 'Показать первую неделю',
 
   // ── The coach ────────────────────────────────────────────────────────────

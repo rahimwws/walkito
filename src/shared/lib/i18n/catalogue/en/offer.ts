@@ -269,6 +269,7 @@ export const OFFER_EN = {
   'offer.first.titleNamed': { one: '{name}, try the first\n{count} minute now', other: '{name}, try the first\n{count} minutes now' },
   'offer.first.body': 'Easy moves from Day 1 of your plan.',
   'offer.first.start': 'Start Day 1',
+  'offer.first.eyebrow': 'Two moves on a chair',
   'offer.felt.question': 'How did that feel?',
   'offer.felt.easy': 'Easy',
   'offer.felt.ok': 'Just right',
@@ -283,12 +284,16 @@ export const OFFER_EN = {
   'offer.next.later': 'Next · Day {day}',
 
   // ── Session player: the locked state ─────────────────────────────────────
-  // Only ever seen by somebody whose subscription ended and who answered the
-  // expiry screen with "Not now".
+  // The first three only ever seen by somebody whose subscription ended and
+  // who answered the expiry screen with "Not now"; the `Looking` three by
+  // somebody who skipped the paywall, for whom only Day 1 is open.
   'widgets.sessionLockedTitle': 'Your subscription has ended',
   'widgets.sessionLockedBody':
     'Everything you logged is still here to read. To run sessions again, pick up where you left off.',
   'widgets.sessionLockedCta': 'See your options',
+  'widgets.sessionLookingTitle': 'Day 1 is the free session',
+  'widgets.sessionLookingBody': 'Every other session opens once you choose a plan. Your plan and its exercises are yours to look at now.',
+  'widgets.sessionLookingCta': 'See plans',
 
   // ── Test day: the results ────────────────────────────────────────────────
   // The rest of the test day's copy is in `testday.ts`. These stay here because
@@ -390,7 +395,7 @@ export const OFFER_EN = {
   // ── Paywall: the free week's two steps (`trial-intro.tsx`) ──────────────
   // Shown before the plans to somebody the store gives a free trial. Only
   // what the app does: the reminder is real, and nothing is charged today.
-  'offer.trial.eyebrow': 'Your plan is ready',
+  'offer.trial.eyebrow': 'Before you decide',
   /** The newline is a chosen break, as in the name step's heading: each
    * language divides its own two lines. */
   'offer.trial.giftTitle': { one: 'Try Walkito\nfree for {count} day', other: 'Try Walkito\nfree for {count} days' },

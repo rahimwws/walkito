@@ -191,6 +191,7 @@ export const OFFER_IT = {
   'offer.first.titleNamed': { one: '{name}, prova subito\nil primo {count} minuto', other: '{name}, prova subito\ni primi {count} minuti' },
   'offer.first.body': 'Movimenti facili dal giorno 1 del tuo piano.',
   'offer.first.start': 'Inizia il giorno 1',
+  'offer.first.eyebrow': 'Due movimenti sulla sedia',
   'offer.felt.question': 'Com’è andata?',
   'offer.felt.easy': 'Facile',
   'offer.felt.ok': 'Giusto così',
@@ -209,6 +210,9 @@ export const OFFER_IT = {
   'widgets.sessionLockedBody':
     'Tutto quello che hai registrato è ancora qui da consultare. Per tornare ad allenarti, riprendi da dove avevi lasciato.',
   'widgets.sessionLockedCta': 'Vedi le opzioni',
+  'widgets.sessionLookingTitle': 'La sessione gratuita è il Giorno 1',
+  'widgets.sessionLookingBody': 'Le altre sessioni si aprono quando scegli un piano. Il tuo piano e i suoi esercizi puoi già guardarli.',
+  'widgets.sessionLookingCta': 'Vedi i piani',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Il tuo obiettivo',
@@ -286,7 +290,7 @@ export const OFFER_IT = {
   'offer.trial.todayShort': 'Niente da pagare',
   'offer.trial.remindShort': 'Ti avvisiamo',
   'offer.trial.chargeShort': 'Primo addebito',
-  'offer.trial.eyebrow': 'Il tuo piano è pronto',
+  'offer.trial.eyebrow': 'Prima di decidere',
   'offer.trial.giftTitle': { one: 'Prova Walkito\ngratis per {count} giorno', other: 'Prova Walkito\ngratis per {count} giorni' },
   'offer.trial.giftTitleNamed': { one: '{name}, prova Walkito gratis per {count} giorno', other: '{name}, prova Walkito gratis per {count} giorni' },
   'offer.trial.promiseRemind': { one: 'Un promemoria {count} giorno prima della fine', other: 'Un promemoria {count} giorni prima della fine' },

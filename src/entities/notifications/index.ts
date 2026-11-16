@@ -88,4 +88,4 @@ export {
   trialEndingMessage,
 } from './model/offer-pushes';
 export { DAY_ONE_REMINDERS, dayOneMessage } from './model/day-one';
-export { offerPushesAllowed, setOfferPushes, useOfferPushes } from './model/offer-prefs';
+export { offerPushesAllowed, setOfferPushes, useOfferPushes, withholdOfferPushes } from './model/offer-prefs';

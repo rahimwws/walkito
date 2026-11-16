@@ -61,9 +61,10 @@ describe('onboarding is reachable', () => {
       'const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);',
     );
     expect(layout).toContain('const tryingOut = onboarded && !entitled && !lapsed && skipped;');
-    // It is still a hard paywall: once the first run is done, the offer wall
-    // stands over Home until a purchase.
-    expect(layout).toContain("const offerWall = (tryingOut && tourState === 'done') || devWall;");
+    // It is still a hard paywall: after the first run they may look around,
+    // and a locked tap raises the plans over Home (Rahman's decision 10,
+    // Nov 2026: look, don't use). Nothing raises them on its own.
+    expect(layout).toContain('const offerWall = (tryingOut && plansUp) || devWall;');
   });
 
   /**
@@ -82,8 +83,11 @@ describe('onboarding is reachable', () => {
     // One gate, inside the player, so none of the screens that open a session
     // can forget it.
     expect(player).toContain('useSessionsLocked()');
-    // The one exception is a routine marked free (the morning stretch).
-    expect(player).toMatch(/if \(!locked \|\| props\.free === true\) return <SessionRun/);
+    // The one exception is a routine marked free (the morning stretch). For
+    // somebody looking around after skipping the paywall, only Day 1 is open.
+    expect(player).toContain('useLookingAround()');
+    expect(player).toContain("const open = looking ? props.dayOne === true : !lapsedLock || props.free === true;");
+    expect(player).toMatch(/if \(open\) return <SessionRun/);
   });
 
   test('the paywall is a screen, not a dismissible sheet', () => {

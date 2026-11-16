@@ -321,9 +321,18 @@ export type AnalyticsEvents = {
   /** The tour over Home after the day-one session: its stops, 0 the
    * overview, 1 "It hurts", 2 the start button. */
   home_tour_step_viewed: { step: number };
+  /** "Later" on the "Day 1" card: the tour goes on without the session, and
+   * Day 1 stays free to start from the plan or a task. `from`: the card of
+   * the first run, or the card raised again by a locked tap or a reminder. */
+  day1_session_later: { from: 'first_run' | 'asked' };
   /** The tour's last stop tapped, the end of the first-run flow: Home for a
-   * buyer, the offer over it for somebody who skipped the paywall. */
+   * buyer, and for somebody who skipped the paywall Home to look around,
+   * with every session but Day 1 locked. */
   home_tour_completed: Record<string, never>;
+  /** A locked tap by somebody looking around without buying raised the plans
+   * over Home: a plan session, a task off Home's list, the test, a routine,
+   * relief after a check-in, or the session player's own lock. */
+  locked_plans_opened: { from: 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' };
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;

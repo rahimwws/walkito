@@ -52,7 +52,7 @@ export const JOURNEY_EN = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'The most common one here.',
   'onboarding.react.areaFoot': 'That’s where the plan starts.',
-  'onboarding.react.areaAchilles': 'It responds well to slow loading.',
+  'onboarding.react.areaAchilles': 'The plan loads it slowly.',
   'onboarding.react.areaCalf': 'It pulls on everything below.',
   'onboarding.react.areaShin': 'Load rose faster than the legs.',
   'onboarding.react.areaNone': 'Good time to build.',
@@ -90,7 +90,7 @@ export const JOURNEY_EN = {
   'onboarding.react.yearTitle': 'That’s a long time.',
   'onboarding.react.yearBody': 'Usually the load never changed. We’ll change it.',
   'onboarding.react.longerTitle': 'Over a year. It’s real.',
-  'onboarding.react.longerBody': 'It needs a different load, not more rest.',
+  'onboarding.react.longerBody': 'The plan starts gently and builds slowly.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': 'Pain in your first steps today?',
@@ -227,13 +227,15 @@ export const JOURNEY_EN = {
   'onboarding.building.heading': 'Building your plan',
   'onboarding.building.where': '{where} · mornings {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'First steps {score}/10',
+  'onboarding.building.mornings': 'Pain in your first steps: {score} out of 10',
+  'onboarding.building.whereTitle': 'Where it hurts: {where}',
   'onboarding.building.safety': 'Safety check passed',
   'onboarding.building.seated': 'Week one starts seated',
   'onboarding.building.kitAll': 'Everything you need at home',
   'onboarding.building.kitWithout': 'Planned without: {items}',
   'onboarding.building.kitNone': 'No equipment needed',
   'onboarding.building.choosing': 'Choosing your first week…',
+  'onboarding.building.chosen': 'Your first week is picked',
   'onboarding.building.ctaWeek': 'See my first week',
 
   // ── The coach ────────────────────────────────────────────────────────────

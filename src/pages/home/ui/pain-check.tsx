@@ -53,6 +53,7 @@ import { SessionView } from '@/widgets/session-player';
 import { SafetySheet } from '@/features/safety-check';
 
 import { LegMap, MAX_ZONES, ZONE_LABEL_KEYS, reliefIdsFor, toggleZone, type LegZone } from '@/entities/leg-zone';
+import { askForPlans, lookingAround } from '@/entities/purchase';
 
 import { CheckInHistory } from './check-in-history';
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
@@ -729,6 +730,9 @@ function usualRange(): { low: number; high: number } {
  * nothing to add that the number did not already say.
  */
 const RELIEF_ABOVE = 6;
+/** The check-in's sheet slides away before the plans present over Home: one
+ * modal presenting while another dismisses does not show on iOS. */
+const RELIEF_PLANS_AFTER_MS = 520;
 
 /** How far the check-in slides under the arriving session — the same fraction
  * the program's own push uses. */
@@ -1097,6 +1101,13 @@ function Sheet({
     // this sore is exactly the day the app has something to do about it, and
     // making the user find that thing themselves — back on Home, in a list, two
     // taps away — is how a check-in becomes a form nobody fills in twice.
+    // Looking around without buying, relief is a session like any other: the
+    // check-in is kept, its sheet goes, and the plans rise once it has.
+    if (lookingAround()) {
+      onClose();
+      setTimeout(() => askForPlans('relief'), RELIEF_PLANS_AFTER_MS);
+      return;
+    }
     setRelieving(true);
     push.value = withTiming(1, {
       duration: PROGRAM_MS,

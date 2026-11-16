@@ -4,7 +4,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { useHealthSignals } from '@/entities/health';
 import { libraryFavourites, painSeries, todayKey, usePlanVersion } from '@/entities/program';
-import { browsingLapsed, clearBrowsingLapsed, useEntitled } from '@/entities/purchase';
+import { askForPlans, browsingLapsed, clearBrowsingLapsed, useEntitled, useLookingAround } from '@/entities/purchase';
 import {
   PROTOCOL_ART,
   PROTOCOL_ICONS,
@@ -37,6 +37,7 @@ export function LibraryRow() {
   const router = useRouter();
   const health = useHealthSignals();
   const entitled = useEntitled();
+  const looking = useLookingAround();
   usePlanVersion();
 
   /**
@@ -47,8 +48,9 @@ export function LibraryRow() {
    */
   const open = (protocol: Protocol) => {
     Haptics.selectionAsync();
-    if (!protocol.free && !entitled) {
+    if (!entitled && (!protocol.free || looking)) {
       if (browsingLapsed()) clearBrowsingLapsed();
+      else if (looking) askForPlans('routine');
       else router.push('/offer');
       return;
     }

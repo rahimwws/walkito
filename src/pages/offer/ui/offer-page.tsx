@@ -144,13 +144,14 @@ export function OfferPage() {
 }
 
 /**
- * The plans over Home, for somebody who said "Not now" and has had the free
- * first run (`OfferWall`): the same plans at the same prices as the paywall,
- * opening on them, with no way past. Whatever was offered before is what is
- * offered here.
+ * The plans over Home, for somebody who said "Not now" and is looking around
+ * (`OfferWall`, raised by a locked tap): the same plans at the same prices as
+ * the paywall, opening on them. "Not now" and the close (`onClose`) put them
+ * down again; there is no other way past. Whatever was offered before is what
+ * is offered here.
  */
-export function PaywallWall() {
-  return <Paywall wall />;
+export function PaywallWall({ onClose }: { onClose: () => void }) {
+  return <Paywall wall onClose={onClose} />;
 }
 
 /**
@@ -172,7 +173,7 @@ export function PaywallWall() {
  * into the app. Nothing new or cheaper is offered after it. The top padding
  * comes from the safe-area inset rather than a constant.
  */
-function Paywall({ wall = false }: { wall?: boolean }) {
+function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => void }) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
@@ -969,7 +970,7 @@ function Paywall({ wall = false }: { wall?: boolean }) {
             : undefined
         }
         covered={busy || celebrating != null || asking != null}
-        onSkip={wall ? undefined : skip}>
+        onSkip={wall ? onClose : skip}>
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
           as nothing having happened. */}

@@ -548,12 +548,17 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.contract.blurb'),
     skipWhen: () => true,
   },
+  // Retired: a stage per month on the leg they marked ("Month 3: Calmer")
+  // read as a promise of how pain changes and when, footnote or not. Kept in
+  // the table, as the contract is, so the indices and a saved place stay
+  // where they were. The first week is the last screen now.
   {
     kind: 'outlook',
     key: 'outlook',
     act: 3,
     title: (t) => t('onboarding.outlook.title', NAME_SLOT),
     blurb: (t) => t('onboarding.outlook.blurb'),
+    skipWhen: () => true,
   },
 ];
 

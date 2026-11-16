@@ -122,6 +122,7 @@ export const HOME_RU = {
   'home.day1.title': 'День 1',
   'home.day1.body': 'Две лёгкие минуты, чтобы разбудить стопы.',
   'home.day1.start': 'Начать',
+  'home.day1.later': 'Позже',
   'home.noPain': 'Сегодня не болит',
   'home.logCheckIn': 'Отметить сегодняшний день',
   'home.checkInAgain': 'Отметить ещё раз',

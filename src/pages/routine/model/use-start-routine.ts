@@ -2,7 +2,7 @@ import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 
-import { browsingLapsed, clearBrowsingLapsed, useEntitled } from '@/entities/purchase';
+import { askForPlans, browsingLapsed, clearBrowsingLapsed, useEntitled, useLookingAround } from '@/entities/purchase';
 import { type Protocol } from '@/entities/protocols';
 
 /**
@@ -18,15 +18,19 @@ import { type Protocol } from '@/entities/protocols';
 export function useStartRoutine(protocol: Protocol | null) {
   const router = useRouter();
   const entitled = useEntitled();
+  const looking = useLookingAround();
   const [running, setRunning] = useState(false);
 
-  const locked = protocol != null && !protocol.free && !entitled;
+  // Looking around without buying, the free routines are locked too: only
+  // Day 1 is open before a purchase.
+  const locked = protocol != null && !entitled && (!protocol.free || looking);
 
   const start = () => {
     if (protocol == null) return;
     Haptics.selectionAsync();
     if (locked) {
       if (browsingLapsed()) clearBrowsingLapsed();
+      else if (looking) askForPlans('routine');
       else router.push('/offer');
       return;
     }

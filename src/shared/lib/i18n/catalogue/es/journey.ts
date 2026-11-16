@@ -39,7 +39,7 @@ export const JOURNEY_ES = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'Lo más común aquí.',
   'onboarding.react.areaFoot': 'Ahí empieza el plan.',
-  'onboarding.react.areaAchilles': 'Responde bien a la carga lenta.',
+  'onboarding.react.areaAchilles': 'El plan le da carga poco a poco.',
   'onboarding.react.areaCalf': 'Tira de todo lo de abajo.',
   'onboarding.react.areaShin': 'La carga subió más rápido de lo que tus piernas se adaptaron.',
   'onboarding.react.areaNone': 'Buen momento para fortalecer.',
@@ -75,7 +75,7 @@ export const JOURNEY_ES = {
   'onboarding.react.yearTitle': 'Es mucho tiempo.',
   'onboarding.react.yearBody': 'Normalmente es porque la carga nunca cambió. Vamos a cambiarla.',
   'onboarding.react.longerTitle': 'Más de un año. Es real.',
-  'onboarding.react.longerBody': 'Necesita otra carga, no más descanso.',
+  'onboarding.react.longerBody': 'El plan empieza con suavidad y avanza despacio.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
   'onboarding.morning.title': '¿Dolor en los primeros pasos hoy?',
@@ -210,13 +210,15 @@ export const JOURNEY_ES = {
   'onboarding.building.heading': 'Creando tu plan',
   'onboarding.building.where': '{where} · mañanas {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'Primeros pasos {score}/10',
+  'onboarding.building.mornings': 'Dolor en los primeros pasos: {score} de 10',
+  'onboarding.building.whereTitle': 'Dónde duele: {where}',
   'onboarding.building.safety': 'Comprobación de seguridad superada',
   'onboarding.building.seated': 'La primera semana, ejercicios sentados',
   'onboarding.building.kitAll': 'Todo lo que necesitas en casa',
   'onboarding.building.kitWithout': 'Sin: {items}',
   'onboarding.building.kitNone': 'Sin material',
   'onboarding.building.choosing': 'Eligiendo tu primera semana…',
+  'onboarding.building.chosen': 'Tu primera semana está elegida',
   'onboarding.building.ctaWeek': 'Ver mi primera semana',
 
   // ── The coach ────────────────────────────────────────────────────────────

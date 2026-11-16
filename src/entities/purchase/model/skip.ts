@@ -8,10 +8,11 @@ import { revokeDevAccess } from './comp';
 /**
  * The paywall, skipped.
  *
- * It is a hard paywall: there is no way into the app without buying. Its
- * "Not now" (`skipPaywall`) opens Home for what is free, the two-minute first
- * session and the tour after it, and from then on the same plans stand over
- * Home (`OfferWall`) until a purchase or a restore.
+ * It is a hard paywall: nothing is used without buying. Its "Not now"
+ * (`skipPaywall`) opens Home for what is free, the two-minute first session
+ * and the tour after it, and from then on the app can be looked around with
+ * every other session locked (`lookingAround`, in `look.ts`): a locked tap
+ * raises the same plans over Home (`OfferWall`).
  *
  * There used to be stages here: a one-time trial, then a lower price against
  * a fifteen-minute countdown, then the standard plans. They are gone. An
@@ -27,7 +28,7 @@ let skipped = kv.getBoolean(SKIPPED_KEY) === true;
 
 const listeners = new Set<() => void>();
 
-function subscribe(listener: () => void): () => void {
+export function subscribeSkipped(listener: () => void): () => void {
   listeners.add(listener);
   return () => {
     listeners.delete(listener);
@@ -59,7 +60,7 @@ export function skipPaywall(): void {
 }
 
 export function usePaywallSkipped(): boolean {
-  return useSyncExternalStore(subscribe, paywallSkipped, () => false);
+  return useSyncExternalStore(subscribeSkipped, paywallSkipped, () => false);
 }
 
 /** Development only (`?previewPaywall`): the paywall again. Not skipped, and
