@@ -87,6 +87,9 @@ export type BuildingRow = {
   title: string;
   /** A second, quieter line: the rest of that answer. */
   caption?: string;
+  /** What the title says once its tick lands, where the working title
+   * ("Choosing your first week…") would read as still loading. */
+  doneTitle?: string;
 };
 
 export type BuildingStepProps = {
@@ -318,10 +321,10 @@ function BuildingCard({
       </View>
       <View style={styles.copy}>
         <Text style={[styles.title, { color: colors.foreground }, !lit && styles.dim]} numberOfLines={2}>
-          {row.title}
+          {state === 'done' && row.doneTitle != null ? row.doneTitle : row.title}
         </Text>
         {row.caption != null && (
-          <Text style={[styles.caption, { color: meter.caption }, !lit && styles.dim]} numberOfLines={1}>
+          <Text style={[styles.caption, { color: meter.caption }, !lit && styles.dim]} numberOfLines={2}>
             {row.caption}
           </Text>
         )}

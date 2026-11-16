@@ -259,6 +259,7 @@ export const OFFER_EN = {
   'offer.first.titleNamed': { one: '{name}, try the first\n{count} minute now', other: '{name}, try the first\n{count} minutes now' },
   'offer.first.body': 'Easy moves from Day 1 of your plan.',
   'offer.first.start': 'Start Day 1',
+  'offer.first.eyebrow': 'Two moves on a chair',
   'offer.felt.question': 'How did that feel?',
   'offer.felt.easy': 'Easy',
   'offer.felt.ok': 'Just right',
@@ -380,7 +381,7 @@ export const OFFER_EN = {
   // ── Paywall: the free week's two steps (`trial-intro.tsx`) ──────────────
   // Shown before the plans to somebody the store gives a free trial. Only
   // what the app does: the reminder is real, and nothing is charged today.
-  'offer.trial.eyebrow': 'Your plan is ready',
+  'offer.trial.eyebrow': 'Before you decide',
   /** The newline is a chosen break, as in the name step's heading: each
    * language divides its own two lines. */
   'offer.trial.giftTitle': { one: 'Try Walkito\nfree for {count} day', other: 'Try Walkito\nfree for {count} days' },

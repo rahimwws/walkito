@@ -144,7 +144,7 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
             </View>
           </View>
           <Animated.View entering={FadeInDown.delay(120).duration(380).reduceMotion(ReduceMotion.System)} style={styles.head}>
-            <GoldText style={styles.eyebrow}>{t('offer.trial.eyebrow')}</GoldText>
+            <GoldText style={styles.eyebrow}>{t('offer.first.eyebrow')}</GoldText>
             <Text
               accessibilityRole="header"
               numberOfLines={3}

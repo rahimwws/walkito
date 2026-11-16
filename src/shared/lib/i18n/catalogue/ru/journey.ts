@@ -211,13 +211,15 @@ export const JOURNEY_RU = {
   'onboarding.building.heading': 'Собираем ваш план',
   'onboarding.building.where': '{where} · по утрам {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'Первые шаги {score}/10',
+  'onboarding.building.mornings': 'Боль при первых шагах: {score} из 10',
+  'onboarding.building.whereTitle': 'Где болит: {where}',
   'onboarding.building.safety': 'Проверка безопасности пройдена',
   'onboarding.building.seated': 'Первая неделя - сидя',
   'onboarding.building.kitAll': 'Всё нужное есть дома',
   'onboarding.building.kitWithout': 'Без: {items}',
   'onboarding.building.kitNone': 'Инвентарь не нужен',
   'onboarding.building.choosing': 'Подбираем первую неделю…',
+  'onboarding.building.chosen': 'Первая неделя подобрана',
   'onboarding.building.ctaWeek': 'Показать первую неделю',
 
   // ── The coach ────────────────────────────────────────────────────────────

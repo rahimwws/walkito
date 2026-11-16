@@ -216,13 +216,15 @@ export const JOURNEY_PT = {
   'onboarding.building.heading': 'Montando seu plano',
   'onboarding.building.where': '{where} · manhãs {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'Primeiros passos {score}/10',
+  'onboarding.building.mornings': 'Dor nos primeiros passos: {score} de 10',
+  'onboarding.building.whereTitle': 'Onde dói: {where}',
   'onboarding.building.safety': 'Checagem de segurança concluída',
   'onboarding.building.seated': 'A primeira semana é feita na cadeira',
   'onboarding.building.kitAll': 'Tudo o que você precisa em casa',
   'onboarding.building.kitWithout': 'Planejado sem: {items}',
   'onboarding.building.kitNone': 'Sem equipamento',
   'onboarding.building.choosing': 'Escolhendo sua primeira semana…',
+  'onboarding.building.chosen': 'Sua primeira semana está escolhida',
   'onboarding.building.ctaWeek': 'Ver minha primeira semana',
 
   // ── The coach ────────────────────────────────────────────────────────────

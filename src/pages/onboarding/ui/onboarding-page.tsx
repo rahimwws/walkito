@@ -605,7 +605,9 @@ export function OnboardingPage() {
     else if (where != null)
       rows.push({
         art: "foot",
-        title: where,
+        // Her own answer, said as one: a bare "Right shin" under a foot read
+        // as the app getting it wrong.
+        title: t("onboarding.building.whereTitle", { where }),
         caption: t("onboarding.building.mornings", { score }),
       });
     if (!painless)
@@ -623,7 +625,11 @@ export function OnboardingPage() {
         title: t("onboarding.passport.planValue", { days, minutes }),
         ...(kitLine != null ? { caption: kitLine } : {}),
       });
-    rows.push({ art: "clipboard", title: t("onboarding.building.choosing") });
+    rows.push({
+      art: "clipboard",
+      title: t("onboarding.building.choosing"),
+      doneTitle: t("onboarding.building.chosen"),
+    });
     return rows;
   })();
 

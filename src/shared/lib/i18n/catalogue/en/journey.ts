@@ -227,13 +227,15 @@ export const JOURNEY_EN = {
   'onboarding.building.heading': 'Building your plan',
   'onboarding.building.where': '{where} · mornings {score}/10',
   // Under the place, on the building screen's first card.
-  'onboarding.building.mornings': 'First steps {score}/10',
+  'onboarding.building.mornings': 'Pain in your first steps: {score} out of 10',
+  'onboarding.building.whereTitle': 'Where it hurts: {where}',
   'onboarding.building.safety': 'Safety check passed',
   'onboarding.building.seated': 'Week one starts seated',
   'onboarding.building.kitAll': 'Everything you need at home',
   'onboarding.building.kitWithout': 'Planned without: {items}',
   'onboarding.building.kitNone': 'No equipment needed',
   'onboarding.building.choosing': 'Choosing your first week…',
+  'onboarding.building.chosen': 'Your first week is picked',
   'onboarding.building.ctaWeek': 'See my first week',
 
   // ── The coach ────────────────────────────────────────────────────────────
