@@ -272,6 +272,15 @@ export type AnalyticsEvents = {
    * answers (`session_feedback`), about the session and never about pain. */
   first_session_felt: { feedback: 'easy' | 'ok' | 'hard' };
 
+  // ── The Day 1 reminder ───────────────────────────────────────────────────
+  /** The Day 1 reminder was laid for the first time on this phone: somebody
+   * past the onboarding left without buying and without doing Day 1, with
+   * notifications allowed. Once per person; `reminders` is how many were
+   * laid (two, or fewer when some had already gone out). */
+  day_one_reminder_scheduled: { reminders: number };
+  /** One of the two was tapped, and the app opened on Day 1. */
+  day_one_reminder_opened: { reminder: 1 | 2 };
+
   // ── Home tour ────────────────────────────────────────────────────────────
   /** "Start" on the "Day 1" card over Home, after the purchase or the skip:
    * the two-minute first session opened. Which moves it held is left out,

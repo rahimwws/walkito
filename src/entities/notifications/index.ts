@@ -21,6 +21,7 @@ export {
   clearAll,
   deliveryState,
   explainToday,
+  holdPlanNudgesWhile,
   markDelivered,
   maybeSendStepCheck,
   onAppOpen,
@@ -70,14 +71,20 @@ export { setAudience, type Audience } from './model/audience';
 export { NOTIFICATION_ART, type NotificationArt } from './model/art';
 export { PREVIEW_KIND, previewNotification, type PreviewOptions } from './model/preview';
 export {
+  DAY_ONE_KIND,
   NEXT_DAY_KIND,
   TRIAL_ENDING_KIND,
   cancelComebackPushes,
+  cancelDayOneReminders,
   cancelNextDayPush,
   nextDayMessage,
   notificationsPossible,
+  onDayOneTap,
+  scheduleDayOneReminders,
   scheduleNextDayPush,
   scheduleTrialReminder,
+  takeDayOneTap,
   trialEndingMessage,
 } from './model/offer-pushes';
+export { DAY_ONE_REMINDERS, dayOneMessage } from './model/day-one';
 export { offerPushesAllowed, setOfferPushes, useOfferPushes } from './model/offer-prefs';

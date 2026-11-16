@@ -1,15 +1,25 @@
 import * as Notifications from 'expo-notifications';
 
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
+import { kv } from '@/shared/lib/storage';
 
 import { scheduleWithArt } from './attachment';
 import type { Message } from './copy';
+import {
+  DAY_ONE_REMINDERS,
+  NO_DAY_ONE,
+  dayOneMessage,
+  dayOneTimes,
+  settleDayOne,
+  type DayOneState,
+} from './day-one';
 import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './notifications';
 import { offerPushesAllowed } from './offer-prefs';
 
 /**
  * The local notifications around the paywall: the reminder before a free
- * trial somebody started ends, and the morning after the first session.
+ * trial somebody started ends, the morning after the first session, and the
+ * Day 1 reminder for somebody who left before doing it.
  *
  * Local, like the win-back and the expiry notice: every date here is known on
  * the device the moment it matters, so no server and no push token is needed.
@@ -153,6 +163,153 @@ export async function scheduleNextDayPush({ at, day, name }: { at: number; day: 
 /** Bought, so the plan's own reminders speak from here on. */
 export async function cancelNextDayPush(): Promise<void> {
   await Notifications.cancelScheduledNotificationAsync(NEXT_DAY_ID).catch(() => undefined);
+}
+
+/** Marks the Day 1 reminder. Its tap opens Day 1 (`takeDayOneTap`,
+ * `onDayOneTap`), never a price. `reminder` in its data says which of the
+ * two it was. */
+export const DAY_ONE_KIND = 'day-one';
+const DAY_ONE_IDS = ['day-one-1', 'day-one-2'] as const;
+const DAY_ONE_KEY = 'notifications/day-one';
+const DAY_ONE_TAP_KEY = 'notifications/day-one-tap';
+
+function readDayOne(): DayOneState {
+  try {
+    const raw = JSON.parse(kv.getString(DAY_ONE_KEY) ?? 'null') as Partial<DayOneState> | null;
+    if (raw == null || typeof raw.sent !== 'number' || !Array.isArray(raw.pending)) return NO_DAY_ONE;
+    return { sent: raw.sent, pending: raw.pending.filter((at): at is number => typeof at === 'number') };
+  } catch {
+    return NO_DAY_ONE;
+  }
+}
+
+/** One at a time: laid as the app leaves and taken back as it returns, and a
+ * quick return must not overtake the laying it follows. */
+let dayOneQueue: Promise<unknown> = Promise.resolve();
+function dayOneNext<T>(job: () => Promise<T>): Promise<T> {
+  const run = dayOneQueue.then(job, job);
+  dayOneQueue = run.catch(() => undefined);
+  return run;
+}
+
+/**
+ * The Day 1 reminder (`day-one.ts`), laid as somebody who has not bought and
+ * has not done Day 1 leaves the app: what is still owed of the two, at
+ * `minutes` past midnight on the days that file names.
+ *
+ * Only with permission already given: this never asks. Held too when offers
+ * are turned off in Settings (guideline 4.5.4): it points at the free session
+ * and names no price, but it goes to somebody who has not bought, and the
+ * switch is their way to say no to that. Fixed identifiers, so laying again
+ * moves the two rather than adding to them. Returns how many were laid.
+ */
+export function scheduleDayOneReminders({
+  minutes,
+  name,
+  now = Date.now(),
+}: {
+  minutes: number;
+  name?: string;
+  now?: number;
+}): Promise<number> {
+  return dayOneNext(async () => {
+    const state = settleDayOne(readDayOne(), now);
+    kv.set(DAY_ONE_KEY, JSON.stringify(state));
+    if (state.sent >= DAY_ONE_REMINDERS) return 0;
+    if (!offerPushesAllowed() || !(await notificationsAllowed())) return 0;
+    await ensureNotificationChannel();
+    const times = dayOneTimes(state.sent, now, minutes);
+    // On record before they are laid: one that is laid and then lost from the
+    // record (the app closed in between) would never be taken back or counted.
+    kv.set(DAY_ONE_KEY, JSON.stringify({ sent: state.sent, pending: times }));
+    const laid: number[] = [];
+    for (const [i, at] of times.entries()) {
+      const which = state.sent + i + 1;
+      if (which !== 1 && which !== 2) break;
+      const message = dayOneMessage(which, name);
+      try {
+        await scheduleWithArt('session', {
+          identifier: DAY_ONE_IDS[which - 1],
+          content: {
+            title: message.title,
+            body: message.body,
+            sound: true,
+            data: { kind: DAY_ONE_KIND, reminder: which },
+          },
+          trigger: {
+            type: Notifications.SchedulableTriggerInputTypes.DATE,
+            date: new Date(at),
+            channelId: CHANNEL_ID,
+          },
+        });
+        laid.push(at);
+      } catch (error) {
+        console.warn('[notifications] day-one reminder did not schedule:', error);
+      }
+    }
+    kv.set(DAY_ONE_KEY, JSON.stringify({ sent: state.sent, pending: laid }));
+    return laid.length;
+  });
+}
+
+/**
+ * Takes back whatever Day 1 reminder is waiting, and clears one already in
+ * the tray: she is in the app, so neither has anything left to say. One whose
+ * moment has passed is counted as sent first. `forGood` when she has bought
+ * or has done Day 1: nothing is owed after that, whatever was sent.
+ */
+export function cancelDayOneReminders({
+  forGood = false,
+  now = Date.now(),
+}: { forGood?: boolean; now?: number } = {}): Promise<void> {
+  return dayOneNext(async () => {
+    const before = readDayOne();
+    const state = settleDayOne(before, now);
+    kv.set(DAY_ONE_KEY, JSON.stringify(forGood ? { sent: DAY_ONE_REMINDERS, pending: [] } : state));
+    // Nothing was waiting or in the tray: every launch comes through here,
+    // and for nearly everybody there is nothing to ask the system for.
+    if (before.pending.length === 0) return;
+    for (const id of DAY_ONE_IDS) {
+      await Notifications.cancelScheduledNotificationAsync(id).catch(() => undefined);
+      await Notifications.dismissNotificationAsync(id).catch(() => undefined);
+    }
+  });
+}
+
+/** Which Day 1 reminder a response is a tap on, or null for any other. Each
+ * tap is answered once, across launches: the response that opened the app
+ * stays readable for as long as the process lives, and on Android beyond it. */
+function dayOneTapOf(response: Notifications.NotificationResponse | null): 1 | 2 | null {
+  const request = response?.notification.request;
+  const data = request?.content.data as { kind?: string; reminder?: number } | undefined;
+  if (request == null || data?.kind !== DAY_ONE_KIND) return null;
+  const tap = `${request.identifier}:${response?.notification.date ?? 0}`;
+  if (kv.getString(DAY_ONE_TAP_KEY) === tap) return null;
+  kv.set(DAY_ONE_TAP_KEY, tap);
+  return data.reminder === 2 ? 2 : 1;
+}
+
+/**
+ * The Day 1 reminder whose tap opened the app, read at launch, before the
+ * first screen decides what to show. Null for any other launch, on a binary
+ * whose notification module cannot answer at once, and the second time it is
+ * asked about the same tap.
+ */
+export function takeDayOneTap(): 1 | 2 | null {
+  try {
+    return dayOneTapOf(Notifications.getLastNotificationResponse());
+  } catch {
+    return null;
+  }
+}
+
+/** A Day 1 reminder tapped while the app was running. Returns the unsubscribe. */
+export function onDayOneTap(listener: (reminder: 1 | 2) => void): () => void {
+  const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
+    const reminder = dayOneTapOf(response);
+    if (reminder != null) listener(reminder);
+  });
+  return () => subscription.remove();
 }
 
 /**

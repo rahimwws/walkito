@@ -132,6 +132,13 @@ export const NOTIFICATIONS_ES = {
   'notifications.nextDay': 'El día {day} está listo',
   'notifications.nextDayNamed': '{name}, el día {day} está listo',
   'notifications.nextDayBody': 'El día 1 ya está hecho. El siguiente lleva unos minutos.',
+  // The Day 1 reminder, for somebody who left the paywall. See `en`.
+  'notifications.dayOneReady': 'Tu plan está listo',
+  'notifications.dayOneReadyNamed': 'Tu plan está listo, {name}',
+  'notifications.dayOneReadyBody': 'El día 1 lleva 2 minutos.',
+  'notifications.dayOneStill': 'El día 1 sigue aquí para cuando quieras',
+  'notifications.dayOneStillNamed': '{name}, el día 1 sigue aquí para cuando quieras',
+  'notifications.dayOneStillBody': 'Dos minutos, en una silla.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Tu pase de 3 meses termina en una semana',

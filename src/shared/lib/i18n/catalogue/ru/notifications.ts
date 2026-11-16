@@ -151,6 +151,13 @@ export const NOTIFICATIONS_RU = {
   'notifications.nextDay': 'День {day} готов',
   'notifications.nextDayNamed': '{name}, День {day} готов',
   'notifications.nextDayBody': 'День 1 позади. Следующий займёт несколько минут.',
+  // The Day 1 reminder, for somebody who left the paywall. See `en`.
+  'notifications.dayOneReady': 'Ваш план готов',
+  'notifications.dayOneReadyNamed': 'Ваш план готов, {name}',
+  'notifications.dayOneReadyBody': 'День 1 займёт 2 минуты.',
+  'notifications.dayOneStill': 'День 1 ждёт, когда вам будет удобно',
+  'notifications.dayOneStillNamed': '{name}, День 1 ждёт, когда вам будет удобно',
+  'notifications.dayOneStillBody': 'Две минуты, сидя на стуле.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Пропуск на 3 месяца закончится через неделю',

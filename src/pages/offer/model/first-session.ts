@@ -1,3 +1,5 @@
+import { useSyncExternalStore } from 'react';
+
 import { kv } from '@/shared/lib/storage';
 
 /**
@@ -20,6 +22,46 @@ export function firstSession(): FirstSession | null {
 
 export function markFirstSession(next: FirstSession): void {
   kv.set(KEY, next);
+}
+
+/**
+ * The first session asked for again: a tapped Day 1 reminder
+ * (`app/providers/day-one-reminder`) opens the app on the two free minutes,
+ * not on the plans, for somebody who passed on them the first time.
+ *
+ * In memory, for this run of the app: it changes what is in front of her now
+ * and leaves the answer on record alone, so a launch she starts herself still
+ * opens on the plans. Never once the session is done.
+ */
+let again = false;
+const listeners = new Set<() => void>();
+
+export function offerFirstSessionAgain(): void {
+  if (again || firstSession() === 'done') return;
+  again = true;
+  for (const listener of listeners) listener();
+}
+
+/** Shown, and done or passed on: the plans follow as they always did. */
+export function firstSessionOfferedAgain(): void {
+  if (!again) return;
+  again = false;
+  for (const listener of listeners) listener();
+}
+
+export function firstSessionAgain(): boolean {
+  return again;
+}
+
+function subscribe(listener: () => void): () => void {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
+export function useFirstSessionAgain(): boolean {
+  return useSyncExternalStore(subscribe, firstSessionAgain, firstSessionAgain);
 }
 
 /** Development only (`?firstSession=offer|done|declined`): the offer

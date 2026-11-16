@@ -280,6 +280,28 @@ function fireAt(dateKey: string, minutes: number): Date {
 }
 
 /**
+ * Somebody the plan's nudges are not for yet, as the app layer judges it
+ * (`holdPlanNudgesWhile`): asked at every refresh, so the answer is never
+ * a render old.
+ */
+let nudgesHeld: () => boolean = () => false;
+
+/**
+ * Holds the plan's window back while `held` answers true.
+ *
+ * The window was laid for everybody who finished the onboarding, bought or
+ * not: a morning "session" nudge, the day-two test and its tail, the evening
+ * check-in, up to five in the first week, every one of them opening on the
+ * paywall for somebody who had not bought. For the person the Day 1 reminder
+ * speaks to (`day-one.ts`: not bought, Day 1 not done) those two are all that
+ * is sent, so the app layer holds the window for exactly them. Whatever was
+ * already laid is taken back at the next refresh.
+ */
+export function holdPlanNudgesWhile(held: () => boolean): void {
+  nudgesHeld = held;
+}
+
+/**
  * Cancel the window and lay down a fresh one.
  *
  * Safe to call as often as the app likes — on launch, on foreground, after a
@@ -296,6 +318,13 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
       // Already delivered or already gone. Either way there is nothing to do,
       // and a failure here must not stop the rest of the window being laid.
     }
+  }
+
+  // Cancelled above and not laid again: see `holdPlanNudgesWhile`.
+  if (nudgesHeld()) {
+    kv.remove(SCHEDULED_KEY);
+    kv.remove(LAID_KEY);
+    return [];
   }
 
   const planned = planWindow(now);

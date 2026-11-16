@@ -3,6 +3,7 @@ import { StyleSheet, Switch, Text, View } from 'react-native';
 
 import {
   cancelComebackPushes,
+  cancelDayOneReminders,
   cancelNextDayPush,
   cancelWinback,
   setOfferPushes,
@@ -44,6 +45,7 @@ export function OfferSettings() {
               if (!next) {
                 void cancelComebackPushes();
                 void cancelNextDayPush();
+                void cancelDayOneReminders();
                 void cancelWinback();
               }
             }}

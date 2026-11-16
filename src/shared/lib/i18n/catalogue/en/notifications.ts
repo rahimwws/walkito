@@ -169,6 +169,18 @@ export const NOTIFICATIONS_EN = {
   'notifications.nextDay': 'Day {day} is ready',
   'notifications.nextDayNamed': '{name}, Day {day} is ready',
   'notifications.nextDayBody': 'Day 1 is done. The next one takes a few minutes.',
+  // The Day 1 reminder: two at most, for somebody who met the paywall and left
+  // without buying or doing the two free minutes. The tap opens Day 1, never a
+  // price, so nothing here names a plan, a price or a deadline, and nothing
+  // promises a result. The first goes out the morning after, the second two
+  // days on. True as written: the plan is built, and Day 1 is two minutes on
+  // a chair.
+  'notifications.dayOneReady': 'Your plan is ready',
+  'notifications.dayOneReadyNamed': 'Your plan is ready, {name}',
+  'notifications.dayOneReadyBody': 'Day 1 takes 2 minutes.',
+  'notifications.dayOneStill': 'Day 1 is here when you want it',
+  'notifications.dayOneStillNamed': '{name}, Day 1 is here when you want it',
+  'notifications.dayOneStillBody': 'Two minutes, sitting down.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   // A week before a 3-month pass ends: the only access with a fixed end (a

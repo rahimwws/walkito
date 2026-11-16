@@ -46,7 +46,12 @@ import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 
-import { firstSession } from '../model/first-session';
+import {
+  firstSession,
+  firstSessionAgain,
+  firstSessionOfferedAgain,
+  useFirstSessionAgain,
+} from '../model/first-session';
 import { introSeen, markIntroSeen } from '../model/intro';
 import { nextDay } from '../model/next-day';
 import { EXTRA_PLANS, describeCta } from '../model/plans';
@@ -111,12 +116,25 @@ export function OfferPage() {
   // been past the plans.
   const comeback = useBoost();
   const profileName = firstName(useProfileName());
-  const [tasting, setTasting] = useState(() => firstSession() == null && !paywallSkipped());
+  // And once more for somebody who passed on it and then tapped a Day 1
+  // reminder: that tap opens the two minutes, not the plans, whether it
+  // launched the app (read before this mounts) or found it running.
+  const [tasting, setTasting] = useState(() => !paywallSkipped() && (firstSession() == null || firstSessionAgain()));
+  const again = useFirstSessionAgain();
+  useEffect(() => {
+    if (again && !paywallSkipped()) setTasting(true);
+  }, [again]);
   return (
     <View style={styles.full}>
       {tasting && !comeback ? (
         <Animated.View key="first" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
-          <FirstSession name={profileName} onDone={() => setTasting(false)} />
+          <FirstSession
+            name={profileName}
+            onDone={() => {
+              firstSessionOfferedAgain();
+              setTasting(false);
+            }}
+          />
         </Animated.View>
       ) : (
         <Animated.View key="plans" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>

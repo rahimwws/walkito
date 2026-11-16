@@ -11,6 +11,7 @@ import {
   NavThemeProvider,
   PaywallRoot,
   useOfferNotifications,
+  useDayOneReminder,
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
@@ -161,6 +162,9 @@ function RootLayoutInner() {
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
   useOfferNotifications();
+  // The Day 1 reminder for somebody who left without buying or doing the two
+  // free minutes: laid as the app is left, taken back as it is opened.
+  useDayOneReminder(onboarded, entitled, lapsed);
   // Raises the offer over Home a beat after the flow finishes.
   usePendingOfferPresenter();
   // Keeps the home screen's long-press shortcuts in step with what we know, and
