@@ -1,6 +1,7 @@
 export {
   getAppsFlyerUID,
   logAppsFlyerEvent,
+  type AppsFlyerEvent,
   onConversionData,
   onDeepLink,
   setAppsFlyerCustomerUserId,

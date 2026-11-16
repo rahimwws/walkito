@@ -146,8 +146,10 @@ export type AnalyticsEvents = {
   /** `after_session`: the view that carries on from the first session done
    * before it ("Day 1 done"), rather than the one that opens cold. */
   paywall_viewed: { offering: string; boosted: boolean; after_session: boolean; wall: boolean };
-  /** A step of the first paywall: the two screens before it, then the plans.
-   * `story` is which two they are: the free week, or how the plan starts. */
+  /** A step of the first paywall: the screen before it, then the plans.
+   * `story` is which it is: the free week, or how the plan starts. Step 2
+   * (the reminder, or how a day works) is no longer shown since the paywall
+   * became two pages; the plans stay step 3, so the series reads across. */
   paywall_step_viewed: { step: 1 | 2 | 3; story: 'trial' | 'plan' };
   /** The plans, once the store had answered. `trial` is whether the annual
    * they showed started with a free trial for this customer, which the
@@ -162,13 +164,18 @@ export type AnalyticsEvents = {
   paywall_dismissed: { offering: string };
   purchase_started: PurchaseProps;
   purchase_completed: PurchaseProps;
-  purchase_cancelled: PurchaseProps;
+  /** The store's sheet was closed. `store_result` is `cancelled`. */
+  purchase_cancelled: PurchaseProps & { store_result: StoreResult };
   /** Waiting on Ask to Buy or a bank's confirmation. Not a failure; if it
-   * goes through, RevenueCat reports the purchase server-side. */
-  purchase_pending: PurchaseProps;
+   * goes through, RevenueCat reports the purchase server-side.
+   * `store_result` is `pending`. */
+  purchase_pending: PurchaseProps & { store_result: StoreResult };
   /** `reason` is RevenueCat's error code, `readable` its name for it and
-   * `underlying` the store's own message under it. */
-  purchase_failed: PurchaseProps & { reason: string; readable?: string; underlying?: string };
+   * `underlying` the store's own message under it. `store_result` sorts the
+   * code: `not_eligible` for an offer the store would not give this Apple
+   * ID, `not_allowed` for purchases switched off on the phone, `failed` for
+   * everything else. */
+  purchase_failed: PurchaseProps & { store_result: StoreResult; reason: string; readable?: string; underlying?: string };
   /** A purchase that was started and never answered (the app closed under
    * the store's sheet), said at the next launch. */
   purchase_unresolved: PurchaseProps;
@@ -176,10 +183,14 @@ export type AnalyticsEvents = {
    * was closed without buying. `dismissed`: the question was closed
    * unanswered. */
   purchase_cancel_reason: {
-    reason: 'subscription' | 'price' | 'charge' | 'try' | 'other' | 'dismissed';
+    reason: 'subscription' | 'price' | 'charge' | 'try' | 'password' | 'ask' | 'other' | 'dismissed';
     plan: PlanTier;
     offering: string;
   };
+  /** After "It costs too much": the paywall chose and brought into view a
+   * cheaper way in it was already showing (the monthly's lower first month,
+   * or the lifetime). Nothing new was offered. */
+  paywall_cancel_reminded: { plan: PlanTier };
   /** Both ankles were measured by the phone, in Progress (`onboarding` is
    * 1.0.13's sensor flow). That it happened and where, never the degrees:
    * they stay on the phone. */
@@ -451,7 +462,15 @@ export type PurchaseProps = {
   offering: string;
   price: number;
   currency: string;
+  /** The introductory offer the store gave this customer on the plan, by
+   * kind: whether a tap was for the free week, the lower first month or the
+   * plain price. Absent where the purchase was not made from a plan. */
+  intro?: 'free_trial' | 'pay_up_front' | 'pay_as_you_go' | 'none';
 };
+
+/** How a purchase ended at the store, as one property across the purchase
+ * events (cancelled, pending, failed, not eligible, not allowed). */
+export type StoreResult = 'cancelled' | 'pending' | 'failed' | 'not_eligible' | 'not_allowed';
 
 export type SessionProps = {
   day: number;

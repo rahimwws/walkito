@@ -1,4 +1,4 @@
-import { identify, setPerson, track, type PlanTier, type PurchaseProps } from '@/shared/lib/analytics';
+import { identify, setPerson, track, type PlanTier, type PurchaseProps, type StoreResult } from '@/shared/lib/analytics';
 import {
   getAppsFlyerUID,
   logAppsFlyerEvent,
@@ -333,10 +333,17 @@ function wasPending(error: unknown): boolean {
  * every purchase fails; this is what tells a declined card from a product the
  * store would not sell.
  */
-function failureOf(error: unknown): { reason: string; readable?: string; underlying?: string } {
+function failureOf(error: unknown): { store_result: StoreResult; reason: string; readable?: string; underlying?: string } {
   const failure = error as PurchasesError | undefined;
+  const code = failure?.code;
   return {
-    reason: String(failure?.code ?? 'unknown'),
+    store_result:
+      code === PURCHASES_ERROR_CODE.INELIGIBLE_ERROR
+        ? 'not_eligible'
+        : code === PURCHASES_ERROR_CODE.PURCHASE_NOT_ALLOWED_ERROR
+          ? 'not_allowed'
+          : 'failed',
+    reason: String(code ?? 'unknown'),
     readable: failure?.readableErrorCode,
     underlying: failure?.underlyingErrorMessage?.slice(0, 160),
   };
@@ -826,16 +833,16 @@ async function retentionPurchase(props: PurchaseProps, run: () => Promise<MakePu
       track('purchase_completed', props);
       return { status: 'purchased' };
     }
-    track('purchase_failed', { ...props, reason: 'no-entitlement' });
+    track('purchase_failed', { ...props, store_result: 'failed', reason: 'no-entitlement' });
     explainMissingEntitlement(customerInfo);
     return { status: 'failed', message: translatorFor(getLanguage())('offer.notUnlocked') };
   } catch (error) {
     if (wasCancelled(error)) {
-      track('purchase_cancelled', props);
+      track('purchase_cancelled', { ...props, store_result: 'cancelled' });
       return { status: 'cancelled' };
     }
     if (wasPending(error)) {
-      track('purchase_pending', props);
+      track('purchase_pending', { ...props, store_result: 'pending' });
       return { status: 'pending' };
     }
     track('purchase_failed', { ...props, ...failureOf(error) });
@@ -1120,6 +1127,21 @@ export async function setAcquisitionSource(source: string): Promise<void> {
   }
 }
 
+/** Which introductory offer the store gave this customer on a plan, as the
+ * purchase events name it. */
+function introKindOf(plan: Plan): NonNullable<PurchaseProps['intro']> {
+  switch (plan.intro?.kind) {
+    case 'free-trial':
+      return 'free_trial';
+    case 'pay-up-front':
+      return 'pay_up_front';
+    case 'pay-as-you-go':
+      return 'pay_as_you_go';
+    default:
+      return 'none';
+  }
+}
+
 /** What a purchase event says about the plan behind a token. The price is a
  * funnel property, never revenue — RevenueCat reports that server-side. */
 function purchaseProps(pkg: PurchasesPackage, plan: PlanTier, offering: string): PurchaseProps {
@@ -1190,7 +1212,7 @@ export const revenueCatStore: Store = {
     }
     const { pkg, period } = held;
     const offering = plan.token.split(':')[0];
-    const props = purchaseProps(pkg, period, offering);
+    const props: PurchaseProps = { ...purchaseProps(pkg, period, offering), intro: introKindOf(plan) };
     const pass = period === 'pass' || isPassProduct(pkg.product.identifier);
     track('purchase_started', props);
     holdInFlight(props);
@@ -1215,7 +1237,7 @@ export const revenueCatStore: Store = {
         }
         return { status: 'purchased' };
       }
-      track('purchase_failed', { ...props, reason: 'no-entitlement' });
+      track('purchase_failed', { ...props, store_result: 'failed', reason: 'no-entitlement' });
       // Bought, but nothing was granted. Almost always a dashboard that has no
       // entitlement by this name, or products not attached to it.
       explainMissingEntitlement(customerInfo);
@@ -1226,11 +1248,11 @@ export const revenueCatStore: Store = {
     } catch (error) {
       kv.remove(IN_FLIGHT_KEY);
       if (wasCancelled(error)) {
-        track('purchase_cancelled', props);
+        track('purchase_cancelled', { ...props, store_result: 'cancelled' });
         return { status: 'cancelled' };
       }
       if (wasPending(error)) {
-        track('purchase_pending', props);
+        track('purchase_pending', { ...props, store_result: 'pending' });
         return { status: 'pending' };
       }
       track('purchase_failed', { ...props, ...failureOf(error) });
@@ -1282,17 +1304,17 @@ export const revenueCatStore: Store = {
         logStoreConversion(customerInfo, product.identifier, props.plan);
         return { status: 'purchased' };
       }
-      track('purchase_failed', { ...props, reason: 'no-entitlement' });
+      track('purchase_failed', { ...props, store_result: 'failed', reason: 'no-entitlement' });
       explainMissingEntitlement(customerInfo);
       return { status: 'failed', message: translatorFor(getLanguage())('offer.notUnlocked') };
     } catch (error) {
       kv.remove(IN_FLIGHT_KEY);
       if (wasCancelled(error)) {
-        track('purchase_cancelled', props);
+        track('purchase_cancelled', { ...props, store_result: 'cancelled' });
         return { status: 'cancelled' };
       }
       if (wasPending(error)) {
-        track('purchase_pending', props);
+        track('purchase_pending', { ...props, store_result: 'pending' });
         return { status: 'pending' };
       }
       track('purchase_failed', { ...props, ...failureOf(error) });

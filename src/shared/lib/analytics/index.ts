@@ -20,4 +20,5 @@ export type {
   PlanTier,
   PurchaseProps,
   SessionProps,
+  StoreResult,
 } from './events';

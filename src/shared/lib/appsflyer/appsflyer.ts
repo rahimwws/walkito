@@ -248,6 +248,31 @@ export function setAppsFlyerCustomerUserId(customerId: string): void {
 }
 
 /**
+ * Every in-app event the app sends AppsFlyer, by AppsFlyer's predefined names,
+ * so a misspelt one is a `tsc` error rather than an event no partner maps.
+ *
+ * AppsFlyer maps each to Meta's standard app event (support article
+ * 4410481112081, "In-app events: event structure"): `af_content_view` →
+ * `fb_mobile_content_view`, `af_initiated_checkout` →
+ * `fb_mobile_initiated_checkout`. Meta only receives the events mapped in the
+ * Meta ads integration's in-app events tab in AppsFlyer. Never a health word
+ * in a name or a value.
+ *
+ * - `af_tutorial_completion`: the onboarding was finished.
+ * - `af_content_view`: the price page was shown (once per paywall visit).
+ * - `af_initiated_checkout`: the buy button was tapped (once per visit).
+ * - `af_start_trial`, `af_subscribe`, `af_purchase`: the store granted a
+ *   purchase (`logStoreConversion` in `entities/purchase`).
+ */
+export type AppsFlyerEvent =
+  | 'af_tutorial_completion'
+  | 'af_content_view'
+  | 'af_initiated_checkout'
+  | 'af_start_trial'
+  | 'af_subscribe'
+  | 'af_purchase';
+
+/**
  * An in-app event, sent from the phone. Fire and forget.
  *
  * Only for what an ad network has to see on the device — SKAdNetwork conversion
@@ -255,7 +280,7 @@ export function setAppsFlyerCustomerUserId(customerId: string): void {
  * from its server can reach them. Never health data, by the same rule as
  * `track`: what happened, not what was reported.
  */
-export function logAppsFlyerEvent(eventName: string, eventValues: Record<string, string>): void {
+export function logAppsFlyerEvent(eventName: AppsFlyerEvent, eventValues: Record<string, string>): void {
   const af = load();
   if (af == null) return;
   void startAppsFlyer().then((started) => {
