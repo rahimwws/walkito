@@ -22,7 +22,7 @@ import { CANCEL_EN } from './cancel';
 import { PASS_EN } from './pass';
 import { COMMUNITY_EN } from './community';
 import { INSIGHTS_EN } from './insights';
-import { REVIEWER_EN } from './reviewer';
+import { TRUST_EN } from './trust';
 import { FOOT_CHECK_EN } from './foot-check';
 
 /**
@@ -62,6 +62,6 @@ export const en = {
   ...PASS_EN,
   ...COMMUNITY_EN,
   ...INSIGHTS_EN,
-  ...REVIEWER_EN,
+  ...TRUST_EN,
   ...FOOT_CHECK_EN,
 };

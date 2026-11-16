@@ -24,7 +24,7 @@ import { CANCEL_PT } from './cancel';
 import { PASS_PT } from './pass';
 import { COMMUNITY_PT } from './community';
 import { INSIGHTS_PT } from './insights';
-import { REVIEWER_PT } from './reviewer';
+import { TRUST_PT } from './trust';
 import { FOOT_CHECK_PT } from './foot-check';
 
 /**
@@ -60,6 +60,6 @@ export const pt: CatalogueFor<'pt'> = {
   ...PASS_PT,
   ...COMMUNITY_PT,
   ...INSIGHTS_PT,
-  ...REVIEWER_PT,
+  ...TRUST_PT,
   ...FOOT_CHECK_PT,
 };

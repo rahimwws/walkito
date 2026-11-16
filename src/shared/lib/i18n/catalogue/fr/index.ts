@@ -24,7 +24,7 @@ import { CANCEL_FR } from './cancel';
 import { PASS_FR } from './pass';
 import { COMMUNITY_FR } from './community';
 import { INSIGHTS_FR } from './insights';
-import { REVIEWER_FR } from './reviewer';
+import { TRUST_FR } from './trust';
 import { FOOT_CHECK_FR } from './foot-check';
 
 /**
@@ -60,6 +60,6 @@ export const fr: CatalogueFor<'fr'> = {
   ...PASS_FR,
   ...COMMUNITY_FR,
   ...INSIGHTS_FR,
-  ...REVIEWER_FR,
+  ...TRUST_FR,
   ...FOOT_CHECK_FR,
 };

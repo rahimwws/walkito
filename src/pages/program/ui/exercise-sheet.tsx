@@ -6,7 +6,7 @@ import { exerciseById } from '@/entities/program';
 import { clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { ReviewerLine } from '@/shared/ui/reviewer';
+import { GuidelinesLine } from '@/shared/ui/guidelines-line';
 import { ExercisePreview } from '@/widgets/session-player';
 
 const BLUR = 28;
@@ -38,7 +38,7 @@ export function ExerciseSheet({ exerciseId, onClose }: { exerciseId: string | nu
               aspectRatio={clipShape(exercise.id)}
               style={clipShape(exercise.id) > 1 ? styles.wideClip : styles.clip}
             />
-            <ReviewerLine />
+            <GuidelinesLine />
             <Text style={[styles.title, { color: colors.foreground }]}>{exercise.title}</Text>
             <Text style={[styles.cue, { color: meter.caption }]}>{exercise.cue}</Text>
             {/* Why it is here, said on screen rather than only to VoiceOver. */}

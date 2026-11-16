@@ -24,7 +24,7 @@ import { CANCEL_IT } from './cancel';
 import { PASS_IT } from './pass';
 import { COMMUNITY_IT } from './community';
 import { INSIGHTS_IT } from './insights';
-import { REVIEWER_IT } from './reviewer';
+import { TRUST_IT } from './trust';
 import { FOOT_CHECK_IT } from './foot-check';
 
 /**
@@ -60,6 +60,6 @@ export const it: CatalogueFor<'it'> = {
   ...PASS_IT,
   ...COMMUNITY_IT,
   ...INSIGHTS_IT,
-  ...REVIEWER_IT,
+  ...TRUST_IT,
   ...FOOT_CHECK_IT,
 };

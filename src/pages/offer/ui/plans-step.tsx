@@ -35,7 +35,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { RaisedScheme, Raised } from '@/shared/ui/raised';
 import { useSplashRevealed } from '@/shared/ui/splash';
-import { ReviewerLine } from '@/shared/ui/reviewer';
+import { GuidelinesLine } from '@/shared/ui/guidelines-line';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 
 import { describeCta, describePlan, splitHighlight } from '../model/plans';
@@ -320,7 +320,7 @@ export function PlansStep({
               </Text>
             )}
 
-            {!trial && after == null && <ReviewerLine long color={SHEET.caption} />}
+            {!trial && after == null && <GuidelinesLine color={SHEET.caption} />}
 
             <View accessibilityRole="radiogroup" style={styles.plans}>
               <PlanCard
@@ -387,7 +387,7 @@ export function PlansStep({
               )}
             </View>
 
-            {(trial || after != null) && <ReviewerLine long color={SHEET.caption} />}
+            {(trial || after != null) && <GuidelinesLine color={SHEET.caption} />}
 
             <PlansTable />
 
