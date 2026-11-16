@@ -88,6 +88,7 @@ export {
   isSamplePlan,
   samplePricesOn,
   sampleRetention,
+  setSampleLineup,
   setSamplePrices,
   setSampleSheetCloses,
   type SampleRetention,

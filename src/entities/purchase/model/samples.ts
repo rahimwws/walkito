@@ -47,6 +47,23 @@ export function setSamplePrices(on: boolean): void {
   else kv.remove(KEY);
 }
 
+const LINEUP_KEY = 'dev/sampleLineupNext';
+
+/** Development only (`?samplePrices=next`, or `=nextcancel`): the line-up
+ * being set up rather than today's (yearly $49.99 with its free week,
+ * monthly $9.99 with a $4.99 first month, lifetime $99.99), so the paywall
+ * can be seen with both. Kept on disk, as the switch itself is, so it holds
+ * through the relaunch that refetches the plans. */
+export function setSampleLineup(next: boolean): void {
+  if (!__DEV__) return;
+  if (next) kv.set(LINEUP_KEY, true);
+  else kv.remove(LINEUP_KEY);
+}
+
+function nextLineup(): boolean {
+  return __DEV__ && kv.getBoolean(LINEUP_KEY) === true;
+}
+
 let sheetCloses = false;
 
 /** Development only (`?samplePrices=cancel`): a sample purchase answers as
@@ -123,8 +140,15 @@ export function sampleOffering(identifier: string): Offering | null {
     case OFFERINGS.standard:
       return {
         identifier,
-        annual: plan(identifier, 'annual', PRODUCTS.annual, 59.99),
-        monthly: plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
+        annual: plan(identifier, 'annual', PRODUCTS.annual, nextLineup() ? 49.99 : 59.99),
+        monthly: nextLineup()
+          ? plan(identifier, 'monthly', PRODUCTS.monthly, 9.99, {
+              kind: 'pay-up-front',
+              price: 4.99,
+              priceString: usd(4.99),
+              period: { unit: 'month', count: 1 },
+            })
+          : plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
         weekly: null,
         lifetime: plan(identifier, 'lifetime', PRODUCTS.lifetime, 99.99),
         pass: null,
@@ -132,7 +156,7 @@ export function sampleOffering(identifier: string): Offering | null {
     case OFFERINGS.trial:
       return {
         identifier,
-        annual: plan(identifier, 'annual', PRODUCTS.annualTrial, 59.99, {
+        annual: plan(identifier, 'annual', PRODUCTS.annualTrial, nextLineup() ? 49.99 : 59.99, {
           kind: 'free-trial',
           period: { unit: 'week', count: 1 },
         }),

@@ -31,9 +31,11 @@ import {
   devSetReviewMode,
   devSetTrialAudience,
   grantDevAccess,
+  setSampleLineup,
   setSamplePrices,
   setSampleSheetCloses,
 } from '@/entities/purchase';
+import { getIntake, saveIntake } from '@/entities/profile';
 import { devForgetCancelQuestion, devSetFirstSession } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
@@ -135,6 +137,31 @@ const FOOT_CHECK_PARAM = /[?&]footCheck=(\d)\b/;
 /** `?footCheckHeel=left|right|both|unsure` is the heel answer Progress's
  * "Ankle bend" opens on (`=off` none). */
 const FOOT_CHECK_HEEL_PARAM = /[?&]footCheckHeel=(left|right|both|unsure|off)\b/;
+/** `?footCheckToe=yes|no|unsure` is the big toe answer the paywall reads back
+ * (the saved answers' `miniTest.arch`); `=off` none. */
+const FOOT_CHECK_TOE_PARAM = /[?&]footCheckToe=(yes|no|unsure|off)\b/;
+
+/** Development only: the big toe answer in the saved answers, as the
+ * onboarding writes it, or none. */
+function devSeedToe(arch: 'yes' | 'no' | 'unsure' | 'off'): void {
+  const intake = getIntake() ?? {
+    pain: [],
+    side: null,
+    sport: null,
+    runner: null,
+    goal: null,
+    challenge: null,
+    load: null,
+    sessionsPerWeek: null,
+    sex: null,
+    age: null,
+    weightKg: null,
+    shoe: null,
+    watch: null,
+    completedAt: Date.now(),
+  };
+  saveIntake({ ...intake, miniTest: arch === 'off' ? null : { arch, balanceLeft: null, balanceRight: null } });
+}
 /** `?seedCheckins` writes thirteen days of check-ins before today (nine
  * answered): Home's row of days once today is answered, and Progress's
  * counts. `?onFeetCard=<hours>` raises Home's long-day card (`=off` the
@@ -275,7 +302,8 @@ export function useDevLinks(): void {
         const sample = SAMPLE_PARAM.exec(url);
         if (sample != null) {
           setSamplePrices(sample[1] !== 'off');
-          setSampleSheetCloses(sample[1] === 'cancel');
+          setSampleSheetCloses(sample[1] === 'cancel' || sample[1] === 'nextcancel');
+          setSampleLineup(sample[1] === 'next' || sample[1] === 'nextcancel');
         }
         const first = FIRST_SESSION_PARAM.exec(url);
         if (first != null) {
@@ -310,6 +338,8 @@ export function useDevLinks(): void {
         if (footCheck != null) setFootCheckMeasured(Number(footCheck[1]));
         const footCheckHeel = FOOT_CHECK_HEEL_PARAM.exec(url);
         if (footCheckHeel != null) devSeedSelfCheck(footCheckHeel[1] as 'left' | 'right' | 'both' | 'unsure' | 'off');
+        const footCheckToe = FOOT_CHECK_TOE_PARAM.exec(url);
+        if (footCheckToe != null) devSeedToe(footCheckToe[1] as 'yes' | 'no' | 'unsure' | 'off');
         if (SEED_CHECKINS_PARAM.test(url)) devSeedCheckins();
         const onFeetCard = ON_FEET_CARD_PARAM.exec(url);
         if (onFeetCard != null) devShowOnFeetCard(onFeetCard[1] === 'off' ? null : Number(onFeetCard[1]));
