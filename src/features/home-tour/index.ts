@@ -13,6 +13,7 @@ export {
   DAY_ONE_MINUTES,
   answerLockedPlanTap,
   dayOneRun,
+  dayOneWentWell,
   finishDayOne,
   type DayOneRun,
   type DayOneStep,

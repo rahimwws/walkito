@@ -137,6 +137,17 @@ export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
 }
 
 /**
+ * Whether Day 1 went well: done, and not answered "Hard" (the first session
+ * on record is Day 1, and its answer, when it was asked, is kept on it). The
+ * App Store rating is asked for only after one (`useReviewOnThirdOpen`):
+ * somebody whose first two minutes were hard is not asked to rate the app.
+ */
+export function dayOneWentWell(): boolean {
+  const first = sessions()[0];
+  return first != null && first.feedback !== 'hard';
+}
+
+/**
  * A plan session tapped by somebody looking around without buying
  * (`lookingAround`): Day 1, which is free, while it is still ahead (no
  * session on record: `finishDayOne` files it as the first), raised as Home's

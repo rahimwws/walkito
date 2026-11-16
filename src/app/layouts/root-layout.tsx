@@ -33,7 +33,7 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { devPreviewOfferWall, useDevOfferWall } from '@/features/home-tour';
+import { dayOneWentWell, devPreviewOfferWall, useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { endResumeActivities } from '@/pages/onboarding';
 import { PassSetPreview } from '@/widgets/pass-checkout';
@@ -242,7 +242,8 @@ function RootLayoutInner() {
   // so does any offer to update the app: somebody on the paywall is not yet a
   // customer, and "update first" there is a reason to leave.
   const homeIsTheirs = tabsReachable && entitled && tourState !== 'armed' && !offerWall;
-  useReviewOnThirdOpen(homeIsTheirs);
+  // And only after a good Day 1: done, and not answered "Hard".
+  useReviewOnThirdOpen(homeIsTheirs && dayOneWentWell());
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
   // root because the earliest moment is the point — the player swept these too,
   // but only when a new session began.
