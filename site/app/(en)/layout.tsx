@@ -59,7 +59,12 @@ export const metadata: Metadata = {
   // strip on every iPhone that loads the page.
   ...(smartBannerContent('smart-banner') ? { other: { 'apple-itunes-app': smartBannerContent('smart-banner')! } } : {}),
   // Pinterest website claim for the @walkitoapp business account.
-  verification: { other: { 'p:domain_verify': 'f6ce0c7ac5114f3d1dc94de31e88996e' } },
+  verification: {
+    other: {
+      'p:domain_verify': 'f6ce0c7ac5114f3d1dc94de31e88996e',
+      'facebook-domain-verification': 'jxmdbru1lsjlxpg5swn2pys4ypvda8',
+    },
+  },
 };
 
 export { viewport } from '@/components/RootDocument';
