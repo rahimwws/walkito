@@ -145,6 +145,17 @@ export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCar
     }, LAUNCH_AFTER_MS);
   };
 
+  // The tour's stops are a modal too, and they would not show if asked for
+  // while this one is still going down: the same wait as Start's.
+  const later = () => {
+    if (launching) return;
+    setLaunching(true);
+    launch.current = setTimeout(() => {
+      launch.current = null;
+      onLater();
+    }, LAUNCH_AFTER_MS);
+  };
+
   const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
   const rise = useAnimatedStyle(() => ({
     opacity: progress.value,
@@ -182,7 +193,7 @@ export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCar
               accessibilityRole="button"
               hitSlop={8}
               disabled={launching}
-              onPress={onLater}
+              onPress={later}
               style={({ pressed }) => [styles.later, pressed && styles.pressed]}>
               <Text style={[styles.laterText, { color: meter.caption }]}>{t('home.day1.later')}</Text>
             </Pressable>
