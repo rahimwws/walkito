@@ -15,6 +15,7 @@ export type {
   AnalyticsEvents,
   CancelOffer,
   CancelReason,
+  NotificationsPermission,
   PassPlacement,
   PlanTier,
   PurchaseProps,

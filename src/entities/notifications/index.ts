@@ -7,6 +7,7 @@ export {
   cancelWinback,
   notificationsAllowed,
   registerPushToken,
+  reportNotificationPermission,
   requestNotificationAccess,
   scheduleWinback,
 } from './model/notifications';

@@ -43,6 +43,14 @@ export type PlanTier = 'annual' | 'monthly' | 'weekly' | 'lifetime' | 'pass';
  * flow, at the retention price. Also the Superwall placement each registers. */
 export type PassPlacement = 'limited_offer' | 'cancel_budget';
 
+/**
+ * The person property `notifications_permission`: whether this phone lets
+ * Walkito notify, as the system says it now. `undetermined` is never asked
+ * (or asked and closed without an answer, which iOS keeps as never asked).
+ * Set by `entities/notifications` and nowhere else.
+ */
+export type NotificationsPermission = 'granted' | 'denied' | 'undetermined';
+
 /** Why somebody is leaving, as the cancel flow's five answers put it. The
  * answer's id, never anything they wrote: there is no free text. */
 export type CancelReason = 'budget' | 'better' | 'pause' | 'notHelping' | 'noTime';
@@ -374,6 +382,9 @@ export type AnalyticsEvents = {
    * Only whether it was allowed, and only when the system really asked: a
    * permission already given or already refused sends nothing. */
   notifications_answered: { granted: boolean };
+  // The same answer is kept on the person as `notifications_permission`
+  // (`NotificationsPermission`), read again from the system at every return
+  // to the foreground, since it can be changed in iOS Settings at any time.
 
   // ── Instagram ────────────────────────────────────────────────────────────
   /** The "follow Walkito on Instagram" sheet came up: by itself on the third
