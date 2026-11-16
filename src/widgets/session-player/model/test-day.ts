@@ -68,6 +68,22 @@ export function legOrder(side: 'left' | 'right' | 'both' | null | undefined): re
   return side === 'right' ? ['right', 'left'] : ['left', 'right'];
 }
 
+/**
+ * Whether the balance test is taken with the eyes open.
+ *
+ * Eyes closed is the test as the plan screen describes it, and it is what a
+ * foot that cannot be trusted to feel the floor must never do: numb feet and
+ * diabetes keep it out of the plan for good (`protectFeet`, as
+ * `eyes_closed_stand` is). A seated start (a fall, a calf red flag, a pop, a
+ * diabetic foot) gets the same, and keeps it at every test after: one leg is
+ * new to everybody on day 2, now the onboarding no longer asks it, and a
+ * test taken one way first and another way later would compare two
+ * different things. Everybody stands by a counter with a hand near it.
+ */
+export function balanceEyesOpen(settings: { protectFeet?: boolean; seatedStart?: boolean }): boolean {
+  return settings.protectFeet === true || settings.seatedStart === true;
+}
+
 /** The leg the balance test stands on: the sore one, as the calf test's first. */
 export function balanceLeg(side: 'left' | 'right' | 'both' | null | undefined): Leg {
   return legOrder(side)[0];

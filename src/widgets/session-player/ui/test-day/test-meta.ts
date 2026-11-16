@@ -48,6 +48,13 @@ export const TEST_META = {
   }
 >;
 
+/** The balance test's steps with the eyes open (`balanceEyesOpen`). */
+export const BALANCE_EYES_OPEN_STEPS: readonly [Key, Key, Key] = [
+  'testday.balance.step1',
+  'testday.balance.step2Open',
+  'testday.balance.step3',
+];
+
 /** The zone a result row borrows its icon and accent from. */
 export const GOAL_ZONE: Readonly<Record<MeasuredGoal, ZoneKey>> = {
   arch_hold: 'arch',

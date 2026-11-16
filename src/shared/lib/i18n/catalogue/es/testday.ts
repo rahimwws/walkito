@@ -27,7 +27,7 @@ export const TESTDAY_ES = {
   },
   'testday.intro.need': 'Necesitas',
   'testday.intro.needBarefoot': 'Los pies descalzos',
-  'testday.intro.needWall': 'Una pared para apoyarte',
+  'testday.intro.needWall': 'Una pared o una encimera para sujetarte',
   'testday.intro.needPhone': 'El teléfono donde puedas verlo',
   'testday.intro.checkin': '¿Cómo está el pie ahora mismo?',
   'testday.intro.checkinHint': 'Cuenta como tu registro de hoy.',
@@ -69,8 +69,9 @@ export const TESTDAY_ES = {
   'testday.arch.step3': 'Para cuando el arco baje.',
   'testday.arch.stopHint': 'Pulsa en cuanto el arco baje',
 
-  'testday.balance.step1': 'Sobre una pierna, manos en la cadera.',
-  'testday.balance.step2': 'Cierra los ojos al empezar.',
+  'testday.balance.step1': 'Ponte junto a una encimera, con una mano cerca.',
+  'testday.balance.step2': 'Levanta un pie. Cierra los ojos al empezar.',
+  'testday.balance.step2Open': 'Levanta un pie. Mantén los ojos abiertos.',
   'testday.balance.step3': 'Para cuando el otro pie toque el suelo.',
   'testday.balance.stopHint': 'Pulsa cuando el otro pie toque el suelo',
 

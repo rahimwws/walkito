@@ -7,6 +7,7 @@ import {
   CALF_PACE_MS,
   NOTHING_TAKEN,
   STATIONS,
+  balanceEyesOpen,
   balanceLeg,
   clampEntry,
   clockLabel,
@@ -154,6 +155,15 @@ describe('sides', () => {
     expect(legsOf(result, 'left')).toEqual({ left: 14, right: 18 });
     // Right leg sore: its 14 was stored in the first column.
     expect(legsOf(result, 'right')).toEqual({ left: 18, right: 14 });
+  });
+});
+
+describe('balance, eyes open or closed', () => {
+  test('closed for an ordinary foot, open for numb or diabetic feet and a seated start', () => {
+    expect(balanceEyesOpen({})).toBe(false);
+    expect(balanceEyesOpen({ protectFeet: false, seatedStart: false })).toBe(false);
+    expect(balanceEyesOpen({ protectFeet: true })).toBe(true);
+    expect(balanceEyesOpen({ seatedStart: true })).toBe(true);
   });
 });
 

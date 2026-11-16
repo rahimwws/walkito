@@ -27,7 +27,7 @@ export const TESTDAY_DE = {
   },
   'testday.intro.need': 'Du brauchst',
   'testday.intro.needBarefoot': 'Nackte Füße',
-  'testday.intro.needWall': 'Eine Wand zum Festhalten',
+  'testday.intro.needWall': 'Eine Wand oder Arbeitsplatte zum Festhalten',
   'testday.intro.needPhone': 'Das Handy in Sichtweite',
   'testday.intro.checkin': 'Wie geht es dem Fuß gerade?',
   'testday.intro.checkinHint': 'Das zählt als heutiger Check-in.',
@@ -69,8 +69,9 @@ export const TESTDAY_DE = {
   'testday.arch.step3': 'Stopp, wenn das Gewölbe absinkt.',
   'testday.arch.stopHint': 'Tippen, sobald das Gewölbe absinkt',
 
-  'testday.balance.step1': 'Auf einem Bein, Hände in die Hüften.',
-  'testday.balance.step2': 'Beim Start die Augen schließen.',
+  'testday.balance.step1': 'Stell dich neben eine Arbeitsplatte, eine Hand nah daran.',
+  'testday.balance.step2': 'Heb einen Fuß. Beim Start die Augen schließen.',
+  'testday.balance.step2Open': 'Heb einen Fuß. Lass die Augen offen.',
   'testday.balance.step3': 'Stopp, sobald der andere Fuß aufsetzt.',
   'testday.balance.stopHint': 'Tippen, wenn der andere Fuß den Boden berührt',
 

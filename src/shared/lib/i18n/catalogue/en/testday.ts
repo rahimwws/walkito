@@ -35,7 +35,7 @@ export const TESTDAY_EN = {
   },
   'testday.intro.need': 'You need',
   'testday.intro.needBarefoot': 'Bare feet',
-  'testday.intro.needWall': 'A wall to touch for balance',
+  'testday.intro.needWall': 'A wall or a counter to hold on to',
   'testday.intro.needPhone': 'The phone where you can see it',
   // Shown only when today's check-in has not been answered. Answering here is
   // the check-in, so Home stops asking for it after the test.
@@ -79,10 +79,13 @@ export const TESTDAY_EN = {
   'testday.arch.step3': 'Stop when the arch drops.',
   'testday.arch.stopHint': 'Tap the moment the arch drops',
 
-  // Eyes closed, as the plan screen describes this test. The end is heard, not
-  // seen, for the same reason.
-  'testday.balance.step1': 'One leg, hands on your hips.',
-  'testday.balance.step2': 'Eyes closed on go.',
+  // Next to a counter, a hand near it: the test is the first time on one leg
+  // for everybody, the onboarding no longer asks it. Eyes closed, as the plan
+  // screen describes this test, and so the end is heard, not seen; eyes open
+  // for numb or diabetic feet and for a seated start (`balanceEyesOpen`).
+  'testday.balance.step1': 'Stand next to a counter with one hand near it.',
+  'testday.balance.step2': 'Lift one foot. Close your eyes on go.',
+  'testday.balance.step2Open': 'Lift one foot. Keep your eyes open.',
   'testday.balance.step3': 'Stop when the other foot touches down.',
   'testday.balance.stopHint': 'Tap when the other foot touches down',
 

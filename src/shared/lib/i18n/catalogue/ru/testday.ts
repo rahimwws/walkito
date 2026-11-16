@@ -30,7 +30,7 @@ export const TESTDAY_RU = {
   },
   'testday.intro.need': 'Понадобится',
   'testday.intro.needBarefoot': 'Босые ноги',
-  'testday.intro.needWall': 'Стена, чтобы держать равновесие',
+  'testday.intro.needWall': 'Стена или столешница, за которую можно держаться',
   'testday.intro.needPhone': 'Телефон перед глазами',
   'testday.intro.checkin': 'Как стопа сейчас?',
   'testday.intro.checkinHint': 'Это засчитается как сегодняшняя отметка.',
@@ -72,8 +72,9 @@ export const TESTDAY_RU = {
   'testday.arch.step3': 'Стоп, когда свод опускается.',
   'testday.arch.stopHint': 'Нажмите, как только свод опустится',
 
-  'testday.balance.step1': 'На одной ноге, руки на поясе.',
-  'testday.balance.step2': 'По сигналу закройте глаза.',
+  'testday.balance.step1': 'Встаньте рядом со столешницей, одна рука рядом с ней.',
+  'testday.balance.step2': 'Поднимите одну ногу. По сигналу закройте глаза.',
+  'testday.balance.step2Open': 'Поднимите одну ногу. Глаза не закрывайте.',
   'testday.balance.step3': 'Стоп, когда вторая нога коснётся пола.',
   'testday.balance.stopHint': 'Нажмите, когда другая нога коснётся пола',
 

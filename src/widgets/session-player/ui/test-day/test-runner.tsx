@@ -27,7 +27,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { ZONE_META } from '@/entities/program';
+import { ZONE_META, planSettings } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -41,6 +41,7 @@ import { playCountInCue } from '../../model/count-in-sound';
 import {
   CALF_PACE_MS,
   TEST_ORDER,
+  balanceEyesOpen,
   clampEntry,
   clockLabel,
   fullMeasure,
@@ -54,7 +55,7 @@ import {
 import { CountInOverlay } from '../count-in-overlay';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
-import { TEST_META } from './test-meta';
+import { BALANCE_EYES_OPEN_STEPS, TEST_META } from './test-meta';
 
 /**
  * Where a test is.
@@ -132,6 +133,7 @@ export function TestRunner({
 
   const { kind } = station;
   const meta = TEST_META[kind];
+  const steps = kind === 'balance' && balanceEyesOpen(planSettings()) ? BALANCE_EYES_OPEN_STEPS : meta.steps;
   const tone = accents[scheme][ZONE_META[meta.zone].accent];
   const max = fullMeasure(kind, windowMs);
 
@@ -348,7 +350,7 @@ export function TestRunner({
                 height={Math.min(width - 40, height * 0.4)}
               />
               <View style={styles.steps}>
-                {meta.steps.map((key, index) => (
+                {steps.map((key, index) => (
                   <View key={key} style={styles.step}>
                     <View style={[styles.stepNumber, { backgroundColor: tone.track }]}>
                       <Text style={[styles.stepNumberText, { color: tone.fill }]}>{index + 1}</Text>

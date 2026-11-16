@@ -27,7 +27,7 @@ export const TESTDAY_IT = {
   },
   'testday.intro.need': 'Ti serve',
   'testday.intro.needBarefoot': 'Piedi nudi',
-  'testday.intro.needWall': 'Un muro da toccare per l’equilibrio',
+  'testday.intro.needWall': 'Un muro o un piano di lavoro a cui tenerti',
   'testday.intro.needPhone': 'Il telefono dove puoi vederlo',
   'testday.intro.checkin': 'Come sta il piede adesso?',
   'testday.intro.checkinHint': 'Vale come check-in di oggi.',
@@ -69,8 +69,9 @@ export const TESTDAY_IT = {
   'testday.arch.step3': 'Fermati quando l’arco si abbassa.',
   'testday.arch.stopHint': 'Tocca appena l’arco scende',
 
-  'testday.balance.step1': 'Su una gamba, mani sui fianchi.',
-  'testday.balance.step2': 'Chiudi gli occhi al via.',
+  'testday.balance.step1': 'Mettiti accanto a un piano di lavoro, con una mano vicina.',
+  'testday.balance.step2': 'Solleva un piede. Chiudi gli occhi al via.',
+  'testday.balance.step2Open': 'Solleva un piede. Tieni gli occhi aperti.',
   'testday.balance.step3': 'Fermati appena l’altro piede tocca terra.',
   'testday.balance.stopHint': 'Tocca quando l’altro piede tocca terra',
 
