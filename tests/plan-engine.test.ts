@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 
 import { CLIPS } from '../src/shared/config/clip-manifest';
-import { CHAINS, currentLevels, PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
+import { CHAINS, currentLevels, EQUIPMENT, PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
 import { doseFor, doseSeconds } from '../src/entities/program/model/plan/dose';
 import { allowed, playableId, pogoAllowed, type EligibilityContext } from '../src/entities/program/model/plan/eligibility';
 import { advanceGoals, painGoalReached, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
@@ -290,6 +290,33 @@ describe('the week', () => {
     const plan = buildWeek(input({ seenBefore: new Set(['short_foot_seated']) }));
     expect(plan.newThisWeek).not.toContain('short_foot_seated');
     expect(plan.newThisWeek.length).toBeGreaterThan(0);
+  });
+
+  test('a seated week one never holds a move done standing or on the floor', () => {
+    const goalSets: Goal[][] = [
+      [goal('arch_hold', 20), goal('calf_raises', 12)],
+      [goal('balance', 10), goal('symmetry', 20)],
+      [goal('pain_free_mornings', 6), goal('balance', 10)],
+      [goal('calf_raises', 12), goal('symmetry', 20)],
+    ];
+    for (const goals of goalSets) {
+      for (const daysPerWeek of [3, 5, 7] as const) {
+        for (const equipmentMissing of [[], ['step', 'ball'], [...EQUIPMENT]] as Equipment[][]) {
+          const plan = buildWeek(
+            input({
+              weekIndex: 1,
+              goals,
+              previousFocus: goals[0].type,
+              daysPerWeek,
+              eligibility: { ...input().eligibility, seatedOnly: true, equipmentMissing },
+            }),
+          );
+          for (const id of ids(plan)) expect(`${id}: ${planMeta(id)?.position}`).toBe(`${id}: seated`);
+          // Done lying on the floor, whatever a stale table says.
+          expect(ids(plan)).not.toContain('hip_abduction');
+        }
+      }
+    }
   });
 });
 

@@ -31,7 +31,9 @@ export type PlanMeta = {
   id: string;
   kind: PlanKind;
   tags: readonly GoalTag[];
-  position: 'seated' | 'standing';
+  /** Where it is done. `floor` is lying down: off the feet, but not on the
+   * chair a seated week one or a flare day keeps to. */
+  position: 'seated' | 'standing' | 'floor';
   equipment: readonly Equipment[];
   /** Loads the plantar fascia: dropped on high-pain days and in week one. */
   fascia: boolean;
@@ -57,7 +59,7 @@ export const PLAN_META: readonly PlanMeta[] = [
   m({ id: 'short_foot_double', kind: 'strength', tags: ['arch'], position: 'standing', equipment: [], fascia: false, level: 2, chain: 'arch', dose: 'arch' }),
   m({ id: 'short_foot_single', kind: 'strength', tags: ['arch'], position: 'standing', equipment: [], fascia: false, level: 3, chain: 'arch', dose: 'arch' }),
   m({ id: 'band_inversion', kind: 'strength', tags: ['arch'], position: 'seated', equipment: ['band'], fascia: false, level: 3, chain: 'accessory', dose: 'reps' }),
-  m({ id: 'hip_abduction', kind: 'strength', tags: ['symmetry', 'balance'], position: 'seated', equipment: [], fascia: false, level: 2, chain: 'hip', dose: 'reps' }),
+  m({ id: 'hip_abduction', kind: 'strength', tags: ['symmetry', 'balance'], position: 'floor', equipment: [], fascia: false, level: 2, chain: 'hip', dose: 'reps' }),
   m({ id: 'heel_raise_double', kind: 'strength', tags: ['calf'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calf' }),
   m({ id: 'heel_raise_hold', kind: 'strength', tags: ['calf', 'pain'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calfHold' }),
   m({ id: 'heel_raise_plain', kind: 'strength', tags: ['calf'], position: 'standing', equipment: [], fascia: true, level: 3, chain: 'calf', dose: 'calf' }),
