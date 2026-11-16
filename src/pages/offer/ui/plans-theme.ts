@@ -6,31 +6,21 @@ import { mix, shade } from '@/shared/lib/color';
 /**
  * The plans step's colours, in one place.
  *
- * The step is a picture of the product rather than a screen of the app: a sky
- * in the brand colour with the mascot in it, and a white sheet under it. Both
- * stay the same in the dark appearance, the way the reference draws them, so
- * every colour of that view is fixed rather than read from the scheme
- * (`PLUS`, `SHEET`).
+ * The step is drawn in the app's own appearance, as the onboarding before it
+ * is: the navigation theme paints the screen, and the pieces here take the
+ * page's surface and card from `palette`. It used to be a picture of the
+ * product rather than a screen of the app (a light violet sky with the mascot
+ * in it over a white sheet, the same in the dark appearance), and the jump
+ * from two dark pages to a bright sky read as somebody else's pop-up.
  *
- * The view after the first session (`NextDay` in place of the sky) is the
- * other way round: it carries on from the session and the onboarding, so it
- * is drawn in the app's own appearance (`plansThemeFor`), and the pieces the
- * two views share read their colours from `usePlansTheme`.
- *
- * Everything that says "Plus" (the sky, the highlighted word, the chosen plan,
- * the checks) is derived from `HUE`; change that one line and the whole step
- * follows (the reference itself is green). Derived the way the kit derives its
- * own violet, so with `PRIMARY` these are exactly the kit's
- * `filled.light.primary` and `raised.light.selected*` values.
+ * Everything that marks the choice (the chosen plan, the checks, the button)
+ * is derived from `HUE`, the way the kit derives its own violet, so with
+ * `PRIMARY` these are the kit's `filled.*.primary` values.
  */
 const HUE: string = PRIMARY;
 
 type Plus = {
-  /** The sky, top to bottom: the hue a little lighter, then a deeper one. */
-  skyTop: string;
-  skyBottom: string;
-  /** The chosen plan's border, the checks, the button. The hue a step down,
-   * as the kit's filled violet is, so white on it reads at AA. */
+  /** The chosen plan's border, the checks, the button. */
   accent: string;
   /** The ledge under anything filled with `accent`. */
   accentLip: string;
@@ -57,38 +47,34 @@ type Sheet = {
   edge: string;
 };
 
-export const PLUS: Plus = {
-  skyTop: mix(HUE, '#FFFFFF', 0.12),
-  skyBottom: shade(HUE, 0.32),
-  accent: shade(HUE, 0.1),
-  accentLip: shade(shade(HUE, 0.1), 0.2),
-  onAccent: filled.light.primary.label,
-  lit: shade(HUE, 0.1),
-  wash: mix('#FFFFFF', HUE, 0.1),
-  washEdge: mix('#FFFFFF', HUE, 0.45),
-};
-
-/** The white sheet, the same in both appearances. */
-export const SHEET: Sheet = {
-  surface: '#FFFFFF',
-  card: '#FFFFFF',
-  ink: palette.light.foreground,
-  label: meterColors.light.label,
-  caption: meterColors.light.caption,
-  edge: raised.light.edge,
-};
-
 export type PlansTheme = { scheme: 'light' | 'dark'; PLUS: Plus; SHEET: Sheet };
 
-const LIGHT: PlansTheme = { scheme: 'light', PLUS, SHEET };
+const LIGHT: PlansTheme = {
+  scheme: 'light',
+  PLUS: {
+    accent: shade(HUE, 0.1),
+    accentLip: shade(shade(HUE, 0.1), 0.2),
+    onAccent: filled.light.primary.label,
+    lit: shade(HUE, 0.1),
+    wash: mix('#FFFFFF', HUE, 0.1),
+    washEdge: mix('#FFFFFF', HUE, 0.45),
+  },
+  SHEET: {
+    surface: palette.light.background,
+    card: palette.light.card,
+    ink: palette.light.foreground,
+    label: meterColors.light.label,
+    caption: meterColors.light.caption,
+    edge: raised.light.edge,
+  },
+};
 
-/** The same pieces on the app's dark page: the page's own surface and card,
- * the kit's dark violet, and a lighter violet for the lit word, which the
- * filled one is too dim for on near-black. */
+/** The app's dark page: its own surface and card, the kit's dark violet, and
+ * a lighter violet for the lit word, which the filled one is too dim for on
+ * near-black. */
 const DARK: PlansTheme = {
   scheme: 'dark',
   PLUS: {
-    ...PLUS,
     accent: filled.dark.primary.face,
     accentLip: filled.dark.primary.lip,
     onAccent: filled.dark.primary.label,
@@ -106,13 +92,12 @@ const DARK: PlansTheme = {
   },
 };
 
-/** The step in the app's appearance: the view after the first session. */
+/** The step in the app's appearance. */
 export function plansThemeFor(scheme: 'light' | 'dark'): PlansTheme {
   return scheme === 'dark' ? DARK : LIGHT;
 }
 
-/** The fixed light theme unless a view provides the app's own. */
-export const PlansThemeContext = createContext<PlansTheme>(LIGHT);
+export const PlansThemeContext = createContext<PlansTheme>(DARK);
 
 export function usePlansTheme(): PlansTheme {
   return useContext(PlansThemeContext);

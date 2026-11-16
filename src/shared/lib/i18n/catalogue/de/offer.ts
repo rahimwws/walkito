@@ -164,6 +164,13 @@ export const OFFER_DE = {
   'offer.plans.cancel': 'Jederzeit in den Einstellungen kündbar.',
   'offer.plans.cancelAndroid': 'Jederzeit in Google Play kündbar.',
   'offer.plans.oneTime': 'Einmalige Zahlung, kein Abo.',
+  'offer.plans.aboutPerMonth': 'Etwa {perMonth} pro Monat',
+  'offer.plans.introMonthNote': 'Erster Monat {intro}, danach {price} pro Monat',
+  'offer.plans.firstMonth': 'erster Monat',
+  'offer.plans.renewsIntroMonth': '{intro} im ersten Monat, danach {price} pro Monat.',
+  'offer.plans.payOnce': 'Einmal zahlen, kein Abo',
+  'offer.plans.confirmApple': 'Als Nächstes bittet Apple dich, zu bestätigen. Heute zahlst du {amount}.',
+  'offer.plans.confirmGoogle': 'Als Nächstes bittet Google Play dich, zu bestätigen. Heute zahlst du {amount}.',
   'offer.plans.skip': 'Nicht jetzt',
   'offer.cancel.title': 'Es wurde nichts abgebucht.',
   'offer.cancel.question': 'Was hat dich abgehalten?',
@@ -171,6 +178,9 @@ export const OFFER_DE = {
   'offer.cancel.price': 'Es ist zu teuer',
   'offer.cancel.charge': 'Mir war nicht klar, wann abgebucht wird',
   'offer.cancel.try': 'Ich möchte es erst ausprobieren',
+  'offer.cancel.password': 'Ich kenne mein Apple-ID-Passwort nicht',
+  'offer.cancel.passwordAndroid': 'Ich kenne das Passwort meines Google-Kontos nicht',
+  'offer.cancel.ask': 'Ich möchte erst jemanden fragen',
   'offer.cancel.other': 'Etwas anderes',
   // The first session before the paywall (`FirstSession`), "How did that
   // feel?" after it, and the plans that carry on from it. Brackets in the

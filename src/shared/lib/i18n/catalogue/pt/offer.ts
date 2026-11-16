@@ -169,6 +169,13 @@ export const OFFER_PT = {
   'offer.plans.cancel': 'Cancele quando quiser nos Ajustes.',
   'offer.plans.cancelAndroid': 'Cancele quando quiser no Google Play.',
   'offer.plans.oneTime': 'Pagamento único, sem assinatura.',
+  'offer.plans.aboutPerMonth': 'Cerca de {perMonth} por mês',
+  'offer.plans.introMonthNote': 'Primeiro mês {intro}, depois {price} por mês',
+  'offer.plans.firstMonth': 'primeiro mês',
+  'offer.plans.renewsIntroMonth': '{intro} no primeiro mês, depois {price} por mês.',
+  'offer.plans.payOnce': 'Pague uma vez, sem assinatura',
+  'offer.plans.confirmApple': 'Em seguida, a Apple pede que você confirme. Hoje você paga {amount}.',
+  'offer.plans.confirmGoogle': 'Em seguida, o Google Play pede que você confirme. Hoje você paga {amount}.',
   'offer.plans.skip': 'Agora não',
   'offer.cancel.title': 'Nada foi cobrado.',
   'offer.cancel.question': 'O que fez você parar?',
@@ -176,6 +183,9 @@ export const OFFER_PT = {
   'offer.cancel.price': 'Custa caro demais',
   'offer.cancel.charge': 'Não ficou claro quando viria a cobrança',
   'offer.cancel.try': 'Quero experimentar primeiro',
+  'offer.cancel.password': 'Não sei a senha do meu ID Apple',
+  'offer.cancel.passwordAndroid': 'Não sei a senha da minha Conta do Google',
+  'offer.cancel.ask': 'Quero perguntar a alguém primeiro',
   'offer.cancel.other': 'Outro motivo',
   // The first session before the paywall (`FirstSession`), "How did that
   // feel?" after it, and the plans that carry on from it. Brackets in the

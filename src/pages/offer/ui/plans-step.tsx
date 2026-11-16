@@ -1,60 +1,36 @@
-import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
 import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
-import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
 import SecurityCheckIcon from '@hugeicons/core-free-icons/SecurityCheckIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState, type ReactNode } from 'react';
-import {
-  ActivityIndicator,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  type NativeScrollEvent,
-  type NativeSyntheticEvent,
-} from 'react-native';
-import Animated, {
-  Easing,
-  ReduceMotion,
-  interpolate,
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-  type SharedValue,
-} from 'react-native-reanimated';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { DAY_ONE_CLIPS } from '@/features/home-tour';
 import type { PaywallPeriod, Plan } from '@/entities/purchase';
-import { fonts } from '@/shared/config';
+import { clipShape, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { RaisedScheme, Raised } from '@/shared/ui/raised';
-import { useSplashRevealed } from '@/shared/ui/splash';
 import { GuidelinesLine } from '@/shared/ui/guidelines-line';
+import { Raised, RaisedScheme } from '@/shared/ui/raised';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
+import { CLIP_BACKDROP, ExercisePreview } from '@/widgets/session-player';
 
 import { describeCta, describePlan, splitHighlight } from '../model/plans';
-import { cloudEdgeHeight } from './cloud-edge';
+import { FootCheckResult } from './foot-check-result';
 import { PlanCard } from './plan-card';
-import { PlansHero } from './plans-hero';
 import { PlansTable } from './plans-table';
-import { TrialTimeline, trialDays } from './trial-timeline';
 import { PlansThemeContext, plansThemeFor } from './plans-theme';
+import { TrialTimeline, trialDays } from './trial-timeline';
 
-/** The sky's share of the screen. */
-const SKY = 0.45;
-/** Over a free week, whose days have to be read without scrolling, the sky is
- * only as tall as he needs at his smallest: this much under the status bar,
- * plus the cloud edge. */
-const SKY_TRIAL_ROOM = 80;
-/** "Show all plans": the rows open over this long, each a beat after the last. */
-const OPEN_MS = 420;
-const ROW_STAGGER = 0.18;
+/** The first move of Day 1, seated: the plantar stretch, hand on the toes. */
+const HERO_CLIP = DAY_ONE_CLIPS[0];
+/** The clip's height, at most: enough to see a hand and a foot, small enough
+ * that the plans start on the first screen. */
+const HERO_HEIGHT = 124;
+const GUTTER = 22;
 
 export type PlansStepRow = {
   kind: PaywallPeriod;
@@ -66,30 +42,33 @@ export type PlansStepRow = {
 };
 
 export type PlansStepProps = {
-  /** The first view's step bar, laid over the sky. */
+  /** The first view's step bar. */
   stepBar?: ReactNode;
-  /** The lead plan (the annual), then whatever else the offering holds. Rows
-   * the store answered without are left out by the caller, the lead aside. */
-  lead: PlansStepRow;
-  /** The plan shown under the lead from the start, with a choice between
-   * the two: the weekly, where the store has one. */
-  second?: PlansStepRow | null;
-  /** The plans "Show all plans" opens. */
-  extras: readonly PlansStepRow[];
+  /** Every plan, in order, from the start: the annual, the monthly (or the
+   * weekly where the store has no monthly), the lifetime as a smaller card. */
+  rows: readonly PlansStepRow[];
   selected: PaywallPeriod;
   onSelect: (kind: PaywallPeriod) => void;
-  /** The pill on the lead plan. */
-  leadBadge: string;
+  /** The pill on the annual: the comeback view's alone. */
+  leadBadge: string | null;
   /** The comeback view: its own headline. */
   comeback: boolean;
   /** Their first name, for the free week's headline; null without one. */
   name: string | null;
+  /** Her Foot Check over the plans: when this page is the first she sees,
+   * with no screen before it to have shown it. */
+  result: boolean;
   /**
-   * The view after the first session, in place of the sky: its own heading
+   * The view after the first session, in place of the clip: its own heading
    * (`line` marks its lit words with brackets, as the headline does) and the
-   * picture of the day that comes next. Drawn in the app's appearance.
+   * picture of the day that comes next.
    */
   after?: { title: string; line: string; picture: ReactNode } | null;
+  /** Over the button: what happens next and what is paid today. */
+  confirm: string | null;
+  /** A plan to bring into view: the one "What stopped you?" pointed back to.
+   * `at` makes the same plan a new request. */
+  reveal?: { kind: PaywallPeriod; at: number } | null;
   busy: boolean;
   onBuy: () => void;
   /** What the store said last, over the button. */
@@ -98,114 +77,79 @@ export type PlansStepProps = {
   /** Apple's offer-code sheet, where there is one. */
   onRedeemCode?: () => void;
   /** Something is over the step (the store's sheet, the celebration): the
-   * sky holds still. */
+   * clip holds still. */
   covered: boolean;
-  onExpand: () => void;
-  /** "Not now", and the close over the sky: on to Home's free first run
+  /** "Not now", and the close at the top: on to Home's free first run
    * (`skipPaywall`). Left out over Home (`PaywallWall`), where there is no
    * way past: then neither is drawn. */
   onSkip?: () => void;
-  /** Laid over everything: the celebration. */
+  /** Laid over everything: the celebration, "What stopped you?". */
   children?: ReactNode;
 };
 
 /**
- * The plans: the third step of the first paywall, and every view after it.
+ * The plans: the last step of the first paywall, and every view after it.
  *
- * BitePal's paywall, with our mascot: a sky with him in it, a white sheet with
- * a cloud edge over his legs, "Walkito Plus", one headline, the annual plan,
- * "Show all plans", what Plus includes, and the button floating over the
- * foot of it all, in the violet every button on the way here was. The sheet
- * stays white in the dark appearance, as the reference's does, so the kit
- * under it is drawn light.
+ * One page in the app's own appearance, dark like the onboarding: a real
+ * clip of Day 1's first move (seated, a hand drawing the toes back), muted,
+ * looping, and still whenever the screen is out of focus or something covers
+ * it; her own Foot Check when no screen before this one showed it; the line
+ * that says the exercises follow physical therapy guidelines; then every plan
+ * at once, the annual chosen. No mascot, no sky, no "Most popular" (nothing
+ * here is popular yet), no "Show all plans": the monthly and the lifetime are
+ * the honest other ways in, and a choice nobody scrolls to is not a choice.
  *
- * When the annual starts with a free trial the step is about that week: a
- * shorter sky, a headline that says it, the three days that matter inside the
- * plan's own card, and "No payment due today" over the button, all in the
- * first screenful.
+ * Every price is the store's. Each card's largest figure is the amount billed,
+ * as Apple asks; the annual's "about … a month" is the smaller line under its
+ * title. The free week's three days run inside the annual's card (today,
+ * "Day 5: We remind you", the first payment), which is where the reminder
+ * screen that used to come before this one now lives.
  *
- * A hard paywall: there is no way into the app without buying. The close over
- * the sky and "Not now" under the button are there from the first moment:
- * when the way out appeared only after "Show all plans", nobody a Meta ad
- * brought ever saw one, and every one of them left by killing the app. Both
- * lead to Home's day-one session and then the one-time trial offer
- * (`skipPaywall`), never into the app. Nothing here may say or imply the app
- * can be used without paying.
+ * Over the button, one line says what happens next: Apple's own sheet, and
+ * what is paid today. A hard paywall: "Not now" and the close lead to Home's
+ * day-one session and then the plans again (`skipPaywall`), never into the
+ * app, and nothing new or cheaper appears after either.
  *
  * After the first session (`after`) the step carries on from it instead of
- * starting over: no sky and no mascot, the app's own appearance, "Day 1 done"
- * and the day that comes next where the sky was, then the same plans, button
- * and terms.
+ * starting over: "Day 1 done" and the day that comes next (its own clip)
+ * where the hero clip was, then the same plans, button and terms.
  */
 export function PlansStep({
   stepBar,
-  lead,
-  second = null,
-  extras,
+  rows,
   selected,
   onSelect,
   leadBadge,
   comeback,
   name,
+  result,
   after = null,
+  confirm,
+  reveal = null,
   busy,
   onBuy,
   notice,
   onRestore,
   onRedeemCode,
   covered,
-  onExpand,
   onSkip,
   children,
 }: PlansStepProps) {
   const scheme = useColorScheme();
   const t = useT();
-  const theme = plansThemeFor(after != null ? scheme : 'light');
+  const theme = plansThemeFor(scheme);
   const { PLUS, SHEET } = theme;
   const insets = useSafeAreaInsets();
   const frame = useSafeAreaFrame();
   const focused = useIsFocused();
-  const revealed = useSplashRevealed();
-  const width = frame.width;
-  /** The lead plan starts with a free trial: the step is then about that
-   * week, day by day, and everything else makes room for it. */
-  const freeDays = comeback ? null : trialDays(lead.plan);
-  const trial = freeDays != null;
-  // Its share of the screen, but never so much that the lead plan starts
-  // under the floating button on a short phone.
-  const skyHeight = trial
-    ? insets.top + SKY_TRIAL_ROOM + cloudEdgeHeight(width)
-    : Math.round(Math.max(Math.min(frame.height * SKY, frame.height - 420), 240));
 
-  // ── "Show all plans" ─────────────────────────────────────────────────────
-  const [expanded, setExpanded] = useState(false);
+  const lead = rows[0];
+  /** The annual starts with a free trial for this customer. */
+  const freeDays = comeback || lead == null ? null : trialDays(lead.plan);
 
-  const open = useSharedValue(0);
-  // Measured off-flow (the rows sit absolutely inside the clip), so the
-  // zero-height clip cannot squash what it is measuring.
-  const extrasHeight = useSharedValue(0);
-  const expand = () => {
-    if (expanded) return;
-    void Haptics.selectionAsync();
-    setExpanded(true);
-    open.value = withTiming(1, { duration: OPEN_MS, easing: Easing.out(Easing.cubic), reduceMotion: ReduceMotion.System });
-    onExpand();
-  };
-  const opening = useAnimatedStyle(() => ({ height: open.value * extrasHeight.value }));
-
-  // ── the status bar follows what is under it ─────────────────────────────
-  const [onSheet, setOnSheet] = useState(false);
-  const scrolled = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const next = event.nativeEvent.contentOffset.y > skyHeight - insets.top - 28;
-    if (next !== onSheet) setOnSheet(next);
-  };
-
-  const [dockHeight, setDockHeight] = useState(170);
-
-  const chosen =
-    selected === lead.kind ? lead : second?.kind === selected ? second : (extras.find((row) => row.kind === selected) ?? lead);
+  const chosen = rows.find((row) => row.kind === selected) ?? lead;
   const cta = describeCta(chosen.kind, chosen.plan, t, Platform.OS === 'android');
-  // The free days are the lead plan's: with another plan chosen the headline
+  // The free days are the annual's: with another plan chosen the headline
   // stops promising them.
   const headline = splitHighlight(
     freeDays != null && chosen.kind === lead.kind
@@ -214,40 +158,41 @@ export function PlansStep({
         : t('offer.plans.headlineTrial', { count: freeDays })
       : t(comeback ? 'offer.plans.headlineComeback' : 'offer.plans.headline'),
   );
-  const many = second != null || (extras.length > 0 && expanded);
-  /** The dock's fade, from the surface it floats over. */
+
+  const shape = clipShape(HERO_CLIP);
+  const clipWidth = Math.round(Math.min(frame.width - GUTTER * 2, HERO_HEIGHT * shape));
+  const clip = { width: clipWidth, height: Math.round(clipWidth / shape) };
+
+  const [dockHeight, setDockHeight] = useState(170);
+  /** The dock's fade, from the page under it. */
   const veil = (alpha: number) =>
     `rgba(${parseInt(SHEET.surface.slice(1, 3), 16)},${parseInt(SHEET.surface.slice(3, 5), 16)},${parseInt(SHEET.surface.slice(5, 7), 16)},${alpha})`;
 
+  // Where each card sits in the scroll, so a plan pointed back to by "What
+  // stopped you?" can be brought into view rather than left below the fold.
+  const scroll = useRef<ScrollView>(null);
+  const plansTop = useRef(0);
+  const cardTops = useRef<Partial<Record<PaywallPeriod, number>>>({});
+  useEffect(() => {
+    if (reveal == null) return;
+    const y = cardTops.current[reveal.kind];
+    if (y == null) return;
+    scroll.current?.scrollTo({ y: Math.max(0, plansTop.current + y - 120), animated: true });
+  }, [reveal]);
+
   return (
     <PlansThemeContext.Provider value={theme}>
-    <View style={[styles.full, after != null && { backgroundColor: SHEET.surface }]}>
-      <StatusBar style={after != null ? (theme.scheme === 'dark' ? 'light' : 'dark') : onSheet ? 'dark' : 'light'} />
-      {/* The kit drawn light under the white sheet, whatever the app's
-        appearance; the celebration over it (`children`) follows the app. */}
-      <RaisedScheme scheme={theme.scheme}>
-        <ScrollView
-          style={styles.full}
-          contentContainerStyle={styles.content}
-          showsVerticalScrollIndicator={false}
-          onScroll={scrolled}
-          scrollEventThrottle={64}>
-          {/* Pulled past either end, the sky goes on above and the sheet below. */}
-          <View pointerEvents="none" style={[styles.overTop, { backgroundColor: after != null ? SHEET.surface : PLUS.skyTop }]} />
-          <View pointerEvents="none" style={[styles.overBottom, { backgroundColor: SHEET.surface }]} />
-
-          {after != null ? (
-            <View style={[styles.after, { paddingTop: insets.top + 14 }]}>
-              <View style={styles.afterTop}>
-                <Text
-                  accessibilityRole="header"
-                  numberOfLines={2}
-                  adjustsFontSizeToFit
-                  minimumFontScale={0.75}
-                  style={[styles.afterTitle, { color: SHEET.ink }]}
-                  maxFontSizeMultiplier={1.25}>
-                  {after.title}
-                </Text>
+      <View style={styles.full}>
+        <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
+        <RaisedScheme scheme={theme.scheme}>
+          <ScrollView
+            ref={scroll}
+            style={styles.full}
+            contentContainerStyle={[styles.content, { paddingTop: insets.top + 12, paddingBottom: dockHeight + 12 }]}
+            showsVerticalScrollIndicator={false}>
+            {(stepBar != null || onSkip != null) && (
+              <View style={styles.topRow}>
+                <View style={styles.topBar}>{stepBar}</View>
                 {onSkip != null && (
                   <Pressable
                     accessibilityRole="button"
@@ -257,137 +202,104 @@ export function PlansStep({
                       void Haptics.selectionAsync();
                       onSkip();
                     }}
-                    style={({ pressed }) => [styles.afterClose, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
-                    <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.caption} strokeWidth={2.4} />
+                    style={({ pressed }) => [styles.close, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
+                    <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.label} strokeWidth={2.4} />
                   </Pressable>
                 )}
               </View>
-              <Text style={[styles.afterLine, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                {splitHighlight(after.line).map((run, i) =>
-                  run.lit ? (
-                    <Text key={i} style={{ color: PLUS.lit }}>
-                      {run.text}
-                    </Text>
-                  ) : (
-                    run.text
-                  ),
-                )}
-              </Text>
-              {after.picture}
-            </View>
-          ) : (
-            <PlansHero
-              width={width}
-              height={skyHeight}
-              topInset={insets.top}
-              live={focused && revealed && !covered}
-              top={stepBar}
-              closable={onSkip != null}
-              onClose={() => onSkip?.()}
-            />
-          )}
-
-          {/* The room under the last row for the floating dock is the sheet's own
-              padding, so it stays white rather than showing the screen under it. */}
-          <View style={[styles.sheet, trial && styles.sheetTrial, { backgroundColor: SHEET.surface, paddingBottom: dockHeight + 12 }]}>
-            {/* The wordmark gives its row to the second plan, so both are
-              read without scrolling. */}
-            {after == null && second == null && (
-              <Text style={[styles.wordmark, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
-                {t('offer.plans.brand')}
-              </Text>
             )}
 
-            {/* Two lines at most: a long language comes down a few sizes rather
-              than pushing the plan under the button. */}
-            {after == null && (
-              <Text
-                accessibilityRole="header"
-                numberOfLines={2}
-                adjustsFontSizeToFit
-                minimumFontScale={0.7}
-                style={[width < 360 || trial ? styles.headlineSmall : styles.headline, { color: SHEET.ink }]}
-                maxFontSizeMultiplier={1.25}>
-                {headline.map((run, i) =>
-                  run.lit ? (
-                    <Text key={i} style={{ color: PLUS.lit }}>
-                      {run.text}
-                    </Text>
-                  ) : (
-                    run.text
-                  ),
-                )}
-              </Text>
+            {after != null ? (
+              <View style={styles.after}>
+                <Text
+                  accessibilityRole="header"
+                  numberOfLines={2}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.75}
+                  style={[styles.afterTitle, { color: SHEET.ink }]}
+                  maxFontSizeMultiplier={1.25}>
+                  {after.title}
+                </Text>
+                <Text style={[styles.afterLine, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+                  {splitHighlight(after.line).map((run, i) =>
+                    run.lit ? (
+                      <Text key={i} style={{ color: PLUS.lit }}>
+                        {run.text}
+                      </Text>
+                    ) : (
+                      run.text
+                    ),
+                  )}
+                </Text>
+                {after.picture}
+              </View>
+            ) : (
+              <>
+                {/* Real feet, before a word: the first move of Day 1. */}
+                <View style={[styles.clip, clip, { backgroundColor: CLIP_BACKDROP }]}>
+                  <ExercisePreview
+                    exerciseId={HERO_CLIP}
+                    style={clip}
+                    aspectRatio={shape}
+                    fit="cover"
+                    playing={focused && !covered}
+                  />
+                </View>
+                {/* Two lines at most: a long language comes down a few sizes
+                    rather than pushing the plans under the button. */}
+                <Text
+                  accessibilityRole="header"
+                  numberOfLines={2}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.7}
+                  style={[styles.headline, { color: SHEET.ink }]}
+                  maxFontSizeMultiplier={1.25}>
+                  {headline.map((run, i) =>
+                    run.lit ? (
+                      <Text key={i} style={{ color: PLUS.lit }}>
+                        {run.text}
+                      </Text>
+                    ) : (
+                      run.text
+                    ),
+                  )}
+                </Text>
+              </>
             )}
 
-            {!trial && after == null && <GuidelinesLine color={SHEET.caption} />}
+            {result && <FootCheckResult surface={SHEET.card} />}
 
-            <View accessibilityRole="radiogroup" style={styles.plans}>
-              <PlanCard
-                copy={describePlan(lead.kind, lead.plan, t)}
-                // Over a free week the pill waits for the other plans: "most
-                // popular" of one says nothing, and its row is the room the
-                // week's last day needs.
-                badge={trial && !many ? null : leadBadge}
-                selected={selected === lead.kind}
-                radio={many}
-                disabled={lead.missing}
-                onPress={() => onSelect(lead.kind)}>
-                {/* The free week, in the card of the plan it belongs to. */}
-                {chosen.kind === lead.kind && <TrialTimeline plan={lead.plan} compact={second != null} />}
-              </PlanCard>
+            <GuidelinesLine color={SHEET.label} />
 
-              {second != null && (
-                <PlanCard
-                  copy={describePlan(second.kind, second.plan, t)}
-                  selected={selected === second.kind}
-                  radio
-                  disabled={second.missing}
-                  onPress={() => onSelect(second.kind)}
-                />
-              )}
-
-              {extras.length > 0 && (
-                <Animated.View
-                  pointerEvents={expanded ? 'auto' : 'none'}
-                  accessibilityElementsHidden={!expanded}
-                  importantForAccessibility={expanded ? 'auto' : 'no-hide-descendants'}
-                  style={[styles.extras, opening]}>
-                  <View
-                    style={styles.extrasInner}
-                    onLayout={(event) => {
-                      extrasHeight.value = Math.ceil(event.nativeEvent.layout.height);
-                    }}>
-                    {extras.map((row, i) => (
-                      <Reveal key={row.kind} open={open} index={i}>
-                        <PlanCard
-                          copy={describePlan(row.kind, row.plan, t)}
-                          selected={selected === row.kind}
-                          radio={many}
-                          disabled={row.missing}
-                          onPress={() => onSelect(row.kind)}
-                        />
-                      </Reveal>
-                    ))}
-                  </View>
-                </Animated.View>
-              )}
-
-              {extras.length > 0 && !expanded && (
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={expand}
-                  hitSlop={10}
-                  style={({ pressed }) => [styles.showAll, pressed && { opacity: 0.6 }]}>
-                  <Text style={[styles.showAllText, { color: SHEET.caption }]} maxFontSizeMultiplier={1.4}>
-                    {t('offer.plans.showAll')}
-                  </Text>
-                  <HugeiconsIcon icon={ArrowDown01Icon} size={18} color={SHEET.caption} strokeWidth={2.4} />
-                </Pressable>
-              )}
+            <View
+              accessibilityRole="radiogroup"
+              style={styles.plans}
+              onLayout={(event) => {
+                plansTop.current = event.nativeEvent.layout.y;
+              }}>
+              {rows.map((row) => (
+                <View
+                  key={row.kind}
+                  onLayout={(event) => {
+                    cardTops.current[row.kind] = event.nativeEvent.layout.y;
+                  }}>
+                  <PlanCard
+                    copy={describePlan(row.kind, row.plan, t)}
+                    badge={row.kind === lead.kind ? leadBadge : null}
+                    small={row.kind === 'lifetime'}
+                    selected={selected === row.kind}
+                    radio={rows.length > 1}
+                    disabled={row.missing}
+                    onPress={() => onSelect(row.kind)}>
+                    {/* The free week, day by day, in the card of the plan it
+                        belongs to: today, the reminder, the first payment. */}
+                    {row.kind === lead.kind && chosen.kind === lead.kind && (
+                      <TrialTimeline plan={row.plan} compact />
+                    )}
+                  </PlanCard>
+                </View>
+              ))}
             </View>
-
-            {(trial || after != null) && <GuidelinesLine color={SHEET.caption} />}
 
             <PlansTable />
 
@@ -400,140 +312,96 @@ export function PlansStep({
                 <Text style={[styles.quietText, { color: SHEET.label }]}>{t('offer.haveCode')}</Text>
               </Pressable>
             )}
-          </View>
-        </ScrollView>
+          </ScrollView>
 
-        {/* Floating over the foot of the sheet, on a white fade, so the one
-          action is always on screen with what it charges under it. Restore,
-          Terms and Privacy stay with it rather than at the end of a scroll. */}
-        <View
-          onLayout={(event) => setDockHeight(Math.round(event.nativeEvent.layout.height))}
-          style={[
-            styles.dock,
-            {
-              paddingBottom: Math.max(insets.bottom, 12) + 2,
-              // Solid from the "no payment" line down, so the plans link
-              // scrolled under it cannot show through the words.
-              experimental_backgroundImage:
-                cta.free === true
-                  ? `linear-gradient(180deg, ${veil(0)} 0%, ${veil(1)} 7%)`
-                  : `linear-gradient(180deg, ${veil(0)} 0%, ${veil(0.94)} 22%, ${veil(1)} 40%)`,
-            },
-          ]}>
-          {notice != null && <Text style={[styles.notice, { color: SHEET.label }]}>{notice}</Text>}
-          {/* The answer to the first question a free trial raises, in the one
-            place nobody misses: over the button. */}
-          {cta.free === true && notice == null && (
-            <View style={styles.free}>
-              <HugeiconsIcon icon={CheckmarkCircle02Icon} size={18} color={PLUS.accent} strokeWidth={2.2} />
-              <Text style={[styles.freeText, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
-                {t('offer.plans.noPaymentToday')}
-              </Text>
-            </View>
-          )}
-          <Raised
-            face={PLUS.accent}
-            lip={PLUS.accentLip}
-            depth={5}
-            radius={30}
-            haptic="medium"
-            pressDelay={0}
-            busy={busy}
-            onPress={onBuy}
-            accessibilityRole="button"
-            accessibilityLabel={cta.label}
-            style={styles.pillOuter}
-            contentStyle={styles.pillFace}>
-            {busy ? (
-              <ActivityIndicator color={PLUS.onAccent} />
-            ) : (
-              <Text style={[styles.pillLabel, { color: PLUS.onAccent }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.3}>
-                {cta.label}
+          {/* Floating over the foot of the page, on a fade, so the one action
+            is always on screen with what it charges under it. */}
+          <View
+            onLayout={(event) => setDockHeight(Math.round(event.nativeEvent.layout.height))}
+            style={[
+              styles.dock,
+              {
+                paddingBottom: Math.max(insets.bottom, 12) + 2,
+                // Solid from the line over the button down, so a plan scrolled
+                // under it cannot show through the words.
+                experimental_backgroundImage: `linear-gradient(180deg, ${veil(0)} 0%, ${veil(1)} 9%)`,
+              },
+            ]}>
+            {notice != null && <Text style={[styles.notice, { color: SHEET.label }]}>{notice}</Text>}
+            {/* What the tap does next, and what it costs today: Apple's own
+                sheet follows, and nothing is a surprise on it. */}
+            {notice == null && confirm != null && (
+              <Text style={[styles.confirm, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
+                {confirm}
               </Text>
             )}
-          </Raised>
-          {onSkip != null && (
-            <Pressable
+            <Raised
+              face={PLUS.accent}
+              lip={PLUS.accentLip}
+              depth={5}
+              radius={30}
+              haptic="medium"
+              pressDelay={0}
+              busy={busy}
+              onPress={onBuy}
               accessibilityRole="button"
-              onPress={() => {
-                void Haptics.selectionAsync();
-                onSkip();
-              }}
-              disabled={busy}
-              hitSlop={8}
-              style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
-              <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                {t('offer.plans.skip')}
-              </Text>
-            </Pressable>
-          )}
-          {cta.terms != null && (
-            <View style={styles.terms}>
-              <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />
-              <Text style={[styles.termsText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                {cta.terms}
-              </Text>
-            </View>
-          )}
-          <LegalLinks onRestore={onRestore} disabled={busy} scheme={theme.scheme} />
-        </View>
-      </RaisedScheme>
+              accessibilityLabel={cta.label}
+              style={styles.pillOuter}
+              contentStyle={styles.pillFace}>
+              {busy ? (
+                <ActivityIndicator color={PLUS.onAccent} />
+              ) : (
+                <Text style={[styles.pillLabel, { color: PLUS.onAccent }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.3}>
+                  {cta.label}
+                </Text>
+              )}
+            </Raised>
+            {onSkip != null && (
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  void Haptics.selectionAsync();
+                  onSkip();
+                }}
+                disabled={busy}
+                hitSlop={8}
+                style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
+                <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+                  {t('offer.plans.skip')}
+                </Text>
+              </Pressable>
+            )}
+            {cta.terms != null && (
+              <View style={styles.terms}>
+                <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />
+                <Text style={[styles.termsText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+                  {cta.terms}
+                </Text>
+              </View>
+            )}
+            <LegalLinks onRestore={onRestore} disabled={busy} scheme={theme.scheme} />
+          </View>
+        </RaisedScheme>
 
-      {children}
-    </View>
+        {children}
+      </View>
     </PlansThemeContext.Provider>
   );
 }
 
-/** One extra plan arriving as the list opens: a fade and a short rise, each a
- * beat after the one above it. */
-function Reveal({ open, index, children }: { open: SharedValue<number>; index: number; children: ReactNode }) {
-  const style = useAnimatedStyle(() => {
-    const start = index * ROW_STAGGER;
-    const shown = interpolate(open.value, [start, Math.min(start + 0.6, 1)], [0, 1], 'clamp');
-    return { opacity: shown, transform: [{ translateY: (1 - shown) * 10 }] };
-  });
-  return <Animated.View style={style}>{children}</Animated.View>;
-}
-
 const styles = StyleSheet.create({
   full: { flex: 1 },
-  content: { flexGrow: 1 },
-  overTop: { position: 'absolute', left: 0, right: 0, top: -1000, height: 1000 },
-  overBottom: { position: 'absolute', left: 0, right: 0, bottom: -1000, height: 1000 },
-  sheet: {
-    flexGrow: 1,
-    paddingHorizontal: 22,
-    paddingTop: 2,
-    gap: 18,
-  },
-  /** A free week: closer set, so its last day clears the button. */
-  sheetTrial: { gap: 14 },
-  wordmark: { ...fonts.heavy(24, -0.6), textAlign: 'center' },
+  content: { flexGrow: 1, paddingHorizontal: GUTTER, gap: 14 },
+  topRow: { flexDirection: 'row', alignItems: 'center', gap: 14, minHeight: 32 },
+  topBar: { flex: 1 },
+  close: { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  clip: { alignSelf: 'center', borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
   headline: {
-    ...fonts.heavy(40, -1.4),
-    lineHeight: 42,
+    ...fonts.heavy(28, -0.8),
+    lineHeight: 31,
     textAlign: 'center',
-    marginTop: -6,
   },
-  headlineSmall: {
-    ...fonts.heavy(34, -1.1),
-    lineHeight: 37,
-    textAlign: 'center',
-    marginTop: -6,
-  },
-  plans: { gap: 12, marginTop: 4 },
-  extras: { overflow: 'hidden' },
-  extrasInner: { position: 'absolute', left: 0, right: 0, top: 0, gap: 12 },
-  showAll: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    gap: 4,
-    paddingVertical: 6,
-  },
-  showAllText: fonts.bold(17),
+  plans: { gap: 12 },
   quiet: { alignSelf: 'center', paddingVertical: 4 },
   quietText: fonts.semibold(15),
   dock: {
@@ -542,24 +410,20 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     paddingTop: 22,
-    paddingHorizontal: 22,
+    paddingHorizontal: GUTTER,
     gap: 8,
     alignItems: 'center',
   },
-  /** After the first session: the heading, the way out beside it, and the
-   * day that comes next. */
-  after: { paddingHorizontal: 22, paddingBottom: 16, gap: 6 },
-  afterTop: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
-  afterTitle: { flex: 1, ...fonts.heavy(32, -0.9), lineHeight: 36 },
-  afterClose: { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center', marginTop: 2 },
+  /** After the first session: the heading and the day that comes next. */
+  after: { gap: 6 },
+  afterTitle: { ...fonts.heavy(32, -0.9), lineHeight: 36 },
   afterLine: { ...fonts.semibold(17, -0.2), lineHeight: 23, marginBottom: 10 },
   notice: {
     ...fonts.medium(13),
     lineHeight: 17,
     textAlign: 'center',
   },
-  free: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6 },
-  freeText: fonts.bold(16, -0.2),
+  confirm: { ...fonts.bold(16, -0.2), lineHeight: 21, textAlign: 'center', paddingHorizontal: 8 },
   pillOuter: { alignSelf: 'stretch' },
   pillFace: {
     height: 58,

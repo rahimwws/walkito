@@ -1,6 +1,5 @@
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { AppState, BackHandler, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeOut, ReduceMotion } from 'react-native-reanimated';
@@ -13,7 +12,6 @@ import {
   scheduleWinback,
   wakeMinutes,
 } from '@/entities/notifications';
-import { footCheckMeasured } from '@/entities/foot-check';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
 import { firstName, getIntake, useProfileName } from '@/entities/profile';
@@ -40,6 +38,7 @@ import { armHomeTour, setHomeTourStage } from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
+import { logAppsFlyerEvent } from '@/shared/lib/appsflyer';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
@@ -54,14 +53,13 @@ import {
 } from '../model/first-session';
 import { introSeen, markIntroSeen } from '../model/intro';
 import { nextDay } from '../model/next-day';
-import { EXTRA_PLANS, describeCta } from '../model/plans';
+import { PLAN_ORDER, dueToday, hasIntroMonth } from '../model/plans';
 import { FirstSession } from './first-session';
 import { NextDay } from './next-day';
-import { OfferHero } from './offer-hero';
-import { CancelQuestion, takeCancelQuestion } from './cancel-question';
-import { IntroHow, IntroNext, IntroPlan, StepBar } from './offer-intro';
+import { CancelQuestion, takeCancelQuestion, type CancelReason } from './cancel-question';
+import { IntroNext, IntroPlan, StepBar } from './offer-intro';
 import { PlansStep, type PlansStepRow } from './plans-step';
-import { TrialGift, TrialNext, TrialReminder } from './trial-intro';
+import { TrialGift, TrialNext } from './trial-intro';
 import { trialDays } from './trial-timeline';
 
 /** The goal they picked, in the words onboarding offered it in. */
@@ -156,28 +154,28 @@ export function PaywallWall() {
 }
 
 /**
- * The paywall: Walkito Plus, as an annual or a monthly subscription or a
- * lifetime purchase (Android: whatever its offerings still hold, the weekly
+ * The paywall: Walkito, as an annual or a monthly subscription or a lifetime
+ * purchase (Android: whatever its offerings still hold, the weekly
  * subscription among them).
  *
- * The plans themselves are the third step (`plans-step.tsx`, BitePal's
- * paywall with our mascot): the annual plan leads and is chosen, and "Show
- * all plans" opens the others under it. Every price is the store's, and each
- * card's largest figure is the amount billed, which App Review Guideline
- * 3.1.2 requires to be the most prominent price on a subscription screen. What
- * it charges, that it renews and where to cancel sit under the button, with
- * Terms of Use, Privacy Policy and Restore Purchases.
+ * Two pages on a first view: her Foot Check with the free week (or how her
+ * plan starts), then the plans (`plans-step.tsx`), every plan on the page
+ * from the start with the annual chosen. Every price is the store's, and each
+ * card's largest figure is the amount billed, which Apple requires to be the
+ * most prominent price on a subscription screen. What it charges, that it
+ * renews and where to cancel sit under the button, with Terms of Use, Privacy
+ * Policy and Restore Purchases; over it, one line says Apple's sheet comes
+ * next and what is paid today.
  *
- * Its one way past without buying is "Not now" (`skipPaywall`), which appears
- * three seconds after "Show all plans" and leads to the one-time trial offer
- * on this same screen (`OfferPage`), never into the app. The top padding
+ * Its one way past without buying is "Not now" (`skipPaywall`), on every
+ * page from the first moment, which leads to Home's free first session, never
+ * into the app. Nothing new or cheaper is offered after it. The top padding
  * comes from the safe-area inset rather than a constant.
  */
 function Paywall({ wall = false }: { wall?: boolean }) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
-  const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
 
@@ -188,8 +186,6 @@ function Paywall({ wall = false }: { wall?: boolean }) {
   /** True from the tap until the store answers. Locks the button rather than
    * letting a second tap open a second transaction. */
   const [busy, setBusy] = useState(false);
-  /** How tall step two's sheet came out, so the hero keeps its pieces above it. */
-  const [sheetHeight, setSheetHeight] = useState(0);
   /**
    * The one line the store gets to say, for both buying and restoring.
    *
@@ -207,6 +203,9 @@ function Paywall({ wall = false }: { wall?: boolean }) {
   const [celebrating, setCelebrating] = useState<'purchased' | 'restored' | null>(null);
   /** "What stopped you?" is up, for the plan whose sheet was closed. */
   const [asking, setAsking] = useState<PaywallPeriod | null>(null);
+  /** A plan already on the page, brought back into view after "It costs too
+   * much" (see `answered` below). */
+  const [reveal, setReveal] = useState<{ kind: PaywallPeriod; at: number } | null>(null);
 
   /**
    * Which offering to sell, by name.
@@ -226,9 +225,13 @@ function Paywall({ wall = false }: { wall?: boolean }) {
   const boosted = winback;
 
   /**
-   * Which step is on screen: how the plan starts, how a day works, then the
+   * Which step is on screen: the free week (or how the plan starts), then the
    * plans. Only on a first, full-price view, and only once on this phone (see
    * `introSeen`); every other view opens on the plans.
+   *
+   * Numbered 1 and 3, as they were when a second screen stood between them
+   * (the reminder, or how a day works), so `paywall_step_viewed` keeps the
+   * plans at step 3 and the funnel reads across the change.
    */
   /**
    * The first session was done before this view (`FirstSession`, or Home's
@@ -239,18 +242,20 @@ function Paywall({ wall = false }: { wall?: boolean }) {
    */
   const [afterSession] = useState(() => !boosted && (firstSession() === 'done' || (wall && sessions().length > 0)));
   const [flow] = useState(() => !wall && !boosted && !afterSession && !introSeen());
-  const [step, setStep] = useState<1 | 2 | 3>(flow ? 1 : 3);
-  // Android's back button walks the steps back. On the first one it does what
-  // it always did on the gate.
+  const [step, setStep] = useState<1 | 3>(flow ? 1 : 3);
+  // Android's back button goes back from the plans to the first step. On the
+  // first one it does what it always did on the gate.
   useEffect(() => {
     if (!flow || step === 1) return;
     const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
-      setStep((current) => (current === 3 ? 2 : 1));
+      setStep(1);
       return true;
     });
     return () => subscription.remove();
   }, [flow, step]);
-  const next = () => setStep((current) => (current === 1 ? 2 : 3));
+  const next = () => setStep(3);
+  /** The step bar's segment for a step: the plans are the second. */
+  const toStep = (segment: number) => setStep(segment <= 1 ? 1 : 3);
 
   /**
    * The free week, on a first view, for somebody a Meta ad brought (the
@@ -263,15 +268,13 @@ function Paywall({ wall = false }: { wall?: boolean }) {
    */
   const trialAudience = useTrialOnFirstPaywall();
   const [sellsTrial, setSellsTrial] = useState(trialAudience);
-  /** How much of the Foot Check the onboarding measured: read once. */
-  const [footCheck] = useState(footCheckMeasured);
   useEffect(() => {
     if (step !== 3) setSellsTrial(trialAudience);
   }, [step, trialAudience]);
   const offeringId = boosted ? OFFERINGS.offer : sellsTrial ? OFFERINGS.trial : OFFERINGS.standard;
 
   /**
-   * Which story the two steps before the plans tell: the free week
+   * Which story the step before the plans tells: the free week
    * (`trial-intro.tsx`) or how the plan starts (`offer-intro.tsx`).
    *
    * The free week only once the store has said this customer gets one, so
@@ -519,7 +522,16 @@ function Paywall({ wall = false }: { wall?: boolean }) {
     if (step !== 3 || !loaded || plansShown.current) return;
     plansShown.current = true;
     track('paywall_plans_shown', { offering: offeringId, trial: trialDays(annualPlan) != null });
+    // Meta's standard "View content", through AppsFlyer (production builds
+    // only, by the wrapper): the price page was seen. Once per visit, with
+    // neutral words only, never a price or anything about her feet.
+    logAppsFlyerEvent('af_content_view', {
+      af_content_type: 'subscription',
+      af_content_id: annualPlan?.product.id ?? 'annual',
+    });
   }, [step, loaded, offeringId, annualPlan]);
+  /** Meta's "Initiate checkout" has been sent on this visit. */
+  const checkoutLogged = useRef(false);
 
   /**
    * The annual plan, which the store answered about and had nothing for.
@@ -532,30 +544,28 @@ function Paywall({ wall = false }: { wall?: boolean }) {
    * the store has none of them.
    */
   const annualMissing = loaded && annualPlan == null;
-  /** The plans "Show all plans" opens. Before the store answers, the ones iOS
-   * sells, with no figure yet; after, the ones it really has. */
-  const extraKinds = EXTRA_PLANS.filter((kind) => (loaded ? plans[kind] != null : kind !== 'weekly'));
   /**
-   * The monthly stands under the annual from the start, the two as a choice:
-   * a year is a lot to agree to on a first day, and a month at its own price,
-   * with no trial to distrust, is the other honest way in. The weekly takes
-   * its place only where the store has no monthly (Android's first line-up).
-   * Never on the comeback view, which is about one price.
+   * Every plan on the page, from the start, in `PLAN_ORDER`: the annual
+   * (always, greyed if the store has none), the monthly, the lifetime. A year
+   * is a lot to agree to on a first day, and a month or one payment are the
+   * other honest ways in, so neither waits behind "Show all plans". Before
+   * the store answers, the ones iOS sells, with no figure yet; after, the
+   * ones it really has. The weekly only where the store has no monthly
+   * (Android's first line-up).
    */
-  const secondKind: PaywallPeriod | null = boosted
-    ? null
-    : plans.monthly != null
-      ? 'monthly'
-      : plans.weekly != null
-        ? 'weekly'
-        : null;
+  const kinds = PLAN_ORDER.filter((kind) => {
+    if (kind === 'annual') return true;
+    if (kind === 'weekly') return loaded && plans.weekly != null && plans.monthly == null;
+    return loaded ? plans[kind] != null : true;
+  });
+  const others = kinds.filter((kind) => kind !== 'annual');
 
   useEffect(() => {
     if (!loaded) return;
     // Never leave the selection on a plan that cannot be bought.
-    if (tier === 'annual' && annualMissing && extraKinds.length > 0) setTier(extraKinds[0]);
+    if (tier === 'annual' && annualMissing && others.length > 0) setTier(others[0]);
     else if (tier !== 'annual' && plans[tier] == null && !annualMissing) setTier('annual');
-    // `plans` and `extraKinds` follow `shelf`, which only changes with `loaded`
+    // `plans` and `others` follow `shelf`, which only changes with `loaded`
     // or a fresh answer; the tier is what this watches.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded, annualMissing, tier, shelf]);
@@ -712,6 +722,16 @@ function Paywall({ wall = false }: { wall?: boolean }) {
       setNotice(t(loaded ? 'offer.planUnavailable' : 'offer.storeUnreachable'));
       return;
     }
+    // Meta's standard "Initiate checkout", through AppsFlyer: the first buy
+    // tap of this visit that reaches the store. The plan's kind and product,
+    // nothing else: no price, no revenue (RevenueCat reports that).
+    if (!checkoutLogged.current) {
+      checkoutLogged.current = true;
+      logAppsFlyerEvent('af_initiated_checkout', {
+        af_content_type: plan.isLifetime ? 'lifetime' : 'subscription',
+        af_content_id: plan.product.id,
+      });
+    }
     const result = await purchases.buy(plan);
     setBusy(false);
 
@@ -806,6 +826,35 @@ function Paywall({ wall = false }: { wall?: boolean }) {
   /** What the store said last, or that it could not be reached. */
   const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
 
+  /** The line over the button: whose sheet comes next, and what is paid
+   * today, from the chosen plan's store product. */
+  const today = dueToday(tier, plans[tier]);
+  const confirm =
+    today == null
+      ? null
+      : t(Platform.OS === 'android' ? 'offer.plans.confirmGoogle' : 'offer.plans.confirmApple', { amount: today });
+
+  /**
+   * "What stopped you?" answered. Recorded, and nothing new is offered: for
+   * "It costs too much" the page points back to the cheaper ways in it already
+   * showed, the monthly's lower first month (when this customer can have it)
+   * or the one-time lifetime, by choosing it and bringing it into view. No
+   * new price, no sheet, no timer (Guideline 5.6).
+   */
+  const answered = (reason: CancelReason | null) => {
+    if (asking == null) return;
+    track('purchase_cancel_reason', { reason: reason ?? 'dismissed', plan: asking, offering: offeringId });
+    setAsking(null);
+    if (reason !== 'price') return;
+    const target = (['monthly', 'lifetime'] as const).find(
+      (kind) => kind !== asking && (kind === 'monthly' ? hasIntroMonth(plans.monthly) : plans.lifetime != null),
+    );
+    if (target == null) return;
+    setTier(target);
+    setReveal({ kind: target, at: Date.now() });
+    track('paywall_cancel_reminded', { plan: target });
+  };
+
   // One page per step. They cross-fade in place over each other (`STEP_IN`,
   // `STEP_OUT` below), with the bar and the button where they were, so moving
   // on reads as the page changing under them rather than a new screen.
@@ -815,22 +864,18 @@ function Paywall({ wall = false }: { wall?: boolean }) {
     // nothing promised under it.
     page = (
       <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={step} />
+        <StepBar step={1} />
       </View>
     );
   } else if (step !== 3 && story === 'trial' && freeDays != null && annualPlan != null) {
     page = (
       <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={step} onSelect={(target) => setStep(target as 1 | 2 | 3)} />
+        <StepBar step={1} />
         <View style={styles.trialBody}>
-          {step === 1 ? (
-            <TrialGift name={profileName} days={freeDays} footCheck={footCheck} />
-          ) : (
-            <TrialReminder days={freeDays} price={annualPlan.priceString} />
-          )}
+          <TrialGift name={profileName} days={freeDays} />
         </View>
         <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-          <TrialNext first={step === 1} onPress={next} />
+          <TrialNext onPress={next} />
           <NotNow onPress={skip} />
           {/* What the week costs after it, before anybody is asked to go on:
               the plans' own line, in the days the headline counts in. */}
@@ -845,32 +890,10 @@ function Paywall({ wall = false }: { wall?: boolean }) {
         </View>
       </View>
     );
-  } else if (step === 2) {
-    page = (
-      <View style={styles.full}>
-        <StatusBar style="light" />
-        <OfferHero top={insets.top + 52} covered={sheetHeight} />
-        <View style={[styles.skyBar, { paddingTop: insets.top + 16 }]}>
-          <StepBar step={2} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} />
-        </View>
-        {/* The step's copy as a sheet over the hero, the button at its foot. */}
-        <Animated.View
-          onLayout={(event) => setSheetHeight(Math.round(event.nativeEvent.layout.height))}
-          style={[
-            styles.sheet,
-            { backgroundColor: colors.background, paddingBottom: Math.max(insets.bottom, 16) + 4 },
-          ]}>
-          <View style={[styles.grabber, { backgroundColor: meter.track }]} />
-          <IntroHow />
-          <IntroNext onPress={next} />
-          <NotNow onPress={skip} />
-        </Animated.View>
-      </View>
-    );
   } else if (step === 1) {
     page = (
       <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={step} onSelect={(target) => setStep(target as 1 | 2 | 3)} />
+        <StepBar step={1} />
         <ScrollView
           style={styles.body}
           contentContainerStyle={styles.introContent}
@@ -884,7 +907,6 @@ function Paywall({ wall = false }: { wall?: boolean }) {
               minutes={settings.defaultMinutes}
               daysPerWeek={settings.daysPerWeek}
               checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
-              footCheck={footCheck}
             />
           </Animated.View>
         </ScrollView>
@@ -903,11 +925,8 @@ function Paywall({ wall = false }: { wall?: boolean }) {
     });
     page = (
       <PlansStep
-        stepBar={flow ? <StepBar step={3} onSky onSelect={(target) => setStep(target as 1 | 2 | 3)} /> : undefined}
-        lead={row('annual')}
-        second={secondKind != null ? row(secondKind) : null}
-        // The plan under the annual is not listed again behind "Show all plans".
-        extras={extraKinds.filter((kind) => kind !== secondKind).map(row)}
+        stepBar={flow ? <StepBar step={2} onSelect={toStep} /> : undefined}
+        rows={kinds.map(row)}
         after={
           afterSession
             ? {
@@ -921,11 +940,15 @@ function Paywall({ wall = false }: { wall?: boolean }) {
               }
             : null
         }
+        // Her Foot Check, when no screen before this one has shown it.
+        result={!flow}
         selected={tier}
         onSelect={select}
-        leadBadge={offerShown ? t('offer.comebackBadge') : t('offer.plans.mostPopular')}
+        leadBadge={offerShown ? t('offer.comebackBadge') : null}
         comeback={offerShown}
         name={profileName.length > 0 ? profileName : null}
+        confirm={confirm}
+        reveal={reveal}
         busy={busy}
         onBuy={start}
         notice={shownNotice}
@@ -945,23 +968,16 @@ function Paywall({ wall = false }: { wall?: boolean }) {
               }
             : undefined
         }
-        covered={busy || celebrating != null}
-        onExpand={() => track('paywall_plans_expanded')}
+        covered={busy || celebrating != null || asking != null}
         onSkip={wall ? undefined : skip}>
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
           as nothing having happened. */}
-        <CancelQuestion
-          visible={asking != null}
-          onAnswer={(reason) => {
-            if (asking != null) track('purchase_cancel_reason', { reason: reason ?? 'dismissed', plan: asking, offering: offeringId });
-            setAsking(null);
-          }}
-        />
+        <CancelQuestion visible={asking != null} onAnswer={answered} />
         <CelebrationSheet
           visible={celebrating != null}
           title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
-          headline={celebrating === 'restored' ? undefined : t('offer.plans.name')}
+          headline={celebrating === 'restored' ? undefined : t('offer.plans.brand')}
           headlineColor={PRIMARY}
           blurb={t(celebrating === 'restored' ? 'offer.restoredBlurb' : 'offer.purchasedBlurb')}
           ctaLabel={t('offer.start')}
@@ -1028,24 +1044,9 @@ const styles = StyleSheet.create({
     paddingTop: 4,
     gap: 10,
   },
-  /** The two steps before the plans: room under the bar. */
+  /** The step before the plans: room under the bar. */
   introContent: { paddingTop: 22, paddingBottom: 16 },
-  /** The free week's two steps: one screenful each, nothing to scroll. */
+  /** The free week's step: one screenful, scrolling only at large text. */
   trialBody: { flex: 1, paddingTop: 18, paddingBottom: 12 },
-  /** Step two: the hero edge to edge, under the bar and the sheet. */
   full: { flex: 1 },
-  skyBar: { paddingHorizontal: 22 },
-  sheet: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    paddingTop: 10,
-    paddingHorizontal: 22,
-    gap: 20,
-    borderTopLeftRadius: 36,
-    borderTopRightRadius: 36,
-    borderCurve: 'continuous',
-  },
-  grabber: { alignSelf: 'center', width: 40, height: 5, borderRadius: 2.5, marginBottom: -6 },
 });

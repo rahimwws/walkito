@@ -238,6 +238,13 @@ export const OFFER_EN = {
   'offer.plans.cancel': 'Cancel anytime in Settings.',
   'offer.plans.cancelAndroid': 'Cancel anytime in Google Play.',
   'offer.plans.oneTime': 'One payment, no subscription.',
+  'offer.plans.aboutPerMonth': 'About {perMonth} a month',
+  'offer.plans.introMonthNote': 'First month {intro}, then {price} a month',
+  'offer.plans.firstMonth': 'first month',
+  'offer.plans.renewsIntroMonth': '{intro} for the first month, then {price} per month.',
+  'offer.plans.payOnce': 'Pay once, no subscription',
+  'offer.plans.confirmApple': 'Next, Apple asks you to confirm. You pay {amount} today.',
+  'offer.plans.confirmGoogle': 'Next, Google Play asks you to confirm. You pay {amount} today.',
   /** At the very bottom, three seconds after "Show all plans". It leads to
    * the one-time trial offer, never into the app: say nothing that implies
    * the app can be used without Plus. */
@@ -251,6 +258,9 @@ export const OFFER_EN = {
   'offer.cancel.price': 'It costs too much',
   'offer.cancel.charge': 'I wasn’t sure when I’d be charged',
   'offer.cancel.try': 'I want to try it first',
+  'offer.cancel.password': 'I don’t know my Apple ID password',
+  'offer.cancel.passwordAndroid': 'I don’t know my Google account password',
+  'offer.cancel.ask': 'I want to ask someone first',
   'offer.cancel.other': 'Something else',
   // The first session before the paywall (`FirstSession`), "How did that
   // feel?" after it, and the plans that carry on from it. Brackets in the

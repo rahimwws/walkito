@@ -16,8 +16,10 @@ const RADIO = 22;
 
 export type PlanCardProps = {
   copy: PlanCopy;
-  /** The pill at the card's top: "Most popular", "Comeback price". */
+  /** The pill at the card's top: "Comeback price". */
   badge?: string | null;
+  /** The quieter card under the subscriptions: the lifetime plan. */
+  small?: boolean;
   selected: boolean;
   /** A radio by the title, once there is more than one plan to choose from:
    * the choice is then said by more than the colour. */
@@ -38,7 +40,7 @@ export type PlanCardProps = {
  * Until the store answers there is no figure: a quiet bar holds its place,
  * so nothing is quoted that the store has not said.
  */
-export function PlanCard({ copy, badge, selected, radio, disabled = false, onPress, children }: PlanCardProps) {
+export function PlanCard({ copy, badge, small = false, selected, radio, disabled = false, onPress, children }: PlanCardProps) {
   const { PLUS, SHEET } = usePlansTheme();
   const on = useSharedValue(selected ? 1 : 0);
   useEffect(() => {
@@ -57,7 +59,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
   }));
   const dot = useAnimatedStyle(() => ({ opacity: on.value, transform: [{ scale: 0.5 + 0.5 * on.value }] }));
 
-  const spoken = [copy.title, copy.price != null ? `${copy.price} ${copy.caption}` : null, copy.note, badge]
+  const spoken = [copy.title, copy.price != null ? `${copy.price} ${copy.caption}` : null, copy.note, copy.perMonth, badge]
     .filter((part): part is string => part != null && part !== '')
     .join(', ');
 
@@ -76,7 +78,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
       accessibilityRole="radio"
       accessibilityLabel={spoken}
       accessibilityState={{ checked: selected, selected }}
-      contentStyle={[styles.face, disabled && styles.dimmed]}>
+      contentStyle={[styles.face, small && styles.faceSmall, disabled && styles.dimmed]}>
       {badge != null && badge !== '' && (
         <View style={[styles.badge, { backgroundColor: PLUS.accent }]}>
           <Text style={[styles.badgeText, { color: PLUS.onAccent }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
@@ -92,7 +94,7 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
                 <Animated.View style={[styles.radioDot, { backgroundColor: PLUS.accent }, dot]} />
               </Animated.View>
             )}
-            <Text style={[styles.title, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.4}>
+            <Text style={[small ? styles.titleSmall : styles.title, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.4}>
               {copy.title}
             </Text>
           </View>
@@ -101,10 +103,17 @@ export function PlanCard({ copy, badge, selected, radio, disabled = false, onPre
               {copy.note}
             </Text>
           )}
+          {/* The year over a month: under the title, smaller than the billed
+              price on the right, which stays the most prominent figure. */}
+          {copy.perMonth != null && (
+            <Text style={[styles.perMonth, { color: SHEET.ink }]} maxFontSizeMultiplier={1.4}>
+              {copy.perMonth}
+            </Text>
+          )}
         </View>
         <View style={styles.right}>
           {copy.price != null ? (
-            <Text style={[styles.price, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+            <Text style={[small ? styles.priceSmall : styles.price, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
               {copy.price}
             </Text>
           ) : (
@@ -127,6 +136,7 @@ const styles = StyleSheet.create({
     paddingBottom: 14,
     gap: 8,
   },
+  faceSmall: { paddingTop: 11, paddingBottom: 11 },
   dimmed: { opacity: 0.5 },
   badge: {
     alignSelf: 'flex-start',
@@ -145,9 +155,12 @@ const styles = StyleSheet.create({
   left: { flex: 1, gap: 3 },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   title: fonts.heavy(21, -0.4),
+  titleSmall: fonts.heavy(18, -0.3),
   note: { ...fonts.semibold(14), lineHeight: 18 },
+  perMonth: { ...fonts.bold(16, -0.2), lineHeight: 21 },
   right: { alignItems: 'flex-end', gap: 1 },
   price: fonts.heavy(23, -0.4),
+  priceSmall: fonts.heavy(19, -0.3),
   pricePending: { width: 72, height: 22, borderRadius: 8, marginVertical: 3 },
   caption: fonts.semibold(13),
   radio: {

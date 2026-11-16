@@ -1,7 +1,7 @@
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -17,13 +17,22 @@ import { useT, type Key } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 
-export type CancelReason = 'subscription' | 'price' | 'charge' | 'try' | 'other';
+/**
+ * The answers, by their analytics values (never renamed: each is a series in
+ * `purchase_cancel_reason`). `password` and `ask` were added for this
+ * audience: an Apple ID password she does not have to hand, or a purchase she
+ * talks over with somebody first, are reasons a sheet gets closed that the
+ * first five did not cover.
+ */
+export type CancelReason = 'subscription' | 'price' | 'charge' | 'try' | 'password' | 'ask' | 'other';
 
 const REASONS: readonly { reason: CancelReason; label: Key }[] = [
   { reason: 'subscription', label: 'offer.cancel.subscription' },
   { reason: 'price', label: 'offer.cancel.price' },
   { reason: 'charge', label: 'offer.cancel.charge' },
   { reason: 'try', label: 'offer.cancel.try' },
+  { reason: 'password', label: Platform.OS === 'android' ? 'offer.cancel.passwordAndroid' : 'offer.cancel.password' },
+  { reason: 'ask', label: 'offer.cancel.ask' },
   { reason: 'other', label: 'offer.cancel.other' },
 ];
 
@@ -56,7 +65,9 @@ const RISE = 44;
  * payment sheet and backed out of it: nothing was taken. The question under
  * it is the only way to learn why the sheet was closed, which the store never
  * says. An answer is recorded and the sheet goes; it changes no price and
- * offers nothing (Guideline 5.6), and tapping away is an answer too.
+ * offers nothing new (Guideline 5.6), and tapping away is an answer too. For
+ * "It costs too much" the paywall under it points back to a cheaper way in it
+ * was already showing (`OfferPage`), and that is all.
  */
 export function CancelQuestion({
   visible,
@@ -132,6 +143,7 @@ export function CancelQuestion({
                 {t('offer.cancel.question')}
               </Text>
             </View>
+            <ScrollView style={styles.list} contentContainerStyle={styles.rows} bounces={false} showsVerticalScrollIndicator={false}>
             {REASONS.map(({ reason, label }) => (
               <Pressable
                 key={reason}
@@ -146,6 +158,7 @@ export function CancelQuestion({
                 </Text>
               </Pressable>
             ))}
+            </ScrollView>
           </View>
         </Animated.View>
       </View>
@@ -156,7 +169,9 @@ export function CancelQuestion({
 const styles = StyleSheet.create({
   wash: { backgroundColor: 'rgba(0,0,0,0.18)' },
   dock: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'flex-end', paddingHorizontal: 10 },
-  card: { borderRadius: 36, borderCurve: 'continuous', padding: 16, gap: 8 },
+  card: { borderRadius: 36, borderCurve: 'continuous', padding: 16, gap: 8, maxHeight: '85%' },
+  list: { flexGrow: 0 },
+  rows: { gap: 8 },
   head: { alignItems: 'center', gap: 4, paddingTop: 10, paddingBottom: 12, paddingHorizontal: 8 },
   title: { ...fonts.heavy(24, -0.5), textAlign: 'center' },
   question: { ...fonts.semibold(17), textAlign: 'center' },
