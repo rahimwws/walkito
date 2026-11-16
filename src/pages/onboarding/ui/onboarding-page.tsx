@@ -1592,7 +1592,7 @@ export function OnboardingPage() {
                   plan={lead?.plan ?? null}
                   ankle={heelSaw != null ? t(heelSaw.row) : null}
                   toe={toeArch != null ? t(toeArch.saw) : null}
-                  canMeasure={canMeasure === true}
+                  canMeasure={canMeasure === true && heelAsked(answers)}
                 />
               )}
 
