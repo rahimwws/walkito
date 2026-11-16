@@ -8,6 +8,7 @@ import {
   PLAN_KIND,
   markDelivered,
   onAppOpen,
+  reportNotificationPermission,
   setAudience,
 } from '@/entities/notifications';
 import { useIntake } from '@/entities/profile';
@@ -47,10 +48,15 @@ export function useNotificationScheduler(): void {
     // and mark every day "opened", which silences the evening check-in and
     // disarms the backoff entirely. `!== 'background'` rather than `=== 'active'`
     // because a cold launch can still read `unknown` or `inactive` here.
-    if (AppState.currentState !== 'background') void onAppOpen();
+    if (AppState.currentState !== 'background') {
+      void onAppOpen();
+      void reportNotificationPermission();
+    }
 
     const app = AppState.addEventListener('change', (next) => {
-      if (next === 'active') void onAppOpen();
+      if (next !== 'active') return;
+      void onAppOpen();
+      void reportNotificationPermission();
     });
 
     /**

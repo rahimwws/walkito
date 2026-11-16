@@ -66,6 +66,7 @@ import {
   PLAN_META,
   exerciseById,
   logPain,
+  planSettings,
   seedPlanSettings,
   startProgram,
   todayDayNumber,
@@ -128,6 +129,7 @@ import {
 import { loadQuestionForRole, withName } from "../model/personalise";
 import { PLANS, recommendedIndex } from "../model/plans";
 import { primaryPain } from "../model/reflection";
+import { webLeadSeated } from "../model/web-lead";
 import { painMove } from "../model/first-week-deck";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
@@ -387,6 +389,9 @@ export function OnboardingPage() {
   const ctaSquash = useSharedValue(0);
   /** "Already have an account?" */
   const [signIn, setSignIn] = useState(false);
+  /** Whether a web buyer's ad promised a seated start, asked for as soon as
+   * she signs in, so it is usually back before the plan is made. */
+  const webSeated = useRef<Promise<boolean> | null>(null);
   /** Whether this phone can measure the ankle bend: the result says where. */
   const canMeasure = useCanMeasure();
   /** The habit's time wheel, and a clip open full screen: both cover the
@@ -1172,7 +1177,13 @@ export function OnboardingPage() {
     const intake = intakeFrom(answers, miniTestAnswers);
     saveIntake(intake);
     startProgram(startingPlan(intake, answers));
-    seedPlanSettings(planSettingsFrom(answers, reminder, miniTestAnswers));
+    const settings = seedPlanSettings(planSettingsFrom(answers, reminder, miniTestAnswers));
+    // A web buyer from a seated ad (see `web-lead.ts`). Not waited on: the
+    // read can be slow or fail, and the plan is rebuilt when it answers.
+    if (settings.seatedStart !== true)
+      void (webSeated.current ?? webLeadSeated()).then((seated) => {
+        if (seated && planSettings().seatedStart !== true) seedPlanSettings({ seatedStart: true });
+      });
     setBilateral(intake.side === "both");
     if (!painless && intake.morningPain != null)
       logPain(todayDayNumber(), intake.morningPain, painZones);
@@ -1697,6 +1708,7 @@ export function OnboardingPage() {
         onClose={() => setSignIn(false)}
         onSignedIn={({ email }) => {
           setSignIn(false);
+          webSeated.current = webLeadSeated();
           if (email != null) {
             setProfileEmail(email, "onboarding");
             track("sign_in_completed", {

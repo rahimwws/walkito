@@ -2,7 +2,7 @@ import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
 
-import { track } from '@/shared/lib/analytics';
+import { setPerson, track, type NotificationsPermission } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 
@@ -154,9 +154,38 @@ export async function requestNotificationAccess(): Promise<boolean> {
       ios: { allowAlert: true, allowSound: true, allowBadge: false },
     });
     track('notifications_answered', { granted: result.granted });
+    reportPermission(permissionOf(result));
     return result.granted;
   } catch {
     return false;
+  }
+}
+
+function permissionOf({ granted, status }: Notifications.NotificationPermissionsStatus): NotificationsPermission {
+  if (granted) return 'granted';
+  return status === 'denied' ? 'denied' : 'undetermined';
+}
+
+/** What the person property was last set to in this run of the app. */
+let reported: NotificationsPermission | null = null;
+
+function reportPermission(permission: NotificationsPermission): void {
+  if (permission === reported) return;
+  reported = permission;
+  setPerson({ notifications_permission: permission });
+}
+
+/**
+ * Puts the system's current answer on the PostHog person
+ * (`notifications_permission`). Called at every return to the foreground,
+ * because it can be changed in iOS Settings without the app knowing; sent
+ * once per launch and again only when it changes.
+ */
+export async function reportNotificationPermission(): Promise<void> {
+  try {
+    reportPermission(permissionOf(await Notifications.getPermissionsAsync()));
+  } catch {
+    // No answer to report: leave the property as it was.
   }
 }
 
