@@ -48,7 +48,9 @@ export type ProfileFacts = {
    * For the email scheduler, written after every successful push (see
    * `markSynced`): when the app was last brought forward, and the days the
    * notification window has a session or a retest nudge laid for. Handed in,
-   * because the window belongs to the notifications entity.
+   * because the window belongs to the notifications entity. `lastOpenAt` null
+   * says nobody has had the app in front in this run of it (a launch iOS made
+   * in the background): the stamp on the server is then left alone.
    */
   lastOpenAt?: number | null;
   pushSessionDates?: readonly string[];
@@ -284,7 +286,7 @@ async function markSynced(db: NonNullable<typeof supabase>, uid: string, facts: 
     .from('profiles')
     .update({
       last_synced_at: new Date(now).toISOString(),
-      last_app_open_at: new Date(facts.lastOpenAt ?? now).toISOString(),
+      ...(facts.lastOpenAt === null ? {} : { last_app_open_at: new Date(facts.lastOpenAt ?? now).toISOString() }),
       push_session_dates: [...(facts.pushSessionDates ?? [])],
       push_test_dates: [...(facts.pushTestDates ?? [])],
     })

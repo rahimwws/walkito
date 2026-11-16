@@ -1,7 +1,7 @@
 import { requireOptionalNativeModule } from 'expo';
 import { AppState, Platform } from 'react-native';
 
-import { todayOnFeetHours } from '@/entities/health';
+import { motionReadable, todayOnFeetHours } from '@/entities/health';
 import { maybeSendOnFeetCheck } from '@/entities/notifications';
 
 /**
@@ -46,13 +46,30 @@ export function defineOnFeetTask(): void {
   }
 }
 
-/** Asks iOS to run the task from now on. Idempotent. */
+/**
+ * Asks iOS to run the task from now on, for somebody it can do something
+ * for, and takes it back from everybody else. Idempotent.
+ *
+ * The task reads CoreMotion and nothing else, so it is only for a phone that
+ * allows Motion & Fitness (asked once, of somebody Health gives no steps:
+ * `askMotionIfHealthIsSilent`). It used to be registered for every iPhone at
+ * every launch, the onboarding's first screen included, and iOS then started
+ * the app in the background several times a day to read nothing: each of
+ * those launches mounted the whole tree, and analytics counted it as a
+ * person opening the app. Whoever was registered that way is unregistered the
+ * next time this runs, which a background launch does too.
+ */
 export async function registerOnFeetTask(): Promise<void> {
   if (!linked()) return;
   try {
     const TaskManager = require('expo-task-manager') as typeof import('expo-task-manager');
     const BackgroundTask = require('expo-background-task') as typeof import('expo-background-task');
-    if (await TaskManager.isTaskRegisteredAsync(ON_FEET_TASK)) return;
+    const registered = await TaskManager.isTaskRegisteredAsync(ON_FEET_TASK);
+    if (!(await motionReadable())) {
+      if (registered) await BackgroundTask.unregisterTaskAsync(ON_FEET_TASK);
+      return;
+    }
+    if (registered) return;
     if ((await BackgroundTask.getStatusAsync()) !== BackgroundTask.BackgroundTaskStatus.Available) return;
     await BackgroundTask.registerTaskAsync(ON_FEET_TASK, { minimumInterval: MINIMUM_INTERVAL });
   } catch {

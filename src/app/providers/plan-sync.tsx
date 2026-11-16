@@ -16,8 +16,21 @@ import { onPlanPushRequested, pushPlan, restorePlan, type SyncOutcome } from '@/
  */
 const DEBOUNCE_MS = 1000;
 
-/** When the app last came forward: the launch, then every return to the foreground. */
-let lastOpenAt = Date.now();
+/** When the app last came forward: the launch, then every return to the
+ * foreground. Null for a launch iOS made in the background until somebody
+ * brings it forward: that is not an open, and the server's stamp (which the
+ * email scheduler reads as "last seen") is then left as it was. */
+let lastOpenAt: number | null = AppState.currentState === 'background' ? null : Date.now();
+
+/**
+ * Whether somebody has had the app in front in this run of it. Looks at the
+ * state again each time: the first `active` can come before anything here
+ * listens.
+ */
+function opened(): boolean {
+  if (lastOpenAt == null && AppState.currentState !== 'background') lastOpenAt = Date.now();
+  return lastOpenAt != null;
+}
 
 function facts() {
   const intake = getIntake();
@@ -62,18 +75,28 @@ function afterPush(outcome: SyncOutcome): SyncOutcome {
  * Pushes run one at a time with one queued behind (see `pushPlan`), so these
  * overlapping is cheap. Nothing waits on any of it and nothing reports it: the
  * device is the record, the server is the copy.
+ *
+ * None of it on a launch iOS made in the background (HealthKit's delivery,
+ * the on-feet task): nobody was there to write anything, and the restore and
+ * the push went up at every such wake, failing for some (`plan_sync_failed`,
+ * several times a night). Both wait for the app to be brought forward, where
+ * the return to the foreground pushes anyway.
  */
 export function usePlanSync(onboarded: boolean): void {
   const planVersion = usePlanVersion();
   const logsVersion = useLogsVersion();
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const restoring = useRef<Promise<unknown>>(Promise.resolve());
+  const restoring = useRef<Promise<unknown> | null>(null);
+  /** The restore, started once, by the first sync somebody is there for. */
+  const restored = () => (restoring.current ??= restorePlan().catch(() => false));
 
   useEffect(() => {
     if (!onboarded) return;
-    restoring.current = restorePlan().catch(() => false);
+    restoring.current = null;
+    if (opened()) void restored();
     const pushNow = () => {
-      void restoring.current
+      if (!opened()) return;
+      void restored()
         .then(() => pushPlan(facts(), { urgent: true }))
         .then(afterPush)
         .catch(() => 'failed');
@@ -93,7 +116,8 @@ export function usePlanSync(onboarded: boolean): void {
     if (!onboarded) return;
     if (timer.current != null) clearTimeout(timer.current);
     timer.current = setTimeout(() => {
-      void restoring.current
+      if (!opened()) return;
+      void restored()
         .then(() => pushPlan(facts()))
         .then(afterPush)
         .catch(() => 'failed');

@@ -4,6 +4,7 @@ import { logObserveEvent } from '@/shared/lib/observe';
 import { kv } from '@/shared/lib/storage';
 
 import type { AnalyticsEvent, AnalyticsEvents } from './events';
+import { createHold } from './held';
 
 /**
  * Product analytics, or nothing at all.
@@ -54,11 +55,65 @@ function internal(): { is_internal?: true } {
 
 export function markInternal(on: boolean): void {
   kv.set(INTERNAL_KEY, on);
-  const ph = posthog();
-  if (ph == null) return;
-  if (on) ph.register({ is_internal: true });
-  else void ph.unregister('is_internal');
-  setPerson({ is_internal: on });
+  whenSeen(() => {
+    const ph = posthog();
+    if (ph == null) return;
+    if (on) ph.register({ is_internal: true });
+    else void ph.unregister('is_internal');
+    setPerson({ is_internal: on });
+  });
+}
+
+/**
+ * Nothing is sent, and the client is not even made, until the app has been
+ * in front once in this run of the process (`held.ts` says why).
+ *
+ * The client matters as much as the events: PostHog captures "Application
+ * Opened" the moment it is constructed, whatever state the app is in, and
+ * "Application Became Active" only on a later change. A launch iOS made in
+ * the background (the on-feet task, HealthKit's hourly delivery) therefore
+ * read as an open with no activation, once per wake.
+ *
+ * "In front" is anything but `background`, as the notification scheduler and
+ * the review count judge it: a cold start can still read `inactive` or
+ * `unknown` when this first runs. From `background` it waits for `active`,
+ * and looks again at every call, so a missed event cannot hold analytics back
+ * for a whole visit.
+ */
+const hold = createHold();
+let appState: typeof import('react-native').AppState | null = null;
+let watching = false;
+
+function seen(): boolean {
+  if (hold.released()) return true;
+  if (!watching) {
+    watching = true;
+    // Under the test runner there is no React Native (its `__DEV__` global is
+    // how the stores that call `track` tell) and no client: nothing to hold.
+    if (typeof __DEV__ === 'undefined') {
+      hold.release();
+      return true;
+    }
+    try {
+      appState = (require('react-native') as typeof import('react-native')).AppState;
+      const subscription = appState.addEventListener('change', (next) => {
+        if (next !== 'active') return;
+        subscription.remove();
+        hold.release();
+      });
+    } catch {
+      hold.release();
+      return true;
+    }
+  }
+  if (appState != null && appState.currentState !== 'background') hold.release();
+  return hold.released();
+}
+
+/** Runs `job` now if somebody has had the app in front, otherwise once they do. */
+function whenSeen(job: () => void): void {
+  seen();
+  hold.run(job);
 }
 
 let client: PostHog | null = null;
@@ -120,10 +175,12 @@ export function track<E extends AnalyticsEvent>(
   ...props: AnalyticsEvents[E] extends Record<string, never> ? [] : [AnalyticsEvents[E]]
 ): void {
   const attributes = props[0] as Record<string, string | number | boolean> | undefined;
-  posthog()?.capture(event, attributes);
-  // And to EAS Observe, so the performance dashboard has the same timeline of
-  // what people were doing. Same names, same health-free properties.
-  logObserveEvent(event, attributes);
+  whenSeen(() => {
+    posthog()?.capture(event, attributes);
+    // And to EAS Observe, so the performance dashboard has the same timeline of
+    // what people were doing. Same names, same health-free properties.
+    logObserveEvent(event, attributes);
+  });
 }
 
 /**
@@ -135,14 +192,16 @@ export function track<E extends AnalyticsEvent>(
  * Everything captured anonymously before this is merged into that person.
  */
 export function identify(id: string): void {
-  const ph = posthog();
-  if (ph == null) return;
-  // The build variant as a *person* property too, not only on events.
-  // RevenueCat's server-side revenue events carry none of the app's super
-  // properties, so the only way PostHog's test-account filter can drop a
-  // development build's test purchases is by the person they land on.
-  if (ph.getDistinctId() !== id) ph.identify(id, { app_variant: variant(), ...internal() });
-  else setPerson({ app_variant: variant(), ...internal() });
+  whenSeen(() => {
+    const ph = posthog();
+    if (ph == null) return;
+    // The build variant as a *person* property too, not only on events.
+    // RevenueCat's server-side revenue events carry none of the app's super
+    // properties, so the only way PostHog's test-account filter can drop a
+    // development build's test purchases is by the person they land on.
+    if (ph.getDistinctId() !== id) ph.identify(id, { app_variant: variant(), ...internal() });
+    else setPerson({ app_variant: variant(), ...internal() });
+  });
 }
 
 /**
@@ -152,7 +211,7 @@ export function identify(id: string): void {
  * `setPersonOnce` for the ones that must never be overwritten.
  */
 export function setPerson(props: Record<string, string | number | boolean>): void {
-  posthog()?.capture('$set', { $set: props });
+  whenSeen(() => posthog()?.capture('$set', { $set: props }));
 }
 
 /**
@@ -162,12 +221,12 @@ export function setPerson(props: Record<string, string | number | boolean>): voi
  * us" is the attribution, and a later edit must not rewrite it.
  */
 export function setPersonOnce(props: Record<string, string | number | boolean>): void {
-  posthog()?.capture('$set', { $set_once: props });
+  whenSeen(() => posthog()?.capture('$set', { $set_once: props }));
 }
 
 /** A route change. The path, not a title: titles are translated. */
 export function screen(path: string): void {
-  void posthog()?.screen(path);
+  whenSeen(() => void posthog()?.screen(path));
 }
 
 /**
@@ -177,6 +236,8 @@ export function screen(path: string): void {
  * app for somebody it could not measure. Reading it records the exposure.
  */
 export function featureFlag(key: string): string | boolean | null {
+  // Nobody in front: no client yet, and null is the control.
+  if (!seen()) return null;
   try {
     return posthog()?.getFeatureFlag(key) ?? null;
   } catch {
@@ -184,7 +245,8 @@ export function featureFlag(key: string): string | boolean | null {
   }
 }
 
-/** The underlying client, for `PostHogProvider`. Null without a key. */
+/** The underlying client, for `PostHogProvider`. Null without a key, and
+ * until the app has been in front (see `seen`). */
 export function analyticsClient(): PostHog | null {
-  return posthog();
+  return seen() ? posthog() : null;
 }
