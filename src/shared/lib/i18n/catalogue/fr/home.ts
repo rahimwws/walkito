@@ -97,6 +97,7 @@ export const HOME_FR = {
   'home.day1.title': 'Jour 1',
   'home.day1.body': 'Deux minutes tout en douceur pour réveiller tes pieds.',
   'home.day1.start': 'Commencer',
+  'home.day1.later': 'Plus tard',
   'home.noPain': 'Pas de douleur aujourd’hui',
   'home.logCheckIn': 'Faire le bilan du jour',
   'home.checkInAgain': 'Refaire le bilan',

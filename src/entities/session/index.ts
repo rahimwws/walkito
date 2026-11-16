@@ -30,6 +30,10 @@ export {
 } from './model/setup';
 export {
   armHomeTour,
+  askForDayOne,
+  dayOneAsked,
+  dropDayOneAsk,
+  useDayOneAsked,
   devRestartHomeTour,
   finishHomeTour,
   homeTourStage,

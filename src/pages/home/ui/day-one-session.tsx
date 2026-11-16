@@ -54,6 +54,7 @@ export function DayOneSession({ run, onClose }: DayOneSessionProps) {
             playlist={run.steps}
             title={t('home.day1.title')}
             free
+            dayOne
             feedback={false}
             onBack={dismiss}
             onComplete={() => {

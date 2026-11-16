@@ -200,6 +200,9 @@ export const OFFER_RU = {
   'widgets.sessionLockedBody':
     'Всё, что вы записали, осталось здесь - читать можно по-прежнему. Чтобы снова заниматься, продолжите с того места, где остановились.',
   'widgets.sessionLockedCta': 'Посмотреть варианты',
+  'widgets.sessionLookingTitle': 'Бесплатное занятие — День 1',
+  'widgets.sessionLookingBody': 'Остальные занятия откроются, когда вы выберете план. Свой план и упражнения можно посмотреть уже сейчас.',
+  'widgets.sessionLookingCta': 'Посмотреть планы',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Ваша цель',

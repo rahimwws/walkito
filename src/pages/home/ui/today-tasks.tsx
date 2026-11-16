@@ -37,6 +37,8 @@ import {
   type TodayReason,
   planReasonLine,
 } from '@/entities/program';
+import { askForPlans, lookingAround } from '@/entities/purchase';
+import { answerLockedPlanTap } from '@/features/home-tour';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
@@ -489,6 +491,7 @@ export function TodayTasks({
             done={dayDone}
             onOpen={() => {
               Haptics.selectionAsync();
+              if (lookingAround()) return askForPlans('test');
               setTesting('take');
             }}
             onResults={
@@ -512,6 +515,9 @@ export function TodayTasks({
               done={isDone(task.id)}
               onOpen={() => {
                 Haptics.selectionAsync();
+                // Looking around without buying: Day 1 while it is ahead,
+                // the plans after it.
+                if (lookingAround()) return answerLockedPlanTap('task');
                 setOpen({ task, day: playerDay(kind, minutes) });
               }}
               // Nothing to untick on a finished day: every row reads done
@@ -522,6 +528,7 @@ export function TodayTasks({
                   ? undefined
                   : () => {
                       Haptics.selectionAsync();
+                      if (lookingAround()) return answerLockedPlanTap('task');
                       record(ticked.includes(task.id) ? ticked.filter((id) => id !== task.id) : [...ticked, task.id]);
                     }
               }
@@ -537,6 +544,7 @@ export function TodayTasks({
           accessibilityRole="button"
           onPress={() => {
             Haptics.selectionAsync();
+            if (lookingAround()) return answerLockedPlanTap('task');
             setShort(playerDay(kind, 2));
           }}
           hitSlop={8}

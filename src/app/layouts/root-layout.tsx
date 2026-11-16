@@ -33,12 +33,19 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { useDevOfferWall } from '@/features/home-tour';
+import { devPreviewOfferWall, useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { endResumeActivities } from '@/pages/onboarding';
 import { PassSetPreview } from '@/widgets/pass-checkout';
 import { SessionDonePreview } from '@/widgets/session-player';
-import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import {
+  closePlans,
+  useAccessLapsed,
+  useBrowsingLapsed,
+  useEntitled,
+  usePaywallSkipped,
+  usePlansAsked,
+} from '@/entities/purchase';
 import {
   armHomeTour,
   useAccountOwed,
@@ -196,16 +203,26 @@ function RootLayoutInner() {
   // otherwise kept and opened once they are. Email links tapped before the
   // onboarding was done open through the second hook too.
   //
-  // Somebody who skipped the paywall gets the tabs too, for what is free: the
-  // "Day 1" card's two-minute session and the Home tour after it
-  // (`tryingOut`). Once the tour is done the offer wall stands over Home
-  // (`OfferWall`) until a purchase, so the rest of the app stays behind it, as
-  // it stayed behind the paywall.
+  // Somebody who skipped the paywall gets the tabs too (`tryingOut`): the
+  // "Day 1" card's two-minute session (or "Later") and the Home tour, then the
+  // app to look around, with every session but Day 1 locked
+  // (`lookingAround`). A locked tap raises the plans over Home (`OfferWall`),
+  // and closing them leaves them where they were.
   const skipped = usePaywallSkipped();
   const tourState = useHomeTourState();
   const tryingOut = onboarded && !entitled && !lapsed && skipped;
   const devWall = useDevOfferWall();
-  const offerWall = (tryingOut && tourState === 'done') || devWall;
+  const plansUp = usePlansAsked();
+  const offerWall = (tryingOut && plansUp) || devWall;
+  // Bought or restored over the plans: down with them, so a later lapse does
+  // not open on them.
+  useEffect(() => {
+    if (!tryingOut) closePlans();
+  }, [tryingOut]);
+  const closeWall = () => {
+    closePlans();
+    devPreviewOfferWall(false);
+  };
   // A skip from before the tour existed has no tour armed: it gets one, or
   // Home would be open with nothing in front of it and no offer after.
   useEffect(() => {
@@ -436,9 +453,9 @@ function RootLayoutInner() {
                   than this whole layout. */}
               <HomeWidgetSync enabled={onboarded} />
               {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} canOffer={homeIsTheirs} />}
-              {/* The offer after the free first run (the day-one session and the
-                  tour), over a blurred Home. */}
-              {(fontsReady || fontError) && <OfferWall visible={offerWall} />}
+              {/* The plans over Home, raised by a locked tap while looking
+                  around without buying. */}
+              {(fontsReady || fontError) && <OfferWall visible={offerWall} onClose={closeWall} />}
               {/* Development only: the end-of-session sheet without finishing a
                   session (`?previewDone`, `?previewDone=stopped`). */}
               {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}

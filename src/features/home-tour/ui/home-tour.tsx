@@ -21,8 +21,10 @@ import {
   homeTourForced,
   homeTourState,
   finishHomeTour,
+  dropDayOneAsk,
   setHomeTourStage,
   setHomeTourStep,
+  useDayOneAsked,
   useHomeTourStage,
   useHomeTourState,
   useHomeTourStep,
@@ -101,14 +103,16 @@ export type HomeTourProps = {
  * the paywall's "Not now".
  *
  * Two halves, one after the other (`HomeTourStage`). First the "Day 1" card
- * over the blurred Home: two easy minutes, started from its one button and
- * played in Home's own sheet, so the first thing done in the app is a win
- * rather than a measurement. Its session finished, the tour: three stops, the
- * last of which ends it. For somebody who skipped the paywall the offer
- * follows (`OfferWall` in the root layout); a buyer is left on Home.
+ * over the blurred Home: two easy minutes, started from its button and played
+ * in Home's own sheet, so the first thing done in the app is a win rather
+ * than a measurement. Its session finished, or passed on with "Later", the
+ * tour: three stops, the last of which ends it. Either way Home is theirs
+ * after it; somebody who skipped the paywall looks around with every session
+ * but Day 1 locked (`lookingAround`).
  *
- * A session closed before its end brings the card back. Neither half has a
- * close: the card's button and the tour's taps are the way through.
+ * A session closed before its end brings the card back. The card comes back
+ * too, after the tour, when Day 1 is asked for again (`askForDayOne`: the
+ * plan's session or a task tapped while it is still ahead, or a reminder).
  */
 export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps) {
   const state = useHomeTourState();
@@ -137,13 +141,21 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
 
   const gone = useGoneAfter(sessionOpen, SHEET_GONE_MS);
   const clear = visible && armed && gone;
+  const asked = useDayOneAsked() && !armed;
+
+  const later = () => {
+    track('day1_session_later', { from: asked ? 'asked' : 'first_run' });
+    if (asked) dropDayOneAsk();
+    else setHomeTourStage('tour');
+  };
 
   return (
     <>
       <DayOneCard
-        visible={clear && stage === 'day1'}
+        visible={(clear && stage === 'day1') || (visible && gone && asked)}
         sessionOpen={sessionOpen}
         onStart={onStartDayOne}
+        onLater={later}
       />
       <TourStops visible={clear && stage === 'tour'} />
     </>

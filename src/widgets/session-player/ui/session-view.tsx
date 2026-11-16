@@ -62,7 +62,7 @@ import {
   type TimelineReading,
 } from '@/entities/program';
 import { useIntake } from '@/entities/profile';
-import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
+import { askForPlans, clearBrowsingLapsed, useLookingAround, useSessionsLocked } from '@/entities/purchase';
 import { PRIMARY, WIDE_CLIPS, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
@@ -456,6 +456,12 @@ export type SessionViewProps = {
    */
   free?: boolean;
   /**
+   * Day 1's two minutes: the one session open to somebody looking around
+   * without buying (`lookingAround`), who has every other one locked, the
+   * free routines included.
+   */
+  dayOne?: boolean;
+  /**
    * The moves to run, when they are not the day's own.
    *
    * Home opens this player for a single task off its list, and that task is one
@@ -507,11 +513,14 @@ export type SessionViewProps = {
 /**
  * The one gate on starting a session.
  *
- * Here rather than at the three screens that open a session, because there is
- * no fourth entry point to forget and no way for two of them to disagree. It
- * only ever closes for one person: somebody whose paid access ran out and who
- * answered the expiry screen with "Not now". They keep every screen that reads
- * their history; this is the single thing that costs something to provide.
+ * Here rather than at the screens that open a session, because there is no
+ * entry point to forget and no way for two of them to disagree. It closes for
+ * two people. Somebody whose paid access ran out and who answered the expiry
+ * screen with "Not now": they keep every screen that reads their history, and
+ * this is the single thing that costs something to provide. And somebody who
+ * skipped the paywall and is looking around (`lookingAround`): Day 1 is open
+ * to them (`dayOne`), nothing else. The screens that open a session ask for
+ * the plans before getting here; this is the backstop.
  *
  * A wrapper rather than an early return inside the player. The player is a few
  * dozen hooks deep, and returning before them on some renders and after them on
@@ -523,12 +532,18 @@ export type SessionViewProps = {
  * somewhere.
  */
 export function SessionView(props: SessionViewProps) {
-  const locked = useSessionsLocked();
-  if (!locked || props.free === true) return <SessionRun {...props} />;
-  return <SessionLocked onBack={props.onBack} />;
+  const lapsedLock = useSessionsLocked();
+  const looking = useLookingAround();
+  const open = looking ? props.dayOne === true : !lapsedLock || props.free === true;
+  if (open) return <SessionRun {...props} />;
+  return <SessionLocked onBack={props.onBack} looking={looking} />;
 }
 
-function SessionLocked({ onBack }: { onBack: () => void }) {
+/** The player's own sheet or pane slides away before the plans present over
+ * Home: one modal presenting while another dismisses does not show on iOS. */
+const PLANS_AFTER_BACK_MS = 520;
+
+function SessionLocked({ onBack, looking }: { onBack: () => void; looking: boolean }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
@@ -536,6 +551,11 @@ function SessionLocked({ onBack }: { onBack: () => void }) {
 
   const reopen = () => {
     Haptics.selectionAsync();
+    if (looking) {
+      onBack();
+      setTimeout(() => askForPlans('player'), PLANS_AFTER_BACK_MS);
+      return;
+    }
     // Not a navigation call. Clearing the flag is what makes the expiry screen
     // available again, and the router follows the guard.
     clearBrowsingLapsed();
@@ -554,14 +574,14 @@ function SessionLocked({ onBack }: { onBack: () => void }) {
       <View style={lockedStyles.middle}>
         <HugeiconsIcon icon={SquareLock02Icon} size={40} color={meter.caption} strokeWidth={1.6} />
         <Text style={[lockedStyles.title, { color: meter.ink }]}>
-          {t('widgets.sessionLockedTitle')}
+          {t(looking ? 'widgets.sessionLookingTitle' : 'widgets.sessionLockedTitle')}
         </Text>
         <Text style={[lockedStyles.body, { color: meter.caption }]}>
-          {t('widgets.sessionLockedBody')}
+          {t(looking ? 'widgets.sessionLookingBody' : 'widgets.sessionLockedBody')}
         </Text>
       </View>
 
-      <PrimaryButton label={t('widgets.sessionLockedCta')} onPress={reopen} />
+      <PrimaryButton label={t(looking ? 'widgets.sessionLookingCta' : 'widgets.sessionLockedCta')} onPress={reopen} />
     </View>
   );
 }

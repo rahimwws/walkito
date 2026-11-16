@@ -162,8 +162,10 @@ export function HomePage() {
     [program],
   );
   const tourState = useHomeTourState();
-  /** Skipped the paywall and not bought since: the offer wall stands over Home
-   * once the tour is done (the root's `tryingOut`). */
+  /** Skipped the paywall and not bought since (the root's `tryingOut`):
+   * looking around, with every session but Day 1 locked. Home is not theirs
+   * yet, so nothing of a customer's rises on it (milestones, the follow
+   * offer, the long-day card). */
   const skipped = usePaywallSkipped();
   const entitled = useEntitled();
   const lapsed = useAccessLapsed();

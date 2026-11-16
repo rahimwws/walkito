@@ -199,6 +199,9 @@ export const OFFER_FR = {
   'widgets.sessionLockedBody':
     'Tout ce que tu as noté est toujours là, à consulter. Pour refaire des séances, reprends là où tu en étais.',
   'widgets.sessionLockedCta': 'Voir tes options',
+  'widgets.sessionLookingTitle': 'La séance gratuite, c’est le Jour 1',
+  'widgets.sessionLookingBody': 'Les autres séances s’ouvrent quand tu choisis une formule. Tu peux déjà regarder ton plan et ses exercices.',
+  'widgets.sessionLookingCta': 'Voir les formules',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Ton objectif',

@@ -83,6 +83,15 @@ export {
   useSessionsLocked,
 } from './model/lapse';
 export { devPreviewHomeOffer, devPreviewPaywall, paywallSkipped, skipPaywall, usePaywallSkipped } from './model/skip';
+export {
+  askForPlans,
+  closePlans,
+  lookingAround,
+  plansAsked,
+  useLookingAround,
+  usePlansAsked,
+  type PlansAskedFrom,
+} from './model/look';
 export { devSetTrialAudience, isMetaInstall, useTrialOnFirstPaywall } from './model/trial-audience';
 export {
   isSamplePlan,

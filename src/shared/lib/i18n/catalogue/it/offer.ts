@@ -200,6 +200,9 @@ export const OFFER_IT = {
   'widgets.sessionLockedBody':
     'Tutto quello che hai registrato è ancora qui da consultare. Per tornare ad allenarti, riprendi da dove avevi lasciato.',
   'widgets.sessionLockedCta': 'Vedi le opzioni',
+  'widgets.sessionLookingTitle': 'La sessione gratuita è il Giorno 1',
+  'widgets.sessionLookingBody': 'Le altre sessioni si aprono quando scegli un piano. Il tuo piano e i suoi esercizi puoi già guardarli.',
+  'widgets.sessionLookingCta': 'Vedi i piani',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Il tuo obiettivo',

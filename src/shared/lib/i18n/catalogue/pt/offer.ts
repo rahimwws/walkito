@@ -203,6 +203,9 @@ export const OFFER_PT = {
   'widgets.sessionLockedBody':
     'Tudo o que você registrou continua aqui para consultar. Para voltar a fazer as sessões, retome de onde parou.',
   'widgets.sessionLockedCta': 'Ver suas opções',
+  'widgets.sessionLookingTitle': 'A sessão grátis é o Dia 1',
+  'widgets.sessionLookingBody': 'As outras sessões abrem quando você escolhe um plano. Seu plano e os exercícios já podem ser vistos.',
+  'widgets.sessionLookingCta': 'Ver planos',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Sua meta',

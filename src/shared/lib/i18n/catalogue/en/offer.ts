@@ -274,12 +274,16 @@ export const OFFER_EN = {
   'offer.next.later': 'Next · Day {day}',
 
   // ── Session player: the locked state ─────────────────────────────────────
-  // Only ever seen by somebody whose subscription ended and who answered the
-  // expiry screen with "Not now".
+  // The first three only ever seen by somebody whose subscription ended and
+  // who answered the expiry screen with "Not now"; the `Looking` three by
+  // somebody who skipped the paywall, for whom only Day 1 is open.
   'widgets.sessionLockedTitle': 'Your subscription has ended',
   'widgets.sessionLockedBody':
     'Everything you logged is still here to read. To run sessions again, pick up where you left off.',
   'widgets.sessionLockedCta': 'See your options',
+  'widgets.sessionLookingTitle': 'Day 1 is the free session',
+  'widgets.sessionLookingBody': 'Every other session opens once you choose a plan. Your plan and its exercises are yours to look at now.',
+  'widgets.sessionLookingCta': 'See plans',
 
   // ── Test day: the results ────────────────────────────────────────────────
   // The rest of the test day's copy is in `testday.ts`. These stay here because

@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { currentDay, painOn, useProgramState } from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
-import { browsingLapsed, clearBrowsingLapsed, useEntitled } from '@/entities/purchase';
+import { askForPlans, browsingLapsed, clearBrowsingLapsed, useEntitled, useLookingAround } from '@/entities/purchase';
 import {
   PROTOCOLS,
   protocolById,
@@ -87,7 +87,10 @@ export function QuickPage() {
   const featured = protocolById(featuredId);
   const rest = PROTOCOLS.filter((protocol) => protocol.id !== featuredId);
 
-  const locked = (protocol: Protocol) => !protocol.free && !entitled;
+  // Looking around without buying, the free routines are locked too: only
+  // Day 1 is open before a purchase.
+  const looking = useLookingAround();
+  const locked = (protocol: Protocol) => !entitled && (!protocol.free || looking);
 
   const openProtocol = (protocol: Protocol) => {
     Haptics.selectionAsync();
@@ -101,6 +104,7 @@ export function QuickPage() {
       // brings the expiry screen back, which sells the same plans — the way the
       // session player's locked state does it.
       if (browsingLapsed()) clearBrowsingLapsed();
+      else if (looking) askForPlans('routine');
       else router.push('/offer');
       return;
     }

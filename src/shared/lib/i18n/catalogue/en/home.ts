@@ -161,6 +161,7 @@ export const HOME_EN = {
   'home.day1.title': 'Day 1',
   'home.day1.body': 'Two easy minutes to wake your feet up.',
   'home.day1.start': 'Start',
+  'home.day1.later': 'Later',
   'home.noPain': 'No pain today',
   'home.logCheckIn': 'Log today’s check-in',
   'home.checkInAgain': 'Check in again',

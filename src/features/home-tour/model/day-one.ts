@@ -7,11 +7,13 @@ import {
   planSessionDone,
   retestResults,
   planSettings,
+  sessions,
   todayDayNumber,
   todayKey,
   type ProgramDay,
 } from '@/entities/program';
-import { homeTourState, setHomeTourStage } from '@/entities/session';
+import { askForPlans, type PlansAskedFrom } from '@/entities/purchase';
+import { askForDayOne, dropDayOneAsk, homeTourState, setHomeTourStage } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 
 /**
@@ -130,5 +132,17 @@ export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
     });
   }
   track('day1_session_completed');
+  dropDayOneAsk();
   if (homeTourState() === 'armed') setHomeTourStage('tour');
+}
+
+/**
+ * A plan session tapped by somebody looking around without buying
+ * (`lookingAround`): Day 1, which is free, while it is still ahead (no
+ * session on record: `finishDayOne` files it as the first), raised as Home's
+ * "Day 1" card; once it is done, the plans.
+ */
+export function answerLockedPlanTap(from: PlansAskedFrom): void {
+  if (sessions().length === 0) askForDayOne();
+  else askForPlans(from);
 }

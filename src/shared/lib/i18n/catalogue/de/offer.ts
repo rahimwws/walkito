@@ -198,6 +198,9 @@ export const OFFER_DE = {
   'widgets.sessionLockedBody':
     'Alles, was du eingetragen hast, kannst du weiter lesen. Um wieder Einheiten zu machen, mach da weiter, wo du aufgehört hast.',
   'widgets.sessionLockedCta': 'Optionen ansehen',
+  'widgets.sessionLookingTitle': 'Die kostenlose Einheit ist Tag 1',
+  'widgets.sessionLookingBody': 'Alle anderen Einheiten öffnen sich, sobald du einen Plan wählst. Deinen Plan und seine Übungen kannst du dir schon ansehen.',
+  'widgets.sessionLookingCta': 'Pläne ansehen',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Dein Ziel',
