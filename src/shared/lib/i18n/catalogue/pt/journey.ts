@@ -29,7 +29,7 @@ export const JOURNEY_PT = {
   'onboarding.role.blurb': 'Para o plano caber no seu dia, não no de outra pessoa.',
   'onboarding.role.running': 'Corrida',
   'onboarding.role.feet': 'Trabalho em pé o dia todo',
-  'onboarding.role.both': 'Os dois',
+  'onboarding.role.both': 'Corrida e trabalho em pé',
   'onboarding.role.walking': 'Caminhada do dia a dia',
   'onboarding.runner.titleRunning': 'Como você corre, {name}?',
 

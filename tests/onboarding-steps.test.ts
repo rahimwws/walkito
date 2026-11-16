@@ -82,3 +82,28 @@ describe('answers are never compared to a string', () => {
     });
   }
 });
+
+/**
+ * "What keeps you on your feet?" leads with walking and a job on their feet.
+ *
+ * Most of the people the app is for walk or stand all day, and "Running" as
+ * the first answer told them it was built for somebody else. The values are
+ * analytics identifiers (`onboarding_answered { step: 'role', answer }`) and
+ * what `roleOf` reads back, so the set must stay exactly these four: only
+ * their order is the screen's to choose. Read from the source, as above: the
+ * step table imports React Native, which the test runner cannot load.
+ */
+describe('the role question', () => {
+  const text = readFileSync(new URL('../src/pages/onboarding/model/steps.ts', import.meta.url), 'utf8');
+  const from = text.indexOf("key: 'role',");
+  const block = text.slice(from, text.indexOf('],', from));
+  const values = [...block.matchAll(/value: '(\w+)'/g)].map((match) => match[1]);
+
+  test('offers walking and standing at work before running', () => {
+    expect(values).toEqual(['walking', 'feet', 'running', 'both']);
+  });
+
+  test('keeps the four values the analytics and the plan know', () => {
+    expect([...values].sort()).toEqual(['both', 'feet', 'running', 'walking']);
+  });
+});

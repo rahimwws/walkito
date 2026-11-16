@@ -24,7 +24,7 @@ export const JOURNEY_RU = {
   'onboarding.role.blurb': 'Чтобы план подошёл под ваш день, а не под чужой.',
   'onboarding.role.running': 'Бег',
   'onboarding.role.feet': 'Весь день на ногах на работе',
-  'onboarding.role.both': 'И то и другое',
+  'onboarding.role.both': 'Бег и работа на ногах',
   'onboarding.role.walking': 'Обычная ходьба',
   'onboarding.runner.titleRunning': 'Как вы бегаете, {name}?',
 

@@ -224,7 +224,11 @@ export const STEPS: readonly OnboardingStep[] = [
   {
     // Who they are, before anything about running: half the people with
     // heel pain are on their feet at work, and "what kind of athlete are
-    // you" lost them on the fifth screen. `role` is an analytics identifier.
+    // you" lost them on the fifth screen. `role` is an analytics identifier,
+    // and so is each value: only the order they are shown in may change.
+    // Walking and a job on their feet lead, because that is who most of the
+    // people here are; running follows, and "both" (running and a job on
+    // their feet) says what it joins, since it no longer sits under the two.
     kind: 'choice',
     key: 'role',
     act: 0,
@@ -232,10 +236,10 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.role.blurb'),
     art: 'peek',
     options: [
-      { value: 'running', label: (t) => t('onboarding.role.running') },
-      { value: 'feet', label: (t) => t('onboarding.role.feet') },
-      { value: 'both', label: (t) => t('onboarding.role.both') },
       { value: 'walking', label: (t) => t('onboarding.role.walking') },
+      { value: 'feet', label: (t) => t('onboarding.role.feet') },
+      { value: 'running', label: (t) => t('onboarding.role.running') },
+      { value: 'both', label: (t) => t('onboarding.role.both') },
     ],
   },
   // The three reactions are no longer screens of their own: a full screen to

@@ -24,7 +24,7 @@ export const JOURNEY_DE = {
   'onboarding.role.blurb': 'Damit der Plan zu deinem Tag passt, nicht zu dem von jemand anderem.',
   'onboarding.role.running': 'Laufen',
   'onboarding.role.feet': 'Den ganzen Tag im Stehen arbeiten',
-  'onboarding.role.both': 'Beides',
+  'onboarding.role.both': 'Laufen und Arbeit im Stehen',
   'onboarding.role.walking': 'Gehen im Alltag',
   'onboarding.runner.titleRunning': 'Wie läufst du, {name}?',
 

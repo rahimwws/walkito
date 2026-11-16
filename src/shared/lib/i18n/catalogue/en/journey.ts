@@ -36,7 +36,7 @@ export const JOURNEY_EN = {
   'onboarding.role.blurb': 'So the plan fits your day, not someone else’s.',
   'onboarding.role.running': 'Running',
   'onboarding.role.feet': 'Work on my feet all day',
-  'onboarding.role.both': 'Both',
+  'onboarding.role.both': 'Running and work on my feet',
   'onboarding.role.walking': 'Everyday walking',
   'onboarding.runner.titleRunning': 'How do you run, {name}?',
 

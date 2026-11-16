@@ -30,7 +30,7 @@ export const JOURNEY_FR = {
   'onboarding.role.blurb': 'Pour que le plan colle à ta journée, pas à celle de quelqu’un d’autre.',
   'onboarding.role.running': 'La course',
   'onboarding.role.feet': 'Je travaille debout toute la journée',
-  'onboarding.role.both': 'Les deux',
+  'onboarding.role.both': 'La course et le travail debout',
   'onboarding.role.walking': 'La marche au quotidien',
   'onboarding.runner.titleRunning': 'Comment cours-tu, {name} ?',
 
