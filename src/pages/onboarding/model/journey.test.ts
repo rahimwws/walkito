@@ -111,6 +111,11 @@ describe('the Foot Check', () => {
     expect(heelOf({ 'test-heel': ['up'] })).toBeNull();
   });
 
+  test('a heel answer stops counting once the safety answer leaves the question out', () => {
+    expect(heelOf({ 'test-heel': ['left'], safety: ['numb'] })).toBe('left');
+    for (const flag of ['fall', 'calf', 'pop']) expect(heelOf({ 'test-heel': ['left'], safety: [flag] })).toBeNull();
+  });
+
   test('every arch answer has something seen and something the plan does', () => {
     for (const arch of ['yes', 'no', 'unsure']) expect(archFinding(arch)).not.toBeNull();
     expect(archFinding(null)).toBeNull();

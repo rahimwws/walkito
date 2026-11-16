@@ -176,7 +176,10 @@ export function heelAsked(answers: Answers): boolean {
 
 export type HeelAnswer = 'left' | 'right' | 'both' | 'unsure';
 
+/** The heel answer, if the question is still hers to answer: one given before
+ * the safety answer changed to a fall, a calf or a pop no longer counts. */
 export function heelOf(answers: Answers): HeelAnswer | null {
+  if (!heelAsked(answers)) return null;
   const value = first(answers, 'test-heel');
   return value === 'left' || value === 'right' || value === 'both' || value === 'unsure' ? value : null;
 }
