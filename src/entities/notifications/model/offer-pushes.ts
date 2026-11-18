@@ -11,8 +11,10 @@ import {
   dayOneMessage,
   dayOneTimes,
   settleDayOne,
+  withoutFirstStepMorning,
   type DayOneState,
 } from './day-one';
+import { firstStepPendingAt } from './first-step-push';
 import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './notifications';
 import { offerPushesAllowed } from './offer-prefs';
 
@@ -218,7 +220,9 @@ export function scheduleDayOneReminders({
     if (state.sent >= DAY_ONE_REMINDERS) return 0;
     if (!offerPushesAllowed() || !(await notificationsAllowed())) return 0;
     await ensureNotificationChannel();
-    const times = dayOneTimes(state.sent, now, minutes);
+    // The first-step routine's morning has its own notification: the Day 1
+    // reminder that would land the same morning is left out.
+    const times = withoutFirstStepMorning(dayOneTimes(state.sent, now, minutes), await firstStepPendingAt());
     // On record before they are laid: one that is laid and then lost from the
     // record (the app closed in between) would never be taken back or counted.
     kv.set(DAY_ONE_KEY, JSON.stringify({ sent: state.sent, pending: times }));

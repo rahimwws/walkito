@@ -341,12 +341,39 @@ export const PRODUCTS = {
   /** Auto-renewable, 1 year, $59.99, with a one-week free trial as its
    * introductory offer. */
   annualTrial: 'walkito_annual_trial',
-  /** Auto-renewable, 1 year, $59.99, with the first year paid up front at
-   * $29.99 as its introductory offer. */
+  /** Auto-renewable, 1 year, $49.99, with the first year paid up front at
+   * $29.99 as its introductory offer (App Store Connect, approved Nov 2026). */
   annualOffer: 'walkito_annual_offer',
   /** Non-consumable, one time, $59.99. */
   lifetimeOffer: 'walkito_lifetime_offer',
 } as const;
+
+/**
+ * The product each `V2_SHELVES` package is expected to hold, for a `v2` whose
+ * package was typed under another identifier in the dashboard: the plan is
+ * then found by its product (`v2Package`). Package first, product second.
+ */
+export const V2_SHELF_PRODUCTS: Readonly<Record<string, Readonly<Partial<Record<PlanPeriod, string>>>>> = {
+  [OFFERINGS.standard]: { annual: PRODUCTS.annual, monthly: PRODUCTS.monthly, lifetime: PRODUCTS.lifetime },
+  [OFFERINGS.trial]: { annual: PRODUCTS.annualTrial },
+  [OFFERINGS.offer]: { annual: PRODUCTS.annualOffer, lifetime: PRODUCTS.lifetimeOffer },
+};
+
+/**
+ * A package of `v2`: the one under `packageId`, else the one whose store
+ * product is `productId`. Null when neither is there. Never by type or period:
+ * `v2` holds three yearly subscriptions, and a guess could sell the trial as
+ * the comeback annual.
+ */
+export function v2Package<P extends { readonly identifier: string; readonly product: { readonly identifier: string } }>(
+  packages: readonly P[],
+  packageId: string | undefined,
+  productId: string | undefined,
+): P | null {
+  const byPackage = packageId == null ? undefined : packages.find((pkg) => pkg.identifier === packageId);
+  if (byPackage != null) return byPackage;
+  return productId == null ? null : (packages.find((pkg) => pkg.product.identifier === productId) ?? null);
+}
 
 /** The lifetime products: one-time purchases that grant `premium` for good. */
 export const LIFETIME_PRODUCT_IDS: readonly string[] = [PRODUCTS.lifetime, PRODUCTS.lifetimeOffer];

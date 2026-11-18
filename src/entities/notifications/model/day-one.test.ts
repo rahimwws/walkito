@@ -9,6 +9,7 @@ import {
   dayOneMessage,
   dayOneTimes,
   settleDayOne,
+  withoutFirstStepMorning,
   type DayOneState,
 } from './day-one';
 import { QUIET_FROM_MINUTES } from './limits';
@@ -138,5 +139,30 @@ describe('what the Day 1 reminders say', () => {
     for (const language of LANGUAGES) {
       expect(dayOneMessage(1, null, language).title).not.toBe(dayOneMessage(2, null, language).title);
     }
+  });
+});
+
+describe('the first-step morning', () => {
+  const left = new Date(2026, 10, 18, 21, 0).getTime();
+  const times = dayOneTimes(0, left, 7 * 60 + 15);
+  const firstStepAt = new Date(2026, 10, 19, 6, 15).getTime();
+
+  test('with a first-step notification laid, the Day 1 reminder that morning is not laid', () => {
+    const kept = withoutFirstStepMorning(times, firstStepAt);
+    expect(kept).toEqual([times[1]]);
+    expect(kept.some((at) => new Date(at).getDate() === 19)).toBe(false);
+  });
+
+  test('skipped, never moved: the reminder left keeps its own time', () => {
+    expect(withoutFirstStepMorning(times, firstStepAt)[0]).toBe(new Date(2026, 10, 21, 7, 15).getTime());
+  });
+
+  test('without one (never laid, failed or taken back), the Day 1 reminders are as they were', () => {
+    expect(withoutFirstStepMorning(times, null)).toEqual(times);
+  });
+
+  test('rescheduled to another morning, only that morning is left out', () => {
+    const moved = new Date(2026, 10, 21, 8, 0).getTime();
+    expect(withoutFirstStepMorning(times, moved)).toEqual([times[0]]);
   });
 });

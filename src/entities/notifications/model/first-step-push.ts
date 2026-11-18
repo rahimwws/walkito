@@ -82,6 +82,21 @@ export async function devFirstStep(mode: 'notify' | 'due' | 'ready'): Promise<vo
   });
 }
 
+/**
+ * When the first-step notification will fire, if one is waiting in the
+ * system right now; null when it was never laid, did not schedule, or has
+ * been taken back. Read from what is scheduled, not from a flag, so a
+ * rescheduled or cancelled one is seen as it is.
+ */
+export async function firstStepPendingAt(): Promise<number | null> {
+  try {
+    const scheduled = await Notifications.getAllScheduledNotificationsAsync();
+    return scheduled.some((request) => request.identifier === PUSH_ID) ? firstStepDueAt() : null;
+  } catch {
+    return null;
+  }
+}
+
 /** Whether the first open now is that morning's, with the routine not yet shown. */
 export function firstStepDueNow(now: number = Date.now()): boolean {
   return firstStepDueInApp(now, firstStepDueAt(), firstStepHandled());

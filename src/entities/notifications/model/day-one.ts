@@ -69,6 +69,19 @@ export function dayOneTimes(sent: number, now: number, minutes: number): number[
   });
 }
 
+/**
+ * The reminder times without the first-step routine's morning: on the day
+ * the first-step notification is laid for (`firstStepAt`), that one speaks
+ * and the Day 1 reminder that would land the same morning is not laid at
+ * all, never moved. With no first-step notification waiting (never laid,
+ * failed, or taken back) the times are as they were.
+ */
+export function withoutFirstStepMorning(times: readonly number[], firstStepAt: number | null): number[] {
+  if (firstStepAt == null) return [...times];
+  const day = new Date(firstStepAt).toDateString();
+  return times.filter((at) => new Date(at).toDateString() !== day);
+}
+
 /** What each of the two says. `name` is her first name, or nothing. */
 export function dayOneMessage(which: 1 | 2, name?: string | null, language: Language = getLanguage()): Message {
   const t = translatorFor(language);

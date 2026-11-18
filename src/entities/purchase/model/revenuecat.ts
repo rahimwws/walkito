@@ -35,8 +35,10 @@ import {
   OFFERING_V2,
   PACKAGES,
   PASS_PACKAGES,
+  V2_SHELF_PRODUCTS,
   V2_SHELVES,
   isPassProduct,
+  v2Package,
   type IntroOffer,
   type Offering,
   type Plan,
@@ -620,18 +622,21 @@ const reportedV2 = new Set<string>();
 function v2Slots(v2: PurchasesOffering, identifier: string): Slots | null {
   const wanted = V2_SHELVES[identifier];
   if (wanted == null) return null;
+  const products = V2_SHELF_PRODUCTS[identifier] ?? {};
   const byId = (id: string | undefined): PurchasesPackage | null =>
     id == null ? null : (v2.availablePackages.find((pkg) => pkg.identifier === id) ?? null);
-  const billed = (id: string | undefined): PurchasesPackage | null => {
-    const pkg = byId(id);
+  // The package by its identifier, else by the product it should hold: a
+  // package typed differently in the dashboard still sells its own product.
+  const billed = (period: BilledPeriod): PurchasesPackage | null => {
+    const pkg = v2Package(v2.availablePackages, wanted[period], products[period]);
     return pkg != null && !isPassProduct(pkg.product.identifier) ? pkg : null;
   };
   const pass = byId(wanted.pass);
   const slots: Slots = {
-    annual: billed(wanted.annual),
-    monthly: billed(wanted.monthly),
-    weekly: billed(wanted.weekly),
-    lifetime: billed(wanted.lifetime),
+    annual: billed('annual'),
+    monthly: billed('monthly'),
+    weekly: billed('weekly'),
+    lifetime: billed('lifetime'),
     pass: pass != null && isPassProduct(pass.product.identifier) ? pass : null,
   };
   if (__DEV__ && Platform.OS === 'ios') {
