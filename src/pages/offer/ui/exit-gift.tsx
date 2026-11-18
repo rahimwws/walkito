@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Modal, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn, FadeInDown, ReduceMotion, ZoomIn } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -87,7 +87,7 @@ export function ExitGift({
               )}
             </View>
             <Text style={[styles.terms, { color: meter.caption }]} maxFontSizeMultiplier={1.4}>
-              {t('story.gift.terms', values)} {t(Platform.OS === 'android' ? 'offer.plans.cancelAndroid' : 'offer.plans.cancel')}
+              {t('story.gift.terms', values)}
             </Text>
           </Animated.View>
         )}

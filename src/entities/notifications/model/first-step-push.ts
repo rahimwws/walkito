@@ -72,6 +72,7 @@ export async function devFirstStep(mode: 'notify' | 'due' | 'ready'): Promise<vo
   kv.set(AT_KEY, Date.now());
   kv.remove(HANDLED_KEY);
   if (mode === 'due') return;
+  await Notifications.requestPermissionsAsync();
   await ensureNotificationChannel();
   const message = firstStepMessage();
   await scheduleWithArt('session', {

@@ -19,7 +19,7 @@ import { Button3D } from '@/shared/ui/button-3d';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { OptionCard3D } from '@/shared/ui/option-card-3d';
 import { TimePicker } from '@/shared/ui/time-picker';
-import { CLIP_BACKDROP, ExercisePreview, SessionView, posterFor, type PlaylistStep } from '@/widgets/session-player';
+import { CLIP_BACKDROP, ExercisePreview, SessionView, posterFor, thumbFor, type PlaylistStep } from '@/widgets/session-player';
 import type { ProgramDay } from '@/entities/program';
 
 import { FELT, type Felt, type PeekTiles } from '../model/story';
@@ -445,14 +445,14 @@ export function RoutineStep({ time, moves, hero }: { time: string; moves: readon
         <Text style={[styles.small, styles.shrink, { color: meter.label }]}>{t('story.routine.line')}</Text>
       </View>
       {moves.map((id, i) => {
-        const poster = posterFor(id);
+        const poster = thumbFor(id);
         return (
           <Animated.View
             key={id}
             entering={FadeInDown.delay(100 + i * 110).duration(340).reduceMotion(ReduceMotion.System)}
             style={[styles.routineCard, { backgroundColor: colors.card }]}>
             <View style={[styles.routineThumb, { backgroundColor: CLIP_BACKDROP }]}>
-              {poster != null && <Image source={poster} style={StyleSheet.absoluteFill} resizeMode="cover" />}
+              {poster != null && <Image source={poster} style={styles.routineThumb} resizeMode="cover" accessibilityIgnoresInvertColors />}
             </View>
             <View style={styles.shrink}>
               <Text style={[styles.routineIndex, { color: meter.label }]}>{i + 1}</Text>
@@ -557,8 +557,8 @@ function Tile({ id, children, big, locked }: { id: string; children: ReactNode; 
   const poster = posterFor(id);
   return (
     <View style={[styles.tile, big ? styles.tileBig : styles.tileSmall, { backgroundColor: CLIP_BACKDROP }]}>
-      {poster != null && <Image source={poster} style={[StyleSheet.absoluteFill, locked && { opacity: 0.45 }]} resizeMode="cover" blurRadius={locked ? 6 : 0} />}
-      <View style={[StyleSheet.absoluteFill, styles.tileShade]} />
+      {poster != null && <Image source={poster} style={StyleSheet.absoluteFill} resizeMode="cover" blurRadius={locked ? 10 : 0} />}
+      <View style={[StyleSheet.absoluteFill, locked ? styles.tileLocked : styles.tileShade]} />
       {children}
     </View>
   );
@@ -703,7 +703,7 @@ const styles = StyleSheet.create({
   minutesChip: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 12, paddingVertical: 7, borderRadius: 999 },
   minutesText: fonts.bold(14),
   routineCard: { flexDirection: 'row', alignItems: 'center', gap: 14, borderRadius: 20, borderCurve: 'continuous', padding: 10 },
-  routineThumb: { width: 84, height: 84, borderRadius: 14, overflow: 'hidden' },
+  routineThumb: { width: 128, height: 72, borderRadius: 14, overflow: 'hidden' },
   routineIndex: fonts.bold(13),
   routineTitle: { ...fonts.bold(17, -0.2), lineHeight: 22 },
 
@@ -717,6 +717,7 @@ const styles = StyleSheet.create({
   tileBig: { height: 230 },
   tileSmall: { flex: 1, height: 130 },
   tileShade: { experimental_backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%)' },
+  tileLocked: { backgroundColor: 'rgba(0,0,0,0.4)' },
   tileRow: { flexDirection: 'row', gap: 12 },
   tileTag: { position: 'absolute', top: 12, left: 12, backgroundColor: PRIMARY, borderRadius: 999, paddingHorizontal: 10, paddingVertical: 5 },
   tileTagText: { ...fonts.bold(13), color: '#FFFFFF' },
