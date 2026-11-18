@@ -1,6 +1,5 @@
 import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
-import LockIcon from '@hugeicons/core-free-icons/LockIcon';
-import StarIcon from '@hugeicons/core-free-icons/StarIcon';
+import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -154,13 +153,31 @@ const REVIEWS: readonly { author: string; text: Key }[] = [
  */
 export const APP_STORE_RATING = { rating: '5.0', count: 4 } as const;
 
+/**
+ * A five-pointed star, filled: the store's rating, which a stroke glyph reads
+ * as empty. Hugeicons Free has no filled variant, so it is drawn here.
+ */
+function FilledStar({ size, color }: { size: number; color: string }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path
+        d="M12 2.4l2.95 5.98 6.6.96-4.78 4.65 1.13 6.57L12 17.46l-5.9 3.1 1.13-6.57-4.78-4.65 6.6-.96L12 2.4z"
+        fill={color}
+        stroke={color}
+        strokeWidth={1.2}
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+}
+
 function Stars({ size = 16 }: { size?: number }) {
   const scheme = useColorScheme();
   const t = useT();
   return (
     <View style={styles.stars} accessibilityLabel={t('story.reviews.stars')}>
       {[0, 1, 2, 3, 4].map((i) => (
-        <HugeiconsIcon key={i} icon={StarIcon} size={size} color={accents[scheme].amber.fill} strokeWidth={2.4} />
+        <FilledStar key={i} size={size} color={accents[scheme].amber.fill} />
       ))}
     </View>
   );
@@ -172,7 +189,7 @@ export function RatingLine({ color }: { color: string }) {
   const t = useT();
   return (
     <View style={styles.ratingRow}>
-      <HugeiconsIcon icon={StarIcon} size={15} color={accents[scheme].amber.fill} strokeWidth={2.4} />
+      <FilledStar size={15} color={accents[scheme].amber.fill} />
       <Text style={[styles.rating, { color }]} maxFontSizeMultiplier={1.3}>
         {t('story.reviews.rating', { rating: APP_STORE_RATING.rating, count: APP_STORE_RATING.count })}
       </Text>
@@ -623,7 +640,7 @@ export function PlanPeekStep({
             ].map((tile) => (
               <Tile key={tile.label} id={tile.id} locked>
                 <View style={styles.lock} accessibilityLabel={t('story.peek.locked')}>
-                  <HugeiconsIcon icon={LockIcon} size={20} color="#FFFFFF" strokeWidth={2.2} />
+                  <HugeiconsIcon icon={SquareLock02Icon} size={22} color="#FFFFFF" strokeWidth={2} />
                 </View>
                 <Text style={[styles.tileTitle, styles.tileLabel]}>{tile.label}</Text>
               </Tile>
