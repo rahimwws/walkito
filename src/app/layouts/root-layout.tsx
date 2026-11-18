@@ -12,6 +12,7 @@ import {
   PaywallRoot,
   useOfferNotifications,
   useDayOneReminder,
+  useFirstStep,
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
@@ -231,6 +232,9 @@ function RootLayoutInner() {
   const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
+  // The first-step routine's morning: the notification's tap, or the first
+  // open that morning.
+  useFirstStep(onboarded, tabsReachable);
   // The onboarding's Lock Screen reminder has done its job once they have
   // bought or are inside the app.
   const pastOnboarding = onboarded && (entitled || tabsReachable);

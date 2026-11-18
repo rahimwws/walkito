@@ -7,6 +7,7 @@ import Animated, { Easing, FadeIn, FadeInDown, FadeOut, ReduceMotion } from 'rea
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { setLastSessionFeedback } from '@/entities/program';
+import { markFirstSession } from '@/entities/session';
 import { DAY_ONE_MINUTES, dayOneRun, finishDayOne, type DayOneRun } from '@/features/home-tour';
 import { clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
@@ -18,7 +19,6 @@ import { celebrateRig } from '@/shared/ui/mascot';
 import { OptionCard3D } from '@/shared/ui/option-card-3d';
 import { CLIP_BACKDROP, ExercisePreview, SessionView } from '@/widgets/session-player';
 
-import { markFirstSession } from '../model/first-session';
 import { GoldText } from './glow';
 import { IntroMascot } from './intro-mascot';
 

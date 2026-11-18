@@ -37,7 +37,7 @@ import {
 } from "@/shared/lib/analytics";
 import { logAppsFlyerEvent } from "@/shared/lib/appsflyer";
 import { requestTracking, trackingStatus } from "@/shared/lib/tracking";
-import { useT, type Key, type Translate } from "@/shared/lib/i18n";
+import { useLanguage, useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
 import {
@@ -60,8 +60,21 @@ import {
   setProfileEmail,
   setProfileName,
 } from "@/entities/profile";
-import { wakeMinutes, withholdOfferPushes } from "@/entities/notifications";
+import { scheduleFirstStep, wakeLabel, wakeMinutes, withholdOfferPushes } from "@/entities/notifications";
 import {
+  GOAL_LABEL,
+  LIFE,
+  PLAN_WEEKS,
+  kindFrom,
+  leadGoal,
+  lifeFor,
+  saveStory,
+  suggestedGoals,
+} from "@/entities/profile";
+import { FIRST_STEPS } from "@/entities/protocols";
+import { dayOneRun, finishDayOne, type DayOneRun } from "@/features/home-tour";
+import {
+  DEFAULT_SETTINGS,
   EQUIPMENT,
   PLAN_META,
   exerciseById,
@@ -71,7 +84,7 @@ import {
   startProgram,
   todayDayNumber,
 } from "@/entities/program";
-import { armSetup, completeOnboarding } from "@/entities/session";
+import { armSetup, completeOnboarding, markFirstSession } from "@/entities/session";
 import { BUTTON_3D_XL_HEIGHT, Button3D } from "@/shared/ui/button-3d";
 import { preloadMascotSounds, type MascotShot } from "@/shared/ui/mascot";
 import { REPLAY_MASK } from "@/shared/ui/replay-mask";
@@ -130,7 +143,8 @@ import { loadQuestionForRole, withName } from "../model/personalise";
 import { PLANS, recommendedIndex } from "../model/plans";
 import { primaryPain } from "../model/reflection";
 import { webLeadSeated } from "../model/web-lead";
-import { painMove } from "../model/first-week-deck";
+import { firstWeekDeck, painMove } from "../model/first-week-deck";
+import { feltAnswer, moved, peekTiles, planLineKind, routineIsHero, wakeOf } from "../model/story";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
 import { clearProgress, loadProgress, saveProgress } from "../model/progress";
@@ -180,6 +194,20 @@ import { QuestionNote, QuestionPhoto } from "./question-photo";
 import { ReactionStep } from "./reaction-step";
 import { StepProgress } from "./step-progress";
 import { WhyStep, whySectionLandsMs } from "./why-step";
+import {
+  CompareStep,
+  FeltAnswerStep,
+  FeltStep,
+  FirstMoveStep,
+  LifeBanner,
+  PlanPeekStep,
+  PraiseStep,
+  ReviewsStep,
+  RoutineStep,
+  SignStep,
+  StoryCard,
+  WakeStep,
+} from "./story-steps";
 
 const SIDE_PAD = 24;
 /** The call to action reaches 16pt from the screen's edges, wider than the
@@ -247,6 +275,11 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "test-result",
   "first-week",
   "outlook",
+  "life",
+  "goals",
+  "felt",
+  "felt-answer",
+  "plan-peek",
 ]);
 
 /**
@@ -397,6 +430,8 @@ export function OnboardingPage() {
   /** The habit's time wheel, and a clip open full screen: both cover the
    * coach in the corner, who stops breathing under them. */
   const [habitPicking, setHabitPicking] = useState(false);
+  /** Whether the promise has ink on it. Signing invites, it does not gate. */
+  const [inked, setInked] = useState(false);
   const [clipViewerOpen, setClipViewerOpen] = useState(false);
 
   /** How far the contract's stamp has come down. */
@@ -406,6 +441,13 @@ export function OnboardingPage() {
 
   const step = STEPS[index];
   useResumeActivity(t, index);
+  const language = useLanguage();
+  /** The first move: Day 1's first move, a minute of it, fixed as the
+   * screen first opens so the clip shown is the move played. */
+  const [firstRun] = useState<DayOneRun>(() => {
+    const run = dayOneRun();
+    return { ...run, minutes: 1, steps: [{ ...run.steps[0], seconds: 60 }] };
+  });
 
   /**
    * App Tracking Transparency, asked once: as the welcome screen is left, the
@@ -451,6 +493,25 @@ export function OnboardingPage() {
   // Decided from what they said about themselves, not offered.
   const plan = PLANS[recommendedIndex(runner)];
 
+  // ── The story (the web funnel's v4/v5) ───────────────────────────────────
+  const kind = kindFrom(list(answers.role)[0] ?? null, list(answers.day)[0] ?? null);
+  const goals = list(answers.goals);
+  const goalWords = t(GOAL_LABEL[leadGoal(goals)]);
+  const planName = t(`story.plan.${kind}`);
+  const wake = wakeOf(answers);
+  const sessionMinutes = sessionMinutesOf(answers) ?? DEFAULT_SETTINGS.defaultMinutes;
+  const peekLine = (() => {
+    const values = { count: PLAN_WEEKS, minutes: sessionMinutes };
+    switch (planLineKind(kind, planSettingsFrom(answers, null).seatedStart === true)) {
+      case "runner":
+        return t("story.peek.lineRunner", values);
+      case "seated":
+        return t("story.peek.lineSeated", values);
+      default:
+        return t("story.peek.line", values);
+    }
+  })();
+
   /** A phrase from the step table, resolved and addressed to this user. */
   const say = (phrase: Phrase) => withName(phrase(t), name);
 
@@ -476,6 +537,23 @@ export function OnboardingPage() {
   const optionsFor = (current: OnboardingStep): ResolvedOption[] => {
     if (current.kind !== "choice") return [];
     if (current.key === "goal") return goalOptions;
+    if (current.key === "life")
+      return [
+        ...lifeFor(kind).map((option) => ({
+          value: option.value,
+          label: t(`story.life.${option.value}` as Key),
+          emoji: option.emoji,
+          accent: option.accent,
+        })),
+        { value: "none", label: t("story.life.none"), emoji: "check" as const, accent: "teal" as const },
+      ];
+    if (current.key === "goals")
+      return LIFE.map((option) => ({
+        value: option.goal,
+        label: t(GOAL_LABEL[option.goal]),
+        emoji: option.emoji,
+        accent: option.accent,
+      }));
     if (current.key === "load") return resolve(load.options);
     return resolve(current.options);
   };
@@ -610,21 +688,20 @@ export function OnboardingPage() {
         title: t("onboarding.building.whereTitle", { where }),
         caption: t("onboarding.building.mornings", { score }),
       });
-    if (!painless)
-      rows.push({
-        art: "shield",
-        title: safetyPlan(answers).seated
-          ? t("onboarding.building.seated")
-          : t("onboarding.building.safety"),
-      });
+    // Her goal and her plan, the web funnel's "Analyzing your answers".
+    rows.push({ art: "shield", title: t("story.analyzing.goal", { goal: goalWords }) });
     const days = choiceLabel("planDays");
     const minutes = choiceLabel("planMinutes");
-    if (days != null && minutes != null)
-      rows.push({
-        art: "calendar",
-        title: t("onboarding.passport.planValue", { days, minutes }),
-        ...(kitLine != null ? { caption: kitLine } : {}),
-      });
+    rows.push({
+      art: "calendar",
+      title: t("story.analyzing.plan", { plan: planName }),
+      caption:
+        !painless && safetyPlan(answers).seated
+          ? t("onboarding.building.seated")
+          : days != null && minutes != null
+            ? t("onboarding.passport.planValue", { days, minutes })
+            : peekLine,
+    });
     rows.push({
       art: "clipboard",
       title: t("onboarding.building.choosing"),
@@ -917,7 +994,8 @@ export function OnboardingPage() {
     step.kind === "notify" ||
     step.kind === "building" ||
     step.kind === "welcome" ||
-    step.kind === "reaction";
+    step.kind === "reaction" ||
+    step.kind === "first-move";
   /** Screens that set their own heading rather than the shared question block. */
   const ownHeading =
     step.kind === "name" ||
@@ -929,6 +1007,16 @@ export function OnboardingPage() {
     step.kind === "why" ||
     step.kind === "first-week" ||
     step.kind === "move-preview" ||
+    step.kind === "story-card" ||
+    step.kind === "compare" ||
+    step.kind === "reviews" ||
+    step.kind === "first-move" ||
+    step.kind === "felt" ||
+    step.kind === "felt-answer" ||
+    step.kind === "praise" ||
+    step.kind === "routine" ||
+    step.kind === "sign" ||
+    step.kind === "plan-peek" ||
     step.kind.startsWith("test-");
 
   const canAdvance = (() => {
@@ -945,6 +1033,7 @@ export function OnboardingPage() {
         return habitOf(answers) != null;
       case "test-heel":
       case "test-toe":
+      case "felt":
         return list(answer).length > 0;
       // Signing is an invitation, not a gate: on the first day of paid
       // installs five of the 25 people who reached the pad never got past
@@ -1086,6 +1175,14 @@ export function OnboardingPage() {
     const fullId = reaction != null ? reactionAnalyticsId(reaction.key) : null;
     if (step.kind === "reaction" && fullId != null)
       track("onboarding_reaction_viewed", { reaction: fullId, full: true });
+    if (step.kind === "routine")
+      track("first_step_routine_shown", { hero: routineIsHero(answersRef.current) });
+    // Her goals arrive picked: the mirror of how her feet get in her way.
+    if (step.key === "goals" && answersRef.current.goals == null) {
+      const next = { ...answersRef.current, goals: suggestedGoals(list(answersRef.current.life)) };
+      answersRef.current = next;
+      setAnswers(next);
+    }
     setSeen((prev) => (prev.has(step.key) ? prev : new Set(prev).add(step.key)));
     // `step` follows `index`; listing it would only repeat the same trigger.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -1215,6 +1312,17 @@ export function OnboardingPage() {
     // Meta's backup goal (CompleteTutorial, mapped in AppsFlyer): that the
     // onboarding was finished, nothing about the answers.
     logAppsFlyerEvent("af_tutorial_completion", {});
+    // The story for the paywall (her plan's kind, her goals), on the phone.
+    const done = moved(answers);
+    saveStory({ kind, goals: list(answers.goals), moved: done });
+    // The first move was Day 1: filed now that the plan exists, so the
+    // paywall's own first session is not offered again.
+    if (done) {
+      finishDayOne(firstRun);
+      markFirstSession("done");
+    }
+    // Tomorrow at her wake time, before her first step: a plan reminder.
+    void scheduleFirstStep(wake);
     readyResumeActivity(t);
     clearProgress();
     completeOnboarding();
@@ -1270,6 +1378,8 @@ export function OnboardingPage() {
     }
     // That she answered, never which heel or what the arch did. The toe is
     // the check's last screen; what it showed is the next.
+    if (step.kind === "wake") track("wake_time_set");
+    if (step.kind === "sign" && inked) track("commitment_signed");
     if (step.kind === "test-heel") track("foot_check_answered", { check: "ankle" });
     if (step.kind === "test-toe") {
       track("foot_check_answered", { check: "toe" });
@@ -1311,6 +1421,21 @@ export function OnboardingPage() {
       case "move-preview":
       case "test-result":
         return t("onboarding.cta.continue");
+      case "story-card":
+        return t("story.next");
+      case "compare":
+        return t("story.compare.cta");
+      case "felt":
+      case "felt-answer":
+      case "praise":
+      case "routine":
+        return t("story.continue");
+      case "sign":
+        return t("story.sign.cta");
+      case "plan-peek":
+        return t("story.peek.cta");
+      case "choice":
+        return step.key === "goals" ? t("story.goals.cta") : t("onboarding.cta.next");
       default:
         return t("onboarding.cta.next");
     }
@@ -1387,6 +1512,9 @@ export function OnboardingPage() {
                     speakerHere && { paddingRight: inset, minHeight: speakerSize }
                   }
                 >
+                  {step.kind === "choice" && step.banner != null && (
+                    <LifeBanner text={say(step.banner)} />
+                  )}
                   {/* Typed in, so the app reads as speaking each question. Keyed
                       on the step so it retypes on every arrival. */}
                   <TypedText
@@ -1631,6 +1759,81 @@ export function OnboardingPage() {
                     onSealed={() => move(true)}
                   />
                 </View>
+              )}
+
+              {step.kind === "story-card" && (
+                <StoryCard card={step.card} runner={kind === "runner"} />
+              )}
+
+              {step.kind === "compare" && <CompareStep />}
+
+              {step.kind === "reviews" && <ReviewsStep />}
+
+              {step.kind === "wake" && (
+                <WakeStep
+                  minutes={wake}
+                  onChange={(next) => setAnswer(String(next))}
+                />
+              )}
+
+              {step.kind === "first-move" && (
+                <FirstMoveStep
+                  run={{ day: firstRun.day, step: firstRun.steps[0] }}
+                  onStart={() => track("first_move_started")}
+                  onDone={(stoppedEarly) => {
+                    track("first_move_completed", { stopped_early: stoppedEarly });
+                    move(true, { firstMove: ["done"] });
+                  }}
+                  onSkip={() => {
+                    Haptics.selectionAsync();
+                    track("first_move_skipped");
+                    move(true, { firstMove: ["skipped"] });
+                  }}
+                />
+              )}
+
+              {step.kind === "felt" && (
+                <FeltStep
+                  exerciseId={firstRun.steps[0].exerciseId}
+                  value={list(answer)[0] ?? null}
+                  onPick={(felt) => setAnswer([felt])}
+                />
+              )}
+
+              {step.kind === "felt-answer" && (
+                <FeltAnswerStep
+                  exerciseId={firstRun.steps[0].exerciseId}
+                  waking={feltAnswer(list(answers.felt)[0] ?? null) === "waking"}
+                  goal={goalWords}
+                />
+              )}
+
+              {step.kind === "praise" && <PraiseStep name={name} />}
+
+              {step.kind === "routine" && (
+                <RoutineStep
+                  time={wakeLabel(wake, language)}
+                  moves={FIRST_STEPS.steps.map((s) => s.exerciseId)}
+                  hero={routineIsHero(answers)}
+                />
+              )}
+
+              {step.kind === "sign" && (
+                <SignStep minutes={sessionMinutes} onInk={setInked} />
+              )}
+
+              {step.kind === "plan-peek" && (
+                <PlanPeekStep
+                  name={name}
+                  planName={planName}
+                  line={peekLine}
+                  goals={goals}
+                  tiles={peekTiles(
+                    firstWeekDeck(area, planSettingsFrom(answers, null).toeWork === true).map((m) => m.id),
+                  )}
+                  minutes={sessionMinutes}
+                  weeks={PLAN_WEEKS}
+                />
               )}
             </>
           )}

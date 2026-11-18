@@ -301,6 +301,42 @@ export type AnalyticsEvents = {
    * answers (`session_feedback`), about the session and never about pain. */
   first_session_felt: { feedback: 'easy' | 'ok' | 'hard' };
 
+  // ── The onboarding's story (the web funnel's v4/v5) ──────────────────────
+  // Each new screen is counted by `onboarding_step_viewed` with its key
+  // (`day`, `life`, `fault`, `path`, `research`, `compare`, `reviews`,
+  // `goals`, `wake`, `first-move`, `felt`, `felt-answer`, `praise`,
+  // `routine`, `sign`, `plan-peek`). These add what a view cannot say. Never
+  // the answers: not how her feet get in her way, not her goals, not how
+  // the move felt.
+  /** The one-minute first move started (Day 1's first move). */
+  first_move_started: Record<string, never>;
+  /** It ended: ran out, or "That's enough" (`stopped_early`). Filed as Day 1. */
+  first_move_completed: { stopped_early: boolean };
+  /** "Skip, show my plan" instead. */
+  first_move_skipped: Record<string, never>;
+  /** "Finish" under the signed promise. Nothing of the drawing is kept. */
+  commitment_signed: Record<string, never>;
+
+  // ── Before your first step ───────────────────────────────────────────────
+  /** "When do you usually get up?" answered. The hour is not sent. */
+  wake_time_set: Record<string, never>;
+  /** "Tomorrow at …, before your first step" was shown. `hero`: she said her
+   * first steps in the morning are what she dreads, so it led the screen. */
+  first_step_routine_shown: { hero: boolean };
+  /** The two-minute first-step session opened: from its morning notification,
+   * or on the first open that morning when notifications are off. */
+  first_step_session_started: { from: 'notification' | 'app_open' };
+  first_step_session_completed: Record<string, never>;
+
+  // ── The gift after a closed payment sheet ────────────────────────────────
+  /** Shown once, only after the store's sheet was closed without buying on
+   * the first paywall, only when the store has the offer's product and calls
+   * this customer eligible for its introductory price. */
+  exit_gift_shown: { offering: string; product: string };
+  /** "No, thanks" or the close: on to "What stopped you?". */
+  exit_gift_declined: { offering: string; product: string };
+  exit_gift_purchased: { offering: string; product: string };
+
   // ── The Day 1 reminder ───────────────────────────────────────────────────
   /** The Day 1 reminder was laid for the first time on this phone: somebody
    * past the onboarding left without buying and without doing Day 1, with
@@ -332,7 +368,7 @@ export type AnalyticsEvents = {
   /** A locked tap by somebody looking around without buying raised the plans
    * over Home: a plan session, a task off Home's list, the test, a routine,
    * relief after a check-in, or the session player's own lock. */
-  locked_plans_opened: { from: 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' };
+  locked_plans_opened: { from: 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step' };
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;

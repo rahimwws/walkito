@@ -21,6 +21,7 @@ import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { chose } from './answers';
 import { heelAsked, roleOf, runs, standsAtWork } from './journey';
+import { moved } from './story';
 
 /**
  * One line of copy, resolved against whatever language is current.
@@ -120,6 +121,9 @@ export type OnboardingStep = StepBase &
          * session days lit (`week`), or a timer ring filled to the minutes
          * (`timer`). */
         gauge?: 'week' | 'timer';
+        /** A warm line over the answers, said before the question (the web
+         * funnel's "Foot pain changes your whole day."). */
+        banner?: Phrase;
       }
     /** A full-screen answer to the question before it: mascot, a heading, a
      * line, tap anywhere. `of` names the question it reacts to. */
@@ -161,6 +165,29 @@ export type OnboardingStep = StepBase &
     | { kind: 'move-preview' }
     /** The marked zones again, beside what the plan changes and when. */
     | { kind: 'outlook' }
+    // ── The story, from the web funnel's v4/v5 ──────────────────────────────
+    /** One of the three cards: the problem, not her fault, the research. */
+    | { kind: 'story-card'; card: 'fault' | 'path' | 'research' }
+    /** Without Walkito / with Walkito. */
+    | { kind: 'compare' }
+    /** The App Store's reviews, word for word. */
+    | { kind: 'reviews' }
+    /** "When do you usually get up?": the first-step routine's time. */
+    | { kind: 'wake' }
+    /** The first move: one minute of Day 1, or "Skip, show my plan". */
+    | { kind: 'first-move' }
+    /** "How did that feel?", in words. */
+    | { kind: 'felt' }
+    /** Her answer, given back toward her own goal. */
+    | { kind: 'felt-answer' }
+    /** "Nice work. Day 1 of your plan is done", in full colour. */
+    | { kind: 'praise' }
+    /** "Tomorrow at 7:00, before your first step": the routine in bed. */
+    | { kind: 'routine' }
+    /** Her promise, signed with a finger. */
+    | { kind: 'sign' }
+    /** A peek at her plan: week 1 from her own moves, the rest locked. */
+    | { kind: 'plan-peek' }
   );
 
 /**
@@ -251,6 +278,23 @@ export const STEPS: readonly OnboardingStep[] = [
   // page). Kept in the table, as the other retired steps are, so the indices
   // and a saved place stay where they were.
   { kind: 'reaction', of: 'role', key: 'role-reaction', act: 0, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
+  {
+    // Her usual day, so the plan knows whether she sits or stands most of it
+    // (`kindFrom`: Desk, On your feet, Runner). Asked only for everyday
+    // walking: who runs or works on their feet has said so already. The
+    // values are the web funnel's.
+    kind: 'choice',
+    key: 'day',
+    act: 0,
+    title: (t) => t('story.day.title'),
+    blurb: UNUSED,
+    options: [
+      { value: 'sit8', label: (t) => t('story.day.sit8'), caption: (t) => t('story.day.sit8Hint'), emoji: 'couch' },
+      { value: 'sit4', label: (t) => t('story.day.sit4'), caption: (t) => t('story.day.sit4Hint'), emoji: 'briefcase' },
+      { value: 'feet', label: (t) => t('story.day.feet'), emoji: 'leg' },
+    ],
+    skipWhen: (a) => roleOf(a) !== 'walking',
+  },
   {
     // Only for somebody who runs. The values are analytics identifiers.
     kind: 'choice',
@@ -405,6 +449,10 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.goal.blurb'),
     art: 'peek',
     options: [],
+    // Retired: what she wants back is asked later, in her own day's words
+    // (`goals`, the web funnel's "What do you want back?"). Kept in the
+    // table so the indices and a saved place hold.
+    skipWhen: () => true,
   },
   {
     // Placeholder copy: the page swaps in kilometres for a runner and hours
@@ -517,6 +565,36 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'none', label: (t) => t('onboarding.equipment.none'), emoji: 'sparkles', accent: 'teal' },
     ],
   },
+  // ── The story (the web funnel's v4/v5) ──────────────────────────────────
+  // How her feet get in her way, the three cards, without and with, real
+  // reviews, and what she wants back; then the Foot Check, the first move,
+  // her promise, and a peek at her plan. The options of `life` and `goals`
+  // are the page's (`lifeFor`: a runner sees running first).
+  {
+    kind: 'choice',
+    key: 'life',
+    act: 2,
+    title: (t) => t('story.life.title'),
+    blurb: UNUSED,
+    banner: (t) => t('story.life.banner'),
+    multi: true,
+    options: [],
+  },
+  { kind: 'story-card', card: 'fault', key: 'fault', act: 2, title: UNUSED, blurb: UNUSED },
+  { kind: 'story-card', card: 'path', key: 'path', act: 2, title: UNUSED, blurb: UNUSED },
+  { kind: 'story-card', card: 'research', key: 'research', act: 2, title: UNUSED, blurb: UNUSED },
+  { kind: 'compare', key: 'compare', act: 2, title: UNUSED, blurb: UNUSED },
+  { kind: 'reviews', key: 'reviews', act: 2, title: UNUSED, blurb: UNUSED },
+  {
+    kind: 'choice',
+    key: 'goals',
+    act: 2,
+    title: (t) => t('story.goals.title'),
+    blurb: UNUSED,
+    multi: true,
+    options: [],
+  },
+  { kind: 'wake', key: 'wake', act: 2, title: (t) => t('story.wake.title'), blurb: UNUSED },
   // The Foot Check: two things she does sitting down and answers herself,
   // the same for everybody (no intro, nothing held, no phone on a shin). The
   // retired steps stay in the table, skipped, as the contract does: the keys
@@ -535,8 +613,19 @@ export const STEPS: readonly OnboardingStep[] = [
   { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'test-balance', key: 'test-balance', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   { kind: 'test-result', key: 'test-result', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
+  // The first move and what it was worth, in words; tomorrow's routine; her
+  // promise. "How did that feel?" and after only when she did the move.
+  { kind: 'first-move', key: 'first-move', act: 3, title: UNUSED, blurb: UNUSED },
+  { kind: 'felt', key: 'felt', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !moved(a) },
+  { kind: 'felt-answer', key: 'felt-answer', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !moved(a) },
+  { kind: 'praise', key: 'praise', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !moved(a) },
+  { kind: 'routine', key: 'routine', act: 3, title: UNUSED, blurb: UNUSED },
+  { kind: 'sign', key: 'sign', act: 3, title: UNUSED, blurb: UNUSED },
   { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
-  { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },
+  { kind: 'plan-peek', key: 'plan-peek', act: 3, title: UNUSED, blurb: UNUSED },
+  // Retired: the plan peek shows her first week now, from the same moves.
+  // Kept in the table so the indices and a saved place hold.
+  { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   // Retired: a signature before a price read as a trick, and lost one in five
   // of the people who reached it on the first paid day, optional or not.
   // Kept in the table until its copy and code are removed.

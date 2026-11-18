@@ -40,7 +40,7 @@ export function useLookingAround(): boolean {
 }
 
 /** What was tapped that raised the plans. */
-export type PlansAskedFrom = 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player';
+export type PlansAskedFrom = 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step';
 
 
 let asked = false;

@@ -1,6 +1,7 @@
 export { NavThemeProvider } from './nav-theme-provider';
 export { useOfferNotifications } from './offer-notifications';
 export { useDayOneReminder } from './day-one-reminder';
+export { useFirstStep } from './first-step';
 export { usePendingOfferPresenter } from './pending-offer';
 export { useQuickActions } from './quick-actions';
 export { useHealthPipeline } from './health-pipeline';

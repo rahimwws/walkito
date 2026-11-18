@@ -24,6 +24,7 @@ import { COMMUNITY_EN } from './community';
 import { INSIGHTS_EN } from './insights';
 import { TRUST_EN } from './trust';
 import { FOOT_CHECK_EN } from './foot-check';
+import { STORY_EN } from './story';
 
 /**
  * English, assembled from its domain files.
@@ -64,4 +65,5 @@ export const en = {
   ...INSIGHTS_EN,
   ...TRUST_EN,
   ...FOOT_CHECK_EN,
+  ...STORY_EN,
 };

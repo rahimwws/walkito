@@ -19,7 +19,7 @@ import type { Key } from '@/shared/lib/i18n';
  * down rather than merely true.
  */
 
-export type ProtocolId = 'flare' | 'pre_run' | 'post_run' | 'at_work' | 'morning';
+export type ProtocolId = 'flare' | 'pre_run' | 'post_run' | 'at_work' | 'morning' | 'first_steps';
 
 /** Where the user will be standing, sitting or lying while they run it. */
 export type ProtocolPosition = 'seated' | 'standing' | 'in_bed';
@@ -177,8 +177,34 @@ export const PROTOCOLS: readonly Protocol[] = [
   },
 ];
 
+/**
+ * The first-step routine: two minutes on the edge of the bed, before the
+ * first step of the day, at the time she gets up (the onboarding asks it).
+ * The plantar fascia stretch, the big toe lift and the seated short foot:
+ * all seated, nothing to hold, each with its clip and still, and the same
+ * three the web funnel shows. Forty seconds each, two minutes on the card.
+ *
+ * Not in the Library's list (`PROTOCOLS`): it is opened from the morning
+ * notification, or on her first open that morning, and from nowhere else.
+ * Part of the plan, so it is for subscribers, as the plan's sessions are.
+ */
+export const FIRST_STEPS: Protocol = {
+  id: 'first_steps',
+  minutes: 2,
+  position: 'in_bed',
+  accent: 'amber',
+  titleKey: 'story.firstSteps.title',
+  cueKey: 'story.firstSteps.cue',
+  free: false,
+  steps: [
+    { exerciseId: 'fascia_stretch', seconds: 40 },
+    { exerciseId: 'big_toe_lift', seconds: 40 },
+    { exerciseId: 'short_foot_seated', seconds: 40 },
+  ],
+};
+
 export const PROTOCOLS_BY_ID: Readonly<Record<ProtocolId, Protocol>> = Object.fromEntries(
-  PROTOCOLS.map((protocol) => [protocol.id, protocol]),
+  [...PROTOCOLS, FIRST_STEPS].map((protocol) => [protocol.id, protocol]),
 ) as Record<ProtocolId, Protocol>;
 
 export function protocolById(id: ProtocolId): Protocol {

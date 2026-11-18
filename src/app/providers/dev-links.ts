@@ -12,7 +12,7 @@ import {
 } from '@/pages/home';
 import { devSeedOnFeetWeek, devSetOnFeetWeekState } from '@/pages/progress';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
-import { devPreviewOnFeet, previewNotification } from '@/entities/notifications';
+import { devFirstStep, devPreviewOnFeet, previewNotification } from '@/entities/notifications';
 import {
   currentDay,
   devClearCheckIn,
@@ -36,7 +36,7 @@ import {
   setSampleSheetCloses,
 } from '@/entities/purchase';
 import { getIntake, saveIntake } from '@/entities/profile';
-import { devForgetCancelQuestion, devSetFirstSession } from '@/pages/offer';
+import { devForgetCancelQuestion, devForgetGift, devSetFirstSession } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
 import {
@@ -75,6 +75,9 @@ const SAMPLE_PARAM = /[?&]samplePrices(?:=(\w+))?\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
 const PAYWALL_PARAM = /[?&]previewPaywall\b/;
+/** `?firstStep=notify|due|ready`: the first-step routine's morning, now
+ * (`devFirstStep`). */
+const FIRST_STEP_PARAM = /[?&]firstStep=(notify|due|ready)\b/;
 /** `?firstSession=offer`: the first session before the paywall offered
  * again, with the plan started over today, as it is for somebody who has just
  * finished the onboarding; `=done` as if it had been done there (the paywall that carries on
@@ -316,7 +319,10 @@ export function useDevLinks(): void {
           lockBoost();
           devPreviewPaywall();
           devForgetCancelQuestion();
+          devForgetGift();
         }
+        const firstStep = FIRST_STEP_PARAM.exec(url);
+        if (firstStep != null) void devFirstStep(firstStep[1] as 'notify' | 'due' | 'ready');
         if (HOME_OFFER_PARAM.test(url)) devPreviewHomeOffer();
         if (RESET_CHECKIN_PARAM.test(url)) devClearCheckIn(currentDay());
         if (MILESTONE_PARAM.test(url)) devForgetMilestones();

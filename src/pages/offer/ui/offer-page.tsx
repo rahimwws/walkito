@@ -7,14 +7,17 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
   cancelWinback,
+  firstStepDueAt,
   notificationsAllowed,
   scheduleNextDayPush,
   scheduleWinback,
+  useFirstStepReady,
+  wakeLabel,
   wakeMinutes,
 } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
-import { firstName, getIntake, useProfileName } from '@/entities/profile';
+import { firstName, getIntake, storyOf, useProfileName } from '@/entities/profile';
 import { planSettings, sessions } from '@/entities/program';
 import {
   OFFERINGS,
@@ -34,29 +37,34 @@ import {
   type Plan,
   type Shelf,
 } from '@/entities/purchase';
-import { armHomeTour, setHomeTourStage } from '@/entities/session';
+import {
+  armHomeTour,
+  firstSession,
+  firstSessionAgain,
+  firstSessionOfferedAgain,
+  setHomeTourStage,
+  useFirstSessionAgain,
+} from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { logAppsFlyerEvent } from '@/shared/lib/appsflyer';
-import { useT, type Key } from '@/shared/lib/i18n';
+import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 
-import {
-  firstSession,
-  firstSessionAgain,
-  firstSessionOfferedAgain,
-  useFirstSessionAgain,
-} from '../model/first-session';
+import { giftOpens, giftPlan } from '../model/gift';
+import { giftSeen, markGiftSeen } from '../model/gift-store';
 import { introSeen, markIntroSeen } from '../model/intro';
 import { nextDay } from '../model/next-day';
 import { PLAN_ORDER, dueToday, hasIntroMonth } from '../model/plans';
 import { FirstSession } from './first-session';
 import { NextDay } from './next-day';
 import { CancelQuestion, takeCancelQuestion, type CancelReason } from './cancel-question';
+import { ExitGift } from './exit-gift';
+import type { PlansStory } from './story-head';
 import { IntroNext, IntroPlan, StepBar } from './offer-intro';
 import { PlansStep, type PlansStepRow } from './plans-step';
 import { TrialGift, TrialNext } from './trial-intro';
@@ -486,6 +494,86 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
    * counted. A purchase or restore marks the exit as not a dismissal.
    */
   const converted = useRef(false);
+
+  /**
+   * The onboarding's story, over the plans: her plan's name, her goals, her
+   * first-step routine (`StoryHead`). Not on the comeback view, which tells
+   * its own. Read once, as the view opens.
+   */
+  const language = useLanguage();
+  const firstStepReady = useFirstStepReady();
+  const [told] = useState(() => (boosted ? null : storyOf()));
+  const plansStory: PlansStory | null = (() => {
+    if (told == null) return null;
+    const at = firstStepDueAt();
+    const upcoming = at != null && at > Date.now();
+    const time = at == null ? null : wakeLabel(new Date(at).getHours() * 60 + new Date(at).getMinutes(), language);
+    return {
+      planName: t(`story.plan.${told.kind}`),
+      goals: told.goals,
+      firstStep: firstStepReady
+        ? t('story.paywall.ready')
+        : upcoming && time != null
+          ? t('story.paywall.firstStep', { time })
+          : null,
+    };
+  })();
+
+  /**
+   * The exit gift: `walkito_annual_offer` from the `offer` offering, loaded
+   * as the view opens, and kept only where the store has it and StoreKit says
+   * this customer can have its first-year price (`giftPlan`). Opened once,
+   * after a closed payment sheet (`giftOpens`); "What stopped you?" follows.
+   */
+  const [gift, setGift] = useState<Plan | null>(null);
+  const [giftShown, setGiftShown] = useState(false);
+  const [giftBusy, setGiftBusy] = useState(false);
+  /** The plan whose sheet was closed, for the question after the gift. */
+  const giftFor = useRef<PaywallPeriod>('annual');
+  useEffect(() => {
+    if (boosted || giftSeen() || !purchases.configured) return undefined;
+    let live = true;
+    purchases
+      .offering(OFFERINGS.offer)
+      .then((offering) => {
+        if (live) setGift(giftPlan(offering));
+      })
+      .catch(() => undefined);
+    return () => {
+      live = false;
+    };
+  }, [boosted]);
+  const giftEvent = gift == null ? null : { offering: OFFERINGS.offer, product: gift.product.id };
+  const afterGift = () => {
+    setGiftShown(false);
+    if (takeCancelQuestion()) setAsking(giftFor.current);
+  };
+  const declineGift = () => {
+    if (giftBusy) return;
+    if (giftEvent != null) track('exit_gift_declined', giftEvent);
+    afterGift();
+  };
+  const buyGift = async () => {
+    if (gift == null || giftBusy) return;
+    setGiftBusy(true);
+    const result = await purchases.buy(gift);
+    setGiftBusy(false);
+    if (result.status === 'purchased') {
+      if (giftEvent != null) track('exit_gift_purchased', giftEvent);
+      converted.current = true;
+      setGiftShown(false);
+      setCelebrating('purchased');
+      return;
+    }
+    if (result.status === 'cancelled') {
+      declineGift();
+      return;
+    }
+    setGiftShown(false);
+    if (result.status === 'pending') setNotice(t('offer.pending'));
+    else if (result.status === 'failed') setNotice(result.message);
+    else setNotice(t('offer.storeUnreachable'));
+  };
   useEffect(() => {
     track('paywall_viewed', { offering: offeringId, boosted, after_session: afterSession, wall });
     return () => {
@@ -750,6 +838,13 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     // nothing was charged and asked what stopped them (`CancelQuestion`);
     // after that, nothing: they know what they did.
     if (result.status === 'cancelled') {
+      if (giftOpens({ cancelled: true, seen: giftSeen(), plan: gift, comeback: boosted }) && giftEvent != null) {
+        markGiftSeen();
+        giftFor.current = tier;
+        setGiftShown(true);
+        track('exit_gift_shown', giftEvent);
+        return;
+      }
       if (takeCancelQuestion()) setAsking(tier);
       return;
     }
@@ -928,8 +1023,9 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       <PlansStep
         stepBar={flow ? <StepBar step={2} onSelect={toStep} /> : undefined}
         rows={kinds.map(row)}
+        story={plansStory}
         after={
-          afterSession
+          plansStory == null && afterSession
             ? {
                 title: profileName.length > 0 ? t('offer.next.titleNamed', { name: profileName }) : t('offer.next.title'),
                 // The free week is the annual's: with another plan chosen the
@@ -969,12 +1065,15 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
               }
             : undefined
         }
-        covered={busy || celebrating != null || asking != null}
+        covered={busy || celebrating != null || asking != null || giftShown}
         onSkip={wall ? onClose : skip}>
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
           as nothing having happened. */}
         <CancelQuestion visible={asking != null} onAnswer={answered} />
+        {gift != null && (
+          <ExitGift plan={gift} visible={giftShown} busy={giftBusy} onBuy={() => void buyGift()} onDecline={declineGift} />
+        )}
         <CelebrationSheet
           visible={celebrating != null}
           title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}

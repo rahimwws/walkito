@@ -13,6 +13,7 @@ export const WHY_KEYS: Readonly<Record<ProtocolId, Key>> = {
   post_run: 'quick.postRun.why',
   at_work: 'quick.atWork.why',
   morning: 'quick.morning.why',
+  first_steps: 'story.firstSteps.why',
 };
 
 export const POSITION_KEYS: Readonly<Record<ProtocolPosition, Key>> = {

@@ -26,6 +26,7 @@ import { COMMUNITY_RU } from './community';
 import { INSIGHTS_RU } from './insights';
 import { TRUST_RU } from './trust';
 import { FOOT_CHECK_RU } from './foot-check';
+import { STORY_RU } from './story';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -62,4 +63,5 @@ export const ru: CatalogueFor<'ru'> = {
   ...INSIGHTS_RU,
   ...TRUST_RU,
   ...FOOT_CHECK_RU,
+  ...STORY_RU,
 };

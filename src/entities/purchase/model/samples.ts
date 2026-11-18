@@ -168,7 +168,7 @@ export function sampleOffering(identifier: string): Offering | null {
     case OFFERINGS.offer:
       return {
         identifier,
-        annual: plan(identifier, 'annual', PRODUCTS.annualOffer, 59.99, {
+        annual: plan(identifier, 'annual', PRODUCTS.annualOffer, nextLineup() ? 49.99 : 59.99, {
           kind: 'pay-up-front',
           price: 29.99,
           priceString: usd(29.99),

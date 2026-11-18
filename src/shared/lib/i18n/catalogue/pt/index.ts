@@ -26,6 +26,7 @@ import { COMMUNITY_PT } from './community';
 import { INSIGHTS_PT } from './insights';
 import { TRUST_PT } from './trust';
 import { FOOT_CHECK_PT } from './foot-check';
+import { STORY_PT } from './story';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -62,4 +63,5 @@ export const pt: CatalogueFor<'pt'> = {
   ...INSIGHTS_PT,
   ...TRUST_PT,
   ...FOOT_CHECK_PT,
+  ...STORY_PT,
 };

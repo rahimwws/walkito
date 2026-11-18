@@ -69,6 +69,25 @@ export {
   wakeMinutes,
 } from './model/wake';
 export { setAudience, type Audience } from './model/audience';
+export {
+  FIRST_STEP_KIND,
+  clampWake,
+  firstStepAt,
+  firstStepDueInApp,
+  firstStepMessage,
+  wakeLabel,
+} from './model/first-step';
+export {
+  devFirstStep,
+  firstStepDueAt,
+  firstStepDueNow,
+  firstStepHandled,
+  isFirstStepTap,
+  markFirstStepHandled,
+  scheduleFirstStep,
+  setFirstStepReady,
+  useFirstStepReady,
+} from './model/first-step-push';
 export { NOTIFICATION_ART, type NotificationArt } from './model/art';
 export { PREVIEW_KIND, previewNotification, type PreviewOptions } from './model/preview';
 export {

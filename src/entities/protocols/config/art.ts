@@ -35,6 +35,8 @@ export const PROTOCOL_ART: Readonly<Record<ProtocolId, ImageSourcePropType>> = {
   post_run: require('@assets/quick/post-run.jpg'),
   at_work: require('@assets/quick/at-work.jpg'),
   morning: require('@assets/quick/morning.jpg'),
+  // The same first light: it is the morning's other routine.
+  first_steps: require('@assets/quick/morning.jpg'),
 };
 
 /**
@@ -52,4 +54,5 @@ export const PROTOCOL_ICONS: Readonly<Record<ProtocolId, FluentName>> = {
   post_run: 'shoe',
   at_work: 'briefcase',
   morning: 'morning',
+  first_steps: 'sunrise',
 };

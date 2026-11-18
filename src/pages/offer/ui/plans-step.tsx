@@ -23,6 +23,7 @@ import { FootCheckResult } from './foot-check-result';
 import { PlanCard } from './plan-card';
 import { PlansTable } from './plans-table';
 import { PlansThemeContext, plansThemeFor } from './plans-theme';
+import { CarlaLine, StoryHead, type PlansStory } from './story-head';
 import { TrialTimeline, trialDays } from './trial-timeline';
 
 /** The first move of Day 1, seated: the plantar stretch, hand on the toes. */
@@ -64,6 +65,9 @@ export type PlansStepProps = {
    * picture of the day that comes next.
    */
   after?: { title: string; line: string; picture: ReactNode } | null;
+  /** After the onboarding's story: her plan's name over the plans, her goals,
+   * her first-step routine and how the plan runs, in place of the clip. */
+  story?: PlansStory | null;
   /** Over the button: what happens next and what is paid today. */
   confirm: string | null;
   /** A plan to bring into view: the one "What stopped you?" pointed back to.
@@ -124,6 +128,7 @@ export function PlansStep({
   name,
   result,
   after = null,
+  story = null,
   confirm,
   reveal = null,
   busy,
@@ -209,7 +214,20 @@ export function PlansStep({
               </View>
             )}
 
-            {after != null ? (
+            {story != null ? (
+              <StoryHead
+                story={story}
+                headline={headline.map((run, i) =>
+                  run.lit ? (
+                    <Text key={i} style={{ color: PLUS.lit }}>
+                      {run.text}
+                    </Text>
+                  ) : (
+                    run.text
+                  ),
+                )}
+              />
+            ) : after != null ? (
               <View style={styles.after}>
                 <Text
                   accessibilityRole="header"
@@ -270,6 +288,7 @@ export function PlansStep({
             {result && <FootCheckResult surface={SHEET.card} />}
 
             <GuidelinesLine color={SHEET.label} />
+            {story != null && <CarlaLine />}
 
             <View
               accessibilityRole="radiogroup"

@@ -47,3 +47,16 @@ export {
   type HomeTourStage,
   type HomeTourState,
 } from './model/home-tour';
+/** The first session before the paywall: done (in the onboarding or there),
+ * passed on, or asked for again by a Day 1 reminder. The onboarding marks it
+ * when its first move ran; the paywall reads it. */
+export {
+  devSetFirstSession,
+  firstSession,
+  firstSessionAgain,
+  firstSessionOfferedAgain,
+  markFirstSession,
+  offerFirstSessionAgain,
+  useFirstSessionAgain,
+  type FirstSession,
+} from './model/first-session';

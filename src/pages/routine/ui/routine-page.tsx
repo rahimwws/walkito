@@ -9,7 +9,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   interpolate,
@@ -30,6 +30,7 @@ import {
   type ProtocolPosition,
 } from '@/entities/protocols';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
@@ -76,17 +77,17 @@ function clear(hex: string): string {
 }
 
 export function RoutinePage() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const protocol: Protocol | null =
     id != null && id in PROTOCOLS_BY_ID ? PROTOCOLS_BY_ID[id as ProtocolId] : null;
 
   // A link to a routine that does not exist lands on the list of the ones
   // that do, rather than on a blank page.
   if (protocol == null) return <Redirect href="/quick" />;
-  return <Routine protocol={protocol} />;
+  return <Routine protocol={protocol} from={from} />;
 }
 
-function Routine({ protocol }: { protocol: Protocol }) {
+function Routine({ protocol, from }: { protocol: Protocol; from?: string }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -97,6 +98,12 @@ function Routine({ protocol }: { protocol: Protocol }) {
   const t = useT();
 
   const { locked, running, start, stop } = useStartRoutine(protocol);
+  // The first-step routine, opened from its morning: counted from start to end.
+  const firstSteps = protocol?.id === 'first_steps';
+  useEffect(() => {
+    if (running && firstSteps)
+      track('first_step_session_started', { from: from === 'notification' ? 'notification' : 'app_open' });
+  }, [running, firstSteps, from]);
 
   const heroHeight = Math.round(height * HERO_SHARE);
 
@@ -323,6 +330,7 @@ function Routine({ protocol }: { protocol: Protocol }) {
           protocol={protocol}
           onClose={stop}
           onFinished={() => {
+            if (firstSteps) track('first_step_session_completed');
             stop();
             leave();
           }}
