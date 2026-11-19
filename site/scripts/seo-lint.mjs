@@ -219,6 +219,8 @@ for (const file of walk(OUT)) {
     if (t.href == null) continue;
     const target = internalPath(t.href, url);
     if (target == null) continue;
+    // walkito.site/go is the web funnel, deployed separately (funnel/), not part of out/.
+    if (target === '/go' || target.startsWith('/go/')) continue;
     const r = resolvePath(target);
     if (r === 'missing') error('href', `<${t.tag}> to ${target}, which is not in out/`, path);
     else if (r === 'slash') warn('href', `<${t.tag}> to ${target} works only through the redirect to ${target}/`, path);
