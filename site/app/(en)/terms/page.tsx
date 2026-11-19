@@ -207,6 +207,15 @@ export default function Terms() {
           <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a>.
           We cannot issue or reverse a charge on Apple’s or Google’s behalf.
         </p>
+        <p>
+          A plan bought on our website, at walkito.site/go, is billed by us, not
+          by Apple or Google. Every charge for it, renewals included, can be
+          refunded in full within 14 days of that charge: reply to any email from
+          us, or write to{' '}
+          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. There is no
+          phone call, no form and no reason needed. Its full terms are at{' '}
+          <a href="https://walkito.site/go/terms">walkito.site/go/terms</a>.
+        </p>
 
         <h2>Invites</h2>
         <p>

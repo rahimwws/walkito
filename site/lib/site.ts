@@ -129,7 +129,8 @@ export const PAGE_UPDATED = {
   about: '2026-10-27',
   support: '2026-10-01',
   privacy: '2026-10-09',
-  terms: '2026-10-09',
+  // Nov 19: refunds for plans bought at walkito.site/go (English page).
+  terms: '2026-11-19',
   footMap: '2026-10-24',
   // The ChatGPT and Claude page, in English only like the assistant.
   ai: '2026-10-10',
