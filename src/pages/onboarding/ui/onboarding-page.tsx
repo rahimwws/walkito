@@ -147,10 +147,12 @@ import { firstWeekDeck, painMove } from "../model/first-week-deck";
 import { feltAnswer, moved, peekTiles, planLineKind, routineIsHero, wakeOf } from "../model/story";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
+import { decideNotifyPlacement } from "../model/notify-placement";
 import { clearProgress, loadProgress, saveProgress } from "../model/progress";
 import {
   RECOMMENDED,
   STEPS,
+  onboardingSteps,
   STEP_COUNT,
   hurts,
   stepAfter,
@@ -254,6 +256,10 @@ const CHECKPOINTS: readonly number[] = [1, 2, 3]
  * in a replay. `collapsable` stays false on every step so toggling the mask
  * never changes whether the view exists natively.
  */
+/** From this step on, the notification ask's place is decided: the last
+ * question before it that every order shares. */
+const DECIDE_PLACEMENT_AT = STEPS.findIndex((step) => step.key === "source");
+
 const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "toe",
   "bunion",
@@ -399,10 +405,13 @@ export function OnboardingPage() {
    * over to the next one that does. */
   const [resumed] = useState(() => {
     const saved = loadProgress();
-    const at = saved == null ? -1 : STEPS.findIndex((candidate) => candidate.key === saved.step);
+    // A return past the point the notification ask's place is decided: decided
+    // now, before the saved step is looked up in the order it decides.
+    if (saved != null && STEPS.findIndex((candidate) => candidate.key === saved.step) >= DECIDE_PLACEMENT_AT) decideNotifyPlacement();
+    const at = saved == null ? -1 : onboardingSteps().findIndex((candidate) => candidate.key === saved.step);
     if (saved == null || at <= 0) return null;
     const given = { ...seedAnswers(), ...saved.answers };
-    const index = STEPS[at].skipWhen?.(given) === true ? (stepAfter(at, true, given) ?? stepAfter(at, false, given)) : at;
+    const index = onboardingSteps()[at].skipWhen?.(given) === true ? (stepAfter(at, true, given) ?? stepAfter(at, false, given)) : at;
     return index != null && index > 0 ? { ...saved, index } : null;
   });
   const [index, setIndex] = useState(resumed?.index ?? 0);
@@ -439,8 +448,13 @@ export function OnboardingPage() {
   const [sealing, setSealing] = useState(false);
   const stamp = useSharedValue(0);
 
-  const step = STEPS[index];
+  const step = onboardingSteps()[index];
   useResumeActivity(t, index);
+  // Where the notification ask goes (`notify-placement.ts`), decided once the
+  // flow reaches the question both orders share last.
+  useEffect(() => {
+    if (index >= DECIDE_PLACEMENT_AT) decideNotifyPlacement();
+  }, [index]);
   const language = useLanguage();
   /** The first move: Day 1's first move, a minute of it, fixed as the
    * screen first opens so the clip shown is the move played. */
@@ -577,12 +591,12 @@ export function OnboardingPage() {
   // A step stepped over has no answer and leaves no stamp; going back takes
   // the later stamps off until they are answered again.
   const passed = (key: string) => {
-    const at = STEPS.findIndex((candidate) => candidate.key === key);
+    const at = onboardingSteps().findIndex((candidate) => candidate.key === key);
     return at >= 0 && at < index;
   };
   const choiceLabel = (key: string): string | null => {
     const value = list(answers[key])[0];
-    const choice = STEPS.find((candidate) => candidate.key === key);
+    const choice = onboardingSteps().find((candidate) => candidate.key === key);
     if (value == null || choice == null || !("options" in choice)) return null;
     const option = choice.options.find((candidate) => candidate.value === value);
     return option == null ? null : say(option.label);
@@ -595,7 +609,7 @@ export function OnboardingPage() {
           key,
           label,
           value,
-          order: STEPS.findIndex((candidate) => candidate.key === key),
+          order: onboardingSteps().findIndex((candidate) => candidate.key === key),
         });
     };
     const roleValue = list(answers.role)[0];
@@ -841,7 +855,7 @@ export function OnboardingPage() {
   /** A step arriving: where the coach stands on it and how, and his move
    * once the question is up. A hero step plays its own. */
   const arrive = (next: number, nextAnswers: Answers) => {
-    const key = STEPS[next].key;
+    const key = onboardingSteps()[next].key;
     const moment = coachEnter(key, nextAnswers);
     const placed = {
       moment: { where: moment.where, pose: moment.pose, mirrored: moment.mirrored },
@@ -856,7 +870,7 @@ export function OnboardingPage() {
     setClipViewerOpen(false);
     // Made before halfway, so the run's first cheer is not the sound that
     // waits for its file. Kept once made, so asking again costs nothing.
-    if (STEPS[next].act >= 2) preloadMascotSounds(["cheer", "boing"]);
+    if (onboardingSteps()[next].act >= 2) preloadMascotSounds(["cheer", "boing"]);
     if (
       (moment.where === "speaker" || speakingNow.current) &&
       moment.enter != null
@@ -870,7 +884,7 @@ export function OnboardingPage() {
   // on, as he would have on arriving from the one before.
   useEffect(() => {
     if (resumed == null) return;
-    track("onboarding_resumed", { step: STEPS[resumed.index].key, index: resumed.index });
+    track("onboarding_resumed", { step: onboardingSteps()[resumed.index].key, index: resumed.index });
     arriveRef.current(resumed.index, answersRef.current);
     // Once, as the screen mounts.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -908,7 +922,7 @@ export function OnboardingPage() {
    */
   const carried = (() => {
     for (let i = index - 1; i >= 0; i -= 1) {
-      const before = STEPS[i];
+      const before = onboardingSteps()[i];
       if (before.kind === "reaction") {
         const found =
           before.of === "role"
@@ -1085,7 +1099,7 @@ export function OnboardingPage() {
    */
   const [returnTo, setReturnTo] = useState<number | null>(null);
   const editFromPassport = (key: string) => {
-    const at = STEPS.findIndex((candidate) => candidate.key === key);
+    const at = onboardingSteps().findIndex((candidate) => candidate.key === key);
     if (at < 0) return;
     setReturnTo(index);
     go(at, false);
@@ -1100,7 +1114,7 @@ export function OnboardingPage() {
    */
   const go = useCallback(
     (next: number, forward: boolean, nextAnswers?: Answers) => {
-      if (STEPS[next].kind !== "name") Keyboard.dismiss();
+      if (onboardingSteps()[next].kind !== "name") Keyboard.dismiss();
       // The coach changes as the question leaves, so his squash and swap
       // land inside the exit, beside the body rather than in it.
       arriveRef.current(next, nextAnswers ?? answersRef.current);
@@ -1129,7 +1143,7 @@ export function OnboardingPage() {
   useEffect(() => {
     if (!__DEV__) return undefined;
     const jump = (key: string) => {
-      const at = STEPS.findIndex((candidate) => candidate.key === key);
+      const at = onboardingSteps().findIndex((candidate) => candidate.key === key);
       if (at >= 0) go(at, true);
     };
     (globalThis as { __onboarding?: unknown }).__onboarding = {
