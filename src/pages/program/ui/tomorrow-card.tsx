@@ -1,6 +1,8 @@
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
+import LockIcon from '@hugeicons/core-free-icons/LockIcon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
 import type { DayType } from '@/entities/program';
@@ -31,6 +33,9 @@ export type TomorrowCardProps = {
   opensAt: number | null;
   /** A rest day: when the next session is, "Next session: Monday, strength." */
   nextLine: string | null;
+  /** Looking around without buying: tomorrow's session is locked, and the
+   * card carries the lock. */
+  locked?: boolean;
 };
 
 /**
@@ -46,7 +51,7 @@ export type TomorrowCardProps = {
  * tappable either: the page opens no day sheet, and a card that looks
  * pressable and does nothing is worse than one that is plainly a note.
  */
-export function TomorrowCard({ kind, title, minutes, count, opensAt, nextLine }: TomorrowCardProps) {
+export function TomorrowCard({ kind, title, minutes, count, opensAt, nextLine, locked = false }: TomorrowCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -71,6 +76,11 @@ export function TomorrowCard({ kind, title, minutes, count, opensAt, nextLine }:
             {title}
           </Text>
         </View>
+        {locked && !rest && (
+          <View accessible accessibilityLabel={t('quick.locked')}>
+            <HugeiconsIcon icon={LockIcon} size={22} color={meter.unit} strokeWidth={2} />
+          </View>
+        )}
       </View>
 
       {!rest && (

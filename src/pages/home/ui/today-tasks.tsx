@@ -1,5 +1,6 @@
 import ChartLineData02Icon from '@hugeicons/core-free-icons/ChartLineData02Icon';
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import LockIcon from '@hugeicons/core-free-icons/LockIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -38,7 +39,7 @@ import {
   planReasonLine,
 } from '@/entities/program';
 import { askForPlans, lookingAround } from '@/entities/purchase';
-import { answerLockedPlanTap } from '@/features/home-tour';
+import { answerLockedPlanTap, usePlanSessionsLocked } from '@/features/home-tour';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
@@ -277,6 +278,8 @@ export function TodayTasks({
   /** Home stays mounted under the other tabs; the countdown in the finished
    * banner has no reason to tick there. */
   const focused = useIsFocused();
+  /** Looking around without buying, past Day 1: the rows carry locks. */
+  const tasksLocked = usePlanSessionsLocked();
   /** Which task's player is up, and the day it runs against — fixed when it
    * opens, so a write while it plays cannot hand the player a new day. */
   const [open, setOpen] = useState<{ task: Task; day: ProgramDay } | null>(null);
@@ -513,6 +516,7 @@ export function TodayTasks({
             <TaskRow
               task={task}
               done={isDone(task.id)}
+              locked={tasksLocked && !isDone(task.id)}
               onOpen={() => {
                 Haptics.selectionAsync();
                 // Looking around without buying: Day 1 while it is ahead,
@@ -719,11 +723,15 @@ function RetestRow({
 function TaskRow({
   task,
   done,
+  locked,
   onOpen,
   onToggle,
 }: {
   task: Task;
   done: boolean;
+  /** Looking around without buying, past Day 1: the row carries a lock in
+   * place of its cost and box, and a tap raises the plans. */
+  locked: boolean;
   /** The row opens the exercise. */
   onOpen: () => void;
   /** The box marks it done without opening anything — for the task you have
@@ -783,7 +791,11 @@ function TaskRow({
         </View>
       </View>
 
-      {task.chip != null && !done ? (
+      {locked ? (
+        <View accessible accessibilityLabel={t('quick.locked')} style={styles.lock}>
+          <HugeiconsIcon icon={LockIcon} size={22} color={meter.unit} strokeWidth={2} />
+        </View>
+      ) : task.chip != null && !done ? (
         // The cost, as a solid chip in the category's own accent. Inert: the
         // row around it is what opens the exercise.
         <Chip3D icon={Clock01Icon} accent={category.accent} label={task.chip} />
@@ -820,6 +832,7 @@ function TaskRow({
 
 const styles = StyleSheet.create({
   player: { flex: 1 },
+  lock: { paddingHorizontal: 4 },
   reason: {
     ...fonts.medium(15),
     lineHeight: 21,

@@ -1,5 +1,6 @@
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
+import LockIcon from '@hugeicons/core-free-icons/LockIcon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { StyleSheet, Text, View } from 'react-native';
@@ -68,6 +69,9 @@ export type TodayCardProps = {
   note?: string | null;
   /** A sheet is over the plan: the mascot holds still under it. */
   covered?: boolean;
+  /** Looking around without buying, past Day 1: Start carries a lock, and
+   * still answers with the plans. */
+  locked?: boolean;
 };
 
 /** Who stands on the card, and the one thing he does when it is first seen. */
@@ -122,6 +126,7 @@ export function TodayCard(props: TodayCardProps) {
     onShort,
     note,
     covered = false,
+    locked = false,
   } = props;
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -220,7 +225,9 @@ export function TodayCard(props: TodayCardProps) {
 
       {variant === 'session' && <MinuteChoice minutes={minutes} onMinutes={onMinutes} />}
 
-      {(working || variant === 'test') && <Button3D label={t('pages.plan.start')} onPress={onStart} />}
+      {(working || variant === 'test') && (
+        <Button3D label={t('pages.plan.start')} icon={locked ? LockIcon : undefined} onPress={onStart} />
+      )}
       {working && onShort != null && (
         <Button3D label={t('pages.plan.notUpForIt')} variant="ghost" size="sm" onPress={onShort} />
       )}

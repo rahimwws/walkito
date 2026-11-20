@@ -58,8 +58,8 @@ import {
 } from '@/entities/program';
 import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
-import { askForPlans, lookingAround } from '@/entities/purchase';
-import { answerLockedPlanTap } from '@/features/home-tour';
+import { askForPlans, lookingAround, useLookingAround } from '@/entities/purchase';
+import { answerLockedPlanTap, usePlanSessionsLocked } from '@/features/home-tour';
 import { fonts, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
@@ -217,6 +217,12 @@ export function ProgramPage() {
   );
   const doneToday = planSessionDone(today);
   const variant = todayVariant(adjusted, doneToday);
+  /** Looking around without buying: every session ahead is locked, and says
+   * so with a lock. Today's waits for Day 1 to be behind her (Day 1 is free);
+   * a test is locked from the start, as `start` treats it. */
+  const looking = useLookingAround();
+  const sessionLocked = usePlanSessionsLocked();
+  const locked = variant === 'test' ? looking : sessionLocked;
   /**
    * When the next session opens — the one answer the dock and Home read too.
    *
@@ -605,6 +611,7 @@ export function ProgramPage() {
               onShort={() => startToday(true)}
               note={planReasonLine(t, adjusted.reason)}
               covered={sheetOver}
+              locked={locked}
               tests={{
                 chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],
                 body: t('pages.plan.testBody', { count: RETEST_TESTS, minutes: RETEST_MINUTES }),
@@ -642,6 +649,7 @@ export function ProgramPage() {
                 count={tomorrowKind === 'test' ? RETEST_TESTS : (tomorrowDay?.exercises.length ?? 0)}
                 opensAt={opensAt}
                 nextLine={nextLine}
+                locked={looking}
               />
             </Animated.View>
           )}
