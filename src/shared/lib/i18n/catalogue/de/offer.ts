@@ -22,9 +22,6 @@ export const OFFER_DE = {
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.comebackBadge': 'Comeback-Angebot',
   'offer.inviteBadge': 'Dein Einladungspreis',
-  'offer.headline': 'Walkito Premium freischalten',
-  'offer.headlineInvite': 'Dein Einladungspreis für ein Jahr Walkito Premium',
-  'offer.headlineComeback': 'Dein Comeback-Angebot: ein Jahr Walkito Premium',
   'offer.sub': 'Dein Plan und alles drumherum.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -72,7 +69,6 @@ export const OFFER_DE = {
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
   'offer.purchasedTitle': 'Du bist dabei.',
-  'offer.premium': 'Walkito Premium',
   'offer.purchasedBlurb': 'Dein Plan ist freigeschaltet und passt sich ab deiner nächsten Einheit an.',
   'offer.restoredTitle': 'Schön, dass du wieder da bist.',
   'offer.restoredBlurb': 'Dein Abo ist wieder aktiv. Alles ist da, wo du es gelassen hast.',
@@ -116,14 +112,12 @@ export const OFFER_DE = {
   'offer.chipRoutines': 'Routinen für Schmerztage und Läufe',
   'offer.chipReminders': 'Erinnerungen',
 
-  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // ── Paywall: the plans ───────────────────────────────────────────────────
   // See `../en/offer.ts`. The words in square brackets in the headline are
-  // drawn in the Plus colour: put them round the word that carries it here.
+  // drawn in the accent colour: put them round the word that carries it here.
   'offer.plans.brand': 'Walkito',
-  'offer.plans.badge': 'Plus',
-  'offer.plans.name': 'Walkito Plus',
   'offer.plans.headline': 'Deine Füße, jeden Tag [stärker]',
-  'offer.plans.headlineComeback': 'Walkito Plus, jetzt [günstiger]',
+  'offer.plans.headlineComeback': 'Walkito, jetzt [günstiger]',
   'offer.plans.mostPopular': 'Am beliebtesten',
   'offer.plans.yearly': 'Jährlich',
   'offer.plans.monthly': 'Monatlich',
@@ -149,8 +143,6 @@ export const OFFER_DE = {
   'offer.plans.rowSessions': 'Alle angeleiteten Einheiten, mit Video',
   'offer.plans.rowTests': 'Alle zwei Wochen ein Fortschrittstest',
   'offer.plans.rowMorning': 'Die Morgendehnung',
-  'offer.plans.rowA11y': '{feature}. In Plus enthalten.',
-  'offer.plans.ctaLifetime': 'Walkito Plus holen',
   'offer.plans.ctaTrial': 'Gratis-Testphase starten',
   'offer.plans.ctaTrialWeek': 'Meine Gratiswoche starten',
   'offer.plans.noPaymentToday': 'Heute keine Zahlung',

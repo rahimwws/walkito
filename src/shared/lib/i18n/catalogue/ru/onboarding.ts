@@ -427,7 +427,6 @@ export const ONBOARDING_RU = {
   'onboarding.referral.title': 'Есть код приглашения?',
   'onboarding.referral.blurb': 'Введите его - и получите скидку {percent}% на годовую подписку.',
   'onboarding.referral.applied': 'Скидка {percent}% на годовую подписку применена.',
-  'onboarding.referral.unlocked': 'Код принят. Walkito Premium включён.',
   'onboarding.referral.unknown': 'Мы не знаем такой код. Проверьте и попробуйте ещё раз.',
   'onboarding.referral.own': 'Это ваш собственный код. Отправьте его кому-нибудь другому.',
   'onboarding.referral.already': 'Вы уже использовали код.',

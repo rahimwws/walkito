@@ -68,7 +68,7 @@ export const CORE_ES = {
   'settings.sound.voiceHint': 'Dice «arriba, dos, tres, mantén, abajo» en vez de tonos.',
   'settings.notifications.title': 'Notificaciones',
   'settings.notifications.offers': 'Ofertas y descuentos',
-  'settings.notifications.offersHint': 'De vez en cuando, un precio más bajo en Walkito Plus.',
+  'settings.notifications.offersHint': 'De vez en cuando, un precio más bajo en Walkito.',
   'settings.equipment': 'Lo que tengo en casa',
   'settings.equipment.step': 'Un escalón',
   'settings.equipment.band': 'Banda elástica',

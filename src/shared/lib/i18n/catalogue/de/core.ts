@@ -67,7 +67,7 @@ export const CORE_DE = {
   'settings.sound.voiceHint': 'Sagt „hoch, 2, 3, halten, runter“ statt Töne.',
   'settings.notifications.title': 'Mitteilungen',
   'settings.notifications.offers': 'Angebote und Rabatte',
-  'settings.notifications.offersHint': 'Ab und zu ein günstigerer Preis für Walkito Plus.',
+  'settings.notifications.offersHint': 'Ab und zu ein günstigerer Preis für Walkito.',
   'settings.equipment': 'Was ich zu Hause habe',
   'settings.equipment.step': 'Eine Stufe',
   'settings.equipment.band': 'Widerstandsband',

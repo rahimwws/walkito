@@ -71,7 +71,7 @@ export const CORE_RU = {
   'settings.sound.voiceHint': 'Говорит «вверх, два, три, держим, вниз» вместо сигналов.',
   'settings.notifications.title': 'Уведомления',
   'settings.notifications.offers': 'Акции и скидки',
-  'settings.notifications.offersHint': 'Иногда, когда Walkito Plus дешевле обычного.',
+  'settings.notifications.offersHint': 'Иногда, когда Walkito дешевле обычного.',
   'settings.equipment': 'Что есть дома',
   'settings.equipment.step': 'Ступенька',
   'settings.equipment.band': 'Эспандер-лента',

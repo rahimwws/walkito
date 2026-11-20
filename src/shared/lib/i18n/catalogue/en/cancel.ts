@@ -13,8 +13,8 @@
  * `{date}` is a whole date, written out in the language ("14 October 2027").
  * `{count}` is minutes.
  *
- * **"Walkito Plus" is the product's name** and stays as it is in every
- * language. "App Store" and "Google Play" too.
+ * **The product is called plain "Walkito"**, with no tier after it, and the
+ * name stays as it is in every language. "App Store" and "Google Play" too.
  */
 
 import type { SourceEntry } from '../entry';
@@ -24,16 +24,16 @@ export const CANCEL_EN = {
   'cancel.row.section': 'Subscription',
   'cancel.row.manage': 'Manage subscription',
   /** Under the row, when the store gave no date. */
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   /** Under the row: the plan, and its next renewal. */
   'cancel.row.renewsAnnual': 'Yearly plan, renews on {date}',
   'cancel.row.renewsMonthly': 'Monthly plan, renews on {date}',
   'cancel.row.renewsWeekly': 'Weekly plan, renews on {date}',
   'cancel.row.trial': 'Free trial until {date}, then your plan renews',
   /** Renewal was turned off in the store: access lasts to the date, then ends. */
-  'cancel.row.ends': 'Renewal is off. Walkito Plus lasts until {date}.',
+  'cancel.row.ends': 'Renewal is off. You have Walkito until {date}.',
   'cancel.row.lifetime': 'Lifetime',
-  'cancel.row.lifetimeHint': 'Walkito Plus is yours for good. Nothing renews.',
+  'cancel.row.lifetimeHint': 'Walkito is yours for good. Nothing renews.',
 
   // ── The question ─────────────────────────────────────────────────────────
   'cancel.title': 'Why are you leaving?',
@@ -79,9 +79,9 @@ export const CANCEL_EN = {
   /** The App Store: a month free, as a promotional offer. */
   'cancel.pause.freeMonthTitle': 'Take a free month',
   'cancel.pause.freeMonthBody':
-    'Keep your plan, and your next month costs nothing. After it, Walkito Plus renews as it does now.',
+    'Keep your plan, and your next month costs nothing. After it, Walkito renews as it does now.',
   'cancel.pause.freeMonthBodyYear':
-    'Keep your plan, and when the year you paid for is up, the next month costs nothing. After it, Walkito Plus renews as it does now.',
+    'Keep your plan, and when the year you paid for is up, the next month costs nothing. After it, Walkito renews as it does now.',
   'cancel.pause.freeMonthCta': 'Take a free month',
   'cancel.pause.freeMonthTerms':
     'The free month starts at your next renewal. You can still cancel any time in your subscription settings.',

@@ -1,17 +1,17 @@
 /** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
- * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito" stays as it is). */
 
 export const CANCEL_RU = {
   'cancel.row.section': 'Подписка',
   'cancel.row.manage': 'Управление подпиской',
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   'cancel.row.renewsAnnual': 'Годовой план, следующее продление {date}',
   'cancel.row.renewsMonthly': 'Месячный план, следующее продление {date}',
   'cancel.row.renewsWeekly': 'Недельный план, следующее продление {date}',
   'cancel.row.trial': 'Бесплатный период до {date}, затем план продлится',
-  'cancel.row.ends': 'Продление выключено. Walkito Plus работает до {date}.',
+  'cancel.row.ends': 'Продление выключено. Доступ к Walkito открыт до {date}.',
   'cancel.row.lifetime': 'Навсегда',
-  'cancel.row.lifetimeHint': 'Walkito Plus ваш навсегда. Ничего не продлевается.',
+  'cancel.row.lifetimeHint': 'Walkito ваш навсегда. Ничего не продлевается.',
 
   'cancel.title': 'Почему вы уходите?',
   'cancel.sub': 'Выберите самый близкий ответ. Так мы сможем сделать Walkito лучше.',
@@ -46,9 +46,9 @@ export const CANCEL_RU = {
   'cancel.pause.title': 'Иногда нужен перерыв',
   'cancel.pause.freeMonthTitle': 'Бесплатный месяц',
   'cancel.pause.freeMonthBody':
-    'План остаётся с вами, а следующий месяц ничего не стоит. Потом Walkito Plus продлится так же, как сейчас.',
+    'План остаётся с вами, а следующий месяц ничего не стоит. Потом подписка на Walkito продлится так же, как сейчас.',
   'cancel.pause.freeMonthBodyYear':
-    'План остаётся с вами, а когда оплаченный год закончится, следующий месяц ничего не будет стоить. Потом Walkito Plus продлится так же, как сейчас.',
+    'План остаётся с вами, а когда оплаченный год закончится, следующий месяц ничего не будет стоить. Потом подписка на Walkito продлится так же, как сейчас.',
   'cancel.pause.freeMonthCta': 'Взять бесплатный месяц',
   'cancel.pause.freeMonthTerms':
     'Бесплатный месяц начнётся со следующего продления. Отменить подписку можно в любой момент в настройках подписок.',

@@ -37,12 +37,6 @@ export const OFFER_EN = {
   'offer.comebackBadge': 'Comeback price',
   /** The same badge, for the price an invite earned. */
   'offer.inviteBadge': 'Your invite price',
-  /** The standard sheet. The product's name, said once at the top. */
-  'offer.headline': 'Unlock Walkito Premium',
-  /** The invite and comeback price is on the annual plan only, so the headline
-   * names the year rather than promising a cheaper app. */
-  'offer.headlineInvite': 'Your invite price on a year of Walkito Premium',
-  'offer.headlineComeback': 'Your comeback price on a year of Walkito Premium',
   'offer.sub': 'Your plan, and everything around it.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -120,9 +114,6 @@ export const OFFER_EN = {
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
   'offer.purchasedTitle': 'You’re in.',
-  /** The product's name, not a store identifier. Left as-is in every language
-   * — it is the brand with a tier after it. */
-  'offer.premium': 'Walkito Premium',
   'offer.purchasedBlurb': 'Your plan is unlocked, and it starts adapting from your next session.',
   'offer.restoredTitle': 'Welcome back.',
   'offer.restoredBlurb': 'Your subscription is active again. Everything is where you left it.',
@@ -169,22 +160,21 @@ export const OFFER_EN = {
   'offer.chipRoutines': 'Flare-up and run routines',
   'offer.chipReminders': 'Reminders',
 
-  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // ── Paywall: the plans ───────────────────────────────────────────────────
   // The third step (`plans-step.tsx`), after BitePal's paywall. Every amount
   // is the store's own string: `{price}` the billed amount, `{perMonth}` the
   // store's own division of a year, `{intro}` an introductory offer's price,
   // `{period}` a free trial's length (`offer.plans.days` and the rest). Trial
   // wording is only ever shown on a plan the store says carries a free trial.
-  /** The product, left as-is in every language: the brand and its tier. */
+  /** The product's name, plain "Walkito" with no tier after it, left as-is
+   * in every language. */
   'offer.plans.brand': 'Walkito',
-  'offer.plans.badge': 'Plus',
-  'offer.plans.name': 'Walkito Plus',
-  /** The headline. The word in square brackets is drawn in the Plus colour;
+  /** The headline. The word in square brackets is drawn in the accent colour;
    * the brackets go round whichever word carries the sentence. Said of the
    * training, never a figure or a multiple. */
   'offer.plans.headline': 'Your feet, [stronger] every day',
   /** A comeback view, only once the store’s prices make it cheaper. */
-  'offer.plans.headlineComeback': 'Walkito Plus, now for [less]',
+  'offer.plans.headlineComeback': 'Walkito, now for [less]',
   'offer.plans.mostPopular': 'Most popular',
   'offer.plans.yearly': 'Yearly',
   'offer.plans.monthly': 'Monthly',
@@ -208,18 +198,15 @@ export const OFFER_EN = {
   'offer.plans.months': { one: '{count} month', other: '{count} months' },
   'offer.plans.years': { one: '{count} year', other: '{count} years' },
   'offer.plans.showAll': 'Show all plans',
-  /** "What you get": what Walkito Plus includes. Only what the app does, and
-   * never a "free" column: there is no way into the app without Plus. */
+  /** "What you get": what Walkito includes. Only what the app does, and
+   * never a "free" column: there is no way into the app without buying. */
   'offer.plans.tableTitle': 'What you get',
   'offer.plans.rowPlan': 'A daily plan that adapts to you',
   'offer.plans.rowSessions': 'Every guided session, with video',
   'offer.plans.rowTests': 'A progress test every two weeks',
   'offer.plans.rowMorning': 'The morning stretch',
-  /** What a screen reader says for one row of the table. */
-  'offer.plans.rowA11y': '{feature}. Included with Plus.',
   /** The button, and the line under it: what is charged, when it renews,
    * where to cancel. The two sentences are separate keys, side by side. */
-  'offer.plans.ctaLifetime': 'Get Walkito Plus',
   'offer.plans.ctaTrial': 'Start my free trial',
   /** The same button when the trial is exactly a week. */
   'offer.plans.ctaTrialWeek': 'Start my free week',
@@ -247,7 +234,7 @@ export const OFFER_EN = {
   'offer.plans.confirmGoogle': 'Next, Google Play asks you to confirm. You pay {amount} today.',
   /** At the very bottom, three seconds after "Show all plans". It leads to
    * the one-time trial offer, never into the app: say nothing that implies
-   * the app can be used without Plus. */
+   * the app can be used without buying. */
   'offer.plans.skip': 'Not now',
   // Asked once, after Apple's sheet was closed without buying
   // (`CancelQuestion`). The title is a fact, not a comfort: nothing was

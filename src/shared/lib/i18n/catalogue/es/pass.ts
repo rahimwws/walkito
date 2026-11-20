@@ -7,12 +7,12 @@ export const PASS_ES = {
   'pass.tab': '3 meses',
   'pass.card.caption': 'Un solo pago, sin renovación automática',
   'pass.card.promise': 'No se renueva',
-  'pass.card.access': 'Walkito Plus durante 90 días',
+  'pass.card.access': 'Walkito durante 90 días',
   'pass.offer.bodyAll':
-    'Quédate con **Walkito Plus** a tu manera: **un año más barato**, **para siempre** o **3 meses con un solo pago**.',
-  'pass.offer.bodyYear': 'Quédate con **Walkito Plus** a tu manera: **un año más barato** o **3 meses con un solo pago**.',
-  'pass.offer.bodyLifetime': 'Quédate con **Walkito Plus** a tu manera: **para siempre** o **3 meses con un solo pago**.',
-  'pass.terms': 'Un solo pago de {price} por 3 meses de Walkito Plus. No se renueva.',
+    'Quédate con **Walkito** a tu manera: **un año más barato**, **para siempre** o **3 meses con un solo pago**.',
+  'pass.offer.bodyYear': 'Quédate con **Walkito** a tu manera: **un año más barato** o **3 meses con un solo pago**.',
+  'pass.offer.bodyLifetime': 'Quédate con **Walkito** a tu manera: **para siempre** o **3 meses con un solo pago**.',
+  'pass.terms': 'Un solo pago de {price} por 3 meses de Walkito. No se renueva.',
 
   'pass.signIn.title': '¿Lo compraste en otro teléfono?',
   'pass.signIn.body':
@@ -33,11 +33,11 @@ export const PASS_ES = {
   'pass.budget.cta': 'Seguir por {price}',
   'pass.budget.terms':
     'Tus 3 meses empiezan cuando termina el periodo que ya pagaste. Después de comprarlo, desactiva la renovación automática para que no se cobre también tu suscripción. Puedes cancelarla cuando quieras.',
-  'pass.done.until': 'Tus 3 meses de Walkito Plus están listos: duran hasta el {date}. Gracias por quedarte.',
-  'pass.done.plain': 'Tus 3 meses de Walkito Plus están listos. Gracias por quedarte.',
+  'pass.done.until': 'Tus 3 meses de Walkito están listos: duran hasta el {date}. Gracias por quedarte.',
+  'pass.done.plain': 'Tus 3 meses de Walkito están listos. Gracias por quedarte.',
   'pass.done.stillRenews': 'Tu suscripción todavía se renueva. Toca «Cancelar de todos modos» abajo para desactivar la renovación automática.',
 
-  'pass.settings.section': 'Walkito Plus',
+  'pass.settings.section': 'Walkito',
   'pass.settings.row': 'Pase de 3 meses · hasta el {date}',
   'pass.settings.queued': 'Pase de 3 meses · desde el {date}',
   'pass.settings.hint': 'Un solo pago. No se renueva.',

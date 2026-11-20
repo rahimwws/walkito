@@ -1,5 +1,5 @@
 /**
- * The 3-month pass: one payment for 90 days of Walkito Plus, with no
+ * The 3-month pass: one payment for 90 days of Walkito, with no
  * auto-renewal. Sold as the limited offer's third card (`features/home-offer`)
  * and as the answer to "It doesn't fit my budget" in the cancel flow
  * (`pages/settings`), bought through the pass checkout (`widgets/pass-checkout`),
@@ -8,7 +8,8 @@
  * **"3-month pass" is its name** in English; each language names it once
  * (Russian «Пропуск на 3 месяца») and keeps to it. It never renews, so
  * nothing here may say "subscription" of it, and nothing may call it
- * lifetime. "Walkito Plus" stays as it is in every language.
+ * lifetime. The product is called plain "Walkito", the
+ * same in every language.
  *
  * **No price is written here.** Every figure arrives as `{price}`, the
  * store's own string for this storefront. `{date}` is a whole date written out
@@ -29,14 +30,14 @@ export const PASS_EN = {
   /** The smallest line on its card, under the price paid once. */
   'pass.card.caption': 'One payment, no auto-renewal',
   'pass.card.promise': 'Nothing renews',
-  'pass.card.access': 'Walkito Plus for 90 days',
+  'pass.card.access': 'Walkito for 90 days',
   /** Under the headline, naming the deals on the cards. */
   'pass.offer.bodyAll':
-    'Keep **Walkito Plus** your way: **a year for less**, **yours for good**, or **3 months with one payment**.',
-  'pass.offer.bodyYear': 'Keep **Walkito Plus** your way: **a year for less**, or **3 months with one payment**.',
-  'pass.offer.bodyLifetime': 'Keep **Walkito Plus** your way: **yours for good**, or **3 months with one payment**.',
+    'Keep **Walkito** your way: **a year for less**, **yours for good**, or **3 months with one payment**.',
+  'pass.offer.bodyYear': 'Keep **Walkito** your way: **a year for less**, or **3 months with one payment**.',
+  'pass.offer.bodyLifetime': 'Keep **Walkito** your way: **yours for good**, or **3 months with one payment**.',
   /** The disclosure under the button. */
-  'pass.terms': 'One payment of {price} for 3 months of Walkito Plus. Nothing renews.',
+  'pass.terms': 'One payment of {price} for 3 months of Walkito. Nothing renews.',
 
   // ── Buying it ────────────────────────────────────────────────────────────
   /** A restore that found nothing on this phone while no account is signed in. */
@@ -63,8 +64,8 @@ export const PASS_EN = {
   'pass.budget.terms':
     'Your 3 months start when the period you’ve already paid for ends. After buying, turn off auto-renewal so your subscription isn’t charged as well. You can still cancel any time.',
   /** "All set", after it was bought. `{date}` is when the 3 months end. */
-  'pass.done.until': 'Your 3 months of Walkito Plus are set: they run until {date}. Thank you for staying.',
-  'pass.done.plain': 'Your 3 months of Walkito Plus are set. Thank you for staying.',
+  'pass.done.until': 'Your 3 months of Walkito are set: they run until {date}. Thank you for staying.',
+  'pass.done.plain': 'Your 3 months of Walkito are set. Thank you for staying.',
   /** Under "All set" while the subscription beside the pass still renews:
    * the cancel flow's own button is right below. */
   'pass.done.stillRenews': 'Your subscription still renews. Tap Cancel anyway below to turn auto-renewal off.',
@@ -72,7 +73,7 @@ export const PASS_EN = {
   // ── Settings → Subscription ──────────────────────────────────────────────
   /** The section's heading in Settings: the product's name, the same in
    * every language. */
-  'pass.settings.section': 'Walkito Plus',
+  'pass.settings.section': 'Walkito',
   /** While it runs. `{date}` is when it ends. */
   'pass.settings.row': '3-month pass · until {date}',
   /** Bought on top of a subscription, before it starts. `{date}` is when it starts. */

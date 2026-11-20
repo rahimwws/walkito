@@ -1,17 +1,17 @@
 /** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
- * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito" stays as it is). */
 
 export const CANCEL_DE = {
   'cancel.row.section': 'Abo',
   'cancel.row.manage': 'Abo verwalten',
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   'cancel.row.renewsAnnual': 'Jahresabo, verlängert sich am {date}',
   'cancel.row.renewsMonthly': 'Monatsabo, verlängert sich am {date}',
   'cancel.row.renewsWeekly': 'Wochenabo, verlängert sich am {date}',
   'cancel.row.trial': 'Gratis-Testphase bis {date}, danach verlängert sich dein Abo',
-  'cancel.row.ends': 'Die Verlängerung ist aus. Walkito Plus läuft bis {date}.',
+  'cancel.row.ends': 'Die Verlängerung ist aus. Dein Zugang zu Walkito läuft bis {date}.',
   'cancel.row.lifetime': 'Lebenslang',
-  'cancel.row.lifetimeHint': 'Walkito Plus gehört dir für immer. Nichts verlängert sich.',
+  'cancel.row.lifetimeHint': 'Walkito gehört dir für immer. Nichts verlängert sich.',
 
   'cancel.title': 'Warum möchtest du gehen?',
   'cancel.sub': 'Wähle die Antwort, die am besten passt. Das hilft uns, Walkito besser zu machen.',
@@ -47,9 +47,9 @@ export const CANCEL_DE = {
   'cancel.pause.title': 'Manchmal braucht man eine Pause',
   'cancel.pause.freeMonthTitle': 'Einen Monat gratis',
   'cancel.pause.freeMonthBody':
-    'Behalte deinen Plan, und dein nächster Monat kostet nichts. Danach verlängert sich Walkito Plus wie bisher.',
+    'Behalte deinen Plan, und dein nächster Monat kostet nichts. Danach verlängert sich dein Walkito-Abo wie bisher.',
   'cancel.pause.freeMonthBodyYear':
-    'Behalte deinen Plan, und wenn das bezahlte Jahr endet, kostet der Monat danach nichts. Anschließend verlängert sich Walkito Plus wie bisher.',
+    'Behalte deinen Plan, und wenn das bezahlte Jahr endet, kostet der Monat danach nichts. Anschließend verlängert sich dein Walkito-Abo wie bisher.',
   'cancel.pause.freeMonthCta': 'Gratismonat nehmen',
   'cancel.pause.freeMonthTerms':
     'Der Gratismonat beginnt mit deiner nächsten Verlängerung. Du kannst jederzeit in deinen Abo-Einstellungen kündigen.',

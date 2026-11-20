@@ -1,17 +1,17 @@
 /** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
- * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito" stays as it is). */
 
 export const CANCEL_PT = {
   'cancel.row.section': 'Assinatura',
   'cancel.row.manage': 'Gerenciar assinatura',
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   'cancel.row.renewsAnnual': 'Plano anual, renova em {date}',
   'cancel.row.renewsMonthly': 'Plano mensal, renova em {date}',
   'cancel.row.renewsWeekly': 'Plano semanal, renova em {date}',
   'cancel.row.trial': 'Teste grátis até {date}, depois seu plano renova',
-  'cancel.row.ends': 'A renovação está desligada. O Walkito Plus fica ativo até {date}.',
+  'cancel.row.ends': 'A renovação está desligada. O Walkito fica ativo até {date}.',
   'cancel.row.lifetime': 'Vitalício',
-  'cancel.row.lifetimeHint': 'O Walkito Plus é seu para sempre. Nada é renovado.',
+  'cancel.row.lifetimeHint': 'O Walkito é seu para sempre. Nada é renovado.',
 
   'cancel.title': 'Por que você está saindo?',
   'cancel.sub': 'Escolha a opção mais próxima. Isso nos ajuda a melhorar o Walkito.',
@@ -47,9 +47,9 @@ export const CANCEL_PT = {
   'cancel.pause.title': 'Às vezes uma pausa faz bem',
   'cancel.pause.freeMonthTitle': 'Um mês grátis',
   'cancel.pause.freeMonthBody':
-    'Fique com seu plano, e seu próximo mês não custa nada. Depois, o Walkito Plus renova como agora.',
+    'Fique com seu plano, e seu próximo mês não custa nada. Depois, o Walkito renova como agora.',
   'cancel.pause.freeMonthBodyYear':
-    'Fique com seu plano e, quando terminar o ano que você pagou, o mês seguinte não custa nada. Depois, o Walkito Plus renova como agora.',
+    'Fique com seu plano e, quando terminar o ano que você pagou, o mês seguinte não custa nada. Depois, o Walkito renova como agora.',
   'cancel.pause.freeMonthCta': 'Quero um mês grátis',
   'cancel.pause.freeMonthTerms':
     'O mês grátis começa na sua próxima renovação. Você pode cancelar quando quiser nos ajustes de assinaturas.',

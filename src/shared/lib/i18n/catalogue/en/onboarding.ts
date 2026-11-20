@@ -516,7 +516,6 @@ export const ONBOARDING_EN = {
    * only, and the weekly one is never discounted. */
   'onboarding.referral.blurb': 'Enter it for {percent}% off the annual subscription.',
   'onboarding.referral.applied': '{percent}% off the annual subscription applied.',
-  'onboarding.referral.unlocked': 'Code accepted. Walkito Premium is on.',
   /** Every one of these is an ordinary thing a person can do, so none is
    * phrased as an error the user caused. */
   'onboarding.referral.unknown': 'We don’t know that code. Check it and try again.',

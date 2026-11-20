@@ -138,7 +138,7 @@ function renewal(t: Translate): string {
 
 /** The disclosure Apple asks for beside a plan, kept to the minimum: its
  * length and price, then one renewal line for a subscription (a lifetime
- * purchase renews nothing). What Plus includes is the screen above it. */
+ * purchase renews nothing). What Walkito includes is the screen above it. */
 function termsFor({ slot, plan }: SlottedPlan, t: Translate): string[] {
   const price = priceOf(plan);
   switch (slot) {

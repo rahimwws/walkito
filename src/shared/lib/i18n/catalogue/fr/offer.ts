@@ -23,9 +23,6 @@ export const OFFER_FR = {
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.comebackBadge': 'Offre de retour',
   'offer.inviteBadge': 'Ton tarif invité',
-  'offer.headline': 'Débloque Walkito Premium',
-  'offer.headlineInvite': 'Ton tarif invité pour un an de Walkito Premium',
-  'offer.headlineComeback': 'Ton offre de retour : un an de Walkito Premium',
   'offer.sub': 'Ton plan, et tout ce qui va avec.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -73,7 +70,6 @@ export const OFFER_FR = {
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
   'offer.purchasedTitle': 'C’est parti.',
-  'offer.premium': 'Walkito Premium',
   'offer.purchasedBlurb':
     'Ton plan est débloqué, et il commence à s’adapter dès ta prochaine séance.',
   'offer.restoredTitle': 'Content de te revoir.',
@@ -117,14 +113,12 @@ export const OFFER_FR = {
   'offer.chipRoutines': 'Routines pour les jours difficiles et la course',
   'offer.chipReminders': 'Rappels',
 
-  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // ── Paywall: the plans ───────────────────────────────────────────────────
   // See `../en/offer.ts`. The words in square brackets in the headline are
-  // drawn in the Plus colour: put them round the word that carries it here.
+  // drawn in the accent colour: put them round the word that carries it here.
   'offer.plans.brand': 'Walkito',
-  'offer.plans.badge': 'Plus',
-  'offer.plans.name': 'Walkito Plus',
   'offer.plans.headline': 'Tes pieds, [plus forts] chaque jour',
-  'offer.plans.headlineComeback': 'Walkito Plus, maintenant [moins cher]',
+  'offer.plans.headlineComeback': 'Walkito, maintenant [moins cher]',
   'offer.plans.mostPopular': 'Le plus populaire',
   'offer.plans.yearly': 'Annuel',
   'offer.plans.monthly': 'Mensuel',
@@ -150,8 +144,6 @@ export const OFFER_FR = {
   'offer.plans.rowSessions': 'Toutes les séances guidées, en vidéo',
   'offer.plans.rowTests': 'Un test de progrès toutes les deux semaines',
   'offer.plans.rowMorning': 'L’étirement du matin',
-  'offer.plans.rowA11y': '{feature}. Inclus dans Plus.',
-  'offer.plans.ctaLifetime': 'Obtenir Walkito Plus',
   'offer.plans.ctaTrial': 'Commencer mon essai gratuit',
   'offer.plans.ctaTrialWeek': 'Commencer ma semaine gratuite',
   'offer.plans.noPaymentToday': 'Rien à payer aujourd’hui',
