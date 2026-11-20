@@ -3,7 +3,7 @@ import { useSyncExternalStore } from 'react';
 // The manifest module itself rather than the `@/shared/config` barrel: the
 // barrel also loads the font files, which the unit tests cannot evaluate.
 import { CLIPS } from '@/shared/config/clip-manifest';
-import { track } from '@/shared/lib/analytics';
+import { track, type SessionFeel } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
 import { retestResults, type RetestResult } from '../program';
@@ -257,9 +257,11 @@ export function abandonSession(token: number): void {
   if (pending.token === token) pending = NOTHING_PENDING;
 }
 
-export function noteSessionFeedback(feedback: 'easy' | 'ok' | 'hard'): void {
+/** `feel` is the answer as given, for analytics only, and only when it may
+ * be sent (see `session_feedback` in `events.ts`). */
+export function noteSessionFeedback(feedback: 'easy' | 'ok' | 'hard', feel: SessionFeel | null = null): void {
   pending = { ...pending, feedback };
-  track('session_feedback', { feedback });
+  track('session_feedback', feel == null ? { feedback } : { feedback, feel });
 }
 
 export function noteInSessionPain(score: number): void {

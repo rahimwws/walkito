@@ -19,6 +19,10 @@
  * closed. Never sum `purchase_completed` into a revenue figure.
  */
 
+/** The after-session check-in's four answers: "Easy", "About right", "Hard",
+ * "It hurt". */
+export type SessionFeel = 'easy' | 'right' | 'hard' | 'hurt';
+
 /** Where somebody says they heard about the app. Asked once, in onboarding. */
 export type AcquisitionSource =
   | 'tiktok'
@@ -390,8 +394,12 @@ export type AnalyticsEvents = {
   goal_reached: { goal: 'pain_free_mornings' | 'arch_hold' | 'calf_raises' | 'balance' | 'symmetry' };
   /** A Library routine finished. Counts for the streak, not for the plan. */
   library_routine_completed: { routine: string };
-  /** How a finished session felt — the answer that moves progression. */
-  session_feedback: { feedback: 'easy' | 'ok' | 'hard' };
+  /** How a finished session felt — the answer that moves progression.
+   * `feedback` is the plan's reading ("About right" and "Hard" are both `ok`,
+   * "It hurt" is `hard`); `feel` is the answer as given. "It hurt" carries no
+   * `feel` while `SEND_HURT_TO_ANALYTICS` (session-player `model/feel.ts`) is
+   * off: a pain answer is health data until Rahman says otherwise. */
+  session_feedback: { feedback: 'easy' | 'ok' | 'hard'; feel?: SessionFeel };
   /** "Can't do this" in the player. A missing-kit reason travels; "it hurts"
    * goes as `other`, because a pain answer is health data. */
   exercise_cant_do: { exercise: string; reason: 'no_step' | 'no_band' | 'no_towel' | 'no_pillow' | 'no_ball' | 'other' };

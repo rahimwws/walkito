@@ -19,6 +19,7 @@ export type {
   PassPlacement,
   PlanTier,
   PurchaseProps,
+  SessionFeel,
   SessionProps,
   StoreResult,
 } from './events';

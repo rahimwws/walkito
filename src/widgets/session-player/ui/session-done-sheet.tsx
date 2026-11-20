@@ -24,6 +24,7 @@ import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { PulseFaces } from '@/shared/ui/community-pulse';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
+import { feedbackOf, feelForAnalytics, type Feel } from '../model/feel';
 import { DoneMascot, DoneTiles, StreakChip } from './session-done-hero';
 import { SessionPainSheet } from './session-pain-sheet';
 
@@ -56,31 +57,26 @@ export type SessionDoneSheetProps = {
   onClose: () => void;
 };
 
-/** The four answers, in the order they are read: from not enough to too much. */
-type Feel = 'easy' | 'right' | 'hard' | 'hurt';
-
-type Feedback = 'easy' | 'ok' | 'hard';
-
+/** The four answers, in the order they are read, with what the plan stores
+ * for each in `model/feel.ts`. "It hurt" is a hard session as far as the dose
+ * is concerned; the pain score it goes on to ask for is kept on its own.
+ *
+ * "Hard" is not. Not having two more good reps in you is the effort the work
+ * is meant to reach (a set ends one to three reps short of failure), so it
+ * keeps the level, as "About right" does. Stored as `hard`, a single "No"
+ * stepped the next week back and taught people that honest effort costs them
+ * progress. Only pain steps the plan down. */
 const FEELS: readonly {
   feel: Feel;
   label: Key;
   /** The answer's Fluent emoji, as the onboarding answers have: it keeps its
    * colours on the picked pill, which says the pick by its fill. */
   emoji: FluentName;
-  /** What the plan stores. "It hurt" is a hard session as far as the dose is
-   * concerned; the pain score it goes on to ask for is kept on its own.
-   *
-   * "No" is not. Not having two more good reps in you is the effort the work
-   * is meant to reach (a set ends one to three reps short of failure), so it
-   * keeps the level, as "About right" does. Stored as `hard`, a single "No"
-   * stepped the next week back and taught people that honest effort costs
-   * them progress. Only pain steps the plan down. */
-  feedback: Feedback;
 }[] = [
-  { feel: 'easy', label: 'player.feedback.easy', emoji: 'feather', feedback: 'easy' },
-  { feel: 'right', label: 'player.feedback.right', emoji: 'target', feedback: 'ok' },
-  { feel: 'hard', label: 'player.feedback.hard', emoji: 'strength', feedback: 'ok' },
-  { feel: 'hurt', label: 'player.feedback.hurt', emoji: 'bandage', feedback: 'hard' },
+  { feel: 'easy', label: 'player.feedback.easy', emoji: 'feather' },
+  { feel: 'right', label: 'player.feedback.right', emoji: 'target' },
+  { feel: 'hard', label: 'player.feedback.hard', emoji: 'strength' },
+  { feel: 'hurt', label: 'player.feedback.hurt', emoji: 'bandage' },
 ];
 
 /**
@@ -100,14 +96,16 @@ function alreadyRecorded(startedAt: number): boolean {
 }
 
 /** File the answer where it will be read. Never both, never neither. */
-function remember(feedback: Feedback, startedAt: number): void {
+function remember(feel: Feel, startedAt: number): void {
+  const feedback = feedbackOf(feel);
+  const sent = feelForAnalytics(feel);
   if (alreadyRecorded(startedAt)) {
     setLastSessionFeedback(feedback);
     // `noteSessionFeedback` reports itself; amending the record does not.
-    track('session_feedback', { feedback });
+    track('session_feedback', sent == null ? { feedback } : { feedback, feel: sent });
     return;
   }
-  noteSessionFeedback(feedback);
+  noteSessionFeedback(feedback, sent);
 }
 
 /**
@@ -221,9 +219,7 @@ export function SessionDoneSheet({
           // opening mounts a fresh card.
           <FeelCard
             onAnswer={(feel) => {
-              const entry = FEELS.find((candidate) => candidate.feel === feel);
-              if (entry == null) return;
-              if (!preview) remember(entry.feedback, startedAt);
+              if (!preview) remember(feel, startedAt);
               if (feel === 'hurt') setAskingPain(true);
             }}
           />
