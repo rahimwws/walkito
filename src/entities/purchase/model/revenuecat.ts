@@ -27,6 +27,7 @@ import Purchases, {
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import { campaignAttributes } from './attribution';
 import { noteInstall } from './trial-audience';
+import { noteTrial } from './trial-start';
 import { syncPassFromServer } from './pass';
 import {
   ENTITLEMENT,
@@ -129,6 +130,8 @@ let flaggedSandbox = false;
 function announce(info: CustomerInfo) {
   lastInfo = info;
   flagSandbox(info);
+  const held = info.entitlements.active[ENTITLEMENT];
+  noteTrial(held?.periodType?.toUpperCase() === 'TRIAL' ? held.latestPurchaseDateMillis : null);
   void relinkAppsFlyer();
   // Dated from the store's record alone. No code, invite or bonus lengthens a
   // pass (AGENTS.md, "Codes: only Apple's").

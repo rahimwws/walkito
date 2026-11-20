@@ -107,4 +107,5 @@ export {
   trialEndingMessage,
 } from './model/offer-pushes';
 export { DAY_ONE_REMINDERS, dayOneMessage } from './model/day-one';
+export { notificationOpenOf, type NotificationOpen } from './model/tapped';
 export { offerPushesAllowed, setOfferPushes, useOfferPushes, withholdOfferPushes } from './model/offer-prefs';

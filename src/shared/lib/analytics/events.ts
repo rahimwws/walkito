@@ -19,6 +19,21 @@
  * closed. Never sum `purchase_completed` into a revenue figure.
  */
 
+/** Which notification a tap was on, by the `kind` it carries. `other` for a
+ * kind this build does not know. */
+export type NotificationOpenType =
+  | 'trial-ending'
+  | 'next-day'
+  | 'day-one'
+  | 'first-step'
+  | 'plan-notification'
+  | 'steps-check'
+  | 'on-feet-check'
+  | 'offer-winback'
+  | 'program-expiry'
+  | 'referral-redeemed'
+  | 'other';
+
 /** The after-session check-in's four answers: "Easy", "About right", "Hard",
  * "It hurt". */
 export type SessionFeel = 'easy' | 'right' | 'hard' | 'hurt';
@@ -349,6 +364,15 @@ export type AnalyticsEvents = {
   day_one_reminder_scheduled: { reminders: number };
   /** One of the two was tapped, and the app opened on Day 1. */
   day_one_reminder_opened: { reminder: 1 | 2 };
+
+  // ── Notification taps ────────────────────────────────────────────────────
+  /** Any notification the app laid (or the referral push) was tapped: once
+   * per tap, from a cold launch or a running app. `type` is the
+   * notification's own kind (`NotificationOpenType`); `reminder` says which
+   * Day 1 reminder, `plan` which of the plan's own nudges. `trial_day` is the
+   * day of a running free trial the tap fell on (1 is the trial's first),
+   * absent outside a trial. */
+  notification_opened: { type: NotificationOpenType; reminder?: 1 | 2; plan?: string; trial_day?: number };
 
   // ── Home tour ────────────────────────────────────────────────────────────
   /** "Start" on the "Day 1" card over Home, after the purchase or the skip:

@@ -30,6 +30,7 @@ import {
   useReferralSync,
   useQuickActions,
   useDevLinks,
+  useNotificationOpens,
   useOneLinks,
   usePendingLink,
 } from '@/app/providers';
@@ -170,6 +171,9 @@ function RootLayoutInner() {
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
   useOfferNotifications();
+  // Counts every notification tap (`notification_opened`), the launching one
+  // included.
+  useNotificationOpens();
   // The Day 1 reminder for somebody who left without buying or doing the two
   // free minutes: laid as the app is left, taken back as it is opened.
   useDayOneReminder(onboarded, entitled, lapsed);

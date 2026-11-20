@@ -93,6 +93,7 @@ export {
   type PlansAskedFrom,
 } from './model/look';
 export { devSetTrialAudience, isMetaInstall, useTrialOnFirstPaywall } from './model/trial-audience';
+export { trialDay } from './model/trial-start';
 export {
   isSamplePlan,
   samplePricesOn,
