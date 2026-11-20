@@ -704,8 +704,12 @@ export function ProgramPage() {
             // A plan session is what the next ones are tuned from, so it is
             // the one that asks how it went.
             feedback
+            // Under the day's date, not its list of moves: a pain check or
+            // "Can't do this" plans today again, and the place she left is
+            // still hers.
+            resumeKey={`plan:${session.date}`}
             onBack={() => program?.closeDetail()}
-            onFinish={() => {
+            onFinish={({ skipped }) => {
               // The one way a plan session ends: the session list, the day
               // log and the sync, together. It never re-plans today — this
               // page used to rebuild the week here, and that is what turned a
@@ -715,6 +719,7 @@ export function ProgramPage() {
                 source: 'plan',
                 minutes: session.minutes,
                 exerciseIds: session.exerciseIds,
+                skippedIds: skipped,
               });
               program?.closeDetail();
             }}

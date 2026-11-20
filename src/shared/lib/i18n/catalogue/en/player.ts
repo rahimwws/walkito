@@ -45,6 +45,11 @@ export const PLAYER_EN = {
   'player.cantDo.hurts': 'It hurts',
   'player.cantDo.swapped': 'Swapped for {name}.',
   'player.cantDo.skipped': 'Nothing fits here today, so this one is skipped.',
+  /** "Skip" under a move: on to the next one, for today only, with no
+   * question. The move stays in the plan. */
+  'player.skip.button': 'Skip',
+  'player.skip.hint': 'Skips this exercise for today. It stays in your plan.',
+  'player.skip.note': 'Skipped for today. It stays in your plan.',
   'player.load.backpack': 'Add a backpack with about 5-10% of your body weight. If 12 slow reps feel easy, add a little more.',
   'player.painRule.title': 'How much pain is OK?',
   'player.painRule.body': '0-3 is fine. 4-5 is OK if it settles by next morning. 6 or more - stop.',

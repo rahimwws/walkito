@@ -117,7 +117,7 @@ export function dayOneRun(): DayOneRun {
  * planned again with the test on tomorrow. Once only: a day whose session is
  * already on record is left alone, and the stage moves on either way.
  */
-export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
+export function finishDayOne(run: DayOneRun, skipped: readonly string[] = [], now: number = Date.now()): void {
   const today = todayKey(now);
   if (!planSessionDone(today)) {
     // Only the very first test moves to tomorrow: a returning user's due
@@ -128,6 +128,7 @@ export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
       source: 'plan',
       minutes: run.minutes,
       exerciseIds: run.steps.map((step) => step.exerciseId),
+      skippedIds: skipped,
       now,
     });
   }

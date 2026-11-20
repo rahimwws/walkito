@@ -192,7 +192,16 @@ export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date
 
 export type SessionSource = 'plan' | 'library' | 'quick' | 'test';
 
-export type ExerciseOutcome = { id: string; status: 'done' | 'skipped' | 'swapped'; swappedTo?: string };
+export type ExerciseOutcome = {
+  id: string;
+  status: 'done' | 'skipped' | 'swapped';
+  swappedTo?: string;
+  /** Skipped with the player's "Skip": for that day only, the exercise kept
+   * in the plan. Never counted toward `SKIPS_BEFORE_SWAP`: whether skipping
+   * should ever swap an exercise out is still Rahman's call. Kept on the phone
+   * only; the server's row says `skipped`. */
+  skippedForToday?: true;
+};
 
 export type SessionRecord = {
   id: string;
@@ -321,7 +330,7 @@ export function recordSession(record: Omit<SessionRecord, 'id'>): SessionRecord 
     if (owed > 0) kv.set(STEP_DOWN_KEY, String(owed - 1));
   }
   for (const outcome of record.exercises) {
-    if (outcome.status === 'skipped') recordSkip(outcome.id);
+    if (outcome.status === 'skipped' && outcome.skippedForToday !== true) recordSkip(outcome.id);
   }
   return saved;
 }

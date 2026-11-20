@@ -13,6 +13,7 @@ import {
   recordSession,
   refreshGoals,
   testDue,
+  type ExerciseOutcome,
   type SessionRecord,
 } from './store';
 import { addDays } from './week';
@@ -35,8 +36,11 @@ export type CompletePlanSessionInput = {
   date: string;
   source: SessionRecord['source'];
   minutes: number;
-  /** The exercises done, in the order they were done. */
+  /** The session's exercises, in the order they were done. */
   exerciseIds: readonly string[];
+  /** Those passed over with the player's "Skip": filed as skipped for today,
+   * not done, and kept in the plan (`ExerciseOutcome.skippedForToday`). */
+  skippedIds?: readonly string[];
   now?: number;
 };
 
@@ -60,7 +64,9 @@ export function completePlanSession(input: CompletePlanSessionInput): SessionRec
     date: input.date,
     source: input.source,
     minutes: input.minutes,
-    exercises: input.exerciseIds.map((id) => ({ id, status: 'done' as const })),
+    exercises: input.exerciseIds.map((id): ExerciseOutcome =>
+      input.skippedIds?.includes(id) === true ? { id, status: 'skipped', skippedForToday: true } : { id, status: 'done' },
+    ),
     feedback: null,
     inSessionPain: null,
     completedAt: input.now ?? Date.now(),

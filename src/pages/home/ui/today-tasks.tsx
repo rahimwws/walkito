@@ -574,13 +574,14 @@ export function TodayTasks({
               day={short}
               playlist={shortSteps}
               onBack={() => setShort(null)}
-              onFinish={() => {
+              onFinish={({ skipped }) => {
                 if (!planSessionDone(todayKey())) {
                   completePlanSession({
                     date: todayKey(),
                     source: 'plan',
                     minutes: 2,
                     exerciseIds: shortSteps.map((step) => step.exerciseId),
+                    skippedIds: skipped,
                   });
                 }
                 setShort(null);

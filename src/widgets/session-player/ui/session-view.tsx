@@ -473,20 +473,34 @@ export type SessionViewProps = {
   moves?: readonly string[];
   /** The last move ran out. Fires once, and not on the way back — leaving early
    * is not finishing. */
-  onFinish?: () => void;
+  onFinish?: (outcome: SessionOutcome) => void;
   /**
    * The last move ran out, at that instant: before the closing sheet, so a
    * host can tell a session that was finished from one that was left, when
    * its sheet is swiped away over the closing sheet and `onFinish` never
    * comes. Fires once.
    */
-  onComplete?: () => void;
+  onComplete?: (outcome: SessionOutcome) => void;
   /**
    * Ask "Could you have done 2 more good reps?" in the closing sheet. On for
    * every session — Plan, Home's tasks, the Library — and never after a session
    * stopped on pain, which already said how it went.
    */
   feedback?: boolean;
+  /**
+   * What the place this session was left at is kept under, for coming back to
+   * it (`model/session-resume.ts`). The plan's session passes its day's date,
+   * which stays the same when today is planned again; without one the
+   * session is known by its list of moves.
+   */
+  resumeKey?: string;
+};
+
+/** How a finished run went, for the host that files it. */
+export type SessionOutcome = {
+  /** Exercises passed over with Skip, by id: for today only, still in the
+   * plan. Filed as skipped rather than done. */
+  skipped: readonly string[];
 };
 
 /**
@@ -607,6 +621,7 @@ function SessionRun({
   onFinish,
   onComplete,
   feedback = true,
+  resumeKey,
 }: SessionViewProps) {
   // A fresh record for this run: nothing the last session said carries over.
   const [sessionToken] = useState(() => beginSession());
@@ -697,14 +712,25 @@ function SessionRun({
 
   /** What this session is called for the purpose of coming back to it. */
   const resumeId =
-    playlist != null
+    resumeKey ??
+    (playlist != null
       ? `playlist:${playlist.map((step) => step.exerciseId).join(',')}`
       : override != null
         ? `moves:${day.day}:${override.join('|')}`
-        : `day:${day.day}`;
+        : `day:${day.day}`);
+  /** The moves as planned, by exercise id: what a saved place is matched
+   * against, and what Skip files. A move swapped in by "Can't do this" stands
+   * in its slot under the planned move's id, as the hosts file it. */
+  const moveIds = basePlan.map((entry) => entry.exercise?.id ?? '');
+  const moveIdsRef = useRef(moveIds);
+  moveIdsRef.current = moveIds;
   /** Read once, at mount. The player is keyed per run by its hosts, so this is
    * the place the run starts from, not something to follow afterwards. */
-  const [resume] = useState(() => readResume(resumeId, plan.length));
+  const [resume] = useState(() => readResume(resumeId, moveIds));
+  /** Moves passed over with Skip, by exercise id. See `skipMove`. */
+  const [skipped, setSkipped] = useState<readonly string[]>(() => resume?.skipped ?? []);
+  const skippedRef = useRef(skipped);
+  skippedRef.current = skipped;
 
   /** When this player mounted, which is when the session began. A ref rather
    * than state: nothing renders from it, and it must survive every re-render
@@ -1304,7 +1330,7 @@ function SessionRun({
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-    onCompleteRef.current?.();
+    onCompleteRef.current?.({ skipped: skippedRef.current });
   }, [progress, deadline, endActivity, activitySnapshot, day, moves, resumeId]);
 
   /** On to the next move, or the end. No haptic of its own: the count-in's
@@ -1521,11 +1547,15 @@ function SessionRun({
   finishedRef.current = finished;
   const stepRef = useRef(step);
   stepRef.current = step;
+  /** Every move skipped: the run was left with nothing done, and nothing is
+   * kept to come back to (`skipMove`). */
+  const emptiedRef = useRef(false);
   const saveResume = useCallback(() => {
-    if (resumeId == null || finishedRef.current) return;
-    writeResume(resumeId, planRef.current.length, {
+    if (resumeId == null || finishedRef.current || emptiedRef.current) return;
+    writeResume(resumeId, moveIdsRef.current, {
       step: stepRef.current,
       fraction: progress.value,
+      skipped: skippedRef.current,
     });
   }, [resumeId, progress]);
 
@@ -1573,6 +1603,43 @@ function SessionRun({
       onBack();
     }
   }, [onBack, endActivity, saveResume]);
+
+  /**
+   * "Skip": on to the next move, at once, with no question. For everybody
+   * and on every run (the trial, a subscriber, Day 1).
+   *
+   * For today only: the move stays in her plan. It is "Can't do this"'s
+   * move-to-next step without its other half: nothing is marked, nothing
+   * re-planned, and the move is filed as skipped for today
+   * (`SessionOutcome.skipped`), which the plan's "three skips and it is
+   * swapped out" rule does not count (`skippedForToday`, plan `store.ts`).
+   *
+   * The last move skipped finishes the run as a last move running out does.
+   * A run with every move skipped, though, did nothing: it is left as by the
+   * back arrow, files nothing, and keeps no place to come back to.
+   */
+  const skipMove = useCallback(() => {
+    const id = moveIdsRef.current[step];
+    if (id == null || id === '') return;
+    void Haptics.selectionAsync();
+    track('exercise_skipped', { exercise: id, day: day.day });
+    const next = skippedRef.current.includes(id) ? skippedRef.current : [...skippedRef.current, id];
+    skippedRef.current = next;
+    setSkipped(next);
+    const last = step + 1 >= planRef.current.length;
+    if (last && moveIdsRef.current.every((move) => next.includes(move))) {
+      emptiedRef.current = true;
+      if (resumeId != null) clearResume(resumeId);
+      setPlaying(false);
+      setCountFrom(null);
+      endActivity();
+      onBack();
+      return;
+    }
+    setSwapNote(t('player.skip.note'));
+    setPlaying(true);
+    advance();
+  }, [step, day, resumeId, endActivity, onBack, t, advance]);
 
   /**
    * The session, handed to the Lock Screen for the length of its run.
@@ -2183,16 +2250,26 @@ function SessionRun({
             </View>
           )}
           {!finished && current?.exercise != null && (
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => {
-                pauseForQuestion();
-                setAskingCantDo(true);
-              }}
-              hitSlop={8}
-              style={({ pressed }) => [styles.cantDo, pressed && { opacity: 0.5 }]}>
-              <Text style={[styles.cantDoText, { color: meter.caption }]}>{t('player.cantDo.button')}</Text>
-            </Pressable>
+            <View style={styles.moveActions}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityHint={t('player.skip.hint')}
+                onPress={skipMove}
+                hitSlop={8}
+                style={({ pressed }) => pressed && { opacity: 0.5 }}>
+                <Text style={[styles.cantDoText, { color: meter.caption }]}>{t('player.skip.button')}</Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  pauseForQuestion();
+                  setAskingCantDo(true);
+                }}
+                hitSlop={8}
+                style={({ pressed }) => pressed && { opacity: 0.5 }}>
+                <Text style={[styles.cantDoText, { color: meter.caption }]}>{t('player.cantDo.button')}</Text>
+              </Pressable>
+            </View>
           )}
         </View>
 
@@ -2539,7 +2616,7 @@ function SessionRun({
           // A host with nothing to do on finishing still has to be left: the
           // pain check's relief session passed no `onFinish`, and closing its
           // celebration left the finished player on screen.
-          if (onFinish != null) onFinish();
+          if (onFinish != null) onFinish({ skipped: skippedRef.current });
           else onBack();
         }}
       />
@@ -2819,8 +2896,11 @@ const styles = StyleSheet.create({
     lineHeight: 19,
     flexShrink: 1,
   },
-  cantDo: {
+  /** "Skip" and "Can't do this", side by side under the move. */
+  moveActions: {
+    flexDirection: 'row',
     alignSelf: 'center',
+    gap: 24,
     marginTop: 8,
   },
   cantDoText: fonts.semibold(15),

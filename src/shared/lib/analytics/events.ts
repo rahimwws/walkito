@@ -427,6 +427,11 @@ export type AnalyticsEvents = {
   /** "Can't do this" in the player. A missing-kit reason travels; "it hurts"
    * goes as `other`, because a pain answer is health data. */
   exercise_cant_do: { exercise: string; reason: 'no_step' | 'no_band' | 'no_towel' | 'no_pillow' | 'no_ball' | 'other' };
+  /** "Skip" in the player: on to the next move, for today only, the move
+   * kept in the plan. The exercise and the plan day the session is for
+   * (`ProgramDay.day`). Beside `exercise_cant_do`, it says whether Skip takes
+   * the place of "Can't do this". */
+  exercise_skipped: { exercise: string; day: number };
   /** A plan answer changed in Settings. Which field, not what it became. */
   /** A plan sync to Supabase failed. The table and the PostgREST/Postgres error code, or
    * `network` / `thrown`; never a row's contents. */

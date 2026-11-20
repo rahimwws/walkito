@@ -34,11 +34,14 @@ export function DayOneSession({ run, onClose }: DayOneSessionProps) {
   /** The last move ran out. A sheet swiped away over the closing sheet after
    * that still files the session: the two minutes were done. */
   const completed = useRef(false);
+  /** The moves passed over with Skip, filed as skipped rather than done. */
+  const skipped = useRef<readonly string[]>([]);
   useEffect(() => {
     completed.current = false;
+    skipped.current = [];
   }, [run]);
   const finish = () => {
-    if (run != null) finishDayOne(run);
+    if (run != null) finishDayOne(run, skipped.current);
     onClose();
   };
   const dismiss = () => {
@@ -57,8 +60,9 @@ export function DayOneSession({ run, onClose }: DayOneSessionProps) {
             dayOne
             feedback={false}
             onBack={dismiss}
-            onComplete={() => {
+            onComplete={(outcome) => {
               completed.current = true;
+              skipped.current = outcome.skipped;
             }}
             onFinish={finish}
           />

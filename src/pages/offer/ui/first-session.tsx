@@ -83,6 +83,8 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
   const [felt, setFelt] = useState<Feedback | null>(null);
   /** The last move ran out: a sheet swiped away after that still counts. */
   const completed = useRef(false);
+  /** The moves passed over with Skip, filed as skipped rather than done. */
+  const skipped = useRef<readonly string[]>([]);
 
   useEffect(() => {
     track('first_session_offered');
@@ -91,10 +93,11 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
   const start = () => {
     track('first_session_started');
     completed.current = false;
+    skipped.current = [];
     setPlaying(true);
   };
   const finish = () => {
-    finishDayOne(run);
+    finishDayOne(run, skipped.current);
     markFirstSession('done');
     setPlaying(false);
     setStage('felt');
@@ -217,8 +220,9 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
               free
               feedback={false}
               onBack={dismiss}
-              onComplete={() => {
+              onComplete={(outcome) => {
                 completed.current = true;
+                skipped.current = outcome.skipped;
               }}
               onFinish={finish}
             />

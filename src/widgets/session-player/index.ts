@@ -1,4 +1,4 @@
-export { SessionView, type PlaylistStep, type SessionViewProps } from './ui/session-view';
+export { SessionView, type PlaylistStep, type SessionOutcome, type SessionViewProps } from './ui/session-view';
 /** The end-of-session sheet on demand, in development builds only: the dev
  * menu's "Preview session done", or `walkito.dev://?previewDone` (and
  * `?previewDone=stopped`). The app layer mounts it behind `__DEV__`. */
