@@ -4,7 +4,7 @@ import * as Haptics from 'expo-haptics';
 import { Platform, Pressable, StyleSheet, Text } from 'react-native';
 
 import { fonts } from '@/shared/config';
-import { colors, radius, target } from '@/shared/config/tokens';
+import { colors, target } from '@/shared/config/tokens';
 
 import { useNavGlass } from './use-nav-glass';
 
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   solid: {
     alignSelf: 'stretch',
     minHeight: target.primary,
-    borderRadius: radius.button,
+    borderRadius: 999,
     backgroundColor: colors.ink,
     alignItems: 'center',
     justifyContent: 'center',
