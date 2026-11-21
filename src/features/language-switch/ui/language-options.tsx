@@ -3,7 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts, radius, target } from '@/shared/config';
 import {
   LANGUAGES,
   LANGUAGE_META,
@@ -13,26 +13,19 @@ import {
   useT,
   type LanguagePreference,
 } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
 
 import { LanguageFlag } from './language-flag';
 
 /**
- * The list itself — "System" and then the three languages, with a check on the
+ * The list itself: "System" and then each language, with a check on the
  * chosen one.
  *
- * A checkmark list rather than a `SegmentedControl`, for two reasons. Segments
- * split the width evenly, so "Русский" and "English" would be set at whatever
- * size the longest one allows and the control would have to be re-tuned the
- * day a fourth language lands. And a segment has no room for the second line
- * that makes the System row honest — "Match device — Русский" tells the user
- * what following the device would actually give them, rather than asking them
- * to guess and find out.
+ * A checkmark list rather than a segmented control: segments split the width
+ * evenly, and a segment has no room for the second line that makes the System
+ * row honest ("Match device - Русский" says what following the device gives).
  *
- * Extracted from both call sites rather than written twice: the onboarding
- * sheet and the settings screen show the same list, and a picker that offers
- * different options depending on where it was opened from is a bug waiting for
- * a fourth language.
+ * Shared by the onboarding's language sheet and Settings, so both offer the
+ * same options.
  */
 
 /** The option rows, in picker order: follow the device, then each language
@@ -40,16 +33,13 @@ import { LanguageFlag } from './language-flag';
 const OPTIONS: readonly LanguagePreference[] = ['system', ...LANGUAGES];
 
 export function LanguageOptions() {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const preference = useLanguagePreference();
   const t = useT();
 
   const device = getDeviceLanguage();
 
   return (
-    <View style={[styles.list, { backgroundColor: meter.track }]}>
+    <View style={styles.list}>
       {OPTIONS.map((option, index) => {
         const selected = option === preference;
         const system = option === 'system';
@@ -57,9 +47,7 @@ export function LanguageOptions() {
         const label = system ? t('language.system') : LANGUAGE_META[option].name;
         // Only the System row carries a hint. A row that says "Русский" needs
         // no second line explaining that it means Russian.
-        const hint = system
-          ? t('language.systemHint', { language: LANGUAGE_META[device].name })
-          : null;
+        const hint = system ? t('language.systemHint', { language: LANGUAGE_META[device].name }) : null;
 
         return (
           <Pressable
@@ -74,31 +62,20 @@ export function LanguageOptions() {
             }}
             style={({ pressed }) => [
               styles.row,
-              index > 0 && {
-                borderTopWidth: StyleSheet.hairlineWidth,
-                borderTopColor: colors.background,
-              },
-              pressed && { opacity: 0.6 },
+              selected && styles.selected,
+              index > 0 && styles.divided,
+              pressed && styles.pressed,
             ]}>
             {/* The System row shows the flag of what following the device gives. */}
             <LanguageFlag language={system ? device : option} width={27} />
             <View style={styles.rowText}>
-              <Text style={[styles.rowLabel, { color: colors.foreground }]}>{label}</Text>
-              {hint != null && (
-                <Text style={[styles.rowHint, { color: meter.caption }]}>{hint}</Text>
-              )}
+              <Text style={styles.rowLabel}>{label}</Text>
+              {hint != null && <Text style={styles.rowHint}>{hint}</Text>}
             </View>
 
             {/* Always present so the rows do not reflow as the check moves. */}
             <View style={styles.checkSlot}>
-              {selected && (
-                <HugeiconsIcon
-                  icon={Tick02Icon}
-                  size={20}
-                  color={colors.foreground}
-                  strokeWidth={2.4}
-                />
-              )}
+              {selected && <HugeiconsIcon icon={Tick02Icon} size={22} color={colors.accent} strokeWidth={2.4} />}
             </View>
           </Pressable>
         );
@@ -108,16 +85,27 @@ export function LanguageOptions() {
 }
 
 const styles = StyleSheet.create({
-  list: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
+  list: {
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
+    overflow: 'hidden',
+    backgroundColor: colors.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.separator,
+  },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    paddingVertical: 14,
+    minHeight: 56,
+    paddingVertical: 12,
     paddingHorizontal: 16,
   },
-  rowText: { flex: 1 },
-  rowLabel: fonts.semibold(16, -0.2),
-  rowHint: { ...fonts.medium(13), marginTop: 1 },
-  checkSlot: { width: 20, alignItems: 'center' },
+  divided: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.separator },
+  selected: { backgroundColor: colors.accentSoft },
+  pressed: { opacity: 0.6 },
+  rowText: { flex: 1, minHeight: target.min - 24, justifyContent: 'center' },
+  rowLabel: { ...fonts.semibold(19), color: colors.text },
+  rowHint: { ...fonts.regular(17), color: colors.text2, marginTop: 2 },
+  checkSlot: { width: 24, alignItems: 'center' },
 });

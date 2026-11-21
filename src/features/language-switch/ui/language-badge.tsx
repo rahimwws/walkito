@@ -1,14 +1,12 @@
 import GlobalIcon from '@hugeicons/core-free-icons/GlobalIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useState } from 'react';
+import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text } from 'react-native';
 
 import { fonts, palette } from '@/shared/config';
 import { LANGUAGE_META, useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-
-import { LanguageSheet } from './language-sheet';
 
 /**
  * The language control that sits in the onboarding header: a globe with the
@@ -19,8 +17,8 @@ import { LanguageSheet } from './language-sheet';
  * without opening the sheet. VoiceOver names the language in full. The code is
  * an identifier, like the endonyms in the picker, and is never translated.
  *
- * Owns its own sheet, so a call site is `<LanguageBadge />` and nothing else.
- * The header already juggles enough state.
+ * Opens the `/language` form sheet, so a call site is `<LanguageBadge />` and
+ * nothing else.
  */
 export function LanguageBadge() {
   const scheme = useColorScheme();
@@ -28,26 +26,20 @@ export function LanguageBadge() {
   const language = useLanguage();
   const t = useT();
 
-  const [open, setOpen] = useState(false);
-
   return (
-    <>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={t('language.a11yLabel', { language: LANGUAGE_META[language].name })}
         accessibilityHint={t('language.a11yHint')}
         onPress={() => {
           Haptics.selectionAsync();
-          setOpen(true);
+          router.push('/language');
         }}
         hitSlop={12}
         style={({ pressed }) => [styles.badge, pressed && { opacity: 0.5 }]}>
         <HugeiconsIcon icon={GlobalIcon} size={24} color={colors.foreground} strokeWidth={1.8} />
         <Text style={[styles.code, { color: colors.foreground }]}>{language}</Text>
       </Pressable>
-
-      <LanguageSheet visible={open} onClose={() => setOpen(false)} />
-    </>
   );
 }
 
