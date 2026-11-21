@@ -422,6 +422,9 @@ export const HOME_EN = {
   'home.today.check.change': 'Change',
   'home.today.quickTitle': 'Quick sessions',
   'home.today.quickMeta': '{minutes} · {where}',
+  'home.today.weekSessions': { one: 'This week: {done} of {count} session', other: 'This week: {done} of {count} sessions' },
+  'home.today.cardMeta': '{minutes} · {moves}',
+  'home.today.tileMinutes': { one: '{count} minute', other: '{count} minutes' },
 } as const satisfies Record<string, SourceEntry>;
 
 /**

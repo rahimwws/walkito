@@ -358,6 +358,9 @@ export const HOME_RU = {
   'home.today.check.change': 'Изменить',
   'home.today.quickTitle': 'Короткие занятия',
   'home.today.quickMeta': '{minutes} · {where}',
+  'home.today.weekSessions': { one: 'На этой неделе: {done} из {count} занятия', few: 'На этой неделе: {done} из {count} занятий', many: 'На этой неделе: {done} из {count} занятий' },
+  'home.today.cardMeta': '{minutes} · {moves}',
+  'home.today.tileMinutes': { one: '{count} минута', few: '{count} минуты', many: '{count} минут' },
 };
 
 export const BRIEF_RU = {

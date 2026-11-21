@@ -321,6 +321,9 @@ export const HOME_PT = {
   'home.today.check.change': 'Mudar',
   'home.today.quickTitle': 'Sessões rápidas',
   'home.today.quickMeta': '{minutes} · {where}',
+  'home.today.weekSessions': { one: 'Esta semana: {done} de {count} sessão', other: 'Esta semana: {done} de {count} sessões' },
+  'home.today.cardMeta': '{minutes} · {moves}',
+  'home.today.tileMinutes': { one: '{count} minuto', other: '{count} minutos' },
 };
 
 export const BRIEF_PT = {

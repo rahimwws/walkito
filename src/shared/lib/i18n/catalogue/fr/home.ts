@@ -322,6 +322,9 @@ export const HOME_FR = {
   'home.today.check.change': 'Modifier',
   'home.today.quickTitle': 'Séances rapides',
   'home.today.quickMeta': '{minutes} · {where}',
+  'home.today.weekSessions': { one: 'Cette semaine : {done} sur {count} séance', other: 'Cette semaine : {done} sur {count} séances' },
+  'home.today.cardMeta': '{minutes} · {moves}',
+  'home.today.tileMinutes': { one: '{count} minute', other: '{count} minutes' },
 };
 
 export const BRIEF_FR = {

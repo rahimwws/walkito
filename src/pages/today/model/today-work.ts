@@ -14,6 +14,7 @@ import {
   useNextSession,
   usePlanVersion,
   type DayType,
+  type PlannedExercise,
   type TodayReason,
 } from '@/entities/program';
 
@@ -26,6 +27,8 @@ export type TodayWork = {
   minutes: number;
   /** Today's moves in order; empty on a test or rest day. */
   exerciseIds: readonly string[];
+  /** The same moves with their doses, for the session card's rows. */
+  exercises: readonly PlannedExercise[];
   /** Tests on a test day, nothing otherwise. */
   tests: number;
   where: TodayWhere;
@@ -60,13 +63,15 @@ export function useTodayWork(): TodayWork {
   const date = todayKey();
   return useMemo(() => {
     const day = todayPlan(todayHealthInputs(health), null);
-    const exerciseIds = day.type === 'test' ? [] : day.exercises.map((e) => e.id);
+    const exercises = day.type === 'test' ? [] : day.exercises;
+    const exerciseIds = exercises.map((e) => e.id);
     const ticked = (logFor(todayDayNumber())?.exercisesDone ?? []).filter((id) => exerciseIds.includes(id)).length;
     return {
       date,
       type: day.type,
       minutes: day.type === 'test' ? RETEST_MINUTES : day.minutes,
       exerciseIds,
+      exercises,
       tests: day.type === 'test' ? RETEST_TESTS : 0,
       where: whereOf(exerciseIds),
       ticked,
