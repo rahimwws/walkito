@@ -52,7 +52,7 @@ import {
   testIndex,
   type Station,
 } from '../../model/test-day';
-import { CountInOverlay } from '../count-in-overlay';
+import { CountIn } from '../player/count-in';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
 import { BALANCE_EYES_OPEN_STEPS, TEST_META } from './test-meta';
@@ -504,7 +504,7 @@ export function TestRunner({
         )}
       </View>
 
-      <CountInOverlay
+      <CountIn
         from={active ? countFrom : null}
         eyebrow={t('player.countIn.getReady')}
         // The leg for the calf test, where which one is the whole question;

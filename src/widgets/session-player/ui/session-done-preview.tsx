@@ -5,7 +5,7 @@ import { todayKey, weekPlan } from '@/entities/program';
 import { palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import { SessionDoneSheet } from './session-done-sheet';
+import { Done } from './player/done';
 
 /**
  * The development menu's entries. Developer-facing only (the component is
@@ -104,7 +104,7 @@ export function SessionDonePreview() {
           app's own colour to soften. */}
       <View style={[styles.page, { backgroundColor: palette[scheme].background }]}>
         {preview != null && (
-          <SessionDoneSheet
+          <Done
             visible={shown}
             early={preview.early}
             moves={preview.moves}
