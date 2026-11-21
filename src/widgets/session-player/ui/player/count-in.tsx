@@ -18,7 +18,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { SIDE, ink } from './kit';
+import { SIDE, TITLE_SCALE, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -146,7 +146,7 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
         <View style={styles.middle}>
           <Text style={styles.eyebrow}>{eyebrow}</Text>
-          <Text style={styles.title}>{title}</Text>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
           <Animated.Text
             accessibilityLiveRegion="assertive"
             adjustsFontSizeToFit

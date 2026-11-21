@@ -28,7 +28,7 @@ import { colors, fonts } from '@/shared/config';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 
 import { alreadyRecorded, rememberFeedback, type Feedback } from '../../model/session-done';
-import { Capsule, Hairline, SIDE, TextButton, ink } from './kit';
+import { Capsule, Hairline, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from './kit';
 import { PainSheet } from './sheets';
 
 export type DoneProps = {
@@ -164,7 +164,7 @@ export function Done({
         <View style={styles.tick} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
           <HugeiconsIcon icon={Tick02Icon} size={44} color={colors.onInk} strokeWidth={2.4} />
         </View>
-        <Text accessibilityRole="header" style={styles.title}>
+        <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
           {title}
         </Text>
         {early && <Text style={styles.lead}>{t('widgets.sessionStoppedBlurb')}</Text>}
@@ -172,11 +172,11 @@ export function Done({
         {!early && (
           <View style={styles.numbers}>
             <View style={styles.number} accessible accessibilityLabel={t('sessionDone.tileSessionA11y', { count: minutes })}>
-              <Text style={styles.numeral}>{minutes}</Text>
+              <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.numeral}>{minutes}</Text>
               <Text style={styles.label}>{t('sessionDone.tileMinutes')}</Text>
             </View>
             <View style={styles.number} accessible accessibilityLabel={t('sessionDone.tileMovesA11y', { count: moves })}>
-              <Text style={styles.numeral}>{moves}</Text>
+              <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.numeral}>{moves}</Text>
               <Text style={styles.label}>{t('sessionDone.tileMoves')}</Text>
             </View>
           </View>
@@ -184,7 +184,7 @@ export function Done({
 
         {feedback && !early && (
           <View style={styles.feel}>
-            <Text accessibilityRole="header" style={styles.question}>
+            <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.question}>
               {t('sessionDone.feel.question')}
             </Text>
             <View accessibilityRole="radiogroup" accessibilityLabel={t('sessionDone.feel.question')}>

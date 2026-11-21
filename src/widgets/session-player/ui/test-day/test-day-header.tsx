@@ -38,7 +38,7 @@ export function TestDayHeader({ segments, onClose }: TestDayHeaderProps) {
 
 const styles = StyleSheet.create({
   header: {
-    height: TEST_DAY_HEADER_HEIGHT,
+    minHeight: TEST_DAY_HEADER_HEIGHT,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: SIDE - 4,

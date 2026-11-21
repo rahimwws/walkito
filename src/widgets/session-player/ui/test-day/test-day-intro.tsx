@@ -20,7 +20,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import { GOAL_OF_TEST, TEST_ORDER, goalValuesOf, type TestKind } from '../../model/test-day';
-import { Capsule, Hairline, SIDE, TextButton, ink } from '../player/kit';
+import { Capsule, Hairline, SIDE, TITLE_SCALE, TextButton, ink } from '../player/kit';
 import { TEST_META } from './test-meta';
 
 const PAIN_SCALE = Array.from({ length: 11 }, (_, i) => i);
@@ -96,7 +96,7 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text accessibilityRole="header" style={styles.title}>
+        <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
           {t('testday.intro.title')}
         </Text>
         <Text style={styles.lead}>{t('testday.intro.body', { count: RETEST_MINUTES })}</Text>

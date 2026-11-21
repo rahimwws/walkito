@@ -44,7 +44,7 @@ import {
   type Station,
 } from '../../model/test-day';
 import { CountIn } from '../player/count-in';
-import { Capsule, Hairline, SIDE, TextButton as KitTextButton, ink } from '../player/kit';
+import { Capsule, Hairline, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, ink } from '../player/kit';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
 import { BALANCE_EYES_OPEN_STEPS, TEST_META } from './test-meta';
@@ -348,7 +348,7 @@ export function TestRunner({
             </>
           ) : (
             <>
-              <Text style={styles.question} accessibilityLiveRegion="polite">
+              <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.question} accessibilityLiveRegion="polite">
                 {kind === 'calf'
                   ? t('testday.confirm.raises', { count: value })
                   : t('testday.confirm.seconds', { count: value })}
@@ -419,7 +419,7 @@ export function TestRunner({
             read as the lines they are, not glued into an English sentence. */}
         <View style={styles.ringArea} accessibilityRole="timer">
           <CountdownRing size={ringSize} stroke={4} left={ring} tone={RING_TONE}>
-            <Text style={styles.big} numberOfLines={1} adjustsFontSizeToFit>
+            <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.big} numberOfLines={1} adjustsFontSizeToFit>
               {kind === 'calf' ? reps : secondsLeft}
             </Text>
             <Text style={styles.unit}>
@@ -479,7 +479,7 @@ function Heading({ eyebrow, title, leg }: { eyebrow: string; title: string; leg:
   return (
     <View>
       <Text style={styles.eyebrow}>{eyebrow}</Text>
-      <Text style={styles.title} accessibilityRole="header">
+      <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
         {title}
       </Text>
       {leg != null && <Text style={styles.leg}>{leg}</Text>}

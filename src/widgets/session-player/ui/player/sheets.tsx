@@ -16,7 +16,7 @@ import { colors, fonts } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
-import { Capsule, Hairline, SIDE, TextButton, ink } from './kit';
+import { Capsule, Hairline, SIDE, TITLE_SCALE, TextButton, ink } from './kit';
 
 const IN_MS = 300;
 const OUT_MS = 200;
@@ -111,7 +111,7 @@ export function PainSheet({
 
   return (
     <Sheet visible={visible} onClose={onCancel}>
-      <Text accessibilityRole="header" style={styles.title}>
+      <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
         {t('widgets.painTitle')}
       </Text>
       <View style={styles.scores} accessibilityRole="radiogroup">
@@ -190,7 +190,7 @@ export function CantDoSheet({
   const t = useT();
   return (
     <Sheet visible={visible} onClose={onCancel}>
-      <Text accessibilityRole="header" style={styles.title}>
+      <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
         {t('player.cantDo.title')}
       </Text>
       <Text style={styles.body}>{t('player.cantDo.blurb')}</Text>
@@ -235,7 +235,7 @@ export function PainRuleSheet({ visible, onClose }: { visible: boolean; onClose:
   const t = useT();
   return (
     <Sheet visible={visible} onClose={onClose}>
-      <Text accessibilityRole="header" style={styles.title}>
+      <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
         {t('player.painRule.title')}
       </Text>
       <Text style={styles.rule}>{t('player.painRule.body')}</Text>

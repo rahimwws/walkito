@@ -50,6 +50,7 @@ export { illustrationFor, posterFor, thumbFor } from './config/exercise-posters'
 /** The "Can't do this" reasons as plain rows: the exercise sheet offers the
  * same choices, in the same order, as the player. */
 export { ReasonRows as CantDoReasons } from './ui/player/sheets';
+export { TITLE_SCALE } from './ui/player/kit';
 /** The test day, whole: intro, the three tests, results.
  *
  * One flow for both hosts — Home presents it in a page sheet, Plan in its

@@ -14,6 +14,11 @@ export const ink = {
 
 export const SIDE = 24;
 
+/** Dynamic Type ceilings for display type only: titles and big numerals
+ * still grow, body text is never capped. */
+export const TITLE_SCALE = 2;
+export const NUMERAL_SCALE = 1.2;
+
 type ButtonProps = {
   label: string;
   onPress: () => void;

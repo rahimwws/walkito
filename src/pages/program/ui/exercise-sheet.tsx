@@ -7,7 +7,7 @@ import { EXERCISES_BY_ID, exerciseById, markCantDo, planMeta, type CantDoReason 
 import { CHROME_MAX_FONT_SCALE, clipShape, colors, fonts, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
-import { CantDoReasons, ExercisePreview } from '@/widgets/session-player';
+import { CantDoReasons, ExercisePreview, TITLE_SCALE } from '@/widgets/session-player';
 
 const SIDE = 24;
 
@@ -56,7 +56,7 @@ export function ExerciseSheetPage() {
 
         <View style={styles.body}>
           <View style={styles.top}>
-            <Text accessibilityRole="header" style={styles.title}>
+            <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
               {exercise.title}
             </Text>
             <Pressable

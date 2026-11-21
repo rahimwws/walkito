@@ -7,7 +7,7 @@ import { doseSeconds, type PlanDose, type PlannedExercise } from '@/entities/pro
 import { CHROME_MAX_FONT_SCALE, colors, fonts, target } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { NavGlass, StartButton } from '@/shared/ui/glass';
-import { posterFor, thumbFor } from '@/widgets/session-player';
+import { TITLE_SCALE, posterFor, thumbFor } from '@/widgets/session-player';
 
 export type DetailMove = {
   id: string;
@@ -88,7 +88,7 @@ export function SessionDetail({ title, meta, moves, why, startLabel, onStart, on
         </View>
 
         <View style={styles.head}>
-          <Text accessibilityRole="header" style={styles.title}>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
             {title}
           </Text>
           <Text style={styles.meta}>{meta}</Text>

@@ -21,7 +21,7 @@ import { setSoundPrefs } from '@/shared/lib/sound';
 import { useSessionRun, type SessionViewProps } from '../model/use-session-run';
 import { CountIn } from './player/count-in';
 import { Done } from './player/done';
-import { Capsule, SIDE, TextButton, ink } from './player/kit';
+import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from './player/kit';
 import { Rest } from './player/rest';
 import { CantDoSheet, PainRuleSheet, PainSheet } from './player/sheets';
 
@@ -78,7 +78,7 @@ function SessionLocked({ onBack, looking }: { onBack: () => void; looking: boole
         <TextButton label={t('common.back')} onPress={onBack} />
       </View>
       <View style={styles.lockedMiddle}>
-        <Text accessibilityRole="header" style={styles.lockedTitle}>
+        <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.lockedTitle}>
           {t(looking ? 'widgets.sessionLookingTitle' : 'widgets.sessionLockedTitle')}
         </Text>
         <Text style={styles.lockedBody}>{t(looking ? 'widgets.sessionLookingBody' : 'widgets.sessionLockedBody')}</Text>
@@ -271,7 +271,7 @@ function SessionRun(props: SessionViewProps) {
               {run.carryOn ? t('widgets.painCarryOn') : run.swapNote}
             </Text>
           )}
-          <Text accessibilityLabel={run.spokenMove} style={styles.name}>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityLabel={run.spokenMove} style={styles.name}>
             {move}
           </Text>
           {run.cueLine != null && !finished && <Text style={styles.cue}>{run.cueLine}</Text>}
@@ -296,6 +296,7 @@ function SessionRun(props: SessionViewProps) {
           accessibilityLabel={repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })}
           style={[styles.timer, run.breakSegment != null && styles.hidden]}>
           <Text
+            maxFontSizeMultiplier={NUMERAL_SCALE}
             style={[styles.numeral, ctaState === 'paused' && styles.dim]}
             numberOfLines={1}
             adjustsFontSizeToFit>

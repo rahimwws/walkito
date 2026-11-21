@@ -19,7 +19,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { posterFor, thumbFor } from '../../config/exercise-posters';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { Capsule, SIDE, TextButton, ink } from './kit';
+import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from './kit';
 
 export type Break = Extract<Segment, { kind: 'rest' | 'switch' }>;
 
@@ -134,11 +134,11 @@ export function Rest({
   return (
     <Animated.View style={[styles.host, { top, paddingBottom: bottom }, hostStyle]} pointerEvents={live ? 'auto' : 'none'}>
       <View style={styles.middle}>
-        <Text accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
+        <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
           {title}
         </Text>
         <View accessible accessibilityRole="timer" accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
-          <Text style={[styles.numeral, !playing && styles.dim]}>{secondsLeft}</Text>
+          <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={[styles.numeral, !playing && styles.dim]}>{secondsLeft}</Text>
           <Text style={styles.unit}>{t('testday.secondsLeft', { count: secondsLeft })}</Text>
         </View>
         <View style={styles.track}>

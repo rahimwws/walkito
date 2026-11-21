@@ -1,55 +1,19 @@
-import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
-import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
-import BulbIcon from '@hugeicons/core-free-icons/BulbIcon';
-import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
-import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
-import Share03Icon from '@hugeicons/core-free-icons/Share03Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import { makeImageFromView } from '@shopify/react-native-skia';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useMemo, useRef, useState, type ComponentRef, type ReactNode } from 'react';
-import {
-  Image,
-  Platform,
-  Pressable,
-  ScrollView,
-  Share,
-  StyleSheet,
-  Text,
-  View,
-  type StyleProp,
-  type ViewStyle,
-} from 'react-native';
-import Animated, {
-  Easing,
-  FadeIn,
-  FadeOut,
-  LinearTransition,
-  ReduceMotion,
-  useAnimatedStyle,
-  useReducedMotion,
-  useSharedValue,
-  withDelay,
-  withTiming,
-  type SharedValue,
-} from 'react-native-reanimated';
+import { makeImageFromView } from '@shopify/react-native-skia';
+import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
+import { Platform, Pressable, ScrollView, Share, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import Animated, { FadeIn, FadeOut, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useIntake } from '@/entities/profile';
-import { GOAL_SPECS, ZONE_META, fromDateKey, retestResults, type TestDayOutcome } from '@/entities/program';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { GOAL_SPECS, fromDateKey, retestResults, type TestDayOutcome } from '@/entities/program';
+import { fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { PrimaryButton } from '@/shared/ui/primary-button';
-import { ReplayMask } from '@/shared/ui/replay-mask';
-import { settle } from '@/shared/lib/motion';
 
-import { TEST_PICTURES } from '../../config/test-pictures';
-import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from '../../model/test-day';
+import { goalValuesOf, legsOf, resultRows, type ResultRow } from '../../model/test-day';
+import { Capsule, Hairline, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from '../player/kit';
 import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
-import { GOAL_ZONE } from './test-meta';
-import { TestHistoryBars, TestRing } from './test-visuals';
 
 const NAME_KEY = {
   arch_hold: 'testday.results.name.arch_hold',
@@ -74,13 +38,6 @@ const VERDICT_GOAL_KEY = {
   calf_raises: 'testday.results.verdictGoal.calf_raises',
   balance: 'testday.results.verdictGoal.balance',
 } as const satisfies Record<CardGoal, string>;
-
-/** Which test's picture a result is drawn with. */
-const PICTURE_OF = {
-  calf_raises: 'calf',
-  arch_hold: 'arch',
-  balance: 'balance',
-} as const satisfies Record<CardGoal, TestKind>;
 
 /**
  * What they came for, said back to them under the numbers.
@@ -107,50 +64,13 @@ function goalLineKey(goal: string | null | undefined): (typeof GOAL_LINE)[keyof 
   return goal != null && Object.hasOwn(GOAL_LINE, goal) ? GOAL_LINE[goal as keyof typeof GOAL_LINE] : null;
 }
 
-// ── Motion ──────────────────────────────────────────────────────────────────
-// Played once, on arrival. Nothing here repeats: the flow can stay mounted
-// off screen while its host slides it away.
-
-const RISE_MS = 460;
 const COUNT_MS = 750;
-const HERO_DELAY = 60;
-const FIRST_ROW_DELAY = 380;
-const ROW_STAGGER = 120;
-
-const EASE_OUT = Easing.out(Easing.cubic);
-
-
-function useProgress(from: number, to: number, delay: number, duration: number): SharedValue<number> {
-  const value = useSharedValue(from);
-  useEffect(() => {
-    value.value = from;
-    value.value = withDelay(
-      delay,
-      withTiming(to, { duration, easing: EASE_OUT, reduceMotion: ReduceMotion.System }),
-      ReduceMotion.System,
-    );
-  }, [from, to, delay, duration, value]);
-  return value;
-}
-
-/** Fades in and rises a few points. By hand rather than an `entering`
- * builder, as the flow's own `FadeIn` is: a builder that fails to run would
- * leave the result invisible. */
-function Rise({ delay, children, style }: { delay: number; children: ReactNode; style?: StyleProp<ViewStyle> }) {
-  const p = useProgress(0, 1, delay, RISE_MS);
-  const animated = useAnimatedStyle(() => ({
-    opacity: p.value,
-    transform: [{ translateY: (1 - p.value) * 18 }],
-  }));
-  return <Animated.View style={[style, animated]}>{children}</Animated.View>;
-}
 
 /**
- * A figure counting from last time's to today's, so a gain is seen happening
- * rather than read. Settles on the figure at once with Reduce Motion, or when
- * there is nothing to count.
+ * A figure counting from last time's to today's. Settles on the figure at
+ * once with Reduce Motion, or when there is nothing to count.
  */
-function useCountUp(from: number, to: number, delay: number): number {
+function useCountUp(from: number, to: number): number {
   const reduceMotion = useReducedMotion();
   const [shown, setShown] = useState(reduceMotion ? to : from);
   useEffect(() => {
@@ -160,7 +80,7 @@ function useCountUp(from: number, to: number, delay: number): number {
     }
     setShown(from);
     let frame = 0;
-    const start = Date.now() + delay;
+    const start = Date.now() + 250;
     const tick = () => {
       const t = Math.min(1, Math.max(0, (Date.now() - start) / COUNT_MS));
       setShown(Math.round(from + (to - from) * (1 - (1 - t) ** 3)));
@@ -168,11 +88,9 @@ function useCountUp(from: number, to: number, delay: number): number {
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [from, to, delay, reduceMotion]);
+  }, [from, to, reduceMotion]);
   return shown;
 }
-
-// ── The screen ──────────────────────────────────────────────────────────────
 
 export type TestDayResultsProps = {
   outcome: TestDayOutcome;
@@ -186,29 +104,18 @@ type Hero =
   | { kind: 'first' }
   | { kind: 'steady' };
 
+type Card = ResultRow & { type: CardGoal };
+
 /**
- * What the test found, as a moment and then a scoreboard.
- *
- * First the one thing worth feeling: a goal reached, or the test that grew
- * most, drawn as its own picture with the gain popping in over it; on a first
- * test or a level one, the words alone. Then all three tests on one screen, each a
- * row: its picture inside a ring that fills from last time's share of the goal
- * to today's, the figure counting up, the change in short. A row opens to
- * every test so far, the legs, and what the test shows. The next test closes
- * it, and the result can go to the share sheet as a card.
- *
- * The figure is ink at every value and every ring keeps its test's accent at
- * every length. Only a change for the better is coloured, because that is the
- * one thing colour is allowed to say in this app; a dip is a grey chip.
+ * What the test found: one line that says it, then the three tests as plain
+ * rows, each a big figure and the change in words. A row opens to every test
+ * so far as simple bars, the legs, and what the test shows. The next test
+ * closes the page; the result can leave the app as a card.
  *
  * Read from the stored results rather than from what was just typed, so the
- * same screen serves "See results" on a later day (Home's test task and the
- * plan's today card both open the flow with `review`).
+ * same screen serves "See results" on a later day.
  */
 export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const language = useLanguage();
   const t = useT();
@@ -229,8 +136,6 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
       legs: legsOf(last, side),
       date: last.date,
       previousDate: previous?.date ?? null,
-      // Oldest first, the last six: enough to see a direction, few enough to
-      // read each bar's figure.
       history: results.slice(-6).map((result) => ({ date: result.date, values: goalValuesOf(result) })),
     };
     // `outcome` changes identity when a new test is saved, which is when the
@@ -239,7 +144,6 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
 
   const day = (key: string) =>
     new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long' }).format(fromDateKey(key));
-  // "Monday, 13 October" in the language the app is in, from `Intl`.
   const nextTest = new Intl.DateTimeFormat(language, {
     weekday: 'long',
     day: 'numeric',
@@ -248,6 +152,7 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
 
   const verdict: Verdict = read == null ? { kind: 'first' } : verdictOf(read.rows);
   const hero = heroOf(read?.rows ?? [], verdict, outcome.reached);
+  const celebrate = hero.kind === 'goal' || hero.kind === 'up';
   const dateLine =
     read == null
       ? null
@@ -255,17 +160,21 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
         ? t('testday.results.dateFirst', { date: day(read.date) })
         : t('testday.results.dateVs', { date: day(read.date), count: daysBetween(read.previousDate, read.date) });
 
+  useEffect(() => {
+    if (!celebrate) return;
+    const timer = setTimeout(() => {
+      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    }, 420);
+    return () => clearTimeout(timer);
+  }, [celebrate]);
+
   const symmetry = read?.rows.find((row) => row.type === 'symmetry') ?? null;
-  const cards =
+  const cards: Card[] =
     read == null
       ? []
-      : CARD_ORDER.map((type) => read.rows.find((row) => row.type === type)).filter(
-          (row): row is ResultRow & { type: CardGoal } => row != null,
-        );
-  const afterRows = FIRST_ROW_DELAY + cards.length * ROW_STAGGER;
+      : CARD_ORDER.map((type) => read.rows.find((row) => row.type === type)).filter((row): row is Card => row != null);
 
   const toggle = (type: CardGoal) => {
-    Haptics.selectionAsync();
     setOpen((current) => {
       if (current === type) return null;
       track('test_results_detail', { test: type });
@@ -275,75 +184,51 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
 
   return (
     <View style={styles.root}>
-      <ReplayMask style={styles.root}>
-        <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-          <HeroBlock
-            hero={hero}
-            rows={cards}
-            dateLine={dateLine}
-          />
+      <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+        <Text style={styles.eyebrow}>{heroEyebrow(t, hero)}</Text>
+        <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
+          {heroTitle(t, hero)}
+        </Text>
+        <Text style={styles.lead}>{hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}</Text>
 
-          <View style={styles.rows}>
-            {cards.map((row, index) => (
-              <Rise key={row.type} delay={FIRST_ROW_DELAY + index * ROW_STAGGER}>
-                <ScoreRow
-                  row={row}
-                  previous={read?.before?.[row.type] ?? null}
-                  history={read?.history ?? []}
-                  legs={row.type === 'calf_raises' ? (read?.legs ?? null) : null}
-                  gap={row.type === 'calf_raises' ? symmetry : null}
-                  delay={FIRST_ROW_DELAY + index * ROW_STAGGER + 160}
-                  open={open === row.type}
-                  onToggle={() => toggle(row.type)}
-                />
-              </Rise>
-            ))}
-          </View>
-
-          <Rise delay={afterRows} style={styles.after}>
-            <View style={[styles.next, { backgroundColor: colors.card }]}>
-              <View style={[styles.tile, { backgroundColor: meter.iconTile }]}>
-                <HugeiconsIcon icon={Calendar03Icon} size={20} color={colors.foreground} strokeWidth={2} />
-              </View>
-              <View style={styles.nextCopy}>
-                <Text style={[styles.nextTitle, { color: colors.foreground }]}>
-                  {t('testday.results.nextTest', { date: nextTest })}
-                </Text>
-                <Text style={[styles.nextBody, { color: meter.caption }]}>{t('testday.results.planUpdated')}</Text>
-              </View>
+        <View style={styles.rows}>
+          <Hairline />
+          {cards.map((row) => (
+            <View key={row.type}>
+              <ScoreRow
+                row={row}
+                previous={read?.before?.[row.type] ?? null}
+                history={read?.history ?? []}
+                legs={row.type === 'calf_raises' ? (read?.legs ?? null) : null}
+                gap={row.type === 'calf_raises' ? symmetry : null}
+                open={open === row.type}
+                onToggle={() => toggle(row.type)}
+                day={(key) => new Intl.DateTimeFormat(language, { day: 'numeric', month: 'short' }).format(fromDateKey(key))}
+              />
+              <Hairline />
             </View>
+          ))}
+        </View>
 
-            {goalLine != null && (
-              <View style={[styles.why, { backgroundColor: meter.iconTile }]}>
-                <Text style={[styles.whyEyebrow, { color: meter.label }]}>{t('widgets.retestYourGoal')}</Text>
-                <Text style={[styles.whyText, { color: colors.foreground }]}>{t(goalLine)}</Text>
-              </View>
-            )}
-          </Rise>
-        </ScrollView>
-      </ReplayMask>
+        <View style={styles.after}>
+          <Text style={styles.nextTitle}>{t('testday.results.nextTest', { date: nextTest })}</Text>
+          <Text style={styles.body}>{t('testday.results.planUpdated')}</Text>
+        </View>
+
+        {goalLine != null && (
+          <View style={styles.after}>
+            <Text style={styles.small}>{t('widgets.retestYourGoal')}</Text>
+            <Text style={styles.goal}>{t(goalLine)}</Text>
+          </View>
+        )}
+      </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
-        {cards.length > 0 && (
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={t('testday.results.share')}
-            onPress={() => {
-              Haptics.selectionAsync();
-              setSharing(true);
-            }}
-            style={({ pressed }) => [styles.shareButton, { backgroundColor: colors.card }, pressed && styles.pressed]}>
-            <HugeiconsIcon icon={Share03Icon} size={22} color={colors.foreground} strokeWidth={2} />
-          </Pressable>
-        )}
-        <View style={styles.flex}>
-          <PrimaryButton label={t('testday.results.done')} onPress={onDone} />
-        </View>
+        <Capsule label={t('testday.results.done')} onPress={onDone} />
+        {cards.length > 0 && <TextButton label={t('testday.results.share')} onPress={() => setSharing(true)} />}
       </View>
 
-      {sharing && read != null && (
-        <ShareOverlay rows={cards} date={day(read.date)} onClose={() => setSharing(false)} />
-      )}
+      {sharing && read != null && <ShareOverlay rows={cards} date={day(read.date)} onClose={() => setSharing(false)} />}
     </View>
   );
 }
@@ -397,104 +282,10 @@ function heroEyebrow(t: Translate, hero: Hero): string {
   }
 }
 
-/**
- * The moment. With something to celebrate it is the test's own picture, the
- * gain popping in over it, with a success tap; otherwise the words alone.
- */
-function HeroBlock({
-  hero,
-  rows,
-  dateLine,
-}: {
-  hero: Hero;
-  rows: readonly (ResultRow & { type: CardGoal })[];
-  dateLine: string | null;
-}) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const t = useT();
-  const reduceMotion = useReducedMotion();
-
-  const celebrate = hero.kind === 'goal' || hero.kind === 'up';
-  const type = celebrate ? hero.type : null;
-  const tone = type == null ? accents[scheme].violet : accents[scheme][ZONE_META[GOAL_ZONE[type]].accent];
-  const row = type == null ? null : (rows.find((candidate) => candidate.type === type) ?? null);
-
-  useEffect(() => {
-    if (!celebrate) return;
-    const timer = setTimeout(() => {
-      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    }, 420);
-    return () => clearTimeout(timer);
-  }, [celebrate]);
-
-  const pop = useProgress(0, 1, HERO_DELAY, RISE_MS);
-  const artStyle = useAnimatedStyle(() => ({
-    opacity: pop.value,
-    transform: [{ scale: 0.86 + pop.value * 0.14 }],
-  }));
-  // The gain arrives last, with a spring, so it lands as the moment's point.
-  const badge = useSharedValue(reduceMotion ? 1 : 0);
-  useEffect(() => {
-    if (reduceMotion) return;
-    badge.value = withDelay(520, settle(1, 420));
-  }, [badge, reduceMotion]);
-  const badgeStyle = useAnimatedStyle(() => ({
-    opacity: Math.min(1, badge.value * 1.4),
-    transform: [{ scale: badge.value }],
-  }));
-
-  return (
-    <View style={styles.hero}>
-      {type != null && (
-        <View style={styles.heroArt}>
-          <Animated.View style={[styles.heroArtInner, artStyle]}>
-            <Image
-              source={TEST_PICTURES[PICTURE_OF[type]].full}
-              style={styles.heroPicture}
-              resizeMode="contain"
-              accessibilityIgnoresInvertColors
-            />
-          </Animated.View>
-        {celebrate && row != null && (
-          <Animated.View
-            style={[
-              styles.heroBadge,
-              { backgroundColor: hero.kind === 'goal' ? tone.fill : meter.positive },
-              badgeStyle,
-            ]}>
-            <HugeiconsIcon
-              icon={hero.kind === 'goal' ? CheckmarkCircle02Icon : ArrowUpRight01Icon}
-              size={16}
-              color="#FFFFFF"
-              strokeWidth={2.4}
-            />
-            <Text style={styles.heroBadgeText}>
-              {hero.kind === 'goal' ? t('testday.results.reached') : chipLabel(t, row)}
-            </Text>
-          </Animated.View>
-        )}
-        </View>
-      )}
-
-      <Rise delay={HERO_DELAY + 120} style={styles.heroCopy}>
-        <Text style={[styles.eyebrow, { color: celebrate ? tone.fill : meter.label }]}>{heroEyebrow(t, hero)}</Text>
-        <Text style={[styles.verdict, { color: colors.foreground }]} accessibilityRole="header">
-          {heroTitle(t, hero)}
-        </Text>
-        <Text style={[styles.dateLine, { color: meter.caption }]}>
-          {hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}
-        </Text>
-      </Rise>
-    </View>
-  );
-}
-
 // ── One test ────────────────────────────────────────────────────────────────
 
 type RowProps = {
-  row: ResultRow & { type: CardGoal };
+  row: Card;
   /** Last test's figure, as the goal reads it. Null on a first test. */
   previous: number | null;
   history: readonly { date: string; values: Record<CardGoal, number> }[];
@@ -502,33 +293,22 @@ type RowProps = {
   legs: { left: number; right: number } | null;
   /** Calf raises only: the gap the two legs leave. */
   gap: ResultRow | null;
-  delay: number;
   open: boolean;
   onToggle: () => void;
+  day: (key: string) => string;
 };
 
-/**
- * One test on the scoreboard: its picture in a ring that fills from last
- * time's share of the goal to today's, what is left to the goal, the figure
- * counting up, and the change in short. Opens to the details.
- */
-function ScoreRow({ row, previous, history, legs, gap, delay, open, onToggle }: RowProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
+/** One test as a plain row: its name and what is left to the goal, the figure
+ * big on the right with the change under it. Opens to the details. */
+function ScoreRow({ row, previous, history, legs, gap, open, onToggle, day }: RowProps) {
   const t = useT();
-  const tone = accents[scheme][ZONE_META[GOAL_ZONE[row.type]].accent];
   const seconds = row.type !== 'calf_raises';
-
-  const share = (value: number) => Math.max(0, Math.min(1, value / Math.max(1, row.target)));
-  const figure = useCountUp(previous ?? 0, row.value, delay);
+  const figure = useCountUp(previous ?? 0, row.value);
   const left = Math.max(0, row.target - row.value);
-
-  const chevron = useProgress(open ? 0 : 1, open ? 1 : 0, 0, 220);
-  const chevronStyle = useAnimatedStyle(() => ({ transform: [{ rotate: `${chevron.value * 180}deg` }] }));
+  const stacked = useWindowDimensions().fontScale > 1.6;
 
   return (
-    <Animated.View layout={LinearTransition.duration(260)} style={[styles.row, { backgroundColor: colors.card }]}>
+    <View>
       <Pressable
         accessibilityRole="button"
         accessibilityState={{ expanded: open }}
@@ -538,79 +318,97 @@ function ScoreRow({ row, previous, history, legs, gap, delay, open, onToggle }: 
             ? t('testday.results.unitSeconds', { count: row.value })
             : t('testday.results.unitRaises', { count: row.value })
         }. ${changeSentence(t, row)}`}
-        onPress={onToggle}
-        style={({ pressed }) => [styles.rowMain, pressed && styles.pressed]}>
-        <TestRing
-          kind={PICTURE_OF[row.type]}
-          from={previous == null ? 0 : share(previous)}
-          to={share(row.value)}
-          delay={delay}
-          tone={tone}
-        />
-
+        onPress={() => {
+          void Haptics.selectionAsync();
+          onToggle();
+        }}
+        style={({ pressed }) => [styles.row, stacked && styles.rowStacked, pressed && styles.pressed]}>
         <View style={styles.rowCopy}>
-          <Text style={[styles.name, { color: colors.foreground }]} numberOfLines={2}>
-            {t(NAME_KEY[row.type])}
-          </Text>
-          {row.reached ? (
-            <View style={styles.reachedLine}>
-              <HugeiconsIcon icon={CheckmarkCircle02Icon} size={14} color={tone.fill} strokeWidth={2.4} />
-              <Text style={[styles.toGo, { color: tone.fill }]}>{t('testday.results.reached')}</Text>
-            </View>
-          ) : (
-            <Text style={[styles.toGo, { color: meter.caption }]} numberOfLines={1}>
-              {seconds
+          <Text style={styles.name}>{t(NAME_KEY[row.type])}</Text>
+          <Text style={styles.small}>
+            {row.reached
+              ? t('testday.results.reached')
+              : seconds
                 ? t('testday.results.toGoSeconds', { count: left })
                 : t('testday.results.toGoRaises', { count: left })}
-            </Text>
-          )}
+          </Text>
         </View>
-
-        <View style={styles.rowFigure}>
-          <View style={styles.figureLine}>
-            <Text style={[styles.figure, { color: meter.ink }]}>{figure}</Text>
-            {seconds && <Text style={[styles.unit, { color: meter.unit }]}>{t('testday.results.secondsShort')}</Text>}
-          </View>
-          <DeltaChip row={row} />
+        <View style={[styles.rowFigure, stacked && styles.rowFigureStacked]}>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.figure}>
+            {figure}
+            {seconds && <Text style={styles.unit}> {t('testday.results.secondsShort')}</Text>}
+          </Text>
+          <Text style={styles.small}>{chipLabel(t, row)}</Text>
         </View>
-
-        <Animated.View style={chevronStyle}>
-          <HugeiconsIcon icon={ArrowDown01Icon} size={18} color={meter.label} strokeWidth={2.2} />
-        </Animated.View>
       </Pressable>
 
       {open && (
-        <Animated.View entering={FadeIn.duration(220)} exiting={FadeOut.duration(140)} style={styles.details}>
-          <TestHistoryBars
+        <Animated.View entering={FadeIn.duration(200)} exiting={FadeOut.duration(140)} style={styles.details}>
+          <Bars
             values={history.map((entry) => entry.values[row.type])}
-            dates={history.map((entry) => entry.date)}
+            dates={history.map((entry) => day(entry.date))}
             target={row.target}
-            tone={tone}
           />
-
           {legs != null && (
-            <View style={[styles.legsLine, { backgroundColor: meter.iconTile }]}>
-              <Text style={[styles.legsText, { color: colors.foreground }]}>
-                {t('testday.results.legs', { left: legs.left, right: legs.right })}
-              </Text>
+            <View>
+              <Text style={styles.body}>{t('testday.results.legs', { left: legs.left, right: legs.right })}</Text>
               {gap != null && (
-                <Text style={[styles.legsGap, { color: meter.caption }]}>
+                <Text style={styles.small}>
                   {t('testday.results.gapBetween', { n: gap.value })} · {t('testday.results.goalGap', { n: gap.target })}
                 </Text>
               )}
             </View>
           )}
-
-          <View
-            style={styles.explain}
-            accessible
+          <Text
+            style={styles.small}
             accessibilityLabel={`${t('testday.results.explainA11y')}. ${t(EXPLAIN_KEY[row.type])}`}>
-            <HugeiconsIcon icon={BulbIcon} size={16} color={tone.fill} strokeWidth={2} />
-            <Text style={[styles.explainText, { color: meter.caption }]}>{t(EXPLAIN_KEY[row.type])}</Text>
-          </View>
+            {t(EXPLAIN_KEY[row.type])}
+          </Text>
         </Animated.View>
       )}
-    </Animated.View>
+    </View>
+  );
+}
+
+const BARS_HEIGHT = 96;
+
+/** Every test so far, oldest first: grey bars, today's black, the goal a
+ * hairline. Each bar carries its figure and date. */
+function Bars({ values, dates, target }: { values: readonly number[]; dates: readonly string[]; target: number }) {
+  const t = useT();
+  const top = Math.max(1, target, ...values);
+  return (
+    <View
+      accessible
+      accessibilityLabel={`${t('testday.results.history')}: ${values.map((value, i) => `${dates[i]} ${value}`).join(', ')}`}>
+      <Text style={styles.small}>{t('testday.results.history')}</Text>
+      <View style={styles.bars}>
+        <View style={[styles.goalLine, { bottom: (target / top) * BARS_HEIGHT }]}>
+          <Text style={styles.goalTag}>{target}</Text>
+        </View>
+        {values.map((value, i) => {
+          const last = i === values.length - 1;
+          return (
+            <View key={`${dates[i]}-${i}`} style={styles.barCol}>
+              <Text style={[styles.barValue, last && styles.barValueLast]}>{value}</Text>
+              <View
+                style={[
+                  styles.bar,
+                  { height: Math.max(2, (value / top) * BARS_HEIGHT), backgroundColor: last ? ink.text : ink.rule },
+                ]}
+              />
+            </View>
+          );
+        })}
+      </View>
+      <View style={styles.barDates}>
+        {dates.map((date, i) => (
+          <Text key={`${date}-${i}`} style={styles.barDate} numberOfLines={1}>
+            {date}
+          </Text>
+        ))}
+      </View>
+    </View>
   );
 }
 
@@ -620,26 +418,6 @@ function chipLabel(t: Translate, row: ResultRow): string {
   if (row.type === 'calf_raises')
     return t('testday.results.chipRaises', { delta: signed(row.change), count: Math.abs(row.change) });
   return t('testday.results.chipSeconds', { delta: signed(row.change) });
-}
-
-/** Under the figure: the change since last time, in short. Green only when it
- * went up; level and down are the same quiet grey. */
-function DeltaChip({ row }: { row: ResultRow & { type: CardGoal } }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const t = useT();
-  const up = row.change != null && row.change > 0;
-  return (
-    <View style={[styles.chip, { backgroundColor: up ? meter.positiveBg : meter.iconTile }]}>
-      {up && <HugeiconsIcon icon={ArrowUpRight01Icon} size={12} color={meter.positive} strokeWidth={2.4} />}
-      <Text
-        style={[styles.chipText, { color: up ? meter.positive : row.change == null ? colors.foreground : meter.label }]}
-        numberOfLines={1}>
-        {chipLabel(t, row)}
-      </Text>
-    </View>
-  );
 }
 
 /** The chip, said in full for VoiceOver. */
@@ -660,28 +438,15 @@ function changeSentence(t: Translate, row: ResultRow): string {
 
 // ── Sharing ─────────────────────────────────────────────────────────────────
 
-/** Always drawn dark: the card is a picture that leaves the app, and it reads
- * the same on anyone's feed whatever this phone's appearance is. */
-const CARD_BG = '#141218';
-
 /**
  * The result as a card, shown first so the person sees what leaves the app,
  * then rendered to an image and handed to the share sheet. iOS shares the
  * picture; Android's share sheet takes text only from React Native, so there
  * it is the same three figures in a line.
  */
-function ShareOverlay({
-  rows,
-  date,
-  onClose,
-}: {
-  rows: readonly (ResultRow & { type: CardGoal })[];
-  date: string;
-  onClose: () => void;
-}) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
+function ShareOverlay({ rows, date, onClose }: { rows: readonly Card[]; date: string; onClose: () => void }) {
   const t = useT();
+  const insets = useSafeAreaInsets();
   const card = useRef<ComponentRef<typeof View>>(null);
   const [busy, setBusy] = useState(false);
   const value = (type: CardGoal) => rows.find((row) => row.type === type)?.value ?? 0;
@@ -711,243 +476,86 @@ function ShareOverlay({
   };
 
   return (
-    <Animated.View entering={FadeIn.duration(200)} exiting={FadeOut.duration(160)} style={styles.overlay}>
-      <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel={t('testday.close')} />
-      <View ref={card} collapsable={false} style={styles.card}>
-        <View style={styles.cardHead}>
-          <View style={styles.flex}>
-            <Text style={styles.cardBrand}>{t('testday.results.shareBrand')}</Text>
-            <Text style={styles.cardDate}>{date}</Text>
-          </View>
-        </View>
-        <Text style={styles.cardTitle}>{t('testday.results.shareTitle')}</Text>
-        <View style={styles.cardRows}>
-          {rows.map((row) => {
-            const tone = accents.dark[ZONE_META[GOAL_ZONE[row.type]].accent];
-            const up = row.change != null && row.change > 0;
-            return (
+    <Animated.View
+      entering={FadeIn.duration(200)}
+      exiting={FadeOut.duration(160)}
+      style={[styles.overlay, { paddingTop: insets.top + 24, paddingBottom: Math.max(insets.bottom, 16) }]}>
+      <View style={styles.cardWrap}>
+        <View ref={card} collapsable={false} style={styles.card}>
+          <Text style={styles.cardBrand}>{t('testday.results.shareBrand')}</Text>
+          <Text style={styles.cardDate}>{date}</Text>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.cardTitle}>{t('testday.results.shareTitle')}</Text>
+          <View style={styles.cardRows}>
+            {rows.map((row) => (
               <View key={row.type} style={styles.cardRow}>
-                <View style={[styles.cardThumb, { backgroundColor: tone.track }]}>
-                  <Image source={TEST_PICTURES[PICTURE_OF[row.type]].thumb} style={styles.thumbImage} />
-                </View>
                 <Text style={styles.cardName} numberOfLines={1}>
                   {t(NAME_KEY[row.type])}
                 </Text>
-                <View style={styles.cardFigure}>
-                  <Text style={styles.cardValue}>
-                    {row.type === 'calf_raises' ? row.value : t('testday.results.valueSeconds', { n: row.value })}
-                  </Text>
-                  {up && <Text style={styles.cardUp}>{chipLabel(t, row)}</Text>}
-                </View>
+                <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.cardValue}>
+                  {row.type === 'calf_raises' ? row.value : t('testday.results.valueSeconds', { n: row.value })}
+                </Text>
               </View>
-            );
-          })}
+            ))}
+          </View>
         </View>
       </View>
       <View style={styles.shareActions}>
-        <PrimaryButton label={t('testday.results.share')} onPress={() => void share()} />
-        <Pressable accessibilityRole="button" onPress={onClose} hitSlop={8} style={styles.shareClose}>
-          <Text style={[styles.shareCloseText, { color: scheme === 'dark' ? colors.foreground : '#FFFFFF' }]}>
-            {t('testday.close')}
-          </Text>
-        </Pressable>
+        <Capsule label={t('testday.results.share')} onPress={() => void share()} disabled={busy} />
+        <TextButton label={t('testday.close')} onPress={onClose} quiet />
       </View>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1 },
-  flex: { flex: 1 },
-  pressed: { opacity: 0.6 },
-  content: {
-    paddingHorizontal: 20,
-    paddingTop: 4,
-    paddingBottom: 24,
-    gap: 16,
-  },
+  root: { flex: 1, backgroundColor: ink.page },
+  pressed: { opacity: 0.55 },
+  content: { paddingHorizontal: SIDE, paddingTop: 8, paddingBottom: 32 },
 
-  hero: {
-    alignItems: 'center',
-  },
-  heroArt: {
-    width: '100%',
-    height: 200,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  heroArtInner: {
-    width: '100%',
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  heroPicture: {
-    width: '86%',
-    height: '100%',
-  },
-  heroBadge: {
-    position: 'absolute',
-    top: 14,
-    right: 18,
+  eyebrow: { ...fonts.semibold(15), color: ink.grey },
+  title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 6 },
+  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8 },
+
+  rows: { marginTop: 32 },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 16, paddingVertical: 18, minHeight: 88 },
+  rowCopy: { flexGrow: 1, flexShrink: 1, gap: 4 },
+  name: { ...fonts.semibold(19), color: ink.text },
+  rowFigure: { alignItems: 'flex-end', gap: 2, maxWidth: '50%' },
+  rowStacked: { flexDirection: 'column', alignItems: 'flex-start', gap: 8 },
+  rowFigureStacked: { alignItems: 'flex-start', maxWidth: '100%' },
+  figure: { ...fonts.bold(40, -1), color: ink.text, fontVariant: ['tabular-nums'] },
+  unit: { ...fonts.semibold(19, 0), color: ink.grey },
+  small: { ...fonts.regular(15), color: ink.grey },
+  body: { ...fonts.regular(17), color: ink.text },
+
+  details: { gap: 16, paddingBottom: 20 },
+  bars: {
     flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5,
-    height: 34,
-    paddingHorizontal: 13,
-    borderRadius: 17,
-    borderCurve: 'continuous',
-  },
-  heroBadgeText: {
-    ...fonts.heavy(16, -0.2),
-    color: '#FFFFFF',
-  },
-  heroCopy: {
-    alignItems: 'center',
-    gap: 6,
+    alignItems: 'flex-end',
+    gap: 8,
+    height: BARS_HEIGHT + 24,
     marginTop: 8,
   },
-  eyebrow: fonts.heavy(14, 0.2),
-  verdict: {
-    ...fonts.heavy(28, -0.7),
-    lineHeight: 33,
-    textAlign: 'center',
+  goalLine: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: ink.grey,
   },
-  dateLine: {
-    ...fonts.medium(15),
-    textAlign: 'center',
-  },
+  goalTag: { position: 'absolute', right: 0, bottom: 4, ...fonts.medium(12), color: ink.grey },
+  barCol: { flex: 1, maxWidth: 56, alignItems: 'center', justifyContent: 'flex-end', gap: 4 },
+  bar: { alignSelf: 'stretch', borderRadius: 3 },
+  barValue: { ...fonts.medium(13), color: ink.grey, fontVariant: ['tabular-nums'] },
+  barValueLast: { ...fonts.bold(13), color: ink.text },
+  barDates: { flexDirection: 'row', gap: 8, marginTop: 6 },
+  barDate: { flex: 1, maxWidth: 56, ...fonts.regular(12), color: ink.grey, textAlign: 'center' },
 
-  rows: { gap: 10 },
-  row: {
-    borderRadius: 24,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  rowMain: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    padding: 12,
-    paddingRight: 14,
-  },
-  thumbImage: {
-    width: '100%',
-    height: '100%',
-  },
-  rowCopy: {
-    flex: 1,
-    gap: 3,
-  },
-  name: {
-    ...fonts.bold(17, -0.3),
-    lineHeight: 21,
-  },
-  reachedLine: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-  },
-  toGo: fonts.semibold(13),
-  rowFigure: {
-    alignItems: 'flex-end',
-    gap: 4,
-  },
-  figureLine: {
-    flexDirection: 'row',
-    alignItems: 'baseline',
-    gap: 2,
-  },
-  figure: {
-    ...fonts.heavy(30, -0.8),
-    fontVariant: ['tabular-nums'],
-  },
-  unit: fonts.bold(16),
-  chip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 3,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 10,
-  },
-  chipText: fonts.bold(12),
+  after: { marginTop: 32, gap: 4 },
+  nextTitle: { ...fonts.semibold(19), color: ink.text },
+  goal: { ...fonts.regular(19), color: ink.text },
 
-  details: {
-    paddingHorizontal: 14,
-    paddingBottom: 14,
-    gap: 12,
-  },
-  // On the left, over the oldest bar, which is the one least likely to reach
-  // the goal and put its figure where the tag is.
-  legsLine: {
-    gap: 2,
-    padding: 12,
-    borderRadius: 16,
-    borderCurve: 'continuous',
-  },
-  legsText: fonts.bold(15),
-  legsGap: fonts.medium(13),
-  explain: {
-    flexDirection: 'row',
-    gap: 8,
-    alignItems: 'flex-start',
-  },
-  explainText: {
-    flex: 1,
-    ...fonts.medium(14),
-    lineHeight: 20,
-  },
-
-  after: { gap: 12 },
-  next: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    padding: 14,
-    borderRadius: 22,
-    borderCurve: 'continuous',
-  },
-  tile: {
-    width: 42,
-    height: 42,
-    borderRadius: 14,
-    borderCurve: 'continuous',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  nextCopy: { flex: 1, gap: 2 },
-  nextTitle: fonts.bold(16, -0.2),
-  nextBody: {
-    ...fonts.medium(14),
-    lineHeight: 19,
-  },
-  why: {
-    gap: 4,
-    padding: 16,
-    borderRadius: 22,
-    borderCurve: 'continuous',
-  },
-  whyEyebrow: fonts.bold(13, 0.2),
-  whyText: {
-    ...fonts.semibold(16, -0.2),
-    lineHeight: 22,
-  },
-
-  dock: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    paddingHorizontal: 20,
-    paddingTop: 10,
-  },
-  shareButton: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  dock: { paddingHorizontal: SIDE, paddingTop: 12, gap: 4, backgroundColor: ink.page },
 
   overlay: {
     position: 'absolute',
@@ -955,77 +563,24 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0,0,0,0.72)',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 28,
-    gap: 20,
+    backgroundColor: ink.page,
+    paddingHorizontal: SIDE,
   },
-  card: {
-    width: '100%',
-    maxWidth: 340,
-    padding: 22,
-    gap: 14,
-    borderRadius: 30,
-    borderCurve: 'continuous',
-    backgroundColor: CARD_BG,
-    overflow: 'hidden',
-  },
-  cardHead: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-  },
-  cardBrand: {
-    ...fonts.heavy(18, -0.3),
-    color: '#FFFFFF',
-  },
-  cardDate: {
-    ...fonts.medium(13),
-    color: 'rgba(255,255,255,0.6)',
-  },
-  cardTitle: {
-    ...fonts.heavy(30, -0.8),
-    color: '#FFFFFF',
-  },
-  cardRows: { gap: 10 },
+  cardWrap: { flex: 1, justifyContent: 'center' },
+  card: { padding: 24, gap: 4, borderRadius: 24, borderCurve: 'continuous', backgroundColor: '#000000' },
+  cardBrand: { ...fonts.bold(17), color: '#FFFFFF' },
+  cardDate: { ...fonts.regular(15), color: 'rgba(255,255,255,0.6)' },
+  cardTitle: { ...fonts.bold(34, -0.6), color: '#FFFFFF', marginTop: 20 },
+  cardRows: { marginTop: 16 },
   cardRow: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'baseline',
     gap: 12,
-    padding: 8,
-    paddingRight: 14,
-    borderRadius: 20,
-    borderCurve: 'continuous',
-    backgroundColor: 'rgba(255,255,255,0.06)',
+    paddingVertical: 12,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: 'rgba(255,255,255,0.24)',
   },
-  cardThumb: {
-    width: 52,
-    height: 52,
-    borderRadius: 16,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  cardName: {
-    flex: 1,
-    ...fonts.bold(16, -0.2),
-    color: '#FFFFFF',
-  },
-  cardFigure: { alignItems: 'flex-end' },
-  cardValue: {
-    ...fonts.heavy(24, -0.6),
-    color: '#FFFFFF',
-    fontVariant: ['tabular-nums'],
-  },
-  cardUp: {
-    ...fonts.bold(12),
-    color: '#2ECC71',
-  },
-  shareActions: {
-    width: '100%',
-    maxWidth: 340,
-    gap: 12,
-  },
-  shareClose: { paddingVertical: 6, alignSelf: 'center' },
-  shareCloseText: fonts.bold(16),
+  cardName: { flex: 1, ...fonts.regular(17), color: '#FFFFFF' },
+  cardValue: { ...fonts.bold(28, -0.6), color: '#FFFFFF', fontVariant: ['tabular-nums'] },
+  shareActions: { gap: 4 },
 });
