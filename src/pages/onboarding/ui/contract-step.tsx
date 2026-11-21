@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { PanResponder, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import type { SharedValue } from 'react-native-reanimated';
-import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
 
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, fonts, meterColors } from '@/shared/config';
+import { colors } from '@/shared/config/tokens';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -54,9 +54,7 @@ export function ContractStep({
   onSealed,
 }: ContractStepProps) {
   const scheme = useColorScheme();
-  const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const hasGlass = isLiquidGlassAvailable();
   const t = useT();
 
   const sealed = useRef(onSealed);
@@ -130,30 +128,7 @@ export function ContractStep({
   return (
     <View style={styles.wrap}>
       <View onLayout={onLayout} style={styles.pad} {...responder.panHandlers}>
-        {/* Glass as an absolute sibling, never a parent — nested glass renders
-            empty on iOS 26. */}
-        {hasGlass ? (
-          <GlassView
-            glassEffectStyle="regular"
-            // Regular glass over a near-black page is all but invisible: the
-            // pad read as empty space and there was nothing to aim at. The
-            // tint and rim are what make it a surface you can see to sign on.
-            tintColor={scheme === 'dark' ? 'rgba(255,255,255,0.10)' : 'rgba(17,17,20,0.05)'}
-            style={[
-              StyleSheet.absoluteFill,
-              styles.padShape,
-              { borderWidth: 1, borderColor: meter.track },
-            ]}
-          />
-        ) : (
-          <View
-            style={[
-              StyleSheet.absoluteFill,
-              styles.padShape,
-              { backgroundColor: colors.card, borderColor: meter.track, borderWidth: 1 },
-            ]}
-          />
-        )}
+        <View style={[StyleSheet.absoluteFill, styles.padShape, styles.padSurface]} />
         {!hasInk && (
           <Text style={[styles.hint, { color: meter.unit }]}>
             {t('onboarding.contract.hint')}
@@ -230,6 +205,11 @@ const styles = StyleSheet.create({
   padShape: {
     borderRadius: RADIUS,
     borderCurve: 'continuous',
+  },
+  padSurface: {
+    backgroundColor: colors.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.separator,
   },
   hint: { alignSelf: 'center', ...fonts.regular(15) },
   clear: { position: 'absolute', top: 10, right: 14, fontSize: 17, padding: 4 },

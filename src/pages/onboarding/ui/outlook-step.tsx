@@ -1,4 +1,3 @@
-import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
@@ -28,6 +27,7 @@ import {
 } from '@/entities/leg-zone';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { colors as tokens } from '@/shared/config/tokens';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { OUTLOOK_STOPS, STRENGTHENED, zoneStage } from '../model/outlook';
@@ -376,7 +376,6 @@ function CalloutCard({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const glass = isLiquidGlassAvailable();
 
   /**
    * Mounted as no glass, then switched to regular with `animate` — which is
@@ -403,25 +402,11 @@ function CalloutCard({
 
   return (
     <View style={[styles.card, frame]}>
-      {/* Glass as an absolute sibling, never a parent: nested glass renders
-          empty on iOS 26, and the text has to be free to fade in over it. */}
-      {glass ? (
-        <GlassView
-          glassEffectStyle={{ style: formed ? 'regular' : 'none', animate: true, animationDuration: 0.6 }}
-          tintColor={scheme === 'dark' ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.35)'}
-          style={[StyleSheet.absoluteFill, styles.cardShape]}
+      {formed && (
+        <Animated.View
+          entering={FadeIn.duration(360).easing(EASE.factory()).reduceMotion(ReduceMotion.System)}
+          style={[StyleSheet.absoluteFill, styles.cardShape, styles.cardSurface]}
         />
-      ) : (
-        formed && (
-          <Animated.View
-            entering={FadeIn.duration(360).easing(EASE.factory()).reduceMotion(ReduceMotion.System)}
-            style={[
-              StyleSheet.absoluteFill,
-              styles.cardShape,
-              { backgroundColor: meter.solidFallback, borderColor: meter.track, borderWidth: 1 },
-            ]}
-          />
-        )
       )}
 
       {formed && (
@@ -471,6 +456,11 @@ const styles = StyleSheet.create({
   cardShape: {
     borderRadius: 18,
     borderCurve: 'continuous',
+  },
+  cardSurface: {
+    backgroundColor: tokens.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: tokens.separator,
   },
   cardBody: {
     flex: 1,

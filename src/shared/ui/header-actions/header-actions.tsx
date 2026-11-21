@@ -2,7 +2,6 @@ import DropletIcon from '@hugeicons/core-free-icons/DropletIcon';
 import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { useState, type ReactNode } from 'react';
-import { GlassContainer, GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   runOnJS,
@@ -11,13 +10,11 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { fonts } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, colors, target } from '@/shared/config/tokens';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { NavGlass } from '@/shared/ui/glass';
 import { ProfileMenu } from '@/shared/ui/profile-menu';
-
-/** Where there is no Liquid Glass — Android, older iOS — a capsule gets a plain fill instead. */
-const GLASS = isLiquidGlassAvailable();
 
 export type HeaderActionsProps = {
   /** Days in the current streak. Rendered as the bare number — the flame
@@ -72,21 +69,15 @@ const OPEN_LIFT = 16;
  * The profile trigger's real footprint, and the row's gap — the gift slides by
  * exactly their sum, so it lands where the profile was.
  *
- * Read from `profile-menu.ios.tsx`, not guessed: its capsule is a 24pt glyph
- * plus 16 of padding. A rounder-looking 44 here overshot by four points and
- * left the gift sitting proud of the edge the rest of the row lines up on.
+ * The profile button is a 48pt circle, the minimum touch target.
  */
-const PROFILE_SLOT = 40;
+const PROFILE_SLOT = target.min;
 const TRAILING_GAP = 8;
 
 /**
  * The trailing capsules in a screen header: a streak count, then the profile
- * menu.
- *
- * Note the profile trigger is a SwiftUI `Menu` on iOS, not a `GlassView`, so
- * it does not fluidly merge with the streak capsule the way two RN glass
- * siblings would. That is the price of getting the real system dropdown; the
- * `glassEffect` modifier keeps the two visually consistent.
+ * button. The header is the navigation layer, so the capsules are `NavGlass`:
+ * Liquid Glass on iOS 26+, opaque white with a hairline everywhere else.
  */
 export function HeaderActions({
   streak,
@@ -104,20 +95,13 @@ export function HeaderActions({
   swapProgress,
   centre,
 }: HeaderActionsProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-
   const climb = useAnimatedStyle(() => ({
     transform: [{ translateY: -(swapProgress?.value ?? 0) * OPEN_LIFT }],
   }));
 
   return (
-    // The climb rides a wrapper, not the container itself: `GlassContainer` is
-    // a native view that takes plain styles only, and handing it an animated
-    // one is a type error at best and a dropped animation at worst. The wrapper
-    // is a row so the container's `flex: 1` still spans the width.
     <Animated.View style={[styles.climb, climb]}>
-      <GlassContainer spacing={8} style={[styles.row, spread && styles.spread]}>
+      <View style={[styles.row, spread && styles.spread]}>
         {streak != null && (
           <StreakCapsule
             streak={streak}
@@ -141,14 +125,14 @@ export function HeaderActions({
             // that survives the transition, so it should visibly keep its place
             // in the row.
             <Shift progress={swapProgress} by={PROFILE_SLOT + TRAILING_GAP}>
-              <GiftCapsule onPress={onGift} tint={colors.foreground} />
+              <GiftCapsule onPress={onGift} />
             </Shift>
           )}
           <SlideOut progress={swapProgress}>
             <ProfileMenu onPress={onProfile} />
           </SlideOut>
         </View>
-      </GlassContainer>
+      </View>
     </Animated.View>
   );
 }
@@ -168,14 +152,9 @@ export type StreakCapsuleProps = {
  * The streak capsule from Home's header, on its own — the plan screen wears the
  * same one in its header, so the flame and the count read the same everywhere.
  *
- * The touchable is OUTSIDE the glass, and that ordering is the whole reason
- * this capsule opens on the first tap. `isInteractive` sets
- * `UIGlassEffect.isInteractive`, which installs the system's own press
- * recogniser on the effect view; anything mounted inside a `GlassView` lands in
- * its `contentView`, a descendant of that recogniser, so a `Pressable` in there
- * competed with it for the same touch and lost the first one. As an ancestor it
- * takes the touch before the glass ever sees it, and the material still flexes
- * underneath.
+ * The touchable is OUTSIDE the glass: an interactive glass view installs its
+ * own press recogniser, and a `Pressable` inside it loses the first tap. It
+ * never dims on press either, because glass under opacity stops rendering.
  *
  * Announced as a control only when one is actually behind it: with no handler
  * the capsule is the text it looks like. The count alone read as a bare "7", so
@@ -190,47 +169,46 @@ export function StreakCapsule({
   accessory,
   accessoryLabel,
 }: StreakCapsuleProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const base = onPress != null ? `${streak} day streak, see what counts` : `${streak} day streak`;
+  const t = useT();
+  const base = t('streakSheet.currentA11y', { count: streak });
   return (
     <Pressable
       accessible
       accessibilityRole={onPress != null ? 'button' : 'text'}
       accessibilityLabel={accessoryLabel != null ? `${base}. ${accessoryLabel}` : base}
       disabled={onPress == null}
-      onPress={onPress}
-      style={({ pressed }) => pressed && { opacity: 0.6 }}>
-      <GlassView isInteractive style={[styles.streak, !GLASS && { backgroundColor: meterColors[scheme].track }]}>
+      onPress={onPress}>
+      <NavGlass interactive style={styles.capsule}>
         {glyph ?? (
-          <HugeiconsIcon icon={icon} size={22} color={tint ?? colors.foreground} strokeWidth={tint != null ? 2.3 : 1.9} />
+          <HugeiconsIcon icon={icon} size={22} color={tint ?? colors.text} strokeWidth={tint != null ? 2.3 : 1.9} />
         )}
-        <Text style={[styles.streakCount, { color: colors.foreground }]}>{streak}</Text>
+        <Text style={styles.streakCount} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+          {streak}
+        </Text>
         {accessory != null && (
           <>
-            <View style={[styles.streakDivider, { backgroundColor: meterColors[scheme].unit }]} />
+            <View style={styles.streakDivider} />
             {accessory}
           </>
         )}
-      </GlassView>
+      </NavGlass>
     </Pressable>
   );
 }
 
 /** The reward capsule. */
-function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
-  const scheme = useColorScheme();
+function GiftCapsule({ onPress }: { onPress: () => void }) {
   const t = useT();
 
   return (
-    // Outside the glass, for the reason spelled out on the streak capsule: a
-    // touchable inside an interactive `GlassView` loses its first tap to the
-    // material's own press recogniser.
+    // Outside the glass, for the reason spelled out on the streak capsule.
     <Pressable accessibilityRole="button" accessibilityLabel={t('gift.openA11y')} onPress={onPress}>
-      <GlassView isInteractive style={[styles.gift, !GLASS && { backgroundColor: meterColors[scheme].track }]}>
-        <HugeiconsIcon icon={GiftIcon} size={22} color={tint} strokeWidth={1.9} />
-        <Text style={[styles.giftLabel, { color: tint }]}>{t('gift.capsule')}</Text>
-      </GlassView>
+      <NavGlass interactive style={styles.capsule}>
+        <HugeiconsIcon icon={GiftIcon} size={22} color={colors.text} strokeWidth={1.9} />
+        <Text style={styles.giftLabel} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+          {t('gift.capsule')}
+        </Text>
+      </NavGlass>
     </Pressable>
   );
 }
@@ -238,10 +216,9 @@ function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
 /**
  * Leaves as the sheet arrives, and stops taking touches on the way out.
  *
- * It slides off the edge rather than fading, because what it wraps is liquid
- * glass: an animated opacity over a glass view renders it as a flat grey slab,
- * which is the same reason the tab pill leaves by moving. Sliding right also
- * reads correctly — it goes out the way the gift comes in.
+ * It slides off the edge rather than fading, because what it wraps is glass:
+ * glass under an animated opacity stops rendering. Sliding right also reads
+ * correctly — it goes out the way the gift comes in.
  *
  * The `pointerEvents` is a real prop off React state, not an animated style.
  * That one has to be certain: the gift slides into exactly this control's
@@ -305,10 +282,6 @@ function Centre({
   title: string;
   subtitle: string;
 }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-
   const style = useAnimatedStyle(() => {
     const p = progress?.value ?? 0;
     return {
@@ -319,8 +292,12 @@ function Centre({
 
   return (
     <Animated.View pointerEvents="none" style={[styles.centre, style]}>
-      <Text style={[styles.centreTitle, { color: colors.foreground }]}>{title}</Text>
-      <Text style={[styles.centreSub, { color: meter.caption }]}>{subtitle}</Text>
+      <Text style={styles.centreTitle} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+        {title}
+      </Text>
+      <Text style={styles.centreSub} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+        {subtitle}
+      </Text>
     </Animated.View>
   );
 }
@@ -338,22 +315,23 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-between',
   },
-  streak: {
+  capsule: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 7,
+    minHeight: target.min,
     paddingLeft: 13,
     paddingRight: 16,
-    paddingVertical: 9,
-    borderRadius: 50,
+    borderRadius: target.min / 2,
     borderCurve: 'continuous',
+    overflow: 'hidden',
   },
-  streakCount: fonts.semibold(16),
+  streakCount: { ...fonts.semibold(17), color: colors.text },
   streakDivider: {
     width: StyleSheet.hairlineWidth * 2,
-    height: 16,
-    opacity: 0.5,
+    height: 18,
     marginHorizontal: 1,
+    backgroundColor: colors.separator,
   },
   trailing: {
     flexDirection: 'row',
@@ -369,21 +347,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  centreTitle: fonts.bold(17, -0.3),
-  centreSub: fonts.regular(13),
-  // The padding is back on the glass now that the touchable wraps it: the
-  // capsule is the whole target either way, and one view fewer is one fewer
-  // thing between a finger and the handler.
-  gift: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 7,
-    paddingLeft: 13,
-    paddingRight: 16,
-    paddingVertical: 9,
-    borderRadius: 50,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  giftLabel: fonts.semibold(17, -0.2),
+  centreTitle: { ...fonts.bold(17, -0.3), color: colors.text },
+  centreSub: { ...fonts.regular(17), color: colors.text2 },
+  giftLabel: { ...fonts.semibold(17, -0.2), color: colors.text },
 });
