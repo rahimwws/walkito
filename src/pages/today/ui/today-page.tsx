@@ -1,4 +1,4 @@
-import UserCircleIcon from '@hugeicons/core-free-icons/UserCircleIcon';
+import UserIcon from '@hugeicons/core-free-icons/UserIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useRouter } from 'expo-router';
@@ -9,13 +9,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useHealthSignals } from '@/entities/health';
 import { wakeLabel, wakeMinutes } from '@/entities/notifications';
 import { protocolById } from '@/entities/protocols';
-import {
-  toDateKey,
-  todayKey,
-  useNextSession,
-  useProgramState,
-  weekIndexFor,
-} from '@/entities/program';
+import { toDateKey, todayKey, useNextSession, useProgramState, weekIndexFor } from '@/entities/program';
 import { useAccessLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import { useHomeTourState } from '@/entities/session';
 import { FollowSheet, useFollowOffer } from '@/features/follow';
@@ -25,7 +19,6 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { requestProgram, usePlanOver, useProgram } from '@/shared/lib/program';
 import { useSpotlightAnchor, useSpotlightScroller } from '@/shared/lib/spotlight';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
-import { StartButton } from '@/shared/ui/glass';
 import { useSplashRevealed } from '@/shared/ui/splash';
 
 import { planKind } from '../model/plan-kind';
@@ -35,13 +28,17 @@ import { CheckIn } from './check-in';
 import { DayOneSession } from './day-one-session';
 import { PassEndingRow } from './pass-ending-row';
 import { PlainRow } from './plain-row';
-import { TodayHero } from './today-hero';
-import { WeekRow } from './week-row';
+import { RoutineGrid } from './routine-grid';
+import { SessionCard } from './session-card';
+import { cardStyle } from './today-card';
+import { WeekCard } from './week-card';
 
 /**
- * Today (spec §7.1 and the v2 addendum; NTC #2, NRC #1): one session and one
- * button. The week in one quiet row, today's session as a full-bleed photo
- * with its minutes in huge type, then at most two plain rows.
+ * Today, copied from Bend's home with pliability's and Alan's today card: a
+ * greeting with the profile as a round button and the week as a pill, the
+ * week's days on a white card, today's session as a card with its photo, its
+ * first moves and Start, the check-in on its own card, then Bend's grid of
+ * quick routines.
  *
  * Start opens today's session where it always ran, on the Plan tab: the same
  * request an email link makes (`requestProgram`), so the player, the done
@@ -98,7 +95,9 @@ export function TodayPage() {
         program?.open();
       };
 
-  const dateLine = new Intl.DateTimeFormat(language, { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date());
+  const hour = new Date().getHours();
+  const greeting =
+    hour < 12 ? t('home.greeting.morning') : hour < 18 ? t('home.greeting.afternoon') : t('home.greeting.evening');
 
   return (
     <View style={styles.screen}>
@@ -111,85 +110,97 @@ export function TodayPage() {
           paddingTop: Platform.OS === 'ios' ? 8 : insets.top + 8,
           paddingHorizontal: space.screen,
           paddingBottom: clearance + space.gap,
+          gap: 16,
         }}>
-        <View style={styles.bar}>
+        <View style={styles.header}>
+          <View style={styles.headerText}>
+            <Text style={styles.greeting} accessibilityRole="header" maxFontSizeMultiplier={2}>
+              {greeting}
+            </Text>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityHint={t('home.today.weekHint')}
+              onPress={() => {
+                void Haptics.selectionAsync();
+                program?.open();
+              }}
+              style={({ pressed }) => [styles.weekPill, pressed && styles.pressed]}>
+              <Text style={styles.weekText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE} numberOfLines={1}>
+                {t('home.today.week', { week: Math.min(week, weeks), total: weeks })}
+              </Text>
+            </Pressable>
+          </View>
           <Pressable
             accessibilityRole="button"
+            accessibilityLabel={t('home.today.profile')}
             onPress={() => {
               void Haptics.selectionAsync();
               router.push('/profile');
             }}
-            style={({ pressed }) => [styles.barButton, pressed && styles.pressed]}>
-            <HugeiconsIcon icon={UserCircleIcon} size={24} color={colors.text} strokeWidth={1.8} />
-            <Text style={styles.barText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
-              {t('home.today.profile')}
-            </Text>
-          </Pressable>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityHint={t('home.today.weekHint')}
-            onPress={() => {
-              void Haptics.selectionAsync();
-              program?.open();
-            }}
-            style={({ pressed }) => [styles.barButton, pressed && styles.pressed]}>
-            <Text style={styles.barWeek} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE} numberOfLines={1}>
-              {t('home.today.week', { week: Math.min(week, weeks), total: weeks })}
-            </Text>
+            style={({ pressed }) => [styles.avatar, pressed && styles.pressed]}>
+            <HugeiconsIcon icon={UserIcon} size={24} color={colors.text} strokeWidth={1.8} />
           </Pressable>
         </View>
 
-        <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={2}>
-          {t('tabs.today')}
-        </Text>
-        <Text style={styles.date}>{dateLine}</Text>
+        <WeekCard />
 
-        <View style={styles.week}>
-          <WeekRow />
+        <View ref={overviewAnchor} collapsable={false}>
+          <SessionCard
+            work={work}
+            kind={kind}
+            ranToday={ranToday}
+            next={next}
+            active={focused}
+            startLabel={startLabel}
+            onStart={onStart}
+            onOpen={() => program?.open()}
+            onWhy={() => router.push('/why')}
+            startRef={startAnchor}
+          />
         </View>
 
-        <View ref={overviewAnchor} collapsable={false} style={styles.hero}>
-          <TodayHero work={work} kind={kind} ranToday={ranToday} next={next} active={focused} onPress={() => program?.open()} />
+        <View ref={checkAnchor} collapsable={false}>
+          <CheckIn />
         </View>
-        <View ref={startAnchor} collapsable={false} style={styles.start}>
-          <StartButton label={startLabel} onPress={onStart} />
-        </View>
-        <Pressable
-          accessibilityRole="button"
-          onPress={() => router.push('/why')}
-          style={({ pressed }) => [styles.why, pressed && styles.pressed]}>
-          <Text style={styles.whyText}>{t('home.why.title')}</Text>
-        </Pressable>
 
-        <View style={styles.rows}>
-          <View ref={checkAnchor} collapsable={false}>
-            <CheckIn />
-          </View>
-          {kind === 'runner' ? (
-            <PlainRow
-              title={ranToday ? t('home.today.run.doneTitle') : t('home.today.run.title')}
-              detail={t('home.today.run.body', { minutes: t('quick.minutes', { count: protocolById('post_run').minutes }) })}
-              onPress={() => openRoutine('post_run')}
-            />
-          ) : kind === 'feet' ? (
-            <PlainRow
-              title={t('home.today.work.title', { count: protocolById('at_work').minutes })}
-              detail={t('home.today.work.body')}
-              onPress={() => openRoutine('at_work')}
-            />
-          ) : (
-            <PlainRow
-              title={t('home.today.firstStep.title')}
-              detail={t('home.today.firstStep.when', {
-                time: wakeLabel(wakeMinutes(), language),
-                minutes: t('quick.minutes', { count: protocolById('first_steps').minutes }),
-              })}
-              onPress={() => openRoutine('first_steps')}
-              action={{ label: t('home.today.firstStep.change'), onPress: () => router.push('/first-step-time') }}
-            />
-          )}
-          <PassEndingRow seen={focused && revealed} />
+        {kind === 'runner' ? (
+          <PlainRow
+            emoji={ranToday ? 'shoe' : 'run'}
+            accent="orange"
+            title={ranToday ? t('home.today.run.doneTitle') : t('home.today.run.title')}
+            detail={t('home.today.run.body', { minutes: t('quick.minutes', { count: protocolById('post_run').minutes }) })}
+            onPress={() => openRoutine('post_run')}
+          />
+        ) : kind === 'feet' ? (
+          <PlainRow
+            emoji="briefcase"
+            accent="amber"
+            title={t('home.today.work.title', { count: protocolById('at_work').minutes })}
+            detail={t('home.today.work.body')}
+            onPress={() => openRoutine('at_work')}
+          />
+        ) : (
+          <PlainRow
+            emoji="sunrise"
+            accent="amber"
+            title={t('home.today.firstStep.title')}
+            detail={t('home.today.firstStep.when', {
+              time: wakeLabel(wakeMinutes(), language),
+              minutes: t('quick.minutes', { count: protocolById('first_steps').minutes }),
+            })}
+            onPress={() => openRoutine('first_steps')}
+            action={{ label: t('home.today.firstStep.change'), onPress: () => router.push('/first-step-time') }}
+          />
+        )}
+
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle} accessibilityRole="header">
+            {t('home.today.quickTitle')}
+          </Text>
+          <RoutineGrid kind={kind} />
         </View>
+
+        <PassEndingRow seen={focused && revealed} />
       </ScrollView>
 
       {/* The first run, after the purchase or the skip: the "Day 1" card and
@@ -204,17 +215,26 @@ export function TodayPage() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  bar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
-  barButton: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: target.min, flexShrink: 1 },
-  barText: { ...fonts.medium(17), color: colors.text },
-  barWeek: { ...fonts.medium(17), color: colors.text2, flexShrink: 1 },
-  title: { ...fonts.bold(34, -0.6), color: colors.text, marginTop: 12 },
-  date: { ...fonts.regular(19), color: colors.text2, marginTop: 2 },
-  week: { marginTop: 16 },
-  hero: { marginTop: 16 },
-  why: { alignSelf: 'flex-start', minHeight: target.min, justifyContent: 'center', marginTop: 4 },
-  whyText: { ...fonts.medium(17), color: colors.text2, textDecorationLine: 'underline' },
-  rows: { marginTop: space.section - 8 },
-  start: { marginTop: 20 },
-  pressed: { opacity: 0.5 },
+  header: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, marginTop: 4 },
+  headerText: { flex: 1, alignItems: 'flex-start', gap: 8 },
+  greeting: { ...fonts.bold(30, -0.6), color: colors.text },
+  weekPill: {
+    minHeight: 36,
+    justifyContent: 'center',
+    paddingHorizontal: 14,
+    borderRadius: 999,
+    backgroundColor: colors.accentSoft,
+  },
+  weekText: { ...fonts.semibold(17), color: colors.accent },
+  avatar: {
+    ...cardStyle,
+    width: target.min,
+    height: target.min,
+    borderRadius: target.min / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  section: { gap: 12, marginTop: 8 },
+  sectionTitle: { ...fonts.bold(22, -0.3), color: colors.text },
+  pressed: { opacity: 0.6 },
 });

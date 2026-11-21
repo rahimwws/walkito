@@ -12,6 +12,8 @@ import { useSplashRevealed } from '@/shared/ui/splash';
 
 import { ANSWERS, ANSWER_SCORE, answerFor, answerLabel, type Answer } from '../model/check-in';
 import { PlainRow } from './plain-row';
+import { RoundArt } from './round-art';
+import { cardStyle } from './today-card';
 
 /**
  * The morning check-in as four words (no 0–10 dial on Today), until today is
@@ -55,6 +57,8 @@ export function CheckIn() {
     return (
       <View {...REPLAY_MASK}>
         <PlainRow
+          emoji="foot"
+          accent="teal"
           title={t('home.today.check.answered', { answer: t(answerLabel(answerFor(today.score), morning)) })}
           action={{ label: t('home.today.check.change'), onPress: () => setEditing(true) }}>
           <Pressable
@@ -71,9 +75,12 @@ export function CheckIn() {
 
   return (
     <View style={styles.root} {...REPLAY_MASK}>
-      <Text style={styles.question} accessibilityRole="header">
-        {morning ? t('home.today.check.morning') : t('home.today.check.day')}
-      </Text>
+      <View style={[styles.head, stacked && styles.headStacked]}>
+        <RoundArt emoji="foot" accent="teal" size={48} />
+        <Text style={styles.question} accessibilityRole="header">
+          {morning ? t('home.today.check.morning') : t('home.today.check.day')}
+        </Text>
+      </View>
       <View style={styles.words}>
         {ANSWERS.map((answer) => {
           const picked = today != null && answerFor(today.score) === answer;
@@ -94,31 +101,27 @@ export function CheckIn() {
 }
 
 const styles = StyleSheet.create({
-  root: {
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.separator,
-    paddingVertical: 20,
-    gap: 16,
-  },
-  question: { ...fonts.semibold(19), color: colors.text },
-  words: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
+  root: { ...cardStyle, padding: 16, gap: 16 },
+  head: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  headStacked: { flexDirection: 'column', alignItems: 'flex-start' },
+  question: { ...fonts.semibold(19), color: colors.text, flexShrink: 1 },
+  words: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   word: {
     minHeight: target.primary,
     flexGrow: 1,
     flexBasis: '40%',
     borderRadius: 999,
-    borderWidth: 1.5,
-    borderColor: colors.ink,
+    backgroundColor: colors.surface2,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
   wordStacked: { flexBasis: '100%' },
-  wordPicked: { backgroundColor: colors.ink },
+  wordPicked: { backgroundColor: colors.accent },
   wordText: { ...fonts.semibold(19), color: colors.text, textAlign: 'center' },
   wordTextPicked: { color: colors.onInk },
   link: { alignSelf: 'flex-start', minHeight: target.min, justifyContent: 'center' },
-  linkText: { ...fonts.semibold(17), color: colors.text2, textDecorationLine: 'underline' },
+  linkText: { ...fonts.semibold(17), color: colors.accent },
   pressed: { opacity: 0.5 },
 });
