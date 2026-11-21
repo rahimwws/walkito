@@ -1,10 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
 import type { Goal } from "@/entities/program";
-import { fonts, meterColors, palette } from "@/shared/config";
+import { colors, fonts } from "@/shared/config";
 import { useT, type Key } from "@/shared/lib/i18n";
-import { useColorScheme } from "@/shared/lib/theme";
-import { Card3D } from "@/shared/ui/card-3d";
+import { Card } from "@/shared/ui/card";
 import { FluentIcon, type FluentName } from "@/shared/ui/fluent-icon";
 
 type Tip = { icon: FluentName; key: Key };
@@ -48,22 +47,19 @@ export function helpsTips(goals: readonly Goal[]): readonly Tip[] {
  * their own. A note, not a task, so nothing on it is tappable or ticked.
  */
 export function HelpsCard({ goals }: { goals: readonly Goal[] }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const tips = helpsTips(goals);
   if (tips.length === 0) return null;
 
   return (
-    <Card3D material="solid" padding={16} contentStyle={styles.content}>
+    <Card style={styles.content}>
       <View style={styles.heading}>
-        <Text style={[styles.eyebrow, { color: meter.caption }]}>
+        <Text style={styles.eyebrow}>
           {t("pages.plan.helps.eyebrow")}
         </Text>
         <Text
           accessibilityRole="header"
-          style={[styles.title, { color: colors.foreground }]}
+          style={styles.title}
         >
           {t("pages.plan.helps.title")}
         </Text>
@@ -76,12 +72,12 @@ export function HelpsCard({ goals }: { goals: readonly Goal[] }) {
           >
             <FluentIcon name={tip.icon} size={24} />
           </View>
-          <Text style={[styles.body, { color: colors.foreground }]}>
+          <Text style={styles.body}>
             {t(tip.key)}
           </Text>
         </View>
       ))}
-    </Card3D>
+    </Card>
   );
 }
 
@@ -92,10 +88,11 @@ const styles = StyleSheet.create({
   heading: {
     gap: 2,
   },
-  eyebrow: fonts.bold(12, 0.6),
+  eyebrow: { ...fonts.semibold(15), color: colors.text2 },
   title: {
-    ...fonts.heavy(20, -0.4),
+    ...fonts.bold(20, -0.3),
     lineHeight: 25,
+    color: colors.text,
   },
   row: {
     flexDirection: "row",
@@ -103,8 +100,9 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   body: {
-    ...fonts.medium(15),
-    lineHeight: 21,
+    ...fonts.regular(17),
+    lineHeight: 23,
+    color: colors.text,
     flex: 1,
   },
 });

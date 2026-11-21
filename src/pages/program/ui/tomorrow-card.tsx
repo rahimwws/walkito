@@ -4,18 +4,16 @@ import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import { StyleSheet, Text, View } from 'react-native';
 
 import type { DayType } from '@/entities/program';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { Card3D } from '@/shared/ui/card-3d';
-import { Chip3D } from '@/shared/ui/chip-3d';
+import { Card } from '@/shared/ui/card';
+import { Chip } from '@/shared/ui/chip';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { IconCircle3D } from '@/shared/ui/icon-circle-3d';
 
 import { dayLook } from './kind-tone';
-import { OpensCaption } from './rest-button';
+import { OpensCaption } from './wait-caption';
 
-/** The day's emoji, in its raised disc: the today card's, one card down. */
+const BADGE = 40;
 const BADGE_EMOJI = 24;
 
 export type TomorrowCardProps = {
@@ -34,40 +32,23 @@ export type TomorrowCardProps = {
 };
 
 /**
- * Tomorrow, under a finished day: what it is and when it opens.
- *
- * Its kind's emoji in a raised disc, "Tomorrow" over its title, then how long
- * and how many as the same colourful chips the today card wears, and the
- * countdown to its midnight. Toned by its kind, as the today card is; a rest
- * day is the neutral card with the 💤, and says when the next session is
- * instead, since "when do I train next?" is the question a rest day leaves.
- *
- * No mascot: the finished day's card at the top has the screen's one. Not
- * tappable either: the page opens no day sheet, and a card that looks
- * pressable and does nothing is worse than one that is plainly a note.
+ * Tomorrow, under a finished day: what it is and when it opens. A rest day
+ * says when the next session is instead, since "when do I train next?" is the
+ * question a rest day leaves. Not tappable: the page opens no day sheet.
  */
 export function TomorrowCard({ kind, title, minutes, count, opensAt, nextLine }: TomorrowCardProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
-
   const rest = kind === 'rest';
-  const look = dayLook(kind);
-  const tone = rest || look.accent == null ? undefined : look.accent;
 
   return (
-    <Card3D material="solid" tone={tone} padding={16} contentStyle={styles.content}>
+    <Card style={styles.content}>
       <View style={styles.head}>
-        {/* Decoration: the title beside it names the day. */}
-        <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-          <IconCircle3D size="sm" tone="neutral" accessibilityLabel={title}>
-            <FluentIcon name={look.art} size={BADGE_EMOJI} />
-          </IconCircle3D>
+        <View style={styles.badge} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          <FluentIcon name={dayLook(kind).art} size={BADGE_EMOJI} />
         </View>
         <View style={styles.heading}>
-          <Text style={[styles.eyebrow, { color: meter.caption }]}>{t('pages.plan.tomorrowEyebrow')}</Text>
-          <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
+          <Text style={styles.eyebrow}>{t('pages.plan.tomorrowEyebrow')}</Text>
+          <Text accessibilityRole="header" style={styles.title}>
             {title}
           </Text>
         </View>
@@ -75,22 +56,18 @@ export function TomorrowCard({ kind, title, minutes, count, opensAt, nextLine }:
 
       {!rest && (
         <View style={styles.chips}>
-          {minutes > 0 && (
-            <Chip3D icon={Clock01Icon} accent="blue" label={t('session.minutes', { count: minutes })} />
-          )}
+          {minutes > 0 && <Chip icon={Clock01Icon} label={t('session.minutes', { count: minutes })} />}
           {kind === 'test' ? (
-            <Chip3D icon={Target01Icon} accent="amber" label={t('pages.program.testCount', { count })} />
+            <Chip icon={Target01Icon} label={t('pages.program.testCount', { count })} />
           ) : (
-            count > 0 && (
-              <Chip3D icon={Dumbbell01Icon} accent="violet" label={t('session.moveCount', { count })} />
-            )
+            count > 0 && <Chip icon={Dumbbell01Icon} label={t('session.moveCount', { count })} />
           )}
         </View>
       )}
 
-      {!rest && opensAt != null && <OpensCaption at={opensAt} style={[styles.body, { color: meter.caption }]} />}
-      {rest && nextLine != null && <Text style={[styles.body, { color: meter.caption }]}>{nextLine}</Text>}
-    </Card3D>
+      {!rest && opensAt != null && <OpensCaption at={opensAt} style={styles.body} />}
+      {rest && nextLine != null && <Text style={styles.body}>{nextLine}</Text>}
+    </Card>
   );
 }
 
@@ -103,14 +80,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
+  badge: {
+    width: BADGE,
+    height: BADGE,
+    borderRadius: BADGE / 2,
+    backgroundColor: colors.surface2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   heading: {
     flex: 1,
     gap: 2,
   },
-  eyebrow: fonts.bold(12, 0.6),
+  eyebrow: { ...fonts.semibold(15), color: colors.text2 },
   title: {
-    ...fonts.heavy(20, -0.4),
+    ...fonts.bold(20, -0.3),
     lineHeight: 25,
+    color: colors.text,
   },
   chips: {
     flexDirection: 'row',
@@ -118,7 +104,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   body: {
-    ...fonts.medium(15),
-    lineHeight: 21,
+    ...fonts.regular(17),
+    lineHeight: 23,
+    color: colors.text2,
   },
 });

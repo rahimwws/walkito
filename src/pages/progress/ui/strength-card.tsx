@@ -2,8 +2,7 @@ import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
 import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useIsFocused } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -22,15 +21,13 @@ import { GOAL_SPECS, ZONE_META, type GoalType } from '@/entities/program';
 import { accents, fonts, meterColors, palette, PRIMARY, type AccentName } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key, type Translate } from '@/shared/lib/i18n';
-import { requestProgram, usePlanOver } from '@/shared/lib/program';
+import { requestProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { Mascot, peekSideRig, type MascotHandle } from '@/shared/ui/mascot';
 
 import { formatDateKey, formatNumber, formatSigned } from '../model/format';
 import type { StrengthKey, StrengthTrend } from '../model/progress-data';
 import { Card, DeltaChip } from './card';
-import { peekFigure } from './peek-bounds';
 
 /** Each test's colour, its goal, and the words it is read with: the zone's own
  * accent (`ZONE_META`), the same one the test screens and the results wear. */
@@ -67,23 +64,6 @@ const ROW_DELAY = 260;
 const ROW_STAGGER = 120;
 const COUNT_MS = 750;
 
-/**
- * The mascot leaning in from the card's right edge beside the title, before
- * the first test: the square his art is fitted to. The leaning art is a
- * little over half as wide as it is tall, so he takes about 33pt of the
- * title row's end and none of the rows' figures under it.
- */
-const PEEK_SIZE = 56;
-/** From the card's top to the top of his head: low enough that the card's
- * rounded corner never shaves it, high enough that his waving hand clears the
- * first row's figure. */
-const PEEK_TOP = 12;
-/** How far past the card's right edge his own cut sits, so the card's edge
- * is the one he holds. */
-const PEEK_SINK = 2;
-/** After the tab's arrival, so his wave is seen rather than played mid-fade. */
-const WAVE_MS = 600;
-
 function unitOf(trend: StrengthTrend, t: Translate): string {
   return META[trend.key].reps ? t('progress.repsUnit', { count: trend.latest ?? 0 }) : t('progress.secondsUnit');
 }
@@ -119,25 +99,16 @@ export function StrengthCard({
   trends,
   nextTest,
   today,
-  mascot = true,
-  paused = false,
 }: {
   trends: readonly StrengthTrend[];
   /** `YYYY-MM-DD` the next test is due, or null before the first. */
   nextTest: string | null;
   today: string;
-  /** Off while another mascot shares the screen: one character at a time. */
-  mascot?: boolean;
-  /** A sheet is over the page. The tab being hidden pauses it by itself. */
-  paused?: boolean;
 }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
-  const colors = palette[scheme];
   const t = useT();
   const tested = trends.some((trend) => trend.latest != null);
-  // Before the first test, once for the whole card rather than per row.
-  const peeking = mascot && !tested;
   const compared = trends.some((trend) => trend.delta != null);
   const [open, setOpen] = useState<StrengthKey | null>(null);
 
@@ -151,8 +122,7 @@ export function StrengthCard({
   };
 
   return (
-    // Peeking, the card clips the mascot at its right edge.
-    <Card title={t('progress.strengthTitle')} style={peeking ? styles.clipped : undefined}>
+    <Card title={t('progress.strengthTitle')}>
       <View style={styles.rows}>
         {trends.map((trend, i) => (
           <StrengthRow
@@ -171,54 +141,7 @@ export function StrengthCard({
         </Text>
       )}
       {nextTest != null && <NextTest nextTest={nextTest} today={today} />}
-      {peeking && <SidePeek surface={colors.card} paused={paused} />}
     </Card>
-  );
-}
-
-/**
- * The mascot leaning in from behind the card's right edge beside the title,
- * one hand gripping it, before the first test: the card that has no numbers
- * yet is the one he is looking into. The card clips him at its edge.
- *
- * He waves once, the first time Progress is in front with him on it (not
- * unseen at mount, and not under a sheet), then only breathes. Paused while
- * the tab is hidden or covered; the still drawing with Reduce Motion.
- */
-function SidePeek({ surface, paused }: { surface: string; paused: boolean }) {
-  // The tabs stay mounted: he only moves while Progress is in front, and the
-  // plan overlay (not a route, so Progress stays focused) is down.
-  const focused = useIsFocused();
-  const planOver = usePlanOver();
-  const still = paused || !focused || planOver;
-  const rig = peekSideRig;
-  const figure = peekFigure(rig, PEEK_SIZE);
-  // Placed by the figure, not by its square: his cut `PEEK_SINK` past the
-  // card's right edge, the top of his head `PEEK_TOP` under the card's top.
-  const place = {
-    top: PEEK_TOP - figure.top,
-    right: figure.right - PEEK_SIZE - PEEK_SINK,
-  };
-
-  const mascot = useRef<MascotHandle>(null);
-  const waved = useRef(false);
-  useEffect(() => {
-    if (waved.current || still) return undefined;
-    const timer = setTimeout(() => {
-      waved.current = true;
-      mascot.current?.play('wave');
-    }, WAVE_MS);
-    return () => clearTimeout(timer);
-  }, [still]);
-
-  return (
-    <View
-      style={[styles.peek, place]}
-      pointerEvents="none"
-      accessibilityElementsHidden
-      importantForAccessibility="no-hide-descendants">
-      <Mascot ref={mascot} rig={rig} size={PEEK_SIZE} surface={surface} paused={still} />
-    </View>
   );
 }
 
@@ -408,8 +331,6 @@ function NextTest({ nextTest, today }: { nextTest: string; today: string }) {
 }
 
 const styles = StyleSheet.create({
-  clipped: { overflow: 'hidden' },
-  peek: { position: 'absolute', width: PEEK_SIZE, height: PEEK_SIZE },
   rows: { marginTop: 6 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 12 },
   pressed: { opacity: 0.6 },

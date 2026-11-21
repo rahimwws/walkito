@@ -18,7 +18,7 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 
 import { formatDateKey, formatNumber } from '../model/format';
@@ -101,7 +101,7 @@ export function OnFeetWeekCard() {
               {android ? t('progress.onFeet.connectAndroid') : t('progress.onFeet.connectIos')}
             </Text>
             <View style={styles.action}>
-              <Button3D
+              <Button
                 size="md"
                 align="start"
                 loading={busy}

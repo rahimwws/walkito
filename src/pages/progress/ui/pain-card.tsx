@@ -1,15 +1,12 @@
 import * as Haptics from 'expo-haptics';
-import { useIsFocused } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import Svg, { Line, Rect } from 'react-native-svg';
 
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
-import { usePlanOver } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, peekBottomRig, type MascotHandle } from '@/shared/ui/mascot';
 
 import { formatDateKey, formatNumber, formatSigned } from '../model/format';
 import {
@@ -21,20 +18,7 @@ import {
   type RangeKey,
 } from '../model/progress-data';
 import { useCountUp } from '../model/use-count-up';
-import { CARD_PADDING, Card, DeltaChip, useGrowIn } from './card';
-import { peekFigure } from './peek-bounds';
-
-/**
- * The mascot peeking up over the card's bottom edge beside the ghost bars,
- * while there is no chart yet: the square his art is fitted to. The peeking
- * art fills its lower 58%, so about 50pt of him rises out of the edge.
- */
-const PEEK_SIZE = 90;
-/** How far under the card's bottom edge his own cut sits: the ledge he grips
- * lies along the card's rim, and the nod never lifts it into view. */
-const PEEK_SINK = 4;
-/** After the tab's arrival, so his nod is seen rather than played mid-fade. */
-const NOD_MS = 500;
+import { Card, DeltaChip, useGrowIn } from './card';
 
 /** The bars' own height, and the room kept above them for the tooltip. */
 const BARS_HEIGHT = 128;
@@ -66,8 +50,6 @@ export type PainCardProps = {
   total: number;
   /** The range's mornings counted: no pain, pain, not logged. */
   counts: PainCounts;
-  /** A sheet is over the page: the waiting mascot holds still under it. */
-  paused?: boolean;
 };
 
 /**
@@ -82,7 +64,7 @@ export type PainCardProps = {
  * check-in's own two answers and the days it was not answered: ink, every
  * one, because a count is not a grade.
  */
-export function PainCard({ range, bars, summary, start, total, counts, paused = false }: PainCardProps) {
+export function PainCard({ range, bars, summary, start, total, counts }: PainCardProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
@@ -102,10 +84,9 @@ export function PainCard({ range, bars, summary, start, total, counts, paused = 
     );
 
   return (
-    // Waiting, the card clips the mascot peeking up over its bottom edge.
-    <Card title={t('progress.painTitle')} aside={chip} style={waiting ? styles.clipped : undefined}>
+    <Card title={t('progress.painTitle')} aside={chip}>
       {waiting ? (
-        <PainWaiting total={total} paused={paused} />
+        <PainWaiting total={total} />
       ) : (
         <>
           <View
@@ -347,13 +328,11 @@ function PainChart({ range, bars, start }: { range: RangeKey; bars: readonly Pai
   );
 }
 
-/** Ghost bars, the mascot, and how many mornings until the real ones. */
+/** Ghost bars, and how many mornings until the real ones. */
 const GHOST = [0.62, 0.78, 0.5, 0.66, 0.44, 0.56, 0.38];
 const GHOST_HEIGHT = 84;
 
-function PainWaiting({ total, paused }: { total: number; paused: boolean }) {
-  // The tabs stay mounted: the mascot only moves while Progress is in front.
-  const focused = useIsFocused();
+function PainWaiting({ total }: { total: number }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const colors = palette[scheme];
@@ -388,72 +367,23 @@ function PainWaiting({ total, paused }: { total: number; paused: boolean }) {
           </Text>
         </View>
       </View>
-      <View style={styles.ghostRow}>
-        <View style={styles.ghost} onLayout={(e) => setWidth(e.nativeEvent.layout.width)}>
-          {width > 0 && (
-            <Svg width={width} height={ghostH}>
-              {GHOST.map((h, i) => (
-                <Rect
-                  key={i}
-                  x={i * slot + (slot - barW) / 2}
-                  y={ghostH - h * ghostH}
-                  width={barW}
-                  height={h * ghostH}
-                  rx={barW / 2}
-                  fill={meter.track}
-                  fillOpacity={0.7}
-                />
-              ))}
-            </Svg>
-          )}
-        </View>
-        <PeekUp surface={colors.card} focused={focused} paused={paused || !focused} />
-      </View>
-    </View>
-  );
-}
-
-/**
- * The mascot peeking up over the card's bottom edge at the end of the ghost
- * bars, both hands on the rim: waiting for the chart with the person. The
- * card clips him, so he is only ever a head and two hands rising out of it.
- *
- * Calm, because this is the pain card: one nod the first time Progress is in
- * front with him on it (not unseen at mount, and not under a sheet), then
- * only his breath and his fingers. Never a hop, which would lift his cut into
- * view. With Reduce Motion he is the still drawing.
- */
-function PeekUp({ surface, focused, paused }: { surface: string; focused: boolean; paused: boolean }) {
-  const rig = peekBottomRig;
-  const figure = peekFigure(rig, PEEK_SIZE);
-  // His cut `PEEK_SINK` under the card's bottom edge, which is the card's
-  // padding below this slot; his left edge on the slot's.
-  const place = {
-    left: -figure.left,
-    bottom: figure.bottom - PEEK_SIZE - PEEK_SINK - CARD_PADDING,
-  };
-
-  // The plan overlay is not a route: Progress stays focused under it.
-  const planOver = usePlanOver();
-  const still = paused || planOver;
-  const mascot = useRef<MascotHandle>(null);
-  const nodded = useRef(false);
-  useEffect(() => {
-    if (nodded.current || !focused || still) return undefined;
-    const timer = setTimeout(() => {
-      nodded.current = true;
-      mascot.current?.play('nod');
-    }, NOD_MS);
-    return () => clearTimeout(timer);
-  }, [focused, still]);
-
-  return (
-    <View
-      style={[styles.peekSlot, { width: Math.ceil(figure.right - figure.left) }]}
-      accessibilityElementsHidden
-      importantForAccessibility="no-hide-descendants">
-      <View style={[styles.peekFigure, place]}>
-        <Mascot ref={mascot} rig={rig} size={PEEK_SIZE} surface={surface} paused={still} />
+      <View style={styles.ghost} onLayout={(e) => setWidth(e.nativeEvent.layout.width)}>
+        {width > 0 && (
+          <Svg width={width} height={ghostH}>
+            {GHOST.map((h, i) => (
+              <Rect
+                key={i}
+                x={i * slot + (slot - barW) / 2}
+                y={ghostH - h * ghostH}
+                width={barW}
+                height={h * ghostH}
+                rx={barW / 2}
+                fill={meter.track}
+                fillOpacity={0.7}
+              />
+            ))}
+          </Svg>
+        )}
       </View>
     </View>
   );
@@ -490,7 +420,6 @@ const styles = StyleSheet.create({
   countRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12, minHeight: 36 },
   countLabel: { ...fonts.medium(16), flexShrink: 1 },
   countValue: { ...fonts.bold(16), fontVariant: ['tabular-nums'] },
-  clipped: { overflow: 'hidden' },
   waiting: { marginTop: 12, gap: 14 },
   waitingRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   waitingCopy: { flex: 1, gap: 8 },
@@ -498,8 +427,5 @@ const styles = StyleSheet.create({
   steps: { flexDirection: 'row', gap: 6 },
   step: { flex: 1, height: 6, borderRadius: 3 },
   stepsCaption: fonts.medium(12),
-  ghostRow: { flexDirection: 'row', gap: 10 },
-  ghost: { flex: 1, height: GHOST_HEIGHT },
-  peekSlot: { height: GHOST_HEIGHT },
-  peekFigure: { position: 'absolute', width: PEEK_SIZE, height: PEEK_SIZE },
+  ghost: { height: GHOST_HEIGHT },
 });

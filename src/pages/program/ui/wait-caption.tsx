@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import { StyleSheet, Text, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
+import { Text, type StyleProp, type TextStyle } from 'react-native';
 import { runOnJS, useAnimatedReaction } from 'react-native-reanimated';
 
 import { useCountdown } from '@/shared/lib/clock';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { waitPhrase, waitTime } from '@/shared/lib/wait';
-import { Button3D } from '@/shared/ui/button-3d';
 
 /**
- * The waits until the next session, on the plan screen and its day sheet.
+ * The waits until the next session, on the plan screen.
  *
  * It used to count twelve hours from the end of the last session, to the
  * second. The rule now is the week's own: the next session opens at midnight
@@ -25,7 +24,7 @@ import { Button3D } from '@/shared/ui/button-3d';
  * The plan is an overlay that stays mounted under every tab, so a countdown on
  * it would otherwise tick for a screen nobody has opened. Read off the same
  * value the overlay's own gestures use, in the one small component that needs
- * it, so opening the plan re-renders a button and not the whole page.
+ * it, so opening the plan re-renders a line and not the whole page.
  */
 function usePlanShown(): boolean {
   const program = useProgram();
@@ -42,50 +41,11 @@ function usePlanShown(): boolean {
   return shown;
 }
 
-export type RestButtonProps = {
-  /** Epoch milliseconds the next session opens at. */
-  unlockAt: number;
-  onStart: () => void;
-  /** Replaces the default top margin, for a host that spaces its own rows. */
-  style?: StyleProp<ViewStyle>;
-};
-
 /**
- * The wait, as the button it turns into.
- *
- * Its own component because of the tick: rendering the countdown inside the
- * card would re-render the card — artwork, chips and all — every time a digit
- * moved. Here the tick is owned by the one thing that changes.
- *
- * Disabled rather than absent while the clock runs. A button that appears out
- * of nowhere when the time comes is a button nobody is looking for; one that
- * has been counting down in place is already where the thumb expects it.
- *
- * Always counted, never a weekday: the card around it names the day of the
- * next session on its own line, and saying it twice is the one thing a card
- * this size cannot afford.
- */
-export function RestButton({ unlockAt, onStart, style }: RestButtonProps) {
-  const t = useT();
-  const left = useCountdown(unlockAt, usePlanShown()) ?? 0;
-  const ready = left <= 0;
-
-  return (
-    // The filled violet one, the screen's only primary: flat and grey while it
-    // counts, standing on its lip once the session opens.
-    <Button3D
-      label={ready ? t('pages.plan.start') : t('nextSession.in', { time: waitTime(t, left) })}
-      disabled={!ready}
-      onPress={onStart}
-      style={style ?? styles.button}
-    />
-  );
-}
-
-/**
- * The same wait as a line of text, for a card with no session to start — a
- * rest day. Counted within a day, the weekday beyond it: here nothing else on
- * the card says when.
+ * The wait as a line of text, for a card with no session to start — a rest
+ * day. Counted within a day, the weekday beyond it: here nothing else on the
+ * card says when. Its own component because of the tick: the countdown
+ * re-renders one line, not the card.
  */
 export function WaitCaption({ at, style }: { at: number; style?: StyleProp<TextStyle> }) {
   const t = useT();
@@ -116,7 +76,3 @@ export function OpensCaption({ at, style }: { at: number; style?: StyleProp<Text
   if (left <= 0) return null;
   return <Text style={style}>{t('pages.plan.opensIn', { time: waitTime(t, left) })}</Text>;
 }
-
-const styles = StyleSheet.create({
-  button: { marginTop: 14 },
-});

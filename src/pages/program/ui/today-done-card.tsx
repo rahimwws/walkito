@@ -1,124 +1,109 @@
 import ChartLineData02Icon from '@hugeicons/core-free-icons/ChartLineData02Icon';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Card3D, cardColours } from '@/shared/ui/card-3d';
+import { Button } from '@/shared/ui/button';
+import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { idleRig, thumbsUpRig } from '@/shared/ui/mascot';
 
-import { EarnedToday, type EarnedTodayProps } from './earned-today';
-import { TodayMascot } from './plan-mascot';
-
-/** The mascot in the header's corner: about as tall as "Today" and the title
- * under it, so he stands beside them rather than over the tiles. */
-const MASCOT = 64;
+export type TodayEarned = {
+  /** Today's minutes, at the plan's dose: see `earnedToday`. */
+  minutes: number;
+  /** Moves done today, or tests on a test day. */
+  count: number;
+  /** Today was a test day: the work is counted in tests. */
+  test: boolean;
+  /** The streak as it stands, today included. Not shown below one. */
+  streak: number;
+};
 
 export type TodayDoneCardProps = {
   /** Today's title as it read before the session: "Test day", "Mobility · mornings". */
   title: string;
-  /** What the day earned: the tiles and the next sticker's bar. */
-  earned: EarnedTodayProps;
-  /** A flare day stays calm: he stands at ease, no thumbs up. */
-  calm: boolean;
+  earned: TodayEarned;
   /** A finished test day: its results again, read-only. */
   onResults?: () => void;
-  /** A sheet is over the plan: the mascot holds still under it. */
-  covered?: boolean;
 };
 
 /**
- * A finished day, leading the plan: what today was and what it earned, in one
- * card.
+ * A finished day, leading the plan: "Today" over the day's title with a tick,
+ * "See results" on a test day, and what the day earned as plain figures: the
+ * minutes, the moves or tests, the run of days.
  *
- * A small header, "Today" over the day's title with a tick after it, and on a
- * test day "See results", the way back to its numbers; the screen's one
- * mascot in the corner. Under it the day's earnings exactly as the session's
- * celebration showed them (`EarnedToday`): the minutes, the moves or tests,
- * the run of days, and the next sticker's bar. No second card says the day is
- * done: the goal's stations under it and tomorrow under those are all that
- * follows.
- *
- * Showing up and effort only: never a pain figure, never a test result.
+ * Showing up and effort only: never a pain figure, never a test result (the
+ * tests figure counts tests taken, not what they measured).
  */
-export function TodayDoneCard({ title, earned, calm, onResults, covered = false }: TodayDoneCardProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
+export function TodayDoneCard({ title, earned, onResults }: TodayDoneCardProps) {
   const t = useT();
-  const face = cardColours(scheme).face;
+  const { minutes, count, test, streak } = earned;
 
   return (
-    <Card3D size="lg" material="solid" padding={16} contentStyle={styles.content}>
-      <View style={styles.head}>
-        <View style={styles.heading}>
-          <Text style={[styles.eyebrow, { color: meter.caption }]}>{t('pages.plan.todayEyebrow')}</Text>
-          {/* The tick is drawn; a screen reader hears it as "Done for today". */}
-          <View
-            style={styles.titleRow}
-            accessible
-            accessibilityRole="header"
-            accessibilityLabel={title}
-            accessibilityValue={{ text: t('pages.plan.doneToday') }}>
-            <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
-            <FluentIcon name="check" size={20} />
-          </View>
-          {/* The moment somebody wants the numbers again is not the moment
-              they were first shown. */}
-          {onResults != null && (
-            <Button3D
-              label={t('pages.plan.seeResults')}
-              variant="secondary"
-              size="sm"
-              icon={ChartLineData02Icon}
-              iconPosition="leading"
-              align="start"
-              onPress={onResults}
-              style={styles.results}
-            />
-          )}
-        </View>
-
-        {/* The one mascot in frame. Decoration: the words say the day is
-            done. Keyed by pose, so a flare day is its own mascot. */}
+    <Card style={styles.content}>
+      <View style={styles.heading}>
+        <Text style={styles.eyebrow}>{t('pages.plan.todayEyebrow')}</Text>
+        {/* The tick is drawn; a screen reader hears it as "Done for today". */}
         <View
-          pointerEvents="none"
-          accessibilityElementsHidden
-          importantForAccessibility="no-hide-descendants"
-          style={styles.mascot}>
-          <TodayMascot
-            key={calm ? idleRig.name : thumbsUpRig.name}
-            rig={calm ? idleRig : thumbsUpRig}
-            size={MASCOT}
-            surface={face}
-            covered={covered}
-            shot={calm ? undefined : 'nod'}
-          />
+          style={styles.titleRow}
+          accessible
+          accessibilityRole="header"
+          accessibilityLabel={title}
+          accessibilityValue={{ text: t('pages.plan.doneToday') }}>
+          <Text style={styles.title}>{title}</Text>
+          <FluentIcon name="check" size={20} />
         </View>
       </View>
 
-      <EarnedToday {...earned} />
-    </Card3D>
+      <View style={styles.stats}>
+        <Stat
+          value={minutes}
+          label={t('pages.plan.earnedMinutes')}
+          a11y={t('pages.plan.earnedMinutesA11y', { count: minutes })}
+        />
+        <Stat
+          value={count}
+          label={test ? t('pages.plan.earnedTests') : t('pages.plan.earnedMoves')}
+          a11y={test ? t('pages.plan.earnedTestsA11y', { count }) : t('pages.plan.earnedMovesA11y', { count })}
+        />
+        {streak > 0 && (
+          <Stat value={streak} label={t('pages.plan.earnedStreak')} a11y={t('streakSheet.inARow', { count: streak })} />
+        )}
+      </View>
+
+      {onResults != null && (
+        <Button
+          label={t('pages.plan.seeResults')}
+          variant="secondary"
+          size="sm"
+          icon={ChartLineData02Icon}
+          iconPosition="leading"
+          align="start"
+          onPress={onResults}
+        />
+      )}
+    </Card>
+  );
+}
+
+function Stat({ value, label, a11y }: { value: number; label: string; a11y: string }) {
+  return (
+    <View style={styles.stat} accessible accessibilityLabel={a11y}>
+      <Text style={styles.value}>{String(value)}</Text>
+      <Text style={styles.label} numberOfLines={2}>
+        {label}
+      </Text>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   content: {
-    gap: 14,
-  },
-  head: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 12,
+    gap: 16,
   },
   heading: {
-    flex: 1,
     gap: 2,
-    paddingTop: 2,
   },
-  eyebrow: fonts.bold(12, 0.6),
+  eyebrow: { ...fonts.semibold(15), color: colors.text2 },
   titleRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -126,18 +111,18 @@ const styles = StyleSheet.create({
   },
   title: {
     flexShrink: 1,
-    ...fonts.heavy(20, -0.4),
-    lineHeight: 25,
+    ...fonts.bold(22, -0.3),
+    lineHeight: 27,
+    color: colors.text,
   },
-  results: {
-    marginTop: 8,
+  stats: {
+    flexDirection: 'row',
+    gap: 12,
   },
-  /** Pulled into the card's padding, so the figure stands in the corner and
-   * the heading keeps the width. */
-  mascot: {
-    width: MASCOT,
-    height: MASCOT,
-    marginTop: -6,
-    marginRight: -4,
+  stat: {
+    flex: 1,
+    gap: 2,
   },
+  value: { ...fonts.bold(28, -0.4), color: colors.text },
+  label: { ...fonts.regular(15), color: colors.text2 },
 });
