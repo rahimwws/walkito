@@ -7,7 +7,7 @@
  *
  * Gendered agreement about the user is avoided rather than guessed at: the
  * seated start is "sur une chaise", not "assis/assise", and "not sure" is
- * "je ne sais pas". The mascot speaks of himself in the masculine.
+ * "je ne sais pas".
  *
  * Never a diagnosis, never a promised result, no figures we cannot stand
  * behind, no doctors and no refusals: see the header of `../en/journey.ts`.
@@ -281,9 +281,6 @@ export const JOURNEY_FR = {
   'setup.widget.nudgeBody': 'Rien ne presse. Ça prend trois gestes, et c’est le plus simple pour revenir chaque matin. Je te remontre ?',
   'setup.widget.nudgeAgain': 'Remontre-moi',
   'setup.widget.nudgeLater': 'Plus tard',
-  'setup.widget.addedTitle': 'Il est sur ton écran d’accueil',
-  'setup.widget.addedBlurb': 'Rendez-vous là demain matin.',
-  'setup.widget.addedCta': 'Continuer',
   'setup.next': 'Suivant',
   'setup.done': 'OK',
   'setup.finish': 'Terminer',

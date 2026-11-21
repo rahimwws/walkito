@@ -74,8 +74,4 @@ export const STREAKS_RU = {
     many: '{count} недель подряд',
   },
 
-  'accessory.shoe': 'С сегодняшнего дня у Walkito значок с кроссовком.',
-  'accessory.medal': 'С сегодняшнего дня у Walkito медаль.',
-  'accessory.trophy': 'С сегодняшнего дня рядом с Walkito стоит кубок.',
-  'accessory.crown': 'С сегодняшнего дня Walkito носит корону.',
 };

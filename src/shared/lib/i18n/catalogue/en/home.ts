@@ -325,8 +325,6 @@ export const HOME_EN = {
   'home.legState.achy': 'Your feet are a little achy this morning.',
   'home.legState.fine': 'Your feet feel pretty good today.',
   'home.legState.fresh': 'Your feet feel fresh today.',
-  'home.readiness.sayTap': 'Hi! Glad you’re here.',
-  'home.readiness.mascotHint': 'Tap Walkito to say hi',
   'home.readiness.partHint': 'Shows how today’s score is made',
   'home.readiness.scoreA11y': 'Legs ready today: {score} of 100, {band}',
   // ── The small sheets over the readiness score: one per part, one for the score ──

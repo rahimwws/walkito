@@ -40,8 +40,4 @@ export const STREAKS_IT = {
   'weekGoal.progress': { one: '{done} di {count} sessione questa settimana', other: '{done} di {count} sessioni questa settimana' },
   'weekGoal.inARow': { one: '{count} settimana di fila', other: '{count} settimane di fila' },
 
-  'accessory.shoe': 'Da oggi Walkito porta un distintivo con la scarpa.',
-  'accessory.medal': 'Da oggi Walkito porta una medaglia.',
-  'accessory.trophy': 'Da oggi Walkito ha un trofeo accanto a sé.',
-  'accessory.crown': 'Da oggi Walkito porta una corona.',
 };

@@ -17,7 +17,6 @@ import { WIDGET_PT } from './widget';
 import { UPDATE_PT } from './update';
 import { DONE_PT } from './done';
 import { STREAKS_PT } from './streaks';
-import { STICKERS_PT } from './stickers';
 import { RECAP_PT } from './recap';
 import { HOME_OFFER_PT } from './home-offer';
 import { CANCEL_PT } from './cancel';
@@ -54,7 +53,6 @@ export const pt: CatalogueFor<'pt'> = {
   ...UPDATE_PT,
   ...DONE_PT,
   ...STREAKS_PT,
-  ...STICKERS_PT,
   ...RECAP_PT,
   ...HOME_OFFER_PT,
   ...CANCEL_PT,

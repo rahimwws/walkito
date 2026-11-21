@@ -69,7 +69,6 @@ export const PAGES_EN = {
   'pages.program.kindMobility': 'Mobility',
   'pages.program.kindBalance': 'Balance',
   'pages.program.kindRecovery': 'Recovery',
-  'pages.program.retest': 'Retest',
 
   // The counted phrases both screens drop into their meta lines. `session.
   // minutes` in core is the abbreviated "5 min"; this one is spelled out,
@@ -78,8 +77,6 @@ export const PAGES_EN = {
   'pages.program.testCount': { one: '{count} test', other: '{count} tests' },
   'pages.program.minuteCount': { one: '{count} minute', other: '{count} minutes' },
 
-  // A card in the list.
-  'pages.program.dayCardA11y': 'Day {day}, {kind}, {minutes}',
   /** An exercise chip carrying its prescription: "Heel raises · 3 × 12". */
   'pages.program.moveWithDose': '{title} · {dose}',
   // What a retest measures. Three of the four are chips on a checkpoint card;
@@ -88,12 +85,6 @@ export const PAGES_EN = {
   'pages.program.zoneArch': 'Arch',
   'pages.program.zoneBalance': 'Balance',
   'pages.program.zoneSymmetry': 'Symmetry',
-
-  // The sheet a card opens.
-  'pages.program.statSession': 'Session',
-  'pages.program.statTests': 'Tests',
-  'pages.program.statExercises': 'Exercises',
-  'pages.program.getStarted': 'Get Started',
 
   // The seams between blocks. Upper case is a typographic choice made in the
   // catalogue rather than by `toUpperCase()` at the call site, so a language
@@ -283,7 +274,6 @@ export const PAGES_EN = {
   'pages.plan.nextWeekHow': 'A new week is planned every Sunday evening from how this one went - your check-ins, your tests and how hard sessions felt.',
   'pages.plan.nextWeekSummary': '{sessions} · focus: {goal}',
   'pages.plan.sessionCount': { one: '{count} session', other: '{count} sessions' },
-  'pages.plan.restDay': 'Rest',
 
   // ── Today's moves, and what finishing them earns ────────────────────────
   /** Over the checklist of today's moves. */
@@ -294,21 +284,6 @@ export const PAGES_EN = {
   'pages.plan.movesDoneA11y': '{done} of {total} done',
   /** A move already ticked today. `name` carries its dose. */
   'pages.plan.moveDoneA11y': '{name}, done',
-  /** Over the rewards: only what the plan's own dose earns. */
-  'pages.plan.rewardTitle': 'Rewards',
-  /** Today not yet counted, and no streak running. */
-  'pages.plan.rewardStreakStart': 'Finish today to start your streak.',
-  /** Today not yet counted: `count` is the streak once it is. */
-  'pages.plan.rewardStreak': {
-    one: 'Finish today and your streak reaches {count} day.',
-    other: 'Finish today and your streak reaches {count} days.',
-  },
-  /** The next session sticker, more than one session away. `name` is its own name. */
-  'pages.plan.rewardSticker': 'Next sticker: {name}.',
-  /** One session away. */
-  'pages.plan.rewardStickerLast': 'Finish today to collect a sticker: {name}.',
-  'pages.plan.rewardStickerCount': '{have} / {need}',
-  'pages.plan.rewardStickerCountA11y': '{have} of {need}',
 
   // ── A finished day: what it earned, and tomorrow ─────────────────────────
   /** The tiles' headers. Three share a card's width: keep them short. */
@@ -321,9 +296,6 @@ export const PAGES_EN = {
   'pages.plan.earnedMinutesA11y': { one: '{count} minute today', other: '{count} minutes today' },
   'pages.plan.earnedMovesA11y': { one: '{count} move done today', other: '{count} moves done today' },
   'pages.plan.earnedTestsA11y': { one: '{count} test done today', other: '{count} tests done today' },
-  /** Under the tiles, the next session sticker one session away. Today is
-   * already counted; further off, `rewardSticker` says it. */
-  'pages.plan.earnedStickerLast': 'One more session for a sticker: {name}.',
   /** Over tomorrow's card. */
   'pages.plan.tomorrowEyebrow': 'Tomorrow',
   /** When tomorrow's session opens, counted: "Opens in 1h 50m". */
@@ -332,9 +304,7 @@ export const PAGES_EN = {
    * draws it as a tick. */
   'pages.plan.doneToday': 'Done for today',
 
-  // ── The goal's weeks: this week and next on a rail, the test days between ─
-  /** The chip on this week's card. */
-  'pages.plan.path.now': 'Now',
+  // ── The goal's weeks: this week and next, the test days between ───────
   /** Read after a test taken, which the rail draws as a tick. */
   'pages.plan.path.done': 'Done',
   /** A test day on the rail: today's (taken or to take), tomorrow's, the next

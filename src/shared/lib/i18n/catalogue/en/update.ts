@@ -1,8 +1,7 @@
 /** The update sheet and the note after the restart. Filled per domain; see
  * `./core.ts` for the rules.
  *
- * The mascot is on screen for all of it, so these are in his voice: short,
- * warm, and never a threat. "Later" is always a fine answer, and the ready
+ * Short, warm, and never a threat. "Later" is always a fine answer, and the ready
  * blurb says why — a downloaded update installs itself on the next start. */
 
 import type { SourceEntry } from '../entry';

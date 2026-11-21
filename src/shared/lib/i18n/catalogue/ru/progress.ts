@@ -50,8 +50,6 @@ export const PROGRESS_RU = {
   'progress.retestToday': 'Замеры сегодня',
   'progress.todayMinutes': 'Сегодня · {minutes} мин',
   'progress.retest': 'Замеры',
-  'progress.blockDivider': 'Блок {block} · {name}',
-  'progress.weekDivider': 'Неделя {week}',
 
   // ── Pain legend ──────────────────────────────────────────────────────────
   'progress.painEasy': 'Легко',

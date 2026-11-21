@@ -1,4 +1,4 @@
-/** The session-complete moment: the mascot, "nice work", the streak pill and the tiles. Filled per domain; see
+/** The session-complete moment: "nice work", the streak pill and the tiles. Filled per domain; see
  * `../en/core.ts` for the rules. */
 
 export const DONE_DE = {

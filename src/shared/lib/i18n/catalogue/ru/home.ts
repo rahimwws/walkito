@@ -261,8 +261,6 @@ export const HOME_RU = {
   'home.legState.achy': 'Этим утром ноги немного ноют.',
   'home.legState.fine': 'Сегодня ногам довольно хорошо.',
   'home.legState.fresh': 'Сегодня ноги свежие.',
-  'home.readiness.sayTap': 'Привет! Рад, что вы здесь.',
-  'home.readiness.mascotHint': 'Нажмите на Walkito, чтобы поздороваться',
   'home.readiness.partHint': 'Показывает, из чего складывается оценка на сегодня',
   'home.readiness.scoreA11y': 'Готовность ног сегодня: {score} из 100, {band}',
   // ── The small sheets over the readiness score: one per part, one for the score ──

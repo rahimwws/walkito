@@ -46,7 +46,6 @@ export const PAGES_RU = {
   'pages.program.kindMobility': 'Подвижность',
   'pages.program.kindBalance': 'Баланс',
   'pages.program.kindRecovery': 'Восстановление',
-  'pages.program.retest': 'Замеры',
 
   'pages.program.testCount': {
     one: '{count} тест',
@@ -59,17 +58,12 @@ export const PAGES_RU = {
     many: '{count} минут',
   },
 
-  'pages.program.dayCardA11y': 'День {day}, {kind}, {minutes}',
   'pages.program.moveWithDose': '{title} · {dose}',
   'pages.program.zoneCalf': 'Икра',
   'pages.program.zoneArch': 'Свод',
   'pages.program.zoneBalance': 'Баланс',
   'pages.program.zoneSymmetry': 'Симметрия',
 
-  'pages.program.statSession': 'Занятие',
-  'pages.program.statTests': 'Тесты',
-  'pages.program.statExercises': 'Упражнения',
-  'pages.program.getStarted': 'Начать',
 
   'pages.program.blockSeam': 'Блок {index} · {name}',
   // The participle agrees with the count, which is why all three forms differ:
@@ -239,24 +233,12 @@ export const PAGES_RU = {
   'pages.plan.nextWeekHow': 'Каждое воскресенье вечером план на новую неделю собирается заново - по вашим отметкам боли, тестам и тому, насколько тяжело шли занятия.',
   'pages.plan.nextWeekSummary': '{sessions} · фокус: {goal}',
   'pages.plan.sessionCount': { one: '{count} занятие', few: '{count} занятия', many: '{count} занятий' },
-  'pages.plan.restDay': 'Отдых',
 
   // ── Упражнения на сегодня и награды ─────────────────────────────────────
   'pages.plan.movesTitle': 'Упражнения на сегодня',
   'pages.plan.movesProgress': '{done} / {total}',
   'pages.plan.movesDoneA11y': 'Сделано {done} из {total}',
   'pages.plan.moveDoneA11y': '{name}, сделано',
-  'pages.plan.rewardTitle': 'Награды',
-  'pages.plan.rewardStreakStart': 'Закончите сегодня - и начнётся отсчёт дней подряд.',
-  'pages.plan.rewardStreak': {
-    one: 'Закончите сегодня - и будет {count} день подряд.',
-    few: 'Закончите сегодня - и будет {count} дня подряд.',
-    many: 'Закончите сегодня - и будет {count} дней подряд.',
-  },
-  'pages.plan.rewardSticker': 'Следующая наклейка: {name}.',
-  'pages.plan.rewardStickerLast': 'Закончите сегодня - и получите наклейку: {name}.',
-  'pages.plan.rewardStickerCount': '{have} / {need}',
-  'pages.plan.rewardStickerCountA11y': '{have} из {need}',
 
   // ── Законченный день: что он принёс, и завтра ──────────────────────────
   'pages.plan.earnedMinutes': 'Минуты',
@@ -278,13 +260,11 @@ export const PAGES_RU = {
     few: 'Сегодня пройдено {count} теста',
     many: 'Сегодня пройдено {count} тестов',
   },
-  'pages.plan.earnedStickerLast': 'Ещё одно занятие - и наклейка ваша: {name}.',
   'pages.plan.tomorrowEyebrow': 'Завтра',
   'pages.plan.opensIn': 'Откроется через {time}',
   'pages.plan.doneToday': 'На сегодня всё',
 
   // ── Недели цели: эта и следующая на линии, дни теста между ними ───────
-  'pages.plan.path.now': 'Сейчас',
   'pages.plan.path.done': 'Пройден',
   'pages.plan.path.testToday': 'День теста · сегодня',
   'pages.plan.path.testTomorrow': 'День теста · завтра',

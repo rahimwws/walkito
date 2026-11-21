@@ -46,22 +46,16 @@ export const PAGES_FR = {
   'pages.program.kindMobility': 'Mobilité',
   'pages.program.kindBalance': 'Équilibre',
   'pages.program.kindRecovery': 'Récupération',
-  'pages.program.retest': 'Réévaluation',
 
   'pages.program.testCount': { one: '{count} test', other: '{count} tests' },
   'pages.program.minuteCount': { one: '{count} minute', other: '{count} minutes' },
 
-  'pages.program.dayCardA11y': 'Jour {day}, {kind}, {minutes}',
   'pages.program.moveWithDose': '{title} · {dose}',
   'pages.program.zoneCalf': 'Mollet',
   'pages.program.zoneArch': 'Voûte',
   'pages.program.zoneBalance': 'Équilibre',
   'pages.program.zoneSymmetry': 'Symétrie',
 
-  'pages.program.statSession': 'Séance',
-  'pages.program.statTests': 'Tests',
-  'pages.program.statExercises': 'Exercices',
-  'pages.program.getStarted': 'Commencer',
 
   'pages.program.blockSeam': 'Bloc {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} jour fait', other: '{count} jours faits' },
@@ -222,23 +216,12 @@ export const PAGES_FR = {
   'pages.plan.nextWeekHow': 'Chaque dimanche soir, une nouvelle semaine est planifiée d’après celle-ci - tes bilans, tes tests et la difficulté ressentie des séances.',
   'pages.plan.nextWeekSummary': '{sessions} · objectif : {goal}',
   'pages.plan.sessionCount': { one: '{count} séance', other: '{count} séances' },
-  'pages.plan.restDay': 'Repos',
 
   // ── Exercices du jour et récompenses ────────────────────────────────────
   'pages.plan.movesTitle': 'Exercices du jour',
   'pages.plan.movesProgress': '{done} / {total}',
   'pages.plan.movesDoneA11y': 'Faits : {done} sur {total}',
   'pages.plan.moveDoneA11y': '{name}, fait',
-  'pages.plan.rewardTitle': 'Récompenses',
-  'pages.plan.rewardStreakStart': 'Termine aujourd’hui pour lancer ta série.',
-  'pages.plan.rewardStreak': {
-    one: 'Termine aujourd’hui et tu arrives à {count} jour d’affilée.',
-    other: 'Termine aujourd’hui et tu arrives à {count} jours d’affilée.',
-  },
-  'pages.plan.rewardSticker': 'Prochain autocollant : {name}.',
-  'pages.plan.rewardStickerLast': 'Termine aujourd’hui pour gagner un autocollant : {name}.',
-  'pages.plan.rewardStickerCount': '{have} / {need}',
-  'pages.plan.rewardStickerCountA11y': '{have} sur {need}',
 
   // ── Une journée finie : ce qu’elle a rapporté, et demain ────────────────
   'pages.plan.earnedMinutes': 'Minutes',
@@ -248,13 +231,11 @@ export const PAGES_FR = {
   'pages.plan.earnedMinutesA11y': { one: '{count} minute aujourd’hui', other: '{count} minutes aujourd’hui' },
   'pages.plan.earnedMovesA11y': { one: '{count} exercice fait aujourd’hui', other: '{count} exercices faits aujourd’hui' },
   'pages.plan.earnedTestsA11y': { one: '{count} test fait aujourd’hui', other: '{count} tests faits aujourd’hui' },
-  'pages.plan.earnedStickerLast': 'Encore une séance pour gagner un autocollant : {name}.',
   'pages.plan.tomorrowEyebrow': 'Demain',
   'pages.plan.opensIn': 'Disponible dans {time}',
   'pages.plan.doneToday': 'Fini pour aujourd’hui',
 
   // ── Les semaines de l’objectif : celle-ci et la suivante sur une ligne, les jours de test entre
-  'pages.plan.path.now': 'En cours',
   'pages.plan.path.done': 'Fait',
   'pages.plan.path.testToday': 'Jour de test · aujourd’hui',
   'pages.plan.path.testTomorrow': 'Jour de test · demain',

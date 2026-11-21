@@ -40,6 +40,7 @@ export const CORE_IT = {
   'settings.write': 'Scrivi a Rahim',
   'settings.writeHint': 'Ogni messaggio lo legge una persona',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Il tuo piano',
   'settings.outcome': 'Il tuo obiettivo',
@@ -86,8 +87,6 @@ export const CORE_IT = {
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: '{count} giorno di fila', other: '{count} giorni di fila' },
-  'streak.milestoneBlurb': 'Ognuno di quei giorni è contato.',
-  'streak.milestoneBigBlurb': 'Dieci giorni. È qui che un’abitudine comincia a tenere.',
   'streak.rule':
     'Un giorno conta quando fai il check-in, ti alleni o finisci una routine della libreria. In un giorno di riposo basta il check-in.',
   'streak.total': { one: '{count} giorno finora.', other: '{count} giorni finora.' },

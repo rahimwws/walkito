@@ -50,8 +50,6 @@ export const PROGRESS_EN = {
   'progress.retestToday': 'Retest today',
   'progress.todayMinutes': 'Today · {minutes} min',
   'progress.retest': 'Retest',
-  'progress.blockDivider': 'Block {block} · {name}',
-  'progress.weekDivider': 'Week {week}',
 
   // ── Pain legend ──────────────────────────────────────────────────────────
   'progress.painEasy': 'Easy',

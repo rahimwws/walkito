@@ -17,7 +17,6 @@ import { WIDGET_RU } from './widget';
 import { UPDATE_RU } from './update';
 import { DONE_RU } from './done';
 import { STREAKS_RU } from './streaks';
-import { STICKERS_RU } from './stickers';
 import { RECAP_RU } from './recap';
 import { HOME_OFFER_RU } from './home-offer';
 import { CANCEL_RU } from './cancel';
@@ -54,7 +53,6 @@ export const ru: CatalogueFor<'ru'> = {
   ...UPDATE_RU,
   ...DONE_RU,
   ...STREAKS_RU,
-  ...STICKERS_RU,
   ...RECAP_RU,
   ...HOME_OFFER_RU,
   ...CANCEL_RU,

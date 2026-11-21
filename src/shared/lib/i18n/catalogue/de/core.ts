@@ -39,6 +39,7 @@ export const CORE_DE = {
   'settings.write': 'Rahim schreiben',
   'settings.writeHint': 'Jede Nachricht liest ein Mensch',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Dein Plan',
   'settings.outcome': 'Dein Ziel',
@@ -85,8 +86,6 @@ export const CORE_DE = {
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: '{count} Tag in Folge', other: '{count} Tage in Folge' },
-  'streak.milestoneBlurb': 'Jeder einzelne dieser Tage hat gezählt.',
-  'streak.milestoneBigBlurb': 'Zehn Tage. Ab hier beginnt eine Gewohnheit zu halten.',
   'streak.rule':
     'Ein Tag zählt, wenn du eincheckst, trainierst oder eine Routine aus der Bibliothek beendest. An einem Ruhetag reicht das Einchecken.',
   'streak.total': { one: 'Bisher {count} Tag.', other: 'Bisher {count} Tage.' },

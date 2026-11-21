@@ -17,7 +17,6 @@ import { WIDGET_ES } from './widget';
 import { UPDATE_ES } from './update';
 import { DONE_ES } from './done';
 import { STREAKS_ES } from './streaks';
-import { STICKERS_ES } from './stickers';
 import { RECAP_ES } from './recap';
 import { HOME_OFFER_ES } from './home-offer';
 import { CANCEL_ES } from './cancel';
@@ -54,7 +53,6 @@ export const es: CatalogueFor<'es'> = {
   ...UPDATE_ES,
   ...DONE_ES,
   ...STREAKS_ES,
-  ...STICKERS_ES,
   ...RECAP_ES,
   ...HOME_OFFER_ES,
   ...CANCEL_ES,
