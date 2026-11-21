@@ -46,8 +46,8 @@ export function ExerciseSheetPage() {
   };
 
   return (
-    <View style={styles.root}>
       <ScrollView
+        style={styles.root}
         contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 20) + 16 }}
         showsVerticalScrollIndicator={false}>
         <View style={styles.clip}>
@@ -92,7 +92,6 @@ export function ExerciseSheetPage() {
                 {t('player.sheet.cantDoTitle')}
               </Text>
               <CantDoReasons equipment={planMeta(id)?.equipment ?? []} onPick={pick} />
-              <View style={styles.rule} />
               <Pressable
                 accessibilityRole="button"
                 onPress={() => setAsking(false)}
@@ -110,12 +109,11 @@ export function ExerciseSheetPage() {
           )}
         </View>
       </ScrollView>
-    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.surface },
+  root: { backgroundColor: colors.surface },
   clip: { backgroundColor: '#ECF0F1', alignItems: 'center' },
   tall: { height: 380, aspectRatio: 9 / 16 },
   wide: { width: '100%' },
