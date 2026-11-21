@@ -56,7 +56,8 @@ export function TextButton({
   disabled,
   style,
   quiet = false,
-}: ButtonProps & { quiet?: boolean }) {
+  maxScale,
+}: ButtonProps & { quiet?: boolean; maxScale?: number }) {
   return (
     <Pressable
       accessibilityRole="button"
@@ -70,7 +71,9 @@ export function TextButton({
         onPress();
       }}
       style={({ pressed }) => [styles.text, disabled && styles.off, pressed && styles.pressed, style]}>
-      <Text style={[styles.textLabel, quiet && styles.textQuiet]}>{label}</Text>
+      <Text style={[styles.textLabel, quiet && styles.textQuiet]} maxFontSizeMultiplier={maxScale}>
+        {label}
+      </Text>
     </Pressable>
   );
 }

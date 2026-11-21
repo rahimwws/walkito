@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   cancelAnimation,
   Easing,
@@ -133,40 +133,43 @@ export function Rest({
 
   return (
     <Animated.View style={[styles.host, { top, paddingBottom: bottom }, hostStyle]} pointerEvents={live ? 'auto' : 'none'}>
-      <View style={styles.middle}>
-        <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
-          {title}
-        </Text>
-        <View accessible accessibilityRole="timer" accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
-          <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={[styles.numeral, !playing && styles.dim]}>{secondsLeft}</Text>
-          <Text style={styles.unit}>{t('testday.secondsLeft', { count: secondsLeft })}</Text>
-        </View>
-        <View style={styles.track}>
-          <Animated.View style={[styles.bar, barStyle]} />
-        </View>
-      </View>
-
-      <View style={styles.next} accessible>
-        {still != null && <Image source={still} resizeMode="cover" style={styles.thumb} accessibilityIgnoresInvertColors />}
-        <View style={styles.nextText}>
-          <Text style={styles.nextLabel}>
-            {isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}
+      <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false} bounces={false}>
+        <View style={styles.middle}>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
+            {title}
           </Text>
-          <Text style={styles.nextName}>{move}</Text>
+          <View accessible accessibilityRole="timer" accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
+            <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={[styles.numeral, !playing && styles.dim]}>{secondsLeft}</Text>
+            <Text style={styles.unit}>{t('testday.secondsLeft', { count: secondsLeft })}</Text>
+          </View>
+          <View style={styles.track}>
+            <Animated.View style={[styles.bar, barStyle]} />
+          </View>
         </View>
-      </View>
 
-      <View style={styles.actions}>
-        <Capsule label={isRest ? t('player.break.skipRest') : t('player.break.ready')} onPress={onSkip} />
-        <TextButton label={playing ? t('player.cta.pause') : t('player.cta.resume')} onPress={playing ? onPause : onResume} />
-      </View>
+        <View style={styles.next} accessible>
+          {still != null && <Image source={still} resizeMode="cover" style={styles.thumb} accessibilityIgnoresInvertColors />}
+          <View style={styles.nextText}>
+            <Text style={styles.nextLabel}>
+              {isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}
+            </Text>
+            <Text style={styles.nextName}>{move}</Text>
+          </View>
+        </View>
+
+        <View style={styles.actions}>
+          <Capsule label={isRest ? t('player.break.skipRest') : t('player.break.ready')} onPress={onSkip} />
+          <TextButton label={playing ? t('player.cta.pause') : t('player.cta.resume')} onPress={playing ? onPause : onResume} />
+        </View>
+      </ScrollView>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
   host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page, paddingHorizontal: SIDE },
-  middle: { flex: 1, justifyContent: 'center', gap: 8 },
+  scroll: { flexGrow: 1 },
+  middle: { flexGrow: 1, justifyContent: 'center', gap: 8 },
   title: { ...fonts.bold(34, -0.6), color: ink.text },
   numeral: { ...fonts.bold(NUMERAL, -3), lineHeight: NUMERAL * 1.08, color: ink.text, fontVariant: ['tabular-nums'] },
   dim: { color: ink.grey },

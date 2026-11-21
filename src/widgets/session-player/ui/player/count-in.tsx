@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -18,7 +18,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { SIDE, TITLE_SCALE, ink } from './kit';
+import { NUMERAL_SCALE, SIDE, TITLE_SCALE, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -130,6 +130,7 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
     return () => clearInterval(id);
   }, [from, fade, fadeOut, go, land]);
 
+  const stacked = useWindowDimensions().fontScale > 1.6;
   const hostStyle = useAnimatedStyle(() => ({ opacity: fade.value }));
   const numberStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
@@ -144,11 +145,12 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
         accessibilityHint={t('player.countIn.tapToStart')}
         onPress={go}
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
-        <View style={styles.middle}>
+        <View style={[styles.middle, stacked && styles.middleTop]}>
           <Text style={styles.eyebrow}>{eyebrow}</Text>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
           <Animated.Text
             accessibilityLiveRegion="assertive"
+            maxFontSizeMultiplier={NUMERAL_SCALE}
             adjustsFontSizeToFit
             numberOfLines={1}
             style={[styles.number, numberStyle]}>
@@ -166,7 +168,8 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
 const styles = StyleSheet.create({
   host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page },
   fill: { flex: 1 },
-  middle: { flex: 1, justifyContent: 'center', paddingHorizontal: SIDE },
+  middle: { flex: 1, justifyContent: 'center', paddingHorizontal: SIDE, overflow: 'hidden' },
+  middleTop: { justifyContent: 'flex-start', paddingTop: 16 },
   eyebrow: { ...fonts.medium(19), color: ink.grey },
   title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 4 },
   number: {

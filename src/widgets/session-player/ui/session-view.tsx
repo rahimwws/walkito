@@ -180,7 +180,12 @@ function SessionRun(props: SessionViewProps) {
   return (
     <View style={styles.root}>
       <View style={styles.header}>
-        <TextButton label={t('common.close')} accessibilityLabel={t('player.close.a11y')} onPress={run.askClose} />
+        <TextButton
+          label={t('common.close')}
+          accessibilityLabel={t('player.close.a11y')}
+          onPress={run.askClose}
+          maxScale={CHROME_MAX_FONT_SCALE}
+        />
         <Text
           accessibilityRole="header"
           accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
@@ -194,6 +199,7 @@ function SessionRun(props: SessionViewProps) {
           quiet
           onPress={() => setSoundPrefs({ tempo: !run.sound.tempo })}
           style={styles.headerRight}
+          maxScale={CHROME_MAX_FONT_SCALE}
         />
       </View>
 
@@ -251,7 +257,13 @@ function SessionRun(props: SessionViewProps) {
         {(run.canReplay || canSwitchMedia) && (
           <View style={styles.mediaRow}>
             {run.canReplay ? (
-              <TextButton label={t('player.voice.replay')} quiet onPress={run.replayInstruction} style={styles.shrink} />
+              <TextButton
+                label={t('player.voice.replay')}
+                quiet
+                onPress={run.replayInstruction}
+                style={styles.shrink}
+                maxScale={CHROME_MAX_FONT_SCALE}
+              />
             ) : (
               <View />
             )}
@@ -260,6 +272,7 @@ function SessionRun(props: SessionViewProps) {
                 label={t(showPose ? 'player.media.video' : 'player.media.pose')}
                 quiet
                 onPress={() => run.setMedia(showPose ? 'video' : 'pose')}
+                maxScale={CHROME_MAX_FONT_SCALE}
               />
             )}
           </View>
@@ -434,7 +447,7 @@ const styles = StyleSheet.create({
   dim: { color: ink.grey },
   shrink: { flexShrink: 1 },
   header: {
-    height: HEADER,
+    minHeight: HEADER,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: SIDE - 4,
@@ -477,8 +490,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    flexWrap: 'wrap',
     paddingHorizontal: SIDE,
-    gap: 12,
+    columnGap: 12,
   },
   text: { paddingHorizontal: SIDE, paddingTop: 16, gap: 4 },
   note: { ...fonts.regular(17), color: ink.grey, marginBottom: 4 },

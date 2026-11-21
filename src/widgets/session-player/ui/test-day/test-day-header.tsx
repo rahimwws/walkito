@@ -1,5 +1,6 @@
 import { StyleSheet, View } from 'react-native';
 
+import { CHROME_MAX_FONT_SCALE } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import type { SegmentState } from '../../model/test-day';
@@ -22,7 +23,12 @@ export function TestDayHeader({ segments, onClose }: TestDayHeaderProps) {
   const done = segments.filter((state) => state === 'done').length;
   return (
     <View style={styles.header}>
-      <TextButton label={t('common.close')} accessibilityLabel={t('testday.close')} onPress={onClose} />
+      <TextButton
+        label={t('common.close')}
+        accessibilityLabel={t('testday.close')}
+        onPress={onClose}
+        maxScale={CHROME_MAX_FONT_SCALE}
+      />
       <View
         style={styles.bar}
         accessible

@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   pressed: { opacity: 0.55 },
   steps: { gap: 14 },
   step: { flexDirection: 'row', gap: 14 },
-  stepNumber: { ...fonts.bold(19), color: colors.text, width: 20, fontVariant: ['tabular-nums'] },
+  stepNumber: { ...fonts.bold(19), color: colors.text, minWidth: 20, fontVariant: ['tabular-nums'] },
   stepText: { flex: 1, ...fonts.regular(19), color: colors.text },
   why: { ...fonts.regular(19), color: colors.text2 },
   rule: { height: StyleSheet.hairlineWidth, backgroundColor: colors.separator },

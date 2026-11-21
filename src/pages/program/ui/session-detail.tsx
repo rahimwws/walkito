@@ -1,6 +1,6 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { doseSeconds, type PlanDose, type PlannedExercise } from '@/entities/program';
@@ -75,6 +75,7 @@ export function detailMoves(
 export function SessionDetail({ title, meta, moves, why, startLabel, onStart, onBack, onPreview }: SessionDetailProps) {
   const t = useT();
   const insets = useSafeAreaInsets();
+  const stacked = useWindowDimensions().fontScale > 1.6;
   const hero = moves.length > 0 ? (posterFor(moves[0].id) ?? thumbFor(moves[0].id)) : null;
 
   return (
@@ -107,11 +108,11 @@ export function SessionDetail({ title, meta, moves, why, startLabel, onStart, on
                   accessibilityHint={t('player.detail.rowHint')}
                   accessibilityState={{ checked: move.done }}
                   onPress={() => onPreview(move.id)}
-                  style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
+                  style={({ pressed }) => [styles.row, stacked && styles.rowStacked, pressed && styles.pressed]}>
                   <View style={styles.thumb}>
                     {thumb != null && <Image source={thumb} resizeMode="cover" style={styles.fill} accessibilityIgnoresInvertColors />}
                   </View>
-                  <View style={styles.facts}>
+                  <View style={[styles.facts, stacked && styles.factsStacked]}>
                     <Text style={styles.name}>{move.title}</Text>
                     <Text style={styles.dose}>{move.dose}</Text>
                   </View>
@@ -155,7 +156,9 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', gap: 16, minHeight: THUMB + 24, paddingVertical: 12 },
   pressed: { opacity: 0.55 },
   thumb: { width: THUMB, height: THUMB, overflow: 'hidden', backgroundColor: '#ECF0F1' },
+  rowStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   facts: { flex: 1, gap: 2 },
+  factsStacked: { flex: 0, alignSelf: 'stretch' },
   name: { ...fonts.semibold(19), color: colors.text },
   dose: { ...fonts.regular(17), color: colors.text2 },
   back: { position: 'absolute', left: SIDE - 8, minHeight: target.min, borderRadius: 999, overflow: 'hidden' },
