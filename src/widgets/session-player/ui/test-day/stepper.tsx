@@ -1,7 +1,7 @@
 import * as Haptics from 'expo-haptics';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { fonts } from '@/shared/config';
+import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { NUMERAL_SCALE, ink } from '../player/kit';
@@ -79,8 +79,7 @@ const styles = StyleSheet.create({
     width: BUTTON,
     height: BUTTON,
     borderRadius: BUTTON / 2,
-    borderWidth: 1,
-    borderColor: ink.rule,
+    backgroundColor: colors.surface2,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -1,3 +1,5 @@
+import Flag02Icon from '@hugeicons/core-free-icons/Flag02Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { makeImageFromView } from '@shopify/react-native-skia';
 import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
@@ -6,14 +8,17 @@ import Animated, { FadeIn, FadeOut, useReducedMotion } from 'react-native-reanim
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useIntake } from '@/entities/profile';
-import { GOAL_SPECS, fromDateKey, retestResults, type TestDayOutcome } from '@/entities/program';
-import { fonts } from '@/shared/config';
+import { GOAL_SPECS, ZONE_META, fromDateKey, retestResults, type TestDayOutcome } from '@/entities/program';
+import { accents, colors, fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
-import { goalValuesOf, legsOf, resultRows, type ResultRow } from '../../model/test-day';
-import { Capsule, Hairline, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from '../player/kit';
+import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from '../../model/test-day';
+import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, cardStyle, ink } from '../player/kit';
 import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
+import { GOAL_ZONE } from './test-meta';
+import { TestRing } from './test-visuals';
 
 const NAME_KEY = {
   arch_hold: 'testday.results.name.arch_hold',
@@ -39,12 +44,17 @@ const VERDICT_GOAL_KEY = {
   balance: 'testday.results.verdictGoal.balance',
 } as const satisfies Record<CardGoal, string>;
 
+/** The test each result comes from, for its picture in the ring. */
+const KIND_OF: Readonly<Record<CardGoal, TestKind>> = {
+  calf_raises: 'calf',
+  arch_hold: 'arch',
+  balance: 'balance',
+};
+
 /**
- * What they came for, said back to them under the numbers.
- *
- * The one moment the numbers mean most is the moment to connect them to the
- * reason the person started, in their words from onboarding. A reminder of
- * the goal, never a verdict on whether they are on track for it.
+ * What they came for, said back to them under the numbers: a reminder of the
+ * goal in their words from onboarding, never a verdict on whether they are on
+ * track for it.
  */
 const GOAL_LINE = {
   painfree: 'widgets.retestGoal.painfree',
@@ -65,11 +75,10 @@ function goalLineKey(goal: string | null | undefined): (typeof GOAL_LINE)[keyof 
 }
 
 const COUNT_MS = 750;
+/** Tests drawn as bars: four keep every label at 17pt on a small phone. */
+const BARS_SHOWN = 4;
 
-/**
- * A figure counting from last time's to today's. Settles on the figure at
- * once with Reduce Motion, or when there is nothing to count.
- */
+/** A figure counting from last time's to today's; at once with Reduce Motion. */
 function useCountUp(from: number, to: number): number {
   const reduceMotion = useReducedMotion();
   const [shown, setShown] = useState(reduceMotion ? to : from);
@@ -82,9 +91,9 @@ function useCountUp(from: number, to: number): number {
     let frame = 0;
     const start = Date.now() + 250;
     const tick = () => {
-      const t = Math.min(1, Math.max(0, (Date.now() - start) / COUNT_MS));
-      setShown(Math.round(from + (to - from) * (1 - (1 - t) ** 3)));
-      if (t < 1) frame = requestAnimationFrame(tick);
+      const at = Math.min(1, Math.max(0, (Date.now() - start) / COUNT_MS));
+      setShown(Math.round(from + (to - from) * (1 - (1 - at) ** 3)));
+      if (at < 1) frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
@@ -92,7 +101,7 @@ function useCountUp(from: number, to: number): number {
   return shown;
 }
 
-export type TestDayResultsProps = {
+export type FootCheckResultsProps = {
   outcome: TestDayOutcome;
   side: 'left' | 'right' | 'both' | null;
   onDone: () => void;
@@ -106,16 +115,27 @@ type Hero =
 
 type Card = ResultRow & { type: CardGoal };
 
+/** The emoji over the title: content, so the colourful set. A trophy only
+ * for a goal reached; a level result is a seedling, never a judgement. */
+const HERO_ART: Readonly<Record<Hero['kind'], FluentName>> = {
+  goal: 'trophy',
+  up: 'sparkles',
+  first: 'target',
+  steady: 'seedling',
+};
+
 /**
- * What the test found: one line that says it, then the three tests as plain
- * rows, each a big figure and the change in words. A row opens to every test
- * so far as simple bars, the legs, and what the test shows. The next test
- * closes the page; the result can leave the app as a card.
+ * What the Foot Check found, in the Bend style the session screens share: the
+ * moment in a round badge, one line that says it, then each test on its own
+ * white card, its picture in a ring of its accent filled to its share of the
+ * goal, the figure large and the change under it. A card opens to the last
+ * tests as bars, the legs, and what the test shows. Then the next test and
+ * the goal, each on a card, and Done as the violet button.
  *
  * Read from the stored results rather than from what was just typed, so the
  * same screen serves "See results" on a later day.
  */
-export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
+export function FootCheckResults({ outcome, side, onDone }: FootCheckResultsProps) {
   const insets = useSafeAreaInsets();
   const language = useLanguage();
   const t = useT();
@@ -136,19 +156,16 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
       legs: legsOf(last, side),
       date: last.date,
       previousDate: previous?.date ?? null,
-      history: results.slice(-6).map((result) => ({ date: result.date, values: goalValuesOf(result) })),
+      history: results.slice(-BARS_SHOWN).map((result) => ({ date: result.date, values: goalValuesOf(result) })),
     };
-    // `outcome` changes identity when a new test is saved, which is when the
+    // outcome changes identity when a new test is saved, which is when the
     // stored results have moved.
   }, [outcome, side]);
 
-  const day = (key: string) =>
-    new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long' }).format(fromDateKey(key));
-  const nextTest = new Intl.DateTimeFormat(language, {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-  }).format(fromDateKey(outcome.nextTestOn));
+  const day = (key: string) => new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long' }).format(fromDateKey(key));
+  const nextTest = new Intl.DateTimeFormat(language, { weekday: 'long', day: 'numeric', month: 'long' }).format(
+    fromDateKey(outcome.nextTestOn),
+  );
 
   const verdict: Verdict = read == null ? { kind: 'first' } : verdictOf(read.rows);
   const hero = heroOf(read?.rows ?? [], verdict, outcome.reached);
@@ -182,50 +199,59 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
     });
   };
 
+  const shortDay = (key: string) => new Intl.DateTimeFormat(language, { day: 'numeric', month: 'short' }).format(fromDateKey(key));
+
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={styles.eyebrow}>{heroEyebrow(t, hero)}</Text>
+        <View style={styles.badge} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          <FluentIcon name={HERO_ART[hero.kind]} size={52} />
+        </View>
+        <Text style={styles.eyebrow}>{heroEyebrow(t, hero).toLocaleUpperCase()}</Text>
         <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
           {heroTitle(t, hero)}
         </Text>
         <Text style={styles.lead}>{hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}</Text>
 
-        <View style={styles.rows}>
-          <Hairline />
-          {cards.map((row) => (
-            <View key={row.type}>
-              <ScoreRow
-                row={row}
-                previous={read?.before?.[row.type] ?? null}
-                history={read?.history ?? []}
-                legs={row.type === 'calf_raises' ? (read?.legs ?? null) : null}
-                gap={row.type === 'calf_raises' ? symmetry : null}
-                open={open === row.type}
-                onToggle={() => toggle(row.type)}
-                day={(key) => new Intl.DateTimeFormat(language, { day: 'numeric', month: 'short' }).format(fromDateKey(key))}
-              />
-              <Hairline />
-            </View>
+        <View style={styles.cards}>
+          {cards.map((row, index) => (
+            <ResultCard
+              key={row.type}
+              row={row}
+              delay={200 + index * 120}
+              previous={read?.before?.[row.type] ?? null}
+              history={read?.history ?? []}
+              legs={row.type === 'calf_raises' ? (read?.legs ?? null) : null}
+              gap={row.type === 'calf_raises' ? symmetry : null}
+              open={open === row.type}
+              onToggle={() => toggle(row.type)}
+              day={shortDay}
+            />
           ))}
         </View>
 
-        <View style={styles.after}>
-          <Text style={styles.nextTitle}>{t('testday.results.nextTest', { date: nextTest })}</Text>
-          <Text style={styles.body}>{t('testday.results.planUpdated')}</Text>
+        <View style={[styles.card, styles.info]}>
+          <FluentIcon name="calendar" size={32} />
+          <View style={styles.infoText}>
+            <Text style={styles.infoTitle}>{t('testday.results.nextTest', { date: nextTest })}</Text>
+            <Text style={styles.body}>{t('testday.results.planUpdated')}</Text>
+          </View>
         </View>
 
         {goalLine != null && (
-          <View style={styles.after}>
-            <Text style={styles.small}>{t('widgets.retestYourGoal')}</Text>
-            <Text style={styles.goal}>{t(goalLine)}</Text>
+          <View style={[styles.card, styles.info]}>
+            <FluentIcon name="target" size={32} />
+            <View style={styles.infoText}>
+              <Text style={styles.small}>{t('widgets.retestYourGoal')}</Text>
+              <Text style={styles.infoTitle}>{t(goalLine)}</Text>
+            </View>
           </View>
         )}
       </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
         <Capsule label={t('testday.results.done')} onPress={onDone} />
-        {cards.length > 0 && <TextButton label={t('testday.results.share')} onPress={() => setSharing(true)} />}
+        {cards.length > 0 && <TextButton label={t('testday.results.share')} onPress={() => setSharing(true)} maxScale={TITLE_SCALE} />}
       </View>
 
       {sharing && read != null && <ShareOverlay rows={cards} date={day(read.date)} onClose={() => setSharing(false)} />}
@@ -282,10 +308,9 @@ function heroEyebrow(t: Translate, hero: Hero): string {
   }
 }
 
-// ── One test ────────────────────────────────────────────────────────────────
-
-type RowProps = {
+type CardProps = {
   row: Card;
+  delay: number;
   /** Last test's figure, as the goal reads it. Null on a first test. */
   previous: number | null;
   history: readonly { date: string; values: Record<CardGoal, number> }[];
@@ -298,32 +323,34 @@ type RowProps = {
   day: (key: string) => string;
 };
 
-/** One test as a plain row: its name and what is left to the goal, the figure
- * big on the right with the change under it. Opens to the details. */
-function ScoreRow({ row, previous, history, legs, gap, open, onToggle, day }: RowProps) {
+/** One test on a white card: its picture in the goal ring, its name and what
+ * is left to the goal, the figure large with the change under it. Opens to
+ * the details. */
+function ResultCard({ row, delay, previous, history, legs, gap, open, onToggle, day }: CardProps) {
   const t = useT();
   const seconds = row.type !== 'calf_raises';
   const figure = useCountUp(previous ?? 0, row.value);
   const left = Math.max(0, row.target - row.value);
   const stacked = useWindowDimensions().fontScale > 1.6;
+  const tone = accents.light[ZONE_META[GOAL_ZONE[row.type]].accent];
+  const share = (value: number | null) => (value == null ? 0 : value / Math.max(1, row.target));
 
   return (
-    <View>
+    <View style={styles.card}>
       <Pressable
         accessibilityRole="button"
         accessibilityState={{ expanded: open }}
         accessibilityHint={open ? t('testday.results.hideDetails') : t('testday.results.showDetails')}
-        accessibilityLabel={`${t(NAME_KEY[row.type])}, ${row.value} ${
-          seconds
-            ? t('testday.results.unitSeconds', { count: row.value })
-            : t('testday.results.unitRaises', { count: row.value })
-        }. ${changeSentence(t, row)}`}
+        accessibilityLabel={t(NAME_KEY[row.type]) + ', ' + row.value + ' ' + (seconds
+          ? t('testday.results.unitSeconds', { count: row.value })
+          : t('testday.results.unitRaises', { count: row.value })) + '. ' + changeSentence(t, row)}
         onPress={() => {
           void Haptics.selectionAsync();
           onToggle();
         }}
-        style={({ pressed }) => [styles.row, stacked && styles.rowStacked, pressed && styles.pressed]}>
-        <View style={styles.rowCopy}>
+        style={({ pressed }) => [styles.cardRow, stacked && styles.cardRowStacked, pressed && styles.pressed]}>
+        <TestRing kind={KIND_OF[row.type]} from={share(previous)} to={share(row.value)} tone={tone} delay={delay} size={72} stroke={5} />
+        <View style={styles.cardCopy}>
           <Text style={styles.name}>{t(NAME_KEY[row.type])}</Text>
           <Text style={styles.small}>
             {row.reached
@@ -333,24 +360,28 @@ function ScoreRow({ row, previous, history, legs, gap, open, onToggle, day }: Ro
                 : t('testday.results.toGoRaises', { count: left })}
           </Text>
         </View>
-        <View style={[styles.rowFigure, stacked && styles.rowFigureStacked]}>
+        <View style={[styles.cardFigure, stacked && styles.cardFigureStacked]}>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.figure}>
             {figure}
             {seconds && <Text style={styles.unit}> {t('testday.results.secondsShort')}</Text>}
           </Text>
-          <Text style={styles.small}>{chipLabel(t, row)}</Text>
+          <Text style={[styles.small, row.change != null && row.change > 0 && realGain(row.type, row.change) && styles.gain]}>
+            {chipLabel(t, row)}
+          </Text>
         </View>
       </Pressable>
 
       {open && (
         <Animated.View entering={FadeIn.duration(200)} exiting={FadeOut.duration(140)} style={styles.details}>
+          <View style={styles.rule} />
           <Bars
             values={history.map((entry) => entry.values[row.type])}
             dates={history.map((entry) => day(entry.date))}
             target={row.target}
+            fill={tone.fill}
           />
           {legs != null && (
-            <View>
+            <View style={styles.legs}>
               <Text style={styles.body}>{t('testday.results.legs', { left: legs.left, right: legs.right })}</Text>
               {gap != null && (
                 <Text style={styles.small}>
@@ -359,9 +390,7 @@ function ScoreRow({ row, previous, history, legs, gap, open, onToggle, day }: Ro
               )}
             </View>
           )}
-          <Text
-            style={styles.small}
-            accessibilityLabel={`${t('testday.results.explainA11y')}. ${t(EXPLAIN_KEY[row.type])}`}>
+          <Text style={styles.small} accessibilityLabel={t('testday.results.explainA11y') + '. ' + t(EXPLAIN_KEY[row.type])}>
             {t(EXPLAIN_KEY[row.type])}
           </Text>
         </Animated.View>
@@ -370,32 +399,35 @@ function ScoreRow({ row, previous, history, legs, gap, open, onToggle, day }: Ro
   );
 }
 
-const BARS_HEIGHT = 96;
+const BARS_HEIGHT = 110;
 
-/** Every test so far, oldest first: grey bars, today's black, the goal a
- * hairline. Each bar carries its figure and date. */
-function Bars({ values, dates, target }: { values: readonly number[]; dates: readonly string[]; target: number }) {
+/** The last tests, oldest first: soft bars, today's in the test's accent, the
+ * goal a line with its figure. Every label at 17pt. */
+function Bars({ values, dates, target, fill }: { values: readonly number[]; dates: readonly string[]; target: number; fill: string }) {
   const t = useT();
-  const top = Math.max(1, target, ...values);
+  const top = Math.max(1, target, ...values) * 1.1;
   return (
-    <View
-      accessible
-      accessibilityLabel={`${t('testday.results.history')}: ${values.map((value, i) => `${dates[i]} ${value}`).join(', ')}`}>
-      <Text style={styles.small}>{t('testday.results.history')}</Text>
-      <View style={styles.bars}>
-        <View style={[styles.goalLine, { bottom: (target / top) * BARS_HEIGHT }]}>
-          <Text style={styles.goalTag}>{target}</Text>
+    <View accessible accessibilityLabel={t('testday.results.history') + ': ' + values.map((value, i) => dates[i] + ' ' + value).join(', ')}>
+      <View style={styles.barsHead}>
+        <Text style={styles.small}>{t('testday.results.history')}</Text>
+        <View style={styles.goalTag}>
+          <HugeiconsIcon icon={Flag02Icon} size={18} color={colors.text3} strokeWidth={2.2} />
+          <Text style={styles.small} maxFontSizeMultiplier={1.4}>
+            {target}
+          </Text>
         </View>
+      </View>
+      <View style={styles.bars}>
+        <View style={[styles.goalLine, { bottom: (target / top) * BARS_HEIGHT }]} />
         {values.map((value, i) => {
           const last = i === values.length - 1;
           return (
-            <View key={`${dates[i]}-${i}`} style={styles.barCol}>
-              <Text style={[styles.barValue, last && styles.barValueLast]}>{value}</Text>
+            <View key={dates[i] + '-' + i} style={styles.barCol}>
+              <Text style={[styles.barValue, last && styles.barValueLast]} maxFontSizeMultiplier={1.4}>
+                {value}
+              </Text>
               <View
-                style={[
-                  styles.bar,
-                  { height: Math.max(2, (value / top) * BARS_HEIGHT), backgroundColor: last ? ink.text : ink.rule },
-                ]}
+                style={[styles.bar, { height: Math.max(4, (value / top) * BARS_HEIGHT), backgroundColor: last ? fill : colors.surface2 }]}
               />
             </View>
           );
@@ -403,7 +435,7 @@ function Bars({ values, dates, target }: { values: readonly number[]; dates: rea
       </View>
       <View style={styles.barDates}>
         {dates.map((date, i) => (
-          <Text key={`${date}-${i}`} style={styles.barDate} numberOfLines={1}>
+          <Text key={date + '-' + i} style={styles.barDate} numberOfLines={1} maxFontSizeMultiplier={1.4}>
             {date}
           </Text>
         ))}
@@ -415,12 +447,11 @@ function Bars({ values, dates, target }: { values: readonly number[]; dates: rea
 function chipLabel(t: Translate, row: ResultRow): string {
   if (row.change == null) return t('testday.results.chipBaseline');
   if (row.change === 0) return t('testday.results.chipSame');
-  if (row.type === 'calf_raises')
-    return t('testday.results.chipRaises', { delta: signed(row.change), count: Math.abs(row.change) });
+  if (row.type === 'calf_raises') return t('testday.results.chipRaises', { delta: signed(row.change), count: Math.abs(row.change) });
   return t('testday.results.chipSeconds', { delta: signed(row.change) });
 }
 
-/** The chip, said in full for VoiceOver. */
+/** The change, said in full for VoiceOver. */
 function changeSentence(t: Translate, row: ResultRow): string {
   if (row.change == null) return t('testday.results.first');
   if (row.change === 0) return t('testday.results.same');
@@ -435,8 +466,6 @@ function changeSentence(t: Translate, row: ResultRow): string {
       return better ? t('testday.results.moreSeconds', { count }) : t('testday.results.fewerSeconds', { count });
   }
 }
-
-// ── Sharing ─────────────────────────────────────────────────────────────────
 
 /**
  * The result as a card, shown first so the person sees what leaves the app,
@@ -463,7 +492,7 @@ function ShareOverlay({ rows, date, onClose }: { rows: readonly Card[]; date: st
       if (Platform.OS === 'ios') {
         const image = await makeImageFromView(card as unknown as Parameters<typeof makeImageFromView>[0]);
         const base64 = image?.encodeToBase64();
-        await Share.share(base64 != null ? { url: `data:image/png;base64,${base64}` } : { message });
+        await Share.share(base64 != null ? { url: 'data:image/png;base64,' + base64 } : { message });
       } else {
         await Share.share({ message });
       }
@@ -480,18 +509,20 @@ function ShareOverlay({ rows, date, onClose }: { rows: readonly Card[]; date: st
       entering={FadeIn.duration(200)}
       exiting={FadeOut.duration(160)}
       style={[styles.overlay, { paddingTop: insets.top + 24, paddingBottom: Math.max(insets.bottom, 16) }]}>
-      <View style={styles.cardWrap}>
-        <View ref={card} collapsable={false} style={styles.card}>
-          <Text style={styles.cardBrand}>{t('testday.results.shareBrand')}</Text>
-          <Text style={styles.cardDate}>{date}</Text>
-          <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.cardTitle}>{t('testday.results.shareTitle')}</Text>
-          <View style={styles.cardRows}>
+      <View style={styles.shareWrap}>
+        <View ref={card} collapsable={false} style={styles.shareCard}>
+          <Text style={styles.shareBrand}>{t('testday.results.shareBrand')}</Text>
+          <Text style={styles.shareDate}>{date}</Text>
+          <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.shareTitle}>
+            {t('testday.results.shareTitle')}
+          </Text>
+          <View style={styles.shareRows}>
             {rows.map((row) => (
-              <View key={row.type} style={styles.cardRow}>
-                <Text style={styles.cardName} numberOfLines={1}>
+              <View key={row.type} style={styles.shareRow}>
+                <Text style={styles.shareName} numberOfLines={1}>
                   {t(NAME_KEY[row.type])}
                 </Text>
-                <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.cardValue}>
+                <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.shareValue}>
                   {row.type === 'calf_raises' ? row.value : t('testday.results.valueSeconds', { n: row.value })}
                 </Text>
               </View>
@@ -508,54 +539,64 @@ function ShareOverlay({ rows, date, onClose }: { rows: readonly Card[]; date: st
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: ink.page },
+  root: { flex: 1, backgroundColor: ink.canvas },
   pressed: { opacity: 0.55 },
-  content: { paddingHorizontal: SIDE, paddingTop: 8, paddingBottom: 32 },
+  content: { paddingHorizontal: SIDE - 4, paddingTop: 8, paddingBottom: 32 },
+  card: cardStyle,
 
-  eyebrow: { ...fonts.semibold(15), color: ink.grey },
-  title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 6 },
-  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8 },
-
-  rows: { marginTop: 32 },
-  row: { flexDirection: 'row', alignItems: 'center', gap: 16, paddingVertical: 18, minHeight: 88 },
-  rowCopy: { flexGrow: 1, flexShrink: 1, gap: 4 },
-  name: { ...fonts.semibold(19), color: ink.text },
-  rowFigure: { alignItems: 'flex-end', gap: 2, maxWidth: '50%' },
-  rowStacked: { flexDirection: 'column', alignItems: 'flex-start', gap: 8 },
-  rowFigureStacked: { alignItems: 'flex-start', maxWidth: '100%' },
-  figure: { ...fonts.bold(40, -1), color: ink.text, fontVariant: ['tabular-nums'] },
-  unit: { ...fonts.semibold(19, 0), color: ink.grey },
-  small: { ...fonts.regular(15), color: ink.grey },
-  body: { ...fonts.regular(17), color: ink.text },
-
-  details: { gap: 16, paddingBottom: 20 },
-  bars: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    gap: 8,
-    height: BARS_HEIGHT + 24,
+  badge: {
+    width: 88,
+    height: 88,
+    borderRadius: 44,
+    backgroundColor: colors.accentSoft,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
     marginTop: 8,
   },
+  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3, textAlign: 'center', marginTop: 16 },
+  title: { ...fonts.bold(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
+  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8, textAlign: 'center' },
+
+  cards: { marginTop: 28, gap: 14 },
+  cardRow: { flexDirection: 'row', alignItems: 'center', gap: 14, padding: 16, minHeight: 104 },
+  cardRowStacked: { flexDirection: 'column', alignItems: 'flex-start', gap: 10 },
+  cardCopy: { flexGrow: 1, flexShrink: 1, gap: 4 },
+  name: { ...fonts.semibold(19), color: ink.text },
+  cardFigure: { alignItems: 'flex-end', gap: 2, maxWidth: '45%' },
+  cardFigureStacked: { alignItems: 'flex-start', maxWidth: '100%' },
+  figure: { ...fonts.bold(36, -1), color: ink.text, fontVariant: ['tabular-nums'] },
+  unit: { ...fonts.semibold(19, 0), color: ink.grey },
+  small: { ...fonts.regular(17), color: ink.grey },
+  gain: { color: colors.good },
+  body: { ...fonts.regular(17), color: ink.text },
+  rule: { height: StyleSheet.hairlineWidth, backgroundColor: ink.rule, marginBottom: 4 },
+
+  details: { gap: 16, paddingHorizontal: 16, paddingBottom: 18 },
+  legs: { gap: 4 },
+  goalTag: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  barsHead: { flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap', columnGap: 12 },
+  bars: { flexDirection: 'row', alignItems: 'flex-end', gap: 10, height: BARS_HEIGHT + 28, marginTop: 8 },
   goalLine: {
     position: 'absolute',
     left: 0,
     right: 0,
-    height: StyleSheet.hairlineWidth,
-    backgroundColor: ink.grey,
+    height: 1.5,
+    backgroundColor: colors.text3,
+    opacity: 0.5,
   },
-  goalTag: { position: 'absolute', right: 0, bottom: 4, ...fonts.medium(12), color: ink.grey },
-  barCol: { flex: 1, maxWidth: 56, alignItems: 'center', justifyContent: 'flex-end', gap: 4 },
-  bar: { alignSelf: 'stretch', borderRadius: 3 },
-  barValue: { ...fonts.medium(13), color: ink.grey, fontVariant: ['tabular-nums'] },
-  barValueLast: { ...fonts.bold(13), color: ink.text },
-  barDates: { flexDirection: 'row', gap: 8, marginTop: 6 },
-  barDate: { flex: 1, maxWidth: 56, ...fonts.regular(12), color: ink.grey, textAlign: 'center' },
+  barCol: { flex: 1, alignItems: 'center', justifyContent: 'flex-end', gap: 4 },
+  bar: { alignSelf: 'stretch', maxWidth: 48, marginHorizontal: 'auto', borderRadius: 8, borderCurve: 'continuous' },
+  barValue: { ...fonts.medium(17), color: ink.grey, fontVariant: ['tabular-nums'] },
+  barValueLast: { ...fonts.bold(17), color: ink.text },
+  barDates: { flexDirection: 'row', gap: 10, marginTop: 6 },
+  barDate: { flex: 1, ...fonts.regular(17), color: ink.grey, textAlign: 'center' },
 
-  after: { marginTop: 32, gap: 4 },
-  nextTitle: { ...fonts.semibold(19), color: ink.text },
-  goal: { ...fonts.regular(19), color: ink.text },
+  info: { flexDirection: 'row', alignItems: 'center', gap: 14, padding: 16, marginTop: 14 },
+  infoText: { flex: 1, gap: 2 },
+  infoTitle: { ...fonts.semibold(19), color: ink.text },
 
-  dock: { paddingHorizontal: SIDE, paddingTop: 12, gap: 4, backgroundColor: ink.page },
+  dock: { paddingHorizontal: SIDE, paddingTop: 12, gap: 4, backgroundColor: ink.canvas },
 
   overlay: {
     position: 'absolute',
@@ -563,24 +604,24 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: ink.page,
+    backgroundColor: ink.canvas,
     paddingHorizontal: SIDE,
   },
-  cardWrap: { flex: 1, justifyContent: 'center' },
-  card: { padding: 24, gap: 4, borderRadius: 24, borderCurve: 'continuous', backgroundColor: '#000000' },
-  cardBrand: { ...fonts.bold(17), color: '#FFFFFF' },
-  cardDate: { ...fonts.regular(15), color: 'rgba(255,255,255,0.6)' },
-  cardTitle: { ...fonts.bold(34, -0.6), color: '#FFFFFF', marginTop: 20 },
-  cardRows: { marginTop: 16 },
-  cardRow: {
+  shareWrap: { flex: 1, justifyContent: 'center' },
+  shareCard: { padding: 24, gap: 4, borderRadius: 24, borderCurve: 'continuous', backgroundColor: colors.accent },
+  shareBrand: { ...fonts.bold(19), color: '#FFFFFF' },
+  shareDate: { ...fonts.regular(17), color: 'rgba(255,255,255,0.75)' },
+  shareTitle: { ...fonts.bold(32, -0.6), color: '#FFFFFF', marginTop: 20 },
+  shareRows: { marginTop: 16 },
+  shareRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
     gap: 12,
     paddingVertical: 12,
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: 'rgba(255,255,255,0.24)',
+    borderTopColor: 'rgba(255,255,255,0.3)',
   },
-  cardName: { flex: 1, ...fonts.regular(17), color: '#FFFFFF' },
-  cardValue: { ...fonts.bold(28, -0.6), color: '#FFFFFF', fontVariant: ['tabular-nums'] },
+  shareName: { flex: 1, ...fonts.regular(17), color: '#FFFFFF' },
+  shareValue: { ...fonts.bold(28, -0.6), color: '#FFFFFF', fontVariant: ['tabular-nums'] },
   shareActions: { gap: 4 },
 });

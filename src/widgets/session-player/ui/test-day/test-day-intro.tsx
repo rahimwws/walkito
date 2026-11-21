@@ -1,6 +1,8 @@
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
@@ -14,13 +16,14 @@ import {
   retestResults,
   settleOffset,
   todayDayNumber,
+  ZONE_META,
 } from '@/entities/program';
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import { GOAL_OF_TEST, TEST_ORDER, goalValuesOf, type TestKind } from '../../model/test-day';
-import { Capsule, Hairline, SIDE, TITLE_SCALE, TextButton, ink } from '../player/kit';
+import { Capsule, SIDE, TITLE_SCALE, TextButton, cardStyle, ink, tint } from '../player/kit';
 import { TEST_META } from './test-meta';
 
 const PAIN_SCALE = Array.from({ length: 11 }, (_, i) => i);
@@ -31,15 +34,18 @@ export type TestDayIntroProps = {
 };
 
 /**
- * Before the Foot Check: the title, how long it takes, the three tests as
- * plain rows (picture, name, where it stands against its goal), what to have
- * ready in three lines, and today's check-in when it has not been answered.
+ * Before the Foot Check, as Bend's routine screen: the title and how long it
+ * takes, the three tests on a white card (each picture in a pastel circle of
+ * its zone's accent, its name, where it stands against its goal), what to
+ * have ready on a second card, and today's check-in on a third when it has
+ * not been answered.
  * A high check-in offers the test tomorrow instead, in words under Start.
  * The check-in is saved on the way out however the screen is left.
  */
 export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   const insets = useSafeAreaInsets();
   const t = useT();
+  const stacked = useWindowDimensions().fontScale > 1.6;
 
   const [day] = useState(() => todayDayNumber());
   const [ask] = useState(() => painOn(day) == null);
@@ -101,36 +107,40 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
         </Text>
         <Text style={styles.lead}>{t('testday.intro.body', { count: RETEST_MINUTES })}</Text>
 
-        <View style={styles.list}>
-          {rows.map((row) => (
+        <View style={styles.card}>
+          {rows.map((row, index) => (
             <View key={row.kind}>
-              <Hairline />
-              <View style={styles.row} accessible>
-                <View style={styles.thumb}>
+              {index > 0 && <View style={[styles.rule, stacked && styles.ruleFull]} />}
+              <View style={[styles.row, stacked && styles.rowStacked]} accessible>
+                <View style={[styles.thumb, { backgroundColor: tint(ZONE_META[TEST_META[row.kind].zone].accent) }]}>
                   <Image source={TEST_PICTURES[row.kind].thumb} style={styles.fill} resizeMode="cover" accessibilityIgnoresInvertColors />
                 </View>
-                <View style={styles.rowText}>
+                <View style={[styles.rowText, stacked && styles.rowTextStacked]}>
                   <Text style={styles.name}>{t(TEST_META[row.kind].name)}</Text>
                   <Text style={styles.goal}>{goalLine(row.kind, row.now, row.target)}</Text>
                 </View>
               </View>
             </View>
           ))}
-          <Hairline />
         </View>
 
         <Text accessibilityRole="header" style={styles.section}>
           {t('testday.intro.need')}
         </Text>
-        {[t('testday.intro.needBarefoot'), t('testday.intro.needWall'), t('testday.intro.needPhone')].map((line) => (
-          <Text key={line} style={styles.need}>
-            {line}
-          </Text>
-        ))}
+        <View style={[styles.card, styles.padded]}>
+          {[t('testday.intro.needBarefoot'), t('testday.intro.needWall'), t('testday.intro.needPhone')].map((line) => (
+            <View key={line} style={styles.needRow}>
+              <View style={styles.needTick}>
+                <HugeiconsIcon icon={Tick02Icon} size={14} color={colors.accent} strokeWidth={2.8} />
+              </View>
+              <Text style={styles.need}>{line}</Text>
+            </View>
+          ))}
+        </View>
 
         {ask && (
-          <View style={styles.checkin}>
-            <Text accessibilityRole="header" style={styles.section}>
+          <View style={[styles.card, styles.padded, styles.checkin]}>
+            <Text accessibilityRole="header" style={styles.checkinTitle}>
               {t('testday.intro.checkin')}
             </Text>
             <Text style={styles.hint}>{t('testday.intro.checkinHint')}</Text>
@@ -177,23 +187,39 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   );
 }
 
-const THUMB = 72;
+const THUMB = 64;
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: ink.page },
-  content: { paddingHorizontal: SIDE, paddingTop: 16, paddingBottom: 24 },
-  title: { ...fonts.bold(34, -0.6), color: ink.text },
-  lead: { ...fonts.medium(19), color: ink.grey, marginTop: 6, marginBottom: 28 },
-  list: { alignSelf: 'stretch' },
-  row: { flexDirection: 'row', alignItems: 'center', gap: 16, paddingVertical: 12 },
-  thumb: { width: THUMB, height: THUMB, overflow: 'hidden', backgroundColor: ink.studio },
+  root: { flex: 1, backgroundColor: ink.canvas },
+  content: { paddingHorizontal: SIDE - 4, paddingTop: 12, paddingBottom: 24 },
+  title: { ...fonts.bold(32, -0.6), color: ink.text },
+  lead: { ...fonts.medium(19), color: ink.grey, marginTop: 6, marginBottom: 24 },
+  card: cardStyle,
+  padded: { padding: 18 },
+  rule: { height: StyleSheet.hairlineWidth, backgroundColor: ink.rule, marginLeft: 16 + THUMB + 14 },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 14, paddingVertical: 12, paddingHorizontal: 16 },
+  rowStacked: { flexDirection: 'column', alignItems: 'flex-start', paddingVertical: 16 },
+  ruleFull: { marginLeft: 0 },
+  thumb: { width: THUMB, height: THUMB, borderRadius: THUMB / 2, overflow: 'hidden' },
   fill: { width: '100%', height: '100%' },
   rowText: { flex: 1, gap: 2 },
+  rowTextStacked: { flex: 0, alignSelf: 'stretch' },
   name: { ...fonts.semibold(19), color: ink.text },
   goal: { ...fonts.regular(17), color: ink.grey, fontVariant: ['tabular-nums'] },
-  section: { ...fonts.semibold(19), color: ink.text, marginTop: 32, marginBottom: 8 },
-  need: { ...fonts.regular(19), color: ink.text, marginBottom: 4 },
-  checkin: {},
+  section: { ...fonts.bold(22, -0.3), color: ink.text, marginTop: 28, marginBottom: 12 },
+  needRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, paddingVertical: 4 },
+  needTick: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.accentSoft,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 1,
+  },
+  need: { flex: 1, ...fonts.regular(19), color: ink.text },
+  checkin: { marginTop: 28 },
+  checkinTitle: { ...fonts.semibold(19), color: ink.text, marginBottom: 4 },
   hint: { ...fonts.regular(17), color: ink.grey },
   scale: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 14 },
   cell: {
@@ -201,17 +227,16 @@ const styles = StyleSheet.create({
     flexBasis: 26,
     minHeight: 44,
     borderRadius: 999,
-    borderWidth: 1,
-    borderColor: ink.rule,
+    backgroundColor: colors.surface2,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cellOn: { backgroundColor: colors.ink, borderColor: colors.ink },
+  cellOn: { backgroundColor: colors.accent },
   cellText: { ...fonts.semibold(17), color: ink.text, fontVariant: ['tabular-nums'] },
   cellTextOn: { color: colors.onInk },
-  ends: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 8 },
-  end: { ...fonts.regular(17), color: ink.grey },
+  ends: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 8, gap: 12 },
+  end: { ...fonts.regular(17), color: ink.grey, flexShrink: 1 },
   sore: { ...fonts.regular(19), color: ink.text, marginTop: 24 },
   pressed: { opacity: 0.55 },
-  dock: { paddingHorizontal: SIDE, paddingTop: 8, gap: 4 },
+  dock: { paddingHorizontal: SIDE, paddingTop: 8, gap: 4, backgroundColor: ink.canvas },
 });
