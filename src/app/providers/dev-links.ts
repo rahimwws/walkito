@@ -290,7 +290,7 @@ function previewStreak(url: string): void {
 export function useDevLinks(): void {
   useEffect(() => {
     if (__DEV__) {
-      const onUrl = (url: string | null) => {
+      const onUrl = (url: string | null | undefined) => {
         if (url == null) return;
         if (RESET_PARAM.test(url)) resetOnboarding();
         if (FINISH_PARAM.test(url)) completeOnboarding();

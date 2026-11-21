@@ -126,7 +126,7 @@ export function useSeedDemoTrigger(): void {
       } catch {
         // Not in this runtime.
       }
-      const onUrl = (url: string | null) => {
+      const onUrl = (url: string | null | undefined) => {
         if (url != null && SEED_PARAM.test(url)) run();
       };
       void Linking.getInitialURL()

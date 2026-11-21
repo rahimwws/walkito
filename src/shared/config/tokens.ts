@@ -1,0 +1,73 @@
+/**
+ * The design system's values in one place (v1.1.0 redesign, spec §3).
+ *
+ * Light only. Every text colour here is checked against `surface` (white) and
+ * `bg`: `text` 17:1, `text2` 7:1, `accent` 7.1:1, `text3` 4.6:1 and so for
+ * 17pt and up only. The old violet (#8B5CF6) is 4.2:1 and never carries text.
+ */
+export const colors = {
+  /** Screen background, the grouped grey. */
+  bg: '#F5F5F7',
+  /** Cards and rows. Opaque: glass never reaches the content layer. */
+  surface: '#FFFFFF',
+  /** Inputs, segmented tracks, chips. */
+  surface2: '#EFEFF2',
+  separator: '#E3E3E8',
+  text: '#111114',
+  text2: '#55555E',
+  /** Tertiary text, 17pt and up only. */
+  text3: '#7A7A84',
+  /** The primary button's fill, with a white label. */
+  ink: '#111114',
+  onInk: '#FFFFFF',
+  /** Brand violet: links, selected states, progress. */
+  accent: '#6D28D9',
+  /** Behind a selected row or chip. */
+  accentSoft: '#EFE8FD',
+  /** Done ticks and an improving trend. Never a judgement of a value. */
+  good: '#1F7A3D',
+  warn: '#B45309',
+  /** The runner plan's badge only, never text. */
+  sport: '#FF5A1F',
+  /** The dark end of the gradient that carries text over a photo. */
+  photoOverlay: 'rgba(0,0,0,0.45)',
+  /** What stands in for glass: iOS < 26, Reduce Transparency, Android. */
+  glassFallback: 'rgba(255,255,255,0.96)',
+} as const;
+
+/**
+ * The type scale, as [size, weight] for `fonts.*`. Body is 19 and nothing a
+ * person has to read is set below 17.
+ */
+export const type = {
+  largeTitle: { size: 34, weight: 'bold' },
+  title: { size: 28, weight: 'bold' },
+  headline: { size: 20, weight: 'semibold' },
+  body: { size: 19, weight: 'regular' },
+  callout: { size: 17, weight: 'medium' },
+  footnote: { size: 15, weight: 'regular' },
+  numeral: { size: 96, weight: 'bold' },
+} as const;
+
+/** The 4-pt grid. */
+export const space = {
+  screen: 20,
+  card: 20,
+  gap: 12,
+  section: 32,
+} as const;
+
+export const radius = {
+  card: 20,
+  button: 16,
+  photo: 16,
+} as const;
+
+/** Touch targets for 50+ (spec §5). */
+export const target = {
+  min: 48,
+  primary: 56,
+} as const;
+
+/** Tab labels and chips stop growing here; body text is never capped. */
+export const CHROME_MAX_FONT_SCALE = 1.4;

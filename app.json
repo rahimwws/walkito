@@ -6,7 +6,7 @@
     "version": "1.0.14",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": false,
       "infoPlist": {
@@ -50,22 +50,8 @@
     },
     "plugins": [
       "./plugins/with-strip-frameworks",
-      "./plugins/with-scene-delegate",
+      "./plugins/with-appsflyer-scene",
       "expo-router",
-      [
-        "expo-font",
-        {
-          "android": {
-            "fonts": [
-              "./node_modules/@expo-google-fonts/nunito/400Regular/Nunito_400Regular.ttf",
-              "./node_modules/@expo-google-fonts/nunito/500Medium/Nunito_500Medium.ttf",
-              "./node_modules/@expo-google-fonts/nunito/600SemiBold/Nunito_600SemiBold.ttf",
-              "./node_modules/@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf",
-              "./node_modules/@expo-google-fonts/nunito/800ExtraBold/Nunito_800ExtraBold.ttf"
-            ]
-          }
-        }
-      ],
       "expo-asset",
       "expo-video",
       [
@@ -162,9 +148,6 @@
       [
         "react-native-android-widget",
         {
-          "fonts": [
-            "./node_modules/@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf"
-          ],
           "widgets": [
             {
               "name": "DailyCheck",
@@ -195,7 +178,9 @@
             "it"
           ]
         }
-      ]
+      ],
+      "expo-secure-store",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true

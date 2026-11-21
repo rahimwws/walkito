@@ -10,13 +10,17 @@
  * render red. Values are always `ink` — a number is never colored by how good
  * it is. `positive` marks an improving delta only; `flat` covers flat and
  * declining alike, because a dip is information, not an error.
+ *
+ * The light values come from `tokens.ts`. The dark halves are kept for a
+ * later dark mode; nothing renders them while the app is light only.
  */
+import { colors } from './tokens';
 
 export const palette = {
   light: {
-    background: '#F4F4F6',
-    foreground: '#111114',
-    card: '#FFFFFF',
+    background: colors.bg,
+    foreground: colors.text,
+    card: colors.surface,
   },
   dark: {
     // Dark, deliberately not black. Pure #000 makes every surface above it
@@ -32,7 +36,7 @@ export const palette = {
  * The brand accent. One hue, spent only where the money is — the primary
  * action, the active state, the selected row. Everything else is neutral.
  */
-export const PRIMARY = '#8B5CF6';
+export const PRIMARY = colors.accent;
 
 /**
  * The one committing action on a screen.
@@ -51,33 +55,33 @@ export const primaryButton = {
   // scheme, ink on the light one — a white pill on a near-white background is
   // a button you cannot see, which is the rule stated above and the one the
   // violet fill sidestepped by being loud against both.
-  light: { fill: '#111114', label: '#FFFFFF' },
+  light: { fill: colors.ink, label: colors.onInk },
   dark: { fill: '#FFFFFF', label: '#111114' },
 } as const;
 
 export const meterColors = {
   light: {
-    ink: '#111114',
+    ink: colors.text,
     /** Small unit/suffix after a value ("/100", "min"). */
-    unit: '#9A9AA0',
+    unit: colors.text3,
     /** Secondary caption under a title. */
-    caption: '#9E9EA6',
+    caption: colors.text2,
     /** Eyebrow and counter labels. */
-    label: '#77777E',
-    positive: '#23A55A',
+    label: colors.text2,
+    positive: colors.good,
     positiveBg: '#E7F6EC',
-    flat: '#9A9AA0',
-    focus: '#A96400',
+    flat: colors.text3,
+    focus: colors.warn,
     focusBg: '#FDEFDC',
     /** Inked portion of a tick meter. */
     tick: '#111114',
     /** Unfilled portion of a tick meter. */
     track: 'rgba(17,17,20,0.10)',
-    divider: '#F1F1F4',
+    divider: colors.separator,
     /** Icon tile behind a row's glyph. */
-    iconTile: '#F2F2F5',
+    iconTile: colors.surface2,
     glassTint: 'rgba(255,255,255,0.45)',
-    solidFallback: 'rgba(255,255,255,0.96)',
+    solidFallback: colors.glassFallback,
   },
   dark: {
     ink: '#FFFFFF',

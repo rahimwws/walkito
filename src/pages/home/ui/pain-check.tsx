@@ -4,7 +4,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
 import { AppState, Modal, Pressable, StyleSheet, Text, useWindowDimensions, View, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   Easing,
@@ -865,7 +865,7 @@ function CheckInSummary({
   // small nod for a sore one (never a cheer at a number). Once per answer or
   // correction; Home reopening, a sheet closing or a cold start play nothing.
   const mascot = useRef<MascotHandle>(null);
-  const art = useRef<View>(null);
+  const art = useRef<ComponentRef<typeof View>>(null);
   const played = useRef(reaction);
   const reactedRef = useRef(onReacted);
   reactedRef.current = onReacted;

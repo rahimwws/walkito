@@ -49,7 +49,7 @@ export function useDevPreviewMenu(open: () => void): void {
         // A binary without the dev client.
       }
 
-      const onUrl = (url: string | null) => {
+      const onUrl = (url: string | null | undefined) => {
         if (url != null && PREVIEW_PARAM.test(url)) run();
       };
       void Linking.getInitialURL()

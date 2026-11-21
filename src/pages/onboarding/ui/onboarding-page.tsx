@@ -1136,7 +1136,7 @@ export function OnboardingPage() {
       go: jump,
       answer: (key: string, value: Answer) => setAnswers((prev) => ({ ...prev, [key]: value })),
     };
-    const onUrl = (url: string | null) => {
+    const onUrl = (url: string | null | undefined) => {
       // `&answers=miniTest:=test,test-heel:left` gives answers before the
       // jump (a choice by its value, a bare string after `=`): the screens
       // that depend on earlier ones, without tapping through them.

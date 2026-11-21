@@ -30,7 +30,6 @@ import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/
 import { useLanguage, useT, type Language, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
-import { GradientText } from '@/shared/ui/gradient-text';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 
@@ -453,12 +452,9 @@ function PartBody({ part, details }: { part: ReadinessPartKey; details: Readines
           {view.insight != null && (
             <>
               <Text style={[styles.useLabel, { color: meter.label }]}>{t('home.readinessInfo.insightLabel')}</Text>
-              <GradientText
-                textStyle={styles.insight}
-                colors={[accent.fill, accents[scheme][INSIGHT_TO[view.accent]].fill]}
-                style={styles.insightBox}>
-                {view.insight}
-              </GradientText>
+              <View style={styles.insightBox}>
+                <Text style={[styles.insight, { color: meter.ink }]}>{view.insight}</Text>
+              </View>
               <View style={[styles.useRule, { backgroundColor: meter.divider }]} />
             </>
           )}

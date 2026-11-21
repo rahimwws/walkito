@@ -136,6 +136,6 @@ const styles = StyleSheet.create({
   note: { position: 'absolute' },
   tilt: { transform: [{ rotate: '-3deg' }] },
   words: { flexDirection: 'row', flexWrap: 'wrap' },
-  text: { ...fonts.hand(31), lineHeight: 34, color: INK },
+  text: { ...fonts.bold(28), lineHeight: 34, color: INK },
   after: { marginTop: 14, alignItems: 'flex-start' },
 });

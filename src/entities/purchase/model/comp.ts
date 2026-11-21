@@ -121,7 +121,7 @@ export function startCompAccess(): void {
     // `xcrun simctl openurl booted "walkito.dev://?resetDevAccess"` takes the
     // simulator's pretend purchase away, so the paywall can be looked at again.
     const { Linking } = require('react-native') as typeof import('react-native');
-    const onUrl = (url: string | null) => {
+    const onUrl = (url: string | null | undefined) => {
       if (url != null && /[?&]resetDevAccess\b/.test(url)) revokeDevAccess();
     };
     void Linking.getInitialURL().then(onUrl).catch(() => undefined);

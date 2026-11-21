@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, type ComponentRef } from 'react';
 import type { View } from 'react-native';
 
 /**
@@ -13,13 +13,13 @@ import type { View } from 'react-native';
 
 export type SpotlightRect = { x: number; y: number; width: number; height: number };
 
-const anchors = new Map<string, View>();
+const anchors = new Map<string, ComponentRef<typeof View>>();
 let scroller: ((y: number) => void) | null = null;
 let scrollOffset = 0;
 
-export function useSpotlightAnchor(id: string): (view: View | null) => void {
+export function useSpotlightAnchor(id: string): (view: ComponentRef<typeof View> | null) => void {
   return useCallback(
-    (view: View | null) => {
+    (view: ComponentRef<typeof View> | null) => {
       if (view == null) anchors.delete(id);
       else anchors.set(id, view);
     },

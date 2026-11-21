@@ -1,8 +1,6 @@
 export {
   fonts,
   faces,
-  fontAssets,
-  noteFonts,
   type Face,
   type SizedFace,
   type FontWeightName,

@@ -38,7 +38,9 @@ export function TimePicker({ minutes, onChange, variant = 'compact' }: TimePicke
           displayedComponents="hourAndMinute"
           is24Hour
           color={PRIMARY}
-          onDateSelected={(date) => onChange(toMinutes(date))}
+          onDateSelected={(date) => {
+            if (date != null) onChange(toMinutes(date));
+          }}
         />
       </Host>
     );

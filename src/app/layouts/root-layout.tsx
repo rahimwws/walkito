@@ -1,4 +1,3 @@
-import { useFonts } from 'expo-font';
 import { useEffect, type ComponentType, type ReactNode } from 'react';
 import { Stack } from 'expo-router/stack';
 import { StatusBar } from 'expo-status-bar';
@@ -54,7 +53,6 @@ import {
   useOnboarded,
   useSetupPending,
 } from '@/entities/session';
-import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
 // stored preference applies the saved appearance before the first render.
@@ -122,10 +120,6 @@ export function RootLayout() {
 }
 
 function RootLayoutInner() {
-  // The fonts that are files: Inter for the note sheet, and on Android Nunito
-  // (Expo Go can't embed fonts at build time). iOS draws the app's face from
-  // the system, so nothing of it loads here.
-  const [fontsReady, fontError] = useFonts(fontAssets);
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
   // Not bypassed in development builds. It was, to get a simulator past Sign in
@@ -267,14 +261,12 @@ function RootLayoutInner() {
   // A `$screen` per route, for the paths and retention charts in PostHog.
   useScreenTracking();
 
-  // Interactive once the fonts have resolved and the first real screen has had
-  // a frame to paint — the end of the `tti` measurement in EAS Observe.
-  const ready = fontsReady || fontError != null;
+  // Interactive once the first real screen has had a frame to paint — the end
+  // of the `tti` measurement in EAS Observe.
   useEffect(() => {
-    if (!ready) return;
     const frame = requestAnimationFrame(() => markInteractive());
     return () => cancelAnimationFrame(frame);
-  }, [ready]);
+  }, []);
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -285,163 +277,161 @@ function RootLayoutInner() {
         <IntroRevealProvider value>
           <NavThemeProvider>
             <PaywallRoot>
-              {fontsReady || fontError ? (
-                <Stack>
-                  {/* The two halves of the app are mutually exclusive stacks,
-                      not a route pushed over another. Finishing the
-                      questionnaire flips the guard, expo-router unmounts the
-                      onboarding stack, and back has nothing to return to — the
-                      one-way door the navigation laws ask for. A `replace` would
-                      leave /onboarding reachable; this makes it not exist.
+              <Stack>
+                {/* The two halves of the app are mutually exclusive stacks,
+                    not a route pushed over another. Finishing the
+                    questionnaire flips the guard, expo-router unmounts the
+                    onboarding stack, and back has nothing to return to — the
+                    one-way door the navigation laws ask for. A `replace` would
+                    leave /onboarding reachable; this makes it not exist.
 
-                      Both halves must be guarded, and on opposite conditions:
-                      `Stack.Protected` gates *availability*, it does not
-                      navigate, so if (tabs) stayed reachable the initial "/"
-                      would resolve to it and onboarding would never show.
+                    Both halves must be guarded, and on opposite conditions:
+                    `Stack.Protected` gates *availability*, it does not
+                    navigate, so if (tabs) stayed reachable the initial "/"
+                    would resolve to it and onboarding would never show.
 
-                      `guard` means *available*, not *blocked*. Both were the
-                      wrong way round from the first commit: onboarding was gated
-                      on having finished onboarding, so a new user — for whom the
-                      flag is false — found the flow unavailable and landed on
-                      Home, and had the guard ever flipped they would have been
-                      thrown back into the flow with the tabs unreachable. The
-                      comment above described the intended behaviour the whole
-                      time, which is why it read as correct. */}
-                  <Stack.Protected guard={!onboarded}>
-                    <Stack.Screen
-                      name="onboarding"
-                      options={{ headerShown: false, animation: 'fade', gestureEnabled: false }}
-                    />
-                  </Stack.Protected>
-
-                  {/* The wall, as a third state of the same door rather than a
-                      sheet somebody has to fail to dismiss.
-
-                      A form sheet with the grabber off and the gesture disabled
-                      is still a sheet: there is a screen behind it, the OS knows
-                      it, and every version of iOS finds one more way to get back
-                      to what it can see. Guarding the tabs instead means there is
-                      nothing behind the paywall to reach — the same mechanism
-                      that makes onboarding a one-way door.
-
-                      Not shown to somebody whose paid access has ended: they get
-                      `expired` below instead. This door is for a first
-                      purchase.
-
-                      A hard paywall: there is no way into the app without
-                      buying. "Not now" on it leads to the one-time trial offer
-                      and the offers after it, on this same screen
-                      (`pages/offer` draws them in place of the plans), so
-                      somebody who skipped it is still here, and still without
-                      the tabs. */}
-                  <Stack.Protected guard={onboarded && !entitled && !lapsed && !skipped}>
-                    <Stack.Screen
-                      name="offer"
-                      options={{
-                        headerShown: false,
-                        // A screen, not a sheet, when it is the gate: a sheet
-                        // implies something to go back to.
-                        presentation: 'card',
-                        gestureEnabled: false,
-                        animation: 'fade',
-                      }}
-                    />
-                  </Stack.Protected>
-
-                  {/* A subscription that ended, which is not the same door as the
-                      paywall — see the note on `lapsed` above. Guarded on
-                      `!browsing` so answering it with "Not now" is answering it
-                      once, rather than meeting it again every cold launch. */}
-                  <Stack.Protected guard={onboarded && !entitled && lapsed && !browsing}>
-                    <Stack.Screen
-                      name="expired"
-                      options={{
-                        headerShown: false,
-                        presentation: 'card',
-                        gestureEnabled: false,
-                        animation: 'fade',
-                      }}
-                    />
-                  </Stack.Protected>
-
-                  {/* Paid, or browsing their own history after access ended. The
-                      second case is read-only: the session player refuses
-                      to start anything while `sessionsLocked()` holds. */}
-                  {/* Straight after the first purchase, once: the same one-way door
-                      as the paywall, so there is nothing behind it to swipe to. */}
-                  <Stack.Protected guard={onboarded && entitled && setupPending}>
-                    <Stack.Screen
-                      name="setup"
-                      options={{
-                        headerShown: false,
-                        presentation: 'card',
-                        gestureEnabled: false,
-                        animation: 'fade',
-                      }}
-                    />
-                  </Stack.Protected>
-
-                  {/* The tabs: paid and past setup, or browsing after access
-                      ended (above). `tabsReachable`, so the links wait for the
-                      same thing. */}
-                  <Stack.Protected guard={tabsReachable}>
-                    <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-                    {/* A routine from the Quick tab or Home's row: a pushed
-                        page over the tabs, under the same guard, so it goes
-                        wherever the tabs go. */}
-                    <Stack.Screen name="routine/[id]" options={{ headerShown: false }} />
-                  </Stack.Protected>
-
-                  {/* Where an email button lands (`/open/today`, `/open/plan` …).
-                      Outside every guard, so a link always resolves; it renders
-                      nothing, records the click and replaces itself with the
-                      screen the email meant — see `pages/open`. */}
-                  <Stack.Screen name="open/[...path]" options={{ headerShown: false, animation: 'none' }} />
-
-                  {/* The account, as a pushed screen rather than a sheet.
-                      Everything else reached from the header is an aside you
-                      dismiss back out of; this is somewhere you go, and it holds
-                      the exits Apple expects to be findable rather than
-                      dismissed past. */}
+                    `guard` means *available*, not *blocked*. Both were the
+                    wrong way round from the first commit: onboarding was gated
+                    on having finished onboarding, so a new user — for whom the
+                    flag is false — found the flow unavailable and landed on
+                    Home, and had the guard ever flipped they would have been
+                    thrown back into the flow with the tabs unreachable. The
+                    comment above described the intended behaviour the whole
+                    time, which is why it read as correct. */}
+                <Stack.Protected guard={!onboarded}>
                   <Stack.Screen
-                    name="profile"
+                    name="onboarding"
+                    options={{ headerShown: false, animation: 'fade', gestureEnabled: false }}
+                  />
+                </Stack.Protected>
+
+                {/* The wall, as a third state of the same door rather than a
+                    sheet somebody has to fail to dismiss.
+
+                    A form sheet with the grabber off and the gesture disabled
+                    is still a sheet: there is a screen behind it, the OS knows
+                    it, and every version of iOS finds one more way to get back
+                    to what it can see. Guarding the tabs instead means there is
+                    nothing behind the paywall to reach — the same mechanism
+                    that makes onboarding a one-way door.
+
+                    Not shown to somebody whose paid access has ended: they get
+                    `expired` below instead. This door is for a first
+                    purchase.
+
+                    A hard paywall: there is no way into the app without
+                    buying. "Not now" on it leads to the one-time trial offer
+                    and the offers after it, on this same screen
+                    (`pages/offer` draws them in place of the plans), so
+                    somebody who skipped it is still here, and still without
+                    the tabs. */}
+                <Stack.Protected guard={onboarded && !entitled && !lapsed && !skipped}>
+                  <Stack.Screen
+                    name="offer"
+                    options={{
+                      headerShown: false,
+                      // A screen, not a sheet, when it is the gate: a sheet
+                      // implies something to go back to.
+                      presentation: 'card',
+                      gestureEnabled: false,
+                      animation: 'fade',
+                    }}
+                  />
+                </Stack.Protected>
+
+                {/* A subscription that ended, which is not the same door as the
+                    paywall — see the note on `lapsed` above. Guarded on
+                    `!browsing` so answering it with "Not now" is answering it
+                    once, rather than meeting it again every cold launch. */}
+                <Stack.Protected guard={onboarded && !entitled && lapsed && !browsing}>
+                  <Stack.Screen
+                    name="expired"
                     options={{
                       headerShown: false,
                       presentation: 'card',
+                      gestureEnabled: false,
+                      animation: 'fade',
                     }}
                   />
+                </Stack.Protected>
 
-                  {/* Native form sheet sized to its content, so the list rises
-                      only as far as it needs and the app stays visible behind
-                      it. */}
+                {/* Paid, or browsing their own history after access ended. The
+                    second case is read-only: the session player refuses
+                    to start anything while `sessionsLocked()` holds. */}
+                {/* Straight after the first purchase, once: the same one-way door
+                    as the paywall, so there is nothing behind it to swipe to. */}
+                <Stack.Protected guard={onboarded && entitled && setupPending}>
                   <Stack.Screen
-                    name="settings"
+                    name="setup"
                     options={{
-                      presentation: 'formSheet',
                       headerShown: false,
-                      // Android's sheet sized to its content stops at the screen
-                      // edge and never scrolls, which cut Settings off halfway.
-                      // A fixed, nearly full height scrolls like any other screen.
-                      sheetAllowedDetents: Platform.OS === 'android' ? [0.94] : 'fitToContents',
-                      sheetGrabberVisible: true,
-                      sheetCornerRadius: 28,
+                      presentation: 'card',
+                      gestureEnabled: false,
+                      animation: 'fade',
                     }}
                   />
-                  {/* One day off the path, same treatment: a missed day is two
-                      lines and a completed retest is a table, and neither should
-                      rise higher than it needs to. */}
-                  <Stack.Screen
-                    name="day/[day]"
-                    options={{
-                      presentation: 'formSheet',
-                      headerShown: false,
-                      sheetAllowedDetents: 'fitToContents',
-                      sheetGrabberVisible: true,
-                      sheetCornerRadius: 28,
-                    }}
-                  />
-                </Stack>
-              ) : null}
+                </Stack.Protected>
+
+                {/* The tabs: paid and past setup, or browsing after access
+                    ended (above). `tabsReachable`, so the links wait for the
+                    same thing. */}
+                <Stack.Protected guard={tabsReachable}>
+                  <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                  {/* A routine from the Quick tab or Home's row: a pushed
+                      page over the tabs, under the same guard, so it goes
+                      wherever the tabs go. */}
+                  <Stack.Screen name="routine/[id]" options={{ headerShown: false }} />
+                </Stack.Protected>
+
+                {/* Where an email button lands (`/open/today`, `/open/plan` …).
+                    Outside every guard, so a link always resolves; it renders
+                    nothing, records the click and replaces itself with the
+                    screen the email meant — see `pages/open`. */}
+                <Stack.Screen name="open/[...path]" options={{ headerShown: false, animation: 'none' }} />
+
+                {/* The account, as a pushed screen rather than a sheet.
+                    Everything else reached from the header is an aside you
+                    dismiss back out of; this is somewhere you go, and it holds
+                    the exits Apple expects to be findable rather than
+                    dismissed past. */}
+                <Stack.Screen
+                  name="profile"
+                  options={{
+                    headerShown: false,
+                    presentation: 'card',
+                  }}
+                />
+
+                {/* Native form sheet sized to its content, so the list rises
+                    only as far as it needs and the app stays visible behind
+                    it. */}
+                <Stack.Screen
+                  name="settings"
+                  options={{
+                    presentation: 'formSheet',
+                    headerShown: false,
+                    // Android's sheet sized to its content stops at the screen
+                    // edge and never scrolls, which cut Settings off halfway.
+                    // A fixed, nearly full height scrolls like any other screen.
+                    sheetAllowedDetents: Platform.OS === 'android' ? [0.94] : 'fitToContents',
+                    sheetGrabberVisible: true,
+                    sheetCornerRadius: 28,
+                  }}
+                />
+                {/* One day off the path, same treatment: a missed day is two
+                    lines and a completed retest is a table, and neither should
+                    rise higher than it needs to. */}
+                <Stack.Screen
+                  name="day/[day]"
+                  options={{
+                    presentation: 'formSheet',
+                    headerShown: false,
+                    sheetAllowedDetents: 'fitToContents',
+                    sheetGrabberVisible: true,
+                    sheetCornerRadius: 28,
+                  }}
+                />
+              </Stack>
               <StatusBar style="auto" />
               {/* An over-the-air update or a new App Store build, offered in a
                   sheet, and the "up to date" note after the restart. Mounted
@@ -457,16 +447,16 @@ function RootLayoutInner() {
                   redraws it. A leaf, so a check-in re-renders it alone rather
                   than this whole layout. */}
               <HomeWidgetSync enabled={onboarded} />
-              {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} canOffer={homeIsTheirs} />}
+              {<AppUpdateHost enabled={onboarded} canOffer={homeIsTheirs} />}
               {/* The plans over Home, raised by a locked tap while looking
                   around without buying. */}
-              {(fontsReady || fontError) && <OfferWall visible={offerWall} onClose={closeWall} />}
+              {<OfferWall visible={offerWall} onClose={closeWall} />}
               {/* Development only: the end-of-session sheet without finishing a
                   session (`?previewDone`, `?previewDone=stopped`). */}
-              {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}
+              {__DEV__ && <SessionDonePreview />}
               {/* Development only: the pass checkout's "Your 3 months are set"
                   (`?previewPassSet`). */}
-              {__DEV__ && (fontsReady || fontError) && <PassSetPreview />}
+              {__DEV__ && <PassSetPreview />}
             </PaywallRoot>
           </NavThemeProvider>
         </IntroRevealProvider>
@@ -475,7 +465,7 @@ function RootLayoutInner() {
           padding: it covers the whole window from the very first frame,
           before the fonts, and unmounts completely once the app is showing.
           After an update's restart it waits out the reload screen's fade. */}
-      <SplashReveal ready={ready} holdMs={updateRestartHoldMs()} />
+      <SplashReveal ready holdMs={updateRestartHoldMs()} />
     </GestureHandlerRootView>
   );
 }

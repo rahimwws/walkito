@@ -16,7 +16,7 @@ const CARD = '#2C2C2E';
 const INK = '#FFFFFF';
 const CAPTION = '#A1A1A6';
 const ACCENT = '#8B5CF6';
-const FONT = 'Nunito_700Bold';
+const FONT = 'sans-serif-medium';
 
 const ART = {
   neutral: require('@assets/widget/mascot-tasks.png'),

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type ComponentRef } from 'react';
 import { StyleSheet, TextInput } from 'react-native';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
@@ -37,7 +37,7 @@ export function NameStep({ question, value, placeholder, onChange, onSubmit, pau
   const meter = meterColors[scheme];
   const caret = accents[scheme].orange.fill;
 
-  const input = useRef<TextInput>(null);
+  const input = useRef<ComponentRef<typeof TextInput>>(null);
 
   // Raise the keyboard on arrival — the step exists only to be typed into, so
   // making the user tap the field first is a wasted interaction.

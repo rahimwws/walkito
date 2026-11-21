@@ -75,7 +75,7 @@ export function SessionDonePreview() {
         // Not in this runtime.
       }
 
-      const onUrl = (url: string | null) => {
+      const onUrl = (url: string | null | undefined) => {
         const match = url == null ? null : PREVIEW_PARAM.exec(url);
         if (match != null) open(match[1] === 'stopped');
       };

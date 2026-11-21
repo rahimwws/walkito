@@ -180,7 +180,7 @@ export function SetupPage() {
   // the phone), deferred (the way on after a failure), email, code, existing.
   useEffect(() => {
     if (!__DEV__) return undefined;
-    const onUrl = (url: string | null) => {
+    const onUrl = (url: string | null | undefined) => {
       // `?widgetPreview=ask|hold|edit|search|nudge|added`: the widget steps,
       // and the two answers after them, without adding a widget.
       const widget = url?.match(/[?&]widgetPreview=(ask|hold|edit|search|nudge|added)\b/)?.[1];

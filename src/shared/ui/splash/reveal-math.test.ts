@@ -240,6 +240,6 @@ describe('native splash in app.json', () => {
     // block is present, overriding app.json's "dark". The app is dark-only,
     // so the one variant already is the dark one.
     expect(entry?.[1]?.dark).toBeUndefined();
-    expect(config.expo.userInterfaceStyle).toBe('dark');
+    expect(config.expo.userInterfaceStyle).toBe('light');
   });
 });

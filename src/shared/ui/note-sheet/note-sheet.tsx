@@ -23,7 +23,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { noteFonts, meterColors, palette } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { queueReview } from '@/shared/lib/review';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -348,7 +348,7 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  title: { flex: 1, fontSize: 25, fontFamily: noteFonts.bold, letterSpacing: -0.5 },
+  title: { flex: 1, ...fonts.bold(25, -0.5) },
   /** The 50 pt the icon held; the larger drawing overhangs it evenly. */
   heart: {
     width: HEART_SLOT,
@@ -357,10 +357,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   body: { gap: 12 },
-  line: { fontSize: 17, fontFamily: noteFonts.regular, lineHeight: 26, letterSpacing: -0.1 },
+  line: { ...fonts.regular(17, -0.1), lineHeight: 26 },
   close: { gap: 14 },
   signed: { gap: 2 },
-  names: { fontSize: 14, fontFamily: noteFonts.medium, letterSpacing: -0.1 },
+  names: { ...fonts.medium(15, -0.1) },
   later: { alignSelf: 'center', paddingVertical: 12, paddingHorizontal: 24, marginTop: 4 },
-  laterText: { fontSize: 15, fontFamily: noteFonts.medium, letterSpacing: -0.1 },
+  laterText: { ...fonts.medium(15, -0.1) },
 });
