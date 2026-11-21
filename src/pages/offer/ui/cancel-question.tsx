@@ -1,10 +1,21 @@
+import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
+import { useEffect, useState } from 'react';
 import { Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Animated, {
+  Easing,
+  ReduceMotion,
+  runOnJS,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { colors, fonts, radius, space } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
+import { useColorScheme } from '@/shared/lib/theme';
 
 /**
  * The answers, by their analytics values (never renamed: each is a series in
@@ -42,6 +53,10 @@ export function devForgetCancelQuestion(): void {
   if (__DEV__) kv.remove(ASKED_KEY);
 }
 
+const IN_MS = 340;
+const OUT_MS = 220;
+const RISE = 44;
+
 /**
  * "No charge was made. What stopped you?", after the store's sheet was closed
  * without buying.
@@ -53,10 +68,6 @@ export function devForgetCancelQuestion(): void {
  * offers nothing new (Guideline 5.6), and tapping away is an answer too. For
  * "It costs too much" the paywall under it points back to a cheaper way in it
  * was already showing (`OfferPage`), and that is all.
- *
- * A plain solid bottom sheet, not a form sheet route: the paywall it rises
- * over is also drawn inside the offer wall's React Native modal, and a route
- * would open under that modal.
  */
 export function CancelQuestion({
   visible,
@@ -66,25 +77,73 @@ export function CancelQuestion({
   /** `null`: closed without an answer. */
   onAnswer: (reason: CancelReason | null) => void;
 }) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
 
+  // Mounted apart from `visible`, so the exit has something to play on: see
+  // `StreakSheet`, whose transition this is.
+  const [mounted, setMounted] = useState(false);
+  const progress = useSharedValue(0);
+
+  useEffect(() => {
+    if (visible) {
+      setMounted(true);
+      const frame = requestAnimationFrame(() => {
+        progress.value = withTiming(1, {
+          duration: IN_MS,
+          easing: Easing.out(Easing.cubic),
+          reduceMotion: ReduceMotion.System,
+        });
+      });
+      return () => cancelAnimationFrame(frame);
+    }
+    progress.value = withTiming(
+      0,
+      { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
+      (finished) => {
+        if (finished) runOnJS(setMounted)(false);
+      },
+    );
+    return undefined;
+  }, [visible, progress]);
+
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
+  const dock = useAnimatedStyle(() => ({
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE }],
+  }));
+
+  if (!mounted) return null;
+
   return (
-    <Modal transparent animationType="slide" visible={visible} statusBarTranslucent onRequestClose={() => onAnswer(null)}>
-      <View style={styles.root}>
+    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={() => onAnswer(null)}>
+      <View style={StyleSheet.absoluteFill}>
+        <Animated.View style={[StyleSheet.absoluteFill, backdrop]} pointerEvents="none">
+          <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={28} style={StyleSheet.absoluteFill} />
+          <View style={[StyleSheet.absoluteFill, styles.wash]} />
+        </Animated.View>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={t('common.close')}
-          style={styles.scrim}
+          style={StyleSheet.absoluteFill}
           onPress={() => onAnswer(null)}
         />
-        <View style={[styles.card, { paddingBottom: Math.max(insets.bottom, 16) + 8 }]}>
-          <View style={styles.grabber} />
-          <ScrollView contentContainerStyle={styles.content} bounces={false}>
+        <Animated.View
+          style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]}
+          pointerEvents="box-none">
+          <View style={[styles.card, { backgroundColor: colors.card }]}>
             <View style={styles.head} accessible accessibilityRole="header">
-              <Text style={styles.title}>{t('offer.cancel.title')}</Text>
-              <Text style={styles.question}>{t('offer.cancel.question')}</Text>
+              <Text style={[styles.title, { color: meter.ink }]} maxFontSizeMultiplier={1.3}>
+                {t('offer.cancel.title')}
+              </Text>
+              <Text style={[styles.question, { color: meter.label }]} maxFontSizeMultiplier={1.3}>
+                {t('offer.cancel.question')}
+              </Text>
             </View>
+            <ScrollView style={styles.list} contentContainerStyle={styles.rows} bounces={false} showsVerticalScrollIndicator={false}>
             {REASONS.map(({ reason, label }) => (
               <Pressable
                 key={reason}
@@ -93,50 +152,31 @@ export function CancelQuestion({
                   void Haptics.selectionAsync();
                   onAnswer(reason);
                 }}
-                style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
-                <Text style={styles.rowLabel}>{t(label)}</Text>
+                style={({ pressed }) => [styles.row, { backgroundColor: meter.iconTile }, pressed && styles.pressed]}>
+                <Text style={[styles.rowLabel, { color: meter.ink }]} maxFontSizeMultiplier={1.3}>
+                  {t(label)}
+                </Text>
               </Pressable>
             ))}
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => onAnswer(null)}
-              style={({ pressed }) => [styles.close, pressed && styles.pressed]}>
-              <Text style={styles.closeLabel}>{t('common.close')}</Text>
-            </Pressable>
-          </ScrollView>
-        </View>
+            </ScrollView>
+          </View>
+        </Animated.View>
       </View>
     </Modal>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, justifyContent: 'flex-end' },
-  scrim: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.3)' },
-  card: {
-    maxHeight: '90%',
-    backgroundColor: colors.surface,
-    borderTopLeftRadius: 28,
-    borderTopRightRadius: 28,
-    borderCurve: 'continuous',
-  },
-  grabber: { alignSelf: 'center', width: 36, height: 5, borderRadius: 3, backgroundColor: colors.separator, marginTop: 8 },
-  content: { paddingHorizontal: space.screen, paddingTop: 16, gap: 10 },
-  head: { gap: 6, paddingBottom: 8 },
-  title: { ...fonts.bold(28, -0.4), color: colors.text },
-  question: { ...fonts.regular(19), color: colors.text2 },
+  wash: { backgroundColor: 'rgba(0,0,0,0.18)' },
+  dock: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'flex-end', paddingHorizontal: 10 },
+  card: { borderRadius: 36, borderCurve: 'continuous', padding: 16, gap: 8, maxHeight: '85%' },
+  list: { flexGrow: 0 },
+  rows: { gap: 8 },
+  head: { alignItems: 'center', gap: 4, paddingTop: 10, paddingBottom: 12, paddingHorizontal: 8 },
+  title: { ...fonts.heavy(24, -0.5), textAlign: 'center' },
+  question: { ...fonts.semibold(17), textAlign: 'center' },
   // 56pt tall at least: these are read and tapped by people in their sixties.
-  row: {
-    minHeight: 56,
-    borderRadius: radius.button,
-    borderCurve: 'continuous',
-    justifyContent: 'center',
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    backgroundColor: colors.surface2,
-  },
-  rowLabel: { ...fonts.semibold(19), color: colors.text },
-  close: { minHeight: 56, alignItems: 'center', justifyContent: 'center' },
-  closeLabel: { ...fonts.semibold(17), color: colors.accent },
+  row: { minHeight: 56, borderRadius: 18, borderCurve: 'continuous', justifyContent: 'center', paddingHorizontal: 18, paddingVertical: 12 },
+  rowLabel: fonts.semibold(17),
   pressed: { opacity: 0.6 },
 });

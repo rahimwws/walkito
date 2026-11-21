@@ -2,13 +2,11 @@ import { useLocalSearchParams } from 'expo-router';
 
 import { FollowSheetScreen } from '@/features/follow';
 import { LanguageSheetScreen } from '@/features/language-switch';
-import { EmailSignInScreen, SignInSheetScreen } from '@/features/sign-in';
 import { DeleteAccountSheetScreen } from '@/pages/profile';
-import { WidgetNudgeSheetScreen } from '@/pages/setup';
-import { NoteSheetScreen } from '@/shared/ui/note-sheet';
 
 /**
- * Every native form sheet, as one dynamic route: `/sheet/<name>`.
+ * The native form sheets after the onboarding (language, follow, delete
+ * account), as one dynamic route: `/sheet/<name>`.
  *
  * One dynamic route rather than a static route each, because of how the root
  * stack's guards fall back: when the URL names no available screen (a launch
@@ -19,12 +17,8 @@ import { NoteSheetScreen } from '@/shared/ui/note-sheet';
  */
 const SHEETS = {
   language: LanguageSheetScreen,
-  'sign-in': SignInSheetScreen,
-  'email-sign-in': EmailSignInScreen,
   follow: FollowSheetScreen,
   'delete-account': DeleteAccountSheetScreen,
-  note: NoteSheetScreen,
-  'widget-nudge': WidgetNudgeSheetScreen,
 } as const;
 
 export function SheetRoute() {

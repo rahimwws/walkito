@@ -91,6 +91,8 @@ export const PAGES_RU = {
   'pages.program.finishCaption': 'Программа пройдена',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
+  'pages.welcome.hint': 'Проведите вверх, чтобы войти',
+  'pages.welcome.a11yHint': 'Проведите вверх, чтобы открыть экран, и вниз, чтобы закрыть',
 
   // «Тренируйте ~~поддерживайте~~ свои стопы» — the struck verb is what the
   // insole aisle promises, and Russian can cross out a verb in exactly the same

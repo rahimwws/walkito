@@ -114,6 +114,8 @@ export const PAGES_EN = {
 
   // ── Welcome ──────────────────────────────────────────────────────────────
   // The gate, before anything is known about the user.
+  'pages.welcome.hint': 'Swipe up to enter',
+  'pages.welcome.a11yHint': 'Swipe up to open the screen, swipe down to close it',
 
   // "Train ~~support~~ your feet" — the struck word is the promise the category
   // makes and this one does not. Three keys rather than one because the strike

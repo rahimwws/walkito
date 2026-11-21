@@ -76,6 +76,9 @@ export const PAGES_ES = {
   'pages.program.finishCaption': 'Programa completado',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
+  'pages.welcome.hint': 'Desliza hacia arriba para entrar',
+  'pages.welcome.a11yHint':
+    'Desliza hacia arriba para abrir la pantalla y hacia abajo para cerrarla',
 
   // «Entrena ~~apoya~~ tus pies» — the struck verb is what the insole aisle
   // promises. Spanish crosses out a verb in the same position English does.

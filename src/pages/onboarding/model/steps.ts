@@ -150,7 +150,7 @@ export type OnboardingStep = StepBase &
     | { kind: 'test-balance' }
     /** What the check showed, and what the plan does about it. */
     | { kind: 'test-result' }
-    /** The welcome screen that opens the app. */
+    /** The liquid-glass gate that opens the app. */
     | { kind: 'welcome' }
     /** Signing the commitment contract. */
     | { kind: 'contract' }

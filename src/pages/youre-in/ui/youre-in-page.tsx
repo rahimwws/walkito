@@ -1,25 +1,24 @@
-import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useNavigation } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { BackHandler, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { BackHandler, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { storyOf } from '@/entities/profile';
-import { colors, fonts, space } from '@/shared/config';
+import { colors, fonts, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { requestProgram } from '@/shared/lib/program';
-import { Button } from '@/shared/ui/button';
 
 /**
  * "You're in": once, after a purchase or a restore, as the app opens up.
  *
- * A one-way door (gestures and Android's back off): a tick, the plan's name,
- * one line, and one button that goes to Today with today's session started
- * (`requestProgram`, which the tabs act on). Nothing to celebrate with: no
- * confetti, no character, no numbers.
+ * Nike-minimal (addendum v2): white, a big black tick, the title, the plan's
+ * name, one line, and one black capsule that goes to Today with today's
+ * session started (`requestProgram`, which the tabs act on). A one-way door:
+ * gestures and Android's back are off. Nothing celebrates.
  */
 export function YoureInPage() {
   const navigation = useNavigation();
@@ -43,36 +42,39 @@ export function YoureInPage() {
   return (
     <View style={[styles.root, { paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, 16) + 8 }]}>
       <ScrollView contentContainerStyle={styles.content} bounces={false}>
-        <View style={styles.tick} accessible={false}>
-          <HugeiconsIcon icon={CheckmarkCircle02Icon} size={64} color={colors.good} strokeWidth={1.8} />
-        </View>
+        <HugeiconsIcon icon={Tick02Icon} size={96} color={colors.text} strokeWidth={2.4} />
         <Text style={styles.title} accessibilityRole="header">
           {t('offer.welcome.title')}
         </Text>
         {story != null && <Text style={styles.plan}>{t(`story.plan.${story.kind}`)}</Text>}
         <Text style={styles.line}>{t('offer.welcome.line')}</Text>
       </ScrollView>
-      <View style={styles.bar}>
-        <Button label={t('offer.welcome.cta')} onPress={start} />
-      </View>
+      <Pressable
+        accessibilityRole="button"
+        onPress={start}
+        style={({ pressed }) => [styles.button, pressed && styles.pressed]}>
+        <Text style={styles.buttonLabel}>{t('offer.welcome.cta')}</Text>
+      </Pressable>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.bg },
-  content: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: space.screen, gap: 12 },
-  tick: {
-    width: 104,
-    height: 104,
-    borderRadius: 52,
+  root: { flex: 1, backgroundColor: colors.surface, paddingHorizontal: 24 },
+  content: { flexGrow: 1, justifyContent: 'center', gap: 16 },
+  title: { ...fonts.bold(34, -0.4), color: colors.text, marginTop: 16 },
+  plan: { ...fonts.semibold(20), color: colors.text },
+  line: { ...fonts.regular(19), color: colors.text2 },
+  button: {
+    minHeight: target.primary,
+    borderRadius: 999,
+    backgroundColor: colors.ink,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.surface,
-    marginBottom: 12,
+    paddingHorizontal: 24,
+    paddingVertical: 14,
+    marginTop: 12,
   },
-  title: { ...fonts.bold(34, -0.4), color: colors.text, textAlign: 'center' },
-  plan: { ...fonts.semibold(20), color: colors.accent, textAlign: 'center' },
-  line: { ...fonts.regular(19), color: colors.text2, textAlign: 'center', maxWidth: 420 },
-  bar: { paddingHorizontal: space.screen, paddingTop: 12 },
+  pressed: { opacity: 0.8 },
+  buttonLabel: { ...fonts.semibold(19), color: colors.onInk, textAlign: 'center' },
 });
