@@ -40,7 +40,7 @@ export type SignInOptionsProps = {
   preview?: EmailSheetPreview | null;
   /** Something is over the host while this is true: the email sheet, or the
    * platform's own sheet while it is asked. A host with something moving
-   * under them (the save screen's mascot) holds it still. */
+   * under them holds it still. */
   onCovered?: (covered: boolean) => void;
 };
 

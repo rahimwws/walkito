@@ -7,16 +7,13 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Glow } from '@/shared/ui/glow';
+import { Button } from '@/shared/ui/button';
 
 import type { OfferGuard, PassSale } from '../model/use-offer-purchase';
 import { useOfferSheet, type OfferSheetKind } from '../model/use-offer-sheet';
 
 import { OfferPanel } from './offer-panel';
-import { PillButton } from './pill-button';
 
-/** As behind the offer screen: the brand glow, softened. */
-const GLOW_OPACITY = 0.5;
 /** Room over the headline for the close button, in a sheet that starts below
  * the status bar. */
 const TOP_INSET = 64;
@@ -75,9 +72,6 @@ export function OfferSheet({
   return (
     <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
       <View style={[styles.root, { backgroundColor: colors.background }]}>
-        <View pointerEvents="none" style={[StyleSheet.absoluteFill, { opacity: GLOW_OPACITY }]}>
-          <Glow />
-        </View>
         {content != null ? (
           // Keyed by the opening, so each one arrives with its own entrance.
           <OfferPanel
@@ -98,7 +92,7 @@ export function OfferSheet({
               maxFontSizeMultiplier={1.4}>
               {t('offer.storeUnreachable')}
             </Text>
-            <PillButton label={t('error.retry')} onPress={retry} />
+            <Button label={t('error.retry')} onPress={retry} />
           </View>
         ) : (
           <View style={styles.centre}>

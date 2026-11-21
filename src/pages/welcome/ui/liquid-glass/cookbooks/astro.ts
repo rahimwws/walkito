@@ -37,7 +37,6 @@ const stickers = {
   planet: require('@assets/liquid-glass/astro/stickers/planet.png'),
   astronaut: require('@assets/liquid-glass/astro/stickers/astronaut.png'),
   bulb: require('@assets/liquid-glass/astro/stickers/bulb.png'),
-  mascot: require('@assets/liquid-glass/astro/stickers/mascot.png'),
 } as const;
 
 export const ASTRO_ASSET_MODULES = [
@@ -65,12 +64,12 @@ export const ASTRO_THEME: CookbookTheme = {
     s.sneaker, s.runner, s.stopwatch, s.heartbeat, s.medal,
     s.footprints, s.star, s.route, s.rocket, s.planet,
     s.trophy, s.bolt, s.sparkle, s.fire, s.mountains,
-    s.drop, s.barbell, s.astronaut, s.mascot, s.bulb,
+    s.drop, s.barbell, s.astronaut, s.trophy, s.bulb,
     s.sneaker, s.stopwatch, s.runner, s.star,
     s.heartbeat, s.route, s.footprints, s.sparkle,
     s.medal, s.rocket, s.fire, s.mountains,
     s.bolt, s.planet, s.trophy, s.drop,
-    s.barbell, s.bulb, s.mascot, s.astronaut,
+    s.barbell, s.bulb, s.star, s.astronaut,
   ],
   returnMode: 'vortex',
   // the moment the open state is let go, the plume is taken back down

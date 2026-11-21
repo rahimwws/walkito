@@ -5,7 +5,7 @@ import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState, type ComponentRef, type ReactNode } from 'react';
-import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { DAY_ONE_CLIPS } from '@/features/home-tour';
@@ -13,8 +13,8 @@ import type { PaywallPeriod, Plan } from '@/entities/purchase';
 import { clipShape, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Button } from '@/shared/ui/button';
 import { GuidelinesLine } from '@/shared/ui/guidelines-line';
-import { Raised, RaisedScheme } from '@/shared/ui/raised';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 import { CLIP_BACKDROP, ExercisePreview } from '@/widgets/session-player';
 
@@ -80,14 +80,14 @@ export type PlansStepProps = {
   onRestore: () => void;
   /** Apple's offer-code sheet, where there is one. */
   onRedeemCode?: () => void;
-  /** Something is over the step (the store's sheet, the celebration): the
+  /** Something is over the step (the store's sheet, a question): the
    * clip holds still. */
   covered: boolean;
   /** "Not now", and the close at the top: on to Home's free first run
    * (`skipPaywall`). Left out over Home (`PaywallWall`), where there is no
    * way past: then neither is drawn. */
   onSkip?: () => void;
-  /** Laid over everything: the celebration, "What stopped you?". */
+  /** Laid over everything: "What stopped you?", the exit gift. */
   children?: ReactNode;
 };
 
@@ -99,7 +99,7 @@ export type PlansStepProps = {
  * looping, and still whenever the screen is out of focus or something covers
  * it; her own Foot Check when no screen before this one showed it; the line
  * that says the exercises follow physical therapy guidelines; then every plan
- * at once, the annual chosen. No mascot, no sky, no "Most popular" (nothing
+ * at once, the annual chosen. No cartoon, no sky, no "Most popular" (nothing
  * here is popular yet), no "Show all plans": the monthly and the lifetime are
  * the honest other ways in, and a choice nobody scrolls to is not a choice.
  *
@@ -189,7 +189,7 @@ export function PlansStep({
     <PlansThemeContext.Provider value={theme}>
       <View style={styles.full}>
         <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-        <RaisedScheme scheme={theme.scheme}>
+        <>
           <ScrollView
             ref={scroll}
             style={styles.full}
@@ -354,27 +354,7 @@ export function PlansStep({
                 {confirm}
               </Text>
             )}
-            <Raised
-              face={PLUS.accent}
-              lip={PLUS.accentLip}
-              depth={5}
-              radius={30}
-              haptic="medium"
-              pressDelay={0}
-              busy={busy}
-              onPress={onBuy}
-              accessibilityRole="button"
-              accessibilityLabel={cta.label}
-              style={styles.pillOuter}
-              contentStyle={styles.pillFace}>
-              {busy ? (
-                <ActivityIndicator color={PLUS.onAccent} />
-              ) : (
-                <Text style={[styles.pillLabel, { color: PLUS.onAccent }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.3}>
-                  {cta.label}
-                </Text>
-              )}
-            </Raised>
+            <Button label={cta.label} onPress={onBuy} loading={busy} />
             {onSkip != null && (
               <Pressable
                 accessibilityRole="button"
@@ -400,7 +380,7 @@ export function PlansStep({
             )}
             <LegalLinks onRestore={onRestore} disabled={busy} scheme={theme.scheme} />
           </View>
-        </RaisedScheme>
+        </>
 
         {children}
       </View>
@@ -443,14 +423,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   confirm: { ...fonts.bold(16, -0.2), lineHeight: 21, textAlign: 'center', paddingHorizontal: 8 },
-  pillOuter: { alignSelf: 'stretch' },
-  pillFace: {
-    height: 58,
-    paddingHorizontal: 28,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pillLabel: fonts.heavy(19, -0.2),
   terms: {
     flexDirection: 'row',
     alignItems: 'center',

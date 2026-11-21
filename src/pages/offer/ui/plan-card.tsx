@@ -1,17 +1,15 @@
 import { useEffect, type ReactNode } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { ReduceMotion, interpolateColor, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
 import { fonts } from '@/shared/config';
-import { Raised } from '@/shared/ui/raised';
 
 import type { PlanCopy } from '../model/plans';
 import { usePlansTheme } from './plans-theme';
 
-/** Colours cross over as fast as the kit's answer cards do. */
+/** Colours cross over as fast as the answer cards do. */
 const SELECT_MS = 120;
 const RADIUS = 20;
-const LIP = 4;
 const RADIO = 22;
 
 export type PlanCardProps = {
@@ -34,8 +32,8 @@ export type PlanCardProps = {
 /**
  * One plan, as BitePal draws it: a rounded card, the chosen one outlined and
  * washed in the Plus colour, the title and a line under it on the left, the
- * billed amount large on the right with what it is for under it. Raised on
- * the kit's lip, so it presses like every other choice in the app.
+ * billed amount large on the right with what it is for under it. Flat, like
+ * every other choice in the app.
  *
  * Until the store answers there is no figure: a quiet bar holds its place,
  * so nothing is quoted that the store has not said.
@@ -51,9 +49,6 @@ export function PlanCard({ copy, badge, small = false, selected, radio, disabled
     backgroundColor: interpolateColor(on.value, [0, 1], [SHEET.card, PLUS.wash]),
     borderColor: interpolateColor(on.value, [0, 1], [SHEET.edge, PLUS.accent]),
   }));
-  const lip = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(on.value, [0, 1], [SHEET.edge, PLUS.accent]),
-  }));
   const ring = useAnimatedStyle(() => ({
     borderColor: interpolateColor(on.value, [0, 1], [SHEET.edge, PLUS.accent]),
   }));
@@ -64,73 +59,78 @@ export function PlanCard({ copy, badge, small = false, selected, radio, disabled
     .join(', ');
 
   return (
-    <Raised
-      face={SHEET.card}
-      edge={SHEET.edge}
-      lip={SHEET.edge}
-      depth={LIP}
-      radius={RADIUS}
-      haptic="none"
+    <Pressable
       disabled={disabled}
       onPress={onPress}
-      faceAnimatedStyle={disabled ? undefined : face}
-      lipAnimatedStyle={lip}
       accessibilityRole="radio"
       accessibilityLabel={spoken}
-      accessibilityState={{ checked: selected, selected }}
-      contentStyle={[styles.face, small && styles.faceSmall, disabled && styles.dimmed]}>
-      {badge != null && badge !== '' && (
-        <View style={[styles.badge, { backgroundColor: PLUS.accent }]}>
-          <Text style={[styles.badgeText, { color: PLUS.onAccent }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-            {badge}
-          </Text>
-        </View>
-      )}
-      <View style={styles.row}>
-        <View style={styles.left}>
-          <View style={styles.titleRow}>
-            {radio && (
-              <Animated.View style={[styles.radio, ring]}>
-                <Animated.View style={[styles.radioDot, { backgroundColor: PLUS.accent }, dot]} />
-              </Animated.View>
-            )}
-            <Text style={[small ? styles.titleSmall : styles.title, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.4}>
-              {copy.title}
+      accessibilityState={{ checked: selected, selected, disabled }}
+      style={({ pressed }) => pressed && styles.pressed}>
+      <Animated.View
+        style={[
+          styles.face,
+          { backgroundColor: SHEET.card, borderColor: SHEET.edge },
+          !disabled && face,
+          small && styles.faceSmall,
+          disabled && styles.dimmed,
+        ]}>
+        {badge != null && badge !== '' && (
+          <View style={[styles.badge, { backgroundColor: PLUS.accent }]}>
+            <Text style={[styles.badgeText, { color: PLUS.onAccent }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+              {badge}
             </Text>
           </View>
-          {copy.note != null && (
-            <Text style={[styles.note, { color: SHEET.label }]} maxFontSizeMultiplier={1.4}>
-              {copy.note}
-            </Text>
-          )}
-          {/* The year over a month: under the title, smaller than the billed
+        )}
+        <View style={styles.row}>
+          <View style={styles.left}>
+            <View style={styles.titleRow}>
+              {radio && (
+                <Animated.View style={[styles.radio, ring]}>
+                  <Animated.View style={[styles.radioDot, { backgroundColor: PLUS.accent }, dot]} />
+                </Animated.View>
+              )}
+              <Text style={[small ? styles.titleSmall : styles.title, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.4}>
+                {copy.title}
+              </Text>
+            </View>
+            {copy.note != null && (
+              <Text style={[styles.note, { color: SHEET.label }]} maxFontSizeMultiplier={1.4}>
+                {copy.note}
+              </Text>
+            )}
+            {/* The year over a month: under the title, smaller than the billed
               price on the right, which stays the most prominent figure. */}
-          {copy.perMonth != null && (
-            <Text style={[styles.perMonth, { color: SHEET.ink }]} maxFontSizeMultiplier={1.4}>
-              {copy.perMonth}
+            {copy.perMonth != null && (
+              <Text style={[styles.perMonth, { color: SHEET.ink }]} maxFontSizeMultiplier={1.4}>
+                {copy.perMonth}
+              </Text>
+            )}
+          </View>
+          <View style={styles.right}>
+            {copy.price != null ? (
+              <Text style={[small ? styles.priceSmall : styles.price, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+                {copy.price}
+              </Text>
+            ) : (
+              <View style={[styles.pricePending, { backgroundColor: SHEET.edge }]} />
+            )}
+            <Text style={[styles.caption, { color: SHEET.label }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+              {copy.caption}
             </Text>
-          )}
+          </View>
         </View>
-        <View style={styles.right}>
-          {copy.price != null ? (
-            <Text style={[small ? styles.priceSmall : styles.price, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-              {copy.price}
-            </Text>
-          ) : (
-            <View style={[styles.pricePending, { backgroundColor: SHEET.edge }]} />
-          )}
-          <Text style={[styles.caption, { color: SHEET.label }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-            {copy.caption}
-          </Text>
-        </View>
-      </View>
-      {children}
-    </Raised>
+        {children}
+      </Animated.View>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
+  pressed: { opacity: 0.8 },
   face: {
+    borderRadius: RADIUS,
+    borderCurve: 'continuous',
+    borderWidth: 2,
     paddingHorizontal: 16,
     paddingTop: 14,
     paddingBottom: 14,

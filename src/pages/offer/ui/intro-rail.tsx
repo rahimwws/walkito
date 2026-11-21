@@ -10,23 +10,21 @@ import Animated, {
   withDelay,
 } from 'react-native-reanimated';
 
-import { accents, fonts, meterColors, palette, raised, type AccentName } from '@/shared/config';
+import { accents, colors, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { readableOn } from '@/shared/lib/color';
 import { settle } from '@/shared/lib/motion';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Card } from '@/shared/ui/card';
 import type { FluentName } from '@/shared/ui/fluent-icon';
 import { useSplashRevealed } from '@/shared/ui/splash';
 
-import { GoldText } from './glow';
 import { IntroTile } from './intro-tile';
 
 /** One step of the plan's start: its emoji and accent, when, what, a few words. */
 export type IntroRailStep = { art: FluentName; tone: AccentName; when: string; title: string; body: string };
 
-/** A step's tile, and the ledge under it. */
+/** A step's tile. */
 const TILE = 52;
-const TILE_LIP = 4;
 /** Between two steps, which the link runs through. */
 const ROW_GAP = 22;
 /** The link from one tile down to the next: its width, and the air it leaves
@@ -46,21 +44,23 @@ const rise = (i: number) =>
     .reduceMotion(ReduceMotion.System);
 
 /**
- * How the plan starts, as a short path on a raised card: each step's emoji on
+ * How the plan starts, as a short path on a card: each step's emoji on
  * a tile tinted its colour, and a link down to the next that fills once, top
  * to bottom, as the card arrives. It plays once and stops; under Reduce
  * Motion every link is already full.
  */
 export function IntroRail({ title, steps }: { title: string; steps: readonly IntroRailStep[] }) {
   return (
-    <Card3D material="solid" size="lg" padding={18} contentStyle={styles.card}>
-      <GoldText style={styles.title}>{title}</GoldText>
+    <Card padding={18} style={styles.card}>
+      <Text accessibilityRole="header" style={styles.title} numberOfLines={1}>
+        {title}
+      </Text>
       <View style={styles.rail}>
         {steps.map((step, i) => (
           <RailRow key={step.title} step={step} index={i} nextTone={steps[i + 1]?.tone ?? null} />
         ))}
       </View>
-    </Card3D>
+    </Card>
   );
 }
 
@@ -105,7 +105,7 @@ function RailRow({ step, index, nextTone }: { step: IntroRailStep; index: number
       )}
       <IntroTile art={step.art} tone={step.tone} size={TILE} />
       <View style={styles.copy}>
-        <Text style={[styles.when, { color: readableOn(tone, raised[scheme].surface) }]} numberOfLines={1}>
+        <Text style={[styles.when, { color: readableOn(tone, palette[scheme].card) }]} numberOfLines={1}>
           {step.when}
         </Text>
         <Text style={[styles.rowTitle, { color: palette[scheme].foreground }]} numberOfLines={2}>
@@ -121,7 +121,7 @@ function RailRow({ step, index, nextTone }: { step: IntroRailStep; index: number
 
 const styles = StyleSheet.create({
   card: { gap: 18 },
-  title: { alignSelf: 'center' },
+  title: { ...fonts.heavy(13, 1.4), textTransform: 'uppercase', color: colors.accent, alignSelf: 'center' },
   rail: { gap: ROW_GAP },
   row: { flexDirection: 'row', alignItems: 'flex-start', gap: 14 },
   /** Under the tile, through the gap, to just above the next tile: the row may
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   link: {
     position: 'absolute',
     left: (TILE - LINK) / 2,
-    top: TILE + TILE_LIP + LINK_AIR,
+    top: TILE + LINK_AIR,
     bottom: -(ROW_GAP - LINK_AIR),
     width: LINK,
     borderRadius: LINK / 2,

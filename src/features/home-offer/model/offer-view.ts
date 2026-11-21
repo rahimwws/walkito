@@ -70,9 +70,6 @@ export type OfferView = {
   title: string;
   /** With `**…**` around the words set heavier. */
   body: string;
-  /** The surprised one peeking over the trial's card, the one gripping the
-   * comeback's card, or the crown and key beside the plans' title. */
-  mascot: 'peek' | 'deal' | 'premium';
   /** The real deadline, for the comeback only. */
   endsAt: number | null;
   /** Null with a single plan: nothing to switch between. */
@@ -183,7 +180,6 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
   return {
     title: t('homeOffer.trial.title'),
     body: trialBody(trial, t),
-    mascot: 'peek',
     endsAt: null,
     tabs: null,
     deals: [],
@@ -363,7 +359,6 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
     return {
       title: timed ? t('homeOffer.comeback.title') : t('pass.settings.specialOffers'),
       body: comebackBody(year, lifetime, pass, t),
-      mascot: 'deal',
       endsAt: content.endsAt,
       tabs:
         content.plans.length > 1
@@ -386,7 +381,6 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
   return {
     title: t('homeOffer.standard.title'),
     body: t('homeOffer.standard.body'),
-    mascot: 'premium',
     endsAt: null,
     tabs:
       content.plans.length > 1

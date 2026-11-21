@@ -9,18 +9,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { setLastSessionFeedback } from '@/entities/program';
 import { markFirstSession } from '@/entities/session';
 import { DAY_ONE_MINUTES, dayOneRun, finishDayOne, type DayOneRun } from '@/features/home-tour';
-import { clipShape, fonts, meterColors, palette } from '@/shared/config';
+import { clipShape, colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
-import { celebrateRig } from '@/shared/ui/mascot';
-import { OptionCard3D } from '@/shared/ui/option-card-3d';
+import { OptionCard } from '@/shared/ui/option-card';
 import { CLIP_BACKDROP, ExercisePreview, SessionView } from '@/widgets/session-player';
-
-import { GoldText } from './glow';
-import { IntroMascot } from './intro-mascot';
 
 /** The clip's share of the window's height, at most: an upright clip is as
  * tall as this, a wide one as wide as the page. */
@@ -144,7 +140,9 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
             </View>
           </View>
           <Animated.View entering={FadeInDown.delay(120).duration(380).reduceMotion(ReduceMotion.System)} style={styles.head}>
-            <GoldText style={styles.eyebrow}>{t('offer.first.eyebrow')}</GoldText>
+            <Text accessibilityRole="header" style={styles.eyebrow} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+              {t('offer.first.eyebrow')}
+            </Text>
             <Text
               accessibilityRole="header"
               numberOfLines={3}
@@ -161,7 +159,7 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
             </Text>
           </Animated.View>
           <View style={[styles.cta, foot]}>
-            <Button3D label={t('offer.first.start')} onPress={start} size="xl" docked />
+            <Button label={t('offer.first.start')} onPress={start} />
             <Pressable
               accessibilityRole="button"
               onPress={decline}
@@ -175,9 +173,7 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
         </Animated.View>
       ) : (
         <Animated.View key="felt" entering={STAGE_IN} style={styles.stage}>
-          <View style={styles.hero}>
-            <IntroMascot rig={celebrateRig} shot="celebrate" size={height < 700 ? 140 : 180} surface={colors.background} />
-          </View>
+          <View style={styles.hero} />
           <View style={styles.head}>
             <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]} maxFontSizeMultiplier={1.3}>
               {name !== '' ? t('offer.next.titleNamed', { name }) : t('offer.next.title')}
@@ -188,7 +184,7 @@ export function FirstSession({ name, onDone }: FirstSessionProps) {
           </View>
           <View accessibilityRole="radiogroup" style={[styles.answers, foot]}>
             {FEELINGS.map((feeling) => (
-              <OptionCard3D
+              <OptionCard
                 key={feeling.value}
                 label={t(feeling.label)}
                 art={<FluentIcon name={feeling.emoji} size={30} />}
@@ -240,7 +236,7 @@ const styles = StyleSheet.create({
     backgroundColor: CLIP_BACKDROP,
   },
   head: { alignItems: 'center', gap: 10 },
-  eyebrow: { alignSelf: 'center' },
+  eyebrow: { ...fonts.heavy(13, 1.4), textTransform: 'uppercase', color: tokens.accent, alignSelf: 'center' },
   title: { ...fonts.heavy(32, -0.9), lineHeight: 36, textAlign: 'center' },
   body: { ...fonts.medium(16), lineHeight: 22, textAlign: 'center' },
   question: { ...fonts.semibold(18, -0.2), lineHeight: 24, textAlign: 'center' },

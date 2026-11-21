@@ -7,22 +7,18 @@ import { StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-na
 import Svg, { G, Path } from 'react-native-svg';
 
 import { fonts } from '@/shared/config';
-import { Raised } from '@/shared/ui/raised';
 
 import type { DealWords } from '../model/offer-view';
 
 import { CountdownLine } from './countdown';
 import { DEAL } from './deal-tone';
-import { LEDGE_SHOWN, LedgeMascot } from './mascots';
 
-/** The card's corners and its ledge: `Card3D`'s large card. */
+/** The card's corners. */
 const RADIUS = 26;
-const LIP = 4;
 
 /**
  * The comeback's card, after the reference the founder chose: one big dark
- * card with Walkito gripping its top edge and peeking over it, a faint field
- * of "%" across it, and in the middle, in this order, the time left, the
+ * card, a faint field of "%" across it, and in the middle, in this order, the time left, the
  * discount very large in green, the billed price in a white pill, "only this
  * once" with a tick, then the standard price struck through beside the price
  * paid, and the smallest line under that.
@@ -34,9 +30,6 @@ const LIP = 4;
  * prominent price here, and the monthly figure worked out from it the smallest
  * line, never the other way round (App Review Guideline 3.1.2).
  *
- * The space over the card is the mascot's (`LEDGE_SHOWN`); he is drawn first,
- * so the card covers all of him below its rim.
- *
  * One size whichever plan is chosen: the figures under the time left are held
  * at the tallest of `deals` (`Steady`), and a shorter set (the 3-month pass,
  * which has no discount to show) sits in the middle of that space. The card
@@ -47,35 +40,19 @@ export function DealCard({
   words,
   deals = [],
   endsAt,
-  mascotAt,
-  boingAt,
 }: {
   words: DealWords;
   /** The card for every plan on the switch (`OfferView.deals`). */
   deals?: readonly DealWords[];
   endsAt: number | null;
-  /** When the mascot starts up from behind the card (the card is solid). */
-  mascotAt: number;
-  /** When he gives his boing. */
-  boingAt: number;
 }) {
   return (
-    <View style={styles.room}>
-      <LedgeMascot delay={mascotAt} boingAt={boingAt} />
-      <Raised
-        face={DEAL.face}
-        edge={DEAL.edge}
-        lip={DEAL.lip}
-        depth={LIP}
-        radius={RADIUS}
-        clip
-        contentStyle={styles.face}>
-        <PercentField />
-        {endsAt != null && <CountdownLine endsAt={endsAt} color={DEAL.label} />}
-        <Steady variants={deals.map((each, index) => <Figures key={index} words={each} />)} style={styles.figures}>
-          <Figures words={words} />
-        </Steady>
-      </Raised>
+    <View style={[styles.face, { backgroundColor: DEAL.face }]}>
+      <PercentField />
+      {endsAt != null && <CountdownLine endsAt={endsAt} color={DEAL.label} />}
+      <Steady variants={deals.map((each, index) => <Figures key={index} words={each} />)} style={styles.figures}>
+        <Figures words={words} />
+      </Steady>
     </View>
   );
 }
@@ -259,9 +236,10 @@ const PercentField = memo(function PercentField() {
 });
 
 const styles = StyleSheet.create({
-  /** The mascot's room over the card: his head and hands show in it. */
-  room: { paddingTop: LEDGE_SHOWN },
   face: {
+    borderRadius: RADIUS,
+    borderCurve: 'continuous',
+    overflow: 'hidden',
     alignItems: 'center',
     paddingTop: 20,
     paddingBottom: 20,

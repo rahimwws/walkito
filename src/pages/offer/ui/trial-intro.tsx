@@ -4,10 +4,10 @@ import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 
 import { TRIAL_REMINDER_DAYS } from '@/features/home-offer';
-import { filled, fonts, palette } from '@/shared/config';
+import { colors as tokens, fonts, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 
 import { FootCheckResult } from './foot-check-result';
 
@@ -17,8 +17,8 @@ import { FootCheckResult } from './foot-check-result';
  * make it safe. Then the plans, with the price.
  *
  * It used to be two screens, the second a whole page about the reminder
- * ("We'll remind you 2 days before your trial ends", a mascot with an alarm
- * clock, how to cancel). A page about cancelling, before she has agreed to
+ * ("We'll remind you 2 days before your trial ends", an alarm clock, how to
+ * cancel). A page about cancelling, before she has agreed to
  * anything, primes the fear it answers; the reminder is now one line on this
  * screen and one row in the plans' timeline ("Day 5: We remind you").
  *
@@ -69,8 +69,8 @@ export function TrialGift({ name, days }: TrialGiftProps) {
       <View style={[styles.promises, { backgroundColor: colors.card }]}>
         {promises.map((promise, i) => (
           <Animated.View key={promise} entering={rise(i + 1)} style={styles.promise}>
-            <View style={[styles.tick, { backgroundColor: filled[scheme].primary.face }]}>
-              <HugeiconsIcon icon={Tick02Icon} size={16} color={filled[scheme].primary.label} strokeWidth={3} />
+            <View style={[styles.tick, { backgroundColor: tokens.ink }]}>
+              <HugeiconsIcon icon={Tick02Icon} size={16} color={tokens.onInk} strokeWidth={3} />
             </View>
             <Text style={[styles.promiseText, { color: colors.foreground }]} maxFontSizeMultiplier={1.4}>
               {promise}
@@ -85,7 +85,7 @@ export function TrialGift({ name, days }: TrialGiftProps) {
 /** The button at the foot of the screen: it says what the tap is for. */
 export function TrialNext({ onPress }: { onPress: () => void }) {
   const t = useT();
-  return <Button3D label={t('offer.trial.giftCta')} onPress={onPress} size="xl" docked />;
+  return <Button label={t('offer.trial.giftCta')} onPress={onPress} />;
 }
 
 const styles = StyleSheet.create({

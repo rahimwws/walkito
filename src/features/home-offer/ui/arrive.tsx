@@ -17,8 +17,7 @@ import { FADE_MS, POP_MS, REDUCED_MS, RISE_MS } from './entrance';
 /**
  * How a part of the offer arrives:
  *
- * - `rise`: fades in and comes up 12 pt into place (the card, the switch, a
- *   mascot);
+ * - `rise`: fades in and comes up 12 pt into place (the card, the switch);
  * - `pop`: fades in and grows from 96 % (the button);
  * - `fade`: fades in where it stands (the small print).
  */
