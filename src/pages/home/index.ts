@@ -1,4 +1,6 @@
 export { HomePage } from './ui/home-page';
+export { WhyPage } from './ui/why-page';
+export { FirstStepTimePage } from './ui/first-step-time-page';
 export { devOpenReadinessInfo, devSetLegState, devSetReadinessScore } from './model/readiness-dev';
 /** Development only: two weeks of check-ins behind today, for the row of days
  * under the answered check-in. */

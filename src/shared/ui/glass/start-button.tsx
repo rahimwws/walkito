@@ -1,4 +1,4 @@
-import { Button, Host } from '@expo/ui/swift-ui';
+import { Button, Host, Text as SwiftText } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, font, frame, tint } from '@expo/ui/swift-ui/modifiers';
 import * as Haptics from 'expo-haptics';
 import { Platform, Pressable, StyleSheet, Text } from 'react-native';
@@ -30,16 +30,15 @@ export function StartButton({ label, onPress }: StartButtonProps) {
     return (
       <Host matchContents={{ vertical: true }} style={styles.host}>
         <Button
-          label={label}
           onPress={press}
-          modifiers={[
-            buttonStyle('glassProminent'),
-            controlSize('extraLarge'),
-            tint(colors.ink),
-            font({ size: 19, weight: 'semibold' }),
-            frame({ maxWidth: Infinity, minHeight: target.primary }),
-          ]}
-        />
+          modifiers={[buttonStyle('glassProminent'), controlSize('extraLarge'), tint(colors.ink)]}>
+          {/* The frame on the label, not the button: the glass hugs its label,
+              so a frame outside it widens the layout and leaves the glass
+              content-sized. */}
+          <SwiftText modifiers={[font({ size: 19, weight: 'semibold' }), frame({ maxWidth: Infinity, minHeight: target.primary - 24 })]}>
+            {label}
+          </SwiftText>
+        </Button>
       </Host>
     );
   }

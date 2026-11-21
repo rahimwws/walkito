@@ -1,35 +1,21 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
-import Animated, {
-  Easing,
-  FadeIn,
-  ReduceMotion,
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 import { OfferSheet } from '@/features/home-offer';
 import { usePassEndsAt, usePassWindow, useSubscription, type PassWindow } from '@/entities/purchase';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts, space } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
-import { useColorScheme } from '@/shared/lib/theme';
-import { Button } from '@/shared/ui/button';
 import { Card } from '@/shared/ui/card';
-import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 /** The card shows this many days before the pass ends, as the push does. */
 const WARN_DAYS = 7;
 const DAY_MS = 24 * 60 * 60 * 1000;
 /** The local day `pass_expiring_view` was last sent, so it goes once a day. */
 const SEEN_KEY = 'home/pass-ending-seen';
-/** The card fades in as the room for it opens, on the curve Home's
- * `GlideHeight` eases its heights with. */
-const FADE_MS = 240;
-const ROOM_MS = 320;
-const ROOM_EASING = Easing.bezier(0.33, 1, 0.68, 1);
 
 /** Today, on this phone's calendar. */
 function dayKey(now: number): string {
@@ -57,8 +43,7 @@ function endingSoon(pass: PassWindow, endsAt: number, now: number): boolean {
  *
  * `pass_expiring_view` once per day the card is seen.
  *
- * It fades in as the room for it opens (`Arrive`), so Home below it moves
- * down smoothly rather than being pushed.
+ * A plain row: the whole card opens the plans.
  */
 export function PassEndingCard({ seen }: { seen: boolean }) {
   const pass = usePassWindow();
@@ -70,9 +55,6 @@ export function PassEndingCard({ seen }: { seen: boolean }) {
 }
 
 function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const language = useLanguage();
   // `null` once the store has said nothing it bills is held; undefined while
@@ -97,64 +79,27 @@ function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
   return (
     <>
       {shown && (
-        <Arrive>
-          <Card padding={18} style={[styles.card, styles.content]}>
-            <View style={styles.head}>
-              <FluentIcon name="calendar" size={36} />
-              <View style={styles.text}>
-                <Text style={[styles.title, { color: colors.foreground }]}>{t('pass.ending.title', { date })}</Text>
-                <Text style={[styles.body, { color: meter.caption }]}>{t('pass.ending.body')}</Text>
-              </View>
+        <Card onPress={() => setOpen(true)} style={styles.card} accessibilityHint={t('pass.ending.cta')}>
+          <View style={styles.row}>
+            <View style={styles.text}>
+              <Text style={styles.title}>{t('pass.ending.title', { date })}</Text>
+              <Text style={styles.body}>{t('pass.ending.body')}</Text>
+              <Text style={styles.cta}>{t('pass.ending.cta')}</Text>
             </View>
-            <Button size="md" fullWidth label={t('pass.ending.cta')} onPress={() => setOpen(true)} />
-          </Card>
-        </Arrive>
+            <HugeiconsIcon icon={ArrowRight01Icon} size={20} color={colors.text2} strokeWidth={2} />
+          </View>
+        </Card>
       )}
       <OfferSheet visible={open} kind="standard" onClose={() => setOpen(false)} />
     </>
   );
 }
 
-/**
- * The card arriving on Home: it fades in while the room for it opens from
- * nothing to its height, so the Library row below slides down instead of
- * jumping. The card is shown only once the store has answered, well after Home
- * has laid out, which is why it cannot simply appear.
- *
- * The room is a height on the UI thread, eased to whatever the card measures
- * (and eased again if that changes, a language switched), and clips while it
- * opens. It is the card's own, so nothing else on Home has to know it arrived.
- * With Reduce Motion the room opens and the card shows at once.
- */
-function Arrive({ children }: { children: ReactNode }) {
-  const height = useSharedValue(0);
-  const onLayout = (event: LayoutChangeEvent) => {
-    height.value = withTiming(event.nativeEvent.layout.height, {
-      duration: ROOM_MS,
-      easing: ROOM_EASING,
-      reduceMotion: ReduceMotion.System,
-    });
-  };
-  const room = useAnimatedStyle(() => ({ height: height.value }));
-  return (
-    <Animated.View style={[styles.room, room]}>
-      {/* Measured out of the flow: laid out in the room, the card took the
-          room's own height, nothing, so the room never opened and the card
-          was never seen. */}
-      <View style={styles.measure} onLayout={onLayout}>
-        <Animated.View entering={FadeIn.duration(FADE_MS).reduceMotion(ReduceMotion.System)}>{children}</Animated.View>
-      </View>
-    </Animated.View>
-  );
-}
-
 const styles = StyleSheet.create({
-  room: { overflow: 'hidden' },
-  measure: { position: 'absolute', top: 0, left: 0, right: 0 },
-  card: { marginTop: 28 },
-  content: { gap: 14 },
-  head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  text: { flex: 1, gap: 2 },
-  title: { ...fonts.heavy(18, -0.3), lineHeight: 23 },
-  body: { ...fonts.medium(14), lineHeight: 19 },
+  card: { marginTop: space.section },
+  row: { flexDirection: 'row', alignItems: 'center', gap: space.gap },
+  text: { flex: 1, gap: 4 },
+  title: { ...fonts.semibold(20), color: colors.text },
+  body: { ...fonts.regular(19), color: colors.text2 },
+  cta: { ...fonts.semibold(17), color: colors.accent, marginTop: 4 },
 });

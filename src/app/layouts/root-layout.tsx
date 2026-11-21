@@ -419,6 +419,26 @@ function RootLayoutInner() {
                     sheetCornerRadius: 28,
                   }}
                 />
+                {/* Today's two sheets: "Why today looks like this" and the
+                    first-step wake time. Native form sheets, solid surface. */}
+                <Stack.Screen
+                  name="why"
+                  options={{
+                    presentation: 'formSheet',
+                    headerShown: false,
+                    sheetAllowedDetents: [0.5, 1],
+                    sheetGrabberVisible: true,
+                  }}
+                />
+                <Stack.Screen
+                  name="first-step-time"
+                  options={{
+                    presentation: 'formSheet',
+                    headerShown: false,
+                    sheetAllowedDetents: [0.5, 1],
+                    sheetGrabberVisible: true,
+                  }}
+                />
               </Stack>
               <StatusBar style="auto" />
               {/* An over-the-air update or a new App Store build, offered in a
