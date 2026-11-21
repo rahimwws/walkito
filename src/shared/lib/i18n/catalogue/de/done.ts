@@ -26,4 +26,9 @@ export const DONE_DE = {
   'sessionDone.easierDone': 'Morgen geht es eine Stufe leichter weiter.',
   'sessionDone.tomorrowAt': 'Morgen um {time}',
   'sessionDone.nextOn': 'Nächste Einheit: {day}',
+  'sessionDone.complete': 'Einheit geschafft',
+  'sessionDone.tileSets': 'Sätze',
+  'sessionDone.tileSetsA11y': { one: '{count} Satz geschafft', other: '{count} Sätze geschafft' },
+  'sessionDone.path.day': 'Tag {day}',
+  'sessionDone.path.completed': 'Geschafft',
 };

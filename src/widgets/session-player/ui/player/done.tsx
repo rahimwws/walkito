@@ -1,8 +1,9 @@
+import LockIcon from '@hugeicons/core-free-icons/LockIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState, type ComponentRef } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -22,21 +23,24 @@ import {
   todayKey,
   usualStartMinute,
   useNextSession,
+  type DayType,
 } from '@/entities/program';
 import { wakeLabel, wakeMinutes } from '@/entities/notifications';
 import { colors, fonts } from '@/shared/config';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 
 import { alreadyRecorded, rememberFeedback, type Feedback } from '../../model/session-done';
-import { Capsule, Hairline, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from './kit';
+import { Capsule, SIDE, TITLE_SCALE, TextButton, cardStyle, ink } from './kit';
 import { PainSheet } from './sheets';
 
 export type DoneProps = {
   visible: boolean;
   moves: number;
+  /** Every set of every move, a hold counted as one. */
+  sets: number;
   /** The session at the plan's dose, in whole minutes. */
   minutes: number;
-  /** The plan day just done, for "Day 9 done"; a routine says "Done". */
+  /** The plan day just done, for the day path; a routine has none. */
   dayNumber?: number | null;
   /** The development preview: every answer goes nowhere. */
   preview?: boolean;
@@ -44,7 +48,7 @@ export type DoneProps = {
   early?: boolean;
   /** Ask how it felt. */
   feedback?: boolean;
-  /** When the session began, epoch ms. See `alreadyRecorded`. */
+  /** When the session began, epoch ms. See alreadyRecorded. */
   startedAt: number;
   onClose: () => void;
 };
@@ -63,20 +67,32 @@ const FEELS: readonly { feel: Feel; label: Key; feedback: Feedback }[] = [
   { feel: 'hurt', label: 'sessionDone.feel.hurt', feedback: 'hard' },
 ];
 
-const TICK = 88;
+/** The kind of work a day is, in the words the plan uses for it. */
+const KIND_LABEL: Partial<Record<DayType, Key>> = {
+  strength: 'pages.program.kindStrength',
+  mobility: 'pages.program.kindMobility',
+  balance: 'pages.program.kindBalance',
+  recovery: 'pages.program.kindRecovery',
+  test: 'testday.intro.title',
+};
+
+const BADGE = 96;
+const NODE = 36;
 const IN_MS = 260;
 const OUT_MS = 200;
 
 /**
- * The end of a session (NRC #40 / #51): one big tick, "Done", two plain
- * numbers, "How did that feel?" as four stacked words, the safety line and
- * "Make tomorrow easier" after "It hurt", when the next session is, and Close
- * as the one capsule. A layer over the player rather than a Modal, for the
- * reason the sheets give.
+ * The end of a session, after Alan's "You did it" and Bend's cards: a big
+ * violet tick, "Session complete", the minutes, moves and sets on one white
+ * card, "How did that feel?" as four large option cards, the safety line and
+ * "Make tomorrow easier" after "It hurt", then the day path (today done, the
+ * next one locked until it opens) and Done as the violet button. A layer over
+ * the player rather than a Modal, for the reason the sheets give.
  */
 export function Done({
   visible,
   moves,
+  sets,
   minutes,
   dayNumber = null,
   preview = false,
@@ -88,6 +104,7 @@ export function Done({
   const t = useT();
   const language = useLanguage();
   const insets = useSafeAreaInsets();
+  const large = useWindowDimensions().fontScale > 1.6;
   const next = useNextSession();
   const [mounted, setMounted] = useState(false);
   const [picked, setPicked] = useState<Feel | null>(null);
@@ -136,7 +153,8 @@ export function Done({
   };
 
   const now = Date.now();
-  const tomorrow = addDays(todayKey(now), 1);
+  const today = todayKey(now);
+  const tomorrow = addDays(today, 1);
   const reminderAt = planSettings().reminderMinutes ?? usualStartMinute() ?? wakeMinutes() + 15;
   const nextLine =
     next == null
@@ -145,68 +163,80 @@ export function Done({
         ? t('sessionDone.tomorrowAt', { time: wakeLabel(reminderAt, language) })
         : next.date > tomorrow
           ? t('sessionDone.nextOn', {
-              day: new Intl.DateTimeFormat(language, { weekday: 'long' }).format(new Date(`${next.date}T12:00:00`)),
+              day: new Intl.DateTimeFormat(language, { weekday: 'long' }).format(new Date(next.date + 'T12:00:00')),
             })
           : null;
+  const nextKind = next == null ? undefined : KIND_LABEL[next.day.type];
+  const nextDay =
+    dayNumber == null || next == null || next.date <= today
+      ? null
+      : dayNumber + Math.round((Date.parse(next.date + 'T12:00:00') - Date.parse(today + 'T12:00:00')) / 86_400_000);
 
-  const title = early
-    ? t('widgets.sessionStoppedTitle')
-    : dayNumber != null
-      ? t('sessionDone.dayDone', { day: dayNumber })
-      : t('sessionDone.title');
+  const stats = [
+    { value: minutes, label: t('sessionDone.tileMinutes'), a11y: t('sessionDone.tileSessionA11y', { count: minutes }) },
+    { value: moves, label: t('sessionDone.tileMoves'), a11y: t('sessionDone.tileMovesA11y', { count: moves }) },
+    { value: sets, label: t('sessionDone.tileSets'), a11y: t('sessionDone.tileSetsA11y', { count: sets }) },
+  ];
 
   return (
     <Animated.View style={[styles.host, hostStyle]}>
       <ScrollView
         ref={scroll}
-        contentContainerStyle={[styles.body, { paddingTop: insets.top + 40, paddingBottom: 140 + insets.bottom }]}
+        contentContainerStyle={[styles.body, { paddingTop: insets.top + 32, paddingBottom: 140 + insets.bottom }]}
         showsVerticalScrollIndicator={false}>
-        <View style={styles.tick} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-          <HugeiconsIcon icon={Tick02Icon} size={44} color={colors.onInk} strokeWidth={2.4} />
+        <View style={styles.badge} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          <HugeiconsIcon icon={Tick02Icon} size={48} color={colors.onInk} strokeWidth={2.6} />
         </View>
         <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
-          {title}
+          {early ? t('widgets.sessionStoppedTitle') : t('sessionDone.complete')}
         </Text>
         {early && <Text style={styles.lead}>{t('widgets.sessionStoppedBlurb')}</Text>}
 
         {!early && (
-          <View style={styles.numbers}>
-            <View style={styles.number} accessible accessibilityLabel={t('sessionDone.tileSessionA11y', { count: minutes })}>
-              <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.numeral}>{minutes}</Text>
-              <Text style={styles.label}>{t('sessionDone.tileMinutes')}</Text>
-            </View>
-            <View style={styles.number} accessible accessibilityLabel={t('sessionDone.tileMovesA11y', { count: moves })}>
-              <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.numeral}>{moves}</Text>
-              <Text style={styles.label}>{t('sessionDone.tileMoves')}</Text>
-            </View>
+          <View key={large ? 'stacked' : 'row'} style={[styles.card, styles.stats, large && styles.statsStacked]}>
+            {stats.map((stat, index) => (
+              <View key={stat.label} style={[styles.stat, index > 0 && (large ? styles.statRuleTop : styles.statRule)]} accessible accessibilityLabel={stat.a11y}>
+                <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.numeral}>
+                  {stat.value}
+                </Text>
+                <Text style={styles.label}>{stat.label}</Text>
+              </View>
+            ))}
           </View>
         )}
 
         {feedback && !early && (
-          <View style={styles.feel}>
+          <View style={styles.section}>
             <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.question}>
               {t('sessionDone.feel.question')}
             </Text>
-            <View accessibilityRole="radiogroup" accessibilityLabel={t('sessionDone.feel.question')}>
-              {FEELS.map((entry, index) => {
+            <View style={styles.options} accessibilityRole="radiogroup" accessibilityLabel={t('sessionDone.feel.question')}>
+              {FEELS.map((entry) => {
                 const on = picked === entry.feel;
                 return (
-                  <View key={entry.feel}>
-                    {index > 0 && <Hairline />}
-                    <Pressable
-                      accessibilityRole="radio"
-                      accessibilityState={{ selected: on }}
-                      onPress={() => {
-                        void Haptics.selectionAsync();
-                        setPicked(entry.feel);
-                        if (!preview) rememberFeedback(entry.feedback, startedAt);
-                        if (entry.feel === 'hurt') setAskingPain(true);
-                      }}
-                      style={({ pressed }) => [styles.word, pressed && styles.pressed]}>
-                      <Text style={[styles.wordText, on && styles.wordOn]}>{t(entry.label)}</Text>
-                      {on && <HugeiconsIcon icon={Tick02Icon} size={24} color={ink.text} strokeWidth={2.2} />}
-                    </Pressable>
-                  </View>
+                  <Pressable
+                    key={entry.feel}
+                    accessibilityRole="radio"
+                    accessibilityState={{ selected: on }}
+                    onPress={() => {
+                      void Haptics.selectionAsync();
+                      setPicked(entry.feel);
+                      if (!preview) rememberFeedback(entry.feedback, startedAt);
+                      if (entry.feel === 'hurt') setAskingPain(true);
+                    }}
+                    style={({ pressed }) => [
+                      styles.option,
+                      large ? styles.optionFull : styles.optionHalf,
+                      on && styles.optionOn,
+                      pressed && styles.pressed,
+                    ]}>
+                    <Text style={[styles.optionText, on && styles.optionTextOn]}>{t(entry.label)}</Text>
+                    {on && (
+                      <View style={styles.optionTick}>
+                        <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.onInk} strokeWidth={2.8} />
+                      </View>
+                    )}
+                  </Pressable>
                 );
               })}
             </View>
@@ -216,7 +246,7 @@ export function Done({
               </Text>
             )}
             {picked === 'hurt' && (
-              <View style={styles.safety}>
+              <View style={[styles.card, styles.safety]}>
                 <Text style={styles.safetyText}>{t('player.painRule.body')}</Text>
                 {easier ? (
                   <Text style={styles.ack} accessibilityLiveRegion="polite">
@@ -230,11 +260,44 @@ export function Done({
           </View>
         )}
 
-        {nextLine != null && <Text style={styles.next}>{nextLine}</Text>}
+        {dayNumber != null ? (
+          <View style={[styles.card, styles.path]}>
+            <View style={[styles.node, large && styles.nodeStacked]} accessible>
+              <View style={styles.nodeColumn}>
+                <View style={[styles.dot, styles.dotDone]}>
+                  <HugeiconsIcon icon={Tick02Icon} size={18} color={colors.onInk} strokeWidth={2.8} />
+                </View>
+                {nextDay != null && !large && <View style={styles.line} />}
+              </View>
+              <View style={styles.nodeText}>
+                <Text style={styles.nodeTitle}>{t('sessionDone.path.day', { day: dayNumber })}</Text>
+                <Text style={styles.nodeSub}>{t('sessionDone.path.completed')}</Text>
+              </View>
+            </View>
+            {nextDay != null && (
+              <View style={[styles.node, large && styles.nodeStacked]} accessible>
+                <View style={styles.nodeColumn}>
+                  <View style={[styles.dot, styles.dotLocked]}>
+                    <HugeiconsIcon icon={LockIcon} size={17} color={colors.text3} strokeWidth={2} />
+                  </View>
+                </View>
+                <View style={styles.nodeText}>
+                  <Text style={styles.nodeTitle}>
+                    {t('sessionDone.path.day', { day: nextDay })}
+                    {nextKind != null ? ' · ' + t(nextKind) : ''}
+                  </Text>
+                  {nextLine != null && <Text style={styles.nodeSub}>{nextLine}</Text>}
+                </View>
+              </View>
+            )}
+          </View>
+        ) : (
+          nextLine != null && <Text style={styles.next}>{nextLine}</Text>
+        )}
       </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
-        <Capsule label={t('common.close')} onPress={onClose} />
+        <Capsule label={t('player.cta.done')} onPress={onClose} />
       </View>
 
       <PainSheet visible={visible && askingPain} after onPick={reportPain} onCancel={closePain} />
@@ -243,32 +306,71 @@ export function Done({
 }
 
 const styles = StyleSheet.create({
-  host: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100, backgroundColor: ink.page },
-  body: { paddingHorizontal: SIDE },
+  host: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100, backgroundColor: ink.canvas },
+  body: { paddingHorizontal: SIDE - 4, alignItems: 'stretch' },
   pressed: { opacity: 0.55 },
-  tick: {
-    width: TICK,
-    height: TICK,
-    borderRadius: TICK / 2,
-    backgroundColor: colors.ink,
+  card: cardStyle,
+  badge: {
+    width: BADGE,
+    height: BADGE,
+    borderRadius: BADGE / 2,
+    backgroundColor: colors.accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  title: { ...fonts.bold(32, -0.6), color: ink.text, marginTop: 20, textAlign: 'center' },
+  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8, textAlign: 'center' },
+  stats: { flexDirection: 'row', marginTop: 28, paddingVertical: 18 },
+  statsStacked: { flexDirection: 'column', paddingVertical: 4 },
+  stat: { flex: 1, alignItems: 'center', gap: 2, paddingVertical: 4, paddingHorizontal: 6 },
+  statRule: { borderLeftWidth: StyleSheet.hairlineWidth, borderLeftColor: ink.rule },
+  statRuleTop: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: ink.rule, paddingVertical: 14 },
+  numeral: { ...fonts.bold(34, -1), color: ink.text, fontVariant: ['tabular-nums'] },
+  label: { ...fonts.medium(17), color: ink.grey, textAlign: 'center' },
+  section: { marginTop: 32, gap: 12 },
+  question: { ...fonts.bold(22, -0.3), color: ink.text },
+  options: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
+  option: {
+    ...cardStyle,
+    minHeight: 72,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+    borderWidth: 2,
+    borderColor: colors.surface,
+  },
+  optionHalf: { flexBasis: '46%', flexGrow: 1 },
+  optionFull: { flexBasis: '100%' },
+  optionOn: { borderColor: colors.accent, backgroundColor: colors.accentSoft },
+  optionText: { ...fonts.semibold(19), color: ink.text, flexShrink: 1 },
+  optionTextOn: { color: colors.accent },
+  optionTick: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 24 },
-  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8 },
-  numbers: { flexDirection: 'row', flexWrap: 'wrap', columnGap: 48, rowGap: 16, marginTop: 32 },
-  number: { gap: 0 },
-  numeral: { ...fonts.bold(56, -1.5), color: ink.text, fontVariant: ['tabular-nums'] },
-  label: { ...fonts.regular(17), color: ink.grey },
-  feel: { marginTop: 48, gap: 8 },
-  question: { ...fonts.bold(22, -0.3), color: ink.text, marginBottom: 4 },
-  word: { minHeight: 60, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
-  wordText: { ...fonts.regular(19), color: ink.text, flexShrink: 1 },
-  wordOn: fonts.semibold(19),
-  ack: { ...fonts.regular(17), color: ink.grey, marginTop: 8 },
-  safety: { marginTop: 16, gap: 8 },
+  ack: { ...fonts.regular(17), color: ink.grey },
+  safety: { padding: 16, gap: 4 },
   safetyText: { ...fonts.regular(19), color: ink.text },
   easier: { alignSelf: 'flex-start', paddingHorizontal: 0 },
-  next: { ...fonts.medium(19), color: ink.grey, marginTop: 40 },
-  dock: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: SIDE, paddingTop: 12, backgroundColor: ink.page },
+  path: { marginTop: 32, padding: 18 },
+  node: { flexDirection: 'row', gap: 14 },
+  nodeStacked: { flexDirection: 'column', gap: 4 },
+  nodeColumn: { width: NODE, alignItems: 'center' },
+  dot: { width: NODE, height: NODE, borderRadius: NODE / 2, alignItems: 'center', justifyContent: 'center' },
+  dotDone: { backgroundColor: colors.accent },
+  dotLocked: { backgroundColor: colors.surface2 },
+  line: { width: 2, flexGrow: 1, minHeight: 20, backgroundColor: ink.rule, marginVertical: 4 },
+  nodeText: { flexGrow: 1, flexShrink: 1, paddingTop: 5, paddingBottom: 16, gap: 2 },
+  nodeTitle: { ...fonts.semibold(19), color: ink.text },
+  nodeSub: { ...fonts.regular(17), color: ink.grey },
+  next: { ...fonts.medium(19), color: ink.grey, marginTop: 32, textAlign: 'center' },
+  dock: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: SIDE, paddingTop: 12, backgroundColor: ink.canvas },
 });

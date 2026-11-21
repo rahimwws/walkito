@@ -1,3 +1,13 @@
+import AlertCircleIcon from '@hugeicons/core-free-icons/AlertCircleIcon';
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
+import Video01Icon from '@hugeicons/core-free-icons/Video01Icon';
+import Image01Icon from '@hugeicons/core-free-icons/Image01Icon';
+import UnavailableIcon from '@hugeicons/core-free-icons/UnavailableIcon';
+import VolumeHighIcon from '@hugeicons/core-free-icons/VolumeHighIcon';
+import VolumeOffIcon from '@hugeicons/core-free-icons/VolumeOffIcon';
+import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -11,12 +21,12 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { IN_SESSION_STOP_PAIN, type CantDoReason, type Equipment } from '@/entities/program';
+import { EXERCISES_BY_ID, IN_SESSION_STOP_PAIN, exerciseById, type CantDoReason, type Equipment } from '@/entities/program';
 import { colors, fonts } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
-import { Capsule, Hairline, SIDE, TITLE_SCALE, TextButton, ink } from './kit';
+import { Capsule, Hairline, MoveCircle, SIDE, TITLE_SCALE, TextButton, cardStyle, ink } from './kit';
 
 const IN_MS = 300;
 const OUT_MS = 200;
@@ -230,6 +240,131 @@ export function ReasonRows({
   );
 }
 
+/** A row of the More sheet: a glyph in a grey circle and what it does. */
+function MenuRow({ icon, label, onPress }: { icon: IconSvgElement; label: string; onPress: () => void }) {
+  return (
+    <Pressable
+      accessibilityRole="button"
+      onPress={() => {
+        void Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.menuRow, pressed && styles.pressed]}>
+      <View style={styles.menuIcon}>
+        <HugeiconsIcon icon={icon} size={20} color={ink.text} strokeWidth={2} />
+      </View>
+      <Text style={styles.menuText}>{label}</Text>
+      <HugeiconsIcon icon={ArrowRight01Icon} size={20} color={colors.text3} strokeWidth={2} />
+    </Pressable>
+  );
+}
+
+/**
+ * Bend's More: what the player does besides playing, as rows on a white card.
+ * Sound, the instruction again, the drawing or the clip, the pain rule, and
+ * the two ways out of a move. A row left null is not offered.
+ */
+export function MenuSheet({
+  visible,
+  onClose,
+  soundOn,
+  onSound,
+  onReplay,
+  media,
+  onMedia,
+  onRule,
+  onPain,
+  onCantDo,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  soundOn: boolean;
+  onSound: () => void;
+  onReplay: (() => void) | null;
+  /** What is showing now, when both can be shown. */
+  media: 'video' | 'pose' | null;
+  onMedia: () => void;
+  onRule: () => void;
+  onPain: (() => void) | null;
+  onCantDo: (() => void) | null;
+}) {
+  const t = useT();
+  const rows: { key: string; icon: IconSvgElement; label: string; onPress: () => void }[] = [
+    { key: 'sound', icon: soundOn ? VolumeHighIcon : VolumeOffIcon, label: soundOn ? t('player.tempo.on') : t('player.tempo.off'), onPress: onSound },
+  ];
+  if (onReplay != null) rows.push({ key: 'replay', icon: RepeatIcon, label: t('player.voice.replay'), onPress: onReplay });
+  if (media != null) {
+    rows.push({
+      key: 'media',
+      icon: media === 'pose' ? Video01Icon : Image01Icon,
+      label: media === 'pose' ? t('player.media.video') : t('player.media.pose'),
+      onPress: onMedia,
+    });
+  }
+  rows.push({ key: 'rule', icon: InformationCircleIcon, label: t('player.painRule.title'), onPress: onRule });
+  if (onPain != null) rows.push({ key: 'pain', icon: AlertCircleIcon, label: t('widgets.painButton'), onPress: onPain });
+  if (onCantDo != null) rows.push({ key: 'cant', icon: UnavailableIcon, label: t('player.cantDo.button'), onPress: onCantDo });
+  return (
+    <Sheet visible={visible} onClose={onClose}>
+      <View style={styles.menuCard}>
+        {rows.map((row, index) => (
+          <View key={row.key}>
+            {index > 0 && <View style={styles.menuRule} />}
+            <MenuRow icon={row.icon} label={row.label} onPress={row.onPress} />
+          </View>
+        ))}
+      </View>
+      <TextButton label={t('common.close')} quiet onPress={onClose} />
+    </Sheet>
+  );
+}
+
+/** The cue as numbered steps: the catalogue writes it as short sentences, each one thing to do. */
+export function stepsOf(cue: string): string[] {
+  return cue
+    .split(/(?<=[.!?])\s+/)
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+}
+
+/** The steps as Bend lists them: a number in a violet circle, then the line. */
+export function StepList({ steps }: { steps: readonly string[] }) {
+  return (
+    <View style={styles.steps}>
+      {steps.map((step, index) => (
+        <View key={index} style={styles.step} accessible accessibilityLabel={index + 1 + '. ' + step}>
+          <View style={styles.stepBadge}>
+            <Text style={styles.stepNumber} maxFontSizeMultiplier={1.4}>
+              {index + 1}
+            </Text>
+          </View>
+          <Text style={styles.stepText}>{step}</Text>
+        </View>
+      ))}
+    </View>
+  );
+}
+
+/** The (i) beside the move's name: its picture, its name and how to do it. */
+export function InfoSheet({ visible, exerciseId, onClose }: { visible: boolean; exerciseId: string | null; onClose: () => void }) {
+  const t = useT();
+  if (exerciseId == null || EXERCISES_BY_ID[exerciseId] == null) return <Sheet visible={false} onClose={onClose}>{null}</Sheet>;
+  const exercise = exerciseById(exerciseId);
+  return (
+    <Sheet visible={visible} onClose={onClose}>
+      <View style={styles.infoTop}>
+        <MoveCircle exerciseId={exerciseId} size={140} />
+      </View>
+      <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={[styles.title, styles.centered]}>
+        {exercise.title}
+      </Text>
+      <Text style={styles.eyebrow}>{t('player.sheet.stepsTitle').toLocaleUpperCase()}</Text>
+      <StepList steps={stepsOf(exercise.cue)} />
+      <Capsule label={t('player.painRule.ok')} onPress={onClose} />
+    </Sheet>
+  );
+}
+
 /** "0-3 is fine. 4-5 is OK if it settles by next morning. 6 or more - stop." */
 export function PainRuleSheet({ visible, onClose }: { visible: boolean; onClose: () => void }) {
   const t = useT();
@@ -275,12 +410,40 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  scoreOn: { backgroundColor: colors.ink, borderColor: colors.ink },
+  scoreOn: { backgroundColor: colors.accent, borderColor: colors.accent },
   scoreText: { ...fonts.semibold(20), color: ink.text, fontVariant: ['tabular-nums'] },
   scoreTextOn: { color: colors.onInk },
   spacer: { flex: 1 },
   rows: { alignSelf: 'stretch' },
   row: { minHeight: 56, justifyContent: 'center' },
   rowText: { ...fonts.regular(19), color: ink.text },
+  centered: { textAlign: 'center' },
+  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3 },
+  infoTop: { alignItems: 'center' },
+  steps: { gap: 14 },
+  step: { flexDirection: 'row', gap: 14, alignItems: 'flex-start' },
+  stepBadge: {
+    minWidth: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: colors.accentSoft,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
+  },
+  stepNumber: { ...fonts.bold(17), color: colors.accent, fontVariant: ['tabular-nums'] },
+  stepText: { flex: 1, ...fonts.regular(19), color: ink.text },
+  menuCard: { ...cardStyle, shadowOpacity: 0, borderWidth: StyleSheet.hairlineWidth, borderColor: ink.rule },
+  menuRow: { minHeight: 60, flexDirection: 'row', alignItems: 'center', gap: 14, paddingHorizontal: 16, paddingVertical: 10 },
+  menuIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: colors.surface2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  menuText: { flex: 1, ...fonts.semibold(19), color: ink.text },
+  menuRule: { height: StyleSheet.hairlineWidth, backgroundColor: ink.rule, marginLeft: 66 },
   pressed: { opacity: 0.55 },
 });

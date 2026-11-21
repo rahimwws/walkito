@@ -41,6 +41,7 @@ export const PLAYER_RU = {
   'player.painRule.a11y': 'Какая боль допустима',
   'player.tempo.on': 'Звук включён',
   'player.tempo.off': 'Звук выключен',
+  'player.more.a11y': 'Другие действия',
   'player.voice.replay': 'Повторить подсказку',
 
   // ── The player's own chrome ───────────────────────────────────────────────

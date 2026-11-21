@@ -41,6 +41,7 @@ export const PLAYER_FR = {
   'player.painRule.a11y': 'Quelle douleur est acceptable',
   'player.tempo.on': 'Son activé',
   'player.tempo.off': 'Son désactivé',
+  'player.more.a11y': 'Plus d’options',
   'player.voice.replay': 'Réécouter la consigne',
 
   // ── The player's own chrome ───────────────────────────────────────────────

@@ -52,6 +52,8 @@ export const PLAYER_EN = {
   'player.painRule.a11y': 'How much pain is OK',
   'player.tempo.on': 'Sound on',
   'player.tempo.off': 'Sound off',
+  /** The round ⋯ button at the top right of the player, read by VoiceOver. */
+  'player.more.a11y': 'More options',
   'player.voice.replay': 'Play the instruction again',
 
   // ── The player's own chrome ───────────────────────────────────────────────

@@ -13,12 +13,12 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { CHROME_MAX_FONT_SCALE, fonts } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { NUMERAL_SCALE, SIDE, TITLE_SCALE, ink } from './kit';
+import { MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -27,6 +27,8 @@ export type CountInProps = {
   eyebrow: string;
   /** The move about to start. */
   title: string;
+  /** Its catalogue id, for its picture on the pastel disc. */
+  exerciseId?: string | null;
   /** Where the screen begins under the host's header. */
   top?: number;
   /** The host's bottom inset; the safe area when left out. */
@@ -39,17 +41,17 @@ const POLL_MS = 100;
 const FADE_IN_MS = 160;
 const GO_HOLD_MS = 140;
 const FADE_OUT_MS = 220;
-const NUMBER = 200;
+const NUMBER = 150;
 
 /**
- * Three, two, one, go: white, the move's name, and one black number the size
- * of the screen. Read off the wall clock (`countInAt`), with a tick and a tap
+ * Three, two, one, go, in the player's Bend style: "GET READY", the move's
+ * name, its picture on the pastel disc, and one big number under it. Read off the wall clock (`countInAt`), with a tick and a tap
  * on each number and a firmer cue on go. A tap anywhere starts the move now.
  * Mounted around one shared value by hand, never with entering/exiting
  * builders, so a builder that fails can never leave an invisible layer
  * swallowing taps.
  */
-export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: CountInProps) {
+export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bottom, onDone }: CountInProps) {
   const t = useT();
   const insets = useSafeAreaInsets();
   const [mounted, setMounted] = useState(from != null);
@@ -130,7 +132,8 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
     return () => clearInterval(id);
   }, [from, fade, fadeOut, go, land]);
 
-  const stacked = useWindowDimensions().fontScale > 1.6;
+  const { fontScale, width } = useWindowDimensions();
+  const stacked = fontScale > 1.6;
   const hostStyle = useAnimatedStyle(() => ({ opacity: fade.value }));
   const numberStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
@@ -146,8 +149,11 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
         onPress={go}
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
         <View style={[styles.middle, stacked && styles.middleTop]}>
-          <Text style={styles.eyebrow}>{eyebrow}</Text>
+          <Text style={styles.eyebrow}>{eyebrow.toLocaleUpperCase()}</Text>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
+          {!stacked && exerciseId != null && (
+            <MoveCircle exerciseId={exerciseId} size={Math.min(width * 0.52, 220)} style={styles.picture} />
+          )}
           <Animated.Text
             accessibilityLiveRegion="assertive"
             maxFontSizeMultiplier={NUMERAL_SCALE}
@@ -168,16 +174,19 @@ export function CountIn({ from, eyebrow, title, top = 0, bottom, onDone }: Count
 const styles = StyleSheet.create({
   host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page },
   fill: { flex: 1 },
-  middle: { flex: 1, justifyContent: 'center', paddingHorizontal: SIDE, overflow: 'hidden' },
+  middle: { flex: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: SIDE, overflow: 'hidden' },
   middleTop: { justifyContent: 'flex-start', paddingTop: 16 },
-  eyebrow: { ...fonts.medium(19), color: ink.grey },
-  title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 4 },
+  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3, textAlign: 'center' },
+  title: { ...fonts.bold(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
+  picture: { marginTop: 24 },
   number: {
-    ...fonts.bold(NUMBER, -6),
+    ...fonts.bold(NUMBER, -4),
     lineHeight: NUMBER * 1.1,
-    color: ink.text,
+    color: colors.accent,
     fontVariant: ['tabular-nums'],
+    textAlign: 'center',
+    alignSelf: 'stretch',
     marginTop: 8,
   },
-  caption: { ...fonts.medium(17), color: ink.grey, paddingHorizontal: SIDE, paddingBottom: 24 },
+  caption: { ...fonts.medium(17), color: ink.grey, paddingHorizontal: SIDE, paddingBottom: 24, textAlign: 'center' },
 });

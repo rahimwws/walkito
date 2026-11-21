@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { DevSettings, Linking, Modal, StyleSheet, View } from 'react-native';
 
-import { todayKey, weekPlan } from '@/entities/program';
+import { todayDayNumber, todayKey, weekPlan } from '@/entities/program';
 import { Done } from './player/done';
 import { ink } from './player/kit';
 
@@ -21,9 +21,9 @@ const PREVIEW_PARAM = /[?&]previewDone(?:=([^&#]*))?/;
 
 /** What a session would have shown: today's plan session, or the first one
  * this week when today is a rest day. A fallback only if there is no plan. */
-const FALLBACK = { minutes: 8, moves: 5 };
+const FALLBACK = { minutes: 8, moves: 5, sets: 7 };
 
-type Preview = { early: boolean; minutes: number; moves: number; startedAt: number };
+type Preview = { early: boolean; minutes: number; moves: number; sets: number; dayNumber: number; startedAt: number };
 
 function previewFor(early: boolean): Preview {
   let shape = FALLBACK;
@@ -33,11 +33,17 @@ function previewFor(early: boolean): Preview {
     const day =
       plan.days.find((candidate) => candidate.date === today && candidate.exercises.length > 0) ??
       plan.days.find((candidate) => candidate.exercises.length > 0);
-    if (day != null) shape = { minutes: Math.max(1, day.minutes), moves: day.exercises.length };
+    if (day != null) {
+      shape = {
+        minutes: Math.max(1, day.minutes),
+        moves: day.exercises.length,
+        sets: day.exercises.reduce((sum, exercise) => sum + Math.max(1, exercise.dose.sets), 0),
+      };
+    }
   } catch {
     // No plan yet (onboarding not finished): the fallback shape will do.
   }
-  return { early, ...shape, startedAt: Date.now() };
+  return { early, ...shape, dayNumber: todayDayNumber(), startedAt: Date.now() };
 }
 
 /**
@@ -103,6 +109,8 @@ export function SessionDonePreview() {
             visible={shown}
             early={preview.early}
             moves={preview.moves}
+            sets={preview.sets}
+            dayNumber={preview.dayNumber}
             minutes={preview.minutes}
             feedback={!preview.early}
             startedAt={preview.startedAt}
@@ -116,5 +124,5 @@ export function SessionDonePreview() {
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: ink.page },
+  page: { flex: 1, backgroundColor: ink.canvas },
 });

@@ -41,6 +41,7 @@ export const PLAYER_DE = {
   'player.painRule.a11y': 'Wie viel Schmerz ist okay',
   'player.tempo.on': 'Ton an',
   'player.tempo.off': 'Ton aus',
+  'player.more.a11y': 'Weitere Optionen',
   'player.voice.replay': 'Anleitung noch einmal abspielen',
 
   // ── The player's own chrome ───────────────────────────────────────────────

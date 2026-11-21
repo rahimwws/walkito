@@ -41,6 +41,7 @@ export const PLAYER_ES = {
   'player.painRule.a11y': 'Cuánto dolor es aceptable',
   'player.tempo.on': 'Sonido activado',
   'player.tempo.off': 'Sonido desactivado',
+  'player.more.a11y': 'Más opciones',
   'player.voice.replay': 'Repetir la explicación',
 
   // ── The player's own chrome ───────────────────────────────────────────────

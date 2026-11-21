@@ -42,6 +42,7 @@ export const PLAYER_PT = {
   'player.painRule.a11y': 'Quanta dor é aceitável',
   'player.tempo.on': 'Som ligado',
   'player.tempo.off': 'Som desligado',
+  'player.more.a11y': 'Mais opções',
   'player.voice.replay': 'Repetir a explicação',
 
   // ── The player's own chrome ───────────────────────────────────────────────

@@ -38,4 +38,13 @@ export const DONE_RU = {
   'sessionDone.easierDone': 'Завтра начнём на шаг легче.',
   'sessionDone.tomorrowAt': 'Завтра в {time}',
   'sessionDone.nextOn': 'Следующее занятие: {day}',
+  'sessionDone.complete': 'Занятие завершено',
+  'sessionDone.tileSets': 'Подходы',
+  'sessionDone.tileSetsA11y': {
+    one: '{count} подход сделан',
+    few: '{count} подхода сделано',
+    many: '{count} подходов сделано',
+  },
+  'sessionDone.path.day': 'День {day}',
+  'sessionDone.path.completed': 'Пройден',
 };
