@@ -11,7 +11,7 @@ routing. They collide, so the two are split:
 - **`/app`** (repo root) — Expo Router's route tree. Route files are *thin
   re-exports only*, never implementation:
   ```tsx
-  export { HomePage as default } from '@/pages/home';
+  export { TodayPage as default } from '@/pages/today';
   ```
 - **`src/app`** — the FSD App layer: providers, layouts, app-wide wiring.
 

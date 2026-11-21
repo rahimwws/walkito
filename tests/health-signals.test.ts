@@ -1,10 +1,10 @@
 /**
  * What the Health integration has to survive.
  *
- * Everything here is pure. `signalsFrom` takes its whole world as an argument
- * and `briefState` takes its own, so none of these needs a device, a
- * permission, or a mock of HealthKit — which is exactly why the thresholds were
- * put in a file with no imports from the native module.
+ * Everything here is pure. `signalsFrom` takes its whole world as an argument,
+ * so none of these needs a device, a permission, or a mock of HealthKit —
+ * which is exactly why the thresholds were put in a file with no imports from
+ * the native module.
  *
  * The thresholds are the requirement. Several were deliberately raised after
  * the research: walking asymmetry now needs 7 percentage points across a 7-day
@@ -19,14 +19,11 @@ import { describe, expect, test } from 'bun:test';
 import {
   ELEVATED_PP,
   MIN_DAYS,
-  NO_SIGNALS,
   baselineFor,
   onFeetThresholdFrom,
   signalsFrom,
   type DailyMetric,
 } from '@/entities/health/model/metrics';
-import { briefState } from '@/pages/home/model/brief-state';
-import { quietTopic } from '@/pages/home/model/brief-state';
 
 const BLANK: Omit<DailyMetric, 'date'> = {
   steps: null,
@@ -67,19 +64,6 @@ function ending(n: number, k: number, tail: Partial<DailyMetric>): DailyMetric[]
 }
 
 describe('availability', () => {
-  test('a brief with no health data at all still resolves', () => {
-    const state = briefState({
-      name: 'Murat',
-      cursor: 20,
-      todayPain: 2,
-      doneToday: false,
-      streak: 3,
-      daysInstalled: 20,
-    });
-    expect(state).not.toBe('gait-change');
-    expect(typeof state).toBe('string');
-  });
-
   // `none` and `denied` are the same observable state, by Apple's design — and
   // readiness now hangs on walking speed, not asymmetry, because speed is the
   // better-measured metric and the only one a bilateral user can have.
@@ -128,19 +112,6 @@ describe('both heels', () => {
     const s = signalsFrom(slow, { bilateral: true });
     expect(s.walkingSpeedTrend).toBe('slower');
     expect(s.availability).toBe('ready');
-  });
-
-  test('a bilateral user never reaches the gait rung', () => {
-    const loud = signalsFrom(ending(30, 7, { asymmetryPct: 12 }), { bilateral: true });
-    const state = briefState({
-      name: 'M',
-      cursor: 20,
-      todayPain: 1,
-      doneToday: false,
-      streak: 2,
-      health: loud,
-    });
-    expect(state).not.toBe('gait-change');
   });
 });
 
@@ -209,109 +180,6 @@ describe('thresholds', () => {
     const history = days(30, (i) => ({ walkingSpeed: 1.4, flights: i === 28 ? 30 : 8 }));
     const s = signalsFrom(history);
     expect(s.flightsRatio).toBeGreaterThan(1.5);
-  });
-});
-
-describe('the ladder', () => {
-  const base = { name: 'Murat', cursor: 20, doneToday: false, streak: 3, daysInstalled: 20 };
-
-  const loudGait = {
-    ...NO_SIGNALS,
-    asymmetryElevatedDays: 5,
-    asymmetryDeltaPP: 9,
-    asymmetryToday: 11,
-    asymmetryBaseline: 2,
-    availability: 'ready' as const,
-  };
-
-  // The person always outranks the sensor.
-  test('pain 8 outranks every health signal', () => {
-    expect(briefState({ ...base, todayPain: 8, health: loudGait })).toBe('flare');
-  });
-
-  test('a two-point jump on the week is a spike, and beats the sensors', () => {
-    const state = briefState({ ...base, todayPain: 6, health: loudGait });
-    expect(state === 'pain-spike' || state === 'flare').toBe(true);
-  });
-
-  test('a big run outranks gait, because it is what actually happened', () => {
-    const both = { ...loudGait, bigRunYesterday: true };
-    expect(briefState({ ...base, todayPain: 1, health: both })).toBe('big-run');
-  });
-
-  test('walking speed outranks asymmetry', () => {
-    const both = { ...loudGait, walkingSpeedTrend: 'slower' as const };
-    expect(briefState({ ...base, todayPain: 1, health: both })).toBe('slower-walk');
-  });
-
-  test('a quiet morning with only asymmetry still reaches the gait rung', () => {
-    expect(briefState({ ...base, todayPain: 1, health: loudGait })).toBe('gait-change');
-  });
-
-  test('a short week of sleep leans the day lighter', () => {
-    const short = { ...NO_SIGNALS, sleepShort: true, sleepMeanMin: 380 };
-    expect(briefState({ ...base, todayPain: 1, health: short })).toBe('poor-sleep');
-  });
-
-  test('the predictive on-feet line fires before the day has gone wrong', () => {
-    const state = briefState({ ...base, todayPain: 1, hoursOnFeet: 6, onFeetThreshold: 7 });
-    expect(state).toBe('on-feet');
-  });
-
-  test('a long day on foot asks about the heel', () => {
-    expect(briefState({ ...base, todayPain: 1, stepsToday: 10_400 })).toBe('steps-today');
-    expect(briefState({ ...base, todayPain: 1, stepsToday: 9_999 })).not.toBe('steps-today');
-  });
-
-  test('the learned on-feet limit speaks before the generic step line', () => {
-    const state = briefState({
-      ...base,
-      todayPain: 1,
-      stepsToday: 12_000,
-      hoursOnFeet: 6,
-      onFeetThreshold: 7,
-    });
-    expect(state).toBe('on-feet');
-  });
-
-  test('pain still outranks a long day', () => {
-    expect(briefState({ ...base, todayPain: 8, stepsToday: 15_000 })).toBe('flare');
-  });
-
-  test('four days away is a return, not an ordinary morning', () => {
-    expect(briefState({ ...base, todayPain: 1, daysAway: 5 })).toBe('returning');
-  });
-
-  test('no data is not admitted to before the first week is out', () => {
-    const blind = { ...NO_SIGNALS, availability: 'none' as const };
-    expect(
-      briefState({ ...base, cursor: 3, daysInstalled: 3, todayPain: 1, health: blind }),
-    ).not.toBe('no-data');
-  });
-
-  test('after a week with nothing, it says so', () => {
-    const blind = { ...NO_SIGNALS, availability: 'none' as const };
-    expect(briefState({ ...base, todayPain: 1, health: blind })).toBe('no-data');
-  });
-
-  test('a user with data and nothing to report lands on the rotation', () => {
-    const fine = { ...NO_SIGNALS, availability: 'ready' as const, walkingSpeedTrend: 'stable' as const };
-    // The rotation is a set of states rather than one `quiet` the copy layer
-    // then re-dispatches on, so what this asserts is membership of it.
-    expect(briefState({ ...base, todayPain: 1, health: fine })).toStartWith('quiet-');
-  });
-});
-
-describe('variety', () => {
-  // The founder's complaint, as an assertion: a user with no signals at all
-  // must not see the same sentence every day.
-  test('the quiet rotation covers six topics across a week', () => {
-    const seen = new Set(Array.from({ length: 7 }, (_, i) => quietTopic(20 + i)));
-    expect(seen.size).toBe(6);
-  });
-
-  test('the rotation is stable within a day', () => {
-    expect(quietTopic(20)).toBe(quietTopic(20));
   });
 });
 

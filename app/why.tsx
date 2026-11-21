@@ -1,1 +1,1 @@
-export { WhyPage as default } from '@/pages/home';
+export { WhyPage as default } from '@/pages/today';

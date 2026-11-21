@@ -1,12 +1,11 @@
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { scheduleFirstStep, setWakeMinutes, wakeMinutes } from '@/entities/notifications';
-import { colors, fonts, space } from '@/shared/config';
+import { colors, fonts, space, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { Button } from '@/shared/ui/button';
 import { TimePicker } from '@/shared/ui/time-picker';
 
 /**
@@ -14,7 +13,7 @@ import { TimePicker } from '@/shared/ui/time-picker';
  * when the first-step routine is ready (and its reminder rings, when
  * notifications are on). Saved as her own answer, which wins over Health.
  */
-export function FirstStepTimePage() {
+export function WakeTimePage() {
   const t = useT();
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -37,15 +36,26 @@ export function FirstStepTimePage() {
       <View style={styles.picker}>
         <TimePicker minutes={minutes} onChange={setMinutes} variant="wheel" />
       </View>
-      <Button label={t('home.today.firstStep.save')} onPress={save} />
+      <Pressable accessibilityRole="button" onPress={save} style={({ pressed }) => [styles.save, pressed && styles.pressed]}>
+        <Text style={styles.saveText}>{t('home.today.firstStep.save')}</Text>
+      </Pressable>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   sheet: { flex: 1, backgroundColor: colors.surface },
-  content: { padding: space.screen, paddingTop: 28, gap: space.gap },
-  title: { ...fonts.bold(28, -0.4), color: colors.text },
+  content: { padding: space.screen, paddingTop: 32, gap: space.gap },
+  title: { ...fonts.bold(34, -0.6), color: colors.text },
   body: { ...fonts.regular(19), color: colors.text2 },
   picker: { alignItems: 'center', marginVertical: 8 },
+  save: {
+    minHeight: target.primary,
+    borderRadius: 999,
+    backgroundColor: colors.ink,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  saveText: { ...fonts.semibold(19), color: colors.onInk },
+  pressed: { opacity: 0.7 },
 });

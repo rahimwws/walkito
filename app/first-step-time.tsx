@@ -1,1 +1,1 @@
-export { FirstStepTimePage as default } from '@/pages/home';
+export { WakeTimePage as default } from '@/pages/today';
