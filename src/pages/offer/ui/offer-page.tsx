@@ -36,6 +36,7 @@ import {
   type PaywallPeriod,
   type Plan,
   type Shelf,
+  markWelcomeOwed,
 } from '@/entities/purchase';
 import {
   armHomeTour,
@@ -761,6 +762,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
   /** Bought or restored: a success buzz, then away. */
   const finish = () => {
     void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    markWelcomeOwed();
     if (__DEV__ && onSimulator) grantDevAccess();
     close();
   };

@@ -18,6 +18,7 @@ import {
   type Plan,
   type PaywallPeriod,
   type Shelf,
+  markWelcomeOwed,
 } from '@/entities/purchase';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
@@ -198,6 +199,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     // Re-arm the read-only concession, so a *second* lapse meets this screen
     // again rather than the browsing mode the first one was answered with.
     clearBrowsingLapsed();
+    markWelcomeOwed();
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     onUnlocked?.();
   };

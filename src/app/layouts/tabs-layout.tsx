@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { runOnJS, useAnimatedReaction } from 'react-native-reanimated';
 
+import { useYoureInPresenter } from '@/pages/youre-in';
 import { colors } from '@/shared/config/tokens';
 import { useT } from '@/shared/lib/i18n';
 import { ProgramProvider, useProgram } from '@/shared/lib/program';
@@ -41,6 +42,8 @@ function useSessionOpen(): boolean {
 function TabsChrome() {
   const t = useT();
   const sessionOpen = useSessionOpen();
+  // "You're in", once, after a purchase or a restore.
+  useYoureInPresenter();
   return (
     <View style={{ flex: 1 }}>
       <NativeTabs hidden={sessionOpen} minimizeBehavior="never" tintColor={colors.accent}>

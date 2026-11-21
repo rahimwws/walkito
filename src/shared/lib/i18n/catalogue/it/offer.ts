@@ -293,4 +293,8 @@ export const OFFER_IT = {
   'offer.trial.remindTitle': { one: 'Ti avviseremo {count} giorno prima della fine della prova', other: 'Ti avviseremo {count} giorni prima della fine della prova' },
   'offer.trial.cancelHow': 'Per disdire: apri Impostazioni, tocca il tuo nome, poi Abbonamenti.',
   'offer.trial.cancelHowAndroid': 'Per disdire: apri Google Play, tocca il tuo profilo, poi Pagamenti e abbonamenti.',
+  /** "You're in": once, after a purchase or a restore, before today's session. */
+  'offer.welcome.title': 'Ci sei',
+  'offer.welcome.line': 'Il tuo piano è pronto. Inizia con la sessione di oggi: pochi minuti, al tuo ritmo.',
+  'offer.welcome.cta': 'Inizia la sessione di oggi',
 };

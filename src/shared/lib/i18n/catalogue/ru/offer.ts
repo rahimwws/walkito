@@ -297,4 +297,8 @@ export const OFFER_RU = {
   'offer.trial.remindTitle': { one: 'Напомним за {count} день до конца пробного периода', few: 'Напомним за {count} дня до конца пробного периода', many: 'Напомним за {count} дней до конца пробного периода' },
   'offer.trial.cancelHow': 'Чтобы отменить: откройте Настройки, нажмите на своё имя, затем «Подписки».',
   'offer.trial.cancelHowAndroid': 'Чтобы отменить: откройте Google Play, нажмите на профиль, затем «Платежи и подписки».',
+  /** "You're in": once, after a purchase or a restore, before today's session. */
+  'offer.welcome.title': 'Всё готово',
+  'offer.welcome.line': 'Ваш план готов. Он начинается с сегодняшней сессии: несколько минут в своём темпе.',
+  'offer.welcome.cta': 'Начать сегодняшнюю сессию',
 };

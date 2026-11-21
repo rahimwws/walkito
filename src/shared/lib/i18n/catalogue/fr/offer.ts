@@ -293,4 +293,8 @@ export const OFFER_FR = {
   'offer.trial.remindTitle': { one: 'On te le rappellera {count} jour avant la fin de l’essai', other: 'On te le rappellera {count} jours avant la fin de l’essai' },
   'offer.trial.cancelHow': 'Pour annuler : ouvre Réglages, touche ton nom, puis Abonnements.',
   'offer.trial.cancelHowAndroid': 'Pour annuler : ouvre Google Play, touche ton profil, puis Paiements et abonnements.',
+  /** "You're in": once, after a purchase or a restore, before today's session. */
+  'offer.welcome.title': 'C’est parti',
+  'offer.welcome.line': 'Ton programme est prêt. Il commence par la séance du jour : quelques minutes, à ton rythme.',
+  'offer.welcome.cta': 'Commencer la séance du jour',
 };

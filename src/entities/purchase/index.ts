@@ -102,3 +102,4 @@ export {
   setSampleSheetCloses,
   type SampleRetention,
 } from './model/samples';
+export { markWelcomeOwed, takeWelcomeOwed, useWelcomeOwed } from './model/welcome';

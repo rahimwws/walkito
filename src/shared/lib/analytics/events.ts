@@ -164,6 +164,10 @@ export type AnalyticsEvents = {
   paywall_dismissed: { offering: string };
   purchase_started: PurchaseProps;
   purchase_completed: PurchaseProps;
+  /** "You're in", shown once after a purchase or a restore on our paywalls. */
+  purchase_welcome_viewed: Record<string, never>;
+  /** Its "Start today's session". */
+  purchase_welcome_started: Record<string, never>;
   /** The store's sheet was closed. `store_result` is `cancelled`. */
   purchase_cancelled: PurchaseProps & { store_result: StoreResult };
   /** Waiting on Ask to Buy or a bank's confirmation. Not a failure; if it
