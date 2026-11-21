@@ -1,9 +1,5 @@
-import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
-import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
-import SmartphoneLostWifiIcon from '@hugeicons/core-free-icons/SmartphoneLostWifiIcon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useVideoPlayer, VideoView, type VideoPlayer } from 'expo-video';
+import { useVideoPlayer, VideoView } from 'expo-video';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AppState,
@@ -14,12 +10,9 @@ import {
   Text,
   useWindowDimensions,
   View,
-  type StyleProp,
-  type ViewStyle,
 } from 'react-native';
-import Animated, {
+import {
   Easing,
-  FadeIn,
   ReduceMotion,
   cancelAnimation,
   useSharedValue,
@@ -28,11 +21,9 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { ZONE_META, planSettings } from '@/entities/program';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { planSettings } from '@/entities/program';
+import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../../config/exercise-clips';
 import { TEST_PICTURES } from '../../config/test-pictures';
@@ -53,6 +44,7 @@ import {
   type Station,
 } from '../../model/test-day';
 import { CountIn } from '../player/count-in';
+import { Capsule, Hairline, SIDE, TextButton as KitTextButton, ink } from '../player/kit';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
 import { BALANCE_EYES_OPEN_STEPS, TEST_META } from './test-meta';
@@ -73,8 +65,6 @@ type Stage = 'ready' | 'counting' | 'measuring' | 'paused' | 'confirm';
  * depend on this — it runs on the UI thread — so ten a second is only how
  * soon a new raise or second is noticed. */
 const POLL_MS = 100;
-
-const RING_STROKE = 14;
 
 export type TestRunnerProps = {
   station: Station;
@@ -124,9 +114,6 @@ export function TestRunner({
   onBegan,
   onConfirm,
 }: TestRunnerProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
   const t = useT();
@@ -134,7 +121,6 @@ export function TestRunner({
   const { kind } = station;
   const meta = TEST_META[kind];
   const steps = kind === 'balance' && balanceEyesOpen(planSettings()) ? BALANCE_EYES_OPEN_STEPS : meta.steps;
-  const tone = accents[scheme][ZONE_META[meta.zone].accent];
   const max = fullMeasure(kind, windowMs);
 
   const [stage, setStage] = useState<Stage>(autoStart ? 'counting' : 'ready');
@@ -342,46 +328,44 @@ export function TestRunner({
 
           {stage === 'ready' ? (
             <>
-              <TestPicture
-                kind={kind}
-                mirrored={mirrored}
-                canPlay={!clipFailed}
-                onPlay={() => setViewing(true)}
-                height={Math.min(width - 40, height * 0.4)}
+              <Image
+                source={TEST_PICTURES[kind].full}
+                style={[styles.picture, { height: Math.min(width - 48, height * 0.38) }, mirrored && styles.mirrored]}
+                resizeMode="contain"
+                accessibilityIgnoresInvertColors
               />
+              {!clipFailed && (
+                <KitTextButton label={t('testday.watch')} onPress={() => setViewing(true)} style={styles.watch} />
+              )}
               <View style={styles.steps}>
                 {steps.map((key, index) => (
                   <View key={key} style={styles.step}>
-                    <View style={[styles.stepNumber, { backgroundColor: tone.track }]}>
-                      <Text style={[styles.stepNumberText, { color: tone.fill }]}>{index + 1}</Text>
-                    </View>
-                    <Text style={[styles.stepText, { color: colors.foreground }]}>{t(key)}</Text>
+                    <Text style={styles.stepNumber}>{index + 1}</Text>
+                    <Text style={styles.stepText}>{t(key)}</Text>
                   </View>
                 ))}
               </View>
             </>
           ) : (
             <>
-              <View style={[styles.card, { backgroundColor: colors.card }]}>
-                <Text style={[styles.question, { color: colors.foreground }]} accessibilityLiveRegion="polite">
-                  {kind === 'calf'
-                    ? t('testday.confirm.raises', { count: value })
-                    : t('testday.confirm.seconds', { count: value })}
-                </Text>
+              <Text style={styles.question} accessibilityLiveRegion="polite">
+                {kind === 'calf'
+                  ? t('testday.confirm.raises', { count: value })
+                  : t('testday.confirm.seconds', { count: value })}
+              </Text>
+              <View style={styles.stepper}>
                 <Stepper value={value} max={max} onChange={setValue} />
-                {/* A hold is stopped from wherever the phone is — for balance,
-                    after opening the eyes and reaching it — so its figure runs
-                    long, not short, and the hint says which way to correct. */}
-                <Text style={[styles.hint, { color: meter.caption }]}>
-                  {kind === 'calf' ? t('testday.confirm.hint') : t('testday.confirm.holdHint')}
-                </Text>
               </View>
+              {/* A hold is stopped from wherever the phone is, so its figure
+                  runs long, not short, and the hint says which way to correct. */}
+              <Text style={styles.hint}>{kind === 'calf' ? t('testday.confirm.hint') : t('testday.confirm.holdHint')}</Text>
 
               {nextLeg != null && (
-                <View style={[styles.card, styles.next, { backgroundColor: colors.card }]}>
-                  <Text style={[styles.nextTitle, { color: colors.foreground }]}>{t('testday.calf.otherTitle')}</Text>
-                  <LegChip label={nextLeg} tone={tone} />
-                  <Text style={[styles.nextBody, { color: meter.caption }]}>{t('testday.calf.otherBody')}</Text>
+                <View style={styles.next}>
+                  <Hairline />
+                  <Text style={styles.nextTitle}>{t('testday.calf.otherTitle')}</Text>
+                  <Text style={styles.nextLeg}>{nextLeg}</Text>
+                  <Text style={styles.hint}>{t('testday.calf.otherBody')}</Text>
                 </View>
               )}
             </>
@@ -390,20 +374,14 @@ export function TestRunner({
 
         <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
           {stage === 'ready' ? (
-            <PrimaryButton label={t('testday.start')} onPress={start} />
+            <Capsule label={t('testday.start')} onPress={start} />
           ) : (
             <>
-              <PrimaryButton
-                label={
-                  nextLeg != null
-                    ? t('testday.start')
-                    : last
-                      ? t('testday.confirm.finish')
-                      : t('testday.confirm.next')
-                }
+              <Capsule
+                label={nextLeg != null ? t('testday.start') : last ? t('testday.confirm.finish') : t('testday.confirm.next')}
                 onPress={() => onConfirm(value)}
               />
-              <TextButton label={t('testday.confirm.again')} onPress={restart} />
+              <KitTextButton label={t('testday.confirm.again')} onPress={restart} />
             </>
           )}
         </View>
@@ -413,7 +391,7 @@ export function TestRunner({
 
   // Counting, measuring and paused share one screen: the count runs over the
   // measuring screen, so "go" lifts it away to reveal the clock already there.
-  const ringSize = Math.min(width - 96, height * 0.36, 300);
+  const ringSize = Math.min(width - 96, height * 0.36, 280);
   const secondsLeft = secondsLeftAt(elapsed, windowMs);
   const reps = measuredAt('calf', elapsed, windowMs);
 
@@ -425,58 +403,37 @@ export function TestRunner({
           <View style={styles.flex}>
             <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
           </View>
-          <ClipCard
-            player={player}
-            mirrored={mirrored}
-            failed={clipFailed}
-            onExpand={() => setViewing(true)}
-            style={styles.thumb}
-            small
-          />
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={t('widgets.expandDemo')}
+            disabled={clipFailed}
+            onPress={() => setViewing(true)}
+            style={styles.thumb}>
+            <View style={styles.video} pointerEvents="none">
+              <VideoView style={[styles.video, mirrored && styles.mirrored]} player={player} nativeControls={false} contentFit="cover" />
+            </View>
+          </Pressable>
         </View>
 
-        {/* Not one accessible element: the figure, its unit and the clock
-            are read as the lines they are, rather than glued into a sentence
-            here that only works in English. */}
+        {/* Not one accessible element: the figure, its unit and the clock are
+            read as the lines they are, not glued into an English sentence. */}
         <View style={styles.ringArea} accessibilityRole="timer">
-          <CountdownRing size={ringSize} stroke={RING_STROKE} left={ring} tone={tone}>
-            {kind === 'calf' ? (
-              <>
-                <Text style={[styles.big, { color: meter.ink }]} numberOfLines={1} adjustsFontSizeToFit>
-                  {reps}
-                </Text>
-                <Text style={[styles.unit, { color: meter.label }]}>
-                  {t('testday.results.unitRaises', { count: reps })}
-                </Text>
-                {/* Where in the raise the pace has got to. Blank until the
-                    clock is running, so the count does not say "up" to
-                    somebody still getting into position. */}
-                <Text style={[styles.phase, { color: tone.fill }]}>
-                  {stage === 'measuring'
-                    ? repPhaseAt(elapsed) === 'up'
-                      ? t('testday.calf.up')
-                      : t('testday.calf.down')
-                    : ' '}
-                </Text>
-              </>
-            ) : (
-              <>
-                <Text style={[styles.big, { color: meter.ink }]} numberOfLines={1} adjustsFontSizeToFit>
-                  {secondsLeft}
-                </Text>
-                <Text style={[styles.unit, { color: meter.label }]}>
-                  {t('testday.secondsLeft', { count: secondsLeft })}
-                </Text>
-              </>
+          <CountdownRing size={ringSize} stroke={4} left={ring} tone={RING_TONE}>
+            <Text style={styles.big} numberOfLines={1} adjustsFontSizeToFit>
+              {kind === 'calf' ? reps : secondsLeft}
+            </Text>
+            <Text style={styles.unit}>
+              {kind === 'calf' ? t('testday.results.unitRaises', { count: reps }) : t('testday.secondsLeft', { count: secondsLeft })}
+            </Text>
+            {kind === 'calf' && (
+              <Text style={styles.phase}>
+                {stage === 'measuring' ? (repPhaseAt(elapsed) === 'up' ? t('testday.calf.up') : t('testday.calf.down')) : ' '}
+              </Text>
             )}
           </CountdownRing>
-          {/* The other half of the clock, in a line under it. The raises
-              count up in the ring, so this is the time they run against. A
-              hold counts down in the ring, so this is what has been held —
-              the figure its confirmation will ask about. With only the time
-              left on screen, "37 seconds - is that right?" asked about a
-              number nobody had seen. */}
-          <Text style={[styles.clock, { color: meter.label }]}>
+          {/* The other half of the clock: the time the raises run against, or
+              what a hold has reached, the figure its confirmation asks about. */}
+          <Text style={styles.clock}>
             {kind === 'calf'
               ? t('testday.timeLeft', { time: clockLabel(secondsLeft) })
               : t('testday.held', { n: measuredAt(kind, elapsed, windowMs) })}
@@ -484,23 +441,23 @@ export function TestRunner({
         </View>
 
         {stage === 'paused' ? (
-          <View style={styles.pausedCopy} accessibilityLiveRegion="polite">
-            <Text style={[styles.pausedTitle, { color: colors.foreground }]}>{t('testday.paused.title')}</Text>
-            <Text style={[styles.hint, { color: meter.caption }]}>{t('testday.paused.body')}</Text>
+          <View style={styles.paused} accessibilityLiveRegion="polite">
+            <Text style={styles.pausedTitle}>{t('testday.paused.title')}</Text>
+            <Text style={styles.hint}>{t('testday.paused.body')}</Text>
           </View>
         ) : (
-          <Text style={[styles.stopHint, { color: meter.caption }]}>{t(meta.stopHint)}</Text>
+          <Text style={styles.stopHint}>{t(meta.stopHint)}</Text>
         )}
       </View>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
         {stage === 'paused' ? (
           <>
-            <PrimaryButton label={t('testday.paused.resume')} onPress={start} />
-            <TextButton label={t('testday.paused.restart')} onPress={restart} />
+            <Capsule label={t('testday.paused.resume')} onPress={start} />
+            <KitTextButton label={t('testday.paused.restart')} onPress={restart} />
           </>
         ) : (
-          <PrimaryButton label={t('testday.stop')} onPress={stop} disabled={stage !== 'measuring'} />
+          <Capsule label={t('testday.stop')} onPress={stop} disabled={stage !== 'measuring'} />
         )}
       </View>
 
@@ -516,372 +473,60 @@ export function TestRunner({
   );
 }
 
+const RING_TONE = { fill: ink.text, track: ink.rule };
+
 function Heading({ eyebrow, title, leg }: { eyebrow: string; title: string; leg: string | null }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   return (
     <View>
-      <Text style={[styles.eyebrow, { color: meter.label }]}>{eyebrow}</Text>
-      <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
+      <Text style={styles.eyebrow}>{eyebrow}</Text>
+      <Text style={styles.title} accessibilityRole="header">
         {title}
       </Text>
-      {leg != null && <Text style={[styles.leg, { color: colors.foreground }]}>{leg}</Text>}
+      {leg != null && <Text style={styles.leg}>{leg}</Text>}
     </View>
-  );
-}
-
-function LegChip({ label, tone }: { label: string; tone: { fill: string; track: string } }) {
-  return (
-    <View style={[styles.chip, { backgroundColor: tone.track }]}>
-      <Text style={[styles.chipText, { color: tone.fill }]}>{label}</Text>
-    </View>
-  );
-}
-
-function TextButton({ label, onPress }: { label: string; onPress: () => void }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  return (
-    <Pressable
-      accessibilityRole="button"
-      onPress={onPress}
-      hitSlop={8}
-      style={({ pressed }) => [styles.textButton, pressed && styles.pressed]}>
-      <Text style={[styles.textButtonLabel, { color: colors.foreground }]}>{label}</Text>
-    </Pressable>
-  );
-}
-
-/**
- * The test before it starts: the position to take, as a picture, rather than a
- * clip of somebody doing it. A still shows the one thing to watch, with its
- * arrow or ring, and is there at once; the clip shows the movement, so it is
- * one tap away, at full size. Mirrored with the clip, so the picture stands on
- * the leg being tested.
- */
-function TestPicture({
-  kind,
-  mirrored,
-  canPlay,
-  onPlay,
-  height,
-}: {
-  kind: keyof typeof TEST_PICTURES;
-  mirrored: boolean;
-  canPlay: boolean;
-  onPlay: () => void;
-  /** The frame's height. The pictures are trimmed to their figure, so a tall
-   * one (the balance test) fills it and a wide one fills the width. */
-  height: number;
-}) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const t = useT();
-  return (
-    <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)} style={styles.picture}>
-      <Image
-        source={TEST_PICTURES[kind].full}
-        style={[styles.pictureImage, { height }, mirrored && styles.mirrored]}
-        resizeMode="contain"
-        accessibilityIgnoresInvertColors
-      />
-      {canPlay && (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={t('testday.watch')}
-          onPress={() => {
-            Haptics.selectionAsync();
-            onPlay();
-          }}
-          hitSlop={8}
-          style={({ pressed }) => [styles.watch, { backgroundColor: colors.card }, pressed && styles.pressed]}>
-          <HugeiconsIcon icon={PlayIcon} size={15} color={colors.foreground} strokeWidth={2.2} />
-          <Text style={[styles.watchLabel, { color: colors.foreground }]}>{t('testday.watch')}</Text>
-        </Pressable>
-      )}
-    </Animated.View>
-  );
-}
-
-/** The demonstration in a rounded card: the full width before the test, a
- * thumbnail in the corner during it. Either one opens it at full size, so the
- * movement can actually be followed, not just glimpsed. */
-function ClipCard({
-  player,
-  mirrored,
-  failed,
-  onExpand,
-  small = false,
-  style,
-}: {
-  player: VideoPlayer;
-  mirrored: boolean;
-  failed: boolean;
-  onExpand: () => void;
-  small?: boolean;
-  style?: StyleProp<ViewStyle>;
-}) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const t = useT();
-  return (
-    // The player is a native view: nothing clips it but an ancestor that says
-    // so, which is why the radius lives on this wrapper.
-    <Pressable
-      accessibilityRole="button"
-      accessibilityLabel={t('widgets.expandDemo')}
-      disabled={failed}
-      onPress={() => {
-        Haptics.selectionAsync();
-        onExpand();
-      }}
-      style={[small ? styles.thumbFrame : styles.clipFrame, { backgroundColor: colors.card }, style]}>
-      <View style={styles.video} pointerEvents="none">
-        <VideoView
-          style={[styles.video, mirrored && styles.mirrored]}
-          player={player}
-          nativeControls={false}
-          contentFit="cover"
-        />
-      </View>
-      {!failed && (
-        <View style={[styles.expand, small && styles.expandSmall]} pointerEvents="none">
-          <HugeiconsIcon icon={ArrowExpandDiagonal01Icon} size={small ? 14 : 18} color="#111114" strokeWidth={2.2} />
-        </View>
-      )}
-      {/* The offline glyph where the clip would be: in the corner thumbnail on
-          its own, which has no room for the line. */}
-      {failed && (
-        <View style={styles.clipFallback} pointerEvents="none">
-          {/* Sized, so the 88pt thumbnail's side padding (kept for the line)
-              cannot squeeze the box and push the glyph off centre. */}
-          <View
-            accessibilityElementsHidden
-            importantForAccessibility="no-hide-descendants"
-            style={small ? styles.failSmall : styles.failLarge}>
-            <HugeiconsIcon icon={SmartphoneLostWifiIcon} size={small ? 32 : 40} color={meter.caption} strokeWidth={1.6} />
-          </View>
-          {!small && (
-            <Text style={[styles.clipFallbackText, { color: meter.caption }]}>{t('widgets.clipFailed')}</Text>
-          )}
-        </View>
-      )}
-    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1 },
+  root: { flex: 1, backgroundColor: ink.page },
   flex: { flex: 1 },
-  content: {
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    paddingBottom: 24,
-  },
-  eyebrow: fonts.bold(13, 0.4),
-  title: {
-    ...fonts.heavy(30, -0.8),
-    lineHeight: 36,
-    marginTop: 4,
-  },
-  leg: {
-    ...fonts.semibold(17),
-    marginTop: 2,
-  },
-  picture: {
-    marginTop: 16,
-    alignItems: 'center',
-    gap: 12,
-  },
-  pictureImage: {
-    width: '100%',
-  },
-  // Under the picture rather than on it: the figures are trimmed to their
-  // edges, so there is no corner of a picture that is always empty.
-  watch: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    height: 34,
-    paddingHorizontal: 13,
-    borderRadius: 17,
-    borderCurve: 'continuous',
-  },
-  watchLabel: fonts.semibold(14, -0.1),
-  clipFrame: {
-    borderRadius: 28,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  thumbFrame: {
-    borderRadius: 20,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  thumb: {
-    width: 88,
-    height: 88,
-  },
+  content: { paddingHorizontal: SIDE, paddingTop: 16, paddingBottom: 24 },
+  eyebrow: { ...fonts.medium(17), color: ink.grey },
+  title: { ...fonts.bold(34, -0.6), color: ink.text, marginTop: 2 },
+  leg: { ...fonts.semibold(19), color: ink.text, marginTop: 2 },
+  picture: { width: '100%', marginTop: 24 },
+  mirrored: { transform: [{ scaleX: -1 }] },
+  watch: { alignSelf: 'flex-start', paddingHorizontal: 0 },
+  steps: { marginTop: 16, gap: 14 },
+  step: { flexDirection: 'row', gap: 14 },
+  stepNumber: { ...fonts.bold(19), color: ink.text, width: 20, fontVariant: ['tabular-nums'] },
+  stepText: { flex: 1, ...fonts.regular(19), color: ink.text },
+  question: { ...fonts.bold(28, -0.4), color: ink.text, marginTop: 32 },
+  stepper: { marginTop: 24, alignItems: 'flex-start' },
+  hint: { ...fonts.regular(17), color: ink.grey, marginTop: 16 },
+  next: { marginTop: 32, gap: 4 },
+  nextTitle: { ...fonts.semibold(19), color: ink.text, marginTop: 24 },
+  nextLeg: { ...fonts.regular(19), color: ink.text },
+  measure: { flex: 1, paddingHorizontal: SIDE, paddingTop: 16 },
+  measureHead: { flexDirection: 'row', alignItems: 'flex-start', gap: 16 },
+  thumb: { width: 88, height: 88, overflow: 'hidden', backgroundColor: ink.studio },
   video: { flex: 1 },
-  expand: {
-    position: 'absolute',
-    right: 12,
-    bottom: 12,
-    width: 34,
-    height: 34,
-    borderRadius: 17,
-    backgroundColor: 'rgba(255,255,255,0.92)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  expandSmall: {
-    right: 6,
-    bottom: 6,
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-  },
-  mirrored: {
-    transform: [{ scaleX: -1 }],
-  },
-  clipFallback: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 24,
-    gap: 10,
-  },
-  failSmall: { width: 60, height: 60 },
-  failLarge: { width: 72, height: 72 },
-  clipFallbackText: {
-    ...fonts.medium(15),
-    textAlign: 'center',
-  },
-  steps: {
-    marginTop: 20,
-    gap: 14,
-  },
-  step: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 12,
-  },
-  stepNumber: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  stepNumberText: fonts.bold(14),
-  stepText: {
-    flex: 1,
-    ...fonts.medium(16),
-    lineHeight: 22,
-    paddingTop: 3,
-  },
-  card: {
-    borderRadius: 26,
-    borderCurve: 'continuous',
-    paddingHorizontal: 18,
-    paddingVertical: 22,
-    alignItems: 'center',
-    gap: 16,
-    marginTop: 20,
-  },
-  question: {
-    ...fonts.bold(20, -0.3),
-    lineHeight: 26,
-    textAlign: 'center',
-  },
-  hint: {
-    ...fonts.medium(14),
-    lineHeight: 19,
-    textAlign: 'center',
-  },
-  next: {
-    gap: 10,
-    paddingVertical: 18,
-  },
-  nextTitle: fonts.heavy(20, -0.4),
-  nextBody: {
-    ...fonts.medium(15),
-    lineHeight: 21,
-    textAlign: 'center',
-  },
-  chip: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 50,
-  },
-  chipText: fonts.bold(14),
-  measure: {
-    flex: 1,
-    paddingHorizontal: 20,
-    paddingTop: 8,
-  },
-  measureHead: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 16,
-  },
-  ringArea: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 14,
-  },
-  /** Read from where the phone is during a test: on the floor or against a
-   * wall, a couple of metres off. */
+  ringArea: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 16 },
+  /** Read from a couple of metres off, with the phone on the floor or a wall. */
   big: {
-    ...fonts.heavy(104, -3),
-    lineHeight: 112,
+    ...fonts.bold(96, -3),
+    lineHeight: 104,
+    color: ink.text,
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
     alignSelf: 'stretch',
     paddingHorizontal: 24,
   },
-  unit: {
-    ...fonts.semibold(17),
-    marginTop: -6,
-  },
-  phase: {
-    ...fonts.heavy(20, -0.2),
-    marginTop: 6,
-  },
-  clock: {
-    ...fonts.semibold(17),
-    fontVariant: ['tabular-nums'],
-  },
-  stopHint: {
-    ...fonts.medium(15),
-    lineHeight: 21,
-    textAlign: 'center',
-    paddingHorizontal: 12,
-    paddingBottom: 12,
-  },
-  pausedCopy: {
-    alignItems: 'center',
-    gap: 4,
-    paddingBottom: 12,
-  },
-  pausedTitle: fonts.heavy(20),
-  dock: {
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    gap: 4,
-  },
-  textButton: {
-    height: 48,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textButtonLabel: fonts.semibold(16),
-  pressed: { opacity: 0.6 },
+  unit: { ...fonts.medium(17), color: ink.grey, marginTop: -6 },
+  phase: { ...fonts.semibold(19), color: ink.text, marginTop: 6 },
+  clock: { ...fonts.medium(19), color: ink.grey, fontVariant: ['tabular-nums'] },
+  stopHint: { ...fonts.regular(17), color: ink.grey, paddingBottom: 12 },
+  paused: { gap: 0, paddingBottom: 12 },
+  pausedTitle: { ...fonts.semibold(19), color: ink.text },
+  dock: { paddingHorizontal: SIDE, paddingTop: 8, gap: 4 },
 });

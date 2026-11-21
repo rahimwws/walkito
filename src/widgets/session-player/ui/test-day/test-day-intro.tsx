@@ -1,8 +1,3 @@
-import BrickWallIcon from '@hugeicons/core-free-icons/BrickWallIcon';
-import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
-import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
-import SmartPhone01Icon from '@hugeicons/core-free-icons/SmartPhone01Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -12,7 +7,6 @@ import {
   GOAL_SPECS,
   IN_SESSION_STOP_PAIN,
   RETEST_MINUTES,
-  ZONE_META,
   goals,
   logPain,
   painLatestOn,
@@ -21,49 +15,32 @@ import {
   settleOffset,
   todayDayNumber,
 } from '@/entities/program';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import { GOAL_OF_TEST, TEST_ORDER, goalValuesOf, type TestKind } from '../../model/test-day';
+import { Capsule, Hairline, SIDE, TextButton, ink } from '../player/kit';
 import { TEST_META } from './test-meta';
 
-/** The 0–10 scale every check-in in the app is out of. */
 const PAIN_SCALE = Array.from({ length: 11 }, (_, i) => i);
 
 export type TestDayIntroProps = {
   onStart: () => void;
-  /** "Test tomorrow": nothing measured, and the host moves the test a day on. */
   onTomorrow: () => void;
 };
 
 /**
- * What the next four minutes are, before any of them start.
- *
- * The old test day opened on a twenty-second timer with no word of what was
- * being measured or why, and ended on four numbers to fill in. This says it up
- * front: three tests, what each one reads, where the last test left it against
- * the goal, and what to have ready — so the first thing the clock times is the
- * test, not somebody working out what the test is.
- *
- * When today's check-in has not been answered it is asked here, in the same
- * 0–10 the check-in uses and recorded as the check-in. Two reasons. The test
- * reads the foot, and the foot on a bad day reads low — somebody at a seven is
- * better off testing tomorrow, and this is the one moment to say so. And a
- * test day that finished with Home still asking how the foot was that morning
- * was one of the ways the app disagreed with itself.
+ * Before the Foot Check: the title, how long it takes, the three tests as
+ * plain rows (picture, name, where it stands against its goal), what to have
+ * ready in three lines, and today's check-in when it has not been answered.
+ * A high check-in offers the test tomorrow instead, in words under Start.
+ * The check-in is saved on the way out however the screen is left.
  */
 export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
 
-  // Read once, on arrival. Answering below must not make the question vanish
-  // from under the finger that just answered it.
   const [day] = useState(() => todayDayNumber());
   const [ask] = useState(() => painOn(day) == null);
   const [logged] = useState(() => painLatestOn(day));
@@ -78,28 +55,21 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
     const current = goals();
     return TEST_ORDER.map((kind) => {
       const type = GOAL_OF_TEST[kind];
-      // The last test's figure; a goal restored without its tests still has
-      // the figure it was last moved by.
       const now = measured?.[type] ?? current.find((goal) => goal.type === type)?.current ?? null;
       return { kind, now, target: GOAL_SPECS[type].target };
     });
   }, []);
 
-  /** One write per opening: the answer is a check-in, and a double tap must
-   * not file it twice. */
   const saved = useRef(false);
-  /** One press: Start and Test tomorrow each lead somewhere once. */
   const pressed = useRef(false);
-  /** The answer as it stands, for the write on the way out. */
   const scoreRef = useRef(score);
   scoreRef.current = score;
+  /** Today's check-in, once, only when it was asked here and answered. */
   const save = () => {
     const answer = scoreRef.current;
     if (saved.current || !ask || answer == null) return;
     saved.current = true;
     logPain(day, answer, []);
-    // The same step Home takes after a check-in: the morning's answer is
-    // what moves the plan back or lets it return.
     settleOffset(day);
   };
   const commit = (then: () => void) => {
@@ -108,22 +78,9 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
     save();
     then();
   };
-
-  /**
-   * An answer is kept however the screen is left — the X, a swipe down, the
-   * plan closing under it — not only by the two buttons. The hint under the
-   * scale says it counts as today's check-in, and it used to count only if one
-   * of them was pressed: answered and closed, Home went on asking. Written as
-   * the screen goes rather than on every tap, so a finger that lands on 3 and
-   * moves to 5 files one check-in, not two, and the morning figure is the 5.
-   */
-  useEffect(
-    () => () => save(),
-    // Once, at unmount. `save` reads everything it needs through refs and the
-    // values fixed at mount.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [],
-  );
+  // Closed by the header instead: the answer still counts.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => () => save(), []);
 
   const goalLine = (kind: TestKind, now: number | null, target: number): string => {
     if (kind === 'calf') {
@@ -139,82 +96,59 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <Text style={[styles.eyebrow, { color: meter.label }]}>{t('testday.intro.eyebrow')}</Text>
-        <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
+        <Text accessibilityRole="header" style={styles.title}>
           {t('testday.intro.title')}
         </Text>
-        <Text style={[styles.body, { color: meter.caption }]}>
-          {t('testday.intro.body', { count: RETEST_MINUTES })}
-        </Text>
+        <Text style={styles.lead}>{t('testday.intro.body', { count: RETEST_MINUTES })}</Text>
 
-        <View style={[styles.card, { backgroundColor: colors.card }]}>
-          {rows.map((row, index) => {
-            const meta = TEST_META[row.kind];
-            const zone = ZONE_META[meta.zone];
-            const tone = accents[scheme][zone.accent];
-            return (
-              <View key={row.kind}>
-                {index > 0 && <View style={[styles.divider, { backgroundColor: meter.divider }]} />}
-                <View style={styles.test}>
-                  {/* The test's own picture on its accent, large enough to
-                      read: what you will be doing, seen before any of it is
-                      read. The name and where it stands are all the text. */}
-                  <View style={[styles.tile, { backgroundColor: tone.track }]}>
-                    <Image source={TEST_PICTURES[row.kind].thumb} style={styles.thumb} resizeMode="cover" />
-                  </View>
-                  <View style={styles.testCopy}>
-                    <Text style={[styles.testName, { color: colors.foreground }]}>{t(meta.name)}</Text>
-                    <Text style={[styles.testGoal, { color: meter.caption }]}>
-                      {goalLine(row.kind, row.now, row.target)}
-                    </Text>
-                  </View>
+        <View style={styles.list}>
+          {rows.map((row) => (
+            <View key={row.kind}>
+              <Hairline />
+              <View style={styles.row} accessible>
+                <View style={styles.thumb}>
+                  <Image source={TEST_PICTURES[row.kind].thumb} style={styles.fill} resizeMode="cover" accessibilityIgnoresInvertColors />
+                </View>
+                <View style={styles.rowText}>
+                  <Text style={styles.name}>{t(TEST_META[row.kind].name)}</Text>
+                  <Text style={styles.goal}>{goalLine(row.kind, row.now, row.target)}</Text>
                 </View>
               </View>
-            );
-          })}
-        </View>
-
-        <Text style={[styles.section, { color: meter.label }]}>{t('testday.intro.need')}</Text>
-        <View style={[styles.card, styles.needs, { backgroundColor: colors.card }]}>
-          {(
-            [
-              [FootprintsIcon, t('testday.intro.needBarefoot')],
-              [BrickWallIcon, t('testday.intro.needWall')],
-              [SmartPhone01Icon, t('testday.intro.needPhone')],
-            ] as const
-          ).map(([icon, label]) => (
-            <View key={label} style={styles.need}>
-              <HugeiconsIcon icon={icon} size={20} color={colors.foreground} strokeWidth={1.8} />
-              <Text style={[styles.needText, { color: colors.foreground }]}>{label}</Text>
             </View>
           ))}
+          <Hairline />
         </View>
 
+        <Text accessibilityRole="header" style={styles.section}>
+          {t('testday.intro.need')}
+        </Text>
+        {[t('testday.intro.needBarefoot'), t('testday.intro.needWall'), t('testday.intro.needPhone')].map((line) => (
+          <Text key={line} style={styles.need}>
+            {line}
+          </Text>
+        ))}
+
         {ask && (
-          <View style={[styles.card, styles.checkin, { backgroundColor: colors.card }]}>
-            <Text style={[styles.checkinTitle, { color: colors.foreground }]}>{t('testday.intro.checkin')}</Text>
-            <Text style={[styles.checkinHint, { color: meter.caption }]}>{t('testday.intro.checkinHint')}</Text>
+          <View style={styles.checkin}>
+            <Text accessibilityRole="header" style={styles.section}>
+              {t('testday.intro.checkin')}
+            </Text>
+            <Text style={styles.hint}>{t('testday.intro.checkinHint')}</Text>
             <View style={styles.scale} accessibilityRole="radiogroup" accessibilityLabel={t('testday.intro.checkin')}>
               {PAIN_SCALE.map((value) => {
-                const selected = value === score;
+                const on = value === score;
                 return (
                   <Pressable
                     key={value}
                     accessibilityRole="radio"
-                    accessibilityState={{ selected }}
+                    accessibilityState={{ selected: on }}
                     accessibilityLabel={t('testday.intro.painA11y', { score: value })}
                     onPress={() => {
-                      Haptics.selectionAsync();
+                      void Haptics.selectionAsync();
                       setScore(value);
                     }}
-                    style={({ pressed }) => [
-                      styles.cell,
-                      // Selection is ink, as everywhere else. No score is
-                      // coloured by how much it hurts.
-                      { backgroundColor: selected ? colors.foreground : meter.iconTile },
-                      pressed && styles.pressed,
-                    ]}>
-                    <Text style={[styles.cellText, { color: selected ? colors.background : colors.foreground }]}>
+                    style={({ pressed: down }) => [styles.cell, on && styles.cellOn, down && styles.pressed]}>
+                    <Text style={[styles.cellText, on && styles.cellTextOn]} maxFontSizeMultiplier={1.4}>
                       {value}
                     </Text>
                   </Pressable>
@@ -222,169 +156,62 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
               })}
             </View>
             <View style={styles.ends}>
-              <Text style={[styles.end, { color: meter.caption }]}>{t('testday.intro.painNone')}</Text>
-              <Text style={[styles.end, { color: meter.caption }]}>{t('testday.intro.painWorst')}</Text>
+              <Text style={styles.end}>{t('testday.intro.painNone')}</Text>
+              <Text style={styles.end}>{t('testday.intro.painWorst')}</Text>
             </View>
           </View>
         )}
 
         {sore && (
-          <View style={[styles.card, styles.note, { backgroundColor: meter.iconTile }]} accessibilityLiveRegion="polite">
-            <HugeiconsIcon icon={InformationCircleIcon} size={20} color={meter.label} strokeWidth={2} />
-            <Text style={[styles.noteText, { color: colors.foreground }]}>{t('testday.intro.sore')}</Text>
-          </View>
+          <Text style={styles.sore} accessibilityLiveRegion="polite">
+            {t('testday.intro.sore')}
+          </Text>
         )}
       </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
-        {sore ? (
-          <>
-            <PrimaryButton label={t('testday.intro.anyway')} onPress={() => commit(onStart)} />
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => commit(onTomorrow)}
-              hitSlop={8}
-              style={({ pressed }) => [styles.secondary, pressed && styles.pressed]}>
-              <Text style={[styles.secondaryText, { color: colors.foreground }]}>{t('testday.intro.tomorrow')}</Text>
-            </Pressable>
-          </>
-        ) : (
-          <PrimaryButton label={t('testday.intro.start')} onPress={() => commit(onStart)} />
-        )}
+        <Capsule label={sore ? t('testday.intro.anyway') : t('testday.intro.start')} onPress={() => commit(onStart)} />
+        {sore && <TextButton label={t('testday.intro.tomorrow')} onPress={() => commit(onTomorrow)} />}
       </View>
     </View>
   );
 }
 
+const THUMB = 72;
+
 const styles = StyleSheet.create({
-  root: { flex: 1 },
-  content: {
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    paddingBottom: 24,
-  },
-  eyebrow: fonts.bold(13, 0.4),
-  title: {
-    ...fonts.heavy(32, -0.8),
-    lineHeight: 38,
-    marginTop: 4,
-  },
-  body: {
-    ...fonts.medium(16),
-    lineHeight: 22,
-    marginTop: 8,
-    marginBottom: 20,
-  },
-  card: {
-    borderRadius: 24,
-    borderCurve: 'continuous',
-    paddingHorizontal: 16,
-    paddingVertical: 6,
-  },
-  divider: {
-    height: StyleSheet.hairlineWidth,
-    marginLeft: 120,
-  },
-  test: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 16,
-    paddingVertical: 10,
-  },
-  tile: {
-    width: 104,
-    height: 104,
-    borderRadius: 24,
-    borderCurve: 'continuous',
-    overflow: 'hidden',
-  },
-  thumb: {
-    width: '100%',
-    height: '100%',
-  },
-  testCopy: {
-    flex: 1,
-    gap: 2,
-  },
-  testName: fonts.heavy(20, -0.4),
-  testGoal: {
-    ...fonts.semibold(15),
-    marginTop: 4,
-    fontVariant: ['tabular-nums'],
-  },
-  section: {
-    ...fonts.bold(13, 0.4),
-    marginTop: 24,
-    marginBottom: 8,
-    marginLeft: 4,
-  },
-  needs: {
-    paddingVertical: 14,
-    gap: 12,
-  },
-  need: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-  },
-  needText: {
-    flex: 1,
-    ...fonts.medium(15),
-  },
-  checkin: {
-    marginTop: 16,
-    paddingVertical: 16,
-  },
-  checkinTitle: fonts.bold(17, -0.2),
-  checkinHint: {
-    ...fonts.medium(14),
-    marginTop: 2,
-  },
-  scale: {
-    flexDirection: 'row',
-    gap: 4,
-    marginTop: 14,
-  },
+  root: { flex: 1, backgroundColor: ink.page },
+  content: { paddingHorizontal: SIDE, paddingTop: 16, paddingBottom: 24 },
+  title: { ...fonts.bold(34, -0.6), color: ink.text },
+  lead: { ...fonts.medium(19), color: ink.grey, marginTop: 6, marginBottom: 28 },
+  list: { alignSelf: 'stretch' },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 16, paddingVertical: 12 },
+  thumb: { width: THUMB, height: THUMB, overflow: 'hidden', backgroundColor: ink.studio },
+  fill: { width: '100%', height: '100%' },
+  rowText: { flex: 1, gap: 2 },
+  name: { ...fonts.semibold(19), color: ink.text },
+  goal: { ...fonts.regular(17), color: ink.grey, fontVariant: ['tabular-nums'] },
+  section: { ...fonts.semibold(19), color: ink.text, marginTop: 32, marginBottom: 8 },
+  need: { ...fonts.regular(19), color: ink.text, marginBottom: 4 },
+  checkin: {},
+  hint: { ...fonts.regular(17), color: ink.grey },
+  scale: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 14 },
   cell: {
-    flex: 1,
-    height: 40,
-    borderRadius: 12,
-    borderCurve: 'continuous',
+    flexGrow: 1,
+    flexBasis: 26,
+    minHeight: 44,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: ink.rule,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cellText: {
-    ...fonts.bold(15),
-    fontVariant: ['tabular-nums'],
-  },
-  ends: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 8,
-  },
-  end: fonts.medium(12),
-  note: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 10,
-    marginTop: 12,
-    paddingVertical: 14,
-  },
-  noteText: {
-    flex: 1,
-    ...fonts.medium(15),
-    lineHeight: 21,
-  },
-  pressed: { opacity: 0.6 },
-  dock: {
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    gap: 4,
-  },
-  secondary: {
-    height: 48,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  secondaryText: fonts.semibold(16),
+  cellOn: { backgroundColor: colors.ink, borderColor: colors.ink },
+  cellText: { ...fonts.semibold(17), color: ink.text, fontVariant: ['tabular-nums'] },
+  cellTextOn: { color: colors.onInk },
+  ends: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 8 },
+  end: { ...fonts.regular(17), color: ink.grey },
+  sore: { ...fonts.regular(19), color: ink.text, marginTop: 24 },
+  pressed: { opacity: 0.55 },
+  dock: { paddingHorizontal: SIDE, paddingTop: 8, gap: 4 },
 });

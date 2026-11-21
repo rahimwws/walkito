@@ -19,9 +19,8 @@ import {
   todayKey,
   type TestDayOutcome,
 } from '@/entities/program';
-import { palette } from '@/shared/config';
+import { colors } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
 
 import { mirroredFor } from '../../model/mirror';
 import {
@@ -86,8 +85,6 @@ const FADE_MS = 220;
  * fresh one per opening (key it), as the session player is.
  */
 export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
   const t = useT();
   const side = useIntake()?.side ?? null;
 
@@ -217,7 +214,7 @@ export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowPro
   const position = screen.at === 'test' ? screen.station.kind : screen.at === 'results' ? 'results' : null;
 
   return (
-    <View style={[styles.root, { backgroundColor: colors.background }]}>
+    <View style={[styles.root, { backgroundColor: colors.surface }]}>
       {/* Native, not the hook: the insets have to be this view's own. In a
           page sheet the top edge is already clear of the status bar and the
           hook would pad it a second time. */}
