@@ -15,7 +15,7 @@ import { PRIMARY_BUTTON_HEIGHT } from '@/shared/ui/primary-button';
 
 /** The app's primary button metrics, so the sheet's one action looks like
  * every other screen's. */
-const RADIUS = 32;
+const RADIUS = 16;
 const PRESS_SCALE = 0.975;
 const BAR_WIDTH = 132;
 const BAR_HEIGHT = 4;

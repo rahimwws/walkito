@@ -26,18 +26,18 @@ describe('home widget props', () => {
   const links = { fine: 'walkito:///?checkin=fine', hurts: 'walkito:///?checkin=hurts', checkin: 'walkito:///?checkin=open' };
 
   test('today carries no null anywhere', () => {
-    expect(nullPaths(buildWidgetProps(now, {}, 'walkito:///', links, plan))).toEqual([]);
+    expect(nullPaths(buildWidgetProps(now, 'walkito:///', links, plan))).toEqual([]);
   });
 
   test('a forecast carries no null, no answer, and the check-in links', () => {
-    const props = buildWidgetProps(now + 86_400_000, {}, 'walkito:///', links, plan, true);
+    const props = buildWidgetProps(now + 86_400_000, 'walkito:///', links, plan, true);
     expect(nullPaths(props)).toEqual([]);
     expect(props.answerScore).toBeUndefined();
     expect(props.links.hurts).toBe(links.hurts);
   });
 
   test('the week is seven Monday-first cells with today marked', () => {
-    const props = buildWidgetProps(now, {}, 'walkito:///', links, plan);
+    const props = buildWidgetProps(now, 'walkito:///', links, plan);
     expect(props.week).toHaveLength(7);
     const monday = (new Date(now).getDay() + 6) % 7;
     expect(props.todayIndex).toBe(monday);

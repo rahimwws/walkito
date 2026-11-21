@@ -1,5 +1,3 @@
-import { Asset } from 'expo-asset';
-import { Directory, File } from 'expo-file-system';
 import * as Linking from 'expo-linking';
 import { AppState, Platform } from 'react-native';
 
@@ -9,7 +7,7 @@ import { kv } from '@/shared/lib/storage';
 
 import { pushAndroidWidget } from '../android/push';
 import type { DailyWidgetProps } from '../ui/daily-widget';
-import { buildWidgetProps, type WidgetArt } from './props';
+import { buildWidgetProps } from './props';
 
 /**
  * The widget module, loaded lazily and only on iOS.
@@ -54,47 +52,6 @@ const WRITTEN_KEY = 'widget/written';
 /** How many midnights ahead are written, so the widget keeps asking every
  * morning for a week even if the app is never opened. */
 const FORECAST_DAYS = 7;
-
-/**
- * The mascot, where the widget can read it.
- *
- * The extension is a separate process with no access to the app's bundled
- * assets, so the drawings are copied once into the shared App Group directory
- * and handed to the widget as file URIs. Separate 192-pixel copies — three
- * times the largest size drawn — because a widget decodes every image it shows
- * and WidgetKit caps the memory it gets. The version is in the file name: a
- * redrawn mascot needs a new name, or the extension keeps the old one.
- */
-const ART = {
-  neutral: { name: 'mascot-tasks-v1.png', source: require('@assets/widget/mascot-tasks.png') },
-  pain: { name: 'mascot-pain-v1.png', source: require('@assets/widget/mascot-pain.png') },
-  fine: { name: 'mascot-nopain-v1.png', source: require('@assets/widget/mascot-nopain.png') },
-} as const;
-
-let art: WidgetArt = {};
-
-async function ensureArt(root: string): Promise<WidgetArt> {
-  if (art.neutral && art.pain && art.fine) return art;
-  const dir = new Directory(root);
-  if (!dir.exists) dir.create({ intermediates: true });
-  const next: WidgetArt = {};
-  for (const key of Object.keys(ART) as (keyof typeof ART)[]) {
-    try {
-      const target = new File(dir, ART[key].name);
-      if (!target.exists) {
-        const [asset] = await Asset.loadAsync(ART[key].source);
-        if (asset?.localUri == null) continue;
-        new File(asset.localUri).copy(target);
-      }
-      next[key] = target.uri;
-    } catch (error) {
-      // One drawing missing is an SF Symbol in its place, not a dead widget.
-      if (__DEV__) console.warn('[widget] could not share', key, error);
-    }
-  }
-  art = next;
-  return art;
-}
 
 /**
  * Drops every `null` and `undefined`, however deep.
@@ -184,7 +141,6 @@ function nextMidnight(now: number): number {
 export async function refreshWidget(now: number = Date.now()): Promise<void> {
   const module = widgetModule();
   if (module == null || module.widgetsDirectory == null) return;
-  const shared = await ensureArt(module.widgetsDirectory);
   const url = Linking.createURL('/');
   // Home reads `checkin` and does the rest: records "no pain" and says so, or
   // opens the check-in sheet for the scale and the leg map.
@@ -197,20 +153,20 @@ export async function refreshWidget(now: number = Date.now()): Promise<void> {
   const plan = weekPlan(now).days;
 
   const entries: { date: Date; props: DailyWidgetProps }[] = [
-    { date: new Date(now), props: compact(buildWidgetProps(now, shared, url, links, plan)) },
+    { date: new Date(now), props: compact(buildWidgetProps(now, url, links, plan)) },
   ];
   // Noon turns the morning question ("First steps this morning?") into the
   // day's ("How's the foot today?"), so every day gets a second entry there.
   const todayNoon = noonOf(now);
   if (now < todayNoon) {
-    entries.push({ date: new Date(todayNoon), props: compact(buildWidgetProps(todayNoon, shared, url, links, plan)) });
+    entries.push({ date: new Date(todayNoon), props: compact(buildWidgetProps(todayNoon, url, links, plan)) });
   }
   let midnight = nextMidnight(now);
   for (let i = 0; i < FORECAST_DAYS; i += 1) {
     // A second past midnight, so the forecast is built for the new date.
-    entries.push({ date: new Date(midnight), props: compact(buildWidgetProps(midnight + 1000, shared, url, links, plan, true)) });
+    entries.push({ date: new Date(midnight), props: compact(buildWidgetProps(midnight + 1000, url, links, plan, true)) });
     const noon = noonOf(midnight + 1000);
-    entries.push({ date: new Date(noon), props: compact(buildWidgetProps(noon, shared, url, links, plan, true)) });
+    entries.push({ date: new Date(noon), props: compact(buildWidgetProps(noon, url, links, plan, true)) });
     midnight = nextMidnight(midnight + 1000);
   }
   // After a week unopened, the "open the app" face rather than the last
@@ -302,7 +258,7 @@ async function refreshAndroidWidget(now: number = Date.now()): Promise<void> {
     hurts: Linking.createURL('/', { queryParams: { checkin: 'hurts' } }),
     checkin: Linking.createURL('/', { queryParams: { checkin: 'open' } }),
   };
-  const props = compact(buildWidgetProps(now, {}, Linking.createURL('/'), links, weekPlan(now).days));
+  const props = compact(buildWidgetProps(now, Linking.createURL('/'), links, weekPlan(now).days));
   const fingerprint = JSON.stringify(props);
   if (kv.getString(WRITTEN_KEY) === fingerprint) return;
   await pushAndroidWidget(props, translatorFor(getLanguage())('widget.tapToCheckIn'));

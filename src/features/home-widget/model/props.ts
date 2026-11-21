@@ -17,7 +17,6 @@ import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 
 import type { DailyWidgetProps, DayCellState, WidgetDay } from '../ui/daily-widget';
 
-export type WidgetArt = DailyWidgetProps['art'];
 export type WidgetLinks = DailyWidgetProps['links'];
 
 type Goal = { type: PlanDay['type'] | null; done: number; total: number };
@@ -140,7 +139,6 @@ function weekFor(
  */
 export function buildWidgetProps(
   now: number,
-  art: WidgetArt,
   url: string,
   links: WidgetLinks,
   plan: readonly PlanDay[],
@@ -185,7 +183,6 @@ export function buildWidgetProps(
       goalValue,
       checkinLabel: t('widget.checkin'),
     },
-    art,
     goal: { done: goal.done, total: goal.total },
     week: week.days,
     todayIndex: week.todayIndex,

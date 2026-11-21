@@ -4,8 +4,6 @@ import { STEP_CHECK_MARK, healthSignals } from '@/entities/health';
 import { currentDay, planWeekOf, toDateKey } from '@/entities/program';
 import { getLanguage } from '@/shared/lib/i18n';
 
-import { isNotificationArt, type NotificationArt } from './art';
-import { scheduleWithArt } from './attachment';
 import { messageFor, stepsCheckMessage, type Message } from './copy';
 import {
   GAIT_DAYS,
@@ -141,6 +139,31 @@ function stepsForPreview(now: number): number {
   return steps != null && steps >= STEP_CHECK_MARK ? steps : SAMPLE_STEPS_TODAY;
 }
 
+/** What can be previewed: the ladder's own kinds, plus the three messages
+ * that are not rungs of it. */
+type PreviewName = NotificationKind | 'offer' | 'expiry' | 'steps';
+
+/** A record rather than an array, so a new kind on the ladder fails `tsc` here. */
+const PREVIEW_NAMES: Readonly<Record<PreviewName, true>> = {
+  flare: true,
+  load: true,
+  gait: true,
+  retest: true,
+  block: true,
+  plan: true,
+  session: true,
+  checkin: true,
+  streak: true,
+  winback: true,
+  offer: true,
+  expiry: true,
+  steps: true,
+};
+
+function isPreviewName(value: string): value is PreviewName {
+  return Object.prototype.hasOwnProperty.call(PREVIEW_NAMES, value);
+}
+
 export type PreviewOptions = {
   /** The win-back's name and percent, which the paywall knows and this
    * entity does not. */
@@ -148,7 +171,7 @@ export type PreviewOptions = {
   percent?: number;
 };
 
-function messageForPreview(art: NotificationArt, options: PreviewOptions, now: number): Message | null {
+function messageForPreview(art: PreviewName, options: PreviewOptions, now: number): Message | null {
   const language = getLanguage();
   switch (art) {
     case 'offer':
@@ -164,7 +187,7 @@ function messageForPreview(art: NotificationArt, options: PreviewOptions, now: n
 
 /**
  * Schedules the notification `name` — a ladder kind, `offer`, `expiry` or
- * `steps` — to arrive in `PREVIEW_DELAY_SECONDS`, picture and all.
+ * `steps` — to arrive in `PREVIEW_DELAY_SECONDS`.
  *
  * Does nothing outside a development build, and nothing for a name it does not
  * know. Asks for notification permission if it has never been asked, which is
@@ -176,7 +199,7 @@ export async function previewNotification(
   now: number = Date.now(),
 ): Promise<boolean> {
   if (!__DEV__) return false;
-  if (!isNotificationArt(name)) {
+  if (!isPreviewName(name)) {
     console.warn('[notify] no preview called', name);
     return false;
   }
@@ -191,7 +214,7 @@ export async function previewNotification(
   }
   await ensureNotificationChannel();
   try {
-    await scheduleWithArt(name, {
+    await Notifications.scheduleNotificationAsync({
       identifier: `${PREVIEW_KIND}-${name}`,
       content: {
         title: message.title,
