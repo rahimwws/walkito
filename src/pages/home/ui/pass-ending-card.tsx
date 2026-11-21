@@ -16,8 +16,8 @@ import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Button } from '@/shared/ui/button';
+import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 /** The card shows this many days before the pass ends, as the push does. */
@@ -98,7 +98,7 @@ function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
     <>
       {shown && (
         <Arrive>
-          <Card3D material="solid" size="lg" padding={18} style={styles.card} contentStyle={styles.content}>
+          <Card padding={18} style={[styles.card, styles.content]}>
             <View style={styles.head}>
               <FluentIcon name="calendar" size={36} />
               <View style={styles.text}>
@@ -106,8 +106,8 @@ function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
                 <Text style={[styles.body, { color: meter.caption }]}>{t('pass.ending.body')}</Text>
               </View>
             </View>
-            <Button3D size="md" label={t('pass.ending.cta')} onPress={() => setOpen(true)} />
-          </Card3D>
+            <Button size="md" fullWidth label={t('pass.ending.cta')} onPress={() => setOpen(true)} />
+          </Card>
         </Arrive>
       )}
       <OfferSheet visible={open} kind="standard" onClose={() => setOpen(false)} />

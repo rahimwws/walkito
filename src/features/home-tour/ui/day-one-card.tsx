@@ -14,8 +14,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Chip3D } from '@/shared/ui/chip-3d';
-import { Mascot, waveRig, type MascotHandle, type MascotRig } from '@/shared/ui/mascot';
+import { Chip } from '@/shared/ui/chip';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { DAY_ONE_MINUTES, dayOneRun, type DayOneRun } from '../model/day-one';
@@ -29,8 +28,6 @@ const IN_MS = 420;
 const OUT_MS = 220;
 /** How far the card rises into place. */
 const RISE = 28;
-/** He waves once the card has landed, not while it is still moving. */
-const WAVE_AFTER_MS = 120;
 /** The session's sheet is asked for once this card's own modal is down: one
  * modal presenting while another dismisses does not show on iOS. */
 const LAUNCH_AFTER_MS = 300;
@@ -38,19 +35,9 @@ const LAUNCH_AFTER_MS = 300;
  * with nothing over it and nothing to do. */
 const LAUNCH_GIVE_UP_MS = 2500;
 
-const MASCOT_SIZE = 132;
-/** How far the feet press into the card's edge, as a share of him: on the
- * card, not hovering a hair above it (as on a milestone's card). */
-const FOOT_SINK = 0.035;
 const RADIUS = 34;
 
 const EASE = Easing.bezier(0.22, 1, 0.36, 1);
-
-/** Where the feet are in the mascot's square, from the top: the rig's ground
- * line in its own units. */
-function feetAt(rig: MascotRig): number {
-  return (rig.ground[1] - rig.box.y) / rig.box.size;
-}
 
 export type DayOneCardProps = {
   /** Home is in front, the tour is at its first half, and no sheet is up or
@@ -67,7 +54,7 @@ export type DayOneCardProps = {
 /**
  * "Day 1": the card over the blurred Home that the first session starts from.
  *
- * Walkito standing on its edge and waving, the day, one line on what it is,
+ * The day, one line on what it is,
  * how long, its button, and "Later" under it: nobody is held in front of two
  * minutes they do not want right now. Home under it is blurred in the same
  * dark the tour after it uses, so the card and the tour read as one surface.
@@ -107,20 +94,13 @@ export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCar
   // Mounted apart from `shown`, so the fade out can play.
   const [mounted, setMounted] = useState(false);
   const progress = useSharedValue(0);
-  const mascot = useRef<MascotHandle>(null);
   useEffect(() => {
     if (shown) {
       setMounted(true);
       const timer = setTimeout(() => {
         progress.value = withTiming(1, { duration: IN_MS, easing: EASE, reduceMotion: ReduceMotion.System });
       }, IN_DELAY_MS);
-      // Every time it lands, including after a session closed early: he is
-      // saying hello again.
-      const wave = setTimeout(() => mascot.current?.play('wave'), IN_DELAY_MS + IN_MS + WAVE_AFTER_MS);
-      return () => {
-        clearTimeout(timer);
-        clearTimeout(wave);
-      };
+      return () => clearTimeout(timer);
     }
     progress.value = withTiming(
       0,
@@ -172,22 +152,12 @@ export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCar
 
       <View style={styles.centre} pointerEvents="box-none">
         <Animated.View style={[styles.column, rise]}>
-          {/* Above the card in the stack, so the feet set onto its edge stand
-              on it. Hidden from VoiceOver: he is the card's greeting, and the
-              title says what it is. */}
-          <View
-            style={[styles.mascot, { marginBottom: -Math.round((1 - feetAt(waveRig) + FOOT_SINK) * MASCOT_SIZE) }]}
-            accessibilityElementsHidden
-            importantForAccessibility="no-hide-descendants">
-            <Mascot ref={mascot} rig={waveRig} size={MASCOT_SIZE} surface={colors.card} paused={!shown} />
-          </View>
-
           <View style={[styles.card, { backgroundColor: colors.card }]}>
             <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
               {t('home.day1.title')}
             </Text>
             <Text style={[styles.body, { color: meter.caption }]}>{t('home.day1.body')}</Text>
-            <Chip3D icon={Clock01Icon} accent="blue" label={t('session.minutes', { count: DAY_ONE_MINUTES })} style={styles.chip} />
+            <Chip icon={Clock01Icon} label={t('session.minutes', { count: DAY_ONE_MINUTES })} style={styles.chip} />
             <PrimaryButton label={t('home.day1.start')} onPress={start} disabled={launching} style={styles.cta} />
             <Pressable
               accessibilityRole="button"
@@ -215,10 +185,6 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 380,
   },
-  mascot: {
-    alignSelf: 'center',
-    zIndex: 2,
-  },
   card: {
     borderRadius: RADIUS,
     borderCurve: 'continuous',
@@ -235,7 +201,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
     paddingHorizontal: 4,
   },
-  chip: { marginTop: 14 },
+  chip: { alignSelf: 'center', marginTop: 14 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
   later: { marginTop: 12, paddingVertical: 6, paddingHorizontal: 16 },
   laterText: fonts.semibold(16),

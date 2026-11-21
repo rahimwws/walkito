@@ -1,7 +1,6 @@
 import * as Haptics from 'expo-haptics';
-import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState } from 'react';
-import { AppState, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { AppState, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -14,17 +13,14 @@ import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
-import { Glow } from '@/shared/ui/glow';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { EmailStep } from './email-step';
-import { SaveRing, SaveSky } from './save-sky';
 import { HealthStep } from './health-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { WidgetGuideArt, WidgetPreview, type GuideStep } from './widget-guide';
-import { WidgetAddedMascot, WidgetNudgeSheet } from './widget-nudge-sheet';
+import { WidgetNudgeSheet } from './widget-nudge-sheet';
 
 type SetupStep = 'save' | 'email' | 'health' | 'watch' | 'watch-sync' | 'note' | 'widget' | GuideStep;
 
@@ -86,13 +82,12 @@ const GUIDE: Readonly<Record<GuideStep, { title: Key; body: Key; n: number }>> =
  * **The widget is checked, not assumed.** Where the system can say whether it
  * is on the Home Screen (`checkWidgetPresence`), the walkthrough's "Finish",
  * Android's pin sheet and any return to the app during the widget steps ask
- * it. There: the mascot celebrates and setup ends. Not there: one kind sheet
+ * it. There: setup ends. Not there: one kind sheet
  * offers the walkthrough again or "Maybe later", once per walkthrough. When it
  * cannot be known (a binary without the module) setup ends as it always did.
  */
 export function SetupPage() {
   const insets = useSafeAreaInsets();
-  const { width } = useWindowDimensions();
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -111,11 +106,10 @@ export function SetupPage() {
   const [devAndroid, setDevAndroid] = useState(false);
   const [emailPreview, setEmailPreview] = useState<EmailSheetPreview | null>(null);
   const android = Platform.OS === 'android' || devAndroid;
-  /** A sign-in sheet is over the save screen: its mascot holds still. */
-  const [covered, setCovered] = useState(false);
-  /** The widget step's answers from the system: not there yet (the sheet
-   * asking again), or there (the celebration). */
+  /** The widget step's answer from the system: not there yet, the sheet
+   * asking again. */
   const [nudge, setNudge] = useState(false);
+  /** It is there: setup has ended, and no later return re-checks it. */
   const [added, setAdded] = useState(false);
   /** Android's pin sheet was opened: the next return to the app is its answer. */
   const pinAsked = useRef(false);
@@ -181,13 +175,12 @@ export function SetupPage() {
   useEffect(() => {
     if (!__DEV__) return undefined;
     const onUrl = (url: string | null | undefined) => {
-      // `?widgetPreview=ask|hold|edit|search|nudge|added`: the widget steps,
-      // and the two answers after them, without adding a widget.
-      const widget = url?.match(/[?&]widgetPreview=(ask|hold|edit|search|nudge|added)\b/)?.[1];
+      // `?widgetPreview=ask|hold|edit|search|nudge`: the widget steps, and the
+      // sheet asking again, without adding a widget.
+      const widget = url?.match(/[?&]widgetPreview=(ask|hold|edit|search|nudge)\b/)?.[1];
       if (widget != null) {
         setNudge(widget === 'nudge');
-        setAdded(widget === 'added');
-        setStep(widget === 'ask' ? 'widget' : widget === 'nudge' || widget === 'added' ? 'search' : (widget as GuideStep));
+        setStep(widget === 'ask' ? 'widget' : widget === 'nudge' ? 'search' : (widget as GuideStep));
         return;
       }
       const state = url?.match(/[?&]authPreview=([\w-]+)/)?.[1];
@@ -260,7 +253,7 @@ export function SetupPage() {
 
   /**
    * Asks the system whether the widget is on the Home Screen, and acts on it:
-   * there, the celebration; not there, the sheet asking again, except on a
+   * there, setup ends; not there, the sheet asking again, except on a
    * plain return to the app (they may be half-way through adding it).
    * Unknown: "Finish" and the pin sheet end setup as they always did.
    */
@@ -284,6 +277,7 @@ export function SetupPage() {
     if (there) {
       setNudge(false);
       setAdded(true);
+      done();
       return;
     }
     if (moment === 'return') return;
@@ -329,31 +323,20 @@ export function SetupPage() {
 
   return (
     <View style={[styles.root, { paddingTop: insets.top + 44, paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-      {/* The save step under the welcome page's night sky, the rest under
-          the app's glow. */}
-      {step === 'save' ? (
-        <>
-          <SaveSky />
-          <StatusBar style="light" />
-        </>
-      ) : (
-        <Glow />
-      )}
       <Animated.View key={step} entering={FadeIn.duration(260).reduceMotion(ReduceMotion.System)} style={styles.body}>
         {step === 'save' && (
           <View style={styles.center}>
-            <SaveRing size={Math.min(width - 48, 330)} paused={covered} />
             <Animated.Text
               entering={FadeInDown.delay(360)
                 .duration(420)
                 .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
                 .reduceMotion(ReduceMotion.System)}
-              style={[styles.saveTitle, styles.centerText]}>
+              style={[styles.title, styles.centerText, { color: colors.foreground }]}>
               {name !== '' ? t('setup.save.titleNamed', { name }) : t('setup.save.title')}
             </Animated.Text>
             <Animated.Text
               entering={FadeIn.delay(520).duration(420).reduceMotion(ReduceMotion.System)}
-              style={[styles.blurb, styles.centerText, styles.nightCaption]}>
+              style={[styles.blurb, styles.centerText, { color: meter.caption }]}>
               {t('setup.save.blurb')}
             </Animated.Text>
           </View>
@@ -399,7 +382,7 @@ export function SetupPage() {
 
         {step === 'widget' && (
           <View style={styles.center}>
-            <WidgetPreview alive />
+            <WidgetPreview />
             <Text style={[styles.title, styles.centerText, { color: colors.foreground }]}>{t('setup.widget.title')}</Text>
             <Text style={[styles.blurb, styles.centerText, { color: meter.caption }]}>{t('setup.widget.blurb')}</Text>
           </View>
@@ -419,11 +402,10 @@ export function SetupPage() {
       {step === 'save' && (
         <View style={styles.bar}>
           {!platformShown && (
-            <Text style={[styles.note, styles.nightCaption]}>{t('setup.save.googleUnavailable')}</Text>
+            <Text style={[styles.note, { color: meter.caption }]}>{t('setup.save.googleUnavailable')}</Text>
           )}
           <SignInOptions
             emailMode="create"
-            night
             platform={platformShown}
             onSignedIn={({ email, created }) => {
               if (email != null) {
@@ -435,7 +417,6 @@ export function SetupPage() {
             }}
             onNoAccount={declined}
             onFailure={(failure) => setDeferReason(failure)}
-            onCovered={setCovered}
             preview={emailPreview}
           />
           {/* Android only, and only after a failure that was not theirs:
@@ -443,9 +424,8 @@ export function SetupPage() {
               launch. */}
           {android && deferReason != null && (
             <>
-              <Text style={[styles.note, styles.nightCaption]}>{t('setup.save.deferredNote')}</Text>
+              <Text style={[styles.note, { color: meter.caption }]}>{t('setup.save.deferredNote')}</Text>
               <Later
-                night
                 label={t('setup.save.deferred')}
                 onPress={() => {
                   track('setup_account_deferred', { reason: deferReason });
@@ -512,19 +492,11 @@ export function SetupPage() {
       <NoteSheet visible={step === 'note'} onDone={next} />
 
       <WidgetNudgeSheet visible={nudge} onAgain={nudgeAgain} onLater={nudgeLater} />
-      <CelebrationSheet
-        visible={added}
-        title={t('setup.widget.addedTitle')}
-        blurb={t('setup.widget.addedBlurb')}
-        ctaLabel={t('setup.widget.addedCta')}
-        mascot={<WidgetAddedMascot paused={!added} />}
-        onClose={done}
-      />
     </View>
   );
 }
 
-function Later({ label, onPress, night = false }: { label: string; onPress: () => void; night?: boolean }) {
+function Later({ label, onPress }: { label: string; onPress: () => void }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   return (
@@ -536,19 +508,13 @@ function Later({ label, onPress, night = false }: { label: string; onPress: () =
       }}
       hitSlop={8}
       style={({ pressed }) => [styles.later, pressed && { opacity: 0.6 }]}>
-      <Text style={[styles.laterText, { color: night ? NIGHT_CAPTION : meter.caption }]}>{label}</Text>
+      <Text style={[styles.laterText, { color: meter.caption }]}>{label}</Text>
     </Pressable>
   );
 }
 
-/** Words on the save step's night sky, in either appearance. */
-const NIGHT_INK = '#FFFFFF';
-const NIGHT_CAPTION = 'rgba(255, 255, 255, 0.72)';
-
 const styles = StyleSheet.create({
   root: { flex: 1, paddingHorizontal: 24 },
-  saveTitle: { ...fonts.heavy(32, -0.8), lineHeight: 37, color: NIGHT_INK, marginTop: 8 },
-  nightCaption: { color: NIGHT_CAPTION },
   body: { flex: 1 },
   fill: { flex: 1, gap: 10 },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 14 },

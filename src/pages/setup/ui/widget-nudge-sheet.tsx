@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { BlurView } from 'expo-blur';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -15,19 +15,15 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, celebrateRig, pointingRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 const RADIUS = 36;
 const DOCK_PAD = 10;
 const CARD_PAD = 20;
-const MASCOT = 128;
 const BLUR = 28;
 const IN_MS = 340;
 const OUT_MS = 220;
 const RISE = 44;
-/** His wave waits for the card to land, so the two beats are each their own. */
-const LANDED_MS = 320;
 
 export type WidgetNudgeSheetProps = {
   visible: boolean;
@@ -40,8 +36,7 @@ export type WidgetNudgeSheetProps = {
 
 /**
  * Asked when the widget step ended and the system says the widget is not on
- * the Home Screen. Kind and short: the mascot pointing the way, a line that
- * says it takes three taps, and two answers of equal weight to the person.
+ * the Home Screen. Kind and short: a line that says it takes three taps, and two answers of equal weight to the person.
  * Asked once per walkthrough, never in a loop: "Maybe later" ends setup.
  *
  * Built like the streak sheet (one shared value drives the blur and the card,
@@ -56,7 +51,6 @@ export function WidgetNudgeSheet({ visible, onAgain, onLater }: WidgetNudgeSheet
 
   const [mounted, setMounted] = useState(false);
   const progress = useSharedValue(0);
-  const mascot = useRef<MascotHandle>(null);
 
   useEffect(() => {
     if (visible) {
@@ -68,11 +62,7 @@ export function WidgetNudgeSheet({ visible, onAgain, onLater }: WidgetNudgeSheet
           reduceMotion: ReduceMotion.System,
         });
       });
-      const wave = setTimeout(() => mascot.current?.play('wave'), LANDED_MS);
-      return () => {
-        cancelAnimationFrame(frame);
-        clearTimeout(wave);
-      };
+      return () => cancelAnimationFrame(frame);
     }
     progress.value = withTiming(
       0,
@@ -111,15 +101,6 @@ export function WidgetNudgeSheet({ visible, onAgain, onLater }: WidgetNudgeSheet
           style={[styles.dock, { paddingTop: insets.top + 12, paddingBottom: Math.max(insets.bottom, 16) }, dock]}
           pointerEvents="box-none">
           <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-              <Mascot
-                ref={mascot}
-                rig={pointingRig}
-                size={MASCOT}
-                paused={!visible}
-                surface={colors.card}
-              />
-            </View>
             <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
               {t('setup.widget.nudgeTitle')}
             </Text>
@@ -170,30 +151,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: CARD_PAD,
     alignItems: 'center',
   },
-  title: { ...fonts.heavy(24, -0.6), lineHeight: 29, textAlign: 'center', marginTop: 6 },
+  title: { ...fonts.heavy(24, -0.6), lineHeight: 29, textAlign: 'center' },
   body: { ...fonts.regular(16), lineHeight: 22, textAlign: 'center', marginTop: 8 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
   later: { alignItems: 'center', paddingTop: 14, paddingBottom: 6 },
   laterText: fonts.semibold(15, -0.2),
 });
-
-/** The figure standing on the "it's there" card (`CelebrationSheet`): he
- * jumps once the card has landed, his feet on its edge. */
-const ADDED_SIZE = 132;
-const FOOT_SINK = 0.035;
-
-export function WidgetAddedMascot({ paused }: { paused: boolean }) {
-  const scheme = useColorScheme();
-  const mascot = useRef<MascotHandle>(null);
-  useEffect(() => {
-    if (paused) return undefined;
-    const timer = setTimeout(() => mascot.current?.play('celebrate'), LANDED_MS);
-    return () => clearTimeout(timer);
-  }, [paused]);
-  const feet = (celebrateRig.ground[1] - celebrateRig.box.y) / celebrateRig.box.size;
-  return (
-    <View style={{ marginBottom: -Math.round((1 - feet + FOOT_SINK) * ADDED_SIZE) }}>
-      <Mascot ref={mascot} rig={celebrateRig} size={ADDED_SIZE} surface={palette[scheme].card} paused={paused} />
-    </View>
-  );
-}

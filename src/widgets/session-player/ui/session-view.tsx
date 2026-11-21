@@ -12,6 +12,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
+import SmartphoneLostWifiIcon from '@hugeicons/core-free-icons/SmartphoneLostWifiIcon';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
@@ -71,8 +72,6 @@ import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { holdGlowStill } from '@/shared/ui/glow';
-import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
@@ -230,9 +229,9 @@ const CHIP_FILL = 'rgba(255,255,255,0.92)';
 const CHIP_INK = palette.light.foreground;
 /** Edges the white chips against the drawings, which are white themselves. */
 const CHIP_SHADOW = '0px 1px 6px rgba(17, 17, 20, 0.16)';
-/** The unplugged mascot over a clip that did not load: small, so the line under
- * it still sits where the clip would have been. */
-const CLIP_FAILED_MASCOT = 64;
+/** The glyph over a clip that did not load: small, so the line under it still
+ * sits where the clip would have been. */
+const CLIP_FAILED_ICON = 40;
 
 /** "01:00", counting down. Padded on both halves so the digits never reflow. */
 function clock(seconds: number): string {
@@ -956,13 +955,6 @@ function SessionRun({
     const id = setInterval(read, TICK_MS);
     return () => clearInterval(id);
   }, [running, deadline, moveMs, progress]);
-
-  /**
-   * The drift on Home, held still for as long as a session is up. The player
-   * is presented over Home in a page sheet, which leaves Home underneath it
-   * rendering and animating the whole time.
-   */
-  useEffect(() => holdGlowStill(), []);
 
   // A listener, not a read of `player.status`: the player is a native object
   // and its status is not React state, so a failure arriving after mount would
@@ -2295,9 +2287,8 @@ function SessionRun({
 
         {/* Over the player, not instead of it: the stage keeps its size and its
             corner, and the line sits in the space the clip would have filled.
-            The unplugged mascot above it is the still drawing, in the light
-            scheme's colours like the chips, because the studio is light in
-            both. Gone once the session is over: the done sheet brings its own. */}
+            The glyph above it is in the light scheme's colours like the chips,
+            because the studio is light in both. Gone once the session is over. */}
         {wideClip && drawing != null && (
           <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
             <Image source={drawing} resizeMode="cover" style={styles.poseImage} accessibilityIgnoresInvertColors />
@@ -2308,12 +2299,7 @@ function SessionRun({
           <View style={styles.clipFallback} pointerEvents="none">
             {!finished && (
               <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-                <MascotStill
-                  rig={noInternetRig}
-                  size={CLIP_FAILED_MASCOT}
-                  paper={palette.light.background}
-                  ink={CHIP_INK}
-                />
+                <HugeiconsIcon icon={SmartphoneLostWifiIcon} size={CLIP_FAILED_ICON} color={CHIP_INK} strokeWidth={1.6} />
               </View>
             )}
             <Text style={[styles.clipFallbackText, { color: CHIP_INK }]}>

@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { LockSimpleIcon } from 'phosphor-react-native/src/icons/LockSimple';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -23,9 +23,7 @@ import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { Mascot, phoneRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
-import { useSplashRevealed } from '@/shared/ui/splash';
 
 /** The figures we ask for, in the order Apple's own sheet lists them — only
  * the ones this platform's store is asked for (`SUMMARY_FIELDS`): Health
@@ -37,12 +35,6 @@ const ROWS = (
     { key: 'heartRate', label: 'onboarding.health.heartRate', emoji: 'heart' },
   ] as const
 ).filter((row) => (SUMMARY_FIELDS as readonly string[]).includes(row.key));
-
-/** The mascot beside the title, holding up his phone: what the phone counts
- * is what is being asked for. */
-const FIGURE = 64;
-/** As the switches start to flick on, so he holds the phone out over them. */
-const PRESENT_MS = 520;
 
 export type HealthStepProps = {
   /** Reflected back so the ask is addressed to a person, not to a user. */
@@ -85,20 +77,6 @@ export function HealthStep({ name, summary, onConnected, onNext }: HealthStepPro
   const available = healthAvailable();
   const connected = summary != null;
 
-  // Setup can be the first screen at launch: under the splash he holds still
-  // and keeps his move until it has gone.
-  const mascot = useRef<MascotHandle>(null);
-  const revealed = useSplashRevealed();
-  const presented = useRef(false);
-  useEffect(() => {
-    if (presented.current || !revealed) return undefined;
-    const timer = setTimeout(() => {
-      presented.current = true;
-      mascot.current?.play('present');
-    }, PRESENT_MS);
-    return () => clearTimeout(timer);
-  }, [revealed]);
-
   /**
    * The one line under the switches, in the slot the unavailable notice
    * already owned.
@@ -136,25 +114,16 @@ export function HealthStep({ name, summary, onConnected, onNext }: HealthStepPro
         ? Haptics.NotificationFeedbackType.Success
         : Haptics.NotificationFeedbackType.Warning,
     );
-    // The same nod whatever was answered: an answer, taken, never judged.
-    mascot.current?.play('nod');
     onConnected(result.summary);
   };
 
   return (
     <View style={styles.wrap}>
-      <View style={styles.head}>
-        <Text style={[styles.title, styles.headTitle, { color: colors.foreground }]}>
-          {name.trim().length > 0
-            ? t('onboarding.health.askNamed', { name: name.trim() })
-            : t('onboarding.health.ask')}
-        </Text>
-        {/* Decoration: hidden from anyone listening. Still while the
-            system's own sheet is up over it. */}
-        <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.figure}>
-          <Mascot ref={mascot} rig={phoneRig} size={FIGURE} surface={colors.background} paused={busy || !revealed} />
-        </View>
-      </View>
+      <Text style={[styles.title, { color: colors.foreground }]}>
+        {name.trim().length > 0
+          ? t('onboarding.health.askNamed', { name: name.trim() })
+          : t('onboarding.health.ask')}
+      </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
         {t(Platform.OS === 'android' ? 'onboarding.health.askBlurbAndroid' : 'onboarding.health.askBlurb')}
       </Text>
@@ -273,17 +242,6 @@ const styles = StyleSheet.create({
   wrap: {
     flex: 1,
     paddingTop: 8,
-  },
-  /** The title and the mascot beside it. */
-  head: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  headTitle: { flex: 1 },
-  figure: {
-    width: FIGURE,
-    height: FIGURE,
   },
   title: {
     ...fonts.bold(28, -0.7),

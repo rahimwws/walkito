@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 
 import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
-import type { FluentName } from '@/shared/ui/fluent-icon';
 
 /**
- * What Walkito wears on Home, by the longest streak reached: a shoe badge at a
- * week, a medal at a fortnight, a trophy at a month, a crown at a hundred days.
+ * The rewards of the longest streak reached: a shoe badge at a week, a medal
+ * at a fortnight, a trophy at a month, a crown at a hundred days.
  *
  * By the longest run, never the current one, so nothing is taken away when a
  * run starts again: an accessory, once earned, stays. A reward for days shown
@@ -21,31 +20,9 @@ export const ACCESSORIES: readonly { id: AccessoryId; days: number }[] = [
   { id: 'crown', days: 100 },
 ];
 
-/** The Fluent drawing each accessory is drawn with: all four are Fluent's own
- * Flat drawings. */
-export const ACCESSORY_ART: Record<AccessoryId, FluentName> = {
-  shoe: 'shoe',
-  medal: 'medal',
-  trophy: 'trophy',
-  crown: 'crown',
-};
-
-/** The catalogue line the milestone sheet says for each. */
-export const ACCESSORY_KEYS = {
-  shoe: 'accessory.shoe',
-  medal: 'accessory.medal',
-  trophy: 'accessory.trophy',
-  crown: 'accessory.crown',
-} as const satisfies Record<AccessoryId, string>;
-
 /** Every accessory earned by a longest streak of `longest` days, in order. */
 export function accessoriesFor(longest: number): AccessoryId[] {
   return ACCESSORIES.filter((a) => longest >= a.days).map((a) => a.id);
-}
-
-/** The accessory a run of exactly `days` earns, or null. */
-export function accessoryAt(days: number): AccessoryId | null {
-  return ACCESSORIES.find((a) => a.days === days)?.id ?? null;
 }
 
 /** Earned and not yet seen, in order. */
@@ -66,7 +43,7 @@ function seenAccessories(): string[] {
 
 /**
  * Tracks `accessory_unlocked` once for each accessory the first time Home
- * shows it. `active` is false for a pretend streak from a dev link, which
+ * sees it earned. `active` is false for a pretend streak from a dev link, which
  * must never reach analytics or the record.
  */
 export function useAccessoryUnlocks(earned: readonly AccessoryId[], active: boolean): void {

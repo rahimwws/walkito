@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { BlurView } from 'expo-blur';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Linking, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -16,19 +16,15 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, waveRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { INSTAGRAM } from '../config/instagram';
 
 const RADIUS = 36;
-const MASCOT = 120;
 const BLUR = 28;
 const IN_MS = 340;
 const OUT_MS = 220;
 const RISE = 44;
-/** His wave waits for the card to land, so the two beats are each their own. */
-const LANDED_MS = 320;
 
 export type FollowSheetProps = {
   visible: boolean;
@@ -48,8 +44,7 @@ export type FollowSheetProps = {
  * replies to, is the place for that.
  *
  * Built like the widget nudge (one shared value drives the blur and the card,
- * the mount outlives the flag so the exit can play): Walkito waving on top,
- * the handle, two lines from Rahim, and two answers.
+ * the mount outlives the flag so the exit can play): the handle, two lines from Rahim, and two answers.
  */
 export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
   const scheme = useColorScheme();
@@ -60,7 +55,6 @@ export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
 
   const [mounted, setMounted] = useState(false);
   const progress = useSharedValue(0);
-  const mascot = useRef<MascotHandle>(null);
 
   useEffect(() => {
     if (visible) {
@@ -72,11 +66,7 @@ export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
           reduceMotion: ReduceMotion.System,
         });
       });
-      const wave = setTimeout(() => mascot.current?.play('wave'), LANDED_MS);
-      return () => {
-        cancelAnimationFrame(frame);
-        clearTimeout(wave);
-      };
+      return () => cancelAnimationFrame(frame);
     }
     progress.value = withTiming(
       0,
@@ -127,9 +117,6 @@ export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
           style={[styles.dock, { paddingTop: insets.top + 12, paddingBottom: Math.max(insets.bottom, 16) }, dock]}
           pointerEvents="box-none">
           <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-              <Mascot ref={mascot} rig={waveRig} size={MASCOT} paused={!visible} surface={colors.card} />
-            </View>
             <Text style={[styles.eyebrow, { color: meter.caption }]}>{INSTAGRAM.handle}</Text>
             <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
               {t('follow.title')}
@@ -190,12 +177,12 @@ const styles = StyleSheet.create({
   card: {
     borderRadius: RADIUS,
     borderCurve: 'continuous',
-    paddingTop: 16,
+    paddingTop: 20,
     paddingBottom: 12,
     paddingHorizontal: 20,
     alignItems: 'center',
   },
-  eyebrow: { ...fonts.semibold(14), marginTop: 6 },
+  eyebrow: fonts.semibold(14),
   title: { ...fonts.heavy(26, -0.6), lineHeight: 31, textAlign: 'center', marginTop: 2 },
   note: {
     alignSelf: 'stretch',

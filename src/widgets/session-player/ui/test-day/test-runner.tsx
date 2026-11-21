@@ -1,5 +1,6 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import SmartphoneLostWifiIcon from '@hugeicons/core-free-icons/SmartphoneLostWifiIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView, type VideoPlayer } from 'expo-video';
@@ -31,7 +32,6 @@ import { ZONE_META, planSettings } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../../config/exercise-clips';
@@ -651,17 +651,17 @@ function ClipCard({
           <HugeiconsIcon icon={ArrowExpandDiagonal01Icon} size={small ? 14 : 18} color="#111114" strokeWidth={2.2} />
         </View>
       )}
-      {/* The unplugged mascot, still, where the clip would be: in the corner
-          thumbnail on its own, which has no room for the line. */}
+      {/* The offline glyph where the clip would be: in the corner thumbnail on
+          its own, which has no room for the line. */}
       {failed && (
         <View style={styles.clipFallback} pointerEvents="none">
           {/* Sized, so the 88pt thumbnail's side padding (kept for the line)
-              cannot squeeze the box and push the figure off centre. */}
+              cannot squeeze the box and push the glyph off centre. */}
           <View
             accessibilityElementsHidden
             importantForAccessibility="no-hide-descendants"
             style={small ? styles.failSmall : styles.failLarge}>
-            <MascotStill rig={noInternetRig} size={small ? 60 : 72} surface={colors.card} />
+            <HugeiconsIcon icon={SmartphoneLostWifiIcon} size={small ? 32 : 40} color={meter.caption} strokeWidth={1.6} />
           </View>
           {!small && (
             <Text style={[styles.clipFallbackText, { color: meter.caption }]}>{t('widgets.clipFailed')}</Text>

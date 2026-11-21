@@ -21,8 +21,8 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Button } from '@/shared/ui/button';
+import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
@@ -121,7 +121,7 @@ function Shown({ hours, today, seen, room }: { hours: number; today: string; see
           the room it would take the room's own height, nothing. */}
       <View style={styles.measure} onLayout={onLayout}>
         <Animated.View entering={FadeIn.duration(FADE_MS).reduceMotion(ReduceMotion.System)} {...REPLAY_MASK}>
-          <Card3D material="solid" size="lg" padding={18} style={styles.card} contentStyle={styles.content}>
+          <Card padding={18} style={[styles.card, styles.content]}>
             <View style={styles.head}>
               <FluentIcon name="foot" size={36} />
               <View style={styles.text}>
@@ -141,8 +141,9 @@ function Shown({ hours, today, seen, room }: { hours: number; today: string; see
                 <HugeiconsIcon icon={Cancel01Icon} size={18} color={meter.unit} strokeWidth={2.2} />
               </Pressable>
             </View>
-            <Button3D
+            <Button
               size="md"
+              fullWidth
               label={t('home.longDay.cta', { count: relief.minutes })}
               onPress={() => {
                 track('on_feet_card_opened');
@@ -150,7 +151,7 @@ function Shown({ hours, today, seen, room }: { hours: number; today: string; see
                 leave();
               }}
             />
-          </Card3D>
+          </Card>
         </Animated.View>
       </View>
     </Animated.View>
