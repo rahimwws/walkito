@@ -110,7 +110,7 @@ export function TodayPage() {
           paddingTop: Platform.OS === 'ios' ? 8 : insets.top + 8,
           paddingHorizontal: space.screen,
           paddingBottom: clearance + space.gap,
-          gap: 16,
+          gap: 14,
         }}>
         <View style={styles.header}>
           <View style={styles.headerText}>
@@ -215,9 +215,9 @@ export function TodayPage() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, marginTop: 4 },
-  headerText: { flex: 1, alignItems: 'flex-start', gap: 8 },
-  greeting: { ...fonts.bold(30, -0.6), color: colors.text },
+  header: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  headerText: { flex: 1, alignItems: 'flex-start', gap: 6 },
+  greeting: { ...fonts.bold(28, -0.6), color: colors.text },
   weekPill: {
     minHeight: 36,
     justifyContent: 'center',

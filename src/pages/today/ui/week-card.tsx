@@ -55,14 +55,14 @@ export function WeekCard() {
 }
 
 const styles = StyleSheet.create({
-  card: { padding: 16, gap: 14 },
+  card: { padding: 14, gap: 10 },
   row: { flexDirection: 'row', gap: 6 },
   day: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 4,
-    paddingVertical: 12,
+    gap: 2,
+    paddingVertical: 8,
     borderRadius: 999,
     borderWidth: 2,
     borderColor: 'transparent',

@@ -32,9 +32,10 @@ export type SessionCardProps = {
   startRef: Ref<ComponentRef<typeof View>>;
 };
 
-/** Moves shown on the card; the meta line counts them all. */
-const ROWS = 3;
-const THUMB = 52;
+/** Moves shown on the card, two so Start stays above the tab bar; the meta
+ * line counts them all. */
+const ROWS = 2;
+const THUMB = 44;
 /** The card's padding around the photo. */
 const INSET = 12;
 /** Titles stop growing at twice their size, so a word never breaks. */
@@ -50,7 +51,10 @@ const TITLE_MAX_SCALE = 2;
 export function SessionCard({ work, kind, ranToday, next, active, startLabel, onStart, onOpen, onWhy, startRef }: SessionCardProps) {
   const t = useT();
   const language = useLanguage();
-  const photoHeight = Math.round(((useWindowDimensions().width - 2 * space.screen - 2 * INSET) * 9) / 16);
+  const { width, fontScale } = useWindowDimensions();
+  const photoHeight = Math.round((width - 2 * space.screen - 2 * INSET) / 2);
+  /** At large text sizes a move's circle sits at the top of its words. */
+  const large = fontScale >= 1.35;
   // A test day has no moves of its own: the calf raise is its first test.
   const poster = posterFor(work.type === 'test' ? 'heel_raise_plain' : (work.exerciseIds[0] ?? ''));
   const partly = !work.done && work.ticked > 0 && work.exerciseIds.length > 0;
@@ -71,7 +75,7 @@ export function SessionCard({ work, kind, ranToday, next, active, startLabel, on
           <Image source={poster} style={[styles.photo, { height: photoHeight }]} resizeMode="cover" accessibilityIgnoresInvertColors />
         ) : (
           <View style={[styles.photo, styles.restBand, { height: photoHeight }]}>
-            <RoundArt emoji="rest" accent="blue" size={96} />
+            <RoundArt emoji={work.done ? 'check' : 'rest'} accent={work.done ? 'teal' : 'blue'} size={96} />
           </View>
         )}
         <View style={styles.pill}>
@@ -132,7 +136,7 @@ export function SessionCard({ work, kind, ranToday, next, active, startLabel, on
             {work.exercises.slice(0, ROWS).map((exercise) => {
               const move = exerciseById(exercise.id);
               return (
-                <View key={exercise.id} style={styles.move}>
+                <View key={exercise.id} style={[styles.move, large && styles.moveLarge]}>
                   <RoundArt source={thumbFor(exercise.id)} accent={CATEGORY_ACCENT[move.category]} size={THUMB} />
                   <View style={styles.moveText}>
                     <Text style={styles.moveTitle}>{move.title}</Text>
@@ -231,19 +235,20 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     boxShadow: '0px 2px 8px rgba(17, 17, 20, 0.18)',
   },
-  body: { paddingHorizontal: 8, paddingTop: 16, paddingBottom: 4, gap: 4 },
+  body: { paddingHorizontal: 8, paddingTop: 12, paddingBottom: 0, gap: 2 },
   plan: { ...fonts.medium(17), color: colors.text2 },
   title: { ...fonts.bold(26, -0.4), color: colors.text },
   meta: { ...fonts.regular(17), color: colors.text2 },
   progress: { gap: 8, marginTop: 10 },
   track: { flexDirection: 'row', height: 6, borderRadius: 3, backgroundColor: colors.surface2, overflow: 'hidden' },
   fill: { backgroundColor: colors.accent },
-  moves: { marginTop: 14, gap: 12 },
+  moves: { marginTop: 12, gap: 8 },
   move: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  moveLarge: { alignItems: 'flex-start' },
   moveText: { flex: 1, gap: 1 },
   moveTitle: { ...fonts.semibold(17), color: colors.text },
   moveDose: { ...fonts.regular(17), color: colors.text2 },
-  start: { marginTop: 18 },
+  start: { marginTop: 14 },
   button: {
     minHeight: target.primary,
     borderRadius: 999,
@@ -255,7 +260,7 @@ const styles = StyleSheet.create({
   },
   buttonPressed: { opacity: 0.85 },
   buttonText: { ...fonts.semibold(19), color: colors.onInk, textAlign: 'center' },
-  why: { alignSelf: 'center', minHeight: target.min, justifyContent: 'center', marginTop: 4 },
+  why: { alignSelf: 'center', minHeight: target.min, justifyContent: 'center' },
   whyText: { ...fonts.medium(17), color: colors.text2, textDecorationLine: 'underline' },
   pressed: { opacity: 0.7 },
 });
