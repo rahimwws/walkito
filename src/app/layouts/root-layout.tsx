@@ -59,6 +59,7 @@ import { configureObserve, markInteractive } from '@/shared/lib/observe';
 import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 
+import { FORM_SHEET } from './form-sheet';
 import { OfferWall } from './offer-wall';
 import { runStoreShots } from '../providers/store-shots';
 
@@ -432,25 +433,27 @@ function RootLayoutInner() {
                   }}
                 />
                 {/* Today's two sheets: "Why today looks like this" and the
-                    first-step wake time. Native form sheets, solid surface. */}
-                <Stack.Screen
-                  name="why"
-                  options={{
-                    presentation: 'formSheet',
-                    headerShown: false,
-                    sheetAllowedDetents: [0.5, 1],
-                    sheetGrabberVisible: true,
-                  }}
-                />
-                <Stack.Screen
-                  name="first-step-time"
-                  options={{
-                    presentation: 'formSheet',
-                    headerShown: false,
-                    sheetAllowedDetents: [0.5, 1],
-                    sheetGrabberVisible: true,
-                  }}
-                />
+                    first-step wake time. Guarded with the tabs so neither can
+                    become the launch fallback (see `sheet-route.tsx`). */}
+                <Stack.Protected guard={tabsReachable}>
+                  <Stack.Screen name="why" options={FORM_SHEET} />
+                  <Stack.Screen name="first-step-time" options={FORM_SHEET} />
+                </Stack.Protected>
+                {/* Native form sheets (spec §4), `/sheet/<name>`, outside
+                    every guard so a sheet opened from the onboarding, the
+                    setup or the tabs finds its route. Each is opened by its
+                    host through `useSheetRoute` (`shared/lib/sheet-route`);
+                    one dynamic route so it never becomes a guard's fallback
+                    (`sheet-route.tsx`). */}
+                <Stack.Screen name="sheet/[name]" options={FORM_SHEET} />
+                {/* "You're in" after a purchase or a restore: a one-way door
+                    over the tabs, raised by `useYoureInPresenter`. */}
+                <Stack.Protected guard={tabsReachable}>
+                  <Stack.Screen
+                    name="youre-in"
+                    options={{ headerShown: false, presentation: 'fullScreenModal', gestureEnabled: false, animation: 'fade' }}
+                  />
+                </Stack.Protected>
               </Stack>
               <StatusBar style="auto" />
               {/* An over-the-air update or a new App Store build, offered in a

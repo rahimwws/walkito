@@ -39,14 +39,11 @@ Everything lives in `src/shared/ui/`, one folder and one public API each.
 | `animated-number` | Rolling digits — SwiftUI `numericText` on iOS, plain text elsewhere |
 | `hero-stat` | Oversized rolling figure with a caption and a unit |
 | `date-header` | Day in display weight, month on its baseline, trailing actions |
-| `filter-pills` | Scrolling row of independent filter chips |
 | `stat-strip` | Compact row of tinted glyph+value pairs, with a trailing action |
 | `stat-bar` | Tinted glyph, value, and a continuous progress bar |
 | `score-gauge` | 270° tick gauge with a rolling score and delta pill |
 | `tick-gauge` | Parametric radial tick fan; backs the score gauge and goal ring |
 | `daily-goal-card` | Goal ring with a rolling percentage and an action button |
-| `progress-card` | Hero score, band badge, tick meter, divided stat row |
-| `counter-card` | Compact glass stat tile with a week-over-week delta |
 | `meter-row` | Icon, label, caption, score, delta, tick bar |
 | `meter` | `ScoreValue`, `TickBar`, `DeltaLabel` primitives |
 | `week-strip` | Seven-day ring strip; partial arc for today |
@@ -56,7 +53,6 @@ Everything lives in `src/shared/ui/`, one folder and one public API each.
 | `loading-spinner` | Three-phase Lottie spinner (start → active → stop) |
 | `animated-dashed-border` | Travelling dashed outline, Reanimated + SVG |
 | `feature-card` | Tappable media tile: artwork, corner badge, bottom caption |
-| `empty-state-card` | The "no data yet" placeholder |
 | `header-actions` | Streak capsule plus the profile menu |
 | `profile-menu` | Native SwiftUI dropdown on iOS; falls back to a plain button |
 | `section-header` | Section title plus subtitle; `display` size opens a block |

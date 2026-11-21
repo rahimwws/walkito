@@ -6,7 +6,6 @@ import LeftToRightListNumberIcon from '@hugeicons/core-free-icons/LeftToRightLis
 import ManIcon from '@hugeicons/core-free-icons/ManIcon';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
-import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
@@ -30,9 +29,11 @@ import {
   type ProtocolPosition,
 } from '@/entities/protocols';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { colors as tokens } from '@/shared/config/tokens';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { NavGlass, useNavGlass } from '@/shared/ui/glass';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 import { thumbFor } from '@/widgets/session-player';
 
@@ -56,7 +57,7 @@ const HERO_SHARE = 0.46;
 /** The band at the foot of the picture that melts it into the page. */
 const BLEND = 48;
 const SIDE_PAD = 20;
-const BACK_SIZE = 40;
+const BACK_SIZE = 48;
 const TILE = 52;
 
 /** Over the photograph the text is always light, whatever the scheme. */
@@ -135,7 +136,7 @@ function Routine({ protocol, from }: { protocol: Protocol; from?: string }) {
   }));
 
   const page = colors.background;
-  const glass = isLiquidGlassAvailable();
+  const glass = useNavGlass();
 
   return (
     <View style={styles.screen}>
@@ -284,24 +285,15 @@ function Routine({ protocol, from }: { protocol: Protocol; from?: string }) {
         accessibilityRole="button"
         accessibilityLabel={t('common.back')}
         onPress={leave}
-        hitSlop={8}
-        style={({ pressed }) => [
-          styles.back,
-          { top: insets.top + 8 },
-          pressed && { opacity: 0.7 },
-        ]}>
-        {glass ? (
-          <GlassView
-            glassEffectStyle="regular"
-            tintColor="rgba(17,17,19,0.28)"
-            style={styles.backFace}>
-            <HugeiconsIcon icon={ArrowLeft02Icon} size={22} color={ON_PHOTO} strokeWidth={2} />
-          </GlassView>
-        ) : (
-          <View style={[styles.backFace, styles.backSolid]}>
-            <HugeiconsIcon icon={ArrowLeft02Icon} size={22} color={ON_PHOTO} strokeWidth={2} />
-          </View>
-        )}
+        style={[styles.back, { top: insets.top + 8 }]}>
+        <NavGlass variant="clear" style={styles.backFace}>
+          <HugeiconsIcon
+            icon={ArrowLeft02Icon}
+            size={22}
+            color={glass ? ON_PHOTO : tokens.text}
+            strokeWidth={2}
+          />
+        </NavGlass>
       </Pressable>
 
       {/* Start, pinned over a fade of the page so the last row shows through
@@ -448,7 +440,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     overflow: 'hidden',
   },
-  backSolid: { backgroundColor: 'rgba(17,17,19,0.55)' },
   dock: {
     position: 'absolute',
     left: 0,

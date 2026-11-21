@@ -115,7 +115,7 @@ export function Unsubscribe() {
   const w = WORDS[lang];
   return (
     <div className="handoff-card" lang={lang}>
-      <img src="/email/mascot.png" alt="" width={96} height={96} />
+      <p className="handoff-wordmark">walkito</p>
       {state === 'working' ? <p className="handoff-title">{w.working}</p> : null}
       {state === 'done' ? (
         <>

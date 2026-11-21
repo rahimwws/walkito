@@ -7,7 +7,7 @@ import { AccessibilityInfo } from 'react-native';
  * Every glass surface needs it, and a screen of the raised kit has dozens of
  * them, so the setting is one store with one native listener rather than a
  * query and a listener per component (it began as a private hook in
- * `glass-chip`, which mounted a few at most). Started by the first subscriber
+ * a glass chip, which mounted a few at most). Started by the first subscriber
  * and kept for the life of the app.
  */
 let current = false;

@@ -42,7 +42,7 @@ export function Subscribed() {
 
   return (
     <div className="handoff-card" lang={lang}>
-      <img src="/email/mascot.png" alt="" width={96} height={96} />
+      <p className="handoff-wordmark">walkito</p>
       {error ? (
         <p className="handoff-title">{w.invalid}</p>
       ) : (

@@ -65,8 +65,8 @@ whole segment, so importing a button doesn't pull the entire UI kit into the
 bundle.
 
 ```tsx
-import { ProgressCard } from '@/shared/ui/progress-card'; // ✅
-import { ProgressCard } from '@/shared/ui/progress-card/progress-card'; // ❌
+import { PrimaryButton } from '@/shared/ui/primary-button'; // ✅
+import { PrimaryButton } from '@/shared/ui/primary-button/primary-button'; // ❌
 ```
 
 ## Path aliases

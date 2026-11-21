@@ -297,4 +297,8 @@ export const OFFER_PT = {
   'offer.trial.remindTitle': { one: 'Vamos te lembrar {count} dia antes do fim do teste', other: 'Vamos te lembrar {count} dias antes do fim do teste' },
   'offer.trial.cancelHow': 'Para cancelar: abra Ajustes, toque no seu nome e depois em Assinaturas.',
   'offer.trial.cancelHowAndroid': 'Para cancelar: abra o Google Play, toque no seu perfil e depois em Pagamentos e assinaturas.',
+  /** "You're in": once, after a purchase or a restore, before today's session. */
+  'offer.welcome.title': 'Tudo pronto',
+  'offer.welcome.line': 'Seu plano está pronto. Ele começa com a sessão de hoje: alguns minutos no seu ritmo.',
+  'offer.welcome.cta': 'Começar a sessão de hoje',
 };

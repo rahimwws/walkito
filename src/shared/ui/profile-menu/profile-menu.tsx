@@ -1,57 +1,43 @@
 import User03Icon from '@hugeicons/core-free-icons/User03Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { meterColors } from '@/shared/config';
+import { colors, target } from '@/shared/config/tokens';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { NavGlass } from '@/shared/ui/glass';
 
 export type ProfileMenuProps = {
   onPress: () => void;
 };
 
 /**
- * The avatar. One tap, one destination.
+ * The avatar. One tap, one destination: the profile screen, where settings,
+ * invites and the account controls live.
  *
- * This was a native SwiftUI `Menu` with two entries, "Refer a friend" and
- * "Settings". Both now live on the profile screen along with the account
- * controls, so the dropdown was a menu whose every item was also one scroll
- * further on — an extra decision in front of a screen that answers it.
- *
- * `Pressable` wraps the glass rather than sitting inside it. An interactive
- * `GlassView` installs its own native press recogniser, and a `Pressable`
- * mounted into its content view is a descendant of that recogniser: it loses
- * the first tap. Three controls in this app had that bug.
+ * A 48pt circle on the navigation layer. `Pressable` wraps the glass rather
+ * than sitting inside it: an interactive glass view installs its own press
+ * recogniser, and a `Pressable` in its content view loses the first tap. It
+ * never dims on press, because glass under opacity stops rendering.
  */
 export function ProfileMenu({ onPress }: ProfileMenuProps) {
-  const scheme = useColorScheme();
   const t = useT();
 
   return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityLabel={t('common.profile')}
-      onPress={onPress}
-      style={({ pressed }) => pressed && { opacity: 0.7 }}>
-      <GlassView
-        isInteractive
-        style={[styles.capsule, !isLiquidGlassAvailable() && { backgroundColor: meterColors[scheme].track }]}>
-        <HugeiconsIcon
-          icon={User03Icon}
-          size={24}
-          color={scheme === 'dark' ? '#8E8E93' : '#98989E'}
-        />
-      </GlassView>
+    <Pressable accessibilityRole="button" accessibilityLabel={t('common.profile')} onPress={onPress}>
+      <NavGlass interactive style={styles.circle}>
+        <HugeiconsIcon icon={User03Icon} size={24} color={colors.text} strokeWidth={1.7} />
+      </NavGlass>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  capsule: {
-    padding: 8,
-    borderRadius: 50,
+  circle: {
+    width: target.min,
+    height: target.min,
+    borderRadius: target.min / 2,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
   },
 });

@@ -403,4 +403,8 @@ export const OFFER_EN = {
   /** Where a subscription is cancelled, in the system's own words for it. */
   'offer.trial.cancelHow': 'To cancel, open Settings, tap your name, then Subscriptions.',
   'offer.trial.cancelHowAndroid': 'To cancel, open Google Play, tap your profile, then Payments & subscriptions.',
+  /** "You're in": once, after a purchase or a restore, before today's session. */
+  'offer.welcome.title': 'You\'re in',
+  'offer.welcome.line': 'Your plan is ready. It starts with today\'s session, a few minutes at your own pace.',
+  'offer.welcome.cta': 'Start today\'s session',
 } as const satisfies Record<string, SourceEntry>;

@@ -1,30 +1,18 @@
 import * as Haptics from 'expo-haptics';
-import { BlurView } from 'expo-blur';
-import { useEffect, useState } from 'react';
-import { Linking, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, {
-  Easing,
-  ReduceMotion,
-  runOnJS,
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useLocalSearchParams, useNavigation } from 'expo-router';
+import { useEffect, useRef } from 'react';
+import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors, fonts, radius, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { PrimaryButton } from '@/shared/ui/primary-button';
+import { useSheetHandlers, useSheetRoute } from '@/shared/lib/sheet-route';
+import { Button } from '@/shared/ui/button';
+import { SheetScreen } from '@/shared/ui/sheet';
 
 import { INSTAGRAM } from '../config/instagram';
 
-const RADIUS = 36;
-const BLUR = 28;
-const IN_MS = 340;
-const OUT_MS = 220;
-const RISE = 44;
+const ROUTE = 'follow';
 
 export type FollowSheetProps = {
   visible: boolean;
@@ -43,166 +31,85 @@ export type FollowSheetProps = {
  * and moderation (App Review 1.2); an account the founder runs, and reads the
  * replies to, is the place for that.
  *
- * Built like the widget nudge (one shared value drives the blur and the card,
- * the mount outlives the flag so the exit can play): the handle, two lines from Rahim, and two answers.
+ * The sheet is the native form sheet route `/follow` (`FollowSheetScreen`);
+ * this keeps the hosts' `visible` / `onClose` API and opens it.
  */
 export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const insets = useSafeAreaInsets();
+  useSheetRoute(ROUTE, visible, { pathname: '/sheet/[name]', params: { name: 'follow', from } }, null, onClose);
+  return null;
+}
+
+/** The handle, two lines from Rahim, and two answers. Closing it any way but
+ * "Follow" counts as dismissed. */
+export function FollowSheetScreen() {
+  useSheetHandlers<null>(ROUTE);
+  const navigation = useNavigation();
+  const params = useLocalSearchParams<{ from?: string }>();
+  const from: FollowSheetProps['from'] = params.from === 'auto' ? 'auto' : 'profile';
   const t = useT();
+  const followed = useRef(false);
 
-  const [mounted, setMounted] = useState(false);
-  const progress = useSharedValue(0);
-
-  useEffect(() => {
-    if (visible) {
-      setMounted(true);
-      const frame = requestAnimationFrame(() => {
-        progress.value = withTiming(1, {
-          duration: IN_MS,
-          easing: Easing.out(Easing.cubic),
-          reduceMotion: ReduceMotion.System,
-        });
-      });
-      return () => cancelAnimationFrame(frame);
-    }
-    progress.value = withTiming(
-      0,
-      { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
-      (finished) => {
-        if (finished) runOnJS(setMounted)(false);
-      },
-    );
-    return undefined;
-  }, [visible, progress]);
-
-  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
-  const dock = useAnimatedStyle(() => ({
-    opacity: progress.value,
-    transform: [{ translateY: (1 - progress.value) * RISE }],
-  }));
-
-  if (!mounted) return null;
+  useEffect(
+    () => () => {
+      if (!followed.current) track('instagram_offer_dismissed', { from });
+    },
+    [from],
+  );
 
   const follow = () => {
+    followed.current = true;
     track('instagram_follow_tapped', { from });
     void Linking.openURL(INSTAGRAM.url).catch(() => {});
-    onClose();
+    navigation.goBack();
   };
-  const dismiss = () => {
-    track('instagram_offer_dismissed', { from });
-    onClose();
+  const later = () => {
+    Haptics.selectionAsync();
+    navigation.goBack();
   };
 
   const founder = t('follow.founder');
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={dismiss}>
-      <View style={styles.fill}>
-        <Animated.View style={[styles.fill, backdrop]} pointerEvents="none">
-          <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={styles.fill} />
-          <View style={[styles.fill, styles.wash]} />
-        </Animated.View>
-
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={t('follow.later')}
-          style={styles.fill}
-          onPress={dismiss}
-        />
-
-        <Animated.View
-          style={[styles.dock, { paddingTop: insets.top + 12, paddingBottom: Math.max(insets.bottom, 16) }, dock]}
-          pointerEvents="box-none">
-          <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <Text style={[styles.eyebrow, { color: meter.caption }]}>{INSTAGRAM.handle}</Text>
-            <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
-              {t('follow.title')}
-            </Text>
-
-            {/* Two lines in his voice, signed: who is in there, and what for. */}
-            <View style={[styles.note, { backgroundColor: meter.iconTile }]}>
-              <Text style={[styles.noteText, { color: colors.foreground }]}>{t('follow.note')}</Text>
-              <View style={styles.sign}>
-                <View style={[styles.initial, { backgroundColor: colors.foreground }]}>
-                  <Text style={[styles.initialText, { color: colors.card }]}>{founder.slice(0, 1)}</Text>
-                </View>
-                <Text style={[styles.signText, { color: meter.label }]}>{founder}</Text>
-              </View>
-            </View>
-
-            <PrimaryButton
-              label={t('follow.cta')}
-              icon={INSTAGRAM.icon}
-              onPress={follow}
-              style={styles.cta}
-            />
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => {
-                Haptics.selectionAsync();
-                dismiss();
-              }}
-              hitSlop={8}
-              style={({ pressed }) => [styles.later, pressed && { opacity: 0.6 }]}>
-              <Text style={[styles.laterText, { color: meter.caption }]}>{t('follow.later')}</Text>
-            </Pressable>
+    <SheetScreen
+      eyebrow={INSTAGRAM.handle}
+      title={t('follow.title')}
+      footer={
+        <>
+          <Button label={t('follow.cta')} icon={INSTAGRAM.icon} iconPosition="leading" onPress={follow} />
+          <Button label={t('follow.later')} variant="ghost" onPress={later} />
+        </>
+      }>
+      {/* Two lines in his voice, signed: who is in there, and what for. */}
+      <View style={styles.note}>
+        <Text style={styles.noteText}>{t('follow.note')}</Text>
+        <View style={styles.sign}>
+          <View style={styles.initial}>
+            <Text style={styles.initialText}>{founder.slice(0, 1)}</Text>
           </View>
-        </Animated.View>
+          <Text style={styles.signText}>{founder}</Text>
+        </View>
       </View>
-    </Modal>
+    </SheetScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  fill: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  wash: { backgroundColor: 'rgba(0,0,0,0.18)' },
-  dock: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    justifyContent: 'flex-end',
-    paddingHorizontal: 10,
-  },
-  card: {
-    borderRadius: RADIUS,
-    borderCurve: 'continuous',
-    paddingTop: 20,
-    paddingBottom: 12,
-    paddingHorizontal: 20,
-    alignItems: 'center',
-  },
-  eyebrow: fonts.semibold(14),
-  title: { ...fonts.heavy(26, -0.6), lineHeight: 31, textAlign: 'center', marginTop: 2 },
   note: {
-    alignSelf: 'stretch',
-    borderRadius: 20,
+    borderRadius: radius.card,
     borderCurve: 'continuous',
-    padding: 14,
-    marginTop: 18,
+    padding: 20,
+    backgroundColor: colors.bg,
   },
-  noteText: { ...fonts.medium(16, -0.1), lineHeight: 22 },
-  sign: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 12 },
+  noteText: { ...fonts.regular(19), color: colors.text },
+  sign: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 14, minHeight: target.min - 16 },
   initial: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: colors.ink,
   },
-  initialText: fonts.bold(13),
-  signText: fonts.semibold(14),
-  cta: { alignSelf: 'stretch', marginTop: 18 },
-  later: { alignItems: 'center', paddingTop: 14, paddingBottom: 6 },
-  laterText: fonts.semibold(15, -0.2),
+  initialText: { ...fonts.bold(17), color: colors.onInk },
+  signText: { ...fonts.semibold(17), color: colors.text2 },
 });
