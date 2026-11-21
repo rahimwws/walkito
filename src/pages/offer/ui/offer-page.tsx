@@ -1074,7 +1074,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
           as nothing having happened. */}
-        <CancelQuestion visible={asking != null} onAnswer={answered} />
+        <CancelQuestion visible={asking != null} onAnswer={answered} inModal={wall} />
         {gift != null && (
           <ExitGift plan={gift} visible={giftShown} busy={giftBusy} onBuy={() => void buyGift()} onDecline={declineGift} />
         )}

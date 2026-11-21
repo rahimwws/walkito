@@ -6,5 +6,7 @@ export { offerFirstSessionAgain } from '@/entities/session';
 export { devSetFirstSession } from '@/entities/session';
 /** Development only: "What stopped you?" asked again (`?previewPaywall`). */
 export { devForgetCancelQuestion } from './ui/cancel-question';
+/** The native sheet route `/sheet/cancel-question`, drawn by `SheetRoute`. */
+export { CancelQuestionScreen } from './ui/cancel-question';
 /** Development only: the exit gift can open again (`?previewPaywall`). */
 export { devForgetGift } from './model/gift-store';
