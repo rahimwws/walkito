@@ -10,4 +10,4 @@
  * copy still belongs to the onboarding experience, and renaming eight keys
  * across three languages to record a file move would be churn.
  */
-export { NoteSheet } from './note-sheet';
+export { NoteSheet, NoteSheetScreen } from './note-sheet';

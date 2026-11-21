@@ -1,16 +1,8 @@
-import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
+import { useNavigation } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import { useReanimatedKeyboardAnimation } from 'react-native-keyboard-controller';
-import Animated, {
-  Easing,
-  ReduceMotion,
-  runOnJS,
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
+import { Modal, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
@@ -24,10 +16,11 @@ import {
   type EmailSignIn,
 } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, colors, fonts, radius, space, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { useSheetHandlers, useSheetRoute } from '@/shared/lib/sheet-route';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { SheetScreen } from '@/shared/ui/sheet';
 
 /**
  * The email door into an account: an address, then the code mailed to it.
@@ -38,19 +31,14 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
  * an account": a code for the account the address has, and "Use a password
  * instead" for App Store review, whose account has no mailbox to take a code.
  *
- * A bottom sheet rather than a full-screen modal, matching `StreakSheet` — two
- * fields and a button do not deserve the whole display. The mount is owned
- * here rather than driven off `visible` for the reason spelled out in that
- * component: a modal torn down the instant the flag clears leaves nothing for
- * the exit to play on. Closing it always works and goes back to the screen
- * under it, which keeps its other door.
+ * Drawn as the native form sheet route `/email-sign-in`. Where the door sits
+ * inside a React Native modal (the pass checkout, in the cancel flow's and the
+ * offers' modals) a route would open under that modal, so there it is a plain
+ * solid bottom sheet of its own (`inline`). Closing it always works and goes
+ * back to the screen under it, which keeps its other door.
  */
 
-const BLUR = 28;
-const IN_MS = 340;
-const OUT_MS = 220;
-const RISE = 44;
-const RADIUS = 28;
+const ROUTE = 'email-sign-in';
 /** Supabase sends one auth email a minute per address. */
 const RESEND_AFTER_S = 60;
 
@@ -61,14 +49,24 @@ type Stage = 'address' | 'code' | 'password';
  * `?authPreview=`). */
 export type EmailSheetPreview = { stage: Stage; email: string; existing?: boolean };
 
-/** How long after the modal unmounts before `onHidden`: the native dismissal
- * finishing. */
-const HIDDEN_SETTLE_MS = 80;
+/** How long after the inline modal closes before `onHidden` on Android, where
+ * there is no `onDismiss`: the slide finishing. */
+const HIDDEN_SETTLE_MS = 320;
+
+type FormProps = {
+  /** `create` after the first purchase; `sign-in` for someone coming back. */
+  mode: EmailCodeMode;
+  onSignedIn: (email: string, created: boolean) => void;
+  onFailure?: (failure: Exclude<AuthFailure, 'user'>) => void;
+  preview?: EmailSheetPreview | null;
+  onClose: () => void;
+  /** A request is out: closing waits for it. */
+  onBusy?: (busy: boolean) => void;
+};
 
 type Props = {
   visible: boolean;
   onClose: () => void;
-  /** `create` after the first purchase; `sign-in` for someone coming back. */
   mode?: EmailCodeMode;
   /** Signed in. The address is handed back so the profile can be greeted by
    * it and support has somewhere to reply; `created` when the code made the
@@ -79,21 +77,120 @@ type Props = {
   onFailure?: (failure: Exclude<AuthFailure, 'user'>) => void;
   preview?: EmailSheetPreview | null;
   /**
-   * The sheet's own modal is gone from the screen. A host that closes
-   * something under this sheet when it signs in (the intro's "Sign in"
-   * sheet) waits for this: closing both modals at once left this one's
-   * native host on screen on iPadOS 27, invisible and taking every touch
-   * (App Review, 1.0.3 (37)).
+   * The sheet is gone from the screen. A host that closes something under
+   * this sheet when it signs in (the intro's "Sign in" sheet) waits for this:
+   * closing both at once left this one's native host on screen on iPadOS 27,
+   * invisible and taking every touch (App Review, 1.0.3 (37)).
    */
   onHidden?: () => void;
+  /** Drawn as its own solid sheet rather than the route, for a host that is
+   * itself inside a React Native modal. */
+  inline?: boolean;
 };
 
-export function EmailSignInSheet({ visible, onClose, mode = 'sign-in', onSignedIn, onFailure, preview, onHidden }: Props) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const accent = accents[scheme];
+type Handlers = Pick<FormProps, 'mode' | 'onSignedIn' | 'onFailure' | 'preview'>;
+
+export function EmailSignInSheet({
+  visible,
+  onClose,
+  mode = 'sign-in',
+  onSignedIn,
+  onFailure,
+  preview,
+  onHidden,
+  inline = false,
+}: Props) {
+  const handlers: Handlers = { mode, onSignedIn, onFailure, preview };
+  useSheetRoute<Handlers>(ROUTE, visible && !inline, '/email-sign-in', handlers, () => {
+    onClose();
+    onHidden?.();
+  });
+  if (!inline) return null;
+  return (
+    <InlineSheet visible={visible} onClose={onClose} onHidden={onHidden}>
+      <EmailSignInForm {...handlers} onClose={onClose} />
+    </InlineSheet>
+  );
+}
+
+/** The route's screen. Opened without a host it signs in and closes. */
+export function EmailSignInScreen() {
+  const handlers = useSheetHandlers<Handlers>(ROUTE);
+  const navigation = useNavigation();
+  const [busy, setBusy] = useState(false);
+  const host = handlers();
+
+  useEffect(() => {
+    navigation.setOptions({ gestureEnabled: !busy });
+  }, [busy, navigation]);
+
+  return (
+    <SheetScreen>
+      <EmailSignInForm
+        mode={host?.mode ?? 'sign-in'}
+        preview={host?.preview}
+        onFailure={(failure) => handlers()?.onFailure?.(failure)}
+        onSignedIn={(email, created) => {
+          const current = handlers();
+          if (current == null) navigation.goBack();
+          else current.onSignedIn(email, created);
+        }}
+        onClose={() => navigation.goBack()}
+        onBusy={setBusy}
+      />
+    </SheetScreen>
+  );
+}
+
+function InlineSheet({
+  visible,
+  onClose,
+  onHidden,
+  children,
+}: {
+  visible: boolean;
+  onClose: () => void;
+  onHidden?: () => void;
+  children: React.ReactNode;
+}) {
   const insets = useSafeAreaInsets();
+  const t = useT();
+  const hiddenRef = useRef(onHidden);
+  hiddenRef.current = onHidden;
+  const wasVisible = useRef(false);
+
+  useEffect(() => {
+    if (visible) {
+      wasVisible.current = true;
+      return undefined;
+    }
+    if (!wasVisible.current || Platform.OS === 'ios') return undefined;
+    wasVisible.current = false;
+    const timer = setTimeout(() => hiddenRef.current?.(), HIDDEN_SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [visible]);
+
+  return (
+    <Modal
+      transparent
+      animationType="slide"
+      visible={visible}
+      statusBarTranslucent
+      onRequestClose={onClose}
+      onDismiss={() => {
+        if (!wasVisible.current) return;
+        wasVisible.current = false;
+        hiddenRef.current?.();
+      }}>
+      <KeyboardAvoidingView behavior="padding" style={styles.inlineRoot}>
+        <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.scrim} onPress={onClose} />
+        <View style={[styles.inlineCard, { paddingBottom: Math.max(insets.bottom, 16) + 8 }]}>{children}</View>
+      </KeyboardAvoidingView>
+    </Modal>
+  );
+}
+
+function EmailSignInForm({ mode, onSignedIn, onFailure, preview, onClose, onBusy }: FormProps) {
   const t = useT();
 
   const [stage, setStage] = useState<Stage>('address');
@@ -108,58 +205,14 @@ export function EmailSignInSheet({ visible, onClose, mode = 'sign-in', onSignedI
   const inFlight = useRef(false);
   const [notice, setNotice] = useState<string | null>(null);
   /** Seconds until another code may be asked for, for any address: Supabase
-   * keeps one minute between codes per account, and a different address on the
-   * same anonymous account waits it out too. Kept across stages and closes. */
+   * keeps one minute between codes per account. */
   const [wait, setWait] = useState(0);
 
-  const [mounted, setMounted] = useState(false);
-  /** 0 away, 1 arrived. One number drives the blur and the card, so they cannot
-   * arrive or leave at different times.
-   *
-   * Named `progress` rather than `t`, which is the translator in every file
-   * that renders text — see `StreakSheet`, where the same rename happened. */
-  const progress = useSharedValue(0);
-
+  const busyRef = useRef(onBusy);
+  busyRef.current = onBusy;
   useEffect(() => {
-    if (visible) {
-      setMounted(true);
-      // A frame late: the modal has to exist before the transition starts, or
-      // the first frames play against nothing.
-      const frame = requestAnimationFrame(() => {
-        progress.value = withTiming(1, {
-          duration: IN_MS,
-          easing: Easing.out(Easing.cubic),
-          reduceMotion: ReduceMotion.System,
-        });
-      });
-      return () => cancelAnimationFrame(frame);
-    }
-
-    progress.value = withTiming(
-      0,
-      { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
-      (finished) => {
-        if (finished) runOnJS(setMounted)(false);
-      },
-    );
-    return undefined;
-  }, [visible, progress]);
-
-  // Told once the modal has left, a beat after the unmount so UIKit has
-  // finished dismissing it before anything beneath is touched.
-  const wasMounted = useRef(false);
-  const hiddenRef = useRef(onHidden);
-  hiddenRef.current = onHidden;
-  useEffect(() => {
-    if (mounted) {
-      wasMounted.current = true;
-      return undefined;
-    }
-    if (!wasMounted.current) return undefined;
-    wasMounted.current = false;
-    const timer = setTimeout(() => hiddenRef.current?.(), HIDDEN_SETTLE_MS);
-    return () => clearTimeout(timer);
-  }, [mounted]);
+    busyRef.current?.(busy);
+  }, [busy]);
 
   useEffect(() => {
     if (!__DEV__ || preview == null) return;
@@ -190,26 +243,6 @@ export function EmailSignInSheet({ visible, onClose, mode = 'sign-in', onSignedI
       setBusy(false);
     }
   };
-
-  /**
-   * How far the keyboard has pushed in, as a shared value.
-   *
-   * `KeyboardAvoidingView` cannot do this job here. It works by growing its own
-   * padding, and the card below is positioned absolutely against the bottom
-   * edge — absolute children do not move for a parent's padding, so the sheet
-   * stayed exactly where it was and the keyboard covered it completely.
-   * Translating the dock is what actually moves it.
-   *
-   * `height` is already negative while the keyboard is up, which is why it adds
-   * to the rise rather than subtracting from it.
-   */
-  const keyboard = useReanimatedKeyboardAnimation();
-
-  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
-  const dock = useAnimatedStyle(() => ({
-    opacity: progress.value,
-    transform: [{ translateY: (1 - progress.value) * RISE + keyboard.height.value }],
-  }));
 
   const fail = (message: string, failure: AuthFailure, stageName: 'code' | 'server') => {
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
@@ -292,14 +325,8 @@ export function EmailSignInSheet({ visible, onClose, mode = 'sign-in', onSignedI
 
   const dismiss = () => {
     if (busy) return;
-    setNotice(null);
-    setPassword('');
-    setCode('');
-    setStage('address');
     onClose();
   };
-
-  if (!mounted) return null;
 
   const title =
     stage === 'code'
@@ -315,178 +342,161 @@ export function EmailSignInSheet({ visible, onClose, mode = 'sign-in', onSignedI
         : mode === 'create'
           ? t('onboarding.email.createBlurb')
           : t('onboarding.email.signInBlurb');
-  const field = [styles.field, { backgroundColor: colors.background, color: meter.ink }];
+  const field = styles.field;
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={dismiss}>
-      {/* Driven by hand rather than by `entering`/`exiting` builders: an
-          entering builder that fails to run strands its subject at opacity 0,
-          and an exiting builder cannot run inside a modal whose visibility is
-          what removed it. */}
-      <View style={styles.fill}>
-        <Animated.View style={[styles.fill, backdrop]} pointerEvents="none">
-          <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={styles.fill} />
-          <View style={[styles.fill, styles.wash]} />
-        </Animated.View>
-
-        {/* Tapping away closes it, back to the screen under it and its other
-            door. */}
-        <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.fill} onPress={dismiss} />
-
-        <Animated.View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]} pointerEvents="box-none">
-          <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <View style={styles.head}>
-              <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
-              <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} onPress={dismiss} hitSlop={12}>
-                <Text style={[styles.close, { color: meter.caption }]}>{t('common.close')}</Text>
-              </Pressable>
-            </View>
-
-            <Text style={[styles.blurb, { color: meter.caption }]}>{blurb}</Text>
-
-            {/* An address that already had an account: the code signs in to
-                it rather than making a new one. Said, not discovered later. */}
-            {stage === 'code' && mode === 'create' && sent?.mode === 'sign-in' && (
-              <Text style={[styles.blurb, { color: meter.label }]}>{t('onboarding.email.existing')}</Text>
-            )}
-
-            {stage !== 'code' && (
-              <TextInput
-                style={field}
-                value={email}
-                onChangeText={setEmail}
-                placeholder={t('onboarding.email.address')}
-                placeholderTextColor={meter.unit}
-                // `username` rather than `emailAddress`, so a password manager
-                // offers the pair and not just the address.
-                textContentType={stage === 'password' ? 'username' : 'emailAddress'}
-                autoComplete="email"
-                keyboardType="email-address"
-                autoCapitalize="none"
-                autoCorrect={false}
-                editable={!busy}
-                autoFocus
-                returnKeyType={stage === 'password' ? 'next' : 'send'}
-                onSubmitEditing={stage === 'address' ? send : undefined}
-              />
-            )}
-
-            {stage === 'password' && (
-              <TextInput
-                style={field}
-                value={password}
-                onChangeText={setPassword}
-                placeholder={t('onboarding.email.password')}
-                placeholderTextColor={meter.unit}
-                textContentType="password"
-                autoComplete="current-password"
-                secureTextEntry
-                autoCapitalize="none"
-                autoCorrect={false}
-                editable={!busy}
-                returnKeyType="go"
-                onSubmitEditing={signInWithPassword}
-              />
-            )}
-
-            {stage === 'code' && (
-              <TextInput
-                // The digits spaced wide; the placeholder set like any other.
-                style={[field, code.length > 0 && styles.codeField]}
-                value={code}
-                onChangeText={(next) => {
-                  const digits = next.replace(/\D/g, '').slice(0, EMAIL_CODE_LENGTH);
-                  setCode(digits);
-                  // Filled in, by hand or from the keyboard's suggestion: checked
-                  // at once, no extra tap.
-                  if (digits.length === EMAIL_CODE_LENGTH) verify(digits);
-                }}
-                placeholder={t('onboarding.email.code')}
-                placeholderTextColor={meter.unit}
-                textContentType="oneTimeCode"
-                autoComplete="one-time-code"
-                keyboardType="number-pad"
-                maxLength={EMAIL_CODE_LENGTH}
-                editable={!busy}
-                autoFocus
-              />
-            )}
-
-            {notice != null ? <Text style={[styles.notice, { color: accent.amber.fill }]}>{notice}</Text> : null}
-
-            <View style={styles.cta}>
-              {stage === 'address' && (
-                <PrimaryButton
-                  label={
-                    busy
-                      ? t('onboarding.email.sending')
-                      : wait > 0 && email.trim().toLowerCase() !== sent?.email
-                        ? t('onboarding.email.resendIn', { seconds: wait })
-                        : t('onboarding.email.sendCode')
-                  }
-                  onPress={send}
-                  disabled={busy || email.trim().length === 0 || (wait > 0 && email.trim().toLowerCase() !== sent?.email)}
-                />
-              )}
-              {stage === 'code' && (
-                <PrimaryButton
-                  label={busy ? t('onboarding.email.verifying') : t('onboarding.email.verify')}
-                  onPress={() => verify(code)}
-                  disabled={busy || code.length < EMAIL_CODE_LENGTH}
-                />
-              )}
-              {stage === 'password' && (
-                <PrimaryButton
-                  label={busy ? t('onboarding.email.submitting') : t('onboarding.email.submit')}
-                  onPress={signInWithPassword}
-                  disabled={busy || email.trim().length === 0 || password.length === 0}
-                />
-              )}
-            </View>
-
-            {stage === 'code' && (
-              <View style={styles.links}>
-                <Link
-                  label={wait > 0 ? t('onboarding.email.resendIn', { seconds: wait }) : t('onboarding.email.resend')}
-                  disabled={busy || wait > 0}
-                  onPress={resend}
-                />
-                <Link
-                  label={t('onboarding.email.changeAddress')}
-                  disabled={busy}
-                  onPress={() => {
-                    setNotice(null);
-                    setCode('');
-                    setStage('address');
-                  }}
-                />
-              </View>
-            )}
-            {/* The review account has no mailbox: its way in is a password.
-                Only for someone coming back, never on the screen that makes a
-                new account. */}
-            {mode === 'sign-in' && stage !== 'code' && (
-              <View style={styles.links}>
-                <Link
-                  label={stage === 'password' ? t('onboarding.email.useCode') : t('onboarding.email.usePassword')}
-                  disabled={busy}
-                  onPress={() => {
-                    setNotice(null);
-                    setStage(stage === 'password' ? 'address' : 'password');
-                  }}
-                />
-              </View>
-            )}
-          </View>
-        </Animated.View>
+    <View style={styles.form}>
+      <View style={styles.head}>
+        <Text style={styles.title} accessibilityRole="header">
+          {title}
+        </Text>
+        <Pressable accessibilityRole="button" onPress={dismiss} hitSlop={8} style={styles.close}>
+          <Text style={styles.closeLabel} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+            {t('common.close')}
+          </Text>
+        </Pressable>
       </View>
-    </Modal>
+
+      <Text style={styles.blurb}>{blurb}</Text>
+
+      {/* An address that already had an account: the code signs in to
+          it rather than making a new one. Said, not discovered later. */}
+      {stage === 'code' && mode === 'create' && sent?.mode === 'sign-in' && (
+        <Text style={styles.existing}>{t('onboarding.email.existing')}</Text>
+      )}
+
+      {stage !== 'code' && (
+        <TextInput
+          style={field}
+          value={email}
+          onChangeText={setEmail}
+          placeholder={t('onboarding.email.address')}
+          placeholderTextColor={colors.text3}
+          // `username` rather than `emailAddress`, so a password manager
+          // offers the pair and not just the address.
+          textContentType={stage === 'password' ? 'username' : 'emailAddress'}
+          autoComplete="email"
+          keyboardType="email-address"
+          autoCapitalize="none"
+          autoCorrect={false}
+          editable={!busy}
+          autoFocus
+          returnKeyType={stage === 'password' ? 'next' : 'send'}
+          onSubmitEditing={stage === 'address' ? send : undefined}
+        />
+      )}
+
+      {stage === 'password' && (
+        <TextInput
+          style={field}
+          value={password}
+          onChangeText={setPassword}
+          placeholder={t('onboarding.email.password')}
+          placeholderTextColor={colors.text3}
+          textContentType="password"
+          autoComplete="current-password"
+          secureTextEntry
+          autoCapitalize="none"
+          autoCorrect={false}
+          editable={!busy}
+          returnKeyType="go"
+          onSubmitEditing={signInWithPassword}
+        />
+      )}
+
+      {stage === 'code' && (
+        <TextInput
+          // The digits spaced wide; the placeholder set like any other.
+          style={[field, code.length > 0 && styles.codeField]}
+          value={code}
+          onChangeText={(next) => {
+            const digits = next.replace(/\D/g, '').slice(0, EMAIL_CODE_LENGTH);
+            setCode(digits);
+            // Filled in, by hand or from the keyboard's suggestion: checked
+            // at once, no extra tap.
+            if (digits.length === EMAIL_CODE_LENGTH) verify(digits);
+          }}
+          placeholder={t('onboarding.email.code')}
+          placeholderTextColor={colors.text3}
+          textContentType="oneTimeCode"
+          autoComplete="one-time-code"
+          keyboardType="number-pad"
+          maxLength={EMAIL_CODE_LENGTH}
+          editable={!busy}
+          autoFocus
+        />
+      )}
+
+      {notice != null ? <Text style={styles.notice}>{notice}</Text> : null}
+
+      <View style={styles.cta}>
+        {stage === 'address' && (
+          <PrimaryButton
+            label={
+              busy
+                ? t('onboarding.email.sending')
+                : wait > 0 && email.trim().toLowerCase() !== sent?.email
+                  ? t('onboarding.email.resendIn', { seconds: wait })
+                  : t('onboarding.email.sendCode')
+            }
+            onPress={send}
+            disabled={busy || email.trim().length === 0 || (wait > 0 && email.trim().toLowerCase() !== sent?.email)}
+          />
+        )}
+        {stage === 'code' && (
+          <PrimaryButton
+            label={busy ? t('onboarding.email.verifying') : t('onboarding.email.verify')}
+            onPress={() => verify(code)}
+            disabled={busy || code.length < EMAIL_CODE_LENGTH}
+          />
+        )}
+        {stage === 'password' && (
+          <PrimaryButton
+            label={busy ? t('onboarding.email.submitting') : t('onboarding.email.submit')}
+            onPress={signInWithPassword}
+            disabled={busy || email.trim().length === 0 || password.length === 0}
+          />
+        )}
+      </View>
+
+      {stage === 'code' && (
+        <View style={styles.links}>
+          <Link
+            label={wait > 0 ? t('onboarding.email.resendIn', { seconds: wait }) : t('onboarding.email.resend')}
+            disabled={busy || wait > 0}
+            onPress={resend}
+          />
+          <Link
+            label={t('onboarding.email.changeAddress')}
+            disabled={busy}
+            onPress={() => {
+              setNotice(null);
+              setCode('');
+              setStage('address');
+            }}
+          />
+        </View>
+      )}
+      {/* The review account has no mailbox: its way in is a password.
+          Only for someone coming back, never on the screen that makes a
+          new account. */}
+      {mode === 'sign-in' && stage !== 'code' && (
+        <View style={styles.links}>
+          <Link
+            label={stage === 'password' ? t('onboarding.email.useCode') : t('onboarding.email.usePassword')}
+            disabled={busy}
+            onPress={() => {
+              setNotice(null);
+              setStage(stage === 'password' ? 'address' : 'password');
+            }}
+          />
+        </View>
+      )}
+    </View>
   );
 }
 
 function Link({ label, onPress, disabled }: { label: string; onPress: () => void; disabled?: boolean }) {
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
   return (
     <Pressable
       accessibilityRole="button"
@@ -496,47 +506,46 @@ function Link({ label, onPress, disabled }: { label: string; onPress: () => void
         Haptics.selectionAsync();
         onPress();
       }}
-      hitSlop={8}
+      hitSlop={4}
       style={({ pressed }) => [styles.link, pressed && { opacity: 0.6 }]}>
-      <Text style={[styles.linkText, { color: disabled ? meter.unit : meter.caption }]}>{label}</Text>
+      <Text style={[styles.linkText, disabled && styles.linkDisabled]}>{label}</Text>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-  /** A trace of ink over the blur — blur alone leaves a bright page bright. */
-  wash: { backgroundColor: 'rgba(0,0,0,0.18)' },
-  dock: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    paddingHorizontal: 14,
-  },
-  card: {
-    borderRadius: RADIUS,
+  inlineRoot: { flex: 1, justifyContent: 'flex-end' },
+  scrim: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.3)' },
+  inlineCard: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: 28,
+    borderTopRightRadius: 28,
     borderCurve: 'continuous',
-    paddingHorizontal: 20,
-    paddingTop: 18,
-    paddingBottom: 18,
-    gap: 10,
+    paddingHorizontal: space.screen,
+    paddingTop: 24,
   },
-  head: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  title: fonts.heavy(24, -0.6),
-  close: fonts.medium(16),
-  blurb: { ...fonts.medium(14, -0.2), marginBottom: 2 },
+  form: { gap: 14 },
+  head: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  title: { ...fonts.bold(28, -0.4), color: colors.text, flex: 1 },
+  close: { minHeight: target.min, minWidth: target.min, justifyContent: 'center', alignItems: 'flex-end', marginTop: -10 },
+  closeLabel: { ...fonts.semibold(17), color: colors.accent },
+  blurb: { ...fonts.regular(19), color: colors.text2 },
+  existing: { ...fonts.medium(17), color: colors.text },
   field: {
-    borderRadius: 14,
+    minHeight: 56,
+    borderRadius: radius.button,
     borderCurve: 'continuous',
     paddingHorizontal: 16,
     paddingVertical: 14,
-    ...fonts.medium(16),
+    backgroundColor: colors.surface2,
+    color: colors.text,
+    ...fonts.regular(19),
   },
-  notice: fonts.medium(14, -0.1),
+  notice: { ...fonts.medium(17), color: colors.warn },
   cta: { marginTop: 4 },
-  codeField: { ...fonts.bold(24, 6), textAlign: 'center' },
+  codeField: { ...fonts.bold(26, 6), textAlign: 'center' },
   links: { alignItems: 'center', gap: 2 },
-  link: { paddingVertical: 8 },
-  linkText: fonts.medium(15, -0.2),
+  link: { minHeight: target.min, justifyContent: 'center', paddingHorizontal: 8 },
+  linkText: { ...fonts.semibold(17), color: colors.accent, textAlign: 'center' },
+  linkDisabled: { color: colors.text3 },
 });

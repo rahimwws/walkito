@@ -99,6 +99,7 @@ export function PassCheckoutSheet({
             </Text>
             <Text style={[styles.text, { color: meter.caption }]}>{t('pass.signIn.body')}</Text>
             <SignInOptions
+              inline
               emailMode="create"
               platform={platform}
               onSignedIn={({ outcome }) => {
