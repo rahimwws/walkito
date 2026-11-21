@@ -537,6 +537,7 @@ export function ProgramPage() {
         </View>
 
         <Animated.ScrollView
+          contentInsetAdjustmentBehavior="never"
           ref={listRef}
           onScroll={onScroll}
           scrollEventThrottle={16}

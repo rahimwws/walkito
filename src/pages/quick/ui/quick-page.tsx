@@ -128,6 +128,7 @@ export function QuickPage() {
   return (
     <View style={styles.screen}>
       <ScrollView
+        contentInsetAdjustmentBehavior="never"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           paddingTop: insets.top + 24,

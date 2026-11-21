@@ -114,6 +114,7 @@ export function ProgressPage() {
   return (
     <View style={styles.screen} {...REPLAY_MASK}>
       <Animated.ScrollView
+        contentInsetAdjustmentBehavior="never"
         scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
         style={styles.root}

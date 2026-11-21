@@ -167,6 +167,7 @@ export function HomePage() {
   return (
     <View style={styles.screen}>
       <Animated.ScrollView
+        contentInsetAdjustmentBehavior="never"
         ref={scroll}
         scrollEventThrottle={16}
         style={{ flex: 1 }}
