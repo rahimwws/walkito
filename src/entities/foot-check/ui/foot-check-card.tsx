@@ -6,7 +6,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 import { FOOT_CHECK_TOTAL } from '../model/summary';
@@ -55,7 +55,7 @@ export function FootCheckCard({
   const done = rows.filter((row) => row.value != null).length;
 
   return (
-    <Card3D style={styles.card} contentStyle={styles.face}>
+    <Card style={styles.card}>
       <View style={styles.head}>
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]} numberOfLines={1}>
           {t('footCheck.card.title')}
@@ -89,7 +89,7 @@ export function FootCheckCard({
       </View>
 
       <Text style={[styles.rest, { color: meter.caption }]}>{t('footCheck.card.rest')}</Text>
-    </Card3D>
+    </Card>
   );
 }
 
@@ -119,8 +119,7 @@ export function FootCheckStrip({ done, line }: { done: number; line: string }) {
 }
 
 const styles = StyleSheet.create({
-  card: { alignSelf: 'stretch' },
-  face: { gap: 12 },
+  card: { alignSelf: 'stretch', gap: 12 },
   head: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 },
   title: { ...fonts.bold(19, -0.4), flexShrink: 1 },
   count: fonts.semibold(15),
