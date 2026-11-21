@@ -246,7 +246,7 @@ function TourStops({ visible: shown }: { visible: boolean }) {
         await wait(60);
       }
       let rect: SpotlightRect | null = await measureSpotlight(stop.anchor);
-      if (rect != null && stop.anchor !== 'dock.start') {
+      if (rect != null) {
         const over = rect.y + rect.height + stop.padY - (H - dockHeight - FOOT_CLEARANCE);
         if (over > 0 && scrollSpotlightBy(over)) {
           await wait(420);

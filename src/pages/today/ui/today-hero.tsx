@@ -47,7 +47,7 @@ export function TodayHero({ work, kind, ranToday, next, active, onPress }: Today
       {poster != null && (
         <Image
           source={poster}
-          style={[styles.photo, { width, height: Math.round((width * 3) / 4) }]}
+          style={[styles.photo, { width, height: Math.round((width * 9) / 16) }]}
           resizeMode="cover"
           accessibilityIgnoresInvertColors
         />
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
   photo: { marginHorizontal: -space.screen, backgroundColor: colors.surface2 },
   body: { paddingTop: 20, gap: 4 },
   plan: { ...fonts.medium(17), color: colors.text2 },
-  numeral: { ...fonts.bold(88, -2), color: colors.text, fontVariant: ['tabular-nums'] },
+  numeral: { ...fonts.bold(76, -1.8), color: colors.text, fontVariant: ['tabular-nums'] },
   title: { ...fonts.bold(34, -0.6), color: colors.text },
   meta: { ...fonts.regular(19), color: colors.text2 },
   progress: { gap: 8, marginTop: 12 },

@@ -38,9 +38,6 @@ import { PlainRow } from './plain-row';
 import { TodayHero } from './today-hero';
 import { WeekRow } from './week-row';
 
-/** The floating Start's own height, and the air above and under it. */
-const START_ROOM = 56 + 24;
-
 /**
  * Today (spec §7.1 and the v2 addendum; NTC #2, NRC #1): one session and one
  * button. The week in one quiet row, today's session as a full-bleed photo
@@ -113,7 +110,7 @@ export function TodayPage() {
           // iOS already lays the tab's content out under the status bar.
           paddingTop: Platform.OS === 'ios' ? 8 : insets.top + 8,
           paddingHorizontal: space.screen,
-          paddingBottom: clearance + START_ROOM + space.gap,
+          paddingBottom: clearance + space.gap,
         }}>
         <View style={styles.bar}>
           <Pressable
@@ -154,6 +151,9 @@ export function TodayPage() {
         <View ref={overviewAnchor} collapsable={false} style={styles.hero}>
           <TodayHero work={work} kind={kind} ranToday={ranToday} next={next} active={focused} onPress={() => program?.open()} />
         </View>
+        <View ref={startAnchor} collapsable={false} style={styles.start}>
+          <StartButton label={startLabel} onPress={onStart} />
+        </View>
         <Pressable
           accessibilityRole="button"
           onPress={() => router.push('/why')}
@@ -192,14 +192,6 @@ export function TodayPage() {
         </View>
       </ScrollView>
 
-      <View
-        ref={startAnchor}
-        collapsable={false}
-        pointerEvents="box-none"
-        style={[styles.start, { bottom: clearance + 8 }]}>
-        <StartButton label={startLabel} onPress={onStart} />
-      </View>
-
       {/* The first run, after the purchase or the skip: the "Day 1" card and
           then the tour, over Today while it is in front. */}
       <HomeTour visible={focused && revealed && !planOver} sessionOpen={dayOne != null} onStartDayOne={setDayOne} />
@@ -218,11 +210,11 @@ const styles = StyleSheet.create({
   barWeek: { ...fonts.medium(17), color: colors.text2, flexShrink: 1 },
   title: { ...fonts.bold(34, -0.6), color: colors.text, marginTop: 12 },
   date: { ...fonts.regular(19), color: colors.text2, marginTop: 2 },
-  week: { marginTop: 24 },
-  hero: { marginTop: 24 },
+  week: { marginTop: 16 },
+  hero: { marginTop: 16 },
   why: { alignSelf: 'flex-start', minHeight: target.min, justifyContent: 'center', marginTop: 4 },
   whyText: { ...fonts.medium(17), color: colors.text2, textDecorationLine: 'underline' },
   rows: { marginTop: space.section - 8 },
-  start: { position: 'absolute', left: space.screen, right: space.screen },
+  start: { marginTop: 20 },
   pressed: { opacity: 0.5 },
 });
