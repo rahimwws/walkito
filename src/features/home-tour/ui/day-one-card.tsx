@@ -52,11 +52,11 @@ export type DayOneCardProps = {
 };
 
 /**
- * "Day 1": the card over the blurred Home that the first session starts from.
+ * "Day 1": the card over the dimmed Home that the first session starts from.
  *
  * The day, one line on what it is,
  * how long, its button, and "Later" under it: nobody is held in front of two
- * minutes they do not want right now. Home under it is blurred in the same
+ * minutes they do not want right now. Home under it is dimmed in the same
  * dark the tour after it uses, so the card and the tour read as one surface.
  *
  * Rises in once Home has appeared (a fade and a short rise, or the fade alone
@@ -147,7 +147,7 @@ export function DayOneCard({ visible, sessionOpen, onStart, onLater }: DayOneCar
   return (
     <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={() => undefined}>
       <Animated.View style={[StyleSheet.absoluteFill, backdrop]}>
-        <Shade scheme={scheme} />
+        <Shade />
       </Animated.View>
 
       <View style={styles.centre} pointerEvents="box-none">

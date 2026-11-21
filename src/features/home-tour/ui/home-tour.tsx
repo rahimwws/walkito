@@ -38,7 +38,6 @@ import {
   scrollSpotlightTop,
   type SpotlightRect,
 } from '@/shared/lib/spotlight';
-import { useColorScheme } from '@/shared/lib/theme';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
 
 import type { DayOneRun } from '../model/day-one';
@@ -103,7 +102,7 @@ export type HomeTourProps = {
  * the paywall's "Not now".
  *
  * Two halves, one after the other (`HomeTourStage`). First the "Day 1" card
- * over the blurred Home: two easy minutes, started from its button and played
+ * over the dimmed Home: two easy minutes, started from its button and played
  * in Home's own sheet, so the first thing done in the app is a win rather
  * than a measurement. Its session finished, or passed on with "Later", the
  * tour: three stops, the last of which ends it. Either way Home is theirs
@@ -182,7 +181,7 @@ function useGoneAfter(open: boolean, ms: number): boolean {
 /**
  * The tour after the day-one session.
  *
- * Home is blurred and dimmed except for one place at a time, lit and ringed,
+ * Home is dimmed except for one place at a time, lit and ringed,
  * with a handwritten line and an arrow pointing at it: what Home says about
  * their feet, "It hurts", and the start button. The light travels from one
  * place to the next. Every stop goes on with a tap anywhere or on its pill;
@@ -191,7 +190,6 @@ function useGoneAfter(open: boolean, ms: number): boolean {
  */
 function TourStops({ visible: shown }: { visible: boolean }) {
   const t = useT();
-  const scheme = useColorScheme();
   const insets = useSafeAreaInsets();
   const { width: W, height: H } = useWindowDimensions();
   const dockHeight = useTabBarClearance();
@@ -362,20 +360,20 @@ function TourStops({ visible: shown }: { visible: boolean }) {
 
   if (!mounted) return null;
 
-  const shade = <Shade scheme={scheme} />;
+  const shade = <Shade />;
   const label = step < LAST ? t('home.tour.next') : t('common.done');
 
   return (
     <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={() => undefined}>
       <Animated.View style={[StyleSheet.absoluteFill, fade]}>
         {/* Four panes around the lit place, so the place itself is the real
-            Home, untouched: a blur cannot have a hole cut in it. */}
+            Home, untouched. */}
         <Animated.View style={[styles.pane, { top: 0, left: 0, right: 0 }, top]}>{shade}</Animated.View>
         <Animated.View style={[styles.pane, { left: 0, right: 0, bottom: 0 }, bottom]}>{shade}</Animated.View>
         <Animated.View style={[styles.pane, { left: 0 }, left]}>{shade}</Animated.View>
         <Animated.View style={[styles.pane, { right: 0 }, right]}>{shade}</Animated.View>
         <Svg style={StyleSheet.absoluteFill} pointerEvents="none">
-          <AnimatedPath animatedProps={corners} fill={shadeDim(scheme)} />
+          <AnimatedPath animatedProps={corners} fill={shadeDim()} />
         </Svg>
 
         <Pressable accessibilityRole="button" accessibilityLabel={label} style={StyleSheet.absoluteFill} onPress={onTap} />
