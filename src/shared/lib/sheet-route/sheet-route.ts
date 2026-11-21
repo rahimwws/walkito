@@ -80,6 +80,7 @@ export function useSheetHandlers<H>(name: string): () => H | undefined {
         entry.close = undefined;
         navigation.goBack();
       };
+      if (entry.closedByHost === true) entry.close();
     }
     return () => {
       const gone = open.get(name);
