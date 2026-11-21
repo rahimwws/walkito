@@ -36,7 +36,7 @@ export function WhyPage() {
       style={styles.sheet}
       contentContainerStyle={[styles.content, { paddingBottom: Math.max(insets.bottom, space.screen) }]}>
       <ReplayMask>
-        <Text style={styles.title} accessibilityRole="header">
+        <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={2}>
           {t('home.why.title')}
         </Text>
         <Text style={styles.body}>

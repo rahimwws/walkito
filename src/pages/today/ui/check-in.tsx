@@ -1,7 +1,7 @@
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import { checkInOn, currentDay, isFirstStepTime, logPain, settleOffset, useLogsVersion } from '@/entities/program';
 import { SafetySheet } from '@/features/safety-check';
@@ -27,6 +27,8 @@ export function CheckIn() {
   const [answeredHere, setAnsweredHere] = useState(false);
   const [editing, setEditing] = useState(false);
   const [safety, setSafety] = useState(false);
+  /** At large text sizes the words stack, one full-width button each. */
+  const stacked = useWindowDimensions().fontScale >= 1.35;
 
   const record = (answer: Answer) => {
     void Haptics.selectionAsync();
@@ -81,7 +83,7 @@ export function CheckIn() {
               accessibilityRole="button"
               accessibilityState={{ selected: picked }}
               onPress={() => record(answer)}
-              style={({ pressed }) => [styles.word, picked && styles.wordPicked, pressed && styles.pressed]}>
+              style={({ pressed }) => [styles.word, stacked && styles.wordStacked, picked && styles.wordPicked, pressed && styles.pressed]}>
               <Text style={[styles.wordText, picked && styles.wordTextPicked]}>{t(answerLabel(answer, morning))}</Text>
             </Pressable>
           );
@@ -112,6 +114,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
+  wordStacked: { flexBasis: '100%' },
   wordPicked: { backgroundColor: colors.ink },
   wordText: { ...fonts.semibold(19), color: colors.text, textAlign: 'center' },
   wordTextPicked: { color: colors.onInk },

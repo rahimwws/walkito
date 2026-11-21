@@ -29,7 +29,7 @@ export function WakeTimePage() {
     <ScrollView
       style={styles.sheet}
       contentContainerStyle={[styles.content, { paddingBottom: Math.max(insets.bottom, space.screen) }]}>
-      <Text style={styles.title} accessibilityRole="header">
+      <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={2}>
         {t('home.today.firstStep.sheetTitle')}
       </Text>
       <Text style={styles.body}>{t('home.today.firstStep.sheetBody')}</Text>
