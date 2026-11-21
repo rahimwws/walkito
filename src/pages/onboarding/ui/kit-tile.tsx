@@ -1,7 +1,7 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { useEffect, useRef } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -15,45 +15,30 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import { accents, fonts, meterColors, palette } from '@/shared/config';
-import { mix } from '@/shared/lib/color';
+import { colors, fonts, meterColors, palette, radius } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { Raised, faceFor, useRaisedScheme } from '@/shared/ui/raised';
 
 import type { ResolvedOption } from '../model/steps';
 
 const EASE = Easing.bezier(0.23, 1, 0.32, 1);
 
-/** How far an unpicked tile leans to its colour: the face, then its border
- * and ledge. Dim on purpose: the picked ones are the bright ones. */
-const TINT = {
-  light: { face: 0.14, edge: 0.5 },
-  dark: { face: 0.2, edge: 0.55 },
-} as const;
-
-const DEPTH = 5;
-const RADIUS = 20;
 /** Room for the art and two lines of label, so a row of tiles lines up
  * whatever the language wraps. */
 const FACE_HEIGHT = 108;
 const ART = 36;
-/** A picked tile stands this much higher than the rest. */
-const LIFT = 4;
 
 /**
- * One thing that might be at home, as a coloured 3D tile: its art on top, its
- * name under it.
+ * One thing that might be at home, as a flat tile: its art on top, its name
+ * under it.
  *
- * Unpicked it is dim, tinted its colour on a ledge of the same tint; picked it
- * fills with that colour, pops, lifts a few points above the rest and ticks.
- * Filled against tinted is a change of lightness as well as of hue, and the
- * tick says it again, so the choice reads without colour. The colour says
- * which thing it is, never how good an answer it is.
+ * Unpicked it is the plain white card; picked it turns soft violet with a
+ * violet edge, pops once and ticks. The tick says it again, so the choice
+ * reads without colour.
  *
  * The art is the option's Fluent emoji, drawn as given, or its Hugeicons
- * glyph on a disc of the tile's colour in the ink that reads on it.
+ * glyph on a grey disc.
  */
 export function KitTile({
   option,
@@ -64,62 +49,48 @@ export function KitTile({
   selected: boolean;
   onPress: () => void;
 }) {
-  const scheme = useRaisedScheme();
   const reduceMotion = useReducedMotion();
-  const accent = option.accent ?? 'violet';
-  const card = palette[scheme].card;
-  const fill = accents[scheme][accent].fill;
-  const tone = faceFor(scheme, accent);
-  const tinted = {
-    face: mix(card, fill, TINT[scheme].face),
-    edge: mix(card, fill, TINT[scheme].edge),
-  };
-  const ink = selected ? tone.label : palette[scheme].foreground;
+  const ink = selected ? colors.accent : colors.text;
 
   // The pop plays on being picked, never on being let go or on arrival.
   const pop = useSharedValue(1);
-  const lift = useSharedValue(selected ? 1 : 0);
   const was = useRef(selected);
   useEffect(() => {
-    lift.value = withTiming(selected ? 1 : 0, { duration: 180, easing: EASE, reduceMotion: ReduceMotion.System });
     if (selected && !was.current && !reduceMotion) {
       pop.value = withSequence(
         withTiming(0.95, { duration: 0 }),
-        withTiming(1.06, { duration: 110, easing: Easing.out(Easing.quad) }),
+        withTiming(1.04, { duration: 110, easing: Easing.out(Easing.quad) }),
         withTiming(1, { duration: 200, easing: EASE }),
       );
     }
     was.current = selected;
-  }, [selected, reduceMotion, lift, pop]);
-  const motion = useAnimatedStyle(() => ({
-    transform: [{ translateY: -LIFT * lift.value }, { scale: pop.value }],
-  }));
+  }, [selected, reduceMotion, pop]);
+  const motion = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
   const art =
     option.emoji != null ? (
       <FluentIcon name={option.emoji} size={ART - 2} />
     ) : option.icon != null ? (
-      <View style={[styles.disc, { backgroundColor: selected ? mix(tone.face, '#FFFFFF', 0.24) : tone.face }]}>
-        <HugeiconsIcon icon={option.icon} size={20} color={tone.label} strokeWidth={2} />
+      <View style={[styles.disc, { backgroundColor: selected ? colors.surface : colors.surface2 }]}>
+        <HugeiconsIcon icon={option.icon} size={20} color={ink} strokeWidth={2} />
       </View>
     ) : null;
 
   return (
     <Animated.View style={[styles.slot, motion]}>
-      <Raised
-        face={selected ? tone.face : tinted.face}
-        // The same border both ways, the face's own colour when picked, so a
-        // tile is the same size picked or not and the grid never shifts.
-        edge={selected ? tone.face : tinted.edge}
-        lip={selected ? tone.lip : tinted.edge}
-        depth={DEPTH}
-        radius={RADIUS}
-        haptic="none"
+      <Pressable
         onPress={onPress}
         accessibilityRole="checkbox"
         accessibilityLabel={option.label}
         accessibilityState={{ checked: selected }}
-        contentStyle={styles.face}>
+        style={({ pressed }) => [
+          styles.face,
+          {
+            backgroundColor: selected ? colors.accentSoft : colors.surface,
+            borderColor: selected ? colors.accent : colors.separator,
+            opacity: pressed ? 0.8 : 1,
+          },
+        ]}>
         <View style={styles.art}>{art}</View>
         <Text
           style={[styles.label, { color: ink }]}
@@ -134,7 +105,7 @@ export function KitTile({
             <HugeiconsIcon icon={Tick02Icon} size={16} color={ink} strokeWidth={2.8} />
           </View>
         )}
-      </Raised>
+      </Pressable>
     </Animated.View>
   );
 }
@@ -177,8 +148,12 @@ const styles = StyleSheet.create({
     flexBasis: '40%',
     flexGrow: 1,
   },
+  /** The same border width picked or not, so the grid never shifts. */
   face: {
     height: FACE_HEIGHT,
+    borderWidth: 1.5,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
     paddingHorizontal: 10,
     paddingVertical: 10,
     alignItems: 'center',

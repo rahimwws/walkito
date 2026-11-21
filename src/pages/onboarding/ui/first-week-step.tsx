@@ -22,18 +22,16 @@ export type FirstWeekStepProps = {
   answers: Answers;
   /** The page's button squash: it dips once when the last card is reached. */
   squash: SharedValue<number>;
-  /** The full-screen clip opened or closed, for anything the page pauses. */
-  onViewerChange?: (open: boolean) => void;
 };
 
 /**
  * The first week, before anybody pays: the moves in it, playing, one tall
- * card each, with the coach pointing at them and saying why.
+ * card each, with why each is in the plan.
  *
  * The product shown rather than described. This wrapper only turns answers
  * into cards; the deck is `WeekDeck`.
  */
-export function FirstWeekStep({ answers, squash, onViewerChange }: FirstWeekStepProps) {
+export function FirstWeekStep({ answers, squash }: FirstWeekStepProps) {
   const t = useT();
 
   const settings = planSettingsFrom(answers, null);
@@ -79,7 +77,6 @@ export function FirstWeekStep({ answers, squash, onViewerChange }: FirstWeekStep
       minutes={settings.defaultMinutes ?? DEFAULT_SETTINGS.defaultMinutes}
       mirrored={mirroredFor(sideOf(answers))}
       squash={squash}
-      onViewerChange={onViewerChange}
     />
   );
 }

@@ -36,19 +36,16 @@ const CLIP_SHARE = 0.46;
 /**
  * The clip's box, in the film's own shape, so `cover` crops under one
  * percent and the feet stay in frame. A wide film lies across the page under
- * the heading and the coach. An upright one stands beside him, as tall as the
- * share allows and narrow enough to clear him on both sides, so it stays
- * centred.
+ * the heading; an upright one is as tall as the share allows, centred.
  *
  * The check's films were upright when this was drawn and wide ones were
  * fitted into the same upright box: a strip of film between two black bands,
  * with the question pushed under the fold.
  */
-function useClipBox(exerciseId: string, clear: number) {
+function useClipBox(exerciseId: string) {
   const { width, height } = useWindowDimensions();
   const shape = clipShape(exerciseId);
-  const page = width - PAGE_GUTTER * 2;
-  const wide = Math.round(Math.min(shape > 1 ? page : page - clear * 2, height * CLIP_SHARE * shape));
+  const wide = Math.round(Math.min(width - PAGE_GUTTER * 2, height * CLIP_SHARE * shape));
   return { width: wide, height: Math.round(wide / shape) };
 }
 
@@ -119,8 +116,6 @@ export function TestHeel({
   answer,
   onAnswer,
   onSkip,
-  speakerInset = 0,
-  speakerSize = 0,
 }: {
   index: number;
   total: number;
@@ -128,9 +123,6 @@ export function TestHeel({
   answer: string | null;
   onAnswer: (next: string) => void;
   onSkip: () => void;
-  /** Room the coach takes in the top-right corner, beside the heading. */
-  speakerInset?: number;
-  speakerSize?: number;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -140,7 +132,7 @@ export function TestHeel({
 
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-      <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
+      <View style={styles.head}>
         <Meta index={index} total={total} />
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
           {t('footCheck.ankle.title')}
@@ -177,9 +169,6 @@ export function TestToe({
   options,
   answer,
   onAnswer,
-  speakerInset = 0,
-  speakerSize = 0,
-  onViewerChange,
 }: {
   /** Which check of the `total` this is. */
   index: number;
@@ -187,29 +176,22 @@ export function TestToe({
   options: readonly ResolvedOption[];
   answer: string | null;
   onAnswer: (next: string) => void;
-  /** Room the coach takes in the top-right corner, beside the heading. */
-  speakerInset?: number;
-  /** How tall he is there: the heading is at least that, so the clip starts
-   * under his feet. */
-  speakerSize?: number;
-  /** The clip opened full screen, or closed: the coach stops under it. */
-  onViewerChange?: (open: boolean) => void;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const clip = useClipBox('big_toe_lift', speakerInset);
+  const clip = useClipBox('big_toe_lift');
 
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-      <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
+      <View style={styles.head}>
         <Meta index={index} total={total} />
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
           {t('exercises.bigToeLift.title')}
         </Text>
       </View>
-      <CheckClip exerciseId="big_toe_lift" box={clip} onViewerChange={onViewerChange} />
+      <CheckClip exerciseId="big_toe_lift" box={clip} />
       <Steps lines={[t('onboarding.test.toeStep1'), t('onboarding.test.toeStep2')]} />
       <Text style={[styles.question, { color: colors.foreground }]}>{t('onboarding.test.toeQuestion')}</Text>
       {/* An observation about the foot, as on the toe check: its verdict circles. */}
@@ -233,11 +215,9 @@ export function TestToe({
 function CheckClip({
   exerciseId,
   box,
-  onViewerChange,
 }: {
   exerciseId: string;
   box: { width: number; height: number };
-  onViewerChange?: (open: boolean) => void;
 }) {
   return (
     <View style={styles.clipColumn}>
@@ -248,7 +228,6 @@ function CheckClip({
         fit="cover"
         expandPlacement="top-right"
         expandable
-        onViewerChange={onViewerChange}
       />
     </View>
   );

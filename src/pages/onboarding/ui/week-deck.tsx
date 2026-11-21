@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
-import { useCallback, useEffect, useRef, useState, type Ref } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { AccessibilityInfo, AppState, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -27,14 +27,6 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import {
-  Mascot,
-  playMascotSound,
-  pointingRig,
-  thumbsUpRig,
-  type MascotHandle,
-  type MascotShot,
-} from '@/shared/ui/mascot';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
 
@@ -43,10 +35,9 @@ import { CLIP_SHAPE, MoveCard, type DeckCard } from './move-card';
 const EASE = Easing.bezier(0.23, 1, 0.32, 1);
 
 /** The page's side padding (`SIDE_PAD` in the onboarding page). The deck
- * breaks out of it to run edge to edge, so the next card can peek. */
+ * breaks out of it to run edge to edge, so the next card can peek; the front
+ * card still lines up with the page. */
 const PAGE_SIDE = 24;
-/** Left of the front card: the coach's room. */
-const GUTTER = 96;
 const GAP = 12;
 /** The least of the next card that shows, so there is visibly a next one. */
 const MIN_PEEK = 40;
@@ -57,17 +48,6 @@ const SEGMENTS_TOP = 12;
 /** What the deck needs under its cards. */
 const SEGMENTS_ROOM = SEGMENTS_TOP + SEGMENT;
 
-const COACH = 88;
-/** On a screen too narrow for the gutter, beside the bubble instead. */
-const COACH_COMPACT = 56;
-/** The pointing hand's tip and the standing feet in the traced art, as shares
- * of its square: the hand reaches x 1884 of 2048, the ground is at y 1912 of
- * a box that starts at 40. */
-const FINGERTIP_X = 0.92;
-const FEET_Y = (pointingRig.ground[1] - pointingRig.box.y) / pointingRig.box.size;
-/** Between his fingertip and the card's edge. */
-const POINT_GAP = 4;
-
 /** A card stands in front for one pass of its clip, and never longer than
  * this: `big_toe_lift` runs twenty seconds. */
 const DWELL_MAX_S = 10.5;
@@ -77,60 +57,42 @@ const DWELL_FALLBACK_S = 8;
 const SETTLE_EPS = 0.02;
 
 /** The arrival, in order (ms): the card rises, the next one slides in, the
- * coach steps up and waves, then speaks, and the segments come last. */
+ * copy under it fades up, and the segments come last. */
 const CARD_IN_MS = 120;
 const PEEK_IN_MS = 260;
-const COACH_IN_MS = 380;
-const WAVE_AFTER_MS = 200;
-const BUBBLE_IN_MS = 460;
+const COPY_IN_MS = 460;
 const SEGMENTS_IN_MS = 520;
 
 /** The button's dip when the last card is reached: the intro's, once. */
 const DIP_MS = 70;
 const RISE_MS = 150;
 
-const BUBBLE_PAD_X = 14;
-const BUBBLE_PAD_Y = 12;
-const TAIL = 12;
-/** How far the tail's tip stands above the bubble. */
-const TAIL_RISE = Math.ceil((TAIL * Math.SQRT2) / 2);
-/** Under the coach's head: his square's middle, measured from the bubble's
- * left edge, less half the tail. */
-const TAIL_LEFT = GUTTER - PAGE_SIDE - FINGERTIP_X * COACH - POINT_GAP + COACH / 2 - TAIL / 2;
-/** The bubble's text grows with Dynamic Type up to here; past it the card
- * would be squeezed under its floor. */
-const BUBBLE_SCALE = 1.5;
-const HAIRLINE = StyleSheet.hairlineWidth;
+/** The copy grows with Dynamic Type up to here; past it the card would be
+ * squeezed under its floor. */
+const COPY_SCALE = 1.5;
 
 type Geometry = {
   /** The deck's own width: the screen's, since it runs edge to edge. */
   width: number;
-  /** Where the front card starts. */
-  gutter: number;
   cardW: number;
   cardH: number;
   /** One card and its gap: the snap. */
   interval: number;
-  /** No gutter: the coach stands beside the bubble. */
-  compact: boolean;
 };
 
 /**
  * The card's size from the room the deck has: as tall as the height allows,
- * clip-shaped, and narrow enough that the gutter and a peek of the next card
- * still fit beside it. A screen too narrow for that gives up the gutter
- * before the card goes under its floor.
+ * clip-shaped, and narrow enough that a peek of the next card still fits
+ * beside it.
  */
 function geometryFor(width: number, height: number): Geometry {
   const room = Math.max(0, height - SEGMENTS_ROOM);
-  const byWidth = (gutter: number) => (width - gutter - GAP - MIN_PEEK) / CLIP_SHAPE;
-  const compact = byWidth(GUTTER) < Math.min(room, MIN_CARD);
-  const gutter = compact ? PAGE_SIDE : GUTTER;
-  const tall = Math.max(0, Math.min(room, MAX_CARD, byWidth(gutter)));
+  const byWidth = (width - PAGE_SIDE - GAP - MIN_PEEK) / CLIP_SHAPE;
+  const tall = Math.max(0, Math.min(room, MAX_CARD, byWidth));
   // Whole points across, and the height from the width, so the active card's
   // player and the covers either side are exactly the same shape.
   const cardW = Math.floor(tall * CLIP_SHAPE);
-  return { width, gutter, cardW, cardH: cardW / CLIP_SHAPE, interval: cardW + GAP, compact };
+  return { width, cardW, cardH: cardW / CLIP_SHAPE, interval: cardW + GAP };
 }
 
 export type WeekDeckProps = {
@@ -147,8 +109,7 @@ export type WeekDeckProps = {
 
 /**
  * The first week as a deck of its moves: tall clip cards with the next one
- * peeking, the coach in the gutter pointing at the one in front, and what it
- * is and why in his bubble underneath.
+ * peeking, and what the one in front is and why underneath.
  *
  * Stories-style: the segment under the front card fills while its clip plays
  * once, then the deck moves on by itself, until the first touch, which hands
@@ -182,22 +143,21 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
   /** The front card's clip has shown its first frame. */
   const [started, setStarted] = useState(false);
   const [viewerOpen, setViewerOpen] = useState(false);
-  const [coachShown, setCoachShown] = useState(false);
-  const [bubbleShown, setBubbleShown] = useState(false);
+  const [copyShown, setCopyShown] = useState(false);
   /** The first line types itself in; every later one crossfades. */
   const [typed, setTyped] = useState(true);
 
   const geometry = stage == null ? null : geometryFor(stage.width, stage.height);
-  /** The tallest bubble any card needs, so the bubble, and the card above it,
+  /** The tallest copy any card needs, so the copy, and the card above it,
    * hold their size from card to card. */
   const measured = Array.from({ length: count }, (_, i) => heights[i]);
   const reserve = measured.every((h) => h != null && h > 0) ? Math.max(...(measured as number[])) : null;
-  const bubbleHeight = reserve == null ? 0 : reserve + BUBBLE_PAD_Y * 2 + HAIRLINE * 2;
+  const copyHeight = reserve ?? 0;
   const needsTight = stage != null && stage.height > 0 && stage.height - SEGMENTS_ROOM < MIN_CARD;
   useEffect(() => {
     if (needsTight && !tight && reserve != null) setTight(true);
   }, [needsTight, tight, reserve]);
-  /** The layout is final: the bubble measured, the cadence line kept or given
+  /** The layout is final: the copy measured, the cadence line kept or given
    * up. The arrival waits for it, so nothing is seen changing size. */
   const ready = geometry != null && geometry.cardW > 0 && reserve != null && (!needsTight || tight);
 
@@ -219,7 +179,6 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
 
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
   const previewRef = useRef<ExercisePreviewHandle>(null);
-  const coach = useRef<MascotHandle>(null);
   const activeRef = useRef(0);
   const settledRef = useRef(0);
   /** The scroll in flight is the deck's own, not the user's. */
@@ -241,27 +200,6 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
     autoStep.current = byDeck;
     scrollRef.current?.scrollTo({ x: target * geometry.interval, animated: !reduceMotion });
   };
-
-  // ── the coach ─────────────────────────────────────────────────────────
-  const lastShot = useRef<MascotShot | null>(null);
-  const waveDone = useRef(false);
-  const pokeAfterWave = useRef(false);
-  const firstFrameSeen = useRef(false);
-  const playCoach = (shot: MascotShot) => {
-    lastShot.current = shot;
-    coach.current?.play(shot);
-  };
-  const onCoachShotEnd = () => {
-    if (lastShot.current !== 'wave') return;
-    waveDone.current = true;
-    if (pokeAfterWave.current) {
-      pokeAfterWave.current = false;
-      playCoach('poke');
-    }
-  };
-  /** Thumbs up on the last card: the week has been seen, which is the only
-   * thing rewarded here. Swiping back brings the pointing back. */
-  const pose: DeckPose = active === last ? 'thumbsUp' : 'pointing';
 
   // ── the front card ────────────────────────────────────────────────────
   // Changes as the scroll passes halfway, so the next player starts loading
@@ -295,7 +233,6 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
     const byDeck = autoStep.current;
     autoStep.current = false;
     track('first_week_move_viewed', { index, auto: byDeck });
-    playCoach(index === last ? 'nod' : 'poke');
     if (index === last && !completed.current) {
       completed.current = true;
       track('first_week_deck_completed', { auto: byDeck });
@@ -373,24 +310,9 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
       withTiming(1, { duration: 380, easing: EASE, reduceMotion: ReduceMotion.Never }),
       ReduceMotion.Never,
     );
-    const timers = [
-      setTimeout(() => setCoachShown(true), COACH_IN_MS),
-      setTimeout(() => setBubbleShown(true), BUBBLE_IN_MS),
-    ];
-    return () => timers.forEach(clearTimeout);
-  }, [ready, enter, peekIn]);
-
-  // A wave once he is up, unless the deck has already moved on.
-  useEffect(() => {
-    if (!coachShown) return undefined;
-    const id = setTimeout(() => {
-      if (activeRef.current === 0) playCoach('wave');
-      else waveDone.current = true;
-    }, WAVE_AFTER_MS);
+    const id = setTimeout(() => setCopyShown(true), COPY_IN_MS);
     return () => clearTimeout(id);
-    // `playCoach` reads refs only; this is the trigger.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [coachShown]);
+  }, [ready, enter, peekIn]);
 
   const deckIn = useAnimatedStyle(
     () => ({
@@ -404,14 +326,7 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
   );
 
   // ── the clip in front ─────────────────────────────────────────────────
-  const onFirstFrame = () => {
-    setStarted(true);
-    if (firstFrameSeen.current) return;
-    firstFrameSeen.current = true;
-    // "Look": once, as the first clip starts. After the wave, never through it.
-    if (waveDone.current) playCoach('poke');
-    else pokeAfterWave.current = true;
-  };
+  const onFirstFrame = () => setStarted(true);
   const onDuration = (seconds: number) => {
     duration.current = seconds;
   };
@@ -435,24 +350,12 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
   })();
 
   const fadeIn = (delay: number) => FadeIn.delay(delay).duration(300).easing(EASE.factory()).reduceMotion(ReduceMotion.Never);
-  const bubbleIn = reduceMotion
+  const copyIn = reduceMotion
     ? FadeIn.duration(150).reduceMotion(ReduceMotion.Never)
     : FadeInDown.duration(300)
         .easing(EASE.factory())
         .withInitialValues({ transform: [{ translateY: 12 }] })
         .reduceMotion(ReduceMotion.Never);
-
-  const coachArt = (size: number) =>
-    coachShown && (
-      <Coach
-        pose={pose}
-        size={size}
-        coachRef={coach}
-        paused={!playing || viewerOpen}
-        surface={colors.background}
-        onShotEnd={onCoachShotEnd}
-      />
-    );
 
   return (
     // Masked whole: which moves appear says what hurts and how the toes moved.
@@ -501,7 +404,7 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
                   style={[
                     styles.fill,
                     // Grows about the front card, not the middle of the row.
-                    { transformOrigin: [geometry.gutter + geometry.cardW / 2, geometry.cardH / 2, 0] },
+                    { transformOrigin: [PAGE_SIDE + geometry.cardW / 2, geometry.cardH / 2, 0] },
                     deckIn,
                   ]}>
                   <Animated.ScrollView
@@ -520,7 +423,7 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
                     style={styles.fill}
                     contentContainerStyle={[
                       styles.row,
-                      { paddingLeft: geometry.gutter, paddingRight: geometry.width - geometry.gutter - geometry.cardW },
+                      { paddingLeft: PAGE_SIDE, paddingRight: geometry.width - PAGE_SIDE - geometry.cardW },
                     ]}>
                     {cards.map((card, i) => (
                       <MoveCard
@@ -553,33 +456,12 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
                   </Animated.ScrollView>
                 </Animated.View>
               </View>
-
-              {/* Beside the deck, not in it, so he stays put as it moves.
-                  Feet on the card's baseline, fingertip at its edge, by the
-                  feet in the clip. */}
-              {!geometry.compact && (
-                <View
-                  pointerEvents="box-none"
-                  accessibilityElementsHidden
-                  importantForAccessibility="no-hide-descendants"
-                  style={[
-                    styles.coach,
-                    {
-                      left: geometry.gutter - FINGERTIP_X * COACH - POINT_GAP,
-                      top: geometry.cardH - FEET_Y * COACH,
-                      width: COACH,
-                      height: COACH,
-                    },
-                  ]}>
-                  {coachArt(COACH)}
-                </View>
-              )}
             </View>
 
             <View
               accessibilityElementsHidden
               importantForAccessibility="no-hide-descendants"
-              style={[styles.segments, { marginLeft: geometry.gutter, width: geometry.cardW }]}>
+              style={[styles.segments, { marginLeft: PAGE_SIDE, width: geometry.cardW }]}>
               {ready && (
                 <Animated.View entering={fadeIn(SEGMENTS_IN_MS)} style={styles.segmentRow}>
                   {cards.map((card, i) => (
@@ -599,18 +481,9 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
         )}
       </View>
 
-      <View style={[styles.slot, geometry?.compact === true && styles.slotRow]}>
-        {geometry?.compact === true && (
-          <View
-            pointerEvents="box-none"
-            accessibilityElementsHidden
-            importantForAccessibility="no-hide-descendants"
-            style={styles.coachCompact}>
-            {coachArt(COACH_COMPACT)}
-          </View>
-        )}
-        <View style={styles.bubbleColumn}>
-          {/* Every card's bubble, laid out unseen, so the one shown can take
+      <View style={styles.slot}>
+        <View>
+          {/* Every card's copy, laid out unseen, so the one shown can take
               the tallest one's height and never change size. */}
           <View
             pointerEvents="none"
@@ -629,34 +502,22 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
                     return next;
                   });
                 }}>
-                <BubbleCopy card={card} typed={false} />
+                <MoveCopy card={card} typed={false} />
               </View>
             ))}
           </View>
 
-          {bubbleShown && current != null ? (
-            <Animated.View
-              entering={bubbleIn}
-              style={[
-                styles.bubble,
-                { height: bubbleHeight, backgroundColor: colors.card, borderColor: meter.track },
-              ]}>
-              {/* Up at the coach in the gutter, or sideways at him beside it. */}
-              <View
-                style={[
-                  geometry?.compact === true ? styles.tailSide : styles.tail,
-                  { backgroundColor: colors.card, borderColor: meter.track },
-                ]}
-              />
+          {copyShown && current != null ? (
+            <Animated.View entering={copyIn} style={{ height: copyHeight }}>
               <Animated.View
                 key={active}
                 entering={FadeIn.duration(200).reduceMotion(ReduceMotion.Never)}
                 exiting={FadeOut.duration(120).reduceMotion(ReduceMotion.Never)}>
-                <BubbleCopy card={current} typed={typed && active === 0} />
+                <MoveCopy card={current} typed={typed && active === 0} />
               </Animated.View>
             </Animated.View>
           ) : (
-            <View style={{ height: bubbleHeight }} />
+            <View style={{ height: copyHeight }} />
           )}
         </View>
       </View>
@@ -664,50 +525,8 @@ export function WeekDeck({ cards, daysPerWeek, minutes, mirrored, squash, onView
   );
 }
 
-type DeckPose = 'pointing' | 'thumbsUp';
-
-/**
- * The coach, in the pose the deck asks for. A new pose is a new rig, so it
- * crossfades rather than switching: the old one fades out over the new.
- */
-function Coach({
-  pose,
-  size,
-  coachRef,
-  paused,
-  surface,
-  onShotEnd,
-}: {
-  pose: DeckPose;
-  size: number;
-  coachRef: Ref<MascotHandle>;
-  paused: boolean;
-  surface: string;
-  onShotEnd: () => void;
-}) {
-  return (
-    <Animated.View
-      key={pose}
-      entering={FadeIn.duration(180).reduceMotion(ReduceMotion.Never)}
-      exiting={FadeOut.duration(180).reduceMotion(ReduceMotion.Never)}
-      style={StyleSheet.absoluteFill}>
-      <Mascot
-        ref={coachRef}
-        rig={pose === 'thumbsUp' ? thumbsUpRig : pointingRig}
-        size={size}
-        paused={paused}
-        surface={surface}
-        onAnimationEnd={onShotEnd}
-        // He boings by himself; the sound is the host's, and the only one a
-        // tap on him makes.
-        onPress={() => playMascotSound('boing')}
-      />
-    </Animated.View>
-  );
-}
-
-/** What the coach says about a card: its name and dose, then why. */
-function BubbleCopy({ card, typed }: { card: DeckCard; typed: boolean }) {
+/** What a card is: its name and dose, then why. */
+function MoveCopy({ card, typed }: { card: DeckCard; typed: boolean }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -715,10 +534,10 @@ function BubbleCopy({ card, typed }: { card: DeckCard; typed: boolean }) {
     <View>
       {/* The deck's own value already reads the name and the dose out. */}
       <View style={styles.head} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-        <Text style={[styles.headTitle, { color: colors.foreground }]} maxFontSizeMultiplier={BUBBLE_SCALE}>
+        <Text style={[styles.headTitle, { color: colors.foreground }]} maxFontSizeMultiplier={COPY_SCALE}>
           {card.title}
         </Text>
-        <Text style={[styles.headDose, { color: meter.caption }]} maxFontSizeMultiplier={BUBBLE_SCALE}>
+        <Text style={[styles.headDose, { color: meter.caption }]} maxFontSizeMultiplier={COPY_SCALE}>
           {card.dose}
         </Text>
       </View>
@@ -731,7 +550,7 @@ function BubbleCopy({ card, typed }: { card: DeckCard; typed: boolean }) {
           />
         </View>
       ) : (
-        <Text style={[styles.text, styles.line, { color: colors.foreground }]} maxFontSizeMultiplier={BUBBLE_SCALE}>
+        <Text style={[styles.text, styles.line, { color: colors.foreground }]} maxFontSizeMultiplier={COPY_SCALE}>
           {card.rationale}
         </Text>
       )}
@@ -764,7 +583,7 @@ function Segment({
   );
 }
 
-/** Whether the app is in front. The clip and the coach stop behind it. */
+/** Whether the app is in front. The clip stops behind it. */
 function useAppActive(): boolean {
   const [activeNow, setActiveNow] = useState(AppState.currentState !== 'background' && AppState.currentState !== 'inactive');
   useEffect(() => {
@@ -802,55 +621,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   row: { alignItems: 'center' },
-  coach: { position: 'absolute' },
-  coachCompact: { width: COACH_COMPACT, height: COACH_COMPACT },
   segments: { marginTop: SEGMENTS_TOP, height: SEGMENT },
   segmentRow: { flex: 1, flexDirection: 'row', gap: 4 },
   segment: { flex: 1, height: SEGMENT, borderRadius: SEGMENT / 2, overflow: 'hidden' },
   segmentFill: { ...StyleSheet.absoluteFill, transformOrigin: 'left center' },
-  slot: { marginTop: 10, paddingTop: TAIL_RISE },
-  slotRow: { flexDirection: 'row', alignItems: 'flex-end', gap: 8 },
-  bubbleColumn: { flexGrow: 1, flexShrink: 1 },
+  slot: { marginTop: 14 },
   ghosts: {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
-    paddingHorizontal: BUBBLE_PAD_X + HAIRLINE,
     opacity: 0,
-  },
-  bubble: {
-    justifyContent: 'center',
-    paddingHorizontal: BUBBLE_PAD_X,
-    paddingVertical: BUBBLE_PAD_Y,
-    borderRadius: 18,
-    borderCurve: 'continuous',
-    borderWidth: HAIRLINE,
-  },
-  /** A square turned to a point, half inside the bubble: its fill covers the
-   * bubble's edge where they meet, and its two upper sides carry the edge on. */
-  tail: {
-    position: 'absolute',
-    top: -TAIL / 2,
-    left: TAIL_LEFT,
-    width: TAIL,
-    height: TAIL,
-    borderTopWidth: HAIRLINE,
-    borderLeftWidth: HAIRLINE,
-    borderTopLeftRadius: 2,
-    transform: [{ rotate: '45deg' }],
-  },
-  /** The same, turned to the left edge, level with the compact coach's head. */
-  tailSide: {
-    position: 'absolute',
-    left: -TAIL / 2,
-    bottom: COACH_COMPACT / 2 - TAIL / 2,
-    width: TAIL,
-    height: TAIL,
-    borderLeftWidth: HAIRLINE,
-    borderBottomWidth: HAIRLINE,
-    borderBottomLeftRadius: 2,
-    transform: [{ rotate: '45deg' }],
   },
   head: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', columnGap: 8 },
   headTitle: { ...fonts.heavy(16, -0.2), lineHeight: 21 },

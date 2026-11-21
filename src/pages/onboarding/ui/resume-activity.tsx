@@ -1,7 +1,6 @@
 import { HStack, Image, ProgressView, Spacer, Text, VStack } from '@expo/ui/swift-ui';
 import {
   activityBackgroundTint,
-  aspectRatio,
   background,
   clipShape,
   font,
@@ -12,12 +11,9 @@ import {
   monospacedDigit,
   padding,
   progressViewStyle,
-  resizable,
   tint,
 } from '@expo/ui/swift-ui/modifiers';
-import { Asset } from 'expo-asset';
-import { Directory, File } from 'expo-file-system';
-import { createLiveActivity, widgetsDirectory, type LiveActivity } from 'expo-widgets';
+import { createLiveActivity, type LiveActivity } from 'expo-widgets';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
 
@@ -37,8 +33,6 @@ export type ResumeActivityProps = {
   progress: number;
   /** "40%", written out here because the widget cannot format. */
   percent: string;
-  /** The mascot, copied into the App Group. Empty draws an SF Symbol instead. */
-  art: string;
 };
 
 /**
@@ -58,15 +52,7 @@ const ResumeActivity = (props: ResumeActivityProps) => {
   'widget';
 
   const muted = '#9E9EA6';
-  const mascot = (size: number) =>
-    props.art ? (
-      <Image
-        uiImage={props.art}
-        modifiers={[resizable(), aspectRatio({ contentMode: 'fit' }), frame({ width: size, height: size })]}
-      />
-    ) : (
-      <Image systemName="figure.walk" color="#FFFFFF" size={size * 0.6} />
-    );
+  const figure = (size: number) => <Image systemName="figure.walk" color="#FFFFFF" size={size * 0.6} />;
 
   const bar = (
     <ProgressView
@@ -81,7 +67,7 @@ const ResumeActivity = (props: ResumeActivityProps) => {
         spacing={12}
         modifiers={[padding({ all: 16 }), frame({ maxWidth: 9999 }), activityBackgroundTint('#1C1C1F')]}>
         <HStack spacing={14}>
-          {mascot(64)}
+          {figure(64)}
           <VStack alignment="leading" spacing={10}>
             <Text
               modifiers={[
@@ -118,7 +104,7 @@ const ResumeActivity = (props: ResumeActivityProps) => {
       </VStack>
     ),
 
-    compactLeading: mascot(22),
+    compactLeading: figure(22),
     compactTrailing: (
       <Text
         modifiers={[
@@ -129,9 +115,9 @@ const ResumeActivity = (props: ResumeActivityProps) => {
         {props.percent}
       </Text>
     ),
-    minimal: mascot(22),
+    minimal: figure(22),
 
-    expandedLeading: <VStack modifiers={[padding({ leading: 4, top: 4 })]}>{mascot(44)}</VStack>,
+    expandedLeading: <VStack modifiers={[padding({ leading: 4, top: 4 })]}>{figure(44)}</VStack>,
     expandedCenter: (
       <Text
         modifiers={[
@@ -164,33 +150,11 @@ export const OnboardingResumeActivity = createLiveActivity('OnboardingResume', R
 /** About how long a screen takes, for the minutes left on the Lock Screen. */
 const SECONDS_PER_STEP = 8;
 
-/** The home widget's own drawing and file name, so the App Group holds one copy. */
-const ART = { name: 'mascot-tasks-v1.png', source: require('@assets/widget/mascot-tasks.png') };
-
 let current: LiveActivity<ResumeActivityProps> | null = null;
-let art: string | null = null;
 
-async function shareArt(): Promise<string> {
-  if (art != null) return art;
-  try {
-    const dir = new Directory(widgetsDirectory);
-    if (!dir.exists) dir.create({ intermediates: true });
-    const target = new File(dir, ART.name);
-    if (!target.exists) {
-      const [asset] = await Asset.loadAsync(ART.source);
-      if (asset?.localUri == null) return '';
-      new File(asset.localUri).copy(target);
-    }
-    return (art = target.uri);
-  } catch (error) {
-    if (__DEV__) console.warn('[activities] could not share the mascot', error);
-    return '';
-  }
-}
-
-function propsFor(t: Translate, index: number, ready: boolean, shared: string): ResumeActivityProps {
+function propsFor(t: Translate, index: number, ready: boolean): ResumeActivityProps {
   if (ready) {
-    return { title: t('widget.resumeReady'), cta: t('widget.resumeReadyCta'), progress: 1, percent: '100%', art: shared };
+    return { title: t('widget.resumeReady'), cta: t('widget.resumeReadyCta'), progress: 1, percent: '100%' };
   }
   const progress = Math.min(0.99, index / STEP_COUNT);
   const minutes = Math.max(1, Math.ceil(((STEP_COUNT - index) * SECONDS_PER_STEP) / 60));
@@ -199,7 +163,6 @@ function propsFor(t: Translate, index: number, ready: boolean, shared: string): 
     cta: t('widget.resumeCta'),
     progress,
     percent: `${Math.round(progress * 100)}%`,
-    art: shared,
   };
 }
 
@@ -241,12 +204,12 @@ export function useResumeActivity(t: Translate, index: number): void {
 
   useEffect(() => {
     if (Platform.OS !== 'ios' || index < 1) return;
-    void shareArt().then((shared) => show(propsFor(t, index, false, shared)));
+    void show(propsFor(t, index, false));
   }, [t, index]);
 }
 
 /** The onboarding is done and the paywall is next: the activity says so. */
 export function readyResumeActivity(t: Translate): void {
   if (Platform.OS !== 'ios' || current == null) return;
-  void shareArt().then((shared) => show(propsFor(t, 0, true, shared)));
+  void show(propsFor(t, 0, true));
 }

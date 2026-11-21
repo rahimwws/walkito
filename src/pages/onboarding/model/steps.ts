@@ -109,8 +109,8 @@ export type OnboardingStep = StepBase &
         /** Selecting more than one. `max` caps it. */
         multi?: boolean;
         max?: number;
-        /** What leads each answer in place of its emoji: Walkito peeking up
-         * over the card (`peek`), the pair of feet (`side`), or, for an
+        /** What leads each answer in place of its emoji: nothing but the
+         * label (`peek`), the pair of feet (`side`), or, for an
          * observation about the foot, how full a circle is (`verdict`).
          * `kit` lays the answers out as a grid of coloured tiles instead. */
         art?: 'peek' | 'side' | 'verdict' | 'kit';
@@ -125,7 +125,7 @@ export type OnboardingStep = StepBase &
          * funnel's "Foot pain changes your whole day."). */
         banner?: Phrase;
       }
-    /** A full-screen answer to the question before it: mascot, a heading, a
+    /** A full-screen answer to the question before it: a heading, a
      * line, tap anywhere. `of` names the question it reacts to. */
     | { kind: 'reaction'; of: 'role' | 'duration' | 'tried' }
     /** The first steps this morning, 0–10, the daily check-in's own question. */

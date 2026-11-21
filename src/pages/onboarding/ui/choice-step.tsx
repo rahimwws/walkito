@@ -19,12 +19,11 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Badge } from '@/shared/ui/badge';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { OptionCard3D } from '@/shared/ui/option-card-3d';
+import { OptionCard } from '@/shared/ui/option-card';
 
 import { SPORT_ICONS, VERDICT_ICONS } from '../config/option-icons';
 import { FeetGlyph, type FeetSide } from './feet-glyph';
 import { KitTile } from './kit-tile';
-import { PEEK_WIDTH, PeekMascot } from './peek-mascot';
 import type { ResolvedOption } from '../model/steps';
 
 /** The glyph in a row's tile: the kit's own tile size and glyph size. */
@@ -35,7 +34,7 @@ const ICON = 22;
 const POP_IN_MS = 60;
 const POP_OUT_MS = 120;
 /** And its emoji pops with it, further: up past its size and settling back.
- * Less on a question about the body, where the coach only nods. */
+ * Less on a question about the body. */
 const EMOJI_POP = { lively: 1.15, calm: 1.08 } as const;
 const EMOJI_UP_MS = 110;
 const EMOJI_DOWN_MS = 190;
@@ -66,12 +65,12 @@ const IDLE_FOOT = { light: '#D3D3D8', dark: '#3A3A3E' } as const;
  *
  * - `fluent` (the default): the option's colourful Fluent emoji, or the card's
  *   own tile where the option brings a glyph (the platforms' logos), or nothing.
- * - `peek`: Walkito peeking up over the card's bottom edge (`PeekMascot`).
+ * - `peek`: nothing but the label (an option's own glyph still shows).
  * - `side`: the pair of feet, the sore one (or the heel that lifts first) lit;
  *   none for "not sure".
  * - `verdict`: how full a circle is, for an observation about the foot.
  * - `sport`: wrapping capsules, with the sport's own glyph.
- * - `kit`: a grid of coloured 3D tiles, two to a row (`KitTile`).
+ * - `kit`: a grid of tiles, two to a row (`KitTile`).
  */
 export type ChoiceArt = 'fluent' | 'peek' | 'sport' | 'side' | 'verdict' | 'kit';
 
@@ -81,8 +80,7 @@ export type ChoiceStepProps = {
   multi: boolean;
   max?: number;
   art?: ChoiceArt;
-  /** A question about the body: a chosen answer's figure nods rather than
-   * boinging (`PeekMascot`), and its emoji pops less. */
+  /** A question about the body: a chosen answer's emoji pops less. */
   calm?: boolean;
   onChange: (next: string[]) => void;
 };
@@ -90,16 +88,13 @@ export type ChoiceStepProps = {
 /**
  * The answer list.
  *
- * Each answer is the kit's glass card (`OptionCard3D`): a colourful Fluent
- * emoji at the leading edge (`FluentIcon`), the label, and a box for a
- * question with several answers or a radio for one at the trailing edge. Two
- * questions, who they are and what matters most, have Walkito peeking up over
- * each card instead, in that answer's own colour (`PeekMascot`). Where the art
- * means something it stays: the side question's pair of feet, the foot checks'
- * verdict circles, the platforms' own logos. Selection is the kit's own, the
+ * Each answer is a flat `OptionCard`: a colourful Fluent emoji at the leading
+ * edge (`FluentIcon`), the label, and a box for a question with several
+ * answers or a radio for one at the trailing edge. Where the art means
+ * something it stays: the side question's pair of feet, the foot checks'
+ * verdict circles, the platforms' own logos. Selection is the card's own, the
  * same for every answer, so no answer looks like the one that earns something.
- * A row pops once as it is picked, its emoji or figure answers the tap, and
- * the coach in the corner nods (the page's, through `onChange`).
+ * A row pops once as it is picked and its emoji answers the tap.
  */
 export function ChoiceStep({
   options,
@@ -134,14 +129,9 @@ export function ChoiceStep({
   const optionKey = options.map((o) => o.value).join('|');
   useEffect(() => setSwapped(null), [optionKey]);
 
-  /** The answer picked last: its figure is the one left breathing. */
-  const [lastPicked, setLastPicked] = useState<string | null>(null);
-  useEffect(() => setLastPicked(null), [optionKey]);
-
   /** The card ticks on its own tap; a chip has no haptic of its own. */
   const toggle = (value: string, haptic = true) => {
     if (haptic) Haptics.selectionAsync();
-    if (!selected.includes(value)) setLastPicked(value);
     if (!multi) {
       onChange([value]);
       setSwapped(null);
@@ -211,13 +201,11 @@ export function ChoiceStep({
 
   return (
     <View style={styles.list}>
-      {options.map((option, index) => (
+      {options.map((option) => (
         <ChoiceRow
           key={option.value}
           option={option}
-          index={index}
           selected={selected.includes(option.value)}
-          live={option.value === lastPicked}
           multi={multi}
           art={art}
           calm={calm}
@@ -318,28 +306,23 @@ function ChoiceChip({
 }
 
 /**
- * One answer, on the kit's card.
+ * One answer, on the flat card.
  *
  * The art is the answer's own: its Fluent emoji, bare at the leading edge with
- * no tile behind it; a step's Hugeicons glyph and accent (the platforms they
- * heard about the app on); the side question's pair of feet; the verdict
- * circles on the foot checks. On the two `peek` questions there is no icon at
- * all, only Walkito peeking in from the bottom edge.
+ * no tile behind it; a step's Hugeicons glyph (the platforms they heard about
+ * the app on); the side question's pair of feet; the verdict circles on the
+ * foot checks. On the two `peek` questions there is no art beyond the label.
  */
 function ChoiceRow({
   option,
-  index,
   selected,
-  live,
   multi,
   art: artKind,
   calm,
   onPress,
 }: {
   option: ResolvedOption;
-  index: number;
   selected: boolean;
-  live: boolean;
   multi: boolean;
   art: ChoiceArt;
   calm: boolean;
@@ -375,11 +358,9 @@ function ChoiceRow({
   const popStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
   const emojiStyle = useAnimatedStyle(() => ({ transform: [{ scale: emojiPop.value }] }));
 
-  const peeks = artKind === 'peek' && option.icon == null;
-
   const art = ((): ReactNode => {
     // An option's own glyph is drawn by the card, on its tile.
-    if (option.icon != null || peeks) return undefined;
+    if (option.icon != null || artKind === 'peek') return undefined;
     if (artKind === 'fluent') {
       return option.emoji == null ? undefined : (
         <Animated.View style={emojiStyle}>
@@ -413,14 +394,11 @@ function ChoiceRow({
 
   return (
     <Animated.View style={popStyle}>
-      <OptionCard3D
+      <OptionCard
         label={option.label}
         caption={option.caption}
         icon={option.icon}
-        accent={option.accent}
         art={art}
-        peek={peeks ? <PeekMascot index={index} selected={selected} calm={calm} live={live} /> : undefined}
-        peekWidth={PEEK_WIDTH}
         selected={selected}
         mode={multi ? 'multi' : 'single'}
         onPress={onPress}
@@ -436,7 +414,7 @@ function ChoiceRow({
           accessibilityElementsHidden
           importantForAccessibility="no-hide-descendants"
           style={styles.badge}>
-          <Badge label={badge} accent="orange" raised />
+          <Badge label={badge} />
         </View>
       )}
     </Animated.View>
@@ -447,13 +425,11 @@ const styles = StyleSheet.create({
   list: {
     gap: 10,
   },
-  /** Kit tiles, two to a row (`KitTile` sizes itself to half). Room above
-   * for a picked tile's lift. */
+  /** Kit tiles, two to a row (`KitTile` sizes itself to half). */
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 12,
-    paddingTop: 6,
   },
   /** Half over the card's top edge, at its trailing end, clear of the card
    * above it in the list's gap. */

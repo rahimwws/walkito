@@ -2,7 +2,7 @@ import PencilEdit02Icon from '@hugeicons/core-free-icons/PencilEdit02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -15,13 +15,13 @@ import Animated, {
 } from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
 
-import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, accents, colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { mix, shade } from '@/shared/lib/color';
 import { useT } from '@/shared/lib/i18n';
 import { settle } from '@/shared/lib/motion';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Card3D } from '@/shared/ui/card-3d';
-import { MascotStill, celebrateRig } from '@/shared/ui/mascot';
+import { Card } from '@/shared/ui/card';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 /** One fact on the passport: an answer, with what it is an answer to. */
 export type PassportStamp = {
@@ -36,13 +36,11 @@ export type PassportStamp = {
 /**
  * The stamp's inks. A stamp is printed paper, so it is the same in both
  * schemes: cream paper, and a coral panel between the brand's orange and red.
- * The figure on it is drawn in the paper's cream with the panel's own colour,
- * deepened, for its outline, as a one-colour print would be.
  */
 export const STAMP_INK = (() => {
   const panel = shade(mix(accents.light.orange.fill, accents.light.red.fill, 0.55), 0.12);
   const paper = mix(palette.light.card, accents.light.amber.fill, 0.1);
-  return { paper, panel, figure: paper, outline: shade(panel, 0.5) };
+  return { paper, panel };
 })();
 
 /** The stamp's tilt as it lies on the page: stuck on by hand, not printed square. */
@@ -92,32 +90,28 @@ function Perforated({ width, height, hole, step }: { width: number; height: numb
 /**
  * The Foot Passport's first stamp, on the halfway screen: cream paper with a
  * perforated edge, a coral panel, "Foot passport · first edition" across its
- * top, the figure large in the middle, and the title and its number at the
- * foot, as a commemorative stamp is laid out.
+ * top, a foot large in the middle, and the title and its number at the foot,
+ * as a commemorative stamp is laid out.
  *
  * It lands the way a stamp is pressed on: from a little larger and turned,
  * down to the page and its tilt, on the settle curve. With Reduce Motion it is
- * simply there. `art` draws the figure at the size it is given, in the
- * stamp's inks (`STAMP_INK`), so the screen can keep its own live mascot.
+ * simply there.
  */
 export function PassportFirstStamp({
   width,
   title,
   number,
-  art,
 }: {
   width: number;
   /** Printed at its foot: what the stamp marks. */
   title: string;
   /** Its number in the series, printed as three digits. */
   number: number;
-  art: (size: number) => ReactNode;
 }) {
   const t = useT();
   const height = Math.round(width * 1.2);
   const margin = Math.round(width * 0.06) + 6;
-  // Room left over the figure for his jump: the panel clips at its edge.
-  const figure = Math.round((width - margin * 2) * 0.7);
+  const figure = Math.round((width - margin * 2) * 0.5);
 
   const land = useSharedValue(0);
   useEffect(() => {
@@ -139,7 +133,9 @@ export function PassportFirstStamp({
         <Text style={styles.edition} numberOfLines={2} adjustsFontSizeToFit minimumFontScale={0.75}>
           {t('onboarding.passport.stampEdition')}
         </Text>
-        <View style={styles.figure}>{art(figure)}</View>
+        <View style={styles.figure}>
+          <FluentIcon name="foot" size={figure} />
+        </View>
         <View style={styles.foot}>
           <Text style={styles.title} numberOfLines={2} adjustsFontSizeToFit minimumFontScale={0.75}>
             {title}
@@ -159,7 +155,7 @@ function MiniStamp() {
     <View style={{ width, height }} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
       <Perforated width={width} height={height} hole={2} step={6.5} />
       <View style={[styles.panel, styles.miniPanel]}>
-        <MascotStill rig={celebrateRig} size={26} paper={STAMP_INK.figure} ink={STAMP_INK.outline} />
+        <FluentIcon name="foot" size={20} />
       </View>
     </View>
   );
@@ -197,7 +193,7 @@ export function PassportStrip({ name, stamps }: { name: string; stamps: readonly
       style={styles.stripSlot}
       accessible
       accessibilityLabel={`${t('onboarding.passport.owner', { name })}${newest != null ? `. ${newest.label}: ${newest.value}` : ''}`}>
-      <Card3D padding={0} contentStyle={styles.strip}>
+      <Card padding={0} style={[styles.edge, styles.strip]}>
         <MiniStamp />
         <View style={styles.who}>
           <Text style={[styles.stripTitle, { color: colors.foreground }]} numberOfLines={1}>
@@ -224,7 +220,7 @@ export function PassportStrip({ name, stamps }: { name: string; stamps: readonly
         {/* A tick, pressed in each time an answer lands on the passport. Keyed
             on the fact, so every new one stamps again. */}
         {newest != null && <Tick key={newest.key} />}
-      </Card3D>
+      </Card>
     </Animated.View>
   );
 }
@@ -252,7 +248,7 @@ function Tick() {
 
 /**
  * What the passport holds so far: the facts as a document lays them out, two
- * to a row, a small label over each answer, on a glass card under the stamp.
+ * to a row, a small label over each answer, on a card under the stamp.
  * Any fact can be tapped to go back and change it.
  */
 export function PassportCard({
@@ -271,7 +267,7 @@ export function PassportCard({
 
   return (
     <Animated.View entering={FadeIn.delay(220).duration(320).reduceMotion(ReduceMotion.System)}>
-      <Card3D padding={6} contentStyle={styles.card}>
+      <Card padding={6} style={[styles.edge, styles.card]}>
         <View style={styles.grid}>
           {stamps.map((stamp, i) => (
             <Animated.View
@@ -308,13 +304,14 @@ export function PassportCard({
             <Text style={[styles.editText, { color: meter.caption }]}>{t('onboarding.passport.edit')}</Text>
           </View>
         )}
-      </Card3D>
+      </Card>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
   pressed: { opacity: 0.6 },
+  edge: { borderWidth: StyleSheet.hairlineWidth, borderColor: tokens.separator },
 
   stamp: {
     alignSelf: 'center',

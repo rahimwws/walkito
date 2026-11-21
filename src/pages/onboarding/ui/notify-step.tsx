@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
-import { useEffect, useRef, useState } from 'react';
-import { Image, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -16,11 +16,8 @@ import { requestNotificationAccess } from '@/entities/notifications';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Mascot, type MascotHandle } from '@/shared/ui/mascot';
+import { Button } from '@/shared/ui/button';
 import { settle } from '@/shared/lib/motion';
-
-import { rigFor } from './coach-rigs';
 
 /** The app's own icon, so the mock banner is the real thing at notification
  * size rather than an illustration of one. The 150 px copy, not `icon.png`:
@@ -31,15 +28,6 @@ const APP_ICON = require('@assets/icon-small.webp');
 /** The mock banner drops in after this long, over this long. */
 const BANNER_DELAY_MS = 260;
 const BANNER_DROP_MS = 480;
-/** When the banner has landed, from the screen's arrival: the coach pokes at
- * it then (the page times his move from this). */
-export const BANNER_LANDS_MS = BANNER_DELAY_MS + BANNER_DROP_MS;
-
-/** Walkito with his alarm clock and bell, under the banner. */
-const HERO = 200;
-const HERO_SHORT = 150;
-/** Below this window height he is the smaller size. */
-const SHORT_WINDOW = 700;
 /** The CTA reaches 16pt from the screen's edges rather than the page's 24. */
 const CTA_BLEED = 8;
 
@@ -50,8 +38,6 @@ export type NotifyStepProps = {
   granted: boolean | null;
   onAnswered: (granted: boolean) => void;
   onNext: () => void;
-  /** Room the coach takes in the top-right corner, kept clear by the heading. */
-  speakerInset?: number;
 };
 
 /**
@@ -59,35 +45,24 @@ export type NotifyStepProps = {
  *
  * iOS gives an app exactly one chance to show the system dialog, so this
  * screen exists to make sure that chance is spent on someone who already knows
- * what they will get. Less said, more shown: the heading, the banner they will
- * get, and Walkito holding up his alarm clock and bell as it lands. The three
+ * what they will get. Less said, more shown: the heading and the banner they
+ * will get. The three
  * promises it used to list under the banner were reading nobody did.
  *
  * The banner is a mock, not a screenshot: it drops in the way a real one does,
  * holds, then settles. Showing the thing being asked for is the whole
  * argument, and a static picture of a notification reads as an illustration
  * where a moving one reads as a preview.
- *
- * He is this step's own (`coachEnter` has him as the hero here, so the coach
- * in the corner stands aside): he shows the clock as the banner lands, and a
- * yes and a no get the same nod, since allowing is not a win. Silent.
  */
-export function NotifyStep({ name, granted, onAnswered, onNext, speakerInset = 0 }: NotifyStepProps) {
+export function NotifyStep({ name, granted, onAnswered, onNext }: NotifyStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
   const insets = useSafeAreaInsets();
-  const { height } = useWindowDimensions();
 
   const [busy, setBusy] = useState(false);
   const answered = granted != null;
-
-  const mascot = useRef<MascotHandle>(null);
-  useEffect(() => {
-    const timer = setTimeout(() => mascot.current?.play('present'), BANNER_LANDS_MS);
-    return () => clearTimeout(timer);
-  }, []);
 
   const ask = async () => {
     if (busy || answered) return;
@@ -99,42 +74,30 @@ export function NotifyStep({ name, granted, onAnswered, onNext, speakerInset = 0
     // buzz of something gone wrong.
     if (result) Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     else Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    mascot.current?.play('nod');
     onAnswered(result);
   };
 
   return (
     <View style={styles.wrap}>
-      <View style={{ paddingRight: speakerInset }}>
-        <Text style={[styles.title, { color: colors.foreground }]}>
-          {name.trim().length > 0
-            ? t('onboarding.notify.askNamed', { name: name.trim() })
-            : t('onboarding.notify.ask')}
-        </Text>
-      </View>
+      <Text style={[styles.title, { color: colors.foreground }]}>
+        {name.trim().length > 0
+          ? t('onboarding.notify.askNamed', { name: name.trim() })
+          : t('onboarding.notify.ask')}
+      </Text>
 
       <Banner />
 
-      <View style={styles.hero}>
-        <Mascot
-          ref={mascot}
-          rig={rigFor('reminder')}
-          size={height < SHORT_WINDOW ? HERO_SHORT : HERO}
-          surface={colors.background}
-        />
-      </View>
+      <View style={styles.fill} />
 
       <View style={[styles.actions, { marginBottom: Math.max(insets.bottom, 16) }]}>
         {/* "Continue", and no "Not now": the same rule App Review applied to
             the Health ask (guideline 5.1.1(iv)) holds for every permission.
             The screen explains, the first press always opens the system
             dialog, and whatever is answered there the same button carries on. */}
-        <Button3D
+        <Button
           label={busy ? t('onboarding.notify.opening') : t('onboarding.cta.continue')}
           onPress={answered ? onNext : ask}
           loading={busy}
-          size="xl"
-          docked
           style={styles.cta}
         />
         {/* What the notifications are for, offers included, said before the
@@ -249,14 +212,7 @@ const styles = StyleSheet.create({
     ...fonts.regular(14),
     lineHeight: 19,
   },
-  /** The room between the banner and the button, with him in the middle of it. */
-  hero: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    // Headroom for his moves: nothing here clips, but the banner is above.
-    paddingTop: 12,
-  },
+  fill: { flex: 1 },
   actions: {
     paddingTop: 16,
     gap: 14,

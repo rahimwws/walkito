@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import type { SharedValue } from 'react-native-reanimated';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -8,14 +7,12 @@ import Animated, {
   interpolateColor,
   useAnimatedStyle,
   useSharedValue,
-  withSequence,
   withTiming,
 } from 'react-native-reanimated';
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, waveRig, type MascotHandle } from '@/shared/ui/mascot';
 import { useSplashRevealed } from '@/shared/ui/splash';
 import { TypedText } from '@/shared/ui/typed-text';
 
@@ -23,19 +20,6 @@ import { TypedText } from '@/shared/ui/typed-text';
 const SETTLE_MS = 300;
 const DEMOTE_MS = 320;
 
-/** The character, the screen's whole lower half. */
-const HERO = 220;
-
-/**
- * When the feet touch down in the mascot's `hop`, from its start: two hops,
- * up 150 ms and down 140, a 60 ms pause between them
- * (`shared/ui/mascot/mascot.tsx`). The button dips on each.
- */
-const HOP_LANDINGS_MS = [290, 640] as const;
-/** How long the dip takes to reach the landing, and to come back out of it.
- * Down fast, back slow — the way weight settles out of a surface. */
-const DIP_MS = 70;
-const RISE_MS = 150;
 
 export type IntroStepProps = {
   greeting: string;
@@ -45,17 +29,10 @@ export type IntroStepProps = {
   signInFailed?: boolean;
   /** Fires once the sequence has played out and the CTA may appear. */
   onReady: () => void;
-  /** 0…1, peaking each time the character lands. The button below reads this
-   * and squashes; it lives in the page because the button is the page's. */
-  squash: SharedValue<number>;
-  /** Something covers the screen (the sign-in sheet): he stops breathing
-   * under it rather than redrawing at 30 fps where nobody can see. */
-  paused?: boolean;
 };
 
 /**
- * The welcome screen: a character, and a two-beat introduction that types
- * itself in.
+ * The welcome screen: a two-beat introduction that types itself in.
  *
  * The sequence is the point. The greeting arrives first at full size and full
  * contrast, because it is the app speaking; then it demotes itself — smaller,
@@ -65,7 +42,7 @@ export type IntroStepProps = {
  * Nothing here is decorative: the CTA is deliberately absent until the last
  * beat, so the first thing on screen is an introduction rather than a demand.
  */
-export function IntroStep({ greeting, headline, signInFailed, onReady, squash, paused = false }: IntroStepProps) {
+export function IntroStep({ greeting, headline, signInFailed, onReady }: IntroStepProps) {
   const revealed = useSplashRevealed();
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -78,29 +55,6 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash, p
 
   const ready = useRef(onReady);
   ready.current = onReady;
-
-  // He waves as the button arrives, then hops twice and the button dips under
-  // each landing, as if he had stepped onto it. Once: a loop would keep
-  // pointing at a button that has already been seen.
-  const mascot = useRef<MascotHandle>(null);
-  const next = useRef<'hop' | null>(null);
-  const dips = useRef<ReturnType<typeof setTimeout>[]>([]);
-  const dip = () => {
-    squash.value = withSequence(
-      withTiming(1, { duration: DIP_MS, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
-      withTiming(0, { duration: RISE_MS, easing: Easing.inOut(Easing.quad), reduceMotion: ReduceMotion.System }),
-    );
-  };
-  // The wave's end, then the hop's. Only the first of them leads anywhere.
-  const onShotEnd = () => {
-    if (next.current !== 'hop') return;
-    next.current = null;
-    mascot.current?.play('hop');
-    // Started a dip's length early, so it bottoms out on the landing itself
-    // rather than always reading late.
-    for (const at of HOP_LANDINGS_MS) dips.current.push(setTimeout(dip, at - DIP_MS));
-  };
-  useEffect(() => () => dips.current.forEach(clearTimeout), []);
 
   useEffect(() => {
     if (phase !== 1) return;
@@ -116,11 +70,6 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash, p
   useEffect(() => {
     if (phase !== 3) return;
     ready.current();
-    // Here and not at the splash: the button only exists from this phase on,
-    // and a wave played while the lines were still typing had finished, and
-    // taken its dips with it, before there was anything to dip.
-    next.current = 'hop';
-    mascot.current?.play('wave');
   }, [phase]);
 
   // Scale rather than fontSize: animating a font size relayouts the text every
@@ -161,8 +110,7 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash, p
         {/* The headline's full height is reserved from the first frame by an
             invisible copy of it, and the typed version is laid over the top.
             Mounting the real one only at phase 2 grew the copy block mid-
-            sequence, which pushed the character down the screen — it appeared,
-            then hopped. The ghost is the layout authority so nothing moves. */}
+            sequence, which pushed everything under it down the screen. The ghost is the layout authority so nothing moves. */}
         <View>
           <Text style={[styles.headline, styles.ghost]}>{headline}</Text>
           {phase >= 2 && (
@@ -189,19 +137,6 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash, p
         )}
       </View>
 
-      {/* Sits below the copy and stands on the button, his hand up in a
-          hello from the first frame. Silent: the first sound in the flow
-          should not be one nobody asked for. */}
-      <View style={styles.stage}>
-        <Mascot
-          ref={mascot}
-          rig={waveRig}
-          size={HERO}
-          surface={colors.background}
-          paused={paused}
-          onAnimationEnd={onShotEnd}
-        />
-      </View>
     </View>
   );
 }
@@ -239,10 +174,5 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-  },
-  stage: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-end',
   },
 });

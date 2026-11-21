@@ -15,27 +15,17 @@ import Animated, {
 import Svg, { Circle, G } from 'react-native-svg';
 
 import { WEEK_SHAPES, type DaysPerWeek, type SessionMinutes } from '@/entities/program';
-import { accents, fonts, meterColors, palette, raised } from '@/shared/config';
-import { mix } from '@/shared/lib/color';
+import { accents, colors, fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { faceFor } from '@/shared/ui/raised';
 
 const EASE = Easing.bezier(0.23, 1, 0.32, 1);
 /** A gauge mounts as its question swaps in, and starts once it has slid in. */
 const ARRIVE_MS = 220;
 
-/** How far the ring's track leans to its colour: the face, then its ledge.
- * The same tints the onboarding's coloured picks use when unchosen. */
-const TINT = {
-  light: { face: 0.14, edge: 0.5 },
-  dark: { face: 0.2, edge: 0.55 },
-} as const;
-
 // ── The week ────────────────────────────────────────────────────────────────
 
 const DISC = 38;
-const DISC_LIP = 4;
 /** Each lit day pops just after the one before it, so the week fills in. */
 const STAGGER_MS = 55;
 
@@ -58,7 +48,7 @@ function weekdayInitials(language: Language): string[] {
 }
 
 /**
- * The week the days answer makes: seven 3D discs, Monday first, the session
+ * The week the days answer makes: seven flat discs, Monday first, the session
  * days lit. Lit by the plan's own week (`WEEK_SHAPES`): three days are Monday,
  * Wednesday and Friday, five are the weekdays, seven are all of them.
  *
@@ -71,11 +61,10 @@ export function WeekGauge({ days }: { days: DaysPerWeek | null }) {
   const language = useLanguage();
   const initials = useMemo(() => weekdayInitials(language), [language]);
   const shape = days == null ? null : WEEK_SHAPES[days];
-  const tone = faceFor(scheme, 'orange');
+  const tone = { face: accents[scheme].orange.fill, label: colors.onInk };
   const off = {
-    face: raised[scheme].surface,
-    edge: raised[scheme].edge,
-    lip: raised[scheme].lip,
+    face: colors.surface,
+    edge: colors.separator,
     ink: meterColors[scheme].caption,
   };
 
@@ -96,13 +85,12 @@ export function WeekGauge({ days }: { days: DaysPerWeek | null }) {
   );
 }
 
-type DiscColours = { face: string; edge: string; lip: string; ink: string };
+type DiscColours = { face: string; edge: string; ink: string };
 
 /**
- * One day: an outlined disc on its ledge, or, lit, filled orange with a
- * catch of light. `wave` is the answer: every new one pops the lit days
- * again, in turn, so the whole week answers the tap and not only the days
- * that changed.
+ * One day: an outlined white disc, or, lit, filled orange. `wave` is the
+ * answer: every new one pops the lit days again, in turn, so the whole week
+ * answers the tap and not only the days that changed.
  */
 function DayDisc({
   initial,
@@ -116,7 +104,7 @@ function DayDisc({
   lit: boolean;
   delay: number;
   wave: DaysPerWeek | null;
-  tone: { face: string; lip: string; label: string };
+  tone: { face: string; label: string };
   off: DiscColours;
 }) {
   const reduceMotion = useReducedMotion();
@@ -152,24 +140,16 @@ function DayDisc({
     backgroundColor: interpolateColor(on.value, [0, 1], [off.face, tone.face]),
     borderColor: interpolateColor(on.value, [0, 1], [off.edge, tone.face]),
   }));
-  const lipStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(on.value, [0, 1], [off.lip, tone.lip]),
-  }));
   const inkStyle = useAnimatedStyle(() => ({
     color: interpolateColor(on.value, [0, 1], [off.ink, tone.label]),
   }));
-  const glossStyle = useAnimatedStyle(() => ({ opacity: on.value * 0.32 }));
 
   return (
     <View style={styles.slot}>
-      <Animated.View style={[styles.disc, popStyle]}>
-        <Animated.View style={[styles.discLip, lipStyle]} />
-        <Animated.View style={[styles.discFace, faceStyle]}>
-          <Animated.View style={[styles.gloss, glossStyle]} />
-          <Animated.Text style={[styles.initial, inkStyle]} maxFontSizeMultiplier={1.2} numberOfLines={1}>
-            {initial}
-          </Animated.Text>
-        </Animated.View>
+      <Animated.View style={[styles.disc, faceStyle, popStyle]}>
+        <Animated.Text style={[styles.initial, inkStyle]} maxFontSizeMultiplier={1.2} numberOfLines={1}>
+          {initial}
+        </Animated.Text>
       </Animated.View>
     </View>
   );
@@ -181,35 +161,21 @@ const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 const RING = 136;
 const STROKE = 18;
-/** How far the ring stands off the page: its ledge, drawn below it. */
-const RING_LIP = 5;
 const R = (RING - STROKE) / 2;
 const C = 2 * Math.PI * R;
-/** The catch of light along the arc: a thin band on its outer half. */
-const GLOSS_WIDTH = 4;
-const GLOSS_R = R + STROKE / 4;
-const GLOSS_C = 2 * Math.PI * GLOSS_R;
-/** The gloss starts and ends inside the arc's rounded ends. */
-const GLOSS_INSET = STROKE;
-const GLOSS_TURN = ((GLOSS_INSET / 2) / GLOSS_R) * (180 / Math.PI);
 /** The longest session fills the ring. */
 const FULL_MINUTES = 10;
 
 /**
- * The minutes answer as a kitchen timer: a thick 3D ring, its lighter track
- * standing on a ledge, filled clockwise from twelve to the minutes picked
- * (ten is the whole ring), a catch of light riding the fill and the number
- * in the middle, popping as it changes. Fills from empty as it arrives.
- * Decorative, like the week: the card says it in words.
+ * The minutes answer as a kitchen timer: a thick flat ring on a tinted track,
+ * filled clockwise from twelve to the minutes picked (ten is the whole ring),
+ * the number in the middle, popping as it changes. Fills from empty as it
+ * arrives. Decorative, like the week: the card says it in words.
  */
 export function TimerGauge({ minutes }: { minutes: SessionMinutes | null }) {
   const scheme = useColorScheme();
   const reduceMotion = useReducedMotion();
-  const tone = faceFor(scheme, 'teal');
-  const fill = accents[scheme].teal.fill;
-  const base = palette[scheme].card;
-  const track = mix(base, fill, TINT[scheme].face);
-  const trackLip = mix(base, fill, TINT[scheme].edge);
+  const { fill, track } = accents[scheme].teal;
   const target = minutes == null ? 0 : Math.min(minutes / FULL_MINUTES, 1);
 
   const arrived = useRef(false);
@@ -236,73 +202,34 @@ export function TimerGauge({ minutes }: { minutes: SessionMinutes | null }) {
   }, [target]);
 
   // A dash of no length still draws its round caps as a dot: hidden at 0.
-  // The face and its ledge each have their own props, one view apiece.
   const arcProps = useAnimatedProps(() => ({
     strokeDashoffset: C * (1 - progress.value),
     strokeOpacity: progress.value > 0.001 ? 1 : 0,
   }));
-  const ledgeProps = useAnimatedProps(() => ({
-    strokeDashoffset: C * (1 - progress.value),
-    strokeOpacity: progress.value > 0.001 ? 1 : 0,
-  }));
-  const glossProps = useAnimatedProps(() => {
-    const length = Math.max(0, progress.value * GLOSS_C - GLOSS_INSET);
-    return { strokeDashoffset: GLOSS_C - length, strokeOpacity: length > 0.5 ? 0.38 : 0 };
-  });
   const numberStyle = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
   const cx = RING / 2;
   const cy = RING / 2;
-  // Every circle starts at twelve and runs clockwise: turned a quarter back
-  // about its own centre, the ledge's a few points lower.
-  const top = `${cx}, ${cy}`;
-  const low = `${cx}, ${cy + RING_LIP}`;
 
   return (
     <View
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants"
       style={styles.timer}>
-      <Svg width={RING} height={RING + RING_LIP}>
-        <G rotation={-90} origin={low}>
-          <Circle cx={cx} cy={cy + RING_LIP} r={R} stroke={trackLip} strokeWidth={STROKE} fill="none" />
-          <AnimatedCircle
-            cx={cx}
-            cy={cy + RING_LIP}
-            r={R}
-            stroke={tone.lip}
-            strokeWidth={STROKE}
-            strokeLinecap="round"
-            strokeDasharray={`${C} ${C}`}
-            fill="none"
-            animatedProps={ledgeProps}
-          />
-        </G>
-        <G rotation={-90} origin={top}>
+      <Svg width={RING} height={RING}>
+        {/* Turned a quarter back, so the arc starts at twelve and runs clockwise. */}
+        <G rotation={-90} origin={`${cx}, ${cy}`}>
           <Circle cx={cx} cy={cy} r={R} stroke={track} strokeWidth={STROKE} fill="none" />
           <AnimatedCircle
             cx={cx}
             cy={cy}
             r={R}
-            stroke={tone.face}
+            stroke={fill}
             strokeWidth={STROKE}
             strokeLinecap="round"
             strokeDasharray={`${C} ${C}`}
             fill="none"
             animatedProps={arcProps}
-          />
-        </G>
-        <G rotation={-90 + GLOSS_TURN} origin={top}>
-          <AnimatedCircle
-            cx={cx}
-            cy={cy}
-            r={GLOSS_R}
-            stroke={raised[scheme].highlight}
-            strokeWidth={GLOSS_WIDTH}
-            strokeLinecap="round"
-            strokeDasharray={`${GLOSS_C} ${GLOSS_C}`}
-            fill="none"
-            animatedProps={glossProps}
           />
         </G>
       </Svg>
@@ -326,47 +253,21 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
-  /** The disc and its ledge: the ledge hangs `DISC_LIP` below the face. */
   disc: {
     width: DISC,
-    height: DISC + DISC_LIP,
-  },
-  discLip: {
-    position: 'absolute',
-    top: DISC_LIP,
-    left: 0,
-    width: DISC,
     height: DISC,
     borderRadius: DISC / 2,
-  },
-  discFace: {
-    width: DISC,
-    height: DISC,
-    borderRadius: DISC / 2,
-    borderWidth: 2,
+    borderWidth: 1.5,
     alignItems: 'center',
     justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  /** Light caught on the upper left of a lit disc. */
-  gloss: {
-    position: 'absolute',
-    top: 4,
-    left: 7,
-    width: 12,
-    height: 7,
-    borderRadius: 4,
-    backgroundColor: '#FFFFFF',
-    transform: [{ rotate: '-30deg' }],
   },
   initial: fonts.heavy(15),
   timer: {
     alignSelf: 'center',
     width: RING,
-    height: RING + RING_LIP,
+    height: RING,
     marginBottom: 22,
   },
-  /** The number sits in the ring's face, not its face and ledge together. */
   middle: {
     position: 'absolute',
     top: 0,
