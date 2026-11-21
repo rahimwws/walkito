@@ -1,6 +1,6 @@
 import { useIsFocused, useRouter } from 'expo-router';
 import { useRef, useState, type ComponentRef } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useHealthSignals } from '@/entities/health';
@@ -97,7 +97,8 @@ export function HomePage() {
         contentInsetAdjustmentBehavior="never"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
-          paddingTop: insets.top + 8,
+          // iOS already lays the tab's content out under the status bar.
+          paddingTop: Platform.OS === 'ios' ? 8 : insets.top + 8,
           paddingHorizontal: space.screen,
           paddingBottom: clearance + START_ROOM + space.gap,
         }}>

@@ -1,4 +1,4 @@
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { useHealthSignals } from '@/entities/health';
 import { libraryFavourites, painSeries, todayKey, usePlanVersion } from '@/entities/program';
@@ -26,6 +26,9 @@ export function QuickRow() {
   const t = useT();
   const health = useHealthSignals();
   const open = useOpenRoutine();
+  const { width, fontScale } = useWindowDimensions();
+  // At large text a card takes most of the screen, so words never break.
+  const cardWidth = fontScale > 1.35 ? width - space.screen * 2 - 40 : CARD_WIDTH;
   usePlanVersion();
   const pain = painSeries(todayKey(), 1)[0];
   const order = libraryOrder({
@@ -60,8 +63,8 @@ export function QuickRow() {
               accessibilityRole="button"
               accessibilityLabel={`${t(protocol.titleKey)}, ${meta}`}
               onPress={() => open(id)}
-              style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
-              <Image source={PROTOCOL_ART[id]} style={styles.photo} resizeMode="cover" />
+              style={({ pressed }) => [styles.card, { width: cardWidth }, pressed && styles.pressed]}>
+              <Image source={PROTOCOL_ART[id]} style={[styles.photo, { width: cardWidth, height: (cardWidth * 3) / 4 }]} resizeMode="cover" />
               <View style={styles.text}>
                 <Text style={styles.title}>{t(protocol.titleKey)}</Text>
                 <Text style={styles.meta}>{meta}</Text>
@@ -80,13 +83,12 @@ const styles = StyleSheet.create({
   scroller: { marginHorizontal: -space.screen },
   row: { gap: space.gap, paddingHorizontal: space.screen },
   card: {
-    width: CARD_WIDTH,
     backgroundColor: colors.surface,
     borderRadius: radius.card,
     borderCurve: 'continuous',
     overflow: 'hidden',
   },
-  photo: { width: '100%', aspectRatio: 4 / 3, backgroundColor: colors.surface2 },
+  photo: { backgroundColor: colors.surface2 },
   text: { padding: 14, gap: 2 },
   title: { ...fonts.semibold(17), color: colors.text },
   meta: { ...fonts.regular(17), color: colors.text2 },

@@ -1,6 +1,6 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import type { PlanKind } from '@/entities/profile';
 import { type NextSession } from '@/entities/program';
@@ -12,6 +12,9 @@ import { Card } from '@/shared/ui/card';
 import { posterFor } from '@/widgets/session-player';
 
 import type { TodayWork } from '../model/today-work';
+
+/** The 28pt title grows to 56pt at most, so "minutes" never breaks mid-word. */
+const TITLE_MAX_SCALE = 2;
 
 export type TodayCardProps = {
   work: TodayWork;
@@ -30,6 +33,7 @@ export type TodayCardProps = {
  */
 export function TodayCard({ work, kind, ranToday, next, active, onPress }: TodayCardProps) {
   const t = useT();
+  const { width } = useWindowDimensions();
   // A test day has no moves of its own: the calf raise is its first test.
   const poster = posterFor(work.type === 'test' ? 'heel_raise_plain' : (work.exerciseIds[0] ?? ''));
   const rest = work.type === 'rest';
@@ -38,7 +42,14 @@ export function TodayCard({ work, kind, ranToday, next, active, onPress }: Today
 
   return (
     <Card padding={0} onPress={onPress} style={styles.card}>
-      {poster != null && <Image source={poster} style={styles.photo} resizeMode="cover" accessibilityIgnoresInvertColors />}
+      {poster != null && (
+        <Image
+          source={poster}
+          style={[styles.photo, { height: Math.round(((width - space.screen * 2) * 9) / 16) }]}
+          resizeMode="cover"
+          accessibilityIgnoresInvertColors
+        />
+      )}
       <View style={styles.body}>
         <Text style={styles.plan}>{t(`story.plan.${kind}`)}</Text>
         <View style={styles.titleRow}>
@@ -47,7 +58,7 @@ export function TodayCard({ work, kind, ranToday, next, active, onPress }: Today
               <HugeiconsIcon icon={Tick02Icon} size={18} color={colors.onInk} strokeWidth={2.5} />
             </View>
           )}
-          <Text style={styles.title} accessibilityRole="header">
+          <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_MAX_SCALE}>
             {title}
           </Text>
         </View>
@@ -110,7 +121,7 @@ function NextLine({ next, active }: { next: NextSession | null; active: boolean 
 
 const styles = StyleSheet.create({
   card: { overflow: 'hidden' },
-  photo: { width: '100%', aspectRatio: 16 / 9, backgroundColor: colors.surface2 },
+  photo: { width: '100%', backgroundColor: colors.surface2 },
   body: { padding: space.card, gap: 6 },
   plan: { ...fonts.medium(17), color: colors.text2 },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
