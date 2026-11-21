@@ -397,3 +397,11 @@ details[open] { padding-bottom: 1rem; }
   .choice .mark svg { transform: none; }
   .dial .fg { display: none; }
 }
+
+/* v8 screen 1: the headline, then big age buttons straight away. */
+.entry-title { font-size: 1.6rem; line-height: 1.15; }
+.grid2.big .choice { min-height: 64px; font-size: 1.15rem; font-weight: 600; }
+.small-photo { height: 120px; height: min(16dvh, 130px); }
+.move-mini { display: flex; gap: 12px; align-items: center; padding: 10px; }
+.move-mini video, .move-mini img { width: 84px; height: 84px; object-fit: cover; border-radius: 12px; flex: none; background: var(--track); }
+.fine-print { margin-top: auto; }

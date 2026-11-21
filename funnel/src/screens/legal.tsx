@@ -158,7 +158,7 @@ export function Privacy() {
           </li>
           <li>
             <b>Meta (Facebook and Instagram)</b>: Meta’s pixel and our server tell Meta that a page
-            was viewed, that the plan page was viewed, that checkout started and that a purchase was made, with its amount.
+            was viewed, that the quiz was started (not what you answered), that checkout started and that a purchase was made, with its amount.
             Meta receives your IP address, browser details and Meta’s own cookie IDs. Meta never receives your answers or
             anything about your health. Meta uses this to measure and improve its ads.
           </li>

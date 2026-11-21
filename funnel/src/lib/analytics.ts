@@ -14,6 +14,8 @@ import { eventPair, matchOf, storeMatch, storedMatch, waitFor, type Match, type 
 type Events = {
   funnel_landed: { source: string | null; campaign: string | null; webview: string | null };
   step_viewed: { step: string };
+  /** She hid or closed the page: which screen she was on and for how many seconds. Nothing she answered. */
+  screen_left: { step: string; seconds: number };
   step_completed: { step: string };
   /** The guess after "When do you notice it most?": whether she said "Yes, that's it". Never which guess it was: that follows a health answer. */
   guess_answered: { hit: boolean };
@@ -89,8 +91,8 @@ export function startAnalytics(): void {
     });
     posthog.register({
       funnel: 'web-v1',
-      // The quiz's order and look. Step charts split where it changes: v6 from Nov 18, 2026; v7 (two new steps, /s/39 and /s/41) after it.
-      design: 'v7',
+      // The quiz's order and look. Step charts split where it changes: v6 from Nov 18, 2026; v7 (two new steps, /s/39 and /s/41) after it; v8 (screen 1: buttons first, Ad 2's move, View content on the first answer).
+      design: 'v8',
       app_variant: import.meta.env.DEV ? 'development' : 'web',
       // The ad she tapped (its `utm_content`), on every event from `funnel_landed` on, so a step chart splits by ad. An ad's id is not health data.
       ad: getState().utm?.utm_content ?? null,
@@ -103,6 +105,38 @@ export function startAnalytics(): void {
 
 export function track<E extends keyof Events>(event: E, ...props: Events[E] extends Record<string, never> ? [] : [Events[E]]): void {
   withPostHog((p) => p.capture(event, props[0] ?? {}));
+}
+
+// ---------------------------------------------------------------------------
+// Seconds on a screen before she leaves. When the page is hidden (she closes
+// the tab, goes back to Facebook, or switches app) we send the screen and the
+// seconds since it was shown, as a beacon so it survives the page closing.
+// If she comes back and leaves again, the later one is the real exit.
+// ---------------------------------------------------------------------------
+
+let shown: { step: string; at: number } | null = null;
+
+export function markScreen(step: string): void {
+  shown = { step, at: performance.now() };
+}
+
+let sentAt: number | null = null;
+
+function screenLeft(): void {
+  // Closing a page fires both "hidden" and "pagehide": send once per leave.
+  if (shown == null || sentAt === shown.at) return;
+  sentAt = shown.at;
+  const seconds = Math.round((performance.now() - shown.at) / 100) / 10;
+  const props = { step: shown.step, seconds };
+  withPostHog((p) => p.capture('screen_left', props, { transport: 'sendBeacon' }));
+}
+
+if (typeof document !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') screenLeft();
+    else sentAt = null;
+  });
+  addEventListener('pagehide', screenLeft);
 }
 
 /** The Supabase user id, which is also the RevenueCat app user id, as the app does. With her email, Meta's pixel gets the two hashes it may match her by. */

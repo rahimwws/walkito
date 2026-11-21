@@ -85,8 +85,6 @@ export function Price() {
 
   useEffect(() => {
     track('price_viewed');
-    // The deepest step Meta still receives on this site: the health category blocks checkout and purchase.
-    meta('ViewContent', `price-${crypto.randomUUID()}`);
     void saveLead({ price_viewed_at: new Date().toISOString(), wake_time: wakeOf(s.answers) });
     if (!billingReady()) return setYearly(false);
     packages.current = currentUser().then(async (user) => {

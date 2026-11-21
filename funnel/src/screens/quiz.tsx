@@ -4,8 +4,9 @@ import bedMorning from '../assets/photos/bed-morning.jpg';
 import chairWindow from '../assets/photos/chair-window.jpg';
 import hero from '../assets/photos/hero-socks-morning.jpg';
 import { DEFAULT_VARIANT, money, PRICE_VARIANTS, url, yearlyPerMonth } from '../config';
-import { adOf, anchorsFor, paidFor, PROGRESS, STEP, WAKE_TIMES, wakeOf, type Ad } from '../flow';
-import { track } from '../lib/analytics';
+import { moveOf } from '../engine/plan';
+import { adOf, anchorsFor, FIRST_STEP_MOVES, paidFor, PROGRESS, STEP, WAKE_TIMES, wakeOf, type Ad } from '../flow';
+import { meta, track } from '../lib/analytics';
 import { go } from '../router';
 import { answer, useFunnel, type Answers } from '../state';
 import { ADVANCE_MS, Choice, Cta, MultiChoice, Page, type IconName } from '../ui';
@@ -129,9 +130,33 @@ function Receipt() {
 }
 
 /**
- * The first screen is the first question: what this is, then her age. The four
- * cards are in view without scrolling on a 390 x 660 screen (Facebook's
- * browser), and it says before anything else that the plan is paid.
+ * Ad 2 promised a move to do before standing up, so its visitors see that move
+ * first: the clip, its name and how to do it. Then the question.
+ */
+function BedMove() {
+  const move = moveOf({ id: FIRST_STEP_MOVES[0] });
+  return (
+    <div className="card move-mini">
+      {move.clip != null ? (
+        <video src={move.clip} poster={move.poster} muted playsInline loop autoPlay preload="metadata" aria-label={`${move.title}: ${move.cue}`} />
+      ) : (
+        <img src={move.poster} alt="" />
+      )}
+      <div>
+        <div style={{ fontWeight: 700 }}>Before you stand up: {move.title.toLowerCase()}</div>
+        <div className="caption">{move.cue}</div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * The first screen is the first question. v8: the ad's promise in one line,
+ * then the four big age buttons straight away, so it reads as "tap here", not
+ * as a page to read. Ad 2's visitors see the bed move it promised before the
+ * question. The photo, the receipt and the small print sit under the buttons.
+ * Answering is the quiz's first real step, and it is what Meta learns from
+ * (View content), because the price page is too far down to teach it anything.
  */
 export function Age() {
   const s = useFunnel();
@@ -139,20 +164,20 @@ export function Age() {
   const entry = ENTRY[ad ?? 'default'];
   const price = PRICE_VARIANTS[s.variant] ?? PRICE_VARIANTS[DEFAULT_VARIANT]!;
   const pick = (value: NonNullable<Answers['age']>) => {
+    const first = s.answers.age == null;
     answer({ age: value });
     track('step_completed', { step: STEP.age });
+    // Once per visitor: she started the quiz. Never which age she picked.
+    if (first) meta('ViewContent', `start-${crypto.randomUUID()}`);
     setTimeout(() => go(STEP.focus), ADVANCE_MS);
   };
   return (
     <Page footer>
+      <h1 className="entry-title">{entry.title}</h1>
+      {ad === 'ad2_v1morning' && <BedMove />}
       <div className="stack gap-s">
-        <h1>{entry.title}</h1>
-        <p className="small">{entry.sub}</p>
-      </div>
-      {entry.photo != null ? <img className="photo" src={entry.photo.src} alt="" style={{ objectPosition: entry.photo.at }} /> : <Receipt />}
-      <div className="stack">
         <h3>First, how old are you?</h3>
-        <div className="grid2">
+        <div className="grid2 big">
           {AGES.map((o) => (
             <Choice key={o.value} selected={s.answers.age === o.value} onClick={() => pick(o.value)}>
               {o.label}
@@ -162,6 +187,14 @@ export function Age() {
         <p className="caption">We ask so your plan starts at the right pace.</p>
       </div>
       <div className="stack gap-s">
+        <p className="small">{entry.sub}</p>
+        {ad === 'ad2_v1morning' ? null : entry.photo != null ? (
+          <img className="photo small-photo" src={entry.photo.src} alt="" style={{ objectPosition: entry.photo.at }} />
+        ) : (
+          <Receipt />
+        )}
+      </div>
+      <div className="stack gap-s fine-print">
         {ad === 'ad3_receipt' ? (
           // Her ad named a price, so this screen does too.
           <p className="caption">

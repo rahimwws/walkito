@@ -1,7 +1,7 @@
 import { useEffect, type ComponentType } from 'react';
 
 import { missingStep, RETIRED, STEP } from './flow';
-import { track } from './lib/analytics';
+import { markScreen, track } from './lib/analytics';
 import { go, usePath } from './router';
 import { Cancel, Me } from './screens/account';
 import { Code, Email } from './screens/email';
@@ -62,7 +62,11 @@ export function App() {
     if (redirect != null) go(redirect, { replace: true });
   }, [redirect]);
   useEffect(() => {
-    if (redirect == null) track('step_viewed', { step: ROUTES[path] != null ? path : 'unknown' });
+    if (redirect == null) {
+      const step = ROUTES[path] != null ? path : 'unknown';
+      track('step_viewed', { step });
+      markScreen(step);
+    }
   }, [path, redirect]);
   const Screen = ROUTES[path] ?? Age;
   if (redirect != null) return null;
