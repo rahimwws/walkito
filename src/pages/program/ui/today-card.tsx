@@ -3,7 +3,7 @@ import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import type { DayType, SessionMinutes } from '@/entities/program';
+import { dayLook, type DayType, type SessionMinutes } from '@/entities/program';
 import { CHROME_MAX_FONT_SCALE, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { Button } from '@/shared/ui/button';
@@ -12,7 +12,6 @@ import { Chip } from '@/shared/ui/chip';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
 import type { TodayVariant } from '../model/plan-view';
-import { dayLook } from './kind-tone';
 import { WaitCaption } from './wait-caption';
 
 export const MINUTE_CHOICES: readonly SessionMinutes[] = [3, 5, 10];

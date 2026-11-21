@@ -1,10 +1,12 @@
-import { planMeta, type DayType, type ExerciseCategory, type PlanKind } from '@/entities/program';
+import type { ExerciseCategory } from '../model/exercises';
+import { planMeta, type PlanKind } from '../model/plan/catalogue-meta';
+import type { DayType } from '../model/plan/week';
 import type { AccentName } from '@/shared/config';
 import type { FluentName } from '@/shared/ui/fluent-icon';
 
 /**
- * How each kind of work looks on the plan screen: its Fluent emoji and its
- * accent.
+ * How each kind of work looks wherever it is shown (the plan, the session
+ * detail, the player): its Fluent emoji and its accent.
  *
  * The emoji is content, so it is the colourful set (the onboarding's answers
  * draw from it too); the arrows, the clock and the lock around it stay

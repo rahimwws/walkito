@@ -237,6 +237,7 @@ export {
 
 export { CHECKPOINT_ICON, SESSION_META } from './ui/session-meta';
 export { ZONE_META } from './ui/zone-meta';
+export { KIND_LOOK, REST_ART, TEST_LOOK, dayLook, moveLook, type Look } from './ui/kind-look';
 export { settleOffset, stepBackAfterSession } from './model/offset';
 
 // ── The weekly plan ──────────────────────────────────────────────────────────
