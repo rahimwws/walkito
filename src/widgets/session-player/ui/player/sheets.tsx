@@ -211,9 +211,9 @@ export function ReasonRows({
   const t = useT();
   return (
     <View style={styles.rows}>
-      {reasonsFor(equipment).map((entry, index) => (
+      {reasonsFor(equipment).map((entry) => (
         <View key={entry.reason}>
-          {index > 0 && <Hairline />}
+          <Hairline />
           <Pressable
             accessibilityRole="button"
             onPress={() => {
@@ -225,6 +225,7 @@ export function ReasonRows({
           </Pressable>
         </View>
       ))}
+      <Hairline />
     </View>
   );
 }

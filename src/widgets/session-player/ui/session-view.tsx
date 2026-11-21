@@ -454,7 +454,7 @@ const styles = StyleSheet.create({
   scroll: { flex: 1 },
   body: { flexGrow: 1 },
   stage: { flex: 1, backgroundColor: ink.studio, overflow: 'hidden' },
-  video: { flex: 1 },
+  video: { flex: 1, marginVertical: -1 },
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },

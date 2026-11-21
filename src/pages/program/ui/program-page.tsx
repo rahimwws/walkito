@@ -82,7 +82,7 @@ import {
 import { asProgramDay, playlistOf } from '../model/week-view';
 import { GoalPlan } from './goal-plan';
 import { HelpsCard } from './helps-card';
-import { SessionDetail, detailOf, type SessionDetailProps } from './session-detail';
+import { SessionDetail, detailMoves, type SessionDetailProps } from './session-detail';
 import { moveLook } from './kind-tone';
 import { TodayCard } from './today-card';
 import { TodayDoneCard } from './today-done-card';
@@ -151,7 +151,7 @@ type Running =
       /** Shown first, before the player: what the session holds and Start.
        * Null once Start is pressed, and for a start that skips it (an email
        * link, the short version). */
-      detail: Pick<SessionDetailProps, 'title' | 'chips' | 'moves' | 'why' | 'startLabel'> | null;
+      detail: Pick<SessionDetailProps, 'title' | 'meta' | 'moves' | 'why' | 'startLabel'> | null;
     }
   | { kind: 'test'; review: boolean };
 
@@ -283,8 +283,8 @@ export function ProgramPage() {
       const planned = short ? twoMinuteVersion(adjusted) : adjusted;
       const minutesLabel = t('session.minutes', { count: planned.minutes });
       const day = weekday(today, 'long');
-      const facts = withDetail
-        ? detailOf(
+      const moves = withDetail
+        ? detailMoves(
             t,
             planned.exercises,
             logFor(todayDayNumber(Date.now()))?.exercisesDone ?? [],
@@ -299,15 +299,15 @@ export function ProgramPage() {
         exerciseIds: planned.exercises.map((e) => e.id),
         minutes: planned.minutes,
         detail:
-          facts == null
+          moves == null
             ? null
             : {
-                title: t('player.detail.title', {
-                  day: day.charAt(0).toLocaleUpperCase(language) + day.slice(1),
+                title: day.charAt(0).toLocaleUpperCase(language) + day.slice(1),
+                meta: t('player.header.meta', {
                   minutes: minutesLabel,
+                  moves: t('session.moveCount', { count: moves.length }),
                 }),
-                chips: facts.chips,
-                moves: facts.moves,
+                moves,
                 why: planReasonLine(t, adjusted.reason),
                 startLabel: t('player.detail.start', { minutes: minutesLabel }),
               },
@@ -679,7 +679,7 @@ export function ProgramPage() {
         style={[
           styles.pane,
           {
-            backgroundColor: colors.background,
+            backgroundColor: session?.kind === 'session' ? tokens.surface : colors.background,
             paddingTop: session?.kind === 'test' || (session?.kind === 'session' && session.detail != null) ? 0 : insets.top,
           },
           sessionPane,

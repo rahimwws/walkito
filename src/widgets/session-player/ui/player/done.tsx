@@ -1,7 +1,7 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState, type ComponentRef } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -94,6 +94,7 @@ export function Done({
   const [askingPain, setAskingPain] = useState(false);
   const [easier, setEasier] = useState(false);
   const fade = useSharedValue(0);
+  const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
 
   useEffect(() => {
     if (visible) {
@@ -113,8 +114,14 @@ export function Done({
   const hostStyle = useAnimatedStyle(() => ({ opacity: fade.value }));
   if (!mounted) return null;
 
-  const reportPain = (score: number) => {
+  /** Out of the pain question, the safety line under "It hurt" is what to read next. */
+  const closePain = () => {
     setAskingPain(false);
+    setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 250);
+  };
+
+  const reportPain = (score: number) => {
+    closePain();
     if (preview) return;
     if (!alreadyRecorded(startedAt)) noteInSessionPain(score);
     if (score >= IN_SESSION_STOP_PAIN) {
@@ -151,6 +158,7 @@ export function Done({
   return (
     <Animated.View style={[styles.host, hostStyle]}>
       <ScrollView
+        ref={scroll}
         contentContainerStyle={[styles.body, { paddingTop: insets.top + 40, paddingBottom: 140 + insets.bottom }]}
         showsVerticalScrollIndicator={false}>
         <View style={styles.tick} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
@@ -229,7 +237,7 @@ export function Done({
         <Capsule label={t('common.close')} onPress={onClose} />
       </View>
 
-      <PainSheet visible={visible && askingPain} after onPick={reportPain} onCancel={() => setAskingPain(false)} />
+      <PainSheet visible={visible && askingPain} after onPick={reportPain} onCancel={closePain} />
     </Animated.View>
   );
 }
@@ -260,7 +268,7 @@ const styles = StyleSheet.create({
   ack: { ...fonts.regular(17), color: ink.grey, marginTop: 8 },
   safety: { marginTop: 16, gap: 8 },
   safetyText: { ...fonts.regular(19), color: ink.text },
-  easier: { alignSelf: 'flex-start' },
+  easier: { alignSelf: 'flex-start', paddingHorizontal: 0 },
   next: { ...fonts.medium(19), color: ink.grey, marginTop: 40 },
-  dock: { position: 'absolute', left: SIDE, right: SIDE, bottom: 0 },
+  dock: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: SIDE, paddingTop: 12, backgroundColor: ink.page },
 });
