@@ -1,111 +1,137 @@
-import { BlurView } from 'expo-blur';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useState } from 'react';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { exerciseById } from '@/entities/program';
-import { clipShape, fonts, meterColors, palette } from '@/shared/config';
+import { EXERCISES_BY_ID, exerciseById, markCantDo, planMeta, type CantDoReason } from '@/entities/program';
+import { CHROME_MAX_FONT_SCALE, clipShape, colors, fonts, target } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { GuidelinesLine } from '@/shared/ui/guidelines-line';
-import { ExercisePreview } from '@/widgets/session-player';
+import { CantDoReasons, ExercisePreview, TITLE_SCALE } from '@/widgets/session-player';
 
-const BLUR = 28;
+const SIDE = 24;
+
+/** The cue as numbered steps: the catalogue writes it as short sentences, each one thing to do. */
+function stepsOf(cue: string): string[] {
+  return cue
+    .split(/(?<=[.!?])\s+/)
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+}
 
 /**
- * One exercise, previewed: its clip, the one line that matters most while
- * doing it, and why it is in the plan. Opened from a move in today's checklist. It starts nothing —
- * the session begins from the today card's own button — and a tap anywhere outside
- * closes it, the same way the day sheet closes.
+ * One move, as a native form sheet: the clip looping edge to edge, its name,
+ * the steps as plain numbered lines, why it is in the plan, and "Can't do
+ * this" in words, which takes it out of the plan with the player's reasons
+ * and store. It starts nothing.
  */
-export function ExerciseSheet({ exerciseId, onClose }: { exerciseId: string | null; onClose: () => void }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
+export function ExerciseSheetPage() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+  const router = useRouter();
   const insets = useSafeAreaInsets();
   const t = useT();
-  if (exerciseId == null) return null;
-  const exercise = exerciseById(exerciseId);
+  const [asking, setAsking] = useState(false);
+  const [saved, setSaved] = useState(false);
+
+  if (id == null || EXERCISES_BY_ID[id] == null) return null;
+  const exercise = exerciseById(id);
+  const wide = clipShape(id) > 1;
+  const steps = stepsOf(exercise.cue);
+
+  const pick = (reason: CantDoReason) => {
+    markCantDo(id, reason);
+    track('exercise_cant_do', { exercise: id, reason: reason === 'hurts' ? 'other' : reason });
+    setAsking(false);
+    setSaved(true);
+  };
 
   return (
-    <Modal transparent visible animationType="fade" statusBarTranslucent onRequestClose={onClose}>
-      <View style={styles.fill}>
-        <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={styles.fill} />
-        <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.fill} onPress={onClose} />
-        <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]} pointerEvents="box-none">
-          <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <ExercisePreview
-              exerciseId={exercise.id}
-              aspectRatio={clipShape(exercise.id)}
-              style={clipShape(exercise.id) > 1 ? styles.wideClip : styles.clip}
-            />
-            <GuidelinesLine />
-            <Text style={[styles.title, { color: colors.foreground }]}>{exercise.title}</Text>
-            <Text style={[styles.cue, { color: meter.caption }]}>{exercise.cue}</Text>
-            {/* Why it is here, said on screen rather than only to VoiceOver. */}
-            {exercise.rationale.length > 0 && (
-              <View style={[styles.why, { backgroundColor: meter.iconTile }]}>
-                <Text style={[styles.whyLabel, { color: meter.caption }]}>{t('pages.exerciseSheet.why')}</Text>
-                <Text style={[styles.whyText, { color: colors.foreground }]}>{exercise.rationale}</Text>
-              </View>
-            )}
-          </View>
+      <ScrollView
+        style={styles.root}
+        contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 20) + 16 }}
+        showsVerticalScrollIndicator={false}>
+        <View style={styles.clip}>
+          <ExercisePreview exerciseId={id} aspectRatio={wide ? 16 / 9 : 9 / 16} style={wide ? styles.wide : styles.tall} />
         </View>
-      </View>
-    </Modal>
+
+        <View style={styles.body}>
+          <View style={styles.top}>
+            <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
+              {exercise.title}
+            </Text>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => router.back()}
+              hitSlop={8}
+              style={({ pressed }) => [styles.close, pressed && styles.pressed]}>
+              <Text style={styles.closeText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+                {t('common.close')}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.steps}>
+            {steps.map((step, index) => (
+              <View key={index} style={styles.step} accessible accessibilityLabel={`${index + 1}. ${step}`}>
+                <Text style={styles.stepNumber}>{index + 1}</Text>
+                <Text style={styles.stepText}>{step}</Text>
+              </View>
+            ))}
+          </View>
+
+          {exercise.rationale.length > 0 && <Text style={styles.why}>{exercise.rationale}</Text>}
+
+          <View style={styles.rule} />
+          {saved ? (
+            <Text style={styles.saved} accessibilityLiveRegion="polite">
+              {t('player.sheet.saved')}
+            </Text>
+          ) : asking ? (
+            <View>
+              <Text accessibilityRole="header" style={styles.section}>
+                {t('player.sheet.cantDoTitle')}
+              </Text>
+              <CantDoReasons equipment={planMeta(id)?.equipment ?? []} onPick={pick} />
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setAsking(false)}
+                style={({ pressed }) => [styles.text, pressed && styles.pressed]}>
+                <Text style={styles.textQuiet}>{t('common.cancel')}</Text>
+              </Pressable>
+            </View>
+          ) : (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setAsking(true)}
+              style={({ pressed }) => [styles.text, pressed && styles.pressed]}>
+              <Text style={styles.textLabel}>{t('player.cantDo.button')}</Text>
+            </Pressable>
+          )}
+        </View>
+      </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  fill: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  dock: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    paddingHorizontal: 14,
-  },
-  card: {
-    borderRadius: 36,
-    borderCurve: 'continuous',
-    padding: 18,
-    gap: 12,
-  },
-  title: {
-    ...fonts.heavy(24, -0.6),
-    textAlign: 'center',
-    marginTop: 4,
-  },
-  cue: {
-    ...fonts.medium(16),
-    lineHeight: 22,
-    textAlign: 'center',
-  },
-  /** Upright, like the clips: the whole body in frame. */
-  clip: {
-    aspectRatio: 9 / 16,
-    height: 340,
-    alignSelf: 'center',
-  },
-  // A wide clip, framed on the feet: the card's whole width.
-  wideClip: {
-    width: '100%',
-  },
-  why: {
-    borderRadius: 20,
-    borderCurve: 'continuous',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    gap: 4,
-  },
-  whyLabel: fonts.semibold(13),
-  whyText: {
-    ...fonts.medium(16),
-    lineHeight: 22,
-  },
+  root: { backgroundColor: colors.surface },
+  clip: { backgroundColor: '#ECF0F1', alignItems: 'center' },
+  tall: { height: 380, aspectRatio: 9 / 16 },
+  wide: { width: '100%' },
+  body: { paddingHorizontal: SIDE, paddingTop: 20, gap: 20 },
+  top: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  title: { flex: 1, ...fonts.bold(28, -0.4), color: colors.text },
+  close: { minHeight: target.min, justifyContent: 'center' },
+  closeText: { ...fonts.semibold(17), color: colors.text },
+  pressed: { opacity: 0.55 },
+  steps: { gap: 14 },
+  step: { flexDirection: 'row', gap: 14 },
+  stepNumber: { ...fonts.bold(19), color: colors.text, minWidth: 20, fontVariant: ['tabular-nums'] },
+  stepText: { flex: 1, ...fonts.regular(19), color: colors.text },
+  why: { ...fonts.regular(19), color: colors.text2 },
+  rule: { height: StyleSheet.hairlineWidth, backgroundColor: colors.separator },
+  section: { ...fonts.semibold(19), color: colors.text, marginBottom: 4 },
+  text: { minHeight: target.min, justifyContent: 'center' },
+  textLabel: { ...fonts.semibold(19), color: colors.text },
+  textQuiet: { ...fonts.medium(19), color: colors.text2 },
+  saved: { ...fonts.regular(19), color: colors.text },
 });

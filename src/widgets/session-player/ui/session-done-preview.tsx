@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react';
 import { DevSettings, Linking, Modal, StyleSheet, View } from 'react-native';
 
 import { todayKey, weekPlan } from '@/entities/program';
-import { palette } from '@/shared/config';
-import { useColorScheme } from '@/shared/lib/theme';
-
-import { SessionDoneSheet } from './session-done-sheet';
+import { Done } from './player/done';
+import { ink } from './player/kit';
 
 /**
  * The development menu's entries. Developer-facing only (the component is
@@ -47,7 +45,7 @@ function previewFor(early: boolean): Preview {
  *
  * The sheet is the session player's and only appears when the last move runs
  * out, which is minutes of standing on one foot per look. This raises the same
- * `SessionDoneSheet` in a page sheet, as the player presents it, with the real
+ * `Done` in a page sheet, as the player presents it, with the real
  * streak and days of care and today's plan for the minutes and the moves. Its
  * answers go nowhere (`preview`): a feedback note or a step back filed from
  * here would change the next real session.
@@ -56,7 +54,6 @@ function previewFor(early: boolean): Preview {
  * bundle folds all of it away.
  */
 export function SessionDonePreview() {
-  const scheme = useColorScheme();
   const [preview, setPreview] = useState<Preview | null>(null);
   /** Up only once the page sheet has finished presenting, so the celebration
    * rises the way it does over a session rather than sliding in with the page. */
@@ -100,11 +97,9 @@ export function SessionDonePreview() {
       presentationStyle="pageSheet"
       onShow={() => setShown(true)}
       onRequestClose={close}>
-      {/* The page the player paints, so the blur behind the sheet has the
-          app's own colour to soften. */}
-      <View style={[styles.page, { backgroundColor: palette[scheme].background }]}>
+      <View style={styles.page}>
         {preview != null && (
-          <SessionDoneSheet
+          <Done
             visible={shown}
             early={preview.early}
             moves={preview.moves}
@@ -121,5 +116,5 @@ export function SessionDonePreview() {
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1 },
+  page: { flex: 1, backgroundColor: ink.page },
 });

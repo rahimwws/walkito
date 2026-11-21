@@ -1,10 +1,8 @@
-import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import { useVideoPlayer, VideoView } from 'expo-video';
-import { Modal, Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { WIDE_CLIPS } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, WIDE_CLIPS, fonts, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { clipFor } from '../config/exercise-clips';
@@ -39,11 +37,12 @@ export function ClipViewer({
         {visible && <ViewerVideo clip={clip} mirrored={mirrored} />}
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={t('common.close')}
           onPress={onClose}
-          hitSlop={12}
-          style={[styles.close, { top: insets.top + 12 }]}>
-          <HugeiconsIcon icon={Cancel01Icon} size={22} color="#FFFFFF" strokeWidth={2} />
+          hitSlop={8}
+          style={({ pressed }) => [styles.close, { top: insets.top + 12 }, pressed && styles.pressed]}>
+          <Text style={styles.closeText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+            {t('common.close')}
+          </Text>
         </Pressable>
       </View>
     </Modal>
@@ -83,13 +82,14 @@ const styles = StyleSheet.create({
   turned: { position: 'absolute', transform: [{ rotate: '90deg' }] },
   close: {
     position: 'absolute',
-    right: 16,
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    left: 16,
+    minHeight: target.min,
+    paddingHorizontal: 18,
+    borderRadius: 999,
     // Dark, because the clips are filmed on white.
     backgroundColor: 'rgba(17,17,20,0.72)',
-    alignItems: 'center',
     justifyContent: 'center',
   },
+  closeText: { ...fonts.semibold(17), color: '#FFFFFF' },
+  pressed: { opacity: 0.55 },
 });

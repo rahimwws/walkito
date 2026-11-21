@@ -1,12 +1,10 @@
-import MinusSignIcon from '@hugeicons/core-free-icons/MinusSignIcon';
-import PlusSignIcon from '@hugeicons/core-free-icons/PlusSignIcon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+
+import { NUMERAL_SCALE, ink } from '../player/kit';
 
 export type StepperProps = {
   value: number;
@@ -30,9 +28,6 @@ export type StepperProps = {
  * correction is a second or two either way.
  */
 export function Stepper({ value, max, onChange }: StepperProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
 
   const bump = (direction: 1 | -1) => {
@@ -40,6 +35,23 @@ export function Stepper({ value, max, onChange }: StepperProps) {
     if (next === value) return;
     Haptics.selectionAsync();
     onChange(next);
+  };
+
+  const button = (direction: 1 | -1) => {
+    const spent = direction === 1 ? value >= max : value <= 0;
+    return (
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={t(direction === 1 ? 'testday.confirm.more' : 'testday.confirm.less')}
+        disabled={spent}
+        onPress={() => bump(direction)}
+        hitSlop={6}
+        style={({ pressed }) => [styles.button, spent && styles.spent, pressed && styles.pressed]}>
+        <Text style={styles.sign} maxFontSizeMultiplier={1}>
+          {direction === 1 ? '+' : '\u2212'}
+        </Text>
+      </Pressable>
+    );
   };
 
   return (
@@ -50,37 +62,11 @@ export function Stepper({ value, max, onChange }: StepperProps) {
       accessibilityValue={{ min: 0, max, now: value }}
       accessibilityActions={[{ name: 'increment' }, { name: 'decrement' }]}
       onAccessibilityAction={(event) => bump(event.nativeEvent.actionName === 'increment' ? 1 : -1)}>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={t('testday.confirm.less')}
-        disabled={value <= 0}
-        onPress={() => bump(-1)}
-        hitSlop={6}
-        style={({ pressed }) => [
-          styles.button,
-          { backgroundColor: meter.iconTile },
-          value <= 0 && styles.spent,
-          pressed && styles.pressed,
-        ]}>
-        <HugeiconsIcon icon={MinusSignIcon} size={24} color={colors.foreground} strokeWidth={2.2} />
-      </Pressable>
-      <Text style={[styles.value, { color: meter.ink }]} numberOfLines={1}>
+      {button(-1)}
+      <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.value} numberOfLines={1}>
         {value}
       </Text>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={t('testday.confirm.more')}
-        disabled={value >= max}
-        onPress={() => bump(1)}
-        hitSlop={6}
-        style={({ pressed }) => [
-          styles.button,
-          { backgroundColor: meter.iconTile },
-          value >= max && styles.spent,
-          pressed && styles.pressed,
-        ]}>
-        <HugeiconsIcon icon={PlusSignIcon} size={24} color={colors.foreground} strokeWidth={2.2} />
-      </Pressable>
+      {button(1)}
     </View>
   );
 }
@@ -88,26 +74,25 @@ export function Stepper({ value, max, onChange }: StepperProps) {
 const BUTTON = 56;
 
 const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 18,
-  },
+  row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 24 },
   button: {
     width: BUTTON,
     height: BUTTON,
     borderRadius: BUTTON / 2,
+    borderWidth: 1,
+    borderColor: ink.rule,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  spent: { opacity: 0.35 },
-  pressed: { opacity: 0.6 },
+  sign: { ...fonts.regular(30), lineHeight: 34, color: ink.text },
+  spent: { opacity: 0.3 },
+  pressed: { opacity: 0.55 },
   value: {
-    minWidth: 96,
+    minWidth: 120,
     textAlign: 'center',
-    ...fonts.heavy(56, -1.5),
-    lineHeight: 64,
+    ...fonts.bold(80, -2),
+    lineHeight: 88,
+    color: ink.text,
     fontVariant: ['tabular-nums'],
   },
 });

@@ -369,6 +369,18 @@ function RootLayoutInner() {
                       page over the tabs, under the same guard, so it goes
                       wherever the tabs go. */}
                   <Stack.Screen name="routine/[id]" options={{ headerShown: false }} />
+                  {/* One move: its clip, how to do it and "Can't do this", as
+                      a native sheet over Session detail or the plan. */}
+                  <Stack.Screen
+                    name="move/[id]"
+                    options={{
+                      presentation: 'formSheet',
+                      headerShown: false,
+                      sheetAllowedDetents: [0.5, 1],
+                      sheetGrabberVisible: true,
+                      sheetCornerRadius: 28,
+                    }}
+                  />
                 </Stack.Protected>
 
                 {/* Where an email button lands (`/open/today`, `/open/plan` …).
