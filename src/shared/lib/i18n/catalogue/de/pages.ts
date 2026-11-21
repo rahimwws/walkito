@@ -77,8 +77,6 @@ export const PAGES_DE = {
   'pages.program.finishCaption': 'Programm abgeschlossen',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
-  'pages.welcome.hint': 'Nach oben wischen',
-  'pages.welcome.a11yHint': 'Nach oben wischen öffnet den Bildschirm, nach unten wischen schließt ihn',
 
   // «Trainiere ~~stütze~~ deine Füße» - the struck verb is what the insole
   // aisle promises, crossed out in the same position English does.
