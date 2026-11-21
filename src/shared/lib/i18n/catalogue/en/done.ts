@@ -21,4 +21,20 @@ export const DONE_EN = {
   'sessionDone.tileSessionA11y': { one: 'Session, {count} minute', other: 'Session, {count} minutes' },
   'sessionDone.tileMovesA11y': { one: '{count} move done', other: '{count} moves done' },
   'sessionDone.tileShowedUpA11y': { one: 'Showed up on {count} day', other: 'Showed up on {count} days' },
+
+  // ── Redesign v1.1: the Done screen ──
+  'sessionDone.dayDone': 'Day {day} done',
+  'sessionDone.title': 'Done',
+  'sessionDone.tileMinutes': 'Minutes',
+  'sessionDone.tileWeek': 'Days this week',
+  'sessionDone.tileWeekA11y': { one: '{count} day this week', other: '{count} days this week' },
+  'sessionDone.feel.question': 'How did that feel?',
+  'sessionDone.feel.easy': 'Easy',
+  'sessionDone.feel.right': 'Just right',
+  'sessionDone.feel.hard': 'Hard',
+  'sessionDone.feel.hurt': 'It hurt',
+  'sessionDone.easier': 'Make tomorrow easier',
+  'sessionDone.easierDone': 'Tomorrow starts one step back.',
+  'sessionDone.tomorrowAt': 'Tomorrow at {time}',
+  'sessionDone.nextOn': 'Next session on {day}',
 } as const satisfies Record<string, SourceEntry>;

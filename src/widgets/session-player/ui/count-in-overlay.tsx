@@ -1,4 +1,3 @@
-import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -14,9 +13,8 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
 
 import { COUNT_IN_FROM, countInAt } from '../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../model/count-in-sound';
@@ -52,7 +50,7 @@ const POP_MS = 420;
 
 /** The number is the screen. Sized to be read from where the phone actually
  * is during a session — propped two metres away — not from arm's length. */
-const NUMBER_SIZE = 168;
+const NUMBER_SIZE = 200;
 
 /**
  * Three, two, one, go — before a move starts.
@@ -79,9 +77,6 @@ const NUMBER_SIZE = 168;
  * swallowing every tap on the player.
  */
 export function CountInOverlay({ from, eyebrow, title, top = 0, onDone }: CountInOverlayProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
 
@@ -206,11 +201,6 @@ export function CountInOverlay({ from, eyebrow, title, top = 0, onDone }: CountI
     <Animated.View
       style={[styles.host, { top }, hostStyle]}
       pointerEvents={counting ? 'auto' : 'none'}>
-      {/* The demonstration stays faintly there behind the number, paused on
-          its first frame — the shape of the move is worth seeing while
-          getting into position for it. */}
-      <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={30} style={styles.fill} />
-      <View style={[styles.fill, styles.scrim, { backgroundColor: colors.background }]} />
 
       <Pressable
         accessibilityRole="button"
@@ -219,24 +209,22 @@ export function CountInOverlay({ from, eyebrow, title, top = 0, onDone }: CountI
         onPress={go}
         style={styles.fill}>
         <View style={styles.middle}>
-          <Text style={[styles.eyebrow, { color: meter.label }]}>{eyebrow}</Text>
-          <Text style={[styles.title, { color: colors.foreground }]} numberOfLines={2}>
+          <Text style={styles.eyebrow}>{eyebrow}</Text>
+          <Text style={styles.title}>
             {title}
           </Text>
           <Animated.Text
             accessibilityLiveRegion="assertive"
             adjustsFontSizeToFit
             numberOfLines={1}
-            style={[styles.number, { color: colors.foreground }, numberStyle]}>
+            style={[styles.number, numberStyle]}>
             {shown > 0 ? String(shown) : t('player.countIn.go')}
           </Animated.Text>
         </View>
 
         <Text
-          style={[
-            styles.caption,
-            { color: meter.caption, paddingBottom: Math.max(insets.bottom, 20) + 24 },
-          ]}>
+          maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}
+          style={[styles.caption, { paddingBottom: Math.max(insets.bottom, 20) + 24 }]}>
           {t('player.countIn.tapToStart')}
         </Text>
       </Pressable>
@@ -247,24 +235,24 @@ export function CountInOverlay({ from, eyebrow, title, top = 0, onDone }: CountI
 const styles = StyleSheet.create({
   /** Over the player's content, under its sheets — the pain question and the
    * closing sheet both sit at 100. */
-  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50 },
+  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: colors.bg },
   fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-  /** The page colour over the blur, not quite opaque. */
-  scrim: { opacity: 0.74 },
   middle: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 28,
   },
-  eyebrow: fonts.semibold(16, -0.1),
+  eyebrow: { ...fonts.semibold(19), color: colors.text2 },
   title: {
-    ...fonts.heavy(28, -0.7),
+    ...fonts.bold(28, -0.4),
+    color: colors.text,
     textAlign: 'center',
     marginTop: 6,
   },
   number: {
-    ...fonts.heavy(NUMBER_SIZE, -4),
+    ...fonts.bold(NUMBER_SIZE, -4),
+    color: colors.accent,
     lineHeight: NUMBER_SIZE * 1.12,
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
@@ -272,7 +260,8 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   caption: {
-    ...fonts.medium(15),
+    ...fonts.medium(17),
+    color: colors.text2,
     textAlign: 'center',
   },
 });

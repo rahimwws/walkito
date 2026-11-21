@@ -22,4 +22,20 @@ export const DONE_RU = {
     few: '{count} дня заботы',
     many: '{count} дней заботы',
   },
+
+  // ── Redesign v1.1: the Done screen ──
+  'sessionDone.dayDone': 'День {day} пройден',
+  'sessionDone.title': 'Готово',
+  'sessionDone.tileMinutes': 'Минуты',
+  'sessionDone.tileWeek': 'Дней на неделе',
+  'sessionDone.tileWeekA11y': { one: '{count} день на этой неделе', few: '{count} дня на этой неделе', many: '{count} дней на этой неделе' },
+  'sessionDone.feel.question': 'Как ощущения?',
+  'sessionDone.feel.easy': 'Легко',
+  'sessionDone.feel.right': 'В самый раз',
+  'sessionDone.feel.hard': 'Тяжело',
+  'sessionDone.feel.hurt': 'Было больно',
+  'sessionDone.easier': 'Сделать завтра полегче',
+  'sessionDone.easierDone': 'Завтра начнём на шаг легче.',
+  'sessionDone.tomorrowAt': 'Завтра в {time}',
+  'sessionDone.nextOn': 'Следующее занятие: {day}',
 };

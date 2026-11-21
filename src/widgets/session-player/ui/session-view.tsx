@@ -1,7 +1,8 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
-import ArrowShrink01Icon from '@hugeicons/core-free-icons/ArrowShrink01Icon';
+import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
+import NextIcon from '@hugeicons/core-free-icons/NextIcon';
+import PreviousIcon from '@hugeicons/core-free-icons/PreviousIcon';
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
-import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
 import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
 import ReplayIcon from '@hugeicons/core-free-icons/ReplayIcon';
 import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
@@ -17,15 +18,28 @@ import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, Image, Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import {
+  AccessibilityInfo,
+  Alert,
+  AppState,
+  Image,
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from 'react-native';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 import Animated, {
   Easing,
   ReduceMotion,
-  interpolate,
   runOnJS,
   useAnimatedReaction,
   useAnimatedStyle,
+  useDerivedValue,
+  useReducedMotion,
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
@@ -64,15 +78,14 @@ import {
 } from '@/entities/program';
 import { useIntake } from '@/entities/profile';
 import { askForPlans, clearBrowsingLapsed, useLookingAround, useSessionsLocked } from '@/entities/purchase';
-import { PRIMARY, WIDE_CLIPS, fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, WIDE_CLIPS, colors as tokens, fonts, meterColors, palette, radius, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { setSoundPrefs, useSoundPrefs } from '@/shared/lib/sound';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
-import { AnimatedNumber } from '@/shared/ui/animated-number';
-import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
+import { NavGlass } from '@/shared/ui/glass';
+import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { illustrationFor, thumbFor } from '../config/exercise-posters';
@@ -80,6 +93,7 @@ import { ClipViewer } from './clip-viewer';
 import { mirroredFor } from '../model/mirror';
 import { BreakOverlay } from './break-overlay';
 import { CountInOverlay } from './count-in-overlay';
+import { CountdownRing } from './test-day/countdown-ring';
 import { SessionDoneSheet } from './session-done-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
 import { CantDoSheet, PainRuleSheet } from './session-sheets';
@@ -108,6 +122,9 @@ import { SessionTimerActivity, type SessionActivityProps } from './session-activ
  */
 const SECONDS_PER_MOVE = 60;
 
+/** The big timer's numeral (spec §3.2, Numeral XL). Longer readings drop to 72. */
+const NUMERAL = 96;
+
 /** The row the back arrow and the pain button sit in. Tall enough for the
  * centred two-line title: the day, then its length and its moves. */
 const HEADER_HEIGHT = 48;
@@ -115,22 +132,6 @@ const HEADER_HEIGHT = 48;
 /** The side margin of the header and of everything text-shaped below it. */
 const SIDE = 20;
 
-/** One header control's box. A fixed square rather than whatever the glyph
- * measures, so the tap target is the same on every control and the title can
- * be inset by an exact amount. */
-const HEADER_BUTTON = 36;
-
-/** Three controls sit on the right: sound, the pain rule and "it hurts". */
-const HEADER_ACTIONS = 3;
-
-/**
- * How far the centred title keeps from each edge.
- *
- * The same on both sides, or it would not be centred: the right-hand group is
- * the wider of the two, so it sets the inset for the left as well. The back
- * arrow and the controls can therefore never run under the words.
- */
-const TITLE_INSET = SIDE - 8 + HEADER_BUTTON * HEADER_ACTIONS + 4;
 
 /** The segmented bar under the header: one segment per move. */
 const SEGMENT_HEIGHT = 4;
@@ -138,19 +139,6 @@ const SEGMENT_GAP = 4;
 /** The bar with the air above and below it. The count-in begins under it, so
  * where the session stands stays in view while it counts. */
 const PROGRESS_BLOCK = 4 + SEGMENT_HEIGHT + 12;
-
-/**
- * The stage: a full-width panel in the clips' own studio colour, with the
- * upright clip contained inside it.
- *
- * It used to be a 9:16 card floating in the middle of the page, which on a
- * phone is a narrow, rounded slab with a lot of dark either side of it — read
- * as an odd card rather than as the screen. The panel spans the width instead,
- * and the clip's backdrop is the panel's colour, so the bands either side of
- * the body are not bars but more of the same studio.
- */
-const STAGE_MARGIN = 12;
-const STAGE_RADIUS = 28;
 
 /** The studio backdrop the clips are filmed on, so a clip fitted inside the
  * stage with room to spare blends into it rather than sitting on bars. */
@@ -184,54 +172,23 @@ function EdgeFade({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-/** Readable from where the phone actually is during a session — propped
- * against a wall a couple of metres away — and no longer the biggest thing on
- * the screen. The demonstration is. */
-const CLOCK_SIZE = 64;
 /** The window height from which a wide clip's stage grows to 4:3 and the next
  * move is shown above the button: every iPhone but the SE. */
 const ROOMY_SCREEN = 800;
-/** The phase and foot pills over the clock. */
-const PILL_HEIGHT = 38;
-/** SwiftUI hosts do not self-size reliably inside flex, so the digits get a
- * fixed box to sit in — the same ratio `HeroStat` settled on. */
-const CLOCK_BOX = CLOCK_SIZE * 1.14;
-/** One second, minus room to land before the next tick arrives. A longer roll
- * would still be moving when the number it is animating to is already stale. */
-const CLOCK_ROLL_SECONDS = 0.3;
-
-/** The lane the button keeps for itself under the expanded stage. */
-const CONTINUE_BLOCK = 92;
-
 /** How long the finished session stays on the Lock Screen. Half a minute reads
  * as the end of something; the four hours the default policy gives reads as a
  * bug, which is what it looked like. */
 const FINISHED_LINGER_MS = 30_000;
 
-/** Corner radius the stage relaxes to once it is nearly the whole screen — the
- * same curve over 700pt reads tighter than it does over 400. */
-const STAGE_RADIUS_OPEN = 34;
-
-/** Long enough to follow the corner travelling, short enough that it never
- * feels like a screen transition. The curve is the app's own decelerate. */
-const EXPAND_MS = 420;
-const EXPAND_EASING = Easing.bezier(0.23, 1, 0.32, 1);
-
-/** The chip the expand control sits in. White enough to guarantee the black
- * glyph reads over any frame the clip happens to be showing. */
-const EXPAND_CHIP = 36;
-
-/** The text chips on the stage — position, foot, and the time when expanded. */
-const STAGE_CHIP = 28;
-/** Over the studio backdrop, which is light in both schemes, so the chips are
- * drawn in the light scheme's colours whatever the app is in. */
-const CHIP_FILL = 'rgba(255,255,255,0.92)';
-const CHIP_INK = palette.light.foreground;
-/** Edges the white chips against the drawings, which are white themselves. */
-const CHIP_SHADOW = '0px 1px 6px rgba(17, 17, 20, 0.16)';
 /** The glyph over a clip that did not load: small, so the line under it still
  * sits where the clip would have been. */
 const CLIP_FAILED_ICON = 40;
+
+/** The big numeral: whole seconds under a minute ("42"), then "1:05". */
+function shortClock(seconds: number): string {
+  if (seconds < 60) return String(seconds);
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+}
 
 /** "01:00", counting down. Padded on both halves so the digits never reflow. */
 function clock(seconds: number): string {
@@ -401,7 +358,6 @@ function workPill(
   return { label: t(PHASE_KEY[rep.phase]), easing: false };
 }
 
-type Frame = { x: number; y: number; width: number; height: number };
 
 /**
  * One step of a playlist: an exercise and how long to hold it.
@@ -617,8 +573,6 @@ function SessionRun({
   // Left sore foot: the clips flipped to match. See `mirroredFor`.
   const mirrored = mirroredFor(useIntake()?.side);
   const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
   const t = useT();
@@ -777,18 +731,6 @@ function SessionRun({
    * frame of a drag. */
   const progress = useSharedValue(resume?.fraction ?? 0);
 
-  /** 0 collapsed, 1 full-screen. Drives the card's frame and both sets of
-   * chrome off one number, so nothing can arrive out of step with the corner
-   * it is supposed to be following. */
-  const open = useSharedValue(0);
-  const [expanded, setExpanded] = useState(false);
-  /** Where the stage sits inside the root, measured — the collapsed panel is
-   * exactly this rect, and the animation needs it in the same coordinates as
-   * the full-screen one. */
-  const [stage, setStage] = useState<Frame | null>(null);
-  /** This view's own box. See the note where the rects are built. */
-  const [box, setBox] = useState<Frame | null>(null);
-
   const move = swaps[step] != null ? (plan[step]?.exercise?.title ?? moves[step]) : moves[step];
   const moveCount = moves.length;
   /** The press that ends the session, which both the label and the colour of
@@ -855,9 +797,6 @@ function SessionRun({
   const showPose = wideClip && drawing != null && (media === 'pose' || (media == null && clipFailed));
   const nextMove = swaps[step + 1] != null ? (plan[step + 1]?.exercise?.title ?? moves[step + 1]) : moves[step + 1];
   const nextThumb = thumbFor(plan[step + 1]?.exercise?.id ?? '');
-  /** A phone with the height for a taller stage and the row of what is next.
-   * On a small one the clip keeps its own 16:9 and the readout its room. */
-  const roomy = height >= ROOMY_SCREEN;
   /** A wide clip opens on its own screen, turned to fill it, rather than
    * growing the card. */
   const [wideViewer, setWideViewer] = useState(false);
@@ -1496,7 +1435,7 @@ function SessionRun({
    * out from under a gesture that is still going.
    */
   useAnimatedReaction(
-    () => progress.value >= 1 && open.value < 0.5,
+    () => progress.value >= 1,
     (done, was) => {
       if (done && !was) runOnJS(advance)();
     },
@@ -1513,8 +1452,11 @@ function SessionRun({
   finishedRef.current = finished;
   const stepRef = useRef(step);
   stepRef.current = step;
+  /** Ended by hand ("End session"): nothing left to come back to, so the
+   * place is not written again on the way out. */
+  const endedRef = useRef(false);
   const saveResume = useCallback(() => {
-    if (resumeId == null || finishedRef.current) return;
+    if (resumeId == null || finishedRef.current || endedRef.current) return;
     writeResume(resumeId, planRef.current.length, {
       step: stepRef.current,
       fraction: progress.value,
@@ -1621,71 +1563,7 @@ function SessionRun({
     activity.current.update(activitySnapshot(!running));
   }, [step, running, activitySnapshot]);
 
-  const setOpen = useCallback(
-    (next: boolean) => {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-      setExpanded(next);
-      open.value = withTiming(next ? 1 : 0, {
-        duration: EXPAND_MS,
-        easing: EXPAND_EASING,
-        reduceMotion: ReduceMotion.System,
-      });
-    },
-    [open],
-  );
-
-  // A wide clip never grows the card: it opens on its own screen instead. A
-  // card left open from an upright clip closes when a wide one comes up.
-  useEffect(() => {
-    if (wideClip && expanded) setOpen(false);
-  }, [wideClip, expanded, setOpen]);
-
-  // The overlay this view sits inside already pads for the notch, so every
-  // rect below is measured against *this* view rather than the window. Reading
-  // the screen's height here is what put the expanded card a safe area too low
-  // and ran its bottom edge underneath the Continue button.
-  const boxWidth = box?.width ?? width;
-  const boxHeight = box?.height ?? height;
-
   const floor = Math.max(insets.bottom, SIDE);
-
-  /**
-   * The full-screen rect: from the very top down to the button.
-   *
-   * Edge to edge and from the very top: open has to read as the whole screen,
-   * not as the same panel a little taller, which at rest already spans the
-   * width. The bottom stops short, because the button below it is a real
-   * object in the layout rather than an overlay.
-   */
-  const full: Frame = {
-    x: 0,
-    y: 0,
-    width: boxWidth,
-    height: Math.max(boxHeight - floor - CONTINUE_BLOCK, stage?.height ?? 0),
-  };
-
-  /**
-   * The resting rect is the stage itself, exactly as the column measured it.
-   * The clip is contained inside it, so an upright clip on a wide panel sits
-   * in the middle of its own backdrop with nothing to mark where it ends.
-   */
-  const rest: Frame | null = stage;
-
-  const cardStyle = useAnimatedStyle(() => {
-    if (rest == null) return { opacity: 0 };
-    // Named `openness` rather than `t`, which is the translator in every file
-    // now. `progress` — the name the same rename took elsewhere — is already
-    // the playhead in this component, so the two would have shadowed.
-    const openness = open.value;
-    return {
-      opacity: 1,
-      left: interpolate(openness, [0, 1], [rest.x, full.x]),
-      top: interpolate(openness, [0, 1], [rest.y, full.y]),
-      width: interpolate(openness, [0, 1], [rest.width, full.width]),
-      height: interpolate(openness, [0, 1], [rest.height, full.height]),
-      borderRadius: interpolate(openness, [0, 1], [STAGE_RADIUS, STAGE_RADIUS_OPEN]),
-    };
-  });
 
   /**
    * The move is done and Continue can be pressed. Expanded, nothing advances
@@ -1859,57 +1737,6 @@ function SessionRun({
     setPlaying(true);
   }, [countIn]);
 
-  /**
-   * The one control at the bottom of this screen, in both states.
-   *
-   * Defined once rather than written twice. Collapsed it sits in the column;
-   * expanded it sits under the video — but it is the same button doing the
-   * same job, and two copies of it is how the collapsed state ended up still
-   * showing the old three-icon transport long after the button had replaced it
-   * everywhere else.
-   */
-  const ctaButton = (
-    <PrimaryButton
-      // Green only on Finish. The single colour change in the whole screen,
-      // spent on the press that ends the session.
-      tint={
-        ctaState === 'ready' && last
-          ? { fill: meter.positive, label: primaryButton.dark.label }
-          : undefined
-      }
-      label={
-        ctaState === 'finished'
-          ? t('player.cta.done')
-          : ctaState === 'ready'
-            ? last
-              ? t('widgets.sessionFinish')
-              : t('widgets.sessionContinue')
-            : ctaState === 'running'
-              ? t('player.cta.pause')
-              : t('player.cta.resume')
-      }
-      icon={ctaState === 'running' ? PauseIcon : ctaState === 'paused' ? PlayIcon : undefined}
-      onPress={() => {
-        switch (ctaState) {
-          case 'running':
-            pauseByHand();
-            return;
-          case 'paused':
-            resumeByHand();
-            return;
-          case 'ready':
-            setPlaying(true);
-            advance();
-            return;
-          case 'finished':
-            // The sheet is what closes a finished session and tells the host.
-            if (!closedDone.current) setCelebrating(true);
-            return;
-        }
-      }}
-    />
-  );
-
   /** The drawing crossfades over the clip, in the same frame. */
   const poseOn = useSharedValue(0);
   useEffect(() => {
@@ -1921,516 +1748,432 @@ function SessionRun({
   }, [showPose, poseOn]);
   const poseStyle = useAnimatedStyle(() => ({ opacity: poseOn.value }));
 
-  /** The readings, which the expanded state exists to get rid of. */
-  const chromeStyle = useAnimatedStyle(() => ({ opacity: 1 - open.value }));
-  /** Exit and Continue, which only the expanded state has. */
-  const fullStyle = useAnimatedStyle(() => ({ opacity: open.value }));
-  /** The expand control itself goes with the chrome — expanded, Exit is the
-   * way out and a second control pointing the other way is just clutter. */
-  const expandStyle = useAnimatedStyle(() => ({ opacity: 1 - open.value }));
   /** The current segment of the bar under the header, filling with the move.
    * Off the same playhead the clock reads, on the UI thread. */
   const segmentFill = useAnimatedStyle(() => ({
     width: `${Math.min(Math.max(progress.value, 0), 1) * 100}%`,
   }));
 
-  return (
-    <View style={styles.root} onLayout={(event) => setBox(event.nativeEvent.layout)}>
-      <Animated.View
-        style={[styles.column, { paddingBottom: floor }, chromeStyle]}
-        pointerEvents={expanded ? 'none' : 'auto'}>
-        <View style={styles.header}>
-          {/* Centred over the whole row, inset by the same amount from both
-              edges so the controls either side can never run under it. Two
-              short lines rather than one long one: the day, then its length
-              and its moves. Drawn first so the buttons sit on top of it. */}
-          <View pointerEvents="none" style={styles.headerTitle}>
-            <Text
-              accessibilityRole="header"
-              style={[styles.title, { color: colors.foreground }]}
-              numberOfLines={1}
-              adjustsFontSizeToFit
-              minimumFontScale={0.8}>
-              {title ?? t('session.day', { day: day.day })}
-            </Text>
-            <Text
-              style={[styles.meta, { color: meter.caption }]}
-              numberOfLines={1}
-              adjustsFontSizeToFit
-              minimumFontScale={0.75}>
-              {t('player.header.meta', {
-                minutes: t('session.minutes', { count: day.minutes }),
-                moves: t('session.moveCount', { count: moves.length }),
-              })}
-            </Text>
-          </View>
+  const reduceMotion = useReducedMotion();
+  /** What is left of the move, for the ring. Off the playhead the clock reads. */
+  const ringLeft = useDerivedValue(() => 1 - Math.min(Math.max(progress.value, 0), 1));
+  /** The first sentence of the catalogue's cue: the one line to read from the floor. */
+  const cueLine = current?.exercise?.cue.split(/(?<=[.!?])\s+/)[0] ?? null;
+  const sideNow = finished ? null : (pillSide ?? side?.side ?? null);
 
-          {/* A fixed box, not the stretched row it used to be: the arrow's
-              target is exactly the square around it, and nothing else in the
-              header shares it. */}
+  /** Back a move, or to the start of the first one, through a fresh count. */
+  const stepBack = useCallback(() => {
+    void Haptics.selectionAsync();
+    setPlaying(true);
+    if (goTo(step - 1)) return;
+    progress.value = 0;
+    deadline.value = 0;
+    setElapsed(0);
+    player.currentTime = 0;
+    countIn(false);
+  }, [goTo, step, progress, deadline, player, countIn]);
+
+  /** On to the next move now; past the last one the session is over. */
+  const skipMove = useCallback(() => {
+    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    setPlaying(true);
+    advance();
+  }, [advance]);
+
+  /**
+   * The close button: "Pause or end?". Pausing is what leaving always was
+   * (the place is kept and the next opening resumes it); ending also forgets
+   * the place. The move holds still while the question is up.
+   */
+  const askClose = useCallback(() => {
+    if (finished) {
+      leave();
+      return;
+    }
+    pauseForQuestion();
+    Alert.alert(
+      t('player.close.title'),
+      t('player.close.body'),
+      [
+        { text: t('player.close.keepGoing'), style: 'cancel', onPress: resumeAfterPain },
+        { text: t('player.close.pause'), onPress: leave },
+        {
+          text: t('player.close.end'),
+          style: 'destructive',
+          onPress: () => {
+            endedRef.current = true;
+            clearResume(resumeId);
+            leave();
+          },
+        },
+      ],
+      { cancelable: true, onDismiss: resumeAfterPain },
+    );
+  }, [finished, leave, pauseForQuestion, resumeAfterPain, resumeId, t]);
+
+  /** VoiceOver hears each move as it starts: its name, the time on it, and what is next. */
+  const announcedFor = useRef<string | null>(null);
+  useEffect(() => {
+    if (!running || move == null) return;
+    const key = `${step}:${move}`;
+    if (announcedFor.current === key) return;
+    announcedFor.current = key;
+    const time = t('session.secondsLeftA11y', { count: moveLeft });
+    AccessibilityInfo.announceForAccessibility(
+      nextMove != null
+        ? t('player.a11y.move', { name: move, time, next: nextMove })
+        : t('player.a11y.moveLast', { name: move, time }),
+    );
+    // Once per move, when its clock starts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [running, step, move]);
+
+  const center =
+    ctaState === 'running'
+      ? { icon: PauseIcon, label: t('player.cta.pause'), onPress: pauseByHand }
+      : ctaState === 'paused'
+        ? { icon: PlayIcon, label: t('player.cta.resume'), onPress: resumeByHand }
+        : ctaState === 'ready'
+          ? {
+              icon: last ? Tick02Icon : NextIcon,
+              label: last ? t('widgets.sessionFinish') : t('widgets.sessionContinue'),
+              onPress: () => {
+                setPlaying(true);
+                advance();
+              },
+            }
+          : {
+              icon: Tick02Icon,
+              label: t('player.cta.done'),
+              onPress: () => {
+                if (!closedDone.current) setCelebrating(true);
+              },
+            };
+
+  const numeral = repCount != null ? t('player.repCount', repCount) : shortClock(remaining);
+  const numeralSize = numeral.length <= 2 ? NUMERAL : 72;
+  const unit =
+    repCount != null
+      ? t('player.unit.reps', { count: repCount.reps })
+      : remaining < 60
+        ? t('testday.secondsLeft', { count: remaining })
+        : null;
+  const ringSize = Math.min(width - 120, height >= ROOMY_SCREEN ? 216 : 176);
+
+  return (
+    <View style={styles.root}>
+      <View style={styles.header}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={t('player.close.a11y')}
+          onPress={askClose}
+          style={({ pressed }) => [styles.headerButton, pressed && styles.pressed]}>
+          <HugeiconsIcon icon={Cancel01Icon} size={26} color={tokens.text} strokeWidth={2} />
+        </Pressable>
+        <Text
+          accessibilityRole="header"
+          accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
+          style={styles.position}
+          numberOfLines={1}
+          maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+          {title != null && moveCount <= 1 ? title : t('player.chip.position', { index, total: moveCount })}
+        </Text>
+        <View style={styles.headerActions}>
+          <Pressable
+            accessibilityRole="switch"
+            accessibilityState={{ checked: sound.tempo }}
+            accessibilityLabel={sound.tempo ? t('player.tempo.on') : t('player.tempo.off')}
+            onPress={() => {
+              Haptics.selectionAsync();
+              setSoundPrefs({ tempo: !sound.tempo });
+            }}
+            style={({ pressed }) => [styles.headerButton, pressed && styles.pressed]}>
+            <HugeiconsIcon icon={sound.tempo ? VolumeHighIcon : VolumeOffIcon} size={24} color={tokens.text} strokeWidth={1.8} />
+          </Pressable>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={t('common.back')}
-            onPress={leave}
-            hitSlop={8}
-            style={({ pressed }) => [styles.headerButton, pressed && { opacity: 0.5 }]}>
-            <HugeiconsIcon
-              icon={ArrowLeft02Icon}
-              size={25}
-              color={colors.foreground}
-              strokeWidth={2}
-            />
+            accessibilityLabel={t('player.painRule.a11y')}
+            onPress={() => {
+              pauseForQuestion();
+              setRuleOpen(true);
+            }}
+            style={({ pressed }) => [styles.headerButton, pressed && styles.pressed]}>
+            <HugeiconsIcon icon={InformationCircleIcon} size={24} color={tokens.text} strokeWidth={1.8} />
           </Pressable>
+        </View>
+      </View>
 
-          {/* The way to say it hurts, opposite the way out. Always there rather
-              than behind a menu: the moment it is needed is the moment nobody
-              goes looking for it. Not on a finished session. */}
-          {!finished && (
-            <View style={styles.headerActions}>
-              {/* The tempo out loud, on or off. The same switch as Settings. */}
-              <Pressable
-                accessibilityRole="switch"
-                accessibilityState={{ checked: sound.tempo }}
-                accessibilityLabel={sound.tempo ? t('player.tempo.on') : t('player.tempo.off')}
-                onPress={() => {
-                  Haptics.selectionAsync();
-                  setSoundPrefs({ tempo: !sound.tempo });
-                }}
-                hitSlop={4}
-                style={({ pressed }) => [styles.headerButton, pressed && { opacity: 0.5 }]}>
-                <HugeiconsIcon
-                  icon={sound.tempo ? VolumeHighIcon : VolumeOffIcon}
-                  size={22}
-                  color={colors.foreground}
-                  strokeWidth={1.8}
-                />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={t('player.painRule.a11y')}
-                onPress={() => {
-                  pauseForQuestion();
-                  setRuleOpen(true);
-                }}
-                hitSlop={4}
-                style={({ pressed }) => [styles.headerButton, pressed && { opacity: 0.5 }]}>
-                <HugeiconsIcon icon={InformationCircleIcon} size={22} color={colors.foreground} strokeWidth={1.8} />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={t('widgets.painButton')}
-                onPress={() => {
-                  // A count under way is dropped, not paused: the move is picked
-                  // up again through a fresh one when the question is answered.
-                  pauseForQuestion();
-                  setAskingPain(true);
-                }}
-                hitSlop={4}
-                style={({ pressed }) => [styles.headerButton, pressed && { opacity: 0.5 }]}>
-                <HugeiconsIcon icon={BandageIcon} size={23} color={colors.foreground} strokeWidth={1.8} />
-              </Pressable>
+      {/* One segment per move: done in violet, the current one filling. */}
+      <View
+        accessible
+        accessibilityRole="progressbar"
+        accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
+        accessibilityValue={{ min: 0, max: moveCount, now: finished ? moveCount : step }}
+        style={styles.segments}>
+        {moves.map((_, at) => (
+          <View key={at} style={styles.segment}>
+            {at < step || finished ? (
+              <View style={[styles.segmentFill, styles.segmentDone]} />
+            ) : at === step ? (
+              <Animated.View style={[styles.segmentFill, segmentFill]} />
+            ) : null}
+          </View>
+        ))}
+      </View>
+
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={[styles.body, { paddingBottom: floor }]}
+        showsVerticalScrollIndicator={false}
+        bounces={false}>
+        {(carryOn || swapNote != null) && (
+          <Text style={styles.note} accessibilityLiveRegion="polite">
+            {carryOn ? t('widgets.painCarryOn') : swapNote}
+          </Text>
+        )}
+
+        {/* The clip, looping and muted, in a large rounded card. */}
+        <View style={[styles.clip, { minHeight: Math.round(height * 0.3) }, wideClip && styles.clipWide]}>
+          <VideoView
+            style={[styles.video, mirrored && styles.mirrored]}
+            player={player}
+            nativeControls={false}
+            contentFit={wideClip ? 'cover' : 'contain'}
+          />
+          {!wideClip && (
+            <View pointerEvents="none" style={styles.edgeRow}>
+              <View style={styles.edgeSpacer} />
+              <View style={styles.edgeBox}>
+                <EdgeFade side="left" />
+                <EdgeFade side="right" />
+              </View>
+              <View style={styles.edgeSpacer} />
+            </View>
+          )}
+          {wideClip && drawing != null && (
+            <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
+              <Image source={drawing} resizeMode="contain" style={styles.poseImage} accessibilityIgnoresInvertColors />
+            </Animated.View>
+          )}
+          {clipFailed && !showPose && (
+            <View style={styles.clipFallback} pointerEvents="none">
+              <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+                <HugeiconsIcon icon={SmartphoneLostWifiIcon} size={CLIP_FAILED_ICON} color={tokens.text} strokeWidth={1.6} />
+              </View>
+              <Text style={styles.clipFallbackText}>{t('widgets.clipFailed')}</Text>
+            </View>
+          )}
+
+          {canReplay && (
+            <View style={styles.replay}>
+              <NavGlass style={styles.chip} variant="clear" interactive>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={t('player.voice.replay')}
+                  onPress={replayInstruction}
+                  style={styles.chipHit}>
+                  <HugeiconsIcon icon={ReplayIcon} size={22} color={tokens.text} strokeWidth={2} />
+                </Pressable>
+              </NavGlass>
+            </View>
+          )}
+
+          {/* Video or pose: one picture of the move at a time. */}
+          {wideClip && drawing != null && !finished && (
+            <View style={styles.mediaSwitch} pointerEvents="box-none">
+              <NavGlass style={styles.mediaTrack}>
+                <View accessibilityRole="tablist" style={styles.mediaRow}>
+                  {(['video', 'pose'] as const).map((option) => {
+                    const on = (option === 'pose') === showPose;
+                    return (
+                      <Pressable
+                        key={option}
+                        accessibilityRole="tab"
+                        accessibilityState={{ selected: on }}
+                        onPress={() => {
+                          if (on) return;
+                          Haptics.selectionAsync();
+                          setMedia(option);
+                        }}
+                        style={[styles.mediaOption, on && styles.mediaOptionOn]}>
+                        <Text
+                          style={[styles.mediaLabel, { color: on ? tokens.onInk : tokens.text }]}
+                          maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+                          {t(option === 'pose' ? 'player.media.pose' : 'player.media.video')}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+              </NavGlass>
+            </View>
+          )}
+
+          {wideClip && !showPose && (
+            <View style={styles.expand}>
+              <NavGlass style={styles.chip} variant="clear" interactive>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={t('widgets.expandDemo')}
+                  onPress={() => setWideViewer(true)}
+                  style={styles.chipHit}>
+                  <HugeiconsIcon icon={ArrowExpandDiagonal01Icon} size={22} color={tokens.text} strokeWidth={2} />
+                </Pressable>
+              </NavGlass>
             </View>
           )}
         </View>
 
-        {/* One segment per move: done in the brand violet, the current one
-            filling with the move, the rest empty track. The shape of the whole
-            session at a glance, which the header's "3 moves" only states. */}
-        <View
-          accessible
-          accessibilityRole="progressbar"
-          accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
-          accessibilityValue={{ min: 0, max: moveCount, now: finished ? moveCount : step }}
-          style={styles.segments}>
-          {moves.map((_, at) => (
-            <View key={at} style={[styles.segment, { backgroundColor: meter.track }]}>
-              {at < step || finished ? (
-                <View style={[styles.segmentFill, styles.segmentDone]} />
-              ) : at === step ? (
-                <Animated.View style={[styles.segmentFill, segmentFill]} />
-              ) : null}
-            </View>
-          ))}
-        </View>
-
-        {carryOn && (
-          <Text style={[styles.carryOn, { color: meter.caption }]}>{t('widgets.painCarryOn')}</Text>
-        )}
-        {swapNote != null && !carryOn && (
-          <Text style={[styles.carryOn, { color: meter.caption }]}>{swapNote}</Text>
-        )}
-
-        {/* The stage is drawn over this, not in it — it has to travel to a rect
-            this column does not contain. What stays here is the space it
-            occupies at rest, which is also how its resting rect is measured:
-            the panel at rest is exactly this box. */}
-        {/* A wide clip's stage is its own shape, right under the header, as
-            workout players lay a video out; the room left goes above the
-            button. An upright clip's stage takes the room itself. */}
-        <View
-          style={[styles.stage, wideClip && styles.stageWide, wideClip && roomy && styles.stageWideRoomy]}
-          onLayout={(event) => setStage(event.nativeEvent.layout)}
-        />
-
-        <View style={[styles.readout, wideClip && styles.readoutWide]}>
-          {/* What to do this second, in a pill big enough to read from the
-              floor, and the foot beside it. The row keeps its height for the
-              whole of a planned move, so the stage does not jump each time a
-              rest takes the pills away. */}
-          {hasPills && (
+        <View style={styles.info}>
+          <Text accessibilityLabel={spokenMove} style={styles.move}>
+            {move}
+          </Text>
+          {cueLine != null && !finished && <Text style={styles.cue}>{cueLine}</Text>}
+          {(pill != null || sideNow != null) && (
             <View style={styles.pills}>
               {pill != null && (
-                <View
-                  style={[
-                    styles.pill,
-                    { backgroundColor: pill.easing ? meter.track : PRIMARY },
-                  ]}>
+                <View style={[styles.pill, pill.easing ? styles.pillSoft : styles.pillStrong]}>
                   <Text
                     accessibilityLiveRegion="polite"
-                    style={[styles.pillText, { color: pill.easing ? colors.foreground : '#FFFFFF' }]}
+                    style={[styles.pillText, { color: pill.easing ? tokens.text : tokens.onInk }]}
                     numberOfLines={1}>
                     {pill.label}
                   </Text>
                 </View>
               )}
-              {pillSide != null && (
-                <View style={[styles.pill, { backgroundColor: meter.track }]}>
-                  <View style={pillSide === 'left' ? styles.mirrored : undefined}>
-                    <HugeiconsIcon icon={FootprintsIcon} size={18} color={colors.foreground} strokeWidth={2} />
+              {sideNow != null && (
+                <View style={[styles.pill, styles.pillSoft]}>
+                  <View style={sideNow === 'left' ? styles.mirrored : undefined}>
+                    <HugeiconsIcon icon={FootprintsIcon} size={20} color={tokens.text} strokeWidth={2} />
                   </View>
-                  <Text style={[styles.pillText, { color: colors.foreground }]} numberOfLines={1}>
-                    {t(SIDE_KEY[pillSide])}
+                  <Text style={[styles.pillText, { color: tokens.text }]} numberOfLines={1}>
+                    {t(SIDE_KEY[sideNow])}
                   </Text>
                 </View>
               )}
             </View>
           )}
-          {/* The rolling treatment the rest of the app uses for a figure that
-              changes. Dimmed while paused, so a clock that has stopped looks
-              stopped from across the room.
-
-              That host offers nothing to read, either, which is why the label
-              is on the wrapper. The `timer` role is what tells VoiceOver this
-              is a value that keeps moving and has to be polled, not read once. */}
-          <View
-            accessible
-            accessibilityRole="timer"
-            accessibilityLabel={
-              repCount != null
-                ? t('player.line.plain', repCount)
-                : t('session.secondsLeftA11y', { count: remaining })
-            }
-            // Hidden under a rest or a change of foot, which have their own
-            // countdown: through the blur a second clock read as a ghost.
-            style={[styles.clockBox, repCount != null && styles.clockRow, breakSegment != null && styles.hidden]}>
-            <AnimatedNumber
-              text={repCount != null ? t('player.repCount', repCount) : clock(remaining)}
-              value={repCount != null ? repCount.rep : remaining}
-              color={ctaState === 'paused' ? meter.caption : colors.foreground}
-              fontSize={CLOCK_SIZE}
-              weight="heavy"
-              duration={CLOCK_ROLL_SECONDS}
-            />
-            {repCount != null && (
-              <Text style={[styles.repUnit, { color: meter.label }]}>
-                {t('player.unit.reps', { count: repCount.reps })}
-              </Text>
-            )}
-          </View>
-          {/* The name is all the screen has room to show. Why this move is in
-              the session, the cue for it, and the load note on the day the load
-              changes all ride along with it for VoiceOver — see the note on
-              `spokenMove`. Shrunk to fit rather than wrapped, so a long name
-              does not take height from the stage on one move and give it back
-              on the next. */}
-          <Text
-            accessibilityLabel={spokenMove}
-            style={[styles.move, { color: colors.foreground }]}
-            numberOfLines={1}
-            adjustsFontSizeToFit
-            minimumFontScale={0.7}>
-            {move}
-          </Text>
-          {/* "Up · Rep 4 of 12" while a tempo move is running, and once the
-              session is over the same slot says so. See `counter`. */}
           {counter != null && (
-            <Text
-              accessibilityLabel={counter.spoken}
-              style={[
-                styles.counter,
-                reading != null && !finished && styles.counterStrong,
-                { color: reading != null && !finished ? colors.foreground : meter.label },
-              ]}>
+            <Text accessibilityLabel={counter.spoken} style={styles.counter}>
               {counter.text}
             </Text>
           )}
-          {/* The weight, said where it can be read: on the move it belongs to,
-              on the days the dose asks for it. */}
           {!finished && (current?.addWeight === true || loadNote != null) && (
-            <View style={styles.load}>
-              <FluentIcon name="backpack" size={18} />
-              <Text style={[styles.loadText, { color: meter.label }]}>
-                {current?.addWeight === true ? t('player.load.backpack') : loadNote}
-              </Text>
-            </View>
+            <Text style={styles.counter}>{current?.addWeight === true ? t('player.load.backpack') : loadNote}</Text>
           )}
-          {!finished && current?.exercise != null && (
+        </View>
+
+        {/* The big timer: the time left on this part of the move, or the rep. */}
+        <View
+          accessible
+          accessibilityRole="timer"
+          accessibilityLabel={
+            repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })
+          }
+          style={[styles.timer, breakSegment != null && styles.hidden]}>
+          {reduceMotion ? (
+            <View style={styles.numeralBox}>
+              <Text style={[styles.numeral, { fontSize: numeralSize, lineHeight: numeralSize * 1.1 }, ctaState === 'paused' && styles.dim]}>
+                {numeral}
+              </Text>
+              {unit != null && <Text style={styles.unit}>{unit}</Text>}
+            </View>
+          ) : (
+            <CountdownRing size={ringSize} stroke={10} left={ringLeft} tone={RING_TONE}>
+              <Text
+                style={[styles.numeral, { fontSize: numeralSize, lineHeight: numeralSize * 1.1 }, ctaState === 'paused' && styles.dim]}
+                numberOfLines={1}
+                adjustsFontSizeToFit>
+                {numeral}
+              </Text>
+              {unit != null && (
+                <Text style={styles.unit} numberOfLines={1} adjustsFontSizeToFit>
+                  {unit}
+                </Text>
+              )}
+            </CountdownRing>
+          )}
+        </View>
+
+        {!finished && current?.exercise != null && (
+          <View style={styles.asides}>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                pauseForQuestion();
+                setAskingPain(true);
+              }}
+              style={({ pressed }) => [styles.aside, pressed && styles.pressed]}>
+              <Text style={styles.asideText}>{t('widgets.painButton')}</Text>
+            </Pressable>
             <Pressable
               accessibilityRole="button"
               onPress={() => {
                 pauseForQuestion();
                 setAskingCantDo(true);
               }}
-              hitSlop={8}
-              style={({ pressed }) => [styles.cantDo, pressed && { opacity: 0.5 }]}>
-              <Text style={[styles.cantDoText, { color: meter.caption }]}>{t('player.cantDo.button')}</Text>
+              style={({ pressed }) => [styles.aside, pressed && styles.pressed]}>
+              <Text style={styles.asideText}>{t('player.cantDo.button')}</Text>
             </Pressable>
-          )}
-        </View>
-
-        {/* What comes after this move, as workout players show it: the stage
-            keeps the one picture of the move being done, and this row says
-            what to get ready for. Under an upright clip the stage takes the
-            room instead. */}
-        {wideClip && roomy && nextMove != null && !finished && (
-          <View accessible style={[styles.next, { backgroundColor: colors.card }]}>
-            {nextThumb != null && (
-              <Image source={nextThumb} resizeMode="cover" style={styles.nextThumb} accessibilityIgnoresInvertColors />
-            )}
-            <View style={styles.nextText}>
-              <Text style={[styles.nextLabel, { color: meter.caption }]}>{t('player.countIn.nextUp')}</Text>
-              <Text style={[styles.nextTitle, { color: colors.foreground }]} numberOfLines={1}>
-                {nextMove}
-              </Text>
-            </View>
           </View>
         )}
 
-        {/* The whole point of the Live Activity, said once where it is
-            actionable. Gated on the activity having actually started: an
-            unconditional line here would be telling someone who has Live
-            Activities switched off to go and stare at a Lock Screen that will
-            stay blank. */}
-        {onLockScreen && (
-          <View style={styles.hint}>
-            <HugeiconsIcon
-              icon={SquareLock02Icon}
-              size={15}
-              color={meter.unit}
-              strokeWidth={2}
-            />
-            <Text style={[styles.hintText, { color: meter.unit }]}>
-              {t('widgets.lockScreenHint')}
-            </Text>
-          </View>
-        )}
-
-        {/* Where the three-icon transport used to be. A scrubber offers four
-            answers — back, pause, forward, drag — to a screen that only ever
-            has one thing to do next. */}
-        <View style={styles.transport}>
-          <View style={styles.transportMain}>{ctaButton}</View>
-          {showSetDone && (
+        {/* Back · Pause · Skip, on the navigation layer. */}
+        <NavGlass style={styles.controls}>
+          <View style={styles.controlsRow}>
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={t('player.cta.setDone')}
-              onPress={skipSegment}
-              style={({ pressed }) => [styles.skip, { backgroundColor: colors.card }, pressed && { opacity: 0.6 }]}>
-              <HugeiconsIcon icon={Tick02Icon} size={22} color={colors.foreground} strokeWidth={2} />
-              <Text style={[styles.skipText, { color: colors.foreground }]} numberOfLines={1} adjustsFontSizeToFit>
-                {t('player.cta.setDone')}
-              </Text>
-            </Pressable>
-          )}
-        </View>
-      </Animated.View>
-
-      {/* Absolute, so one interpolation carries it from the stage to the whole
-          screen. Positioned rather than scaled: a scaled video is a stretched
-          video, and a scaled corner radius is the wrong radius all the way. */}
-      <Animated.View
-        style={[styles.card, { backgroundColor: wideClip ? WIDE_BACKDROP : CLIP_BACKDROP }, cardStyle]}>
-        {wideClip ? (
-          // A wide clip: the stage is the clip's own shape (see `stageWide`),
-          // so the rounded card is the video's own edge.
-          <VideoView
-            style={[styles.video, mirrored && styles.mirrored]}
-            player={player}
-            nativeControls={false}
-            contentFit={expanded ? 'contain' : 'cover'}
-          />
-        ) : (
-          <VideoView
-            style={[styles.video, mirrored && styles.mirrored]}
-            player={player}
-            nativeControls={false}
-            // Contain, never cover: the whole body stays in frame. The panel is
-            // wider than the clip, and the clip's backdrop is the panel's colour,
-            // so the room either side reads as more of the studio, not as bars.
-            contentFit="contain"
-          />
-        )}
-
-        {/* The clips are not all filmed on the same grey — one is bluer, one
-            warmer — so no single panel colour meets every clip's edge without a
-            seam. Each side of the clip melts into the panel instead. */}
-        {!wideClip && (
-          <View pointerEvents="none" style={styles.edgeRow}>
-            <View style={styles.edgeSpacer} />
-            <View style={styles.edgeBox}>
-              <EdgeFade side="left" />
-              <EdgeFade side="right" />
-            </View>
-            <View style={styles.edgeSpacer} />
-          </View>
-        )}
-
-        {/* Over the player, not instead of it: the stage keeps its size and its
-            corner, and the line sits in the space the clip would have filled.
-            The glyph above it is in the light scheme's colours like the chips,
-            because the studio is light in both. Gone once the session is over. */}
-        {wideClip && drawing != null && (
-          <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
-            <Image source={drawing} resizeMode="cover" style={styles.poseImage} accessibilityIgnoresInvertColors />
-          </Animated.View>
-        )}
-
-        {clipFailed && !showPose && (
-          <View style={styles.clipFallback} pointerEvents="none">
-            {!finished && (
-              <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-                <HugeiconsIcon icon={SmartphoneLostWifiIcon} size={CLIP_FAILED_ICON} color={CHIP_INK} strokeWidth={1.6} />
+              accessibilityLabel={t('player.cta.backA11y')}
+              onPress={stepBack}
+              disabled={finished}
+              style={({ pressed }) => [styles.side, pressed && styles.pressed, finished && styles.dim]}>
+              <View style={styles.sideCircle}>
+                <HugeiconsIcon icon={PreviousIcon} size={24} color={tokens.text} strokeWidth={2} />
               </View>
-            )}
-            <Text style={[styles.clipFallbackText, { color: CHIP_INK }]}>
-              {t('widgets.clipFailed')}
-            </Text>
-          </View>
-        )}
-
-        {/* Facts about the move, on the move: where it sits in the session and
-            which foot. Expanded, the readout under the stage is gone, so the
-            time left on the move joins them — the one place it is shown then. */}
-        <View style={styles.chips} pointerEvents="none">
-          {moveCount > 1 && (
-            <View
-              accessible
-              accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
-              style={styles.textChip}>
-              <Text style={styles.textChipLabel}>
-                {t('player.chip.position', { index, total: moveCount })}
+              <Text style={styles.sideLabel} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+                {t('player.cta.back')}
               </Text>
-            </View>
-          )}
-          {sideText != null && !finished && (
-            <View style={styles.textChip}>
-              <Text style={styles.textChipLabel}>{sideText}</Text>
-            </View>
-          )}
-          <Animated.View
-            accessibilityElementsHidden={!expanded}
-            importantForAccessibility={expanded ? 'auto' : 'no-hide-descendants'}
-            style={[styles.textChip, fullStyle]}>
-            <Text
-              accessibilityLabel={t('session.secondsLeftA11y', { count: moveLeft })}
-              style={[styles.textChipLabel, styles.tabular]}>
-              {clock(moveLeft)}
-            </Text>
-          </Animated.View>
-        </View>
-
-        {/* Say it again: the instruction, replayed on demand. Bottom-left,
-            clear of the position chips and of the expand control. */}
-        {canReplay && (
-          <Animated.View style={[styles.replay, expandStyle]} pointerEvents={expanded ? 'none' : 'auto'}>
+            </Pressable>
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={t('player.voice.replay')}
-              onPress={replayInstruction}
-              hitSlop={10}
-              style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
-              <HugeiconsIcon icon={ReplayIcon} size={19} color={CHIP_INK} strokeWidth={2.2} />
+              accessibilityLabel={center.label}
+              onPress={() => {
+                void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+                center.onPress();
+              }}
+              style={({ pressed }) => [styles.main, pressed && styles.pressed]}>
+              <HugeiconsIcon icon={center.icon} size={32} color={tokens.onInk} strokeWidth={2.2} />
             </Pressable>
-          </Animated.View>
-        )}
-
-        {/* Black on white, because the clip behind it is a pale studio render
-            and a white glyph would vanish into it. The chip is what makes that
-            safe on the frames where it is not — it carries its own background
-            rather than trusting the video. */}
-        {/* Video or drawing, on the picture it switches. */}
-        {wideClip && drawing != null && !finished && (
-          <View style={styles.mediaSwitch} pointerEvents="box-none">
-            <View accessibilityRole="tablist" style={styles.mediaTrack}>
-              {(['video', 'pose'] as const).map((option) => {
-                const on = (option === 'pose') === showPose;
-                return (
-                  <Pressable
-                    key={option}
-                    accessibilityRole="tab"
-                    accessibilityState={{ selected: on }}
-                    onPress={() => {
-                      if (on) return;
-                      Haptics.selectionAsync();
-                      setMedia(option);
-                    }}
-                    hitSlop={6}
-                    style={[styles.mediaOption, on && styles.mediaOptionOn]}>
-                    <Text style={[styles.mediaLabel, { color: on ? '#FFFFFF' : CHIP_INK }]}>
-                      {t(option === 'pose' ? 'player.media.pose' : 'player.media.video')}
-                    </Text>
-                  </Pressable>
-                );
-              })}
-            </View>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('player.cta.skipA11y')}
+              onPress={skipMove}
+              disabled={finished}
+              style={({ pressed }) => [styles.side, pressed && styles.pressed, finished && styles.dim]}>
+              <View style={styles.sideCircle}>
+                <HugeiconsIcon icon={NextIcon} size={24} color={tokens.text} strokeWidth={2} />
+              </View>
+              <Text style={styles.sideLabel} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+                {t('player.cta.skip')}
+              </Text>
+            </Pressable>
           </View>
+        </NavGlass>
+
+        {showSetDone ? (
+          <PrimaryButton label={t('player.cta.setDone')} icon={Tick02Icon} onPress={skipSegment} />
+        ) : (
+          nextMove != null &&
+          !finished && (
+            <View style={styles.next} accessible>
+              {nextThumb != null && (
+                <Image source={nextThumb} resizeMode="cover" style={styles.nextThumb} accessibilityIgnoresInvertColors />
+              )}
+              <Text style={styles.nextText}>{t('player.next', { name: nextMove })}</Text>
+            </View>
+          )
         )}
-
-        {/* Full screen is the clip's, so it goes while the drawing is up. */}
-        <Animated.View
-          style={[styles.expand, expandStyle, showPose && styles.hidden]}
-          pointerEvents={expanded || showPose ? 'none' : 'auto'}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={t('widgets.expandDemo')}
-            // A wide clip opens in the system's own full-screen player, which
-            // turns with the phone; an upright one grows to fill the screen.
-            onPress={() => (wideClip ? setWideViewer(true) : setOpen(true))}
-            hitSlop={10}
-            style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
-            <HugeiconsIcon
-              icon={ArrowExpandDiagonal01Icon}
-              size={19}
-              color={CHIP_INK}
-              strokeWidth={2.2}
-            />
-          </Pressable>
-        </Animated.View>
-
-        {/* The upsize control's pair, in the same chip, the same weight and —
-            deliberately — the same seat. One takes the demonstration
-            full-screen and this one gives it back, so they are the same button
-            reversed; moving the return trip to a different corner made it read
-            as a way out of the session rather than out of the size. They
-            crossfade in place. */}
-        <Animated.View
-          style={[styles.expand, fullStyle]}
-          pointerEvents={expanded ? 'auto' : 'none'}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={t('widgets.collapseDemo')}
-            onPress={() => setOpen(false)}
-            hitSlop={10}
-            style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
-            <HugeiconsIcon
-              icon={ArrowShrink01Icon}
-              size={19}
-              color={CHIP_INK}
-              strokeWidth={2.2}
-            />
-          </Pressable>
-        </Animated.View>
-      </Animated.View>
+      </ScrollView>
 
       {wideClip && current?.exercise != null && (
         <ClipViewer
@@ -2441,32 +2184,14 @@ function SessionRun({
         />
       )}
 
-      {/* Under the stage, in the same seat it holds collapsed, at the same
-          size. Laid over the video instead it became part of the
-          demonstration — something to look at rather than the one thing to
-          press — and it covered the feet, which on half of these exercises is
-          the part being demonstrated. */}
-      <Animated.View
-        style={[styles.continueRow, { bottom: floor }, fullStyle]}
-        pointerEvents={expanded ? 'auto' : 'none'}>
-        {ctaButton}
-      </Animated.View>
-
-      {/* Over everything the move is made of — the stage, the readout, the
-          button — and under the header and the bar, so Back and the pain
-          button stay where they always are and the session's position stays
-          in view. Expanded there is no header to keep clear: the stage runs
-          to the top and the count covers it all. */}
       <CountInOverlay
         from={finished ? null : countFrom}
         eyebrow={countNext ? t('player.countIn.nextUp') : t('player.countIn.getReady')}
         title={move ?? ''}
-        top={expanded ? 0 : HEADER_HEIGHT + PROGRESS_BLOCK}
+        top={HEADER_HEIGHT + PROGRESS_BLOCK}
         onDone={() => setCountFrom(null)}
       />
 
-      {/* The rest between sets and the change of foot, in the same seat as
-          the count-in and for the same reason. */}
       <BreakOverlay
         segment={breakSegment}
         id={breakSegment == null ? null : `${step}:${reading?.index ?? 0}`}
@@ -2476,7 +2201,8 @@ function SessionRun({
         running={running}
         playing={playing}
         move={move ?? ''}
-        top={expanded ? 0 : HEADER_HEIGHT + PROGRESS_BLOCK}
+        exerciseId={current?.exercise?.id ?? null}
+        top={HEADER_HEIGHT + PROGRESS_BLOCK}
         bottom={floor}
         onSkip={skipSegment}
         onPause={pauseByHand}
@@ -2509,22 +2235,16 @@ function SessionRun({
         early={endedEarly}
         moves={moveCount}
         minutes={doseMinutes}
-        // Every host but the pain check's relief moves files the run when the
-        // sheet closes; that one passes no `onFinish` and records nothing.
+        dayNumber={override == null && title == null ? day.day : null}
         counts={onFinish != null}
         feedback={feedback}
         startedAt={startedAt.current.getTime()}
         onClose={() => {
-          // Once. The sheet takes a moment to fade and stays pressable while
-          // it does, so Done — or the scrim behind it — can land twice, and
-          // each landing used to finish the session again: two records, two
-          // rows on the server, one answer counted twice.
+          // Once: Close can land twice while the screen fades, and each
+          // landing used to finish the session again.
           if (closedDone.current) return;
           closedDone.current = true;
           setCelebrating(false);
-          // A host with nothing to do on finishing still has to be left: the
-          // pain check's relief session passed no `onFinish`, and closing its
-          // celebration left the finished player on screen.
           if (onFinish != null) onFinish();
           else onBack();
         }}
@@ -2533,315 +2253,175 @@ function SessionRun({
   );
 }
 
+const RING_TONE = { fill: tokens.accent, track: tokens.surface2 };
+
 const styles = StyleSheet.create({
   /** A left sore foot: the demonstration flipped to match. */
-  mirrored: {
-    transform: [{ scaleX: -1 }],
-  },
-  root: {
-    flex: 1,
-  },
-  column: {
-    flex: 1,
-  },
+  mirrored: { transform: [{ scaleX: -1 }] },
+  root: { flex: 1, backgroundColor: tokens.bg },
+  pressed: { opacity: 0.6 },
+  dim: { opacity: 0.45 },
+  hidden: { opacity: 0 },
   header: {
     height: HEADER_HEIGHT,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    // The glyphs sit centred in their boxes, so the row's edge is pulled in
-    // by the slack around them and the arrow still lands on the side margin.
-    paddingHorizontal: SIDE - 8,
+    paddingHorizontal: SIDE - 12,
   },
   headerButton: {
-    width: HEADER_BUTTON,
-    height: 44,
+    width: target.min,
+    height: target.min,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  headerActions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  headerTitle: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: TITLE_INSET,
-    right: TITLE_INSET,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: fonts.bold(16, -0.2),
-  meta: {
-    ...fonts.semibold(12),
-    marginTop: 1,
+  headerActions: { flexDirection: 'row', alignItems: 'center' },
+  position: {
+    flex: 1,
+    ...fonts.semibold(19),
+    color: tokens.text,
+    textAlign: 'center',
+    fontVariant: ['tabular-nums'],
   },
   segments: {
     flexDirection: 'row',
     gap: SEGMENT_GAP,
     marginTop: 4,
     marginBottom: 12,
-    paddingHorizontal: STAGE_MARGIN + 4,
+    paddingHorizontal: SIDE,
   },
   segment: {
     flex: 1,
     height: SEGMENT_HEIGHT,
     borderRadius: SEGMENT_HEIGHT / 2,
     overflow: 'hidden',
+    backgroundColor: tokens.separator,
   },
   segmentFill: {
     height: SEGMENT_HEIGHT,
     borderRadius: SEGMENT_HEIGHT / 2,
-    backgroundColor: PRIMARY,
+    backgroundColor: tokens.accent,
   },
-  segmentDone: {
-    width: '100%',
-  },
-  carryOn: {
-    ...fonts.regular(14),
-    textAlign: 'center',
-    paddingHorizontal: SIDE,
-    paddingBottom: 8,
-  },
-  stage: {
+  segmentDone: { width: '100%' },
+  scroll: { flex: 1 },
+  body: { flexGrow: 1, paddingHorizontal: SIDE, gap: 16 },
+  note: { ...fonts.regular(17), color: tokens.text2, textAlign: 'center' },
+  clip: {
     flex: 1,
-    marginHorizontal: STAGE_MARGIN,
-  },
-  card: {
-    position: 'absolute',
+    borderRadius: radius.card,
     borderCurve: 'continuous',
-    // The player is a native view. Nothing clips it but an ancestor that says
-    // so — a radius on the VideoView alone leaves square corners on iOS.
     overflow: 'hidden',
+    backgroundColor: CLIP_BACKDROP,
   },
-  video: {
-    flex: 1,
-  },
-  stageWide: {
-    flex: 0,
-    aspectRatio: 16 / 9,
-  },
-  /** 4:3: the clip loses an eighth at each side and nothing at the feet.
-   * Checked against every clip's still: the move stays in the middle three
-   * quarters, at worst a hand on the wall meets the edge. Full screen shows
-   * the clip whole. */
-  stageWideRoomy: { aspectRatio: 4 / 3 },
-  /** The drawings are made on white. */
-  pose: { backgroundColor: '#FFFFFF' },
-  poseImage: { width: '100%', height: '100%' },
-  mediaSwitch: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 8,
-    alignItems: 'center',
-  },
-  mediaTrack: {
-    height: EXPAND_CHIP,
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 3,
-    borderRadius: EXPAND_CHIP / 2,
-    backgroundColor: CHIP_FILL,
-    boxShadow: CHIP_SHADOW,
-  },
-  mediaOption: {
-    height: EXPAND_CHIP - 6,
-    minWidth: 64,
-    paddingHorizontal: 14,
-    borderRadius: (EXPAND_CHIP - 6) / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mediaOptionOn: { backgroundColor: CHIP_INK },
-  mediaLabel: fonts.bold(13),
-  next: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    marginHorizontal: SIDE,
-    marginBottom: 12,
-    padding: 8,
-    paddingRight: 16,
-    borderRadius: 20,
-    borderCurve: 'continuous',
-  },
-  nextThumb: {
-    width: 64,
-    aspectRatio: 16 / 9,
-    borderRadius: 12,
-    borderCurve: 'continuous',
-    backgroundColor: '#FFFFFF',
-  },
-  nextText: { flex: 1, gap: 1 },
-  nextLabel: fonts.semibold(12),
-  nextTitle: fonts.bold(16, -0.2),
+  clipWide: { backgroundColor: WIDE_BACKDROP },
+  video: { flex: 1 },
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },
   edgeFade: { position: 'absolute', top: 0, bottom: 0, width: EDGE_FADE },
+  pose: { backgroundColor: '#FFFFFF' },
+  poseImage: { width: '100%', height: '100%' },
   clipFallback: {
     position: 'absolute',
+    top: 0,
     left: 0,
     right: 0,
-    top: 0,
     bottom: 0,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 24,
     gap: 10,
+    backgroundColor: tokens.surface2,
   },
-  clipFallbackText: {
-    ...fonts.medium(15),
-    textAlign: 'center',
-  },
-  chips: {
-    position: 'absolute',
-    top: 12,
-    left: 12,
-    // Clear of the expand chip in the opposite corner.
-    right: 12 + EXPAND_CHIP + 8,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 6,
-  },
-  textChip: {
-    height: STAGE_CHIP,
-    paddingHorizontal: 11,
-    borderRadius: STAGE_CHIP / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: CHIP_FILL,
-    boxShadow: CHIP_SHADOW,
-  },
-  textChipLabel: {
-    ...fonts.semibold(13),
-    color: CHIP_INK,
-  },
-  tabular: {
-    fontVariant: ['tabular-nums'],
-  },
-  expand: {
-    position: 'absolute',
-    top: 8,
-    right: 8,
-  },
-  replay: {
-    position: 'absolute',
-    bottom: 8,
-    left: 8,
-  },
+  clipFallbackText: { ...fonts.regular(17), color: tokens.text, textAlign: 'center' },
   chip: {
-    width: EXPAND_CHIP,
-    height: EXPAND_CHIP,
-    borderRadius: EXPAND_CHIP / 2,
+    width: target.min,
+    height: target.min,
+    borderRadius: target.min / 2,
+    overflow: 'hidden',
+  },
+  chipHit: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  replay: { position: 'absolute', left: 10, bottom: 10 },
+  expand: { position: 'absolute', right: 10, top: 10 },
+  mediaSwitch: { position: 'absolute', left: 0, right: 0, bottom: 10, alignItems: 'center' },
+  mediaTrack: { borderRadius: 24, overflow: 'hidden' },
+  mediaRow: { flexDirection: 'row', padding: 4, gap: 4 },
+  mediaOption: {
+    minHeight: 40,
+    minWidth: 80,
+    paddingHorizontal: 16,
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: CHIP_FILL,
-    boxShadow: CHIP_SHADOW,
   },
-  readoutWide: { flex: 1, justifyContent: 'center' },
-  readout: {
-    alignItems: 'center',
-    paddingHorizontal: SIDE,
-    paddingTop: 10,
-    paddingBottom: 16,
-  },
-  clockBox: {
-    height: CLOCK_BOX,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  move: {
-    ...fonts.bold(22, -0.4),
-    textAlign: 'center',
-    alignSelf: 'stretch',
-  },
-  counter: {
-    ...fonts.semibold(15, 0.1),
-    textAlign: 'center',
-    marginTop: 4,
-  },
-  /** The set, during a planned move: read from the floor too. */
-  counterStrong: fonts.bold(18, -0.1),
-  hidden: { opacity: 0 },
-  /** "4/10 reps": the count and its unit on one line. */
-  clockRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    gap: 8,
-  },
-  repUnit: {
-    ...fonts.bold(20, -0.2),
-    paddingBottom: CLOCK_SIZE * 0.22,
-  },
-  pills: {
-    height: PILL_HEIGHT,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    marginBottom: 2,
-  },
+  mediaOptionOn: { backgroundColor: tokens.ink },
+  mediaLabel: fonts.semibold(17),
+  info: { gap: 6 },
+  move: { ...fonts.bold(28, -0.4), color: tokens.text },
+  cue: { ...fonts.regular(19), color: tokens.text2 },
+  pills: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 4 },
   pill: {
-    height: PILL_HEIGHT,
-    borderRadius: PILL_HEIGHT / 2,
-    borderCurve: 'continuous',
+    minHeight: 40,
+    borderRadius: 20,
     paddingHorizontal: 16,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
   },
-  pillText: fonts.heavy(19, -0.2),
-  load: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 8,
-    marginTop: 8,
+  pillStrong: { backgroundColor: tokens.accent },
+  pillSoft: { backgroundColor: tokens.surface2 },
+  pillText: fonts.semibold(19),
+  counter: { ...fonts.semibold(19), color: tokens.text },
+  timer: { alignItems: 'center' },
+  numeralBox: { alignItems: 'center' },
+  numeral: {
+    ...fonts.bold(NUMERAL, -2),
+    color: tokens.text,
+    fontVariant: ['tabular-nums'],
+    textAlign: 'center',
   },
-  loadText: {
-    ...fonts.medium(14),
-    lineHeight: 19,
-    flexShrink: 1,
-  },
-  cantDo: {
-    alignSelf: 'center',
-    marginTop: 8,
-  },
-  cantDoText: fonts.semibold(15),
-  hint: {
-    flexDirection: 'row',
+  unit: { ...fonts.medium(17), color: tokens.text2, marginTop: -4 },
+  asides: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 12 },
+  aside: {
+    minHeight: target.min,
+    paddingHorizontal: 18,
+    borderRadius: target.min / 2,
+    backgroundColor: tokens.surface,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 6,
-    paddingHorizontal: SIDE,
-    paddingBottom: 12,
   },
-  hintText: fonts.medium(13),
-  transport: {
-    paddingHorizontal: SIDE,
+  asideText: { ...fonts.semibold(17), color: tokens.text },
+  controls: { borderRadius: 32, borderCurve: 'continuous', overflow: 'hidden' },
+  controlsRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    justifyContent: 'space-evenly',
+    paddingVertical: 10,
   },
-  transportMain: {
-    flex: 1,
+  side: { alignItems: 'center', gap: 4, minWidth: 72 },
+  sideCircle: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: tokens.surface2,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  skip: {
-    width: 92,
-    height: PRIMARY_BUTTON_HEIGHT,
-    borderRadius: PRIMARY_BUTTON_HEIGHT / 2,
+  sideLabel: { ...fonts.medium(17), color: tokens.text },
+  main: {
+    width: 72,
+    height: 72,
+    borderRadius: 36,
+    backgroundColor: tokens.ink,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  next: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 12 },
+  nextThumb: {
+    width: 56,
+    aspectRatio: 16 / 9,
+    borderRadius: 8,
     borderCurve: 'continuous',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 2,
-    paddingHorizontal: 8,
+    backgroundColor: tokens.surface2,
   },
-  skipText: fonts.semibold(13),
-  continueRow: {
-    position: 'absolute',
-    left: SIDE,
-    right: SIDE,
-  },
+  nextText: { flexShrink: 1, ...fonts.medium(17), color: tokens.text2 },
 });

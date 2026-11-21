@@ -80,9 +80,9 @@ import {
   weekPath,
 } from '../model/plan-view';
 import { asProgramDay, playlistOf } from '../model/week-view';
-import { ExerciseSheet } from './exercise-sheet';
 import { GoalPlan } from './goal-plan';
 import { HelpsCard } from './helps-card';
+import { SessionDetail, detailOf, type SessionDetailProps } from './session-detail';
 import { moveLook } from './kind-tone';
 import { TodayCard } from './today-card';
 import { TodayDoneCard } from './today-done-card';
@@ -148,6 +148,10 @@ type Running =
       playlist: PlaylistStep[];
       exerciseIds: string[];
       minutes: number;
+      /** Shown first, before the player: what the session holds and Start.
+       * Null once Start is pressed, and for a start that skips it (an email
+       * link, the short version). */
+      detail: Pick<SessionDetailProps, 'title' | 'chips' | 'moves' | 'why' | 'startLabel'> | null;
     }
   | { kind: 'test'; review: boolean };
 
@@ -216,7 +220,11 @@ export function ProgramPage() {
 
   const [session, setSession] = useState<Running | null>(null);
   const [run, setRun] = useState(0);
-  const [preview, setPreview] = useState<string | null>(null);
+  /** A move's sheet, as a native form sheet over the tabs. */
+  const openMove = useCallback(
+    (id: string) => router.push({ pathname: '/move/[id]', params: { id } }),
+    [router],
+  );
 
   /**
    * A finished day's cards wait, the first time, for the session pane to be
@@ -267,12 +275,22 @@ export function ProgramPage() {
   );
 
   const startToday = useCallback(
-    (short = false) => {
+    (short = false, withDetail = false) => {
       if (adjusted.type === 'test') {
         start({ kind: 'test', review: false });
         return;
       }
       const planned = short ? twoMinuteVersion(adjusted) : adjusted;
+      const minutesLabel = t('session.minutes', { count: planned.minutes });
+      const day = weekday(today, 'long');
+      const facts = withDetail
+        ? detailOf(
+            t,
+            planned.exercises,
+            logFor(todayDayNumber(Date.now()))?.exercisesDone ?? [],
+            (id) => exerciseById(id).title,
+          )
+        : null;
       start({
         kind: 'session',
         day: asProgramDay(planned),
@@ -280,9 +298,23 @@ export function ProgramPage() {
         playlist: playlistOf(planned.exercises),
         exerciseIds: planned.exercises.map((e) => e.id),
         minutes: planned.minutes,
+        detail:
+          facts == null
+            ? null
+            : {
+                title: t('player.detail.title', {
+                  day: day.charAt(0).toLocaleUpperCase(language) + day.slice(1),
+                  minutes: minutesLabel,
+                }),
+                chips: facts.chips,
+                moves: facts.moves,
+                why: planReasonLine(t, adjusted.reason),
+                startLabel: t('player.detail.start', { minutes: minutesLabel }),
+              },
       });
     },
-    [adjusted, start, today],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [adjusted, start, today, t, language],
   );
 
   /** A retest asked for from the day page: today's test, if today has one and
@@ -315,7 +347,7 @@ export function ProgramPage() {
     // An id the catalogue does not have (a link made for a later build, or a
     // typo in a campaign) still opens the plan, just without a card.
     if (linkRequest.kind === 'exercise') {
-      if (EXERCISES_BY_ID[linkRequest.id] != null) setPreview(linkRequest.id);
+      if (EXERCISES_BY_ID[linkRequest.id] != null) openMove(linkRequest.id);
       return;
     }
     if (linkRequest.kind === 'test') {
@@ -325,7 +357,7 @@ export function ProgramPage() {
     if (doneToday) return;
     if (linkRequest.minutes != null && adjusted.type !== 'test') setMinutes(linkRequest.minutes);
     setPendingStart(true);
-  }, [linkRequest, program, adjusted.type, doneToday]);
+  }, [linkRequest, program, adjusted.type, doneToday, openMove]);
   useEffect(() => {
     if (!pendingStart) return;
     setPendingStart(false);
@@ -516,7 +548,7 @@ export function ProgramPage() {
         onLayout={(event) => {
           goalTop.current = event.nativeEvent.layout.y;
         }}>
-        <GoalPlan view={goal} nodes={path} today={today} onPreview={setPreview} />
+        <GoalPlan view={goal} nodes={path} today={today} onPreview={openMove} />
       </Animated.View>
     ) : null;
 
@@ -568,7 +600,7 @@ export function ProgramPage() {
               moveCount={adjusted.exercises.length}
               minutes={minutes}
               onMinutes={setMinutes}
-              onStart={() => startToday()}
+              onStart={() => startToday(false, true)}
               onShort={() => startToday(true)}
               note={planReasonLine(t, adjusted.reason)}
               tests={{
@@ -589,7 +621,7 @@ export function ProgramPage() {
 
           {/* What the level is made of: a tap previews a move, as the chips
               on the old card did. */}
-          {checklist.length > 0 && <TodayMoves moves={checklist} onPreview={setPreview} />}
+          {checklist.length > 0 && <TodayMoves moves={checklist} onPreview={openMove} />}
 
           {/* Today first, whatever the day; then where it leads. */}
           {goalBlock}
@@ -640,18 +672,30 @@ export function ProgramPage() {
         </Animated.ScrollView>
       </Animated.View>
 
-      <ExerciseSheet exerciseId={preview} onClose={() => setPreview(null)} />
-
       {/* The player sits under the status bar on the pane's inset; the test
           day keeps its own insets and paints its own page, so it gets the
           pane bare. */}
       <Animated.View
         style={[
           styles.pane,
-          { backgroundColor: colors.background, paddingTop: session?.kind === 'test' ? 0 : insets.top },
+          {
+            backgroundColor: colors.background,
+            paddingTop: session?.kind === 'test' || (session?.kind === 'session' && session.detail != null) ? 0 : insets.top,
+          },
           sessionPane,
         ]}>
-        {session?.kind === 'session' && (
+        {session?.kind === 'session' && session.detail != null && (
+          <SessionDetail
+            {...session.detail}
+            onBack={() => program?.closeDetail()}
+            onPreview={openMove}
+            onStart={() => {
+              setSession({ ...session, detail: null });
+              setRun((n) => n + 1);
+            }}
+          />
+        )}
+        {session?.kind === 'session' && session.detail == null && (
           <SessionView
             key={run}
             day={session.day}

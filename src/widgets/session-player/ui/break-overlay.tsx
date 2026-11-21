@@ -3,10 +3,9 @@ import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
 import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   cancelAnimation,
   Easing,
@@ -15,15 +14,17 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withSequence,
+  useReducedMotion,
   withTiming,
   type SharedValue,
 } from 'react-native-reanimated';
 
 import type { Segment } from '@/entities/program';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, colors, fonts, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
+import { PrimaryButton } from '@/shared/ui/primary-button';
+
+import { posterFor, thumbFor } from '../config/exercise-posters';
 
 import { playCountInCue, preloadCountInSounds } from '../model/count-in-sound';
 import { CountdownRing } from './test-day/countdown-ring';
@@ -47,6 +48,8 @@ export type BreakOverlayProps = {
   playing: boolean;
   /** The exercise, for the line under the ring. */
   move: string;
+  /** Its catalogue id, for the still in the preview of what comes next. */
+  exerciseId: string | null;
   /** Where the overlay begins, measured from the top of its host. */
   top: number;
   /** The player's bottom inset, so the buttons sit where Pause and Done do. */
@@ -94,16 +97,15 @@ export function BreakOverlay({
   running,
   playing,
   move,
+  exerciseId,
   top,
   bottom,
   onSkip,
   onPause,
   onResume,
 }: BreakOverlayProps) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
+  const reduceMotion = useReducedMotion();
   const { width } = useWindowDimensions();
 
   const [mounted, setMounted] = useState(segment != null);
@@ -172,54 +174,63 @@ export function BreakOverlay({
 
   const live = segment != null;
   const rest = shown.kind === 'rest';
-  const tone = rest ? accents[scheme].teal : accents[scheme].violet;
   const title = rest
     ? t('player.break.rest')
     : shown.to === 'left'
       ? t('player.break.switchLeft')
       : t('player.break.switchRight');
-  const ringSize = Math.min(width - 128, 240);
+  const ringSize = Math.min(width - 128, 220);
+  const still = exerciseId == null ? null : (posterFor(exerciseId) ?? thumbFor(exerciseId));
+  const number = (
+    <>
+      <Text style={[styles.big, !playing && styles.dim]}>{secondsLeft}</Text>
+      <Text style={styles.unit} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+        {t('testday.secondsLeft', { count: secondsLeft })}
+      </Text>
+    </>
+  );
 
   return (
     <Animated.View style={[styles.host, { top }, hostStyle]} pointerEvents={live ? 'auto' : 'none'}>
-      <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={30} style={styles.fill} />
-      <View style={[styles.fill, styles.scrim, { backgroundColor: colors.background }]} />
-
       <View style={styles.middle}>
         {!rest && (
-          <View style={[styles.badge, { backgroundColor: tone.track }]}>
+          <View style={styles.badge}>
             {/* The left foot is the right one mirrored. */}
             <View style={shown.to === 'left' ? styles.mirrored : undefined}>
-              <HugeiconsIcon icon={FootprintsIcon} size={30} color={tone.fill} strokeWidth={1.8} />
+              <HugeiconsIcon icon={FootprintsIcon} size={30} color={colors.accent} strokeWidth={1.8} />
             </View>
           </View>
         )}
-        <Text
-          accessibilityRole="header"
-          accessibilityLiveRegion="assertive"
-          style={[styles.title, { color: colors.foreground }]}
-          numberOfLines={2}
-          adjustsFontSizeToFit>
+        <Text accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
           {title}
         </Text>
 
-        <View style={styles.ringArea} accessible accessibilityRole="timer" accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
-          <CountdownRing size={ringSize} stroke={RING_STROKE} left={ring} tone={tone}>
-            <Text style={[styles.big, { color: playing ? meter.ink : meter.caption }]}>{secondsLeft}</Text>
-            <Text style={[styles.unit, { color: meter.label }]}>
-              {t('testday.secondsLeft', { count: secondsLeft })}
-            </Text>
-          </CountdownRing>
+        <View
+          style={styles.ringArea}
+          accessible
+          accessibilityRole="timer"
+          accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
+          {reduceMotion ? (
+            <View style={styles.plain}>{number}</View>
+          ) : (
+            <CountdownRing size={ringSize} stroke={12} left={ring} tone={RING_TONE}>
+              {number}
+            </CountdownRing>
+          )}
         </View>
 
-        <Text style={[styles.next, { color: colors.foreground }]} numberOfLines={1} adjustsFontSizeToFit>
-          {rest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : move}
-        </Text>
-        {rest && (
-          <Text style={[styles.caption, { color: meter.label }]} numberOfLines={1} adjustsFontSizeToFit>
-            {move}
-          </Text>
-        )}
+        {/* What comes next: the move's still and the set about to start. */}
+        <View style={styles.next} accessible>
+          {still != null && (
+            <Image source={still} resizeMode="cover" style={styles.nextThumb} accessibilityIgnoresInvertColors />
+          )}
+          <View style={styles.nextText}>
+            <Text style={styles.nextLabel}>
+              {rest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}
+            </Text>
+            <Text style={styles.nextTitle}>{move}</Text>
+          </View>
+        </View>
       </View>
 
       <View style={[styles.buttons, { paddingBottom: bottom }]}>
@@ -238,28 +249,24 @@ export function BreakOverlay({
             if (playing) onPause();
             else onResume();
           }}
-          style={({ pressed }) => [styles.side, { backgroundColor: colors.card }, pressed && { opacity: 0.6 }]}>
-          <HugeiconsIcon icon={playing ? PauseIcon : PlayIcon} size={22} color={colors.foreground} strokeWidth={2} />
-          <Text style={[styles.sideText, { color: colors.foreground }]} numberOfLines={1} adjustsFontSizeToFit>
-            {playing ? t('player.cta.pause') : t('player.cta.resume')}
-          </Text>
+          style={({ pressed }) => [styles.side, pressed && styles.pressed]}>
+          <HugeiconsIcon icon={playing ? PauseIcon : PlayIcon} size={26} color={colors.text} strokeWidth={2} />
         </Pressable>
       </View>
     </Animated.View>
   );
 }
 
+const RING_TONE = { fill: colors.accent, track: colors.surface2 };
+
 const styles = StyleSheet.create({
   /** Over the player's content, under its sheets, level with the count-in. */
-  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50 },
-  fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-  /** The page colour over the blur, not quite opaque. */
-  scrim: { opacity: 0.9 },
+  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: colors.bg },
   middle: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 28,
+    paddingHorizontal: 20,
   },
   badge: {
     width: 60,
@@ -268,54 +275,55 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 14,
+    backgroundColor: colors.accentSoft,
   },
   mirrored: { transform: [{ scaleX: -1 }] },
-  title: {
-    ...fonts.heavy(32, -0.8),
-    textAlign: 'center',
-    alignSelf: 'stretch',
-  },
-  ringArea: {
-    marginTop: 24,
-    marginBottom: 24,
-  },
+  pressed: { opacity: 0.6 },
+  title: { ...fonts.bold(34, -0.6), color: colors.text, textAlign: 'center', alignSelf: 'stretch' },
+  ringArea: { marginTop: 24, marginBottom: 24 },
+  plain: { alignItems: 'center' },
   big: {
-    ...fonts.heavy(88, -2.5),
-    lineHeight: 96,
+    ...fonts.bold(96, -2.5),
+    lineHeight: 104,
+    color: colors.text,
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
   },
-  unit: {
-    ...fonts.semibold(16),
-    marginTop: -4,
-  },
+  dim: { color: colors.text3 },
+  unit: { ...fonts.medium(17), color: colors.text2, marginTop: -4 },
   next: {
-    ...fonts.bold(22, -0.4),
-    textAlign: 'center',
     alignSelf: 'stretch',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    padding: 12,
+    borderRadius: 20,
+    borderCurve: 'continuous',
+    backgroundColor: colors.surface,
   },
-  caption: {
-    ...fonts.semibold(16),
-    textAlign: 'center',
-    alignSelf: 'stretch',
-    marginTop: 4,
+  nextThumb: {
+    width: 88,
+    aspectRatio: 4 / 3,
+    borderRadius: 12,
+    borderCurve: 'continuous',
+    backgroundColor: colors.surface2,
   },
+  nextText: { flex: 1, gap: 2 },
+  nextLabel: { ...fonts.regular(17), color: colors.text2 },
+  nextTitle: { ...fonts.semibold(19), color: colors.text },
   buttons: {
     paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 12,
   },
   main: { flex: 1 },
   side: {
-    width: 92,
-    height: PRIMARY_BUTTON_HEIGHT,
-    borderRadius: PRIMARY_BUTTON_HEIGHT / 2,
-    borderCurve: 'continuous',
+    width: target.primary,
+    height: target.primary,
+    borderRadius: target.primary / 2,
+    backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 2,
-    paddingHorizontal: 8,
   },
-  sideText: fonts.semibold(13),
 });
