@@ -62,7 +62,7 @@ export function OpenInApp() {
   const w = WORDS[lang];
   return (
     <div className="handoff-card" lang={lang}>
-      <img src="/email/mascot.png" alt="" width={96} height={96} />
+      <p className="handoff-wordmark">walkito</p>
       <p className="handoff-title">{w.opening}</p>
       <a className="download" href={href}>
         {w.open}

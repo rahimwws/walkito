@@ -51,7 +51,8 @@ describe('the rendered message', () => {
     expect(message.reply_to).toBe('hello@walkito.site');
     expect(message.html).toContain('lang="ru"');
     expect(message.html).toContain('https://walkito.site/open/today/?src=email&amp;e=welcome');
-    expect(message.html).toContain('https://walkito.site/email/mascot.png');
+    expect(message.html).not.toContain('mascot');
+    expect(message.html).toContain('>walkito</p>');
     expect(message.html).toContain('https://walkito.site/unsubscribe/?t=');
     expect(message.html).toContain('здравствуйте, аня!');
     expect(message.html).toContain('открыть walkito');

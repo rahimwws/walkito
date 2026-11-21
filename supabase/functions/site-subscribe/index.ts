@@ -123,7 +123,6 @@ async function renderSiteEmail(
     unsubscribeUrl,
     settingsUrl: unsubscribeUrl,
     postalAddress: POSTAL ? POSTAL.toLowerCase() : '',
-    assetBase: SITE,
     footerWhy: siteFooterWhy(locale),
     hideSettings: true,
   });

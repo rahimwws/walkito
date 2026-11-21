@@ -1,4 +1,4 @@
-import { Body, Button, Container, Head, Html, Img, Link, Preview, Section, Text, render } from '@react-email/components';
+import { Body, Button, Container, Head, Html, Link, Preview, Section, Text, render } from '@react-email/components';
 import { createElement as h, type ReactElement } from 'react';
 
 import { copyFor } from './copy.ts';
@@ -24,7 +24,7 @@ function inlineLinks(p: string): (string | ReactElement)[] {
  * Deno in the edge function and under Bun in the tests without either needing
  * a JSX setting the other lacks.
  *
- * Built to look like the app: the mascot waving at the top, SF Pro Rounded
+ * Built to look like the app: the wordmark set in type at the top, SF Pro Rounded
  * where the mail app has it (`ui-rounded` in Apple Mail), ink straight on
  * white, one black pill button, and the dark scheme inverted for mail apps that
  * honour `prefers-color-scheme`. One idea, one button.
@@ -47,13 +47,14 @@ export type TemplateProps = {
    * goes in as EMAIL_POSTAL_ADDRESS as soon as one exists.
    */
   postalAddress: string;
-  /** Where `email/mascot.png` is served from, e.g. `https://walkito.site`. */
-  assetBase: string;
   /** Replaces the footer's "why you get this" line, e.g. for website signups who never used the app. */
   footerWhy?: string;
   /** Hide the "email settings" link (website signups have no app settings). */
   hideSettings?: boolean;
 };
+
+/** The wordmark is set in the system face, as on the app's splash. */
+const WORDMARK_FONT = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
 
 const FONT = 'ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
 
@@ -95,7 +96,8 @@ export function EmailLayout(props: TemplateProps): ReactElement {
       h(
         Container,
         { style: { maxWidth: 520, margin: '0 auto', padding: 0 } },
-        h(Img, { src: `${props.assetBase.replace(/\/+$/, '')}/email/mascot.png`, width: 64, height: 64, alt: 'walkito', style: { margin: '0 0 14px -6px' } }),
+        // Lowercase like every other word in the email, the From name and the subjects included.
+        text('ink', { color: INK, fontSize: 28, lineHeight: '34px', fontWeight: 700, letterSpacing: '-0.4px', fontFamily: WORDMARK_FONT, marginBottom: 16 }, 'walkito'),
         content.greeting != null ? text('ink', { color: INK, fontSize: 17, lineHeight: '26px', fontWeight: 700, marginBottom: 12 }, content.greeting) : null,
         ...content.paragraphs.map((p, i) =>
           h(Text, { key: i, className: 'ink', style: { margin: '0 0 12px', color: INK, fontSize: 17, lineHeight: '26px', fontFamily: FONT } }, ...inlineLinks(p)),

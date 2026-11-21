@@ -14,7 +14,7 @@ export type MailConfig = {
   from: string;
   replyTo: string;
   postalAddress: string;
-  /** The site, for buttons, the unsubscribe page and the mascot: `https://walkito.site`. */
+  /** The site, for buttons and the unsubscribe page: `https://walkito.site`. */
   linkBase: string;
   /** `https://<ref>.supabase.co/functions/v1`, for the one-click unsubscribe target. */
   functionsBase: string;
@@ -46,7 +46,6 @@ export async function composeMessage(
     settingsUrl: settingsUrl(config.linkBase),
     // Lowercase like every other word in the email.
     postalAddress: config.postalAddress.toLowerCase(),
-    assetBase: config.linkBase,
   });
   return {
     from: config.from,

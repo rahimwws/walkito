@@ -386,7 +386,6 @@ Deno.serve(async (req) => {
             unsubscribeUrl,
             settingsUrl: unsubscribeUrl,
             postalAddress: config.postalAddress ? config.postalAddress.toLowerCase() : '',
-            assetBase: config.linkBase,
             footerWhy: siteFooterWhy(locale),
             hideSettings: true,
           });
