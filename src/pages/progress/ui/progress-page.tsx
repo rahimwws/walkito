@@ -23,9 +23,8 @@ import {
 import { StickersCard } from '@/features/stickers';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
-import { useDockHeight } from '@/shared/ui/action-dock';
+import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
@@ -84,8 +83,7 @@ function lastFourWeeks(now: number) {
 export function ProgressPage() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const onScroll = useMinimizeOnScroll();
-  const dockHeight = useDockHeight();
+  const dockHeight = useTabBarClearance();
   const program = useProgram();
   usePlanVersion();
   useLogsVersion();
@@ -134,7 +132,6 @@ export function ProgressPage() {
   return (
     <View style={styles.screen} {...REPLAY_MASK}>
       <Animated.ScrollView
-        onScroll={onScroll}
         scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
         style={styles.root}

@@ -4,7 +4,6 @@ import type { SourceEntry } from '../entry';
 
 export const QUICK_EN = {
   // ── The tab itself ────────────────────────────────────────────────────────
-  'quick.tab': 'Quick',
   'quick.title': 'Quick',
   'quick.subtitle': 'For when you need it now',
   // The eyebrow over the featured card. Shouted, because it is the one thing

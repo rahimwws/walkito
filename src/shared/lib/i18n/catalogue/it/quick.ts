@@ -1,7 +1,6 @@
 /** Quick-tab strings, Italian. Filled per domain; see `../en/core.ts` for the rules. */
 
 export const QUICK_IT = {
-  'quick.tab': 'Rapido',
   'quick.title': 'Rapido',
   'quick.subtitle': 'Per quando ti serve subito',
   'quick.featured': 'Adesso',

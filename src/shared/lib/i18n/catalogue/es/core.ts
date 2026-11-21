@@ -149,7 +149,9 @@ export const CORE_ES = {
   'quick.deleteSubtitle': '¿La vas a borrar? Cuéntanos qué falló.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Inicio',
+  'tabs.today': 'Hoy',
+  'tabs.plan': 'Plan',
+  'tabs.exercises': 'Ejercicios',
   'tabs.progress': 'Progreso',
 
 

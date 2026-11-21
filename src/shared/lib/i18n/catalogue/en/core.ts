@@ -201,7 +201,9 @@ export const CORE_EN = {
   'quick.deleteSubtitle': 'Deleting? Tell us what broke.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Home',
+  'tabs.today': 'Today',
+  'tabs.plan': 'Plan',
+  'tabs.exercises': 'Exercises',
   'tabs.progress': 'Progress',
 
 

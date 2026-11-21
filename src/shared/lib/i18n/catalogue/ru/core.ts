@@ -174,7 +174,9 @@ export const CORE_RU = {
   'quick.deleteSubtitle': 'Удаляете? Расскажите, что не сработало.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Главная',
+  'tabs.today': 'Сегодня',
+  'tabs.plan': 'План',
+  'tabs.exercises': 'Упражнения',
   'tabs.progress': 'Прогресс',
 
 

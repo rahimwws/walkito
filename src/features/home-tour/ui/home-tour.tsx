@@ -39,7 +39,7 @@ import {
   type SpotlightRect,
 } from '@/shared/lib/spotlight';
 import { useColorScheme } from '@/shared/lib/theme';
-import { useDockHeight } from '@/shared/ui/action-dock';
+import { useTabBarClearance } from '@/shared/lib/tab-bar';
 
 import type { DayOneRun } from '../model/day-one';
 
@@ -194,7 +194,7 @@ function TourStops({ visible: shown }: { visible: boolean }) {
   const scheme = useColorScheme();
   const insets = useSafeAreaInsets();
   const { width: W, height: H } = useWindowDimensions();
-  const dockHeight = useDockHeight();
+  const dockHeight = useTabBarClearance();
 
   const step = Math.min(useHomeTourStep(), LAST);
 

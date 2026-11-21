@@ -149,7 +149,9 @@ export const CORE_PT = {
   'quick.deleteSubtitle': 'Vai apagar? Conte o que deu errado.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Início',
+  'tabs.today': 'Hoje',
+  'tabs.plan': 'Plano',
+  'tabs.exercises': 'Exercícios',
   'tabs.progress': 'Progresso',
 
   // ── Account / sign-in errors ───────────────────────────────────────────────

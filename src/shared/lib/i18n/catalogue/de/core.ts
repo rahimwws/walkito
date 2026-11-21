@@ -147,7 +147,9 @@ export const CORE_DE = {
   'quick.deleteSubtitle': 'Löschen? Sag uns, was kaputt ist.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Start',
+  'tabs.today': 'Heute',
+  'tabs.plan': 'Plan',
+  'tabs.exercises': 'Übungen',
   'tabs.progress': 'Fortschritt',
 
 

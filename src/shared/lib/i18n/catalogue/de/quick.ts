@@ -1,7 +1,6 @@
 /** Quick-tab strings, German. Filled per domain; see `../en/core.ts` for the rules. */
 
 export const QUICK_DE = {
-  'quick.tab': 'Schnell',
   'quick.title': 'Schnell',
   'quick.subtitle': 'Wenn du es gerade brauchst',
   'quick.featured': 'Gerade jetzt',

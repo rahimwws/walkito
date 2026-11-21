@@ -149,7 +149,9 @@ export const CORE_IT = {
   'quick.deleteSubtitle': 'La elimini? Dicci cosa non ha funzionato.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Home',
+  'tabs.today': 'Oggi',
+  'tabs.plan': 'Piano',
+  'tabs.exercises': 'Esercizi',
   'tabs.progress': 'Progressi',
 
   // ── Account / sign-in errors ───────────────────────────────────────────────

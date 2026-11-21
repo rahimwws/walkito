@@ -1,7 +1,6 @@
 /** Quick-tab strings, French. Filled per domain; see `../en/core.ts` for the rules. */
 
 export const QUICK_FR = {
-  'quick.tab': 'Express',
   'quick.title': 'Express',
   'quick.subtitle': 'Pour quand tu en as besoin tout de suite',
   'quick.featured': 'En ce moment',

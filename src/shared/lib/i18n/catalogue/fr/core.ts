@@ -150,7 +150,9 @@ export const CORE_FR = {
   'quick.deleteSubtitle': 'Tu supprimes ? Dis-nous ce qui n’a pas marché.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
-  'tabs.home': 'Accueil',
+  'tabs.today': 'Aujourd’hui',
+  'tabs.plan': 'Programme',
+  'tabs.exercises': 'Exercices',
   'tabs.progress': 'Progrès',
 
 

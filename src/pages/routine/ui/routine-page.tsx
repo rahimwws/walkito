@@ -83,7 +83,7 @@ export function RoutinePage() {
 
   // A link to a routine that does not exist lands on the list of the ones
   // that do, rather than on a blank page.
-  if (protocol == null) return <Redirect href="/quick" />;
+  if (protocol == null) return <Redirect href="/exercises" />;
   return <Routine protocol={protocol} from={from} />;
 }
 
@@ -109,7 +109,7 @@ function Routine({ protocol, from }: { protocol: Protocol; from?: string }) {
 
   const leave = () => {
     if (router.canGoBack()) router.back();
-    else router.replace('/quick');
+    else router.replace('/exercises');
   };
 
   /**

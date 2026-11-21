@@ -615,7 +615,7 @@ export function ProgramPage() {
                 onPress: () => {
                   requestProtocol(routine.id);
                   program?.close();
-                  router.navigate('/quick');
+                  router.navigate('/exercises');
                 },
               }}
             />

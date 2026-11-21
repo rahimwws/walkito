@@ -87,7 +87,7 @@ export function OpenLinkPage() {
         return;
       case 'library':
         requestProtocol(target.protocol);
-        router.replace('/quick');
+        router.replace('/exercises');
         return;
       case 'offer':
         // The email's discount is the win-back price, unlocked the same way the

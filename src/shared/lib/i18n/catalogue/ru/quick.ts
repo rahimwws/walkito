@@ -1,7 +1,6 @@
 /** Quick-tab strings. Filled per domain; see `../en/core.ts` for the rules. */
 
 export const QUICK_RU = {
-  'quick.tab': 'Быстро',
   'quick.title': 'Быстро',
   'quick.subtitle': 'Когда нужно прямо сейчас',
   'quick.featured': 'Сейчас подойдёт',

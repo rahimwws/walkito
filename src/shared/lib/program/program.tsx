@@ -44,6 +44,10 @@ type ProgramValue = {
   open: () => void;
   close: () => void;
   toggle: () => void;
+  /** Raise or drop the axis without switching tabs: the Plan tab itself, as
+   * it gains and loses focus. */
+  show: () => void;
+  hide: () => void;
   openDetail: () => void;
   closeDetail: () => void;
 };
@@ -58,7 +62,20 @@ const ProgramContext = createContext<ProgramValue | null>(null);
  * through state would re-render four subtrees on every frame of a transition
  * that is meant to be the smoothest thing in the app.
  */
-export function ProgramProvider({ children }: { children: ReactNode }) {
+/**
+ * `onOpen` and `onClose` let the layout move to the Plan tab and back: the
+ * plan is a tab, so asking for it from Today (`open()`) has to switch tabs as
+ * well as raise the axis the page reads.
+ */
+export function ProgramProvider({
+  children,
+  onOpen,
+  onClose,
+}: {
+  children: ReactNode;
+  onOpen?: () => void;
+  onClose?: () => void;
+}) {
   const progress = useSharedValue(0);
   const detail = useSharedValue(0);
   const scrollTop = useSharedValue(0);
@@ -96,15 +113,31 @@ export function ProgramProvider({ children }: { children: ReactNode }) {
       progress,
       detail,
       scrollTop,
-      open: () => to(1),
-      close: shut,
+      open: () => {
+        to(1);
+        onOpen?.();
+      },
+      close: () => {
+        shut();
+        onClose?.();
+      },
       // Read on the JS thread, so it needs the current value rather than a
       // worklet: `.value` is safe here because a tap is not a frame loop.
-      toggle: () => (progress.value > 0.5 ? shut() : to(1)),
+      toggle: () => {
+        if (progress.value > 0.5) {
+          shut();
+          onClose?.();
+        } else {
+          to(1);
+          onOpen?.();
+        }
+      },
+      show: () => to(1),
+      hide: shut,
       openDetail: () => spring(detail, 1),
       closeDetail: () => spring(detail, 0),
     };
-  }, [progress, detail, scrollTop, spring]);
+  }, [progress, detail, scrollTop, spring, onOpen, onClose]);
 
   // Android's back: out of a session first, then off the plan, and only when
   // neither is open does it fall through to the router. Without this, back on

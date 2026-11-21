@@ -29,10 +29,9 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { usePlanOver, useProgram } from '@/shared/lib/program';
 import { useSpotlightAnchor, useSpotlightScroller } from '@/shared/lib/spotlight';
-import { useDockHeight } from '@/shared/ui/action-dock';
+import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Glow } from '@/shared/ui/glow';
-import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
 import { IntroReveal, useSplashRevealed } from '@/shared/ui/splash';
 
@@ -103,11 +102,10 @@ export function HomePage() {
   /** Home stays mounted under the other tabs; the drift has no reason to run
    * there. */
   const focused = useIsFocused();
-  const onScroll = useMinimizeOnScroll();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
   const t = useT();
-  const dockHeight = useDockHeight();
+  const dockHeight = useTabBarClearance();
   const program = useProgram();
   const planOver = usePlanOver();
   const revealed = useSplashRevealed();
@@ -258,7 +256,6 @@ export function HomePage() {
       <Glow animated paused={!focused} />
       <Animated.ScrollView
         ref={scroll}
-        onScroll={onScroll}
         scrollEventThrottle={16}
         style={{ flex: 1 }}
         showsVerticalScrollIndicator={false}
