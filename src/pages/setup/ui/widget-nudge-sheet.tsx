@@ -32,7 +32,7 @@ type Handlers = { again: () => void };
  */
 export function WidgetNudgeSheet({ visible, onAgain, onLater }: WidgetNudgeSheetProps) {
   const again = useRef(false);
-  useSheetRoute<Handlers>(ROUTE, visible, '/widget-nudge', { again: () => (again.current = true) }, () => {
+  useSheetRoute<Handlers>(ROUTE, visible, '/sheet/widget-nudge', { again: () => (again.current = true) }, () => {
     const chose = again.current;
     again.current = false;
     if (chose) onAgain();

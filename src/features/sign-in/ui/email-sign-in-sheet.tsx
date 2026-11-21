@@ -101,7 +101,7 @@ export function EmailSignInSheet({
   inline = false,
 }: Props) {
   const handlers: Handlers = { mode, onSignedIn, onFailure, preview };
-  useSheetRoute<Handlers>(ROUTE, visible && !inline, '/email-sign-in', handlers, () => {
+  useSheetRoute<Handlers>(ROUTE, visible && !inline, '/sheet/email-sign-in', handlers, () => {
     onClose();
     onHidden?.();
   });

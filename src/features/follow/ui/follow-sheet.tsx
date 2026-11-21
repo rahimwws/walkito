@@ -35,7 +35,7 @@ export type FollowSheetProps = {
  * this keeps the hosts' `visible` / `onClose` API and opens it.
  */
 export function FollowSheet({ visible, from, onClose }: FollowSheetProps) {
-  useSheetRoute(ROUTE, visible, { pathname: '/follow', params: { from } }, null, onClose);
+  useSheetRoute(ROUTE, visible, { pathname: '/sheet/[name]', params: { name: 'follow', from } }, null, onClose);
   return null;
 }
 

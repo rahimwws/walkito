@@ -49,7 +49,7 @@ type Handlers = { asksForReview: boolean };
  * gone.
  */
 export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
-  useSheetRoute<Handlers>(ROUTE, visible, '/note', { asksForReview }, onDone);
+  useSheetRoute<Handlers>(ROUTE, visible, '/sheet/note', { asksForReview }, onDone);
   return null;
 }
 

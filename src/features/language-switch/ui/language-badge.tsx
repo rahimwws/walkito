@@ -33,7 +33,7 @@ export function LanguageBadge() {
         accessibilityHint={t('language.a11yHint')}
         onPress={() => {
           Haptics.selectionAsync();
-          router.push('/language');
+          router.push('/sheet/language');
         }}
         hitSlop={12}
         style={({ pressed }) => [styles.badge, pressed && { opacity: 0.5 }]}>

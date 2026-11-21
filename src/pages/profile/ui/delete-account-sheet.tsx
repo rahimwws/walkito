@@ -39,7 +39,7 @@ export type DeleteAccountSheetProps = {
  * this keeps Profile's `visible` / `onClose` API and opens it.
  */
 export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps) {
-  useSheetRoute(ROUTE, visible, '/delete-account', null, onClose);
+  useSheetRoute(ROUTE, visible, '/sheet/delete-account', null, onClose);
   return null;
 }
 

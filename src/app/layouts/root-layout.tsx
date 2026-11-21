@@ -420,17 +420,13 @@ function RootLayoutInner() {
                     sheetCornerRadius: 28,
                   }}
                 />
-                {/* Native form sheets (spec §4), outside every guard so a
-                    sheet opened from the onboarding, the setup or the tabs
-                    finds its route. Each is opened by its host through
-                    `useSheetRoute` (`shared/lib/sheet-route`). */}
-                <Stack.Screen name="language" options={FORM_SHEET} />
-                <Stack.Screen name="sign-in" options={FORM_SHEET} />
-                <Stack.Screen name="email-sign-in" options={FORM_SHEET} />
-                <Stack.Screen name="follow" options={FORM_SHEET} />
-                <Stack.Screen name="delete-account" options={FORM_SHEET} />
-                <Stack.Screen name="note" options={FORM_SHEET} />
-                <Stack.Screen name="widget-nudge" options={FORM_SHEET} />
+                {/* Native form sheets (spec §4), `/sheet/<name>`, outside
+                    every guard so a sheet opened from the onboarding, the
+                    setup or the tabs finds its route. Each is opened by its
+                    host through `useSheetRoute` (`shared/lib/sheet-route`);
+                    one dynamic route so it never becomes a guard's fallback
+                    (`sheet-route.tsx`). */}
+                <Stack.Screen name="sheet/[name]" options={FORM_SHEET} />
                 {/* "You're in" after a purchase or a restore: a one-way door
                     over the tabs, raised by `useYoureInPresenter`. */}
                 <Stack.Protected guard={tabsReachable}>

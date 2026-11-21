@@ -184,7 +184,7 @@ export function SignInSheet({
   onClose: () => void;
   onSignedIn: SignInOptionsProps['onSignedIn'];
 }) {
-  useSheetRoute<SignInSheetHandlers>(SIGN_IN_ROUTE, visible, '/sign-in', { onSignedIn }, onClose);
+  useSheetRoute<SignInSheetHandlers>(SIGN_IN_ROUTE, visible, '/sheet/sign-in', { onSignedIn }, onClose);
   return null;
 }
 
