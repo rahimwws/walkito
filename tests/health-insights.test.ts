@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 
 import { NO_SIGNALS, signalsFrom, todayHealthInputs, type DailyMetric } from '../src/entities/health/model/metrics';
-import { dayStory, whyRows } from '../src/pages/home/model/day-story';
+import { whyRows } from '../src/pages/today/model/why-rows';
 import { patternsFrom } from '../src/pages/progress/model/patterns';
 import { shoeKm, shoeState } from '../src/pages/progress/model/shoes';
 
@@ -59,37 +59,8 @@ describe('signals from the new types', () => {
   });
 });
 
-describe('what Walkito says about yesterday', () => {
-  const today = '2026-10-30';
-
-  test('nothing from a cache that is not today', () => {
-    expect(dayStory({ ...NO_SIGNALS, asOf: '2026-10-29', stepsYesterday: 9000 }, today)).toBeNull();
-  });
-
-  test('a big run outranks the step count', () => {
-    const story = dayStory(
-      { ...NO_SIGNALS, asOf: today, bigRunYesterday: true, longestRunYesterdayKm: 14, stepsYesterday: 20000, stepsBaseline: 8000 },
-      today,
-    );
-    expect(story?.id).toBe('big-run');
-  });
-
-  test('past the personal limit on foot', () => {
-    const story = dayStory({ ...NO_SIGNALS, asOf: today, hoursOnFeetYesterday: 9, onFeetThreshold: 8 }, today);
-    expect(story).toEqual({ id: 'on-feet', hours: 9, limit: 8 });
-  });
-
-  test('step length back to usual only after it was shorter', () => {
-    const signals = { ...NO_SIGNALS, asOf: today, stepLengthTrend: 'stable' as const };
-    expect(dayStory(signals, today, true)?.id).toBe('stride-back');
-    expect(dayStory(signals, today, false)).toBeNull();
-  });
-
-  test('an ordinary day is said plainly', () => {
-    expect(dayStory({ ...NO_SIGNALS, asOf: today, stepsYesterday: 7000, stepsBaseline: 7500 }, today)?.id).toBe('yesterday');
-  });
-
-  test('the why sheet draws only what Health supplied', () => {
+describe('the why sheet', () => {
+  test('it draws only what Health supplied', () => {
     const rows = whyRows({ ...NO_SIGNALS, stepsYesterday: 7000, stepsBaseline: 8000, sleepLastNightMin: 400 });
     expect(rows.map((r) => r.id)).toEqual(['steps', 'sleep']);
   });

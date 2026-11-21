@@ -3,13 +3,7 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
-import {
-  devOpenReadinessInfo,
-  devSeedCheckins,
-  devSetLegState,
-  devSetReadinessScore,
-  devShowOnFeetCard,
-} from '@/pages/home';
+import { devSeedCheckins } from '@/pages/today';
 import { devSeedOnFeetWeek, devSetOnFeetWeekState } from '@/pages/progress';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { devFirstStep, devPreviewOnFeet, previewNotification } from '@/entities/notifications';
@@ -166,25 +160,12 @@ function devSeedToe(arch: 'yes' | 'no' | 'unsure' | 'off'): void {
   saveIntake({ ...intake, miniTest: arch === 'off' ? null : { arch, balanceLeft: null, balanceRight: null } });
 }
 /** `?seedCheckins` writes thirteen days of check-ins before today (nine
- * answered): Home's row of days once today is answered, and Progress's
- * counts. `?onFeetCard=<hours>` raises Home's long-day card (`=off` the
- * real rule). `?seedOnFeetWeek` fills "Your week on your feet" with sample
+ * answered), for Progress's counts. `?seedOnFeetWeek` fills "Your week on your feet" with sample
  * Health days; `?onFeetWeek=connect|waiting` forces its empty states
  * (`=off` the real data). */
 const SEED_CHECKINS_PARAM = /[?&]seedCheckins\b/;
-const ON_FEET_CARD_PARAM = /[?&]onFeetCard=(\d{1,2}|off)\b/;
 const SEED_ON_FEET_WEEK_PARAM = /[?&]seedOnFeetWeek\b/;
 const ON_FEET_WEEK_PARAM = /[?&]onFeetWeek=(connect|waiting|off)\b/;
-/** `walkito.dev://?readinessScore=NN` forces Home's readiness value for
- * screenshots, `=off` lets the real one through. `?legState=<id>` forces what
- * Walkito says about the legs (an id from `LEG_STATES`, e.g. `sore`,
- * `worked`, `fresh`), `=off` back to the real one. */
-const READINESS_SCORE_PARAM = /[?&]readinessScore=(\d{1,3}|off)\b/;
-const LEG_STATE_PARAM = /[?&]legState=([a-z]+)/;
-/** `walkito.dev://?readinessInfo=pain|sleep|steps|score` opens the small
- * sheet for that part of Home's readiness score, or for the score, for
- * screenshots. */
-const READINESS_INFO_PARAM = /[?&]readinessInfo=(pain|sleep|steps|score)\b/;
 /** Streak and weekly goal screenshots, in memory only (`=off` for each):
  * `?streakPreview=<n>` a streak of n with this week's days up to today a mix
  * of check-in and full days; `?freezes=<n>` the banked freezes (the header
@@ -347,19 +328,11 @@ export function useDevLinks(): void {
         const footCheckToe = FOOT_CHECK_TOE_PARAM.exec(url);
         if (footCheckToe != null) devSeedToe(footCheckToe[1] as 'yes' | 'no' | 'unsure' | 'off');
         if (SEED_CHECKINS_PARAM.test(url)) devSeedCheckins();
-        const onFeetCard = ON_FEET_CARD_PARAM.exec(url);
-        if (onFeetCard != null) devShowOnFeetCard(onFeetCard[1] === 'off' ? null : Number(onFeetCard[1]));
         if (SEED_ON_FEET_WEEK_PARAM.test(url)) devSeedOnFeetWeek();
         const onFeetWeek = ON_FEET_WEEK_PARAM.exec(url);
         if (onFeetWeek != null) devSetOnFeetWeekState(onFeetWeek[1] as 'connect' | 'waiting' | 'off');
         const pass = PASS_PARAM.exec(url);
         if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
-        const forced = READINESS_SCORE_PARAM.exec(url);
-        if (forced != null) devSetReadinessScore(forced[1] === 'off' ? null : Number(forced[1]));
-        const leg = LEG_STATE_PARAM.exec(url);
-        if (leg != null) devSetLegState(leg[1] === 'off' ? null : leg[1]);
-        const info = READINESS_INFO_PARAM.exec(url);
-        if (info != null) devOpenReadinessInfo(info[1]);
         previewStreak(url);
         previewLimitedOffer(url);
         previewCancel(url);

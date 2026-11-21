@@ -9,47 +9,6 @@ import { messageFor } from '@/entities/notifications/model/copy';
 import { candidates, sessionAtFor, type DaySignals } from '@/entities/notifications/model/ladder';
 import { EMPTY_DELIVERY } from '@/entities/notifications/model/limits';
 import { intakeFrom } from '@/pages/onboarding/model/intake';
-import { briefTokens } from '@/pages/home/model/brief';
-import { PERSONAL_EVERY, briefState, personalState } from '@/pages/home/model/brief-state';
-
-const say = (tokens: readonly { text: string }[]) => tokens.map((token) => token.text).join(' ');
-
-describe('the personal line on Home', () => {
-  const base = { name: '', cursor: 21, doneToday: false, streak: 4, daysInstalled: 21, todayPain: 1 };
-
-  test('which line a goal gets', () => {
-    expect(personalState('race', 'running')).toBe('goal-back');
-    expect(personalState('painfree', 'tennis')).toBe('goal-back');
-    expect(personalState('painfree', null)).toBeNull();
-    expect(personalState('consistent', null)).toBe('goal-consistent');
-  });
-
-  test('the line opens on a greeting for the time of day, not the name', () => {
-    const input = { ...base, cursor: 21, goal: 'painfree', sport: 'running' };
-    expect(say(briefTokens({ ...input, hour: 8 }, 'ru'))).toStartWith('Доброе утро');
-    expect(say(briefTokens({ ...input, hour: 14 }, 'ru'))).toStartWith('Добрый день');
-    expect(say(briefTokens({ ...input, hour: 21 }, 'en'))).toStartWith('Good evening');
-    expect(say(briefTokens({ ...input, hour: 2 }, 'es'))).toStartWith('Buenas noches');
-  });
-
-  test('every third quiet day, not every day', () => {
-    const on = { ...base, cursor: PERSONAL_EVERY * 7, goal: 'painfree', sport: 'running' };
-    expect(briefState(on)).toBe('goal-back');
-    expect(briefState({ ...on, cursor: on.cursor + 1 })).not.toBe('goal-back');
-  });
-
-  test('never over a sore morning', () => {
-    expect(briefState({ ...base, todayPain: 6, goal: 'painfree', sport: 'running' })).not.toBe('goal-back');
-  });
-
-  test('the sport is named in each language', () => {
-    const input = { ...base, cursor: 21, goal: 'painfree', sport: 'running' };
-    expect(say(briefTokens(input, 'en'))).toContain('to running');
-    expect(say(briefTokens(input, 'ru'))).toContain('к бегу');
-    expect(say(briefTokens(input, 'es'))).toContain('a correr');
-  });
-
-});
 
 describe('notifications', () => {
   const signals = (overrides: Partial<DaySignals> = {}): DaySignals => ({

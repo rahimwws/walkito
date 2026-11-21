@@ -15,8 +15,7 @@ const MORNINGS = [5, 4, null, 4, 3, 5, null, 3, null, 2, 4, null, 3] as const;
 
 /**
  * Development only: two believable weeks of check-ins behind today, for
- * looking at the row of days under Home's answered check-in (and at the
- * Progress chart) on a simulator.
+ * looking at the Progress chart on a simulator.
  *
  * Moves the plan's start back two weeks if it is later than that, then writes
  * the thirteen days before today through the same log the check-in writes:
