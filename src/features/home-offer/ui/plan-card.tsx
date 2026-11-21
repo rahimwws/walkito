@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Badge } from '@/shared/ui/badge';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Card } from '@/shared/ui/card';
 
 import { PriceLine } from './rich-text';
 
@@ -26,7 +26,6 @@ export type PlanCardModel = {
 /**
  * The chosen plan, as the reference's card: its name with a badge, the
  * store's billed price large, the monthly equivalent small at the right.
- * Opaque (the solid 3D card), so a mascot behind its top edge is hidden by it.
  */
 export function PlanCard({ model }: { model: PlanCardModel }) {
   const scheme = useColorScheme();
@@ -34,12 +33,12 @@ export function PlanCard({ model }: { model: PlanCardModel }) {
   const meter = meterColors[scheme];
 
   return (
-    <Card3D size="lg" material="solid" padding={18} contentStyle={styles.content}>
+    <Card padding={18} style={[styles.content, { backgroundColor: colors.card }]}>
       <View style={styles.top}>
         <Text style={[styles.title, { color: colors.foreground }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
           {model.title}
         </Text>
-        {model.badge != null && <Badge label={model.badge} accent="primary" raised style={styles.badge} />}
+        {model.badge != null && <Badge label={model.badge} style={styles.badge} />}
       </View>
       <View style={styles.priceRow}>
         <PriceLine
@@ -59,7 +58,7 @@ export function PlanCard({ model }: { model: PlanCardModel }) {
           {model.note}
         </Text>
       )}
-    </Card3D>
+    </Card>
   );
 }
 

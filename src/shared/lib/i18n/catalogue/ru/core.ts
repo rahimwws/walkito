@@ -43,6 +43,7 @@ export const CORE_RU = {
   'settings.write': 'Написать Рахиму',
   'settings.writeHint': 'Каждое письмо читает человек',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Ваш план',
   'settings.outcome': 'Ваша цель',
@@ -93,8 +94,6 @@ export const CORE_RU = {
     few: '{count} дня подряд',
     many: '{count} дней подряд',
   },
-  'streak.milestoneBlurb': 'Каждый из этих дней засчитан.',
-  'streak.milestoneBigBlurb': 'Десять дней. Здесь привычка начинает держаться.',
   'streak.rule':
     'День засчитан, если вы отметили боль, провели занятие или прошли комплекс из библиотеки. В день отдыха достаточно отметить боль.',
   'streak.total': {

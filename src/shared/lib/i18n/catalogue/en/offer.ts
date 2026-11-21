@@ -119,14 +119,9 @@ export const OFFER_EN = {
   'offer.processing': 'Processing…',
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
-  'offer.purchasedTitle': 'You’re in.',
   /** The product's name, not a store identifier. Left as-is in every language
    * — it is the brand with a tier after it. */
   'offer.premium': 'Walkito Premium',
-  'offer.purchasedBlurb': 'Your plan is unlocked, and it starts adapting from your next session.',
-  'offer.restoredTitle': 'Welcome back.',
-  'offer.restoredBlurb': 'Your subscription is active again. Everything is where you left it.',
-  'offer.start': 'Start',
 
   // ── Paywall: the two steps before it, after onboarding ──────────────────
   // How the open-ended plan starts and how a day works, then the paywall. The
@@ -176,7 +171,6 @@ export const OFFER_EN = {
   // `{period}` a free trial's length (`offer.plans.days` and the rest). Trial
   // wording is only ever shown on a plan the store says carries a free trial.
   /** The product, left as-is in every language: the brand and its tier. */
-  'offer.plans.brand': 'Walkito',
   'offer.plans.badge': 'Plus',
   'offer.plans.name': 'Walkito Plus',
   /** The headline. The word in square brackets is drawn in the Plus colour;

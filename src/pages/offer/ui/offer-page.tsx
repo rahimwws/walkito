@@ -46,14 +46,13 @@ import {
   useFirstSessionAgain,
 } from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { logAppsFlyerEvent } from '@/shared/lib/appsflyer';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
-import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 
 import { giftOpens, giftPlan } from '../model/gift';
 import { giftSeen, markGiftSeen } from '../model/gift-store';
@@ -209,7 +208,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
    * the spot. Vanishing straight into the app made the one moment worth
    * marking look like nothing happening.
    */
-  const [celebrating, setCelebrating] = useState<'purchased' | 'restored' | null>(null);
   /** "What stopped you?" is up, for the plan whose sheet was closed. */
   const [asking, setAsking] = useState<PaywallPeriod | null>(null);
   /** A plan already on the page, brought back into view after "It costs too
@@ -562,7 +560,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       if (giftEvent != null) track('exit_gift_purchased', giftEvent);
       converted.current = true;
       setGiftShown(false);
-      setCelebrating('purchased');
+      finish();
       return;
     }
     if (result.status === 'cancelled') {
@@ -760,6 +758,12 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
   const close = () => {
     if (!wall && router.canGoBack()) router.back();
   };
+  /** Bought or restored: a success buzz, then away. */
+  const finish = () => {
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    if (__DEV__ && onSimulator) grantDevAccess();
+    close();
+  };
 
   /**
    * Buy, or — with no store wired up — say so.
@@ -782,7 +786,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     // through the store's own path, which grants the pretend purchase.
     if (__DEV__ && onSimulator && (plan == null || !isSamplePlan(plan))) {
       converted.current = true;
-      setCelebrating('purchased');
+      finish();
       return;
     }
     setNotice(null);
@@ -829,9 +833,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       // The reminder the plans step promised, from the trial's own length.
       const trial = freeTrialOf(plan);
       if (trial != null) void remindBeforeTrialEnds(trial, plan.priceString);
-      // No haptic here: the sheet fires its own as it lands, and two success
-      // buzzes a frame apart read as a stutter rather than as emphasis.
-      setCelebrating('purchased');
+      finish();
       return;
     }
     // The user backed out of the store's own sheet. Once, they are told that
@@ -875,7 +877,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
 
     if (result.status === 'restored') {
       converted.current = true;
-      setCelebrating('restored');
+      finish();
       return;
     }
     if (result.status === 'nothing-found') {
@@ -1033,7 +1035,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
                 line: t(freeDays != null && tier === 'annual' ? 'offer.next.lineTrial' : 'offer.next.line', {
                   day: nextDay()?.day ?? 2,
                 }),
-                picture: <NextDay covered={busy || celebrating != null} />,
+                picture: <NextDay covered={busy} />,
               }
             : null
         }
@@ -1065,7 +1067,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
               }
             : undefined
         }
-        covered={busy || celebrating != null || asking != null || giftShown}
+        covered={busy || asking != null || giftShown}
         onSkip={wall ? onClose : skip}>
         {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
@@ -1074,19 +1076,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
         {gift != null && (
           <ExitGift plan={gift} visible={giftShown} busy={giftBusy} onBuy={() => void buyGift()} onDecline={declineGift} />
         )}
-        <CelebrationSheet
-          visible={celebrating != null}
-          title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
-          headline={celebrating === 'restored' ? undefined : t('offer.plans.brand')}
-          headlineColor={PRIMARY}
-          blurb={t(celebrating === 'restored' ? 'offer.restoredBlurb' : 'offer.purchasedBlurb')}
-          ctaLabel={t('offer.start')}
-          onClose={() => {
-            setCelebrating(null);
-            if (__DEV__ && onSimulator) grantDevAccess();
-            close();
-          }}
-        />
       </PlansStep>
     );
   }

@@ -22,15 +22,15 @@ import type { Translate } from '@/shared/lib/i18n';
 // ── The big goal ─────────────────────────────────────────────────────────────
 
 export type OutcomeView = {
-  /** "Tennis [pain-free]" — the lead is the chip. Either side may be empty. */
+  /** "Tennis [pain-free]" — the lead is set in the accent colour. Either side may be empty. */
   headline: { before: string; lead: string; after: string };
-  /** The goal being worked, for the colour. Null once every step is done. */
+  /** The goal being worked. Null once every step is done. */
   current: GoalType | null;
 };
 
 /**
- * "{sport} [без боли]" → the words around the bracketed lead, which the card
- * sets as a chip. Where the lead sits is each language's call, so the catalogue
+ * "{sport} [без боли]" → the words around the bracketed lead, which the plan
+ * sets in the accent colour. Where the lead sits is each language's call, so the catalogue
  * marks it inside one whole sentence rather than splitting it into fragments.
  */
 export function splitLead(sentence: string): { before: string; lead: string; after: string } {
@@ -54,8 +54,7 @@ function sentenceFor(t: Translate, kind: Outcome['kind'], sportName: string, spo
 
 /**
  * The goal's head: what the person came for, and which step is being worked
- * (for the rail's colour). The weeks that work towards it are the rail under
- * it (`weekPath`).
+ * The weeks that work towards it are listed under it (`weekPath`).
  */
 export function outcomeView(t: Translate, outcome: Outcome, goals: readonly Goal[], focus: GoalType | null): OutcomeView {
   const progress = outcomeProgress(outcome, goals, focus);
@@ -68,7 +67,7 @@ export function outcomeView(t: Translate, outcome: Outcome, goals: readonly Goal
 // ── The weeks ahead ──────────────────────────────────────────────────────────
 
 /**
- * What a week is for: its title and its mascot. `settling` is the plan's first
+ * What a week is for: its title. `settling` is the plan's first
  * week, which only eases in; `keep` is a week with no goal left to work, which
  * keeps the reached ones ticking over.
  */
@@ -146,8 +145,8 @@ export type WeekPathInput = {
 
 /**
  * The plan as weeks: this week and next, each with what it works on, what
- * changes in it, its days, its minutes and its moves, and the test days on the
- * rail where they fall.
+ * changes in it, its days, its minutes and its moves, and the test days
+ * where they fall.
  *
  * Two weeks and no more, because two are all the engine can tell truthfully.
  * This week is stored. Next week is the week as it would be built today (and
@@ -158,7 +157,7 @@ export type WeekPathInput = {
  * screen says how those weeks get made instead.
  *
  * A test taken this week leads the path, ticked. The next test sits where it
- * falls, so the rail reads in date order: first when it is today, between the
+ * falls, so the list reads in date order: first when it is today, between the
  * two weeks when it comes later this week, after next week's card when it is
  * in next week or further off (a test on next Wednesday drawn above "Next week
  * · from Monday" would read as coming before it). Never a plan length, never
@@ -242,11 +241,6 @@ function changeOf(
   return when === 'this' ? { kind: 'focus', goal: focus } : { kind: 'same' };
 }
 
-/** A node the person has got to: a test taken, or this week. */
-export function pathReached(node: PathNode): boolean {
-  return node.kind === 'test' ? node.state === 'done' : node.when === 'this';
-}
-
 /** "This week", or "Next week · from 19 Oct". `dateLabel` formats the Monday in the reader's language. */
 export function weekLabel(t: Translate, week: PathWeek, dateLabel: (date: string) => string): string {
   return week.when === 'this'
@@ -283,9 +277,9 @@ export function weekLine(t: Translate, change: WeekChange, nameOf: (id: string) 
 }
 
 /**
- * A test day's line on the rail, one whole sentence per case.
+ * A test day's line in the plan, one whole sentence per case.
  *
- * Taken: "Test day · today", or the day it was taken; the rail draws the tick
+ * Taken: "Test day · today", or the day it was taken; the plan draws the tick
  * beside it. The next one: when it is, "Test day · in 12 days". `dateLabel`
  * formats a taken test's day in the reader's language.
  */

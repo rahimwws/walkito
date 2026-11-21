@@ -1,22 +1,17 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 
 import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { TickGauge } from '@/shared/ui/tick-gauge';
 
 import { useAnkleReading } from '../lib/use-ankle-reading';
 
 export type AnkleSide = 'left' | 'right';
 
 /** The arc: a half circle of ticks, filling from the left as the shin tips. */
-const RADIUS = 118;
-const TICKS = 41;
-const TICK_LENGTH = 18;
-const TICK_WIDTH = 4;
-const GAUGE = RADIUS * 2 + TICK_WIDTH;
 
 /** Time to get the phone from the hand's view to the shin. */
 const READY_SECONDS = 3;
@@ -124,20 +119,11 @@ export function AnkleMeasure({
           ? t('footCheck.ankle.measured')
           : t('footCheck.ankle.buzz');
 
+  const barStyle = useAnimatedStyle(() => ({ width: `${reading.fill.value * 100}%` }));
+
   return (
     <View style={styles.block}>
       <View style={styles.gaugeBox}>
-        <TickGauge
-          tickCount={TICKS}
-          startAngle={180}
-          sweep={180}
-          outerRadius={RADIUS}
-          tickLength={TICK_LENGTH}
-          tickWidth={TICK_WIDTH}
-          progress={reading.fill}
-          fill={PRIMARY}
-          track={meter.track}
-        />
         <View style={styles.figure} pointerEvents="none">
           <Text
             accessibilityLiveRegion="polite"
@@ -148,6 +134,9 @@ export function AnkleMeasure({
           <Text style={[styles.line, { color: meter.label }]} numberOfLines={2} maxFontSizeMultiplier={1.3}>
             {line}
           </Text>
+        </View>
+        <View style={[styles.track, { backgroundColor: meter.track }]}>
+          <Animated.View style={[styles.bar, { backgroundColor: PRIMARY }, barStyle]} />
         </View>
       </View>
 
@@ -205,8 +194,10 @@ const styles = StyleSheet.create({
   block: { gap: 14, alignItems: 'stretch' },
   // The arc is the top half of the gauge's square: the bottom half is cut off
   // and the figure stands on the cut.
-  gaugeBox: { alignSelf: 'center', width: GAUGE, height: RADIUS + 34, overflow: 'hidden' },
-  figure: { position: 'absolute', left: 0, right: 0, bottom: 0, alignItems: 'center', gap: 2 },
+  gaugeBox: { alignSelf: 'stretch', gap: 16, paddingTop: 8 },
+  figure: { alignItems: 'center', gap: 2 },
+  track: { height: 8, borderRadius: 4, overflow: 'hidden', marginHorizontal: 34 },
+  bar: { height: '100%', borderRadius: 4 },
   value: { ...fonts.heavy(64, -2), lineHeight: 68, fontVariant: ['tabular-nums'] },
   line: { ...fonts.semibold(17), lineHeight: 22, textAlign: 'center', paddingHorizontal: 34 },
   sides: { flexDirection: 'row', gap: 10 },

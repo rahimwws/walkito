@@ -18,7 +18,6 @@ import { currentDay, nextSession, painEntriesOn, toDateKey } from '@/entities/pr
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
-import { scheduleWithArt } from './attachment';
 import { messageFor, onFeetMessage, retestFollowUpBody, stepsCheckMessage } from './copy';
 import {
   FOLLOW_UP_HOURS,
@@ -359,8 +358,7 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
 
     const id = identifierFor(item);
     try {
-      // The mascot for the kind rides along on iPhone; see `attachment.ts`.
-      await scheduleWithArt(item.kind, {
+      await Notifications.scheduleNotificationAsync({
         identifier: id,
         content: {
           title: item.title,
@@ -518,7 +516,7 @@ export async function maybeSendStepCheck(
   writeDelivery(recordSent(delivery, STEP_CHECK, dateKey));
   const message = stepsCheckMessage(stepsToday ?? 0, getLanguage());
   try {
-    await scheduleWithArt('steps', {
+    await Notifications.scheduleNotificationAsync({
       identifier: `steps-${dateKey}`,
       content: {
         title: message.title,
@@ -569,7 +567,7 @@ export async function maybeSendOnFeetCheck(
   writeDelivery(recordSent(delivery, ON_FEET_CHECK, dateKey));
   const message = onFeetMessage(onFeetStreak(hours, now), getLanguage());
   try {
-    await scheduleWithArt('steps', {
+    await Notifications.scheduleNotificationAsync({
       identifier: `on-feet-${dateKey}`,
       content: {
         title: message.title,
@@ -592,7 +590,7 @@ export async function devPreviewOnFeet(): Promise<void> {
   if (!__DEV__) return;
   await ensureNotificationChannel();
   const message = onFeetMessage(4, getLanguage());
-  await scheduleWithArt('steps', {
+  await Notifications.scheduleNotificationAsync({
     identifier: 'on-feet-preview',
     content: { title: message.title, body: message.body, data: { kind: ON_FEET_KIND } },
     trigger: { type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL, seconds: 5, channelId: CHANNEL_ID },

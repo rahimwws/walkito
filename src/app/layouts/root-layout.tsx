@@ -65,27 +65,15 @@ import { runStoreShots } from '../providers/store-shots';
 /**
  * The app shell: fonts, theme, gesture root, routes.
  *
- * The launch is one continuous shot: the native splash (the mascot in a
- * 200 pt square on the background colour), then `SplashReveal`'s identical
- * first frame, then the app opening through the mascot as he leaps at the
- * screen. The same picture ends an over-the-air update's restart, so a reload
- * lands in the same place a cold start does.
- *
- * The splash before it was removed for delaying the first screen: a Lottie
- * that had to finish before anything else could show, which pushed the welcome
- * screen's own introduction a second and a half back. This one is not that.
- * The navigator mounts underneath it the moment the fonts resolve, exactly as
- * it would with no splash at all; the overlay only covers it, and the reveal
- * is the first screen appearing. It adds under 0.9 s after the fonts (two
- * frames for the first screen to lay out, then the 0.74 s reveal), never waits
- * on anything slow, and starts 2.5 s after launch at the latest whatever it is
- * still waiting for (`REVEAL_BY_MS` in `shared/ui/splash`), so it cannot shut
- * the app away. With Reduce Motion it is a quarter-second fade.
+ * The launch: the native splash (plain white), then `SplashReveal`'s identical
+ * white with the wordmark, then a quarter-second fade onto the app, which
+ * mounts underneath the moment the fonts resolve. It starts 2.5 s after launch
+ * at the latest (`REVEAL_BY_MS` in `shared/ui/splash`), so it cannot shut the
+ * app away. The same overlay ends an over-the-air update's restart.
  *
  * `IntroRevealProvider` stays pinned true. The staggered reveal it drives was
- * choreographed for the old splash's fade, and under a zoom that already
- * brings the whole screen in it would only delay content. Held at true, every
- * `IntroReveal` renders its children immediately and animates nothing.
+ * choreographed for an older splash, and under the fade it would only delay
+ * content. Held at true, every `IntroReveal` renders its children immediately and animates nothing.
  *
  * Add new top-level routes as `Stack.Screen` entries here (modals, full-screen
  * flows). Tabs live one level down, in `tabs-layout`.

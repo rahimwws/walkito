@@ -15,7 +15,6 @@ import { WIDGET_EN } from './widget';
 import { UPDATE_EN } from './update';
 import { DONE_EN } from './done';
 import { STREAKS_EN } from './streaks';
-import { STICKERS_EN } from './stickers';
 import { RECAP_EN } from './recap';
 import { HOME_OFFER_EN } from './home-offer';
 import { CANCEL_EN } from './cancel';
@@ -56,7 +55,6 @@ export const en = {
   ...UPDATE_EN,
   ...DONE_EN,
   ...STREAKS_EN,
-  ...STICKERS_EN,
   ...RECAP_EN,
   ...HOME_OFFER_EN,
   ...CANCEL_EN,

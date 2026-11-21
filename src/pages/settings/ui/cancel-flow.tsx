@@ -3,7 +3,7 @@ import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AppState, Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -32,7 +32,7 @@ import { SETTLE_EASING } from '@/shared/lib/motion';
 import { usePaywall } from '@/shared/lib/paywall';
 import { reviewNow } from '@/shared/lib/review';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { usePassCheckout } from '@/widgets/pass-checkout';
 
 import { writeToUs } from '../lib/write-to-us';
@@ -124,8 +124,8 @@ export type CancelFlowProps = {
  *
  * A page sheet, like the leg map Settings opens; the screens cross-fade within
  * it, the old one out quickly and the new one settling up into place, a fade
- * alone with Reduce Motion. Everything in it is the solid 3D kit, so the fade
- * never passes over a `GlassView`.
+ * alone with Reduce Motion. Everything in it is opaque, so the fade never
+ * passes over a `GlassView`.
  */
 export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, onDismissed }: CancelFlowProps) {
   const scheme = useColorScheme();
@@ -134,7 +134,6 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
   const insets = useSafeAreaInsets();
   const t = useT();
   const reduced = useReducedMotion();
-  const active = useAppActive();
 
   const [stage, setStage] = useState<Stage>(REASONS);
   const [selected, setSelected] = useState<CancelReason | null>(null);
@@ -424,14 +423,12 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
     },
   };
 
-  const live = visible && active && !safety;
-
   const screen = (() => {
     switch (stage.kind) {
       case 'reasons':
-        return <ReasonsScreen selected={selected} waiting={waiting} live={live} onPick={pick} />;
+        return <ReasonsScreen selected={selected} waiting={waiting} onPick={pick} />;
       case 'done':
-        return <DoneScreen outcome={stage.outcome} live={live} onBack={onClose} />;
+        return <DoneScreen outcome={stage.outcome} onBack={onClose} />;
       case 'reply': {
         const from = options ?? NO_OPTIONS;
         const props: ReplyProps = {
@@ -440,7 +437,6 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           changes,
           busy: busy ?? (checkout.busy ? 'pass' : null),
           problem: problem ?? checkout.notice,
-          live,
           on: actions,
         };
         switch (stage.reason) {
@@ -489,13 +485,12 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
         {/* Outside the fading stage, on every screen: cancelling is never
             more than this one tap away. */}
         <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-          <Button3D
+          <Button
             variant="ghost"
             size="md"
             label={t('cancel.anyway')}
             accessibilityHint={t(Platform.OS === 'ios' ? 'cancel.anywayHintIos' : 'cancel.anywayHintAndroid')}
             onPress={cancelAnyway}
-            docked
           />
         </View>
       </View>
@@ -520,16 +515,6 @@ function RoundButton({ icon, label, onPress }: { icon: IconSvgElement; label: st
       <HugeiconsIcon icon={icon} size={18} color={colors.foreground} strokeWidth={2.2} />
     </Pressable>
   );
-}
-
-/** Whether the app is in front: the mascot stops breathing behind it. */
-function useAppActive(): boolean {
-  const [active, setActive] = useState(AppState.currentState === 'active');
-  useEffect(() => {
-    const subscription = AppState.addEventListener('change', (next) => setActive(next === 'active'));
-    return () => subscription.remove();
-  }, []);
-  return active;
 }
 
 const ROUND = 36;

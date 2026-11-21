@@ -73,13 +73,7 @@ export const OFFER_IT = {
   'offer.processing': 'Elaborazione…',
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
-  'offer.purchasedTitle': 'Ci sei.',
   'offer.premium': 'Walkito Premium',
-  'offer.purchasedBlurb':
-    'Il tuo piano è sbloccato e inizierà ad adattarsi dalla prossima sessione.',
-  'offer.restoredTitle': 'Che bello rivederti.',
-  'offer.restoredBlurb': 'Il tuo abbonamento è di nuovo attivo. Tutto è dove l’avevi lasciato.',
-  'offer.start': 'Inizia',
 
   'offer.stepA11y': 'Passaggio {step} di {total}',
   'offer.next': 'Avanti',
@@ -121,7 +115,6 @@ export const OFFER_IT = {
   // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
   // See `../en/offer.ts`. The words in square brackets in the headline are
   // drawn in the Plus colour: put them round the word that carries it here.
-  'offer.plans.brand': 'Walkito',
   'offer.plans.badge': 'Plus',
   'offer.plans.name': 'Walkito Plus',
   'offer.plans.headline': 'I tuoi piedi, [più forti] ogni giorno',

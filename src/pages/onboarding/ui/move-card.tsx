@@ -7,10 +7,9 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { Extrapolation, interpolate, useAnimatedStyle, type SharedValue } from 'react-native-reanimated';
 
 import { CLIP_BACKDROP, ExercisePreview, type ExercisePreviewHandle } from '@/widgets/session-player';
-import { fonts, palette } from '@/shared/config';
+import { accents, colors, fonts, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Raised, faceFor } from '@/shared/ui/raised';
 
 import type { DeckWhen } from '../model/first-week-deck';
 
@@ -28,7 +27,7 @@ export type DeckCard = {
   title: string;
   /** The week-one prescription as a row prints it: "3 × 10", "2 min". */
   dose: string;
-  /** Why this move, in the coach's bubble. */
+  /** Why this move, in the text under the deck. */
   rationale: string;
   /** The technique point: what a screen reader hears in place of the clip. */
   cue: string;
@@ -69,7 +68,6 @@ const PASSED_FADE = 0.6;
 /** How far the next card travels as it slides in on arrival. */
 const PEEK_SLIDE = 40;
 const RADIUS = 28;
-const CHIP_LIP = 2;
 
 /**
  * One move of the first week: its clip filling a card of the clip's own tall
@@ -82,8 +80,8 @@ const CHIP_LIP = 2;
  *
  * Only the chip sits on the clip, at the top, where the footage is backdrop:
  * the feet are in the bottom quarter of every clip and the hands of the
- * stretch at about half. The name, the dose and why are in the coach's
- * bubble under the deck, not over the movement they describe.
+ * stretch at about half. The name, the dose and why are in the text under
+ * the deck, not over the movement they describe.
  */
 export function MoveCard({
   card,
@@ -138,7 +136,7 @@ export function MoveCard({
 
   return (
     <Animated.View style={[styles.slot, { width, height, marginRight: gap }, motion]}>
-      <View style={[styles.lift, scheme === 'light' && styles.shadow]}>
+      <View style={styles.lift}>
         {active ? (
           <ExercisePreview
             ref={previewRef}
@@ -179,22 +177,22 @@ export function MoveCard({
 }
 
 /**
- * When the move is done, as a raised chip: the morning in amber, the colour
- * the morning routine wears everywhere else, the sessions in the brand violet.
- * Drawn from the light scheme always, because the card it sits on is light.
+ * When the move is done, as a flat white chip: the morning's glyph in amber,
+ * the colour the morning routine wears everywhere else, the sessions' in the
+ * brand violet. Light always, because the card it sits on is light.
  */
 function WhenChip({ when, label }: { when: DeckWhen; label: string }) {
-  const tone = faceFor('light', when === 'morning' ? 'amber' : 'primary');
+  const tint = when === 'morning' ? accents.light.amber.fill : colors.accent;
   return (
     <View style={styles.top} pointerEvents="none">
-      <Raised face={tone.face} lip={tone.lip} depth={CHIP_LIP} radius={10} style={styles.chipOuter} contentStyle={styles.chip}>
-        <HugeiconsIcon icon={when === 'morning' ? SunriseIcon : Calendar03Icon} size={15} color={tone.label} strokeWidth={2.2} />
+      <View style={styles.chip}>
+        <HugeiconsIcon icon={when === 'morning' ? SunriseIcon : Calendar03Icon} size={15} color={tint} strokeWidth={2.2} />
         {/* Two lines rather than an ellipsis: the card is narrow, and the
             longest translations are longer than its top edge. */}
-        <Text style={[styles.chipLabel, { color: tone.label }]} numberOfLines={2} maxFontSizeMultiplier={1.3}>
+        <Text style={[styles.chipLabel, { color: colors.text }]} numberOfLines={2} maxFontSizeMultiplier={1.3}>
           {label}
         </Text>
-      </Raised>
+      </View>
     </View>
   );
 }
@@ -215,9 +213,6 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
     backgroundColor: CLIP_BACKDROP,
   },
-  shadow: {
-    boxShadow: '0 10px 30px rgba(17,17,20,0.12)',
-  },
   face: {
     borderRadius: RADIUS,
     borderCurve: 'continuous',
@@ -236,10 +231,13 @@ const styles = StyleSheet.create({
     right: 12 + 34 + 8,
     alignItems: 'flex-start',
   },
-  chipOuter: {
-    maxWidth: '100%',
-  },
   chip: {
+    maxWidth: '100%',
+    backgroundColor: colors.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.separator,
+    borderRadius: 10,
+    borderCurve: 'continuous',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 5,

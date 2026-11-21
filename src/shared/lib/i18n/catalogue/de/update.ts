@@ -1,5 +1,5 @@
 /** The update sheet and the note after the restart. Filled per domain; see
- * `../en/core.ts` for the rules. The mascot speaks, so "du", warm and short. */
+ * `../en/core.ts` for the rules. "Du", warm and short. */
 
 export const UPDATE_DE = {
   'update.readyTitle': 'Walkito ist besser geworden',

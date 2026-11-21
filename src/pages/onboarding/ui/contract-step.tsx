@@ -1,18 +1,8 @@
-import LottieView from 'lottie-react-native';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { PanResponder, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import type { SharedValue } from 'react-native-reanimated';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
-import Animated, {
-  Easing,
-  ReduceMotion,
-  runOnJS,
-  useAnimatedProps,
-  useAnimatedStyle,
-  useSharedValue,
-  useDerivedValue,
-  withTiming,
-} from 'react-native-reanimated';
+import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
@@ -25,31 +15,9 @@ const STROKE = 3.5;
 /** Diameter of the round stamp. */
 const STAMP = 132;
 
-/**
- * The ceremony: a flipbook of 720×720 WebP frames at 24fps, trimmed from
- * `assets-src/lottie/contract.json` by `scripts/build-lottie.mjs`
- * (`bun run build:lottie`).
- *
- * It starts where the ceremony actually starts. The export is 121 frames, but
- * measured off it, frames 1–60 barely move — a couple of units of change per
- * frame against 25–31 later on — so its opening two and a half seconds read as
- * something already half-done rather than as a beginning. This step always
- * held the export's frame 60 and played on from there, so the build drops
- * frames 0–59 and never ships them: frame 0 here is the export's frame 60, and
- * the file is the 61 frames that are ever on screen. Timing is unchanged —
- * the same frames, played at the same rate from the same still.
- *
- * Still JSON, so still inlined into the bundle as base64. A `.lottie` would
- * ship the frames as an asset instead, but lottie-ios loads one off the main
- * thread and decodes it a moment after mount, in the middle of this step's
- * slide-in, which then hitches while the figure pops in. A JSON source is
- * decoded while the view mounts, before anything moves.
- */
-const CEREMONY = require('@assets/lottie/contract.json');
-const CEREMONY_FRAMES = 61;
-const CEREMONY_FPS = 24;
-
-const AnimatedLottie = Animated.createAnimatedComponent(LottieView);
+/** How long the landed stamp is held before the flow moves on: cutting on
+ * the press reads as an interruption. */
+const SEAL_HOLD_MS = 1400;
 
 export type ContractStepProps = {
   name: string;
@@ -59,11 +27,11 @@ export type ContractStepProps = {
   onDrawingChange: (drawing: boolean) => void;
   /** 0 → 1 as the stamp comes down. Owned by the page so the CTA can start it. */
   stamp: SharedValue<number>;
-  /** True once the button has been pressed: the stamp lands, then the
-   * animation plays out, and only then is the flow allowed to move on. */
+  /** True once the button has been pressed: the stamp lands, a beat passes,
+   * and only then is the flow allowed to move on. */
   sealing: boolean;
-  /** Fired when the whole ceremony — stamp, animation, and a beat after it —
-   * has finished. The page advances on this, not on the button press. */
+  /** Fired once the stamp has landed and been held. The page advances on
+   * this, not on the button press. */
   onSealed: () => void;
 };
 
@@ -94,38 +62,11 @@ export function ContractStep({
   const sealed = useRef(onSealed);
   sealed.current = onSealed;
 
-  /**
-   * The frame, as a fraction. Held on the first frame rather than played.
-   *
-   * `autoPlay={false}` plus a plain `progress` number did not hold it — the
-   * view started itself the moment the screen appeared, which is the one thing
-   * this must not do. Driving the frame from a shared value is the same
-   * arrangement the welcome mascot uses and leaves nothing able to start it
-   * but this component.
-   */
-  const frame = useSharedValue(0);
-  const ceremonyProps = useAnimatedProps(() => ({ progress: frame.value }));
-
-  const finish = useCallback(() => {
-    // A beat after the last frame; cutting on it reads as an interruption.
-    setTimeout(() => sealed.current(), 1000);
-  }, []);
-
   useEffect(() => {
-    if (!sealing) return;
-    frame.value = withTiming(
-      1,
-      {
-        duration: (CEREMONY_FRAMES / CEREMONY_FPS) * 1000,
-        easing: Easing.linear,
-        reduceMotion: ReduceMotion.System,
-      },
-      (done) => {
-        'worklet';
-        if (done) runOnJS(finish)();
-      },
-    );
-  }, [sealing, frame, finish]);
+    if (!sealing) return undefined;
+    const id = setTimeout(() => sealed.current(), SEAL_HOLD_MS);
+    return () => clearTimeout(id);
+  }, [sealing]);
 
   const [paths, setPaths] = useState<string[]>([]);
   const [current, setCurrent] = useState('');
@@ -188,19 +129,6 @@ export function ContractStep({
 
   return (
     <View style={styles.wrap}>
-
-      <View style={styles.stage}>
-        <AnimatedLottie
-          source={CEREMONY}
-          style={styles.ceremony}
-          resizeMode="contain"
-          autoPlay={false}
-          loop={false}
-          animatedProps={ceremonyProps}
-        />
-      </View>
-
-
       <View onLayout={onLayout} style={styles.pad} {...responder.panHandlers}>
         {/* Glass as an absolute sibling, never a parent — nested glass renders
             empty on iOS 26. */}
@@ -294,18 +222,6 @@ const styles = StyleSheet.create({
   list: { gap: 12 },
   row: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
   item: { flex: 1, ...fonts.regular(15), lineHeight: 21 },
-  // Pulled up under the heading and given real size — this is the screen's
-  // subject, not an illustration beside it.
-  // Fixed height and clipped, so scaling the character up inside it enlarges
-  // him without the block growing and pushing the pad off the screen again.
-  stage: {
-    height: 208,
-    marginTop: -6,
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  ceremony: { width: '100%', height: 208, transform: [{ scale: 1.42 }] },
   pad: {
     height: PAD_HEIGHT,
     marginTop: 18,

@@ -65,6 +65,7 @@ export const CORE_EN = {
   'settings.write': 'Write to Rahim',
   'settings.writeHint': 'A person reads every message',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   /** Written under the user's message, so a reply can find the build and the plan. */
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   // ── Your plan: what onboarding asked, changeable ─────────────────────────
@@ -116,9 +117,6 @@ export const CORE_EN = {
   // puts the count first and the noun last, Russian puts "подряд" (in a row)
   // after both, and Spanish needs "de" between them.
   'streak.title': { one: '{count}-day streak', other: '{count}-day streak' },
-  /** The milestone moment: 3, 7, 10, 30 and 100 days. Ten is the big one. */
-  'streak.milestoneBlurb': 'Every one of those days counted.',
-  'streak.milestoneBigBlurb': 'Ten days. This is where a habit starts to hold.',
   'streak.rule':
     'A day counts when you check in, train or finish a Library routine. On a rest day, a check-in is enough.',
   'streak.total': { one: '{count} day so far.', other: '{count} days so far.' },

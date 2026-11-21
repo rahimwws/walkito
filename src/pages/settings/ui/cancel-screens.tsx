@@ -7,18 +7,9 @@ import { meterColors } from '@/shared/config';
 import type { CancelOffer, CancelReason } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import {
-  giftRig,
-  heartRig,
-  reminderRig,
-  sleepingRig,
-  thinkingRig,
-  thumbsUpRig,
-  trophyRig,
-} from '@/shared/ui/mascot';
-import { OptionCard3D } from '@/shared/ui/option-card-3d';
+import { OptionCard } from '@/shared/ui/option-card';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 import { TimePicker } from '@/shared/ui/time-picker';
 
@@ -83,7 +74,6 @@ export type ReplyProps = {
   busy: StoreOffer | null;
   /** The store's refusal, in the app's words. */
   problem: string | null;
-  live: boolean;
   on: ReplyActions;
 };
 
@@ -92,14 +82,12 @@ export type ReplyProps = {
 export function ReasonsScreen({
   selected,
   waiting,
-  live,
   onPick,
 }: {
   selected: CancelReason | null;
   /** Picked, and the store has not answered yet: a spinner in a row kept for
    * it, so nothing moves when it appears. */
   waiting: boolean;
-  live: boolean;
   onPick: (reason: CancelReason) => void;
 }) {
   const scheme = useColorScheme();
@@ -107,10 +95,10 @@ export function ReasonsScreen({
   const t = useT();
   return (
     <>
-      <Hero rig={thinkingRig} state="thinking" title={t('cancel.title')} body={t('cancel.sub')} live={live} />
+      <Hero title={t('cancel.title')} body={t('cancel.sub')} />
       <View style={styles.cards} accessibilityRole="radiogroup">
         {CANCEL_REASONS.map((reason) => (
-          <OptionCard3D
+          <OptionCard
             key={reason.id}
             label={t(reason.label)}
             art={<FluentIcon name={reason.art} />}
@@ -135,17 +123,16 @@ export function ReasonsScreen({
  * to the store's page), so the kind words below it are for the review account
  * when the store had no pass to sell.
  */
-export function BudgetReply({ options, offers, busy, problem, live, on }: ReplyProps) {
+export function BudgetReply({ options, offers, busy, problem, on }: ReplyProps) {
   const t = useT();
 
   const pass = offers.includes('pass') ? options.pass : null;
   if (pass != null) {
     return (
       <>
-        <Hero rig={giftRig} shot="present" title={t('cancel.budget.title')} live={live} />
+        <Hero title={t('cancel.budget.title')} />
         <OfferCard
           art="calendar"
-          tone="violet"
           title={t('pass.budget.title')}
           body={t('pass.budget.body', { price: pass.priceString })}
           cta={t('pass.budget.cta', { price: pass.priceString })}
@@ -159,43 +146,36 @@ export function BudgetReply({ options, offers, busy, problem, live, on }: ReplyP
     );
   }
 
-  return <Hero rig={heartRig} shot="nod" title={t('cancel.budget.noneTitle')} body={t('cancel.budget.none')} live={live} />;
+  return <Hero title={t('cancel.budget.noneTitle')} body={t('cancel.budget.none')} />;
 }
 
 // ── "My feet are better" ─────────────────────────────────────────────────────
 
-export function BetterReply({ changes, live, on }: ReplyProps) {
+export function BetterReply({ changes, on }: ReplyProps) {
   const t = useT();
   const proud = changes.length > 0;
   return (
     <>
-      <Hero
-        rig={proud ? trophyRig : thumbsUpRig}
-        shot={proud ? 'cheer' : 'happy'}
-        title={t('cancel.better.title')}
-        body={t(proud ? 'cancel.better.body' : 'cancel.better.plain')}
-        live={live}
-      />
+      <Hero title={t('cancel.better.title')} body={t(proud ? 'cancel.better.body' : 'cancel.better.plain')} />
       {proud && <ChangesCard changes={changes} />}
       <Line>{t('cancel.better.reviewAsk')}</Line>
-      <Button3D label={t('cancel.better.review')} onPress={on.review} />
+      <Button label={t('cancel.better.review')} onPress={on.review} />
     </>
   );
 }
 
 // ── "I'm taking a break" ─────────────────────────────────────────────────────
 
-export function PauseReply({ options, offers, busy, problem, live, on }: ReplyProps) {
+export function PauseReply({ options, offers, busy, problem, on }: ReplyProps) {
   const t = useT();
 
   const freeMonth = offers.includes('free_month') ? options.freeMonth : null;
   if (freeMonth != null) {
     return (
       <>
-        <Hero rig={sleepingRig} title={t('cancel.pause.title')} live={live} />
+        <Hero title={t('cancel.pause.title')} />
         <OfferCard
           art="hotBeverage"
-          tone="teal"
           title={t('cancel.pause.freeMonthTitle')}
           body={t(options.yearly ? 'cancel.pause.freeMonthBodyYear' : 'cancel.pause.freeMonthBody')}
           cta={t('cancel.pause.freeMonthCta')}
@@ -211,10 +191,9 @@ export function PauseReply({ options, offers, busy, problem, live, on }: ReplyPr
   if (offers.includes('pause')) {
     return (
       <>
-        <Hero rig={sleepingRig} title={t('cancel.pause.title')} live={live} />
+        <Hero title={t('cancel.pause.title')} />
         <OfferCard
           art="hotBeverage"
-          tone="teal"
           title={t('cancel.pause.playTitle')}
           body={t('cancel.pause.playBody')}
           cta={t('cancel.pause.playCta')}
@@ -226,18 +205,18 @@ export function PauseReply({ options, offers, busy, problem, live, on }: ReplyPr
     );
   }
 
-  return <Hero rig={sleepingRig} title={t('cancel.pause.title')} body={t('cancel.pause.none')} live={live} />;
+  return <Hero title={t('cancel.pause.title')} body={t('cancel.pause.none')} />;
 }
 
 // ── "It isn't helping, or it hurts" ──────────────────────────────────────────
 
 /** No discount here, ever: somebody it is not helping is offered help, not a
  * lower price for more of the same. */
-export function NotHelpingReply({ offers, live, on }: ReplyProps) {
+export function NotHelpingReply({ offers, on }: ReplyProps) {
   const t = useT();
   return (
     <>
-      <Hero rig={heartRig} shot="nod" title={t('cancel.notHelping.title')} body={t('cancel.notHelping.body')} live={live} />
+      <Hero title={t('cancel.notHelping.title')} body={t('cancel.notHelping.body')} />
       <View style={styles.cards}>
         {offers.includes('lighter') ? (
           <ActionCard
@@ -274,7 +253,7 @@ function reminderNow(): number {
   return planSettings().reminderMinutes ?? usualStartMinute() ?? wakeMinutes() + 15;
 }
 
-export function NoTimeReply({ offers, live, on }: ReplyProps) {
+export function NoTimeReply({ offers, on }: ReplyProps) {
   const t = useT();
   // Held here, so the picker follows the finger at once; the flow writes it.
   const [at, setAt] = useState(reminderNow);
@@ -284,13 +263,7 @@ export function NoTimeReply({ offers, live, on }: ReplyProps) {
   };
   return (
     <>
-      <Hero
-        rig={reminderRig}
-        shot="wave"
-        title={t('cancel.noTime.title')}
-        body={t('cancel.noTime.body', { count: SHORTEST_MINUTES })}
-        live={live}
-      />
+      <Hero title={t('cancel.noTime.title')} body={t('cancel.noTime.body', { count: SHORTEST_MINUTES })} />
       <View style={styles.cards}>
         {offers.includes('short_sessions') ? (
           <ActionCard
@@ -315,7 +288,7 @@ export function NoTimeReply({ offers, live, on }: ReplyProps) {
 
 // ── All set ──────────────────────────────────────────────────────────────────
 
-export function DoneScreen({ outcome, live, onBack }: { outcome: Outcome; live: boolean; onBack: () => void }) {
+export function DoneScreen({ outcome, onBack }: { outcome: Outcome; onBack: () => void }) {
   const t = useT();
   const language = useLanguage();
   const body = (() => {
@@ -341,10 +314,10 @@ export function DoneScreen({ outcome, live, onBack }: { outcome: Outcome; live: 
   const stillRenews = outcome.kind === 'pass' && outcome.renews;
   return (
     <>
-      <Hero rig={thumbsUpRig} shot="happy" title={t('cancel.done.title')} body={body} live={live} />
+      <Hero title={t('cancel.done.title')} body={body} />
       {pending && <Line>{t('cancel.done.pending')}</Line>}
       {stillRenews && <Line>{t('pass.done.stillRenews')}</Line>}
-      <Button3D label={t('cancel.done.back')} onPress={onBack} />
+      <Button label={t('cancel.done.back')} onPress={onBack} />
     </>
   );
 }

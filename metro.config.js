@@ -16,11 +16,9 @@ const config = getDefaultConfig(__dirname);
 // version: its `exports` map does not publish the subpath, and requiring it
 // throws before Metro ever starts.
 //
-// `assets-src/` holds the sources that generated assets are built from (the
-// contract ceremony's full Lottie export; see `scripts/build-lottie.mjs`). A
-// required `.json` is source to Metro and is inlined into the bundle, frames
-// and all, so this is blocked: a `require` of the 3.4 MB export fails at bundle
-// time instead of quietly doubling what the ceremony costs.
+// `assets-src/` holds the sources that generated assets are built from. A
+// required file there is never what the app should ship, so it is blocked and
+// fails at bundle time.
 const root = __dirname.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 config.resolver.blockList = [
   new RegExp(`^${root}/site/node_modules/.*`),

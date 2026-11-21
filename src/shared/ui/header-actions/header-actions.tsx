@@ -1,17 +1,13 @@
 import DropletIcon from '@hugeicons/core-free-icons/DropletIcon';
+import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { useState, type ReactNode } from 'react';
 import { GlassContainer, GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
-  Easing,
-  ReduceMotion,
   runOnJS,
   useAnimatedReaction,
   useAnimatedStyle,
-  useSharedValue,
-  withSequence,
-  withTiming,
   type SharedValue,
 } from 'react-native-reanimated';
 
@@ -82,15 +78,6 @@ const OPEN_LIFT = 16;
  */
 const PROFILE_SLOT = 40;
 const TRAILING_GAP = 8;
-
-/** The mascot, holding the thing on offer. */
-const GIFT_ART = require('@assets/home/mascot-gift.png');
-
-/** One beat of the shake. Four of these run back to back, so the whole thing
- * is over in under half a second — long enough to read as the box being
- * rattled, short enough that a second tap is never queued behind it. */
-const SHAKE_MS = 70;
-const SHAKE_DEG = 11;
 
 /**
  * The trailing capsules in a screen header: a streak count, then the profile
@@ -230,47 +217,18 @@ export function StreakCapsule({
   );
 }
 
-/**
- * The reward capsule.
- *
- * The mascot shakes when it is tapped — a present that rattles when you pick it
- * up. The motion is on the artwork alone rather than the whole capsule: shaking
- * the glass would drag the label along with it, and text that wobbles reads as
- * a glitch rather than as an object being handled.
- */
+/** The reward capsule. */
 function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
   const scheme = useColorScheme();
-  const shake = useSharedValue(0);
   const t = useT();
-
-  const wobble = useAnimatedStyle(() => ({
-    transform: [{ rotate: `${shake.value * SHAKE_DEG}deg` }, { scale: 1 + Math.abs(shake.value) * 0.06 }],
-  }));
-
-  const rattle = () => {
-    // Out, past centre, back, and settle. Ending on an explicit 0 matters: a
-    // sequence that stops on its last extreme would leave the box tilted.
-    const beat = (to: number) =>
-      withTiming(to, {
-        duration: SHAKE_MS,
-        easing: Easing.inOut(Easing.quad),
-        reduceMotion: ReduceMotion.System,
-      });
-    shake.value = withSequence(beat(1), beat(-1), beat(0.6), beat(-0.4), beat(0));
-    onPress();
-  };
 
   return (
     // Outside the glass, for the reason spelled out on the streak capsule: a
     // touchable inside an interactive `GlassView` loses its first tap to the
     // material's own press recogniser.
-    <Pressable accessibilityRole="button" accessibilityLabel={t('gift.openA11y')} onPress={rattle}>
+    <Pressable accessibilityRole="button" accessibilityLabel={t('gift.openA11y')} onPress={onPress}>
       <GlassView isInteractive style={[styles.gift, !GLASS && { backgroundColor: meterColors[scheme].track }]}>
-        <Animated.Image
-          source={GIFT_ART}
-          style={[styles.giftArt, wobble]}
-          resizeMode="contain"
-        />
+        <HugeiconsIcon icon={GiftIcon} size={22} color={tint} strokeWidth={1.9} />
         <Text style={[styles.giftLabel, { color: tint }]}>{t('gift.capsule')}</Text>
       </GlassView>
     </Pressable>
@@ -419,17 +377,13 @@ const styles = StyleSheet.create({
   gift: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 5,
-    paddingLeft: 6,
-    paddingRight: 14,
-    // One point, not five: the artwork is 38pt, and the streak capsule beside
-    // it stands 40. Any more here and the gift alone decides how tall the row
-    // is, leaving its two neighbours looking sunk into it.
-    paddingVertical: 1,
+    gap: 7,
+    paddingLeft: 13,
+    paddingRight: 16,
+    paddingVertical: 9,
     borderRadius: 50,
     borderCurve: 'continuous',
     overflow: 'hidden',
   },
-  giftArt: { width: 38, height: 38 },
   giftLabel: fonts.semibold(17, -0.2),
 });

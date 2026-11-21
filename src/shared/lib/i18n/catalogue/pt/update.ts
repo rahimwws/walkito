@@ -1,6 +1,6 @@
 /** The update sheet and the note after the restart, Brazilian Portuguese.
- * Filled per domain; see `../en/core.ts` for the rules. In the mascot's voice:
- * short, warm, never a threat. */
+ * Filled per domain; see `../en/core.ts` for the rules. Short, warm, never a
+ * threat. */
 
 export const UPDATE_PT = {
   'update.readyTitle': 'O Walkito ficou melhor',

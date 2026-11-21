@@ -6,7 +6,7 @@ import { SignInOptions } from '@/features/sign-in';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 /**
@@ -133,13 +133,13 @@ export function PassCheckoutSheet({
               {shown.startsAt != null ? t('pass.set.body', { date: date(shown.startsAt) }) : t('pass.set.bodyNoDate')}
             </Text>
             <View style={styles.actions}>
-              <Button3D
+              <Button
                 label={t('pass.set.turnOff')}
                 accessibilityHint={t(Platform.OS === 'ios' ? 'cancel.anywayHintIos' : 'cancel.anywayHintAndroid')}
                 onPress={onTurnOffRenewal}
                 fullWidth
               />
-              <Button3D variant="ghost" size="md" label={t('pass.set.done')} onPress={onDone} />
+              <Button variant="ghost" size="md" label={t('pass.set.done')} onPress={onDone} />
             </View>
           </>
         );

@@ -11,7 +11,6 @@ import {
   doneTitle,
   earnedToday,
   outcomeView,
-  pathReached,
   rationaleLine,
   splitLead,
   testLine,
@@ -317,11 +316,6 @@ describe('the plan screen', () => {
     // Every goal reached: keeping it.
     const keep = weekOf('2026-10-26', 9, null);
     expect(weeks(path({ thisWeek: before, nextWeek: keep }))[1]).toMatchObject({ theme: 'keep', change: { kind: 'keep' } });
-  });
-
-  test('the rail is solid up to this week and ahead after it', () => {
-    const nodes = path();
-    expect(nodes.map(pathReached)).toEqual([true, true, false, false]);
   });
 
   test('a test day reads as one line: today, the next counted in days, a taken one by its day', () => {

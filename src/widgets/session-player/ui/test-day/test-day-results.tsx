@@ -5,9 +5,9 @@ import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
 import Share03Icon from '@hugeicons/core-free-icons/Share03Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { Canvas, Circle as SkiaCircle, RadialGradient, makeImageFromView, vec } from '@shopify/react-native-skia';
+import { makeImageFromView } from '@shopify/react-native-skia';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import {
   Image,
   Platform,
@@ -41,7 +41,6 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, handsUpRig, preloadMascotSounds, trophyRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 import { settle } from '@/shared/lib/motion';
@@ -51,12 +50,6 @@ import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from 
 import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
 import { GOAL_ZONE } from './test-meta';
 import { TestHistoryBars, TestRing } from './test-visuals';
-
-/** The mascot, when the moment is the test done rather than a number gained:
- * the trophy on the first test day, arms up on every one after it. */
-const MASCOT_SIZE = 132;
-/** The share card is captured as a picture, so its mascot is the still art. */
-const SHARE_MASCOT = require('@assets/home/mascot-nopain.png');
 
 const NAME_KEY = {
   arch_hold: 'testday.results.name.arch_hold',
@@ -184,9 +177,6 @@ function useCountUp(from: number, to: number, delay: number): number {
 export type TestDayResultsProps = {
   outcome: TestDayOutcome;
   side: 'left' | 'right' | 'both' | null;
-  /** Off once the flow is on its way out: the mascot holds still while the
-   * host slides it away or keeps it mounted out of sight. */
-  active?: boolean;
   onDone: () => void;
 };
 
@@ -201,7 +191,7 @@ type Hero =
  *
  * First the one thing worth feeling: a goal reached, or the test that grew
  * most, drawn as its own picture with the gain popping in over it; on a first
- * test or a level one, the mascot. Then all three tests on one screen, each a
+ * test or a level one, the words alone. Then all three tests on one screen, each a
  * row: its picture inside a ring that fills from last time's share of the goal
  * to today's, the figure counting up, the change in short. A row opens to
  * every test so far, the legs, and what the test shows. The next test closes
@@ -215,7 +205,7 @@ type Hero =
  * same screen serves "See results" on a later day (Home's test task and the
  * plan's today card both open the flow with `review`).
  */
-export function TestDayResults({ outcome, side, active = true, onDone }: TestDayResultsProps) {
+export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -257,9 +247,6 @@ export function TestDayResults({ outcome, side, active = true, onDone }: TestDay
   }).format(fromDateKey(outcome.nextTestOn));
 
   const verdict: Verdict = read == null ? { kind: 'first' } : verdictOf(read.rows);
-  /** The person's first test day: nothing stored before it. Read from the
-   * stored results, so "See results" later on shows the same picture. */
-  const firstTest = read?.previousDate == null;
   const hero = heroOf(read?.rows ?? [], verdict, outcome.reached);
   const dateLine =
     read == null
@@ -294,9 +281,6 @@ export function TestDayResults({ outcome, side, active = true, onDone }: TestDay
             hero={hero}
             rows={cards}
             dateLine={dateLine}
-            firstTest={firstTest}
-            // Still under the share card, and once the flow is leaving.
-            paused={!active || sharing}
           />
 
           <View style={styles.rows}>
@@ -414,54 +398,17 @@ function heroEyebrow(t: Translate, hero: Hero): string {
 }
 
 /**
- * The mascot for a test that is done without a gain to show. The same for any
- * such result, because the test being done is what is marked, never the
- * number.
- *
- * On the first test day it is the trophy, held up once ("look what I've
- * got") for having done the first one at all, whatever it measured. Every
- * later test day keeps the arms-up pose, which waves hello once it is up.
- */
-function HeroMascot({ surface, first, paused }: { surface: string; first: boolean; paused: boolean }) {
-  const mascot = useRef<MascotHandle>(null);
-  useEffect(() => {
-    preloadMascotSounds([first ? 'gift' : 'pop']);
-    const timer = setTimeout(() => mascot.current?.play(first ? 'present' : 'wave'), 600);
-    return () => clearTimeout(timer);
-    // Once per mount: the results are read once, and `first` with them.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-  return (
-    <Mascot
-      ref={mascot}
-      rig={first ? trophyRig : handsUpRig}
-      size={MASCOT_SIZE}
-      sounds
-      surface={surface}
-      paused={paused}
-    />
-  );
-}
-
-/**
- * The moment. With something to celebrate it is the test's own picture on a
- * glow in its accent, the gain popping in over it and a burst around it, with
- * a success tap; otherwise the mascot on a quiet glow: the trophy on the first
- * test day, arms up on every later one.
+ * The moment. With something to celebrate it is the test's own picture, the
+ * gain popping in over it, with a success tap; otherwise the words alone.
  */
 function HeroBlock({
   hero,
   rows,
   dateLine,
-  firstTest,
-  paused,
 }: {
   hero: Hero;
   rows: readonly (ResultRow & { type: CardGoal })[];
   dateLine: string | null;
-  /** The person's first test day: the mascot is the trophy. */
-  firstTest: boolean;
-  paused: boolean;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -487,12 +434,6 @@ function HeroBlock({
     opacity: pop.value,
     transform: [{ scale: 0.86 + pop.value * 0.14 }],
   }));
-  const glow = useProgress(0, 1, HERO_DELAY, 900);
-  const glowStyle = useAnimatedStyle(() => ({
-    opacity: glow.value,
-    transform: [{ scale: 0.6 + glow.value * 0.4 }],
-  }));
-
   // The gain arrives last, with a spring, so it lands as the moment's point.
   const badge = useSharedValue(reduceMotion ? 1 : 0);
   useEffect(() => {
@@ -506,33 +447,16 @@ function HeroBlock({
 
   return (
     <View style={styles.hero}>
-      <View style={styles.heroArt}>
-        <Animated.View style={[styles.heroGlow, glowStyle]} pointerEvents="none">
-          <Canvas style={styles.heroGlowCanvas}>
-            <SkiaCircle cx={GLOW / 2} cy={GLOW / 2} r={GLOW / 2}>
-              <RadialGradient
-                c={vec(GLOW / 2, GLOW / 2)}
-                r={GLOW / 2}
-                colors={[withAlpha(tone.fill, celebrate ? 0.42 : 0.3), withAlpha(tone.fill, 0)]}
-              />
-            </SkiaCircle>
-          </Canvas>
-        </Animated.View>
-        {celebrate && !reduceMotion && <Burst />}
-        <Animated.View style={[styles.heroArtInner, artStyle]}>
-          {type != null ? (
+      {type != null && (
+        <View style={styles.heroArt}>
+          <Animated.View style={[styles.heroArtInner, artStyle]}>
             <Image
               source={TEST_PICTURES[PICTURE_OF[type]].full}
               style={styles.heroPicture}
               resizeMode="contain"
               accessibilityIgnoresInvertColors
             />
-          ) : (
-            <View style={styles.heroMascot} accessibilityElementsHidden importantForAccessibility="no">
-              <HeroMascot surface={colors.background} first={firstTest} paused={paused} />
-            </View>
-          )}
-        </Animated.View>
+          </Animated.View>
         {celebrate && row != null && (
           <Animated.View
             style={[
@@ -551,7 +475,8 @@ function HeroBlock({
             </Text>
           </Animated.View>
         )}
-      </View>
+        </View>
+      )}
 
       <Rise delay={HERO_DELAY + 120} style={styles.heroCopy}>
         <Text style={[styles.eyebrow, { color: celebrate ? tone.fill : meter.label }]}>{heroEyebrow(t, hero)}</Text>
@@ -563,86 +488,6 @@ function HeroBlock({
         </Text>
       </Rise>
     </View>
-  );
-}
-
-/** The glow's diameter: wider than the picture, so it fades out past its edges. */
-const GLOW = 300;
-
-/** `#RRGGBB` at an opacity, for a gradient that fades a colour to nothing. */
-function withAlpha(hex: string, alpha: number): string {
-  const n = Number.parseInt(hex.slice(1, 7), 16);
-  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${alpha})`;
-}
-
-const BURST_PIECES = 18;
-
-/** Confetti, once: small pieces in the tests' accents thrown out from behind
- * the picture and fading as they slow. Skipped with Reduce Motion. */
-function Burst() {
-  const scheme = useColorScheme();
-  const tones = [
-    accents[scheme].violet.fill,
-    accents[scheme].amber.fill,
-    accents[scheme].blue.fill,
-    accents[scheme].teal.fill,
-    meterColors[scheme].positive,
-  ];
-  const pieces = useMemo(
-    () =>
-      Array.from({ length: BURST_PIECES }, (_, i) => {
-        const angle = (i / BURST_PIECES) * Math.PI * 2 + ((i * 37) % 10) / 20;
-        return {
-          dx: Math.cos(angle) * (96 + ((i * 53) % 46)),
-          dy: Math.sin(angle) * (78 + ((i * 29) % 40)),
-          size: 6 + ((i * 7) % 5),
-          round: i % 3 === 0,
-          spin: ((i * 61) % 180) - 90,
-          color: tones[i % tones.length],
-        };
-      }),
-    // The tones follow the scheme; the throw is fixed per piece.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [scheme],
-  );
-  const p = useProgress(0, 1, HERO_DELAY + 220, 1100);
-  return (
-    <View style={StyleSheet.absoluteFill} pointerEvents="none">
-      {pieces.map((piece, i) => (
-        <BurstPiece key={i} piece={piece} p={p} />
-      ))}
-    </View>
-  );
-}
-
-function BurstPiece({
-  piece,
-  p,
-}: {
-  piece: { dx: number; dy: number; size: number; round: boolean; spin: number; color: string };
-  p: SharedValue<number>;
-}) {
-  const style = useAnimatedStyle(() => ({
-    opacity: p.value === 0 ? 0 : 1 - p.value ** 2,
-    transform: [
-      { translateX: piece.dx * p.value },
-      { translateY: piece.dy * p.value + 24 * p.value ** 2 },
-      { rotate: `${piece.spin * p.value}deg` },
-    ],
-  }));
-  return (
-    <Animated.View
-      style={[
-        styles.piece,
-        {
-          width: piece.size,
-          height: piece.round ? piece.size : piece.size * 0.5,
-          borderRadius: piece.round ? piece.size / 2 : 1.5,
-          backgroundColor: piece.color,
-        },
-        style,
-      ]}
-    />
   );
 }
 
@@ -818,8 +663,6 @@ function changeSentence(t: Translate, row: ResultRow): string {
 /** Always drawn dark: the card is a picture that leaves the app, and it reads
  * the same on anyone's feed whatever this phone's appearance is. */
 const CARD_BG = '#141218';
-const CARD_GLOW = 'rgba(124,92,255,0.45)';
-const CARD_GLOW_SIZE = 360;
 
 /**
  * The result as a card, shown first so the person sees what leaves the app,
@@ -839,7 +682,7 @@ function ShareOverlay({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const t = useT();
-  const card = useRef<View>(null);
+  const card = useRef<ComponentRef<typeof View>>(null);
   const [busy, setBusy] = useState(false);
   const value = (type: CardGoal) => rows.find((row) => row.type === type)?.value ?? 0;
 
@@ -853,7 +696,7 @@ function ShareOverlay({
         balance: value('balance'),
       });
       if (Platform.OS === 'ios') {
-        const image = await makeImageFromView(card);
+        const image = await makeImageFromView(card as unknown as Parameters<typeof makeImageFromView>[0]);
         const base64 = image?.encodeToBase64();
         await Share.share(base64 != null ? { url: `data:image/png;base64,${base64}` } : { message });
       } else {
@@ -871,19 +714,7 @@ function ShareOverlay({
     <Animated.View entering={FadeIn.duration(200)} exiting={FadeOut.duration(160)} style={styles.overlay}>
       <Pressable style={StyleSheet.absoluteFill} onPress={onClose} accessibilityLabel={t('testday.close')} />
       <View ref={card} collapsable={false} style={styles.card}>
-        <View style={styles.cardGlow} pointerEvents="none">
-          <Canvas style={styles.cardGlowCanvas}>
-            <SkiaCircle cx={CARD_GLOW_SIZE / 2} cy={CARD_GLOW_SIZE / 2} r={CARD_GLOW_SIZE / 2}>
-              <RadialGradient
-                c={vec(CARD_GLOW_SIZE / 2, CARD_GLOW_SIZE / 2)}
-                r={CARD_GLOW_SIZE / 2}
-                colors={[CARD_GLOW, 'rgba(124,92,255,0)']}
-              />
-            </SkiaCircle>
-          </Canvas>
-        </View>
         <View style={styles.cardHead}>
-          <Image source={SHARE_MASCOT} style={styles.cardMascot} resizeMode="contain" />
           <View style={styles.flex}>
             <Text style={styles.cardBrand}>{t('testday.results.shareBrand')}</Text>
             <Text style={styles.cardDate}>{date}</Text>
@@ -945,15 +776,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  heroGlow: {
-    position: 'absolute',
-    width: GLOW,
-    height: GLOW,
-  },
-  heroGlowCanvas: {
-    width: GLOW,
-    height: GLOW,
-  },
   heroArtInner: {
     width: '100%',
     height: '100%',
@@ -963,10 +785,6 @@ const styles = StyleSheet.create({
   heroPicture: {
     width: '86%',
     height: '100%',
-  },
-  heroMascot: {
-    width: MASCOT_SIZE,
-    height: MASCOT_SIZE,
   },
   heroBadge: {
     position: 'absolute',
@@ -983,11 +801,6 @@ const styles = StyleSheet.create({
   heroBadgeText: {
     ...fonts.heavy(16, -0.2),
     color: '#FFFFFF',
-  },
-  piece: {
-    position: 'absolute',
-    left: '50%',
-    top: '50%',
   },
   heroCopy: {
     alignItems: 'center',
@@ -1158,23 +971,11 @@ const styles = StyleSheet.create({
     backgroundColor: CARD_BG,
     overflow: 'hidden',
   },
-  cardGlow: {
-    position: 'absolute',
-    top: -170,
-    right: -150,
-    width: CARD_GLOW_SIZE,
-    height: CARD_GLOW_SIZE,
-  },
-  cardGlowCanvas: {
-    width: CARD_GLOW_SIZE,
-    height: CARD_GLOW_SIZE,
-  },
   cardHead: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
   },
-  cardMascot: { width: 44, height: 44 },
   cardBrand: {
     ...fonts.heavy(18, -0.3),
     color: '#FFFFFF',

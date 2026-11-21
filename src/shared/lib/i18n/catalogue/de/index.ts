@@ -17,7 +17,6 @@ import { WIDGET_DE } from './widget';
 import { UPDATE_DE } from './update';
 import { DONE_DE } from './done';
 import { STREAKS_DE } from './streaks';
-import { STICKERS_DE } from './stickers';
 import { RECAP_DE } from './recap';
 import { HOME_OFFER_DE } from './home-offer';
 import { CANCEL_DE } from './cancel';
@@ -54,7 +53,6 @@ export const de: CatalogueFor<'de'> = {
   ...UPDATE_DE,
   ...DONE_DE,
   ...STREAKS_DE,
-  ...STICKERS_DE,
   ...RECAP_DE,
   ...HOME_OFFER_DE,
   ...CANCEL_DE,

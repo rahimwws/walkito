@@ -1,6 +1,5 @@
 import { Capsule, Gauge, HStack, Image, Link, Spacer, Text, VStack, ZStack } from '@expo/ui/swift-ui';
 import {
-  aspectRatio,
   background,
   containerBackground,
   contentShape,
@@ -12,7 +11,6 @@ import {
   minimumScaleFactor,
   opacity,
   padding,
-  resizable,
   scaleEffect,
   shapes,
   strokeBorder,
@@ -87,9 +85,6 @@ export type DailyWidgetProps = {
     /** The word next to the check-in mark. */
     checkinLabel: string;
   };
-  /** Local `file://` URIs of the mascot, copied into the App Group by the
-   * app. Each is absent until copied, and an SF Symbol stands in. */
-  art: { neutral?: string; pain?: string; fine?: string };
   goal: { done: number; total: number };
   /** Monday-first, seven entries. */
   week: WidgetDay[];
@@ -108,8 +103,8 @@ export type DailyWidgetProps = {
  * One widget in two sizes rather than two widgets, so there is nothing to
  * choose between in the gallery.
  *
- * - **Small** asks the morning question the way Home does — two cards, a
- *   mascot on each — and each card opens the app on that answer. "No pain" is
+ * - **Small** asks the morning question the way Home does — two cards — and
+ *   each card opens the app on that answer. "No pain" is
  *   recorded there and said back; "It hurts" opens the check-in sheet, where
  *   the scale and the leg map are. The widget itself records nothing and
  *   announces nothing: the answer is the app's to take and to acknowledge. It
@@ -118,24 +113,23 @@ export type DailyWidgetProps = {
  * - **Medium** is the goal and the week, in the shape of the reference: the
  *   day's exercises done out of planned, today's check-in, and seven cells.
  *
- * Always dark. The mascots are white drawings made for the app's dark
- * surfaces and vanish on a light one, and the reference is a dark card too.
+ * White, text and progress only, like the app (spec §7.10).
  *
- * Colours are hex literals kept in step with `palette`, `meterColors` and
- * `accents` by hand: the `'widget'` directive forbids referencing anything
+ * Colours are hex literals kept in step with `colors` (shared/config/tokens) by
+ * hand: the `'widget'` directive forbids referencing anything
  * outside this function. Icons are SF Symbols for the same reason — Hugeicons
  * render through react-native-svg, which does not exist in WidgetKit.
  */
 const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) => {
   'widget';
 
-  const bg = '#1C1C1F';
-  const ink = '#FFFFFF';
-  const caption = '#9E9EA6';
-  const tile = '#2A2A2F';
-  const positive = '#2ECC71';
-  const blue = '#3B9EFF';
-  const flame = '#FF9245';
+  const bg = '#FFFFFF';
+  const ink = '#111114';
+  const caption = '#55555E';
+  const tile = '#EFEFF2';
+  const positive = '#1F7A3D';
+  const blue = '#6D28D9';
+  const flame = '#B45309';
 
   // Sizing rule for everything below: fill, don't fix. `frame` with a `width`
   // or `height` becomes SwiftUI's fixed frame and silently drops `maxWidth`,
@@ -159,7 +153,7 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
   // A widget that has not been fed yet: placed before the app was opened, or
   // after the account was reset, or left a week without the app. Also any
   // entry written in an older shape, which has no `links`. It has no
-  // words to show, so it shows the mascot's stand-in and opens the app.
+  // words to show, so it shows a walking figure and opens the app.
   if (props == null || props.text == null || props.links == null) {
     return (
       <VStack modifiers={[...surface, widgetURL((props && props.url) || 'walkito://')]}>
@@ -170,23 +164,10 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
 
   const answered = props.answerScore != null;
 
-  // Resizable, or a 192-pixel PNG lays out at 192 points and a frame only
-  // crops it. A flexible frame, so the drawing gives way before the text does
-  // on a small phone and grows into the room a large one has.
-  const mascot = (uri: string | undefined, largest: number) =>
-    uri ? (
-      <Image
-        uiImage={uri}
-        modifiers={[resizable(), aspectRatio({ contentMode: 'fit' }), frame({ maxWidth: largest, maxHeight: largest })]}
-      />
-    ) : (
-      <Image systemName="figure.walk" size={largest * 0.6} color={blue} />
-    );
-
   const label = (text: string, size: number, color: string, weight: 'semibold' | 'bold' | 'heavy' | 'medium', lines = 1) => (
     <Text
       modifiers={[
-        font({ size, weight, design: 'rounded' }),
+        font({ size, weight }),
         foregroundStyle(color),
         lineLimit(lines),
         minimumScaleFactor(0.6),
@@ -211,15 +192,15 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
     if (legacy) {
       return (
         <VStack alignment="leading" spacing={6} modifiers={[...surface, widgetURL(props.links.checkin)]}>
-          <VStack alignment="leading" modifiers={[fill]}>{mascot(props.art.neutral, 56)}</VStack>
-          {label(props.text.question, 18, ink, 'heavy', 2)}
+          <Spacer minLength={0} />
+          {label(props.text.question, 18, ink, 'bold', 3)}
           {label(props.text.tapToCheckIn, 13, caption, 'medium', 2)}
         </VStack>
       );
     }
 
     const latest = props.answerScore;
-    const choice = (link: string, uri: string | undefined, text: string, chosen: boolean) => (
+    const choice = (link: string, text: string, chosen: boolean) => (
       <Link destination={link}>
         <VStack
           spacing={4}
@@ -232,8 +213,7 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
               ? [strokeBorder({ color: ink, shape: 'roundedRectangle', cornerRadius: 18, style: { lineWidth: 2 } })]
               : []),
           ]}>
-          {mascot(uri, 56)}
-          {label(text, 14, ink, 'semibold')}
+          {label(text, 16, ink, 'semibold', 2)}
         </VStack>
       </Link>
     );
@@ -241,13 +221,13 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
     return (
       <VStack alignment="leading" spacing={8} modifiers={[...surface, widgetURL(props.url)]}>
         <HStack alignment="top" spacing={4}>
-          {label(props.text.question, 17, ink, 'heavy', 2)}
+          {label(props.text.question, 17, ink, 'bold', 2)}
           <Spacer minLength={0} />
           {streakBadge}
         </HStack>
         <HStack spacing={8} modifiers={[fill]}>
-          {choice(props.links.hurts, props.art.pain, props.text.hurts, latest != null && latest > 0)}
-          {choice(props.links.fine, props.art.fine, props.text.fine, latest === 0)}
+          {choice(props.links.hurts, props.text.hurts, latest != null && latest > 0)}
+          {choice(props.links.fine, props.text.fine, latest === 0)}
         </HStack>
       </VStack>
     );
@@ -306,8 +286,7 @@ const DailyWidget = (props: DailyWidgetProps, environment: WidgetEnvironment) =>
   const medium = () => (
     <VStack alignment="leading" spacing={10} modifiers={[...surface, widgetURL(props.url)]}>
       <HStack spacing={8}>
-        <VStack modifiers={[frame({ width: 32, height: 32 })]}>{mascot(props.art.neutral, 32)}</VStack>
-        {label(props.text.goalTitle, 20, ink, 'heavy')}
+        {label(props.text.goalTitle, 20, ink, 'bold')}
         <Spacer minLength={6} />
         {stat('figure.strengthtraining.functional', blue, props.text.goalValue)}
         <Link destination={props.links.checkin}>

@@ -77,11 +77,7 @@ function itemsFor(name: string, t: Translate): QuickActions.Action[] {
       // reads as shouting at the person it names.
       title: t('quick.deleteTitle', { name }),
       subtitle: t('quick.deleteSubtitle'),
-      // Our own mascot rather than a system symbol. iOS keeps only the alpha of
-      // a template image, so the artwork arrives as a silhouette — which is
-      // exactly what makes it fill the fixed box corner to corner where an SF
-      // Symbol leaves air around itself. See `assets/quick-actions`.
-      icon: 'asset:wait',
+      icon: 'symbol:hand.raised',
     },
   ];
 }

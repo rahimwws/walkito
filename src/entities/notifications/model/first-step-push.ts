@@ -3,7 +3,6 @@ import { useSyncExternalStore } from 'react';
 
 import { kv } from '@/shared/lib/storage';
 
-import { scheduleWithArt } from './attachment';
 import { FIRST_STEP_KIND, firstStepAt, firstStepDueInApp, firstStepMessage } from './first-step';
 import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './notifications';
 
@@ -46,7 +45,7 @@ export async function scheduleFirstStep(wakeMinutes: number, now: number = Date.
   const message = firstStepMessage();
   try {
     await Notifications.cancelScheduledNotificationAsync(PUSH_ID).catch(() => undefined);
-    await scheduleWithArt('session', {
+    await Notifications.scheduleNotificationAsync({
       identifier: PUSH_ID,
       content: { title: message.title, body: message.body, sound: true, data: { kind: FIRST_STEP_KIND } },
       trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: new Date(at), channelId: CHANNEL_ID },
@@ -75,7 +74,7 @@ export async function devFirstStep(mode: 'notify' | 'due' | 'ready'): Promise<vo
   await Notifications.requestPermissionsAsync();
   await ensureNotificationChannel();
   const message = firstStepMessage();
-  await scheduleWithArt('session', {
+  await Notifications.scheduleNotificationAsync({
     identifier: PUSH_ID,
     content: { title: message.title, body: message.body, sound: true, data: { kind: FIRST_STEP_KIND } },
     trigger: { type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL, seconds: 5, channelId: CHANNEL_ID },

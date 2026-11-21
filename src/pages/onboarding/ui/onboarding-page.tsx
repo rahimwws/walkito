@@ -9,7 +9,6 @@ import {
   StyleSheet,
   Text,
   View,
-  useWindowDimensions,
 } from "react-native";
 import { KeyboardAvoidingView } from "react-native-keyboard-controller";
 import Animated, {
@@ -85,25 +84,13 @@ import {
   todayDayNumber,
 } from "@/entities/program";
 import { armSetup, completeOnboarding, markFirstSession } from "@/entities/session";
-import { BUTTON_3D_XL_HEIGHT, Button3D } from "@/shared/ui/button-3d";
-import { preloadMascotSounds, type MascotShot } from "@/shared/ui/mascot";
+import { BUTTON_HEIGHT, Button } from "@/shared/ui/button";
 import { REPLAY_MASK } from "@/shared/ui/replay-mask";
-import { Glow } from "@/shared/ui/glow";
 import { WelcomePage } from "@/pages/welcome";
 
 import { QUESTION_PHOTOS } from "../config/question-photos";
 import { chose } from "../model/answers";
-import {
-  coachAnswer,
-  coachDone,
-  coachEnter,
-  coachLine,
-  coachMirrored,
-  reactionAnalyticsId,
-  SPEAKING_STEPS,
-  type CoachMoment,
-  type CoachReply,
-} from "../model/coach";
+import { coachLine, reactionAnalyticsId } from "../model/coach";
 import {
   daysPerWeekOf,
   intakeFrom,
@@ -162,14 +149,7 @@ import {
 import { BuildingStep, type BuildingRow } from "./building-step";
 import { readyResumeActivity, useResumeActivity } from "./resume-activity";
 import { ChoiceStep } from "./choice-step";
-import { CoachBubble } from "./coach-bubble";
-import { rigFor } from "./coach-rigs";
-import {
-  CoachSpeaker,
-  speakerInset,
-  type SpeakerShot,
-  type SpeakerSize,
-} from "./coach-speaker";
+import { CoachLine } from "./coach-line";
 import { ContractStep } from "./contract-step";
 import { FirstWeekStep } from "./first-week-step";
 import { HabitStep } from "./habit-step";
@@ -188,12 +168,11 @@ import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
 import { OutlookStep } from "./outlook-step";
 import { PainMapStep } from "./pain-map-step";
-import { SpeakingQuestion } from "./speaking-question";
 import { TimerGauge, WeekGauge } from "./plan-gauges";
 import { QuestionNote, QuestionPhoto } from "./question-photo";
 import { ReactionStep } from "./reaction-step";
 import { StepProgress } from "./step-progress";
-import { WhyStep, whySectionLandsMs } from "./why-step";
+import { WhyStep } from "./why-step";
 import {
   CompareStep,
   FeltAnswerStep,
@@ -225,18 +204,8 @@ const MAKE_ROOM = LinearTransition.duration(260)
   .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
   .reduceMotion(ReduceMotion.System);
 
-/** Below this window height the coach in the corner is the smaller size. */
-const SHORT_WINDOW = 700;
-/** The coach's move on arriving lands with the question, not before it. */
-const ENTER_SHOT_MS = EXIT_MS + Math.round(ENTER_MS / 2);
 /** His own lines (a beat, "try it now") wait for the question to be up. */
 const COACH_LINE_DELAY_MS = 400;
-/** The name is said back once typing has paused this long. */
-const NAME_SETTLE_MS = 500;
-/** Tapping down a list of answers: a nod at most this often. */
-const NOD_GAP_MS = 600;
-/** The last Continue: his cheer plays before Home takes over. */
-const FINISH_HOLD_MS = 500;
 
 type Answer = string | string[];
 type Answers = Record<string, Answer>;
@@ -287,8 +256,8 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
  * ask is reading nobody does, and the boxes, the radios and the coach's own
  * line say how to answer. The step table keeps its blurbs as bookkeeping.
  *
- * The questions about the body: a chosen answer's emoji pops less there, as
- * the coach only nods (`ChoiceStep`'s `calm`).
+ * The questions about the body: a chosen answer's emoji pops less there
+ * (`ChoiceStep`'s `calm`).
  */
 const CALM_STEPS: ReadonlySet<string> = new Set(["side", "duration", "safety", "tried"]);
 
@@ -364,9 +333,6 @@ function list(answer: Answer | undefined): string[] {
   return Array.isArray(answer) ? answer : [];
 }
 
-/** Walkito asking a choice question himself: small enough for the answers to fit. */
-const SPEAKING_MASCOT = 96;
-
 /**
  * The onboarding flow: one surface whose contents change.
  *
@@ -374,11 +340,8 @@ const SPEAKING_MASCOT = 96;
  * objects the whole way through, so they hold still while only the question
  * moves — which is what makes the screens read as one conversation.
  *
- * Walkito coaches the whole way: in the top-right corner of every question,
- * changing pose as it changes and nodding at answers, or large on the steps
- * that are his. Every few questions the flow says something back: a line in
- * his bubble under the question, or a whole screen when the answer deserves
- * one. It ends on what the answers point to, the plan built from them, the
+ * Every few questions the flow says something back: a line under the
+ * question, or a whole screen when the answer deserves one. It ends on what the answers point to, the plan built from them, the
  * first week, and the contract; then Home, where the paywall rises. Signing
  * in, Health and the watch come after the first purchase (`pages/setup`).
  */
@@ -391,7 +354,6 @@ export function OnboardingPage() {
   const t = useT();
 
   const reduceMotion = useReducedMotion();
-  const { height: windowHeight } = useWindowDimensions();
 
   /** Where a return to the flow lands: the question it was left on, with the
    * answers given so far (`model/progress`). Read once, as the screen mounts.
@@ -408,8 +370,7 @@ export function OnboardingPage() {
   const [index, setIndex] = useState(resumed?.index ?? 0);
   const [answers, setAnswers] = useState<Answers>(() => ({ ...seedAnswers(), ...resumed?.answers }));
   /** The answers as last written, ahead of the render that shows them: two
-   * taps in one frame, or a tap and then Next, each build on the one before,
-   * and the coach compares an answer with the one it replaced. */
+   * taps in one frame, or a tap and then Next, each build on the one before. */
   const answersRef = useRef(answers);
   answersRef.current = answers;
   /** The daily reminder, minutes past midnight. Follows the habit they pick
@@ -427,12 +388,8 @@ export function OnboardingPage() {
   const webSeated = useRef<Promise<boolean> | null>(null);
   /** Whether this phone can measure the ankle bend: the result says where. */
   const canMeasure = useCanMeasure();
-  /** The habit's time wheel, and a clip open full screen: both cover the
-   * coach in the corner, who stops breathing under them. */
-  const [habitPicking, setHabitPicking] = useState(false);
   /** Whether the promise has ink on it. Signing invites, it does not gate. */
   const [inked, setInked] = useState(false);
-  const [clipViewerOpen, setClipViewerOpen] = useState(false);
 
   /** How far the contract's stamp has come down. */
   const [, setDrawing] = useState(false);
@@ -754,124 +711,9 @@ export function OnboardingPage() {
           ? durationReaction(durationOf(answers))
           : triedReaction(triedKey(answers));
 
-  // ── The coach ────────────────────────────────────────────────────────────
-  // Walkito in the top-right corner of every question (`CoachSpeaker`), or
-  // large in the steps that draw him themselves. What he holds and does is
-  // `model/coach.ts`; this is the wiring.
-
-  /** Steps already shown in this run: halfway and the plan ready celebrate
-   * on the first visit only. Marked after the step's first render, which is
-   * the one its hero reads. */
-  const [seen, setSeen] = useState<ReadonlySet<string>>(() => new Set());
-  const again = seen.has(step.key);
-  /** The coach on this step as the table has him. Only where he stands and
-   * the heroes' poses are read from it; the corner's pose is `coach`. */
-  const here = coachEnter(step.key, answers, again);
-  /** 44 on the name question, where the keyboard is up, and on a short phone. */
-  const sizeFor = (key: string): SpeakerSize =>
-    key === "name" || windowHeight < SHORT_WINDOW ? 44 : 56;
-  const speakerHere = here.where === "speaker";
-  const speakerSize = sizeFor(step.key);
-  /** What the question block keeps clear on its right for him. */
-  const inset = speakerHere ? speakerInset(speakerSize) : 0;
-
-  /** The coach in the corner as drawn. Set as a question leaves for the
-   * next, so his change lands inside the exit, and by each answer after. */
-  const [coach, setCoach] = useState<{ moment: CoachMoment; size: SpeakerSize }>(
-    () => ({ moment: { where: "none", pose: "idle" }, size: 56 }),
-  );
-  const coachNow = useRef(coach);
-  const [coachShot, setCoachShot] = useState<SpeakerShot | null>(null);
-  const shotSerial = useRef(0);
-  const lastNod = useRef(0);
-  /** The name question's thumbs up: once a visit. */
-  const namedThisVisit = useRef(false);
-  /** He asks this question himself, centred (`SPEAKING_STEPS`): the corner
-   * stays empty, and his moves play on him there. */
-  const speaking = SPEAKING_STEPS.has(step.key);
-  const speakingNow = useRef(speaking);
-
-  /** A move for the coach in the corner, if he is there. */
-  const playCoach = (
-    shot: MascotShot,
-    delay = 0,
-    sound?: CoachReply["sound"],
-  ) => {
-    if (coachNow.current.moment.where !== "speaker" && !speakingNow.current)
-      return;
-    shotSerial.current += 1;
-    setCoachShot({ move: shot, key: shotSerial.current, delay, sound });
-  };
-
-  /**
-   * What an answer, or a step's own moment, makes the coach in the corner do
-   * (`coachAnswer`, `coachDone`): a swap only when the pose changes, and a
-   * nod at most every `NOD_GAP_MS`, so tapping down a list is not a nodding
-   * fit. The steps that draw him themselves play their own moves and sounds,
-   * so this does nothing there.
-   */
-  const applyCoach = (reply: CoachReply | null) => {
-    const now = coachNow.current;
-    if (
-      reply == null ||
-      (now.moment.where !== "speaker" && !speakingNow.current)
-    )
-      return;
-    if (reply.pose != null && reply.pose !== now.moment.pose) {
-      const next = {
-        ...now,
-        moment: {
-          where: now.moment.where,
-          pose: reply.pose,
-          mirrored: coachMirrored(now.moment.where, reply.pose),
-        },
-      };
-      coachNow.current = next;
-      setCoach(next);
-    }
-    if (reply.shot == null) return;
-    if (reply.shot === "nod") {
-      const at = Date.now();
-      if (at - lastNod.current < NOD_GAP_MS) return;
-      lastNod.current = at;
-    }
-    playCoach(reply.shot, 0, reply.sound);
-  };
-
-  /** A step arriving: where the coach stands on it and how, and his move
-   * once the question is up. A hero step plays its own. */
-  const arrive = (next: number, nextAnswers: Answers) => {
-    const key = STEPS[next].key;
-    const moment = coachEnter(key, nextAnswers);
-    const placed = {
-      moment: { where: moment.where, pose: moment.pose, mirrored: moment.mirrored },
-      size: sizeFor(key),
-    };
-    coachNow.current = placed;
-    speakingNow.current = SPEAKING_STEPS.has(key);
-    setCoach(placed);
-    lastNod.current = 0;
-    namedThisVisit.current = false;
-    setHabitPicking(false);
-    setClipViewerOpen(false);
-    // Made before halfway, so the run's first cheer is not the sound that
-    // waits for its file. Kept once made, so asking again costs nothing.
-    if (STEPS[next].act >= 2) preloadMascotSounds(["cheer", "boing"]);
-    if (
-      (moment.where === "speaker" || speakingNow.current) &&
-      moment.enter != null
-    )
-      playCoach(moment.enter, ENTER_SHOT_MS);
-  };
-  const arriveRef = useRef(arrive);
-  arriveRef.current = arrive;
-
-  // A return to the flow: the coach takes his place on the question it lands
-  // on, as he would have on arriving from the one before.
   useEffect(() => {
     if (resumed == null) return;
     track("onboarding_resumed", { step: STEPS[resumed.index].key, index: resumed.index });
-    arriveRef.current(resumed.index, answersRef.current);
     // Once, as the screen mounts.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -885,20 +727,6 @@ export function OnboardingPage() {
       reminder: reminderTouched.current ? reminder : null,
     });
   }, [index, step.key, answers, reminder]);
-
-  /** The name as typed, once typing has paused: said back then, rather than
-   * retyped on every keystroke. */
-  const [settledName, setSettledName] = useState("");
-  useEffect(() => {
-    if (step.kind !== "name") return undefined;
-    const typed = name.trim();
-    if (typed.length < 2) {
-      setSettledName("");
-      return undefined;
-    }
-    const timer = setTimeout(() => setSettledName(typed), NAME_SETTLE_MS);
-    return () => clearTimeout(timer);
-  }, [name, step.kind]);
 
   /**
    * What a reaction screen used to say, carried to the question after it:
@@ -942,16 +770,15 @@ export function OnboardingPage() {
     }
     return carried;
   })();
-  /** In the coach's bubble: the answer said back, or else his own line (a
-   * beat as a part of the flow begins, "try it now"). */
-  const coachSays =
-    speakerHere || speaking ? coachLine(step.key, answers) : null;
-  const bubble =
+  /** The coach's own line: a beat as a part of the flow begins, "try it
+   * now", or the line halfway and the plan ready print themselves. */
+  const coachSays = coachLine(step.key, answers);
+  const ownLine = step.kind === "midway" || step.kind === "building";
+  /** Under the question: the answer said back, or else the coach's line. */
+  const line =
     inline ??
-    (coachSays != null ? { id: `coach_${step.key}`, text: say(coachSays) } : null);
-  /** What a hero says: halfway, and the plan ready. */
-  const heroSays = here.where === "hero" ? coachLine(step.key, answers) : null;
-  const heroLine = heroSays != null ? say(heroSays) : "";
+    (coachSays != null && !ownLine ? { id: `coach_${step.key}`, text: say(coachSays) } : null);
+  const heroLine = coachSays != null && ownLine ? say(coachSays) : "";
 
   /** The line said back now, the habit's included (its step draws its own).
    * Counted only through `reactionAnalyticsId`: most ids name a body. */
@@ -999,7 +826,6 @@ export function OnboardingPage() {
   /** Screens that set their own heading rather than the shared question block. */
   const ownHeading =
     step.kind === "name" ||
-    speaking ||
     step.kind === "notify" ||
     step.kind === "building" ||
     step.kind === "reaction" ||
@@ -1101,9 +927,6 @@ export function OnboardingPage() {
   const go = useCallback(
     (next: number, forward: boolean, nextAnswers?: Answers) => {
       if (STEPS[next].kind !== "name") Keyboard.dismiss();
-      // The coach changes as the question leaves, so his squash and swap
-      // land inside the exit, beside the body rather than in it.
-      arriveRef.current(next, nextAnswers ?? answersRef.current);
       enterFrom.current = forward ? 1 : -1;
       direction.value = forward ? -1 : 1;
       settled.value = withTiming(
@@ -1183,7 +1006,6 @@ export function OnboardingPage() {
       answersRef.current = next;
       setAnswers(next);
     }
-    setSeen((prev) => (prev.has(step.key) ? prev : new Set(prev).add(step.key)));
     // `step` follows `index`; listing it would only repeat the same trigger.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
@@ -1193,27 +1015,6 @@ export function OnboardingPage() {
     const id = lineId != null ? reactionAnalyticsId(lineId) : null;
     if (id != null) track("onboarding_reaction_viewed", { reaction: id, full: false });
   }, [lineId]);
-
-  // The name said back lands: his thumbs up and happy jump, once a visit.
-  useEffect(() => {
-    if (step.kind !== "name" || settledName === "" || namedThisVisit.current)
-      return;
-    namedThisVisit.current = true;
-    applyCoach(coachAnswer("name", answersRef.current, {}));
-    // `applyCoach` reads refs only; these are the triggers.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [settledName, step.kind]);
-
-  // Why it still hurts: a nod as each section lands.
-  useEffect(() => {
-    if (step.kind !== "why") return undefined;
-    const timers = whySections.map((_, i) =>
-      setTimeout(() => playCoach("nod"), whySectionLandsMs(i)),
-    );
-    return () => timers.forEach(clearTimeout);
-    // Once per arrival.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index]);
 
   useEffect(() => {
     if (!mounted.current) {
@@ -1296,7 +1097,7 @@ export function OnboardingPage() {
     setFootCheckMeasured((heel != null ? 1 : 0) + (miniTestAnswers != null ? 1 : 0));
   };
 
-  /** Set by the last Continue, which holds a moment for the coach's cheer. */
+  /** Set by the last Continue, so a second tap cannot commit twice. */
   const finishing = useRef(false);
 
   /** The end: the answers kept, the offer armed, the screens after the first
@@ -1355,16 +1156,12 @@ export function OnboardingPage() {
       return;
     }
     if (isLast) {
-      // Once: the hold for his cheer would otherwise let a second tap commit
-      // the answers, and start the plan, twice.
+      // Once: waiting on the tracking answer would otherwise let a second tap
+      // commit the answers, and start the plan, twice.
       if (finishing.current) return;
       finishing.current = true;
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      applyCoach(coachDone(step.key));
-      setTimeout(
-        () => void askTracking().finally(finish),
-        reduceMotion ? 0 : FINISH_HOLD_MS,
-      );
+      void askTracking().finally(finish);
       return;
     }
     // The Foot Check, for everybody. It was an experiment behind a flag;
@@ -1395,15 +1192,10 @@ export function OnboardingPage() {
     move(false);
   };
 
-  /** Writes an answer and lets the coach answer it (`coachAnswer`, compared
-   * with the answer it replaced). The name is answered once typing pauses
-   * rather than per keystroke: see `settledName`. */
   const writeAnswer = (key: string, value: Answer) => {
-    const prev = answersRef.current;
-    const next = { ...prev, [key]: value };
+    const next = { ...answersRef.current, [key]: value };
     answersRef.current = next;
     setAnswers(next);
-    if (step.kind !== "name") applyCoach(coachAnswer(step.key, next, prev));
   };
   const setAnswer = (value: Answer) => writeAnswer(step.key, value);
 
@@ -1457,7 +1249,6 @@ export function OnboardingPage() {
       keyboardVerticalOffset={0}
       style={[styles.root, { paddingTop: insets.top + 12 }]}
     >
-      <Glow />
       {!bare && (
         <View style={styles.header}>
           <Pressable
@@ -1478,14 +1269,12 @@ export function OnboardingPage() {
             index={index}
             count={STEP_COUNT}
             checkpoints={CHECKPOINTS}
-            runner={runs(answers)}
           />
           <LanguageBadge />
         </View>
       )}
 
-      {/* The question slides; the coach beside it stays put. Masked whole on
-          the steps about the body: his pose follows the answers there too. */}
+      {/* The question slides. Masked whole on the steps about the body. */}
       <View
         style={styles.stage}
         {...(UNRECORDED_STEPS.has(step.key)
@@ -1495,23 +1284,14 @@ export function OnboardingPage() {
         <Animated.View style={[styles.body, questionStyle]} collapsable={false}>
           {step.kind === "intro" ? (
             <IntroStep
-              squash={ctaSquash}
               greeting={step.greeting(t)}
               headline={step.headline(t)}
               onReady={() => setIntroReady(true)}
-              paused={signIn}
             />
           ) : (
             <>
               {!ownHeading && (
-                // The whole question block, the line under it included, keeps
-                // clear of the coach, and is at least as tall as him, so his
-                // bubble below starts under his feet.
-                <View
-                  style={
-                    speakerHere && { paddingRight: inset, minHeight: speakerSize }
-                  }
-                >
+                <View>
                   {step.kind === "choice" && step.banner != null && (
                     <LifeBanner text={say(step.banner)} />
                   )}
@@ -1526,15 +1306,13 @@ export function OnboardingPage() {
                 </View>
               )}
 
-              {/* What the coach says, above the answers: the answer said back,
-                  or his own line. Keyed on the step, so each one arrives. */}
-              {bubble != null && !speaking && (
-                <CoachBubble
-                  key={step.key}
-                  id={bubble.id}
-                  text={bubble.text}
-                  tail={speakerHere ? "top-right" : "none"}
-                  delay={bubble.id.startsWith("coach_") ? COACH_LINE_DELAY_MS : 0}
+              {/* Above the answers: the answer said back, or the coach's own
+                  line. Keyed on the line, so each one arrives. */}
+              {line != null && (
+                <CoachLine
+                  key={line.id}
+                  text={line.text}
+                  delay={line.id.startsWith("coach_") ? COACH_LINE_DELAY_MS : 0}
                   style={styles.reaction}
                 />
               )}
@@ -1543,7 +1321,6 @@ export function OnboardingPage() {
                 <Animated.View layout={MAKE_ROOM} style={styles.scroll}>
                   <NameStep
                     question={heading}
-                    paused={signIn}
                     value={typeof answer === "string" ? answer : ""}
                     placeholder={step.placeholder(t)}
                     onChange={(next) => {
@@ -1562,18 +1339,6 @@ export function OnboardingPage() {
                   contentContainerStyle={styles.scrollContent}
                   showsVerticalScrollIndicator={false}
                 >
-                  {speaking && (
-                    <SpeakingQuestion
-                      question={heading}
-                      rig={rigFor(coach.moment.pose)}
-                      rigKey={coach.moment.pose}
-                      size={SPEAKING_MASCOT}
-                      shot={coachShot}
-                      caption={bubble?.text ?? null}
-                      paused={signIn || habitPicking || clipViewerOpen}
-                      style={styles.speaking}
-                    />
-                  )}
                   {step.hero != null && QUESTION_PHOTOS[step.key] != null && (
                     <QuestionPhoto
                       image={QUESTION_PHOTOS[step.key]}
@@ -1615,8 +1380,6 @@ export function OnboardingPage() {
                   title={t(reaction.title)}
                   body={t(reaction.body)}
                   onNext={onNext}
-                  rig={rigFor(here.pose)}
-                  shot={here.enter ?? null}
                 />
               )}
 
@@ -1633,7 +1396,6 @@ export function OnboardingPage() {
                     t("onboarding.passport.heading", { name: "{name}" }),
                   )}
                   line={heroLine}
-                  celebrate={!again}
                 >
                   <PassportCard
                     stamps={passportStamps}
@@ -1647,7 +1409,6 @@ export function OnboardingPage() {
                   title={say(() => t("onboarding.why.title", { name: "{name}" }))}
                   sections={whySections}
                   footer={t("onboarding.why.footer")}
-                  speakerInset={inset}
                 />
               )}
 
@@ -1669,7 +1430,6 @@ export function OnboardingPage() {
                     reminderTouched.current = true;
                     setReminder(next);
                   }}
-                  onPickingChange={setHabitPicking}
                 />
               )}
 
@@ -1677,11 +1437,8 @@ export function OnboardingPage() {
                 <NotifyStep
                   name={name}
                   granted={notify}
-                  // He is the step's own here and nods at a yes and a no
-                  // alike: allowing is not a win.
                   onAnswered={setNotify}
                   onNext={onNext}
-                  speakerInset={inset}
                 />
               )}
 
@@ -1700,8 +1457,6 @@ export function OnboardingPage() {
                     track("foot_check_skipped", { at: "ankle" });
                     move(true, { "test-heel": [] });
                   }}
-                  speakerInset={inset}
-                  speakerSize={speakerHere ? speakerSize : 0}
                 />
               )}
 
@@ -1716,9 +1471,6 @@ export function OnboardingPage() {
                   ]}
                   answer={list(answer)[0] ?? null}
                   onAnswer={(next) => setAnswer([next])}
-                  speakerInset={inset}
-                  speakerSize={speakerHere ? speakerSize : 0}
-                  onViewerChange={setClipViewerOpen}
                 />
               )}
 
@@ -1733,20 +1485,11 @@ export function OnboardingPage() {
               )}
 
               {step.kind === "move-preview" && (
-                <MovePreviewStep
-                  exerciseId={painMove(area)}
-                  speakerInset={inset}
-                  speakerSize={speakerHere ? speakerSize : 0}
-                  onViewerChange={setClipViewerOpen}
-                />
+                <MovePreviewStep exerciseId={painMove(area)} />
               )}
 
               {step.kind === "first-week" && (
-                <FirstWeekStep
-                  answers={answers}
-                  squash={ctaSquash}
-                  onViewerChange={setClipViewerOpen}
-                />
+                <FirstWeekStep answers={answers} squash={ctaSquash} />
               )}
 
               {step.kind === "contract" && (
@@ -1838,13 +1581,6 @@ export function OnboardingPage() {
             </>
           )}
         </Animated.View>
-        <CoachSpeaker
-          moment={coach.moment}
-          shot={coachShot}
-          size={coach.size}
-          paused={signIn || habitPicking || clipViewerOpen}
-          surface={colors.background}
-        />
       </View>
 
       {/* Pinned over the whole page rather than carried by the step slide. */}
@@ -1854,7 +1590,6 @@ export function OnboardingPage() {
           onDone={onNext}
           insets={insets}
           readyLine={heroLine}
-          celebrate={!again}
         />
       )}
 
@@ -1873,12 +1608,10 @@ export function OnboardingPage() {
                     : undefined
                 }
               >
-                <Button3D
+                <Button
                   label={ctaLabel}
                   onPress={onNext}
                   disabled={!canAdvance}
-                  size="xl"
-                  docked
                 />
               </Animated.View>
             )}
@@ -1946,11 +1679,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 2,
     marginBottom: 26,
   },
-  /** Under the question, over the answers; the tail rises into the gap. */
+  /** Under the question, over the answers. */
   reaction: { marginTop: 12 },
-  speaking: { marginBottom: 16 },
-  /** With the passport folded under it, which brings its own gap. */
-  /** The body and the coach beside it. */
   stage: {
     flex: 1,
   },
@@ -1977,7 +1707,7 @@ const styles = StyleSheet.create({
   /** Reserves the button's height so the body never changes size when the
    * welcome screen's CTA arrives. Wider than the page's gutter. */
   ctaSlot: {
-    height: BUTTON_3D_XL_HEIGHT,
+    height: BUTTON_HEIGHT,
     marginHorizontal: -CTA_BLEED,
     transformOrigin: "bottom",
   },

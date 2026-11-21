@@ -66,7 +66,8 @@ const RISE = 44;
  * Drawn like the streak sheet — blurred page, card docked above the bottom
  * edge — but as an overlay inside the player rather than a `Modal`: the player
  * itself runs inside a presented sheet, and a `Modal` nested in one does not
- * reliably present on iOS. See the note on `CelebrationSheet`.
+ * reliably present on iOS. See the note on `DoneDock` in
+ * `session-done-sheet.tsx`.
  */
 export function SessionPainSheet({ visible, onPick, onCancel, after = false }: SessionPainSheetProps) {
   const scheme = useColorScheme();

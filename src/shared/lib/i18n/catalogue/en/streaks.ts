@@ -64,11 +64,4 @@ export const STREAKS_EN = {
   // never a verdict: a week that ends short just shows it.
   'weekGoal.progress': { one: '{done} of {count} session this week', other: '{done} of {count} sessions this week' },
   'weekGoal.inARow': { one: '{count} week in a row', other: '{count} weeks in a row' },
-
-  // ── Walkito's accessories, on the milestone sheet ────────────────────────
-  // By longest streak: 7 days, 14, 30 and 100. Shown beside him on Home.
-  'accessory.shoe': 'From today, Walkito wears a shoe badge.',
-  'accessory.medal': 'From today, Walkito wears a medal.',
-  'accessory.trophy': 'From today, Walkito keeps a trophy beside him.',
-  'accessory.crown': 'From today, Walkito wears a crown.',
 } as const satisfies Record<string, SourceEntry>;

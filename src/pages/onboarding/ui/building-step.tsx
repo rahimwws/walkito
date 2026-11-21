@@ -1,8 +1,8 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useRef, useState } from 'react';
-import { Image, ScrollView, StyleSheet, Text, View, useWindowDimensions, type ImageSourcePropType } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Image, ScrollView, StyleSheet, Text, View, type ImageSourcePropType } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -18,27 +18,15 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { accents, fonts, meterColors, palette, radius, type AccentName } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { settle } from '@/shared/lib/motion';
 import { useColorScheme } from '@/shared/lib/theme';
-import { CORNERS, Confetti } from '@/shared/ui/confetti';
-import {
-  Mascot,
-  celebrateRig,
-  playMascotSound,
-  preloadMascotSounds,
-  thinkingRig,
-  type MascotHandle,
-} from '@/shared/ui/mascot';
-import { BUTTON_3D_XL_HEIGHT, Button3D } from '@/shared/ui/button-3d';
+import { BUTTON_HEIGHT, Button } from '@/shared/ui/button';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
-/**
- * The 3D art beside each line: the same holographic chrome as the welcome
- * screen's stickers, so the plan reads as made by the app that greeted them.
- * 240 px WebP cut-outs with lossless alpha, drawn at 52 pt.
- */
+/** The art beside each line: 240 px WebP cut-outs with lossless alpha, drawn
+ * at 52 pt. */
 const ART: Readonly<Record<BuildingArt, ImageSourcePropType>> = {
   foot: require('@assets/onboarding/building/foot.webp'),
   shield: require('@assets/onboarding/building/shield.webp'),
@@ -55,27 +43,11 @@ const BAR: Readonly<Record<BuildingArt, AccentName>> = {
   clipboard: 'amber',
 };
 
-/** One card every this long. With four cards the button is up a little after
- * five seconds, half a second sooner than before the mascot: long enough to
- * read each answer back and see him jump, short enough not to feel like
- * waiting. */
+/** One card every this long: long enough to read each answer back, short
+ * enough not to feel like waiting. */
 const STEP_MS = 1000;
-/** The last tick lands before he does anything about it. */
+/** The last tick lands before the plan is called ready. */
 const SETTLE_MS = 300;
-/** The squash the pose changes behind: down, swap at the bottom, back up. */
-const SWAP_DOWN_MS = 90;
-const SWAP_UP_MS = 200;
-/** From the start of `celebrate` to the moment he leaves the ground, where its
- * own sound cue sits (`shared/ui/mascot/mascot.tsx`). */
-const LEAP_MS = 140;
-/** The button arrives as he lands, not while he is in the air. */
-const CTA_DELAY_MS = 600;
-
-/** The mascot over the cards; smaller on a short phone, so four of them and
- * the button still fit without scrolling. */
-const HERO = 140;
-const HERO_SHORT = 104;
-const SHORT_WINDOW = 700;
 
 const EASE = Easing.bezier(0.23, 1, 0.32, 1);
 
@@ -96,15 +68,9 @@ export type BuildingStepProps = {
   rows: readonly BuildingRow[];
   onDone: () => void;
   insets: { top: number; bottom: number };
-  /** What he says once it is ready: `onboarding.coach.planReady`, the name
+  /** The heading once it is ready: `onboarding.coach.planReady`, the name
    * already in. */
   readyLine: string;
-  /**
-   * Whether this visit celebrates. The page passes true once a run: back
-   * from the first week, the cards fill again but the plan was already
-   * ready, so he only nods at it.
-   */
-  celebrate: boolean;
 };
 
 /**
@@ -112,81 +78,39 @@ export type BuildingStepProps = {
  *
  * One card per part of it, each one of their own answers: where and how much,
  * the safety check, the week they chose, then the exercises being picked. Each
- * card's 3D art pops in as its turn comes, its bar fills, and it is ticked as
+ * card's art pops in as its turn comes, its bar fills, and it is ticked as
  * the next one starts, so the wait reads as work done for them. No promise of
  * when anything changes: that would be a claim about their body.
  *
- * The mascot does the work: thinking over the cards, a nod as each is ticked,
- * and when the last is done he changes into the celebrating pose and jumps,
- * with the one burst of confetti in the flow. What is celebrated is the plan
- * being ready, the same for everyone, never anything a card says.
+ * When the last is done the heading turns into the ready line. What is marked
+ * is the plan being ready, the same for everyone, never anything a card says.
  */
-export function BuildingStep({ rows, onDone, insets, readyLine, celebrate }: BuildingStepProps) {
+export function BuildingStep({ rows, onDone, insets, readyLine }: BuildingStepProps) {
   const t = useT();
   const scheme = useColorScheme();
   const colors = palette[scheme];
-  const { height } = useWindowDimensions();
-  const hero = height < SHORT_WINDOW ? HERO_SHORT : HERO;
   const [active, setActive] = useState(0);
   const [ready, setReady] = useState(false);
   const total = rows.length;
 
-  const mascot = useRef<MascotHandle>(null);
-  // Read once, for the same reason as the halfway screen: the page may mark
-  // the celebration spent while this one is still playing.
-  const first = useRef(celebrate);
-  const squash = useSharedValue(0);
-
   useEffect(() => {
-    // Made now, so the first cheer is not the sound that waits for its file.
-    if (first.current) preloadMascotSounds(['cheer', 'boing']);
     const timers: ReturnType<typeof setTimeout>[] = [];
     for (let i = 1; i <= total; i += 1) {
       timers.push(
         setTimeout(() => {
           setActive(i);
           if (i < total) Haptics.selectionAsync();
-          mascot.current?.play('nod');
         }, i * STEP_MS),
       );
     }
-    const swapAt = total * STEP_MS + SETTLE_MS;
     timers.push(
       setTimeout(() => {
-        squash.value = withSequence(
-          withTiming(1, { duration: SWAP_DOWN_MS, easing: Easing.in(Easing.quad), reduceMotion: ReduceMotion.System }),
-          withTiming(0, { duration: SWAP_UP_MS, easing: EASE, reduceMotion: ReduceMotion.System }),
-        );
-      }, swapAt - SWAP_DOWN_MS),
+        setReady(true);
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      }, total * STEP_MS + SETTLE_MS),
     );
-    timers.push(setTimeout(() => setReady(true), swapAt));
     return () => timers.forEach(clearTimeout);
-  }, [total, squash]);
-
-  // The new pose is a new character (keyed below), so its move is played from
-  // here, once it has mounted and the squash it swapped behind has opened back
-  // up. The cheer, the success tap and the burst all go off together, as he
-  // leaves the ground.
-  const [burst, setBurst] = useState(false);
-  useEffect(() => {
-    if (!ready) return undefined;
-    const cheering = first.current;
-    const timers = [setTimeout(() => mascot.current?.play(cheering ? 'celebrate' : 'nod'), SWAP_UP_MS)];
-    if (cheering) {
-      timers.push(
-        setTimeout(() => {
-          playMascotSound('cheer');
-          Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-          setBurst(true);
-        }, SWAP_UP_MS + LEAP_MS),
-      );
-    }
-    return () => timers.forEach(clearTimeout);
-  }, [ready]);
-
-  const heroStyle = useAnimatedStyle(() => ({
-    transform: [{ scaleY: 1 - squash.value * 0.18 }, { scaleX: 1 + squash.value * 0.05 }],
-  }));
+  }, [total]);
 
   return (
     <Animated.View
@@ -201,16 +125,6 @@ export function BuildingStep({ rows, onDone, insets, readyLine, celebrate }: Bui
           contentContainerStyle={styles.middle}
           showsVerticalScrollIndicator={false}
           alwaysBounceVertical={false}>
-          <Animated.View style={[styles.hero, heroStyle]}>
-            <Mascot
-              key={ready ? 'ready' : 'working'}
-              ref={mascot}
-              rig={ready ? celebrateRig : thinkingRig}
-              state={ready ? 'idle' : 'thinking'}
-              size={hero}
-              surface={colors.background}
-            />
-          </Animated.View>
           <Animated.Text
             key={ready ? 'ready' : 'working'}
             entering={FadeIn.duration(260).reduceMotion(ReduceMotion.System)}
@@ -232,21 +146,18 @@ export function BuildingStep({ rows, onDone, insets, readyLine, celebrate }: Bui
         </ScrollView>
 
         {/* The button's room is kept from the start, so its arrival does not
-            shift the cards up under him mid-jump. */}
+            shift the cards up. */}
         <View style={styles.ctaSlot}>
           {ready && (
             <Animated.View
-              entering={SlideInDown.delay(first.current ? CTA_DELAY_MS : 0)
-                .duration(460)
+              entering={SlideInDown.duration(460)
                 .easing(EASE.factory())
                 .reduceMotion(ReduceMotion.System)}>
-              <Button3D label={t('onboarding.building.ctaWeek')} onPress={onDone} size="xl" docked />
+              <Button label={t('onboarding.building.ctaWeek')} onPress={onDone} fullWidth />
             </Animated.View>
           )}
         </View>
       </View>
-
-      {burst && <Confetti origins={CORNERS} />}
     </Animated.View>
   );
 }
@@ -361,14 +272,8 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     gap: 20,
-    // Headroom for the jump: the scroll view clips at its top edge.
     paddingTop: 24,
     paddingBottom: 8,
-  },
-  hero: {
-    alignSelf: 'center',
-    // Squashes into the ground he stands on, not about his middle.
-    transformOrigin: 'center bottom',
   },
   heading: {
     ...fonts.heavy(28, -0.7),
@@ -380,7 +285,7 @@ const styles = StyleSheet.create({
   /** The page's call to action: 16pt from the screen's edges, as everywhere
    * in the flow. */
   ctaSlot: {
-    height: BUTTON_3D_XL_HEIGHT,
+    height: BUTTON_HEIGHT,
     marginTop: 12,
     marginHorizontal: -4,
   },
@@ -391,7 +296,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingLeft: 10,
     paddingRight: 16,
-    borderRadius: 22,
+    borderRadius: radius.card,
     borderCurve: 'continuous',
     borderWidth: StyleSheet.hairlineWidth,
   },

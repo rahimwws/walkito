@@ -20,7 +20,6 @@ import { useRouter } from 'expo-router';
 
 import {
   addDays,
-  attended,
   clearRetestRequest,
   completePlanSession,
   exerciseById,
@@ -51,7 +50,6 @@ import {
   useRetestRequest,
   useStreak,
   weekPlan,
-  type GoalType,
   type ProgramDay,
   type SessionMinutes,
   planReasonLine,
@@ -60,12 +58,12 @@ import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
 import { askForPlans, lookingAround } from '@/entities/purchase';
 import { answerLockedPlanTap } from '@/features/home-tour';
-import { fonts, palette, type AccentName } from '@/shared/config';
+import { colors as tokens, fonts, palette } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Card3D } from '@/shared/ui/card-3d';
+import { Button } from '@/shared/ui/button';
+import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { StreakCapsule } from '@/shared/ui/header-actions';
 
@@ -83,8 +81,7 @@ import {
 } from '../model/plan-view';
 import { asProgramDay, playlistOf } from '../model/week-view';
 import { ExerciseSheet } from './exercise-sheet';
-import { FinishReward } from './finish-reward';
-import { GoalStations } from './goal-stations';
+import { GoalPlan } from './goal-plan';
 import { HelpsCard } from './helps-card';
 import { moveLook } from './kind-tone';
 import { TodayCard } from './today-card';
@@ -112,9 +109,9 @@ const rise = (index: number) =>
     .easing(DONE_EASING)
     .reduceMotion(ReduceMotion.System);
 /**
- * The goal's stations make room rather than jump: when the finished day's card
- * arrives over them they glide down by its height, as it rises in. Reduce
- * Motion moves them at once.
+ * The goal makes room rather than jumping: when the finished day's card
+ * arrives over it, it glides down by its height, as it rises in. Reduce
+ * Motion moves it at once.
  */
 const SHIFT = LinearTransition.duration(DONE_RISE_MS).easing(DONE_EASING).reduceMotion(ReduceMotion.System);
 
@@ -154,35 +151,23 @@ type Running =
     }
   | { kind: 'test'; review: boolean };
 
-/** The colour a goal's bar wears: the colour of the work that moves it. */
-const GOAL_ACCENT: Readonly<Record<GoalType, AccentName>> = {
-  pain_free_mornings: 'teal',
-  arch_hold: 'violet',
-  calf_raises: 'violet',
-  balance: 'blue',
-  symmetry: 'blue',
-};
-
 /**
  * The plan screen: today, and the goal with the weeks that work towards it.
  *
- * While today has something to do, it leads: the one big card (the day's
- * emoji, its chips, the one mascot and Start), its moves as a checklist ticked
- * from the day log, and what finishing earns under them: the streak's next day
- * and the next sticker, from the real counts. Then the goal (`GoalStations`)
- * and, on a thin rail under it, this week and next week as cards (what each
- * works on, what changes in it, its days, minutes and moves), the test days
- * as discs where they fall.
+ * While today has something to do, it leads: the day's card (its emoji, how
+ * long and how many, Start), then its moves as a checklist ticked from the
+ * day log. Then the goal (`GoalPlan`): this week and next week as cards (what
+ * each works on, what changes in it, its days, minutes and moves), the test
+ * days as a line where they fall.
  *
  * Once today is done, the day leads as one card (`TodayDoneCard`): "Today"
- * over its title with a tick, "See results" on a test day, the mascot, and
- * what the day earned (its minutes, its moves or tests, the run of days, the
- * next sticker's bar). Then the goal and its weeks as before, then tomorrow:
- * what it is, how long, and the countdown to it. No card says the day is done
- * twice.
+ * over its title with a tick, "See results" on a test day, and what the day
+ * earned (its minutes, its moves or tests, the run of days). Then the goal and
+ * its weeks as before, then tomorrow: what it is, how long, and the countdown
+ * to it. No card says the day is done twice.
  *
  * Two weeks, because two are what the engine can say truthfully (`weekPath`);
- * past them the rail fades beside one line on how the weeks after are made.
+ * past them one line says how the weeks after are made.
  * No week strip and no list of days: Home already shows the week. Never a
  * plan length, "week N of M" or an end date.
  *
@@ -410,10 +395,9 @@ export function ProgramPage() {
   // ── What the screen says ─────────────────────────────────────────────────
   const outcome = readOutcome();
   const goal = outcome != null ? outcomeView(t, outcome, goals, plan.focus) : null;
-  const goalAccent = GOAL_ACCENT[goal?.current ?? plan.focus ?? 'calf_raises'];
   const tomorrowKey = addDays(today, 1);
   /**
-   * The next test's day, for the rail: the day this week's plan has it on
+   * The next test's day, for the weeks: the day this week's plan has it on
    * (today's, until it is taken), and past this week the day it falls due,
    * never before the first day it may go: tomorrow once today is done.
    */
@@ -450,9 +434,6 @@ export function ProgramPage() {
     nextTest,
     seatedStart: planSettings().seatedStart === true,
   });
-  /** A sheet is over the list: the mascot holds still under it. */
-  const sheetOver = preview != null;
-
   /**
    * Today's moves as the checklist draws them, ticked from the day log: the
    * ids Home's list ticks and a finished session fills, so the two lists can
@@ -466,33 +447,21 @@ export function ProgramPage() {
     variant === 'session' || variant === 'easy'
       ? adjusted.exercises.map((e) => {
           const exercise = exerciseById(e.id);
-          const look = moveLook(e.id, exercise.category);
           return {
             id: e.id,
             title: exercise.title,
             dose: doseLabel(e.dose.sets, e.dose.reps, e.dose.holdSec, e.dose.perSide),
-            art: look.art,
-            accent: look.accent,
+            art: moveLook(e.id, exercise.category).art,
             done: ticked.includes(e.id),
           };
         })
       : [];
 
-  /**
-   * The streak as it stands, when finishing today adds today to it: null once
-   * today already counts (a morning check-in counts it), so the reward never
-   * promises a day that is already in. Never before the plan's first day,
-   * which no session can count.
-   */
-  const dayNumber = currentDay(now);
-  const streakReward = dayNumber >= 1 && !attended(dayNumber) ? streak.current : null;
-  const rewarded = variant === 'session' || variant === 'easy' || variant === 'test';
-
   const title = todayTitle(t, adjusted, plan.focus, variant);
 
   // ── A finished day: what it earned, and tomorrow ─────────────────────────
   // Read only while the cards are up. Never a pain figure: the records' pain
-  // is not read, and the streak and the sticker count days, not how they felt.
+  // is not read, and the streak counts days, not how they felt.
   const finished = variant === 'done' && doneShown;
   const earned = finished
     ? earnedToday(sessions(), today, { minutes: adjusted.minutes, moves: new Set(ticked).size })
@@ -547,7 +516,7 @@ export function ProgramPage() {
         onLayout={(event) => {
           goalTop.current = event.nativeEvent.layout.y;
         }}>
-        <GoalStations view={goal} nodes={path} today={today} accent={goalAccent} onPreview={setPreview} />
+        <GoalPlan view={goal} nodes={path} today={today} onPreview={setPreview} />
       </Animated.View>
     ) : null;
 
@@ -584,11 +553,8 @@ export function ProgramPage() {
                   count: adjusted.type === 'test' ? RETEST_TESTS : earned.moves,
                   test: adjusted.type === 'test',
                   streak: streak.current,
-                  delayMs: DONE_RISE_MS / 2,
                 }}
-                calm={adjusted.reason === 'flare'}
                 onResults={adjusted.type === 'test' && tested ? () => start({ kind: 'test', review: true }) : undefined}
-                covered={sheetOver}
               />
             </Animated.View>
           )}
@@ -604,7 +570,6 @@ export function ProgramPage() {
               onStart={() => startToday()}
               onShort={() => startToday(true)}
               note={planReasonLine(t, adjusted.reason)}
-              covered={sheetOver}
               tests={{
                 chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],
                 body: t('pages.plan.testBody', { count: RETEST_TESTS, minutes: RETEST_MINUTES }),
@@ -624,9 +589,6 @@ export function ProgramPage() {
           {/* What the level is made of: a tap previews a move, as the chips
               on the old card did. */}
           {checklist.length > 0 && <TodayMoves moves={checklist} onPreview={setPreview} />}
-
-          {/* What finishing earns. Only while there is something to finish. */}
-          {rewarded && <FinishReward streak={streakReward} />}
 
           {/* Today first, whatever the day; then where it leads. */}
           {goalBlock}
@@ -650,29 +612,29 @@ export function ProgramPage() {
           <HelpsCard goals={goals} />
 
           {reached != null && nextGoal != null && (
-            <Card3D size="lg" material="solid" tone="violet" padding={18} contentStyle={styles.reached}>
+            <Card style={styles.reached}>
               <View style={styles.reachedRow}>
                 {/* The goal's own target, not a trophy: a reached goal may be
                     a pain figure, and a pain figure is never celebrated. */}
                 <FluentIcon name="target" size={32} />
-                <Text style={[styles.reachedText, { color: colors.foreground }]}>
+                <Text style={styles.reachedText}>
                   {t('pages.plan.reached', {
                     goal: t(`pages.week.goal.${reached.type}`),
                     next: t(`pages.week.goal.${nextGoal.type}`).toLocaleLowerCase(language),
                   })}
                 </Text>
               </View>
-              <Button3D
+              <Button
                 label={t('pages.plan.seeNextGoal')}
                 variant="secondary"
                 size="sm"
                 align="start"
                 // The ref's own instance, not Reanimated's worklet `scrollTo`,
                 // which does nothing when called from a press on the JS thread.
-                // To the goal's stations, under the card for today.
+                // To the goal, under the card for today.
                 onPress={() => listRef.current?.scrollTo({ y: Math.max(0, goalTop.current - 10), animated: true })}
               />
-            </Card3D>
+            </Card>
           )}
         </Animated.ScrollView>
       </Animated.View>
@@ -773,5 +735,6 @@ const styles = StyleSheet.create({
     flex: 1,
     ...fonts.semibold(17),
     lineHeight: 23,
+    color: tokens.text,
   },
 });

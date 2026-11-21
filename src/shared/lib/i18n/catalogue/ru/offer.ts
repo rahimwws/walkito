@@ -73,12 +73,7 @@ export const OFFER_RU = {
   'offer.processing': 'Обработка…',
 
   // ── Paywall: the celebration ─────────────────────────────────────────────
-  'offer.purchasedTitle': 'Вы в деле.',
   'offer.premium': 'Walkito Premium',
-  'offer.purchasedBlurb': 'План открыт и начнёт подстраиваться уже со следующего занятия.',
-  'offer.restoredTitle': 'С возвращением.',
-  'offer.restoredBlurb': 'Подписка снова активна. Всё осталось на своих местах.',
-  'offer.start': 'Начать',
 
   'offer.stepA11y': 'Шаг {step} из {total}',
   'offer.next': 'Далее',
@@ -121,7 +116,6 @@ export const OFFER_RU = {
   // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
   // See `../en/offer.ts`. The words in square brackets in the headline are
   // drawn in the Plus colour: put them round the word that carries it here.
-  'offer.plans.brand': 'Walkito',
   'offer.plans.badge': 'Plus',
   'offer.plans.name': 'Walkito Plus',
   'offer.plans.headline': 'Ваши стопы [сильнее] с каждым днём',

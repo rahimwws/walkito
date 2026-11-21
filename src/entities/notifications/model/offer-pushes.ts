@@ -3,7 +3,6 @@ import * as Notifications from 'expo-notifications';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
-import { scheduleWithArt } from './attachment';
 import type { Message } from './copy';
 import {
   DAY_ONE_REMINDERS,
@@ -103,7 +102,7 @@ export async function scheduleTrialReminder({
   try {
     await Notifications.cancelScheduledNotificationAsync(TRIAL_ENDING_ID).catch(() => undefined);
     // The crown and key on iPhone, the expiry notice's picture.
-    await scheduleWithArt('expiry', {
+    await Notifications.scheduleNotificationAsync({
       identifier: TRIAL_ENDING_ID,
       content: { title: message.title, body: message.body, sound: true, data: { kind: TRIAL_ENDING_KIND } },
       trigger: {
@@ -146,7 +145,7 @@ export async function scheduleNextDayPush({ at, day, name }: { at: number; day: 
   const message = nextDayMessage(day, name);
   try {
     await Notifications.cancelScheduledNotificationAsync(NEXT_DAY_ID).catch(() => undefined);
-    await scheduleWithArt('session', {
+    await Notifications.scheduleNotificationAsync({
       identifier: NEXT_DAY_ID,
       content: { title: message.title, body: message.body, sound: true, data: { kind: NEXT_DAY_KIND } },
       trigger: {
@@ -232,7 +231,7 @@ export function scheduleDayOneReminders({
       if (which !== 1 && which !== 2) break;
       const message = dayOneMessage(which, name);
       try {
-        await scheduleWithArt('session', {
+        await Notifications.scheduleNotificationAsync({
           identifier: DAY_ONE_IDS[which - 1],
           content: {
             title: message.title,

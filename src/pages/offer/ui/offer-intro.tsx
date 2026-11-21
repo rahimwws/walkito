@@ -1,13 +1,12 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 
-import { accents, fonts, meterColors, palette } from '@/shared/config';
-import { readableOn } from '@/shared/lib/color';
+import { accents, colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
-import { Card3D, cardColours } from '@/shared/ui/card-3d';
-import { Chip3D } from '@/shared/ui/chip-3d';
+import { Button } from '@/shared/ui/button';
+import { Card } from '@/shared/ui/card';
+import { Chip } from '@/shared/ui/chip';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
@@ -21,10 +20,9 @@ import { IntroRail, type IntroRailStep } from './intro-rail';
  * first progress check on its date. Then the plans. Each fact is the plan's
  * own: the plan is open-ended, so nothing here names a length or an end.
  *
- * Drawn in the onboarding's 3D kit, solid rather than glass. No mascot: the
- * paywall shows her feet and her answers, not a cartoon. The second screen
- * that used to follow (how a day works, over a picture of Home) is gone; the
- * plans come next.
+ * Flat cards, no cartoon: the paywall shows her feet and her answers. The
+ * second screen that used to follow (how a day works, over a picture of Home)
+ * is gone; the plans come next.
  */
 
 /** The Foot Passport's emoji. */
@@ -78,12 +76,12 @@ export function StepBar({
 }
 
 /**
- * The button at the foot of steps one and two: the onboarding's own call to
- * action, the filled violet 3D button at `xl`, in a fixed dock.
+ * The button at the foot of steps one and two: the app's primary button, in
+ * a fixed dock.
  */
 export function IntroNext({ onPress }: { onPress: () => void }) {
   const t = useT();
-  return <Button3D label={t('offer.next')} onPress={onPress} size="xl" docked />;
+  return <Button label={t('offer.next')} onPress={onPress} />;
 }
 
 export type IntroPlanProps = {
@@ -162,29 +160,27 @@ export function IntroPlan({ name, strip, why, minutes, checkOn }: IntroPlanProps
 }
 
 /**
- * The Foot Passport, as a raised violet card: its name, their own numbers as
+ * The Foot Passport, as a soft violet card: its name, their own numbers as
  * chips, and the foot. Masked from recordings: it shows where it hurts and
  * this morning's score.
  */
 function Passport({ strip }: { strip: readonly string[] }) {
-  const scheme = useColorScheme();
   const t = useT();
-  const ink = readableOn(accents[scheme].violet.fill, cardColours(scheme, 'violet').face);
   return (
     <Animated.View {...REPLAY_MASK} entering={FadeIn.delay(160).duration(320).reduceMotion(ReduceMotion.System)}>
-      <Card3D material="solid" tone="violet" padding={14} contentStyle={styles.passport}>
+      <Card padding={14} style={styles.passport}>
         <View style={styles.passportCopy}>
-          <Text style={[styles.passportEyebrow, { color: ink }]} numberOfLines={1}>
+          <Text style={styles.passportEyebrow} numberOfLines={1}>
             {t('onboarding.passport.title')}
           </Text>
           <View style={styles.passportChips}>
             {strip.map((item, i) => (
-              <Chip3D key={i} label={item} accent="violet" style={styles.passportChip} />
+              <Chip key={i} label={item} style={styles.passportChip} />
             ))}
           </View>
         </View>
         <FluentIcon name="foot" size={PASSPORT_ART} />
-      </Card3D>
+      </Card>
     </Animated.View>
   );
 }
@@ -214,12 +210,13 @@ const styles = StyleSheet.create({
   },
   quoteWhy: { ...fonts.semibold(17, -0.2), lineHeight: 23 },
   passport: {
+    backgroundColor: tokens.accentSoft,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
   },
   passportCopy: { flex: 1, gap: 8 },
-  passportEyebrow: { ...fonts.heavy(11, 1.4), textTransform: 'uppercase' },
+  passportEyebrow: { ...fonts.heavy(11, 1.4), textTransform: 'uppercase', color: tokens.accent },
   passportChips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-  passportChip: { maxWidth: '100%' },
+  passportChip: { maxWidth: '100%', backgroundColor: tokens.surface },
 });

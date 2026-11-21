@@ -40,6 +40,7 @@ export const CORE_PT = {
   'settings.write': 'Escrever para o Rahim',
   'settings.writeHint': 'Uma pessoa lê cada mensagem',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Seu plano',
   'settings.outcome': 'Seu objetivo',
@@ -86,8 +87,6 @@ export const CORE_PT = {
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: '{count} dia seguido', other: '{count} dias seguidos' },
-  'streak.milestoneBlurb': 'Cada um desses dias contou.',
-  'streak.milestoneBigBlurb': 'Dez dias. É aqui que um hábito começa a se firmar.',
   'streak.rule':
     'Um dia conta quando você faz o check-in, treina ou termina uma rotina da biblioteca. Num dia de descanso, o check-in já basta.',
   'streak.total': { one: '{count} dia até agora.', other: '{count} dias até agora.' },

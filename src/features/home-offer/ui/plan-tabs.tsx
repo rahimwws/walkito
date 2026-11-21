@@ -11,9 +11,9 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated';
 
-import { DEPTH, RAISED_BORDER, fonts, meterColors, palette, raised } from '@/shared/config';
+import { colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { SETTLE_EASING } from '@/shared/lib/motion';
-import { Raised, useRaisedScheme } from '@/shared/ui/raised';
+import { useColorScheme } from '@/shared/lib/theme';
 
 import { DEAL } from './deal-tone';
 
@@ -29,10 +29,10 @@ const CAPTION_LINES = 2;
 const CAPTION_MIN_SCALE = 0.7;
 
 /**
- * The plans as a 3D switch: one raised segment each, the chosen one leaning
- * violet like a chosen answer card (face, border and lip), its words violet
- * too, so it is never colour alone that says which. The caption under each
- * name is the store's price for it.
+ * The plans as a switch: one flat segment each, the chosen one soft violet
+ * with a violet border like a chosen answer card, its words violet too, so it
+ * is never colour alone that says which. The caption under each name is the
+ * store's price for it.
  */
 export function PlanTabs({
   tabs,
@@ -43,8 +43,7 @@ export function PlanTabs({
   selected: string;
   onSelect: (key: string) => void;
 }) {
-  const scheme = useRaisedScheme();
-  const tokens = raised[scheme];
+  const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
 
@@ -53,14 +52,8 @@ export function PlanTabs({
       {tabs.map((tab) => {
         const on = tab.key === selected;
         return (
-          <Raised
+          <Pressable
             key={tab.key}
-            face={on ? tokens.selectedFill : tokens.surface}
-            edge={on ? tokens.selectedEdge : tokens.edge}
-            lip={on ? tokens.selectedEdge : tokens.lip}
-            depth={DEPTH.md.outlinedLip + 1}
-            radius={RADIUS}
-            haptic="none"
             onPress={() => {
               if (on) return;
               void Haptics.selectionAsync();
@@ -68,23 +61,30 @@ export function PlanTabs({
             }}
             accessibilityRole="radio"
             accessibilityState={{ selected: on }}
-            style={styles.segment}
-            contentStyle={styles.face}>
+            style={({ pressed }) => [
+              styles.segment,
+              styles.face,
+              {
+                backgroundColor: on ? tokens.accentSoft : colors.card,
+                borderColor: on ? tokens.accent : tokens.separator,
+                opacity: pressed && !on ? 0.8 : 1,
+              },
+            ]}>
             <Text
-              style={[styles.title, { color: on ? tokens.selectedInk : colors.foreground }]}
+              style={[styles.title, { color: on ? tokens.accent : colors.foreground }]}
               numberOfLines={1}
               maxFontSizeMultiplier={1.3}>
               {tab.title}
             </Text>
             <Text
-              style={[styles.caption, { color: on ? tokens.selectedInk : meter.label }]}
+              style={[styles.caption, { color: on ? tokens.accent : meter.label }]}
               numberOfLines={CAPTION_LINES}
               adjustsFontSizeToFit
               minimumFontScale={CAPTION_MIN_SCALE}
               maxFontSizeMultiplier={1.3}>
               {tab.caption}
             </Text>
-          </Raised>
+          </Pressable>
         );
       })}
     </View>
@@ -134,10 +134,10 @@ export function DealTabs({
     <View
       accessibilityRole="radiogroup"
       onLayout={(event) => {
-        const width = event.nativeEvent.layout.width - RAISED_BORDER * 2;
+        const width = event.nativeEvent.layout.width;
         setInner((prev) => (prev === width ? prev : width));
       }}
-      style={[styles.track, { backgroundColor: DEAL.face, borderColor: DEAL.edge }]}>
+      style={[styles.track, { backgroundColor: DEAL.face }]}>
       {slot > 0 && (
         <Animated.View
           pointerEvents="none"
@@ -207,6 +207,9 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', gap: 10 },
   segment: { flex: 1 },
   face: {
+    borderRadius: RADIUS,
+    borderCurve: 'continuous',
+    borderWidth: 2,
     minHeight: 58,
     paddingVertical: 9,
     paddingHorizontal: 10,
@@ -219,7 +222,6 @@ const styles = StyleSheet.create({
   track: {
     flexDirection: 'row',
     padding: TRACK_PAD,
-    borderWidth: RAISED_BORDER,
     borderRadius: TRACK_RADIUS,
     borderCurve: 'continuous',
   },

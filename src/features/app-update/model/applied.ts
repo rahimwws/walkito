@@ -9,8 +9,8 @@ import { confirmationFor, parseAppliedFlag } from './decide';
 const APPLIED_KEY = 'update/applied';
 
 /** How long after mount the note waits: the native reload screen is still
- * fading out (300ms), and then the launch splash plays its reveal (under
- * 0.8 s, see `shared/ui/splash`) over the first screen. Arriving on top of
+ * fading out (300ms), and then the launch splash fades (see
+ * `shared/ui/splash`) over the first screen. Arriving on top of
  * either reads as part of the restart rather than as news. */
 const SETTLE_MS = 1200;
 
@@ -30,8 +30,7 @@ let restartHold: number | null = null;
  * nothing on any other launch.
  *
  * The reload screen fades out over the splash's first frame, which is the same
- * picture, so the fade itself is invisible. A reveal that started under it
- * would not be: the still, fading, would sit over the mascot as he crouched.
+ * white, so the fade itself is invisible; the splash's own fade waits for it.
  *
  * Read once, on the root layout's first render, before
  * `useUpdateConfirmation` clears the flag it reads.

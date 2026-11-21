@@ -1,5 +1,5 @@
 import * as Haptics from 'expo-haptics';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -24,10 +24,8 @@ import { useT } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { formatPrice } from '@/shared/lib/money';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Mascot, premiumRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PlanOption } from '@/shared/ui/plan-option';
 import { PrimaryButton } from '@/shared/ui/primary-button';
-import { useSplashRevealed } from '@/shared/ui/splash';
 import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 /**
@@ -49,13 +47,8 @@ import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/s
  * new sessions lock, which is enforced in the session player rather than here.
  */
 
-/** The mascot beside the title: the crown on, the key held up. */
-const FIGURE = 72;
-
 /** The plans under the annual one, in this order, when the offering has them. */
 const OTHERS: readonly PaywallPeriod[] = ['monthly', 'weekly', 'lifetime'];
-/** He holds the key out once, as the screen settles. */
-const PRESENT_MS = 650;
 
 type Props = {
   /** Called once access is restored, so the router can leave this screen. The
@@ -201,22 +194,6 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
 
-  // The key held out once, as an invitation and nothing more; then he only
-  // breathes, and holds still while the store's own sheet is up. This screen
-  // is often the first at launch: under the splash he holds still and keeps
-  // his move until it has gone.
-  const mascot = useRef<MascotHandle>(null);
-  const revealed = useSplashRevealed();
-  const presented = useRef(false);
-  useEffect(() => {
-    if (presented.current || !revealed) return undefined;
-    const timer = setTimeout(() => {
-      presented.current = true;
-      mascot.current?.play('present');
-    }, PRESENT_MS);
-    return () => clearTimeout(timer);
-  }, [revealed]);
-
   const unlocked = () => {
     // Re-arm the read-only concession, so a *second* lapse meets this screen
     // again rather than the browsing mode the first one was answered with.
@@ -359,21 +336,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
       <ScrollView
         contentContainerStyle={[styles.scroll, { paddingTop: insets.top + 32, paddingBottom: 24 }]}
         showsVerticalScrollIndicator={false}>
-        <View style={styles.head}>
-          <Text style={[styles.title, styles.headTitle, { color: meter.ink }]}>
-            {passEnded ? t('pages.expired.titlePass') : t('pages.expired.title')}
-          </Text>
-          {/* Decoration: hidden from anyone listening. */}
-          <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.figure}>
-            <Mascot
-              ref={mascot}
-              rig={premiumRig}
-              size={FIGURE}
-              surface={colors.background}
-              paused={busy || !revealed}
-            />
-          </View>
-        </View>
+        <Text accessibilityRole="header" style={[styles.title, { color: meter.ink }]}>
+          {passEnded ? t('pages.expired.titlePass') : t('pages.expired.title')}
+        </Text>
         <Text style={[styles.lede, { color: meter.caption }]}>
           {summary.sessions > 0
             ? t('pages.expired.lede', { count: summary.sessions })
@@ -506,10 +471,6 @@ function Change({
 const styles = StyleSheet.create({
   host: { flex: 1 },
   scroll: { paddingHorizontal: 24, gap: 8 },
-  /** The title and the mascot beside it. */
-  head: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  headTitle: { flex: 1 },
-  figure: { width: FIGURE, height: FIGURE },
   title: { ...fonts.heavy(30, -0.8), lineHeight: 34 },
   lede: fonts.medium(15, -0.2),
   card: { marginTop: 20, borderRadius: 20, padding: 20, gap: 18 },

@@ -17,13 +17,6 @@ export type MovePreviewStepProps = {
   /** The move for where it hurts (`painMove`). Never sent anywhere: it is
    * chosen from the pain map, so it describes a body. */
   exerciseId: string;
-  /** Room the coach takes in the top-right corner, beside the heading. */
-  speakerInset?: number;
-  /** How tall he is there: the heading is at least that, so the clip starts
-   * under his feet. */
-  speakerSize?: number;
-  /** The clip opened full screen, or closed: the coach stops under it. */
-  onViewerChange?: (open: boolean) => void;
 };
 
 /**
@@ -40,7 +33,7 @@ export type MovePreviewStepProps = {
  * nothing of the foot is cropped and its still stands there until the film
  * arrives.
  */
-export function MovePreviewStep({ exerciseId, speakerInset = 0, speakerSize = 0, onViewerChange }: MovePreviewStepProps) {
+export function MovePreviewStep({ exerciseId }: MovePreviewStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -52,7 +45,7 @@ export function MovePreviewStep({ exerciseId, speakerInset = 0, speakerSize = 0,
 
   return (
     <ScrollView style={styles.fill} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-      <View style={[styles.head, { paddingRight: speakerInset, minHeight: speakerSize }]}>
+      <View style={styles.head}>
         <Text style={[styles.eyebrow, { color: PRIMARY }]}>{t('onboarding.move.eyebrow')}</Text>
         <Text accessibilityRole="header" style={[styles.title, { color: colors.foreground }]}>
           {t(exercise.titleKey)}
@@ -66,7 +59,6 @@ export function MovePreviewStep({ exerciseId, speakerInset = 0, speakerSize = 0,
           fit="cover"
           expandPlacement="top-right"
           expandable
-          onViewerChange={onViewerChange}
         />
       </View>
       <Text style={[styles.body, { color: colors.foreground }]}>{t(exercise.rationaleKey)}</Text>

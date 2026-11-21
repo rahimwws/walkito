@@ -236,8 +236,6 @@ export const HOME_ES = {
   'home.legState.achy': 'Tus pies están un poco cargados esta mañana.',
   'home.legState.fine': 'Hoy tus pies se sienten bastante bien.',
   'home.legState.fresh': 'Hoy tus pies están frescos.',
-  'home.readiness.sayTap': '¡Hola! Me alegra verte.',
-  'home.readiness.mascotHint': 'Toca a Walkito para saludar',
   'home.readiness.partHint': 'Muestra cómo se calcula la puntuación de hoy',
   'home.readiness.scoreA11y': 'Piernas listas hoy: {score} de 100, {band}',
   // ── The small sheets over the readiness score: one per part, one for the score ──

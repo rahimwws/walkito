@@ -1,37 +1,27 @@
 import { useEffect, useRef, type ComponentRef } from 'react';
-import { StyleSheet, TextInput } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
-import { waveRig } from '@/shared/ui/mascot';
-
-import { SpeakingQuestion } from './speaking-question';
 
 export type NameStepProps = {
-  /** The question, said by Walkito from his speech bubble. */
+  /** The question, as the step's heading. */
   question: string;
   value: string;
   placeholder: string;
   onChange: (next: string) => void;
   /** Advances the flow from the keyboard's return key. */
   onSubmit: () => void;
-  /** The flow is covered (a sheet over it): he holds still. */
-  paused?: boolean;
 };
 
-const MASCOT = 132;
-
 /**
- * The name question, asked by Walkito himself: he stands in the middle and
- * waves, the question comes out of his speech bubble, and the answer is
- * typed right under it. The first thing the flow asks, so it reads as being
- * greeted rather than as a form; the step draws its own heading for that, and
- * the corner coach stays away from it.
+ * The name question: the question, and the answer typed right under it. The
+ * step draws its own heading so the field sits close under it.
  *
  * The field is chromeless, as before: the placeholder is the label, and what
  * the user types lands exactly where the prompt was.
  */
-export function NameStep({ question, value, placeholder, onChange, onSubmit, paused = false }: NameStepProps) {
+export function NameStep({ question, value, placeholder, onChange, onSubmit }: NameStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -47,7 +37,10 @@ export function NameStep({ question, value, placeholder, onChange, onSubmit, pau
   }, []);
 
   return (
-    <SpeakingQuestion question={question} rig={waveRig} state="wave" size={MASCOT} paused={paused}>
+    <View>
+      <Text accessibilityRole="header" style={[styles.question, { color: colors.foreground }]}>
+        {question}
+      </Text>
       <TextInput
         ref={input}
         value={value}
@@ -62,14 +55,17 @@ export function NameStep({ question, value, placeholder, onChange, onSubmit, pau
         textContentType="givenName"
         returnKeyType="next"
         maxLength={24}
-        textAlign="center"
         style={[styles.input, { color: colors.foreground }]}
       />
-    </SpeakingQuestion>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  question: {
+    ...fonts.bold(30, -0.8),
+    lineHeight: 36,
+  },
   input: {
     ...fonts.bold(36, -0.8),
     lineHeight: 44,

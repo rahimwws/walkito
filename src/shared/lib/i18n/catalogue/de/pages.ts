@@ -46,22 +46,16 @@ export const PAGES_DE = {
   'pages.program.kindMobility': 'Beweglichkeit',
   'pages.program.kindBalance': 'Balance',
   'pages.program.kindRecovery': 'Erholung',
-  'pages.program.retest': 'Test',
 
   'pages.program.testCount': { one: '{count} Test', other: '{count} Tests' },
   'pages.program.minuteCount': { one: '{count} Minute', other: '{count} Minuten' },
 
-  'pages.program.dayCardA11y': 'Tag {day}, {kind}, {minutes}',
   'pages.program.moveWithDose': '{title} · {dose}',
   'pages.program.zoneCalf': 'Wade',
   'pages.program.zoneArch': 'Gewölbe',
   'pages.program.zoneBalance': 'Balance',
   'pages.program.zoneSymmetry': 'Symmetrie',
 
-  'pages.program.statSession': 'Einheit',
-  'pages.program.statTests': 'Tests',
-  'pages.program.statExercises': 'Übungen',
-  'pages.program.getStarted': 'Los geht’s',
 
   'pages.program.blockSeam': 'Block {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} Tag geschafft', other: '{count} Tage geschafft' },
@@ -223,23 +217,12 @@ export const PAGES_DE = {
   'pages.plan.nextWeekHow': 'Jeden Sonntagabend wird eine neue Woche geplant, danach, wie diese lief - deine Check-ins, deine Tests und wie anstrengend sich die Einheiten angefühlt haben.',
   'pages.plan.nextWeekSummary': '{sessions} · Fokus: {goal}',
   'pages.plan.sessionCount': { one: '{count} Einheit', other: '{count} Einheiten' },
-  'pages.plan.restDay': 'Ruhe',
 
   // ── Übungen für heute und Belohnungen ───────────────────────────────────
   'pages.plan.movesTitle': 'Übungen für heute',
   'pages.plan.movesProgress': '{done} / {total}',
   'pages.plan.movesDoneA11y': 'Erledigt: {done} von {total}',
   'pages.plan.moveDoneA11y': '{name}, erledigt',
-  'pages.plan.rewardTitle': 'Belohnungen',
-  'pages.plan.rewardStreakStart': 'Schließ heute ab, um deine Serie zu starten.',
-  'pages.plan.rewardStreak': {
-    one: 'Schließ heute ab und du bist bei {count} Tag in Folge.',
-    other: 'Schließ heute ab und du bist bei {count} Tagen in Folge.',
-  },
-  'pages.plan.rewardSticker': 'Nächster Sticker: {name}.',
-  'pages.plan.rewardStickerLast': 'Schließ heute ab und hol dir einen Sticker: {name}.',
-  'pages.plan.rewardStickerCount': '{have} / {need}',
-  'pages.plan.rewardStickerCountA11y': '{have} von {need}',
 
   // ── Ein fertiger Tag: was er gebracht hat, und morgen ───────────────────
   'pages.plan.earnedMinutes': 'Minuten',
@@ -249,13 +232,11 @@ export const PAGES_DE = {
   'pages.plan.earnedMinutesA11y': { one: '{count} Minute heute', other: '{count} Minuten heute' },
   'pages.plan.earnedMovesA11y': { one: '{count} Übung heute geschafft', other: '{count} Übungen heute geschafft' },
   'pages.plan.earnedTestsA11y': { one: '{count} Test heute gemacht', other: '{count} Tests heute gemacht' },
-  'pages.plan.earnedStickerLast': 'Noch eine Einheit bis zum Sticker: {name}.',
   'pages.plan.tomorrowEyebrow': 'Morgen',
   'pages.plan.opensIn': 'Verfügbar in {time}',
   'pages.plan.doneToday': 'Fertig für heute',
 
   // ── Die Wochen zum Ziel: diese und die nächste auf einer Linie, die Testtage dazwischen
-  'pages.plan.path.now': 'Jetzt',
   'pages.plan.path.done': 'Erledigt',
   'pages.plan.path.testToday': 'Testtag · heute',
   'pages.plan.path.testTomorrow': 'Testtag · morgen',

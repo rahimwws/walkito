@@ -21,10 +21,10 @@ import { useColorScheme } from '@/shared/lib/theme';
  * should be the largest thing your thumb can find without looking. It also
  * gives the label room to sit optically centred rather than crammed.
  */
-export const PRIMARY_BUTTON_HEIGHT = 76;
+export const PRIMARY_BUTTON_HEIGHT = 56;
 /** Squircle, not a capsule. At h/2 the ends bow out and the button reads as a
  * pill floating in the layout; a little under half keeps it a rounded slab. */
-const RADIUS = 32;
+const RADIUS = 16;
 
 const PRESS_IN_MS = 90;
 const PRESS_OUT_MS = 160;
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
-  label: fonts.semibold(20, -0.1),
+  label: fonts.semibold(17),
   disabled: {
     opacity: 0.35,
   },

@@ -88,7 +88,6 @@ export {
   setFirstStepReady,
   useFirstStepReady,
 } from './model/first-step-push';
-export { NOTIFICATION_ART, type NotificationArt } from './model/art';
 export { PREVIEW_KIND, previewNotification, type PreviewOptions } from './model/preview';
 export {
   DAY_ONE_KIND,

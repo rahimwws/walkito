@@ -41,6 +41,7 @@ export const CORE_FR = {
   'settings.write': 'Écrire à Rahim',
   'settings.writeHint': 'Une vraie personne lit chaque message',
   'settings.writeSubject': 'Walkito',
+  'splash.wordmark': 'Walkito',
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Ton plan',
   'settings.outcome': 'Ton objectif',
@@ -87,8 +88,6 @@ export const CORE_FR = {
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: '{count} jour d’affilée', other: '{count} jours d’affilée' },
-  'streak.milestoneBlurb': 'Chacun de ces jours a compté.',
-  'streak.milestoneBigBlurb': 'Dix jours. C’est là qu’une habitude commence à tenir.',
   'streak.rule':
     'Un jour compte quand tu fais ton bilan, t’entraînes ou termines une routine de la bibliothèque. Un jour de repos, ton bilan suffit.',
   'streak.total': { one: '{count} jour jusqu’ici.', other: '{count} jours jusqu’ici.' },

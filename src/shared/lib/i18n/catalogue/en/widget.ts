@@ -1,7 +1,7 @@
 /** Home-screen widget strings. Filled per domain; see `./core.ts` for the rules.
  *
  * Short on purpose: the small widget is about 155 points wide and every line
- * here has to fit it at the default text size, next to a mascot. */
+ * here has to fit it at the default text size. */
 
 import type { SourceEntry } from '../entry';
 

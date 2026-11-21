@@ -1,8 +1,17 @@
 import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useMemo, useState } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import Animated, {
+  Easing,
+  ReduceMotion,
+  runOnJS,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
   IN_SESSION_STOP_PAIN,
@@ -16,15 +25,15 @@ import {
   useStreak,
 } from '@/entities/program';
 import { PULSE_MIN_OTHERS, useCommunityPulse } from '@/entities/community';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { colors as tokens, fonts, meterColors, palette, radius } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { PulseFaces } from '@/shared/ui/community-pulse';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { PrimaryButton } from '@/shared/ui/primary-button';
 
-import { DoneMascot, DoneTiles, StreakChip } from './session-done-hero';
+import { DoneTiles, StreakChip } from './session-done-hero';
 import { SessionPainSheet } from './session-pain-sheet';
 
 export type SessionDoneSheetProps = {
@@ -124,11 +133,9 @@ function withToday(current: number, total: number, counts: boolean): { run: numb
   return { run: current + 1, care: total + 1 };
 }
 
-/** The mascot on the card's edge, by the room the screen has: the sheet has
- * to fit the feedback question under him on the smallest phone. */
-function mascotSize(windowHeight: number): number {
-  return Math.round(Math.min(156, Math.max(104, windowHeight * 0.17)));
-}
+const RISE = 40;
+const IN_MS = 320;
+const OUT_MS = 220;
 
 /**
  * The end of a session.
@@ -139,10 +146,9 @@ function mascotSize(windowHeight: number): number {
  * nothing congratulates — that rule exists to stop the app cheering at
  * somebody's pain, and there is no pain here to cheer at.
  *
- * The sheet itself is `CelebrationSheet`, shared with the paywall. What belongs
- * here is the hero and the one question the plan needs answered. The hero is
- * the mascot jumping on the card's edge, "Nice work.", the run in an orange
- * chip, and three tiles: the minutes, the moves, and every day of care so far.
+ * What belongs here is the hero and the one question the plan needs answered.
+ * The hero is "Nice work.", the run in a chip, and three tiles: the minutes,
+ * the moves, and every day of care so far.
  * The tiles say what the old blurb said ("All 5 moves done"), so the blurb is
  * gone from this state rather than said twice.
  */
@@ -158,9 +164,6 @@ export function SessionDoneSheet({
   onClose,
 }: SessionDoneSheetProps) {
   const t = useT();
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const { height } = useWindowDimensions();
   const streak = useStreak();
   // Keyed on the streak, which is a new object only when a log is written:
   // this sheet sits mounted under a player that re-renders every second, and
@@ -191,18 +194,12 @@ export function SessionDoneSheet({
 
   return (
     <>
-      <CelebrationSheet
+      <DoneDock
         visible={visible}
         // Stopped on pain: no "nice work", no chip, no tiles of what was done.
-        // What they need to hear is that it counts and what happens tomorrow,
-        // from a mascot who nods rather than jumps, with no confetti and no
-        // sound.
+        // What they need to hear is that it counts and what happens tomorrow.
         title={early ? t('widgets.sessionStoppedTitle') : t('widgets.sessionDoneTitle')}
         blurb={early ? t('widgets.sessionStoppedBlurb') : undefined}
-        confetti={!early}
-        mascot={
-          <DoneMascot calm={early} size={mascotSize(height)} surface={colors.card} paused={askingPain} />
-        }
         onClose={onClose}>
         {!early && (
           <>
@@ -217,8 +214,8 @@ export function SessionDoneSheet({
         {/* Skipped after a pain stop — that session already said how it went. */}
         {feedback && !early && (
           // Starts unanswered on every opening without being told to: the
-          // celebration renders its children only while it is up, so each
-          // opening mounts a fresh card.
+          // dock renders its children only while it is up, so each opening
+          // mounts a fresh card.
           <FeelCard
             onAnswer={(feel) => {
               const entry = FEELS.find((candidate) => candidate.feel === feel);
@@ -228,10 +225,10 @@ export function SessionDoneSheet({
             }}
           />
         )}
-      </CelebrationSheet>
+      </DoneDock>
 
-      {/* After the celebration in the tree, so it draws over it: both are
-          overlays at the same height, and the later one wins. */}
+      {/* After the dock in the tree, so it draws over it: both are overlays at
+          the same height, and the later one wins. */}
       <SessionPainSheet
         visible={visible && askingPain}
         after
@@ -239,6 +236,83 @@ export function SessionDoneSheet({
         onCancel={() => setAskingPain(false)}
       />
     </>
+  );
+}
+
+/**
+ * The sheet the end of a session sits in: a card docked at the bottom over a
+ * dimmed player, with Done under whatever the host puts in it.
+ *
+ * An absolutely-positioned overlay, not a `Modal`: the player already runs in
+ * a `pageSheet`, a `Modal` nested in a presented sheet does not reliably
+ * present on iOS, and the player's `onFinish` fires from this dismissal, so a
+ * sheet that never appeared would leave the session stuck open. Driven by one
+ * shared value; the mount outlives `visible` so the exit can play.
+ */
+function DoneDock({
+  visible,
+  title,
+  blurb,
+  children,
+  onClose,
+}: {
+  visible: boolean;
+  title: string;
+  blurb?: string;
+  children?: ReactNode;
+  onClose: () => void;
+}) {
+  const t = useT();
+  const insets = useSafeAreaInsets();
+  const [mounted, setMounted] = useState(false);
+  const progress = useSharedValue(0);
+
+  useEffect(() => {
+    if (visible) {
+      setMounted(true);
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      const frame = requestAnimationFrame(() => {
+        progress.value = withTiming(1, {
+          duration: IN_MS,
+          easing: Easing.out(Easing.cubic),
+          reduceMotion: ReduceMotion.System,
+        });
+      });
+      return () => cancelAnimationFrame(frame);
+    }
+    progress.value = withTiming(
+      0,
+      { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
+      (finished) => {
+        if (finished) runOnJS(setMounted)(false);
+      },
+    );
+    return undefined;
+  }, [visible, progress]);
+
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
+  const dock = useAnimatedStyle(() => ({
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE }],
+  }));
+
+  if (!mounted) return null;
+
+  return (
+    <View style={styles.host} pointerEvents="box-none">
+      <Animated.View style={[styles.fill, styles.scrim, backdrop]} />
+      <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.fill} onPress={onClose} />
+      <Animated.View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]} pointerEvents="box-none">
+        <View style={styles.dockCard}>
+          <Text accessibilityRole="header" style={styles.title}>
+            {title}
+          </Text>
+          {blurb != null && <Text style={styles.blurb}>{blurb}</Text>}
+          {children}
+          <PrimaryButton label={t('common.done')} onPress={onClose} style={styles.cta} />
+        </View>
+      </Animated.View>
+    </View>
   );
 }
 
@@ -353,6 +427,29 @@ function FeelCard({ onAnswer }: { onAnswer: (feel: Feel) => void }) {
 }
 
 const styles = StyleSheet.create({
+  host: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100 },
+  fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
+  scrim: { backgroundColor: tokens.photoOverlay },
+  dock: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: 14 },
+  dockCard: {
+    backgroundColor: tokens.surface,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingTop: 24,
+    paddingBottom: 18,
+  },
+  title: { ...fonts.bold(28, -0.6), color: tokens.text, textAlign: 'center' },
+  blurb: {
+    ...fonts.regular(17),
+    color: tokens.text2,
+    lineHeight: 23,
+    textAlign: 'center',
+    marginTop: 8,
+    paddingHorizontal: 6,
+  },
+  cta: { alignSelf: 'stretch', marginTop: 18 },
   together: {
     flexDirection: 'row',
     alignItems: 'center',

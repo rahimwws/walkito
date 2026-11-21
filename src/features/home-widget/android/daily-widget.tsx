@@ -1,28 +1,23 @@
-import { FlexWidget, ImageWidget, TextWidget } from 'react-native-android-widget';
+import { FlexWidget, TextWidget } from 'react-native-android-widget';
 
 import type { DailyWidgetProps } from '../ui/daily-widget';
 
 /**
  * The Android home-screen widget: the same question and the same two cards as
- * the iOS one, and today's goal under them. Drawn by the launcher from this
+ * the iOS one, and today's goal above them. Drawn by the launcher from this
  * JSX, so no React Native view, hook or style sheet can appear here — only the
  * library's widget primitives.
  *
  * The cards open Home on `?checkin=fine|hurts`, as on iOS; there are no
- * interactive widgets on Android to record the answer in place.
+ * interactive widgets on Android to record the answer in place. White, text
+ * only; the colours follow `colors` in shared/config/tokens by hand.
  */
-const BG = '#1C1C1E';
-const CARD = '#2C2C2E';
-const INK = '#FFFFFF';
-const CAPTION = '#A1A1A6';
-const ACCENT = '#8B5CF6';
+const BG = '#FFFFFF';
+const CARD = '#EFEFF2';
+const INK = '#111114';
+const CAPTION = '#55555E';
+const ACCENT = '#6D28D9';
 const FONT = 'sans-serif-medium';
-
-const ART = {
-  neutral: require('@assets/widget/mascot-tasks.png'),
-  pain: require('@assets/widget/mascot-pain.png'),
-  fine: require('@assets/widget/mascot-nopain.png'),
-};
 
 /** Opened from the widget before the app has written anything: just a way in. */
 export function EmptyAndroidWidget({ label }: { label: string }) {
@@ -30,13 +25,12 @@ export function EmptyAndroidWidget({ label }: { label: string }) {
     <FlexWidget
       clickAction="OPEN_APP"
       style={{ height: 'match_parent', width: 'match_parent', backgroundColor: BG, borderRadius: 24, justifyContent: 'center', alignItems: 'center', padding: 12 }}>
-      <ImageWidget image={ART.neutral} imageWidth={56} imageHeight={56} />
-      <TextWidget text={label} style={{ color: INK, fontSize: 15, fontFamily: FONT, marginTop: 8 }} />
+      <TextWidget text={label} style={{ color: INK, fontSize: 17, fontFamily: FONT }} />
     </FlexWidget>
   );
 }
 
-function Card({ label, uri, art, chosen }: { label: string; uri: string; art: number; chosen: boolean }) {
+function Card({ label, uri, chosen }: { label: string; uri: string; chosen: boolean }) {
   return (
     <FlexWidget
       clickAction="OPEN_URI"
@@ -52,8 +46,7 @@ function Card({ label, uri, art, chosen }: { label: string; uri: string; art: nu
         justifyContent: 'center',
         padding: 6,
       }}>
-      <ImageWidget image={art} imageWidth={60} imageHeight={60} />
-      <TextWidget text={label} style={{ color: INK, fontSize: 13, fontFamily: FONT, marginTop: 4 }} maxLines={1} />
+      <TextWidget text={label} style={{ color: INK, fontSize: 16, fontFamily: FONT }} maxLines={2} />
     </FlexWidget>
   );
 }
@@ -70,8 +63,8 @@ export function DailyAndroidWidget(props: DailyWidgetProps) {
         <TextWidget text={`${props.text.goalTitle} ${props.text.goalValue}`} style={{ color: CAPTION, fontSize: 13, fontFamily: FONT }} maxLines={1} />
       </FlexWidget>
       <FlexWidget style={{ width: 'match_parent', flex: 1, flexDirection: 'row', marginTop: 10, flexGap: 10 }}>
-        <Card label={props.text.hurts} uri={props.links.hurts} art={ART.pain} chosen={answered != null && answered > 0} />
-        <Card label={props.text.fine} uri={props.links.fine} art={ART.fine} chosen={answered === 0} />
+        <Card label={props.text.hurts} uri={props.links.hurts} chosen={answered != null && answered > 0} />
+        <Card label={props.text.fine} uri={props.links.fine} chosen={answered === 0} />
       </FlexWidget>
     </FlexWidget>
   );

@@ -1,4 +1,4 @@
-/** The session-complete moment: the mascot, "nice work", the streak pill and the tiles. Filled per domain; see
+/** The session-complete moment: "nice work", the streak pill and the tiles. Filled per domain; see
  * `./core.ts` for the rules.
  *
  * The title ("Nice work.") and the chip ("{count} days in a row") are

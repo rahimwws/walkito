@@ -6,10 +6,9 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /** One corner for every card on the screen, so the column reads as one set. */
-export const CARD_RADIUS = 28;
-/** The room inside every card's edge. A mascot peeking in over the edge is
- * placed from it: he stands on the card's rim, not on its content. */
-export const CARD_PADDING = 18;
+const CARD_RADIUS = 28;
+/** The room inside every card's edge. */
+const CARD_PADDING = 18;
 
 /**
  * A card: surface, corner and the title row. `aside` sits on the right of the

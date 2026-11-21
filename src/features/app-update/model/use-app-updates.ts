@@ -19,7 +19,7 @@ import {
   type UpdateOffer,
   type UpdatePhase,
 } from './decide';
-import { prepareHandoffImage, reloadScreenOptions } from './reload-screen';
+import { reloadScreenOptions } from './reload-screen';
 import { isNewerVersion } from './version';
 
 export type { UpdateOffer, UpdatePhase } from './decide';
@@ -253,7 +253,6 @@ export function useAppUpdates(
       // A different offer starts over, whatever became of the last one.
       if (phaseRef.current === 'failed') setPhase('idle');
       setOffer(next);
-      if (next.kind === 'ota') void prepareHandoffImage();
       track('app_update_offered', { kind: next.kind });
     },
     [setOffer, setPhase],
@@ -407,7 +406,7 @@ export function useAppUpdates(
       if (current?.kind !== 'ota' || phaseRef.current !== 'applying' || handingOff.current) return;
       handingOff.current = true;
       void (async () => {
-        const options = await reloadScreenOptions(backgroundColor);
+        const options = reloadScreenOptions(backgroundColor);
         if (current.preview === true) {
           await restartPreview(options);
           return;
@@ -436,7 +435,6 @@ export function useAppUpdates(
     downloaded.current.add(PREVIEW_ID);
     setPhase('idle');
     setOffer({ kind: 'ota', id: PREVIEW_ID, preview: true });
-    void prepareHandoffImage();
   }, [setOffer, setPhase]);
 
   return {

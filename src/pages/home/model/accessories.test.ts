@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 
-import { ACCESSORIES, accessoriesFor, accessoryAt, unseenAccessories } from './accessories';
+import { ACCESSORIES, accessoriesFor, unseenAccessories } from './accessories';
 
 describe('accessoriesFor', () => {
   test('nothing before a week', () => {
@@ -20,17 +20,6 @@ describe('accessoriesFor', () => {
   test('thresholds are in order', () => {
     const days = ACCESSORIES.map((a) => a.days);
     expect([...days].sort((a, b) => a - b)).toEqual(days);
-  });
-});
-
-describe('accessoryAt', () => {
-  test('only on the day itself', () => {
-    expect(accessoryAt(7)).toBe('shoe');
-    expect(accessoryAt(14)).toBe('medal');
-    expect(accessoryAt(30)).toBe('trophy');
-    expect(accessoryAt(100)).toBe('crown');
-    expect(accessoryAt(10)).toBeNull();
-    expect(accessoryAt(8)).toBeNull();
   });
 });
 

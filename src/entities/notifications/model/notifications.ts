@@ -6,7 +6,6 @@ import { setPerson, track, type NotificationsPermission } from '@/shared/lib/ana
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 
-import { scheduleWithArt } from './attachment';
 import type { Message } from './copy';
 import { offerPushesAllowed } from './offer-prefs';
 
@@ -227,7 +226,7 @@ export async function scheduleWinback(percent: number, name?: string): Promise<b
   const message = winbackMessage(percent, name);
   try {
     // The gift on iPhone; see `attachment.ts`.
-    await scheduleWithArt('offer', {
+    await Notifications.scheduleNotificationAsync({
       identifier: WINBACK_ID,
       content: {
         title: message.title,
@@ -327,7 +326,7 @@ export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
   const message = expiryMessage();
   try {
     // The crown and key on iPhone; see `attachment.ts`.
-    await scheduleWithArt('expiry', {
+    await Notifications.scheduleNotificationAsync({
       identifier: EXPIRY_ID,
       content: {
         title: message.title,

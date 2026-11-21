@@ -3,8 +3,8 @@ import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
-import { useIsFocused, useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { AppState, Modal, Pressable, StyleSheet, Text, useWindowDimensions, View, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   Easing,
@@ -37,12 +37,10 @@ import {
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
-import { PROGRAM_EASING, PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
+import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
 import { useSpotlightAnchor } from '@/shared/lib/spotlight';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
-import { FluentIcon } from '@/shared/ui/fluent-icon';
-import type { ConfettiOrigin } from '@/shared/ui/confetti';
-import { Mascot, handsUpRig, painRig, type MascotHandle, type MascotProps } from '@/shared/ui/mascot';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { useSplashRevealed } from '@/shared/ui/splash';
@@ -78,13 +76,10 @@ const SHEET_GONE_MS = 380;
 /** The block easing to the height of what it now holds. */
 const HEIGHT_MS = 420;
 const HEIGHT_EASING = Easing.bezier(0.33, 1, 0.68, 1);
-/** His reaction (and the confetti) once the answer has risen in. */
-const SUMMARY_SHOT_MS = 80;
 /** The bleed of the block's clip into the page gutters, so the tipped cards'
  * corners are never cut. */
 const CLIP_BLEED = 20;
-/** And above and below it: the mascot's hop on the answer card rises past
- * the card's top. */
+/** And above and below it, for the tipped cards' corners. */
 const CLIP_BLEED_Y = 24;
 const SELECT_MS = 260;
 const SELECT_EASING = Easing.bezier(0.23, 1, 0.32, 1);
@@ -103,8 +98,7 @@ const GLASS_WIDTH = '62%';
 const STAGGER = 34;
 const TILT = 5;
 const GLASS_HEIGHT = 182;
-/** The mascot on each card. The card clips, so a hop stays inside it. */
-const MASCOT_SIZE = 118;
+const ART_SIZE = 64;
 
 /** The title is a key, resolved where the card is drawn — so the pair repaints
  * with the language rather than at next launch. */
@@ -112,35 +106,28 @@ const CARDS = [
   {
     key: 'pain',
     title: 'home.itHurts',
-    rig: painRig,
+    art: 'foot',
     /** Leading card: sits high and left, tipped anticlockwise. */
     side: 'left',
   },
   {
     key: 'nopain',
     title: 'home.noPain',
-    rig: handsUpRig,
+    art: 'sun',
     side: 'right',
   },
 ] as const satisfies readonly {
   key: string;
   title: Key;
-  rig: unknown;
+  art: FluentName;
   side: 'left' | 'right';
 }[];
 
 type CardKey = (typeof CARDS)[number]['key'];
 
 export type PainCheckProps = {
-  /** Fired once the day's answer is in. `painless` is what the celebration and
-   * the reordering above both key off — a good day is worth marking, and either
-   * way the question is done and should stop holding the top of the screen. */
-  onLogged?: (painless: boolean, origin?: ConfettiOrigin) => void;
-  /** A sheet of Home's is over the cards (the streak, a milestone): the
-   * mascots hold still under it. */
-  covered?: boolean;
-  /** The check-in's own sheets opened or closed, so Home can hold its other
-   * mascots still under them. */
+  /** The check-in's own sheets opened or closed, so Home can hold what it
+   * raises on its own until they have gone. */
   onSheet?: (open: boolean) => void;
   /**
    * The block's two heights, which Home adds up (with `CHECK_IN_GAP`) for its
@@ -174,7 +161,7 @@ export type PainCheckProps = {
  * by side. Now a tap picks — the chosen card comes level and forward while the
  * other tips away — and one primary underneath commits it.
  */
-export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainCheckProps) {
+export function PainCheck({ onSheet, heights }: PainCheckProps) {
   const cardsAnchor = useSpotlightAnchor('home.pain');
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
@@ -235,14 +222,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
   const wasSheetUp = useRef(sheetUp);
   if (wasSheetUp.current && !sheetUp) sheetGoneAt.current = Date.now();
   wasSheetUp.current = sheetUp;
-  /** Bumped by every answer and correction: the mascot reacts once to each,
-   * never again for coming back to Home. */
-  const [reaction, setReaction] = useState(0);
-  /** A fresh answer waiting to be marked (confetti for a day with no pain)
-   * once the answer has landed. */
-  const celebrate = useRef<boolean | null>(null);
-  const onLoggedRef = useRef(onLogged);
-  onLoggedRef.current = onLogged;
 
   useEffect(() => {
     if (target === view || sheetUp) return undefined;
@@ -281,15 +260,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
     return () => clearTimeout(done);
   }, [leaving, view, summaryP, questionP, viewsHeight]);
 
-  /** The mascot's reaction has played: the day's first answer is celebrated
-   * on that beat, from where he is, rather than under the change. */
-  const onReacted = (origin?: ConfettiOrigin) => {
-    if (celebrate.current == null) return;
-    const painless = celebrate.current;
-    celebrate.current = null;
-    onLoggedRef.current?.(painless, origin);
-  };
-  const transitioning = leaving != null;
 
   /**
    * The block's own height, eased to whatever its contents now measure.
@@ -337,7 +307,7 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
     return () => sub.remove();
   }, [viewsHeight, rowHeight]);
   // The clip reaches past the views on every side by its bleed (the tipped
-  // cards, his hop), so its own box is their height plus that.
+  // cards), so its own box is their height plus that.
   const heightStyle = useAnimatedStyle(() => ({ height: viewsHeight.value + CLIP_BLEED_Y * 2 }));
   // Every style of a layer carries the same properties, so a view that goes
   // from arriving to leaving (or back, interrupted) never keeps a value from
@@ -372,7 +342,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
     opacity: buttonIn.value,
     transform: [{ translateY: (1 - buttonIn.value) * 10 }],
   }));
-  const focused = useIsFocused();
   /** The red-flag check, behind "Something new?". */
   const [safety, setSafety] = useState(false);
   const sheetRef = useRef(onSheet);
@@ -394,7 +363,7 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
    *
    * What it still does is stop a second commit landing by accident — the block
    * does not go away once answered, it slides under the task list and stays on
-   * screen, so without this, scrolling back to it would re-fire the confetti.
+   * screen, so without this, scrolling back to it would log it again.
    * Picking a card again clears it.
    */
   const [logged, setLogged] = useState(false);
@@ -447,7 +416,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
    */
   const record = (score: number, zones: readonly LegZone[], said?: string) => {
     const correction = checkInOn(currentDay()) != null;
-    setReaction((n) => n + 1);
     logPain(currentDay(), score, zones);
     // The morning's answer is what moves the plan a step back or lets it return.
     settleOffset(currentDay());
@@ -496,7 +464,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
       if (answeredToday) return;
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       setSelected('nopain');
-      celebrate.current = true;
       record(0, [], t('widget.ackNoPain'));
     } else if (checkin === 'hurts') {
       if (answeredToday) {
@@ -509,7 +476,7 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
       setOpen(true);
     }
     // `open` only lands here: the question is on screen, answered or not.
-    // Keyed on the request alone. `record` and `onLogged` are fresh closures
+    // Keyed on the request alone. `record` is a fresh closure
     // every render, and re-running for them would record the answer twice.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkin, revealed]);
@@ -521,9 +488,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
           score={checkIn.score}
           zones={(checkIn.zones ?? []) as LegZone[]}
           flareScore={flare?.score ?? null}
-          paused={!focused || open || flareOpen || safety || covered || transitioning}
-          reaction={reaction}
-          onReacted={onReacted}
           onEdit={edit}
         />
         {ack != null && (
@@ -562,7 +526,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
             // Not locked once answered. The cards stay live so a second
             // check-in can be started from the same place as the first.
             locked={false}
-            visible={focused && !open && !safety && !covered && !transitioning}
             onPress={() => {
               Haptics.selectionAsync();
               setSelected(card.key);
@@ -588,9 +551,6 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
             // ask how much of the nothing there was would be the app refusing
             // to take yes for an answer.
             if (selected === 'nopain') {
-              // Confetti once, for the day's first answer, as it lands: a
-              // correction is not a second good morning.
-              if (!editing) celebrate.current = true;
               // A real zero, not an absent reading. The engine treats null as
               // "they have not been asked yet" and would go on adapting today
               // off yesterday's number; "no pain today" is an answer and has to
@@ -671,10 +631,7 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
           onClose={() => setOpen(false)}
           initialScore={editing && checkIn != null && checkIn.score > 0 ? checkIn.score : undefined}
           initialZones={editing ? ((checkIn?.zones ?? []) as LegZone[]) : undefined}
-          onSaved={(score, zones) => {
-            if (!editing) celebrate.current = false;
-            record(score, zones);
-          }}
+          onSaved={(score, zones) => record(score, zones)}
         />
       </Modal>
 
@@ -790,8 +747,7 @@ function reliefDay(): ProgramDay {
  * thing it opens is the one screen in the app that can say "see a doctor".
  * A tile, a title, the examples on a line of their own and a chevron make it
  * read as somewhere you can go, without making it loud. The plaster is calm
- * on purpose: the row asks a question, it does not raise an alarm. Not a face
- * (the answer cards above already have Walkito in them) and not the
+ * on purpose: the row asks a question, it does not raise an alarm. Not the
  * stethoscope, whose navy outline the dark card swallows.
  */
 function SomethingNewRow({ onPress }: { onPress: () => void }) {
@@ -830,9 +786,7 @@ function SomethingNewRow({ onPress }: { onPress: () => void }) {
  * The question used to stay on screen after it was answered, cards live and
  * looking unanswered, so tapping "No pain today" again and again seemed to do
  * nothing (it wrote another zero each time). Answered, it is the day's answer,
- * the way the pain apps show it, with "Edit" to correct it in place. The
- * mascot wears the answer: hands up for no pain, holding the sore foot
- * otherwise, never cheering a number.
+ * the way the pain apps show it, with "Edit" to correct it in place.
  *
  * Under the answer, in the same card, the days it joins: how many of the last
  * two weeks carry a check-in, as a count and a row of dots (`CheckInHistory`).
@@ -841,19 +795,11 @@ function CheckInSummary({
   score,
   zones,
   flareScore,
-  paused,
-  reaction,
-  onReacted,
   onEdit,
 }: {
   score: number;
   zones: readonly LegZone[];
   flareScore: number | null;
-  paused: boolean;
-  /** Bumped by each answer: he reacts once to each, not to Home reopening. */
-  reaction: number;
-  /** He has reacted, from here on the screen (for the confetti). */
-  onReacted: (origin?: ConfettiOrigin) => void;
   onEdit: () => void;
 }) {
   const scheme = useColorScheme();
@@ -861,47 +807,9 @@ function CheckInSummary({
   const meter = meterColors[scheme];
   const t = useT();
   const where = zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin'));
-  // He answers the answer once it has landed: a hop for a day with no pain, a
-  // small nod for a sore one (never a cheer at a number). Once per answer or
-  // correction; Home reopening, a sheet closing or a cold start play nothing.
-  const mascot = useRef<MascotHandle>(null);
-  const art = useRef<ComponentRef<typeof View>>(null);
-  const played = useRef(reaction);
-  const reactedRef = useRef(onReacted);
-  reactedRef.current = onReacted;
-  const { width, height } = useWindowDimensions();
-  useEffect(() => {
-    if (paused || reaction === played.current) return undefined;
-    const timer = setTimeout(() => {
-      played.current = reaction;
-      mascot.current?.play(score === 0 ? 'happy' : 'nod');
-      const node = art.current;
-      if (node == null) {
-        reactedRef.current();
-        return;
-      }
-      node.measureInWindow((x, y, w, h) => {
-        reactedRef.current(w > 0 ? { x: (x + w / 2) / width, y: (y + h / 3) / height } : undefined);
-      });
-    }, SUMMARY_SHOT_MS);
-    return () => clearTimeout(timer);
-  }, [reaction, paused, score, width, height]);
   return (
     <View style={[styles.summary, { backgroundColor: colors.card }]}>
       <View style={styles.summaryRow}>
-        <View
-          ref={art}
-          accessibilityElementsHidden
-          importantForAccessibility="no-hide-descendants"
-          style={styles.summaryArt}>
-          <CardMascot
-            ref={mascot}
-            rig={score === 0 ? handsUpRig : painRig}
-            size={76}
-            surface={colors.card}
-            paused={paused}
-          />
-        </View>
         <View style={styles.summaryCopy}>
           <Text style={[styles.summaryTitle, { color: colors.foreground }]}>
             {score === 0 ? t('home.todayNoPain') : t('home.todayPain', { score })}
@@ -1199,15 +1107,12 @@ function PainCard({
   card,
   selected,
   dimmed,
-  visible,
   locked,
   onPress,
 }: {
   card: (typeof CARDS)[number];
   selected: boolean;
   dimmed: boolean;
-  /** The cards are on screen and nothing covers them. */
-  visible: boolean;
   /** The day's answer is already in. The cards stay legible — they are the
    * record of what was chosen — but they stop taking a new one. */
   locked: boolean;
@@ -1221,17 +1126,6 @@ function PainCard({
 
   const left = card.side === 'left';
   const pressed = useSharedValue(0);
-
-  // The mascot answers the pick: "It hurts" winces and stays with you,
-  // "No pain" gives a small hop. Both stand still until one is picked, and
-  // only the picked one breathes, so the screen opened every morning is not
-  // two loops running. No sound: this is a daily screen.
-  const mascot = useRef<MascotHandle>(null);
-  const picked = useRef(selected);
-  useEffect(() => {
-    if (selected && !picked.current) mascot.current?.play(card.key === 'pain' ? 'wince' : 'happy');
-    picked.current = selected;
-  }, [selected, card.key]);
 
   const chosen = useDerivedValue(
     () =>
@@ -1329,18 +1223,8 @@ function PainCard({
         <Animated.View style={[StyleSheet.absoluteFill, glass.shape, glass.ring, ring]} />
 
         <View style={glass.body}>
-          <View style={glass.art}>
-            <CardMascot
-              ref={mascot}
-              rig={card.rig}
-              size={MASCOT_SIZE}
-              state={card.key === 'pain' && selected ? 'sad' : 'idle'}
-              // The sore-foot art as drawn: its pained face and ache marks.
-              restFace={card.key === 'pain' ? 'pain' : undefined}
-              ache={card.key === 'pain'}
-              surface={colors.card}
-              paused={!selected || !visible}
-            />
+          <View style={glass.art} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+            <FluentIcon name={card.art} size={ART_SIZE} />
           </View>
           <Text style={[glass.title, { color: colors.foreground }]}>{title}</Text>
         </View>
@@ -1354,16 +1238,6 @@ function PainCard({
       </Pressable>
     </Animated.View>
   );
-}
-
-/**
- * A card's mascot, still under the plan as well: the overlay is not a route,
- * so Home stays the focused tab under it. Its own component, so the plan's
- * coming and going re-renders the mascot and not the card.
- */
-function CardMascot({ paused = false, ...props }: MascotProps) {
-  const planOver = usePlanOver();
-  return <Mascot {...props} paused={paused || planOver} />;
 }
 
 const styles = StyleSheet.create({
@@ -1463,10 +1337,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
     paddingVertical: 14,
-    paddingLeft: 10,
-    paddingRight: 16,
+    paddingHorizontal: 16,
   },
-  summaryArt: { width: 76, height: 76 },
   summaryCopy: { flex: 1, gap: 3 },
   summaryTitle: fonts.heavy(19, -0.4),
   summaryLine: { ...fonts.medium(14, -0.1), lineHeight: 18 },
@@ -1572,7 +1444,7 @@ const glass = StyleSheet.create({
     paddingHorizontal: 12,
     gap: 6,
   },
-  art: { width: MASCOT_SIZE, height: MASCOT_SIZE },
+  art: { width: ART_SIZE, height: ART_SIZE },
   title: {
     ...fonts.bold(19, -0.3),
     textAlign: 'center',

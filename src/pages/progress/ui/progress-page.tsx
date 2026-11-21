@@ -20,7 +20,6 @@ import {
   useStreak,
   weekAttendance,
 } from '@/entities/program';
-import { StickersCard } from '@/features/stickers';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
@@ -29,10 +28,8 @@ import { HeaderActions } from '@/shared/ui/header-actions';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { IntroReveal } from '@/shared/ui/splash';
-import { StreakSheet } from '@/shared/ui/streak-sheet';
 
 import {
-  CHART_MIN_READINGS,
   RANGES,
   RANGE_ORDER,
   countReadings,
@@ -77,8 +74,7 @@ function lastFourWeeks(now: number) {
 
 /**
  * The screen, in the order it is read: this week, how mornings are going,
- * what the tests measured, how close each goal is, turning up, and the
- * stickers.
+ * what the tests measured, how close each goal is, and turning up.
  */
 export function ProgressPage() {
   const router = useRouter();
@@ -91,12 +87,6 @@ export function ProgressPage() {
   const devOnFeet = useDevOnFeetWeek();
   const t = useT();
 
-  /** What the streak means, opened from the capsule that shows it. */
-  const [streakOpen, setStreakOpen] = useState(false);
-  /** The sticker album's page sheet is up over the page. */
-  const [albumOpen, setAlbumOpen] = useState(false);
-  /** A sheet covers the page: its mascots hold still under it. */
-  const covered = streakOpen || albumOpen;
   const [rangeIndex, setRangeIndex] = useState(0);
   const streak = useStreak();
 
@@ -115,14 +105,6 @@ export function ProgressPage() {
 
   const results = retestResults();
   const trends = strengthTrends(results);
-  /**
-   * One character on screen at a time. While the pain card waits for its
-   * third morning its own mascot peeks up out of it; past that, before the
-   * first test, the strength card's leans in from its edge; only once neither
-   * is there does this week's card give its thumbs up.
-   */
-  const painWaiting = total < CHART_MIN_READINGS;
-  const tested = trends.some((trend) => trend.latest != null);
   const nextTest = results.length > 0 ? testDue() : null;
   const goalList = planGoals();
   const weeks = lastFourWeeks(now);
@@ -147,7 +129,6 @@ export function ProgressPage() {
           <HeaderActions
             spread
             streak={streak.current}
-            onStreakPress={() => setStreakOpen(true)}
             streakGlyph={<FluentIcon name="fire" size={22} />}
             swapProgress={program?.progress}
             onProfile={() => router.push('/profile')}
@@ -155,11 +136,9 @@ export function ProgressPage() {
         </IntroReveal>
 
         {/* This week first, above the range: the range is the pain chart's,
-            and sits straight on top of the card it drives. The thumbs up
-            stands down while the pain card's or the strength card's own
-            mascot is waiting under it: one character on screen at a time. */}
+            and sits straight on top of the card it drives. */}
         <IntroReveal order={1} style={styles.first}>
-          <WeekRecapCard recap={recap} mascot={!painWaiting && tested} paused={covered} />
+          <WeekRecapCard recap={recap} />
         </IntroReveal>
 
         {/* The range drives the pain chart, the one card whose span is a
@@ -180,7 +159,6 @@ export function ProgressPage() {
             start={start}
             total={total}
             counts={counts}
-            paused={covered}
           />
         </IntroReveal>
 
@@ -199,7 +177,7 @@ export function ProgressPage() {
         )}
 
         <IntroReveal order={4} style={styles.next}>
-          <StrengthCard trends={trends} nextTest={nextTest} today={today} mascot={!painWaiting} paused={covered} />
+          <StrengthCard trends={trends} nextTest={nextTest} today={today} />
         </IntroReveal>
 
         {/* The ankle bend the phone measures, beside the tests it is
@@ -225,23 +203,6 @@ export function ProgressPage() {
         <IntroReveal order={6} style={styles.next}>
           <ShoesCard />
         </IntroReveal>
-
-        <IntroReveal order={7} style={styles.next}>
-          <StickersCard onOpenChange={setAlbumOpen} />
-        </IntroReveal>
-
-        <StreakSheet
-          visible={streakOpen}
-          onClose={() => setStreakOpen(false)}
-          current={streak.current}
-          total={streak.total}
-          week={streak.strip}
-          longest={streak.longest}
-          rest={streak.rest}
-          levels={streak.levels}
-          freezes={streak.freezes}
-          freezeSpentThisWeek={streak.freezeSpentThisWeek}
-        />
       </Animated.ScrollView>
     </View>
   );

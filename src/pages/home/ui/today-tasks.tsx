@@ -41,24 +41,15 @@ import { askForPlans, lookingAround } from '@/entities/purchase';
 import { answerLockedPlanTap } from '@/features/home-tour';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
-import { PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
+import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Chip3D } from '@/shared/ui/chip-3d';
+import { Chip } from '@/shared/ui/chip';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
-import { Mascot, walkingRig } from '@/shared/ui/mascot';
 import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
 
 import { DoneCard } from './done-card';
 
-/* The mascot, stretching on one leg. It belongs to this block rather than to
- * the screen: the list is the one place on Home that asks for work, and a
- * character warming up beside its title is the cheapest way to make that read
- * as a start rather than as a chore. */
-
-/** The heading's line box and the artwork's, both pinned: the mascot is centred
- * on the title by arithmetic, and arithmetic needs two known numbers. */
 const HEADING_LINE = 28;
-const MASCOT_SIZE = 64;
 
 /**
  * How each of the four kinds of day presents itself here.
@@ -265,7 +256,7 @@ export function TodayTasks({
   covered = false,
   onSheet,
 }: {
-  /** A sheet is over Home (the streak, a milestone): the mascots hold still under it. */
+  /** A sheet is over Home: the done card's one-shot waits for it to go. */
   covered?: boolean;
   /** A session's sheet opened or closed: Home holds what would rise over it. */
   onSheet?: (open: boolean) => void;
@@ -435,18 +426,6 @@ export function TodayTasks({
             Tasks`: React Native does not decode HTML entities, so the heading
             was literally printing "Today&apos;s Tasks" on the screen. */}
         <Text style={[styles.heading, { color: colors.foreground }]}>{t('home.tasksTitle')}</Text>
-        {/* Decoration, and only decoration — it says nothing the list does not
-            already say, so it is hidden from anyone listening rather than read
-            out as an unnamed image between a heading and its rows. */}
-        {/* Not when the day is done: the done card brings its own mascot, and
-            two on one heading read as a sticker sheet. */}
-        {!allDone && (
-          <View accessibilityElementsHidden importantForAccessibility="no" style={styles.mascot}>
-            {/* Breathes and now and then looks up while Home is in front;
-                still under another tab, a player, a sheet or the plan. */}
-            <HeadingMascot surface={colors.background} paused={!focused || open != null || covered} />
-          </View>
-        )}
       </View>
 
       {/* Why today is not the day as planned — said, rather than done silently. */}
@@ -620,18 +599,6 @@ export function TodayTasks({
 }
 
 /**
- * The heading's mascot, still under the plan as well as under a player.
- *
- * Its own component so the plan overlay's coming and going re-renders the
- * mascot and not the list: Home stays the focused tab under the overlay, so
- * `useIsFocused` alone left him breathing behind a full-screen plan.
- */
-function HeadingMascot({ surface, paused }: { surface: string; paused: boolean }) {
-  const planOver = usePlanOver();
-  return <Mascot rig={walkingRig} size={MASCOT_SIZE} surface={surface} paused={paused || planOver} />;
-}
-
-/**
  * The day's retest, as a row of the list.
  *
  * The same two lines and the same trailing chip as a task, tinted with the
@@ -709,8 +676,7 @@ function RetestRow({
           <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.background} strokeWidth={2.5} />
         </View>
       ) : (
-        // The time it costs, standing on its lip in the checkpoint's orange.
-        <Chip3D icon={Clock01Icon} accent="orange" label={t('home.chipMinutes', { count: RETEST_MINUTES })} />
+        <Chip icon={Clock01Icon} label={t('home.chipMinutes', { count: RETEST_MINUTES })} />
       )}
     </Pressable>
   );
@@ -784,9 +750,8 @@ function TaskRow({
       </View>
 
       {task.chip != null && !done ? (
-        // The cost, as a solid chip in the category's own accent. Inert: the
-        // row around it is what opens the exercise.
-        <Chip3D icon={Clock01Icon} accent={category.accent} label={task.chip} />
+        // The cost. Inert: the row around it is what opens the exercise.
+        <Chip icon={Clock01Icon} label={task.chip} />
       ) : (
         // Its own target, so the box can record something already done without
         // making the user sit through a player for it. Dashed while empty,
@@ -833,37 +798,9 @@ const styles = StyleSheet.create({
   root: {
     alignSelf: 'stretch',
   },
-  /** Nothing but the heading's own line. The row is the mascot's frame of
-   * reference and contributes no height of its own beyond the text. */
   headingRow: {
     height: HEADING_LINE,
     justifyContent: 'center',
-  },
-  /**
-   * Absolute, so the artwork costs the layout nothing.
-   *
-   * Laid out in the flow it was a 64pt row where a 28pt line used to be, and
-   * everything under it — the whole task list — sat thirty-six points lower
-   * than before. A decoration must not be able to move the content it decorates.
-   *
-   * Centred on the heading by arithmetic rather than by `alignItems`, which is
-   * why the line height above is pinned: half the difference between the two
-   * boxes, lifted.
-   */
-  mascot: {
-    position: 'absolute',
-    // A style rather than a prop, as it was on the image this replaced. It
-    // overhangs the first task row, and on Android that overhang would be
-    // hit-testable — iOS clips touches to the parent's bounds, Android does
-    // not.
-    pointerEvents: 'none',
-    // Nudged into the gutter: the drawing carries its own transparent margin,
-    // so aligning the file's edge to the text leaves the character looking
-    // short of it.
-    right: -6,
-    top: (HEADING_LINE - MASCOT_SIZE) / 2,
-    width: MASCOT_SIZE,
-    height: MASCOT_SIZE,
   },
   heading: {
     ...fonts.heavy(22, -0.6),

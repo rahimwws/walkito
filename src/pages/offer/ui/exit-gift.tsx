@@ -8,7 +8,7 @@ import type { Plan } from '@/entities/purchase';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 /**
@@ -59,14 +59,12 @@ export function ExitGift({
               {t('story.gift.blurb')}
             </Text>
             <View style={styles.cta}>
-              <Button3D
+              <Button
                 label={t('story.gift.open')}
                 onPress={() => {
                   void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
                   setOpen(true);
                 }}
-                size="xl"
-                docked
               />
             </View>
           </Animated.View>
@@ -83,7 +81,7 @@ export function ExitGift({
               {busy ? (
                 <ActivityIndicator color={PRIMARY} style={styles.busy} />
               ) : (
-                <Button3D label={t('story.gift.buy', values)} onPress={onBuy} size="xl" docked />
+                <Button label={t('story.gift.buy', values)} onPress={onBuy} />
               )}
             </View>
             <Text style={[styles.terms, { color: meter.caption }]} maxFontSizeMultiplier={1.4}>
@@ -108,7 +106,7 @@ const styles = StyleSheet.create({
   price: { ...fonts.heavy(32, -0.9), lineHeight: 37, textAlign: 'center' },
   line: { ...fonts.medium(17, -0.2), lineHeight: 23, textAlign: 'center' },
   cta: { alignSelf: 'stretch', marginTop: 10 },
-  busy: { height: 58 },
+  busy: { height: 56 },
   terms: { ...fonts.medium(12), lineHeight: 16, textAlign: 'center' },
   quiet: { alignSelf: 'center', paddingVertical: 10 },
   quietText: fonts.semibold(15),

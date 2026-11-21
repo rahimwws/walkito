@@ -14,9 +14,9 @@ import { GoalChips } from '@/entities/profile';
 import { PRIMARY, accents, clipShape, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button3D } from '@/shared/ui/button-3d';
+import { Button } from '@/shared/ui/button';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { OptionCard3D } from '@/shared/ui/option-card-3d';
+import { OptionCard } from '@/shared/ui/option-card';
 import { TimePicker } from '@/shared/ui/time-picker';
 import { CLIP_BACKDROP, ExercisePreview, SessionView, posterFor, thumbFor, type PlaylistStep } from '@/widgets/session-player';
 import type { ProgramDay } from '@/entities/program';
@@ -25,7 +25,7 @@ import { FELT, type Felt, type PeekTiles } from '../model/story';
 
 /**
  * The onboarding's story screens, from the web funnel's v4/v5, drawn with the
- * app's own pieces: its fonts, its cards, its 3D answers and buttons, its
+ * app's own pieces: its fonts, its cards, its answers and buttons, its
  * clips and stills. Each is a body for the onboarding page, which keeps the
  * header, the progress and the shared button around it.
  */
@@ -45,7 +45,7 @@ export function LifeBanner({ text }: { text: string }) {
 
 // ── The three cards ──────────────────────────────────────────────────────────
 
-/** Real feet on every card, no mascot: the three stills the web funnel shows. */
+/** Real feet on every card: the three stills the web funnel shows. */
 const CARD_POSTER = { fault: 'short_foot_seated', path: 'big_toe_lift', research: 'heel_raise_double' } as const;
 const JOURNALS: readonly Key[] = ['story.research.bjsm', 'story.research.jospt', 'story.research.ajsm', 'story.research.msse'];
 const CARDS = ['fault', 'path', 'research'] as const;
@@ -101,20 +101,20 @@ export function CompareStep() {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  const column = (heading: string, items: readonly Key[], raised: boolean) => (
+  const column = (heading: string, items: readonly Key[], ours: boolean) => (
     <View
       style={[
         styles.versus,
         { backgroundColor: colors.card },
-        raised ? { borderColor: PRIMARY, borderWidth: 2, transform: [{ translateY: -10 }] } : { opacity: 0.85 },
+        ours ? { borderColor: PRIMARY, borderWidth: 2 } : { opacity: 0.85 },
       ]}>
-      <Text style={[styles.versusHead, { color: raised ? PRIMARY : meter.label }]} maxFontSizeMultiplier={1.3}>
+      <Text style={[styles.versusHead, { color: ours ? PRIMARY : meter.label }]} maxFontSizeMultiplier={1.3}>
         {heading}
       </Text>
       {items.map((key) => (
         <View key={key} style={styles.versusRow}>
-          <HugeiconsIcon icon={raised ? Tick02Icon : Cancel01Icon} size={18} color={raised ? PRIMARY : meter.caption} strokeWidth={2.2} />
-          <Text style={[styles.versusText, { color: raised ? colors.foreground : meter.label }]} maxFontSizeMultiplier={1.3}>
+          <HugeiconsIcon icon={ours ? Tick02Icon : Cancel01Icon} size={18} color={ours ? PRIMARY : meter.caption} strokeWidth={2.2} />
+          <Text style={[styles.versusText, { color: ours ? colors.foreground : meter.label }]} maxFontSizeMultiplier={1.3}>
             {t(key)}
           </Text>
         </View>
@@ -301,15 +301,15 @@ export function FirstMoveStep({
         </Text>
       </ScrollView>
       <View style={styles.moveFoot}>
-        <Button3D
+        <Button
           label={t('story.move.start')}
           onPress={() => {
             completed.current = false;
             onStart();
             setPlaying(true);
           }}
-          size="xl"
-          docked
+          size="lg"
+          fullWidth
         />
         <Pressable accessibilityRole="button" onPress={onSkip} hitSlop={8} style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
           <Text style={[styles.quietText, { color: meter.label }]}>{t('story.move.skip')}</Text>
@@ -376,7 +376,7 @@ export function FeltStep({ exerciseId, value, onPick }: { exerciseId: string; va
       <Text style={[styles.lead, { color: meter.label }]}>{t('story.felt.blurb')}</Text>
       <View accessibilityRole="radiogroup" style={styles.answers}>
         {FELT.map((felt) => (
-          <OptionCard3D key={felt} label={t(FELT_LABEL[felt])} selected={value === felt} mode="single" onPress={() => onPick(felt)} />
+          <OptionCard key={felt} label={t(FELT_LABEL[felt])} selected={value === felt} mode="single" onPress={() => onPick(felt)} />
         ))}
       </View>
     </ScrollView>
@@ -703,7 +703,7 @@ const styles = StyleSheet.create({
   clip: { alignSelf: 'center', borderRadius: 24, borderCurve: 'continuous', overflow: 'hidden' },
   cue: { borderRadius: 18, borderCurve: 'continuous', padding: 14 },
   cueText: { ...fonts.semibold(16, -0.1), lineHeight: 22 },
-  moveFoot: { gap: 10, paddingTop: 10, marginHorizontal: -8 },
+  moveFoot: { gap: 10, paddingTop: 10 },
 
   feltContent: { gap: 12, paddingBottom: 12 },
   feltTop: { height: 170, borderRadius: 26, borderCurve: 'continuous', alignItems: 'center', justifyContent: 'center', marginBottom: 8, overflow: 'hidden' },
