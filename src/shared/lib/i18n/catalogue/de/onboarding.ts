@@ -19,7 +19,7 @@
 export const ONBOARDING_DE = {
   // ── Acts ─────────────────────────────────────────────────────────────────
   'onboarding.act.about': 'Über dich',
-  'onboarding.act.sport': 'Dein Sport',
+  'onboarding.act.sport': 'Dein Alltag',
   'onboarding.act.health': 'Deine Gesundheit',
   'onboarding.act.plan': 'Dein Plan',
 
@@ -145,12 +145,12 @@ export const ONBOARDING_DE = {
   'onboarding.goal.consistent': 'Regelmäßiger laufen',
   'onboarding.goal.stronger': 'Kräftigere Beine',
   'onboarding.goal.injuryfree': 'Verletzungsfrei bleiben',
-  'onboarding.goal.flatfeet': 'Kräftigere Fußgewölbe',
+  'onboarding.goal.flatfeet': 'Kräftigere Fußgewölbe (Plattfuß)',
   'onboarding.goal.ankles': 'Stabilere Knöchel',
   'onboarding.goal.jump': 'Höher springen',
-  'onboarding.goal.allday': 'Den ganzen Tag auf den Beinen',
+  'onboarding.goal.allday': 'Den Tag ohne Schmerzen schaffen',
   'onboarding.goal.comeback': 'Comeback nach Verletzung',
-  'onboarding.goal.steady': 'Sicher gehen',
+  'onboarding.goal.steady': 'Weiter und bequemer gehen',
   // Days, minutes and what is at home: a screen each, the cards under a
   // drawing of the answer. The kit's question is `onboarding.equipment.title`.
   'onboarding.days.title': 'Wie viele Tage pro Woche?',
@@ -177,10 +177,10 @@ export const ONBOARDING_DE = {
   'onboarding.reminder.title': 'Wann sollen wir dich erinnern?',
   'onboarding.reminder.blurb': 'Eine Erinnerung am Tag. Wähl eine Zeit, zu der du meist fünf Minuten frei hast.',
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Wo tut es meistens weh, {name}?',
+  'onboarding.pain.title': 'Wo tut es an den meisten Tagen weh, {name}?',
   'onboarding.pain.blurb': 'Tipp die Stellen am Bein an, bis zu {count}.',
   'onboarding.pain.full': 'Bis zu {count} gleichzeitig. Tipp eine an, um sie zu tauschen.',
-  'onboarding.pain.none': 'Gerade tut nichts weh',
+  'onboarding.pain.none': 'Ich will Schmerzen vorbeugen',
   'onboarding.pain.disclaimer':
     'Kein medizinischer Rat. Wenn der Schmerz stechend ist, schlimmer wird oder mit Schwellung oder Taubheitsgefühl einhergeht, geh zu einer Ärztin oder einem Arzt.',
 
@@ -312,7 +312,7 @@ export const ONBOARDING_DE = {
   'onboarding.notify.ask': 'Mach das nicht allein',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'jetzt',
-  'onboarding.notify.bannerBody': 'Heute steht Fußkraft an - 7 Minuten. Deine Schienbeine werden es dir danken.',
+  'onboarding.notify.bannerBody': 'Heute: 5 Minuten für deine Fersen, vor dem ersten Schritt.',
   'onboarding.notify.turnOn': 'Mitteilungen einschalten',
   'onboarding.notify.opening': 'Wird geöffnet…',
   'onboarding.notify.notNow': 'Nicht jetzt',
@@ -371,9 +371,10 @@ export const ONBOARDING_DE = {
     '{volume}. Die ersten zwei Wochen legen eine Basis, bevor Last dazukommt.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
-  'onboarding.contract.title': 'Lass uns einen Vertrag machen, {name}',
-  'onboarding.contract.blurb': 'Nicht mit mir. Mit dir selbst.',
-  'onboarding.contract.hint': 'Hier unterschreiben',
+  'onboarding.contract.title': 'Ein Versprechen, {name}',
+  'onboarding.contract.blurb': 'Nicht mir. Dir selbst.',
+  'onboarding.contract.hint': 'Hier unterschreiben, wenn du magst',
+  'onboarding.contract.cta': 'Ich bin dabei',
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Verpflichtet',
   'onboarding.contract.stampLine1': 'Tag eins',

@@ -222,11 +222,20 @@ export const OFFER_EN = {
    * where to cancel. The two sentences are separate keys, side by side. */
   'offer.plans.ctaLifetime': 'Get Walkito Plus',
   'offer.plans.ctaTrial': 'Start my free trial',
+  /** The same button when the trial is exactly a week. */
+  'offer.plans.ctaTrialWeek': 'Start my free week',
+  /** Over the button, when the chosen plan starts with a free trial. Also
+   * the first promise on the free week's first step. */
+  'offer.plans.noPaymentToday': 'No payment due today',
+  /** The headline over an annual that starts with a free trial; `{count}`
+   * is its length in days. Brackets as in `offer.plans.headline`. */
+  'offer.plans.headlineTrial': { one: '{count} day [free].\nThen you decide.', other: '{count} days [free].\nThen you decide.' },
+  'offer.plans.headlineTrialNamed': { one: '{name}, {count} day [free].\nThen you decide.', other: '{name}, {count} days [free].\nThen you decide.' },
   'offer.plans.renewsYearly': 'Renews at {price} per year.',
   'offer.plans.renewsMonthly': 'Renews at {price} per month.',
   'offer.plans.renewsWeekly': 'Renews at {price} per week.',
   'offer.plans.renewsUpfront': '{intro} for the first year, then {price} per year.',
-  'offer.plans.renewsTrial': 'No payment now. {period} free, then {price} per year.',
+  'offer.plans.renewsTrial': '{period} free, then {price} per year.',
   'offer.plans.cancel': 'Cancel anytime in Settings.',
   'offer.plans.cancelAndroid': 'Cancel anytime in Google Play.',
   'offer.plans.oneTime': 'One payment, no subscription.',
@@ -336,4 +345,22 @@ export const OFFER_EN = {
   'offer.trial.dayTitle': 'Day {day}',
   'offer.trial.remindText': 'We remind you the trial is ending',
   'offer.trial.chargeText': '{price} for the year, unless you cancel',
+
+  // ── Paywall: the free week's two steps (`trial-intro.tsx`) ──────────────
+  // Shown before the plans to somebody the store gives a free trial. Only
+  // what the app does: the reminder is real, and nothing is charged today.
+  'offer.trial.eyebrow': 'Your plan is ready',
+  /** The newline is a chosen break, as in the name step's heading: each
+   * language divides its own two lines. */
+  'offer.trial.giftTitle': { one: 'Try Walkito\nfree for {count} day', other: 'Try Walkito\nfree for {count} days' },
+  'offer.trial.giftTitleNamed': { one: '{name}, try Walkito free for {count} day', other: '{name}, try Walkito free for {count} days' },
+  /** `{count}` is how many days before the end the reminder comes. */
+  'offer.trial.promiseRemind': { one: 'A reminder {count} day before it ends', other: 'A reminder {count} days before it ends' },
+  'offer.trial.promiseCancel': 'Cancel any time in Settings',
+  'offer.trial.promiseCancelAndroid': 'Cancel any time in Google Play',
+  'offer.trial.giftCta': 'Try it free',
+  'offer.trial.remindTitle': { one: 'We’ll remind you {count} day before your trial ends', other: 'We’ll remind you {count} days before your trial ends' },
+  /** Where a subscription is cancelled, in the system's own words for it. */
+  'offer.trial.cancelHow': 'To cancel, open Settings, tap your name, then Subscriptions.',
+  'offer.trial.cancelHowAndroid': 'To cancel, open Google Play, tap your profile, then Payments & subscriptions.',
 } as const satisfies Record<string, SourceEntry>;

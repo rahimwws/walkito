@@ -19,18 +19,19 @@ import {
 } from './journey';
 
 describe('goals by who they are', () => {
-  test('five at most, pain first only when something hurts', () => {
+  test('five at most, mornings first for everybody', () => {
     for (const role of ['running', 'feet', 'both', 'walking', null] as const) {
-      expect(goalValuesFor(role, false).length).toBeLessThanOrEqual(5);
-      expect(goalValuesFor(role, false)[0]).toBe('mornings');
-      expect(goalValuesFor(role, true)).not.toContain('mornings');
+      expect(goalValuesFor(role).length).toBeLessThanOrEqual(5);
+      expect(goalValuesFor(role)[0]).toBe('mornings');
     }
   });
 
-  test('a shift for a standing job, running for a runner', () => {
-    expect(goalValuesFor('feet', false)).toContain('allday');
-    expect(goalValuesFor('feet', false)).not.toContain('comeback');
-    expect(goalValuesFor('running', false)).toContain('comeback');
+  test('a shift for a standing job, running for a runner, injury-free for runners only', () => {
+    expect(goalValuesFor('feet')).toContain('allday');
+    expect(goalValuesFor('feet')).not.toContain('comeback');
+    expect(goalValuesFor('running')).toContain('comeback');
+    expect(goalValuesFor('running')).toContain('injuryfree');
+    for (const role of ['feet', 'both', 'walking', null] as const) expect(goalValuesFor(role)).not.toContain('injuryfree');
   });
 });
 

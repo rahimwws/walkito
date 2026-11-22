@@ -37,6 +37,9 @@ export type CtaCopy = {
   /** Under the button: what is charged, when it renews and where to cancel;
    * or that a lifetime plan is one payment. */
   terms: string | null;
+  /** The chosen plan starts with a free trial: nothing is charged today, and
+   * the step says so over the button. */
+  free?: boolean;
 };
 
 /** A period in words, with its count: "1 week", "7 days". */
@@ -124,9 +127,11 @@ export function describeCta(kind: PaywallPeriod, plan: Plan | null, t: Translate
   const price = plan.priceString;
   const offer = offerOn(kind, plan);
   if (offer?.kind === 'free-trial') {
+    const week = (offer.period.unit === 'week' && offer.period.count === 1) || (offer.period.unit === 'day' && offer.period.count === 7);
     return {
-      label: t('offer.plans.ctaTrial'),
+      label: t(week ? 'offer.plans.ctaTrialWeek' : 'offer.plans.ctaTrial'),
       terms: `${t('offer.plans.renewsTrial', { period: periodText(offer.period, t), price })} ${cancel}`,
+      free: true,
     };
   }
   if (offer?.kind === 'pay-up-front') {

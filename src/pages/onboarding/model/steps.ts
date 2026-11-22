@@ -506,12 +506,16 @@ export const STEPS: readonly OnboardingStep[] = [
   },
   { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
   { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },
+  // Retired: a signature before a price read as a trick, and lost one in five
+  // of the people who reached it on the first paid day, optional or not.
+  // Kept in the table until its copy and code are removed.
   {
     kind: 'contract',
     key: 'contract',
     act: 3,
     title: (t) => t('onboarding.contract.title', NAME_SLOT),
     blurb: (t) => t('onboarding.contract.blurb'),
+    skipWhen: () => true,
   },
   {
     kind: 'outlook',

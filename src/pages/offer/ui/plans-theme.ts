@@ -46,6 +46,3 @@ export const SHEET = {
   /** A plan that is not chosen: its border and its lip. */
   edge: raised.light.edge,
 } as const;
-
-/** The floating button: the kit's ink face, light scheme, since the sheet is. */
-export const PILL = filled.light.ink;
