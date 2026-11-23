@@ -4,7 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react-native";
 import * as Haptics from "expo-haptics";
 import { useIsFocused, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useRef, useState, type ComponentRef } from "react";
+import { useEffect, useRef, useState, type ComponentRef } from "react";
 import {
   Platform,
   Pressable,
@@ -106,6 +106,13 @@ export function TodayPage() {
     health.lastRunEndedAt != null &&
     toDateKey(new Date(health.lastRunEndedAt)) === todayKey();
 
+  // The root layout's StatusBar mounts after this screen on a cold start, and
+  // the last one mounted wins: Today's waits a render so it is on top.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  /** The scene has scrolled out from under the status bar. */
+  const [pastScene, setPastScene] = useState(false);
+
   /** The day-one session the "Day 1" card started, playing in its sheet. */
   const [dayOne, setDayOne] = useState<DayOneRun | null>(null);
   const tourState = useHomeTourState();
@@ -153,9 +160,15 @@ export function TodayPage() {
 
   return (
     <View style={styles.screen}>
-      {focused && <StatusBar style={palette.dark ? "light" : "dark"} />}
+      {focused && mounted && (
+        <StatusBar style={palette.dark && !pastScene ? "light" : "dark"} />
+      )}
       <ScrollView
         ref={scroll}
+        onScroll={(event) =>
+          setPastScene(event.nativeEvent.contentOffset.y > SCENE - 28)
+        }
+        scrollEventThrottle={32}
         contentInsetAdjustmentBehavior="never"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
