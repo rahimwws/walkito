@@ -1,12 +1,9 @@
 import Note02Icon from '@hugeicons/core-free-icons/Note02Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { accents, fonts, meterColors } from '@/shared/config';
+import { accents } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { GroupedRow } from '@/shared/ui/grouped-list';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 
 /**
@@ -29,54 +26,21 @@ import { NoteSheet } from '@/shared/ui/note-sheet';
  * preview that completed onboarding would be a trap rather than a preview.
  */
 export function NotePreviewRow() {
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
   const t = useT();
-
   const [open, setOpen] = useState(false);
 
   if (!__DEV__) return null;
 
   return (
     <>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={t('profile.notePreviewLabel')}
-        onPress={() => {
-          Haptics.selectionAsync();
-          setOpen(true);
-        }}
-        style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
-        <HugeiconsIcon
-          icon={Note02Icon}
-          size={20}
-          color={accents[scheme].amber.fill}
-          strokeWidth={1.8}
-        />
-        <View style={styles.text}>
-          <Text style={[styles.label, { color: accents[scheme].amber.fill }]}>
-            {t('profile.notePreviewLabel')}
-          </Text>
-          <Text style={[styles.hint, { color: meter.caption }]}>
-            {t('profile.notePreviewHint')}
-          </Text>
-        </View>
-      </Pressable>
-
+      <GroupedRow
+        icon={Note02Icon}
+        tone={accents.light.amber.fill}
+        label={t('profile.notePreviewLabel')}
+        hint={t('profile.notePreviewHint')}
+        onPress={() => setOpen(true)}
+      />
       <NoteSheet visible={open} onDone={() => setOpen(false)} />
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 15,
-    paddingHorizontal: 16,
-  },
-  text: { flex: 1 },
-  label: fonts.semibold(16, -0.2),
-  hint: { ...fonts.medium(13), marginTop: 1 },
-});

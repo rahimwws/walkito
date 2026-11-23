@@ -1,9 +1,11 @@
 import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
 import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Haptics from 'expo-haptics';
+import CheckmarkBadge01Icon from '@hugeicons/core-free-icons/CheckmarkBadge01Icon';
+import CreditCardIcon from '@hugeicons/core-free-icons/CreditCardIcon';
+import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
+import Ticket01Icon from '@hugeicons/core-free-icons/Ticket01Icon';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform } from 'react-native';
 
 import { OfferSheet, type PassSale } from '@/features/home-offer';
 import {
@@ -13,9 +15,9 @@ import {
   useSubscription,
   type Subscription,
 } from '@/entities/purchase';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { bodyColors } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { GroupedRow, GroupedSection } from '@/shared/ui/grouped-list';
 import { usePassCheckout } from '@/widgets/pass-checkout';
 
 import { endCancelPreview, useCancelPreview } from '../model/cancel-preview';
@@ -72,9 +74,6 @@ const MANAGE_FALLBACK_MS = 900;
  * store's page is on the row by the time the person is back.
  */
 export function SubscriptionSettings() {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const language = useLanguage();
   const real = useSubscription();
@@ -172,12 +171,7 @@ export function SubscriptionSettings() {
 
   if (held != null && held.kind === 'lifetime') {
     rows.push(
-      <View key="store" style={styles.row}>
-        <View style={styles.rowText}>
-          <Text style={[styles.label, { color: colors.foreground }]}>{t('cancel.row.lifetime')}</Text>
-          <Text style={[styles.hint, { color: meter.caption }]}>{t('cancel.row.lifetimeHint')}</Text>
-        </View>
-      </View>,
+      <GroupedRow key="store" icon={CheckmarkBadge01Icon} tone={bodyColors.calf} label={t('cancel.row.lifetime')} hint={t('cancel.row.lifetimeHint')} />,
     );
   } else if (held != null) {
     const subscription = held;
@@ -190,31 +184,20 @@ export function SubscriptionSettings() {
         date: date(subscription.expiresAt),
       });
     })();
-    const press = () => {
-      Haptics.selectionAsync();
-      if (renewing) setOpen(true);
-      else void openStoreSubscriptions(subscription);
-    };
     rows.push(
-      <Pressable
+      <GroupedRow
         key="store"
-        accessibilityRole="button"
-        accessibilityHint={
-          renewing ? undefined : t(Platform.OS === 'ios' ? 'cancel.anywayHintIos' : 'cancel.anywayHintAndroid')
-        }
-        onPress={press}
-        style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
-        <View style={styles.rowText}>
-          <Text style={[styles.label, { color: colors.foreground }]}>{t('cancel.row.manage')}</Text>
-          <Text style={[styles.hint, { color: meter.caption }]}>{hint}</Text>
-        </View>
-        <HugeiconsIcon
-          icon={renewing ? ArrowRight01Icon : ArrowUpRight01Icon}
-          size={18}
-          color={meter.unit}
-          strokeWidth={2}
-        />
-      </Pressable>,
+        icon={CreditCardIcon}
+        tone={bodyColors.arch}
+        label={t('cancel.row.manage')}
+        hint={hint}
+        trailingIcon={renewing ? ArrowRight01Icon : ArrowUpRight01Icon}
+        accessibilityHint={renewing ? undefined : t(Platform.OS === 'ios' ? 'cancel.anywayHintIos' : 'cancel.anywayHintAndroid')}
+        onPress={() => {
+          if (renewing) setOpen(true);
+          else void openStoreSubscriptions(subscription);
+        }}
+      />,
     );
   }
 
@@ -224,36 +207,19 @@ export function SubscriptionSettings() {
       pass.startsAt > now
         ? t('pass.settings.queued', { date: date(pass.startsAt) })
         : t('pass.settings.row', { date: date(pass.expiresAt) });
-    rows.push(
-      <View key="pass" style={[styles.row, rows.length > 0 && { ...styles.divided, borderTopColor: colors.background }]}>
-        <View style={styles.rowText}>
-          <Text style={[styles.label, { color: colors.foreground }]}>{label}</Text>
-          <Text style={[styles.hint, { color: meter.caption }]}>{t('pass.settings.hint')}</Text>
-        </View>
-      </View>,
-    );
+    rows.push(<GroupedRow key="pass" icon={Ticket01Icon} tone={bodyColors.heel} label={label} hint={t('pass.settings.hint')} />);
   }
 
   if (offersRow) {
     rows.push(
-      <Pressable
+      <GroupedRow
         key="offers"
-        accessibilityRole="button"
-        onPress={() => {
-          Haptics.selectionAsync();
-          setOffers(true);
-        }}
-        style={({ pressed }) => [
-          styles.row,
-          rows.length > 0 && { ...styles.divided, borderTopColor: colors.background },
-          pressed && styles.pressed,
-        ]}>
-        <View style={styles.rowText}>
-          <Text style={[styles.label, { color: colors.foreground }]}>{t('pass.settings.specialOffers')}</Text>
-          <Text style={[styles.hint, { color: meter.caption }]}>{t('pass.settings.specialOffersHint')}</Text>
-        </View>
-        <HugeiconsIcon icon={ArrowRight01Icon} size={18} color={meter.unit} strokeWidth={2} />
-      </Pressable>,
+        icon={GiftIcon}
+        tone={bodyColors.ankle}
+        label={t('pass.settings.specialOffers')}
+        hint={t('pass.settings.specialOffersHint')}
+        onPress={() => setOffers(true)}
+      />,
     );
   }
 
@@ -262,11 +228,8 @@ export function SubscriptionSettings() {
   const passOnly = held == null && passRunning && !offersRow;
 
   return (
-    <View style={styles.root}>
-      <Text style={[styles.sectionTitle, { color: meter.caption }]}>
-        {t(passOnly ? 'pass.settings.section' : 'cancel.row.section')}
-      </Text>
-      <View style={[styles.group, { backgroundColor: meter.track }]}>{rows}</View>
+    <>
+      <GroupedSection title={t(passOnly ? 'pass.settings.section' : 'cancel.row.section')}>{rows}</GroupedSection>
 
       {held != null && held.kind === 'subscription' && (
         <CancelFlow
@@ -279,24 +242,6 @@ export function SubscriptionSettings() {
         />
       )}
       {offersSheet}
-    </View>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  root: { marginTop: 24 },
-  sectionTitle: { ...fonts.bold(12, 0.1), marginBottom: 8 },
-  group: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-  },
-  divided: { borderTopWidth: StyleSheet.hairlineWidth },
-  pressed: { opacity: 0.6 },
-  rowText: { flex: 1 },
-  label: fonts.semibold(16, -0.2),
-  hint: { ...fonts.medium(13), marginTop: 1 },
-});

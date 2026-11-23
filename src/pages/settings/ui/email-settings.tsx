@@ -1,12 +1,15 @@
+import BulbIcon from '@hugeicons/core-free-icons/BulbIcon';
+import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
+import Mail01Icon from '@hugeicons/core-free-icons/Mail01Icon';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Switch, Text, View } from 'react-native';
+import { Switch } from 'react-native';
 
 import { fetchEmailPrefs, setEmailPrefs, unsubscribeAllEmails, useProfileEmail, type EmailPrefs } from '@/entities/profile';
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { bitepal, bodyColors, colors } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { GroupedRow, GroupedSection } from '@/shared/ui/grouped-list';
 
 /**
  * Settings → Email: the address, two switches, and a way out of everything.
@@ -22,9 +25,6 @@ import { useColorScheme } from '@/shared/lib/theme';
  * "Unsubscribe from all" is a fresh yes, and the server treats it as one.
  */
 export function EmailSettings() {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const localEmail = useProfileEmail();
   const [prefs, setPrefs] = useState<EmailPrefs | null | 'loading'>('loading');
@@ -58,7 +58,6 @@ export function EmailSettings() {
 
   const leave = () => {
     if (prefs == null || prefs === 'loading') return;
-    Haptics.selectionAsync();
     const before = prefs;
     setPrefs({ ...prefs, tips: false, weekly: false, unsubscribed: true });
     track('email_unsubscribed_all');
@@ -68,84 +67,54 @@ export function EmailSettings() {
   };
 
   const address = prefs != null && prefs !== 'loading' ? prefs.email : localEmail;
+  const ready = prefs != null && prefs !== 'loading';
 
   return (
-    <View style={styles.root}>
-      <Text style={[styles.sectionTitle, { color: meter.caption }]}>{t('settings.email.section')}</Text>
-      <View style={[styles.group, { backgroundColor: meter.track }]}>
-        {address.length === 0 ? (
-          <Text style={[styles.note, { color: meter.caption }]}>{t('settings.email.none')}</Text>
+    <GroupedSection title={t('settings.email.section')}>
+      <GroupedRow
+        icon={Mail01Icon}
+        tone={bodyColors.calf}
+        label={address.length === 0 ? t('settings.email.none') : t('settings.email.address', { email: address })}
+        hint={prefs !== 'loading' && prefs == null && address.length > 0 ? t('settings.email.unavailable') : undefined}
+      />
+      {ready && (
+        <GroupedRow
+          icon={BulbIcon}
+          tone={bodyColors.toes}
+          label={t('settings.email.tips')}
+          accessory={
+            <Switch
+              value={prefs.tips}
+              trackColor={{ true: bitepal.selected }}
+              thumbColor="#FFFFFF"
+              accessibilityLabel={t('settings.email.tips')}
+              onValueChange={(on) => change({ tips: on })}
+            />
+          }
+        />
+      )}
+      {ready && (
+        <GroupedRow
+          icon={Calendar03Icon}
+          tone={bodyColors.arch}
+          label={t('settings.email.weekly')}
+          accessory={
+            <Switch
+              value={prefs.weekly}
+              trackColor={{ true: bitepal.selected }}
+              thumbColor="#FFFFFF"
+              accessibilityLabel={t('settings.email.weekly')}
+              onValueChange={(on) => change({ weekly: on })}
+            />
+          }
+        />
+      )}
+      {ready &&
+        (prefs.unsubscribed ? (
+          <GroupedRow label={t('settings.email.unsubscribed')} />
         ) : (
-          <Text style={[styles.note, { color: meter.caption }]} numberOfLines={1}>
-            {t('settings.email.address', { email: address })}
-          </Text>
-        )}
-
-        {prefs !== 'loading' && prefs == null && address.length > 0 ? (
-          <Text style={[styles.note, { color: meter.caption }]}>{t('settings.email.unavailable')}</Text>
-        ) : null}
-
-        {prefs != null && prefs !== 'loading' ? (
-          <>
-            <View style={styles.row}>
-              <Text style={[styles.label, { color: colors.foreground }]}>{t('settings.email.tips')}</Text>
-              <Switch
-                value={prefs.tips}
-                trackColor={{ true: PRIMARY }}
-                thumbColor="#FFFFFF"
-                accessibilityLabel={t('settings.email.tips')}
-                onValueChange={(on) => change({ tips: on })}
-              />
-            </View>
-            <View style={styles.row}>
-              <Text style={[styles.label, { color: colors.foreground }]}>{t('settings.email.weekly')}</Text>
-              <Switch
-                value={prefs.weekly}
-                trackColor={{ true: PRIMARY }}
-                thumbColor="#FFFFFF"
-                accessibilityLabel={t('settings.email.weekly')}
-                onValueChange={(on) => change({ weekly: on })}
-              />
-            </View>
-            {prefs.unsubscribed ? (
-              <Text style={[styles.note, { color: meter.caption }]}>{t('settings.email.unsubscribed')}</Text>
-            ) : (
-              <Pressable
-                accessibilityRole="button"
-                onPress={leave}
-                style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.label, { color: meter.caption }]}>{t('settings.email.unsubscribeAll')}</Text>
-              </Pressable>
-            )}
-          </>
-        ) : null}
-      </View>
-    </View>
+          <GroupedRow label={t('settings.email.unsubscribeAll')} labelColor={colors.text2} onPress={leave} />
+        ))}
+    </GroupedSection>
   );
 }
-
-const styles = StyleSheet.create({
-  root: { marginTop: 24 },
-  sectionTitle: {
-    ...fonts.bold(12, 0.1),
-    marginBottom: 8,
-  },
-  group: {
-    borderRadius: 22,
-    borderCurve: 'continuous',
-    padding: 16,
-    gap: 10,
-  },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: 12,
-    minHeight: 40,
-  },
-  label: fonts.semibold(16, -0.2),
-  note: {
-    ...fonts.medium(13),
-    lineHeight: 18,
-  },
-});

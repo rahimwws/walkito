@@ -107,6 +107,20 @@ export const PROGRESS_DE = {
   'progress.heatDone': 'Trainiert',
   'progress.heatRest': 'Ruhetag',
   'progress.heatA11y': '{done} von {total} Tagen in den letzten 4 Wochen',
+
+  // Fortschritt in BitePal-Karten.
+  'progress.sessionsTotal': 'Einheiten bisher',
+  'progress.sessionsA11y': { one: '{count} Einheit bisher', other: '{count} Einheiten bisher' },
+  'progress.month.hint': 'Öffnet den Monat',
+  'progress.month.longest': 'Längste Serie: {days}',
+  'progress.month.sheetTitle': { one: 'Tag geschafft diesen Monat', other: 'Tage geschafft diesen Monat' },
+  'progress.month.prev': 'Vorheriger Monat',
+  'progress.month.next': 'Nächster Monat',
+  'progress.month.gridA11y': { one: '{month}: {count} Tag geschafft', other: '{month}: {count} Tage geschafft' },
+  'progress.rangeHint': 'Ändert den Zeitraum',
+  'progress.nextTestLabel': 'Nächster Fuß-Check',
+  'progress.goalLine': 'Ziel: {value} {unit}',
+  'progress.onFeet.stepsToday': 'Schritte heute',
 };
 
 /**

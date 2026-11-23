@@ -5,11 +5,11 @@ import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
 import { signInWithPlatform } from '@/entities/session';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { bitepal, colors, fonts, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
+import { TITLE_SCALE } from '@/widgets/session-player';
 import { isAnonymousSession } from '@/shared/lib/supabase';
-import { useColorScheme } from '@/shared/lib/theme';
 
 const METHOD = Platform.OS === 'android' ? 'google' : 'apple';
 
@@ -24,9 +24,6 @@ const METHOD = Platform.OS === 'android' ? 'google' : 'apple';
  * offers nothing.
  */
 export function AccountRow({ onSignedIn }: { onSignedIn?: () => void }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const [anonymous, setAnonymous] = useState<boolean | null>(null);
   const [failed, setFailed] = useState(false);
@@ -65,22 +62,20 @@ export function AccountRow({ onSignedIn }: { onSignedIn?: () => void }) {
   if (anonymous == null) return null;
 
   if (!anonymous) {
-    return <Text style={[styles.done, { color: meter.caption }]}>{t('settings.account.signedIn')}</Text>;
+    return <Text style={styles.done}>{t('settings.account.signedIn')}</Text>;
   }
 
   return (
-    <View style={[styles.group, { backgroundColor: meter.track }]}>
-      <Text style={[styles.title, { color: colors.foreground }]}>{t('settings.account.saveTitle')}</Text>
-      <Text style={[styles.body, { color: meter.caption }]}>{t(Platform.OS === 'android' ? 'settings.account.saveBodyGoogle' : 'settings.account.saveBody')}</Text>
+    <View style={styles.group}>
+      <Text style={styles.title} maxFontSizeMultiplier={TITLE_SCALE}>
+        {t('settings.account.saveTitle')}
+      </Text>
+      <Text style={styles.body}>{t(Platform.OS === 'android' ? 'settings.account.saveBodyGoogle' : 'settings.account.saveBody')}</Text>
       {Platform.OS === 'ios' ? (
         <AppleAuthentication.AppleAuthenticationButton
           buttonType={AppleAuthentication.AppleAuthenticationButtonType.CONTINUE}
-          buttonStyle={
-            scheme === 'dark'
-              ? AppleAuthentication.AppleAuthenticationButtonStyle.WHITE
-              : AppleAuthentication.AppleAuthenticationButtonStyle.BLACK
-          }
-          cornerRadius={14}
+          buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.BLACK}
+          cornerRadius={target.primary / 2}
           style={styles.button}
           onPress={signIn}
         />
@@ -88,41 +83,32 @@ export function AccountRow({ onSignedIn }: { onSignedIn?: () => void }) {
         <Pressable
           accessibilityRole="button"
           onPress={signIn}
-          style={({ pressed }) => [styles.button, styles.google, { backgroundColor: colors.foreground }, pressed && { opacity: 0.7 }]}>
-          <Text style={[styles.googleLabel, { color: colors.background }]}>{t('onboarding.intro.ctaGoogle')}</Text>
+          style={({ pressed }) => [styles.button, styles.google, pressed && { opacity: 0.7 }]}>
+          <Text style={styles.googleLabel}>{t('onboarding.intro.ctaGoogle')}</Text>
         </Pressable>
       )}
-      {failed && <Text style={[styles.body, { color: meter.caption }]}>{t('onboarding.intro.signInFailed')}</Text>}
+      {failed && <Text style={styles.body}>{t('onboarding.intro.signInFailed')}</Text>}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   group: {
-    borderRadius: 20,
+    backgroundColor: bitepal.card,
+    borderRadius: bitepal.cardRadius,
     borderCurve: 'continuous',
-    padding: 16,
+    padding: 20,
     gap: 10,
-    marginTop: 24,
   },
-  title: fonts.bold(17),
-  body: {
-    ...fonts.medium(15),
-    lineHeight: 21,
-  },
-  button: {
-    height: 48,
-    marginTop: 4,
-  },
+  title: { ...fonts.heavy(22, -0.3), color: colors.text },
+  body: { ...fonts.regular(17), color: colors.text2 },
+  button: { height: target.primary, marginTop: 4 },
   google: {
-    borderRadius: 14,
+    borderRadius: target.primary / 2,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: bitepal.primary,
   },
-  googleLabel: fonts.semibold(17),
-  done: {
-    ...fonts.medium(13),
-    textAlign: 'center',
-    marginTop: 8,
-  },
+  googleLabel: { ...fonts.bold(19), color: bitepal.onPrimary },
+  done: { ...fonts.medium(17), color: colors.text3, textAlign: 'center' },
 });

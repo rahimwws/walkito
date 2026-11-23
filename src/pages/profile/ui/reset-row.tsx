@@ -1,14 +1,12 @@
 import Refresh01Icon from '@hugeicons/core-free-icons/Refresh01Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Haptics from 'expo-haptics';
-import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert } from 'react-native';
 
 import { resetIntake } from '@/entities/profile';
 import { resetOnboarding } from '@/entities/session';
-import { accents, fonts, meterColors } from '@/shared/config';
+import { accents } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
-import { useColorScheme } from '@/shared/lib/theme';
+import { GroupedRow } from '@/shared/ui/grouped-list';
 import { clearClips } from '@/widgets/session-player';
 
 /**
@@ -31,14 +29,11 @@ import { clearClips } from '@/widgets/session-player';
  * can be run again against the same identity.
  */
 export function ResetRow() {
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
   const t = useT();
 
   if (!__DEV__) return null;
 
   const confirm = () => {
-    Haptics.selectionAsync();
     Alert.alert(
       t('profile.resetAlertTitle'),
       t('profile.resetAlertBody'),
@@ -64,36 +59,13 @@ export function ResetRow() {
   };
 
   return (
-    <Pressable
-      accessibilityRole="button"
+    <GroupedRow
+      icon={Refresh01Icon}
+      tone={accents.light.amber.fill}
+      label={t('profile.resetLabel')}
+      hint={t('profile.resetHint')}
       accessibilityLabel={t('profile.resetA11y')}
       onPress={confirm}
-      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
-      <HugeiconsIcon
-        icon={Refresh01Icon}
-        size={20}
-        color={accents[scheme].amber.fill}
-        strokeWidth={1.8}
-      />
-      <View style={styles.text}>
-        <Text style={[styles.label, { color: accents[scheme].amber.fill }]}>
-          {t('profile.resetLabel')}
-        </Text>
-        <Text style={[styles.hint, { color: meter.caption }]}>{t('profile.resetHint')}</Text>
-      </View>
-    </Pressable>
+    />
   );
 }
-
-const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 15,
-    paddingHorizontal: 16,
-  },
-  text: { flex: 1 },
-  label: fonts.semibold(16, -0.2),
-  hint: { ...fonts.medium(13), marginTop: 1 },
-});

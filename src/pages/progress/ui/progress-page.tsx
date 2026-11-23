@@ -1,7 +1,9 @@
+import UserIcon from '@hugeicons/core-free-icons/UserIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
-import Animated from 'react-native-reanimated';
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { healthAvailable } from '@/entities/health';
@@ -20,15 +22,16 @@ import {
   useStreak,
   weekAttendance,
 } from '@/entities/program';
-import { useT, type Key } from '@/shared/lib/i18n';
-import { useProgram } from '@/shared/lib/program';
+import { colors, fonts, space, target } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
-import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { HeaderActions } from '@/shared/ui/header-actions';
+import { NavGlass } from '@/shared/ui/glass';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
-import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { IntroReveal } from '@/shared/ui/splash';
+import { TITLE_SCALE } from '@/widgets/session-player';
 
+import { doneDaysIn, monthOf } from '../model/month-days';
+import { useDevOnFeetWeek } from '../model/on-feet-dev';
 import {
   RANGES,
   RANGE_ORDER,
@@ -38,64 +41,49 @@ import {
   painStart,
   painSummary,
   strengthTrends,
-  type RangeKey,
 } from '../model/progress-data';
-import { useDevOnFeetWeek } from '../model/on-feet-dev';
 import { useSeedDemoTrigger } from '../model/seed-demo';
 import { weekRecap } from '../model/week-recap';
-import { GaitCard, PatternsCard, ShoesCard, hasGaitData } from './body-cards';
 import { AnkleCard } from './ankle-card';
-import { ConsistencyCard } from './consistency-card';
+import { GaitCard, PatternsCard, ShoesCard, hasGaitData } from './body-cards';
+import { FootCheckCards } from './foot-check-cards';
 import { GoalsCard } from './goals-card';
-import { OnFeetWeekCard } from './on-feet-week-card';
-import { PainCard } from './pain-card';
-import { StrengthCard } from './strength-card';
-import { WeekRecapCard } from './week-recap-card';
-
-const SIDE_PAD = 20;
+import { MonthCard } from './month-card';
+import { MonthSheet } from './month-sheet';
+import { MorningsCard } from './mornings-card';
+import { OnFeetCard } from './on-feet-card';
+import { SessionsCard } from './sessions-card';
 
 /** How far back "mornings logged so far" looks, for the empty chart. */
 const HISTORY_DAYS = 730;
 
-const RANGE_LABEL = {
-  week: 'progress.range7Days',
-  month: 'progress.rangeMonth',
-  quarter: 'progress.range3Months',
-} as const satisfies Record<RangeKey, Key>;
-
-/** Four Monday-first weeks, oldest first, this one last. Noon, so a DST
- * change between two Mondays cannot land a step in the wrong week. */
-function lastFourWeeks(now: number) {
-  const d = new Date(now);
-  return [3, 2, 1, 0].map((back) =>
-    weekAttendance(new Date(d.getFullYear(), d.getMonth(), d.getDate() - back * 7, 12).getTime(), 1, now),
-  );
-}
-
 /**
- * The screen, in the order it is read: this week, how mornings are going,
- * what the tests measured, how close each goal is, and turning up.
+ * Progress as BitePal's home cards (#99, #98, #102): a big "Progress" over a
+ * stack of white cards on the grey, each a grey label, a big number, a ring
+ * or a round action and thin bars. Sessions first, then the days done this
+ * month (which opens the month as BitePal's streak sheet, #108), mornings,
+ * what the days say and the time on foot, the Foot Check tests, the ankles,
+ * the goals, and the walk and the shoes.
  */
 export function ProgressPage() {
+  const t = useT();
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  const dockHeight = useTabBarClearance();
-  const program = useProgram();
+  const clearance = useTabBarClearance();
   usePlanVersion();
   useLogsVersion();
   useSeedDemoTrigger();
   const devOnFeet = useDevOnFeetWeek();
-  const t = useT();
+  const streak = useStreak();
 
   const [rangeIndex, setRangeIndex] = useState(0);
-  const streak = useStreak();
+  const [monthOpen, setMonthOpen] = useState(false);
 
   const now = Date.now();
   const today = todayKey(now);
   const range = RANGE_ORDER[rangeIndex];
   const { days } = RANGES[range];
 
-  // This range and the one before it, back to back, for the delta.
   const twice = painSeries(today, days * 2);
   const summary = painSummary(twice, days);
   const bars = painBars(twice.slice(-days), today, range);
@@ -106,113 +94,88 @@ export function ProgressPage() {
   const results = retestResults();
   const trends = strengthTrends(results);
   const nextTest = results.length > 0 ? testDue() : null;
-  const goalList = planGoals();
-  const weeks = lastFourWeeks(now);
-  // This Monday-to-Sunday, the last of the four the grid draws.
-  const recap = weekRecap(weeks[weeks.length - 1] ?? []);
+  const recap = weekRecap(weekAttendance(now, 1, now));
+  const [year, month] = monthOf(today);
+  const monthCount = doneDaysIn(year, month, today).size;
 
   return (
     <View style={styles.screen} {...REPLAY_MASK}>
-      <Animated.ScrollView
+      <ScrollView
         contentInsetAdjustmentBehavior="never"
-        scrollEventThrottle={16}
         showsVerticalScrollIndicator={false}
-        style={styles.root}
-        contentContainerStyle={{
-          // Home's figure, so the shared header sits at the same height on
-          // both tabs and switching between them does not nudge it.
-          paddingTop: insets.top + 24,
-          paddingHorizontal: SIDE_PAD,
-          // Clears the docked action, the tab pill over it, and some air.
-          paddingBottom: dockHeight + 110,
-        }}>
+        contentContainerStyle={[styles.content, { paddingTop: (Platform.OS === 'ios' ? 0 : insets.top) + 12, paddingBottom: clearance + 40 }]}>
         <IntroReveal order={0} fade={false}>
-          <HeaderActions
-            spread
-            streak={streak.current}
-            streakGlyph={<FluentIcon name="fire" size={22} />}
-            swapProgress={program?.progress}
-            onProfile={() => router.push('/profile')}
-          />
+          <View style={styles.header}>
+            <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
+              {t('tabs.progress')}
+            </Text>
+            <NavGlass interactive style={styles.avatar}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={t('home.today.profile')}
+                onPress={() => {
+                  void Haptics.selectionAsync();
+                  router.push('/profile');
+                }}
+                style={({ pressed }) => [styles.avatarHit, pressed && styles.pressed]}>
+                <HugeiconsIcon icon={UserIcon} size={24} color={colors.text} strokeWidth={1.8} />
+              </Pressable>
+            </NavGlass>
+          </View>
         </IntroReveal>
 
-        {/* This week first, above the range: the range is the pain chart's,
-            and sits straight on top of the card it drives. */}
-        <IntroReveal order={1} style={styles.first}>
-          <WeekRecapCard recap={recap} />
+        <IntroReveal order={1} style={styles.stack}>
+          <SessionsCard total={streak.total} recap={recap} />
+          <MonthCard count={monthCount} longest={streak.longest} onOpen={() => setMonthOpen(true)} />
         </IntroReveal>
 
-        {/* The range drives the pain chart, the one card whose span is a
-            choice. Tests and goals are read across everything on file. */}
-        <IntroReveal order={2} style={styles.gap}>
-          <SegmentedControl
-            segments={RANGE_ORDER.map((key) => t(RANGE_LABEL[key]))}
-            selectedIndex={rangeIndex}
-            onChange={setRangeIndex}
-          />
-        </IntroReveal>
-
-        <IntroReveal order={3} style={styles.gap}>
-          <PainCard
+        <IntroReveal order={2} style={styles.stack}>
+          <MorningsCard
             range={range}
+            onNextRange={() => setRangeIndex((index) => (index + 1) % RANGE_ORDER.length)}
             bars={bars}
             summary={summary}
             start={start}
             total={total}
             counts={counts}
           />
-        </IntroReveal>
-
-        {/* What their own days say about their mornings, under the chart
-            of those mornings. */}
-        <IntroReveal order={3} style={styles.next}>
           <PatternsCard />
+          {(healthAvailable() || (__DEV__ && devOnFeet != null)) && <OnFeetCard />}
         </IntroReveal>
 
-        {/* The days themselves, under what they say about the mornings: the
-            last seven on foot. Not where there is no Health to read. */}
-        {(healthAvailable() || (__DEV__ && devOnFeet != null)) && (
-          <IntroReveal order={4} style={styles.next}>
-            <OnFeetWeekCard />
-          </IntroReveal>
-        )}
-
-        <IntroReveal order={4} style={styles.next}>
-          <StrengthCard trends={trends} nextTest={nextTest} today={today} />
-        </IntroReveal>
-
-        {/* The ankle bend the phone measures, beside the tests it is
-            measured with. */}
-        <IntroReveal order={4} style={styles.next}>
+        <IntroReveal order={3} style={styles.stack}>
+          <Text style={styles.section} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
+            {t('footCheck.metaOne')}
+          </Text>
+          <FootCheckCards trends={trends} nextTest={nextTest} today={today} />
           <AnkleCard nextTestAt={nextTest != null ? fromDateKey(nextTest).getTime() : null} />
+          <GoalsCard goals={planGoals()} />
         </IntroReveal>
 
-        <IntroReveal order={5} style={styles.next}>
-          <GoalsCard goals={goalList} />
-        </IntroReveal>
-
-        <IntroReveal order={6} style={styles.next}>
-          <ConsistencyCard weeks={weeks} current={streak.current} longest={streak.longest} />
-        </IntroReveal>
-
-        {hasGaitData() && (
-          <IntroReveal order={6} style={styles.next}>
-            <GaitCard />
-          </IntroReveal>
-        )}
-
-        <IntroReveal order={6} style={styles.next}>
+        <IntroReveal order={4} style={styles.stack}>
+          {hasGaitData() && <GaitCard />}
           <ShoesCard />
         </IntroReveal>
-      </Animated.ScrollView>
+      </ScrollView>
+
+      <MonthSheet
+        visible={monthOpen}
+        current={streak.current}
+        longest={streak.longest}
+        onClose={() => setMonthOpen(false)}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  root: { flex: 1 },
-  first: { marginTop: 22 },
-  gap: { marginTop: 14 },
-  next: { marginTop: 14 },
+  content: { paddingHorizontal: space.screen - 4, gap: 12 },
+  header: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 4, marginBottom: 4 },
+  title: { ...fonts.heavy(34, -0.8), color: colors.text, flex: 1 },
+  avatar: { width: target.min, height: target.min, borderRadius: target.min / 2, overflow: 'hidden' },
+  avatarHit: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  pressed: { opacity: 0.7 },
+  stack: { gap: 12 },
+  section: { ...fonts.heavy(24, -0.4), color: colors.text, marginTop: 12, paddingHorizontal: 4 },
 });

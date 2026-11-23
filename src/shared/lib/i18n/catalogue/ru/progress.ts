@@ -117,6 +117,28 @@ export const PROGRESS_RU = {
   'progress.heatDone': 'Занимались',
   'progress.heatRest': 'День отдыха',
   'progress.heatA11y': '{done} из {total} дней за последние 4 недели',
+
+  // ── Прогресс в карточках BitePal ─────────────────────────────────────────
+  'progress.sessionsTotal': 'Занятий всего',
+  'progress.sessionsA11y': { one: '{count} занятие всего', few: '{count} занятия всего', many: '{count} занятий всего' },
+  'progress.month.hint': 'Открывает месяц',
+  'progress.month.longest': 'Самая длинная серия: {days}',
+  'progress.month.sheetTitle': {
+    one: 'день сделан в этом месяце',
+    few: 'дня сделано в этом месяце',
+    many: 'дней сделано в этом месяце',
+  },
+  'progress.month.prev': 'Предыдущий месяц',
+  'progress.month.next': 'Следующий месяц',
+  'progress.month.gridA11y': {
+    one: '{month}: {count} день сделан',
+    few: '{month}: {count} дня сделано',
+    many: '{month}: {count} дней сделано',
+  },
+  'progress.rangeHint': 'Меняет период',
+  'progress.nextTestLabel': 'Следующая проверка стоп',
+  'progress.goalLine': 'Цель: {value} {unit}',
+  'progress.onFeet.stepsToday': 'Шагов сегодня',
 };
 
 /**
