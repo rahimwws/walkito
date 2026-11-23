@@ -6,8 +6,8 @@
  * 17pt and up only. The old violet (#8B5CF6) is 4.2:1 and never carries text.
  */
 export const colors = {
-  /** Screen background, the grouped grey. */
-  bg: '#F5F5F7',
+  /** Screen background, BitePal's light grey (Addendum v3). */
+  bg: '#F2F2F5',
   /** Cards and rows. Opaque: glass never reaches the content layer. */
   surface: '#FFFFFF',
   /** Inputs, segmented tracks, chips. */
@@ -34,6 +34,20 @@ export const colors = {
   /** What stands in for glass: iOS < 26, Reduce Transparency, Android. */
   glassFallback: 'rgba(255,255,255,0.96)',
 } as const;
+
+/**
+ * Which part of the foot or leg a move works, as BitePal colours its food
+ * categories. A colour names the part, never how it is doing.
+ */
+export const parts = {
+  heel: { fill: '#FF8A3D', soft: '#FFE9DA' },
+  arch: { fill: '#3B82F6', soft: '#DFEBFE' },
+  calf: { fill: '#2FB566', soft: '#DCF4E6' },
+  ankle: { fill: '#8B5CF6', soft: '#ECE4FE' },
+  toes: { fill: '#F5B700', soft: '#FFF3C9' },
+} as const;
+
+export type PartName = keyof typeof parts;
 
 /**
  * The type scale, as [size, weight] for `fonts.*`. Body is 19 and nothing a

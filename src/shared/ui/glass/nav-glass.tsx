@@ -16,6 +16,9 @@ export type NavGlassProps = {
   variant?: 'regular' | 'clear';
   /** Reacts to touch, for a control rather than a backdrop. */
   interactive?: boolean;
+  /** A prominent control's colour (the floating Start): the glass is tinted
+   * with it, and the solid fallback is filled with it. */
+  tint?: string;
 };
 
 /**
@@ -26,11 +29,11 @@ export type NavGlassProps = {
  * Never fade it with opacity, here or on a parent: glass under opacity stops
  * rendering. To hide it, unmount it.
  */
-export function NavGlass({ children, style, variant = 'regular', interactive = false }: NavGlassProps) {
+export function NavGlass({ children, style, variant = 'regular', interactive = false, tint }: NavGlassProps) {
   const glass = useNavGlass();
-  if (!glass) return <View style={[styles.solid, style]}>{children}</View>;
+  if (!glass) return <View style={[styles.solid, tint != null && { backgroundColor: tint, borderWidth: 0 }, style]}>{children}</View>;
   return (
-    <GlassView glassEffectStyle={variant} isInteractive={interactive} style={style}>
+    <GlassView glassEffectStyle={variant} isInteractive={interactive} tintColor={tint} style={style}>
       {variant === 'clear' && <View style={[StyleSheet.absoluteFill, styles.dim]} pointerEvents="none" />}
       {children}
     </GlassView>
