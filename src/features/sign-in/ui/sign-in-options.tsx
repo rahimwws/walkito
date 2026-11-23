@@ -1,12 +1,13 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState } from 'react';
-import { Modal, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { useSheetHandlers, useSheetRoute } from '@/shared/lib/sheet-route';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { SheetScreen } from '@/shared/ui/sheet';
 
 import type { AuthFailure, EmailCodeMode } from '@/entities/session';
 
@@ -42,6 +43,9 @@ export type SignInOptionsProps = {
    * platform's own sheet while it is asked. A host with something moving
    * under them holds it still. */
   onCovered?: (covered: boolean) => void;
+  /** The host is itself a React Native modal (the pass checkout), so the
+   * email sheet keeps a modal of its own (`EmailSignInSheet`'s `inModal`). */
+  inModal?: boolean;
 };
 
 /**
@@ -58,6 +62,7 @@ export function SignInOptions({
   night = false,
   preview,
   onCovered,
+  inModal = false,
 }: SignInOptionsProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
@@ -140,6 +145,7 @@ export function SignInOptions({
         <PrimaryButton label={emailLabel} onPress={openEmail} disabled={busy} tint={tint} />
       )}
       <EmailSignInSheet
+        inModal={inModal}
         visible={email}
         preview={preview}
         mode={emailMode}
@@ -159,10 +165,19 @@ export function SignInOptions({
   );
 }
 
+const SIGN_IN_ROUTE = 'sign-in';
+
+type SignInHandlers = { onSignedIn: SignInOptionsProps['onSignedIn'] };
+
 /**
  * "Already have an account?" — a sheet over the intro for somebody coming
  * back. Signing in links nothing new: the anonymous account from first launch
  * gives way to theirs (`accountFor`).
+ *
+ * The native form sheet route `/sheet/sign-in` (`SignInSheetScreen`); this
+ * keeps the intro's `visible` / callback API and opens it. A route rather
+ * than a modal of its own so the email sheet can rise over it as a sheet
+ * route too: one pushed from inside a React Native modal dismisses it.
  */
 export function SignInSheet({
   visible,
@@ -173,21 +188,27 @@ export function SignInSheet({
   onClose: () => void;
   onSignedIn: SignInOptionsProps['onSignedIn'];
 }) {
+  useSheetRoute<SignInHandlers>(SIGN_IN_ROUTE, visible, '/sheet/sign-in', { onSignedIn }, (closedByHost) => {
+    if (!closedByHost) onClose();
+  });
+  return null;
+}
+
+export function SignInSheetScreen() {
+  const handlers = useSheetHandlers<SignInHandlers>(SIGN_IN_ROUTE);
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const insets = useSafeAreaInsets();
   const t = useT();
 
   return (
-    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} statusBarTranslucent>
-      <Pressable accessibilityRole="button" accessibilityLabel={t('common.close')} style={styles.scrim} onPress={onClose} />
-      <View style={[styles.sheet, { backgroundColor: colors.card, paddingBottom: Math.max(insets.bottom, 16) + 8 }]}>
+    <SheetScreen>
+      <View style={styles.sheet}>
         <Text style={[styles.title, { color: colors.foreground }]}>{t('onboarding.signIn.title')}</Text>
         <Text style={[styles.blurb, { color: meter.caption }]}>{t('onboarding.signIn.blurb')}</Text>
-        <SignInOptions onSignedIn={onSignedIn} />
+        <SignInOptions onSignedIn={(via) => handlers()?.onSignedIn(via)} />
       </View>
-    </Modal>
+    </SheetScreen>
   );
 }
 
@@ -196,15 +217,7 @@ const styles = StyleSheet.create({
   failed: { ...fonts.medium(14), textAlign: 'center', marginTop: 8 },
   alt: { alignItems: 'center', paddingTop: 14, paddingBottom: 4 },
   altLabel: fonts.medium(15, -0.2),
-  scrim: { flex: 1, backgroundColor: 'rgba(0,0,0,0.4)' },
-  sheet: {
-    paddingTop: 26,
-    paddingHorizontal: 22,
-    borderTopLeftRadius: 28,
-    borderTopRightRadius: 28,
-    borderCurve: 'continuous',
-    gap: 10,
-  },
+  sheet: { gap: 10 },
   title: { ...fonts.heavy(26, -0.6), textAlign: 'center' },
   blurb: { ...fonts.regular(16), lineHeight: 22, textAlign: 'center', marginBottom: 10 },
 });

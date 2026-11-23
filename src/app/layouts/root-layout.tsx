@@ -59,7 +59,7 @@ import { configureObserve, markInteractive } from '@/shared/lib/observe';
 import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 
-import { FORM_SHEET } from './form-sheet';
+import { FORM_SHEET, sheetRouteOptions } from './form-sheet';
 import { OfferWall } from './offer-wall';
 import { runStoreShots } from '../providers/store-shots';
 
@@ -445,7 +445,7 @@ function RootLayoutInner() {
                     host through `useSheetRoute` (`shared/lib/sheet-route`);
                     one dynamic route so it never becomes a guard's fallback
                     (`sheet-route.tsx`). */}
-                <Stack.Screen name="sheet/[name]" options={FORM_SHEET} />
+                <Stack.Screen name="sheet/[name]" options={sheetRouteOptions} />
                 {/* "You're in" after a purchase or a restore: a one-way door
                     over the tabs, raised by `useYoureInPresenter`. */}
                 <Stack.Protected guard={tabsReachable}>
