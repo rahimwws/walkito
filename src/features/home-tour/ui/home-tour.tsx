@@ -484,5 +484,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  nextLabel: { ...fonts.bold(16, -0.2), color: '#111113' },
+  nextLabel: { ...fonts.bold(17, -0.2), color: '#111113' },
 });

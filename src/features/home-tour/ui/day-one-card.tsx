@@ -204,6 +204,6 @@ const styles = StyleSheet.create({
   chip: { alignSelf: 'center', marginTop: 14 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
   later: { marginTop: 12, paddingVertical: 6, paddingHorizontal: 16 },
-  laterText: fonts.semibold(16),
+  laterText: fonts.semibold(17),
   pressed: { opacity: 0.5 },
 });
