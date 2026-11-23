@@ -1,12 +1,15 @@
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import type { ReactNode } from 'react';
+import { useIsFocused } from 'expo-router';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { Image, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
+import { useReducedMotion } from 'react-native-reanimated';
 import Svg, { Circle } from 'react-native-svg';
 
 import { EXERCISES_BY_ID, exerciseById, moveLook, planMeta } from '@/entities/program';
 import { bitepal, bodyColors, colors, fonts, target, type BodyPart } from '@/shared/config';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { Mascot, MascotStill, type MascotHandle, type MascotRig, type MascotShot } from '@/shared/ui/mascot';
 
 import { illustrationFor, posterFor } from '../../config/exercise-posters';
 
@@ -49,6 +52,12 @@ export function soft(hex: string, amount = 0.24): string {
   };
   return '#' + mix(0) + mix(2) + mix(4);
 }
+
+/** BitePal's header scene (#108): the warm card the character stands in. */
+export const sceneStyle = {
+  ...cardStyle,
+  backgroundColor: soft(bodyColors.toes, 0.2),
+} as const satisfies ViewStyle;
 
 /**
  * Which part of the foot or leg a move works, read from what the plan says it
@@ -307,6 +316,46 @@ export function MoveCircle({
         <FluentIcon name={moveLook(exerciseId, exerciseById(exerciseId).category).art} size={size * 0.5} />
       ) : null}
       {children}
+    </View>
+  );
+}
+
+/**
+ * The mascot as BitePal stands its character in a screen's header: alive
+ * while its screen is in front, still behind another one, and the still art
+ * with Reduce Motion. `shot` plays once after it lands. Silent: the screen's
+ * own haptic is the sound of the moment.
+ */
+export function SessionMascot({
+  rig,
+  size,
+  shot,
+  surface = bitepal.card,
+  style,
+}: {
+  rig: MascotRig;
+  size: number;
+  shot?: MascotShot;
+  surface?: string;
+  style?: StyleProp<ViewStyle>;
+}) {
+  const focused = useIsFocused();
+  const reduceMotion = useReducedMotion();
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    if (shot == null || reduceMotion) return;
+    const timer = setTimeout(() => mascot.current?.play(shot), 450);
+    return () => clearTimeout(timer);
+    // Once per mount: the screen mounts it fresh each time it opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return (
+    <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={style}>
+      {reduceMotion ? (
+        <MascotStill rig={rig} size={size} surface={surface} />
+      ) : (
+        <Mascot ref={mascot} rig={rig} size={size} surface={surface} paused={!focused} />
+      )}
     </View>
   );
 }

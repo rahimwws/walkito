@@ -12,10 +12,11 @@ import { GOAL_SPECS, fromDateKey, retestResults, type TestDayOutcome } from '@/e
 import { bitepal, colors, fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
-import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { thumbsUpRig, trophyRig } from '@/shared/ui/mascot';
 
 import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from '../../model/test-day';
-import { Bar, BigNumber, CardLabel, Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, cardStyle, ink } from '../player/kit';
+import { Bar, BigNumber, CardLabel, Capsule, NUMERAL_SCALE, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle } from '../player/kit';
 import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
 import { testColor } from './test-meta';
 import { TestRing } from './test-visuals';
@@ -115,14 +116,9 @@ type Hero =
 
 type Card = ResultRow & { type: CardGoal };
 
-/** The emoji over the title: content, so the colourful set. A trophy only
- * for a goal reached; a level result is a seedling, never a judgement. */
-const HERO_ART: Readonly<Record<Hero['kind'], FluentName>> = {
-  goal: 'trophy',
-  up: 'sparkles',
-  first: 'target',
-  steady: 'seedling',
-};
+/** The character in the header: the trophy for the first test day, a
+ * thumbs-up on every later one, whatever the numbers say. */
+const RESULTS_MASCOT = 120;
 
 /**
  * What the Foot Check found, in the Bend style the session screens share: the
@@ -205,20 +201,22 @@ export function FootCheckResults({ outcome, side, onDone }: FootCheckResultsProp
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-        <View style={styles.head}>
+        <View style={[sceneStyle, styles.head, largeText && styles.headStacked]}>
           <View style={styles.headText}>
             <CardLabel>{heroEyebrow(t, hero)}</CardLabel>
             <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
               {heroTitle(t, hero)}
             </Text>
+            <Text style={styles.lead}>{hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}</Text>
           </View>
-          {!largeText && (
-            <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-              <FluentIcon name={HERO_ART[hero.kind]} size={64} />
-            </View>
-          )}
+          <SessionMascot
+            rig={hero.kind === 'first' ? trophyRig : thumbsUpRig}
+            shot={hero.kind === 'first' ? 'present' : 'nod'}
+            size={RESULTS_MASCOT}
+            surface={sceneStyle.backgroundColor}
+            style={largeText && styles.mascotStacked}
+          />
         </View>
-        <Text style={styles.lead}>{hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}</Text>
 
         <View style={styles.cards}>
           {cards.map((row, index) => (
@@ -561,10 +559,12 @@ const styles = StyleSheet.create({
   content: { paddingHorizontal: SIDE - 4, paddingTop: 8, paddingBottom: 32 },
   card: cardStyle,
 
-  head: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 4, marginTop: 8 },
+  head: { flexDirection: 'row', alignItems: 'center', gap: 8, padding: 20, paddingRight: 8, marginTop: 8 },
+  headStacked: { flexDirection: 'column-reverse', alignItems: 'stretch', paddingRight: 20 },
+  mascotStacked: { alignSelf: 'center' },
   headText: { flex: 1, gap: 4 },
   title: { ...fonts.heavy(32, -0.8), color: ink.text },
-  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 8, paddingHorizontal: 4 },
+  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 4 },
 
   cards: { marginTop: 20, gap: 12 },
   cardBody: { padding: 20, gap: 12 },
