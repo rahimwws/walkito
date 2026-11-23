@@ -1,6 +1,6 @@
 import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   FadeInDown,
@@ -344,12 +344,9 @@ export function ProgramPage() {
   const listRef = useAnimatedRef<Animated.ScrollView>();
   /**
    * To a place in the list, through the ref's own instance: Reanimated's
-   * `scrollTo` is a worklet and does nothing called from the JS thread. On iOS
-   * the tab's scroll view starts under the status bar, so its top is that far
-   * above zero.
+   * `scrollTo` is a worklet and does nothing called from the JS thread.
    */
-  const scrollList = (y: number, animated = true) =>
-    listRef.current?.scrollTo({ y: y - (Platform.OS === 'ios' ? insets.top : 0), animated });
+  const scrollList = (y: number, animated = true) => listRef.current?.scrollTo({ y, animated });
 
   /**
    * Whatever the pane holds leaves when the pane does — a session or a test.
@@ -520,7 +517,7 @@ export function ProgramPage() {
           onScroll={onScroll}
           scrollEventThrottle={16}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={[styles.list, { paddingTop: (Platform.OS === 'ios' ? 0 : insets.top) + 8, paddingBottom: clearance + 28 }]}>
+          contentContainerStyle={[styles.list, { paddingTop: insets.top + 8, paddingBottom: clearance + 28 }]}>
           <View style={styles.header}>
             <Text
               style={[styles.title, { color: colors.foreground }]}

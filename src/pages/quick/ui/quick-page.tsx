@@ -6,7 +6,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { EXERCISE_LIST, currentDay, doseFor, doseSeconds, painOn, useProgramState } from '@/entities/program';
@@ -148,8 +148,7 @@ export function QuickPage() {
         contentInsetAdjustmentBehavior="never"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
-          // iOS already starts a tab's scroll view under the status bar.
-          paddingTop: (Platform.OS === 'ios' ? 0 : insets.top) + 16,
+          paddingTop: insets.top + 16,
           paddingHorizontal: space.screen,
           paddingBottom: clearance + 28,
           gap: 12,
