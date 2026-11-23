@@ -1,4 +1,4 @@
-import { createContext, use, useCallback, useEffect, useMemo, type ReactNode } from 'react';
+import { createContext, use, useCallback, useEffect, useMemo, useRef, type ReactNode } from 'react';
 import { BackHandler } from 'react-native';
 import {
   Easing,
@@ -80,6 +80,15 @@ export function ProgramProvider({
   const detail = useSharedValue(0);
   const scrollTop = useSharedValue(0);
 
+  // The layout passes these inline, and it re-renders whenever the navigation
+  // theme does (an appearance change, for one). Read through a ref, so a new
+  // callback is not a new `value`: the Plan tab's focus effect depends on it,
+  // and its cleanup hides the program, which closed a running session.
+  const handlers = useRef({ onOpen, onClose });
+  useEffect(() => {
+    handlers.current = { onOpen, onClose };
+  });
+
   const spring = useCallback((target: SharedValue<number>, value: number) => {
     target.value = withTiming(value, {
       duration: PROGRAM_MS,
@@ -115,21 +124,21 @@ export function ProgramProvider({
       scrollTop,
       open: () => {
         to(1);
-        onOpen?.();
+        handlers.current.onOpen?.();
       },
       close: () => {
         shut();
-        onClose?.();
+        handlers.current.onClose?.();
       },
       // Read on the JS thread, so it needs the current value rather than a
       // worklet: `.value` is safe here because a tap is not a frame loop.
       toggle: () => {
         if (progress.value > 0.5) {
           shut();
-          onClose?.();
+          handlers.current.onClose?.();
         } else {
           to(1);
-          onOpen?.();
+          handlers.current.onOpen?.();
         }
       },
       show: () => to(1),
@@ -137,7 +146,7 @@ export function ProgramProvider({
       openDetail: () => spring(detail, 1),
       closeDetail: () => spring(detail, 0),
     };
-  }, [progress, detail, scrollTop, spring, onOpen, onClose]);
+  }, [progress, detail, scrollTop, spring]);
 
   // Android's back: out of a session first, then off the plan, and only when
   // neither is open does it fall through to the router. Without this, back on
