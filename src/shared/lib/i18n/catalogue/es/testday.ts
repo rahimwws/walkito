@@ -190,4 +190,6 @@ export const TESTDAY_ES = {
   'testday.results.explain.balance':
     'Estar sobre una pierna con los ojos cerrados muestra lo bien que tu pie y tu tobillo sienten el suelo. Más segundos significa pasos más firmes en caminos irregulares y cuando estás cansado.',
   'testday.results.explainA11y': 'Qué muestra esto',
+  'testday.card.goalRaises': { one: 'Meta: {count} elevación', other: 'Meta: {count} elevaciones' },
+  'testday.card.goalSeconds': 'Meta: {goal} s',
 };

@@ -21,8 +21,8 @@ import {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { ZONE_META, planSettings } from '@/entities/program';
-import { accents, colors, fonts } from '@/shared/config';
+import { planSettings } from '@/entities/program';
+import { bitepal, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { clipFor } from '../../config/exercise-clips';
@@ -44,11 +44,11 @@ import {
   type Station,
 } from '../../model/test-day';
 import { CountIn } from '../player/count-in';
-import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, tint } from '../player/kit';
+import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, soft, CardLabel } from '../player/kit';
 import { StepList } from '../player/sheets';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
-import { BALANCE_EYES_OPEN_STEPS, TEST_META } from './test-meta';
+import { BALANCE_EYES_OPEN_STEPS, TEST_META, testColor } from './test-meta';
 
 /**
  * Where a test is.
@@ -116,7 +116,7 @@ export function TestRunner({
   onConfirm,
 }: TestRunnerProps) {
   const insets = useSafeAreaInsets();
-  const { width, height } = useWindowDimensions();
+  const { width, height, fontScale } = useWindowDimensions();
   const t = useT();
 
   const { kind } = station;
@@ -318,7 +318,7 @@ export function TestRunner({
   };
 
   const eyebrow = t('testday.test.eyebrow', { current: testIndex(kind) + 1, total: TEST_ORDER.length });
-  const accent = ZONE_META[meta.zone].accent;
+  const color = testColor(kind);
   const disc = Math.min(width - 96, height * 0.34, 300);
   const name = t(meta.name);
 
@@ -333,7 +333,7 @@ export function TestRunner({
             <>
               <View style={styles.pictureRow}>
                 <View
-                  style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: tint(accent) }]}>
+                  style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(color) }]}>
                   <Image
                     source={TEST_PICTURES[kind].full}
                     style={[styles.picture, mirrored && styles.mirrored]}
@@ -345,7 +345,8 @@ export function TestRunner({
               {!clipFailed && (
                 <KitTextButton label={t('testday.watch')} onPress={() => setViewing(true)} style={styles.watch} />
               )}
-              <View style={styles.card}>
+              <View style={[styles.card, styles.steps]}>
+                <CardLabel>{t('player.sheet.stepsTitle')}</CardLabel>
                 <StepList steps={steps.map((key) => t(key))} />
               </View>
             </>
@@ -395,14 +396,29 @@ export function TestRunner({
 
   // Counting, measuring and paused share one screen: the count runs over the
   // measuring screen, so "go" lifts it away to reveal the clock already there.
-  const ringSize = Math.min(width - 96, height * 0.36, 280);
+  const large = fontScale > 1.6;
+  const ringSize = Math.min(width - 96, height * (large ? 0.28 : 0.36), 280);
   const secondsLeft = secondsLeftAt(elapsed, windowMs);
   const reps = measuredAt('calf', elapsed, windowMs);
+  /** The unit and, for the raises, up or down: inside the ring, or under it
+   * once the words would no longer fit in it. */
+  const ringWords = (
+    <>
+      <Text style={styles.unit}>
+        {kind === 'calf' ? t('testday.results.unitRaises', { count: reps }) : t('testday.secondsLeft', { count: secondsLeft })}
+      </Text>
+      {kind === 'calf' && (
+        <Text style={styles.phase}>
+          {stage === 'measuring' ? (repPhaseAt(elapsed) === 'up' ? t('testday.calf.up') : t('testday.calf.down')) : ' '}
+        </Text>
+      )}
+    </>
+  );
 
   return (
     <View style={styles.root}>
       <ClipViewer clip={meta.clip} mirrored={mirrored} visible={viewing} onClose={() => setViewing(false)} />
-      <View style={styles.measure}>
+      <ScrollView style={styles.flex} contentContainerStyle={styles.measure} showsVerticalScrollIndicator={false} bounces={false}>
         <View style={styles.measureHead}>
           <View style={styles.flex}>
             <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
@@ -422,19 +438,16 @@ export function TestRunner({
         {/* Not one accessible element: the figure, its unit and the clock are
             read as the lines they are, not glued into an English sentence. */}
         <View style={styles.ringArea} accessibilityRole="timer">
-          <CountdownRing size={ringSize} stroke={10} left={ring} tone={{ fill: accents.light[accent].fill, track: colors.surface2 }}>
+          <CardLabel style={styles.ringLabel}>
+            {kind === 'calf' ? t('player.card.reps') : t('player.card.timeLeft')}
+          </CardLabel>
+          <CountdownRing size={ringSize} stroke={10} left={ring} tone={{ fill: color, track: bitepal.track }}>
             <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.big} numberOfLines={1} adjustsFontSizeToFit>
               {kind === 'calf' ? reps : secondsLeft}
             </Text>
-            <Text style={styles.unit}>
-              {kind === 'calf' ? t('testday.results.unitRaises', { count: reps }) : t('testday.secondsLeft', { count: secondsLeft })}
-            </Text>
-            {kind === 'calf' && (
-              <Text style={styles.phase}>
-                {stage === 'measuring' ? (repPhaseAt(elapsed) === 'up' ? t('testday.calf.up') : t('testday.calf.down')) : ' '}
-              </Text>
-            )}
+            {!large && ringWords}
           </CountdownRing>
+          {large && ringWords}
           {/* The other half of the clock: the time the raises run against, or
               what a hold has reached, the figure its confirmation asks about. */}
           <Text style={styles.clock}>
@@ -452,7 +465,7 @@ export function TestRunner({
         ) : (
           <Text style={styles.stopHint}>{t(meta.stopHint)}</Text>
         )}
-      </View>
+      </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
         {stage === 'paused' ? (
@@ -480,11 +493,15 @@ export function TestRunner({
 function Heading({ eyebrow, title, leg }: { eyebrow: string; title: string; leg: string | null }) {
   return (
     <View>
-      <Text style={styles.eyebrow}>{eyebrow}</Text>
+      <CardLabel>{eyebrow}</CardLabel>
       <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
         {title}
       </Text>
-      {leg != null && <Text style={styles.leg}>{leg}</Text>}
+      {leg != null && (
+        <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.leg}>
+          {leg}
+        </Text>
+      )}
     </View>
   );
 }
@@ -495,15 +512,15 @@ const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: ink.canvas },
   flex: { flex: 1 },
   content: { paddingHorizontal: SIDE - 4, paddingTop: 12, paddingBottom: 24 },
-  card: { ...cardStyle, padding: 18 },
-  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3 },
-  title: { ...fonts.bold(32, -0.6), color: ink.text, marginTop: 2 },
-  leg: { ...fonts.semibold(19), color: colors.accent, marginTop: 2 },
+  card: { ...cardStyle, padding: 20 },
+  title: { ...fonts.heavy(32, -0.8), color: ink.text, marginTop: 2 },
+  leg: { ...fonts.bold(19), color: bitepal.selected, marginTop: 2 },
   pictureRow: { alignItems: 'center', marginTop: 20 },
   disc: { overflow: 'hidden', alignItems: 'center', justifyContent: 'flex-end' },
   picture: { width: '88%', height: '88%' },
   mirrored: { transform: [{ scaleX: -1 }] },
   watch: { alignSelf: 'center', marginVertical: 4 },
+  steps: { gap: 12 },
   question: { ...fonts.bold(26, -0.4), color: ink.text },
   confirm: { marginTop: 24 },
   stepper: { marginTop: 20, alignItems: 'flex-start' },
@@ -511,14 +528,15 @@ const styles = StyleSheet.create({
   next: { marginTop: 16, gap: 4 },
   nextTitle: { ...fonts.semibold(19), color: ink.text },
   nextLeg: { ...fonts.regular(19), color: ink.text },
-  measure: { flex: 1, paddingHorizontal: SIDE - 4, paddingTop: 12 },
+  measure: { flexGrow: 1, paddingHorizontal: SIDE - 4, paddingTop: 12 },
   measureHead: { flexDirection: 'row', alignItems: 'flex-start', gap: 16 },
-  thumb: { width: THUMB, height: THUMB, borderRadius: THUMB / 2, overflow: 'hidden', backgroundColor: ink.studio },
+  thumb: { width: THUMB, height: THUMB, borderRadius: THUMB / 2, overflow: 'hidden', backgroundColor: ink.studio, borderWidth: 3, borderColor: bitepal.card },
   video: { flex: 1 },
-  ringArea: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 16 },
+  ringArea: { ...cardStyle, flexGrow: 1, alignItems: 'center', justifyContent: 'center', gap: 16, marginVertical: 16, padding: 20 },
+  ringLabel: { alignSelf: 'flex-start' },
   /** Read from a couple of metres off, with the phone on the floor or a wall. */
   big: {
-    ...fonts.bold(96, -3),
+    ...fonts.heavy(96, -3),
     lineHeight: 104,
     color: ink.text,
     fontVariant: ['tabular-nums'],
@@ -527,7 +545,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   unit: { ...fonts.medium(17), color: ink.grey, marginTop: -6 },
-  phase: { ...fonts.semibold(19), color: colors.accent, marginTop: 6 },
+  phase: { ...fonts.bold(19), color: bitepal.selected, marginTop: 6 },
   clock: { ...fonts.medium(19), color: ink.grey, fontVariant: ['tabular-nums'] },
   stopHint: { ...fonts.regular(17), color: ink.grey, paddingBottom: 12, textAlign: 'center' },
   paused: { gap: 0, paddingBottom: 12, alignItems: 'center' },

@@ -1,4 +1,5 @@
 import type { ZoneKey } from '@/entities/program';
+import { bodyColors, type BodyPart } from '@/shared/config';
 import type { Key, Translate } from '@/shared/lib/i18n';
 
 import type { Leg, MeasuredGoal, TestKind } from '../../model/test-day';
@@ -22,6 +23,7 @@ export const TEST_META = {
     stopHint: 'testday.calf.stopHint',
     clip: 'retest_calf_raise',
     zone: 'calf',
+    body: 'calf',
   },
   arch: {
     name: 'testday.test.arch.name',
@@ -29,6 +31,7 @@ export const TEST_META = {
     stopHint: 'testday.arch.stopHint',
     clip: 'short_foot_double',
     zone: 'arch',
+    body: 'arch',
   },
   balance: {
     name: 'testday.test.balance.name',
@@ -36,6 +39,7 @@ export const TEST_META = {
     stopHint: 'testday.balance.stopHint',
     clip: 'single_leg_hold',
     zone: 'balance',
+    body: 'ankle',
   },
 } as const satisfies Record<
   TestKind,
@@ -45,6 +49,8 @@ export const TEST_META = {
     stopHint: Key;
     clip: string;
     zone: ZoneKey;
+    /** The part of the foot it measures, which colours its bar and ring. */
+    body: BodyPart;
   }
 >;
 
@@ -71,4 +77,9 @@ export const GOAL_ZONE: Readonly<Record<MeasuredGoal, ZoneKey>> = {
 export function legLabel(t: Translate, leg: Leg, sore: boolean): string {
   if (sore) return leg === 'left' ? t('testday.side.leftSore') : t('testday.side.rightSore');
   return leg === 'left' ? t('testday.side.left') : t('testday.side.right');
+}
+
+/** A test's colour: the part of the foot it measures, never how it went. */
+export function testColor(kind: TestKind): string {
+  return bodyColors[TEST_META[kind].body];
 }

@@ -222,4 +222,7 @@ export const TESTDAY_EN = {
   'testday.results.explain.balance':
     'Standing on one leg with your eyes closed shows how well your foot and ankle sense the ground. More seconds means steadier steps on uneven paths and when you are tired.',
   'testday.results.explainA11y': 'What this shows',
+  // ── Redesign v1.1 (BitePal): the goal under a test's bar ──
+  'testday.card.goalRaises': { one: 'Goal: {count} raise', other: 'Goal: {count} raises' },
+  'testday.card.goalSeconds': 'Goal: {goal} s',
 } as const satisfies Record<string, SourceEntry>;

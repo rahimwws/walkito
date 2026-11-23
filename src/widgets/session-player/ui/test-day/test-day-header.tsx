@@ -1,11 +1,11 @@
 import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import { StyleSheet, View } from 'react-native';
 
-import { colors } from '@/shared/config';
+import { bitepal } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import type { SegmentState } from '../../model/test-day';
-import { RoundButton, SIDE, tint } from '../player/kit';
+import { RoundButton, SIDE, soft } from '../player/kit';
 
 export const TEST_DAY_HEADER_HEIGHT = 60;
 
@@ -16,9 +16,9 @@ export type TestDayHeaderProps = {
 };
 
 /**
- * The test day's top row, in the player's Bend style: a round close, and
- * where the three tests stand as rounded segments, violet for done, soft
- * violet for the one under way. A fixed-size icon rather than a word, so the
+ * The test day's top row, in BitePal's thin bars: a round close, and where
+ * the three tests stand as rounded segments, violet for done, soft violet for
+ * the one under way. A fixed-size icon rather than a word, so the
  * row keeps its height at every text size and nothing under it can slide
  * beneath it.
  */
@@ -27,7 +27,7 @@ export function TestDayHeader({ segments, onClose }: TestDayHeaderProps) {
   const done = segments.filter((state) => state === 'done').length;
   return (
     <View style={styles.header}>
-      <RoundButton icon={Cancel01Icon} tone="grey" size={40} label={t('testday.close')} onPress={onClose} />
+      <RoundButton icon={Cancel01Icon} size={44} label={t('testday.close')} onPress={onClose} />
       <View
         style={styles.bar}
         accessible
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   bar: { flex: 1, flexDirection: 'row', gap: 6 },
-  segment: { flex: 1, height: 6, borderRadius: 3, backgroundColor: colors.surface2 },
-  done: { backgroundColor: colors.accent },
-  active: { backgroundColor: tint('violet', 0.45) },
+  segment: { flex: 1, height: 6, borderRadius: 3, backgroundColor: bitepal.track },
+  done: { backgroundColor: bitepal.selected },
+  active: { backgroundColor: soft(bitepal.selected, 0.45) },
 });

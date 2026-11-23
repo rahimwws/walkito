@@ -65,10 +65,8 @@ export {
   TITLE_SCALE,
   bodyPartOf,
   cardStyle,
-  moveAccent,
   moveColor,
   soft,
-  tint,
 } from './ui/player/kit';
 /** The test day, whole: intro, the three tests, results.
  *

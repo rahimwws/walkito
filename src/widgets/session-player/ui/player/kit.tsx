@@ -5,7 +5,7 @@ import { Image, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyl
 import Svg, { Circle } from 'react-native-svg';
 
 import { EXERCISES_BY_ID, exerciseById, moveLook, planMeta } from '@/entities/program';
-import { accents, bitepal, bodyColors, colors, fonts, target, type AccentName, type BodyPart } from '@/shared/config';
+import { bitepal, bodyColors, colors, fonts, target, type BodyPart } from '@/shared/config';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 import { illustrationFor, posterFor } from '../../config/exercise-posters';
@@ -36,24 +36,6 @@ export const cardStyle = {
   borderRadius: bitepal.cardRadius,
   borderCurve: 'continuous',
 } as const satisfies ViewStyle;
-
-/** Kept until the Foot Check and the exercise sheet move to BitePal's colours. */
-export function tint(name: AccentName, amount = 0.26): string {
-  const hex = accents.light[name].fill.replace('#', '');
-  const mix = (at: number) => {
-    const channel = parseInt(hex.slice(at, at + 2), 16);
-    return Math.round(255 - (255 - channel) * amount)
-      .toString(16)
-      .padStart(2, '0');
-  };
-  return '#' + mix(0) + mix(2) + mix(4);
-}
-
-/** Kept until the Foot Check and the exercise sheet move to BitePal's colours. */
-export function moveAccent(exerciseId: string | null | undefined): AccentName {
-  if (exerciseId == null || EXERCISES_BY_ID[exerciseId] == null) return 'violet';
-  return moveLook(exerciseId, exerciseById(exerciseId).category).accent;
-}
 
 /** A colour mixed into white, opaque: the pastel behind a move's picture.
  * Opaque so the drawing's white multiplies into it rather than through it. */
@@ -173,7 +155,7 @@ export function RoundButton({
   onPress: () => void;
   size?: number;
   iconSize?: number;
-  tone?: 'raised' | 'well' | 'ink' | 'grey';
+  tone?: 'raised' | 'well' | 'ink';
   disabled?: boolean;
   style?: StyleProp<ViewStyle>;
 }) {
@@ -190,7 +172,7 @@ export function RoundButton({
       }}
       style={({ pressed }) => [
         styles.round,
-        tone === 'raised' ? styles.raised : tone === 'well' || tone === 'grey' ? styles.well : styles.inkButton,
+        tone === 'raised' ? styles.raised : tone === 'well' ? styles.well : styles.inkButton,
         { width: size, height: size, borderRadius: size / 2 },
         disabled && styles.off,
         pressed && styles.pressed,

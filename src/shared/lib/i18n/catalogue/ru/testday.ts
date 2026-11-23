@@ -211,4 +211,6 @@ export const TESTDAY_RU = {
   'testday.results.explain.balance':
     'Стойка на одной ноге с закрытыми глазами показывает, насколько хорошо стопа и голеностоп чувствуют опору. Больше секунд - значит, шаг увереннее на неровной дороге и когда вы устали.',
   'testday.results.explainA11y': 'Что это показывает',
+  'testday.card.goalRaises': { one: 'Цель: {count} подъём', few: 'Цель: {count} подъёма', many: 'Цель: {count} подъёмов' },
+  'testday.card.goalSeconds': 'Цель: {goal} с',
 };
