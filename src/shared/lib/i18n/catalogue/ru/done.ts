@@ -47,4 +47,12 @@ export const DONE_RU = {
   },
   'sessionDone.path.day': 'День {day}',
   'sessionDone.path.completed': 'Пройден',
+  'sessionDone.month.title': 'Дни в этом месяце',
+  'sessionDone.month.unit': { one: 'день', few: 'дня', many: 'дней' },
+  'sessionDone.month.a11y': {
+    one: '{count} день с занятием в этом месяце',
+    few: '{count} дня с занятием в этом месяце',
+    many: '{count} дней с занятием в этом месяце',
+  },
+  'sessionDone.nextLabel': 'Дальше',
 };

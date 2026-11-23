@@ -31,4 +31,8 @@ export const DONE_ES = {
   'sessionDone.tileSetsA11y': { one: '{count} serie hecha', other: '{count} series hechas' },
   'sessionDone.path.day': 'Día {day}',
   'sessionDone.path.completed': 'Completado',
+  'sessionDone.month.title': 'Días hechos este mes',
+  'sessionDone.month.unit': { one: 'día', other: 'días' },
+  'sessionDone.month.a11y': { one: '{count} día hecho este mes', other: '{count} días hechos este mes' },
+  'sessionDone.nextLabel': 'A continuación',
 };

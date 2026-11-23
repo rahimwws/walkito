@@ -45,4 +45,9 @@ export const DONE_EN = {
   /** A node of the day path: the plan day by its number. */
   'sessionDone.path.day': 'Day {day}',
   'sessionDone.path.completed': 'Completed',
+  // ── Redesign v1.1 (BitePal): the month card and what comes next ──
+  'sessionDone.month.title': 'Days done this month',
+  'sessionDone.month.unit': { one: 'day', other: 'days' },
+  'sessionDone.month.a11y': { one: '{count} day done this month', other: '{count} days done this month' },
+  'sessionDone.nextLabel': 'Up next',
 } as const satisfies Record<string, SourceEntry>;
