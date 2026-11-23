@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
   editText: fonts.bold(13),
   menu: { position: 'absolute', top: 44, left: 16, borderRadius: 14, padding: 6 },
   menuItem: { borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8 },
-  menuItemText: { ...fonts.bold(13), color: '#FFFFFF' },
+  menuItemText: { ...fonts.bold(13), color: tokens.onAccent },
   sheet: { paddingTop: 22, gap: 12 },
   search: { flexDirection: 'row', alignItems: 'center', gap: 6, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 8 },
   searchText: fonts.medium(13),

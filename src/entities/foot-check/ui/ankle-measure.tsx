@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 
-import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, accents, colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
   sideLabel: fonts.semibold(13),
   sideValue: { ...fonts.heavy(28, -0.6), fontVariant: ['tabular-nums'] },
   button: { height: 58, borderRadius: 29, alignItems: 'center', justifyContent: 'center' },
-  buttonLabel: { ...fonts.bold(17), color: '#FFFFFF' },
+  buttonLabel: { ...fonts.bold(17), color: tokens.onAccent },
   pressed: { opacity: 0.8 },
   again: { alignSelf: 'center', paddingVertical: 8 },
   againLabel: fonts.semibold(15),

@@ -11,7 +11,7 @@ import Svg, { Path } from 'react-native-svg';
 
 import { exerciseById } from '@/entities/program';
 import { GoalChips } from '@/entities/profile';
-import { PRIMARY, accents, clipShape, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, accents, clipShape, colors as tokens, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Button } from '@/shared/ui/button';
@@ -689,7 +689,7 @@ const styles = StyleSheet.create({
   review: { borderRadius: 22, borderCurve: 'continuous', padding: 18, gap: 12 },
   reviewWho: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   avatar: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
-  avatarText: { ...fonts.heavy(16), color: '#FFFFFF' },
+  avatarText: { ...fonts.heavy(16), color: tokens.onAccent },
   reviewer: { ...fonts.bold(17, -0.2), flex: 1 },
   stars: { flexDirection: 'row', gap: 2 },
   quote: { ...fonts.medium(16), lineHeight: 23 },
@@ -711,7 +711,7 @@ const styles = StyleSheet.create({
   answers: { gap: 10, marginTop: 8 },
 
   praise: { flex: 1, borderRadius: 32, borderCurve: 'continuous', padding: 28, justifyContent: 'center', gap: 14, marginBottom: 8 },
-  praiseTitle: { ...fonts.heavy(36, -1), lineHeight: 42, color: '#FFFFFF' },
+  praiseTitle: { ...fonts.heavy(36, -1), lineHeight: 42, color: tokens.onAccent },
   praiseRow: { gap: 16 },
   praiseTick: { width: 44, height: 44, borderRadius: 22, backgroundColor: '#FFFFFF', alignItems: 'center', justifyContent: 'center' },
 
@@ -737,7 +737,7 @@ const styles = StyleSheet.create({
   tileLocked: { backgroundColor: 'rgba(0,0,0,0.4)' },
   tileRow: { flexDirection: 'row', gap: 12 },
   tileTag: { position: 'absolute', top: 12, left: 12, backgroundColor: PRIMARY, borderRadius: 999, paddingHorizontal: 10, paddingVertical: 5 },
-  tileTagText: { ...fonts.bold(13), color: '#FFFFFF' },
+  tileTagText: { ...fonts.bold(13), color: tokens.onAccent },
   tileFoot: { padding: 14, gap: 8 },
   tileTitle: { ...fonts.heavy(19, -0.3), lineHeight: 23, color: '#FFFFFF' },
   tileLabel: { padding: 12 },

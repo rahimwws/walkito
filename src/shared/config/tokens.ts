@@ -9,7 +9,7 @@
  * `useTokens()` from `@/shared/lib/theme` hands back the current scheme's.
  *
  * Every text colour is checked against its scheme's card and page in
- * `tokens.test.ts`: 4.5:1 or more, and `text3` for 17pt and up only. The old
+ * `tokens.test.ts`: 4.5:1 or more, and `text3`, 3:1, for 17pt and up only. The old
  * violet (#8B5CF6) is 4.2:1 on white and never carries text.
  */
 const lightColors = {
@@ -32,6 +32,9 @@ const lightColors = {
   /** A glyph or label on a vivid fill (a part colour, the accent's fill). White
    * in both schemes, where `onInk` flips. */
   onTone: '#FFFFFF',
+  /** A label on the accent's fill. Dark in dark, where the violet is lifted
+   * too light to carry white. */
+  onAccent: '#FFFFFF',
   /** Brand violet: links, selected states, progress. */
   accent: '#6D28D9',
   /** Behind a selected row or chip. */
@@ -63,6 +66,7 @@ const darkColors: typeof lightColors = {
   ink: '#FFFFFF',
   onInk: '#111114',
   onTone: '#FFFFFF',
+  onAccent: '#111114',
   accent: '#A78BFA',
   accentSoft: '#2F2944',
   good: '#30D158',
