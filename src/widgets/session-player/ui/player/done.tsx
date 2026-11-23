@@ -32,9 +32,10 @@ import { wakeLabel, wakeMinutes } from '@/entities/notifications';
 import { bitepal, bodyColors, colors, fonts } from '@/shared/config';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { celebrateRig, idleRig } from '@/shared/ui/mascot';
 
 import { alreadyRecorded, rememberFeedback, type Feedback } from '../../model/session-done';
-import { BigNumber, CardLabel, Capsule, Ring, SIDE, TITLE_SCALE, TextButton, cardStyle, ink, soft } from './kit';
+import { BigNumber, CardLabel, Capsule, Ring, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle, soft } from './kit';
 import { PainSheet } from './sheets';
 
 export type DoneProps = {
@@ -81,6 +82,8 @@ const KIND_LABEL: Partial<Record<DayType, Key>> = {
 };
 
 const STAT_RING = 64;
+/** The character in the header, as big as BitePal's on its streak sheet. */
+const DONE_MASCOT = 128;
 const IN_MS = 260;
 
 /** Which days of this month a plan session or a routine was finished, by day
@@ -221,18 +224,20 @@ export function Done({
         ref={scroll}
         contentContainerStyle={[styles.body, { paddingTop: insets.top + 24, paddingBottom: 140 + insets.bottom }]}
         showsVerticalScrollIndicator={false}>
-        <View style={styles.head}>
+        <View style={[sceneStyle, styles.head, large && styles.headStacked]}>
           <View style={styles.headText}>
             <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.title}>
               {early ? t('widgets.sessionStoppedTitle') : t('sessionDone.complete')}
             </Text>
             {early && <Text style={styles.lead}>{t('widgets.sessionStoppedBlurb')}</Text>}
           </View>
-          {!large && (
-            <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-              <FluentIcon name={early ? 'heart' : 'sparkles'} size={64} />
-            </View>
-          )}
+          <SessionMascot
+            rig={early ? idleRig : celebrateRig}
+            shot={early ? 'nod' : 'celebrate'}
+            size={DONE_MASCOT}
+            surface={sceneStyle.backgroundColor}
+            style={large && styles.mascotStacked}
+          />
         </View>
 
         {!early &&
@@ -381,7 +386,9 @@ const styles = StyleSheet.create({
   body: { paddingHorizontal: SIDE - 4, alignItems: 'stretch', gap: 12 },
   pressed: { opacity: 0.55 },
   card: cardStyle,
-  head: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 4, marginBottom: 8 },
+  head: { flexDirection: 'row', alignItems: 'center', gap: 8, padding: 20, paddingRight: 8, marginBottom: 8 },
+  headStacked: { flexDirection: 'column-reverse', alignItems: 'stretch', paddingRight: 20 },
+  mascotStacked: { alignSelf: 'center' },
   headText: { flex: 1, gap: 6 },
   title: { ...fonts.heavy(34, -0.8), color: ink.text },
   lead: { ...fonts.regular(19), color: ink.grey },

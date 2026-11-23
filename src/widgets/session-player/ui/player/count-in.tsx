@@ -15,10 +15,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CHROME_MAX_FONT_SCALE, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { thumbsUpRig } from '@/shared/ui/mascot';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { CardLabel, MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, cardStyle, ink } from './kit';
+import { CardLabel, MoveCircle, NUMERAL_SCALE, SIDE, SessionMascot, TITLE_SCALE, cardStyle, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -41,6 +42,8 @@ const POLL_MS = 100;
 const FADE_IN_MS = 160;
 const GO_HOLD_MS = 140;
 const FADE_OUT_MS = 220;
+/** Small: the move is the picture here; the character only cheers it on. */
+const COUNT_IN_MASCOT = 76;
 const NUMBER = 150;
 
 /**
@@ -150,6 +153,7 @@ export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bott
         onPress={go}
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
         <View style={[styles.middle, stacked && styles.middleTop]}>
+          <SessionMascot rig={thumbsUpRig} size={stacked ? 64 : COUNT_IN_MASCOT} style={styles.mascot} />
           <CardLabel style={styles.eyebrow}>{eyebrow}</CardLabel>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
           {!stacked && exerciseId != null && (
@@ -185,6 +189,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   middleTop: { justifyContent: 'flex-start', paddingTop: 20 },
+  mascot: { marginBottom: 4 },
   eyebrow: { textAlign: 'center' },
   title: { ...fonts.heavy(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
   picture: { marginTop: 24 },
