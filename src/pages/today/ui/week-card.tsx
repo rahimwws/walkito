@@ -8,7 +8,7 @@ import { useT } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 import { PART_ORDER, partsThisWeek } from '../model/parts';
-import { PartIcon } from './part-icon';
+import { PartIcon } from '@/shared/ui/part-icon';
 import { RoundAction } from './round-action';
 import { TodayCard } from './today-card';
 

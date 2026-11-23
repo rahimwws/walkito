@@ -11,7 +11,7 @@ import { posterFor } from '@/widgets/session-player';
 
 import { PART_OF } from '../model/parts';
 import type { TodayWork } from '../model/today-work';
-import { PartIcon } from './part-icon';
+import { PartIcon } from '@/shared/ui/part-icon';
 import { RoundAction } from './round-action';
 import { TodayCard } from './today-card';
 
