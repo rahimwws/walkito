@@ -15,17 +15,26 @@ import { useEffect, useRef } from 'react';
  * - The route's screen calls `useSheetHandlers(name)` for the handlers. When
  *   the screen unmounts (a button, a swipe down, the host closing it), `onGone`
  *   runs, after the sheet has left the screen, so a host that closes something
- *   under the sheet does it with nothing native still dismissing.
+ *   under the sheet does it with nothing native still dismissing. It is told
+ *   whether the host closed it (`visible` turning false, the host unmounting)
+ *   or the person did (a button, a swipe down).
  */
 type Entry = {
   handlers: { current: unknown };
-  onGone: { current: () => void };
+  onGone: { current: (closedByHost: boolean) => void };
   close?: () => void;
+  closedByHost?: boolean;
 };
 
 const open = new Map<string, Entry>();
 
-export function useSheetRoute<H>(name: string, visible: boolean, href: Href, handlers: H, onGone: () => void): void {
+export function useSheetRoute<H>(
+  name: string,
+  visible: boolean,
+  href: Href,
+  handlers: H,
+  onGone: (closedByHost: boolean) => void,
+): void {
   const handlersRef = useRef<unknown>(handlers);
   handlersRef.current = handlers;
   const goneRef = useRef(onGone);
@@ -40,16 +49,22 @@ export function useSheetRoute<H>(name: string, visible: boolean, href: Href, han
       router.push(hrefRef.current);
       return;
     }
-    open.get(name)?.close?.();
+    closeByHost(open.get(name));
   }, [name, visible]);
 
   useEffect(
     () => () => {
       const entry = open.get(name);
-      if (entry?.handlers === handlersRef) entry.close?.();
+      if (entry?.handlers === handlersRef) closeByHost(entry);
     },
     [name],
   );
+}
+
+function closeByHost(entry: Entry | undefined): void {
+  if (entry == null) return;
+  entry.closedByHost = true;
+  entry.close?.();
 }
 
 /** The host's handlers for the sheet route `name`, read fresh on each call,
@@ -65,11 +80,12 @@ export function useSheetHandlers<H>(name: string): () => H | undefined {
         entry.close = undefined;
         navigation.goBack();
       };
+      if (entry.closedByHost === true) entry.close();
     }
     return () => {
       const gone = open.get(name);
       open.delete(name);
-      gone?.onGone.current();
+      gone?.onGone.current(gone.closedByHost === true);
     };
   }, [name, navigation]);
 

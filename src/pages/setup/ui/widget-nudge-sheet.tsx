@@ -1,36 +1,26 @@
 import * as Haptics from 'expo-haptics';
-import { BlurView } from 'expo-blur';
-import { useEffect, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, {
-  Easing,
-  ReduceMotion,
-  runOnJS,
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-} from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useNavigation } from 'expo-router';
+import { useRef } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { useSheetHandlers, useSheetRoute } from '@/shared/lib/sheet-route';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { SheetScreen } from '@/shared/ui/sheet';
 
-const RADIUS = 36;
-const DOCK_PAD = 10;
-const CARD_PAD = 20;
-const BLUR = 28;
-const IN_MS = 340;
-const OUT_MS = 220;
-const RISE = 44;
+const ROUTE = 'widget-nudge';
+
+type Choice = 'again' | 'later';
+type Handlers = { answer: (choice: Choice) => void };
 
 export type WidgetNudgeSheetProps = {
   visible: boolean;
   /** "Show me again": the walkthrough from its first step, or Android's pin
    * sheet once more. */
   onAgain: () => void;
-  /** "Maybe later", or a tap outside the card: setup ends, nothing is lost. */
+  /** "Maybe later", or a swipe down: setup ends, nothing is lost. */
   onLater: () => void;
 };
 
@@ -39,120 +29,74 @@ export type WidgetNudgeSheetProps = {
  * the Home Screen. Kind and short: a line that says it takes three taps, and two answers of equal weight to the person.
  * Asked once per walkthrough, never in a loop: "Maybe later" ends setup.
  *
- * Built like the streak sheet (one shared value drives the blur and the card,
- * the mount outlives the flag so the exit can play), at its content's height.
+ * The native form sheet route `/sheet/widget-nudge` (`WidgetNudgeSheetScreen`);
+ * this keeps the setup page's `visible` / callback API and opens it. The
+ * answer runs once the sheet has gone, so neither the walkthrough nor
+ * Android's pin sheet rises under it. Closed by the page (the widget turned
+ * up), it answers nothing.
  */
 export function WidgetNudgeSheet({ visible, onAgain, onLater }: WidgetNudgeSheetProps) {
+  const choice = useRef<Choice>('later');
+  useSheetRoute<Handlers>(
+    ROUTE,
+    visible,
+    '/sheet/widget-nudge',
+    {
+      answer: (next) => {
+        choice.current = next;
+      },
+    },
+    (closedByHost) => {
+      const answered = choice.current;
+      choice.current = 'later';
+      if (closedByHost) return;
+      if (answered === 'again') onAgain();
+      else onLater();
+    },
+  );
+  return null;
+}
+
+export function WidgetNudgeSheetScreen() {
+  const handlers = useSheetHandlers<Handlers>(ROUTE);
+  const navigation = useNavigation();
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const insets = useSafeAreaInsets();
   const t = useT();
 
-  const [mounted, setMounted] = useState(false);
-  const progress = useSharedValue(0);
-
-  useEffect(() => {
-    if (visible) {
-      setMounted(true);
-      const frame = requestAnimationFrame(() => {
-        progress.value = withTiming(1, {
-          duration: IN_MS,
-          easing: Easing.out(Easing.cubic),
-          reduceMotion: ReduceMotion.System,
-        });
-      });
-      return () => cancelAnimationFrame(frame);
-    }
-    progress.value = withTiming(
-      0,
-      { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
-      (finished) => {
-        if (finished) runOnJS(setMounted)(false);
-      },
-    );
-    return undefined;
-  }, [visible, progress]);
-
-  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
-  const dock = useAnimatedStyle(() => ({
-    opacity: progress.value,
-    transform: [{ translateY: (1 - progress.value) * RISE }],
-  }));
-
-  if (!mounted) return null;
+  const answer = (choice: Choice) => {
+    handlers()?.answer(choice);
+    navigation.goBack();
+  };
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={onLater}>
-      <View style={styles.fill}>
-        <Animated.View style={[styles.fill, backdrop]} pointerEvents="none">
-          <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={styles.fill} />
-          <View style={[styles.fill, styles.wash]} />
-        </Animated.View>
-
+    <SheetScreen>
+      <View style={styles.body}>
+        <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
+          {t('setup.widget.nudgeTitle')}
+        </Text>
+        <Text style={[styles.text, { color: meter.caption }]}>{t('setup.widget.nudgeBody')}</Text>
+        <PrimaryButton label={t('setup.widget.nudgeAgain')} onPress={() => answer('again')} style={styles.cta} />
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={t('setup.widget.nudgeLater')}
-          style={styles.fill}
-          onPress={onLater}
-        />
-
-        <Animated.View
-          style={[styles.dock, { paddingTop: insets.top + 12, paddingBottom: Math.max(insets.bottom, 16) }, dock]}
-          pointerEvents="box-none">
-          <View style={[styles.card, { backgroundColor: colors.card }]}>
-            <Text style={[styles.title, { color: colors.foreground }]} accessibilityRole="header">
-              {t('setup.widget.nudgeTitle')}
-            </Text>
-            <Text style={[styles.body, { color: meter.caption }]}>{t('setup.widget.nudgeBody')}</Text>
-            <PrimaryButton label={t('setup.widget.nudgeAgain')} onPress={onAgain} style={styles.cta} />
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => {
-                Haptics.selectionAsync();
-                onLater();
-              }}
-              hitSlop={8}
-              style={({ pressed }) => [styles.later, pressed && { opacity: 0.6 }]}>
-              <Text style={[styles.laterText, { color: meter.caption }]}>{t('setup.widget.nudgeLater')}</Text>
-            </Pressable>
-          </View>
-        </Animated.View>
+          onPress={() => {
+            Haptics.selectionAsync();
+            answer('later');
+          }}
+          hitSlop={8}
+          style={({ pressed }) => [styles.later, pressed && { opacity: 0.6 }]}>
+          <Text style={[styles.laterText, { color: meter.caption }]}>{t('setup.widget.nudgeLater')}</Text>
+        </Pressable>
       </View>
-    </Modal>
+    </SheetScreen>
   );
 }
 
 const styles = StyleSheet.create({
-  fill: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  wash: {
-    backgroundColor: 'rgba(0,0,0,0.18)',
-  },
-  dock: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    justifyContent: 'flex-end',
-    paddingHorizontal: DOCK_PAD,
-  },
-  card: {
-    borderRadius: RADIUS,
-    borderCurve: 'continuous',
-    paddingTop: 20,
-    paddingBottom: 12,
-    paddingHorizontal: CARD_PAD,
-    alignItems: 'center',
-  },
+  body: { alignItems: 'center' },
   title: { ...fonts.heavy(24, -0.6), lineHeight: 29, textAlign: 'center' },
-  body: { ...fonts.regular(16), lineHeight: 22, textAlign: 'center', marginTop: 8 },
+  text: { ...fonts.regular(16), lineHeight: 22, textAlign: 'center', marginTop: 8 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
   later: { alignItems: 'center', paddingTop: 14, paddingBottom: 6 },
   laterText: fonts.semibold(15, -0.2),
