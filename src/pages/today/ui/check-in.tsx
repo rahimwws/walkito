@@ -1,3 +1,4 @@
+import PencilEdit02Icon from '@hugeicons/core-free-icons/PencilEdit02Icon';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
@@ -7,12 +8,12 @@ import { checkInOn, currentDay, isFirstStepTime, logPain, settleOffset, useLogsV
 import { SafetySheet } from '@/features/safety-check';
 import { colors, fonts, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { useSplashRevealed } from '@/shared/ui/splash';
 
 import { ANSWERS, ANSWER_SCORE, answerFor, answerLabel, type Answer } from '../model/check-in';
-import { PlainRow } from './plain-row';
-import { RoundArt } from './round-art';
+import { RoundAction } from './round-action';
 import { cardStyle } from './today-card';
 
 /**
@@ -55,19 +56,20 @@ export function CheckIn() {
 
   if (today != null && !editing) {
     return (
-      <View {...REPLAY_MASK}>
-        <PlainRow
-          emoji="foot"
-          accent="teal"
-          title={t('home.today.check.answered', { answer: t(answerLabel(answerFor(today.score), morning)) })}
-          action={{ label: t('home.today.check.change'), onPress: () => setEditing(true) }}>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => setSafety(true)}
-            style={({ pressed }) => [styles.link, pressed && styles.pressed]}>
-            <Text style={styles.linkText}>{t('home.somethingNewTitle')}</Text>
-          </Pressable>
-        </PlainRow>
+      <View style={styles.root} {...REPLAY_MASK}>
+        <View style={[styles.answered, stacked && styles.answeredStacked]}>
+          <View style={styles.answeredText} accessible accessibilityLabel={t('home.today.check.answered', { answer: t(answerLabel(answerFor(today.score), morning)) })}>
+            <Text style={styles.label}>{morning ? t('home.today.check.morning') : t('home.today.check.day')}</Text>
+            <Text style={styles.answer}>{t(answerLabel(answerFor(today.score), morning))}</Text>
+          </View>
+          <RoundAction icon={PencilEdit02Icon} label={t('home.today.check.change')} onPress={() => setEditing(true)} />
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => setSafety(true)}
+          style={({ pressed }) => [styles.link, pressed && styles.pressed]}>
+          <Text style={styles.linkText}>{t('home.somethingNewTitle')}</Text>
+        </Pressable>
         <SafetySheet visible={safety} onClose={() => setSafety(false)} />
       </View>
     );
@@ -76,10 +78,10 @@ export function CheckIn() {
   return (
     <View style={styles.root} {...REPLAY_MASK}>
       <View style={[styles.head, stacked && styles.headStacked]}>
-        <RoundArt emoji="foot" accent="teal" size={48} />
         <Text style={styles.question} accessibilityRole="header">
           {morning ? t('home.today.check.morning') : t('home.today.check.day')}
         </Text>
+        <FluentIcon name="foot" size={44} />
       </View>
       <View style={styles.words}>
         {ANSWERS.map((answer) => {
@@ -101,17 +103,22 @@ export function CheckIn() {
 }
 
 const styles = StyleSheet.create({
-  root: { ...cardStyle, padding: 16, gap: 16 },
-  head: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-  headStacked: { flexDirection: 'column', alignItems: 'flex-start' },
-  question: { ...fonts.semibold(19), color: colors.text, flexShrink: 1 },
+  root: { ...cardStyle, padding: 20, gap: 16 },
+  head: { flexDirection: 'row', alignItems: 'flex-start', gap: 14 },
+  headStacked: { flexDirection: 'column-reverse', alignItems: 'flex-start' },
+  question: { ...fonts.heavy(24, -0.4), color: colors.text, flexShrink: 1, flexGrow: 1 },
+  answered: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  answeredStacked: { flexDirection: 'column-reverse' },
+  answeredText: { flexShrink: 1, flexGrow: 1, gap: 2 },
+  label: { ...fonts.medium(17), color: colors.text3 },
+  answer: { ...fonts.heavy(30, -0.6), color: colors.text },
   words: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   word: {
     minHeight: target.primary,
     flexGrow: 1,
     flexBasis: '40%',
     borderRadius: 999,
-    backgroundColor: colors.surface2,
+    backgroundColor: colors.bg,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
@@ -119,7 +126,7 @@ const styles = StyleSheet.create({
   },
   wordStacked: { flexBasis: '100%' },
   wordPicked: { backgroundColor: colors.accent },
-  wordText: { ...fonts.semibold(19), color: colors.text, textAlign: 'center' },
+  wordText: { ...fonts.bold(19), color: colors.text, textAlign: 'center' },
   wordTextPicked: { color: colors.onInk },
   link: { alignSelf: 'flex-start', minHeight: target.min, justifyContent: 'center' },
   linkText: { ...fonts.semibold(17), color: colors.accent },

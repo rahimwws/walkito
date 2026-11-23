@@ -1,19 +1,18 @@
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Haptics from 'expo-haptics';
-import type { ComponentRef, Ref } from 'react';
 import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import type { PlanKind } from '@/entities/profile';
 import { doseSeconds, exerciseById, type NextSession } from '@/entities/program';
-import { CHROME_MAX_FONT_SCALE, colors, fonts, radius, space, target } from '@/shared/config';
+import { colors, fonts, target } from '@/shared/config';
 import { useCountdown } from '@/shared/lib/clock';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { waitPhrase } from '@/shared/lib/wait';
-import { posterFor, thumbFor } from '@/widgets/session-player';
+import { posterFor } from '@/widgets/session-player';
 
+import { PART_OF } from '../model/parts';
 import type { TodayWork } from '../model/today-work';
-import { CATEGORY_ACCENT, RoundArt } from './round-art';
+import { PartIcon } from './part-icon';
+import { RoundAction } from './round-action';
 import { TodayCard } from './today-card';
 
 export type SessionCardProps = {
@@ -25,140 +24,96 @@ export type SessionCardProps = {
   active: boolean;
   startLabel: string;
   onStart: () => void;
-  /** The photo opens the plan. */
-  onOpen: () => void;
   onWhy: () => void;
-  /** The tour's "dock.start" stop, on the Start button. */
-  startRef: Ref<ComponentRef<typeof View>>;
 };
 
-/** Moves shown on the card, two so Start stays above the tab bar; the meta
- * line counts them all. */
-const ROWS = 2;
-const THUMB = 44;
-/** The card's padding around the photo. */
-const INSET = 12;
-/** Titles stop growing at twice their size, so a word never breaks. */
-const TITLE_MAX_SCALE = 2;
+/** Moves listed on the card; the meta line counts them all. */
+const ROWS = 3;
+const PHOTO = 56;
+/** Big numbers stop growing at twice their size, so "5 min" never breaks. */
+const BIG_MAX_SCALE = 2;
 
 /**
- * Today's session as pliability's Today card and Alan's session card: the
- * first move's photo with a play badge and a "Today" pill, the plan's name,
- * "5 min · 3 moves", the first moves as rows with their round drawings, and
- * Start across the bottom of the card. Done, rest and test days keep their
- * own lines.
+ * Today's session as BitePal's home cards (#99, #98): a small grey label, the
+ * minutes as the big number, the round play button with the ring of moves
+ * done, the moves as label-and-value rows with their part icons, and the
+ * moves' photos in a row of overlapping circles.
  */
-export function SessionCard({ work, kind, ranToday, next, active, startLabel, onStart, onOpen, onWhy, startRef }: SessionCardProps) {
+export function SessionCard({ work, kind, ranToday, next, active, startLabel, onStart, onWhy }: SessionCardProps) {
   const t = useT();
   const language = useLanguage();
-  const { width, fontScale } = useWindowDimensions();
-  const photoHeight = Math.round((width - 2 * space.screen - 2 * INSET) / 2);
-  /** At large text sizes a move's circle sits at the top of its words. */
-  const large = fontScale >= 1.35;
-  // A test day has no moves of its own: the calf raise is its first test.
-  const poster = posterFor(work.type === 'test' ? 'heel_raise_plain' : (work.exerciseIds[0] ?? ''));
-  const partly = !work.done && work.ticked > 0 && work.exerciseIds.length > 0;
+  const large = useWindowDimensions().fontScale >= 1.35;
+  const total = work.exerciseIds.length;
   const showMoves = !work.done && work.type !== 'rest' && work.type !== 'test';
-  const context = contextLine(t, language, work, kind, ranToday);
+  const photos = work.exerciseIds.map((id) => posterFor(id)).filter((p) => p != null);
+
+  const big = work.done
+    ? t('home.today.done')
+    : work.type === 'rest'
+      ? t('home.today.rest.title')
+      : t('quick.minutes', { count: work.minutes });
 
   return (
     <TodayCard style={styles.card}>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={t('home.today.weekHint')}
-        onPress={() => {
-          void Haptics.selectionAsync();
-          onOpen();
-        }}
-        style={({ pressed }) => [styles.media, pressed && styles.pressed]}>
-        {poster != null ? (
-          <Image source={poster} style={[styles.photo, { height: photoHeight }]} resizeMode="cover" accessibilityIgnoresInvertColors />
-        ) : (
-          <View style={[styles.photo, styles.restBand, { height: photoHeight }]}>
-            <RoundArt emoji={work.done ? 'check' : 'rest'} accent={work.done ? 'teal' : 'blue'} size={96} />
-          </View>
-        )}
-        <View style={styles.pill}>
-          <Text style={styles.pillText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE} numberOfLines={1}>
-            {t('tabs.today')}
+      <View style={[styles.head, large && styles.headLarge]}>
+        <View style={styles.headText}>
+          <Text style={styles.label}>{t('home.today.sessionLabel')}</Text>
+          <Text
+            style={[styles.big, (work.done || work.type === 'rest') && styles.bigWord]}
+            accessibilityRole="header"
+            maxFontSizeMultiplier={BIG_MAX_SCALE}>
+            {big}
           </Text>
         </View>
-        {poster != null && (
-          <View style={styles.play}>
-            <HugeiconsIcon icon={PlayIcon} size={22} color={colors.accent} strokeWidth={2.2} />
-          </View>
-        )}
-      </Pressable>
+        <RoundAction
+          icon={PlayIcon}
+          label={startLabel}
+          onPress={onStart}
+          progress={total > 0 && !work.done ? work.ticked / total : work.done ? 1 : undefined}
+        />
+      </View>
 
-      <View style={styles.body}>
-        <Text style={styles.plan}>{t(`story.plan.${kind}`)}</Text>
-        {work.done ? (
-          <>
-            <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_MAX_SCALE}>
-              {t('home.today.done')}
-            </Text>
-            <NextLine next={next} active={active} />
-          </>
-        ) : work.type === 'rest' ? (
-          <>
-            <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_MAX_SCALE}>
-              {t('home.today.rest.title')}
-            </Text>
-            <Text style={styles.meta}>{t('home.today.restMeta')}</Text>
-          </>
-        ) : (
-          <>
-            <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_MAX_SCALE}>
-              {t('home.today.cardMeta', {
-                minutes: t('quick.minutes', { count: work.minutes }),
-                moves:
-                  work.type === 'test'
-                    ? t('home.today.testMeta', { count: work.tests })
-                    : t('quick.moves', { count: work.exerciseIds.length }),
-              })}
-            </Text>
-            {context != null && <Text style={styles.meta}>{context}</Text>}
-          </>
-        )}
+      {work.done ? (
+        <NextLine next={next} active={active} />
+      ) : (
+        <Text style={styles.meta}>
+          {work.type === 'rest' ? t('home.today.restMeta') : metaLine(t, language, work, kind, ranToday)}
+        </Text>
+      )}
 
-        {partly && (
-          <View style={styles.progress}>
-            <View style={styles.track}>
-              <View style={[styles.fill, { flex: work.ticked }]} />
-              <View style={{ flex: work.exerciseIds.length - work.ticked }} />
-            </View>
-            <Text style={styles.meta}>{t('home.today.progress', { count: work.ticked, total: work.exerciseIds.length })}</Text>
-          </View>
-        )}
-
-        {showMoves && (
-          <View style={styles.moves}>
-            {work.exercises.slice(0, ROWS).map((exercise) => {
-              const move = exerciseById(exercise.id);
-              return (
-                <View key={exercise.id} style={[styles.move, large && styles.moveLarge]}>
-                  <RoundArt source={thumbFor(exercise.id)} accent={CATEGORY_ACCENT[move.category]} size={THUMB} />
-                  <View style={styles.moveText}>
-                    <Text style={styles.moveTitle}>{move.title}</Text>
-                    <Text style={styles.moveDose}>{doseLine(t, doseSeconds(exercise.dose))}</Text>
-                  </View>
+      {showMoves && (
+        <View style={styles.moves}>
+          {work.exercises.slice(0, ROWS).map((exercise) => {
+            const part = PART_OF[exercise.id];
+            return (
+              <View key={exercise.id} style={styles.move}>
+                <View style={styles.moveText}>
+                  <Text style={styles.moveLabel}>{exerciseById(exercise.id).title}</Text>
+                  <Text style={styles.moveValue}>{doseLine(t, doseSeconds(exercise.dose))}</Text>
                 </View>
-              );
-            })}
-          </View>
-        )}
-
-        <View ref={startRef} collapsable={false} style={styles.start}>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => {
-              void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-              onStart();
-            }}
-            style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}>
-            <Text style={styles.buttonText}>{startLabel}</Text>
-          </Pressable>
+                {part != null && <PartIcon part={part} size={48} />}
+              </View>
+            );
+          })}
         </View>
+      )}
+
+      {photos.length > 0 && !work.done && (
+        <View style={styles.photos} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+          {photos.slice(0, 5).map((source, index) => (
+            <Image
+              key={index}
+              source={source}
+              style={[styles.photo, index > 0 && styles.photoOverlap]}
+              resizeMode="cover"
+              accessibilityIgnoresInvertColors
+            />
+          ))}
+        </View>
+      )}
+
+      <View style={styles.foot}>
+        <Text style={styles.footText}>{t(`story.plan.${kind}`)}</Text>
         <Pressable accessibilityRole="button" onPress={onWhy} style={({ pressed }) => [styles.why, pressed && styles.pressed]}>
           <Text style={styles.whyText}>{t('home.why.title')}</Text>
         </Pressable>
@@ -173,22 +128,22 @@ function doseLine(t: Translate, seconds: number): string {
   return rounded >= 60 ? t('quick.minutes', { count: Math.round(rounded / 60) }) : t('quick.seconds', { count: rounded });
 }
 
-/** Where the moves are done, or where the session sits around a run. */
-function contextLine(t: Translate, language: string, work: TodayWork, kind: PlanKind, ranToday: boolean): string | null {
-  if (work.type === 'test') return null;
+/** "3 moves · in a chair", or where it sits around a run, or the tests. */
+function metaLine(t: Translate, language: string, work: TodayWork, kind: PlanKind, ranToday: boolean): string {
+  if (work.type === 'test') return t('home.today.testMeta', { count: work.tests });
   if (kind === 'runner') {
     if (ranToday) return t('home.today.afterRun');
     if (work.type === 'recovery') return t('home.today.recovery');
     return t('home.today.beforeRun');
   }
-  // The where-words are written to follow "3 moves · "; alone, they open the line.
   const where =
     work.where === 'chair'
       ? t('home.today.whereChair')
       : work.where === 'standing'
         ? t('home.today.whereStanding')
         : t('home.today.whereMixed');
-  return where.charAt(0).toLocaleUpperCase(language) + where.slice(1);
+  const line = t('home.today.meta', { moves: t('quick.moves', { count: work.exerciseIds.length }), where });
+  return line.charAt(0).toLocaleUpperCase(language) + line.slice(1);
 }
 
 /** When the next session opens: counted within a day, named beyond it. */
@@ -209,58 +164,32 @@ function NextLine({ next, active }: { next: NextSession | null; active: boolean 
 }
 
 const styles = StyleSheet.create({
-  card: { padding: INSET },
-  media: { borderRadius: radius.photo, borderCurve: 'continuous', overflow: 'hidden' },
-  photo: { width: '100%', backgroundColor: colors.surface2 },
-  restBand: { alignItems: 'center', justifyContent: 'center', backgroundColor: colors.accentSoft },
-  pill: {
-    position: 'absolute',
-    top: 12,
-    left: 12,
-    paddingHorizontal: 12,
-    paddingVertical: 4,
-    borderRadius: 999,
-    backgroundColor: colors.surface,
-  },
-  pillText: { ...fonts.semibold(17), color: colors.text },
-  play: {
-    position: 'absolute',
-    right: 12,
-    bottom: 12,
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.surface,
-    boxShadow: '0px 2px 8px rgba(17, 17, 20, 0.18)',
-  },
-  body: { paddingHorizontal: 8, paddingTop: 12, paddingBottom: 0, gap: 2 },
-  plan: { ...fonts.medium(17), color: colors.text2 },
-  title: { ...fonts.bold(26, -0.4), color: colors.text },
-  meta: { ...fonts.regular(17), color: colors.text2 },
-  progress: { gap: 8, marginTop: 10 },
-  track: { flexDirection: 'row', height: 6, borderRadius: 3, backgroundColor: colors.surface2, overflow: 'hidden' },
-  fill: { backgroundColor: colors.accent },
-  moves: { marginTop: 12, gap: 8 },
-  move: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-  moveLarge: { alignItems: 'flex-start' },
+  card: { gap: 4 },
+  head: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  headLarge: { flexDirection: 'column-reverse', alignItems: 'flex-start' },
+  headText: { flexShrink: 1, flexGrow: 1, gap: 2 },
+  label: { ...fonts.medium(17), color: colors.text3 },
+  big: { ...fonts.heavy(44, -1), color: colors.text, fontVariant: ['tabular-nums'] },
+  bigWord: fonts.heavy(30, -0.6),
+  meta: { ...fonts.medium(17), color: colors.text2 },
+  moves: { marginTop: 14, gap: 14 },
+  move: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   moveText: { flex: 1, gap: 1 },
-  moveTitle: { ...fonts.semibold(17), color: colors.text },
-  moveDose: { ...fonts.regular(17), color: colors.text2 },
-  start: { marginTop: 14 },
-  button: {
-    minHeight: target.primary,
-    borderRadius: 999,
-    backgroundColor: colors.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 12,
+  moveLabel: { ...fonts.medium(17), color: colors.text3 },
+  moveValue: { ...fonts.heavy(19), color: colors.text },
+  photos: { flexDirection: 'row', marginTop: 16 },
+  photo: {
+    width: PHOTO,
+    height: PHOTO,
+    borderRadius: PHOTO / 2,
+    borderWidth: 3,
+    borderColor: colors.surface,
+    backgroundColor: colors.surface2,
   },
-  buttonPressed: { opacity: 0.85 },
-  buttonText: { ...fonts.semibold(19), color: colors.onInk, textAlign: 'center' },
-  why: { alignSelf: 'center', minHeight: target.min, justifyContent: 'center' },
-  whyText: { ...fonts.medium(17), color: colors.text2, textDecorationLine: 'underline' },
-  pressed: { opacity: 0.7 },
+  photoOverlap: { marginLeft: -14 },
+  foot: { marginTop: 12, gap: 0 },
+  footText: { ...fonts.medium(17), color: colors.text3 },
+  why: { alignSelf: 'flex-start', minHeight: target.min, justifyContent: 'center' },
+  whyText: { ...fonts.semibold(17), color: colors.accent },
+  pressed: { opacity: 0.6 },
 });

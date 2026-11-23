@@ -4,7 +4,7 @@ import type { PlanKind } from '@/entities/profile';
 import { protocolById, type ProtocolId } from '@/entities/protocols';
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { thumbFor } from '@/widgets/session-player';
+import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { useOpenRoutine } from '../model/use-open-routine';
 import { RoundArt } from './round-art';
@@ -17,11 +17,21 @@ const ROUTINES: Readonly<Record<PlanKind, readonly ProtocolId[]>> = {
   runner: ['pre_run', 'post_run', 'at_work', 'first_steps'],
 };
 
-const ART = 64;
+const ART = 56;
+
+/** Where each routine is done: in bed, at the desk, on the run. */
+const ICON: Readonly<Record<ProtocolId, FluentName>> = {
+  first_steps: 'bed',
+  at_work: 'briefcase',
+  pre_run: 'run',
+  post_run: 'shoe',
+  morning: 'sunrise',
+  flare: 'relief',
+};
 
 /**
- * Bend's routine grid: two columns of white tiles, each a coloured circle
- * holding the routine's first move, its name in bold and "2 MINUTES" under
+ * The quick routines as two columns of white tiles: a coloured circle with
+ * where the routine is done (bed, desk, run), its name in bold and "2 minutes" under
  * it. One column at large text sizes. A tile opens the routine's page.
  */
 export function RoutineGrid({ kind }: { kind: PlanKind }) {
@@ -39,7 +49,7 @@ export function RoutineGrid({ kind }: { kind: PlanKind }) {
             accessibilityRole="button"
             onPress={() => openRoutine(id)}
             style={({ pressed }) => [styles.tile, single && styles.tileSingle, pressed && styles.pressed]}>
-            <RoundArt source={thumbFor(protocol.steps[0].exerciseId)} accent={protocol.accent} size={ART} />
+            <RoundArt emoji={ICON[id]} accent={protocol.accent} size={ART} />
             <View style={styles.text}>
               <Text style={styles.title}>{t(protocol.titleKey)}</Text>
               <Text style={styles.minutes}>{t('home.today.tileMinutes', { count: protocol.minutes })}</Text>
@@ -53,10 +63,10 @@ export function RoutineGrid({ kind }: { kind: PlanKind }) {
 
 const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
-  tile: { ...cardStyle, flexBasis: '45%', flexGrow: 1, padding: 16, gap: 14 },
+  tile: { ...cardStyle, flexBasis: '45%', flexGrow: 1, padding: 18, gap: 14 },
   tileSingle: { flexBasis: '100%' },
   text: { flexShrink: 1, gap: 2 },
-  title: { ...fonts.bold(19, -0.2), color: colors.text },
-  minutes: { ...fonts.semibold(17, 0.4), color: colors.text3, textTransform: 'uppercase' },
+  title: { ...fonts.heavy(19, -0.2), color: colors.text },
+  minutes: { ...fonts.medium(17), color: colors.text3 },
   pressed: { opacity: 0.7 },
 });
