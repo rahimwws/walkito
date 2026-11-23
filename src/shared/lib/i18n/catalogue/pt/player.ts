@@ -42,6 +42,7 @@ export const PLAYER_PT = {
   'player.painRule.a11y': 'Quanta dor é aceitável',
   'player.tempo.on': 'Som ligado',
   'player.tempo.off': 'Som desligado',
+  'player.more.a11y': 'Mais opções',
   'player.voice.replay': 'Repetir a explicação',
 
   // ── The player's own chrome ───────────────────────────────────────────────
@@ -97,4 +98,10 @@ export const PLAYER_PT = {
   'player.cta.skipA11y': 'Pular este movimento',
   'player.a11y.move': '{name}. {time}. A seguir: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Último movimento.',
+  'player.card.timeLeft': 'Tempo restante',
+  'player.card.reps': 'Repetições',
+  'player.card.progress': 'Progresso',
+  'player.card.next': 'A seguir',
+  'player.card.lastMove': 'Último movimento',
+  'player.detail.doneToday': 'Feito hoje',
 };

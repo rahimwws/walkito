@@ -190,4 +190,6 @@ export const TESTDAY_FR = {
   'testday.results.explain.balance':
     'Tenir sur une jambe les yeux fermés montre à quel point ton pied et ta cheville sentent le sol. Plus de secondes veut dire des pas plus sûrs sur un terrain inégal et quand la fatigue arrive.',
   'testday.results.explainA11y': 'Ce que cela montre',
+  'testday.card.goalRaises': { one: 'Objectif : {count} montée', other: 'Objectif : {count} montées' },
+  'testday.card.goalSeconds': 'Objectif : {goal} s',
 };

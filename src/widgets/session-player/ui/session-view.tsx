@@ -1,7 +1,18 @@
+import Backward01Icon from '@hugeicons/core-free-icons/Backward01Icon';
+import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
+import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
+import MoreHorizontalIcon from '@hugeicons/core-free-icons/MoreHorizontalIcon';
+import NextIcon from '@hugeicons/core-free-icons/NextIcon';
+import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
+import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import VolumeHighIcon from '@hugeicons/core-free-icons/VolumeHighIcon';
+import VolumeOffIcon from '@hugeicons/core-free-icons/VolumeOffIcon';
 import * as Haptics from 'expo-haptics';
 import { VideoView } from 'expo-video';
-import { useEffect } from 'react';
-import { Image, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -14,33 +25,46 @@ import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 
 import { planMeta } from '@/entities/program';
 import { askForPlans, clearBrowsingLapsed, useLookingAround, useSessionsLocked } from '@/entities/purchase';
-import { CHROME_MAX_FONT_SCALE, fonts } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, bitepal, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { setSoundPrefs } from '@/shared/lib/sound';
 
 import { useSessionRun, type SessionViewProps } from '../model/use-session-run';
 import { CountIn } from './player/count-in';
 import { Done } from './player/done';
-import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, ink } from './player/kit';
+import {
+  CardLabel,
+  Capsule,
+  NUMERAL_SCALE,
+  RoundButton,
+  SIDE,
+  TITLE_SCALE,
+  TextButton,
+  cardStyle,
+  ink,
+  moveColor,
+  soft,
+} from './player/kit';
 import { Rest } from './player/rest';
-import { CantDoSheet, PainRuleSheet, PainSheet } from './player/sheets';
+import { CantDoSheet, InfoSheet, MenuSheet, PainRuleSheet, PainSheet } from './player/sheets';
+import { CountdownRing } from './test-day/countdown-ring';
 
 export type { PlaylistStep, SessionViewProps } from '../model/use-session-run';
 
-/** The row Close, the position and Sound sit in. */
-const HEADER = 52;
-/** The bar under it: one segment per move. */
-const BAR = 3;
-const TOP = HEADER + BAR + 8;
-const NUMERAL = 96;
+/** The row Close, the position, Sound and More sit in. */
+const HEADER = 60;
+const TOP = HEADER + 1;
+const NUMERAL = 64;
+/** The ring on the timer card, BitePal's END button: fills as the move runs,
+ * and finishes the set or the move on a tap. */
+const END_RING = 84;
 /** The clips are filmed upright, 9:16, on the studio grey. */
 const CLIP_SHAPE = 9 / 16;
-const EDGE_FADE = 28;
+const EDGE_FADE = 22;
 
-/** "42" under a minute, then "1:05". */
-function shortClock(seconds: number): string {
-  if (seconds < 60) return String(seconds);
-  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+/** "00:42", as BitePal's timer reads. */
+function clock(seconds: number): string {
+  return String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
 }
 
 /**
@@ -75,7 +99,7 @@ function SessionLocked({ onBack, looking }: { onBack: () => void; looking: boole
   return (
     <View style={[styles.locked, { paddingBottom: Math.max(insets.bottom, 16) }]}>
       <View style={styles.header}>
-        <TextButton label={t('common.back')} onPress={onBack} />
+        <RoundButton icon={Cancel01Icon} size={44} label={t('common.back')} onPress={onBack} />
       </View>
       <View style={styles.lockedMiddle}>
         <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" style={styles.lockedTitle}>
@@ -90,7 +114,7 @@ function SessionLocked({ onBack, looking }: { onBack: () => void; looking: boole
 
 /** One side of an upright clip, melted into the studio grey around it. */
 function EdgeFade({ side }: { side: 'left' | 'right' }) {
-  const id = `edge-${side}`;
+  const id = 'edge-' + side;
   return (
     <View style={[styles.edgeFade, side === 'left' ? { left: 0 } : { right: 0 }]}>
       <Svg width="100%" height="100%">
@@ -100,26 +124,32 @@ function EdgeFade({ side }: { side: 'left' | 'right' }) {
             <Stop offset="1" stopColor={ink.studio} stopOpacity={0} />
           </LinearGradient>
         </Defs>
-        <Rect x="0" y="0" width="100%" height="100%" fill={`url(#${id})`} />
+        <Rect x="0" y="0" width="100%" height="100%" fill={'url(#' + id + ')'} />
       </Svg>
     </View>
   );
 }
 
 /**
- * One session, playing (NTC #27, NRC #34). One move per screen: the clip
- * edge to edge, its name, one black numeral for the time or the rep, the
- * black capsule to pause, Back and Skip in words. Close, where the session
- * stands and Sound sit in the header, the move's place in a thin bar under
- * it. Everything the session does lives in `useSessionRun`.
+ * One session, playing, copied from Bend's player: "2 of 4" at the top
+ * centre between a round close and round Sound and More buttons; the clip in
+ * a circle on the move's pastel disc, wrapped by a ring that fills as the move
+ * runs; the move's name with an (i) for how to do it; the time, or the rep
+ * count, large; the set under it; and the transport row of back, a big round
+ * pause and a tick that finishes the set. Skip, "It hurts" and "Can't do
+ * this" stay in words under it; the rest lives behind More. Everything the
+ * session does lives in useSessionRun.
  */
 function SessionRun(props: SessionViewProps) {
   const { day, onBack, moves: override, title, onFinish, feedback = true } = props;
   const run = useSessionRun(props);
   const t = useT();
   const insets = useSafeAreaInsets();
-  const { height } = useWindowDimensions();
+  const { width, height, fontScale } = useWindowDimensions();
+  const large = fontScale > 1.6;
   const floor = Math.max(insets.bottom, 20);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
   const {
     current,
     finished,
@@ -140,16 +170,16 @@ function SessionRun(props: SessionViewProps) {
     poseOn.value = withTiming(showPose ? 1 : 0, { duration: 220, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System });
   }, [showPose, poseOn]);
   const poseStyle = useAnimatedStyle(() => ({ opacity: poseOn.value }));
-  const fill = useAnimatedStyle(() => ({ width: `${Math.min(Math.max(progress.value, 0), 1) * 100}%` }));
 
   const center =
     ctaState === 'running'
-      ? { label: t('player.cta.pause'), onPress: run.pauseByHand }
+      ? { label: t('player.cta.pause'), icon: PauseIcon, onPress: run.pauseByHand }
       : ctaState === 'paused'
-        ? { label: t('player.cta.resume'), onPress: run.resumeByHand }
+        ? { label: t('player.cta.resume'), icon: PlayIcon, onPress: run.resumeByHand }
         : ctaState === 'ready'
           ? {
               label: last ? t('widgets.sessionFinish') : t('widgets.sessionContinue'),
+              icon: last ? Tick02Icon : NextIcon,
               onPress: () => {
                 run.setPlaying(true);
                 run.advance();
@@ -157,18 +187,13 @@ function SessionRun(props: SessionViewProps) {
             }
           : {
               label: t('player.cta.done'),
+              icon: Tick02Icon,
               onPress: () => {
                 if (!run.closedDone.current) run.setCelebrating(true);
               },
             };
 
-  const numeral = repCount != null ? t('player.repCount', repCount) : shortClock(remaining);
-  const unit =
-    repCount != null
-      ? t('player.unit.reps', { count: repCount.reps })
-      : remaining < 60
-        ? t('testday.secondsLeft', { count: remaining })
-        : null;
+  const numeral = repCount != null ? t('player.repCount', repCount) : clock(remaining);
   /** What to do this second and which foot, as one plain line: "Hold · Right foot". */
   const nowLine = [run.pill?.label, run.sideNow == null ? null : t(run.sideNow === 'left' ? 'widgets.sideLeft' : 'widgets.sideRight')]
     .filter((part): part is string => part != null)
@@ -176,16 +201,21 @@ function SessionRun(props: SessionViewProps) {
   const index = step + 1;
   const position = title != null && moveCount <= 1 ? title : t('player.chip.position', { index, total: moveCount });
   const canSwitchMedia = run.wideClip && run.drawing != null && !finished;
+  const exerciseId = current?.exercise?.id ?? null;
+  const color = moveColor(exerciseId);
+
+  const disc = Math.round(Math.min(width - 2 * 56, height * (large ? 0.22 : 0.3), 340));
+  const clipSize = Math.round(disc * 0.9);
+
+  const ask = (open: () => void) => {
+    run.pauseForQuestion();
+    open();
+  };
 
   return (
     <View style={styles.root}>
       <View style={styles.header}>
-        <TextButton
-          label={t('common.close')}
-          accessibilityLabel={t('player.close.a11y')}
-          onPress={run.askClose}
-          maxScale={CHROME_MAX_FONT_SCALE}
-        />
+        <RoundButton icon={Cancel01Icon} size={44} label={t('player.close.a11y')} onPress={run.askClose} />
         <Text
           accessibilityRole="header"
           accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
@@ -194,30 +224,15 @@ function SessionRun(props: SessionViewProps) {
           maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
           {position}
         </Text>
-        <TextButton
-          label={run.sound.tempo ? t('player.tempo.on') : t('player.tempo.off')}
-          quiet
-          onPress={() => setSoundPrefs({ tempo: !run.sound.tempo })}
-          style={styles.headerRight}
-          maxScale={CHROME_MAX_FONT_SCALE}
-        />
-      </View>
-
-      <View
-        accessible
-        accessibilityRole="progressbar"
-        accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
-        accessibilityValue={{ min: 0, max: moveCount, now: finished ? moveCount : step }}
-        style={styles.bar}>
-        {run.moves.map((_, at) => (
-          <View key={at} style={styles.segment}>
-            {at < step || finished ? (
-              <View style={[styles.segmentFill, styles.full]} />
-            ) : at === step ? (
-              <Animated.View style={[styles.segmentFill, fill]} />
-            ) : null}
-          </View>
-        ))}
+        <View style={styles.headerRight}>
+          <RoundButton
+            icon={run.sound.tempo ? VolumeHighIcon : VolumeOffIcon}
+            size={44}
+            label={run.sound.tempo ? t('player.tempo.on') : t('player.tempo.off')}
+            onPress={() => setSoundPrefs({ tempo: !run.sound.tempo })}
+          />
+          <RoundButton icon={MoreHorizontalIcon} size={44} label={t('player.more.a11y')} onPress={() => setMenuOpen(true)} />
+        </View>
       </View>
 
       <ScrollView
@@ -225,154 +240,162 @@ function SessionRun(props: SessionViewProps) {
         contentContainerStyle={[styles.body, { paddingBottom: floor }]}
         showsVerticalScrollIndicator={false}
         bounces={false}>
-        <View style={[styles.stage, { minHeight: Math.round(height * 0.36) }]}>
-          <VideoView
-            style={[styles.video, run.mirrored && styles.mirrored]}
-            player={run.player}
-            nativeControls={false}
-            contentFit={run.wideClip ? 'cover' : 'contain'}
-          />
-          {!run.wideClip && (
-            <View pointerEvents="none" style={styles.edgeRow}>
-              <View style={styles.edgeSpacer} />
-              <View style={styles.edgeBox}>
-                <EdgeFade side="left" />
-                <EdgeFade side="right" />
-              </View>
-              <View style={styles.edgeSpacer} />
-            </View>
-          )}
-          {run.wideClip && run.drawing != null && (
-            <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
-              <Image source={run.drawing} resizeMode="contain" style={styles.poseImage} accessibilityIgnoresInvertColors />
-            </Animated.View>
-          )}
-          {run.clipFailed && !showPose && (
-            <View style={styles.clipFailed} pointerEvents="none">
-              <Text style={styles.clipFailedText}>{t('widgets.clipFailed')}</Text>
-            </View>
-          )}
-        </View>
-
-        {(run.canReplay || canSwitchMedia) && (
-          <View style={styles.mediaRow}>
-            {run.canReplay ? (
-              <TextButton
-                label={t('player.voice.replay')}
-                quiet
-                onPress={run.replayInstruction}
-                style={styles.shrink}
-                maxScale={CHROME_MAX_FONT_SCALE}
+        <View style={styles.moveCard}>
+          <View
+            style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(color) }]}
+            accessible
+            accessibilityRole="progressbar"
+            accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
+            accessibilityValue={{ min: 0, max: moveCount, now: finished ? moveCount : step }}>
+            <View style={[styles.clip, { width: clipSize, height: clipSize, borderRadius: clipSize / 2 }]}>
+              <VideoView
+                style={[styles.video, run.mirrored && styles.mirrored]}
+                player={run.player}
+                nativeControls={false}
+                contentFit={run.wideClip ? 'cover' : 'contain'}
               />
-            ) : (
-              <View />
-            )}
-            {canSwitchMedia && (
-              <TextButton
-                label={t(showPose ? 'player.media.video' : 'player.media.pose')}
-                quiet
-                onPress={() => run.setMedia(showPose ? 'video' : 'pose')}
-                maxScale={CHROME_MAX_FONT_SCALE}
-              />
-            )}
+              {!run.wideClip && (
+                <View pointerEvents="none" style={styles.edgeRow}>
+                  <View style={styles.edgeSpacer} />
+                  <View style={styles.edgeBox}>
+                    <EdgeFade side="left" />
+                    <EdgeFade side="right" />
+                  </View>
+                  <View style={styles.edgeSpacer} />
+                </View>
+              )}
+              {run.wideClip && run.drawing != null && (
+                <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.pose, poseStyle]}>
+                  <Image source={run.drawing} resizeMode="contain" style={styles.poseImage} accessibilityIgnoresInvertColors />
+                </Animated.View>
+              )}
+              {run.clipFailed && !showPose && (
+                <View style={styles.clipFailed} pointerEvents="none">
+                  <Text style={styles.clipFailedText}>{t('widgets.clipFailed')}</Text>
+                </View>
+              )}
+            </View>
           </View>
-        )}
 
-        <View style={styles.text}>
           {(run.carryOn || run.swapNote != null) && (
             <Text style={styles.note} accessibilityLiveRegion="polite">
               {run.carryOn ? t('widgets.painCarryOn') : run.swapNote}
             </Text>
           )}
-          <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityLabel={run.spokenMove} style={styles.name}>
-            {move}
-          </Text>
+          <View style={styles.nameRow}>
+            <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityLabel={run.spokenMove} style={styles.name}>
+              {move}
+            </Text>
+            {!finished && current?.exercise != null && (
+              <RoundButton
+                icon={InformationCircleIcon}
+                tone="well"
+                size={36}
+                iconSize={20}
+                label={t('player.sheet.stepsTitle')}
+                onPress={() => ask(() => setInfoOpen(true))}
+              />
+            )}
+          </View>
           {run.cueLine != null && !finished && <Text style={styles.cue}>{run.cueLine}</Text>}
           {nowLine.length > 0 && !finished && (
-            <Text style={styles.now} accessibilityLiveRegion="polite">
-              {nowLine}
-            </Text>
-          )}
-          {run.counter != null && (
-            <Text accessibilityLabel={run.counter.spoken} style={styles.line}>
-              {run.counter.text}
-            </Text>
-          )}
-          {!finished && (current?.addWeight === true || run.loadNote != null) && (
-            <Text style={styles.line}>{current?.addWeight === true ? t('player.load.backpack') : run.loadNote}</Text>
+            <View style={styles.pill}>
+              <Text style={styles.pillText} accessibilityLiveRegion="polite">
+                {nowLine}
+              </Text>
+            </View>
           )}
         </View>
 
-        <View
-          accessible
-          accessibilityRole="timer"
-          accessibilityLabel={repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })}
-          style={[styles.timer, run.breakSegment != null && styles.hidden]}>
-          <Text
-            maxFontSizeMultiplier={NUMERAL_SCALE}
-            style={[styles.numeral, ctaState === 'paused' && styles.dim]}
-            numberOfLines={1}
-            adjustsFontSizeToFit>
-            {numeral}
-          </Text>
-          {unit != null && <Text style={styles.unit}>{unit}</Text>}
-        </View>
-
-        <View style={styles.controls}>
-          <Capsule
-            label={center.label}
-            onPress={center.onPress}
-          />
-          <View style={styles.transport}>
-            <TextButton label={t('player.cta.back')} accessibilityLabel={t('player.cta.backA11y')} onPress={run.stepBack} disabled={finished} />
-            {run.showSetDone && (
-              <TextButton label={t('player.cta.setDone')} onPress={run.skipSegment} />
-            )}
-            <TextButton label={t('player.cta.skip')} accessibilityLabel={t('player.cta.skipA11y')} onPress={run.skipMove} disabled={finished} />
+        <View style={[styles.timerCard, run.breakSegment != null && styles.hidden]}>
+          <View style={[styles.timerTop, large && styles.timerTopStacked]}>
+            <View
+              style={styles.timerFigure}
+              accessible
+              accessibilityRole="timer"
+              accessibilityLabel={repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })}>
+              <CardLabel>{repCount != null ? t('player.card.reps') : t('player.card.timeLeft')}</CardLabel>
+              <Text
+                maxFontSizeMultiplier={NUMERAL_SCALE}
+                style={[styles.numeral, ctaState === 'paused' && styles.dim]}
+                numberOfLines={1}
+                adjustsFontSizeToFit>
+                {numeral}
+              </Text>
+            </View>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={run.showSetDone ? t('player.cta.setDone') : t('player.cta.skipA11y')}
+              disabled={finished}
+              onPress={() => {
+                void Haptics.selectionAsync();
+                if (run.showSetDone) run.skipSegment();
+                else run.skipMove();
+              }}
+              hitSlop={6}
+              style={({ pressed }) => [finished && styles.off, pressed && styles.pressed]}>
+              <CountdownRing size={END_RING} stroke={7} left={progress} tone={{ fill: color, track: bitepal.track }}>
+                <View style={styles.endWell}>
+                  <HugeiconsIcon icon={Tick02Icon} size={26} color={ink.text} strokeWidth={2.4} />
+                </View>
+              </CountdownRing>
+            </Pressable>
           </View>
-          {!finished && current?.exercise != null && (
-            <View style={styles.asides}>
-              <TextButton
-                label={t('widgets.painButton')}
-                quiet
-                onPress={() => {
-                  run.pauseForQuestion();
-                  run.setAskingPain(true);
-                }}
-              />
-              <TextButton
-                label={t('player.cantDo.button')}
-                quiet
-                onPress={() => {
-                  run.pauseForQuestion();
-                  run.setAskingCantDo(true);
-                }}
-              />
-              <TextButton
-                label={t('player.painRule.title')}
-                quiet
-                onPress={() => {
-                  run.pauseForQuestion();
-                  run.setRuleOpen(true);
-                }}
-              />
-            </View>
-          )}
-          {run.nextMove != null && !finished && (
-            <View style={styles.next} accessible>
-              {run.nextThumb != null && (
-                <Image source={run.nextThumb} resizeMode="cover" style={styles.nextThumb} accessibilityIgnoresInvertColors />
-              )}
-              <Text style={styles.nextText}>{t('player.next', { name: run.nextMove })}</Text>
-            </View>
+
+          <View style={[styles.columns, large && styles.columnsStacked]}>
+            {run.counter != null && (
+              <View style={styles.column}>
+                <CardLabel>{t('player.card.progress')}</CardLabel>
+                <Text accessibilityLabel={run.counter.spoken} style={styles.columnValue}>
+                  {run.counter.text}
+                </Text>
+              </View>
+            )}
+            {!finished && (
+              <View style={styles.column} accessible>
+                <CardLabel>{t('player.card.next')}</CardLabel>
+                <Text style={styles.columnValue}>{run.nextMove ?? t('player.card.lastMove')}</Text>
+              </View>
+            )}
+          </View>
+          {!finished && (current?.addWeight === true || run.loadNote != null) && (
+            <Text style={styles.load}>{current?.addWeight === true ? t('player.load.backpack') : run.loadNote}</Text>
           )}
         </View>
+
+        <View style={styles.transport}>
+          <RoundButton
+            icon={Backward01Icon}
+            size={64}
+            iconSize={26}
+            label={t('player.cta.backA11y')}
+            onPress={run.stepBack}
+            disabled={finished}
+          />
+          <RoundButton icon={center.icon} tone="ink" size={84} iconSize={34} label={center.label} onPress={center.onPress} />
+          <RoundButton
+            icon={NextIcon}
+            size={64}
+            iconSize={26}
+            label={t('player.cta.skipA11y')}
+            onPress={run.skipMove}
+            disabled={finished}
+          />
+        </View>
+
+        {!finished && current?.exercise != null && (
+          <View style={styles.asides}>
+            <TextButton label={t('widgets.painButton')} quiet onPress={() => ask(() => run.setAskingPain(true))} />
+            <TextButton label={t('player.cantDo.button')} quiet onPress={() => ask(() => run.setAskingCantDo(true))} />
+          </View>
+        )}
       </ScrollView>
 
       <CountIn
         from={finished ? null : run.countFrom}
         eyebrow={run.countNext ? t('player.countIn.nextUp') : t('player.countIn.getReady')}
         title={move ?? ''}
+        exerciseId={exerciseId}
         top={TOP}
         bottom={floor}
         onDone={() => run.setCountFrom(null)}
@@ -380,14 +403,14 @@ function SessionRun(props: SessionViewProps) {
 
       <Rest
         segment={run.breakSegment}
-        id={run.breakSegment == null ? null : `${step}:${reading?.index ?? 0}`}
+        id={run.breakSegment == null ? null : step + ':' + (reading?.index ?? 0)}
         secondsLeft={reading?.secondsLeft ?? 0}
         progress={progress}
         moveMs={run.moveMs}
         running={run.running}
         playing={run.playing}
         move={move ?? ''}
-        exerciseId={current?.exercise?.id ?? null}
+        exerciseId={exerciseId}
         top={TOP}
         bottom={floor}
         onSkip={run.skipSegment}
@@ -395,6 +418,45 @@ function SessionRun(props: SessionViewProps) {
         onResume={() => {
           void Haptics.selectionAsync();
           run.setPlaying(true);
+        }}
+      />
+
+      <MenuSheet
+        visible={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        soundOn={run.sound.tempo}
+        onSound={() => setSoundPrefs({ tempo: !run.sound.tempo })}
+        onReplay={run.canReplay ? run.replayInstruction : null}
+        media={canSwitchMedia ? (showPose ? 'pose' : 'video') : null}
+        onMedia={() => run.setMedia(showPose ? 'video' : 'pose')}
+        onRule={() => {
+          setMenuOpen(false);
+          ask(() => run.setRuleOpen(true));
+        }}
+        onPain={
+          finished || current?.exercise == null
+            ? null
+            : () => {
+                setMenuOpen(false);
+                ask(() => run.setAskingPain(true));
+              }
+        }
+        onCantDo={
+          finished || current?.exercise == null
+            ? null
+            : () => {
+                setMenuOpen(false);
+                ask(() => run.setAskingCantDo(true));
+              }
+        }
+      />
+
+      <InfoSheet
+        visible={infoOpen}
+        exerciseId={exerciseId}
+        onClose={() => {
+          setInfoOpen(false);
+          run.resumeAfterPain();
         }}
       />
 
@@ -409,7 +471,7 @@ function SessionRun(props: SessionViewProps) {
 
       <CantDoSheet
         visible={run.askingCantDo}
-        equipment={planMeta(current?.exercise?.id ?? '')?.equipment ?? []}
+        equipment={planMeta(exerciseId ?? '')?.equipment ?? []}
         onPick={run.reportCantDo}
         onCancel={() => {
           run.setAskingCantDo(false);
@@ -423,6 +485,7 @@ function SessionRun(props: SessionViewProps) {
         visible={run.celebrating}
         early={run.endedEarly}
         moves={moveCount}
+        sets={run.plan.reduce((sum, entry) => sum + (entry.timeline?.find((segment) => segment.kind === 'work')?.sets ?? 1), 0)}
         minutes={run.doseMinutes}
         dayNumber={override == null && title == null ? day.day : null}
         feedback={feedback}
@@ -444,36 +507,36 @@ const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: ink.page },
   mirrored: { transform: [{ scaleX: -1 }] },
   hidden: { opacity: 0 },
-  dim: { color: ink.grey },
-  shrink: { flexShrink: 1 },
+  dim: { color: colors.text3 },
+  pressed: { opacity: 0.55 },
+  off: { opacity: 0.35 },
   header: {
     minHeight: HEADER,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: SIDE - 4,
+    paddingHorizontal: 16,
     gap: 8,
   },
-  headerRight: { alignItems: 'flex-end' },
+  headerRight: { flexDirection: 'row', gap: 8 },
   position: {
     flex: 1,
-    ...fonts.semibold(17),
+    ...fonts.heavy(19),
     color: ink.text,
     textAlign: 'center',
     fontVariant: ['tabular-nums'],
+    paddingLeft: 52,
   },
-  bar: { flexDirection: 'row', gap: 4, paddingHorizontal: SIDE, marginBottom: 8 },
-  segment: { flex: 1, height: BAR, backgroundColor: ink.rule, overflow: 'hidden' },
-  segmentFill: { height: BAR, backgroundColor: ink.text },
-  full: { width: '100%' },
   scroll: { flex: 1 },
-  body: { flexGrow: 1 },
-  stage: { flex: 1, backgroundColor: ink.studio, overflow: 'hidden' },
-  video: { flex: 1, marginVertical: -1 },
+  body: { flexGrow: 1, paddingTop: 8, paddingHorizontal: SIDE - 4, gap: 12 },
+  moveCard: { ...cardStyle, alignItems: 'center', paddingHorizontal: 20, paddingTop: 20, paddingBottom: 18, gap: 6 },
+  disc: { alignItems: 'center', justifyContent: 'center', marginBottom: 10 },
+  clip: { overflow: 'hidden', backgroundColor: ink.studio },
+  video: { flex: 1 },
   edgeRow: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, flexDirection: 'row' },
   edgeSpacer: { flex: 1 },
   edgeBox: { height: '100%', aspectRatio: CLIP_SHAPE },
   edgeFade: { position: 'absolute', top: 0, bottom: 0, width: EDGE_FADE },
-  pose: { backgroundColor: ink.page },
+  pose: { backgroundColor: ink.card },
   poseImage: { width: '100%', height: '100%' },
   clipFailed: {
     position: 'absolute',
@@ -483,39 +546,59 @@ const styles = StyleSheet.create({
     bottom: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: SIDE,
+    paddingHorizontal: 24,
   },
-  clipFailedText: { ...fonts.regular(19), color: ink.text, textAlign: 'center' },
-  mediaRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    paddingHorizontal: SIDE,
-    columnGap: 12,
+  clipFailedText: { ...fonts.regular(17), color: ink.text, textAlign: 'center' },
+  note: { ...fonts.regular(17), color: ink.grey, textAlign: 'center' },
+  nameRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: 8 },
+  name: { ...fonts.heavy(26, -0.4), color: ink.text, textAlign: 'center', flexShrink: 1 },
+  cue: { ...fonts.regular(17), color: ink.grey, textAlign: 'center' },
+  pill: {
+    marginTop: 4,
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 999,
+    backgroundColor: bitepal.selectedSoft,
   },
-  text: { paddingHorizontal: SIDE, paddingTop: 16, gap: 4 },
-  note: { ...fonts.regular(17), color: ink.grey, marginBottom: 4 },
-  name: { ...fonts.bold(28, -0.4), color: ink.text },
-  cue: { ...fonts.regular(19), color: ink.grey },
-  now: { ...fonts.semibold(19), color: ink.text, marginTop: 4 },
-  line: { ...fonts.regular(17), color: ink.grey },
-  timer: { paddingHorizontal: SIDE, marginTop: 4 },
+  pillText: { ...fonts.semibold(17), color: bitepal.selected, textAlign: 'center' },
+  timerCard: { ...cardStyle, padding: 20, gap: 16 },
+  timerTop: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  timerTopStacked: { flexDirection: 'column', alignItems: 'flex-start' },
+  timerFigure: { flex: 1, alignSelf: 'stretch' },
   numeral: {
-    ...fonts.bold(NUMERAL, -3),
-    lineHeight: NUMERAL * 1.08,
+    ...fonts.heavy(NUMERAL, -1.5),
+    lineHeight: NUMERAL * 1.15,
     color: ink.text,
     fontVariant: ['tabular-nums'],
   },
-  unit: { ...fonts.medium(17), color: ink.grey, marginTop: -6 },
-  controls: { paddingHorizontal: SIDE, paddingTop: 16, gap: 4 },
-  transport: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' },
-  asides: { flexDirection: 'row', flexWrap: 'wrap', columnGap: 20 },
-  next: { flexDirection: 'row', alignItems: 'center', gap: 14, paddingTop: 12 },
-  nextThumb: { width: 56, height: 56, backgroundColor: ink.studio },
-  nextText: { ...fonts.regular(17), color: ink.grey, flex: 1 },
+  endWell: {
+    width: END_RING - 26,
+    height: END_RING - 26,
+    borderRadius: (END_RING - 26) / 2,
+    backgroundColor: bitepal.well,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  columns: { flexDirection: 'row', gap: 16 },
+  columnsStacked: { flexDirection: 'column' },
+  column: { flex: 1, gap: 2 },
+  columnValue: { ...fonts.bold(19), color: ink.text },
+  load: { ...fonts.regular(17), color: ink.grey },
+  transport: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 28,
+    paddingTop: 8,
+  },
+  asides: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    columnGap: 24,
+  },
   locked: { flex: 1, backgroundColor: ink.page, paddingHorizontal: SIDE },
   lockedMiddle: { flex: 1, justifyContent: 'center', gap: 12 },
-  lockedTitle: { ...fonts.bold(34, -0.6), color: ink.text },
+  lockedTitle: { ...fonts.heavy(32, -0.6), color: ink.text },
   lockedBody: { ...fonts.regular(19), color: ink.grey },
 });

@@ -83,5 +83,40 @@ export const target = {
   primary: 56,
 } as const;
 
+/**
+ * BitePal's look (spec addendum v3), for the screens rebuilt after it: a cool
+ * grey page, white cards with a 24pt corner and no shadow, a small grey label
+ * over a big bold number, round grey buttons inside a card, black primary
+ * buttons, and one light track under every thin bar and ring. Brand violet
+ * stays for what is selected.
+ */
+export const bitepal = {
+  page: '#F2F2F5',
+  card: '#FFFFFF',
+  cardRadius: 24,
+  /** A round button inside a white card, and the track under a bar or ring. */
+  well: '#F2F2F5',
+  track: '#E9E9EE',
+  primary: '#111114',
+  onPrimary: '#FFFFFF',
+  selected: colors.accent,
+  selectedSoft: colors.accentSoft,
+} as const;
+
+/**
+ * The part of the foot or leg a move or a test works, as BitePal colours its
+ * food groups. It names the part and never rates it: a calf move is green on
+ * its first set and on its last.
+ */
+export const bodyColors = {
+  heel: parts.heel.fill,
+  arch: parts.arch.fill,
+  calf: parts.calf.fill,
+  ankle: parts.ankle.fill,
+  toes: parts.toes.fill,
+} as const;
+
+export type BodyPart = keyof typeof bodyColors;
+
 /** Tab labels and chips stop growing here; body text is never capped. */
 export const CHROME_MAX_FONT_SCALE = 1.4;

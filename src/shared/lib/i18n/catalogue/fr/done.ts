@@ -26,4 +26,13 @@ export const DONE_FR = {
   'sessionDone.easierDone': 'Demain reprend un cran plus doux.',
   'sessionDone.tomorrowAt': 'Demain à {time}',
   'sessionDone.nextOn': 'Prochaine séance : {day}',
+  'sessionDone.complete': 'Séance terminée',
+  'sessionDone.tileSets': 'Séries',
+  'sessionDone.tileSetsA11y': { one: '{count} série faite', other: '{count} séries faites' },
+  'sessionDone.path.day': 'Jour {day}',
+  'sessionDone.path.completed': 'Terminé',
+  'sessionDone.month.title': 'Jours faits ce mois-ci',
+  'sessionDone.month.unit': { one: 'jour', other: 'jours' },
+  'sessionDone.month.a11y': { one: '{count} jour fait ce mois-ci', other: '{count} jours faits ce mois-ci' },
+  'sessionDone.nextLabel': 'Ensuite',
 };

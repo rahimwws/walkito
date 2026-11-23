@@ -190,4 +190,6 @@ export const TESTDAY_DE = {
   'testday.results.explain.balance':
     'Auf einem Bein mit geschlossenen Augen zeigt sich, wie gut Fuß und Knöchel den Boden spüren. Mehr Sekunden heißt sicherere Schritte auf unebenem Weg und wenn du müde bist.',
   'testday.results.explainA11y': 'Was das zeigt',
+  'testday.card.goalRaises': { one: 'Ziel: {count} Wiederholung', other: 'Ziel: {count} Wiederholungen' },
+  'testday.card.goalSeconds': 'Ziel: {goal} s',
 };

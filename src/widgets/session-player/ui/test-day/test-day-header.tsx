@@ -1,12 +1,13 @@
+import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import { StyleSheet, View } from 'react-native';
 
-import { CHROME_MAX_FONT_SCALE } from '@/shared/config';
+import { bitepal } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import type { SegmentState } from '../../model/test-day';
-import { SIDE, TextButton, ink } from '../player/kit';
+import { RoundButton, SIDE, soft } from '../player/kit';
 
-export const TEST_DAY_HEADER_HEIGHT = 52;
+export const TEST_DAY_HEADER_HEIGHT = 60;
 
 export type TestDayHeaderProps = {
   /** One per test: done, the one under way, or still to come. */
@@ -15,20 +16,18 @@ export type TestDayHeaderProps = {
 };
 
 /**
- * The test day's top row: Close in words, and where the three tests stand
- * as a plain bar, black for done, half-tone for the one under way.
+ * The test day's top row, in BitePal's thin bars: a round close, and where
+ * the three tests stand as rounded segments, violet for done, soft violet for
+ * the one under way. A fixed-size icon rather than a word, so the
+ * row keeps its height at every text size and nothing under it can slide
+ * beneath it.
  */
 export function TestDayHeader({ segments, onClose }: TestDayHeaderProps) {
   const t = useT();
   const done = segments.filter((state) => state === 'done').length;
   return (
     <View style={styles.header}>
-      <TextButton
-        label={t('common.close')}
-        accessibilityLabel={t('testday.close')}
-        onPress={onClose}
-        maxScale={CHROME_MAX_FONT_SCALE}
-      />
+      <RoundButton icon={Cancel01Icon} size={44} label={t('testday.close')} onPress={onClose} />
       <View
         style={styles.bar}
         accessible
@@ -44,14 +43,14 @@ export function TestDayHeader({ segments, onClose }: TestDayHeaderProps) {
 
 const styles = StyleSheet.create({
   header: {
-    minHeight: TEST_DAY_HEADER_HEIGHT,
+    height: TEST_DAY_HEADER_HEIGHT,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: SIDE - 4,
+    paddingHorizontal: SIDE - 8,
     gap: 16,
   },
-  bar: { flex: 1, flexDirection: 'row', gap: 4 },
-  segment: { flex: 1, height: 3, backgroundColor: ink.rule },
-  done: { backgroundColor: ink.text },
-  active: { backgroundColor: ink.grey },
+  bar: { flex: 1, flexDirection: 'row', gap: 6 },
+  segment: { flex: 1, height: 6, borderRadius: 3, backgroundColor: bitepal.track },
+  done: { backgroundColor: bitepal.selected },
+  active: { backgroundColor: soft(bitepal.selected, 0.45) },
 });

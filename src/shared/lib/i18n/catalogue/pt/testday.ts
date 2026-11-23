@@ -190,4 +190,6 @@ export const TESTDAY_PT = {
   'testday.results.explain.balance':
     'Ficar em uma perna de olhos fechados mostra o quanto o pé e o tornozelo sentem o chão. Mais segundos significa passos mais firmes em terreno irregular e quando você está cansado.',
   'testday.results.explainA11y': 'O que isto mostra',
+  'testday.card.goalRaises': { one: 'Meta: {count} elevação', other: 'Meta: {count} elevações' },
+  'testday.card.goalSeconds': 'Meta: {goal} s',
 };

@@ -29,4 +29,15 @@ export {
   type ClipEntry,
 } from './clip-manifest';
 export { VOICE, VOICE_TOTAL_BYTES, voiceEntry, type VoiceEntry } from './voice-manifest';
-export { colors, parts, space, radius, target, CHROME_MAX_FONT_SCALE, type PartName } from './tokens';
+export {
+  colors,
+  parts,
+  space,
+  radius,
+  target,
+  bitepal,
+  bodyColors,
+  CHROME_MAX_FONT_SCALE,
+  type PartName,
+  type BodyPart,
+} from './tokens';

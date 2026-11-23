@@ -3,14 +3,13 @@ import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import { StyleSheet, Text, View } from 'react-native';
 
-import type { DayType } from '@/entities/program';
+import { dayLook, type DayType } from '@/entities/program';
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { Card } from '@/shared/ui/card';
 import { Chip } from '@/shared/ui/chip';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
-import { dayLook } from './kind-tone';
 import { OpensCaption } from './wait-caption';
 
 const BADGE = 40;

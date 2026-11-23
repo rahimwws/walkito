@@ -53,6 +53,7 @@ import {
   type ProgramDay,
   type SessionMinutes,
   planReasonLine,
+  moveLook,
 } from '@/entities/program';
 import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
@@ -83,7 +84,6 @@ import { asProgramDay, playlistOf } from '../model/week-view';
 import { GoalPlan } from './goal-plan';
 import { HelpsCard } from './helps-card';
 import { SessionDetail, detailMoves, type SessionDetailProps } from './session-detail';
-import { moveLook } from './kind-tone';
 import { TodayCard } from './today-card';
 import { TodayDoneCard } from './today-done-card';
 import { TodayMoves, type TodayMove } from './today-moves';
@@ -687,6 +687,7 @@ export function ProgramPage() {
         {session?.kind === 'session' && session.detail != null && (
           <SessionDetail
             {...session.detail}
+            minutes={session.minutes}
             onBack={() => program?.closeDetail()}
             onPreview={openMove}
             onStart={() => {

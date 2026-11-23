@@ -49,8 +49,25 @@ export { mirroredFor } from './model/mirror';
 export { illustrationFor, posterFor, thumbFor } from './config/exercise-posters';
 /** The "Can't do this" reasons as plain rows: the exercise sheet offers the
  * same choices, in the same order, as the player. */
-export { ReasonRows as CantDoReasons } from './ui/player/sheets';
-export { TITLE_SCALE } from './ui/player/kit';
+export { ReasonRows as CantDoReasons, StepList, stepsOf } from './ui/player/sheets';
+/** BitePal's pieces, shared with the session detail and the exercise sheet on
+ * the plan: the black button, the round icon button, a move drawn on the disc
+ * of the part it works, the white card with its grey label, big number, thin
+ * bar and ring. */
+export {
+  Bar,
+  BigNumber,
+  CardLabel,
+  Capsule,
+  MoveCircle,
+  Ring,
+  RoundButton,
+  TITLE_SCALE,
+  bodyPartOf,
+  cardStyle,
+  moveColor,
+  soft,
+} from './ui/player/kit';
 /** The test day, whole: intro, the three tests, results.
  *
  * One flow for both hosts — Home presents it in a page sheet, Plan in its

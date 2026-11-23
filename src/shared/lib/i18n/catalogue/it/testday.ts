@@ -190,4 +190,6 @@ export const TESTDAY_IT = {
   'testday.results.explain.balance':
     'Stare su una gamba a occhi chiusi mostra quanto bene piede e caviglia sentono il terreno. Più secondi significa passi più sicuri su terreno irregolare e quando arriva la stanchezza.',
   'testday.results.explainA11y': 'Cosa mostra',
+  'testday.card.goalRaises': { one: 'Obiettivo: {count} sollevamento', other: 'Obiettivo: {count} sollevamenti' },
+  'testday.card.goalSeconds': 'Obiettivo: {goal} s',
 };

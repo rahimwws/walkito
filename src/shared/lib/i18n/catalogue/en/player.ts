@@ -52,6 +52,8 @@ export const PLAYER_EN = {
   'player.painRule.a11y': 'How much pain is OK',
   'player.tempo.on': 'Sound on',
   'player.tempo.off': 'Sound off',
+  /** The round ⋯ button at the top right of the player, read by VoiceOver. */
+  'player.more.a11y': 'More options',
   'player.voice.replay': 'Play the instruction again',
 
   // ── The player's own chrome ───────────────────────────────────────────────
@@ -124,4 +126,11 @@ export const PLAYER_EN = {
   'player.cta.skipA11y': 'Skip this move',
   'player.a11y.move': '{name}. {time}. Next: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Last move.',
+  // ── Redesign v1.1 (BitePal): the player's timer card and the detail's columns ──
+  'player.card.timeLeft': 'Time left',
+  'player.card.reps': 'Reps',
+  'player.card.progress': 'Progress',
+  'player.card.next': 'Next',
+  'player.card.lastMove': 'Last move',
+  'player.detail.doneToday': 'Done today',
 } as const satisfies Record<string, SourceEntry>;

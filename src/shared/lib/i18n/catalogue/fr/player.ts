@@ -41,6 +41,7 @@ export const PLAYER_FR = {
   'player.painRule.a11y': 'Quelle douleur est acceptable',
   'player.tempo.on': 'Son activé',
   'player.tempo.off': 'Son désactivé',
+  'player.more.a11y': 'Plus d’options',
   'player.voice.replay': 'Réécouter la consigne',
 
   // ── The player's own chrome ───────────────────────────────────────────────
@@ -96,4 +97,10 @@ export const PLAYER_FR = {
   'player.cta.skipA11y': 'Passer ce mouvement',
   'player.a11y.move': '{name}. {time}. Ensuite : {next}.',
   'player.a11y.moveLast': '{name}. {time}. Dernier mouvement.',
+  'player.card.timeLeft': 'Temps restant',
+  'player.card.reps': 'Répétitions',
+  'player.card.progress': 'Progression',
+  'player.card.next': 'Ensuite',
+  'player.card.lastMove': 'Dernier mouvement',
+  'player.detail.doneToday': 'Fait aujourd’hui',
 };

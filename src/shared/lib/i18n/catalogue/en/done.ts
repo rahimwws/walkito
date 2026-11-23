@@ -37,4 +37,17 @@ export const DONE_EN = {
   'sessionDone.easierDone': 'Tomorrow starts one step back.',
   'sessionDone.tomorrowAt': 'Tomorrow at {time}',
   'sessionDone.nextOn': 'Next session on {day}',
+
+  // ── Redesign v1.1 (Bend): the Done screen's title, sets tile and day path ──
+  'sessionDone.complete': 'Session complete',
+  'sessionDone.tileSets': 'Sets',
+  'sessionDone.tileSetsA11y': { one: '{count} set done', other: '{count} sets done' },
+  /** A node of the day path: the plan day by its number. */
+  'sessionDone.path.day': 'Day {day}',
+  'sessionDone.path.completed': 'Completed',
+  // ── Redesign v1.1 (BitePal): the month card and what comes next ──
+  'sessionDone.month.title': 'Days done this month',
+  'sessionDone.month.unit': { one: 'day', other: 'days' },
+  'sessionDone.month.a11y': { one: '{count} day done this month', other: '{count} days done this month' },
+  'sessionDone.nextLabel': 'Up next',
 } as const satisfies Record<string, SourceEntry>;

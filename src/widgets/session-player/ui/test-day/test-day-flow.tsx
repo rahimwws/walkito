@@ -38,7 +38,7 @@ import {
 } from '../../model/test-day';
 import { TestDayHeader } from './test-day-header';
 import { TestDayIntro } from './test-day-intro';
-import { TestDayResults } from './test-day-results';
+import { FootCheckResults } from './foot-check-results';
 import { TestRunner } from './test-runner';
 import { legLabel } from './test-meta';
 
@@ -165,7 +165,7 @@ export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowPro
   let key: string;
   if (screen.at === 'results' && outcome != null) {
     key = 'results';
-    content = <TestDayResults outcome={outcome} side={side} onDone={close} />;
+    content = <FootCheckResults outcome={outcome} side={side} onDone={close} />;
   } else if (screen.at === 'test') {
     const { station } = screen;
     const { kind, leg } = station;
@@ -214,7 +214,7 @@ export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowPro
   const position = screen.at === 'test' ? screen.station.kind : screen.at === 'results' ? 'results' : null;
 
   return (
-    <View style={[styles.root, { backgroundColor: colors.surface }]}>
+    <View style={[styles.root, { backgroundColor: colors.bg }]}>
       {/* Native, not the hook: the insets have to be this view's own. In a
           page sheet the top edge is already clear of the status bar and the
           hook would pad it a second time. */}

@@ -38,4 +38,21 @@ export const DONE_RU = {
   'sessionDone.easierDone': 'Завтра начнём на шаг легче.',
   'sessionDone.tomorrowAt': 'Завтра в {time}',
   'sessionDone.nextOn': 'Следующее занятие: {day}',
+  'sessionDone.complete': 'Занятие завершено',
+  'sessionDone.tileSets': 'Подходы',
+  'sessionDone.tileSetsA11y': {
+    one: '{count} подход сделан',
+    few: '{count} подхода сделано',
+    many: '{count} подходов сделано',
+  },
+  'sessionDone.path.day': 'День {day}',
+  'sessionDone.path.completed': 'Пройден',
+  'sessionDone.month.title': 'Дни в этом месяце',
+  'sessionDone.month.unit': { one: 'день', few: 'дня', many: 'дней' },
+  'sessionDone.month.a11y': {
+    one: '{count} день с занятием в этом месяце',
+    few: '{count} дня с занятием в этом месяце',
+    many: '{count} дней с занятием в этом месяце',
+  },
+  'sessionDone.nextLabel': 'Дальше',
 };

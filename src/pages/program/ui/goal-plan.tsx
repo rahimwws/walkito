@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { EXERCISES_BY_ID, fromDateKey } from '@/entities/program';
+import { EXERCISES_BY_ID, TEST_LOOK, fromDateKey, moveLook } from '@/entities/program';
 import { colors, fonts } from '@/shared/config';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { Card } from '@/shared/ui/card';
@@ -19,7 +19,6 @@ import {
   type PathTest,
   type PathWeek,
 } from '../model/plan-view';
-import { TEST_LOOK, moveLook } from './kind-tone';
 
 /** Moves listed before "+3 more" opens the rest. */
 const MOVES_SHOWN = 5;

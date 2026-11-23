@@ -41,6 +41,7 @@ export const PLAYER_DE = {
   'player.painRule.a11y': 'Wie viel Schmerz ist okay',
   'player.tempo.on': 'Ton an',
   'player.tempo.off': 'Ton aus',
+  'player.more.a11y': 'Weitere Optionen',
   'player.voice.replay': 'Anleitung noch einmal abspielen',
 
   // ── The player's own chrome ───────────────────────────────────────────────
@@ -96,4 +97,10 @@ export const PLAYER_DE = {
   'player.cta.skipA11y': 'Diese Übung überspringen',
   'player.a11y.move': '{name}. {time}. Als Nächstes: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Letzte Übung.',
+  'player.card.timeLeft': 'Verbleibend',
+  'player.card.reps': 'Wiederholungen',
+  'player.card.progress': 'Fortschritt',
+  'player.card.next': 'Als Nächstes',
+  'player.card.lastMove': 'Letzte Übung',
+  'player.detail.doneToday': 'Heute erledigt',
 };
