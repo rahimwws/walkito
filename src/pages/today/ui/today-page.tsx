@@ -60,10 +60,13 @@ import { PassEndingRow } from "./pass-ending-row";
 import { RoutineCard } from "./routine-card";
 import { RoutineGrid } from "./routine-grid";
 import { SessionCard } from "./session-card";
+import { TodayMascot } from "./today-mascot";
 import { ThisWeekCard, YourWeekCard } from "./week-card";
 
 /** The scene's height under the status bar. */
-const SCENE = 236;
+const SCENE = 320;
+/** Where the mascot's feet are, up from the scene's foot: on the near hill or the desk. */
+const FEET_UP = 44;
 const FAB = 64;
 
 /**
@@ -172,6 +175,14 @@ export function TodayPage() {
             time={time}
             width={width}
             height={SCENE + insets.top}
+          />
+          <TodayMascot
+            time={time}
+            done={work.done}
+            rest={work.type === "rest"}
+            size={Math.min(210, Math.round(width * 0.52))}
+            ground={SCENE + insets.top - FEET_UP}
+            active={focused}
           />
           <View style={[styles.sceneBar, { top: insets.top + 12 }]}>
             <View style={styles.who}>

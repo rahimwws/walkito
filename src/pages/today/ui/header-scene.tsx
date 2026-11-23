@@ -99,6 +99,8 @@ export function scenePalette(time: SceneTime): Palette {
 
 const W = 390;
 const H = 300;
+/** Sky and wall drawn above the scene, for a header taller than the drawing is wide for. */
+const SKY_ABOVE = 300;
 
 function Sky({ p, id }: { p: Palette; id: string }) {
   return (
@@ -109,7 +111,7 @@ function Sky({ p, id }: { p: Palette; id: string }) {
           <Stop offset="1" stopColor={p.skyBottom} />
         </LinearGradient>
       </Defs>
-      <Rect x={0} y={0} width={W} height={H} fill={`url(#${id})`} />
+      <Rect x={0} y={-SKY_ABOVE} width={W} height={H + SKY_ABOVE} fill={`url(#${id})`} />
     </>
   );
 }
@@ -228,7 +230,7 @@ function Desk({ time, p }: { time: SceneTime; p: Palette }) {
   const win = { x: 184, y: 92, w: 166, h: 146 };
   return (
     <>
-      <Rect x={0} y={0} width={W} height={H} fill={p.wall} />
+      <Rect x={0} y={-SKY_ABOVE} width={W} height={H + SKY_ABOVE} fill={p.wall} />
       <Defs>
         <ClipPath id={`window-${time}`}>
           <Rect x={win.x} y={win.y} width={win.w} height={win.h} rx={18} />
@@ -270,17 +272,18 @@ export type HeaderSceneProps = {
 };
 
 /**
- * Today's header (BitePal #97, without the character): a flat illustrated
+ * Today's header (BitePal #97; the mascot stands on it, `TodayMascot`): a flat illustrated
  * scene, a park path for a runner, a garden for the feet plan, a window and a
  * plant over a desk for the desk plan, in the colours of the time of day.
  */
 export function HeaderScene({ kind, time, width, height }: HeaderSceneProps) {
   const p = PALETTES[time];
+  const viewHeight = (W * height) / width;
   return (
     <Svg
       width={width}
       height={height}
-      viewBox={`0 0 ${W} ${H}`}
+      viewBox={`0 ${H - viewHeight} ${W} ${viewHeight}`}
       preserveAspectRatio="xMidYMax slice"
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants">
