@@ -37,7 +37,15 @@ The second argument is the letterSpacing the design asks for; leave it out for t
 
 # Color
 
-The redesign's values live in `src/shared/config/tokens.ts` (`colors`, `type`, `space`, `radius`, `target`): background `#F5F5F7`, opaque white cards, black (`ink`) primary button, violet accent `#6D28D9` (the old `#8B5CF6` fails contrast and never carries text). `palette`, `meterColors` and `PRIMARY` read their light half from it.
+The redesign's values live in `src/shared/config/tokens.ts`, one table per scheme (`themes.light`, `themes.dark`): light is a grey page, opaque white cards, a black (`ink`) primary button and violet `#6D28D9`; dark is a black page, `#1C1C1E` cards, `#2C2C2E` wells, a white primary button with a black label (`onInk`) and the violet lifted to `#A78BFA`. The old `#8B5CF6` fails contrast and never carries text. `tokens.test.ts` holds every text colour to 4.5:1 on its scheme's card and page. `palette`, `meterColors` and `PRIMARY` read both halves from it.
+
+Three ways to take a token, by what the code needs:
+
+- **A style.** `colors`, `parts`, `bitepal` and `bodyColors` from `@/shared/config` (`dynamic-colors.ts`) are native colours that follow the appearance by themselves, so they go straight into `StyleSheet.create` and into react-native-svg's `fill`/`stroke`. On iOS they are `DynamicColorIOS`; on Android they are the hex of the scheme the JS started in (see Appearance).
+- **A hex.** A native colour is an object, not a string: never append alpha to it, `mix` it, compare it, or hand it to `interpolateColor`, Skia, SwiftUI or a widget. Take the hex instead: `useTokens()` / `useColorFor()` from `@/shared/lib/theme` in a component, `colorFor(color, scheme)` with a scheme in hand, `themes[scheme]` in a worklet.
+- **A colour made from a token** (a tint, a token with alpha) is `derive(colors.surface, (hex, scheme) => …)`, which builds both schemes' results into one native colour. `themed((tokens, scheme) => …)` does the same for a whole style.
+
+A label on a fill uses the fill's own label token: `onInk` on `ink`, `onAccent` on the accent (dark in dark, where the lifted violet cannot carry white), `onTone` on a vivid part colour. A hex literal in a component is for something that is that colour in both schemes: a photograph's overlay, the clip studio backdrop (`CLIP_BACKDROP`, the colour the videos were filmed on), a switch thumb.
 
 Take colors from `@/shared/config` — `palette` for surfaces, `meterColors` for anything showing a number or a meter, `accents` for tinting a metric by category. Screens must not set their own `backgroundColor`: the navigation theme paints every screen container, which is what keeps tab-switch fades flash-free.
 
@@ -47,12 +55,16 @@ Colour never judges a value. `meterColors` has no "bad" entry, so nothing can re
 
 **Import `useColorScheme` from `@/shared/lib/theme`, never from `react-native`.**
 
-The app is **light only** for v1.1.0 (`LIGHT_ONLY` in `src/shared/lib/theme/theme-store.ts`, `userInterfaceStyle: "light"` in app.json); the dark halves of the palettes are kept for a later dark mode. The appearance override (System / Light / Dark) is still stored, and two things have to happen on a change, which is why the plain RN hook is not enough:
+The app follows the system (`userInterfaceStyle: "automatic"` in app.json, a native change), and Settings → Appearance overrides it with System / Light / Dark, stored under `theme/preference` (`@/shared/lib/appearance`). Two things have to happen on a change, which is why the plain RN hook is not enough:
 
 - `Appearance.setColorScheme()` repaints native views — liquid glass and the SwiftUI host inside `AnimatedNumber` are drawn by the system and read the trait collection, not our JS state.
 - Our own store notifies subscribers. `Appearance.setColorScheme()` updates RN's snapshot but **never emits a `change` event** — that only fires from the native `appearanceChanged` listener. Since RN's `useColorScheme` is a `useSyncExternalStore` over that emitter, using it directly leaves JS-driven colours stale until an unrelated render happens along.
 
 The hook in `@/shared/lib/theme` subscribes to both and returns a narrowed `'light' | 'dark'`.
+
+**Android restarts the JS on a change.** React Native on Android never re-applies a `PlatformColor` to a view already mounted, so the native colours there are the hex of the scheme the JS booted in (`bootScheme`), and `useColorScheme` returns that scheme too. A change of the override reloads the JS after 300 ms (`DevSettings.reload` in dev, `Updates.reloadAsync` in release); the picker says so on Android. A change of the system appearance under System does not: it can come on a schedule at sunset, in the middle of a session, so it waits for the next cold start. iOS switches live in both cases.
+
+An appearance change re-renders the layouts above every screen. A context value built in a layout must not change identity because of it (`ProgramProvider` reads its callbacks through a ref for this reason: a new value once closed a running session).
 
 # Icons: Fluent Emoji for content, Hugeicons for chrome
 
