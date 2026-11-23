@@ -24,6 +24,12 @@ export const CORE_ES = {
 
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Ajustes',
+  'settings.appearance.title': 'Apariencia',
+  'settings.appearance.system': 'Sistema',
+  'settings.appearance.systemHint': 'Igual que este teléfono',
+  'settings.appearance.light': 'Claro',
+  'settings.appearance.dark': 'Oscuro',
+  'settings.appearance.restart': 'Walkito se reinicia para cambiarlo.',
   'settings.terms': 'Términos de uso',
   'settings.termsHint': 'El acuerdo de suscripción',
   'settings.privacy': 'Política de privacidad',

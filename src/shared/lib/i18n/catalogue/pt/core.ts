@@ -24,6 +24,12 @@ export const CORE_PT = {
 
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Ajustes',
+  'settings.appearance.title': 'Aparência',
+  'settings.appearance.system': 'Sistema',
+  'settings.appearance.systemHint': 'Igual ao celular',
+  'settings.appearance.light': 'Claro',
+  'settings.appearance.dark': 'Escuro',
+  'settings.appearance.restart': 'O Walkito reinicia para mudar.',
   'settings.terms': 'Termos de uso',
   'settings.termsHint': 'O contrato da assinatura',
   'settings.privacy': 'Política de privacidade',

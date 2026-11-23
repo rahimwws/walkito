@@ -27,6 +27,12 @@ export const CORE_RU = {
 
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Настройки',
+  'settings.appearance.title': 'Оформление',
+  'settings.appearance.system': 'Системное',
+  'settings.appearance.systemHint': 'Как на телефоне',
+  'settings.appearance.light': 'Светлое',
+  'settings.appearance.dark': 'Тёмное',
+  'settings.appearance.restart': 'Walkito перезапустится, чтобы сменить его.',
   'settings.terms': 'Условия использования',
   'settings.termsHint': 'Соглашение о подписке',
   'settings.privacy': 'Политика конфиденциальности',

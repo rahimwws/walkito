@@ -14,6 +14,7 @@ import { TITLE_SCALE } from '@/widgets/session-player';
 
 import { writeToUs } from '../lib/write-to-us';
 
+import { AppearanceSettings } from './appearance-settings';
 import { EmailSettings } from './email-settings';
 import { OfferSettings } from './offer-settings';
 import { PlanSettings } from './plan-settings';
@@ -34,7 +35,7 @@ const LINKS: { label: Key; hint: Key; url: string; icon: IconSvgElement; tone: C
 /**
  * Settings as BitePal's settings (#40): a big title on the grey, then white
  * grouped cards with a colourful round icon on every row. The language list
- * first (embedded, since this screen is already a form sheet and a sheet in a
+ * and the appearance first (embedded, since this screen is already a form sheet and a sheet in a
  * sheet is a second dismiss for nothing), the plan, the subscription, sound,
  * notifications and email, then what App Review asks to be findable: writing
  * to us, the documents and the line that says this is not medical advice.
@@ -57,6 +58,8 @@ export function SettingsPage() {
         </Text>
         <LanguageOptions />
       </View>
+
+      <AppearanceSettings />
 
       <PlanSettings />
       <SubscriptionSettings />

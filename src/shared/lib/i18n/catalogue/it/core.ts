@@ -24,6 +24,12 @@ export const CORE_IT = {
 
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Impostazioni',
+  'settings.appearance.title': 'Aspetto',
+  'settings.appearance.system': 'Sistema',
+  'settings.appearance.systemHint': 'Come questo telefono',
+  'settings.appearance.light': 'Chiaro',
+  'settings.appearance.dark': 'Scuro',
+  'settings.appearance.restart': 'Walkito si riavvia per cambiarlo.',
   'settings.terms': 'Termini d’uso',
   'settings.termsHint': 'Il contratto di abbonamento',
   'settings.privacy': 'Informativa sulla privacy',
