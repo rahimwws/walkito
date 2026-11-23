@@ -44,7 +44,7 @@ import {
   type Station,
 } from '../../model/test-day';
 import { CountIn } from '../player/count-in';
-import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, soft, CardLabel } from '../player/kit';
+import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, pastel, CardLabel } from '../player/kit';
 import { StepList } from '../player/sheets';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
@@ -333,7 +333,7 @@ export function TestRunner({
             <>
               <View style={styles.pictureRow}>
                 <View
-                  style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(color) }]}>
+                  style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: pastel(color) }]}>
                   <Image
                     source={TEST_PICTURES[kind].full}
                     style={[styles.picture, mirrored && styles.mirrored]}

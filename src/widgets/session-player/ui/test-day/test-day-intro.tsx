@@ -22,7 +22,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import { GOAL_OF_TEST, TEST_ORDER, goalValuesOf, type TestKind } from '../../model/test-day';
-import { Bar, BigNumber, CardLabel, Capsule, SIDE, TITLE_SCALE, TextButton, cardStyle, ink, soft } from '../player/kit';
+import { Bar, BigNumber, CardLabel, Capsule, SIDE, TITLE_SCALE, TextButton, cardStyle, ink, pastel } from '../player/kit';
 import { TEST_META, testColor } from './test-meta';
 
 const PAIN_SCALE = Array.from({ length: 11 }, (_, i) => i);
@@ -127,7 +127,7 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
                     size={44}
                   />
                 </View>
-                <View style={[styles.thumb, { backgroundColor: soft(testColor(row.kind)) }]}>
+                <View style={[styles.thumb, { backgroundColor: pastel(testColor(row.kind)) }]}>
                   <Image source={TEST_PICTURES[row.kind].thumb} style={styles.fill} resizeMode="cover" accessibilityIgnoresInvertColors />
                 </View>
               </View>

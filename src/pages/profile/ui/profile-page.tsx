@@ -21,11 +21,13 @@ import {
   bitepal,
   bodyColors,
   colors,
+  derive,
   fonts,
   target,
 } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
+import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { GroupedRow, GroupedSection } from '@/shared/ui/grouped-list';
 import { Mascot, waveRig } from '@/shared/ui/mascot';
@@ -57,6 +59,7 @@ export function ProfilePage() {
   const focused = useIsFocused();
   const t = useT();
   const large = fontScale >= 1.35;
+  const danger = accents[useColorScheme()].red.fill;
 
   const name = firstName(useProfileName());
   const streak = useStreak();
@@ -170,9 +173,9 @@ export function ProfilePage() {
             {__DEV__ && <ResetRow />}
             <GroupedRow
               icon={Delete02Icon}
-              tone={accents.light.red.fill}
+              tone={danger}
               label={t('profile.deleteAccount')}
-              labelColor={accents.light.red.fill}
+              labelColor={danger}
               onPress={() => setDeleteOpen(true)}
             />
           </GroupedSection>
@@ -208,7 +211,7 @@ const styles = StyleSheet.create({
     width: target.min,
     height: target.min,
     borderRadius: target.min / 2,
-    backgroundColor: 'rgba(255,255,255,0.86)',
+    backgroundColor: derive(colors.surface, (hex) => hex + 'DB'),
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -220,7 +223,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 12,
     borderRadius: 999,
-    backgroundColor: 'rgba(255,255,255,0.86)',
+    backgroundColor: derive(colors.surface, (hex) => hex + 'DB'),
   },
   dayText: { ...fonts.heavy(17), color: colors.text },
   mascot: { position: 'absolute', right: 12, bottom: 18 },

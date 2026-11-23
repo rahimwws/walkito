@@ -22,7 +22,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { EXERCISES_BY_ID, IN_SESSION_STOP_PAIN, exerciseById, type CantDoReason, type Equipment } from '@/entities/program';
-import { colors, fonts } from '@/shared/config';
+import { colors, fonts, themed } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
@@ -389,7 +389,9 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     maxHeight: '92%',
-    backgroundColor: ink.page,
+    // Lifted off the page in dark, where a black sheet under a dim of black
+    // would have no edge.
+    backgroundColor: themed((t, scheme) => (scheme === 'dark' ? t.colors.surface : t.bitepal.page)),
     borderTopLeftRadius: 28,
     borderTopRightRadius: 28,
     borderCurve: 'continuous',

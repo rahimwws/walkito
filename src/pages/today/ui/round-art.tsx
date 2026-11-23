@@ -1,6 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 
 import { accents, type AccentName } from '@/shared/config';
+import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
 export type RoundArtProps = {
@@ -12,9 +13,10 @@ export type RoundArtProps = {
 /** A Fluent drawing on a pastel disc in the accent's colour: the colourful
  * category icons of BitePal's cards. */
 export function RoundArt({ emoji, accent, size }: RoundArtProps) {
+  const scheme = useColorScheme();
   return (
     <View
-      style={[styles.circle, { width: size, height: size, borderRadius: size / 2, backgroundColor: accents.light[accent].track }]}
+      style={[styles.circle, { width: size, height: size, borderRadius: size / 2, backgroundColor: accents[scheme][accent].track }]}
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants">
       <FluentIcon name={emoji} size={Math.round(size * 0.56)} />

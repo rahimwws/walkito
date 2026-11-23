@@ -82,6 +82,6 @@ export function derive(color: ColorValue, make: (hex: string, scheme: ColorSchem
 }
 
 /** A colour picked or worked out from the tokens, in both schemes. */
-export function themed(pick: (tokens: Tokens) => string): ColorValue {
-  return both(pick(themes.light), pick(themes.dark));
+export function themed(pick: (tokens: Tokens, scheme: ColorScheme) => string): ColorValue {
+  return both(pick(themes.light, 'light'), pick(themes.dark, 'dark'));
 }

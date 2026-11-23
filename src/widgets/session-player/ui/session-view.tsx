@@ -43,7 +43,7 @@ import {
   cardStyle,
   ink,
   moveColor,
-  soft,
+  pastel,
 } from './player/kit';
 import { Rest } from './player/rest';
 import { CantDoSheet, InfoSheet, MenuSheet, PainRuleSheet, PainSheet } from './player/sheets';
@@ -242,7 +242,7 @@ function SessionRun(props: SessionViewProps) {
         bounces={false}>
         <View style={styles.moveCard}>
           <View
-            style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(color) }]}
+            style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: pastel(color) }]}
             accessible
             accessibilityRole="progressbar"
             accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}

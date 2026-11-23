@@ -17,7 +17,7 @@ import {
   TITLE_SCALE,
   cardStyle,
   moveColor,
-  soft,
+  pastel,
   stepsOf,
 } from '@/widgets/session-player';
 
@@ -64,7 +64,7 @@ export function ExerciseSheetPage() {
       </View>
 
       <View style={styles.top}>
-        <View style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(moveColor(id)) }]}>
+        <View style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: pastel(moveColor(id)) }]}>
           <View style={[styles.inner, { width: inner, height: inner, borderRadius: inner / 2 }]}>
             <ExercisePreview
               exerciseId={id}

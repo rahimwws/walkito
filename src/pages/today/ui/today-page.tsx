@@ -35,6 +35,7 @@ import { HomeTour, type DayOneRun } from "@/features/home-tour";
 import {
   CHROME_MAX_FONT_SCALE,
   colors,
+  derive,
   fonts,
   space,
   target,
@@ -46,6 +47,7 @@ import {
   useSpotlightScroller,
 } from "@/shared/lib/spotlight";
 import { useTabBarClearance } from "@/shared/lib/tab-bar";
+import { useColorScheme } from "@/shared/lib/theme";
 import { NavGlass } from "@/shared/ui/glass";
 import { useSplashRevealed } from "@/shared/ui/splash";
 
@@ -147,7 +149,8 @@ export function TodayPage() {
 
   const hour = new Date().getHours();
   const time = sceneTime(hour);
-  const palette = scenePalette(time);
+  const scheme = useColorScheme();
+  const palette = scenePalette(time, scheme);
   const greeting =
     hour < 12
       ? t("home.greeting.morning")
@@ -161,7 +164,11 @@ export function TodayPage() {
   return (
     <View style={styles.screen}>
       {focused && mounted && (
-        <StatusBar style={palette.dark && !pastScene ? "light" : "dark"} />
+        <StatusBar
+          style={
+            (pastScene ? scheme === "dark" : palette.dark) ? "light" : "dark"
+          }
+        />
       )}
       <ScrollView
         ref={scroll}
@@ -343,7 +350,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 12,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.82)",
+    backgroundColor: derive(colors.surface, (hex) => hex + "D1"),
   },
   dayText: { ...fonts.heavy(17), color: colors.text },
   avatar: {

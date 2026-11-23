@@ -1,6 +1,8 @@
 import Svg, { Circle, ClipPath, Defs, Ellipse, G, LinearGradient, Path, Rect, Stop } from 'react-native-svg';
 
 import type { PlanKind } from '@/entities/profile';
+import type { ColorScheme } from '@/shared/config';
+import { useColorScheme } from '@/shared/lib/theme';
 
 export type SceneTime = 'morning' | 'day' | 'evening';
 
@@ -19,6 +21,8 @@ type Palette = {
   flower: string;
   wall: string;
   wood: string;
+  /** The window frame and the sill's books. */
+  frame: string;
   /** Text drawn over the scene. */
   ink: string;
   /** The status bar goes light over this scene. */
@@ -29,7 +33,71 @@ type Palette = {
  * The scene's colours by time of day: a peach morning, a blue day, a violet
  * evening with the moon out. Illustration colours, like the Fluent drawings
  * carry their own, so they live with the drawing rather than in the tokens.
+ *
+ * In dark each time of day has a night of its own: a dusky pre-dawn, a dim
+ * blue dusk and a deep night, so the header never glows white over a black
+ * page and still says which part of the day it is.
  */
+const NIGHTS: Readonly<Record<SceneTime, Palette>> = {
+  morning: {
+    skyTop: '#2B2440',
+    skyBottom: '#6B4A5E',
+    sun: '#FFB27A',
+    cloud: '#4A4060',
+    hillFar: '#3D5C4A',
+    hillNear: '#2F4D3C',
+    bush: '#2A4636',
+    bushDark: '#213A2C',
+    trunk: '#4E3627',
+    crown: '#35584A',
+    path: '#7A6852',
+    flower: '#D97C8E',
+    wall: '#3A2F3E',
+    wood: '#6E4E3A',
+    frame: '#5E5266',
+    ink: '#FFFFFF',
+    dark: true,
+  },
+  day: {
+    skyTop: '#1B2A4A',
+    skyBottom: '#3E5A85',
+    sun: '#F2D27A',
+    cloud: '#5B6F94',
+    hillFar: '#3B5E4C',
+    hillNear: '#2E5040',
+    bush: '#284634',
+    bushDark: '#1F3A2A',
+    trunk: '#4E3627',
+    crown: '#33604A',
+    path: '#7C6E58',
+    flower: '#D8A93A',
+    wall: '#2B3448',
+    wood: '#6E4E3A',
+    frame: '#56627A',
+    ink: '#FFFFFF',
+    dark: true,
+  },
+  evening: {
+    skyTop: '#0E0C24',
+    skyBottom: '#2D2458',
+    sun: '#F4E9C1',
+    cloud: '#3E3670',
+    hillFar: '#25403C',
+    hillNear: '#1C3530',
+    bush: '#172C27',
+    bushDark: '#12241F',
+    trunk: '#3A281D',
+    crown: '#22433A',
+    path: '#6B5E4B',
+    flower: '#C98597',
+    wall: '#1E1B3A',
+    wood: '#5A3F2E',
+    frame: '#4A4470',
+    ink: '#FFFFFF',
+    dark: true,
+  },
+};
+
 const PALETTES: Readonly<Record<SceneTime, Palette>> = {
   morning: {
     skyTop: '#FFD3B0',
@@ -46,6 +114,7 @@ const PALETTES: Readonly<Record<SceneTime, Palette>> = {
     flower: '#FF8FA3',
     wall: '#FFE9D6',
     wood: '#D29A6A',
+    frame: '#FFFFFF',
     ink: '#1D1D24',
     dark: false,
   },
@@ -64,6 +133,7 @@ const PALETTES: Readonly<Record<SceneTime, Palette>> = {
     flower: '#FFC531',
     wall: '#E6F3FB',
     wood: '#D29A6A',
+    frame: '#FFFFFF',
     ink: '#1D1D24',
     dark: false,
   },
@@ -82,6 +152,7 @@ const PALETTES: Readonly<Record<SceneTime, Palette>> = {
     flower: '#FFB3C1',
     wall: '#3A3566',
     wood: '#8C6448',
+    frame: '#FFFFFF',
     ink: '#FFFFFF',
     dark: true,
   },
@@ -93,8 +164,8 @@ export function sceneTime(hour: number): SceneTime {
   return 'evening';
 }
 
-export function scenePalette(time: SceneTime): Palette {
-  return PALETTES[time];
+export function scenePalette(time: SceneTime, scheme: ColorScheme): Palette {
+  return (scheme === 'dark' ? NIGHTS : PALETTES)[time];
 }
 
 const W = 390;
@@ -244,9 +315,9 @@ function Desk({ time, p }: { time: SceneTime; p: Palette }) {
         <Tree x={320} y={212} s={0.6} p={p} />
         <Path d="M170 224 Q 250 204 300 218 T 360 214 L360 240 L170 240 Z" fill={p.hillNear} />
       </G>
-      <Rect x={win.x} y={win.y} width={win.w} height={win.h} rx={18} fill="none" stroke="#FFFFFF" strokeWidth={10} />
-      <Rect x={win.x + win.w / 2 - 3} y={win.y} width={6} height={win.h} fill="#FFFFFF" />
-      <Rect x={win.x} y={win.y + win.h / 2 - 3} width={win.w} height={6} fill="#FFFFFF" />
+      <Rect x={win.x} y={win.y} width={win.w} height={win.h} rx={18} fill="none" stroke={p.frame} strokeWidth={10} />
+      <Rect x={win.x + win.w / 2 - 3} y={win.y} width={6} height={win.h} fill={p.frame} />
+      <Rect x={win.x} y={win.y + win.h / 2 - 3} width={win.w} height={6} fill={p.frame} />
       <Rect x={0} y={252} width={W} height={48} fill={p.wood} />
       <Rect x={0} y={252} width={W} height={6} fill="#000000" opacity={0.08} />
       <G transform="translate(56 252) scale(0.7)">
@@ -257,8 +328,8 @@ function Desk({ time, p }: { time: SceneTime; p: Palette }) {
         <Rect x={-27} y={-42} width={54} height={9} rx={4} fill="#C9653D" />
       </G>
       <G transform="translate(267 252)">
-        <Rect x={-36} y={-14} width={72} height={14} rx={4} fill="#FFFFFF" opacity={0.85} />
-        <Rect x={-30} y={-24} width={60} height={10} rx={3} fill="#FFFFFF" opacity={0.7} />
+        <Rect x={-36} y={-14} width={72} height={14} rx={4} fill={p.frame} opacity={0.85} />
+        <Rect x={-30} y={-24} width={60} height={10} rx={3} fill={p.frame} opacity={0.7} />
       </G>
     </>
   );
@@ -277,7 +348,7 @@ export type HeaderSceneProps = {
  * plant over a desk for the desk plan, in the colours of the time of day.
  */
 export function HeaderScene({ kind, time, width, height }: HeaderSceneProps) {
-  const p = PALETTES[time];
+  const p = scenePalette(time, useColorScheme());
   const viewHeight = (W * height) / width;
   return (
     <Svg

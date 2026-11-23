@@ -58,6 +58,19 @@ export function soft(color: ColorValue, amount = 0.24): ColorValue {
   return derive(color, (hex, scheme) => mix(themes[scheme].colors.surface, hex, amount));
 }
 
+/**
+ * The disc behind a move's drawing. The drawings have a white ground that is
+ * multiplied into the disc, so a dark disc would sink the figure with it: in
+ * dark it stays the light pastel, dimmed a little so it does not glare off the
+ * black page.
+ */
+export function pastel(color: ColorValue): ColorValue {
+  return derive(color, (hex, scheme) => {
+    const light = mix('#FFFFFF', hex, 0.24);
+    return scheme === 'dark' ? mix(light, themes.dark.colors.surface, 0.18) : light;
+  });
+}
+
 /** BitePal's header scene (#108): the warm card the character stands in. */
 export const sceneStyle = {
   ...cardStyle,
@@ -305,7 +318,7 @@ export function MoveCircle({
   const known = exerciseId != null && EXERCISES_BY_ID[exerciseId] != null;
   return (
     <View
-      style={[styles.disc, { width: size, height: size, borderRadius: size / 2, backgroundColor: soft(moveColor(exerciseId)) }, style]}
+      style={[styles.disc, { width: size, height: size, borderRadius: size / 2, backgroundColor: pastel(moveColor(exerciseId)) }, style]}
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants">
       {drawing != null ? (

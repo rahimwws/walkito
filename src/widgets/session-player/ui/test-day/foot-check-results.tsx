@@ -9,7 +9,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useIntake } from '@/entities/profile';
 import { GOAL_SPECS, fromDateKey, retestResults, type TestDayOutcome } from '@/entities/program';
-import { bitepal, colors, fonts } from '@/shared/config';
+import { bitepal, colors, derive, fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
@@ -575,7 +575,7 @@ const styles = StyleSheet.create({
   cardFootStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   footText: { ...fonts.semibold(17), color: ink.grey, flexShrink: 1 },
   chip: { paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999, backgroundColor: bitepal.well },
-  chipGain: { backgroundColor: '#E6F4EA' },
+  chipGain: { backgroundColor: derive(colors.good, (hex) => hex + '24') },
   chipText: { ...fonts.bold(17), color: ink.text },
   small: { ...fonts.regular(17), color: ink.grey },
   gain: { color: colors.good },
