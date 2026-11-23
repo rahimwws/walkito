@@ -687,6 +687,7 @@ export function ProgramPage() {
         {session?.kind === 'session' && session.detail != null && (
           <SessionDetail
             {...session.detail}
+            minutes={session.minutes}
             onBack={() => program?.closeDetail()}
             onPreview={openMove}
             onStart={() => {

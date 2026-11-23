@@ -5,28 +5,30 @@ import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } fr
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { EXERCISES_BY_ID, exerciseById, markCantDo, planMeta, type CantDoReason } from '@/entities/program';
-import { clipShape, colors, fonts, target } from '@/shared/config';
+import { bitepal, clipShape, colors, fonts, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import {
+  CardLabel,
   CantDoReasons,
   ExercisePreview,
   RoundButton,
   StepList,
   TITLE_SCALE,
   cardStyle,
-  moveAccent,
+  moveColor,
+  soft,
   stepsOf,
-  tint,
 } from '@/widgets/session-player';
 
-const SIDE = 20;
+const SIDE = 16;
 const STUDIO = '#ECF0F1';
 
 /**
- * One move, as a native form sheet, in Bend's instructions style: the clip
- * looping in a circle on the move's pastel disc, its name, "INSTRUCTIONS" on
- * a white card as numbered steps, why it is in the plan on another, and
+ * One move, as a native form sheet, in BitePal's card language: the clip
+ * looping in a circle on the disc of the part it works, its name, "How to do
+ * it" as the grey label of a white card of numbered steps, why it is in the
+ * plan on another, and
  * "Can't do this" in words, which takes it out of the plan with the player's
  * reasons and store. It starts nothing.
  */
@@ -58,11 +60,11 @@ export function ExerciseSheetPage() {
       contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 20) + 16 }}
       showsVerticalScrollIndicator={false}>
       <View style={styles.bar}>
-        <RoundButton icon={Cancel01Icon} tone="grey" size={36} label={t('common.close')} onPress={() => router.back()} />
+        <RoundButton icon={Cancel01Icon} size={44} label={t('common.close')} onPress={() => router.back()} />
       </View>
 
       <View style={styles.top}>
-        <View style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: tint(moveAccent(id)) }]}>
+        <View style={[styles.disc, { width: disc, height: disc, borderRadius: disc / 2, backgroundColor: soft(moveColor(id)) }]}>
           <View style={[styles.inner, { width: inner, height: inner, borderRadius: inner / 2 }]}>
             <ExercisePreview
               exerciseId={id}
@@ -78,13 +80,13 @@ export function ExerciseSheetPage() {
 
       <View style={styles.body}>
         <View style={styles.card}>
-          <Text style={styles.eyebrow}>{t('player.sheet.stepsTitle').toLocaleUpperCase()}</Text>
+          <CardLabel>{t('player.sheet.stepsTitle')}</CardLabel>
           <StepList steps={stepsOf(exercise.cue)} />
         </View>
 
         {exercise.rationale.length > 0 && (
           <View style={styles.card}>
-            <Text style={styles.eyebrow}>{t('player.detail.whyTitle').toLocaleUpperCase()}</Text>
+            <CardLabel>{t('player.detail.whyTitle')}</CardLabel>
             <Text style={styles.why}>{exercise.rationale}</Text>
           </View>
         )}
@@ -120,20 +122,19 @@ export function ExerciseSheetPage() {
 }
 
 const styles = StyleSheet.create({
-  root: { backgroundColor: colors.bg },
+  root: { backgroundColor: bitepal.page },
   bar: { flexDirection: 'row', justifyContent: 'flex-end', paddingHorizontal: 16, paddingTop: 14 },
   top: { alignItems: 'center', paddingHorizontal: SIDE, gap: 16 },
   disc: { alignItems: 'center', justifyContent: 'center' },
   inner: { overflow: 'hidden', backgroundColor: STUDIO, alignItems: 'center', justifyContent: 'center' },
-  title: { ...fonts.bold(28, -0.4), color: colors.text, textAlign: 'center' },
-  body: { paddingHorizontal: SIDE, paddingTop: 20, gap: 14 },
-  card: { ...cardStyle, padding: 18, gap: 12 },
-  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3 },
+  title: { ...fonts.heavy(30, -0.6), color: colors.text, textAlign: 'center' },
+  body: { paddingHorizontal: SIDE, paddingTop: 20, gap: 12 },
+  card: { ...cardStyle, padding: 20, gap: 12 },
   why: { ...fonts.regular(19), color: colors.text },
   section: { ...fonts.semibold(19), color: colors.text },
   text: { minHeight: target.min, justifyContent: 'center' },
   cantDo: { alignSelf: 'center' },
-  textLabel: { ...fonts.semibold(19), color: colors.accent },
+  textLabel: { ...fonts.bold(19), color: colors.text },
   textQuiet: { ...fonts.medium(19), color: colors.text2 },
   saved: { ...fonts.regular(19), color: colors.text, textAlign: 'center' },
   pressed: { opacity: 0.55 },
