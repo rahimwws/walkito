@@ -4,6 +4,10 @@ export const QUICK_PT = {
   'quick.title': 'Rápido',
   'quick.subtitle': 'Para quando você precisa agora',
   'quick.featured': 'Agora',
+  'quick.situations': 'Situações',
+  'quick.bodyParts': 'Regiões',
+  'quick.allMoves': 'Todos os exercícios',
+  'quick.showAll': 'Ver tudo',
 
   'quick.flare.title': 'Dói agora',
   'quick.preRun.title': 'Antes de correr',

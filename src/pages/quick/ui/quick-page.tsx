@@ -1,91 +1,96 @@
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
-import { useEffect, useMemo } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useMemo, useState } from 'react';
+import { Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { currentDay, painOn, useProgramState } from '@/entities/program';
+import { EXERCISE_LIST, currentDay, doseFor, doseSeconds, painOn, useProgramState } from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
 import { askForPlans, browsingLapsed, clearBrowsingLapsed, useEntitled, useLookingAround } from '@/entities/purchase';
 import {
   PROTOCOLS,
-  protocolById,
-  PROTOCOL_ART,
   PROTOCOL_ICONS,
   clearProtocolRequest,
+  protocolById,
   recommendProtocol,
   useProtocolRequest,
   type Protocol,
 } from '@/entities/protocols';
-import { fonts, meterColors, palette } from '@/shared/config';
-import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { FeatureCard } from '@/shared/ui/feature-card';
+import {
+  CHROME_MAX_FONT_SCALE,
+  accents,
+  bitepal,
+  bodyColors,
+  colors,
+  fonts,
+  parts,
+  space,
+  target,
+  type BodyPart,
+} from '@/shared/config';
+import { useT, type Translate } from '@/shared/lib/i18n';
+import { useTabBarClearance } from '@/shared/lib/tab-bar';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { PartIcon } from '@/shared/ui/part-icon';
+import { CardLabel, MoveCircle, bodyPartOf, cardStyle, soft } from '@/widgets/session-player';
+
+import { Hex, HexTile } from './hex-tile';
+
+const PARTS: readonly BodyPart[] = ['heel', 'arch', 'calf', 'ankle', 'toes'];
+/** Big numbers and titles stop growing here, so they never break mid-word. */
+const BIG_SCALE = 1.7;
+const PHOTO = 56;
+const PLAY = 64;
+
+type Move = { id: string; part: BodyPart | null; seconds: number };
 
 /**
- * The third tab: five short protocols, runnable any day.
- *
- * The app was useful on scheduled days only, and pain does not keep to the
- * schedule. This screen answers the question a user has most often — what do I
- * do right now — and is the reason to open the app on a day the plan asks for
+ * The Exercises tab, as BitePal's home cards and awards (#28, #102): the
+ * routine that suits right now as a card with a big title and a round play
+ * button, the other situations as coloured hexagons that open their routine,
+ * the five parts of the foot and leg as hexagons that filter the moves, and
+ * every move as a row with its picture in a circle of its part's colour, how
+ * long it takes and the part it works. A move opens its sheet, which starts
  * nothing.
- *
- * Everything on it is assembled from parts that already existed: the cards are
- * `FeatureCard`, a tap pushes the routine's own page (`pages/routine`), the
- * player there is the session player with a playlist handed to it, and every
- * colour is the accent already used for the day type that means the same
- * thing. Nothing here is a new component.
  */
-
-/** One Fluent emoji per protocol, shared with the small cards on Today. A
- * locked card trades it for the lock, which is a state rather than content. */
-const ICONS = PROTOCOL_ICONS;
-
 export function QuickPage() {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
-  const insets = useSafeAreaInsets();
   const t = useT();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
+  const clearance = useTabBarClearance();
+  const { width, fontScale } = useWindowDimensions();
   const entitled = useEntitled();
+  const [part, setPart] = useState<BodyPart | null>(null);
 
   // Subscribed rather than read once: logging pain on Home while this tab is
   // mounted has to change what is featured here.
   useProgramState();
-
   const health = useHealthSignals();
 
   /**
-   * Which protocol leads, worked out from the clock and today's log.
-   *
-   * `lastRunEndedAt` comes from the health cache, which the pipeline fills
-   * from workouts — never from a query here: this tab must never be the thing
-   * that asks for a HealthKit permission. Null (no Health, no run) skips the
-   * rule silently.
+   * Which routine leads, worked out from the clock and today's log. The run
+   * comes from the health cache, never from a query here: this tab must never
+   * be the thing that asks for a HealthKit permission.
    */
-  const featuredId = useMemo(() => {
-    const now = new Date();
-    const day = currentDay();
-    return recommendProtocol(
+  const now = new Date();
+  const featured = protocolById(
+    recommendProtocol(
       {
-        painToday: painOn(day),
-        checkedInToday: painOn(day) != null,
+        painToday: painOn(currentDay()),
+        checkedInToday: painOn(currentDay()) != null,
         lastRunEndedAt: health.lastRunEndedAt,
         hour: now.getHours(),
         weekday: now.getDay(),
       },
       now.getTime(),
-    );
-    // Recomputed on every render of this screen rather than memoised on a
-    // clock: the hour can turn while the tab is open, and a stale featured
-    // card is worse than the work of picking one again.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [health.lastRunEndedAt]);
-
-  const featured = protocolById(featuredId);
-  const rest = PROTOCOLS.filter((protocol) => protocol.id !== featuredId);
+    ),
+  );
+  const situations = PROTOCOLS.filter((protocol) => protocol.id !== featured.id);
 
   // Looking around without buying, the free routines are locked too: only
   // Day 1 is open before a purchase.
@@ -93,16 +98,10 @@ export function QuickPage() {
   const locked = (protocol: Protocol) => !entitled && (!protocol.free || looking);
 
   const openProtocol = (protocol: Protocol) => {
-    Haptics.selectionAsync();
     if (locked(protocol)) {
-      // The standard paywall, from the standard offering. Tapping a locked
-      // card is a clear intent to buy; it should not be answered with a shrug.
-      //
-      // Except for somebody whose subscription ended and who is browsing
-      // read-only: `/offer` is not a route for them (the root guard keeps it
-      // for a first purchase), so a push would do nothing. Clearing the flag
-      // brings the expiry screen back, which sells the same plans — the way the
-      // session player's locked state does it.
+      // Somebody whose subscription ended and who is browsing read-only gets
+      // the expiry screen back, which sells the same plans: `/offer` is not a
+      // route for them.
       if (browsingLapsed()) clearBrowsingLapsed();
       else if (looking) askForPlans('routine');
       else router.push('/offer');
@@ -111,11 +110,7 @@ export function QuickPage() {
     router.push({ pathname: '/routine/[id]', params: { id: protocol.id } });
   };
 
-  /**
-   * A routine asked for from elsewhere (the plan screen, an email link) opened
-   * the same way a tap on its card here opens it, lock included: its page is
-   * pushed over the tabs.
-   */
+  /** A routine asked for from elsewhere (the plan, an email link) opens as a tap here would, lock included. */
   const asked = useProtocolRequest();
   useEffect(() => {
     if (asked == null) return;
@@ -125,54 +120,136 @@ export function QuickPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [asked]);
 
+  const moves = useMemo<Move[]>(
+    () =>
+      EXERCISE_LIST.map((e) => ({
+        id: e.id,
+        part: bodyPartOf(e.id),
+        seconds: doseSeconds(doseFor(e.id)),
+      })),
+    [],
+  );
+  const counts = PARTS.reduce(
+    (all, p) => ({ ...all, [p]: moves.filter((m) => m.part === p).length }),
+    {} as Record<BodyPart, number>,
+  );
+  const shown = part == null ? moves : moves.filter((m) => m.part === part);
+
+  // Inside the page's gutter and the card's padding.
+  const inner = width - 2 * space.screen - 2 * PAD;
+  const huge = fontScale >= 2;
+  const partCols = huge ? 1 : fontScale >= 1.35 ? 3 : 5;
+  const situationCols = huge ? 1 : 2;
+  const basis = (cols: number) => (inner - GAP * (cols - 1)) / cols;
+
   return (
     <View style={styles.screen}>
       <ScrollView
         contentInsetAdjustmentBehavior="never"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
-          paddingTop: insets.top + 24,
-          // One gutter for the whole screen, as the other two tabs have. The
-          // card fills what is left of the width; an earlier version moved this
-          // onto each block so the card could run edge to edge, which left it
-          // pinned to x=0 with a gap down the right.
-          paddingHorizontal: SIDE_PAD,
-          paddingBottom: insets.bottom + 140,
+          // iOS already starts a tab's scroll view under the status bar.
+          paddingTop: (Platform.OS === 'ios' ? 0 : insets.top) + 16,
+          paddingHorizontal: space.screen,
+          paddingBottom: clearance + 28,
+          gap: 12,
         }}>
-        <Text style={[styles.title, { color: colors.foreground }]}>{t('quick.title')}</Text>
-        <Text style={[styles.subtitle, { color: meter.caption }]}>{t('quick.subtitle')}</Text>
+        <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={2}>
+          {t('tabs.exercises')}
+        </Text>
 
-        {/* The one that suits right now, and only here: the grid below holds
-            the others. Showing it twice put the same picture and title on the
-            screen twice, one above the other.
-
-            A banner rather than the card's own near-square aspect. `FeatureCard`
-            is sized for a pair sitting side by side; at full width that shape
-            becomes a panel taller than the phone, and everything under it falls
-            off the screen. */}
-        <FeatureCard
-          title={t(featured.titleKey)}
-          image={PROTOCOL_ART[featured.id]}
-          icon={locked(featured) ? SquareLock02Icon : undefined}
-          emoji={locked(featured) ? undefined : ICONS[featured.id]}
-          accent={featured.accent}
+        <Featured
+          protocol={featured}
+          locked={locked(featured)}
+          large={fontScale >= 1.35}
           onPress={() => openProtocol(featured)}
-          style={styles.featured}
         />
-        <View style={styles.grid}>
-          {rest.map((protocol, i) => (
-            <FeatureCard
-              key={protocol.id}
-              title={t(protocol.titleKey)}
-              image={PROTOCOL_ART[protocol.id]}
-              icon={locked(protocol) ? SquareLock02Icon : undefined}
-              emoji={locked(protocol) ? undefined : ICONS[protocol.id]}
-              accent={protocol.accent}
-              onPress={() => openProtocol(protocol)}
-              // An odd one out is alone on its row and stretches to the full
-              // width, where the tile's near-square shape made it the tallest
-              // thing on the screen. It takes the banner shape instead.
-              style={i === rest.length - 1 && rest.length % 2 === 1 ? styles.wide : styles.tile}
+
+        <View style={styles.card}>
+          <CardLabel>{t('quick.situations')}</CardLabel>
+          <View style={styles.grid}>
+            {situations.map((protocol) => {
+              const color = accents.light[protocol.accent].fill;
+              const isLocked = locked(protocol);
+              return (
+                <HexTile
+                  key={protocol.id}
+                  layout={huge ? 'row' : 'grid'}
+                  role="open"
+                  style={{ width: basis(situationCols) }}
+                  title={t(protocol.titleKey)}
+                  sub={t('quick.minutes', { count: protocol.minutes })}
+                  accessibilityLabel={isLocked ? `${t(protocol.titleKey)}, ${t('quick.locked')}` : undefined}
+                  onPress={() => openProtocol(protocol)}
+                  hex={
+                    <Hex size={72} fill={soft(color, 0.2)} rim={soft(color, 0.42)}>
+                      {isLocked ? (
+                        <HugeiconsIcon icon={SquareLock02Icon} size={30} color={colors.text2} strokeWidth={2} />
+                      ) : (
+                        <FluentIcon name={PROTOCOL_ICONS[protocol.id]} size={36} />
+                      )}
+                    </Hex>
+                  }
+                />
+              );
+            })}
+          </View>
+        </View>
+
+        <View style={styles.card}>
+          <CardLabel>{t('quick.bodyParts')}</CardLabel>
+          <View style={styles.grid} accessibilityRole="radiogroup">
+            {PARTS.map((p) => (
+              <HexTile
+                key={p}
+                layout={huge ? 'row' : 'grid'}
+                role="filter"
+                selected={part === p}
+                style={{ width: basis(partCols) }}
+                title={t(`home.today.part.${p}`)}
+                badge={counts[p]}
+                accessibilityLabel={t('home.today.partMoves', {
+                  part: t(`home.today.part.${p}`),
+                  count: counts[p],
+                })}
+                onPress={() => setPart(part === p ? null : p)}
+                hex={
+                  <Hex
+                    size={huge ? 64 : Math.min(60, basis(partCols))}
+                    fill={parts[p].soft}
+                    rim={soft(bodyColors[p], 0.42)}
+                    selected={part === p}>
+                    <PartIcon part={p} size={36} disc={false} />
+                  </Hex>
+                }
+              />
+            ))}
+          </View>
+        </View>
+
+        <View style={styles.card}>
+          <View style={styles.listHead}>
+            <View style={styles.listTitle}>
+              <Text style={styles.section} accessibilityRole="header" maxFontSizeMultiplier={BIG_SCALE}>
+                {part == null ? t('quick.allMoves') : t(`home.today.part.${part}`)}
+              </Text>
+              <Text style={styles.count}>{t('quick.moves', { count: shown.length })}</Text>
+            </View>
+            {part != null && (
+              <Pressable
+                accessibilityRole="button"
+                hitSlop={4}
+                onPress={() => setPart(null)}
+                style={({ pressed }) => [styles.showAll, pressed && styles.pressed]}>
+                <Text style={styles.showAllText}>{t('quick.showAll')}</Text>
+              </Pressable>
+            )}
+          </View>
+          {shown.map((move) => (
+            <MoveRow
+              key={move.id}
+              move={move}
+              onPress={() => router.push({ pathname: '/move/[id]', params: { id: move.id } })}
             />
           ))}
         </View>
@@ -181,31 +258,166 @@ export function QuickPage() {
   );
 }
 
-/** Home's gutter, so the three tabs line up. */
-const SIDE_PAD = 20;
+/**
+ * The routine that suits right now, as BitePal's timer card (#28): the grey
+ * label, its name big, how long and how many moves, the black round play
+ * button (a lock when it is not open), and its moves as overlapping circles.
+ */
+function Featured({
+  protocol,
+  locked,
+  large,
+  onPress,
+}: {
+  protocol: Protocol;
+  locked: boolean;
+  large: boolean;
+  onPress: () => void;
+}) {
+  const t = useT();
+  const title = t(protocol.titleKey);
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={locked ? `${title}, ${t('quick.locked')}` : title}
+      onPress={() => {
+        void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+        onPress();
+      }}
+      style={({ pressed }) => [styles.card, pressed && styles.pressedCard]}>
+      <View style={[styles.featuredHead, large && styles.featuredHeadLarge]}>
+        <View style={styles.featuredText}>
+          <CardLabel>{t('quick.featured')}</CardLabel>
+          <Text style={styles.featuredTitle} maxFontSizeMultiplier={BIG_SCALE}>
+            {title}
+          </Text>
+        </View>
+        <View style={styles.play}>
+          <HugeiconsIcon
+            icon={locked ? SquareLock02Icon : PlayIcon}
+            size={28}
+            color={bitepal.onPrimary}
+            strokeWidth={2.2}
+          />
+        </View>
+      </View>
+      <Text style={styles.meta}>
+        {t('player.header.meta', {
+          minutes: t('quick.minutes', { count: protocol.minutes }),
+          moves: t('quick.moves', { count: protocol.steps.length }),
+        })}
+      </Text>
+      <View style={styles.photos}>
+        {protocol.steps.map((step, index) => (
+          <MoveCircle
+            key={step.exerciseId + index}
+            exerciseId={step.exerciseId}
+            size={PHOTO}
+            style={[styles.photo, index > 0 && styles.overlap]}
+          />
+        ))}
+      </View>
+    </Pressable>
+  );
+}
+
+/** `2 min` or `45 s`: what one round of the move takes at its first level. */
+function lengthLabel(t: Translate, seconds: number): string {
+  return seconds >= 60
+    ? t('quick.minutes', { count: Math.round(seconds / 60) })
+    : t('quick.seconds', { count: Math.max(1, Math.round(seconds)) });
+}
+
+/** One move, as BitePal's food rows (#59): its picture in a circle, its name, and chips for how long and which part. */
+function MoveRow({ move, onPress }: { move: Move; onPress: () => void }) {
+  const t = useT();
+  const name = EXERCISE_LIST.find((e) => e.id === move.id)?.titleKey;
+  return (
+    <Pressable
+      accessibilityRole="button"
+      onPress={() => {
+        void Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
+      <MoveCircle exerciseId={move.id} size={PHOTO} />
+      <View style={styles.rowText}>
+        <Text style={styles.rowName}>{name == null ? move.id : t(name)}</Text>
+        <View style={styles.chips}>
+          <View style={styles.chip}>
+            <HugeiconsIcon icon={Clock01Icon} size={16} color={colors.text2} strokeWidth={2} />
+            <Text style={styles.chipText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+              {lengthLabel(t, move.seconds)}
+            </Text>
+          </View>
+          {move.part != null && (
+            <View style={[styles.chip, { backgroundColor: parts[move.part].soft }]}>
+              <View style={[styles.dot, { backgroundColor: bodyColors[move.part] }]} />
+              <Text style={styles.chipText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+                {t(`home.today.part.${move.part}`)}
+              </Text>
+            </View>
+          )}
+        </View>
+      </View>
+      <HugeiconsIcon icon={ArrowRight01Icon} size={22} color={colors.text3} strokeWidth={2} />
+    </Pressable>
+  );
+}
+
+const PAD = 20;
+const GAP = 10;
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  title: fonts.heavy(32, -0.8),
-  subtitle: { marginTop: 4, ...fonts.medium(16, -0.2) },
-  /**
-   * The full width inside the gutter, and banner-shaped.
-   *
-   * `alignSelf: 'stretch'` is stated rather than left to the default: with an
-   * `aspectRatio` set and no width, a stray `alignItems` anywhere above would
-   * let the card size to its content and sit against one edge, which is exactly
-   * what it did. Overrides `FeatureCard`'s own near-square ratio, which is
-   * sized for two cards abreast.
-   */
-  featured: { marginTop: 20, alignSelf: 'stretch', width: '100%', aspectRatio: 2.05 },
-  grid: {
-    marginTop: 20,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
+  title: { ...fonts.heavy(34, -0.8), color: colors.text, marginBottom: 4 },
+  card: { ...cardStyle, padding: PAD, gap: 14 },
+  pressedCard: { opacity: 0.8 },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', columnGap: GAP, rowGap: 14 },
+  featuredHead: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  featuredHeadLarge: {
+    flexDirection: 'column-reverse',
+    alignItems: 'flex-start',
   },
-  /** Two to a row, with the gap taken out of the width. */
-  tile: { flexGrow: 1, flexBasis: '47%' },
-  /** The last tile when it has no partner: full width, banner-shaped. */
-  wide: { flexBasis: '100%', aspectRatio: 2.05 },
+  featuredText: { flexGrow: 1, flexShrink: 1, gap: 2 },
+  featuredTitle: { ...fonts.heavy(30, -0.6), color: colors.text },
+  play: {
+    width: PLAY,
+    height: PLAY,
+    borderRadius: PLAY / 2,
+    backgroundColor: bitepal.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  meta: { ...fonts.medium(17), color: colors.text2, marginTop: -6 },
+  photos: { flexDirection: 'row' },
+  photo: { borderWidth: 3, borderColor: bitepal.card },
+  overlap: { marginLeft: -14 },
+  listHead: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  listTitle: { flexGrow: 1, flexShrink: 1, gap: 2 },
+  section: { ...fonts.heavy(24, -0.4), color: colors.text },
+  count: { ...fonts.medium(17), color: colors.text3 },
+  showAll: { minHeight: target.min, justifyContent: 'center' },
+  showAllText: { ...fonts.semibold(17), color: bitepal.selected },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 14, minHeight: 72 },
+  rowText: { flex: 1, gap: 6 },
+  rowName: { ...fonts.semibold(19), color: colors.text },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+  chip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    minHeight: 30,
+    paddingHorizontal: 10,
+    borderRadius: 999,
+    backgroundColor: bitepal.well,
+  },
+  dot: { width: 8, height: 8, borderRadius: 4 },
+  chipText: { ...fonts.medium(17), color: colors.text2 },
+  pressed: { opacity: 0.55 },
 });
