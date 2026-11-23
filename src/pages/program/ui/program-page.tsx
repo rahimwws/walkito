@@ -7,7 +7,6 @@ import Animated, {
   LinearTransition,
   ReduceMotion,
   runOnJS,
-  scrollTo,
   useAnimatedReaction,
   useAnimatedRef,
   useAnimatedScrollHandler,
@@ -64,7 +63,7 @@ import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
-import { RoundButton, SessionView, TestDayFlow, cardStyle, type PlaylistStep } from '@/widgets/session-player';
+import { RoundButton, SessionView, TITLE_SCALE, TestDayFlow, cardStyle, type PlaylistStep } from '@/widgets/session-player';
 
 import {
   doneTitle,
@@ -343,14 +342,14 @@ export function ProgramPage() {
   });
 
   const listRef = useAnimatedRef<Animated.ScrollView>();
-  useAnimatedReaction(
-    () => (program?.progress.value ?? 0) < 0.01,
-    (closed, was) => {
-      if (!closed || was !== false || program == null) return;
-      scrollTo(listRef, 0, 0, false);
-      program.scrollTop.value = 0;
-    },
-  );
+  /**
+   * To a place in the list, through the ref's own instance: Reanimated's
+   * `scrollTo` is a worklet and does nothing called from the JS thread. On iOS
+   * the tab's scroll view starts under the status bar, so its top is that far
+   * above zero.
+   */
+  const scrollList = (y: number, animated = true) =>
+    listRef.current?.scrollTo({ y: y - (Platform.OS === 'ios' ? insets.top : 0), animated });
 
   /**
    * Whatever the pane holds leaves when the pane does — a session or a test.
@@ -545,11 +544,7 @@ export function ProgramPage() {
             onSelect={(date) => {
               setPicked(date);
               const y = dayTops.current[date];
-              if (y != null)
-                listRef.current?.scrollTo({
-                  y: Math.max(0, y - 12),
-                  animated: true,
-                });
+              if (y != null) scrollList(y - 12);
             }}
           />
 
@@ -598,7 +593,7 @@ export function ProgramPage() {
             </Animated.View>
           )}
 
-          <Text style={styles.section} accessibilityRole="header">
+          <Text style={styles.section} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
             {t('pages.plan.weeks.this')}
           </Text>
           {otherDays.map((day) => (
@@ -640,14 +635,7 @@ export function ProgramPage() {
               </View>
               <Pressable
                 accessibilityRole="button"
-                // The ref's own instance, not Reanimated's worklet `scrollTo`,
-                // which does nothing when called from a press on the JS thread.
-                onPress={() =>
-                  listRef.current?.scrollTo({
-                    y: Math.max(0, goalTop.current - 10),
-                    animated: true,
-                  })
-                }
+                onPress={() => scrollList(goalTop.current - 10)}
                 style={({ pressed }) => [styles.pill, pressed && { opacity: 0.55 }]}>
                 <Text style={styles.pillText}>{t('pages.plan.seeNextGoal')}</Text>
               </Pressable>
@@ -714,10 +702,8 @@ export function ProgramPage() {
             onClose={() => program?.closeDetail()}
             // Back to the top underneath, where the finished day's card now has
             // the test taken and what it earned: the first thing to see on the
-            // way out. Through the ref's own instance: Reanimated's `scrollTo` is a
-            // worklet, and called from a JS callback like this one it silently
-            // does nothing.
-            onSaved={() => listRef.current?.scrollTo({ y: 0, animated: false })}
+            // way out.
+            onSaved={() => scrollList(0, false)}
           />
         )}
       </Animated.View>

@@ -4,13 +4,13 @@ import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import { dayLook, doseLabel, exerciseById, fromDateKey, type PlanDay } from '@/entities/program';
 import { bitepal, colors, fonts, target } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { MoveCircle, cardStyle } from '@/widgets/session-player';
+import { MoveCircle, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
 
 const PHOTO = 46;
 const STATUS = 44;
@@ -39,6 +39,7 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
   const t = useT();
   const language = useLanguage();
   const [open, setOpen] = useState(false);
+  const large = useWindowDimensions().fontScale >= 1.35;
   const label = new Intl.DateTimeFormat(language, {
     weekday: 'long',
     day: 'numeric',
@@ -71,10 +72,12 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
   );
 
   const head = (
-    <View style={styles.head}>
+    <View style={[styles.head, large && styles.headLarge]}>
       <View style={styles.headText}>
         <Text style={styles.label}>{label}</Text>
-        <Text style={[styles.title, (rest || (past && !done)) && styles.quiet]}>{title}</Text>
+        <Text style={[styles.title, (rest || (past && !done)) && styles.quiet]} maxFontSizeMultiplier={TITLE_SCALE}>
+          {title}
+        </Text>
       </View>
       {status}
     </View>
@@ -134,7 +137,9 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
                 style={({ pressed }) => [styles.move, pressed && styles.pressed]}>
                 <MoveCircle exerciseId={move.id} size={PHOTO} />
                 <View style={styles.moveText}>
-                  <Text style={styles.moveName}>{name}</Text>
+                  <Text style={styles.moveName} maxFontSizeMultiplier={TITLE_SCALE}>
+                    {name}
+                  </Text>
                   <Text style={styles.moveDose}>
                     {doseLabel(move.dose.sets, move.dose.reps, move.dose.holdSec, move.dose.perSide)}
                   </Text>
@@ -153,7 +158,8 @@ const styles = StyleSheet.create({
   restCard: { paddingVertical: 16 },
   toggle: { gap: 8 },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  headText: { flex: 1, gap: 2 },
+  headLarge: { flexDirection: 'column-reverse', alignItems: 'flex-start' },
+  headText: { flexGrow: 1, flexShrink: 1, gap: 2 },
   label: { ...fonts.semibold(17), color: colors.text3 },
   title: { ...fonts.heavy(22, -0.4), color: colors.text },
   quiet: { color: colors.text2 },

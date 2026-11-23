@@ -37,7 +37,7 @@ import { useT, type Translate } from '@/shared/lib/i18n';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { PartIcon } from '@/shared/ui/part-icon';
-import { CardLabel, MoveCircle, bodyPartOf, cardStyle, soft } from '@/widgets/session-player';
+import { CardLabel, MoveCircle, TITLE_SCALE, bodyPartOf, cardStyle, soft } from '@/widgets/session-player';
 
 import { Hex, HexTile } from './hex-tile';
 
@@ -228,7 +228,7 @@ export function QuickPage() {
         </View>
 
         <View style={styles.card}>
-          <View style={styles.listHead}>
+          <View style={[styles.listHead, huge && styles.listHeadHuge]}>
             <View style={styles.listTitle}>
               <Text style={styles.section} accessibilityRole="header" maxFontSizeMultiplier={BIG_SCALE}>
                 {part == null ? t('quick.allMoves') : t(`home.today.part.${part}`)}
@@ -342,7 +342,9 @@ function MoveRow({ move, onPress }: { move: Move; onPress: () => void }) {
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
       <MoveCircle exerciseId={move.id} size={PHOTO} />
       <View style={styles.rowText}>
-        <Text style={styles.rowName}>{name == null ? move.id : t(name)}</Text>
+        <Text style={styles.rowName} maxFontSizeMultiplier={TITLE_SCALE}>
+          {name == null ? move.id : t(name)}
+        </Text>
         <View style={styles.chips}>
           <View style={styles.chip}>
             <HugeiconsIcon icon={Clock01Icon} size={16} color={colors.text2} strokeWidth={2} />
@@ -399,11 +401,18 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: 8,
   },
+  listHeadHuge: { flexDirection: 'column' },
   listTitle: { flexGrow: 1, flexShrink: 1, gap: 2 },
   section: { ...fonts.heavy(24, -0.4), color: colors.text },
   count: { ...fonts.medium(17), color: colors.text3 },
-  showAll: { minHeight: target.min, justifyContent: 'center' },
-  showAllText: { ...fonts.semibold(17), color: bitepal.selected },
+  showAll: {
+    minHeight: target.min,
+    justifyContent: 'center',
+    paddingHorizontal: 18,
+    borderRadius: 999,
+    backgroundColor: bitepal.well,
+  },
+  showAllText: { ...fonts.semibold(17), color: colors.text },
   row: { flexDirection: 'row', alignItems: 'center', gap: 14, minHeight: 72 },
   rowText: { flex: 1, gap: 6 },
   rowName: { ...fonts.semibold(19), color: colors.text },

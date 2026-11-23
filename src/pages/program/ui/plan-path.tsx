@@ -10,7 +10,7 @@ import { CHROME_MAX_FONT_SCALE, bitepal, colors, fonts, target } from '@/shared/
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
-import { CardLabel, MoveCircle, cardStyle } from '@/widgets/session-player';
+import { CardLabel, MoveCircle, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
 
 import {
   testLine,
@@ -140,7 +140,9 @@ function WeekCard({
                 onPress={() => onPreview(id)}
                 style={({ pressed }) => [styles.move, pressed && styles.pressed]}>
                 <MoveCircle exerciseId={id} size={PHOTO} />
-                <Text style={styles.moveName}>{name}</Text>
+                <Text style={styles.moveName} maxFontSizeMultiplier={TITLE_SCALE}>
+                  {name}
+                </Text>
                 {week.fresh.includes(id) && (
                   <View style={styles.fresh}>
                     <Text style={styles.freshText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import type { Goal } from '@/entities/program';
 import { bitepal, colors, fonts } from '@/shared/config';
@@ -51,6 +51,7 @@ const WELL = 44;
 export function HelpsCard({ goals }: { goals: readonly Goal[] }) {
   const t = useT();
   const tips = helpsTips(goals);
+  const huge = useWindowDimensions().fontScale >= 2;
   if (tips.length === 0) return null;
 
   return (
@@ -62,7 +63,7 @@ export function HelpsCard({ goals }: { goals: readonly Goal[] }) {
         </Text>
       </View>
       {tips.map((tip) => (
-        <View key={tip.key} style={styles.row}>
+        <View key={tip.key} style={[styles.row, huge && styles.rowHuge]}>
           <View style={styles.well} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
             <FluentIcon name={tip.icon} size={24} />
           </View>
@@ -78,6 +79,7 @@ const styles = StyleSheet.create({
   heading: { gap: 2 },
   title: { ...fonts.heavy(24, -0.4), color: colors.text },
   row: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  rowHuge: { flexDirection: 'column', gap: 6 },
   well: {
     width: WELL,
     height: WELL,

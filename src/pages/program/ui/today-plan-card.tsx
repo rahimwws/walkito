@@ -18,7 +18,7 @@ import { useT } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Mascot, handsUpRig, sleepingRig } from '@/shared/ui/mascot';
 import { PartIcon } from '@/shared/ui/part-icon';
-import { BigNumber, Capsule, CardLabel, MoveCircle, Ring, cardStyle } from '@/widgets/session-player';
+import { BigNumber, Capsule, CardLabel, MoveCircle, Ring, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
 
 import type { TodayVariant } from '../model/plan-view';
 import { WaitCaption } from './wait-caption';
@@ -99,7 +99,9 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
     props;
   const { earned, onResults, onPreview, active } = props;
   const t = useT();
-  const large = useWindowDimensions().fontScale >= 1.35;
+  const { fontScale } = useWindowDimensions();
+  const large = fontScale >= 1.35;
+  const huge = fontScale >= 2;
   const working = variant === 'session' || variant === 'easy';
   const ticked = moves.filter((m) => m.done).length;
 
@@ -145,8 +147,8 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
         {variant === 'done' && <Mascot rig={handsUpRig} size={RING + 12} paused={!active} />}
       </View>
 
-      {variant !== 'rest' && (
-        <Text style={styles.title} accessibilityRole="header">
+      {variant !== 'rest' && variant !== 'test' && (
+        <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
           {title}
         </Text>
       )}
@@ -166,13 +168,15 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
                   : t('pages.plan.chipPreviewA11y', { name: move.title })
               }
               onPress={() => onPreview(move.id)}
-              style={({ pressed }) => [styles.move, pressed && styles.pressed]}>
+              style={({ pressed }) => [styles.move, huge && styles.moveHuge, pressed && styles.pressed]}>
               <MoveCircle exerciseId={move.id} size={MOVE} />
               <View style={styles.moveText}>
-                <Text style={styles.moveName}>{move.title}</Text>
+                <Text style={styles.moveName} maxFontSizeMultiplier={TITLE_SCALE}>
+                  {move.title}
+                </Text>
                 <Text style={styles.moveDose}>{move.dose}</Text>
               </View>
-              <View style={[styles.tick, move.done && styles.tickDone]}>
+              <View style={[styles.tick, move.done && styles.tickDone, huge && styles.tickHuge]}>
                 {move.done && <HugeiconsIcon icon={Tick02Icon} size={18} color={bitepal.onPrimary} strokeWidth={2.6} />}
               </View>
             </Pressable>
@@ -362,7 +366,8 @@ const styles = StyleSheet.create({
     gap: 12,
     minHeight: target.min + 8,
   },
-  moveText: { flex: 1, gap: 1 },
+  moveHuge: { flexDirection: 'column', alignItems: 'flex-start', gap: 6 },
+  moveText: { flexGrow: 1, flexShrink: 1, gap: 1 },
   moveName: { ...fonts.semibold(19), color: colors.text },
   moveDose: { ...fonts.medium(17), color: colors.text3 },
   tick: {
@@ -374,6 +379,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  tickHuge: { position: 'absolute', top: 11, right: 0 },
   tickDone: {
     backgroundColor: bitepal.selected,
     borderColor: bitepal.selected,
@@ -402,7 +408,7 @@ const styles = StyleSheet.create({
   pillText: { ...fonts.semibold(17), color: colors.text, flexShrink: 1 },
   stats: { flexDirection: 'row', gap: 16 },
   statsLarge: { flexDirection: 'column', gap: 12 },
-  stat: { flex: 1, gap: 6 },
+  stat: { flex: 1, gap: 6, justifyContent: 'space-between' },
   statLabel: { ...fonts.medium(17), color: colors.text3 },
   statHead: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   statDot: { width: 10, height: 10, borderRadius: 5 },
