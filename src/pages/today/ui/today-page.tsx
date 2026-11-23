@@ -179,7 +179,7 @@ export function TodayPage() {
                 style={[styles.name, { color: palette.ink }]}
                 accessibilityRole="header"
                 numberOfLines={2}
-                maxFontSizeMultiplier={1.6}
+                maxFontSizeMultiplier={1.3}
               >
                 {name.length > 0 ? name : greeting}
               </Text>

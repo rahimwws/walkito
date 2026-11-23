@@ -58,7 +58,7 @@ export function RoutineCard({ kind, ranToday }: { kind: PlanKind; ranToday: bool
             <FluentIcon name={card.icon} size={24} />
             <Text style={styles.label}>{card.label}</Text>
           </View>
-          <Text style={styles.big} maxFontSizeMultiplier={2}>
+          <Text style={styles.big} maxFontSizeMultiplier={1.7}>
             {card.big}
           </Text>
         </View>

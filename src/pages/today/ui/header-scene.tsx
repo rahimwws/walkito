@@ -225,7 +225,7 @@ function Park({ time, p, path }: { time: SceneTime; p: Palette; path: boolean })
 
 /** Indoors for a desk plan: a window onto the same sky, a plant, the desk. */
 function Desk({ time, p }: { time: SceneTime; p: Palette }) {
-  const win = { x: 150, y: 92, w: 176, h: 146 };
+  const win = { x: 184, y: 92, w: 166, h: 146 };
   return (
     <>
       <Rect x={0} y={0} width={W} height={H} fill={p.wall} />
@@ -236,11 +236,11 @@ function Desk({ time, p }: { time: SceneTime; p: Palette }) {
       </Defs>
       <G clipPath={`url(#window-${time})`}>
         <Sky p={p} id={`sky-desk-${time}`} />
-        <SunOrMoon time={time} p={p} x={time === 'morning' ? 200 : 280} y={time === 'morning' ? 200 : 130} />
-        {time !== 'evening' && <Cloud x={220} y={130} s={0.7} color={p.cloud} />}
-        <Path d="M140 206 Q 210 180 270 202 T 340 196 L340 240 L140 240 Z" fill={p.hillFar} />
-        <Tree x={300} y={212} s={0.6} p={p} />
-        <Path d="M140 224 Q 220 204 280 218 T 340 214 L340 240 L140 240 Z" fill={p.hillNear} />
+        <SunOrMoon time={time} p={p} x={time === 'morning' ? 230 : 300} y={time === 'morning' ? 200 : 130} />
+        {time !== 'evening' && <Cloud x={240} y={130} s={0.7} color={p.cloud} />}
+        <Path d="M170 206 Q 240 180 290 202 T 360 196 L360 240 L170 240 Z" fill={p.hillFar} />
+        <Tree x={320} y={212} s={0.6} p={p} />
+        <Path d="M170 224 Q 250 204 300 218 T 360 214 L360 240 L170 240 Z" fill={p.hillNear} />
       </G>
       <Rect x={win.x} y={win.y} width={win.w} height={win.h} rx={18} fill="none" stroke="#FFFFFF" strokeWidth={10} />
       <Rect x={win.x + win.w / 2 - 3} y={win.y} width={6} height={win.h} fill="#FFFFFF" />
@@ -254,7 +254,7 @@ function Desk({ time, p }: { time: SceneTime; p: Palette }) {
         <Path d="M-24 -36 H24 L18 0 H-18 Z" fill="#E07B4F" />
         <Rect x={-27} y={-42} width={54} height={9} rx={4} fill="#C9653D" />
       </G>
-      <G transform="translate(238 252)">
+      <G transform="translate(267 252)">
         <Rect x={-36} y={-14} width={72} height={14} rx={4} fill="#FFFFFF" opacity={0.85} />
         <Rect x={-30} y={-24} width={60} height={10} rx={3} fill="#FFFFFF" opacity={0.7} />
       </G>

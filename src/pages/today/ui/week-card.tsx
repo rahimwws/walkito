@@ -126,7 +126,7 @@ export function ThisWeekCard({ onOpenPlan }: { onOpenPlan: () => void }) {
       <View style={styles.head}>
         <View style={styles.headText}>
           <Text style={styles.label}>{t('home.today.thisWeek')}</Text>
-          <Text style={styles.big} maxFontSizeMultiplier={2}>
+          <Text style={styles.big} maxFontSizeMultiplier={1.7}>
             {done}/{planned}
           </Text>
         </View>

@@ -30,8 +30,8 @@ export type SessionCardProps = {
 /** Moves listed on the card; the meta line counts them all. */
 const ROWS = 3;
 const PHOTO = 56;
-/** Big numbers stop growing at twice their size, so "5 min" never breaks. */
-const BIG_MAX_SCALE = 2;
+/** Big numbers stop growing at 1.7 times their size, so "5 min" never breaks. */
+const BIG_MAX_SCALE = 1.7;
 
 /**
  * Today's session as BitePal's home cards (#99, #98): a small grey label, the
