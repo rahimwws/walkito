@@ -97,4 +97,10 @@ export const PLAYER_RU = {
   'player.cta.skipA11y': 'Пропустить это движение',
   'player.a11y.move': '{name}. {time}. Дальше: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Последнее движение.',
+  'player.card.timeLeft': 'Осталось',
+  'player.card.reps': 'Повторы',
+  'player.card.progress': 'Прогресс',
+  'player.card.next': 'Дальше',
+  'player.card.lastMove': 'Последнее движение',
+  'player.detail.doneToday': 'Сделано сегодня',
 };

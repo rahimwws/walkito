@@ -97,4 +97,10 @@ export const PLAYER_DE = {
   'player.cta.skipA11y': 'Diese Übung überspringen',
   'player.a11y.move': '{name}. {time}. Als Nächstes: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Letzte Übung.',
+  'player.card.timeLeft': 'Verbleibend',
+  'player.card.reps': 'Wiederholungen',
+  'player.card.progress': 'Fortschritt',
+  'player.card.next': 'Als Nächstes',
+  'player.card.lastMove': 'Letzte Übung',
+  'player.detail.doneToday': 'Heute erledigt',
 };

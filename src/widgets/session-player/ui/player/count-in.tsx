@@ -13,12 +13,12 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { CHROME_MAX_FONT_SCALE, colors, fonts } from '@/shared/config';
+import { CHROME_MAX_FONT_SCALE, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, ink } from './kit';
+import { CardLabel, MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, cardStyle, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -44,8 +44,9 @@ const FADE_OUT_MS = 220;
 const NUMBER = 150;
 
 /**
- * Three, two, one, go, in the player's Bend style: "GET READY", the move's
- * name, its picture on the pastel disc, and one big number under it. Read off the wall clock (`countInAt`), with a tick and a tap
+ * Three, two, one, go, on one BitePal card: "Get ready" as the small grey
+ * label, the move's name, its picture on the disc of the part it works, and
+ * one big heavy number under it. Read off the wall clock (`countInAt`), with a tick and a tap
  * on each number and a firmer cue on go. A tap anywhere starts the move now.
  * Mounted around one shared value by hand, never with entering/exiting
  * builders, so a builder that fails can never leave an invisible layer
@@ -149,7 +150,7 @@ export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bott
         onPress={go}
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
         <View style={[styles.middle, stacked && styles.middleTop]}>
-          <Text style={styles.eyebrow}>{eyebrow.toLocaleUpperCase()}</Text>
+          <CardLabel style={styles.eyebrow}>{eyebrow}</CardLabel>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
           {!stacked && exerciseId != null && (
             <MoveCircle exerciseId={exerciseId} size={Math.min(width * 0.52, 220)} style={styles.picture} />
@@ -173,20 +174,28 @@ export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bott
 
 const styles = StyleSheet.create({
   host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page },
-  fill: { flex: 1 },
-  middle: { flex: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: SIDE, overflow: 'hidden' },
-  middleTop: { justifyContent: 'flex-start', paddingTop: 16 },
-  eyebrow: { ...fonts.semibold(17, 0.6), color: colors.text3, textAlign: 'center' },
-  title: { ...fonts.bold(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
+  fill: { flex: 1, paddingTop: 8 },
+  middle: {
+    ...cardStyle,
+    flex: 1,
+    marginHorizontal: SIDE - 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: SIDE,
+    overflow: 'hidden',
+  },
+  middleTop: { justifyContent: 'flex-start', paddingTop: 20 },
+  eyebrow: { textAlign: 'center' },
+  title: { ...fonts.heavy(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
   picture: { marginTop: 24 },
   number: {
-    ...fonts.bold(NUMBER, -4),
+    ...fonts.heavy(NUMBER, -4),
     lineHeight: NUMBER * 1.1,
-    color: colors.accent,
+    color: ink.text,
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
     alignSelf: 'stretch',
     marginTop: 8,
   },
-  caption: { ...fonts.medium(17), color: ink.grey, paddingHorizontal: SIDE, paddingBottom: 24, textAlign: 'center' },
+  caption: { ...fonts.medium(17), color: ink.grey, paddingHorizontal: SIDE, paddingTop: 16, paddingBottom: 16, textAlign: 'center' },
 });

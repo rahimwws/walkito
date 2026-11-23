@@ -1,6 +1,9 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
+import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   cancelAnimation,
   Easing,
@@ -14,12 +17,12 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import type { Segment } from '@/entities/program';
-import { accents, colors, fonts } from '@/shared/config';
+import { bitepal, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
 import { CountdownRing } from '../test-day/countdown-ring';
-import { Capsule, MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton, cardStyle, ink, moveAccent } from './kit';
+import { CardLabel, Capsule, MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, cardStyle, ink, moveColor } from './kit';
 
 export type Break = Extract<Segment, { kind: 'rest' | 'switch' }>;
 
@@ -46,13 +49,14 @@ export type RestProps = {
 const FADE_IN_MS = 160;
 const FADE_OUT_MS = 220;
 const TICK_FROM = 3;
-const NUMERAL = 80;
+const NUMERAL = 64;
 
 /**
- * The rest between sets, and the change of foot, in the player's Bend style:
- * "Rest" or "Switch to your left foot", the seconds large inside a ring that
- * empties with them, what comes next on a white card with the move's round
- * picture, Skip rest as the violet button and Pause in words. The last three seconds tick like the count-in. Resuming
+ * The rest between sets, and the change of foot, as BitePal's timer card:
+ * "Rest" or "Switch to your left foot", "Time left" over the seconds in big
+ * heavy digits, a ring that empties with them and pauses on a tap, what comes
+ * next on a second card with the move's round picture, and Skip rest as the
+ * black button. The last three seconds tick like the count-in. Resuming
  * here starts the clock at once: there is no position to get into.
  */
 export function Rest({
@@ -117,7 +121,7 @@ export function Rest({
     void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid);
   }, [segment, running, secondsLeft, id]);
 
-  const { width, height, fontScale } = useWindowDimensions();
+  const stacked = useWindowDimensions().fontScale > 1.6;
   const hostStyle = useAnimatedStyle(() => ({ opacity: fade.value }));
 
   if (!mounted || shown == null) return null;
@@ -129,67 +133,85 @@ export function Rest({
     : shown.to === 'left'
       ? t('player.break.switchLeft')
       : t('player.break.switchRight');
-  const ring = Math.round(Math.min(width - 2 * 64, height * (fontScale > 1.6 ? 0.28 : 0.34), 300));
 
   return (
     <Animated.View style={[styles.host, { top, paddingBottom: bottom }, hostStyle]} pointerEvents={live ? 'auto' : 'none'}>
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false} bounces={false}>
-        <View style={styles.middle}>
+        <View style={styles.card}>
           <Text maxFontSizeMultiplier={TITLE_SCALE} accessibilityRole="header" accessibilityLiveRegion="assertive" style={styles.title}>
             {title}
           </Text>
-          <View accessible accessibilityRole="timer" accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })} style={styles.ring}>
-            <CountdownRing size={ring} stroke={8} left={left} tone={{ fill: accents.light[moveAccent(exerciseId)].fill, track: colors.surface2 }}>
+          <View style={[styles.top, stacked && styles.topStacked]}>
+            <View
+              style={styles.figure}
+              accessible
+              accessibilityRole="timer"
+              accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
+              <CardLabel>{t('player.card.timeLeft')}</CardLabel>
               <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={[styles.numeral, !playing && styles.dim]} numberOfLines={1} adjustsFontSizeToFit>
-                {secondsLeft}
+                {String(Math.floor(secondsLeft / 60)).padStart(2, '0') + ':' + String(secondsLeft % 60).padStart(2, '0')}
               </Text>
-              <Text style={styles.unit} maxFontSizeMultiplier={1.4}>
-                {t('testday.secondsLeft', { count: secondsLeft })}
-              </Text>
-            </CountdownRing>
+            </View>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={playing ? t('player.cta.pause') : t('player.cta.resume')}
+              onPress={playing ? onPause : onResume}
+              hitSlop={6}
+              style={({ pressed }) => pressed && styles.pressed}>
+              <CountdownRing size={RING} stroke={7} left={left} tone={{ fill: moveColor(exerciseId), track: bitepal.track }}>
+                <View style={styles.well}>
+                  <HugeiconsIcon icon={playing ? PauseIcon : PlayIcon} size={26} color={ink.text} strokeWidth={2.2} />
+                </View>
+              </CountdownRing>
+            </Pressable>
           </View>
         </View>
 
-        <View style={[styles.next, fontScale > 1.6 && styles.nextStacked]} accessible>
-          <MoveCircle exerciseId={exerciseId} size={60} />
+        <View style={[styles.card, styles.next, stacked && styles.nextStacked]} accessible>
+          <MoveCircle exerciseId={exerciseId} size={64} />
           <View style={styles.nextText}>
-            <Text style={styles.nextLabel}>
-              {isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}
-            </Text>
+            <CardLabel>{isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}</CardLabel>
             <Text style={styles.nextName}>{move}</Text>
           </View>
         </View>
 
         <View style={styles.actions}>
           <Capsule label={isRest ? t('player.break.skipRest') : t('player.break.ready')} onPress={onSkip} />
-          <TextButton label={playing ? t('player.cta.pause') : t('player.cta.resume')} onPress={playing ? onPause : onResume} />
         </View>
       </ScrollView>
     </Animated.View>
   );
 }
 
+const RING = 84;
+
 const styles = StyleSheet.create({
-  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page, paddingHorizontal: SIDE },
-  scroll: { flexGrow: 1 },
-  middle: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', gap: 20, paddingVertical: 16 },
-  title: { ...fonts.bold(30, -0.5), color: ink.text, textAlign: 'center' },
-  ring: { alignItems: 'center' },
+  host: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 50, backgroundColor: ink.page, paddingHorizontal: SIDE - 4 },
+  scroll: { flexGrow: 1, justifyContent: 'center', gap: 12, paddingVertical: 16 },
+  card: { ...cardStyle, padding: 20 },
+  title: { ...fonts.heavy(28, -0.5), color: ink.text },
+  top: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 12 },
+  topStacked: { flexDirection: 'column', alignItems: 'flex-start' },
+  figure: { flex: 1, alignSelf: 'stretch' },
   numeral: {
-    ...fonts.bold(NUMERAL, -2),
-    lineHeight: NUMERAL * 1.1,
+    ...fonts.heavy(NUMERAL, -1.5),
+    lineHeight: NUMERAL * 1.15,
     color: ink.text,
     fontVariant: ['tabular-nums'],
-    textAlign: 'center',
-    alignSelf: 'stretch',
-    paddingHorizontal: 20,
   },
   dim: { color: colors.text3 },
-  unit: { ...fonts.medium(17), color: ink.grey },
-  next: { ...cardStyle, flexDirection: 'row', alignItems: 'center', gap: 14, padding: 14, marginVertical: 12 },
+  pressed: { opacity: 0.55 },
+  well: {
+    width: RING - 26,
+    height: RING - 26,
+    borderRadius: (RING - 26) / 2,
+    backgroundColor: bitepal.well,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  next: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   nextStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   nextText: { flexShrink: 1, flexGrow: 1, gap: 2 },
-  nextLabel: { ...fonts.regular(17), color: ink.grey },
-  nextName: { ...fonts.semibold(19), color: ink.text },
-  actions: { gap: 4, paddingTop: 8 },
+  nextName: { ...fonts.bold(19), color: ink.text },
+  actions: { paddingTop: 8 },
 });

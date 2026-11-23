@@ -97,4 +97,10 @@ export const PLAYER_FR = {
   'player.cta.skipA11y': 'Passer ce mouvement',
   'player.a11y.move': '{name}. {time}. Ensuite : {next}.',
   'player.a11y.moveLast': '{name}. {time}. Dernier mouvement.',
+  'player.card.timeLeft': 'Temps restant',
+  'player.card.reps': 'Répétitions',
+  'player.card.progress': 'Progression',
+  'player.card.next': 'Ensuite',
+  'player.card.lastMove': 'Dernier mouvement',
+  'player.detail.doneToday': 'Fait aujourd’hui',
 };
