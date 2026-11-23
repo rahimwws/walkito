@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router';
 import { NativeTabs } from 'expo-router/native-tabs';
 import { useState } from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import { runOnJS, useAnimatedReaction } from 'react-native-reanimated';
 
 import { useYoureInPresenter } from '@/pages/youre-in';
@@ -15,6 +15,11 @@ import { OverlayHost } from '@/shared/ui/overlay-host';
  * the system's own, so on iOS 26+ it is Liquid Glass and on older iOS and
  * Android it is the platform's solid bar. Labels always show and the bar
  * never minimizes: people 50+ lose a bar that shrinks away.
+ *
+ * Plan and Exercises pad their own scroll for the status bar on iOS. Left on,
+ * the tab switches the first scroll view it finds to automatic insets, and on
+ * Plan whether it finds it depends on what has mounted by then, so the title
+ * sat under the status bar on some launches and twice as low on others.
  */
 export function TabsLayout() {
   const router = useRouter();
@@ -51,11 +56,11 @@ function TabsChrome() {
           <NativeTabs.Trigger.Label>{t('tabs.today')}</NativeTabs.Trigger.Label>
           <NativeTabs.Trigger.Icon sf="sun.max" md="wb_sunny" />
         </NativeTabs.Trigger>
-        <NativeTabs.Trigger name="plan">
+        <NativeTabs.Trigger name="plan" disableAutomaticContentInsets={Platform.OS === 'ios'}>
           <NativeTabs.Trigger.Label>{t('tabs.plan')}</NativeTabs.Trigger.Label>
           <NativeTabs.Trigger.Icon sf="calendar" md="calendar_month" />
         </NativeTabs.Trigger>
-        <NativeTabs.Trigger name="exercises">
+        <NativeTabs.Trigger name="exercises" disableAutomaticContentInsets={Platform.OS === 'ios'}>
           <NativeTabs.Trigger.Label>{t('tabs.exercises')}</NativeTabs.Trigger.Label>
           <NativeTabs.Trigger.Icon sf="figure.flexibility" md="self_improvement" />
         </NativeTabs.Trigger>

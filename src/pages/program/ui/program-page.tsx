@@ -1,5 +1,4 @@
-import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
+import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
@@ -8,7 +7,6 @@ import Animated, {
   LinearTransition,
   ReduceMotion,
   runOnJS,
-  scrollTo,
   useAnimatedReaction,
   useAnimatedRef,
   useAnimatedScrollHandler,
@@ -16,7 +14,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useRouter } from 'expo-router';
+import { useIsFocused, useRouter } from 'expo-router';
 
 import {
   addDays,
@@ -53,27 +51,23 @@ import {
   type ProgramDay,
   type SessionMinutes,
   planReasonLine,
-  moveLook,
 } from '@/entities/program';
 import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
 import { askForPlans, lookingAround } from '@/entities/purchase';
 import { answerLockedPlanTap } from '@/features/home-tour';
-import { colors as tokens, fonts, palette } from '@/shared/config';
+import { bitepal, colors as tokens, fonts, palette, space } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
+import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { useColorScheme } from '@/shared/lib/theme';
-import { Button } from '@/shared/ui/button';
-import { Card } from '@/shared/ui/card';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { StreakCapsule } from '@/shared/ui/header-actions';
 
-import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
+import { RoundButton, SessionView, TITLE_SCALE, TestDayFlow, cardStyle, type PlaylistStep } from '@/widgets/session-player';
 
 import {
   doneTitle,
   earnedToday,
-  kindName,
   outcomeView,
   todayTitle,
   todayVariant,
@@ -81,13 +75,12 @@ import {
   weekPath,
 } from '../model/plan-view';
 import { asProgramDay, playlistOf } from '../model/week-view';
-import { GoalPlan } from './goal-plan';
+import { DayCard } from './day-card';
 import { HelpsCard } from './helps-card';
+import { PlanPath } from './plan-path';
 import { SessionDetail, detailMoves, type SessionDetailProps } from './session-detail';
-import { TodayCard } from './today-card';
-import { TodayDoneCard } from './today-done-card';
-import { TodayMoves, type TodayMove } from './today-moves';
-import { TomorrowCard } from './tomorrow-card';
+import { TodayPlanCard, type TodayMove } from './today-plan-card';
+import { WeekStrip } from './week-strip';
 
 /** How far the list slides under the arriving session. A fraction of the
  * screen, not all of it: the two move together, one leaving slowly and one
@@ -116,22 +109,6 @@ const rise = (index: number) =>
 const SHIFT = LinearTransition.duration(DONE_RISE_MS).easing(DONE_EASING).reduceMotion(ReduceMotion.System);
 
 /**
- * The header, held out of the scroll — measured below the safe area.
- *
- * Three jobs now. It carries the way out, which on a full-height screen has to
- * be a visible control rather than a grabber. It keeps the user oriented — a
- * list of fourteen numbered days needs a header saying which block they belong
- * to, and one that scrolls away stops answering that after the second card. And
- * it is the drag handle: everything down to this line dismisses the screen,
- * whatever the list is doing underneath.
- *
- * A fixed number rather than whatever the type happens to measure, because the
- * overlay reads it to decide which touches are its own. It excludes the status
- * bar; the overlay adds the inset itself.
- */
-export const PROGRAM_HEADER_HEIGHT = 58;
-
-/**
  * What the session pane is running: a planned session in the player, or the
  * test day in its own flow — taken, or opened again read-only for its results.
  *
@@ -156,24 +133,21 @@ type Running =
   | { kind: 'test'; review: boolean };
 
 /**
- * The plan screen: today, and the goal with the weeks that work towards it.
+ * The Plan tab, in BitePal's cards (#99, #98, #102, #103): "Your plan" with
+ * the month's calendar behind a round button, the week strip with a dot on
+ * each day done, today's card first (the minutes big, the ring of moves done,
+ * the minutes to choose, the moves on their parts' colours, Start), then a
+ * card for each other day of the week, a test day on its own card. Then the
+ * goal and the weeks that work towards it as cards (`PlanPath`): this week
+ * and next, and the test days where they fall.
  *
- * While today has something to do, it leads: the day's card (its emoji, how
- * long and how many, Start), then its moves as a checklist ticked from the
- * day log. Then the goal (`GoalPlan`): this week and next week as cards (what
- * each works on, what changes in it, its days, minutes and moves), the test
- * days as a line where they fall.
+ * Once today is done its card says so and what the day earned (its minutes,
+ * its moves or tests, the run of days), "See results" on a test day, and when
+ * the next session opens.
  *
- * Once today is done, the day leads as one card (`TodayDoneCard`): "Today"
- * over its title with a tick, "See results" on a test day, and what the day
- * earned (its minutes, its moves or tests, the run of days). Then the goal and
- * its weeks as before, then tomorrow: what it is, how long, and the countdown
- * to it. No card says the day is done twice.
- *
- * Two weeks, because two are what the engine can say truthfully (`weekPath`);
- * past them one line says how the weeks after are made.
- * No week strip and no list of days: Home already shows the week. Never a
- * plan length, "week N of M" or an end date.
+ * Two weeks on the path, because two are what the engine can say truthfully
+ * (`weekPath`); past them one line says how the weeks after are made. Never
+ * a plan length, "week N of M" or an end date.
  *
  * Everything comes from local storage — the weekly plan, adjusted to this
  * morning — so nothing on it ever waits on a network.
@@ -184,6 +158,8 @@ export function ProgramPage() {
   const program = useProgram();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const clearance = useTabBarClearance();
+  const focused = useIsFocused();
   const { width } = useWindowDimensions();
   const t = useT();
   const language = useLanguage();
@@ -199,11 +175,7 @@ export function ProgramPage() {
   const goals = readGoals();
 
   const [minutes, setMinutes] = useState<SessionMinutes>(() => planSettings().defaultMinutes);
-  const adjusted = todayPlan(
-    todayHealthInputs(health),
-    minutes,
-    now,
-  );
+  const adjusted = todayPlan(todayHealthInputs(health), minutes, now);
   const doneToday = planSessionDone(today);
   const variant = todayVariant(adjusted, doneToday);
   /**
@@ -221,10 +193,7 @@ export function ProgramPage() {
   const [session, setSession] = useState<Running | null>(null);
   const [run, setRun] = useState(0);
   /** A move's sheet, as a native form sheet over the tabs. */
-  const openMove = useCallback(
-    (id: string) => router.push({ pathname: '/move/[id]', params: { id } }),
-    [router],
-  );
+  const openMove = useCallback((id: string) => router.push({ pathname: '/move/[id]', params: { id } }), [router]);
 
   /**
    * A finished day's cards wait, the first time, for the session pane to be
@@ -250,6 +219,10 @@ export function ProgramPage() {
   /** Where the goal sits in the list, for "See next goal": under the card for
    * today, whether the day is still to do or done. */
   const goalTop = useRef(0);
+  /** Where each day's card sits in the list, for a tap on the week strip. */
+  const dayTops = useRef<Record<string, number>>({});
+  const [picked, setPicked] = useState(today);
+  useEffect(() => setPicked(today), [today]);
 
   const start = useCallback(
     (running: Running) => {
@@ -369,14 +342,11 @@ export function ProgramPage() {
   });
 
   const listRef = useAnimatedRef<Animated.ScrollView>();
-  useAnimatedReaction(
-    () => (program?.progress.value ?? 0) < 0.01,
-    (closed, was) => {
-      if (!closed || was !== false || program == null) return;
-      scrollTo(listRef, 0, 0, false);
-      program.scrollTop.value = 0;
-    },
-  );
+  /**
+   * To a place in the list, through the ref's own instance: Reanimated's
+   * `scrollTo` is a worklet and does nothing called from the JS thread.
+   */
+  const scrollList = (y: number, animated = true) => listRef.current?.scrollTo({ y, animated });
 
   /**
    * Whatever the pane holds leaves when the pane does — a session or a test.
@@ -483,7 +453,6 @@ export function ProgramPage() {
             id: e.id,
             title: exercise.title,
             dose: doseLabel(e.dose.sets, e.dose.reps, e.dose.holdSec, e.dose.perSide),
-            art: moveLook(e.id, exercise.category).art,
             done: ticked.includes(e.id),
           };
         })
@@ -491,30 +460,16 @@ export function ProgramPage() {
 
   const title = todayTitle(t, adjusted, plan.focus, variant);
 
-  // ── A finished day: what it earned, and tomorrow ─────────────────────────
-  // Read only while the cards are up. Never a pain figure: the records' pain
+  // ── A finished day: what it earned ───────────────────────────────────────
+  // Read only while the card is up. Never a pain figure: the records' pain
   // is not read, and the streak counts days, not how they felt.
   const finished = variant === 'done' && doneShown;
   const earned = finished
-    ? earnedToday(sessions(), today, { minutes: adjusted.minutes, moves: new Set(ticked).size })
+    ? earnedToday(sessions(), today, {
+        minutes: adjusted.minutes,
+        moves: new Set(ticked).size,
+      })
     : null;
-  // Through its own week, so a Sunday reads next week's Monday and its focus.
-  const tomorrowWeek = finished ? planWeekOf(tomorrowKey, now) : null;
-  const tomorrowDay = tomorrowWeek?.days.find((day) => day.date === tomorrowKey) ?? null;
-  // Nothing planned tomorrow is nothing to do tomorrow: a rest day.
-  const tomorrowKind = tomorrowDay?.type ?? 'rest';
-  // A rest day tomorrow leaves the question it raises — so when do I train
-  // next? — and the screen has no list of days to work it out from, so the
-  // card answers it. A day with work says when it opens instead, from the
-  // same answer the dock and Home count down to.
-  const nextLine =
-    finished && tomorrowKind === 'rest' && nextUp != null
-      ? t('pages.plan.nextSessionOn', {
-          day: weekday(nextUp.date, 'long'),
-          kind: kindName(t, nextUp.day.type).toLocaleLowerCase(language),
-        })
-      : null;
-  const opensAt = tomorrowKind !== 'rest' && nextUp != null && nextUp.date === tomorrowKey ? nextUp.at : null;
 
   const routine = protocolById(
     recommendProtocol(
@@ -533,13 +488,8 @@ export function ProgramPage() {
   const nextGoal = goals.find((g) => g.status === 'active' && g.type !== reached?.type);
 
   /**
-   * The goal and its weeks. One place in the list whatever the day: under the
-   * card for today, so a day turning done never mounts it again, and it glides
-   * down as the finished day's card arrives over it (`SHIFT`). It shows this
-   * week and next, what changes in each and where the tests fall, and nothing
-   * about today: today's card above has the start, the earnings and the way
-   * back to a test's results. A move tapped on a week opens its preview, as
-   * today's checklist does.
+   * The goal and its weeks, under the week. A move tapped on a week opens its
+   * preview, as today's moves do.
    */
   const goalBlock =
     goal != null ? (
@@ -548,108 +498,131 @@ export function ProgramPage() {
         onLayout={(event) => {
           goalTop.current = event.nativeEvent.layout.y;
         }}>
-        <GoalPlan view={goal} nodes={path} today={today} onPreview={openMove} />
+        <PlanPath view={goal} nodes={path} today={today} onPreview={openMove} />
       </Animated.View>
     ) : null;
+
+  const testBody = t('pages.plan.testBody', {
+    count: RETEST_TESTS,
+    minutes: RETEST_MINUTES,
+  });
+  const otherDays = plan.days.filter((day) => day.date !== today);
 
   return (
     <View style={styles.root}>
       <Animated.View style={[styles.pane, listPane]}>
-        <View style={[styles.header, { paddingTop: insets.top + 4 }]}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={t('pages.program.closeA11y')}
-            onPress={() => program?.close()}
-            hitSlop={12}
-            style={({ pressed }) => [styles.back, pressed && { opacity: 0.5 }]}>
-            <HugeiconsIcon icon={ArrowLeft02Icon} size={26} color={colors.foreground} strokeWidth={2} />
-          </Pressable>
-          <Text style={[styles.title, { color: colors.foreground }]}>{t('pages.plan.title')}</Text>
-          <StreakCapsule streak={streak.current} glyph={<FluentIcon name="fire" size={22} />} />
-        </View>
-
         <Animated.ScrollView
           contentInsetAdjustmentBehavior="never"
           ref={listRef}
           onScroll={onScroll}
           scrollEventThrottle={16}
           showsVerticalScrollIndicator={false}
-          bounces={false}
-          contentContainerStyle={[styles.list, { paddingTop: 10, paddingBottom: insets.bottom + 120 }]}>
-          {/* A finished day: the day and what it earned lead, in one card. */}
-          {finished && earned != null && (
-            <Animated.View entering={rise(0)}>
-              <TodayDoneCard
-                title={doneTitle(t, adjusted, plan.focus)}
-                earned={{
-                  minutes: earned.minutes,
-                  count: adjusted.type === 'test' ? RETEST_TESTS : earned.moves,
-                  test: adjusted.type === 'test',
-                  streak: streak.current,
-                }}
-                onResults={adjusted.type === 'test' && tested ? () => start({ kind: 'test', review: true }) : undefined}
-              />
-            </Animated.View>
-          )}
-
-          {variant !== 'done' && (
-            <TodayCard
-              variant={variant}
-              kind={adjusted.type}
-              title={title}
-              moveCount={adjusted.exercises.length}
-              minutes={minutes}
-              onMinutes={setMinutes}
-              onStart={() => startToday(false, true)}
-              onShort={() => startToday(true)}
-              note={planReasonLine(t, adjusted.reason)}
-              tests={{
-                chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],
-                body: t('pages.plan.testBody', { count: RETEST_TESTS, minutes: RETEST_MINUTES }),
-              }}
-              nextAt={nextUp?.at ?? null}
-              restRoutine={{
-                label: t(routine.titleKey),
-                onPress: () => {
-                  requestProtocol(routine.id);
-                  program?.close();
-                  router.navigate('/exercises');
-                },
-              }}
+          contentContainerStyle={[styles.list, { paddingTop: insets.top + 8, paddingBottom: clearance + 28 }]}>
+          <View style={styles.header}>
+            <Text
+              style={[styles.title, { color: colors.foreground }]}
+              accessibilityRole="header"
+              maxFontSizeMultiplier={2}>
+              {t('pages.plan.title')}
+            </Text>
+            <RoundButton
+              icon={Calendar03Icon}
+              label={t('pages.plan.monthA11y')}
+              size={52}
+              onPress={() => router.push('/sheet/plan-month')}
             />
-          )}
+          </View>
 
-          {/* What the level is made of: a tap previews a move, as the chips
-              on the old card did. */}
-          {checklist.length > 0 && <TodayMoves moves={checklist} onPreview={openMove} />}
+          <WeekStrip
+            days={plan.days}
+            today={today}
+            selected={picked}
+            done={planSessionDone}
+            onSelect={(date) => {
+              setPicked(date);
+              const y = dayTops.current[date];
+              if (y != null) scrollList(y - 12);
+            }}
+          />
 
-          {/* Today first, whatever the day; then where it leads. */}
-          {goalBlock}
-
-          {/* Under the goal on a finished day: tomorrow, the other question an
-              evening visit asks. */}
-          {finished && (
-            <Animated.View entering={rise(1)}>
-              <TomorrowCard
-                kind={tomorrowKind}
-                title={upcomingTitle(t, tomorrowKind, tomorrowWeek?.focus ?? null)}
-                minutes={tomorrowDay?.minutes ?? 0}
-                count={tomorrowKind === 'test' ? RETEST_TESTS : (tomorrowDay?.exercises.length ?? 0)}
-                opensAt={opensAt}
-                nextLine={nextLine}
+          {/* Today first, whatever the day. A finished day's card waits for the
+              session pane to be gone, then rises in with what it earned. */}
+          {(variant !== 'done' || finished) && (
+            <Animated.View
+              key={finished ? 'done' : 'todo'}
+              entering={finished ? rise(0) : undefined}
+              onLayout={(event) => {
+                dayTops.current[today] = event.nativeEvent.layout.y;
+              }}>
+              <TodayPlanCard
+                variant={variant}
+                title={variant === 'done' ? doneTitle(t, adjusted, plan.focus) : title}
+                minutes={adjusted.minutes}
+                choice={minutes}
+                onChoice={setMinutes}
+                moves={checklist}
+                onStart={() => startToday(false, true)}
+                onShort={() => startToday(true)}
+                note={planReasonLine(t, adjusted.reason)}
+                testBody={testBody}
+                restRoutine={{
+                  label: t(routine.titleKey),
+                  onPress: () => {
+                    requestProtocol(routine.id);
+                    router.navigate('/exercises');
+                  },
+                }}
+                nextAt={nextUp != null && !nextUp.open ? nextUp.at : null}
+                earned={
+                  earned == null
+                    ? null
+                    : {
+                        minutes: earned.minutes,
+                        count: adjusted.type === 'test' ? RETEST_TESTS : earned.moves,
+                        test: adjusted.type === 'test',
+                        streak: streak.current,
+                      }
+                }
+                onResults={adjusted.type === 'test' && tested ? () => start({ kind: 'test', review: true }) : undefined}
+                onPreview={openMove}
+                active={focused && session == null}
               />
             </Animated.View>
           )}
+
+          <Text style={styles.section} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
+            {t('pages.plan.weeks.this')}
+          </Text>
+          {otherDays.map((day) => (
+            <View
+              key={day.date}
+              onLayout={(event) => {
+                dayTops.current[day.date] = event.nativeEvent.layout.y;
+              }}>
+              <DayCard
+                day={day}
+                title={upcomingTitle(t, day.type, plan.focus)}
+                today={today}
+                done={day.date < today && planSessionDone(day.date)}
+                testBody={testBody}
+                onPreview={openMove}
+              />
+            </View>
+          ))}
+
+          {goalBlock}
 
           {/* What the moves cannot do on their own: shoes, load, time. */}
           <HelpsCard goals={goals} />
 
           {reached != null && nextGoal != null && (
-            <Card style={styles.reached}>
+            <View style={styles.reached}>
               <View style={styles.reachedRow}>
                 {/* The goal's own target, not a trophy: a reached goal may be
                     a pain figure, and a pain figure is never celebrated. */}
-                <FluentIcon name="target" size={32} />
+                <View style={styles.well}>
+                  <FluentIcon name="target" size={28} />
+                </View>
                 <Text style={styles.reachedText}>
                   {t('pages.plan.reached', {
                     goal: t(`pages.week.goal.${reached.type}`),
@@ -657,17 +630,13 @@ export function ProgramPage() {
                   })}
                 </Text>
               </View>
-              <Button
-                label={t('pages.plan.seeNextGoal')}
-                variant="secondary"
-                size="sm"
-                align="start"
-                // The ref's own instance, not Reanimated's worklet `scrollTo`,
-                // which does nothing when called from a press on the JS thread.
-                // To the goal, under the card for today.
-                onPress={() => listRef.current?.scrollTo({ y: Math.max(0, goalTop.current - 10), animated: true })}
-              />
-            </Card>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => scrollList(goalTop.current - 10)}
+                style={({ pressed }) => [styles.pill, pressed && { opacity: 0.55 }]}>
+                <Text style={styles.pillText}>{t('pages.plan.seeNextGoal')}</Text>
+              </Pressable>
+            </View>
           )}
         </Animated.ScrollView>
       </Animated.View>
@@ -680,7 +649,8 @@ export function ProgramPage() {
           styles.pane,
           {
             backgroundColor: session?.kind === 'session' ? tokens.surface : colors.background,
-            paddingTop: session?.kind === 'test' || (session?.kind === 'session' && session.detail != null) ? 0 : insets.top,
+            paddingTop:
+              session?.kind === 'test' || (session?.kind === 'session' && session.detail != null) ? 0 : insets.top,
           },
           sessionPane,
         ]}>
@@ -729,10 +699,8 @@ export function ProgramPage() {
             onClose={() => program?.closeDetail()}
             // Back to the top underneath, where the finished day's card now has
             // the test taken and what it earned: the first thing to see on the
-            // way out. Through the ref's own instance: Reanimated's `scrollTo` is a
-            // worklet, and called from a JS callback like this one it silently
-            // does nothing.
-            onSaved={() => listRef.current?.scrollTo({ y: 0, animated: false })}
+            // way out.
+            onSaved={() => scrollList(0, false)}
           />
         )}
       </Animated.View>
@@ -751,25 +719,28 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
   },
+  list: {
+    paddingHorizontal: space.screen,
+    gap: 12,
+  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    paddingHorizontal: 20,
-    paddingBottom: 6,
-  },
-  back: {
-    paddingVertical: 4,
+    marginBottom: 2,
   },
   title: {
     flex: 1,
-    ...fonts.heavy(24, -0.6),
+    ...fonts.heavy(34, -0.8),
   },
-  list: {
-    paddingHorizontal: 20,
-    gap: 18,
+  section: {
+    ...fonts.heavy(24, -0.4),
+    color: tokens.text,
+    marginTop: 12,
   },
   reached: {
+    ...cardStyle,
+    padding: 20,
     gap: 14,
   },
   reachedRow: {
@@ -777,10 +748,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
+  well: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: bitepal.well,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   reachedText: {
     flex: 1,
+    ...fonts.semibold(19),
+    color: tokens.text,
+  },
+  pill: {
+    alignSelf: 'flex-start',
+    minHeight: 48,
+    paddingHorizontal: 18,
+    borderRadius: 999,
+    justifyContent: 'center',
+    backgroundColor: bitepal.well,
+  },
+  pillText: {
     ...fonts.semibold(17),
-    lineHeight: 23,
     color: tokens.text,
   },
 });

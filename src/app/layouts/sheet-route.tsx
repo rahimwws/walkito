@@ -4,14 +4,16 @@ import { FollowSheetScreen } from '@/features/follow';
 import { LanguageSheetScreen } from '@/features/language-switch';
 import { EmailSignInSheetScreen, SignInSheetScreen } from '@/features/sign-in';
 import { CancelQuestionScreen } from '@/pages/offer';
+import { MonthSheetScreen } from '@/pages/program';
 import { DeleteAccountSheetScreen } from '@/pages/profile';
 import { WidgetNudgeSheetScreen } from '@/pages/setup';
 import { NoteSheetScreen } from '@/shared/ui/note-sheet';
 
 /**
  * The native form sheets (language, follow, delete account, sign-in and its
- * email door, the paywall's cancel question, the setup's widget nudge and
- * the founders' note), as one dynamic route: `/sheet/<name>`.
+ * email door, the paywall's cancel question, the setup's widget nudge, the
+ * founders' note and the plan's month calendar), as one dynamic route:
+ * `/sheet/<name>`.
  *
  * One dynamic route rather than a static route each, because of how the root
  * stack's guards fall back: when the URL names no available screen (a launch
@@ -29,6 +31,7 @@ const SHEETS = {
   'cancel-question': CancelQuestionScreen,
   'widget-nudge': WidgetNudgeSheetScreen,
   note: NoteSheetScreen,
+  'plan-month': MonthSheetScreen,
 } as const;
 
 export function SheetRoute() {

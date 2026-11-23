@@ -145,6 +145,9 @@ export const PAGES_IT = {
   'pages.week.dayCardA11y': '{day}, {kind}, {minutes}',
   // ── The plan screen ──────────────────────────────────────────────────────
   'pages.plan.title': 'Il tuo piano',
+  'pages.plan.monthA11y': 'Calendario del mese',
+  'pages.plan.month.prev': 'Mese precedente',
+  'pages.plan.month.next': 'Mese successivo',
   'pages.plan.goalEyebrow': 'Il tuo obiettivo',
   'pages.plan.short.pain_free_mornings': 'mattine',
   'pages.plan.short.arch_hold': 'arco',

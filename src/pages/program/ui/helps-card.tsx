@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
-import type { Goal } from "@/entities/program";
-import { colors, fonts } from "@/shared/config";
-import { useT, type Key } from "@/shared/lib/i18n";
-import { Card } from "@/shared/ui/card";
-import { FluentIcon, type FluentName } from "@/shared/ui/fluent-icon";
+import type { Goal } from '@/entities/program';
+import { bitepal, colors, fonts } from '@/shared/config';
+import { useT, type Key } from '@/shared/lib/i18n';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { CardLabel, cardStyle } from '@/widgets/session-player';
 
 type Tip = { icon: FluentName; key: Key };
 
@@ -15,12 +15,12 @@ type Tip = { icon: FluentName; key: Key };
  * first steps of the day are what hurt.
  */
 const HEEL_TIPS: readonly Tip[] = [
-  { icon: "shoe", key: "pages.plan.helps.shoes" },
-  { icon: "foot", key: "pages.plan.helps.indoors" },
-  { icon: "run", key: "pages.plan.helps.load" },
-  { icon: "relief", key: "pages.plan.helps.tape" },
-  { icon: "moon", key: "pages.plan.helps.night" },
-  { icon: "calendar", key: "pages.plan.helps.time" },
+  { icon: 'shoe', key: 'pages.plan.helps.shoes' },
+  { icon: 'foot', key: 'pages.plan.helps.indoors' },
+  { icon: 'run', key: 'pages.plan.helps.load' },
+  { icon: 'relief', key: 'pages.plan.helps.tape' },
+  { icon: 'moon', key: 'pages.plan.helps.night' },
+  { icon: 'calendar', key: 'pages.plan.helps.time' },
 ];
 
 /**
@@ -29,80 +29,64 @@ const HEEL_TIPS: readonly Tip[] = [
  * suggest it does.
  */
 const ARCH_TIPS: readonly Tip[] = [
-  { icon: "strength", key: "pages.plan.helps.arch" },
-  { icon: "shoe", key: "pages.plan.helps.archShoes" },
+  { icon: 'strength', key: 'pages.plan.helps.arch' },
+  { icon: 'shoe', key: 'pages.plan.helps.archShoes' },
 ];
 
 /** The tips for these goals, or none: only heel pain and the arch have any. */
 export function helpsTips(goals: readonly Goal[]): readonly Tip[] {
-  const active = (type: Goal["type"]) =>
-    goals.some((g) => g.type === type && g.status === "active");
-  if (active("pain_free_mornings")) return HEEL_TIPS;
-  if (active("arch_hold")) return ARCH_TIPS;
+  const active = (type: Goal['type']) => goals.some((g) => g.type === type && g.status === 'active');
+  if (active('pain_free_mornings')) return HEEL_TIPS;
+  if (active('arch_hold')) return ARCH_TIPS;
   return [];
 }
 
+const WELL = 44;
+
 /**
  * "What else helps", at the foot of the plan: what the exercises cannot do on
- * their own. A note, not a task, so nothing on it is tappable or ticked.
+ * their own, as a white card with each tip on a round grey icon (BitePal's
+ * round icons, #99). A note, not a task, so nothing on it is tappable.
  */
 export function HelpsCard({ goals }: { goals: readonly Goal[] }) {
   const t = useT();
   const tips = helpsTips(goals);
+  const huge = useWindowDimensions().fontScale >= 2;
   if (tips.length === 0) return null;
 
   return (
-    <Card style={styles.content}>
+    <View style={styles.card}>
       <View style={styles.heading}>
-        <Text style={styles.eyebrow}>
-          {t("pages.plan.helps.eyebrow")}
-        </Text>
-        <Text
-          accessibilityRole="header"
-          style={styles.title}
-        >
-          {t("pages.plan.helps.title")}
+        <CardLabel>{t('pages.plan.helps.eyebrow')}</CardLabel>
+        <Text accessibilityRole="header" style={styles.title} maxFontSizeMultiplier={1.7}>
+          {t('pages.plan.helps.title')}
         </Text>
       </View>
       {tips.map((tip) => (
-        <View key={tip.key} style={styles.row}>
-          <View
-            accessibilityElementsHidden
-            importantForAccessibility="no-hide-descendants"
-          >
+        <View key={tip.key} style={[styles.row, huge && styles.rowHuge]}>
+          <View style={styles.well} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
             <FluentIcon name={tip.icon} size={24} />
           </View>
-          <Text style={styles.body}>
-            {t(tip.key)}
-          </Text>
+          <Text style={styles.body}>{t(tip.key)}</Text>
         </View>
       ))}
-    </Card>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
-    gap: 12,
+  card: { ...cardStyle, padding: 20, gap: 14 },
+  heading: { gap: 2 },
+  title: { ...fonts.heavy(24, -0.4), color: colors.text },
+  row: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
+  rowHuge: { flexDirection: 'column', gap: 6 },
+  well: {
+    width: WELL,
+    height: WELL,
+    borderRadius: WELL / 2,
+    backgroundColor: bitepal.well,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  heading: {
-    gap: 2,
-  },
-  eyebrow: { ...fonts.semibold(15), color: colors.text2 },
-  title: {
-    ...fonts.bold(20, -0.3),
-    lineHeight: 25,
-    color: colors.text,
-  },
-  row: {
-    flexDirection: "row",
-    alignItems: "flex-start",
-    gap: 12,
-  },
-  body: {
-    ...fonts.regular(17),
-    lineHeight: 23,
-    color: colors.text,
-    flex: 1,
-  },
+  body: { ...fonts.regular(19), color: colors.text, flex: 1 },
 });

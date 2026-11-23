@@ -9,6 +9,10 @@ export const QUICK_EN = {
   // The eyebrow over the featured card. Shouted, because it is the one thing
   // on the screen that changes with the hour.
   'quick.featured': 'Right now',
+  'quick.situations': 'Situations',
+  'quick.bodyParts': 'Body parts',
+  'quick.allMoves': 'All moves',
+  'quick.showAll': 'Show all',
 
   // ── The five ──────────────────────────────────────────────────────────────
   'quick.flare.title': 'Hurts right now',

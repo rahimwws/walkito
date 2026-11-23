@@ -4,6 +4,10 @@ export const QUICK_RU = {
   'quick.title': 'Быстро',
   'quick.subtitle': 'Когда нужно прямо сейчас',
   'quick.featured': 'Сейчас подойдёт',
+  'quick.situations': 'Ситуации',
+  'quick.bodyParts': 'Зоны',
+  'quick.allMoves': 'Все упражнения',
+  'quick.showAll': 'Показать все',
 
   'quick.flare.title': 'Болит прямо сейчас',
   'quick.preRun.title': 'Перед пробежкой',
