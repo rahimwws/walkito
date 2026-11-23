@@ -1,7 +1,7 @@
 import Flag02Icon from '@hugeicons/core-free-icons/Flag02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { useEffect, type ReactNode } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View, type ColorValue } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -13,9 +13,12 @@ import Animated, {
 import Svg, { Circle, Line } from 'react-native-svg';
 
 import { fromDateKey } from '@/entities/program';
-import { fonts, meterColors, palette, type Accent } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+
+/** A test's accent: which test, never how it went. Tokens or plain strings. */
+type Tone = { fill: ColorValue; track: ColorValue };
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import type { TestKind } from '../../model/test-day';
@@ -48,7 +51,7 @@ export function TestRing({
   from: number;
   /** Where it ends: today's share of the goal. Clamped to 0–1. */
   to: number;
-  tone: Accent;
+  tone: Tone;
   delay?: number;
   size?: number;
   stroke?: number;
@@ -114,7 +117,7 @@ export function TestHistoryBars({
   /** `YYYY-MM-DD`, one per value. */
   dates: readonly string[];
   target: number;
-  tone: Accent;
+  tone: Tone;
   /** Anything to put under the bars. */
   children?: ReactNode;
 }) {

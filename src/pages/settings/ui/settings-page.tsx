@@ -3,7 +3,7 @@ import File01Icon from '@hugeicons/core-free-icons/File01Icon';
 import MessageEdit01Icon from '@hugeicons/core-free-icons/MessageEdit01Icon';
 import Shield01Icon from '@hugeicons/core-free-icons/Shield01Icon';
 import { type IconSvgElement } from '@hugeicons/react-native';
-import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, ScrollView, StyleSheet, Text, View, type ColorValue } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LanguageOptions } from '@/features/language-switch';
@@ -26,7 +26,7 @@ import { SubscriptionSettings } from './subscription-settings';
  * privacy policy looks finished; one that shows it unavailable is a reminder
  * that it is not.
  */
-const LINKS: { label: Key; hint: Key; url: string; icon: IconSvgElement; tone: string }[] = [
+const LINKS: { label: Key; hint: Key; url: string; icon: IconSvgElement; tone: ColorValue }[] = [
   { label: 'settings.terms', hint: 'settings.termsHint', url: LEGAL.terms, icon: File01Icon, tone: bodyColors.arch },
   { label: 'settings.privacy', hint: 'settings.privacyHint', url: LEGAL.privacy, icon: Shield01Icon, tone: bodyColors.ankle },
 ];

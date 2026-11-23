@@ -13,6 +13,7 @@ import { scheduleOnRN } from 'react-native-worklets';
 
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { useColorScheme } from '@/shared/lib/theme';
 
 import { REVEAL_BY_MS, REVEAL_MS, SPLASH_BACKGROUND, UNMOUNT_GRACE_MS } from './reveal-math';
 import { markSplashRevealed } from './revealed';
@@ -140,6 +141,7 @@ function Reveal({ ready, holdMs, onDone }: RevealProps) {
   // hit-test stops here instead of passing taps to the app underneath.
   const blockGestures = useMemo(() => Gesture.Manual(), []);
   const coverStyle = useAnimatedStyle(() => ({ opacity: cover.value }));
+  const scheme = useColorScheme();
 
   return (
     <GestureDetector gesture={blockGestures}>
@@ -151,7 +153,7 @@ function Reveal({ ready, holdMs, onDone }: RevealProps) {
         accessibilityElementsHidden
         importantForAccessibility="no-hide-descendants"
         style={StyleSheet.absoluteFill}>
-        <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.cover, coverStyle]}>
+        <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.cover, { backgroundColor: SPLASH_BACKGROUND[scheme] }, coverStyle]}>
           <Text style={styles.wordmark} allowFontScaling={false}>
             {t('splash.wordmark')}
           </Text>
@@ -163,7 +165,6 @@ function Reveal({ ready, holdMs, onDone }: RevealProps) {
 
 const styles = StyleSheet.create({
   cover: {
-    backgroundColor: SPLASH_BACKGROUND,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -1,3 +1,4 @@
+import type { ColorValue } from 'react-native';
 import Svg, { Circle, ClipPath, Defs, Ellipse, G, Path, Rect } from 'react-native-svg';
 
 import { parts, type PartName } from '@/shared/config';
@@ -7,7 +8,7 @@ const LEG =
   'M10 3h7v13c0 2.2 1 3.4 3 4.3l7 3.2c2 .9 3 2.2 3 4.1v.9c0 1.4-1 2.5-2.5 2.5H8.8C6.7 31 5.5 29.8 5.5 27.8v-6c0-2 1.2-3.4 2.4-5.1L10 13.6Z';
 
 /** The part, lit in its colour on the white leg. */
-function Spot({ part, color }: { part: PartName; color: string }) {
+function Spot({ part, color }: { part: PartName; color: ColorValue }) {
   switch (part) {
     case 'heel':
       return <Circle cx={8.5} cy={27} r={5.5} fill={color} />;

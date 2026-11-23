@@ -3,7 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { makeImageFromView } from '@shopify/react-native-skia';
 import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
-import { Platform, Pressable, ScrollView, Share, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Platform, Pressable, ScrollView, Share, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
 import Animated, { FadeIn, FadeOut, useReducedMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -418,7 +418,7 @@ const BARS_HEIGHT = 110;
 
 /** The last tests, oldest first: soft bars, today's in the test's accent, the
  * goal a line with its figure. Every label at 17pt. */
-function Bars({ values, dates, target, fill }: { values: readonly number[]; dates: readonly string[]; target: number; fill: string }) {
+function Bars({ values, dates, target, fill }: { values: readonly number[]; dates: readonly string[]; target: number; fill: ColorValue }) {
   const t = useT();
   const top = Math.max(1, target, ...values) * 1.1;
   return (

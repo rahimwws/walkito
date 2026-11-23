@@ -8,7 +8,7 @@ import TennisBallIcon from '@hugeicons/core-free-icons/TennisBallIcon';
 import { type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Modal, StyleSheet, Switch, Text, View } from 'react-native';
+import { Modal, StyleSheet, Switch, Text, View, type ColorValue } from 'react-native';
 
 import { LegMap, ZONE_LABEL_KEYS, painAreasOf, toggleZone, type LegZone } from '@/entities/leg-zone';
 import { wakeMinutes } from '@/entities/notifications';
@@ -45,7 +45,7 @@ const SIDES = ['left', 'right', 'both'] as const;
 const SIDE_KEYS = { left: 'settings.footLeft', right: 'settings.footRight', both: 'settings.footBoth' } as const;
 
 /** Each kit item's row icon and colour. */
-const EQUIPMENT_LOOK: Record<Equipment, { icon: IconSvgElement; tone: string }> = {
+const EQUIPMENT_LOOK: Record<Equipment, { icon: IconSvgElement; tone: ColorValue }> = {
   step: { icon: EntranceStairsIcon, tone: bodyColors.heel },
   band: { icon: Dumbbell01Icon, tone: bodyColors.arch },
   towel: { icon: ClothesIcon, tone: bodyColors.calf },

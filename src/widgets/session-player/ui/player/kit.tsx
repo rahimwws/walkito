@@ -2,12 +2,23 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { useEffect, useRef, type ReactNode } from 'react';
-import { Image, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
+import {
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+  type ColorValue,
+  type StyleProp,
+  type TextStyle,
+  type ViewStyle,
+} from 'react-native';
 import { useReducedMotion } from 'react-native-reanimated';
 import Svg, { Circle } from 'react-native-svg';
 
 import { EXERCISES_BY_ID, exerciseById, moveLook, planMeta } from '@/entities/program';
-import { bitepal, bodyColors, colors, fonts, target, type BodyPart } from '@/shared/config';
+import { bitepal, bodyColors, colors, derive, fonts, target, themes, type BodyPart } from '@/shared/config';
+import { mix } from '@/shared/lib/color';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Mascot, MascotStill, type MascotHandle, type MascotRig, type MascotShot } from '@/shared/ui/mascot';
 
@@ -40,17 +51,11 @@ export const cardStyle = {
   borderCurve: 'continuous',
 } as const satisfies ViewStyle;
 
-/** A colour mixed into white, opaque: the pastel behind a move's picture.
- * Opaque so the drawing's white multiplies into it rather than through it. */
-export function soft(hex: string, amount = 0.24): string {
-  const value = hex.replace('#', '');
-  const mix = (at: number) => {
-    const channel = parseInt(value.slice(at, at + 2), 16);
-    return Math.round(255 - (255 - channel) * amount)
-      .toString(16)
-      .padStart(2, '0');
-  };
-  return '#' + mix(0) + mix(2) + mix(4);
+/** A colour mixed into the card, opaque: the pastel behind a move's picture,
+ * and in dark the same share of it on the dark card. Opaque so the drawing's
+ * white multiplies into it rather than through it. */
+export function soft(color: ColorValue, amount = 0.24): ColorValue {
+  return derive(color, (hex, scheme) => mix(themes[scheme].colors.surface, hex, amount));
 }
 
 /** BitePal's header scene (#108): the warm card the character stands in. */
@@ -77,7 +82,7 @@ export function bodyPartOf(exerciseId: string | null | undefined): BodyPart | nu
 }
 
 /** A move's colour: the part it works, or the brand violet for no move. */
-export function moveColor(exerciseId: string | null | undefined): string {
+export function moveColor(exerciseId: string | null | undefined): ColorValue {
   const part = bodyPartOf(exerciseId);
   return part == null ? colors.accent : bodyColors[part];
 }
@@ -239,7 +244,7 @@ export function Ring({
   size: number;
   stroke?: number;
   value: number;
-  color: string;
+  color: ColorValue;
   children?: ReactNode;
 }) {
   const r = (size - stroke) / 2;
@@ -269,7 +274,7 @@ export function Ring({
 }
 
 /** BitePal's thin coloured bar on its light track. */
-export function Bar({ value, color, style }: { value: number; color: string; style?: StyleProp<ViewStyle> }) {
+export function Bar({ value, color, style }: { value: number; color: ColorValue; style?: StyleProp<ViewStyle> }) {
   const share = Math.max(0, Math.min(1, value));
   return (
     <View style={[styles.bar, style]} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
@@ -336,7 +341,7 @@ export function SessionMascot({
   rig: MascotRig;
   size: number;
   shot?: MascotShot;
-  surface?: string;
+  surface?: ColorValue;
   style?: StyleProp<ViewStyle>;
 }) {
   const focused = useIsFocused();

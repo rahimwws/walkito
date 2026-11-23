@@ -15,6 +15,8 @@ import { scheduleOnRN } from 'react-native-worklets';
 
 import { colors, fonts, radius, space } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { useColorScheme } from '@/shared/lib/theme';
+import { SPLASH_BACKGROUND } from '@/shared/ui/splash';
 
 import type { AppUpdates, UpdateOffer } from '../model/use-app-updates';
 
@@ -22,9 +24,6 @@ import { UpdateButton } from './update-button';
 
 /** How far below the screen the card starts. */
 const BELOW = 320;
-/** The colour the screen is covered in before the restart: the launch
- * splash's white, so the relaunch opens onto the same picture. */
-const CURTAIN = colors.surface;
 
 const motion = ReduceMotion.System;
 
@@ -55,6 +54,9 @@ export const UpdateSheet = memo(function UpdateSheet({
   const insets = useSafeAreaInsets();
   const reduceMotion = useReducedMotion();
   const t = useT();
+  /** The colour the screen is covered in before the restart: the launch
+   * splash's, white or black, so the relaunch opens onto the same picture. */
+  const cover = SPLASH_BACKGROUND[useColorScheme()];
   const bottom = Math.max(insets.bottom, 16);
 
   /** Held after `offer` clears, so the exit has something to play on. */
@@ -138,8 +140,8 @@ export const UpdateSheet = memo(function UpdateSheet({
 
   const onCovered = useCallback(() => {
     covered.current = true;
-    requestAnimationFrame(() => handoff(CURTAIN));
-  }, [handoff]);
+    requestAnimationFrame(() => handoff(cover));
+  }, [handoff, cover]);
 
   const playHandoff = useCallback(() => {
     void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => undefined);
@@ -288,7 +290,7 @@ export const UpdateSheet = memo(function UpdateSheet({
           </Animated.View>
         </Animated.View>
         <Animated.View
-          style={[styles.fill, { backgroundColor: CURTAIN }, curtainStyle]}
+          style={[styles.fill, { backgroundColor: cover }, curtainStyle]}
           pointerEvents="none"
           accessibilityElementsHidden
           importantForAccessibility="no-hide-descendants"

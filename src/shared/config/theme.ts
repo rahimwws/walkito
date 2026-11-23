@@ -11,10 +11,13 @@
  * it is. `positive` marks an improving delta only; `flat` covers flat and
  * declining alike, because a dip is information, not an error.
  *
- * The light values come from `tokens.ts`. The dark halves are kept for a
- * later dark mode; nothing renders them while the app is light only.
+ * Both halves come from `tokens.ts`, so these strings and the native colours
+ * screens use can never disagree.
  */
-import { colors } from './tokens';
+import { themes } from './tokens';
+
+const colors = themes.light.colors;
+const dark = themes.dark.colors;
 
 export const palette = {
   light: {
@@ -23,12 +26,10 @@ export const palette = {
     card: colors.surface,
   },
   dark: {
-    // Dark, deliberately not black. Pure #000 makes every surface above it
-    // read as a floating rectangle; a few points of lift gives the rows
-    // something to sit on, which is what the reference apps do.
-    background: '#111113',
-    foreground: '#FFFFFF',
-    card: '#1C1C1F',
+    // iOS's grouped dark: a black page under #1C1C1E cards.
+    background: dark.bg,
+    foreground: dark.text,
+    card: dark.surface,
   },
 } as const;
 
@@ -56,7 +57,7 @@ export const primaryButton = {
   // a button you cannot see, which is the rule stated above and the one the
   // violet fill sidestepped by being loud against both.
   light: { fill: colors.ink, label: colors.onInk },
-  dark: { fill: '#FFFFFF', label: '#111114' },
+  dark: { fill: dark.ink, label: dark.onInk },
 } as const;
 
 export const meterColors = {
@@ -84,21 +85,21 @@ export const meterColors = {
     solidFallback: colors.glassFallback,
   },
   dark: {
-    ink: '#FFFFFF',
-    unit: '#7C7C84',
-    caption: '#9E9EA6',
-    label: '#9E9EA6',
-    positive: '#2ECC71',
-    positiveBg: 'rgba(46,204,113,0.16)',
-    flat: '#7C7C84',
-    focus: '#F0B458',
-    focusBg: 'rgba(240,180,88,0.16)',
-    tick: '#FFFFFF',
+    ink: dark.text,
+    unit: dark.text3,
+    caption: dark.text2,
+    label: dark.text2,
+    positive: dark.good,
+    positiveBg: 'rgba(48,209,88,0.16)',
+    flat: dark.text3,
+    focus: dark.warn,
+    focusBg: 'rgba(255,159,10,0.16)',
+    tick: dark.text,
     track: 'rgba(255,255,255,0.14)',
-    divider: 'rgba(255,255,255,0.08)',
-    iconTile: 'rgba(255,255,255,0.08)',
+    divider: dark.separator,
+    iconTile: dark.surface2,
     glassTint: 'rgba(10,10,12,0.55)',
-    solidFallback: 'rgba(26,26,30,0.96)',
+    solidFallback: dark.glassFallback,
   },
 } as const;
 

@@ -1,3 +1,4 @@
+import type { ColorValue } from 'react-native';
 import type { ZoneKey } from '@/entities/program';
 import { bodyColors, type BodyPart } from '@/shared/config';
 import type { Key, Translate } from '@/shared/lib/i18n';
@@ -80,6 +81,6 @@ export function legLabel(t: Translate, leg: Leg, sore: boolean): string {
 }
 
 /** A test's colour: the part of the foot it measures, never how it went. */
-export function testColor(kind: TestKind): string {
+export function testColor(kind: TestKind): ColorValue {
   return bodyColors[TEST_META[kind].body];
 }

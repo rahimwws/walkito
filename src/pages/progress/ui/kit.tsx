@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { StyleSheet, Text, View, useWindowDimensions, type StyleProp, type ViewStyle } from 'react-native';
+import { StyleSheet, Text, View, useWindowDimensions, type ColorValue, type StyleProp, type ViewStyle } from 'react-native';
 
 import { bitepal, colors, fonts } from '@/shared/config';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
@@ -36,7 +36,7 @@ export function CardHead({ children, aside }: { children: ReactNode; aside?: Rea
 }
 
 /** A colourful Fluent drawing on a pastel disc: BitePal's round row icons. */
-export function IconDisc({ name, tone, size = 52 }: { name: FluentName; tone: string; size?: number }) {
+export function IconDisc({ name, tone, size = 52 }: { name: FluentName; tone: ColorValue; size?: number }) {
   return (
     <View
       style={[styles.disc, { width: size, height: size, borderRadius: size / 2, backgroundColor: soft(tone, 0.22) }]}

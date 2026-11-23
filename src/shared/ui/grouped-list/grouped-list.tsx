@@ -11,6 +11,7 @@ import {
   type AccessibilityRole,
   type StyleProp,
   type ViewStyle,
+  type ColorValue,
 } from 'react-native';
 
 import { bitepal, colors, fonts, target } from '@/shared/config';
@@ -58,17 +59,17 @@ export function GroupedCard({ children, style }: { children: ReactNode; style?: 
 }
 
 /** A filled disc in the row's colour with a white glyph. */
-export function RowIcon({ icon, tone }: { icon: IconSvgElement; tone: string }) {
+export function RowIcon({ icon, tone }: { icon: IconSvgElement; tone: ColorValue }) {
   return (
     <View style={[styles.icon, { backgroundColor: tone }]} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-      <HugeiconsIcon icon={icon} size={22} color={colors.onInk} strokeWidth={2} />
+      <HugeiconsIcon icon={icon} size={22} color={colors.onTone} strokeWidth={2} />
     </View>
   );
 }
 
 export type GroupedRowProps = {
   icon?: IconSvgElement;
-  tone?: string;
+  tone?: ColorValue;
   label: string;
   /** A second line under the label. */
   hint?: string;
@@ -77,7 +78,7 @@ export type GroupedRowProps = {
   /** What sits at the right instead of the chevron: a switch, a picker. */
   accessory?: ReactNode;
   /** The label's own colour, for the one destructive row. */
-  labelColor?: string;
+  labelColor?: ColorValue;
   /** Pressable rows show a chevron unless they bring an accessory. */
   onPress?: () => void;
   /** `link` rows leave the app: an arrow up and out instead of the chevron. */

@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 import { readFileSync } from 'node:fs';
 
-import { colors } from '@/shared/config/tokens';
+import { themes } from '@/shared/config/tokens';
 
 import { REVEAL_BY_MS, REVEAL_MS, SPLASH_BACKGROUND, UNMOUNT_GRACE_MS } from './reveal-math';
 
@@ -28,15 +28,16 @@ describe('native splash in app.json', () => {
 
   test('is plain white, the colour of the first JS frame, with no picture', () => {
     const options = entry?.[1] ?? {};
-    expect(SPLASH_BACKGROUND).toBe(colors.surface);
-    expect(options.backgroundColor).toBe(SPLASH_BACKGROUND);
+    expect(themes.light.colors.surface).toBe(SPLASH_BACKGROUND.light);
+    expect(options.backgroundColor).toBe(SPLASH_BACKGROUND.light);
     expect(options.image).toBeUndefined();
   });
 
-  test('has no dark variant, and the app is light only', () => {
-    // The plugin writes UIUserInterfaceStyle = Automatic whenever a `dark`
-    // block is present, overriding app.json's "light".
-    expect(entry?.[1]?.dark).toBeUndefined();
-    expect(config.expo.userInterfaceStyle).toBe('light');
+  test('is the dark page in dark, and the app follows the appearance', () => {
+    const dark = entry?.[1]?.dark as Record<string, unknown> | undefined;
+    expect(themes.dark.colors.bg).toBe(SPLASH_BACKGROUND.dark);
+    expect(dark?.backgroundColor).toBe(SPLASH_BACKGROUND.dark);
+    expect(dark?.image).toBeUndefined();
+    expect(config.expo.userInterfaceStyle).toBe('automatic');
   });
 });

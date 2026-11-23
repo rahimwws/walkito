@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
 
-import { PRIMARY, colors, meterColors, palette } from '@/shared/config';
+import { PRIMARY, meterColors, palette, themes } from '@/shared/config';
 import { mix, shade } from '@/shared/lib/color';
 
 /**
@@ -51,7 +51,7 @@ const LIGHT: PlansTheme = {
   scheme: 'light',
   PLUS: {
     accent: shade(HUE, 0.1),
-    onAccent: colors.onInk,
+    onAccent: themes.light.colors.onTone,
     lit: shade(HUE, 0.1),
     wash: mix('#FFFFFF', HUE, 0.1),
     washEdge: mix('#FFFFFF', HUE, 0.45),
@@ -62,7 +62,7 @@ const LIGHT: PlansTheme = {
     ink: palette.light.foreground,
     label: meterColors.light.label,
     caption: meterColors.light.caption,
-    edge: colors.separator,
+    edge: themes.light.colors.separator,
   },
 };
 
@@ -72,7 +72,7 @@ const DARK: PlansTheme = {
   scheme: 'dark',
   PLUS: {
     accent: HUE,
-    onAccent: colors.onInk,
+    onAccent: themes.dark.colors.onTone,
     lit: mix(HUE, '#FFFFFF', 0.3),
     wash: mix(palette.dark.card, HUE, 0.16),
     washEdge: mix(palette.dark.card, HUE, 0.5),

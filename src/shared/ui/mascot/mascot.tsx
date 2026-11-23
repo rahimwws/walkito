@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState, type Ref } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View, type ColorValue } from 'react-native';
 import {
   Easing,
   runOnJS,
@@ -14,7 +14,7 @@ import {
   type SharedValue,
 } from 'react-native-reanimated';
 
-import { palette } from '@/shared/config';
+import { colorFor, palette } from '@/shared/config';
 import { settle } from '@/shared/lib/motion';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -105,11 +105,11 @@ function fidgetsFor(rig: MascotRig): FidgetKind[] {
 }
 
 /** The art's own colours (in the dark, the outline in the colour of what it stands on), or the tint asked for. */
-function useMascotColors(surface?: string, paper?: string, ink?: string): MascotColors {
+function useMascotColors(surface?: ColorValue, paper?: string, ink?: string): MascotColors {
   const scheme = useColorScheme();
   const art: MascotColors =
     scheme === 'dark'
-      ? { ink: surface ?? palette.dark.background, paper: palette.dark.foreground, shadow: palette.dark.foreground }
+      ? { ink: surface != null ? colorFor(surface, scheme) : palette.dark.background, paper: palette.dark.foreground, shadow: palette.dark.foreground }
       : { ink: palette.light.foreground, paper: palette.light.background, shadow: palette.light.foreground };
   return { ink: ink ?? art.ink, paper: paper ?? art.paper, shadow: art.shadow };
 }
@@ -143,7 +143,7 @@ export type MascotProps = {
    * What the mascot stands on. In the dark the outline is drawn in it, so the
    * white figure reads the way the art was drawn: cut out of the page.
    */
-  surface?: string;
+  surface?: ColorValue;
   /** The body's fill, for a tinted mascot (a coloured one peeking into a card). The art's own by default. */
   paper?: string;
   /** The outline and the face, for a tinted mascot. By default the art's ink, or `surface` in the dark. */
@@ -961,7 +961,7 @@ export function MascotStill({
   rig: MascotRig;
   size: number;
   face?: string;
-  surface?: string;
+  surface?: ColorValue;
   /** The body's fill, as `Mascot`'s `paper`. */
   paper?: string;
   /** The outline and the face, as `Mascot`'s `ink`. */

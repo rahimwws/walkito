@@ -1,8 +1,9 @@
 import { GlassView } from 'expo-glass-effect';
 import type { ReactNode } from 'react';
-import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
+import { StyleSheet, View, type ColorValue, type StyleProp, type ViewStyle } from 'react-native';
 
-import { colors } from '@/shared/config/tokens';
+import { colors } from '@/shared/config';
+import { useColorFor } from '@/shared/lib/theme';
 
 import { useNavGlass } from './use-nav-glass';
 
@@ -18,7 +19,7 @@ export type NavGlassProps = {
   interactive?: boolean;
   /** A prominent control's colour (the floating Start): the glass is tinted
    * with it, and the solid fallback is filled with it. */
-  tint?: string;
+  tint?: ColorValue;
 };
 
 /**
@@ -31,9 +32,11 @@ export type NavGlassProps = {
  */
 export function NavGlass({ children, style, variant = 'regular', interactive = false, tint }: NavGlassProps) {
   const glass = useNavGlass();
+  // The glass takes the hex, not a dynamic colour.
+  const hex = useColorFor();
   if (!glass) return <View style={[styles.solid, tint != null && { backgroundColor: tint, borderWidth: 0 }, style]}>{children}</View>;
   return (
-    <GlassView glassEffectStyle={variant} isInteractive={interactive} tintColor={tint} style={style}>
+    <GlassView glassEffectStyle={variant} isInteractive={interactive} tintColor={tint == null ? undefined : hex(tint)} style={style}>
       {variant === 'clear' && <View style={[StyleSheet.absoluteFill, styles.dim]} pointerEvents="none" />}
       {children}
     </GlassView>

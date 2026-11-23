@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, type ColorValue } from 'react-native';
 import Animated, { useAnimatedProps, type SharedValue } from 'react-native-reanimated';
 import Svg, { Circle } from 'react-native-svg';
 
@@ -14,7 +14,7 @@ export type CountdownRingProps = {
   /** What is left of the window, 1 → 0. Driven on the UI thread by the owner. */
   left: SharedValue<number>;
   /** The test's accent: which test this is, never how it is going. */
-  tone: { fill: string; track: string };
+  tone: { fill: ColorValue; track: ColorValue };
   children: ReactNode;
 };
 

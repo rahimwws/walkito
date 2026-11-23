@@ -3,11 +3,11 @@ import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, type ColorValue } from 'react-native';
 import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
 
 import { GOAL_SPECS, type GoalType } from '@/entities/program';
-import { bitepal, bodyColors, colors, fonts } from '@/shared/config';
+import { bitepal, bodyColors, colors, derive, fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key, type Translate } from '@/shared/lib/i18n';
 import { requestProgram } from '@/shared/lib/program';
@@ -21,7 +21,7 @@ import { CardFoot, CardHead, Chip, NUMBER_SCALE, ProgressCard, useLargeText } fr
 
 /** Each test's goal, words and colour: the part of the leg it works, as the
  * Foot Check's own cards colour it. The colour names the test, never the result. */
-const META: Record<StrengthKey, { goal: GoalType; name: Key; explain: Key; reps: boolean; color: string }> = {
+const META: Record<StrengthKey, { goal: GoalType; name: Key; explain: Key; reps: boolean; color: ColorValue }> = {
   calf: { goal: 'calf_raises', name: 'progress.calfName', explain: 'testday.results.explain.calf_raises', reps: true, color: bodyColors.calf },
   balance: { goal: 'balance', name: 'progress.balanceName', explain: 'testday.results.explain.balance', reps: false, color: bodyColors.ankle },
   arch: { goal: 'arch_hold', name: 'progress.archName', explain: 'testday.results.explain.arch_hold', reps: false, color: bodyColors.arch },
@@ -201,8 +201,8 @@ function TestCard({ trend, open, onToggle }: { trend: StrengthTrend; open: boole
 }
 
 /** An older test's bar: the test's colour, lighter. */
-function soften(hex: string): string {
-  return hex + '66';
+function soften(color: ColorValue): ColorValue {
+  return derive(color, (hex) => hex + '66');
 }
 
 /** The next test: the date large, how far off it is, and on its day the round start. */

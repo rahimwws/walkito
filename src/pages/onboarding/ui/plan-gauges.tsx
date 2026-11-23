@@ -15,7 +15,7 @@ import Animated, {
 import Svg, { Circle, G } from 'react-native-svg';
 
 import { WEEK_SHAPES, type DaysPerWeek, type SessionMinutes } from '@/entities/program';
-import { accents, colors, fonts, meterColors, palette } from '@/shared/config';
+import { accents, colors, fonts, meterColors, palette, themes } from '@/shared/config';
 import { useLanguage, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -61,10 +61,12 @@ export function WeekGauge({ days }: { days: DaysPerWeek | null }) {
   const language = useLanguage();
   const initials = useMemo(() => weekdayInitials(language), [language]);
   const shape = days == null ? null : WEEK_SHAPES[days];
-  const tone = { face: accents[scheme].orange.fill, label: colors.onInk };
+  // interpolateColor needs the hex.
+  const hex = themes[scheme].colors;
+  const tone = { face: accents[scheme].orange.fill, label: hex.onTone };
   const off = {
-    face: colors.surface,
-    edge: colors.separator,
+    face: hex.surface,
+    edge: hex.separator,
     ink: meterColors[scheme].caption,
   };
 

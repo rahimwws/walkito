@@ -30,14 +30,14 @@ export {
 } from './clip-manifest';
 export { VOICE, VOICE_TOTAL_BYTES, voiceEntry, type VoiceEntry } from './voice-manifest';
 export {
-  colors,
-  parts,
   space,
   radius,
   target,
-  bitepal,
-  bodyColors,
+  themes,
   CHROME_MAX_FONT_SCALE,
+  type ColorScheme,
+  type Tokens,
   type PartName,
   type BodyPart,
 } from './tokens';
+export { colors, parts, bitepal, bodyColors, colorFor, derive, themed } from './dynamic-colors';

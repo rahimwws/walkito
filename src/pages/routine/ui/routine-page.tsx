@@ -29,7 +29,7 @@ import {
   type ProtocolPosition,
 } from '@/entities/protocols';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
-import { colors as tokens } from '@/shared/config/tokens';
+import { colors as tokens } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';

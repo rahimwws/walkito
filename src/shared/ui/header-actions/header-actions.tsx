@@ -11,7 +11,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { fonts } from '@/shared/config';
-import { CHROME_MAX_FONT_SCALE, colors, target } from '@/shared/config/tokens';
+import { CHROME_MAX_FONT_SCALE, colors, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { NavGlass } from '@/shared/ui/glass';
 import { ProfileMenu } from '@/shared/ui/profile-menu';

@@ -1,6 +1,6 @@
 import PencilEdit02Icon from '@hugeicons/core-free-icons/PencilEdit02Icon';
 import * as Haptics from 'expo-haptics';
-import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View, type ColorValue } from 'react-native';
 
 import { healthCache, useHealthSignals } from '@/entities/health';
 import { addDays, dayNumberFor, painOn, programState, todayKey } from '@/entities/program';
@@ -26,7 +26,7 @@ const morningPain = (date: string) => painOn(dayNumberFor(programState(), date))
 
 // ── What your days say ────────────────────────────────────────────────────
 
-const PATTERN_ICON: Record<Pattern['id'], { art: FluentName; tone: string }> = {
+const PATTERN_ICON: Record<Pattern['id'], { art: FluentName; tone: ColorValue }> = {
   'on-feet': { art: 'foot', tone: bodyColors.calf },
   'short-sleep': { art: 'moon', tone: bodyColors.ankle },
   workout: { art: 'run', tone: bodyColors.heel },

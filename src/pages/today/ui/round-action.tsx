@@ -1,6 +1,6 @@
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View, type ColorValue } from 'react-native';
 import Svg, { Circle } from 'react-native-svg';
 
 import { colors } from '@/shared/config';
@@ -11,7 +11,7 @@ export type RoundActionProps = {
   onPress: () => void;
   /** 0 to 1: a thin ring around the button, BitePal's progress ring. */
   progress?: number;
-  ringColor?: string;
+  ringColor?: ColorValue;
 };
 
 const SIZE = 64;

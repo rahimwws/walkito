@@ -3,7 +3,7 @@ import * as Haptics from 'expo-haptics';
 import { Pressable, StyleSheet, Text, type StyleProp, type ViewStyle } from 'react-native';
 
 import { fonts } from '@/shared/config';
-import { colors, radius, target } from '@/shared/config/tokens';
+import { colors, radius, target } from '@/shared/config';
 
 export type ActionButtonProps = {
   label: string;

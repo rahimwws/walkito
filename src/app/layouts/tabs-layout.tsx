@@ -5,7 +5,7 @@ import { Platform, View } from 'react-native';
 import { runOnJS, useAnimatedReaction } from 'react-native-reanimated';
 
 import { useYoureInPresenter } from '@/pages/youre-in';
-import { colors } from '@/shared/config/tokens';
+import { colors } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { ProgramProvider, useProgram } from '@/shared/lib/program';
 import { OverlayHost } from '@/shared/ui/overlay-host';

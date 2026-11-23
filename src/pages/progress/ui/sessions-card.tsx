@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, type ColorValue } from 'react-native';
 
 import { bodyColors, colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
@@ -17,7 +17,7 @@ import { CardHead, IconDisc, NUMBER_SCALE, ProgressCard, useLargeText } from './
 export function SessionsCard({ total, recap }: { total: number; recap: WeekRecap }) {
   const t = useT();
   const large = useLargeText();
-  const columns: { label: string; a11y: string; value: number; art: FluentName; tone: string }[] = [
+  const columns: { label: string; a11y: string; value: number; art: FluentName; tone: ColorValue }[] = [
     {
       label: t('weekRecap.showedUp'),
       a11y: t('weekRecap.showedUpA11y', { count: recap.showedUp }),

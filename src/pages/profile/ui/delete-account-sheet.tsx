@@ -6,7 +6,7 @@ import { Linking, Platform, StyleSheet, Text } from 'react-native';
 import { usePassWindow, useSubscription } from '@/entities/purchase';
 import { deleteAccount, resetOnboarding } from '@/entities/session';
 import { clearClips } from '@/widgets/session-player';
-import { accents, colors, fonts, target } from '@/shared/config';
+import { accents, colors, fonts, target, themes } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useSheetHandlers, useSheetRoute } from '@/shared/lib/sheet-route';
 import { Button } from '@/shared/ui/button';
@@ -120,7 +120,7 @@ export function DeleteAccountSheetScreen() {
             // The only red button in the app. Destructive actions are the one
             // place colour is allowed to carry meaning here; everywhere else
             // the rule is that colour never judges.
-            tint={{ fill: accents.light.red.fill, label: colors.onInk }}
+            tint={{ fill: accents.light.red.fill, label: themes.light.colors.onTone }}
             onPress={() => void confirm()}
           />
           <Button label={t('profile.keepAccount')} variant="ghost" onPress={close} disabled={busy} />

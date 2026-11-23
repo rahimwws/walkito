@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, type ColorValue } from 'react-native';
 
 import { GOAL_SPECS, goalProgress, type Goal } from '@/entities/program';
 import { bodyColors, colors, fonts } from '@/shared/config';
@@ -17,7 +17,7 @@ const LINE_KEY = {
 } as const satisfies Record<Goal['type'], Key>;
 
 /** The colour of what each goal measures, as its test's card wears it. */
-const GOAL_COLOR: Record<Goal['type'], string> = {
+const GOAL_COLOR: Record<Goal['type'], ColorValue> = {
   pain_free_mornings: bodyColors.heel,
   arch_hold: bodyColors.arch,
   calf_raises: bodyColors.calf,

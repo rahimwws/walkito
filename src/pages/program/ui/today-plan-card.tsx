@@ -1,7 +1,7 @@
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
 
 import { TEST_LOOK, type SessionMinutes } from '@/entities/program';
 import {
@@ -275,7 +275,7 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
 }
 
 /** One figure of what the day earned, as BitePal's carbs/fats/proteins (#98): a part's colour beside the grey label, the heavy number under it. */
-function Stat({ label, value, a11y, color }: { label: string; value: number; a11y: string; color: string }) {
+function Stat({ label, value, a11y, color }: { label: string; value: number; a11y: string; color: ColorValue }) {
   return (
     <View style={styles.stat} accessible accessibilityLabel={a11y}>
       <View style={styles.statHead}>

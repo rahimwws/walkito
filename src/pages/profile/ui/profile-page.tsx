@@ -7,7 +7,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { currentDay, useStreak } from '@/entities/program';
@@ -67,7 +67,7 @@ export function ProfilePage() {
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [followOpen, setFollowOpen] = useState(false);
 
-  const stats: { label: string; value: number; art: FluentName; tone: string }[] = [
+  const stats: { label: string; value: number; art: FluentName; tone: ColorValue }[] = [
     { label: t('profile.dayStreak'), value: streak.current, art: 'seedling', tone: bodyColors.calf },
     { label: t('profile.sessionsDone'), value: streak.total, art: 'strength', tone: bodyColors.heel },
   ];

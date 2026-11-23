@@ -2,7 +2,7 @@ import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState, type ComponentRef } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -65,7 +65,7 @@ type Feel = 'easy' | 'right' | 'hard' | 'hurt';
  * the dose is concerned; "Hard" keeps the level, as "Just right" does, since
  * effort near the limit is what the work is meant to reach.
  */
-const FEELS: readonly { feel: Feel; label: Key; feedback: Feedback; art: FluentName; tone: string }[] = [
+const FEELS: readonly { feel: Feel; label: Key; feedback: Feedback; art: FluentName; tone: ColorValue }[] = [
   { feel: 'easy', label: 'sessionDone.feel.easy', feedback: 'easy', art: 'feather', tone: bodyColors.arch },
   { feel: 'right', label: 'sessionDone.feel.right', feedback: 'ok', art: 'check', tone: bodyColors.calf },
   { feel: 'hard', label: 'sessionDone.feel.hard', feedback: 'ok', art: 'bolt', tone: bodyColors.toes },
@@ -201,7 +201,7 @@ export function Done({
       ? null
       : dayNumber + Math.round((Date.parse(next.date + 'T12:00:00') - Date.parse(today + 'T12:00:00')) / 86_400_000);
 
-  const stats: { value: number; label: string; a11y: string; art: FluentName; tone: string }[] = [
+  const stats: { value: number; label: string; a11y: string; art: FluentName; tone: ColorValue }[] = [
     { value: minutes, label: t('sessionDone.tileMinutes'), a11y: t('sessionDone.tileSessionA11y', { count: minutes }), art: 'timer', tone: bodyColors.heel },
     { value: moves, label: t('sessionDone.tileMoves'), a11y: t('sessionDone.tileMovesA11y', { count: moves }), art: 'foot', tone: bodyColors.arch },
     { value: sets, label: t('sessionDone.tileSets'), a11y: t('sessionDone.tileSetsA11y', { count: sets }), art: 'check', tone: bodyColors.calf },

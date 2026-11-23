@@ -2,7 +2,7 @@ import User03Icon from '@hugeicons/core-free-icons/User03Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { colors, target } from '@/shared/config/tokens';
+import { colors, target } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { NavGlass } from '@/shared/ui/glass';
 

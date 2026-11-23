@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
+import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle, type ColorValue } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import type { ReactNode } from 'react';
 import Svg, { Path } from 'react-native-svg';
@@ -47,8 +47,8 @@ export function Hex({
   children,
 }: {
   size: number;
-  fill: string;
-  rim: string;
+  fill: ColorValue;
+  rim: ColorValue;
   selected?: boolean;
   children?: ReactNode;
 }) {

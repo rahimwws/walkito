@@ -5,10 +5,11 @@
 
 /**
  * The native splash's colour (`backgroundColor` of the expo-splash-screen
- * plugin in app.json) and the JS overlay's, so the hand-over between them
- * changes no pixel. White, the app's card colour.
+ * plugin in app.json, and its `dark` block) and the JS overlay's, so the
+ * hand-over between them changes no pixel. White, the app's card colour, and
+ * black, the dark page.
  */
-export const SPLASH_BACKGROUND = '#FFFFFF';
+export const SPLASH_BACKGROUND = { light: '#FFFFFF', dark: '#000000' } as const;
 
 /** The overlay fades off the app in this long. */
 export const REVEAL_MS = 250;
