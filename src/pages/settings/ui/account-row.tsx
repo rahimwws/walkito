@@ -8,6 +8,7 @@ import { signInWithPlatform } from '@/entities/session';
 import { bitepal, colors, fonts, target } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
+import { TITLE_SCALE } from '@/widgets/session-player';
 import { isAnonymousSession } from '@/shared/lib/supabase';
 
 const METHOD = Platform.OS === 'android' ? 'google' : 'apple';
@@ -66,7 +67,9 @@ export function AccountRow({ onSignedIn }: { onSignedIn?: () => void }) {
 
   return (
     <View style={styles.group}>
-      <Text style={styles.title}>{t('settings.account.saveTitle')}</Text>
+      <Text style={styles.title} maxFontSizeMultiplier={TITLE_SCALE}>
+        {t('settings.account.saveTitle')}
+      </Text>
       <Text style={styles.body}>{t(Platform.OS === 'android' ? 'settings.account.saveBodyGoogle' : 'settings.account.saveBody')}</Text>
       {Platform.OS === 'ios' ? (
         <AppleAuthentication.AppleAuthenticationButton

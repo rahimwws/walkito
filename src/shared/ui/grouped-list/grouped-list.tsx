@@ -43,12 +43,13 @@ export function GroupedSection({
 
 /** The white card itself, with a hairline between whatever rows it holds. */
 export function GroupedCard({ children, style }: { children: ReactNode; style?: StyleProp<ViewStyle> }) {
+  const large = useWindowDimensions().fontScale >= LARGE_TEXT;
   const rows = Children.toArray(children).filter(isValidElement);
   return (
     <View style={[styles.card, style]}>
       {rows.map((row, index) => (
         <View key={row.key ?? index}>
-          {index > 0 && <View style={styles.rule} />}
+          {index > 0 && <View style={[styles.rule, large && styles.ruleLarge]} />}
           {row}
         </View>
       ))}
@@ -89,8 +90,9 @@ export type GroupedRowProps = {
 
 /**
  * One row: the round icon, the label (and a hint under it), and a value, a
- * chevron or a control at the right. At large text the control drops under the
- * words, so nothing is squeezed off the edge.
+ * chevron or a control at the right. At large text the icon and chevron take a
+ * line of their own above the words, and the value or control drops under
+ * them, so the label gets the card's whole width and no word is split.
  */
 export function GroupedRow({
   icon,
@@ -107,28 +109,43 @@ export function GroupedRow({
   accessibilityLabel,
   accessibilityHint,
 }: GroupedRowProps) {
-  const large = useWindowDimensions().fontScale >= 1.6;
-  const body = (
+  const large = useWindowDimensions().fontScale >= LARGE_TEXT;
+  const chevron =
+    onPress != null && accessory == null ? (
+      <HugeiconsIcon icon={trailingIcon} size={20} color={colors.text3} strokeWidth={2} />
+    ) : null;
+  const words = (
+    <View style={large ? styles.textLarge : styles.text}>
+      <Text style={[styles.label, labelColor != null && { color: labelColor }, disabled && styles.off]}>{label}</Text>
+      {hint != null && <Text style={styles.hint}>{hint}</Text>}
+    </View>
+  );
+  const body = large ? (
     <>
-      <View style={[styles.lead, large && accessory != null && styles.leadLarge]}>
-        {icon != null && <RowIcon icon={icon} tone={tone} />}
-        <View style={styles.text}>
-          <Text style={[styles.label, labelColor != null && { color: labelColor }, disabled && styles.off]}>{label}</Text>
-          {hint != null && <Text style={styles.hint}>{hint}</Text>}
+      {(icon != null || chevron != null) && (
+        <View style={styles.topLarge}>
+          {icon != null && <RowIcon icon={icon} tone={tone} />}
+          {chevron != null && <View style={styles.chevronLarge}>{chevron}</View>}
         </View>
-        {value != null && !large && <Text style={styles.value}>{value}</Text>}
-        {onPress != null && accessory == null && (
-          <HugeiconsIcon icon={trailingIcon} size={20} color={colors.text3} strokeWidth={2} />
-        )}
-      </View>
-      {value != null && large && <Text style={[styles.value, styles.valueLarge]}>{value}</Text>}
-      {accessory != null && <View style={large ? styles.accessoryLarge : undefined}>{accessory}</View>}
+      )}
+      {words}
+      {value != null && <Text style={[styles.value, styles.valueLarge]}>{value}</Text>}
+      {accessory != null && <View style={styles.accessoryLarge}>{accessory}</View>}
+    </>
+  ) : (
+    <>
+      {icon != null && <RowIcon icon={icon} tone={tone} />}
+      {words}
+      {value != null && <Text style={styles.value}>{value}</Text>}
+      {chevron}
+      {accessory}
     </>
   );
+  const rowStyle = [styles.row, large && styles.rowLarge];
 
   if (onPress == null) {
     return (
-      <View style={[styles.row, large && accessory != null && styles.rowLarge]} accessible={accessory == null}>
+      <View style={rowStyle} accessible={accessory == null}>
         {body}
       </View>
     );
@@ -144,12 +161,13 @@ export function GroupedRow({
         void Haptics.selectionAsync();
         onPress();
       }}
-      style={({ pressed }) => [styles.row, large && accessory != null && styles.rowLarge, pressed && styles.pressed]}>
+      style={({ pressed }) => [rowStyle, pressed && styles.pressed]}>
       {body}
     </Pressable>
   );
 }
 
+const LARGE_TEXT = 1.6;
 const ICON = 40;
 
 const styles = StyleSheet.create({
@@ -157,24 +175,26 @@ const styles = StyleSheet.create({
   title: { ...fonts.semibold(17), color: colors.text3, paddingHorizontal: 4 },
   card: { backgroundColor: bitepal.card, borderRadius: bitepal.cardRadius, borderCurve: 'continuous', overflow: 'hidden' },
   rule: { height: StyleSheet.hairlineWidth, backgroundColor: colors.separator, marginLeft: 16 + ICON + 14 },
+  ruleLarge: { marginLeft: 16 },
   row: {
     minHeight: target.primary + 8,
     paddingHorizontal: 16,
     paddingVertical: 12,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 14,
   },
-  rowLarge: { flexDirection: 'column', alignItems: 'stretch' },
-  lead: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 14 },
-  leadLarge: { flex: 0 },
+  rowLarge: { flexDirection: 'column', alignItems: 'stretch', gap: 8 },
+  topLarge: { flexDirection: 'row', alignItems: 'center' },
+  chevronLarge: { marginLeft: 'auto' },
   icon: { width: ICON, height: ICON, borderRadius: ICON / 2, alignItems: 'center', justifyContent: 'center' },
   text: { flex: 1, gap: 2 },
+  textLarge: { gap: 2 },
   label: { ...fonts.semibold(19), color: colors.text },
   hint: { ...fonts.regular(17), color: colors.text2 },
   value: { ...fonts.medium(17), color: colors.text2, flexShrink: 1, textAlign: 'right', maxWidth: '45%' },
-  valueLarge: { textAlign: 'left', maxWidth: '100%', paddingLeft: ICON + 14 },
-  accessoryLarge: { alignSelf: 'flex-start', paddingLeft: ICON + 14 },
+  valueLarge: { textAlign: 'left', maxWidth: '100%' },
+  accessoryLarge: { alignSelf: 'flex-start' },
   off: { color: colors.text3 },
   pressed: { opacity: 0.6 },
 });

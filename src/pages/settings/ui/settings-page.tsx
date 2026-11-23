@@ -10,6 +10,7 @@ import { LanguageOptions } from '@/features/language-switch';
 import { LEGAL, bitepal, bodyColors, colors, fonts } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { GroupedRow, GroupedSection } from '@/shared/ui/grouped-list';
+import { TITLE_SCALE } from '@/widgets/session-player';
 
 import { writeToUs } from '../lib/write-to-us';
 
@@ -46,7 +47,7 @@ export function SettingsPage() {
     <ScrollView
       style={styles.screen}
       contentContainerStyle={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
-      <Text style={styles.title} accessibilityRole="header">
+      <Text style={styles.title} accessibilityRole="header" maxFontSizeMultiplier={TITLE_SCALE}>
         {t('settings.title')}
       </Text>
 
