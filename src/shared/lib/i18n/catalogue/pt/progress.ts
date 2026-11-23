@@ -107,6 +107,20 @@ export const PROGRESS_PT = {
   'progress.heatDone': 'Você treinou',
   'progress.heatRest': 'Descanso',
   'progress.heatA11y': '{done} de {total} dias nas últimas 4 semanas',
+
+  // Progresso em cartões do BitePal.
+  'progress.sessionsTotal': 'Sessões até agora',
+  'progress.sessionsA11y': { one: '{count} sessão até agora', other: '{count} sessões até agora' },
+  'progress.month.hint': 'Abre o mês',
+  'progress.month.longest': 'Maior sequência: {days}',
+  'progress.month.sheetTitle': { one: 'dia feito este mês', other: 'dias feitos este mês' },
+  'progress.month.prev': 'Mês anterior',
+  'progress.month.next': 'Próximo mês',
+  'progress.month.gridA11y': { one: '{month}: {count} dia feito', other: '{month}: {count} dias feitos' },
+  'progress.rangeHint': 'Muda o período',
+  'progress.nextTestLabel': 'Próxima checagem dos pés',
+  'progress.goalLine': 'Meta: {value} {unit}',
+  'progress.onFeet.stepsToday': 'Passos hoje',
 };
 
 /**

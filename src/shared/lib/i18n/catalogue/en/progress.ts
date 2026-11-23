@@ -133,6 +133,20 @@ export const PROGRESS_EN = {
   'progress.heatDone': 'Showed up',
   'progress.heatRest': 'Rest day',
   'progress.heatA11y': '{done} of {total} days in the last 4 weeks',
+
+  // Progress in BitePal's cards.
+  'progress.sessionsTotal': 'Sessions so far',
+  'progress.sessionsA11y': { one: '{count} session so far', other: '{count} sessions so far' },
+  'progress.month.hint': 'Opens the month',
+  'progress.month.longest': 'Longest run: {days}',
+  'progress.month.sheetTitle': { one: 'day done this month', other: 'days done this month' },
+  'progress.month.prev': 'Previous month',
+  'progress.month.next': 'Next month',
+  'progress.month.gridA11y': { one: '{month}: {count} day done', other: '{month}: {count} days done' },
+  'progress.rangeHint': 'Changes the range',
+  'progress.nextTestLabel': 'Next Foot Check',
+  'progress.goalLine': 'Goal: {value} {unit}',
+  'progress.onFeet.stepsToday': 'Steps today',
 } as const satisfies Record<string, SourceEntry>;
 
 /**

@@ -1,6 +1,8 @@
+import Add01Icon from '@hugeicons/core-free-icons/Add01Icon';
+import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Modal, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
@@ -14,167 +16,167 @@ import {
   useCanMeasure,
   type AnkleRecord,
 } from '@/entities/foot-check';
-import { PRIMARY, accents, fonts, meterColors, palette } from '@/shared/config';
+import { bitepal, bodyColors, colors, fonts } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
-import { PrimaryButton } from '@/shared/ui/primary-button';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+import { BigNumber, CardLabel, Capsule, RoundButton, TITLE_SCALE } from '@/widgets/session-player';
 
-import { Card, DeltaChip } from './card';
+import { CardFoot, CardHead, Chip, NUMBER_SCALE, ProgressCard, SLOT_SCALE, useLargeText } from './kit';
 
-/** The most measurements the history shows: the last six, as the tests do. */
-const SHOWN = 6;
-/** The bars' height at the tallest reading. */
-const BAR_SPACE = 64;
+/** The most measurements the history shows: the last four, as the tests do. */
+const SHOWN = 4;
+/** The history's bars at the tallest reading. */
+const PAIR_HEIGHT = 96;
+/** The two sides by colour: which side a bar is, never whether it is good. */
+const SIDE_COLOR = { left: bodyColors.ankle, right: bodyColors.arch } as const;
 
 function dayMonth(at: number, language: string): string {
   return new Intl.DateTimeFormat(language, { day: 'numeric', month: 'short' }).format(new Date(at));
 }
 
 /**
- * "Ankle bend": how far each ankle bends, measured by the phone on the shin,
- * every time it has been. The latest two figures large, the change since the
- * first under them, a pair of bars per measurement (left, right), and the day
- * they are measured again; on that day, or before the first, the button that
- * measures them from here.
- *
- * On top, when the onboarding asked it, which heel lifted first: a line of
- * her own words, never on the chart, which holds degrees alone.
- *
- * Degrees only: no normal range, no goal line. Colour says which side a bar
- * is, never whether it is good.
+ * "Ankle bend" as a BitePal card: the two ankles' latest degrees large side by
+ * side, the round + that measures them when they are due, the change since the
+ * first measurement, and every measurement as a pair of thin bars. On top,
+ * when the onboarding asked it, which heel lifted first, in her own words.
+ * Degrees only: no normal range and no goal line.
  */
 export function AnkleCard({ nextTestAt }: { nextTestAt: number | null }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const t = useT();
   const language = useLanguage();
+  const large = useLargeText();
   const records = useAnkleRecords();
   const canMeasure = useCanMeasure();
   const [measuring, setMeasuring] = useState(false);
-  /** Which heel lifted first in the onboarding's Foot Check, said on top:
-   * where she started, by her own eye, before any degrees. */
   const [heel] = useState(() => selfCheck()?.heel ?? null);
 
-  // A phone that cannot measure, with nothing measured, has nothing to show.
   if (records.length === 0 && canMeasure !== true) return null;
 
   const first = records[0];
   const latest = records[records.length - 1];
   const again = latest != null ? remeasureAt(latest.at, nextTestAt) : null;
   const due = latest == null || (again != null && remeasureDue(again, Date.now()));
-  const change = first != null && latest != null && records.length > 1 ? latest.left + latest.right - first.left - first.right : null;
+  const change =
+    first != null && latest != null && records.length > 1 ? latest.left + latest.right - first.left - first.right : null;
+  const measure = due && canMeasure === true;
 
   return (
-    <Card
-      title={t('footCheck.card.ankle')}
-      aside={
-        change != null ? (
-          <DeltaChip
-            label={change === 0 ? t('progress.noChange') : t('footCheck.progress.since', {
-              delta: `${change > 0 ? '+' : '-'}${Math.abs(change)}`,
-              date: dayMonth(first.at, language),
-            })}
-            improving={change > 0}
-          />
-        ) : undefined
-      }>
-      <View {...REPLAY_MASK}>
-        {heel === 'left' || heel === 'right' || heel === 'both' ? (
-          <Text style={[styles.start, { color: colors.foreground }]}>
-            {t(heel === 'left' ? 'footCheck.progress.heelLeft' : heel === 'right' ? 'footCheck.progress.heelRight' : 'footCheck.progress.heelBoth')}
-          </Text>
-        ) : null}
-        {latest == null ? (
-          <Text style={[styles.empty, { color: meter.caption }]}>{t('footCheck.progress.empty')}</Text>
-        ) : (
-          <>
-            <View style={styles.figures}>
+    <ProgressCard>
+      <View style={styles.body} {...REPLAY_MASK}>
+        <CardHead
+          aside={
+            measure ? (
+              <RoundButton icon={Add01Icon} label={t('footCheck.progress.measure')} onPress={() => setMeasuring(true)} size={64} tone="well" />
+            ) : undefined
+          }>
+          <CardLabel>{t('footCheck.card.ankle')}</CardLabel>
+          {latest == null ? (
+            <Text style={styles.empty}>{t('footCheck.progress.empty')}</Text>
+          ) : (
+            <View style={[styles.figures, large && styles.figuresStacked]}>
               {(['left', 'right'] as const).map((side) => (
-                <View key={side} style={styles.figure} accessible>
-                  <Text style={[styles.side, { color: meter.caption }]}>
-                    {t(side === 'left' ? 'onboarding.test.left' : 'onboarding.test.right')}
-                  </Text>
-                  <Text style={[styles.value, { color: meter.ink }]}>{t('footCheck.degrees', { value: latest[side] })}</Text>
+                <View key={side} accessible>
+                  <Text style={styles.side}>{t(side === 'left' ? 'onboarding.test.left' : 'onboarding.test.right')}</Text>
+                  <BigNumber value={t('footCheck.degrees', { value: latest[side] })} size={40} maxScale={NUMBER_SCALE} />
                 </View>
               ))}
             </View>
-            <Text style={[styles.caption, { color: meter.caption }]}>
-              {records.length === 1
-                ? t('footCheck.progress.start')
-                : t('footCheck.progress.last', { date: dayMonth(latest.at, language) })}
-            </Text>
-            {records.length > 1 && <History records={records.slice(-SHOWN)} />}
-          </>
+          )}
+        </CardHead>
+        {heel === 'left' || heel === 'right' || heel === 'both' ? (
+          <Text style={styles.heel}>
+            {t(heel === 'left' ? 'footCheck.progress.heelLeft' : heel === 'right' ? 'footCheck.progress.heelRight' : 'footCheck.progress.heelBoth')}
+          </Text>
+        ) : null}
+        {change != null && first != null && (
+          <Chip
+            label={
+              change === 0
+                ? t('progress.noChange')
+                : t('footCheck.progress.since', {
+                    delta: (change > 0 ? '+' : '-') + Math.abs(change),
+                    date: dayMonth(first.at, language),
+                  })
+            }
+            improving={change > 0}
+          />
         )}
-      </View>
-
-      {due && canMeasure === true ? (
-        <PrimaryButton
-          label={t('footCheck.progress.measure')}
-          onPress={() => setMeasuring(true)}
-          style={styles.measureButton}
-        />
-      ) : (
-        again != null && (
-          <View style={[styles.again, { backgroundColor: meter.iconTile }]}>
-            <FluentIcon name="calendar" size={22} />
-            <Text style={[styles.againText, { color: colors.foreground }]}>
+        {latest != null && (
+          <CardFoot>
+            {records.length === 1 ? t('footCheck.progress.start') : t('footCheck.progress.last', { date: dayMonth(latest.at, language) })}
+          </CardFoot>
+        )}
+        {records.length > 1 && <History records={records.slice(-SHOWN)} />}
+        {!measure && again != null && (
+          <View style={styles.again}>
+            <FluentIcon name="calendar" size={26} />
+            <Text style={styles.againText}>
               {t('footCheck.card.again', {
                 date: new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(new Date(again)),
               })}
             </Text>
           </View>
-        )
-      )}
-
+        )}
+      </View>
       <MeasureSheet visible={measuring} onClose={() => setMeasuring(false)} />
-    </Card>
+    </ProgressCard>
   );
 }
 
-/** A pair of bars per measurement, left then right, on one scale. */
+/** A pair of thin bars per measurement, left then right, on one scale. */
 function History({ records }: { records: readonly AnkleRecord[] }) {
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
-  const language = useLanguage();
   const t = useT();
-  const left = accents[scheme].violet;
-  const right = accents[scheme].teal;
+  const language = useLanguage();
   const top = Math.max(1, ...records.flatMap((r) => [r.left, r.right])) * 1.1;
-  const height = (value: number) => Math.max(4, (value / top) * BAR_SPACE);
+  const sides = [
+    { key: 'left', label: t('onboarding.test.left') },
+    { key: 'right', label: t('onboarding.test.right') },
+  ] as const;
 
   return (
     <View style={styles.history}>
-      <View style={styles.legend}>
-        {[
-          { label: t('onboarding.test.left'), color: left.fill },
-          { label: t('onboarding.test.right'), color: right.fill },
-        ].map((item) => (
-          <View key={item.label} style={styles.legendItem}>
-            <View style={[styles.legendDot, { backgroundColor: item.color }]} />
-            <Text style={[styles.legendText, { color: meter.caption }]}>{item.label}</Text>
+      <View style={styles.legend} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        {sides.map((side) => (
+          <View key={side.key} style={styles.legendItem}>
+            <View style={[styles.legendDot, { backgroundColor: SIDE_COLOR[side.key] }]} />
+            <Text style={styles.legendText}>{side.label}</Text>
           </View>
         ))}
       </View>
-      <View style={styles.bars}>
-        {records.map((record, i) => {
-          const last = i === records.length - 1;
-          return (
-            <View key={record.at} style={styles.col}>
-              <View style={styles.pair}>
-                <View style={[styles.bar, { height: height(record.left), backgroundColor: last ? left.fill : left.track }]} />
-                <View style={[styles.bar, { height: height(record.right), backgroundColor: last ? right.fill : right.track }]} />
-              </View>
-              <Text style={[styles.date, { color: meter.caption }]} numberOfLines={1}>
-                {dayMonth(record.at, language)}
-              </Text>
+      <View style={styles.columns}>
+        {records.map((record, i) => (
+          <View
+            key={record.at}
+            style={styles.column}
+            accessible
+            accessibilityLabel={
+              dayMonth(record.at, language) +
+              ': ' +
+              sides.map((side) => side.label + ' ' + t('footCheck.degrees', { value: record[side.key] })).join(', ')
+            }>
+            <View style={styles.pair}>
+              {sides.map((side) => (
+                <View key={side.key} style={styles.track}>
+                  <View
+                    style={[
+                      styles.fill,
+                      {
+                        height: Math.max(8, (record[side.key] / top) * PAIR_HEIGHT),
+                        backgroundColor: SIDE_COLOR[side.key],
+                        opacity: i === records.length - 1 ? 1 : 0.45,
+                      },
+                    ]}
+                  />
+                </View>
+              ))}
             </View>
-          );
-        })}
+            <Text style={styles.entryDate} numberOfLines={1} maxFontSizeMultiplier={SLOT_SCALE}>
+              {dayMonth(record.at, language)}
+            </Text>
+          </View>
+        ))}
       </View>
     </View>
   );
@@ -183,9 +185,6 @@ function History({ records }: { records: readonly AnkleRecord[] }) {
 /** Measuring again from Progress: the same three lines and the same arc as
  * the onboarding, then "Done" keeps the pair. */
 function MeasureSheet({ visible, onClose }: { visible: boolean; onClose: () => void }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
   const [sides, setSides] = useState<{ left: number | null; right: number | null }>({ left: null, right: null });
@@ -197,10 +196,10 @@ function MeasureSheet({ visible, onClose }: { visible: boolean; onClose: () => v
 
   return (
     <Modal animationType="slide" presentationStyle="pageSheet" visible={visible} onRequestClose={close}>
-      <View style={[styles.sheet, { backgroundColor: colors.background }]} {...REPLAY_MASK}>
-        <View style={[styles.grabber, { backgroundColor: meter.track }]} />
+      <View style={styles.sheet} {...REPLAY_MASK}>
         <ScrollView contentContainerStyle={styles.sheetContent}>
-          <Text accessibilityRole="header" style={[styles.sheetTitle, { color: colors.foreground }]}>
+          <RoundButton icon={Cancel01Icon} label={t('testday.close')} onPress={close} size={48} />
+          <Text accessibilityRole="header" style={styles.sheetTitle} maxFontSizeMultiplier={TITLE_SCALE}>
             {t('footCheck.ankle.title')}
           </Text>
           <AnkleSteps />
@@ -211,65 +210,56 @@ function MeasureSheet({ visible, onClose }: { visible: boolean; onClose: () => v
             onReset={() => setSides({ left: null, right: null })}
           />
         </ScrollView>
-        <View style={[styles.sheetFooter, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
-          {sides.left != null && sides.right != null ? (
-            <PrimaryButton
+        {sides.left != null && sides.right != null && (
+          <View style={[styles.sheetFooter, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
+            <Capsule
               label={t('footCheck.progress.done')}
               onPress={() => {
                 if (sides.left == null || sides.right == null) return;
-                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+                void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
                 saveAnkle(sides.left, sides.right);
-                // That it happened, never what it read.
                 track('ankle_measured', { place: 'progress' });
                 close();
               }}
             />
-          ) : (
-            <Pressable accessibilityRole="button" onPress={close} hitSlop={10} style={styles.later}>
-              <Text style={[styles.laterText, { color: meter.label }]}>{t('testday.close')}</Text>
-            </Pressable>
-          )}
-        </View>
+          </View>
+        )}
       </View>
     </Modal>
   );
 }
 
 const styles = StyleSheet.create({
-  start: { ...fonts.semibold(16), lineHeight: 22, marginTop: 8 },
-  empty: { ...fonts.medium(16), lineHeight: 22, marginTop: 8 },
-  figures: { flexDirection: 'row', gap: 24, marginTop: 10 },
-  figure: { gap: 2 },
-  side: fonts.semibold(13),
-  value: { ...fonts.heavy(34, -1), fontVariant: ['tabular-nums'] },
-  caption: { ...fonts.medium(14), marginTop: 4 },
-  history: { marginTop: 16, gap: 10 },
-  legend: { flexDirection: 'row', gap: 14 },
+  body: { gap: 14 },
+  empty: { ...fonts.medium(19), color: colors.text2, marginTop: 4 },
+  figures: { flexDirection: 'row', gap: 28, marginTop: 4 },
+  figuresStacked: { flexDirection: 'column', gap: 8 },
+  side: { ...fonts.semibold(17), color: colors.text3 },
+  heel: { ...fonts.semibold(19), color: colors.text },
+  history: { gap: 12 },
+  legend: { flexDirection: 'row', flexWrap: 'wrap', gap: 16 },
   legendItem: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-  legendDot: { width: 10, height: 10, borderRadius: 5 },
-  legendText: fonts.semibold(13),
-  bars: { flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', gap: 8 },
-  col: { flex: 1, alignItems: 'center', gap: 6 },
-  pair: { flexDirection: 'row', alignItems: 'flex-end', gap: 3, height: BAR_SPACE },
-  bar: { width: 12, borderRadius: 6 },
-  date: fonts.medium(13),
-  measureButton: { marginTop: 16 },
+  legendDot: { width: 12, height: 12, borderRadius: 6 },
+  legendText: { ...fonts.semibold(17), color: colors.text2 },
+  columns: { flexDirection: 'row', gap: 8 },
+  column: { flex: 1, alignItems: 'center', gap: 8 },
+  pair: { flexDirection: 'row', gap: 6, height: PAIR_HEIGHT, alignItems: 'flex-end' },
+  track: { width: 10, height: PAIR_HEIGHT, borderRadius: 5, backgroundColor: bitepal.track, justifyContent: 'flex-end', overflow: 'hidden' },
+  fill: { width: 10, borderRadius: 5 },
+  entryDate: { ...fonts.medium(17), color: colors.text2 },
   again: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-    marginTop: 14,
+    gap: 12,
     paddingVertical: 12,
     paddingHorizontal: 14,
     borderRadius: 18,
     borderCurve: 'continuous',
+    backgroundColor: bitepal.well,
   },
-  againText: { ...fonts.semibold(15, -0.2), lineHeight: 20, flex: 1 },
-  sheet: { flex: 1 },
-  grabber: { alignSelf: 'center', width: 40, height: 5, borderRadius: 3, marginTop: 8 },
+  againText: { ...fonts.semibold(17), color: colors.text, flex: 1 },
+  sheet: { flex: 1, backgroundColor: bitepal.page },
   sheetContent: { paddingHorizontal: 20, paddingTop: 20, paddingBottom: 24, gap: 18 },
-  sheetTitle: { ...fonts.heavy(28, -0.7) },
+  sheetTitle: { ...fonts.heavy(30, -0.6), color: colors.text },
   sheetFooter: { paddingHorizontal: 20, paddingTop: 8 },
-  later: { alignSelf: 'center', paddingVertical: 14 },
-  laterText: fonts.semibold(16),
 });
