@@ -425,6 +425,21 @@ export const HOME_EN = {
   'home.today.weekSessions': { one: 'This week: {done} of {count} session', other: 'This week: {done} of {count} sessions' },
   'home.today.cardMeta': '{minutes} · {moves}',
   'home.today.tileMinutes': { one: '{count} minute', other: '{count} minutes' },
+  'home.today.dayN': 'Day {count}',
+  'home.today.sessionLabel': 'Today’s session',
+  'home.today.firstStep.inBed': '{minutes} in bed, tomorrow morning',
+  'home.today.thisWeek': 'This week',
+  'home.today.yourWeek': 'Your week',
+  'home.today.weekWord.start': 'Just starting',
+  'home.today.weekWord.going': 'On your way',
+  'home.today.weekWord.done': 'Week done',
+  'home.today.weekMoves': { one: '{count} move done this week', other: '{count} moves done this week' },
+  'home.today.part.heel': 'Heel',
+  'home.today.part.arch': 'Arch',
+  'home.today.part.calf': 'Calf',
+  'home.today.part.ankle': 'Ankle',
+  'home.today.part.toes': 'Toes',
+  'home.today.partMoves': { one: '{part}: {count} move', other: '{part}: {count} moves' },
 } as const satisfies Record<string, SourceEntry>;
 
 /**

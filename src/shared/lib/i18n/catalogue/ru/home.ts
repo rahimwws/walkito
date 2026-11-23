@@ -361,6 +361,21 @@ export const HOME_RU = {
   'home.today.weekSessions': { one: 'На этой неделе: {done} из {count} занятия', few: 'На этой неделе: {done} из {count} занятий', many: 'На этой неделе: {done} из {count} занятий' },
   'home.today.cardMeta': '{minutes} · {moves}',
   'home.today.tileMinutes': { one: '{count} минута', few: '{count} минуты', many: '{count} минут' },
+  'home.today.dayN': 'День {count}',
+  'home.today.sessionLabel': 'Занятие на сегодня',
+  'home.today.firstStep.inBed': '{minutes} в кровати, завтра утром',
+  'home.today.thisWeek': 'Эта неделя',
+  'home.today.yourWeek': 'Ваша неделя',
+  'home.today.weekWord.start': 'Только начало',
+  'home.today.weekWord.going': 'В процессе',
+  'home.today.weekWord.done': 'Неделя пройдена',
+  'home.today.weekMoves': { one: '{count} упражнение за неделю', few: '{count} упражнения за неделю', many: '{count} упражнений за неделю' },
+  'home.today.part.heel': 'Пятка',
+  'home.today.part.arch': 'Свод стопы',
+  'home.today.part.calf': 'Икра',
+  'home.today.part.ankle': 'Голеностоп',
+  'home.today.part.toes': 'Пальцы',
+  'home.today.partMoves': { one: '{part}: {count} упражнение', few: '{part}: {count} упражнения', many: '{part}: {count} упражнений' },
 };
 
 export const BRIEF_RU = {

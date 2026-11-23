@@ -324,6 +324,21 @@ export const HOME_PT = {
   'home.today.weekSessions': { one: 'Esta semana: {done} de {count} sessão', other: 'Esta semana: {done} de {count} sessões' },
   'home.today.cardMeta': '{minutes} · {moves}',
   'home.today.tileMinutes': { one: '{count} minuto', other: '{count} minutos' },
+  'home.today.dayN': 'Dia {count}',
+  'home.today.sessionLabel': 'Sessão de hoje',
+  'home.today.firstStep.inBed': '{minutes} na cama, amanhã de manhã',
+  'home.today.thisWeek': 'Esta semana',
+  'home.today.yourWeek': 'Sua semana',
+  'home.today.weekWord.start': 'Começando',
+  'home.today.weekWord.going': 'No caminho',
+  'home.today.weekWord.done': 'Semana feita',
+  'home.today.weekMoves': { one: '{count} movimento nesta semana', other: '{count} movimentos nesta semana' },
+  'home.today.part.heel': 'Calcanhar',
+  'home.today.part.arch': 'Arco',
+  'home.today.part.calf': 'Panturrilha',
+  'home.today.part.ankle': 'Tornozelo',
+  'home.today.part.toes': 'Dedos',
+  'home.today.partMoves': { one: '{part}: {count} movimento', other: '{part}: {count} movimentos' },
 };
 
 export const BRIEF_PT = {
