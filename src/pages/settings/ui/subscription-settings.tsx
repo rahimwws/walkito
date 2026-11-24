@@ -217,7 +217,6 @@ export function SubscriptionSettings() {
         icon={GiftIcon}
         tone={bodyColors.ankle}
         label={t('pass.settings.specialOffers')}
-        hint={t('pass.settings.specialOffersHint')}
         onPress={() => setOffers(true)}
       />,
     );

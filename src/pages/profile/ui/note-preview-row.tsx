@@ -37,7 +37,6 @@ export function NotePreviewRow() {
         icon={Note02Icon}
         tone={accents.light.amber.fill}
         label={t('profile.notePreviewLabel')}
-        hint={t('profile.notePreviewHint')}
         onPress={() => setOpen(true)}
       />
       <NoteSheet visible={open} onDone={() => setOpen(false)} />

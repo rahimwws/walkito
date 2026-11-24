@@ -1,7 +1,10 @@
 import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
 import ArrowUp01Icon from '@hugeicons/core-free-icons/ArrowUp01Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import Timer01Icon from '@hugeicons/core-free-icons/Timer01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
@@ -11,6 +14,7 @@ import { dayLook, doseLabel, exerciseById, fromDateKey, type PlanDay } from '@/e
 import { bitepal, colors, fonts, target } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { MetaChip } from '@/shared/ui/meta-chip';
 import { MoveCircle, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
 
 const PHOTO = 46;
@@ -33,9 +37,10 @@ export type DayCardProps = {
 
 /**
  * One day of the week on the plan, as BitePal's home cards (#99): the date as
- * the grey label, what the day is as the heavy title, how long and how many,
- * the moves as overlapping circles on their parts' colours, and a round mark
- * at the corner (a violet tick once done). A tap opens the day's moves, each
+ * the grey label, what the day is as the heavy title, the moves as
+ * overlapping circles on their parts' colours with how long as a clock chip
+ * beside them (the circles already count the moves), and a round mark at the
+ * corner (a violet tick once done). A tap opens the day's moves, each
  * opening its sheet. A test day has its own card with the test's icon; a rest
  * day is one short line.
  */
@@ -56,16 +61,15 @@ export function DayCard({ day, title, today, done, testBody, onPreview, locked =
   const lock = locked && !rest && !done && !past;
   const name = lock ? `${label}, ${title}, ${t('quick.locked')}` : `${label}, ${title}`;
 
-  const meta = test
-    ? testBody
-    : rest
-      ? null
-      : past && !done
-        ? t('pages.week.skipped')
-        : t('player.header.meta', {
-            minutes: t('quick.minutes', { count: day.minutes }),
-            moves: t('quick.moves', { count: moves.length }),
-          });
+  const skipped = past && !done;
+  const meta = test ? testBody : skipped && !rest ? t('pages.week.skipped') : null;
+  const length = t('quick.minutes', { count: day.minutes });
+  const spoken =
+    meta ??
+    t('player.header.meta', {
+      minutes: length,
+      moves: t('quick.moves', { count: moves.length }),
+    });
 
   const status = done ? (
     <View style={[styles.status, styles.statusDone]}>
@@ -111,7 +115,7 @@ export function DayCard({ day, title, today, done, testBody, onPreview, locked =
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={name}
-        accessibilityValue={done ? { text: t('pages.plan.path.done') } : meta != null ? { text: meta } : undefined}
+        accessibilityValue={{ text: done ? t('pages.plan.path.done') : spoken }}
         accessibilityState={{ expanded: open }}
         onPress={() => {
           void Haptics.selectionAsync();
@@ -130,6 +134,7 @@ export function DayCard({ day, title, today, done, testBody, onPreview, locked =
                 style={[styles.photo, index > 0 && styles.overlap]}
               />
             ))}
+            {meta == null && <MetaChip icon={Clock01Icon} label={length} style={styles.length} />}
           </View>
           <HugeiconsIcon icon={open ? ArrowUp01Icon : ArrowDown01Icon} size={24} color={colors.text3} strokeWidth={2} />
         </View>
@@ -150,9 +155,10 @@ export function DayCard({ day, title, today, done, testBody, onPreview, locked =
                   <Text style={styles.moveName} maxFontSizeMultiplier={TITLE_SCALE}>
                     {name}
                   </Text>
-                  <Text style={styles.moveDose}>
-                    {doseLabel(move.dose.sets, move.dose.reps, move.dose.holdSec, move.dose.perSide)}
-                  </Text>
+                  <MetaChip
+                    icon={move.dose.reps == null ? Timer01Icon : RepeatIcon}
+                    label={doseLabel(move.dose.sets, move.dose.reps, move.dose.holdSec, move.dose.perSide)}
+                  />
                 </View>
               </Pressable>
             );
@@ -189,7 +195,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginTop: 4,
   },
-  photos: { flexDirection: 'row' },
+  photos: { flexDirection: 'row', alignItems: 'center', flexShrink: 1 },
+  length: { marginLeft: 10, alignSelf: 'center' },
   photo: { borderWidth: 3, borderColor: bitepal.card },
   overlap: { marginLeft: -12 },
   list: { gap: 6, marginTop: 6 },
@@ -199,8 +206,7 @@ const styles = StyleSheet.create({
     gap: 12,
     minHeight: target.min + 4,
   },
-  moveText: { flex: 1, gap: 1 },
+  moveText: { flex: 1, gap: 4 },
   moveName: { ...fonts.semibold(19), color: colors.text },
-  moveDose: { ...fonts.medium(17), color: colors.text3 },
   pressed: { opacity: 0.6 },
 });

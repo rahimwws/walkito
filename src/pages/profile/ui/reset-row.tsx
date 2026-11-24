@@ -63,7 +63,6 @@ export function ResetRow() {
       icon={Refresh01Icon}
       tone={accents.light.amber.fill}
       label={t('profile.resetLabel')}
-      hint={t('profile.resetHint')}
       accessibilityLabel={t('profile.resetA11y')}
       onPress={confirm}
     />

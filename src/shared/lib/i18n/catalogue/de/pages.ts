@@ -157,7 +157,6 @@ export const PAGES_DE = {
   'pages.plan.short.calf_raises': 'Waden',
   'pages.plan.short.balance': 'Balance',
   'pages.plan.short.symmetry': 'beide Füße',
-  'pages.plan.todayEyebrow': 'Heute',
   'pages.plan.todayTitle': '{kind} · {goal}',
   'pages.plan.easyDay': 'Leichter Tag · im Sitzen',
   'pages.plan.start': 'Starten',
@@ -228,10 +227,6 @@ export const PAGES_DE = {
   'pages.plan.moveDoneA11y': '{name}, erledigt',
 
   // ── Ein fertiger Tag: was er gebracht hat, und morgen ───────────────────
-  'pages.plan.earnedMinutes': 'Minuten',
-  'pages.plan.earnedMoves': 'Übungen',
-  'pages.plan.earnedTests': 'Tests',
-  'pages.plan.earnedStreak': 'Tage in Folge',
   'pages.plan.earnedMinutesA11y': { one: '{count} Minute heute', other: '{count} Minuten heute' },
   'pages.plan.earnedMovesA11y': { one: '{count} Übung heute geschafft', other: '{count} Übungen heute geschafft' },
   'pages.plan.earnedTestsA11y': { one: '{count} Test heute gemacht', other: '{count} Tests heute gemacht' },

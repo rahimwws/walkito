@@ -173,7 +173,6 @@ export const PAGES_RU = {
   'pages.plan.short.calf_raises': 'икры',
   'pages.plan.short.balance': 'баланс',
   'pages.plan.short.symmetry': 'обе стопы',
-  'pages.plan.todayEyebrow': 'Сегодня',
   'pages.plan.todayTitle': '{kind} · {goal}',
   'pages.plan.easyDay': 'Лёгкий день · сидя',
   'pages.plan.start': 'Начать',
@@ -244,10 +243,6 @@ export const PAGES_RU = {
   'pages.plan.moveDoneA11y': '{name}, сделано',
 
   // ── Законченный день: что он принёс, и завтра ──────────────────────────
-  'pages.plan.earnedMinutes': 'Минуты',
-  'pages.plan.earnedMoves': 'Упражнения',
-  'pages.plan.earnedTests': 'Тесты',
-  'pages.plan.earnedStreak': 'Дней подряд',
   'pages.plan.earnedMinutesA11y': {
     one: 'Сегодня {count} минута',
     few: 'Сегодня {count} минуты',

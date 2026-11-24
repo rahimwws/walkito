@@ -8,5 +8,4 @@ export const COMMUNITY_PT = {
   'follow.founder': 'Rahim, fundador do Walkito',
   'follow.cta': 'Seguir no Instagram',
   'follow.later': 'Agora não',
-  'follow.rowHint': 'Exercícios curtos para os pés e novidades',
 };

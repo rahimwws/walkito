@@ -44,7 +44,6 @@ export const PROFILE_RU = {
 
   // ── Reset row (development builds only) ──────────────────────────────────
   'profile.resetLabel': 'Сбросить до первого экрана',
-  'profile.resetHint': 'Только в dev-сборке',
   'profile.resetA11y': 'Сбросить до первого экрана',
   'profile.resetAlertTitle': 'Начать с первого экрана?',
   'profile.resetAlertBody':
@@ -52,5 +51,4 @@ export const PROFILE_RU = {
   'profile.resetCancel': 'Отмена',
   'profile.resetConfirm': 'Сбросить',
   'profile.notePreviewLabel': 'Посмотреть записку',
-  'profile.notePreviewHint': 'Ту, что показывается в конце онбординга',
 };

@@ -22,8 +22,8 @@ const LOOK: Record<ThemePreference, { label: Key; icon: IconSvgElement }> = {
 };
 
 /**
- * System, Light or Dark, as the language list above it: a check on the chosen
- * row, the System row saying what it follows. Remembered on this phone.
+ * System, Light or Dark, as the language list above it: an icon and a check
+ * on the chosen row. Remembered on this phone.
  *
  * Android restarts the app to switch (the colours are resolved once there),
  * so it says so under the list rather than surprising anyone.
@@ -41,13 +41,12 @@ export function AppearanceSettings() {
         {THEME_PREFERENCES.map((option, index) => {
           const selected = option === preference;
           const label = t(LOOK[option].label);
-          const hint = option === 'system' ? t('settings.appearance.systemHint') : null;
           return (
             <Pressable
               key={option}
               accessibilityRole="radio"
               accessibilityState={{ selected }}
-              accessibilityLabel={hint == null ? label : `${label}, ${hint}`}
+              accessibilityLabel={label}
               onPress={() => {
                 if (selected) return;
                 void Haptics.selectionAsync();
@@ -57,7 +56,6 @@ export function AppearanceSettings() {
               <HugeiconsIcon icon={LOOK[option].icon} size={24} color={colors.text} strokeWidth={1.8} />
               <View style={styles.rowText}>
                 <Text style={styles.rowLabel}>{label}</Text>
-                {hint != null && <Text style={styles.rowHint}>{hint}</Text>}
               </View>
               {/* Always present so the rows do not reflow as the check moves. */}
               <View style={styles.checkSlot}>
@@ -93,7 +91,6 @@ const styles = StyleSheet.create({
   pressed: { opacity: 0.6 },
   rowText: { flex: 1, minHeight: target.min - 24, justifyContent: 'center' },
   rowLabel: { ...fonts.semibold(19), color: colors.text },
-  rowHint: { ...fonts.regular(17), color: colors.text2, marginTop: 2 },
   checkSlot: { width: 24, alignItems: 'center' },
   note: { ...fonts.medium(17), color: colors.text3, paddingHorizontal: 4 },
 });

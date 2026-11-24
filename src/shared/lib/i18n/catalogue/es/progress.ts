@@ -66,9 +66,6 @@ export const PROGRESS_ES = {
   'progress.goalReached': 'Conseguido',
   'progress.streakCaption': 'Los días malos y los de 2 minutos también cuentan.',
   // ── The redesigned screen ────────────────────────────────────────────────
-  'progress.avgWeek': 'Media de los últimos 7 días',
-  'progress.avgMonth': 'Media del último mes',
-  'progress.avgQuarter': 'Media de los últimos 3 meses',
   'progress.painOutOf': '/10',
   'progress.deltaWeek': '{delta} frente a la semana anterior',
   'progress.deltaMonth': '{delta} frente al mes anterior',
@@ -109,8 +106,9 @@ export const PROGRESS_ES = {
   'progress.heatA11y': '{done} de {total} días en las últimas 4 semanas',
 
   // Progreso en tarjetas de BitePal.
-  'progress.sessionsTotal': 'Sesiones hasta ahora',
   'progress.sessionsA11y': { one: '{count} sesión hasta ahora', other: '{count} sesiones hasta ahora' },
+  'progress.unit.sessions': { one: 'sesión', other: 'sesiones' },
+  'progress.unit.checkins': { one: 'registro', other: 'registros' },
   'progress.month.hint': 'Abre el mes',
   'progress.month.longest': 'Serie más larga: {days}',
   'progress.month.sheetTitle': { one: 'día hecho este mes', other: 'días hechos este mes' },

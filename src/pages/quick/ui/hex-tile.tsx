@@ -1,9 +1,11 @@
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle, type ColorValue } from 'react-native';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import * as Haptics from 'expo-haptics';
 import type { ReactNode } from 'react';
 import Svg, { Path } from 'react-native-svg';
 
 import { bitepal, colors, fonts, target } from '@/shared/config';
+import { MetaChip } from '@/shared/ui/meta-chip';
 
 /** Height over width: a pointy-top hexagon, a little squatter than a regular one, as BitePal draws its awards (#28). */
 const RATIO = 1.1;
@@ -78,8 +80,8 @@ export type HexTileProps = {
   /** The hexagon with its icon. */
   hex: ReactNode;
   title: string;
-  /** A second line under the title: how long a routine runs. */
-  sub?: string;
+  /** How long a routine runs, as a clock chip under the title. */
+  duration?: string;
   /** A count on the corner of the hexagon (#28). */
   badge?: number;
   /** Stacked as a column under the hexagon, or a row beside it at the largest text sizes. */
@@ -96,7 +98,7 @@ export type HexTileProps = {
 export function HexTile({
   hex,
   title,
-  sub,
+  duration,
   badge,
   layout,
   selected = false,
@@ -127,7 +129,7 @@ export function HexTile({
       </View>
       <View style={layout === 'grid' ? styles.textGrid : styles.textRow}>
         <Text style={[styles.title, layout === 'grid' && styles.center, selected && styles.selected]}>{title}</Text>
-        {sub != null && <Text style={[styles.sub, layout === 'grid' && styles.center]}>{sub}</Text>}
+        {duration != null && <MetaChip icon={Clock01Icon} label={duration} style={layout === 'grid' && styles.chipGrid} />}
       </View>
     </Pressable>
   );
@@ -147,10 +149,10 @@ const styles = StyleSheet.create({
     minHeight: target.min,
     paddingVertical: 4,
   },
-  textGrid: { alignItems: 'center', alignSelf: 'stretch' },
-  textRow: { flex: 1 },
+  textGrid: { alignItems: 'center', alignSelf: 'stretch', gap: 6 },
+  textRow: { flex: 1, gap: 6 },
   title: { ...fonts.semibold(17), color: colors.text },
-  sub: { ...fonts.medium(17), color: colors.text3 },
+  chipGrid: { alignSelf: 'center' },
   center: { textAlign: 'center' },
   selected: { color: bitepal.selected },
   badge: {

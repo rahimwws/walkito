@@ -1,3 +1,5 @@
+import ArrowDown02Icon from '@hugeicons/core-free-icons/ArrowDown02Icon';
+import ArrowUp02Icon from '@hugeicons/core-free-icons/ArrowUp02Icon';
 import ArrowUpDownIcon from '@hugeicons/core-free-icons/ArrowUpDownIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -34,12 +36,6 @@ const RANGE_LABEL = {
   quarter: 'progress.range3Months',
 } as const satisfies Record<RangeKey, Key>;
 
-const AVERAGE_KEY = {
-  week: 'progress.avgWeek',
-  month: 'progress.avgMonth',
-  quarter: 'progress.avgQuarter',
-} as const satisfies Record<RangeKey, Key>;
-
 const DELTA_KEY = {
   week: 'progress.deltaWeek',
   month: 'progress.deltaMonth',
@@ -61,7 +57,9 @@ export type MorningsCardProps = {
 /**
  * Morning pain as one of BitePal's cards: the label switches the range the way
  * BitePal's "Calories eaten ⇕" switches what it counts, the range's average
- * is the big number, thin bars stand on their light tracks with the newest
+ * is the big number (the label already names the range, so no line under it
+ * says so again), the change is an arrow and its figure in a chip that reads
+ * out what it is compared with, thin bars stand on their light tracks with the newest
  * (or the tapped one) in violet, and the mornings are counted under them in
  * the check-in's own words. Every bar is the same ink: a high morning is not
  * coloured as a bad one, and the only green is the chip when the average fell.
@@ -115,19 +113,19 @@ export function MorningsCard({ range, onNextRange, bars, summary, start, total, 
                 size={48}
                 maxScale={NUMBER_SCALE}
               />
-              <Text style={styles.caption}>{t(AVERAGE_KEY[range])}</Text>
             </View>
           </CardHead>
-          {summary.delta != null && (
-            <Chip
-              label={
-                summary.delta === 0
-                  ? t('progress.deltaSame')
-                  : t(DELTA_KEY[range], { delta: formatSigned(summary.delta, language) })
-              }
-              improving={summary.delta < 0}
-            />
-          )}
+          {summary.delta != null &&
+            (summary.delta === 0 ? (
+              <Chip label={t('progress.deltaSame')} />
+            ) : (
+              <Chip
+                icon={summary.delta < 0 ? ArrowDown02Icon : ArrowUp02Icon}
+                label={formatNumber(Math.abs(summary.delta), language)}
+                accessibilityLabel={t(DELTA_KEY[range], { delta: formatSigned(summary.delta, language) })}
+                improving={summary.delta < 0}
+              />
+            ))}
           <Chart range={range} bars={bars} start={start} />
           <View style={styles.counts}>
             {(

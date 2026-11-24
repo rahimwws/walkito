@@ -81,7 +81,6 @@ export const PASS_EN = {
   'pass.settings.hint': 'One payment. Nothing renews.',
   /** The App Review account's way to the limited offer. */
   'pass.settings.specialOffers': 'Special offers',
-  'pass.settings.specialOffersHint': 'A year, lifetime and the 3-month pass',
 
   // ── Home, in its last week ───────────────────────────────────────────────
   /** `{date}` is a day and a month. */

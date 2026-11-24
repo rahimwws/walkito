@@ -8,5 +8,4 @@ export const COMMUNITY_RU = {
   'follow.founder': 'Рахим, основатель Walkito',
   'follow.cta': 'Подписаться в Instagram',
   'follow.later': 'Не сейчас',
-  'follow.rowHint': 'Короткие упражнения для стоп и новости',
 };
