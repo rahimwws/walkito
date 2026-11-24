@@ -2,7 +2,6 @@
  * `../en/core.ts` for the rules. */
 
 export const DONE_ES = {
-  'sessionDone.tileSession': 'Sesión',
   'sessionDone.tileMoves': 'Ejercicios',
   'sessionDone.tileShowedUp': 'Días de cuidado',
   'sessionDone.minutes': '{count} min',

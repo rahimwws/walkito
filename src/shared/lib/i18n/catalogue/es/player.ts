@@ -75,7 +75,6 @@ export const PLAYER_ES = {
   'player.detail.chipFloor': 'Tumbado',
   'player.detail.chipMixed': 'Sentado y de pie',
   'player.detail.chipNoEquipment': 'Sin material',
-  'player.detail.movesTitle': 'Lo que harás',
   'player.detail.whyTitle': 'Por qué hoy',
   'player.detail.start': 'Empezar · {minutes}',
   'player.detail.eachFoot': 'cada pie',
@@ -104,5 +103,4 @@ export const PLAYER_ES = {
   'player.card.progress': 'Progreso',
   'player.card.next': 'Siguiente',
   'player.card.lastMove': 'Último movimiento',
-  'player.detail.doneToday': 'Hecho hoy',
 };

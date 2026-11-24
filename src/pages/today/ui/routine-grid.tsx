@@ -1,9 +1,11 @@
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import type { PlanKind } from '@/entities/profile';
 import { protocolById, type ProtocolId } from '@/entities/protocols';
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { FactChip } from '@/shared/ui/fact-chip';
 import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { useOpenRoutine, useRoutineLocked } from '../model/use-open-routine';
@@ -31,8 +33,9 @@ const ICON: Readonly<Record<ProtocolId, FluentName>> = {
 
 /**
  * The quick routines as two columns of white tiles: a coloured circle with
- * where the routine is done (bed, desk, run), its name in bold and "2 minutes" under
- * it. One column at large text sizes. A tile opens the routine's page.
+ * where the routine is done (bed, desk, run), its name in bold and its
+ * minutes as a chip under it. One column at large text sizes. A tile opens the
+ * routine's page.
  */
 export function RoutineGrid({ kind }: { kind: PlanKind }) {
   const t = useT();
@@ -45,21 +48,18 @@ export function RoutineGrid({ kind }: { kind: PlanKind }) {
       {ROUTINES[kind].map((id) => {
         const protocol = protocolById(id);
         const locked = routineLocked(id);
+        const label = `${t(protocol.titleKey)}, ${t('home.today.tileMinutes', { count: protocol.minutes })}`;
         return (
           <Pressable
             key={id}
             accessibilityRole="button"
-            accessibilityLabel={
-              locked
-                ? `${t(protocol.titleKey)}, ${t('home.today.tileMinutes', { count: protocol.minutes })}, ${t('quick.locked')}`
-                : undefined
-            }
+            accessibilityLabel={locked ? `${label}, ${t('quick.locked')}` : label}
             onPress={() => openRoutine(id)}
             style={({ pressed }) => [styles.tile, single && styles.tileSingle, pressed && styles.pressed]}>
             <RoundArt emoji={ICON[id]} accent={protocol.accent} size={ART} locked={locked} />
             <View style={styles.text}>
               <Text style={styles.title}>{t(protocol.titleKey)}</Text>
-              <Text style={styles.minutes}>{t('home.today.tileMinutes', { count: protocol.minutes })}</Text>
+              <FactChip icon={Clock01Icon} label={t('quick.minutes', { count: protocol.minutes })} />
             </View>
           </Pressable>
         );
@@ -72,8 +72,7 @@ const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
   tile: { ...cardStyle, flexBasis: '45%', flexGrow: 1, padding: 18, gap: 14 },
   tileSingle: { flexBasis: '100%' },
-  text: { flexShrink: 1, gap: 2 },
+  text: { flexShrink: 1, gap: 8 },
   title: { ...fonts.heavy(19, -0.2), color: colors.text },
-  minutes: { ...fonts.medium(17), color: colors.text3 },
   pressed: { opacity: 0.7 },
 });

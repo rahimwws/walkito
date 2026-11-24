@@ -75,7 +75,6 @@ export const PLAYER_RU = {
   'player.detail.chipFloor': 'Лёжа',
   'player.detail.chipMixed': 'Сидя и стоя',
   'player.detail.chipNoEquipment': 'Без инвентаря',
-  'player.detail.movesTitle': 'Что вас ждёт',
   'player.detail.whyTitle': 'Почему сегодня так',
   'player.detail.start': 'Начать · {minutes}',
   'player.detail.eachFoot': 'на каждую ногу',
@@ -104,5 +103,4 @@ export const PLAYER_RU = {
   'player.card.progress': 'Прогресс',
   'player.card.next': 'Дальше',
   'player.card.lastMove': 'Последнее движение',
-  'player.detail.doneToday': 'Сделано сегодня',
 };

@@ -76,7 +76,6 @@ export const PLAYER_PT = {
   'player.detail.chipFloor': 'Deitado',
   'player.detail.chipMixed': 'Sentado e em pé',
   'player.detail.chipNoEquipment': 'Sem equipamento',
-  'player.detail.movesTitle': 'O que você vai fazer',
   'player.detail.whyTitle': 'Por que hoje',
   'player.detail.start': 'Começar · {minutes}',
   'player.detail.eachFoot': 'cada pé',
@@ -105,5 +104,4 @@ export const PLAYER_PT = {
   'player.card.progress': 'Progresso',
   'player.card.next': 'A seguir',
   'player.card.lastMove': 'Último movimento',
-  'player.detail.doneToday': 'Feito hoje',
 };

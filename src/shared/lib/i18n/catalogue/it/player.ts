@@ -75,7 +75,6 @@ export const PLAYER_IT = {
   'player.detail.chipFloor': 'Sdraiato',
   'player.detail.chipMixed': 'Seduto e in piedi',
   'player.detail.chipNoEquipment': 'Senza attrezzi',
-  'player.detail.movesTitle': 'Cosa farai',
   'player.detail.whyTitle': 'Perché oggi',
   'player.detail.start': 'Inizia · {minutes}',
   'player.detail.eachFoot': 'ogni piede',
@@ -104,5 +103,4 @@ export const PLAYER_IT = {
   'player.card.progress': 'Progresso',
   'player.card.next': 'Dopo',
   'player.card.lastMove': 'Ultimo movimento',
-  'player.detail.doneToday': 'Fatto oggi',
 };

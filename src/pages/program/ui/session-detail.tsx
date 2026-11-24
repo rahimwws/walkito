@@ -1,33 +1,32 @@
 import ArrowLeft01Icon from '@hugeicons/core-free-icons/ArrowLeft01Icon';
 import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { doseSeconds, type PlanDose, type PlannedExercise } from '@/entities/program';
-import { bitepal, bodyColors, colors, fonts, target } from '@/shared/config';
+import { doseLabel, doseSeconds, type PlanDose, type PlannedExercise } from '@/entities/program';
+import { bitepal, colors, fonts, target } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
-import {
-  Bar,
-  BigNumber,
-  CardLabel,
-  Capsule,
-  MoveCircle,
-  Ring,
-  RoundButton,
-  TITLE_SCALE,
-  bodyPartOf,
-  cardStyle,
-  moveColor,
-  posterFor,
-} from '@/widgets/session-player';
+import { FactChip } from '@/shared/ui/fact-chip';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { BigNumber, Capsule, MoveCircle, Ring, RoundButton, TITLE_SCALE, cardStyle, moveColor, posterFor } from '@/widgets/session-player';
 
 export type DetailMove = {
   id: string;
   title: string;
-  /** "1 min", "10 times", "3 × 10 times", with ", each foot" where it applies. */
+  /** "1 min", "10 times", "3 × 10 times", with ", each foot" where it applies:
+   * what VoiceOver reads. */
   dose: string;
+  /** The same dose as the row's chip shows it, as the plan prints it: "3 × 10", "2 min". */
+  amount: string;
+  /** Counted (a repeat glyph) or timed (a clock). */
+  counted: boolean;
+  /** Done on each foot: a second chip. */
+  perSide: boolean;
   /** Ticked today already, from the day log. */
   done: boolean;
 };
@@ -51,8 +50,6 @@ export type SessionDetailProps = {
 const SIDE = 16;
 const THUMB = 60;
 const RING = 76;
-/** The order the parts are drawn in under the minutes. */
-const PART_ORDER = ['heel', 'arch', 'calf', 'ankle', 'toes'] as const;
 
 /** "10 times", "3 × 10 times" for counted reps; the whole move's time for a hold. */
 function doseText(t: Translate, dose: PlanDose): string {
@@ -81,19 +78,21 @@ export function detailMoves(
     id: e.id,
     title: title(e.id),
     dose: doseText(t, e.dose),
+    amount: doseLabel(e.dose.sets, e.dose.reps, e.dose.holdSec),
+    counted: e.dose.reps != null,
+    perSide: e.dose.perSide,
     done: ticked.includes(e.id),
   }));
 }
 
 /**
- * Today's session before it starts, in BitePal's card language: a round back
- * button on its own bar, the day as the title, then a white card as BitePal's
- * "Calories eaten" (a small grey label, the minutes large, a ring of the moves
- * done today, and two columns under it: the moves, their thin bar split by
- * the part of the foot each works, and how many are done today), the plan's one line on why, the first move's photo,
- * and the moves on a second card, each on the disc of the part it works with
- * its name and dose and a round button to its sheet. Start is the black
- * button pinned at the bottom.
+ * Today's session before it starts, in BitePal's card language with nothing
+ * to read twice: a round back button on its own bar, the day as the title,
+ * then one row on a white card (a stopwatch, the minutes large, and the ring
+ * of moves done today with its count), the plan's one line on why, the first
+ * move's photo, and the moves on a second card, each on the disc of the part
+ * it works with its name, its dose as chips and a round button to its sheet.
+ * Start is the black button pinned at the bottom.
  */
 export function SessionDetail({ title, meta, minutes, moves, why, startLabel, onStart, onBack, onPreview }: SessionDetailProps) {
   const t = useT();
@@ -102,9 +101,6 @@ export function SessionDetail({ title, meta, minutes, moves, why, startLabel, on
   const stacked = fontScale > 1.6;
   const hero = moves.length > 0 ? posterFor(moves[0].id) : null;
   const done = moves.filter((move) => move.done).length;
-  const parts = PART_ORDER.map((part) => ({ part, count: moves.filter((move) => bodyPartOf(move.id) === part).length })).filter(
-    (entry) => entry.count > 0,
-  );
 
   return (
     <View style={styles.root}>
@@ -123,32 +119,14 @@ export function SessionDetail({ title, meta, minutes, moves, why, startLabel, on
         <View style={styles.card}>
           <View style={[styles.summary, stacked && styles.summaryStacked]} accessible accessibilityLabel={meta}>
             <View style={styles.summaryText}>
-              <CardLabel>{t('sessionDone.tileSession')}</CardLabel>
-              <BigNumber value={t('session.minutes', { count: minutes })} size={52} />
+              <FluentIcon name="timer" size={44} />
+              <BigNumber value={t('session.minutes', { count: minutes })} size={52} style={styles.bigShrink} />
             </View>
             <Ring size={RING} stroke={7} value={moves.length === 0 ? 0 : done / moves.length} color={bitepal.selected}>
               <Text style={styles.ringText} maxFontSizeMultiplier={1.4}>
                 {done + '/' + moves.length}
               </Text>
             </Ring>
-          </View>
-          <View style={[styles.columns, stacked && styles.columnsStacked]}>
-            <View style={styles.column}>
-              <CardLabel>{t('sessionDone.tileMoves')}</CardLabel>
-              <View style={styles.parts} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-                {parts.map((entry) => (
-                  <View key={entry.part} style={[styles.part, { flexGrow: entry.count }]}>
-                    <Bar value={1} color={bodyColors[entry.part]} />
-                  </View>
-                ))}
-              </View>
-              <Text style={styles.columnValue}>{moves.length}</Text>
-            </View>
-            <View style={styles.column}>
-              <CardLabel>{t('player.detail.doneToday')}</CardLabel>
-              <Bar value={moves.length === 0 ? 0 : done / moves.length} color={bitepal.selected} />
-              <Text style={styles.columnValue}>{done + '/' + moves.length}</Text>
-            </View>
           </View>
           {why != null && <Text style={styles.why}>{why}</Text>}
         </View>
@@ -159,9 +137,6 @@ export function SessionDetail({ title, meta, minutes, moves, why, startLabel, on
           </View>
         )}
 
-        <Text accessibilityRole="header" style={styles.section}>
-          {t('player.detail.movesTitle')}
-        </Text>
         <View style={[styles.card, styles.list]}>
           {moves.map((move, index) => (
             <View key={move.id + '-' + index}>
@@ -176,7 +151,10 @@ export function SessionDetail({ title, meta, minutes, moves, why, startLabel, on
                 <MoveCircle exerciseId={move.id} size={THUMB} style={{ borderWidth: 2, borderColor: moveColor(move.id) }} />
                 <View style={[styles.facts, stacked && styles.factsStacked]}>
                   <Text style={styles.name}>{move.title}</Text>
-                  <Text style={styles.dose}>{move.dose}</Text>
+                  <View style={styles.chips}>
+                    <FactChip icon={move.counted ? RepeatIcon : Clock01Icon} label={move.amount} />
+                    {move.perSide && <FactChip icon={FootprintsIcon} label={t('player.detail.eachFoot')} />}
+                  </View>
                 </View>
                 {move.done ? (
                   <View style={styles.done}>
@@ -211,14 +189,9 @@ const styles = StyleSheet.create({
   card: { ...cardStyle, padding: 20, gap: 16 },
   summary: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   summaryStacked: { flexDirection: 'column', alignItems: 'flex-start' },
-  summaryText: { flex: 1, alignSelf: 'stretch' },
+  summaryText: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  bigShrink: { flexShrink: 1 },
   ringText: { ...fonts.heavy(17), color: colors.text, fontVariant: ['tabular-nums'] },
-  columns: { flexDirection: 'row', gap: 16 },
-  columnsStacked: { flexDirection: 'column' },
-  column: { flex: 1, gap: 6 },
-  columnValue: { ...fonts.heavy(19), color: colors.text, fontVariant: ['tabular-nums'] },
-  parts: { flexDirection: 'row', gap: 4, minHeight: 6 },
-  part: { flexBasis: 0 },
   why: { ...fonts.regular(17), color: colors.text2 },
   hero: {
     ...cardStyle,
@@ -228,7 +201,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ECF0F1',
   },
   heroShort: { aspectRatio: 2.4 },
-  section: { ...fonts.heavy(24, -0.4), color: colors.text, marginTop: 12, paddingHorizontal: 4 },
   list: { paddingVertical: 4, paddingHorizontal: 0, gap: 0 },
   rule: { height: StyleSheet.hairlineWidth, backgroundColor: colors.separator },
   row: {
@@ -241,10 +213,10 @@ const styles = StyleSheet.create({
   },
   rowStacked: { flexDirection: 'column', alignItems: 'flex-start', paddingVertical: 16 },
   pressed: { opacity: 0.55 },
-  facts: { flex: 1, gap: 2 },
+  facts: { flex: 1, gap: 6 },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   factsStacked: { flex: 0, alignSelf: 'stretch' },
   name: { ...fonts.bold(19), color: colors.text },
-  dose: { ...fonts.regular(17), color: colors.text2 },
   go: {
     width: 40,
     height: 40,

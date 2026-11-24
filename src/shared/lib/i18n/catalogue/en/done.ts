@@ -10,7 +10,6 @@ import type { SourceEntry } from '../entry';
 
 export const DONE_EN = {
   // ── The three tiles: their headers ───────────────────────────────────────
-  'sessionDone.tileSession': 'Session',
   'sessionDone.tileMoves': 'Moves',
   /** Every day of care so far: a check-in, a session, a rest day the plan gave. */
   'sessionDone.tileShowedUp': 'Showed up',

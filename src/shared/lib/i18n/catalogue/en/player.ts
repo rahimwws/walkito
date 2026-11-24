@@ -106,7 +106,6 @@ export const PLAYER_EN = {
   'player.detail.chipFloor': 'Lying down',
   'player.detail.chipMixed': 'Sitting and standing',
   'player.detail.chipNoEquipment': 'No equipment',
-  'player.detail.movesTitle': 'What you’ll do',
   'player.detail.whyTitle': 'Why today',
   'player.detail.start': 'Start · {minutes}',
   'player.detail.eachFoot': 'each foot',
@@ -136,5 +135,4 @@ export const PLAYER_EN = {
   'player.card.progress': 'Progress',
   'player.card.next': 'Next',
   'player.card.lastMove': 'Last move',
-  'player.detail.doneToday': 'Done today',
 } as const satisfies Record<string, SourceEntry>;

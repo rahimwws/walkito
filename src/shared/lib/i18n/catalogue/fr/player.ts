@@ -75,7 +75,6 @@ export const PLAYER_FR = {
   'player.detail.chipFloor': 'Allongé',
   'player.detail.chipMixed': 'Assis et debout',
   'player.detail.chipNoEquipment': 'Sans matériel',
-  'player.detail.movesTitle': 'Au programme',
   'player.detail.whyTitle': 'Pourquoi aujourd’hui',
   'player.detail.start': 'Commencer · {minutes}',
   'player.detail.eachFoot': 'chaque pied',
@@ -104,5 +103,4 @@ export const PLAYER_FR = {
   'player.card.progress': 'Progression',
   'player.card.next': 'Ensuite',
   'player.card.lastMove': 'Dernier mouvement',
-  'player.detail.doneToday': 'Fait aujourd’hui',
 };

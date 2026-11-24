@@ -1,10 +1,12 @@
 import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Svg, { Circle } from 'react-native-svg';
 
 import { planSessionDone, todayKey, usePlanVersion, useLogsVersion, weekPlan } from '@/entities/program';
 import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { FactChip } from '@/shared/ui/fact-chip';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 
 import { PART_ORDER, partsThisWeek } from '../model/parts';
@@ -61,9 +63,9 @@ function Ring({ done, total }: { done: number; total: number }) {
 
 /**
  * "Your week" as BitePal's nutrition score card (#102): a word for where the
- * week stands, the sessions done in a ring, and a tile per part of the foot
- * with the moves done for it this week. The word says how far along, never
- * how good.
+ * week stands, the sessions done in a ring, a tile per part of the foot with
+ * the moves done for it this week, and their sum as a chip. The word says how
+ * far along, never how good.
  */
 export function YourWeekCard() {
   const t = useT();
@@ -107,7 +109,7 @@ export function YourWeekCard() {
           </View>
         ))}
       </View>
-      <Text style={styles.foot}>{t('home.today.weekMoves', { count: moves })}</Text>
+      <FactChip icon={Tick02Icon} label={t('quick.moves', { count: moves })} />
     </TodayCard>
   );
 }
@@ -115,7 +117,8 @@ export function YourWeekCard() {
 /**
  * "This week" as BitePal's water card (#20): the sessions done as the big
  * number and a foot per day that fills once its session is done. A rest day
- * stays faint; nothing here is a streak.
+ * stays faint; nothing here is a streak. The sentence the number stands for is
+ * what VoiceOver reads.
  */
 export function ThisWeekCard({ onOpenPlan }: { onOpenPlan: () => void }) {
   const t = useT();
@@ -126,7 +129,10 @@ export function ThisWeekCard({ onOpenPlan }: { onOpenPlan: () => void }) {
       <View style={styles.head}>
         <View style={styles.headText}>
           <Text style={styles.label}>{t('home.today.thisWeek')}</Text>
-          <Text style={styles.big} maxFontSizeMultiplier={1.7}>
+          <Text
+            style={styles.big}
+            maxFontSizeMultiplier={1.7}
+            accessibilityLabel={t('home.today.weekSessions', { done, count: Math.max(planned, 1) })}>
             {done}/{planned}
           </Text>
         </View>
@@ -147,7 +153,6 @@ export function ThisWeekCard({ onOpenPlan }: { onOpenPlan: () => void }) {
           );
         })}
       </View>
-      {planned > 0 && <Text style={styles.foot}>{t('home.today.weekSessions', { done, count: planned })}</Text>}
     </TodayCard>
   );
 }
@@ -196,5 +201,4 @@ const styles = StyleSheet.create({
   foot7Today: { borderColor: colors.accent, backgroundColor: colors.surface },
   footIdle: { opacity: 0.35 },
   footRest: { opacity: 0.12 },
-  foot: { ...fonts.medium(17), color: colors.text3 },
 });

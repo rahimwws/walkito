@@ -75,7 +75,6 @@ export const PLAYER_DE = {
   'player.detail.chipFloor': 'Im Liegen',
   'player.detail.chipMixed': 'Im Sitzen und Stehen',
   'player.detail.chipNoEquipment': 'Ohne Geräte',
-  'player.detail.movesTitle': 'Das machst du',
   'player.detail.whyTitle': 'Warum heute',
   'player.detail.start': 'Starten · {minutes}',
   'player.detail.eachFoot': 'je Fuß',
@@ -104,5 +103,4 @@ export const PLAYER_DE = {
   'player.card.progress': 'Fortschritt',
   'player.card.next': 'Als Nächstes',
   'player.card.lastMove': 'Letzte Übung',
-  'player.detail.doneToday': 'Heute erledigt',
 };
