@@ -197,7 +197,6 @@ export const OFFER_DE = {
   'widgets.sessionLookingCta': 'Pläne ansehen',
 
   // ── Test day: the results ────────────────────────────────────────────────
-  'widgets.retestYourGoal': 'Dein Ziel',
   'widgets.retestGoal.painfree': 'Du bist hier, damit deine Morgen mit weniger Fersenschmerz beginnen. Diese Werte zeigen, wie dein Fuß dorthin kommt.',
   'widgets.retestGoal.race': 'Du trainierst auf einen Wettkampf hin. Eine stärkere Wade und ein stabilerer Fuß bringen dich an die Startlinie.',
   'widgets.retestGoal.consistent': 'Dein Ziel war Beständigkeit. Das ist es, was Dranbleiben ausmacht.',

@@ -11,10 +11,6 @@ export const TESTDAY_PT = {
   // ── Intro ─────────────────────────────────────────────────────────────────
   'testday.intro.eyebrow': 'Dia de teste',
   'testday.intro.title': 'Três testes curtos',
-  'testday.intro.body': {
-    one: 'Cerca de {count} minuto.',
-    other: 'Cerca de {count} minutos.',
-  },
   'testday.intro.nowSeconds': 'Agora {now} s · meta {goal} s',
   'testday.intro.nowRaises': {
     one: 'Agora {now} · meta {count} elevação',
@@ -25,7 +21,6 @@ export const TESTDAY_PT = {
     one: 'Primeira medição · meta {count} elevação',
     other: 'Primeira medição · meta {count} elevações',
   },
-  'testday.intro.need': 'Você vai precisar de',
   'testday.intro.needBarefoot': 'Pés descalços',
   'testday.intro.needWall': 'Uma parede ou uma bancada para se apoiar',
   'testday.intro.needPhone': 'O celular num lugar onde você consiga ver',
@@ -41,7 +36,6 @@ export const TESTDAY_PT = {
   'testday.intro.tomorrow': 'Testar amanhã',
 
   // ── The three tests ───────────────────────────────────────────────────────
-  'testday.test.eyebrow': 'Teste {current} de {total}',
   'testday.test.calf.name': 'Elevação de calcanhar',
   'testday.test.arch.name': 'Arco sustentado',
   'testday.test.balance.name': 'Equilíbrio',
@@ -103,7 +97,6 @@ export const TESTDAY_PT = {
   'testday.confirm.finish': 'Ver resultados',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.firstBlurb': 'O próximo teste mostra o quanto você avançou.',
   'testday.results.name.arch_hold': 'Arco sustentado',
   'testday.results.name.calf_raises': 'Elevação de calcanhar',
   'testday.results.name.balance': 'Equilíbrio',
@@ -145,7 +138,6 @@ export const TESTDAY_PT = {
   'testday.results.same': 'Igual à última vez',
   'testday.results.first': 'Primeira medição',
   'testday.results.nextTest': 'Próximo teste: {date}',
-  'testday.results.planUpdated': 'Seu plano para as próximas duas semanas foi atualizado.',
   'testday.results.done': 'Pronto',
 
   'testday.results.verdictFirst': 'Três números para superar',
@@ -155,10 +147,6 @@ export const TESTDAY_PT = {
   'testday.results.verdictUp.balance': 'Você se equilibrou por mais tempo',
   'testday.results.verdictUpTwo': 'Dois de três subiram',
   'testday.results.verdictUpAll': 'Os três subiram',
-  // The line over the headline, and the headline when a goal was reached.
-  'testday.results.heroEyebrowUp': 'Novo recorde',
-  'testday.results.heroEyebrowFirst': 'Seu ponto de partida',
-  'testday.results.heroEyebrowSteady': 'Testes feitos',
   'testday.results.verdictGoal.calf_raises': 'Você bateu sua meta de elevação',
   'testday.results.verdictGoal.arch_hold': 'Você bateu sua meta de arco',
   'testday.results.verdictGoal.balance': 'Você bateu sua meta de equilíbrio',
@@ -190,6 +178,4 @@ export const TESTDAY_PT = {
   'testday.results.explain.balance':
     'Ficar em uma perna de olhos fechados mostra o quanto o pé e o tornozelo sentem o chão. Mais segundos significa passos mais firmes em terreno irregular e quando você está cansado.',
   'testday.results.explainA11y': 'O que isto mostra',
-  'testday.card.goalRaises': { one: 'Meta: {count} elevação', other: 'Meta: {count} elevações' },
-  'testday.card.goalSeconds': 'Meta: {goal} s',
 };

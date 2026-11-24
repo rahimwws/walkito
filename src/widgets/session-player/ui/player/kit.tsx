@@ -264,6 +264,74 @@ export function BigNumber({
   );
 }
 
+/**
+ * Where a run stands as rounded segments, Peloton's set bar: `done` filled in
+ * `color`, the one under way in its soft tint, the rest on the track. Drawn
+ * only; the caller says it to VoiceOver.
+ */
+export function Segments({
+  total,
+  done,
+  color,
+  height = 8,
+  style,
+}: {
+  total: number;
+  /** How many are behind; the next one is the one under way. */
+  done: number;
+  color: ColorValue;
+  height?: number;
+  style?: StyleProp<ViewStyle>;
+}) {
+  return (
+    <View style={[styles.segments, style]} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+      {Array.from({ length: total }, (_, i) => (
+        <View
+          key={i}
+          style={[
+            styles.segment,
+            { height, borderRadius: height / 2 },
+            i < done ? { backgroundColor: color } : i === done ? { backgroundColor: soft(color, 0.45) } : null,
+          ]}
+        />
+      ))}
+    </View>
+  );
+}
+
+/** A secondary action as a soft pill: a glyph and a short word, 48pt tall. */
+export function ChipButton({
+  icon,
+  label,
+  onPress,
+  accessibilityHint,
+  style,
+}: {
+  icon: IconSvgElement;
+  label: string;
+  onPress: () => void;
+  accessibilityHint?: string;
+  style?: StyleProp<ViewStyle>;
+}) {
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityHint={accessibilityHint}
+      hitSlop={4}
+      onPress={() => {
+        void Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.chip, pressed && styles.pressed, style]}>
+      <HugeiconsIcon icon={icon} size={20} color={ink.grey} strokeWidth={2} />
+      <Text style={styles.chipText} maxFontSizeMultiplier={TITLE_SCALE}>
+        {label}
+      </Text>
+    </Pressable>
+  );
+}
+
 /** A ring that fills to `value` (0-1) from twelve o'clock, on the light track. */
 export function Ring({
   size,
@@ -433,6 +501,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  segments: { flexDirection: 'row', gap: 6 },
+  segment: { flex: 1, backgroundColor: bitepal.track },
+  chip: {
+    minHeight: target.min,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingHorizontal: 16,
+    borderRadius: 999,
+    backgroundColor: bitepal.card,
+  },
+  chipText: { ...fonts.semibold(17), color: ink.grey },
   bar: { height: 6, borderRadius: 3, backgroundColor: bitepal.track, overflow: 'hidden' },
   barFill: { height: 6, borderRadius: 3 },
   disc: { overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },

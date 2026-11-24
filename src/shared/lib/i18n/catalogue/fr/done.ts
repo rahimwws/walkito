@@ -5,6 +5,9 @@ export const DONE_FR = {
   'sessionDone.tileMoves': 'Exercices',
   'sessionDone.tileShowedUp': 'Jours de soin',
   'sessionDone.minutes': '{count} min',
+  'sessionDone.unitMinutes': 'min',
+  'sessionDone.unitMoves': { one: 'exercice', other: 'exercices' },
+  'sessionDone.unitSets': { one: 'série', other: 'séries' },
 
   'sessionDone.tileSessionA11y': { one: 'Séance, {count} minute', other: 'Séance, {count} minutes' },
   'sessionDone.tileMovesA11y': { one: '{count} exercice fait', other: '{count} exercices faits' },
@@ -13,7 +16,6 @@ export const DONE_FR = {
   // ── Redesign v1.1: the Done screen ──
   'sessionDone.dayDone': 'Jour {day} terminé',
   'sessionDone.title': 'Terminé',
-  'sessionDone.tileMinutes': 'Minutes',
   'sessionDone.tileWeek': 'Jours cette semaine',
   'sessionDone.tileWeekA11y': { one: '{count} jour cette semaine', other: '{count} jours cette semaine' },
   'sessionDone.feel.question': 'Comment c’était ?',
@@ -26,12 +28,10 @@ export const DONE_FR = {
   'sessionDone.tomorrowAt': 'Demain à {time}',
   'sessionDone.nextOn': 'Prochaine séance : {day}',
   'sessionDone.complete': 'Séance terminée',
-  'sessionDone.tileSets': 'Séries',
   'sessionDone.tileSetsA11y': { one: '{count} série faite', other: '{count} séries faites' },
   'sessionDone.path.day': 'Jour {day}',
   'sessionDone.path.completed': 'Terminé',
   'sessionDone.month.title': 'Jours faits ce mois-ci',
   'sessionDone.month.unit': { one: 'jour', other: 'jours' },
   'sessionDone.month.a11y': { one: '{count} jour fait ce mois-ci', other: '{count} jours faits ce mois-ci' },
-  'sessionDone.nextLabel': 'Ensuite',
 };

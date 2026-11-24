@@ -11,10 +11,6 @@ export const TESTDAY_DE = {
   // ── Intro ─────────────────────────────────────────────────────────────────
   'testday.intro.eyebrow': 'Testtag',
   'testday.intro.title': 'Drei kurze Tests',
-  'testday.intro.body': {
-    one: 'Etwa {count} Minute.',
-    other: 'Etwa {count} Minuten.',
-  },
   'testday.intro.nowSeconds': 'Jetzt {now} s · Ziel {goal} s',
   'testday.intro.nowRaises': {
     one: 'Jetzt {now} · Ziel {count} Wiederholung',
@@ -25,7 +21,6 @@ export const TESTDAY_DE = {
     one: 'Erste Messung · Ziel {count} Wiederholung',
     other: 'Erste Messung · Ziel {count} Wiederholungen',
   },
-  'testday.intro.need': 'Du brauchst',
   'testday.intro.needBarefoot': 'Nackte Füße',
   'testday.intro.needWall': 'Eine Wand oder Arbeitsplatte zum Festhalten',
   'testday.intro.needPhone': 'Das Handy in Sichtweite',
@@ -41,7 +36,6 @@ export const TESTDAY_DE = {
   'testday.intro.tomorrow': 'Morgen testen',
 
   // ── The three tests ───────────────────────────────────────────────────────
-  'testday.test.eyebrow': 'Test {current} von {total}',
   'testday.test.calf.name': 'Fersenheben',
   'testday.test.arch.name': 'Gewölbe halten',
   'testday.test.balance.name': 'Balance',
@@ -103,7 +97,6 @@ export const TESTDAY_DE = {
   'testday.confirm.finish': 'Ergebnisse ansehen',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.firstBlurb': 'Der nächste Test zeigt, wie weit du gekommen bist.',
   'testday.results.name.arch_hold': 'Gewölbe halten',
   'testday.results.name.calf_raises': 'Fersenheben',
   'testday.results.name.balance': 'Balance',
@@ -145,7 +138,6 @@ export const TESTDAY_DE = {
   'testday.results.same': 'Gleich wie beim letzten Mal',
   'testday.results.first': 'Erste Messung',
   'testday.results.nextTest': 'Nächster Test: {date}',
-  'testday.results.planUpdated': 'Dein Plan für die nächsten zwei Wochen ist aktualisiert.',
   'testday.results.done': 'Fertig',
 
   'testday.results.verdictFirst': 'Drei Zahlen zum Schlagen',
@@ -155,10 +147,6 @@ export const TESTDAY_DE = {
   'testday.results.verdictUp.balance': 'Du hast länger die Balance gehalten',
   'testday.results.verdictUpTwo': 'Zwei von drei sind gestiegen',
   'testday.results.verdictUpAll': 'Alle drei sind gestiegen',
-  // The line over the headline, and the headline when a goal was reached.
-  'testday.results.heroEyebrowUp': 'Neue Bestleistung',
-  'testday.results.heroEyebrowFirst': 'Dein Ausgangspunkt',
-  'testday.results.heroEyebrowSteady': 'Tests geschafft',
   'testday.results.verdictGoal.calf_raises': 'Ziel beim Fersenheben erreicht',
   'testday.results.verdictGoal.arch_hold': 'Ziel beim Gewölbehalten erreicht',
   'testday.results.verdictGoal.balance': 'Ziel bei der Balance erreicht',
@@ -190,6 +178,4 @@ export const TESTDAY_DE = {
   'testday.results.explain.balance':
     'Auf einem Bein mit geschlossenen Augen zeigt sich, wie gut Fuß und Knöchel den Boden spüren. Mehr Sekunden heißt sicherere Schritte auf unebenem Weg und wenn du müde bist.',
   'testday.results.explainA11y': 'Was das zeigt',
-  'testday.card.goalRaises': { one: 'Ziel: {count} Wiederholung', other: 'Ziel: {count} Wiederholungen' },
-  'testday.card.goalSeconds': 'Ziel: {goal} s',
 };

@@ -1,3 +1,6 @@
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -31,7 +34,6 @@ import { ClipViewer } from '../clip-viewer';
 import { playCountInCue } from '../../model/count-in-sound';
 import {
   CALF_PACE_MS,
-  TEST_ORDER,
   balanceEyesOpen,
   clampEntry,
   clockLabel,
@@ -40,11 +42,10 @@ import {
   remainingFraction,
   repPhaseAt,
   secondsLeftAt,
-  testIndex,
   type Station,
 } from '../../model/test-day';
 import { CountIn } from '../player/count-in';
-import { Capsule, NUMERAL_SCALE, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, pastel, CardLabel } from '../player/kit';
+import { Capsule, NUMERAL_SCALE, RoundButton, SIDE, TITLE_SCALE, TextButton as KitTextButton, cardStyle, ink, pastel } from '../player/kit';
 import { StepList } from '../player/sheets';
 import { CountdownRing } from './countdown-ring';
 import { Stepper } from './stepper';
@@ -317,7 +318,6 @@ export function TestRunner({
     setStage('ready');
   };
 
-  const eyebrow = t('testday.test.eyebrow', { current: testIndex(kind) + 1, total: TEST_ORDER.length });
   const color = testColor(kind);
   const disc = Math.min(width - 96, height * 0.34, 300);
   const name = t(meta.name);
@@ -327,7 +327,7 @@ export function TestRunner({
       <View style={styles.root}>
         <ClipViewer clip={meta.clip} mirrored={mirrored} visible={viewing} onClose={() => setViewing(false)} />
         <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-          <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
+          <Heading title={name} leg={legLabel} />
 
           {stage === 'ready' ? (
             <>
@@ -341,12 +341,18 @@ export function TestRunner({
                     accessibilityIgnoresInvertColors
                   />
                 </View>
+                {!clipFailed && (
+                  <RoundButton
+                    icon={PlayIcon}
+                    size={56}
+                    iconSize={24}
+                    label={t('testday.watch')}
+                    onPress={() => setViewing(true)}
+                    style={[styles.watch, { left: (width - 2 * (SIDE - 4)) / 2 + disc / 2 - 56 }]}
+                  />
+                )}
               </View>
-              {!clipFailed && (
-                <KitTextButton label={t('testday.watch')} onPress={() => setViewing(true)} style={styles.watch} />
-              )}
               <View style={[styles.card, styles.steps]}>
-                <CardLabel>{t('player.sheet.stepsTitle')}</CardLabel>
                 <StepList steps={steps.map((key) => t(key))} />
               </View>
             </>
@@ -421,7 +427,7 @@ export function TestRunner({
       <ScrollView style={styles.flex} contentContainerStyle={styles.measure} showsVerticalScrollIndicator={false} bounces={false}>
         <View style={styles.measureHead}>
           <View style={styles.flex}>
-            <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
+            <Heading title={name} leg={legLabel} />
           </View>
           <Pressable
             accessibilityRole="button"
@@ -438,9 +444,6 @@ export function TestRunner({
         {/* Not one accessible element: the figure, its unit and the clock are
             read as the lines they are, not glued into an English sentence. */}
         <View style={styles.ringArea} accessibilityRole="timer">
-          <CardLabel style={styles.ringLabel}>
-            {kind === 'calf' ? t('player.card.reps') : t('player.card.timeLeft')}
-          </CardLabel>
           <CountdownRing size={ringSize} stroke={10} left={ring} tone={{ fill: color, track: bitepal.track }}>
             <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={styles.big} numberOfLines={1} adjustsFontSizeToFit>
               {kind === 'calf' ? reps : secondsLeft}
@@ -450,11 +453,14 @@ export function TestRunner({
           {large && ringWords}
           {/* The other half of the clock: the time the raises run against, or
               what a hold has reached, the figure its confirmation asks about. */}
-          <Text style={styles.clock}>
-            {kind === 'calf'
-              ? t('testday.timeLeft', { time: clockLabel(secondsLeft) })
-              : t('testday.held', { n: measuredAt(kind, elapsed, windowMs) })}
-          </Text>
+          {kind === 'calf' ? (
+            <View style={styles.clockChip} accessible accessibilityLabel={t('testday.timeLeft', { time: clockLabel(secondsLeft) })}>
+              <HugeiconsIcon icon={Clock01Icon} size={20} color={ink.grey} strokeWidth={2} />
+              <Text style={styles.clock}>{clockLabel(secondsLeft)}</Text>
+            </View>
+          ) : (
+            <Text style={styles.clock}>{t('testday.held', { n: measuredAt(kind, elapsed, windowMs) })}</Text>
+          )}
         </View>
 
         {stage === 'paused' ? (
@@ -490,10 +496,9 @@ export function TestRunner({
   );
 }
 
-function Heading({ eyebrow, title, leg }: { eyebrow: string; title: string; leg: string | null }) {
+function Heading({ title, leg }: { title: string; leg: string | null }) {
   return (
     <View>
-      <CardLabel>{eyebrow}</CardLabel>
       <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
         {title}
       </Text>
@@ -515,11 +520,11 @@ const styles = StyleSheet.create({
   card: { ...cardStyle, padding: 20 },
   title: { ...fonts.heavy(32, -0.8), color: ink.text, marginTop: 2 },
   leg: { ...fonts.bold(19), color: bitepal.selected, marginTop: 2 },
-  pictureRow: { alignItems: 'center', marginTop: 20 },
+  pictureRow: { alignItems: 'center', marginTop: 20, marginBottom: 16 },
   disc: { overflow: 'hidden', alignItems: 'center', justifyContent: 'flex-end' },
   picture: { width: '88%', height: '88%' },
   mirrored: { transform: [{ scaleX: -1 }] },
-  watch: { alignSelf: 'center', marginVertical: 4 },
+  watch: { position: 'absolute', bottom: 0 },
   steps: { gap: 12 },
   question: { ...fonts.bold(26, -0.4), color: ink.text },
   confirm: { marginTop: 24 },
@@ -533,7 +538,6 @@ const styles = StyleSheet.create({
   thumb: { width: THUMB, height: THUMB, borderRadius: THUMB / 2, overflow: 'hidden', backgroundColor: ink.studio, borderWidth: 3, borderColor: bitepal.card },
   video: { flex: 1 },
   ringArea: { ...cardStyle, flexGrow: 1, alignItems: 'center', justifyContent: 'center', gap: 16, marginVertical: 16, padding: 20 },
-  ringLabel: { alignSelf: 'flex-start' },
   /** Read from a couple of metres off, with the phone on the floor or a wall. */
   big: {
     ...fonts.heavy(96, -3),
@@ -546,7 +550,8 @@ const styles = StyleSheet.create({
   },
   unit: { ...fonts.medium(17), color: ink.grey, marginTop: -6 },
   phase: { ...fonts.bold(19), color: bitepal.selected, marginTop: 6 },
-  clock: { ...fonts.medium(19), color: ink.grey, fontVariant: ['tabular-nums'] },
+  clockChip: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  clock: { ...fonts.semibold(19), color: ink.grey, fontVariant: ['tabular-nums'] },
   stopHint: { ...fonts.regular(17), color: ink.grey, paddingBottom: 12, textAlign: 'center' },
   paused: { gap: 0, paddingBottom: 12, alignItems: 'center' },
   pausedTitle: { ...fonts.semibold(19), color: ink.text },

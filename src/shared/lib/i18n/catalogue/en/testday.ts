@@ -18,10 +18,6 @@ export const TESTDAY_EN = {
   // have ready, before anything starts counting.
   'testday.intro.eyebrow': 'Test day',
   'testday.intro.title': 'Three short tests',
-  'testday.intro.body': {
-    one: 'About {count} minute.',
-    other: 'About {count} minutes.',
-  },
   // Each test's line under its name: where the last test left it, and the aim.
   'testday.intro.nowSeconds': 'Now {now} s · goal {goal} s',
   'testday.intro.nowRaises': {
@@ -33,7 +29,6 @@ export const TESTDAY_EN = {
     one: 'First measurement · goal {count} raise',
     other: 'First measurement · goal {count} raises',
   },
-  'testday.intro.need': 'You need',
   'testday.intro.needBarefoot': 'Bare feet',
   'testday.intro.needWall': 'A wall or a counter to hold on to',
   'testday.intro.needPhone': 'The phone where you can see it',
@@ -52,7 +47,6 @@ export const TESTDAY_EN = {
   'testday.intro.tomorrow': 'Test tomorrow',
 
   // ── The three tests ───────────────────────────────────────────────────────
-  'testday.test.eyebrow': 'Test {current} of {total}',
   'testday.test.calf.name': 'Calf raises',
   'testday.test.arch.name': 'Arch hold',
   'testday.test.balance.name': 'Balance',
@@ -124,7 +118,6 @@ export const TESTDAY_EN = {
   'testday.confirm.finish': 'See results',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.firstBlurb': 'The next test shows how far you have come.',
   'testday.results.name.arch_hold': 'Arch hold',
   'testday.results.name.calf_raises': 'Calf raises',
   'testday.results.name.balance': 'Balance',
@@ -170,7 +163,6 @@ export const TESTDAY_EN = {
   'testday.results.same': 'Same as last time',
   'testday.results.first': 'First measurement',
   'testday.results.nextTest': 'Next test: {date}',
-  'testday.results.planUpdated': 'Your plan for the next two weeks is updated.',
   'testday.results.done': 'Done',
 
   // The headline over the cards. It names what went up and never what went
@@ -182,10 +174,6 @@ export const TESTDAY_EN = {
   'testday.results.verdictUp.balance': 'You balanced for longer',
   'testday.results.verdictUpTwo': 'Two of three went up',
   'testday.results.verdictUpAll': 'All three went up',
-  // The line over the headline, and the headline when a goal was reached.
-  'testday.results.heroEyebrowUp': 'New best',
-  'testday.results.heroEyebrowFirst': 'Your starting point',
-  'testday.results.heroEyebrowSteady': 'Test day done',
   'testday.results.verdictGoal.calf_raises': 'You hit your calf raise goal',
   'testday.results.verdictGoal.arch_hold': 'You hit your arch hold goal',
   'testday.results.verdictGoal.balance': 'You hit your balance goal',
@@ -222,7 +210,4 @@ export const TESTDAY_EN = {
   'testday.results.explain.balance':
     'Standing on one leg with your eyes closed shows how well your foot and ankle sense the ground. More seconds means steadier steps on uneven paths and when you are tired.',
   'testday.results.explainA11y': 'What this shows',
-  // ── Redesign v1.1 (BitePal): the goal under a test's bar ──
-  'testday.card.goalRaises': { one: 'Goal: {count} raise', other: 'Goal: {count} raises' },
-  'testday.card.goalSeconds': 'Goal: {goal} s',
 } as const satisfies Record<string, SourceEntry>;

@@ -1547,8 +1547,6 @@ export function useSessionRun({
     setPlaying(true);
   }, [countIn]);
 
-  /** The first sentence of the catalogue's cue: the one line to read from the floor. */
-  const cueLine = current?.exercise?.cue.split(/(?<=[.!?])\s+/)[0] ?? null;
   const sideNow = finished ? null : (pillSide ?? side?.side ?? null);
 
   /** Back a move, or to the start of the first one, through a fresh count. */
@@ -1725,6 +1723,5 @@ export function useSessionRun({
     skipped,
     askClose,
     advance,
-    cueLine,
   };
 }

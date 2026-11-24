@@ -48,7 +48,6 @@ export const PLAYER_FR = {
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',
-  'player.chip.position': '{index} sur {total}',
   'player.media.video': 'Vidéo',
   'player.media.pose': 'Posture',
   'player.cta.pause': 'Pause',
@@ -57,7 +56,6 @@ export const PLAYER_FR = {
   'player.line.plainSet': 'Rép. {rep} sur {reps} · Série {set} sur {sets}',
   'player.line.plain': 'Rép. {rep} sur {reps}',
   'player.line.set': 'Série {set} sur {sets}',
-  'player.repCount': '{rep}/{reps}',
   'player.unit.reps': { one: 'rép.', other: 'rép.' },
   'player.phase.relax': 'Relâche',
   'player.cta.setDone': 'Fait',
@@ -98,9 +96,6 @@ export const PLAYER_FR = {
   'player.cta.skipA11y': 'Passer ce mouvement',
   'player.a11y.move': '{name}. {time}. Ensuite : {next}.',
   'player.a11y.moveLast': '{name}. {time}. Dernier mouvement.',
-  'player.card.timeLeft': 'Temps restant',
-  'player.card.reps': 'Répétitions',
-  'player.card.progress': 'Progression',
-  'player.card.next': 'Ensuite',
   'player.card.lastMove': 'Dernier mouvement',
+  'player.nextA11y': 'Ensuite : {name}',
 };

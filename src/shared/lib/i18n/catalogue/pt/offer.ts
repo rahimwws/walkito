@@ -201,7 +201,6 @@ export const OFFER_PT = {
   'widgets.sessionLookingCta': 'Ver planos',
 
   // ── Test day: the results ────────────────────────────────────────────────
-  'widgets.retestYourGoal': 'Sua meta',
   'widgets.retestGoal.painfree': 'Você veio aqui por manhãs com menos dor no calcanhar. Esses números mostram seu pé no caminho certo.',
   'widgets.retestGoal.race': 'Você está se preparando para uma prova. Uma panturrilha mais forte e um pé mais firme são o que te levam até a largada.',
   'widgets.retestGoal.consistent': 'Você disse que a meta era constância. É nisso que aparecer todo dia vai somando.',

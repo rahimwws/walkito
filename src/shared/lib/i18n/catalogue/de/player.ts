@@ -48,7 +48,6 @@ export const PLAYER_DE = {
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',
-  'player.chip.position': '{index} von {total}',
   'player.media.video': 'Video',
   'player.media.pose': 'Haltung',
   'player.cta.pause': 'Pause',
@@ -57,7 +56,6 @@ export const PLAYER_DE = {
   'player.line.plainSet': 'Wdh. {rep} von {reps} · Satz {set} von {sets}',
   'player.line.plain': 'Wdh. {rep} von {reps}',
   'player.line.set': 'Satz {set} von {sets}',
-  'player.repCount': '{rep}/{reps}',
   'player.unit.reps': { one: 'Wdh.', other: 'Wdh.' },
   'player.phase.relax': 'Lockern',
   'player.cta.setDone': 'Fertig',
@@ -98,9 +96,6 @@ export const PLAYER_DE = {
   'player.cta.skipA11y': 'Diese Übung überspringen',
   'player.a11y.move': '{name}. {time}. Als Nächstes: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Letzte Übung.',
-  'player.card.timeLeft': 'Verbleibend',
-  'player.card.reps': 'Wiederholungen',
-  'player.card.progress': 'Fortschritt',
-  'player.card.next': 'Als Nächstes',
   'player.card.lastMove': 'Letzte Übung',
+  'player.nextA11y': 'Als Nächstes: {name}',
 };
