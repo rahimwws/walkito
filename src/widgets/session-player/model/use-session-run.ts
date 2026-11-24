@@ -165,7 +165,7 @@ const PAIN_RULE_SEEN_KEY = 'player/pain-rule-seen';
  * the playhead continuously any more. */
 const TICK_MS = 250;
 /** How long a note under the move ("Swapped for …", "Skipped for today …")
- * stays before it goes. */
+ * stays once the move is back on screen. */
 const NOTE_MS = 4_000;
 
 /**
@@ -1094,11 +1094,13 @@ export function useSessionRun({
   /** Said for a moment under the header once a move has been swapped or
    * skipped. */
   const [swapNote, setSwapNote] = useState<string | null>(null);
+  // Counted from the end of the count-in, which covers the move: the note is
+  // read once the move is back on screen.
   useEffect(() => {
-    if (swapNote == null) return;
+    if (swapNote == null || counting) return;
     const timer = setTimeout(() => setSwapNote(null), NOTE_MS);
     return () => clearTimeout(timer);
-  }, [swapNote]);
+  }, [swapNote, counting]);
 
   const pauseForQuestion = useCallback(() => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
