@@ -197,7 +197,6 @@ export const OFFER_FR = {
   'widgets.sessionLookingCta': 'Voir les formules',
 
   // ── Test day: the results ────────────────────────────────────────────────
-  'widgets.retestYourGoal': 'Ton objectif',
   'widgets.retestGoal.painfree': 'Tu es là pour des matins avec moins de douleur au talon. Ces chiffres montrent que ton pied s’en rapproche.',
   'widgets.retestGoal.race': 'Tu prépares une course. Un mollet plus fort et un pied plus stable, c’est ce qui te mène à la ligne de départ.',
   'widgets.retestGoal.consistent': 'Ton objectif, c’était la régularité. Voilà ce que ça donne, à force de venir.',

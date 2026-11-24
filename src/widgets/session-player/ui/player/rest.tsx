@@ -1,5 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useRef, useState } from 'react';
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
 import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
@@ -22,7 +23,7 @@ import { useT } from '@/shared/lib/i18n';
 
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
 import { CountdownRing } from '../test-day/countdown-ring';
-import { CardLabel, Capsule, MoveCircle, NUMERAL_SCALE, SIDE, TITLE_SCALE, cardStyle, ink, moveColor } from './kit';
+import { Capsule, MoveCircle, NUMERAL_SCALE, SIDE, Segments, TITLE_SCALE, cardStyle, ink, moveColor } from './kit';
 
 export type Break = Extract<Segment, { kind: 'rest' | 'switch' }>;
 
@@ -53,10 +54,10 @@ const NUMERAL = 64;
 
 /**
  * The rest between sets, and the change of foot, as BitePal's timer card:
- * "Rest" or "Switch to your left foot", "Time left" over the seconds in big
- * heavy digits, a ring that empties with them and pauses on a tap, what comes
- * next on a second card with the move's round picture, and Skip rest as the
- * black button. The last three seconds tick like the count-in. Resuming
+ * "Rest" or "Switch to your left foot" over the seconds in big heavy digits, a
+ * ring that empties with them and pauses on a tap, what comes next on a second
+ * card with the move's round picture and the sets as segments, and Skip rest
+ * as the black button. The last three seconds tick like the count-in. Resuming
  * here starts the clock at once: there is no position to get into.
  */
 export function Rest({
@@ -147,7 +148,6 @@ export function Rest({
               accessible
               accessibilityRole="timer"
               accessibilityLabel={t('session.secondsLeftA11y', { count: secondsLeft })}>
-              <CardLabel>{t('player.card.timeLeft')}</CardLabel>
               <Text maxFontSizeMultiplier={NUMERAL_SCALE} style={[styles.numeral, !playing && styles.dim]} numberOfLines={1} adjustsFontSizeToFit>
                 {String(Math.floor(secondsLeft / 60)).padStart(2, '0') + ':' + String(secondsLeft % 60).padStart(2, '0')}
               </Text>
@@ -167,12 +167,18 @@ export function Rest({
           </View>
         </View>
 
-        <View style={[styles.card, styles.next, stacked && styles.nextStacked]} accessible>
+        <View
+          style={[styles.card, styles.next, stacked && styles.nextStacked]}
+          accessible
+          accessibilityLabel={(isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')) + '. ' + move}>
           <MoveCircle exerciseId={exerciseId} size={64} />
           <View style={styles.nextText}>
-            <CardLabel>{isRest ? t('player.break.restNext', { set: shown.set, sets: shown.sets }) : t('player.countIn.nextUp')}</CardLabel>
             <Text style={styles.nextName}>{move}</Text>
+            {isRest && shown.sets > 1 && (
+              <Segments total={shown.sets} done={shown.set - 1} color={moveColor(exerciseId)} style={styles.sets} />
+            )}
           </View>
+          <HugeiconsIcon icon={ArrowRight01Icon} size={24} color={ink.grey} strokeWidth={2.2} />
         </View>
 
         <View style={styles.actions}>
@@ -211,7 +217,8 @@ const styles = StyleSheet.create({
   },
   next: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   nextStacked: { flexDirection: 'column', alignItems: 'flex-start' },
-  nextText: { flexShrink: 1, flexGrow: 1, gap: 2 },
+  nextText: { flexShrink: 1, flexGrow: 1, gap: 8 },
+  sets: { maxWidth: 140 },
   nextName: { ...fonts.bold(19), color: ink.text },
   actions: { paddingTop: 8 },
 });

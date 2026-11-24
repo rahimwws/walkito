@@ -6,6 +6,9 @@ export const DONE_RU = {
   'sessionDone.tileMoves': 'Упражнения',
   'sessionDone.tileShowedUp': 'Дни заботы',
   'sessionDone.minutes': '{count} мин',
+  'sessionDone.unitMinutes': 'мин',
+  'sessionDone.unitMoves': { one: 'упражнение', few: 'упражнения', many: 'упражнений' },
+  'sessionDone.unitSets': { one: 'подход', few: 'подхода', many: 'подходов' },
 
   'sessionDone.tileSessionA11y': {
     one: 'Занятие, {count} минута',
@@ -26,7 +29,6 @@ export const DONE_RU = {
   // ── Redesign v1.1: the Done screen ──
   'sessionDone.dayDone': 'День {day} пройден',
   'sessionDone.title': 'Готово',
-  'sessionDone.tileMinutes': 'Минуты',
   'sessionDone.tileWeek': 'Дней на неделе',
   'sessionDone.tileWeekA11y': { one: '{count} день на этой неделе', few: '{count} дня на этой неделе', many: '{count} дней на этой неделе' },
   'sessionDone.feel.question': 'Как ощущения?',
@@ -39,7 +41,6 @@ export const DONE_RU = {
   'sessionDone.tomorrowAt': 'Завтра в {time}',
   'sessionDone.nextOn': 'Следующее занятие: {day}',
   'sessionDone.complete': 'Занятие завершено',
-  'sessionDone.tileSets': 'Подходы',
   'sessionDone.tileSetsA11y': {
     one: '{count} подход сделан',
     few: '{count} подхода сделано',
@@ -54,5 +55,4 @@ export const DONE_RU = {
     few: '{count} дня с занятием в этом месяце',
     many: '{count} дней с занятием в этом месяце',
   },
-  'sessionDone.nextLabel': 'Дальше',
 };

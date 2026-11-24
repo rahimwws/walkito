@@ -11,11 +11,6 @@ export const TESTDAY_RU = {
   // ── Intro ─────────────────────────────────────────────────────────────────
   'testday.intro.eyebrow': 'День тестов',
   'testday.intro.title': 'Три коротких теста',
-  'testday.intro.body': {
-    one: 'Около {count} минуты.',
-    few: 'Около {count} минут.',
-    many: 'Около {count} минут.',
-  },
   'testday.intro.nowSeconds': 'Сейчас {now} с · цель {goal} с',
   'testday.intro.nowRaises': {
     one: 'Сейчас {now} · цель {count} подъём',
@@ -28,7 +23,6 @@ export const TESTDAY_RU = {
     few: 'Первое измерение · цель {count} подъёма',
     many: 'Первое измерение · цель {count} подъёмов',
   },
-  'testday.intro.need': 'Понадобится',
   'testday.intro.needBarefoot': 'Босые ноги',
   'testday.intro.needWall': 'Стена или столешница, за которую можно держаться',
   'testday.intro.needPhone': 'Телефон перед глазами',
@@ -44,7 +38,6 @@ export const TESTDAY_RU = {
   'testday.intro.tomorrow': 'Пройти завтра',
 
   // ── The three tests ───────────────────────────────────────────────────────
-  'testday.test.eyebrow': 'Тест {current} из {total}',
   'testday.test.calf.name': 'Подъёмы на носки',
   'testday.test.arch.name': 'Удержание свода',
   'testday.test.balance.name': 'Баланс',
@@ -108,7 +101,6 @@ export const TESTDAY_RU = {
   'testday.confirm.finish': 'Посмотреть результаты',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.firstBlurb': 'Следующий тест покажет, насколько вы продвинулись.',
   'testday.results.name.arch_hold': 'Удержание свода',
   'testday.results.name.calf_raises': 'Подъёмы на носки',
   'testday.results.name.balance': 'Баланс',
@@ -165,7 +157,6 @@ export const TESTDAY_RU = {
   'testday.results.same': 'Как в прошлый раз',
   'testday.results.first': 'Первое измерение',
   'testday.results.nextTest': 'Следующий тест: {date}',
-  'testday.results.planUpdated': 'План на следующие две недели обновлён.',
   'testday.results.done': 'Готово',
 
   'testday.results.verdictFirst': 'Три числа, которые предстоит побить',
@@ -175,10 +166,6 @@ export const TESTDAY_RU = {
   'testday.results.verdictUp.balance': 'Вы дольше держите баланс',
   'testday.results.verdictUpTwo': 'Два из трёх выросли',
   'testday.results.verdictUpAll': 'Все три выросли',
-  // The line over the headline, and the headline when a goal was reached.
-  'testday.results.heroEyebrowUp': 'Новый рекорд',
-  'testday.results.heroEyebrowFirst': 'Ваша точка отсчёта',
-  'testday.results.heroEyebrowSteady': 'Тесты пройдены',
   'testday.results.verdictGoal.calf_raises': 'Цель по подъёмам на носки достигнута',
   'testday.results.verdictGoal.arch_hold': 'Цель по удержанию свода достигнута',
   'testday.results.verdictGoal.balance': 'Цель по балансу достигнута',
@@ -211,6 +198,4 @@ export const TESTDAY_RU = {
   'testday.results.explain.balance':
     'Стойка на одной ноге с закрытыми глазами показывает, насколько хорошо стопа и голеностоп чувствуют опору. Больше секунд - значит, шаг увереннее на неровной дороге и когда вы устали.',
   'testday.results.explainA11y': 'Что это показывает',
-  'testday.card.goalRaises': { one: 'Цель: {count} подъём', few: 'Цель: {count} подъёма', many: 'Цель: {count} подъёмов' },
-  'testday.card.goalSeconds': 'Цель: {goal} с',
 };

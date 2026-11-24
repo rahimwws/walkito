@@ -275,7 +275,6 @@ export const OFFER_EN = {
   // ── Test day: the results ────────────────────────────────────────────────
   // The rest of the test day's copy is in `testday.ts`. These stay here because
   // the results screen took them over from the retest sheet it replaced.
-  'widgets.retestYourGoal': 'Your goal',
   /** The goal they picked in onboarding, said back on the result screen. */
   'widgets.retestGoal.painfree': 'You came here for mornings with less heel pain. These numbers show your foot on the way there.',
   'widgets.retestGoal.race': 'You’re working towards a race. A stronger calf and a steadier foot are what carry you to the start line.',

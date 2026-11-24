@@ -198,7 +198,6 @@ export const OFFER_IT = {
   'widgets.sessionLookingCta': 'Vedi i piani',
 
   // ── Test day: the results ────────────────────────────────────────────────
-  'widgets.retestYourGoal': 'Il tuo obiettivo',
   'widgets.retestGoal.painfree': 'Sei qui per mattine con meno dolore al tallone. Questi numeri mostrano che il piede è sulla buona strada.',
   'widgets.retestGoal.race': 'Ti stai preparando per una gara. Polpacci più forti e un piede più stabile sono ciò che ti porta alla partenza.',
   'widgets.retestGoal.consistent': 'Hai detto che l’obiettivo era la costanza. Ecco a cosa porta esserci.',

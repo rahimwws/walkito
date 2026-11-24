@@ -199,7 +199,6 @@ export const OFFER_RU = {
   'widgets.sessionLookingCta': 'Посмотреть планы',
 
   // ── Test day: the results ────────────────────────────────────────────────
-  'widgets.retestYourGoal': 'Ваша цель',
   'widgets.retestGoal.painfree': 'Вы хотели, чтобы утро начиналось с меньшей болью в пятке. Эти цифры - шаг к этому.',
   'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа доведут вас до старта.',
   'widgets.retestGoal.consistent': 'Вы хотели заниматься регулярно. Вот что это даёт.',

@@ -1,3 +1,4 @@
+import NextIcon from '@hugeicons/core-free-icons/NextIcon';
 import * as Haptics from 'expo-haptics';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
@@ -13,13 +14,13 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { CHROME_MAX_FONT_SCALE, fonts } from '@/shared/config';
+import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { thumbsUpRig } from '@/shared/ui/mascot';
 
 import { COUNT_IN_FROM, countInAt } from '../../model/count-in';
 import { playCountInCue, preloadCountInSounds } from '../../model/count-in-sound';
-import { CardLabel, MoveCircle, NUMERAL_SCALE, SIDE, SessionMascot, TITLE_SCALE, cardStyle, ink } from './kit';
+import { MoveCircle, NUMERAL_SCALE, RoundButton, SIDE, SessionMascot, TITLE_SCALE, cardStyle, ink } from './kit';
 
 export type CountInProps = {
   /** Wall-clock ms the count started; null hides it. */
@@ -47,9 +48,9 @@ const COUNT_IN_MASCOT = 76;
 const NUMBER = 150;
 
 /**
- * Three, two, one, go, on one BitePal card: "Get ready" as the small grey
- * label, the move's name, its picture on the disc of the part it works, and
- * one big heavy number under it. Read off the wall clock (`countInAt`), with a tick and a tap
+ * Three, two, one, go, on one BitePal card: the move's name, its picture on the disc of the part it works, and
+ * one big heavy number under it, and a round skip under the card. "Get ready"
+ * is said to VoiceOver only. Read off the wall clock (`countInAt`), with a tick and a tap
  * on each number and a firmer cue on go. A tap anywhere starts the move now.
  * Mounted around one shared value by hand, never with entering/exiting
  * builders, so a builder that fails can never leave an invisible layer
@@ -154,7 +155,6 @@ export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bott
         style={[styles.fill, { paddingBottom: bottom ?? Math.max(insets.bottom, 20) }]}>
         <View style={[styles.middle, stacked && styles.middleTop]}>
           <SessionMascot rig={thumbsUpRig} size={stacked ? 64 : COUNT_IN_MASCOT} style={styles.mascot} />
-          <CardLabel style={styles.eyebrow}>{eyebrow}</CardLabel>
           <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title}>{title}</Text>
           {!stacked && exerciseId != null && (
             <MoveCircle exerciseId={exerciseId} size={Math.min(width * 0.52, 220)} style={styles.picture} />
@@ -168,9 +168,9 @@ export function CountIn({ from, eyebrow, title, exerciseId = null, top = 0, bott
             {shown > 0 ? String(shown) : t('player.countIn.go')}
           </Animated.Text>
         </View>
-        <Text maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE} style={styles.caption}>
-          {t('player.countIn.tapToStart')}
-        </Text>
+        <View style={styles.skip}>
+          <RoundButton icon={NextIcon} size={56} iconSize={24} label={t('player.countIn.tapToStart')} onPress={go} />
+        </View>
       </Pressable>
     </Animated.View>
   );
@@ -190,8 +190,7 @@ const styles = StyleSheet.create({
   },
   middleTop: { justifyContent: 'flex-start', paddingTop: 20 },
   mascot: { marginBottom: 4 },
-  eyebrow: { textAlign: 'center' },
-  title: { ...fonts.heavy(30, -0.5), color: ink.text, marginTop: 6, textAlign: 'center' },
+  title: { ...fonts.heavy(30, -0.5), color: ink.text, marginTop: 10, textAlign: 'center' },
   picture: { marginTop: 24 },
   number: {
     ...fonts.heavy(NUMBER, -4),
@@ -202,5 +201,5 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     marginTop: 8,
   },
-  caption: { ...fonts.medium(17), color: ink.grey, paddingHorizontal: SIDE, paddingTop: 16, paddingBottom: 16, textAlign: 'center' },
+  skip: { alignItems: 'center', paddingTop: 12, paddingBottom: 4 },
 });

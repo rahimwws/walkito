@@ -49,7 +49,6 @@ export const PLAYER_PT = {
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',
-  'player.chip.position': '{index} de {total}',
   'player.media.video': 'Vídeo',
   'player.media.pose': 'Postura',
   'player.cta.pause': 'Pausar',
@@ -58,7 +57,6 @@ export const PLAYER_PT = {
   'player.line.plainSet': 'Rep. {rep} de {reps} · Série {set} de {sets}',
   'player.line.plain': 'Rep. {rep} de {reps}',
   'player.line.set': 'Série {set} de {sets}',
-  'player.repCount': '{rep}/{reps}',
   'player.unit.reps': { one: 'rep.', other: 'reps.' },
   'player.phase.relax': 'Solta',
   'player.cta.setDone': 'Pronto',
@@ -100,10 +98,7 @@ export const PLAYER_PT = {
   'player.cta.skipA11y': 'Pular este movimento',
   'player.a11y.move': '{name}. {time}. A seguir: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Último movimento.',
-  'player.card.timeLeft': 'Tempo restante',
-  'player.card.reps': 'Repetições',
-  'player.card.progress': 'Progresso',
-  'player.card.next': 'A seguir',
   'player.card.lastMove': 'Último movimento',
+  'player.nextA11y': 'Próximo: {name}',
   'player.detail.doneToday': 'Feito hoje',
 };

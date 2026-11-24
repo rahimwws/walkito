@@ -11,10 +11,6 @@ export const TESTDAY_FR = {
   // ── Intro ─────────────────────────────────────────────────────────────────
   'testday.intro.eyebrow': 'Jour de test',
   'testday.intro.title': 'Trois tests courts',
-  'testday.intro.body': {
-    one: 'Environ {count} minute.',
-    other: 'Environ {count} minutes.',
-  },
   'testday.intro.nowSeconds': 'Maintenant {now} s · objectif {goal} s',
   'testday.intro.nowRaises': {
     one: 'Maintenant {now} · objectif {count} montée',
@@ -25,7 +21,6 @@ export const TESTDAY_FR = {
     one: 'Première mesure · objectif {count} montée',
     other: 'Première mesure · objectif {count} montées',
   },
-  'testday.intro.need': 'Il te faut',
   'testday.intro.needBarefoot': 'Les pieds nus',
   'testday.intro.needWall': 'Un mur ou un plan de travail auquel te tenir',
   'testday.intro.needPhone': 'Le téléphone à portée de vue',
@@ -41,7 +36,6 @@ export const TESTDAY_FR = {
   'testday.intro.tomorrow': 'Faire le test demain',
 
   // ── The three tests ───────────────────────────────────────────────────────
-  'testday.test.eyebrow': 'Test {current} sur {total}',
   'testday.test.calf.name': 'Montées sur pointes',
   'testday.test.arch.name': 'Maintien de la voûte',
   'testday.test.balance.name': 'Équilibre',
@@ -103,7 +97,6 @@ export const TESTDAY_FR = {
   'testday.confirm.finish': 'Voir les résultats',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.firstBlurb': 'Le prochain test montrera tout le chemin parcouru.',
   'testday.results.name.arch_hold': 'Maintien de la voûte',
   'testday.results.name.calf_raises': 'Montées sur pointes',
   'testday.results.name.balance': 'Équilibre',
@@ -145,7 +138,6 @@ export const TESTDAY_FR = {
   'testday.results.same': 'Comme la dernière fois',
   'testday.results.first': 'Première mesure',
   'testday.results.nextTest': 'Prochain test : {date}',
-  'testday.results.planUpdated': 'Ton plan pour les deux semaines à venir est à jour.',
   'testday.results.done': 'Terminé',
 
   'testday.results.verdictFirst': 'Trois chiffres à battre',
@@ -155,10 +147,6 @@ export const TESTDAY_FR = {
   'testday.results.verdictUp.balance': 'Tu as tenu l’équilibre plus longtemps',
   'testday.results.verdictUpTwo': 'Deux sur trois ont progressé',
   'testday.results.verdictUpAll': 'Les trois ont progressé',
-  // The line over the headline, and the headline when a goal was reached.
-  'testday.results.heroEyebrowUp': 'Nouveau record',
-  'testday.results.heroEyebrowFirst': 'Ton point de départ',
-  'testday.results.heroEyebrowSteady': 'Tests terminés',
   'testday.results.verdictGoal.calf_raises': 'Objectif de montées sur pointes atteint',
   'testday.results.verdictGoal.arch_hold': 'Objectif de maintien de la voûte atteint',
   'testday.results.verdictGoal.balance': 'Objectif d’équilibre atteint',
@@ -190,6 +178,4 @@ export const TESTDAY_FR = {
   'testday.results.explain.balance':
     'Tenir sur une jambe les yeux fermés montre à quel point ton pied et ta cheville sentent le sol. Plus de secondes veut dire des pas plus sûrs sur un terrain inégal et quand la fatigue arrive.',
   'testday.results.explainA11y': 'Ce que cela montre',
-  'testday.card.goalRaises': { one: 'Objectif : {count} montée', other: 'Objectif : {count} montées' },
-  'testday.card.goalSeconds': 'Objectif : {goal} s',
 };

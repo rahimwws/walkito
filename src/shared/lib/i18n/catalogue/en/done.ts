@@ -16,6 +16,9 @@ export const DONE_EN = {
   'sessionDone.tileShowedUp': 'Showed up',
   /** The session tile's figure, short enough for a third of a phone. */
   'sessionDone.minutes': '{count} min',
+  'sessionDone.unitMinutes': 'min',
+  'sessionDone.unitMoves': { one: 'move', other: 'moves' },
+  'sessionDone.unitSets': { one: 'set', other: 'sets' },
 
   // ── Each tile read aloud as one ──────────────────────────────────────────
   'sessionDone.tileSessionA11y': { one: 'Session, {count} minute', other: 'Session, {count} minutes' },
@@ -25,7 +28,6 @@ export const DONE_EN = {
   // ── Redesign v1.1: the Done screen ──
   'sessionDone.dayDone': 'Day {day} done',
   'sessionDone.title': 'Done',
-  'sessionDone.tileMinutes': 'Minutes',
   'sessionDone.tileWeek': 'Days this week',
   'sessionDone.tileWeekA11y': { one: '{count} day this week', other: '{count} days this week' },
   'sessionDone.feel.question': 'How did that feel?',
@@ -40,7 +42,6 @@ export const DONE_EN = {
 
   // ── Redesign v1.1 (Bend): the Done screen's title, sets tile and day path ──
   'sessionDone.complete': 'Session complete',
-  'sessionDone.tileSets': 'Sets',
   'sessionDone.tileSetsA11y': { one: '{count} set done', other: '{count} sets done' },
   /** A node of the day path: the plan day by its number. */
   'sessionDone.path.day': 'Day {day}',
@@ -49,5 +50,4 @@ export const DONE_EN = {
   'sessionDone.month.title': 'Days done this month',
   'sessionDone.month.unit': { one: 'day', other: 'days' },
   'sessionDone.month.a11y': { one: '{count} day done this month', other: '{count} days done this month' },
-  'sessionDone.nextLabel': 'Up next',
 } as const satisfies Record<string, SourceEntry>;

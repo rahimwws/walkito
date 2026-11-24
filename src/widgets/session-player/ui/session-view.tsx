@@ -1,5 +1,9 @@
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
 import Backward01Icon from '@hugeicons/core-free-icons/Backward01Icon';
+import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
+import BlockedIcon from '@hugeicons/core-free-icons/BlockedIcon';
 import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
+import Flag02Icon from '@hugeicons/core-free-icons/Flag02Icon';
 import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
 import MoreHorizontalIcon from '@hugeicons/core-free-icons/MoreHorizontalIcon';
 import NextIcon from '@hugeicons/core-free-icons/NextIcon';
@@ -33,13 +37,14 @@ import { useSessionRun, type SessionViewProps } from '../model/use-session-run';
 import { CountIn } from './player/count-in';
 import { Done } from './player/done';
 import {
-  CardLabel,
   Capsule,
+  ChipButton,
+  MoveCircle,
   NUMERAL_SCALE,
   RoundButton,
   SIDE,
+  Segments,
   TITLE_SCALE,
-  TextButton,
   cardStyle,
   ink,
   moveColor,
@@ -131,14 +136,14 @@ function EdgeFade({ side }: { side: 'left' | 'right' }) {
 }
 
 /**
- * One session, playing, copied from Bend's player: "2 of 4" at the top
- * centre between a round close and round Sound and More buttons; the clip in
- * a circle on the move's pastel disc, wrapped by a ring that fills as the move
- * runs; the move's name with an (i) for how to do it; the time, or the rep
- * count, large; the set under it; and the transport row of back, a big round
- * pause and a tick that finishes the set. Skip, "It hurts" and "Can't do
- * this" stay in words under it; the rest lives behind More. Everything the
- * session does lives in useSessionRun.
+ * One session, playing, copied from Bend's player: the moves as segments at
+ * the top centre between a round close and round Sound and More buttons; the
+ * clip in a circle on the move's pastel disc; the move's name with an (i) for
+ * how to do it; the time, or the rep count with its total small after it,
+ * large; the sets as segments under it; the next move as a chip with its
+ * picture; and the transport row of back, a big round pause and skip. "It
+ * hurts" and "Can't do this" stay as labelled chips under it; the rest lives
+ * behind More. Everything the session does lives in useSessionRun.
  */
 function SessionRun(props: SessionViewProps) {
   const { day, onBack, moves: override, title, onFinish, feedback = true } = props;
@@ -193,18 +198,19 @@ function SessionRun(props: SessionViewProps) {
               },
             };
 
-  const numeral = repCount != null ? t('player.repCount', repCount) : clock(remaining);
+  const numeral = repCount != null ? String(repCount.rep) : clock(remaining);
+  const work = !finished && reading?.segment.kind === 'work' ? reading.segment : null;
   /** What to do this second and which foot, as one plain line: "Hold · Right foot". */
   const nowLine = [run.pill?.label, run.sideNow == null ? null : t(run.sideNow === 'left' ? 'widgets.sideLeft' : 'widgets.sideRight')]
     .filter((part): part is string => part != null)
     .join(' · ');
   const index = step + 1;
-  const position = title != null && moveCount <= 1 ? title : t('player.chip.position', { index, total: moveCount });
   const canSwitchMedia = run.wideClip && run.drawing != null && !finished;
   const exerciseId = current?.exercise?.id ?? null;
   const color = moveColor(exerciseId);
+  const nextId = run.plan[step + 1]?.exercise?.id ?? null;
 
-  const disc = Math.round(Math.min(width - 2 * 56, height * (large ? 0.22 : 0.3), 340));
+  const disc = Math.round(Math.min(width - 2 * 56, height * (large ? 0.22 : 0.28), 340));
   const clipSize = Math.round(disc * 0.9);
 
   const ask = (open: () => void) => {
@@ -216,14 +222,23 @@ function SessionRun(props: SessionViewProps) {
     <View style={styles.root}>
       <View style={styles.header}>
         <RoundButton icon={Cancel01Icon} size={44} label={t('player.close.a11y')} onPress={run.askClose} />
-        <Text
-          accessibilityRole="header"
-          accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}
-          style={styles.position}
-          numberOfLines={1}
-          maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
-          {position}
-        </Text>
+        {moveCount > 1 ? (
+          <View
+            style={styles.position}
+            accessible
+            accessibilityRole="header"
+            accessibilityLabel={t('widgets.sessionPositionLong', { index, total: moveCount })}>
+            <Segments total={moveCount} done={finished ? moveCount : step} color={bitepal.selected} height={6} />
+          </View>
+        ) : (
+          <Text
+            accessibilityRole="header"
+            style={[styles.position, styles.positionTitle]}
+            numberOfLines={1}
+            maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
+            {title ?? ''}
+          </Text>
+        )}
         <View style={styles.headerRight}>
           <RoundButton
             icon={run.sound.tempo ? VolumeHighIcon : VolumeOffIcon}
@@ -297,7 +312,6 @@ function SessionRun(props: SessionViewProps) {
               />
             )}
           </View>
-          {run.cueLine != null && !finished && <Text style={styles.cue}>{run.cueLine}</Text>}
           {nowLine.length > 0 && !finished && (
             <View style={styles.pill}>
               <Text style={styles.pillText} accessibilityLiveRegion="polite">
@@ -313,15 +327,21 @@ function SessionRun(props: SessionViewProps) {
               style={styles.timerFigure}
               accessible
               accessibilityRole="timer"
-              accessibilityLabel={repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })}>
-              <CardLabel>{repCount != null ? t('player.card.reps') : t('player.card.timeLeft')}</CardLabel>
+              accessibilityLabel={
+                (repCount != null ? t('player.line.plain', repCount) : t('session.secondsLeftA11y', { count: remaining })) +
+                (run.counter != null ? ', ' + run.counter.spoken : '')
+              }>
               <Text
                 maxFontSizeMultiplier={NUMERAL_SCALE}
                 style={[styles.numeral, ctaState === 'paused' && styles.dim]}
                 numberOfLines={1}
                 adjustsFontSizeToFit>
                 {numeral}
+                {repCount != null && <Text style={styles.numeralUnit}>{'/' + repCount.reps}</Text>}
               </Text>
+              {work != null && work.sets > 1 && (
+                <Segments total={work.sets} done={work.set - 1} color={color} style={styles.sets} />
+              )}
             </View>
             <Pressable
               accessibilityRole="button"
@@ -342,22 +362,18 @@ function SessionRun(props: SessionViewProps) {
             </Pressable>
           </View>
 
-          <View style={[styles.columns, large && styles.columnsStacked]}>
-            {run.counter != null && (
-              <View style={styles.column}>
-                <CardLabel>{t('player.card.progress')}</CardLabel>
-                <Text accessibilityLabel={run.counter.spoken} style={styles.columnValue}>
-                  {run.counter.text}
-                </Text>
-              </View>
-            )}
-            {!finished && (
-              <View style={styles.column} accessible>
-                <CardLabel>{t('player.card.next')}</CardLabel>
-                <Text style={styles.columnValue}>{run.nextMove ?? t('player.card.lastMove')}</Text>
-              </View>
-            )}
-          </View>
+          {!finished && (
+            <View
+              style={styles.next}
+              accessible
+              accessibilityLabel={run.nextMove != null ? t('player.nextA11y', { name: run.nextMove }) : t('player.card.lastMove')}>
+              <HugeiconsIcon icon={run.nextMove != null ? ArrowRight01Icon : Flag02Icon} size={22} color={ink.grey} strokeWidth={2.2} />
+              {run.nextMove != null && <MoveCircle exerciseId={nextId} size={36} />}
+              <Text style={styles.nextName} numberOfLines={1}>
+                {run.nextMove ?? t('player.card.lastMove')}
+              </Text>
+            </View>
+          )}
           {!finished && (current?.addWeight === true || run.loadNote != null) && (
             <Text style={styles.load}>{current?.addWeight === true ? t('player.load.backpack') : run.loadNote}</Text>
           )}
@@ -386,8 +402,8 @@ function SessionRun(props: SessionViewProps) {
 
         {!finished && current?.exercise != null && (
           <View style={styles.asides}>
-            <TextButton label={t('widgets.painButton')} quiet onPress={() => ask(() => run.setAskingPain(true))} />
-            <TextButton label={t('player.cantDo.button')} quiet onPress={() => ask(() => run.setAskingCantDo(true))} />
+            <ChipButton icon={BandageIcon} label={t('widgets.painButton')} onPress={() => ask(() => run.setAskingPain(true))} />
+            <ChipButton icon={BlockedIcon} label={t('player.cantDo.button')} onPress={() => ask(() => run.setAskingCantDo(true))} />
           </View>
         )}
       </ScrollView>
@@ -521,12 +537,10 @@ const styles = StyleSheet.create({
   headerRight: { flexDirection: 'row', gap: 8 },
   position: {
     flex: 1,
-    ...fonts.heavy(19),
-    color: ink.text,
-    textAlign: 'center',
-    fontVariant: ['tabular-nums'],
-    paddingLeft: 52,
+    marginLeft: 52,
+    justifyContent: 'center',
   },
+  positionTitle: { ...fonts.heavy(19), color: ink.text, textAlign: 'center' },
   scroll: { flex: 1 },
   body: { flexGrow: 1, paddingTop: 8, paddingHorizontal: SIDE - 4, gap: 12 },
   moveCard: { ...cardStyle, alignItems: 'center', paddingHorizontal: 20, paddingTop: 20, paddingBottom: 18, gap: 6 },
@@ -553,7 +567,6 @@ const styles = StyleSheet.create({
   note: { ...fonts.regular(17), color: ink.grey, textAlign: 'center' },
   nameRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: 8 },
   name: { ...fonts.heavy(26, -0.4), color: ink.text, textAlign: 'center', flexShrink: 1 },
-  cue: { ...fonts.regular(17), color: ink.grey, textAlign: 'center' },
   pill: {
     marginTop: 4,
     paddingHorizontal: 14,
@@ -562,7 +575,7 @@ const styles = StyleSheet.create({
     backgroundColor: bitepal.selectedSoft,
   },
   pillText: { ...fonts.semibold(17), color: bitepal.selected, textAlign: 'center' },
-  timerCard: { ...cardStyle, padding: 20, gap: 16 },
+  timerCard: { ...cardStyle, padding: 20, gap: 12 },
   timerTop: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   timerTopStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   timerFigure: { flex: 1, alignSelf: 'stretch' },
@@ -572,6 +585,8 @@ const styles = StyleSheet.create({
     color: ink.text,
     fontVariant: ['tabular-nums'],
   },
+  numeralUnit: { ...fonts.heavy(28, -0.5), color: ink.label },
+  sets: { marginTop: 8, maxWidth: 160 },
   endWell: {
     width: END_RING - 26,
     height: END_RING - 26,
@@ -580,10 +595,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  columns: { flexDirection: 'row', gap: 16 },
-  columnsStacked: { flexDirection: 'column' },
-  column: { flex: 1, gap: 2 },
-  columnValue: { ...fonts.bold(19), color: ink.text },
+  next: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    alignSelf: 'flex-start',
+    maxWidth: '100%',
+    paddingLeft: 12,
+    paddingRight: 16,
+    paddingVertical: 6,
+    borderRadius: 999,
+    backgroundColor: bitepal.well,
+  },
+  nextName: { ...fonts.bold(17), color: ink.text, flexShrink: 1 },
   load: { ...fonts.regular(17), color: ink.grey },
   transport: {
     flexDirection: 'row',
@@ -596,7 +620,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    columnGap: 24,
+    gap: 12,
   },
   locked: { flex: 1, backgroundColor: ink.page, paddingHorizontal: SIDE },
   lockedMiddle: { flex: 1, justifyContent: 'center', gap: 12 },

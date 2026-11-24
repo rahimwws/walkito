@@ -1,3 +1,4 @@
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -36,7 +37,7 @@ import { celebrateRig, idleRig } from '@/shared/ui/mascot';
 
 import type { Feel } from '../../model/feel';
 import { alreadyRecorded, rememberFeedback } from '../../model/session-done';
-import { BigNumber, CardLabel, Capsule, Ring, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle, soft } from './kit';
+import { BigNumber, Capsule, Ring, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle, soft } from './kit';
 import { PainSheet } from './sheets';
 
 export type DoneProps = {
@@ -104,12 +105,12 @@ const OUT_MS = 200;
 
 /**
  * The end of a session as BitePal's cards: "Session complete" with a
- * sparkle, then the minutes, moves and sets each on a white card (grey label,
- * big number, a closed ring with its icon), "How did that feel?" as four
+ * sparkle, then the minutes, moves and sets as three tiles in a row (a closed
+ * ring with its icon, the big number, its unit), "How did that feel?" as four
  * white option cards with round icons, the safety line and "Make tomorrow
  * easier" after "It hurt", the days done this month as BitePal's streak sheet
  * draws them (the count large over a small calendar with a dot on each, no
- * flame), what comes next, and Done as the black button. A layer over
+ * flame), what comes next with its time as a clock chip, and Done as the black button. A layer over
  * the player rather than a Modal, for the reason the sheets give.
  */
 export function Done({
@@ -201,10 +202,10 @@ export function Done({
       ? null
       : dayNumber + Math.round((Date.parse(next.date + 'T12:00:00') - Date.parse(today + 'T12:00:00')) / 86_400_000);
 
-  const stats: { value: number; label: string; a11y: string; art: FluentName; tone: ColorValue }[] = [
-    { value: minutes, label: t('sessionDone.tileMinutes'), a11y: t('sessionDone.tileSessionA11y', { count: minutes }), art: 'timer', tone: bodyColors.heel },
-    { value: moves, label: t('sessionDone.tileMoves'), a11y: t('sessionDone.tileMovesA11y', { count: moves }), art: 'foot', tone: bodyColors.arch },
-    { value: sets, label: t('sessionDone.tileSets'), a11y: t('sessionDone.tileSetsA11y', { count: sets }), art: 'check', tone: bodyColors.calf },
+  const stats: { key: string; value: number; unit: string; a11y: string; art: FluentName; tone: ColorValue }[] = [
+    { key: 'minutes', value: minutes, unit: t('sessionDone.unitMinutes'), a11y: t('sessionDone.tileSessionA11y', { count: minutes }), art: 'timer', tone: bodyColors.heel },
+    { key: 'moves', value: moves, unit: t('sessionDone.unitMoves', { count: moves }), a11y: t('sessionDone.tileMovesA11y', { count: moves }), art: 'foot', tone: bodyColors.arch },
+    { key: 'sets', value: sets, unit: t('sessionDone.unitSets', { count: sets }), a11y: t('sessionDone.tileSetsA11y', { count: sets }), art: 'check', tone: bodyColors.calf },
   ];
   const [year, monthNumber, todayDate] = today.split('-').map(Number);
   const firstWeekday = (new Date(year, monthNumber - 1, 1).getDay() + 6) % 7;
@@ -240,18 +241,21 @@ export function Done({
           />
         </View>
 
-        {!early &&
-          stats.map((stat) => (
-            <View key={stat.label} style={[styles.card, styles.stat, large && styles.statStacked]} accessible accessibilityLabel={stat.a11y}>
-              <View style={styles.statText}>
-                <CardLabel>{stat.label}</CardLabel>
-                <BigNumber value={stat.value} size={48} />
+        {!early && (
+          <View style={[styles.tiles, large && styles.tilesStacked]}>
+            {stats.map((stat) => (
+              <View key={stat.key} style={[styles.card, styles.tile, large && styles.tileStacked]} accessible accessibilityLabel={stat.a11y}>
+                <Ring size={STAT_RING} stroke={6} value={1} color={stat.tone}>
+                  <FluentIcon name={stat.art} size={28} />
+                </Ring>
+                <BigNumber value={stat.value} size={40} style={styles.tileNumber} />
+                <Text style={styles.tileUnit} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={TITLE_SCALE}>
+                  {stat.unit}
+                </Text>
               </View>
-              <Ring size={STAT_RING} stroke={6} value={1} color={stat.tone}>
-                <FluentIcon name={stat.art} size={28} />
-              </Ring>
-            </View>
-          ))}
+            ))}
+          </View>
+        )}
 
         {feedback && !early && (
           <View style={styles.section}>
@@ -316,12 +320,11 @@ export function Done({
             style={[styles.stat, styles.monthHead, large && styles.statStacked]}
             accessible
             accessibilityLabel={t('sessionDone.month.a11y', { count: month.size })}>
-            <View style={styles.statText}>
-              <CardLabel>{t('sessionDone.month.title')}</CardLabel>
-              <BigNumber value={month.size} unit={t('sessionDone.month.unit', { count: month.size })} size={48} />
-            </View>
             <View style={styles.monthIcon}>
               <FluentIcon name="calendar" size={36} />
+            </View>
+            <View style={styles.statText}>
+              <BigNumber value={month.size} unit={t('sessionDone.month.unit', { count: month.size })} size={48} />
             </View>
           </View>
           <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
@@ -357,15 +360,24 @@ export function Done({
         </View>
 
         {(nextLine != null || nextDay != null) && (
-          <View style={[styles.card, styles.next]} accessible>
-            <CardLabel>{t('sessionDone.nextLabel')}</CardLabel>
-            {nextDay != null && (
-              <Text style={styles.nextTitle}>
-                {t('sessionDone.path.day', { day: nextDay })}
-                {nextKind != null ? ' · ' + t(nextKind) : ''}
-              </Text>
-            )}
-            {nextLine != null && <Text style={styles.nextLine}>{nextLine}</Text>}
+          <View style={[styles.card, styles.next, large && styles.statStacked]} accessible>
+            <View style={styles.nextIcon}>
+              <FluentIcon name="calendar" size={30} />
+            </View>
+            <View style={styles.nextText}>
+              {nextDay != null && (
+                <Text style={styles.nextTitle}>
+                  {t('sessionDone.path.day', { day: nextDay })}
+                  {nextKind != null ? ' · ' + t(nextKind) : ''}
+                </Text>
+              )}
+              {nextLine != null && (
+                <View style={styles.nextChip}>
+                  <HugeiconsIcon icon={Clock01Icon} size={18} color={ink.grey} strokeWidth={2} />
+                  <Text style={styles.nextLine}>{nextLine}</Text>
+                </View>
+              )}
+            </View>
           </View>
         )}
       </ScrollView>
@@ -392,7 +404,13 @@ const styles = StyleSheet.create({
   headText: { flex: 1, gap: 6 },
   title: { ...fonts.heavy(34, -0.8), color: ink.text },
   lead: { ...fonts.regular(19), color: ink.grey },
-  stat: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 20 },
+  stat: { flexDirection: 'row', alignItems: 'center', gap: 16, padding: 20 },
+  tiles: { flexDirection: 'row', gap: 10 },
+  tilesStacked: { flexDirection: 'column' },
+  tile: { flex: 1, alignItems: 'center', paddingVertical: 18, paddingHorizontal: 8, gap: 6 },
+  tileStacked: { flexDirection: 'row', gap: 16, paddingHorizontal: 20 },
+  tileNumber: { marginTop: 4 },
+  tileUnit: { ...fonts.semibold(17), color: ink.grey },
   statStacked: { flexDirection: 'column', alignItems: 'flex-start' },
   statText: { flex: 1, alignSelf: 'stretch' },
   section: { marginTop: 20, gap: 12 },
@@ -448,8 +466,11 @@ const styles = StyleSheet.create({
   dayDone: { ...fonts.heavy(17) },
   dayToday: { color: bitepal.onPrimary },
   dot: { width: 6, height: 6, borderRadius: 3, marginTop: 2 },
-  next: { padding: 20, gap: 4 },
+  next: { flexDirection: 'row', alignItems: 'center', gap: 14, padding: 20 },
+  nextIcon: { width: 52, height: 52, borderRadius: 26, backgroundColor: bitepal.well, alignItems: 'center', justifyContent: 'center' },
+  nextText: { flexShrink: 1, flexGrow: 1, gap: 6 },
   nextTitle: { ...fonts.bold(19), color: ink.text },
-  nextLine: { ...fonts.regular(17), color: ink.grey },
+  nextChip: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  nextLine: { ...fonts.medium(17), color: ink.grey, flexShrink: 1 },
   dock: { position: 'absolute', left: 0, right: 0, bottom: 0, paddingHorizontal: SIDE, paddingTop: 12, backgroundColor: ink.canvas },
 });

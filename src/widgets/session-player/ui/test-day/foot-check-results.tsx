@@ -1,4 +1,6 @@
+import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import Flag02Icon from '@hugeicons/core-free-icons/Flag02Icon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { makeImageFromView } from '@shopify/react-native-skia';
@@ -18,6 +20,7 @@ import { thumbsUpRig, trophyRig } from '@/shared/ui/mascot';
 import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from '../../model/test-day';
 import { Bar, BigNumber, CardLabel, Capsule, NUMERAL_SCALE, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle } from '../player/kit';
 import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
+import { GoalFlag } from './goal-flag';
 import { testColor } from './test-meta';
 import { TestRing } from './test-visuals';
 
@@ -203,11 +206,15 @@ export function FootCheckResults({ outcome, side, onDone }: FootCheckResultsProp
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <View style={[sceneStyle, styles.head, largeText && styles.headStacked]}>
           <View style={styles.headText}>
-            <CardLabel>{heroEyebrow(t, hero)}</CardLabel>
             <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.title} accessibilityRole="header">
               {heroTitle(t, hero)}
             </Text>
-            <Text style={styles.lead}>{hero.kind === 'first' ? t('testday.results.firstBlurb') : dateLine}</Text>
+            {dateLine != null && (
+              <View style={styles.lead}>
+                <HugeiconsIcon icon={Calendar03Icon} size={18} color={ink.grey} strokeWidth={2} />
+                <Text style={styles.leadText}>{dateLine}</Text>
+              </View>
+            )}
           </View>
           <SessionMascot
             rig={hero.kind === 'first' ? trophyRig : thumbsUpRig}
@@ -241,7 +248,6 @@ export function FootCheckResults({ outcome, side, onDone }: FootCheckResultsProp
           </View>
           <View style={styles.infoText}>
             <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.infoTitle}>{t('testday.results.nextTest', { date: nextTest })}</Text>
-            <Text style={styles.body}>{t('testday.results.planUpdated')}</Text>
           </View>
         </View>
 
@@ -251,7 +257,6 @@ export function FootCheckResults({ outcome, side, onDone }: FootCheckResultsProp
               <FluentIcon name="target" size={30} />
             </View>
             <View style={styles.infoText}>
-              <CardLabel>{t('widgets.retestYourGoal')}</CardLabel>
               <Text maxFontSizeMultiplier={TITLE_SCALE} style={styles.infoTitle}>{t(goalLine)}</Text>
             </View>
           </View>
@@ -304,19 +309,6 @@ function heroTitle(t: Translate, hero: Hero): string {
   }
 }
 
-function heroEyebrow(t: Translate, hero: Hero): string {
-  switch (hero.kind) {
-    case 'goal':
-      return t('testday.results.reached');
-    case 'up':
-      return t('testday.results.heroEyebrowUp');
-    case 'first':
-      return t('testday.results.heroEyebrowFirst');
-    case 'steady':
-      return t('testday.results.heroEyebrowSteady');
-  }
-}
-
 type CardProps = {
   row: Card;
   delay: number;
@@ -343,6 +335,7 @@ function ResultCard({ row, delay, previous, history, legs, gap, open, onToggle, 
   const stacked = useWindowDimensions().fontScale > 1.6;
   const tone = { fill: testColor(KIND_OF[row.type]), track: bitepal.track };
   const share = (value: number | null) => (value == null ? 0 : value / Math.max(1, row.target));
+  const gained = row.change != null && row.change > 0 && realGain(row.type, row.change);
 
   return (
     <View style={styles.card}>
@@ -352,7 +345,11 @@ function ResultCard({ row, delay, previous, history, legs, gap, open, onToggle, 
         accessibilityHint={open ? t('testday.results.hideDetails') : t('testday.results.showDetails')}
         accessibilityLabel={t(NAME_KEY[row.type]) + ', ' + row.value + ' ' + (seconds
           ? t('testday.results.unitSeconds', { count: row.value })
-          : t('testday.results.unitRaises', { count: row.value })) + '. ' + changeSentence(t, row)}
+          : t('testday.results.unitRaises', { count: row.value })) + '. ' + changeSentence(t, row) + '. ' + (row.reached
+          ? t('testday.results.reached')
+          : seconds
+            ? t('testday.results.toGoSeconds', { count: left })
+            : t('testday.results.toGoRaises', { count: left }))}
         onPress={() => {
           void Haptics.selectionAsync();
           onToggle();
@@ -366,23 +363,16 @@ function ResultCard({ row, delay, previous, history, legs, gap, open, onToggle, 
               unit={seconds ? t('testday.results.secondsShort') : t('testday.results.unitRaises', { count: row.value })}
               size={48}
             />
+            <View style={[styles.chip, gained && styles.chipGain]}>
+              <Text style={[styles.chipText, gained && styles.gain]}>{chipLabel(t, row)}</Text>
+            </View>
           </View>
           <TestRing kind={KIND_OF[row.type]} from={share(previous)} to={share(row.value)} tone={tone} delay={delay} size={76} stroke={6} />
         </View>
-        <Bar value={share(row.value)} color={tone.fill} />
-        <View style={[styles.cardFoot, stacked && styles.cardFootStacked]}>
-          <Text style={styles.footText}>
-            {row.reached
-              ? t('testday.results.reached')
-              : seconds
-                ? t('testday.results.toGoSeconds', { count: left })
-                : t('testday.results.toGoRaises', { count: left })}
-          </Text>
-          <View style={[styles.chip, row.change != null && row.change > 0 && realGain(row.type, row.change) && styles.chipGain]}>
-            <Text style={[styles.chipText, row.change != null && row.change > 0 && realGain(row.type, row.change) && styles.gain]}>
-              {chipLabel(t, row)}
-            </Text>
-          </View>
+        <View style={styles.goalRow}>
+          <Bar value={share(row.value)} color={tone.fill} style={styles.goalBar} />
+          {row.reached && <HugeiconsIcon icon={Tick02Icon} size={18} color={ink.grey} strokeWidth={2.6} />}
+          <GoalFlag target={row.target} seconds={seconds} />
         </View>
       </Pressable>
 
@@ -564,17 +554,17 @@ const styles = StyleSheet.create({
   mascotStacked: { alignSelf: 'center' },
   headText: { flex: 1, gap: 4 },
   title: { ...fonts.heavy(32, -0.8), color: ink.text },
-  lead: { ...fonts.regular(19), color: ink.grey, marginTop: 4 },
+  lead: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 6 },
+  leadText: { ...fonts.medium(17), color: ink.grey, flexShrink: 1 },
 
   cards: { marginTop: 20, gap: 12 },
   cardBody: { padding: 20, gap: 12 },
   cardRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   cardRowStacked: { flexDirection: 'column-reverse', alignItems: 'flex-start' },
   cardCopy: { flex: 1, alignSelf: 'stretch' },
-  cardFoot: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' },
-  cardFootStacked: { flexDirection: 'column', alignItems: 'flex-start' },
-  footText: { ...fonts.semibold(17), color: ink.grey, flexShrink: 1 },
-  chip: { paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999, backgroundColor: bitepal.well },
+  goalRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  goalBar: { flex: 1 },
+  chip: { alignSelf: 'flex-start', marginTop: 6, paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999, backgroundColor: bitepal.well },
   chipGain: { backgroundColor: derive(colors.good, (hex) => hex + '24') },
   chipText: { ...fonts.bold(17), color: ink.text },
   small: { ...fonts.regular(17), color: ink.grey },

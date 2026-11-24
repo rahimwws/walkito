@@ -64,8 +64,6 @@ export const PLAYER_EN = {
   // The second line of the centred header title, under "Day 1". Both halves
   // arrive already counted (`session.minutes`, `session.moveCount`).
   'player.header.meta': '{minutes} · {moves}',
-  // The chip on the demonstration: which move of the session this is.
-  'player.chip.position': '{index} of {total}',
   // The switch on the demonstration: the clip of the motion, or the drawing
   // of the position to hold. One at a time, never both on the screen.
   'player.media.video': 'Video',
@@ -81,9 +79,6 @@ export const PLAYER_EN = {
   'player.line.plainSet': 'Rep {rep} of {reps} · Set {set} of {sets}',
   'player.line.plain': 'Rep {rep} of {reps}',
   'player.line.set': 'Set {set} of {sets}',
-  // The big number during a set of counted reps, and its unit beside it:
-  // "4/10 reps". The count is the rep under way, out of the set.
-  'player.repCount': '{rep}/{reps}',
   'player.unit.reps': { one: 'rep', other: 'reps' },
   // Letting go between two holds inside a set.
   'player.phase.relax': 'Relax',
@@ -131,10 +126,7 @@ export const PLAYER_EN = {
   'player.a11y.move': '{name}. {time}. Next: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Last move.',
   // ── Redesign v1.1 (BitePal): the player's timer card and the detail's columns ──
-  'player.card.timeLeft': 'Time left',
-  'player.card.reps': 'Reps',
-  'player.card.progress': 'Progress',
-  'player.card.next': 'Next',
   'player.card.lastMove': 'Last move',
+  'player.nextA11y': 'Next: {name}',
   'player.detail.doneToday': 'Done today',
 } as const satisfies Record<string, SourceEntry>;

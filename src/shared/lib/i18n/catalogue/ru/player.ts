@@ -48,7 +48,6 @@ export const PLAYER_RU = {
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',
-  'player.chip.position': '{index} из {total}',
   'player.media.video': 'Видео',
   'player.media.pose': 'Поза',
   'player.cta.pause': 'Пауза',
@@ -57,7 +56,6 @@ export const PLAYER_RU = {
   'player.line.plainSet': 'Повтор {rep} из {reps} · Подход {set} из {sets}',
   'player.line.plain': 'Повтор {rep} из {reps}',
   'player.line.set': 'Подход {set} из {sets}',
-  'player.repCount': '{rep}/{reps}',
   'player.unit.reps': { one: 'повтор', few: 'повтора', many: 'повторов' },
   'player.phase.relax': 'Расслабьте',
   'player.cta.setDone': 'Готово',
@@ -99,10 +97,7 @@ export const PLAYER_RU = {
   'player.cta.skipA11y': 'Пропустить это движение',
   'player.a11y.move': '{name}. {time}. Дальше: {next}.',
   'player.a11y.moveLast': '{name}. {time}. Последнее движение.',
-  'player.card.timeLeft': 'Осталось',
-  'player.card.reps': 'Повторы',
-  'player.card.progress': 'Прогресс',
-  'player.card.next': 'Дальше',
   'player.card.lastMove': 'Последнее движение',
+  'player.nextA11y': 'Далее: {name}',
   'player.detail.doneToday': 'Сделано сегодня',
 };
