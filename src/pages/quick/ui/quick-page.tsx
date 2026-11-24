@@ -36,6 +36,7 @@ import {
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { useTabBarClearance } from '@/shared/lib/tab-bar';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { MetaChip } from '@/shared/ui/meta-chip';
 import { PartIcon } from '@/shared/ui/part-icon';
 import { CardLabel, MoveCircle, TITLE_SCALE, bodyPartOf, cardStyle, soft } from '@/widgets/session-player';
 
@@ -177,8 +178,12 @@ export function QuickPage() {
                   role="open"
                   style={{ width: basis(situationCols) }}
                   title={t(protocol.titleKey)}
-                  sub={t('quick.minutes', { count: protocol.minutes })}
-                  accessibilityLabel={isLocked ? `${t(protocol.titleKey)}, ${t('quick.locked')}` : undefined}
+                  duration={t('quick.minutes', { count: protocol.minutes })}
+                  accessibilityLabel={
+                    isLocked
+                      ? `${t(protocol.titleKey)}, ${t('quick.locked')}`
+                      : `${t(protocol.titleKey)}, ${t('quick.minutes', { count: protocol.minutes })}`
+                  }
                   onPress={() => openProtocol(protocol)}
                   hex={
                     <Hex size={72} fill={soft(color, 0.2)} rim={soft(color, 0.42)}>
@@ -258,9 +263,10 @@ export function QuickPage() {
 }
 
 /**
- * The routine that suits right now, as BitePal's timer card (#28): the grey
- * label, its name big, how long and how many moves, the black round play
- * button (a lock when it is not open), and its moves as overlapping circles.
+ * The routine that suits right now, as BitePal's timer card (#28): its name
+ * big, the black round play button (a lock when it is not open), and its moves
+ * as overlapping circles with how long as a clock chip beside them. Leading
+ * the tab says it is the one for now; the circles count the moves.
  */
 function Featured({
   protocol,
@@ -275,10 +281,15 @@ function Featured({
 }) {
   const t = useT();
   const title = t(protocol.titleKey);
+  const length = t('quick.minutes', { count: protocol.minutes });
+  const spoken = `${title}, ${t('player.header.meta', {
+    minutes: length,
+    moves: t('quick.moves', { count: protocol.steps.length }),
+  })}`;
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={locked ? `${title}, ${t('quick.locked')}` : title}
+      accessibilityLabel={locked ? `${spoken}, ${t('quick.locked')}` : spoken}
       onPress={() => {
         void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
         onPress();
@@ -286,7 +297,6 @@ function Featured({
       style={({ pressed }) => [styles.card, pressed && styles.pressedCard]}>
       <View style={[styles.featuredHead, large && styles.featuredHeadLarge]}>
         <View style={styles.featuredText}>
-          <CardLabel>{t('quick.featured')}</CardLabel>
           <Text style={styles.featuredTitle} maxFontSizeMultiplier={BIG_SCALE}>
             {title}
           </Text>
@@ -300,12 +310,6 @@ function Featured({
           />
         </View>
       </View>
-      <Text style={styles.meta}>
-        {t('player.header.meta', {
-          minutes: t('quick.minutes', { count: protocol.minutes }),
-          moves: t('quick.moves', { count: protocol.steps.length }),
-        })}
-      </Text>
       <View style={styles.photos}>
         {protocol.steps.map((step, index) => (
           <MoveCircle
@@ -315,6 +319,7 @@ function Featured({
             style={[styles.photo, index > 0 && styles.overlap]}
           />
         ))}
+        <MetaChip icon={Clock01Icon} label={length} style={styles.length} />
       </View>
     </Pressable>
   );
@@ -345,12 +350,7 @@ function MoveRow({ move, onPress }: { move: Move; onPress: () => void }) {
           {name == null ? move.id : t(name)}
         </Text>
         <View style={styles.chips}>
-          <View style={styles.chip}>
-            <HugeiconsIcon icon={Clock01Icon} size={16} color={colors.text2} strokeWidth={2} />
-            <Text style={styles.chipText} maxFontSizeMultiplier={CHROME_MAX_FONT_SCALE}>
-              {lengthLabel(t, move.seconds)}
-            </Text>
-          </View>
+          <MetaChip icon={Clock01Icon} label={lengthLabel(t, move.seconds)} />
           {move.part != null && (
             <View style={[styles.chip, { backgroundColor: parts[move.part].soft }]}>
               <View style={[styles.dot, { backgroundColor: bodyColors[move.part] }]} />
@@ -390,8 +390,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  meta: { ...fonts.medium(17), color: colors.text2, marginTop: -6 },
-  photos: { flexDirection: 'row' },
+  photos: { flexDirection: 'row', alignItems: 'center' },
+  length: { marginLeft: 12, alignSelf: 'center' },
   photo: { borderWidth: 3, borderColor: bitepal.card },
   overlap: { marginLeft: -14 },
   listHead: {

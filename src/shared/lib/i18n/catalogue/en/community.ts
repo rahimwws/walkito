@@ -17,5 +17,4 @@ export const COMMUNITY_EN = {
   'follow.founder': 'Rahim, founder of Walkito',
   'follow.cta': 'Follow on Instagram',
   'follow.later': 'Not now',
-  'follow.rowHint': 'Short moves for your feet and what’s new',
 } as const satisfies Record<string, SourceEntry>;

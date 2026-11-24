@@ -96,7 +96,7 @@ export function ProgressPage() {
   const nextTest = results.length > 0 ? testDue() : null;
   const recap = weekRecap(weekAttendance(now, 1, now));
   const [year, month] = monthOf(today);
-  const monthCount = doneDaysIn(year, month, today).size;
+  const monthDone = doneDaysIn(year, month, today);
 
   return (
     <View style={styles.screen} {...REPLAY_MASK}>
@@ -126,7 +126,7 @@ export function ProgressPage() {
 
         <IntroReveal order={1} style={styles.stack}>
           <SessionsCard total={streak.total} recap={recap} />
-          <MonthCard count={monthCount} longest={streak.longest} onOpen={() => setMonthOpen(true)} />
+          <MonthCard today={today} done={monthDone} longest={streak.longest} onOpen={() => setMonthOpen(true)} />
         </IntroReveal>
 
         <IntroReveal order={2} style={styles.stack}>

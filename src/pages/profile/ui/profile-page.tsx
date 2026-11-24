@@ -7,7 +7,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { currentDay, useStreak } from '@/entities/program';
@@ -45,8 +45,9 @@ const NUMBER_SCALE = 1.7;
  * The person, as BitePal's character header (#97): a flat landscape with her
  * name and the day of the plan at the top left, the settings gear at the top
  * right and the mascot standing on the hill; then the two numbers this screen
- * honestly has as BitePal's number cards, and the rest as white grouped cards
- * with a colourful round icon on every row.
+ * honestly has as BitePal's number cards (an icon over the number and its
+ * unit, no label restating them), and the rest as white grouped cards with a
+ * colourful round icon on every row and no line of explanation under it.
  *
  * A pushed screen rather than a sheet: it is where the App Store's required
  * exits live (the subscription terms, the privacy policy in Settings, and
@@ -70,9 +71,19 @@ export function ProfilePage() {
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [followOpen, setFollowOpen] = useState(false);
 
-  const stats: { label: string; value: number; art: FluentName; tone: ColorValue }[] = [
-    { label: t('profile.dayStreak'), value: streak.current, art: 'seedling', tone: bodyColors.calf },
-    { label: t('profile.sessionsDone'), value: streak.total, art: 'strength', tone: bodyColors.heel },
+  const stats: { label: string; value: number; unit: string; art: FluentName }[] = [
+    {
+      label: t('profile.dayStreak'),
+      value: streak.current,
+      unit: t('sessionDone.month.unit', { count: streak.current }),
+      art: 'seedling',
+    },
+    {
+      label: t('profile.sessionsDone'),
+      value: streak.total,
+      unit: t('progress.unit.sessions', { count: streak.total }),
+      art: 'strength',
+    },
   ];
 
   return (
@@ -106,14 +117,12 @@ export function ProfilePage() {
           <View style={[styles.stats, large && styles.statsStacked]}>
             {stats.map((stat) => (
               <View key={stat.label} style={[styles.stat, !large && styles.statHalf]} accessible accessibilityLabel={stat.label + ', ' + stat.value}>
-                <View style={styles.statHead}>
-                  <Text style={styles.statLabel}>{stat.label}</Text>
-                  <View style={[styles.statIcon, { backgroundColor: bitepal.well }]}>
-                    <FluentIcon name={stat.art} size={24} />
-                  </View>
+                <View style={styles.statIcon}>
+                  <FluentIcon name={stat.art} size={24} />
                 </View>
                 <Text style={styles.statValue} maxFontSizeMultiplier={NUMBER_SCALE}>
                   {stat.value}
+                  <Text style={styles.statUnit}>{' ' + stat.unit}</Text>
                 </Text>
               </View>
             ))}
@@ -126,7 +135,6 @@ export function ProfilePage() {
               icon={INSTAGRAM.icon}
               tone={bodyColors.heel}
               label={t('follow.title')}
-              hint={t('follow.rowHint')}
               onPress={() => {
                 track('instagram_offer_viewed', { from: 'profile' });
                 setFollowOpen(true);
@@ -239,10 +247,16 @@ const styles = StyleSheet.create({
   },
   stats: { flexDirection: 'row', gap: 12 },
   statsStacked: { flexDirection: 'column' },
-  stat: { backgroundColor: bitepal.card, borderRadius: bitepal.cardRadius, borderCurve: 'continuous', padding: 18, gap: 6 },
+  stat: { backgroundColor: bitepal.card, borderRadius: bitepal.cardRadius, borderCurve: 'continuous', padding: 18, gap: 10 },
   statHalf: { flex: 1 },
-  statHead: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
-  statLabel: { ...fonts.semibold(17), color: colors.text3, flex: 1 },
-  statIcon: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
+  statIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: bitepal.well,
+  },
   statValue: { ...fonts.heavy(44, -1), color: colors.text, fontVariant: ['tabular-nums'] },
+  statUnit: { ...fonts.bold(19, 0), color: colors.text3 },
 });

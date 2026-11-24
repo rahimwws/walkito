@@ -76,9 +76,6 @@ export const PROGRESS_RU = {
   'progress.goalReached': 'Достигнута',
   'progress.streakCaption': 'Тяжёлые дни и дни по 2 минуты тоже считаются.',
   // ── The redesigned screen ────────────────────────────────────────────────
-  'progress.avgWeek': 'В среднем за последние 7 дней',
-  'progress.avgMonth': 'В среднем за последний месяц',
-  'progress.avgQuarter': 'В среднем за последние 3 месяца',
   'progress.painOutOf': '/10',
   'progress.deltaWeek': '{delta} к прошлой неделе',
   'progress.deltaMonth': '{delta} к прошлому месяцу',
@@ -119,8 +116,9 @@ export const PROGRESS_RU = {
   'progress.heatA11y': '{done} из {total} дней за последние 4 недели',
 
   // ── Прогресс в карточках BitePal ─────────────────────────────────────────
-  'progress.sessionsTotal': 'Занятий всего',
   'progress.sessionsA11y': { one: '{count} занятие всего', few: '{count} занятия всего', many: '{count} занятий всего' },
+  'progress.unit.sessions': { one: 'занятие', few: 'занятия', many: 'занятий' },
+  'progress.unit.checkins': { one: 'отметка', few: 'отметки', many: 'отметок' },
   'progress.month.hint': 'Открывает месяц',
   'progress.month.longest': 'Самая длинная серия: {days}',
   'progress.month.sheetTitle': {

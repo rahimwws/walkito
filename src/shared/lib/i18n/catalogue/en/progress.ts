@@ -79,9 +79,6 @@ export const PROGRESS_EN = {
   // ── The redesigned screen ────────────────────────────────────────────────
   // Morning pain card. `{delta}` arrives signed and formatted ("-1.2"), so the
   // sentence only places it.
-  'progress.avgWeek': 'Average over the last 7 days',
-  'progress.avgMonth': 'Average over the last month',
-  'progress.avgQuarter': 'Average over the last 3 months',
   'progress.painOutOf': '/10',
   'progress.deltaWeek': '{delta} vs the week before',
   'progress.deltaMonth': '{delta} vs the month before',
@@ -135,8 +132,10 @@ export const PROGRESS_EN = {
   'progress.heatA11y': '{done} of {total} days in the last 4 weeks',
 
   // Progress in BitePal's cards.
-  'progress.sessionsTotal': 'Sessions so far',
   'progress.sessionsA11y': { one: '{count} session so far', other: '{count} sessions so far' },
+  /** A count's unit, set smaller beside the big number: "9 sessions". */
+  'progress.unit.sessions': { one: 'session', other: 'sessions' },
+  'progress.unit.checkins': { one: 'check-in', other: 'check-ins' },
   'progress.month.hint': 'Opens the month',
   'progress.month.longest': 'Longest run: {days}',
   'progress.month.sheetTitle': { one: 'day done this month', other: 'days done this month' },

@@ -29,7 +29,6 @@ export function OfferSettings() {
         icon={Megaphone01Icon}
         tone={bodyColors.heel}
         label={t('settings.notifications.offers')}
-        hint={t('settings.notifications.offersHint')}
         accessory={
           <Switch
             value={on}

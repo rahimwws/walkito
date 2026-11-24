@@ -1,14 +1,16 @@
+import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import Timer01Icon from '@hugeicons/core-free-icons/Timer01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Pressable, StyleSheet, Text, View, useWindowDimensions, type ColorValue } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import { TEST_LOOK, type SessionMinutes } from '@/entities/program';
 import {
   CHROME_MAX_FONT_SCALE,
   bitepal,
-  bodyColors,
   colors,
   fonts,
   parts,
@@ -16,10 +18,11 @@ import {
   type BodyPart,
 } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
-import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { Mascot, handsUpRig, sleepingRig } from '@/shared/ui/mascot';
+import { MetaChip } from '@/shared/ui/meta-chip';
 import { PartIcon } from '@/shared/ui/part-icon';
-import { BigNumber, Capsule, CardLabel, MoveCircle, Ring, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
+import { BigNumber, Capsule, MoveCircle, Ring, TITLE_SCALE, cardStyle } from '@/widgets/session-player';
 
 import type { TodayVariant } from '../model/plan-view';
 import { WaitCaption } from './wait-caption';
@@ -35,6 +38,8 @@ export type TodayMove = {
   id: string;
   title: string;
   dose: string;
+  /** A hold or a timed move: its chip is a timer rather than a repeat. */
+  timed: boolean;
   done: boolean;
 };
 
@@ -59,6 +64,8 @@ export type TodayPlanCardProps = {
   onStart: () => void;
   /** "Not up for it?": the 2-minute version instead. */
   onShort?: () => void;
+  /** How long that short version runs, for its chip beside Start. */
+  shortMinutes: number;
   /** Why today differs from the plan: a big day yesterday, a short night. */
   note?: string | null;
   /** A test day: what the three tests are for. */
@@ -89,17 +96,19 @@ const TESTS: readonly {
 ];
 
 /**
- * Today on the plan, as BitePal's home card (#98, #99): the grey label, the
- * minutes as the big number with the ring of moves done, the minutes to
- * choose, the moves with their pictures on the colour of the part they work,
- * and Start as the screen's one black button.
+ * Today on the plan, as BitePal's home card (#98, #99): the minutes as the big
+ * number with the ring of moves done, the minutes to choose, the moves with
+ * their pictures on the colour of the part they work and their dose as a chip,
+ * and Start as the screen's one black button with the short version as a bolt
+ * chip beside it. The week strip above already says which day it is, so the
+ * card carries no "Today" label.
  *
  * A test day shows the three tests on their parts' colours; a rest day the
  * mascot asleep (BitePal's character in its empty state) and the wait; a
  * finished day "Done" with what it earned and the mascot's hands up.
  */
 export function TodayPlanCard(props: TodayPlanCardProps) {
-  const { variant, title, minutes, choice, onChoice, moves, onStart, onShort, note, testBody, restRoutine, nextAt } =
+  const { variant, title, minutes, choice, onChoice, moves, onStart, onShort, shortMinutes, note, testBody, restRoutine, nextAt } =
     props;
   const { earned, onResults, onPreview, active, locked = false } = props;
   const t = useT();
@@ -122,7 +131,6 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
     <View style={styles.card}>
       <View style={[styles.head, large && styles.headLarge]}>
         <View style={styles.headText}>
-          <CardLabel>{t('pages.plan.todayEyebrow')}</CardLabel>
           <BigNumber value={big} size={working ? 44 : 34} maxScale={BIG_SCALE} />
         </View>
         {working && moves.length > 0 && (
@@ -178,7 +186,7 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
                 <Text style={styles.moveName} maxFontSizeMultiplier={TITLE_SCALE}>
                   {move.title}
                 </Text>
-                <Text style={styles.moveDose}>{move.dose}</Text>
+                <MetaChip icon={move.timed ? Timer01Icon : RepeatIcon} label={move.dose} />
               </View>
               <View style={[styles.tick, move.done && styles.tickDone, huge && styles.tickHuge]}>
                 {move.done && <HugeiconsIcon icon={Tick02Icon} size={18} color={bitepal.onPrimary} strokeWidth={2.6} />}
@@ -225,29 +233,30 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
         <>
           <View style={[styles.stats, large && styles.statsLarge]}>
             <Stat
-              label={t('pages.plan.earnedMinutes')}
-              value={earned.minutes}
+              art="timer"
+              value={t('quick.minutes', { count: earned.minutes })}
               a11y={t('pages.plan.earnedMinutesA11y', {
                 count: earned.minutes,
               })}
-              color={bodyColors.heel}
             />
             <Stat
-              label={earned.test ? t('pages.plan.earnedTests') : t('pages.plan.earnedMoves')}
-              value={earned.count}
+              art={earned.test ? 'test' : 'strength'}
+              value={
+                earned.test
+                  ? t('pages.program.testCount', { count: earned.count })
+                  : t('quick.moves', { count: earned.count })
+              }
               a11y={
                 earned.test
                   ? t('pages.plan.earnedTestsA11y', { count: earned.count })
                   : t('pages.plan.earnedMovesA11y', { count: earned.count })
               }
-              color={bodyColors.arch}
             />
             {earned.streak > 1 && (
               <Stat
-                label={t('pages.plan.earnedStreak')}
-                value={earned.streak}
-                a11y={`${t('pages.plan.earnedStreak')}: ${earned.streak}`}
-                color={bodyColors.calf}
+                art="fire"
+                value={t('streak.dayCount', { count: earned.streak })}
+                a11y={t('home.daysInARow', { count: earned.streak })}
               />
             )}
           </View>
@@ -264,33 +273,41 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
       )}
 
       {(working || variant === 'test') && (
-        <Capsule
-          label={t('pages.plan.start')}
-          icon={locked ? SquareLock02Icon : undefined}
-          accessibilityLabel={locked ? `${t('pages.plan.start')}, ${t('quick.locked')}` : undefined}
-          onPress={onStart}
-          style={styles.start}
-        />
-      )}
-      {working && onShort != null && (
-        <Pressable
-          accessibilityRole="button"
-          onPress={onShort}
-          style={({ pressed }) => [styles.short, pressed && styles.pressed]}>
-          <Text style={styles.shortText}>{t('pages.plan.notUpForIt')}</Text>
-        </Pressable>
+        <View style={[styles.actions, large && styles.actionsLarge]}>
+          <Capsule
+            label={t('pages.plan.start')}
+            icon={locked ? SquareLock02Icon : undefined}
+            accessibilityLabel={locked ? `${t('pages.plan.start')}, ${t('quick.locked')}` : undefined}
+            onPress={onStart}
+            style={!large && styles.startGrow}
+          />
+          {working && onShort != null && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('pages.plan.notUpForIt')}
+              onPress={() => {
+                void Haptics.selectionAsync();
+                onShort();
+              }}
+              style={({ pressed }) => [styles.short, pressed && styles.pressed]}>
+              <HugeiconsIcon icon={FlashIcon} size={20} color={colors.text} strokeWidth={2} />
+              <Text style={styles.shortText} maxFontSizeMultiplier={TITLE_SCALE}>
+                {t('session.minutes', { count: shortMinutes })}
+              </Text>
+            </Pressable>
+          )}
+        </View>
       )}
     </View>
   );
 }
 
-/** One figure of what the day earned, as BitePal's carbs/fats/proteins (#98): a part's colour beside the grey label, the heavy number under it. */
-function Stat({ label, value, a11y, color }: { label: string; value: number; a11y: string; color: ColorValue }) {
+/** One figure of what the day earned: its drawing over the counted figure, "5 min", "2 moves", "6 days". */
+function Stat({ art, value, a11y }: { art: FluentName; value: string; a11y: string }) {
   return (
     <View style={styles.stat} accessible accessibilityLabel={a11y}>
-      <View style={styles.statHead}>
-        <View style={[styles.statDot, { backgroundColor: color }]} />
-        <Text style={styles.statLabel}>{label}</Text>
+      <View style={styles.statIcon}>
+        <FluentIcon name={art} size={24} />
       </View>
       <Text style={styles.statValue} maxFontSizeMultiplier={BIG_SCALE}>
         {value}
@@ -377,9 +394,8 @@ const styles = StyleSheet.create({
     minHeight: target.min + 8,
   },
   moveHuge: { flexDirection: 'column', alignItems: 'flex-start', gap: 6 },
-  moveText: { flexGrow: 1, flexShrink: 1, gap: 1 },
+  moveText: { flexGrow: 1, flexShrink: 1, gap: 4 },
   moveName: { ...fonts.semibold(19), color: colors.text },
-  moveDose: { ...fonts.medium(17), color: colors.text3 },
   tick: {
     width: 30,
     height: 30,
@@ -418,25 +434,36 @@ const styles = StyleSheet.create({
   pillText: { ...fonts.semibold(17), color: colors.text, flexShrink: 1 },
   stats: { flexDirection: 'row', gap: 16 },
   statsLarge: { flexDirection: 'column', gap: 12 },
-  stat: { flex: 1, gap: 6, justifyContent: 'space-between' },
-  statLabel: { ...fonts.medium(17), color: colors.text3 },
-  statHead: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-  statDot: { width: 10, height: 10, borderRadius: 5 },
-  statValue: {
-    ...fonts.heavy(28, -0.6),
-    color: colors.text,
-    fontVariant: ['tabular-nums'],
-  },
-  start: { marginTop: 6 },
-  short: {
-    minHeight: target.min,
+  stat: { flex: 1, gap: 8 },
+  statIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: bitepal.well,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  statValue: {
+    ...fonts.heavy(22, -0.4),
+    color: colors.text,
+    fontVariant: ['tabular-nums'],
+  },
+  actions: { flexDirection: 'row', alignItems: 'stretch', gap: 10, marginTop: 6 },
+  actionsLarge: { flexDirection: 'column' },
+  startGrow: { flex: 1 },
+  short: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    minHeight: target.primary,
+    paddingHorizontal: 18,
+    borderRadius: 999,
+    backgroundColor: bitepal.well,
+  },
   shortText: {
     ...fonts.semibold(17),
-    color: colors.text2,
-    textAlign: 'center',
+    color: colors.text,
   },
   pressed: { opacity: 0.55 },
 });

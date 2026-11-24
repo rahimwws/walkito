@@ -3,7 +3,6 @@
 export const QUICK_ES = {
   'quick.title': 'Rápido',
   'quick.subtitle': 'Para cuando lo necesitas ya',
-  'quick.featured': 'Ahora mismo',
   'quick.situations': 'Situaciones',
   'quick.bodyParts': 'Zonas',
   'quick.allMoves': 'Todos los ejercicios',

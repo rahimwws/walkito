@@ -13,10 +13,7 @@ export const RECAP_EN = {
   /** Nothing has counted yet this week. A welcome, never a zero. */
   'weekRecap.titleNone': 'Your week starts today',
 
-  // ── The three tiles: headers, then read out whole ────────────────────────
-  'weekRecap.showedUp': 'Showed up',
-  'weekRecap.sessions': 'Sessions done',
-  'weekRecap.checkins': 'Check-ins',
+  // ── The three tiles, read out whole (they show `progress.unit.*`) ───────
   'weekRecap.showedUpA11y': { one: 'Showed up {count} day', other: 'Showed up {count} days' },
   'weekRecap.sessionsA11y': { one: '{count} session done', other: '{count} sessions done' },
   'weekRecap.checkinsA11y': { one: '{count} check-in', other: '{count} check-ins' },

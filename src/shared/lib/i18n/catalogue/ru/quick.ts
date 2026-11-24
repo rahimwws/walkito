@@ -3,7 +3,6 @@
 export const QUICK_RU = {
   'quick.title': 'Быстро',
   'quick.subtitle': 'Когда нужно прямо сейчас',
-  'quick.featured': 'Сейчас подойдёт',
   'quick.situations': 'Ситуации',
   'quick.bodyParts': 'Зоны',
   'quick.allMoves': 'Все упражнения',

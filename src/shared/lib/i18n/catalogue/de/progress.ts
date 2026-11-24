@@ -66,9 +66,6 @@ export const PROGRESS_DE = {
   'progress.goalReached': 'Erreicht',
   'progress.streakCaption': 'Schwere Tage und 2-Minuten-Tage zählen alle.',
   // ── The redesigned screen ────────────────────────────────────────────────
-  'progress.avgWeek': 'Schnitt der letzten 7 Tage',
-  'progress.avgMonth': 'Schnitt des letzten Monats',
-  'progress.avgQuarter': 'Schnitt der letzten 3 Monate',
   'progress.painOutOf': '/10',
   'progress.deltaWeek': '{delta} zur Woche davor',
   'progress.deltaMonth': '{delta} zum Monat davor',
@@ -109,8 +106,9 @@ export const PROGRESS_DE = {
   'progress.heatA11y': '{done} von {total} Tagen in den letzten 4 Wochen',
 
   // Fortschritt in BitePal-Karten.
-  'progress.sessionsTotal': 'Einheiten bisher',
   'progress.sessionsA11y': { one: '{count} Einheit bisher', other: '{count} Einheiten bisher' },
+  'progress.unit.sessions': { one: 'Einheit', other: 'Einheiten' },
+  'progress.unit.checkins': { one: 'Check-in', other: 'Check-ins' },
   'progress.month.hint': 'Öffnet den Monat',
   'progress.month.longest': 'Längste Serie: {days}',
   'progress.month.sheetTitle': { one: 'Tag geschafft diesen Monat', other: 'Tage geschafft diesen Monat' },

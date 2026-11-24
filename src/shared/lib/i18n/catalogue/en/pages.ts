@@ -211,7 +211,6 @@ export const PAGES_EN = {
   'pages.plan.short.calf_raises': 'calves',
   'pages.plan.short.balance': 'balance',
   'pages.plan.short.symmetry': 'both feet',
-  'pages.plan.todayEyebrow': 'Today',
   'pages.plan.todayTitle': '{kind} · {goal}',
   'pages.plan.easyDay': 'Easy day · seated',
   'pages.plan.start': 'Start',
@@ -289,13 +288,9 @@ export const PAGES_EN = {
   'pages.plan.moveDoneA11y': '{name}, done',
 
   // ── A finished day: what it earned, and tomorrow ─────────────────────────
-  /** The tiles' headers. Three share a card's width: keep them short. */
-  'pages.plan.earnedMinutes': 'Minutes',
-  'pages.plan.earnedMoves': 'Moves',
-  /** On a test day, in place of the moves. */
-  'pages.plan.earnedTests': 'Tests',
-  'pages.plan.earnedStreak': 'Days in a row',
-  /** Each tile read aloud as one. The streak's is `streakSheet.inARow`. */
+  /** Each tile read aloud as one. The streak's is `home.daysInARow`; the
+   * tiles themselves show `quick.minutes`, `quick.moves` or
+   * `pages.program.testCount`, and `streak.dayCount`. */
   'pages.plan.earnedMinutesA11y': { one: '{count} minute today', other: '{count} minutes today' },
   'pages.plan.earnedMovesA11y': { one: '{count} move done today', other: '{count} moves done today' },
   'pages.plan.earnedTestsA11y': { one: '{count} test done today', other: '{count} tests done today' },

@@ -23,7 +23,6 @@ export function SoundSettings() {
         icon={VolumeHighIcon}
         tone={bodyColors.arch}
         label={t('settings.sound.tempo')}
-        hint={t('settings.sound.tempoHint')}
         accessory={
           <Switch
             value={sound.tempo}
@@ -41,7 +40,6 @@ export function SoundSettings() {
         icon={Mic01Icon}
         tone={bodyColors.calf}
         label={t('settings.sound.voice')}
-        hint={t('settings.sound.voiceHint')}
         disabled={!sound.tempo}
         accessory={
           <Switch

@@ -59,7 +59,6 @@ export const PROFILE_EN = {
 
   // ── Reset row (development builds only) ──────────────────────────────────
   'profile.resetLabel': 'Reset to first screen',
-  'profile.resetHint': 'Development build only',
   'profile.resetA11y': 'Reset to the first screen',
   'profile.resetAlertTitle': 'Start from the first screen?',
   'profile.resetAlertBody':
@@ -71,5 +70,4 @@ export const PROFILE_EN = {
   // the shipped rows, and one English line among them is how a reviewer
   // discovers the row was never meant to be there.
   'profile.notePreviewLabel': 'Preview the note',
-  'profile.notePreviewHint': 'The one shown at the end of onboarding',
 } as const satisfies Record<string, SourceEntry>;

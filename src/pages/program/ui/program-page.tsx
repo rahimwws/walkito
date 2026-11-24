@@ -459,6 +459,7 @@ export function ProgramPage() {
             id: e.id,
             title: exercise.title,
             dose: doseLabel(e.dose.sets, e.dose.reps, e.dose.holdSec, e.dose.perSide),
+            timed: e.dose.reps == null,
             done: ticked.includes(e.id),
           };
         })
@@ -569,6 +570,7 @@ export function ProgramPage() {
                 moves={checklist}
                 onStart={() => startToday(false, true)}
                 onShort={() => startToday(true)}
+                shortMinutes={twoMinuteVersion(adjusted).minutes}
                 note={planReasonLine(t, adjusted.reason)}
                 testBody={testBody}
                 restRoutine={{

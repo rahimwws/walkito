@@ -27,9 +27,9 @@ import { SubscriptionSettings } from './subscription-settings';
  * privacy policy looks finished; one that shows it unavailable is a reminder
  * that it is not.
  */
-const LINKS: { label: Key; hint: Key; url: string; icon: IconSvgElement; tone: ColorValue }[] = [
-  { label: 'settings.terms', hint: 'settings.termsHint', url: LEGAL.terms, icon: File01Icon, tone: bodyColors.arch },
-  { label: 'settings.privacy', hint: 'settings.privacyHint', url: LEGAL.privacy, icon: Shield01Icon, tone: bodyColors.ankle },
+const LINKS: { label: Key; url: string; icon: IconSvgElement; tone: ColorValue }[] = [
+  { label: 'settings.terms', url: LEGAL.terms, icon: File01Icon, tone: bodyColors.arch },
+  { label: 'settings.privacy', url: LEGAL.privacy, icon: Shield01Icon, tone: bodyColors.ankle },
 ];
 
 /**
@@ -39,6 +39,8 @@ const LINKS: { label: Key; hint: Key; url: string; icon: IconSvgElement; tone: C
  * sheet is a second dismiss for nothing), the plan, the subscription, sound,
  * notifications and email, then what App Review asks to be findable: writing
  * to us, the documents and the line that says this is not medical advice.
+ * A row's icon and label say what it is; only a value (where it hurts, when a
+ * plan renews) or a state (not published, could not load) earns a second line.
  */
 export function SettingsPage() {
   const insets = useSafeAreaInsets();
@@ -72,7 +74,6 @@ export function SettingsPage() {
           icon={MessageEdit01Icon}
           tone={bodyColors.calf}
           label={t('settings.write')}
-          hint={t('settings.writeHint')}
           role="link"
           trailingIcon={ArrowUpRight01Icon}
           onPress={() => writeToUs(t)}
@@ -85,7 +86,7 @@ export function SettingsPage() {
               icon={link.icon}
               tone={link.tone}
               label={t(link.label)}
-              hint={ready ? t(link.hint) : t('settings.unpublished')}
+              hint={ready ? undefined : t('settings.unpublished')}
               role="link"
               trailingIcon={ArrowUpRight01Icon}
               disabled={!ready}

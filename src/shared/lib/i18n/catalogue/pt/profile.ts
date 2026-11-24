@@ -38,7 +38,6 @@ export const PROFILE_PT = {
 
   // ── Reset row (development builds only) ──────────────────────────────────
   'profile.resetLabel': 'Voltar à primeira tela',
-  'profile.resetHint': 'Só em versões de desenvolvimento',
   'profile.resetA11y': 'Voltar à primeira tela',
   'profile.resetAlertTitle': 'Começar da primeira tela?',
   'profile.resetAlertBody':
@@ -46,5 +45,4 @@ export const PROFILE_PT = {
   'profile.resetCancel': 'Cancelar',
   'profile.resetConfirm': 'Redefinir',
   'profile.notePreviewLabel': 'Ver o recado',
-  'profile.notePreviewHint': 'O que aparece no fim do onboarding',
 };

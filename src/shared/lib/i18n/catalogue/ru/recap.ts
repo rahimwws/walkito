@@ -10,9 +10,6 @@ export const RECAP_RU = {
   },
   'weekRecap.titleNone': 'Ваша неделя начинается сегодня',
 
-  'weekRecap.showedUp': 'Засчитано',
-  'weekRecap.sessions': 'Занятия',
-  'weekRecap.checkins': 'Отметки',
   'weekRecap.showedUpA11y': {
     one: '{count} день засчитан',
     few: '{count} дня засчитаны',

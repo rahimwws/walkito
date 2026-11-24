@@ -1,3 +1,4 @@
+import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import type { ReactNode } from 'react';
 import { StyleSheet, Text, View, useWindowDimensions, type ColorValue, type StyleProp, type ViewStyle } from 'react-native';
 
@@ -47,10 +48,30 @@ export function IconDisc({ name, tone, size = 52 }: { name: FluentName; tone: Co
   );
 }
 
-/** A change as a small capsule: green only for an improvement, grey otherwise. */
-export function Chip({ label, improving = false }: { label: string; improving?: boolean }) {
+/**
+ * A change as a small capsule: green only for an improvement, grey otherwise.
+ * With an icon it is the figure alone ("↓ 1.2"), and `accessibilityLabel`
+ * says what it is measured against.
+ */
+export function Chip({
+  label,
+  icon,
+  improving = false,
+  accessibilityLabel,
+}: {
+  label: string;
+  icon?: IconSvgElement;
+  improving?: boolean;
+  accessibilityLabel?: string;
+}) {
   return (
-    <View style={[styles.chip, improving && styles.chipGood]}>
+    <View
+      style={[styles.chip, improving && styles.chipGood]}
+      accessible={accessibilityLabel != null}
+      accessibilityLabel={accessibilityLabel}>
+      {icon != null && (
+        <HugeiconsIcon icon={icon} size={18} color={improving ? colors.good : colors.text2} strokeWidth={2.2} />
+      )}
       <Text style={[styles.chipText, improving && styles.chipTextGood]}>{label}</Text>
     </View>
   );
@@ -84,6 +105,9 @@ const styles = StyleSheet.create({
   headText: { flexGrow: 1, flexShrink: 1, alignSelf: 'stretch', gap: 2 },
   disc: { alignItems: 'center', justifyContent: 'center' },
   chip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
     alignSelf: 'flex-start',
     borderRadius: 999,
     paddingHorizontal: 12,
@@ -91,7 +115,7 @@ const styles = StyleSheet.create({
     backgroundColor: bitepal.well,
   },
   chipGood: { backgroundColor: soft(colors.good, 0.14) },
-  chipText: { ...fonts.semibold(17), color: colors.text2 },
+  chipText: { ...fonts.semibold(17), color: colors.text2, fontVariant: ['tabular-nums'] },
   chipTextGood: { color: colors.good },
   sub: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   subText: { flex: 1, gap: 2 },
