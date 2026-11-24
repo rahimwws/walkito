@@ -1,17 +1,17 @@
 /** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
- * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito" stays as it is). */
 
 export const CANCEL_FR = {
   'cancel.row.section': 'Abonnement',
   'cancel.row.manage': 'Gérer l’abonnement',
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   'cancel.row.renewsAnnual': 'Abonnement annuel, renouvelé le {date}',
   'cancel.row.renewsMonthly': 'Abonnement mensuel, renouvelé le {date}',
   'cancel.row.renewsWeekly': 'Abonnement hebdomadaire, renouvelé le {date}',
   'cancel.row.trial': 'Essai gratuit jusqu’au {date}, puis ton abonnement se renouvelle',
-  'cancel.row.ends': 'Le renouvellement est désactivé. Walkito Plus reste actif jusqu’au {date}.',
+  'cancel.row.ends': 'Le renouvellement est désactivé. Walkito reste actif jusqu’au {date}.',
   'cancel.row.lifetime': 'À vie',
-  'cancel.row.lifetimeHint': 'Walkito Plus est à toi pour de bon. Rien ne se renouvelle.',
+  'cancel.row.lifetimeHint': 'Walkito est à toi pour de bon. Rien ne se renouvelle.',
 
   'cancel.title': 'Pourquoi tu pars ?',
   'cancel.sub': 'Choisis la réponse la plus proche. Ça nous aide à améliorer Walkito.',
@@ -47,9 +47,9 @@ export const CANCEL_FR = {
   'cancel.pause.title': 'Parfois, une pause fait du bien',
   'cancel.pause.freeMonthTitle': 'Un mois offert',
   'cancel.pause.freeMonthBody':
-    'Garde ton plan, et ton prochain mois ne coûte rien. Ensuite, Walkito Plus se renouvelle comme aujourd’hui.',
+    'Garde ton plan, et ton prochain mois ne coûte rien. Ensuite, ton abonnement Walkito se renouvelle comme aujourd’hui.',
   'cancel.pause.freeMonthBodyYear':
-    'Garde ton plan, et quand l’année que tu as payée se termine, le mois suivant ne coûte rien. Ensuite, Walkito Plus se renouvelle comme aujourd’hui.',
+    'Garde ton plan, et quand l’année que tu as payée se termine, le mois suivant ne coûte rien. Ensuite, ton abonnement Walkito se renouvelle comme aujourd’hui.',
   'cancel.pause.freeMonthCta': 'Profiter du mois offert',
   'cancel.pause.freeMonthTerms':
     'Le mois offert commence à ton prochain renouvellement. Tu peux toujours résilier à tout moment dans les réglages de tes abonnements.',

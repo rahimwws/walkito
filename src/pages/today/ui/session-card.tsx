@@ -1,4 +1,5 @@
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 import type { PlanKind } from '@/entities/profile';
@@ -23,6 +24,8 @@ export type SessionCardProps = {
   /** Today is in front: the next-session countdown ticks only then. */
   active: boolean;
   startLabel: string;
+  /** Start raises the plans rather than starting: the round action is a lock. */
+  locked: boolean;
   onStart: () => void;
   onWhy: () => void;
 };
@@ -39,7 +42,7 @@ const BIG_MAX_SCALE = 1.7;
  * done, the moves as label-and-value rows with their part icons, and the
  * moves' photos in a row of overlapping circles.
  */
-export function SessionCard({ work, kind, ranToday, next, active, startLabel, onStart, onWhy }: SessionCardProps) {
+export function SessionCard({ work, kind, ranToday, next, active, startLabel, locked, onStart, onWhy }: SessionCardProps) {
   const t = useT();
   const language = useLanguage();
   const large = useWindowDimensions().fontScale >= 1.35;
@@ -66,7 +69,7 @@ export function SessionCard({ work, kind, ranToday, next, active, startLabel, on
           </Text>
         </View>
         <RoundAction
-          icon={PlayIcon}
+          icon={locked ? SquareLock02Icon : PlayIcon}
           label={startLabel}
           onPress={onStart}
           progress={total > 0 && !work.done ? work.ticked / total : work.done ? 1 : undefined}

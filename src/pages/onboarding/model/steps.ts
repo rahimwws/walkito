@@ -21,6 +21,7 @@ import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { chose } from './answers';
 import { heelAsked, roleOf, runs, standsAtWork } from './journey';
+import { notifyAfterDayOne, withNotifyAfterDayOne } from './notify-placement';
 import { moved } from './story';
 
 /**
@@ -653,6 +654,14 @@ export const STEPS: readonly OnboardingStep[] = [
 
 export const STEP_COUNT = STEPS.length;
 
+const STEPS_NOTIFY_AFTER_DAY_ONE = withNotifyAfterDayOne(STEPS);
+
+/** The steps in the order this person meets them (`notify-placement.ts`):
+ * `STEPS` until the order is decided, and for everyone in the control. */
+export function onboardingSteps(): readonly OnboardingStep[] {
+  return notifyAfterDayOne() === true ? STEPS_NOTIFY_AFTER_DAY_ONE : STEPS;
+}
+
 /**
  * The next step in a direction, stepping over anything that does not apply.
  *
@@ -665,10 +674,11 @@ export function stepAfter(
   from: number,
   forward: boolean,
   answers: Readonly<Record<string, unknown>>,
+  steps: readonly OnboardingStep[] = onboardingSteps(),
 ): number | null {
   const step = forward ? 1 : -1;
-  for (let i = from + step; i >= 0 && i < STEPS.length; i += step) {
-    if (STEPS[i].skipWhen?.(answers) !== true) return i;
+  for (let i = from + step; i >= 0 && i < steps.length; i += step) {
+    if (steps[i].skipWhen?.(answers) !== true) return i;
   }
   return null;
 }

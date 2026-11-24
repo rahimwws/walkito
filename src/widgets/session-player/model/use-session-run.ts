@@ -164,6 +164,9 @@ const PAIN_RULE_SEEN_KEY = 'player/pain-rule-seen';
  * is finer than the whole-second readout needs, and nothing on screen follows
  * the playhead continuously any more. */
 const TICK_MS = 250;
+/** How long a note under the move ("Swapped for …", "Skipped for today …")
+ * stays before it goes. */
+const NOTE_MS = 4_000;
 
 /**
  * How long one move runs, and whether it runs in phases.
@@ -312,20 +315,34 @@ export type SessionViewProps = {
   moves?: readonly string[];
   /** The last move ran out. Fires once, and not on the way back — leaving early
    * is not finishing. */
-  onFinish?: () => void;
+  onFinish?: (outcome: SessionOutcome) => void;
   /**
    * The last move ran out, at that instant: before the closing sheet, so a
    * host can tell a session that was finished from one that was left, when
    * its sheet is swiped away over the closing sheet and `onFinish` never
    * comes. Fires once.
    */
-  onComplete?: () => void;
+  onComplete?: (outcome: SessionOutcome) => void;
   /**
    * Ask "Could you have done 2 more good reps?" in the closing sheet. On for
    * every session — Plan, Home's tasks, the Library — and never after a session
    * stopped on pain, which already said how it went.
    */
   feedback?: boolean;
+  /**
+   * What the place this session was left at is kept under, for coming back to
+   * it (`session-resume.ts`). The plan's session passes its day's date, which
+   * stays the same when today is planned again; without one the session is
+   * known by its list of moves.
+   */
+  resumeKey?: string;
+};
+
+/** How a finished run went, for the host that files it. */
+export type SessionOutcome = {
+  /** Exercises passed over with Skip, by id: for today only, still in the
+   * plan. Filed as skipped rather than done. */
+  skipped: readonly string[];
 };
 
 /**
@@ -341,6 +358,7 @@ export function useSessionRun({
   playlist,
   cue,
   onComplete,
+  resumeKey,
 }: SessionViewProps) {
   // A fresh record for this run: nothing the last session said carries over.
   const [sessionToken] = useState(() => beginSession());
@@ -426,14 +444,25 @@ export function useSessionRun({
 
   /** What this session is called for the purpose of coming back to it. */
   const resumeId =
-    playlist != null
+    resumeKey ??
+    (playlist != null
       ? `playlist:${playlist.map((step) => step.exerciseId).join(',')}`
       : override != null
         ? `moves:${day.day}:${override.join('|')}`
-        : `day:${day.day}`;
+        : `day:${day.day}`);
+  /** The moves as planned, by exercise id: what a saved place is matched
+   * against, and what Skip files. A move swapped in by "Can't do this" stands
+   * in its slot under the planned move's id, as the hosts file it. */
+  const moveIds = basePlan.map((entry) => entry.exercise?.id ?? '');
+  const moveIdsRef = useRef(moveIds);
+  moveIdsRef.current = moveIds;
   /** Read once, at mount. The player is keyed per run by its hosts, so this is
    * the place the run starts from, not something to follow afterwards. */
-  const [resume] = useState(() => readResume(resumeId, plan.length));
+  const [resume] = useState(() => readResume(resumeId, moveIds));
+  /** Moves passed over with Skip, by exercise id. See `skipMove`. */
+  const [skipped, setSkipped] = useState<readonly string[]>(() => resume?.skipped ?? []);
+  const skippedRef = useRef(skipped);
+  skippedRef.current = skipped;
 
   /** When this player mounted, which is when the session began. A ref rather
    * than state: nothing renders from it, and it must survive every re-render
@@ -1008,7 +1037,7 @@ export function useSessionRun({
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-    onCompleteRef.current?.();
+    onCompleteRef.current?.({ skipped: skippedRef.current });
   }, [progress, deadline, endActivity, activitySnapshot, day, moves, resumeId]);
 
   /** On to the next move, or the end. No haptic of its own: the count-in's
@@ -1062,8 +1091,14 @@ export function useSessionRun({
 
   /** "Can't do this": paused while the reason is asked, like the pain question. */
   const [askingCantDo, setAskingCantDo] = useState(false);
-  /** Said for a moment under the header once a move has been swapped. */
+  /** Said for a moment under the header once a move has been swapped or
+   * skipped. */
   const [swapNote, setSwapNote] = useState<string | null>(null);
+  useEffect(() => {
+    if (swapNote == null) return;
+    const timer = setTimeout(() => setSwapNote(null), NOTE_MS);
+    return () => clearTimeout(timer);
+  }, [swapNote]);
 
   const pauseForQuestion = useCallback(() => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -1225,14 +1260,15 @@ export function useSessionRun({
   finishedRef.current = finished;
   const stepRef = useRef(step);
   stepRef.current = step;
-  /** Ended by hand ("End session"): nothing left to come back to, so the
-   * place is not written again on the way out. */
+  /** Ended by hand ("End session"), or every move skipped: nothing left to
+   * come back to, so the place is not written again on the way out. */
   const endedRef = useRef(false);
   const saveResume = useCallback(() => {
     if (resumeId == null || finishedRef.current || endedRef.current) return;
-    writeResume(resumeId, planRef.current.length, {
+    writeResume(resumeId, moveIdsRef.current, {
       step: stepRef.current,
       fraction: progress.value,
+      skipped: skippedRef.current,
     });
   }, [resumeId, progress]);
 
@@ -1525,12 +1561,48 @@ export function useSessionRun({
     countIn(false);
   }, [goTo, step, progress, deadline, player, countIn]);
 
-  /** On to the next move now; past the last one the session is over. */
-  const skipMove = useCallback(() => {
-    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+  /** The move is done before its clock: on to the next one; past the last
+   * one the session is over. Filed as done, like a move that ran out. */
+  const finishMove = useCallback(() => {
     setPlaying(true);
     advance();
   }, [advance]);
+
+  /**
+   * Skip: on to the next move, at once, with no question. For everybody and
+   * on every run (the trial, a subscriber, Day 1).
+   *
+   * For today only: the move stays in her plan. It is "Can't do this"'s
+   * move-to-next step without its other half: nothing is marked, nothing
+   * re-planned, and the move is filed as skipped for today
+   * (`SessionOutcome.skipped`), which the plan's "three skips and it is
+   * swapped out" rule does not count (`skippedForToday`, plan `store.ts`).
+   *
+   * The last move skipped finishes the run as a last move running out does.
+   * A run with every move skipped, though, did nothing: it is left as by
+   * "Pause", files nothing, and keeps no place to come back to.
+   */
+  const skipMove = useCallback(() => {
+    const id = moveIdsRef.current[step];
+    if (id == null || id === '') return;
+    track('exercise_skipped', { exercise: id, day: day.day });
+    const next = skippedRef.current.includes(id) ? skippedRef.current : [...skippedRef.current, id];
+    skippedRef.current = next;
+    setSkipped(next);
+    const lastMove = step + 1 >= planRef.current.length;
+    if (lastMove && moveIdsRef.current.every((move) => next.includes(move))) {
+      endedRef.current = true;
+      clearResume(resumeId);
+      setPlaying(false);
+      setCountFrom(null);
+      endActivity();
+      onBack();
+      return;
+    }
+    setSwapNote(t('player.skip.note'));
+    setPlaying(true);
+    advance();
+  }, [step, day, resumeId, endActivity, onBack, t, advance]);
 
   /**
    * The close button: "Pause or end?". Pausing is what leaving always was
@@ -1646,7 +1718,9 @@ export function useSessionRun({
     pauseByHand,
     resumeByHand,
     stepBack,
+    finishMove,
     skipMove,
+    skipped,
     askClose,
     advance,
     cueLine,

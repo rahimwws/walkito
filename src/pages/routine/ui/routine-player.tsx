@@ -71,16 +71,17 @@ export function RoutinePlayer({ protocol, onClose, onFinished }: Props) {
           title={t(protocol.titleKey)}
           free={protocol.free}
           onBack={onClose}
-          onFinish={() => {
+          onFinish={({ skipped }) => {
             recordSession({
               date: todayKey(),
               source: 'library',
               routineId: protocol.id,
               minutes: protocol.minutes,
-              exercises: protocol.steps.map((step) => ({
-                id: step.exerciseId,
-                status: 'done' as const,
-              })),
+              exercises: protocol.steps.map((step) =>
+                skipped.includes(step.exerciseId)
+                  ? { id: step.exerciseId, status: 'skipped' as const, skippedForToday: true as const }
+                  : { id: step.exerciseId, status: 'done' as const },
+              ),
               feedback: null,
               inSessionPain: null,
               completedAt: Date.now(),

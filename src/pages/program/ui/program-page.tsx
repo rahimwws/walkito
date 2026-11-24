@@ -54,8 +54,8 @@ import {
 } from '@/entities/program';
 import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
-import { askForPlans, lookingAround } from '@/entities/purchase';
-import { answerLockedPlanTap } from '@/features/home-tour';
+import { askForPlans, lookingAround, useLookingAround } from '@/entities/purchase';
+import { answerLockedPlanTap, usePlanSessionsLocked } from '@/features/home-tour';
 import { bitepal, colors as tokens, fonts, palette, space } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
@@ -178,6 +178,12 @@ export function ProgramPage() {
   const adjusted = todayPlan(todayHealthInputs(health), minutes, now);
   const doneToday = planSessionDone(today);
   const variant = todayVariant(adjusted, doneToday);
+  /** Looking around without buying: every session ahead is locked, and says
+   * so with a lock. Today's waits for Day 1 to be behind her (Day 1 is free);
+   * a test is locked from the start, as `start` treats it. */
+  const looking = useLookingAround();
+  const sessionLocked = usePlanSessionsLocked();
+  const locked = variant === 'test' ? looking : sessionLocked;
   /**
    * When the next session opens — the one answer the dock and Home read too.
    *
@@ -586,6 +592,7 @@ export function ProgramPage() {
                 onResults={adjusted.type === 'test' && tested ? () => start({ kind: 'test', review: true }) : undefined}
                 onPreview={openMove}
                 active={focused && session == null}
+                locked={locked}
               />
             </Animated.View>
           )}
@@ -606,6 +613,7 @@ export function ProgramPage() {
                 done={day.date < today && planSessionDone(day.date)}
                 testBody={testBody}
                 onPreview={openMove}
+                locked={looking}
               />
             </View>
           ))}
@@ -674,8 +682,12 @@ export function ProgramPage() {
             // A plan session is what the next ones are tuned from, so it is
             // the one that asks how it went.
             feedback
+            // Under the day's date, not its list of moves: a pain check or
+            // "Can't do this" plans today again, and the place she left is
+            // still hers.
+            resumeKey={`plan:${session.date}`}
             onBack={() => program?.closeDetail()}
-            onFinish={() => {
+            onFinish={({ skipped }) => {
               // The one way a plan session ends: the session list, the day
               // log and the sync, together. It never re-plans today — this
               // page used to rebuild the week here, and that is what turned a
@@ -685,6 +697,7 @@ export function ProgramPage() {
                 source: 'plan',
                 minutes: session.minutes,
                 exerciseIds: session.exerciseIds,
+                skippedIds: skipped,
               });
               program?.closeDetail();
             }}

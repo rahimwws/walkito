@@ -102,7 +102,7 @@ export const CORE_EN = {
   'settings.sound.voiceHint': 'Says “up, 2, 3, hold, down” instead of tones.',
   'settings.notifications.title': 'Notifications',
   'settings.notifications.offers': 'Offers and discounts',
-  'settings.notifications.offersHint': 'Now and then, a lower price on Walkito Plus.',
+  'settings.notifications.offersHint': 'Now and then, a lower price on Walkito.',
   'settings.equipment': 'What I have at home',
   'settings.equipment.step': 'A step',
   'settings.equipment.band': 'Resistance band',

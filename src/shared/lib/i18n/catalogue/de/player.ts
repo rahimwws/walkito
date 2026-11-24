@@ -34,6 +34,8 @@ export const PLAYER_DE = {
   'player.cantDo.hurts': 'Tut weh',
   'player.cantDo.swapped': 'Ersetzt durch {name}.',
   'player.cantDo.skipped': 'Heute passt hier nichts, also lassen wir diese aus.',
+  'player.skip.hint': 'Überspringt diese Übung für heute. Sie bleibt in deinem Plan.',
+  'player.skip.note': 'Für heute übersprungen. Die Übung bleibt in deinem Plan.',
   'player.load.backpack': 'Nimm einen Rucksack mit etwa 5-10% deines Körpergewichts. Fühlen sich 12 langsame Wiederholungen leicht an, nimm etwas mehr.',
   'player.painRule.title': 'Wie viel Schmerz ist okay?',
   'player.painRule.body': '0-3 ist in Ordnung. 4-5 ist okay, wenn es bis zum nächsten Morgen abklingt. Ab 6 - aufhören.',

@@ -6,7 +6,7 @@ import { colors, fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import type { FluentName } from '@/shared/ui/fluent-icon';
 
-import { useOpenRoutine } from '../model/use-open-routine';
+import { useOpenRoutine, useRoutineLocked } from '../model/use-open-routine';
 import { RoundArt } from './round-art';
 import { cardStyle } from './today-card';
 
@@ -37,19 +37,26 @@ const ICON: Readonly<Record<ProtocolId, FluentName>> = {
 export function RoutineGrid({ kind }: { kind: PlanKind }) {
   const t = useT();
   const openRoutine = useOpenRoutine();
+  const routineLocked = useRoutineLocked();
   const single = useWindowDimensions().fontScale >= 1.35;
 
   return (
     <View style={styles.grid}>
       {ROUTINES[kind].map((id) => {
         const protocol = protocolById(id);
+        const locked = routineLocked(id);
         return (
           <Pressable
             key={id}
             accessibilityRole="button"
+            accessibilityLabel={
+              locked
+                ? `${t(protocol.titleKey)}, ${t('home.today.tileMinutes', { count: protocol.minutes })}, ${t('quick.locked')}`
+                : undefined
+            }
             onPress={() => openRoutine(id)}
             style={({ pressed }) => [styles.tile, single && styles.tileSingle, pressed && styles.pressed]}>
-            <RoundArt emoji={ICON[id]} accent={protocol.accent} size={ART} />
+            <RoundArt emoji={ICON[id]} accent={protocol.accent} size={ART} locked={locked} />
             <View style={styles.text}>
               <Text style={styles.title}>{t(protocol.titleKey)}</Text>
               <Text style={styles.minutes}>{t('home.today.tileMinutes', { count: protocol.minutes })}</Text>

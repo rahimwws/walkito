@@ -75,7 +75,7 @@ export const CORE_IT = {
   'settings.sound.voiceHint': 'Dice «su, 2, 3, tieni, giù» al posto dei toni.',
   'settings.notifications.title': 'Notifiche',
   'settings.notifications.offers': 'Offerte e sconti',
-  'settings.notifications.offersHint': 'Ogni tanto, un prezzo più basso su Walkito Plus.',
+  'settings.notifications.offersHint': 'Ogni tanto, un prezzo più basso su Walkito.',
   'settings.equipment': 'Cosa ho a casa',
   'settings.equipment.step': 'Un gradino',
   'settings.equipment.band': 'Elastico',

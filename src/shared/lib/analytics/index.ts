@@ -15,10 +15,12 @@ export type {
   AnalyticsEvents,
   CancelOffer,
   CancelReason,
+  NotificationOpenType,
   NotificationsPermission,
   PassPlacement,
   PlanTier,
   PurchaseProps,
+  SessionFeel,
   SessionProps,
   StoreResult,
 } from './events';

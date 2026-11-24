@@ -1,4 +1,5 @@
 import PlayIcon from "@hugeicons/core-free-icons/PlayIcon";
+import SquareLock02Icon from "@hugeicons/core-free-icons/SquareLock02Icon";
 import UserIcon from "@hugeicons/core-free-icons/UserIcon";
 import { HugeiconsIcon } from "@hugeicons/react-native";
 import * as Haptics from "expo-haptics";
@@ -27,11 +28,16 @@ import {
 import {
   useAccessLapsed,
   useEntitled,
+  useLookingAround,
   usePaywallSkipped,
 } from "@/entities/purchase";
 import { useHomeTourState } from "@/entities/session";
 import { FollowSheet, useFollowOffer } from "@/features/follow";
-import { HomeTour, type DayOneRun } from "@/features/home-tour";
+import {
+  HomeTour,
+  usePlanSessionsLocked,
+  type DayOneRun,
+} from "@/features/home-tour";
 import {
   CHROME_MAX_FONT_SCALE,
   colors,
@@ -53,7 +59,7 @@ import { useSplashRevealed } from "@/shared/ui/splash";
 
 import { planKind } from "../model/plan-kind";
 import { useTodayWork } from "../model/today-work";
-import { useOpenRoutine } from "../model/use-open-routine";
+import { useOpenRoutine, useRoutineLocked } from "../model/use-open-routine";
 import { CheckIn } from "./check-in";
 import { DateStrip } from "./date-strip";
 import { DayOneSession } from "./day-one-session";
@@ -140,8 +146,23 @@ export function TodayPage() {
       : t("home.today.start", {
           minutes: t("quick.minutes", { count: work.minutes }),
         });
+  const extraRoutine = kind === "runner" ? "pre_run" : "at_work";
+  /** Looking around without buying, past Day 1 (a test from the start), or a
+   * routine closed to her: Start carries a lock and answers with the plans.
+   * Day 1, while it is ahead, is free and carries none. */
+  const looking = useLookingAround();
+  const sessionLocked = usePlanSessionsLocked();
+  const routineLocked = useRoutineLocked();
+  const startLocked = extra
+    ? routineLocked(extraRoutine)
+    : work.type === "test"
+      ? looking
+      : sessionLocked;
+  const startA11y = startLocked
+    ? `${startLabel}, ${t("quick.locked")}`
+    : startLabel;
   const onStart = extra
-    ? () => openRoutine(kind === "runner" ? "pre_run" : "at_work")
+    ? () => openRoutine(extraRoutine)
     : () => {
         requestProgram({ kind: work.type === "test" ? "test" : "today" });
         program?.open();
@@ -264,7 +285,8 @@ export function TodayPage() {
               ranToday={ranToday}
               next={next}
               active={focused}
-              startLabel={startLabel}
+              startLabel={startA11y}
+              locked={startLocked}
               onStart={onStart}
               onWhy={() => router.push("/why")}
             />
@@ -297,7 +319,7 @@ export function TodayPage() {
         <NavGlass interactive tint={colors.ink} style={styles.fabCircle}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={startLabel}
+            accessibilityLabel={startA11y}
             onPress={() => {
               void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
               onStart();
@@ -305,7 +327,7 @@ export function TodayPage() {
             style={({ pressed }) => [styles.fabHit, pressed && styles.pressed]}
           >
             <HugeiconsIcon
-              icon={PlayIcon}
+              icon={startLocked ? SquareLock02Icon : PlayIcon}
               size={30}
               color={colors.onInk}
               strokeWidth={2.2}

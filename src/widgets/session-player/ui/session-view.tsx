@@ -49,7 +49,7 @@ import { Rest } from './player/rest';
 import { CantDoSheet, InfoSheet, MenuSheet, PainRuleSheet, PainSheet } from './player/sheets';
 import { CountdownRing } from './test-day/countdown-ring';
 
-export type { PlaylistStep, SessionViewProps } from '../model/use-session-run';
+export type { PlaylistStep, SessionOutcome, SessionViewProps } from '../model/use-session-run';
 
 /** The row Close, the position, Sound and More sit in. */
 const HEADER = 60;
@@ -325,12 +325,12 @@ function SessionRun(props: SessionViewProps) {
             </View>
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={run.showSetDone ? t('player.cta.setDone') : t('player.cta.skipA11y')}
+              accessibilityLabel={t('player.cta.setDone')}
               disabled={finished}
               onPress={() => {
                 void Haptics.selectionAsync();
                 if (run.showSetDone) run.skipSegment();
-                else run.skipMove();
+                else run.finishMove();
               }}
               hitSlop={6}
               style={({ pressed }) => [finished && styles.off, pressed && styles.pressed]}>
@@ -378,6 +378,7 @@ function SessionRun(props: SessionViewProps) {
             size={64}
             iconSize={26}
             label={t('player.cta.skipA11y')}
+            hint={t('player.skip.hint')}
             onPress={run.skipMove}
             disabled={finished}
           />
@@ -495,7 +496,7 @@ function SessionRun(props: SessionViewProps) {
           if (run.closedDone.current) return;
           run.closedDone.current = true;
           run.setCelebrating(false);
-          if (onFinish != null) onFinish();
+          if (onFinish != null) onFinish({ skipped: run.skipped });
           else onBack();
         }}
       />

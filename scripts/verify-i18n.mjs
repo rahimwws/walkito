@@ -33,7 +33,6 @@ const SKIP_FILES = [
  */
 const ALLOW = new Map([
   ['Walkito', 'the brand'],
-  ['Walkito Premium', 'brand plus tier'],
   ['Continue with Apple', 'Apple requires this exact wording per its HIG'],
   ['Sign in with Apple', 'Apple requires this exact wording per its HIG'],
   [

@@ -1,17 +1,17 @@
 /** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
- * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito" stays as it is). */
 
 export const CANCEL_IT = {
   'cancel.row.section': 'Abbonamento',
   'cancel.row.manage': 'Gestisci abbonamento',
-  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.manageHint': 'Walkito',
   'cancel.row.renewsAnnual': 'Abbonamento annuale, si rinnova il {date}',
   'cancel.row.renewsMonthly': 'Abbonamento mensile, si rinnova il {date}',
   'cancel.row.renewsWeekly': 'Abbonamento settimanale, si rinnova il {date}',
   'cancel.row.trial': 'Prova gratuita fino al {date}, poi il tuo abbonamento si rinnova',
-  'cancel.row.ends': 'Il rinnovo è disattivato. Walkito Plus resta attivo fino al {date}.',
+  'cancel.row.ends': 'Il rinnovo è disattivato. Walkito resta attivo fino al {date}.',
   'cancel.row.lifetime': 'A vita',
-  'cancel.row.lifetimeHint': 'Walkito Plus è tuo per sempre. Non si rinnova nulla.',
+  'cancel.row.lifetimeHint': 'Walkito è tuo per sempre. Non si rinnova nulla.',
 
   'cancel.title': 'Perché te ne vai?',
   'cancel.sub': 'Scegli la risposta più vicina. Ci aiuta a migliorare Walkito.',
@@ -47,9 +47,9 @@ export const CANCEL_IT = {
   'cancel.pause.title': 'A volte serve una pausa',
   'cancel.pause.freeMonthTitle': 'Un mese gratis',
   'cancel.pause.freeMonthBody':
-    'Tieni il tuo piano, e il tuo prossimo mese non costa nulla. Dopo, Walkito Plus si rinnova come adesso.',
+    'Tieni il tuo piano, e il tuo prossimo mese non costa nulla. Dopo, il tuo abbonamento a Walkito si rinnova come adesso.',
   'cancel.pause.freeMonthBodyYear':
-    'Tieni il tuo piano, e quando finisce l’anno che hai pagato, il mese dopo non costa nulla. Dopo, Walkito Plus si rinnova come adesso.',
+    'Tieni il tuo piano, e quando finisce l’anno che hai pagato, il mese dopo non costa nulla. Dopo, il tuo abbonamento a Walkito si rinnova come adesso.',
   'cancel.pause.freeMonthCta': 'Prendi il mese gratis',
   'cancel.pause.freeMonthTerms':
     'Il mese gratis parte dal tuo prossimo rinnovo. Puoi sempre annullare quando vuoi nelle impostazioni degli abbonamenti.',

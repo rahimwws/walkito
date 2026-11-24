@@ -12,7 +12,7 @@ import {
   todayKey,
   type ProgramDay,
 } from '@/entities/program';
-import { askForPlans, type PlansAskedFrom } from '@/entities/purchase';
+import { askForPlans, useLookingAround, type PlansAskedFrom } from '@/entities/purchase';
 import { askForDayOne, dropDayOneAsk, homeTourState, setHomeTourStage } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 
@@ -117,7 +117,7 @@ export function dayOneRun(): DayOneRun {
  * planned again with the test on tomorrow. Once only: a day whose session is
  * already on record is left alone, and the stage moves on either way.
  */
-export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
+export function finishDayOne(run: DayOneRun, skipped: readonly string[] = [], now: number = Date.now()): void {
   const today = todayKey(now);
   if (!planSessionDone(today)) {
     // Only the very first test moves to tomorrow: a returning user's due
@@ -128,6 +128,7 @@ export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
       source: 'plan',
       minutes: run.minutes,
       exerciseIds: run.steps.map((step) => step.exerciseId),
+      skippedIds: skipped,
       now,
     });
   }
@@ -156,4 +157,19 @@ export function dayOneWentWell(): boolean {
 export function answerLockedPlanTap(from: PlansAskedFrom): void {
   if (sessions().length === 0) askForDayOne();
   else askForPlans(from);
+}
+
+/**
+ * Whether a plan session tapped now raises the plans: looking around, with
+ * Day 1 behind her. What draws a lock on it (the plan's Start and tomorrow,
+ * Home's task rows): Day 1, while it is ahead, is free and carries none.
+ */
+export function planSessionsLocked(looking: boolean, sessionCount: number = sessions().length): boolean {
+  return looking && sessionCount > 0;
+}
+
+/** `planSessionsLocked`, following the purchase and the skip. Read with the
+ * sessions on record at each render, which a finished session causes. */
+export function usePlanSessionsLocked(): boolean {
+  return planSessionsLocked(useLookingAround());
 }

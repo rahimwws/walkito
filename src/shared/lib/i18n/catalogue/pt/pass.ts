@@ -7,14 +7,14 @@ export const PASS_PT = {
   'pass.tab': '3 meses',
   'pass.card.caption': 'Um único pagamento, sem renovação automática',
   'pass.card.promise': 'Não renova',
-  'pass.card.access': 'Walkito Plus por 90 dias',
+  'pass.card.access': 'Walkito por 90 dias',
   'pass.offer.bodyAll':
-    'Fique com o **Walkito Plus** do seu jeito: **um ano mais barato**, **para sempre** ou **3 meses com um único pagamento**.',
+    'Fique com o **Walkito** do seu jeito: **um ano mais barato**, **para sempre** ou **3 meses com um único pagamento**.',
   'pass.offer.bodyYear':
-    'Fique com o **Walkito Plus** do seu jeito: **um ano mais barato** ou **3 meses com um único pagamento**.',
+    'Fique com o **Walkito** do seu jeito: **um ano mais barato** ou **3 meses com um único pagamento**.',
   'pass.offer.bodyLifetime':
-    'Fique com o **Walkito Plus** do seu jeito: **para sempre** ou **3 meses com um único pagamento**.',
-  'pass.terms': 'Um único pagamento de {price} por 3 meses de Walkito Plus. Nada é renovado.',
+    'Fique com o **Walkito** do seu jeito: **para sempre** ou **3 meses com um único pagamento**.',
+  'pass.terms': 'Um único pagamento de {price} por 3 meses de Walkito. Nada é renovado.',
 
   'pass.signIn.title': 'Comprou em outro celular?',
   'pass.signIn.body':
@@ -35,11 +35,11 @@ export const PASS_PT = {
   'pass.budget.cta': 'Continuar por {price}',
   'pass.budget.terms':
     'Seus 3 meses começam quando termina o período que você já pagou. Depois de comprar, desative a renovação automática para a assinatura não ser cobrada também. Você ainda pode cancelar quando quiser.',
-  'pass.done.until': 'Seus 3 meses de Walkito Plus estão prontos: vão até {date}. Obrigado por ficar.',
-  'pass.done.plain': 'Seus 3 meses de Walkito Plus estão prontos. Obrigado por ficar.',
+  'pass.done.until': 'Seus 3 meses de Walkito estão prontos: vão até {date}. Obrigado por ficar.',
+  'pass.done.plain': 'Seus 3 meses de Walkito estão prontos. Obrigado por ficar.',
   'pass.done.stillRenews': 'Sua assinatura ainda se renova. Toque em “Cancelar mesmo assim” abaixo para desativar a renovação automática.',
 
-  'pass.settings.section': 'Walkito Plus',
+  'pass.settings.section': 'Walkito',
   'pass.settings.row': 'Passe de 3 meses · até {date}',
   'pass.settings.queued': 'Passe de 3 meses · a partir de {date}',
   'pass.settings.hint': 'Um único pagamento. Nada é renovado.',

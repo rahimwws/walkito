@@ -3,7 +3,7 @@ import { useSyncExternalStore } from 'react';
 // The manifest module itself rather than the `@/shared/config` barrel: the
 // barrel also loads the font files, which the unit tests cannot evaluate.
 import { CLIPS } from '@/shared/config/clip-manifest';
-import { track } from '@/shared/lib/analytics';
+import { track, type SessionFeel } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
 import { retestResults, type RetestResult } from '../program';
@@ -192,7 +192,16 @@ export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date
 
 export type SessionSource = 'plan' | 'library' | 'quick' | 'test';
 
-export type ExerciseOutcome = { id: string; status: 'done' | 'skipped' | 'swapped'; swappedTo?: string };
+export type ExerciseOutcome = {
+  id: string;
+  status: 'done' | 'skipped' | 'swapped';
+  swappedTo?: string;
+  /** Skipped with the player's "Skip": for that day only, the exercise kept
+   * in the plan. Never counted toward `SKIPS_BEFORE_SWAP`: whether skipping
+   * should ever swap an exercise out is still Rahman's call. Kept on the phone
+   * only; the server's row says `skipped`. */
+  skippedForToday?: true;
+};
 
 export type SessionRecord = {
   id: string;
@@ -257,9 +266,11 @@ export function abandonSession(token: number): void {
   if (pending.token === token) pending = NOTHING_PENDING;
 }
 
-export function noteSessionFeedback(feedback: 'easy' | 'ok' | 'hard'): void {
+/** `feel` is the answer as given, for analytics only, and only when it may
+ * be sent (see `session_feedback` in `events.ts`). */
+export function noteSessionFeedback(feedback: 'easy' | 'ok' | 'hard', feel: SessionFeel | null = null): void {
   pending = { ...pending, feedback };
-  track('session_feedback', { feedback });
+  track('session_feedback', feel == null ? { feedback } : { feedback, feel });
 }
 
 export function noteInSessionPain(score: number): void {
@@ -319,7 +330,7 @@ export function recordSession(record: Omit<SessionRecord, 'id'>): SessionRecord 
     if (owed > 0) kv.set(STEP_DOWN_KEY, String(owed - 1));
   }
   for (const outcome of record.exercises) {
-    if (outcome.status === 'skipped') recordSkip(outcome.id);
+    if (outcome.status === 'skipped' && outcome.skippedForToday !== true) recordSkip(outcome.id);
   }
   return saved;
 }

@@ -110,7 +110,18 @@ type ButtonProps = {
 };
 
 /** The one primary action on a screen: BitePal's black pill, full width, 56pt. */
-export function Capsule({ label, onPress, accessibilityLabel, accessibilityHint, disabled, style }: ButtonProps) {
+export function Capsule({
+  label,
+  onPress,
+  accessibilityLabel,
+  accessibilityHint,
+  disabled,
+  style,
+  icon,
+}: ButtonProps & {
+  /** A glyph before the label: the lock on a Start that raises the plans. */
+  icon?: IconSvgElement;
+}) {
   return (
     <Pressable
       accessibilityRole="button"
@@ -123,9 +134,12 @@ export function Capsule({ label, onPress, accessibilityLabel, accessibilityHint,
         onPress();
       }}
       style={({ pressed }) => [styles.capsule, disabled && styles.off, pressed && styles.pressed, style]}>
-      <Text style={styles.capsuleText} maxFontSizeMultiplier={TITLE_SCALE}>
-        {label}
-      </Text>
+      <View style={styles.capsuleRow}>
+        {icon != null && <HugeiconsIcon icon={icon} size={22} color={bitepal.onPrimary} strokeWidth={2.2} />}
+        <Text style={styles.capsuleText} maxFontSizeMultiplier={TITLE_SCALE}>
+          {label}
+        </Text>
+      </View>
     </Pressable>
   );
 }
@@ -169,6 +183,7 @@ export function TextButton({
 export function RoundButton({
   icon,
   label,
+  hint,
   onPress,
   size = 48,
   iconSize,
@@ -179,6 +194,8 @@ export function RoundButton({
   icon: IconSvgElement;
   /** Read by VoiceOver: the button has no words. */
   label: string;
+  /** What the press does, when the label alone does not say it. */
+  hint?: string;
   onPress: () => void;
   size?: number;
   iconSize?: number;
@@ -190,6 +207,7 @@ export function RoundButton({
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={label}
+      accessibilityHint={hint}
       accessibilityState={{ disabled: disabled === true }}
       disabled={disabled}
       hitSlop={Math.max(0, (target.min - size) / 2)}
@@ -393,7 +411,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingVertical: 12,
   },
-  capsuleText: { ...fonts.bold(19), color: bitepal.onPrimary, textAlign: 'center' },
+  capsuleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 },
+  capsuleText: { ...fonts.bold(19), color: bitepal.onPrimary, textAlign: 'center', flexShrink: 1 },
   text: { minHeight: target.min, justifyContent: 'center', paddingHorizontal: 4 },
   textLabel: { ...fonts.semibold(19), color: ink.text, textAlign: 'center' },
   textQuiet: { ...fonts.medium(19), color: ink.grey },

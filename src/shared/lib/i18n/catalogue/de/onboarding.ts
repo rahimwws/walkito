@@ -419,7 +419,6 @@ export const ONBOARDING_DE = {
   'onboarding.referral.title': 'Hast du einen Einladungscode?',
   'onboarding.referral.blurb': 'Gib ihn ein für {percent} % Rabatt auf das Jahresabo.',
   'onboarding.referral.applied': '{percent} % Rabatt auf das Jahresabo eingelöst.',
-  'onboarding.referral.unlocked': 'Code angenommen. Walkito Premium ist aktiv.',
   'onboarding.referral.unknown': 'Diesen Code kennen wir nicht. Prüf ihn und versuch es noch einmal.',
   'onboarding.referral.own': 'Das ist dein eigener. Schick ihn jemand anderem.',
   'onboarding.referral.already': 'Du hast schon einen Code benutzt.',

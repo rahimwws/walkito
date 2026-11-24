@@ -26,9 +26,6 @@ export const OFFER_PT = {
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.comebackBadge': 'Preço especial',
   'offer.inviteBadge': 'Seu preço de convite',
-  'offer.headline': 'Desbloqueie o Walkito Premium',
-  'offer.headlineInvite': 'Seu preço de convite em um ano de Walkito Premium',
-  'offer.headlineComeback': 'Seu preço especial para voltar: um ano de Walkito Premium',
   'offer.sub': 'Seu plano, e tudo em volta dele.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -74,9 +71,6 @@ export const OFFER_PT = {
   'offer.continue': 'Continuar',
   'offer.processing': 'Processando…',
 
-  // ── Paywall: the celebration ─────────────────────────────────────────────
-  'offer.premium': 'Walkito Premium',
-
   // ── Paywall: the two steps before it, after onboarding ──────────────────
   'offer.stepA11y': 'Passo {step} de {total}',
   'offer.next': 'Próximo',
@@ -115,13 +109,11 @@ export const OFFER_PT = {
   'offer.chipRoutines': 'Rotinas para crises e para corrida',
   'offer.chipReminders': 'Lembretes',
 
-  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // ── Paywall: the plans ───────────────────────────────────────────────────
   // See `../en/offer.ts`. The words in square brackets in the headline are
-  // drawn in the Plus colour: put them round the word that carries it here.
-  'offer.plans.badge': 'Plus',
-  'offer.plans.name': 'Walkito Plus',
+  // drawn in the accent colour: put them round the word that carries it here.
   'offer.plans.headline': 'Seus pés, [mais fortes] a cada dia',
-  'offer.plans.headlineComeback': 'Walkito Plus, agora [mais barato]',
+  'offer.plans.headlineComeback': 'Walkito, agora [mais barato]',
   'offer.plans.mostPopular': 'Mais popular',
   'offer.plans.yearly': 'Anual',
   'offer.plans.monthly': 'Mensal',
@@ -147,8 +139,6 @@ export const OFFER_PT = {
   'offer.plans.rowSessions': 'Todas as sessões guiadas, com vídeo',
   'offer.plans.rowTests': 'Um teste de progresso a cada duas semanas',
   'offer.plans.rowMorning': 'O alongamento da manhã',
-  'offer.plans.rowA11y': '{feature}. Incluído no Plus.',
-  'offer.plans.ctaLifetime': 'Obter o Walkito Plus',
   'offer.plans.ctaTrial': 'Começar meu teste grátis',
   'offer.plans.ctaTrialWeek': 'Começar minha semana grátis',
   'offer.plans.noPaymentToday': 'Nada a pagar hoje',

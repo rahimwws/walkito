@@ -7,12 +7,12 @@ export const PASS_RU = {
   'pass.tab': '3 месяца',
   'pass.card.caption': 'Один платёж, без автопродления',
   'pass.card.promise': 'Ничего не продлевается',
-  'pass.card.access': 'Walkito Plus на 90 дней',
+  'pass.card.access': 'Walkito на 90 дней',
   'pass.offer.bodyAll':
-    'Оставьте **Walkito Plus** себе как удобно: **год дешевле**, **навсегда** или **3 месяца одним платежом**.',
-  'pass.offer.bodyYear': 'Оставьте **Walkito Plus** себе как удобно: **год дешевле** или **3 месяца одним платежом**.',
-  'pass.offer.bodyLifetime': 'Оставьте **Walkito Plus** себе как удобно: **навсегда** или **3 месяца одним платежом**.',
-  'pass.terms': 'Один платёж {price} за 3 месяца Walkito Plus. Ничего не продлевается.',
+    'Оставьте **Walkito** себе как удобно: **год дешевле**, **навсегда** или **3 месяца одним платежом**.',
+  'pass.offer.bodyYear': 'Оставьте **Walkito** себе как удобно: **год дешевле** или **3 месяца одним платежом**.',
+  'pass.offer.bodyLifetime': 'Оставьте **Walkito** себе как удобно: **навсегда** или **3 месяца одним платежом**.',
+  'pass.terms': 'Один платёж {price} за 3 месяца с Walkito. Ничего не продлевается.',
 
   'pass.signIn.title': 'Покупали на другом телефоне?',
   'pass.signIn.body':
@@ -33,11 +33,11 @@ export const PASS_RU = {
   'pass.budget.cta': 'Продолжить за {price}',
   'pass.budget.terms':
     'Ваши 3 месяца начнутся, когда закончится уже оплаченный период. После покупки выключите автопродление, чтобы за подписку не списали деньги ещё раз. Отменить её можно в любой момент.',
-  'pass.done.until': 'Ваши 3 месяца Walkito Plus готовы: они продлятся до {date}. Спасибо, что остаётесь.',
-  'pass.done.plain': 'Ваши 3 месяца Walkito Plus готовы. Спасибо, что остаётесь.',
+  'pass.done.until': 'Ваши 3 месяца с Walkito готовы: они продлятся до {date}. Спасибо, что остаётесь.',
+  'pass.done.plain': 'Ваши 3 месяца с Walkito готовы. Спасибо, что остаётесь.',
   'pass.done.stillRenews': 'Подписка всё ещё продлевается. Нажмите «Всё равно отменить» ниже, чтобы выключить автопродление.',
 
-  'pass.settings.section': 'Walkito Plus',
+  'pass.settings.section': 'Walkito',
   'pass.settings.row': 'Пропуск на 3 месяца · до {date}',
   'pass.settings.queued': 'Пропуск на 3 месяца · с {date}',
   'pass.settings.hint': 'Один платёж. Ничего не продлевается.',

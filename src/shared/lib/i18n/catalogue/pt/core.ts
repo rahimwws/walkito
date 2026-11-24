@@ -75,7 +75,7 @@ export const CORE_PT = {
   'settings.sound.voiceHint': 'Diz “sobe, 2, 3, segura, desce” em vez de tons.',
   'settings.notifications.title': 'Notificações',
   'settings.notifications.offers': 'Ofertas e descontos',
-  'settings.notifications.offersHint': 'De vez em quando, um preço menor no Walkito Plus.',
+  'settings.notifications.offersHint': 'De vez em quando, um preço menor no Walkito.',
   'settings.equipment': 'O que tenho em casa',
   'settings.equipment.step': 'Um degrau',
   'settings.equipment.band': 'Faixa elástica',

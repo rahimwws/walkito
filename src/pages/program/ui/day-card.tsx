@@ -1,5 +1,6 @@
 import ArrowDown01Icon from '@hugeicons/core-free-icons/ArrowDown01Icon';
 import ArrowUp01Icon from '@hugeicons/core-free-icons/ArrowUp01Icon';
+import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -25,6 +26,9 @@ export type DayCardProps = {
   /** A test day: what its three tests are. */
   testBody: string;
   onPreview: (exerciseId: string) => void;
+  /** Looking around without buying: a day ahead is locked, and its corner
+   * mark is a lock. Its moves still open to be read. */
+  locked?: boolean;
 };
 
 /**
@@ -35,7 +39,7 @@ export type DayCardProps = {
  * opening its sheet. A test day has its own card with the test's icon; a rest
  * day is one short line.
  */
-export function DayCard({ day, title, today, done, testBody, onPreview }: DayCardProps) {
+export function DayCard({ day, title, today, done, testBody, onPreview, locked = false }: DayCardProps) {
   const t = useT();
   const language = useLanguage();
   const [open, setOpen] = useState(false);
@@ -49,6 +53,8 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
   const rest = day.type === 'rest' && !done;
   const test = day.type === 'test';
   const moves = test || rest ? [] : day.exercises;
+  const lock = locked && !rest && !done && !past;
+  const name = lock ? `${label}, ${title}, ${t('quick.locked')}` : `${label}, ${title}`;
 
   const meta = test
     ? testBody
@@ -64,6 +70,10 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
   const status = done ? (
     <View style={[styles.status, styles.statusDone]}>
       <HugeiconsIcon icon={Tick02Icon} size={24} color={bitepal.onPrimary} strokeWidth={2.6} />
+    </View>
+  ) : lock ? (
+    <View style={styles.status}>
+      <HugeiconsIcon icon={SquareLock02Icon} size={22} color={colors.text2} strokeWidth={2} />
     </View>
   ) : (
     <View style={styles.status}>
@@ -88,7 +98,7 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
       <View
         style={[styles.card, rest && styles.restCard]}
         accessible
-        accessibilityLabel={`${label}, ${title}`}
+        accessibilityLabel={name}
         accessibilityValue={done ? { text: t('pages.plan.path.done') } : undefined}>
         {head}
         {meta != null && <Text style={styles.meta}>{meta}</Text>}
@@ -100,7 +110,7 @@ export function DayCard({ day, title, today, done, testBody, onPreview }: DayCar
     <View style={styles.card}>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`${label}, ${title}`}
+        accessibilityLabel={name}
         accessibilityValue={done ? { text: t('pages.plan.path.done') } : meta != null ? { text: meta } : undefined}
         accessibilityState={{ expanded: open }}
         onPress={() => {

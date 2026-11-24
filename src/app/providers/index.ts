@@ -10,6 +10,7 @@ export { useLiveActivityCleanup } from './live-activities';
 export { useClipPrefetch } from './clip-prefetch';
 export { useReferralSync } from './referral-sync';
 export { useNotificationScheduler } from './notification-scheduler';
+export { useNotificationOpens } from './notification-opens';
 export { useProgramClock } from './program-clock';
 export { useScreenTracking } from './screen-tracking';
 export { usePlanGoals } from './plan-goals';

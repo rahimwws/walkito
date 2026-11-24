@@ -1,4 +1,5 @@
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
+import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
@@ -9,7 +10,7 @@ import { colors, fonts, target } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
-import { useOpenRoutine } from '../model/use-open-routine';
+import { useOpenRoutine, useRoutineLocked } from '../model/use-open-routine';
 import { RoundAction } from './round-action';
 import { TodayCard } from './today-card';
 
@@ -23,6 +24,7 @@ export function RoutineCard({ kind, ranToday }: { kind: PlanKind; ranToday: bool
   const language = useLanguage();
   const router = useRouter();
   const openRoutine = useOpenRoutine();
+  const routineLocked = useRoutineLocked();
   const large = useWindowDimensions().fontScale >= 1.35;
 
   const card =
@@ -62,7 +64,15 @@ export function RoutineCard({ kind, ranToday }: { kind: PlanKind; ranToday: bool
             {card.big}
           </Text>
         </View>
-        <RoundAction icon={PlayIcon} label={t(protocolById(card.id).titleKey)} onPress={() => openRoutine(card.id)} />
+        <RoundAction
+          icon={routineLocked(card.id) ? SquareLock02Icon : PlayIcon}
+          label={
+            routineLocked(card.id)
+              ? `${t(protocolById(card.id).titleKey)}, ${t('quick.locked')}`
+              : t(protocolById(card.id).titleKey)
+          }
+          onPress={() => openRoutine(card.id)}
+        />
       </View>
       <Text style={styles.meta}>{card.meta}</Text>
       {kind === 'desk' && (

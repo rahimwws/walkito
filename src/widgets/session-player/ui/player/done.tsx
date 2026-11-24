@@ -34,7 +34,8 @@ import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { celebrateRig, idleRig } from '@/shared/ui/mascot';
 
-import { alreadyRecorded, rememberFeedback, type Feedback } from '../../model/session-done';
+import type { Feel } from '../../model/feel';
+import { alreadyRecorded, rememberFeedback } from '../../model/session-done';
 import { BigNumber, CardLabel, Capsule, Ring, SIDE, SessionMascot, TITLE_SCALE, TextButton, cardStyle, ink, sceneStyle, soft } from './kit';
 import { PainSheet } from './sheets';
 
@@ -58,18 +59,17 @@ export type DoneProps = {
   onClose: () => void;
 };
 
-type Feel = 'easy' | 'right' | 'hard' | 'hurt';
-
 /**
- * What the plan stores for each word. "It hurt" is a hard session as far as
- * the dose is concerned; "Hard" keeps the level, as "Just right" does, since
- * effort near the limit is what the work is meant to reach.
+ * The four answers, in the order they are read. What the plan stores for each
+ * is in `model/feel.ts`: "It hurt" is a hard session as far as the dose is
+ * concerned; "Hard" keeps the level, as "Just right" does, since effort near
+ * the limit is what the work is meant to reach.
  */
-const FEELS: readonly { feel: Feel; label: Key; feedback: Feedback; art: FluentName; tone: ColorValue }[] = [
-  { feel: 'easy', label: 'sessionDone.feel.easy', feedback: 'easy', art: 'feather', tone: bodyColors.arch },
-  { feel: 'right', label: 'sessionDone.feel.right', feedback: 'ok', art: 'check', tone: bodyColors.calf },
-  { feel: 'hard', label: 'sessionDone.feel.hard', feedback: 'ok', art: 'bolt', tone: bodyColors.toes },
-  { feel: 'hurt', label: 'sessionDone.feel.hurt', feedback: 'hard', art: 'bandage', tone: bodyColors.heel },
+const FEELS: readonly { feel: Feel; label: Key; art: FluentName; tone: ColorValue }[] = [
+  { feel: 'easy', label: 'sessionDone.feel.easy', art: 'feather', tone: bodyColors.arch },
+  { feel: 'right', label: 'sessionDone.feel.right', art: 'check', tone: bodyColors.calf },
+  { feel: 'hard', label: 'sessionDone.feel.hard', art: 'bolt', tone: bodyColors.toes },
+  { feel: 'hurt', label: 'sessionDone.feel.hurt', art: 'bandage', tone: bodyColors.heel },
 ];
 
 /** The kind of work a day is, in the words the plan uses for it. */
@@ -269,7 +269,7 @@ export function Done({
                     onPress={() => {
                       void Haptics.selectionAsync();
                       setPicked(entry.feel);
-                      if (!preview) rememberFeedback(entry.feedback, startedAt);
+                      if (!preview) rememberFeedback(entry.feel, startedAt);
                       if (entry.feel === 'hurt') setAskingPain(true);
                     }}
                     style={({ pressed }) => [

@@ -1,7 +1,7 @@
 import { noteSessionFeedback, sessions, setLastSessionFeedback } from '@/entities/program';
 import { track } from '@/shared/lib/analytics';
 
-export type Feedback = 'easy' | 'ok' | 'hard';
+import { feedbackOf, feelForAnalytics, type Feel } from './feel';
 
 /**
  * Whether the session the Done screen closes is already on file: the newest
@@ -13,13 +13,17 @@ export function alreadyRecorded(startedAt: number): boolean {
   return last != null && last.completedAt >= startedAt;
 }
 
-/** File the answer where it will be read. Never both, never neither. */
-export function rememberFeedback(feedback: Feedback, startedAt: number): void {
+/** File the answer where it will be read. Never both, never neither. The plan
+ * stores its reading of the answer (`feedbackOf`); PostHog also gets the
+ * answer as given (`feelForAnalytics`). */
+export function rememberFeedback(feel: Feel, startedAt: number): void {
+  const feedback = feedbackOf(feel);
+  const sent = feelForAnalytics(feel);
   if (alreadyRecorded(startedAt)) {
     setLastSessionFeedback(feedback);
     // `noteSessionFeedback` reports itself; amending the record does not.
-    track('session_feedback', { feedback });
+    track('session_feedback', sent == null ? { feedback } : { feedback, feel: sent });
     return;
   }
-  noteSessionFeedback(feedback);
+  noteSessionFeedback(feedback, sent);
 }

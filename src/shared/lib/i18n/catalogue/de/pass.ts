@@ -7,13 +7,13 @@ export const PASS_DE = {
   'pass.tab': '3 Monate',
   'pass.card.caption': 'Eine Zahlung, keine automatische Verlängerung',
   'pass.card.promise': 'Nichts verlängert sich',
-  'pass.card.access': 'Walkito Plus für 90 Tage',
+  'pass.card.access': 'Walkito für 90 Tage',
   'pass.offer.bodyAll':
-    'Behalte **Walkito Plus**, wie es dir passt: **ein Jahr günstiger**, **für immer** oder **3 Monate mit einer Zahlung**.',
+    'Behalte **Walkito**, wie es dir passt: **ein Jahr günstiger**, **für immer** oder **3 Monate mit einer Zahlung**.',
   'pass.offer.bodyYear':
-    'Behalte **Walkito Plus**, wie es dir passt: **ein Jahr günstiger** oder **3 Monate mit einer Zahlung**.',
-  'pass.offer.bodyLifetime': 'Behalte **Walkito Plus**, wie es dir passt: **für immer** oder **3 Monate mit einer Zahlung**.',
-  'pass.terms': 'Eine Zahlung von {price} für 3 Monate Walkito Plus. Nichts verlängert sich.',
+    'Behalte **Walkito**, wie es dir passt: **ein Jahr günstiger** oder **3 Monate mit einer Zahlung**.',
+  'pass.offer.bodyLifetime': 'Behalte **Walkito**, wie es dir passt: **für immer** oder **3 Monate mit einer Zahlung**.',
+  'pass.terms': 'Eine Zahlung von {price} für 3 Monate Walkito. Nichts verlängert sich.',
 
   'pass.signIn.title': 'Auf einem anderen Handy gekauft?',
   'pass.signIn.body':
@@ -34,11 +34,11 @@ export const PASS_DE = {
   'pass.budget.cta': 'Für {price} weitermachen',
   'pass.budget.terms':
     'Deine 3 Monate beginnen, wenn der bereits bezahlte Zeitraum endet. Schalte nach dem Kauf die automatische Verlängerung aus, damit dein Abo nicht zusätzlich abgebucht wird. Kündigen kannst du trotzdem jederzeit.',
-  'pass.done.until': 'Deine 3 Monate Walkito Plus sind bereit: Sie laufen bis zum {date}. Danke, dass du bleibst.',
-  'pass.done.plain': 'Deine 3 Monate Walkito Plus sind bereit. Danke, dass du bleibst.',
+  'pass.done.until': 'Deine 3 Monate Walkito sind bereit: Sie laufen bis zum {date}. Danke, dass du bleibst.',
+  'pass.done.plain': 'Deine 3 Monate Walkito sind bereit. Danke, dass du bleibst.',
   'pass.done.stillRenews': 'Dein Abo verlängert sich noch. Tippe unten auf „Trotzdem kündigen“, um die automatische Verlängerung auszuschalten.',
 
-  'pass.settings.section': 'Walkito Plus',
+  'pass.settings.section': 'Walkito',
   'pass.settings.row': '3-Monats-Pass · bis {date}',
   'pass.settings.queued': '3-Monats-Pass · ab {date}',
   'pass.settings.hint': 'Eine Zahlung. Nichts verlängert sich.',

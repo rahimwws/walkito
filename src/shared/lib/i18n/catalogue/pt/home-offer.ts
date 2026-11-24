@@ -1,21 +1,21 @@
 /** Home offer: the one-time trial, the comeback and the plans after the paywall's "Not now", and their pushes. Filled per domain; see
- * `../en/home-offer.ts` for the rules (no prices, `**…**` marks the heavier words, "Walkito Plus" stays as it is).
+ * `../en/home-offer.ts` for the rules (no prices, `**…**` marks the heavier words, "Walkito" stays as it is).
  * Brazilian Portuguese. */
 
 export const HOME_OFFER_PT = {
   'homeOffer.trial.title': 'Espera, esta é uma oferta única',
-  'homeOffer.trial.bodyWeek': '**Walkito Plus por um ano**, e **a primeira semana é grátis**.',
+  'homeOffer.trial.bodyWeek': '**Walkito por um ano**, e **a primeira semana é grátis**.',
   'homeOffer.trial.bodyWeeks': {
-    one: '**Walkito Plus por um ano**, com **{count} semana grátis** para começar.',
-    other: '**Walkito Plus por um ano**, com **{count} semanas grátis** para começar.',
+    one: '**Walkito por um ano**, com **{count} semana grátis** para começar.',
+    other: '**Walkito por um ano**, com **{count} semanas grátis** para começar.',
   },
   'homeOffer.trial.bodyDays': {
-    one: '**Walkito Plus por um ano**, com **{count} dia grátis** para começar.',
-    other: '**Walkito Plus por um ano**, com **{count} dias grátis** para começar.',
+    one: '**Walkito por um ano**, com **{count} dia grátis** para começar.',
+    other: '**Walkito por um ano**, com **{count} dias grátis** para começar.',
   },
   'homeOffer.trial.bodyMonths': {
-    one: '**Walkito Plus por um ano**, com **{count} mês grátis** para começar.',
-    other: '**Walkito Plus por um ano**, com **{count} meses grátis** para começar.',
+    one: '**Walkito por um ano**, com **{count} mês grátis** para começar.',
+    other: '**Walkito por um ano**, com **{count} meses grátis** para começar.',
   },
   'homeOffer.trial.ctaDays': { one: 'Teste grátis por {count} dia', other: 'Teste grátis por {count} dias' },
   'homeOffer.trial.ctaMonths': { one: 'Teste grátis por {count} mês', other: 'Teste grátis por {count} meses' },
@@ -26,9 +26,9 @@ export const HOME_OFFER_PT = {
 
   'homeOffer.comeback.title': 'Oferta por tempo limitado',
   'homeOffer.comeback.endsIn': 'Termina em {time}',
-  'homeOffer.comeback.bodyBoth': 'Fique com o **Walkito Plus** do seu jeito: **um ano mais barato** ou **para sempre**.',
-  'homeOffer.comeback.bodyYear': '**Um ano de Walkito Plus** por um preço menor, só por pouco tempo.',
-  'homeOffer.comeback.bodyLifetime': '**Walkito Plus para sempre** com um único pagamento, só por pouco tempo.',
+  'homeOffer.comeback.bodyBoth': 'Fique com o **Walkito** do seu jeito: **um ano mais barato** ou **para sempre**.',
+  'homeOffer.comeback.bodyYear': '**Um ano de Walkito** por um preço menor, só por pouco tempo.',
+  'homeOffer.comeback.bodyLifetime': '**Walkito para sempre** com um único pagamento, só por pouco tempo.',
   'homeOffer.comeback.cta': 'Quero a oferta',
 
   'homeOffer.card.off': '{percent}% off',
@@ -38,7 +38,7 @@ export const HOME_OFFER_PT = {
   'homeOffer.card.perMonth': 'São {price} por mês',
   'homeOffer.card.lifetime': 'Um único pagamento e é seu para sempre',
 
-  'homeOffer.standard.title': 'Continue com o Walkito Plus',
+  'homeOffer.standard.title': 'Continue com o Walkito',
   'homeOffer.standard.body': 'Seu plano, todas as sessões e todas as reavaliações. **Escolha o jeito que for melhor para você.**',
   'homeOffer.standard.cta': 'Continuar',
 
@@ -82,5 +82,5 @@ export const HOME_OFFER_PT = {
     other: 'Seu teste grátis termina em {count} dias',
   },
   'homeOffer.push.trialEndsBody':
-    'Depois disso, o Walkito Plus é renovado por {price} por ano. Se não for para você, cancele antes nas configurações de assinaturas.',
+    'Depois disso, o Walkito é renovado por {price} por ano. Se não for para você, cancele antes nas configurações de assinaturas.',
 };

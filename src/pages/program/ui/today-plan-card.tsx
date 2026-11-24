@@ -1,3 +1,4 @@
+import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
@@ -72,6 +73,9 @@ export type TodayPlanCardProps = {
   onPreview: (exerciseId: string) => void;
   /** The plan is in front: the mascot moves only then. */
   active: boolean;
+  /** Looking around without buying, past Day 1 (a test from the start):
+   * Start carries a lock, and still answers with the plans. */
+  locked?: boolean;
 };
 
 /** The three tests and the part each one reads. */
@@ -97,7 +101,7 @@ const TESTS: readonly {
 export function TodayPlanCard(props: TodayPlanCardProps) {
   const { variant, title, minutes, choice, onChoice, moves, onStart, onShort, note, testBody, restRoutine, nextAt } =
     props;
-  const { earned, onResults, onPreview, active } = props;
+  const { earned, onResults, onPreview, active, locked = false } = props;
   const t = useT();
   const { fontScale } = useWindowDimensions();
   const large = fontScale >= 1.35;
@@ -260,7 +264,13 @@ export function TodayPlanCard(props: TodayPlanCardProps) {
       )}
 
       {(working || variant === 'test') && (
-        <Capsule label={t('pages.plan.start')} onPress={onStart} style={styles.start} />
+        <Capsule
+          label={t('pages.plan.start')}
+          icon={locked ? SquareLock02Icon : undefined}
+          accessibilityLabel={locked ? `${t('pages.plan.start')}, ${t('quick.locked')}` : undefined}
+          onPress={onStart}
+          style={styles.start}
+        />
       )}
       {working && onShort != null && (
         <Pressable

@@ -15,6 +15,8 @@ export {
   dayOneRun,
   dayOneWentWell,
   finishDayOne,
+  planSessionsLocked,
+  usePlanSessionsLocked,
   type DayOneRun,
   type DayOneStep,
 } from './model/day-one';

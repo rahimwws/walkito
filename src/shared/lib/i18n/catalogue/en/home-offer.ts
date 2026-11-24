@@ -4,7 +4,7 @@
  * first stood, over Home): the one-time trial, the comeback against its
  * deadline, the ordinary plans after it, and the pushes around them. It is a
  * hard paywall, so nothing here may say or imply the app can be used without
- * Walkito Plus.
+ * buying.
  *
  * **No price is written here.** Every figure arrives as `{price}` or
  * `{introPrice}`, the store's own string for this storefront; `{percent}`
@@ -17,8 +17,8 @@
  * sets "one-time offer" that way). Keep the markers around whichever words
  * carry the weight in your language; they never show.
  *
- * **"Walkito Plus" is the product's name** and stays as it is in every
- * language.
+ * **The product is called plain "Walkito"**, with no tier after it, and the
+ * name stays as it is in every language.
  */
 
 import type { SourceEntry } from '../entry';
@@ -27,19 +27,19 @@ export const HOME_OFFER_EN = {
   // ── The one-time trial ───────────────────────────────────────────────────
   'homeOffer.trial.title': 'Hold up, this is a one-time offer',
   /** A one-week trial, the one sold today. */
-  'homeOffer.trial.bodyWeek': '**Walkito Plus for a year**, and **the first week is free**.',
+  'homeOffer.trial.bodyWeek': '**Walkito for a year**, and **the first week is free**.',
   /** Any other trial length, by its own unit. */
   'homeOffer.trial.bodyWeeks': {
-    one: '**Walkito Plus for a year**, and **the first {count} week is free**.',
-    other: '**Walkito Plus for a year**, and **the first {count} weeks are free**.',
+    one: '**Walkito for a year**, and **the first {count} week is free**.',
+    other: '**Walkito for a year**, and **the first {count} weeks are free**.',
   },
   'homeOffer.trial.bodyDays': {
-    one: '**Walkito Plus for a year**, and **the first {count} day is free**.',
-    other: '**Walkito Plus for a year**, and **the first {count} days are free**.',
+    one: '**Walkito for a year**, and **the first {count} day is free**.',
+    other: '**Walkito for a year**, and **the first {count} days are free**.',
   },
   'homeOffer.trial.bodyMonths': {
-    one: '**Walkito Plus for a year**, and **the first {count} month is free**.',
-    other: '**Walkito Plus for a year**, and **the first {count} months are free**.',
+    one: '**Walkito for a year**, and **the first {count} month is free**.',
+    other: '**Walkito for a year**, and **the first {count} months are free**.',
   },
   /** The button. A trial in weeks is counted in days: "Try free for 7 days". */
   'homeOffer.trial.ctaDays': { one: 'Try free for {count} day', other: 'Try free for {count} days' },
@@ -55,9 +55,9 @@ export const HOME_OFFER_EN = {
   /** `{time}` counts down as hh:mm:ss to a real deadline. */
   'homeOffer.comeback.endsIn': 'Ends in {time}',
   /** Both deals, a lower first year and lifetime. */
-  'homeOffer.comeback.bodyBoth': 'Keep **Walkito Plus** your way: **a year for less**, or **yours for good**.',
-  'homeOffer.comeback.bodyYear': '**A year of Walkito Plus** at a lower price, for a short time only.',
-  'homeOffer.comeback.bodyLifetime': '**Walkito Plus for good** with a single payment, for a short time only.',
+  'homeOffer.comeback.bodyBoth': 'Keep **Walkito** your way: **a year for less**, or **yours for good**.',
+  'homeOffer.comeback.bodyYear': '**A year of Walkito** at a lower price, for a short time only.',
+  'homeOffer.comeback.bodyLifetime': '**Walkito for good** with a single payment, for a short time only.',
   'homeOffer.comeback.cta': 'Claim my offer',
 
   // ── The comeback's card ──────────────────────────────────────────────────
@@ -78,7 +78,7 @@ export const HOME_OFFER_EN = {
 
   // ── The ordinary plans, once the comeback is over ───────────────────────
   // No "limited" and no "one-time" here: nothing on this screen ends.
-  'homeOffer.standard.title': 'Keep going with Walkito Plus',
+  'homeOffer.standard.title': 'Keep going with Walkito',
   'homeOffer.standard.body': 'Your plan, every session and every retest. **Pick the way that suits you.**',
   'homeOffer.standard.cta': 'Continue',
 
@@ -139,5 +139,5 @@ export const HOME_OFFER_EN = {
     other: 'Your free trial ends in {count} days',
   },
   'homeOffer.push.trialEndsBody':
-    'After that, Walkito Plus renews at {price} a year. If it isn’t for you, cancel before then in your subscription settings.',
+    'After that, Walkito renews at {price} a year. If it isn’t for you, cancel before then in your subscription settings.',
 } as const satisfies Record<string, SourceEntry>;
