@@ -35,6 +35,21 @@ function variant(): string {
 }
 
 /**
+ * Which JavaScript the event came from: the EAS Update's id, or `embedded`
+ * for the bundle the store build shipped with. Registered on every event, so
+ * an offer or copy change sent over the air is its own cohort; `$app_version`
+ * only knows the store build.
+ */
+function updateId(): string {
+  try {
+    const Updates = require('expo-updates') as typeof import('expo-updates');
+    return Updates.updateId ?? 'embedded';
+  } catch {
+    return 'unknown';
+  }
+}
+
+/**
  * One of ours: a phone of the team's with the store build on it.
  *
  * A TestFlight or App Store install is a production build like anybody's, so
@@ -159,7 +174,7 @@ function posthog(): PostHog | null {
       // on its side; this keeps the request from asking for it at all.
       disableGeoip: true,
     });
-    client.register({ app_variant: variant(), ...internal() });
+    client.register({ app_variant: variant(), update_id: updateId(), ...internal() });
     return client;
   } catch (error) {
     // `typeof` first: the stores that call `track` are loaded under bun, where
@@ -181,6 +196,15 @@ export function track<E extends AnalyticsEvent>(
     // what people were doing. Same names, same health-free properties.
     logObserveEvent(event, attributes);
   });
+}
+
+/**
+ * Properties sent with every event from now on (PostHog's super properties):
+ * the storefront's country, the paywall lineup this person was shown. Never
+ * anything about her body.
+ */
+export function register(props: Record<string, string | number | boolean>): void {
+  whenSeen(() => posthog()?.register(props));
 }
 
 /**

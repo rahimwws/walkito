@@ -64,6 +64,49 @@ function nextLineup(): boolean {
   return __DEV__ && kv.getBoolean(LINEUP_KEY) === true;
 }
 
+const MONTHLY_TRIAL_KEY = 'dev/sampleMonthlyTrial';
+
+/** Development only (`?sampleMonthlyTrial`, `=off`): the `trial` offering
+ * holds the monthly with a free week (walkito_monthly_trial, not in App
+ * Store Connect yet), so the paywall can be seen as it will be once it is. */
+export function setSampleMonthlyTrial(on: boolean): void {
+  if (!__DEV__) return;
+  if (on) kv.set(MONTHLY_TRIAL_KEY, true);
+  else kv.remove(MONTHLY_TRIAL_KEY);
+}
+
+const CURRENCY_KEY = 'dev/sampleCurrency';
+
+type SampleCurrency = 'USD' | 'EUR' | 'INR';
+
+/** Development only (`?sampleCurrency=eur|inr|usd`): sample prices in another
+ * storefront's currency, written the way that store writes them, at the
+ * prices App Store Connect has for Germany and India (Nov 28, 2026). */
+export function setSampleCurrency(code: string): void {
+  if (!__DEV__) return;
+  const upper = code.toUpperCase();
+  if (upper === 'EUR' || upper === 'INR') kv.set(CURRENCY_KEY, upper);
+  else kv.remove(CURRENCY_KEY);
+}
+
+function currency(): SampleCurrency {
+  const code = __DEV__ ? kv.getString(CURRENCY_KEY) : undefined;
+  return code === 'EUR' || code === 'INR' ? code : 'USD';
+}
+
+/** The US price's counterpart in the sample currency: App Store Connect's own
+ * figure where there is one, else a rough conversion. */
+const LOCAL: Readonly<Record<'EUR' | 'INR', Readonly<Record<string, number>>>> = {
+  EUR: { '49.99': 59.99, '59.99': 59.99, '9.99': 9.99, '14.99': 14.99, '4.99': 5.99, '29.99': 34.99, '99.99': 109.99, '39.99': 44.99, '24.99': 27.99 },
+  INR: { '49.99': 4999, '59.99': 4999, '9.99': 999, '14.99': 1499, '4.99': 499, '29.99': 2999, '99.99': 9999, '39.99': 3999, '24.99': 2499 },
+};
+
+function local(usdAmount: number): number {
+  const code = currency();
+  if (code === 'USD') return usdAmount;
+  return LOCAL[code][usdAmount.toFixed(2)] ?? (code === 'EUR' ? usdAmount : Math.round(usdAmount * 100) - 1);
+}
+
 let sheetCloses = false;
 
 /** Development only (`?samplePrices=cancel`): a sample purchase answers as
@@ -82,7 +125,11 @@ export function isSamplePlan(plan: Plan): boolean {
   return plan.token.startsWith(TOKEN);
 }
 
+/** An amount as that storefront writes it: "$9.99", "9,99 €", "₹999.00". */
 function usd(amount: number): string {
+  const code = currency();
+  if (code === 'EUR') return `${amount.toFixed(2).replace('.', ',')}\u00a0€`;
+  if (code === 'INR') return `₹${amount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
   return `$${amount.toFixed(2)}`;
 }
 
@@ -116,13 +163,14 @@ const PASS_IDS =
     ? { full: PASS_PRODUCTS.android, offer: PASS_PRODUCTS.androidOffer }
     : { full: PASS_PRODUCTS.ios, offer: PASS_PRODUCTS.iosOffer };
 
-function plan(offering: string, period: PlanPeriod, id: string, price: number, intro: IntroOffer | null = null): Plan {
+function plan(offering: string, period: PlanPeriod, id: string, usdPrice: number, intro: IntroOffer | null = null): Plan {
+  const price = local(usdPrice);
   const display = usd(price);
   const parts = PARTS[period];
   return {
     token: `${TOKEN}${offering}:${period}`,
     period,
-    product: { id, price, currencyCode: 'USD', display },
+    product: { id, price, currencyCode: currency(), display },
     priceString: display,
     pricePerMonthString: parts == null ? null : per(price, parts.months),
     pricePerWeekString: parts == null ? null : per(price, parts.weeks),
@@ -144,8 +192,8 @@ export function sampleOffering(identifier: string): Offering | null {
         monthly: nextLineup()
           ? plan(identifier, 'monthly', PRODUCTS.monthly, 9.99, {
               kind: 'pay-up-front',
-              price: 4.99,
-              priceString: usd(4.99),
+              price: local(4.99),
+              priceString: usd(local(4.99)),
               period: { unit: 'month', count: 1 },
             })
           : plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
@@ -160,7 +208,10 @@ export function sampleOffering(identifier: string): Offering | null {
           kind: 'free-trial',
           period: { unit: 'week', count: 1 },
         }),
-        monthly: null,
+        monthly:
+          __DEV__ && kv.getBoolean(MONTHLY_TRIAL_KEY) === true
+            ? plan(identifier, 'monthly', PRODUCTS.monthlyTrial, 9.99, { kind: 'free-trial', period: { unit: 'week', count: 1 } })
+            : null,
         weekly: null,
         lifetime: null,
         pass: null,
@@ -170,8 +221,8 @@ export function sampleOffering(identifier: string): Offering | null {
         identifier,
         annual: plan(identifier, 'annual', PRODUCTS.annualOffer, nextLineup() ? 49.99 : 59.99, {
           kind: 'pay-up-front',
-          price: 29.99,
-          priceString: usd(29.99),
+          price: local(29.99),
+          priceString: usd(local(29.99)),
           period: { unit: 'year', count: 1 },
         }),
         monthly: null,

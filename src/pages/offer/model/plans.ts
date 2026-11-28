@@ -17,14 +17,6 @@ import type { Translate } from '@/shared/lib/i18n';
  * $4.16 a month" is the line under the title, never the big figure.
  */
 
-/**
- * The plans the price page shows, in this order, all three from the start:
- * the annual (chosen), the monthly, then the lifetime as a smaller card.
- * Weekly stands in for the monthly only where the store has no monthly
- * (Android's first line-up).
- */
-export const PLAN_ORDER: readonly PaywallPeriod[] = ['annual', 'monthly', 'weekly', 'lifetime'];
-
 /** A plan as one card says it. */
 export type PlanCopy = {
   title: string;
@@ -37,6 +29,9 @@ export type PlanCopy = {
   /** The year over a month, "About $4.16 a month": the annual only, smaller
    * than the billed price. */
   perMonth?: string | null;
+  /** The pill on the card: the free days, or what the year saves against
+   * the monthly. */
+  badge?: string | null;
 };
 
 /** The button and the line under it, for the plan that is chosen. */
@@ -85,7 +80,10 @@ function offerOn(kind: PaywallPeriod, plan: Plan | null) {
     if (intro.kind === 'free-trial') return intro;
     return onePeriod ? intro : null;
   }
-  if (kind === 'monthly') return onePeriod ? intro : null;
+  if (kind === 'monthly') {
+    if (intro.kind === 'free-trial') return intro;
+    return onePeriod ? intro : null;
+  }
   return null;
 }
 
@@ -130,38 +128,162 @@ export function perMonthOf(plan: Plan): string {
   return formatLike(plan.priceString, plan.product.price, plan.product.price / 12);
 }
 
-/**
- * What the chosen plan charges today, in the store's currency: nothing for a
- * free trial, the first payment of a paid introductory offer, else the price.
- * Null until the store has answered.
- */
-export function dueToday(kind: PaywallPeriod, plan: Plan | null): string | null {
-  if (plan == null) return null;
-  const offer = offerOn(kind, plan);
-  if (offer?.kind === 'free-trial') return formatLike(plan.priceString, plan.product.price, 0);
-  if (offer?.kind === 'pay-up-front') return offer.priceString;
-  return plan.priceString;
-}
-
 /** Whether the monthly plan opens with a lower first month for this customer. */
 export function hasIntroMonth(plan: Plan | null): boolean {
   return offerOn('monthly', plan)?.kind === 'pay-up-front';
 }
 
-export function describePlan(kind: PaywallPeriod, plan: Plan | null, t: Translate): PlanCopy {
+const DAY_MS = 86_400_000;
+
+/** A store period after `from`, on the calendar: a month is the same day
+ * next month, as the store bills it, not thirty days. */
+export function afterPeriod(from: number, period: StorePeriod): number {
+  if (period.unit === 'day') return from + period.count * DAY_MS;
+  if (period.unit === 'week') return from + period.count * 7 * DAY_MS;
+  const date = new Date(from);
+  if (period.unit === 'month') date.setMonth(date.getMonth() + period.count);
+  else date.setFullYear(date.getFullYear() + period.count);
+  return date.getTime();
+}
+
+/** One stop on the chosen plan's timeline: when, and what happens. */
+export type ChargeStop = { at: number; text: string };
+
+/**
+ * The chosen plan's first charges with their dates, for the rail under the
+ * cards: a free trial's today, reminder and first payment (the reminder only
+ * when the trial is longer than it, `reminderDays` before the end, which is
+ * when `remindBeforeTrialEnds` lays it); a lower first period's today and
+ * the regular price after it. Null for a plain price or a one-time payment,
+ * which have nothing to lay out. The first stop is always today.
+ */
+export function chargeTimeline(
+  kind: PaywallPeriod,
+  plan: Plan | null,
+  now: number,
+  reminderDays: number,
+  t: Translate,
+): ChargeStop[] | null {
+  if (plan == null) return null;
+  const offer = offerOn(kind, plan);
+  if (offer?.kind === 'free-trial') {
+    const days = freeDaysOf(kind, plan);
+    if (days == null || days <= reminderDays) return null;
+    return [
+      { at: now, text: t('offer.timeline.todayFree') },
+      { at: now + (days - reminderDays) * DAY_MS, text: t('offer.timeline.reminder') },
+      { at: now + days * DAY_MS, text: t('offer.timeline.charge', { price: plan.priceString }) },
+    ];
+  }
+  if (offer?.kind === 'pay-up-front') {
+    const yearly = kind === 'annual';
+    return [
+      {
+        at: now,
+        text: t(yearly ? 'offer.timeline.todayIntroYear' : 'offer.timeline.todayIntroMonth', { intro: offer.priceString }),
+      },
+      {
+        at: afterPeriod(now, offer.period),
+        text: t(yearly ? 'offer.timeline.renewYear' : 'offer.timeline.renewMonth', { price: plan.priceString }),
+      },
+    ];
+  }
+  return null;
+}
+
+/**
+ * The line over the button: what the store's own sheet is about to show, in
+ * the same terms. The price it will ask for, whether it renews and how
+ * often, and the day of the first charge when that is not today. Apple's
+ * sheet leads with the renewing price; ours says it first, so nothing on the
+ * sheet is a surprise. Null until the store has answered.
+ */
+export function sheetLine(
+  kind: PaywallPeriod,
+  plan: Plan | null,
+  now: number,
+  t: Translate,
+  store: string,
+  date: (at: number) => string,
+): string | null {
+  if (plan == null) return null;
+  const price = plan.priceString;
+  if (kind === 'lifetime') return t('offer.sheet.once', { store, price });
+  const offer = offerOn(kind, plan);
+  if (offer?.kind === 'free-trial') {
+    const period = periodText(offer.period, t);
+    const first = date(afterPeriod(now, offer.period));
+    return t(kind === 'monthly' ? 'offer.sheet.trialMonth' : 'offer.sheet.trialYear', { store, period, price, date: first });
+  }
+  if (offer?.kind === 'pay-up-front') {
+    const first = date(afterPeriod(now, offer.period));
+    return t(kind === 'monthly' ? 'offer.sheet.introMonth' : 'offer.sheet.introYear', {
+      store,
+      intro: offer.priceString,
+      price,
+      date: first,
+    });
+  }
+  if (kind === 'monthly') return t('offer.sheet.month', { store, price });
+  if (kind === 'weekly') return t('offer.sheet.week', { store, price });
+  return t('offer.sheet.year', { store, price });
+}
+
+/**
+ * What the yearly plan's first payment saves against twelve months of the
+ * monthly at its regular price, as a whole percentage cut down, or null when
+ * it saves nothing or the two are not in the same currency. Both figures are
+ * the store's.
+ */
+export function yearSavingPercent(annual: Plan | null, monthly: Plan | null): number | null {
+  if (annual == null || monthly == null) return null;
+  if (annual.product.currencyCode !== monthly.product.currencyCode) return null;
+  const year = monthly.product.price * 12;
+  if (!(year > 0)) return null;
+  const percent = Math.floor((1 - firstChargeOf('annual', annual) / year) * 100);
+  return percent > 0 ? percent : null;
+}
+
+/** What the first payment of a plan is, in the store's currency: nothing
+ * counts for a free trial here, since the plan bills its price once it ends. */
+function firstChargeOf(kind: PaywallPeriod, plan: Plan): number {
+  const offer = offerOn(kind, plan);
+  return offer?.kind === 'pay-up-front' ? offer.price : plan.product.price;
+}
+
+/** The free days of a plan's trial, when it is counted in days or weeks. */
+function freeDaysOf(kind: PaywallPeriod, plan: Plan | null): number | null {
+  const offer = offerOn(kind, plan);
+  if (offer?.kind !== 'free-trial') return null;
+  if (offer.period.unit === 'day') return offer.period.count;
+  if (offer.period.unit === 'week') return offer.period.count * 7;
+  return null;
+}
+
+/**
+ * One card's words. `monthly` is the monthly plan beside the yearly, for the
+ * saving on the yearly's pill; without it there is no pill on the yearly.
+ */
+export function describePlan(kind: PaywallPeriod, plan: Plan | null, t: Translate, monthly: Plan | null = null): PlanCopy {
   const price = plan?.priceString ?? null;
   switch (kind) {
     case 'annual': {
       const title = t('offer.plans.yearly');
       const offer = offerOn(kind, plan);
+      const saving = yearSavingPercent(plan, monthly);
       if (plan != null && offer?.kind === 'pay-up-front') {
         return {
           title,
           note: t('offer.plans.upfrontNote', { price: plan.priceString }),
           price: offer.priceString,
           caption: t('offer.plans.firstYear'),
+          perMonth: t('offer.plans.aboutPerMonthFirstYear', {
+            perMonth: formatLike(offer.priceString, offer.price, offer.price / 12),
+          }),
+          badge: saving != null ? t('offer.plans.save', { percent: saving }) : null,
         };
       }
+      const badge = saving != null ? t('offer.plans.save', { percent: saving }) : null;
       if (plan != null && offer?.kind === 'free-trial') {
         return {
           title,
@@ -169,6 +291,7 @@ export function describePlan(kind: PaywallPeriod, plan: Plan | null, t: Translat
           price,
           caption: t('offer.plans.perYear'),
           perMonth: t('offer.plans.aboutPerMonth', { perMonth: perMonthOf(plan) }),
+          badge,
         };
       }
       return {
@@ -177,10 +300,21 @@ export function describePlan(kind: PaywallPeriod, plan: Plan | null, t: Translat
         price,
         caption: t('offer.plans.perYear'),
         perMonth: plan != null ? t('offer.plans.aboutPerMonth', { perMonth: perMonthOf(plan) }) : null,
+        badge,
       };
     }
     case 'monthly': {
       const offer = offerOn(kind, plan);
+      const free = freeDaysOf(kind, plan);
+      if (plan != null && offer?.kind === 'free-trial') {
+        return {
+          title: t('offer.plans.monthly'),
+          note: t('offer.plans.trialNoteMonthly', { period: periodText(offer.period, t), price: plan.priceString }),
+          price,
+          caption: t('offer.plans.perMonth'),
+          badge: free != null ? t('offer.plans.freeDays', { count: free }) : null,
+        };
+      }
       if (plan != null && offer?.kind === 'pay-up-front') {
         return {
           title: t('offer.plans.monthly'),
@@ -214,9 +348,10 @@ export function describeCta(kind: PaywallPeriod, plan: Plan | null, t: Translate
   const offer = offerOn(kind, plan);
   if (offer?.kind === 'free-trial') {
     const week = (offer.period.unit === 'week' && offer.period.count === 1) || (offer.period.unit === 'day' && offer.period.count === 7);
+    const renews = kind === 'monthly' ? 'offer.plans.renewsTrialMonthly' : 'offer.plans.renewsTrial';
     return {
       label: t(week ? 'offer.plans.ctaTrialWeek' : 'offer.plans.ctaTrial'),
-      terms: `${t('offer.plans.renewsTrial', { period: periodText(offer.period, t), price })} ${cancel}`,
+      terms: `${t(renews, { period: periodText(offer.period, t), price })} ${cancel}`,
       free: true,
     };
   }

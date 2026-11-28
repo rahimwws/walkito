@@ -142,16 +142,8 @@ export function CompareStep() {
  * written or edited by us; a new one is added only from the store.
  */
 const REVIEWS: readonly { author: string; text: Key }[] = [
-  { author: 'Kolodi', text: 'story.reviews.kolodi' },
   { author: 'AhmetAZ', text: 'story.reviews.ahmetaz' },
 ];
-
-/**
- * The App Store's own rating and count, from
- * https://itunes.apple.com/lookup?id=6813076846 on Nov 18, 2026:
- * averageUserRating 5, userRatingCount 4. Update both from the store, never by hand.
- */
-export const APP_STORE_RATING = { rating: '5.0', count: 4 } as const;
 
 /**
  * A five-pointed star, filled: the store's rating, which a stroke glyph reads
@@ -179,20 +171,6 @@ function Stars({ size = 16 }: { size?: number }) {
       {[0, 1, 2, 3, 4].map((i) => (
         <FilledStar key={i} size={size} color={accents[scheme].amber.fill} />
       ))}
-    </View>
-  );
-}
-
-/** "★ 5.0 · 4 App Store ratings": the store's own figure, nothing else. */
-export function RatingLine({ color }: { color: string }) {
-  const scheme = useColorScheme();
-  const t = useT();
-  return (
-    <View style={styles.ratingRow}>
-      <FilledStar size={15} color={accents[scheme].amber.fill} />
-      <Text style={[styles.rating, { color }]} maxFontSizeMultiplier={1.3}>
-        {t('story.reviews.rating', { rating: APP_STORE_RATING.rating, count: APP_STORE_RATING.count })}
-      </Text>
     </View>
   );
 }
@@ -225,7 +203,6 @@ export function ReviewsStep() {
         </Animated.View>
       ))}
       <View style={styles.reviewFoot}>
-        <RatingLine color={meter.label} />
         <Text style={[styles.caption, { color: meter.caption }]}>{t('story.reviews.from')}</Text>
       </View>
     </ScrollView>

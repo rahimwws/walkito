@@ -389,4 +389,33 @@ export const OFFER_EN = {
   'offer.welcome.title': 'You\'re in',
   'offer.welcome.line': 'Your plan is ready. It starts with today\'s session, a few minutes at your own pace.',
   'offer.welcome.cta': 'Start today\'s session',
+  // ── The plans, v2 (WALK-18): the head, the cards' pills, the timeline and
+  // the line over the button that says what the store's sheet shows next.
+  // `{store}` is "Apple" or "Google Play"; `{date}` a day and month written
+  // out for this language; `{period}` a trial's length (`offer.plans.days`).
+  'offer.head.eyebrow': 'Your plan is ready',
+  'offer.head.eyebrowNamed': '{name}, your plan is ready',
+  'offer.plans.freeDays': { one: '{count} day free', other: '{count} days free' },
+  'offer.plans.save': 'Save {percent}%',
+  'offer.plans.aboutPerMonthFirstYear': 'About {perMonth} a month in year one',
+  'offer.plans.trialNoteMonthly': '{period} free, then {price} a month',
+  'offer.plans.renewsTrialMonthly': '{period} free, then {price} per month.',
+  'offer.sheet.trialMonth': '{store} will ask you to confirm: {period} free, then {price} a month from {date}. Nothing to pay today.',
+  'offer.sheet.trialYear': '{store} will ask you to confirm: {period} free, then {price} a year from {date}. Nothing to pay today.',
+  'offer.sheet.introMonth': '{store} will ask you to confirm: {intro} today for the first month, then {price} a month from {date}.',
+  'offer.sheet.introYear': '{store} will ask you to confirm: {intro} today for the first year, then {price} a year from {date}.',
+  'offer.sheet.month': '{store} will ask you to confirm: {price} today, then every month until you cancel.',
+  'offer.sheet.year': '{store} will ask you to confirm: {price} today, then every year until you cancel.',
+  'offer.sheet.week': '{store} will ask you to confirm: {price} today, then every week until you cancel.',
+  'offer.sheet.once': '{store} will ask you to confirm: {price} today, one payment, nothing renews.',
+  'offer.sheet.storeApple': 'Apple',
+  'offer.sheet.storeGoogle': 'Google Play',
+  'offer.timeline.today': 'Today',
+  'offer.timeline.todayFree': 'Full access, nothing to pay',
+  'offer.timeline.todayIntroMonth': '{intro} for your first month',
+  'offer.timeline.todayIntroYear': '{intro} for your first year',
+  'offer.timeline.reminder': 'We remind you before you pay',
+  'offer.timeline.charge': 'First payment: {price}',
+  'offer.timeline.renewMonth': 'Then {price} a month',
+  'offer.timeline.renewYear': 'Then {price} a year',
 } as const satisfies Record<string, SourceEntry>;

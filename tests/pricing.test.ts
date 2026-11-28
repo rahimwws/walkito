@@ -168,6 +168,9 @@ describe('the store contract', () => {
       monthly: 'walkito_monthly',
       lifetime: 'walkito_lifetime',
       annualTrial: 'walkito_annual_trial',
+      // The monthly with a free week: to be created in App Store Connect
+      // (WALK-18); until it is, the `trial` shelf simply has no monthly.
+      monthlyTrial: 'walkito_monthly_trial',
       annualOffer: 'walkito_annual_offer',
       lifetimeOffer: 'walkito_lifetime_offer',
     });
@@ -245,10 +248,13 @@ describe('the paywall and the expiry screen', () => {
     expect(plansCopy).toContain("t('offer.plans.renewsWeekly'");
   });
 
-  test('both sell the annual plan selected first', () => {
-    for (const page of [offer, expired]) {
-      expect(page).toContain("useState<PaywallPeriod>('annual')");
-    }
+  // The paywall opens on its lineup's default, switched by the
+  // `paywall_default_plan` flag (the monthly with a free week unless it says
+  // otherwise; `src/pages/offer/model/lineup.test.ts`). The expiry screen
+  // still opens on the annual.
+  test('the expiry screen sells the annual selected first, the paywall its lineup\'s default', () => {
+    expect(expired).toContain("useState<PaywallPeriod>('annual')");
+    expect(offer).toContain('useState<PaywallPeriod>(lineup.chosen)');
   });
 
   test('the billed price is drawn larger than the per-week line', () => {

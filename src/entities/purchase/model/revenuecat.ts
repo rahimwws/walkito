@@ -1,4 +1,4 @@
-import { identify, setPerson, track, type PlanTier, type PurchaseProps, type StoreResult } from '@/shared/lib/analytics';
+import { identify, register, setPerson, track, type PlanTier, type PurchaseProps, type StoreResult } from '@/shared/lib/analytics';
 import {
   getAppsFlyerUID,
   logAppsFlyerEvent,
@@ -880,8 +880,26 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   void linkAnalytics();
   relinkOnSignIn();
   void collectAdAttribution();
+  void recordStorefront();
 
   await refreshEntitlement();
+}
+
+/**
+ * The store country this customer buys in (`storefront_country`), on every
+ * event and on the person. GeoIP is off, and the currency was known only for
+ * the people who reached the store's sheet; a paywall view needs it too, to
+ * read a regional price.
+ */
+async function recordStorefront(): Promise<void> {
+  try {
+    const country = (await Purchases.getStorefront())?.countryCode;
+    if (country == null || country === '') return;
+    register({ storefront_country: country });
+    setPerson({ storefront_country: country });
+  } catch {
+    // An older store or none at all: the events simply go without it.
+  }
 }
 
 /**
@@ -1158,6 +1176,7 @@ function purchaseProps(pkg: PurchasesPackage, plan: PlanTier, offering: string):
     product_id: pkg.product.identifier,
     offering,
     price: pkg.product.price,
+    price_string: pkg.product.priceString,
     currency: pkg.product.currencyCode,
   };
 }
@@ -1293,6 +1312,7 @@ export const revenueCatStore: Store = {
       product_id: product.identifier,
       offering: source,
       price: product.price,
+      price_string: product.priceString,
       currency: product.currencyCode,
     };
     track('purchase_started', props);

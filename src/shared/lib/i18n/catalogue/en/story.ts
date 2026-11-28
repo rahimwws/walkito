@@ -65,16 +65,10 @@ export const STORY_EN = {
 
   // ── Reviews: the App Store's, word for word ──────────────────────────────
   'story.reviews.title': 'Made for people like you',
-  'story.reviews.kolodi':
-    'honestly didn’t expect much but it’s pretty nice. answered a few questions about my feet and it made me a daily plan, takes like a few min. gonna try it for a couple weeks and see',
   'story.reviews.ahmetaz':
     'Really liked this app. The interface is clean and easy to navigate, and programs are easy to follow. Helped with my heel pain. Would recommend',
   'story.reviews.from': 'From the App Store',
   'story.reviews.stars': '5 stars on the App Store',
-  'story.reviews.rating': {
-    one: '{rating} · {count} App Store rating',
-    other: '{rating} · {count} App Store ratings',
-  },
 
   // ── What she wants back ──────────────────────────────────────────────────
   'story.goals.title': 'What do you want back?',

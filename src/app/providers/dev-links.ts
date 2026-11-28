@@ -25,12 +25,14 @@ import {
   devSetReviewMode,
   devSetTrialAudience,
   grantDevAccess,
+  setSampleCurrency,
   setSampleLineup,
+  setSampleMonthlyTrial,
   setSamplePrices,
   setSampleSheetCloses,
 } from '@/entities/purchase';
 import { getIntake, saveIntake } from '@/entities/profile';
-import { devForgetCancelQuestion, devForgetGift, devSetFirstSession } from '@/pages/offer';
+import { devForgetCancelQuestion, devForgetGift, devSetFirstSession, devSetPaywallVariant } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
 import {
@@ -66,6 +68,16 @@ const PERCENT_PARAM = /[?&]percent=(\d{1,2})\b/;
  * sheet closed without buying ("What stopped you?", asked again after every
  * `?previewPaywall`). `?samplePrices=off` goes back to the store. */
 const SAMPLE_PARAM = /[?&]samplePrices(?:=(\w+))?\b/;
+/** `?sampleMonthlyTrial`: the sample `trial` offering holds the monthly with
+ * a free week (`walkito_monthly_trial`), as it will once it exists;
+ * `=off` takes it away. */
+const SAMPLE_MONTHLY_TRIAL_PARAM = /[?&]sampleMonthlyTrial(?:=(\w+))?\b/;
+/** `?sampleCurrency=eur|inr|usd`: the sample prices in that storefront's
+ * currency, at App Store Connect's own figures. */
+const SAMPLE_CURRENCY_PARAM = /[?&]sampleCurrency=(\w+)\b/;
+/** `?paywallDefault=monthly_trial|yearly|first_year_2999`: the paywall's
+ * lineup, as the `paywall_default_plan` flag would set it; `=off` the flag. */
+const PAYWALL_DEFAULT_PARAM = /[?&]paywallDefault=(\w+)\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
 const PAYWALL_PARAM = /[?&]previewPaywall\b/;
@@ -289,6 +301,12 @@ export function useDevLinks(): void {
           setSampleSheetCloses(sample[1] === 'cancel' || sample[1] === 'nextcancel');
           setSampleLineup(sample[1] === 'next' || sample[1] === 'nextcancel');
         }
+        const monthlyTrial = SAMPLE_MONTHLY_TRIAL_PARAM.exec(url);
+        if (monthlyTrial != null) setSampleMonthlyTrial(monthlyTrial[1] !== 'off');
+        const currency = SAMPLE_CURRENCY_PARAM.exec(url);
+        if (currency != null) setSampleCurrency(currency[1]);
+        const lineup = PAYWALL_DEFAULT_PARAM.exec(url);
+        if (lineup != null) devSetPaywallVariant(lineup[1]);
         const first = FIRST_SESSION_PARAM.exec(url);
         if (first != null) {
           if (first[1] === 'offer') startProgram(programState());

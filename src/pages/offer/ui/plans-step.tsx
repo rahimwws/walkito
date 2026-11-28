@@ -2,36 +2,28 @@ import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import SecurityCheckIcon from '@hugeicons/core-free-icons/SecurityCheckIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useIsFocused } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { DAY_ONE_CLIPS } from '@/features/home-tour';
 import type { PaywallPeriod, Plan } from '@/entities/purchase';
-import { clipShape, fonts } from '@/shared/config';
+import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Button } from '@/shared/ui/button';
 import { GuidelinesLine } from '@/shared/ui/guidelines-line';
+import { ReplayMask } from '@/shared/ui/replay-mask';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
-import { CLIP_BACKDROP, ExercisePreview } from '@/widgets/session-player';
 
-import { describeCta, describePlan, splitHighlight } from '../model/plans';
-import { FootCheckResult } from './foot-check-result';
+import { describeCta, describePlan, type ChargeStop } from '../model/plans';
+import { ChargeRail } from './charge-rail';
 import { PlanCard } from './plan-card';
+import { PlanTile } from './plan-tile';
 import { PlansTable } from './plans-table';
 import { PlansThemeContext, plansThemeFor } from './plans-theme';
-import { CarlaLine, StoryHead, type PlansStory } from './story-head';
-import { TrialTimeline, trialDays } from './trial-timeline';
 
-/** The first move of Day 1, seated: the plantar stretch, hand on the toes. */
-const HERO_CLIP = DAY_ONE_CLIPS[0];
-/** The clip's height, at most: enough to see a hand and a foot, small enough
- * that the plans start on the first screen. */
-const HERO_HEIGHT = 124;
-const GUTTER = 22;
+const GUTTER = 20;
 
 export type PlansStepRow = {
   kind: PaywallPeriod;
@@ -42,33 +34,29 @@ export type PlansStepRow = {
   missing: boolean;
 };
 
+/** Over the plans: what the plan is for, in her own answers. */
+export type PlansHead = {
+  /** "Anna, your plan is ready", or "Day 1 done, Anna." after the first
+   * session. Null on the comeback view. */
+  eyebrow: string | null;
+  /** Her goal from the onboarding, in the words she picked it in. */
+  title: string;
+  /** Where it hurts, this morning's first steps, how long: her own answers,
+   * kept out of any recording (`ReplayMask`). */
+  chips: readonly string[];
+};
+
 export type PlansStepProps = {
-  /** The first view's step bar. */
-  stepBar?: ReactNode;
-  /** Every plan, in order, from the start: the annual, the monthly (or the
-   * weekly where the store has no monthly), the lifetime as a smaller card. */
+  head: PlansHead;
+  /** Every plan, in the lineup's order. The first two stand side by side. */
   rows: readonly PlansStepRow[];
   selected: PaywallPeriod;
   onSelect: (kind: PaywallPeriod) => void;
-  /** The pill on the annual: the comeback view's alone. */
+  /** The pill on the first card: the comeback view's alone. */
   leadBadge: string | null;
-  /** The comeback view: its own headline. */
-  comeback: boolean;
-  /** Their first name, for the free week's headline; null without one. */
-  name: string | null;
-  /** Her Foot Check over the plans: when this page is the first she sees,
-   * with no screen before it to have shown it. */
-  result: boolean;
-  /**
-   * The view after the first session, in place of the clip: its own heading
-   * (`line` marks its lit words with brackets, as the headline does) and the
-   * picture of the day that comes next.
-   */
-  after?: { title: string; line: string; picture: ReactNode } | null;
-  /** After the onboarding's story: her plan's name over the plans, her goals,
-   * her first-step routine and how the plan runs, in place of the clip. */
-  story?: PlansStory | null;
-  /** Over the button: what happens next and what is paid today. */
+  /** The chosen plan's charges with their dates, when it has an intro. */
+  stops: readonly ChargeStop[] | null;
+  /** Over the button: what the store's sheet shows next (`sheetLine`). */
   confirm: string | null;
   /** A plan to bring into view: the one "What stopped you?" pointed back to.
    * `at` makes the same plan a new request. */
@@ -80,9 +68,6 @@ export type PlansStepProps = {
   onRestore: () => void;
   /** Apple's offer-code sheet, where there is one. */
   onRedeemCode?: () => void;
-  /** Something is over the step (the store's sheet, a question): the
-   * clip holds still. */
-  covered: boolean;
   /** "Not now", and the close at the top: on to Home's free first run
    * (`skipPaywall`). Left out over Home (`PaywallWall`), where there is no
    * way past: then neither is drawn. */
@@ -92,43 +77,24 @@ export type PlansStepProps = {
 };
 
 /**
- * The plans: the last step of the first paywall, and every view after it.
+ * The paywall, on one page that opens on the plans.
  *
- * One page in the app's own appearance, dark like the onboarding: a real
- * clip of Day 1's first move (seated, a hand drawing the toes back), muted,
- * looping, and still whenever the screen is out of focus or something covers
- * it; her own Foot Check when no screen before this one showed it; the line
- * that says the exercises follow physical therapy guidelines; then every plan
- * at once, the annual chosen. No cartoon, no sky, no "Most popular" (nothing
- * here is popular yet), no "Show all plans": the monthly and the lifetime are
- * the honest other ways in, and a choice nobody scrolls to is not a choice.
- *
- * Every price is the store's. Each card's largest figure is the amount billed,
- * as Apple asks; the annual's "about … a month" is the smaller line under its
- * title. The free week's three days run inside the annual's card (today,
- * "Day 5: We remind you", the first payment), which is where the reminder
- * screen that used to come before this one now lives.
- *
- * Over the button, one line says what happens next: Apple's own sheet, and
- * what is paid today. A hard paywall: "Not now" and the close lead to Home's
- * day-one session and then the plans again (`skipPaywall`), never into the
- * app, and nothing new or cheaper appears after either.
- *
- * After the first session (`after`) the step carries on from it instead of
- * starting over: "Day 1 done" and the day that comes next (its own clip)
- * where the hero clip was, then the same plans, button and terms.
+ * Her goal at the top, in the words she picked in the onboarding, with where
+ * it hurts under it; then the two plans side by side at equal weight (the
+ * lineup decides which is first and chosen); the chosen plan's first charges
+ * on a rail with real dates; then the line that says the exercises follow
+ * physical therapy guidelines, and what is included. The button stays docked
+ * at the foot on a solid ground, with the line that says what the store's
+ * sheet shows next over it, and "Not now", the renewal terms, Restore, Terms
+ * and Privacy under it. Nothing in the scroll can pass under those words.
  */
 export function PlansStep({
-  stepBar,
+  head,
   rows,
   selected,
   onSelect,
   leadBadge,
-  comeback,
-  name,
-  result,
-  after = null,
-  story = null,
+  stops,
   confirm,
   reveal = null,
   busy,
@@ -136,7 +102,6 @@ export function PlansStep({
   notice,
   onRestore,
   onRedeemCode,
-  covered,
   onSkip,
   children,
 }: PlansStepProps) {
@@ -145,242 +110,177 @@ export function PlansStep({
   const theme = plansThemeFor(scheme);
   const { PLUS, SHEET } = theme;
   const insets = useSafeAreaInsets();
-  const frame = useSafeAreaFrame();
-  const focused = useIsFocused();
 
   const lead = rows[0];
-  /** The annual starts with a free trial for this customer. */
-  const freeDays = comeback || lead == null ? null : trialDays(lead.plan);
-
   const chosen = rows.find((row) => row.kind === selected) ?? lead;
   const cta = describeCta(chosen.kind, chosen.plan, t, Platform.OS === 'android');
-  // The free days are the annual's: with another plan chosen the headline
-  // stops promising them.
-  const headline = splitHighlight(
-    freeDays != null && chosen.kind === lead.kind
-      ? name != null
-        ? t('offer.plans.headlineTrialNamed', { count: freeDays, name })
-        : t('offer.plans.headlineTrial', { count: freeDays })
-      : t(comeback ? 'offer.plans.headlineComeback' : 'offer.plans.headline'),
-  );
+  const monthly = rows.find((row) => row.kind === 'monthly')?.plan ?? null;
+  const copyOf = (row: PlansStepRow) => {
+    const copy = describePlan(row.kind, row.plan, t, monthly);
+    return row.kind === lead.kind && leadBadge != null ? { ...copy, badge: leadBadge } : copy;
+  };
+  const pair = rows.slice(0, 2);
+  const rest = rows.slice(2);
 
-  const shape = clipShape(HERO_CLIP);
-  const clipWidth = Math.round(Math.min(frame.width - GUTTER * 2, HERO_HEIGHT * shape));
-  const clip = { width: clipWidth, height: Math.round(clipWidth / shape) };
-
-  const [dockHeight, setDockHeight] = useState(170);
-  /** The dock's fade, from the page under it. */
-  const veil = (alpha: number) =>
-    `rgba(${parseInt(SHEET.surface.slice(1, 3), 16)},${parseInt(SHEET.surface.slice(3, 5), 16)},${parseInt(SHEET.surface.slice(5, 7), 16)},${alpha})`;
+  const [dockHeight, setDockHeight] = useState(220);
 
   // Where each card sits in the scroll, so a plan pointed back to by "What
   // stopped you?" can be brought into view rather than left below the fold.
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
-  const plansTop = useRef(0);
   const cardTops = useRef<Partial<Record<PaywallPeriod, number>>>({});
   useEffect(() => {
     if (reveal == null) return;
     const y = cardTops.current[reveal.kind];
     if (y == null) return;
-    scroll.current?.scrollTo({ y: Math.max(0, plansTop.current + y - 120), animated: true });
+    scroll.current?.scrollTo({ y: Math.max(0, y - 120), animated: true });
   }, [reveal]);
 
   return (
     <PlansThemeContext.Provider value={theme}>
       <View style={styles.full}>
         <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-        <>
-          <ScrollView
-            ref={scroll}
-            style={styles.full}
-            contentContainerStyle={[styles.content, { paddingTop: insets.top + 12, paddingBottom: dockHeight + 12 }]}
-            showsVerticalScrollIndicator={false}>
-            {(stepBar != null || onSkip != null) && (
-              <View style={styles.topRow}>
-                <View style={styles.topBar}>{stepBar}</View>
-                {onSkip != null && (
-                  <Pressable
-                    accessibilityRole="button"
-                    accessibilityLabel={t('common.close')}
-                    hitSlop={12}
-                    onPress={() => {
-                      void Haptics.selectionAsync();
-                      onSkip();
-                    }}
-                    style={({ pressed }) => [styles.close, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
-                    <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.label} strokeWidth={2.4} />
-                  </Pressable>
-                )}
-              </View>
-            )}
-
-            {story != null ? (
-              <StoryHead
-                story={story}
-                headline={headline.map((run, i) =>
-                  run.lit ? (
-                    <Text key={i} style={{ color: PLUS.lit }}>
-                      {run.text}
-                    </Text>
-                  ) : (
-                    run.text
-                  ),
-                )}
-              />
-            ) : after != null ? (
-              <View style={styles.after}>
-                <Text
-                  accessibilityRole="header"
-                  numberOfLines={2}
-                  adjustsFontSizeToFit
-                  minimumFontScale={0.75}
-                  style={[styles.afterTitle, { color: SHEET.ink }]}
-                  maxFontSizeMultiplier={1.25}>
-                  {after.title}
-                </Text>
-                <Text style={[styles.afterLine, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                  {splitHighlight(after.line).map((run, i) =>
-                    run.lit ? (
-                      <Text key={i} style={{ color: PLUS.lit }}>
-                        {run.text}
-                      </Text>
-                    ) : (
-                      run.text
-                    ),
-                  )}
-                </Text>
-                {after.picture}
-              </View>
-            ) : (
-              <>
-                {/* Real feet, before a word: the first move of Day 1. */}
-                <View style={[styles.clip, clip, { backgroundColor: CLIP_BACKDROP }]}>
-                  <ExercisePreview
-                    exerciseId={HERO_CLIP}
-                    style={clip}
-                    aspectRatio={shape}
-                    fit="cover"
-                    playing={focused && !covered}
-                  />
-                </View>
-                {/* Two lines at most: a long language comes down a few sizes
-                    rather than pushing the plans under the button. */}
-                <Text
-                  accessibilityRole="header"
-                  numberOfLines={2}
-                  adjustsFontSizeToFit
-                  minimumFontScale={0.7}
-                  style={[styles.headline, { color: SHEET.ink }]}
-                  maxFontSizeMultiplier={1.25}>
-                  {headline.map((run, i) =>
-                    run.lit ? (
-                      <Text key={i} style={{ color: PLUS.lit }}>
-                        {run.text}
-                      </Text>
-                    ) : (
-                      run.text
-                    ),
-                  )}
-                </Text>
-              </>
-            )}
-
-            {result && <FootCheckResult surface={SHEET.card} />}
-
-            <GuidelinesLine color={SHEET.label} />
-            {story != null && <CarlaLine />}
-
-            <View
-              accessibilityRole="radiogroup"
-              style={styles.plans}
-              onLayout={(event) => {
-                plansTop.current = event.nativeEvent.layout.y;
-              }}>
-              {rows.map((row) => (
-                <View
-                  key={row.kind}
-                  onLayout={(event) => {
-                    cardTops.current[row.kind] = event.nativeEvent.layout.y;
-                  }}>
-                  <PlanCard
-                    copy={describePlan(row.kind, row.plan, t)}
-                    badge={row.kind === lead.kind ? leadBadge : null}
-                    small={row.kind === 'lifetime'}
-                    selected={selected === row.kind}
-                    radio={rows.length > 1}
-                    disabled={row.missing}
-                    onPress={() => onSelect(row.kind)}>
-                    {/* The free week, day by day, in the card of the plan it
-                        belongs to: today, the reminder, the first payment. */}
-                    {row.kind === lead.kind && chosen.kind === lead.kind && (
-                      <TrialTimeline plan={row.plan} compact />
-                    )}
-                  </PlanCard>
-                </View>
-              ))}
-            </View>
-
-            <PlansTable />
-
-            {onRedeemCode != null && (
+        <ScrollView
+          ref={scroll}
+          style={styles.full}
+          contentContainerStyle={[styles.content, { paddingTop: insets.top + 8, paddingBottom: dockHeight + 16 }]}
+          showsVerticalScrollIndicator={false}>
+          {onSkip != null && (
+            <View style={styles.topRow}>
               <Pressable
                 accessibilityRole="button"
-                onPress={onRedeemCode}
-                hitSlop={8}
-                style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.quietText, { color: SHEET.label }]}>{t('offer.haveCode')}</Text>
-              </Pressable>
-            )}
-          </ScrollView>
-
-          {/* Floating over the foot of the page, on a fade, so the one action
-            is always on screen with what it charges under it. */}
-          <View
-            onLayout={(event) => setDockHeight(Math.round(event.nativeEvent.layout.height))}
-            style={[
-              styles.dock,
-              {
-                paddingBottom: Math.max(insets.bottom, 12) + 2,
-                // Solid from the line over the button down, so a plan scrolled
-                // under it cannot show through the words.
-                experimental_backgroundImage: `linear-gradient(180deg, ${veil(0)} 0%, ${veil(1)} 9%)`,
-              },
-            ]}>
-            {notice != null && <Text style={[styles.notice, { color: SHEET.label }]}>{notice}</Text>}
-            {/* What the tap does next, and what it costs today: Apple's own
-                sheet follows, and nothing is a surprise on it. */}
-            {notice == null && confirm != null && (
-              <Text style={[styles.confirm, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
-                {confirm}
-              </Text>
-            )}
-            <Button label={cta.label} onPress={onBuy} loading={busy} />
-            {onSkip != null && (
-              <Pressable
-                accessibilityRole="button"
+                accessibilityLabel={t('common.close')}
+                hitSlop={12}
                 onPress={() => {
                   void Haptics.selectionAsync();
                   onSkip();
                 }}
-                disabled={busy}
-                hitSlop={8}
-                style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.quietText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                  {t('offer.plans.skip')}
-                </Text>
+                style={({ pressed }) => [styles.close, { backgroundColor: SHEET.card }, pressed && { opacity: 0.6 }]}>
+                <HugeiconsIcon icon={Cancel01Icon} size={16} color={SHEET.label} strokeWidth={2.4} />
               </Pressable>
+            </View>
+          )}
+
+          <View style={styles.head}>
+            {head.eyebrow != null && (
+              <Text style={[styles.eyebrow, { color: PLUS.lit }]} maxFontSizeMultiplier={1.3}>
+                {head.eyebrow}
+              </Text>
             )}
-            {cta.terms != null && (
-              <View style={styles.terms}>
-                <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />
-                <Text style={[styles.termsText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
-                  {cta.terms}
-                </Text>
-              </View>
+            <Text
+              accessibilityRole="header"
+              numberOfLines={2}
+              adjustsFontSizeToFit
+              minimumFontScale={0.75}
+              style={[styles.title, { color: SHEET.ink }]}
+              maxFontSizeMultiplier={1.25}>
+              {head.title}
+            </Text>
+            {head.chips.length > 0 && (
+              <ReplayMask style={styles.chips}>
+                {head.chips.map((chip) => (
+                  <View key={chip} style={[styles.chip, { backgroundColor: SHEET.card }]}>
+                    <Text style={[styles.chipText, { color: SHEET.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+                      {chip}
+                    </Text>
+                  </View>
+                ))}
+              </ReplayMask>
             )}
-            <LegalLinks onRestore={onRestore} disabled={busy} scheme={theme.scheme} />
           </View>
-        </>
+
+          <View accessibilityRole="radiogroup" style={styles.plans}>
+            <View style={styles.pair}>
+              {pair.map((row) => (
+                <View
+                  key={row.kind}
+                  style={styles.pairCell}
+                  onLayout={(event) => {
+                    cardTops.current[row.kind] = event.nativeEvent.layout.y;
+                  }}>
+                  <PlanTile
+                    copy={copyOf(row)}
+                    selected={selected === row.kind}
+                    disabled={row.missing}
+                    onPress={() => onSelect(row.kind)}
+                  />
+                </View>
+              ))}
+            </View>
+            {rest.map((row) => (
+              <View
+                key={row.kind}
+                onLayout={(event) => {
+                  cardTops.current[row.kind] = event.nativeEvent.layout.y;
+                }}>
+                <PlanCard
+                  copy={copyOf(row)}
+                  small
+                  selected={selected === row.kind}
+                  radio
+                  disabled={row.missing}
+                  onPress={() => onSelect(row.kind)}
+                />
+              </View>
+            ))}
+          </View>
+
+          {stops != null && <ChargeRail stops={stops} />}
+
+          <GuidelinesLine color={SHEET.label} />
+
+          <PlansTable />
+
+          {onRedeemCode != null && (
+            <Pressable
+              accessibilityRole="button"
+              onPress={onRedeemCode}
+              hitSlop={8}
+              style={({ pressed }) => [styles.quiet, pressed && { opacity: 0.6 }]}>
+              <Text style={[styles.quietText, { color: SHEET.label }]}>{t('offer.haveCode')}</Text>
+            </Pressable>
+          )}
+        </ScrollView>
+
+        {/* Docked on a solid ground with a hairline over it: the line that
+            says what the sheet shows next can never sit over a card. */}
+        <View
+          onLayout={(event) => setDockHeight(Math.round(event.nativeEvent.layout.height))}
+          style={[
+            styles.dock,
+            { backgroundColor: SHEET.surface, borderTopColor: SHEET.edge, paddingBottom: Math.max(insets.bottom, 12) + 2 },
+          ]}>
+          {notice != null && <Text style={[styles.notice, { color: SHEET.label }]}>{notice}</Text>}
+          {notice == null && confirm != null && (
+            <Text style={[styles.confirm, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
+              {confirm}
+            </Text>
+          )}
+          <Button label={cta.label} onPress={onBuy} loading={busy} />
+          {onSkip != null && (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                void Haptics.selectionAsync();
+                onSkip();
+              }}
+              disabled={busy}
+              hitSlop={8}
+              style={({ pressed }) => [styles.notNow, pressed && { opacity: 0.6 }]}>
+              <Text style={[styles.notNowText, { color: SHEET.ink }]} maxFontSizeMultiplier={1.3}>
+                {t('offer.plans.skip')}
+              </Text>
+            </Pressable>
+          )}
+          {cta.terms != null && (
+            <View style={styles.terms}>
+              <HugeiconsIcon icon={SecurityCheckIcon} size={14} color={SHEET.caption} strokeWidth={2} />
+              <Text style={[styles.termsText, { color: SHEET.label }]} maxFontSizeMultiplier={1.3}>
+                {cta.terms}
+              </Text>
+            </View>
+          )}
+          <LegalLinks onRestore={onRestore} disabled={busy} scheme={theme.scheme} />
+        </View>
 
         {children}
       </View>
@@ -391,16 +291,17 @@ export function PlansStep({
 const styles = StyleSheet.create({
   full: { flex: 1 },
   content: { flexGrow: 1, paddingHorizontal: GUTTER, gap: 14 },
-  topRow: { flexDirection: 'row', alignItems: 'center', gap: 14, minHeight: 32 },
-  topBar: { flex: 1 },
+  topRow: { flexDirection: 'row', justifyContent: 'flex-end', minHeight: 32 },
   close: { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
-  clip: { alignSelf: 'center', borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
-  headline: {
-    ...fonts.heavy(28, -0.8),
-    lineHeight: 31,
-    textAlign: 'center',
-  },
-  plans: { gap: 12 },
+  head: { gap: 6 },
+  eyebrow: fonts.bold(15, -0.1),
+  title: { ...fonts.heavy(30, -0.8), lineHeight: 34 },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 4 },
+  chip: { height: 30, paddingHorizontal: 11, borderRadius: 15, borderCurve: 'continuous', justifyContent: 'center' },
+  chipText: fonts.semibold(14),
+  plans: { gap: 10 },
+  pair: { flexDirection: 'row', gap: 10, alignItems: 'stretch' },
+  pairCell: { flex: 1 },
   quiet: { alignSelf: 'center', paddingVertical: 4 },
   quietText: fonts.semibold(15),
   dock: {
@@ -408,32 +309,16 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    paddingTop: 22,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    paddingTop: 12,
     paddingHorizontal: GUTTER,
     gap: 8,
     alignItems: 'center',
   },
-  /** After the first session: the heading and the day that comes next. */
-  after: { gap: 6 },
-  afterTitle: { ...fonts.heavy(32, -0.9), lineHeight: 36 },
-  afterLine: { ...fonts.semibold(17, -0.2), lineHeight: 23, marginBottom: 10 },
-  notice: {
-    ...fonts.medium(13),
-    lineHeight: 17,
-    textAlign: 'center',
-  },
-  confirm: { ...fonts.bold(16, -0.2), lineHeight: 21, textAlign: 'center', paddingHorizontal: 8 },
-  terms: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 5,
-    paddingHorizontal: 8,
-  },
-  termsText: {
-    flexShrink: 1,
-    ...fonts.medium(12),
-    lineHeight: 16,
-    textAlign: 'center',
-  },
+  notice: { ...fonts.medium(13), lineHeight: 17, textAlign: 'center' },
+  confirm: { ...fonts.semibold(14, -0.1), lineHeight: 19, textAlign: 'center', paddingHorizontal: 4 },
+  notNow: { alignSelf: 'center', paddingVertical: 6, paddingHorizontal: 16 },
+  notNowText: fonts.bold(16),
+  terms: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 5, paddingHorizontal: 8 },
+  termsText: { flexShrink: 1, ...fonts.medium(12), lineHeight: 16, textAlign: 'center' },
 });

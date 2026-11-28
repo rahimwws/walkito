@@ -7,7 +7,7 @@ import { LANGUAGES, translatorFor } from '@/shared/lib/i18n';
 mock.module('@/entities/purchase', () => ({
   samePeriod: (a: StorePeriod, b: StorePeriod) => a.unit === b.unit && a.count === b.count,
 }));
-const { describeCta, describePlan, dueToday, formatLike, hasIntroMonth } = await import('./plans');
+const { chargeTimeline, describeCta, describePlan, formatLike, hasIntroMonth, sheetLine, yearSavingPercent } = await import('./plans');
 
 const t = translatorFor('en');
 
@@ -136,19 +136,107 @@ describe('the lifetime card', () => {
   });
 });
 
-describe('what is paid today', () => {
-  test('nothing for the free week, the first month for the intro, else the price', () => {
-    expect(dueToday('annual', annual({ kind: 'free-trial', period: { unit: 'week', count: 1 } }))).toBe('$0.00');
-    expect(dueToday('annual', annual(null))).toBe('$59.99');
-    expect(dueToday('monthly', monthly(9.99, FIRST_MONTH))).toBe('$4.99');
-    expect(dueToday('monthly', monthly(14.99, null))).toBe('$14.99');
-    expect(dueToday('lifetime', lifetime)).toBe('$99.99');
-    expect(dueToday('annual', null)).toBeNull();
+const FREE_WEEK: IntroOffer = { kind: 'free-trial', period: { unit: 'week', count: 1 } };
+const FIRST_YEAR: IntroOffer = { kind: 'pay-up-front', price: 29.99, priceString: '$29.99', period: { unit: 'year', count: 1 } };
+
+function yearly(price: number, intro: IntroOffer | null): Plan {
+  const display = `$${price.toFixed(2)}`;
+  return { ...annual(intro), product: { id: 'walkito_annual', price, currencyCode: 'USD', display }, priceString: display };
+}
+
+// Nov 28, 2026, noon in the test's own zone, so the dates do not depend on where it runs.
+const NOW = new Date(2026, 10, 28, 12).getTime();
+const day = (at: number) => new Intl.DateTimeFormat('en', { month: 'long', day: 'numeric' }).format(new Date(at));
+
+describe('the monthly with a free week', () => {
+  test('the pill counts the free days, and the button and terms say free then the price', () => {
+    const plan = monthly(9.99, FREE_WEEK);
+    const copy = describePlan('monthly', plan, t);
+    expect(copy.price).toBe('$9.99');
+    expect(copy.badge).toBe('7 days free');
+    const cta = describeCta('monthly', plan, t, false);
+    expect(cta.label).toBe(t('offer.plans.ctaTrialWeek'));
+    expect(cta.free).toBe(true);
+    expect(cta.terms).toContain('$9.99');
+  });
+});
+
+describe('the yearly beside the monthly', () => {
+  test('its saving against twelve months, cut down, and only in one currency', () => {
+    expect(yearSavingPercent(yearly(49.99, null), monthly(9.99, null))).toBe(58);
+    expect(yearSavingPercent(yearly(49.99, FIRST_YEAR), monthly(9.99, null))).toBe(74);
+    expect(yearSavingPercent(yearly(49.99, null), null)).toBeNull();
+    const euros = { ...monthly(9.99, null), product: { id: 'walkito_monthly', price: 9.99, currencyCode: 'EUR', display: '9,99 €' } };
+    expect(yearSavingPercent(yearly(49.99, null), euros)).toBeNull();
+    expect(yearSavingPercent(yearly(200, null), monthly(9.99, null))).toBeNull();
   });
 
-  test('the line over the button says it in every language', () => {
+  test('the $29.99 first year in plain view: the billed figure, the per-month under it, the regular price in the note', () => {
+    const copy = describePlan('annual', yearly(49.99, FIRST_YEAR), t, monthly(9.99, null));
+    expect(copy.price).toBe('$29.99');
+    expect(copy.caption).toBe(t('offer.plans.firstYear'));
+    expect(copy.perMonth).toContain('$2.49');
+    expect(copy.note).toContain('$49.99');
+    expect(copy.badge).toBe('Save 74%');
+  });
+
+  test('a plain yearly: per year, about a month, and the saving', () => {
+    const copy = describePlan('annual', yearly(49.99, null), t, monthly(9.99, null));
+    expect(copy.price).toBe('$49.99');
+    expect(copy.perMonth).toBe(t('offer.plans.aboutPerMonth', { perMonth: '$4.16' }));
+    expect(copy.badge).toBe('Save 58%');
+  });
+});
+
+describe('the line over the button', () => {
+  const line = (kind: Parameters<typeof sheetLine>[0], plan: Plan | null, tr = t) => sheetLine(kind, plan, NOW, tr, 'Apple', day);
+
+  test('a free week: nothing today, the price and the day of the first charge', () => {
+    expect(line('monthly', monthly(9.99, FREE_WEEK))).toBe(
+      'Apple will ask you to confirm: 1 week free, then $9.99 a month from December 5. Nothing to pay today.',
+    );
+    expect(line('annual', yearly(49.99, FREE_WEEK))).toContain('$49.99 a year from December 5');
+  });
+
+  test('a lower first period: what is paid today, then the regular price on the store\'s own date', () => {
+    expect(line('monthly', monthly(9.99, FIRST_MONTH))).toBe(
+      'Apple will ask you to confirm: $4.99 today for the first month, then $9.99 a month from December 28.',
+    );
+    expect(line('annual', yearly(49.99, FIRST_YEAR))).toContain('$29.99 today for the first year, then $49.99 a year from November 28');
+  });
+
+  test('a plain price, a lifetime, and no store answer yet', () => {
+    expect(line('monthly', monthly(14.99, null))).toContain('$14.99 today, then every month');
+    expect(line('lifetime', lifetime)).toContain('$99.99 today, one payment');
+    expect(line('annual', null)).toBeNull();
+  });
+
+  test('every language names the price and the date', () => {
     for (const language of LANGUAGES) {
-      expect(translatorFor(language)('offer.plans.confirmApple', { amount: '$0.00' })).toContain('$0.00');
+      const text = line('monthly', monthly(9.99, FREE_WEEK), translatorFor(language));
+      expect(text).toContain('$9.99');
+      expect(text).toContain('December 5');
+      expect(text).toContain('Apple');
     }
+  });
+});
+
+describe('the rail under the cards', () => {
+  test('a free week: today, the reminder two days before, the first charge on day seven', () => {
+    const stops = chargeTimeline('monthly', monthly(9.99, FREE_WEEK), NOW, 2, t);
+    expect(stops?.map((stop) => (stop.at - NOW) / 86_400_000)).toEqual([0, 5, 7]);
+    expect(stops?.[2]?.text).toBe('First payment: $9.99');
+  });
+
+  test('the first year up front: today, then the regular year a calendar year on', () => {
+    const stops = chargeTimeline('annual', yearly(49.99, FIRST_YEAR), NOW, 2, t);
+    expect(stops?.map((stop) => day(stop.at))).toEqual(['November 28', 'November 28']);
+    expect(new Date(stops?.[1]?.at ?? 0).getFullYear()).toBe(2027);
+    expect(stops?.[1]?.text).toBe('Then $49.99 a year');
+  });
+
+  test('nothing to lay out for a plain price or a one-time payment', () => {
+    expect(chargeTimeline('monthly', monthly(14.99, null), NOW, 2, t)).toBeNull();
+    expect(chargeTimeline('lifetime', lifetime, NOW, 2, t)).toBeNull();
   });
 });

@@ -285,6 +285,10 @@ export const OFFERING_V2 = 'v2';
 export const V2_PACKAGES = {
   /** walkito_annual_trial: the annual with a one-week free trial. */
   annualTrial: 'annual_trial',
+  /** walkito_monthly_trial: the monthly with a one-week free trial, once it
+   * exists in App Store Connect and in `v2`. Until then the `trial` shelf has
+   * no monthly and the paywall sells the standard one (WALK-18). */
+  monthlyTrial: 'monthly_trial',
   /** walkito_annual_offer: the annual, its first year paid up front for less. */
   annualOffer: 'annual_offer',
   /** walkito_lifetime_offer: the cheaper lifetime. */
@@ -312,7 +316,7 @@ export const PASS_PACKAGES: Readonly<Record<string, string>> = {
  */
 export const V2_SHELVES: Readonly<Record<string, Readonly<Partial<Record<PlanPeriod, string>>>>> = {
   [OFFERINGS.standard]: { annual: PACKAGES.annual, monthly: PACKAGES.monthly, lifetime: PACKAGES.lifetime },
-  [OFFERINGS.trial]: { annual: V2_PACKAGES.annualTrial },
+  [OFFERINGS.trial]: { annual: V2_PACKAGES.annualTrial, monthly: V2_PACKAGES.monthlyTrial },
   [OFFERINGS.offer]: {
     annual: V2_PACKAGES.annualOffer,
     lifetime: V2_PACKAGES.lifetimeOffer,
@@ -341,6 +345,10 @@ export const PRODUCTS = {
   /** Auto-renewable, 1 year, $59.99, with a one-week free trial as its
    * introductory offer. */
   annualTrial: 'walkito_annual_trial',
+  /** Auto-renewable, 1 month, $9.99, with a one-week free trial as its
+   * introductory offer. Not in App Store Connect yet (WALK-18 lists the
+   * steps); the paywall's default lineup picks it up once `v2` holds it. */
+  monthlyTrial: 'walkito_monthly_trial',
   /** Auto-renewable, 1 year, $49.99, with the first year paid up front at
    * $29.99 as its introductory offer (App Store Connect, approved Nov 2026). */
   annualOffer: 'walkito_annual_offer',
@@ -355,7 +363,7 @@ export const PRODUCTS = {
  */
 export const V2_SHELF_PRODUCTS: Readonly<Record<string, Readonly<Partial<Record<PlanPeriod, string>>>>> = {
   [OFFERINGS.standard]: { annual: PRODUCTS.annual, monthly: PRODUCTS.monthly, lifetime: PRODUCTS.lifetime },
-  [OFFERINGS.trial]: { annual: PRODUCTS.annualTrial },
+  [OFFERINGS.trial]: { annual: PRODUCTS.annualTrial, monthly: PRODUCTS.monthlyTrial },
   [OFFERINGS.offer]: { annual: PRODUCTS.annualOffer, lifetime: PRODUCTS.lifetimeOffer },
 };
 

@@ -164,7 +164,17 @@ export type AnalyticsEvents = {
   // ── Paywall ──────────────────────────────────────────────────────────────
   /** `after_session`: the view that carries on from the first session done
    * before it ("Day 1 done"), rather than the one that opens cold. */
-  paywall_viewed: { offering: string; boosted: boolean; after_session: boolean; wall: boolean };
+  paywall_viewed: {
+    offering: string;
+    boosted: boolean;
+    after_session: boolean;
+    wall: boolean;
+    /** The plan chosen as the page opened, and the lineup that chose it
+     * (`paywall_default_plan`: `monthly_trial`, `yearly`, `first_year_2999`,
+     * or `comeback`). */
+    default_plan?: PlanTier;
+    variant?: string;
+  };
   /** A step of the first paywall: the screen before it, then the plans.
    * `story` is which it is: the free week, or how the plan starts. Step 2
    * (the reminder, or how a day works) is no longer shown since the paywall
@@ -173,8 +183,23 @@ export type AnalyticsEvents = {
   /** The plans, once the store had answered. `trial` is whether the annual
    * they showed started with a free trial for this customer, which the
    * offering's name alone does not say. Once per view. */
-  paywall_plans_shown: { offering: string; trial: boolean };
-  paywall_plan_selected: { plan: PlanTier };
+  paywall_plans_shown: {
+    offering: string;
+    trial: boolean;
+    default_plan?: PlanTier;
+    variant?: string;
+    /** RevenueCat's own offering identifier the plans came from (`v2`, or a
+     * by-name offering). */
+    rc_offering?: string;
+    /** Each card, first to last, with the store's own price string. */
+    plans_shown?: PlanShown[];
+    /** The default plan's currency, for a breakdown without unpacking. */
+    currency?: string;
+  };
+  /** A plan chosen. `default`: the one chosen as the page opened, logged
+   * once per view as the plans show, so the default is never missing from
+   * the series. */
+  paywall_plan_selected: { plan: PlanTier; default?: boolean; variant?: string };
   /** The plans' main button, before the store is asked: a tap that dies in
    * StoreKit still counts here, where `purchase_started` may not. */
   paywall_cta_tapped: { offering: string; plan: PlanTier };
@@ -542,11 +567,24 @@ export type AnalyticsEvents = {
 
 export type AppUpdateKind = 'ota' | 'store';
 
+/** One card as the paywall showed it. */
+export type PlanShown = {
+  plan: PlanTier;
+  product_id: string;
+  price: number;
+  /** The store's own string: "$9.99", "59,99 €", "₹999.00". */
+  price_string: string;
+  currency: string;
+  intro: 'free_trial' | 'pay_up_front' | 'pay_as_you_go' | 'none';
+};
+
 export type PurchaseProps = {
   plan: PlanTier;
   product_id: string;
   offering: string;
   price: number;
+  /** The store's own string for the price, as its sheet showed it. */
+  price_string?: string;
   currency: string;
   /** The introductory offer the store gave this customer on the plan, by
    * kind: whether a tap was for the free week, the lower first month or the

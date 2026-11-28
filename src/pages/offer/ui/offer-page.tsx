@@ -1,74 +1,48 @@
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { AppState, BackHandler, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Animated, { Easing, FadeIn, FadeOut, ReduceMotion } from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useEffect, useRef, useState } from 'react';
+import { AppState, Platform, StyleSheet, View } from 'react-native';
+import Animated, { Easing, FadeOut, ReduceMotion } from 'react-native-reanimated';
 
-import {
-  cancelWinback,
-  firstStepDueAt,
-  notificationsAllowed,
-  scheduleNextDayPush,
-  scheduleWinback,
-  useFirstStepReady,
-  wakeLabel,
-  wakeMinutes,
-} from '@/entities/notifications';
+import { cancelWinback, notificationsAllowed, scheduleNextDayPush, scheduleWinback, wakeMinutes } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
-import { firstName, getIntake, storyOf, useProfileName } from '@/entities/profile';
+import { firstName, getIntake, useProfileName } from '@/entities/profile';
 import { planSettings, sessions } from '@/entities/program';
 import {
   OFFERINGS,
   PACKAGES,
-  fetchShelf,
   firstCharge,
   firstChargeSavingPercent,
   grantDevAccess,
   isSamplePlan,
   onSimulator,
   paywallSkipped,
-  planOn,
   purchases,
   skipPaywall,
   useTrialOnFirstPaywall,
   type PaywallPeriod,
   type Plan,
-  type Shelf,
   markWelcomeOwed,
 } from '@/entities/purchase';
-import {
-  armHomeTour,
-  firstSession,
-  firstSessionAgain,
-  firstSessionOfferedAgain,
-  setHomeTourStage,
-  useFirstSessionAgain,
-} from '@/entities/session';
-import { freeTrialOf, remindBeforeTrialEnds } from '@/features/home-offer';
-import { fonts, meterColors, palette } from '@/shared/config';
-import { track } from '@/shared/lib/analytics';
+import { armHomeTour, firstSession, firstSessionAgain, firstSessionOfferedAgain, setHomeTourStage, useFirstSessionAgain } from '@/entities/session';
+import { freeTrialOf, remindBeforeTrialEnds, TRIAL_REMINDER_DAYS } from '@/features/home-offer';
+import { register, track, type PlanShown } from '@/shared/lib/analytics';
 import { logAppsFlyerEvent } from '@/shared/lib/appsflyer';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
-import { useColorScheme } from '@/shared/lib/theme';
 
 import { giftOpens, giftPlan } from '../model/gift';
 import { giftSeen, markGiftSeen } from '../model/gift-store';
-import { introSeen, markIntroSeen } from '../model/intro';
+import { firstChoice, lineupFor, plansOf, shownKinds, type Shelves } from '../model/lineup';
 import { nextDay } from '../model/next-day';
-import { PLAN_ORDER, dueToday, hasIntroMonth } from '../model/plans';
-import { FirstSession } from './first-session';
-import { NextDay } from './next-day';
+import { chargeTimeline, hasIntroMonth, sheetLine, splitHighlight } from '../model/plans';
+import { paywallVariant } from '../model/variant';
 import { CancelQuestion, takeCancelQuestion, type CancelReason } from './cancel-question';
 import { ExitGift } from './exit-gift';
-import type { PlansStory } from './story-head';
-import { IntroNext, IntroPlan, StepBar } from './offer-intro';
+import { FirstSession } from './first-session';
 import { PlansStep, type PlansStepRow } from './plans-step';
-import { TrialGift, TrialNext } from './trial-intro';
-import { trialDays } from './trial-timeline';
 
 /** The goal they picked, in the words onboarding offered it in. */
 const GOAL_WORDS: Readonly<Record<string, Key>> = {
@@ -88,19 +62,7 @@ const DURATION: Readonly<Record<string, Key>> = {
   longer: 'onboarding.duration.longer',
 };
 
-/** A first progress check is the second test: the first is tomorrow (today is
- * the two-minute first session), the next a fortnight after it. */
-const FIRST_CHECK_DAYS = 1 + 14;
-
-/** How long the first step waits for the store before it stops waiting to
- * hear whether there is a free week to speak of. */
-const STORY_WAIT_MS = 2500;
-
-/** A step arriving: a slow fade over the one leaving, so the two overlap. */
-const STEP_IN = FadeIn.duration(460)
-  .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
-  .reduceMotion(ReduceMotion.System);
-/** A step leaving: quicker, so the new one is the one you read. */
+/** A view leaving: a quick fade, so the next one is the one you read. */
 const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMotion(ReduceMotion.System);
 
 /**
@@ -162,53 +124,58 @@ export function PaywallWall({ onClose }: { onClose: () => void }) {
   return <Paywall wall onClose={onClose} />;
 }
 
+
 /**
- * The paywall: Walkito, as an annual or a monthly subscription or a lifetime
+ * The paywall: Walkito, as a monthly or an annual subscription or a lifetime
  * purchase (Android: whatever its offerings still hold, the weekly
  * subscription among them).
  *
- * Two pages on a first view: her Foot Check with the free week (or how her
- * plan starts), then the plans (`plans-step.tsx`), every plan on the page
- * from the start with the annual chosen. Every price is the store's, and each
- * card's largest figure is the amount billed, which Apple requires to be the
- * most prominent price on a subscription screen. What it charges, that it
- * renews and where to cancel sit under the button, with Terms of Use, Privacy
- * Policy and Restore Purchases; over it, one line says Apple's sheet comes
- * next and what is paid today.
+ * One page, opening on the plans (`plans-step.tsx`): her goal over two plans
+ * side by side at equal weight, then the chosen plan's first charges with
+ * their dates. Which plan is first and chosen, and which shelf each card
+ * comes from, is the lineup (`lineup.ts`), switched remotely by the PostHog
+ * flag `paywall_default_plan` (`monthly_trial` unless it says otherwise).
+ * Every price is the store's, and each card's largest figure is the amount
+ * billed, which Apple requires to be the most prominent price on a
+ * subscription screen. Over the button, one line says what the store's
+ * sheet will ask for and from when; under it, "Not now", the renewal terms,
+ * Restore, Terms and Privacy.
  *
- * Its one way past without buying is "Not now" (`skipPaywall`), on every
- * page from the first moment, which leads to Home's free first session, never
- * into the app. Nothing new or cheaper is offered after it. The top padding
- * comes from the safe-area inset rather than a constant.
+ * Its one way past without buying is "Not now" (`skipPaywall`), which leads
+ * to Home's free first session, never into the app.
  */
 function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => void }) {
   const router = useRouter();
-  const insets = useSafeAreaInsets();
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
   const t = useT();
-
+  const language = useLanguage();
   const { name } = useLocalSearchParams<{ name?: string }>();
-  /** Which plan is selected. The annual one, by default — see the note on the
-   * component. */
-  const [tier, setTier] = useState<PaywallPeriod>('annual');
+
+  /**
+   * Which offering to sell, by name.
+   *
+   * Apple has no notion of "the same product, cheaper": a discount is a
+   * different product, so the comeback annual is its own product and the
+   * `offer` offering sells it, to somebody who came back, or arrived from the
+   * win-back notification or the offer email. Never because of a code: an
+   * invite code used to unlock this price, and App Review rejected 1.0.3 (35)
+   * for it (Guideline 3.1.1). A code is only ever Apple's own offer code,
+   * redeemed in Apple's sheet ("Have a code?").
+   */
+  const boosted = useBoost() && !wall;
+  const trialAudience = useTrialOnFirstPaywall();
+  /** The lineup, settled as the view opens: the plans never change order
+   * under somebody's eyes. */
+  const [lineup] = useState(() => lineupFor(paywallVariant(), { comeback: boosted, trialAudience }));
+  const offeringId = OFFERINGS[lineup.offering];
+
+  /** Which plan is selected: the lineup's, until she picks another. */
+  const [tier, setTier] = useState<PaywallPeriod>(lineup.chosen);
   /** True from the tap until the store answers. Locks the button rather than
    * letting a second tap open a second transaction. */
   const [busy, setBusy] = useState(false);
-  /**
-   * The one line the store gets to say, for both buying and restoring.
-   *
-   * A single slot because only one of them can be in flight at a time, and two
-   * message rows would mean two places to look for the same kind of news. It
-   * sits over the button, where the tap that caused it happened.
-   */
+  /** The one line the store gets to say, for buying and restoring alike, over
+   * the button where the tap that caused it happened. */
   const [notice, setNotice] = useState<string | null>(null);
-
-  /**
-   * Raised once the store confirms, and the reason the screen does not close on
-   * the spot. Vanishing straight into the app made the one moment worth
-   * marking look like nothing happening.
-   */
   /** "What stopped you?" is up, for the plan whose sheet was closed. */
   const [asking, setAsking] = useState<PaywallPeriod | null>(null);
   /** A plan already on the page, brought back into view after "It costs too
@@ -216,187 +183,101 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
   const [reveal, setReveal] = useState<{ kind: PaywallPeriod; at: number } | null>(null);
 
   /**
-   * Which offering to sell, by name.
-   *
-   * Apple has no notion of "the same product, cheaper" — a discount is a
-   * different product — so the cheaper annual subscription is its own product
-   * and the `offer` offering sells it. It is shown to somebody who dismissed the
-   * paywall and came back, or who arrived from the win-back notification or
-   * the offer email. Never on a first view.
-   *
-   * Never because of a code. An invite code used to unlock this price, and App
-   * Review rejected 1.0.3 (35) for it (Guideline 3.1.1: a discount unlocked by
-   * a code typed into the app). A code is now only ever Apple's own offer code,
-   * redeemed in Apple's sheet ("Have a code?" below).
-   */
-  const winback = useBoost() && !wall;
-  const boosted = winback;
-
-  /**
-   * Which step is on screen: the free week (or how the plan starts), then the
-   * plans. Only on a first, full-price view, and only once on this phone (see
-   * `introSeen`); every other view opens on the plans.
-   *
-   * Numbered 1 and 3, as they were when a second screen stood between them
-   * (the reminder, or how a day works), so `paywall_step_viewed` keeps the
-   * plans at step 3 and the funnel reads across the change.
-   */
-  /**
    * The first session was done before this view (`FirstSession`, or Home's
-   * "Day 1" card for the wall): the plans carry on from it ("Day 1 done", the
-   * day that comes next) instead of opening with the two story steps, which
-   * would start over what the session already showed. Read once, as the view
-   * opens.
+   * "Day 1" card for the wall): the head says so ("Day 1 done") rather than
+   * "your plan is ready". Read once, as the view opens.
    */
   const [afterSession] = useState(() => !boosted && (firstSession() === 'done' || (wall && sessions().length > 0)));
-  const [flow] = useState(() => !wall && !boosted && !afterSession && !introSeen());
-  const [step, setStep] = useState<1 | 3>(flow ? 1 : 3);
-  // Android's back button goes back from the plans to the first step. On the
-  // first one it does what it always did on the gate.
-  useEffect(() => {
-    if (!flow || step === 1) return;
-    const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
-      setStep(1);
-      return true;
-    });
-    return () => subscription.remove();
-  }, [flow, step]);
-  const next = () => setStep(3);
-  /** The step bar's segment for a step: the plans are the second. */
-  const toStep = (segment: number) => setStep(segment <= 1 ? 1 : 3);
-
-  /**
-   * The free week, on a first view, for somebody a Meta ad brought (the
-   * `trial` offering; the monthly and lifetime come from the standard one,
-   * `planOn`); everybody else gets the annual at its full price, the `default`
-   * offering (`trialOnFirstPaywall`). Followed until the plans show, so an
-   * AppsFlyer report that lands during the first steps still counts, then held:
-   * the plans never change under somebody's eyes. The free week shows only when
-   * the store calls this customer eligible.
-   */
-  const trialAudience = useTrialOnFirstPaywall();
-  const [sellsTrial, setSellsTrial] = useState(trialAudience);
-  useEffect(() => {
-    if (step !== 3) setSellsTrial(trialAudience);
-  }, [step, trialAudience]);
-  const offeringId = boosted ? OFFERINGS.offer : sellsTrial ? OFFERINGS.trial : OFFERINGS.standard;
-
-  /**
-   * Which story the step before the plans tells: the free week
-   * (`trial-intro.tsx`) or how the plan starts (`offer-intro.tsx`).
-   *
-   * The free week only once the store has said this customer gets one, so
-   * nothing is promised that the plans then do not offer. Until the store
-   * answers there is nothing on the first step but its bar; an answer that
-   * does not come (`STORY_WAIT_MS`) settles it on the plan, which promises
-   * nothing. Settled once: the story never changes under somebody's eyes.
-   */
-  const [story, setStory] = useState<'trial' | 'plan' | null>(() => (flow && trialAudience ? null : 'plan'));
-  useEffect(() => {
-    if (story != null) return undefined;
-    const timer = setTimeout(() => setStory((current) => current ?? 'plan'), STORY_WAIT_MS);
-    return () => clearTimeout(timer);
-  }, [story]);
-  useEffect(() => {
-    if (!flow || story == null) return;
-    track('paywall_step_viewed', { step, story });
-  }, [flow, step, story]);
-  useEffect(() => {
-    if (step === 3) markIntroSeen();
-  }, [step]);
   const profileName = firstName(useProfileName());
-  const settings = planSettings();
 
   /**
-   * Their own numbers across the top of the first step: where it hurts, this
-   * morning's first steps, how long. Our paywall only: none of it is sent to
-   * Superwall (`paywallPersonalisation` never carries the body).
+   * Over the plans: what they are for, in her own answers. Her goal, in the
+   * words she picked it in, with where it hurts, this morning's first steps
+   * and how long under it. Our paywall only: none of it goes to Superwall or
+   * to analytics.
    */
-  const strip = (() => {
+  const [head] = useState(() => {
     const intake = getIntake();
-    if (intake == null) return [];
-    const out: string[] = [];
-    const where = whereKey(painAreasOf(intake.pain)[0], intake.side);
-    if (where != null) out.push(t(where));
-    if (intake.morningPain != null && where != null) out.push(t('offer.stripMornings', { score: intake.morningPain }));
-    const duration = intake.painDuration != null ? DURATION[intake.painDuration] : undefined;
-    if (duration != null) out.push(t(duration));
-    return out;
-  })();
-
-  /** What they came for, in their words from onboarding, said back under the
-   * title as theirs. Our paywall only, like the strip. */
-  const why = (() => {
-    const intake = getIntake();
-    const key = intake?.goal != null ? GOAL_WORDS[intake.goal] : undefined;
-    if (key == null) return null;
-    if (intake?.goal === 'allday' && (intake.role === 'feet' || intake.role === 'both'))
-      return t('onboarding.goal.shift');
-    return t(key);
-  })();
+    const chips: string[] = [];
+    if (intake != null) {
+      const where = whereKey(painAreasOf(intake.pain)[0], intake.side);
+      if (where != null) chips.push(t(where));
+      if (intake.morningPain != null && where != null) chips.push(t('offer.stripMornings', { score: intake.morningPain }));
+      const duration = intake.painDuration != null ? DURATION[intake.painDuration] : undefined;
+      if (duration != null) chips.push(t(duration));
+    }
+    const goal = intake?.goal != null ? GOAL_WORDS[intake.goal] : undefined;
+    const why =
+      goal == null
+        ? null
+        : intake?.goal === 'allday' && (intake.role === 'feet' || intake.role === 'both')
+          ? t('onboarding.goal.shift')
+          : t(goal);
+    const headline = (key: 'offer.plans.headline' | 'offer.plans.headlineComeback') =>
+      splitHighlight(t(key))
+        .map((run) => run.text)
+        .join('');
+    const named = profileName.length > 0;
+    const eyebrow = boosted
+      ? null
+      : afterSession
+        ? named
+          ? t('offer.next.titleNamed', { name: profileName })
+          : t('offer.next.title')
+        : named
+          ? t('offer.head.eyebrowNamed', { name: profileName })
+          : t('offer.head.eyebrow');
+    return {
+      eyebrow,
+      title: boosted ? headline('offer.plans.headlineComeback') : (why ?? headline('offer.plans.headline')),
+      chips: boosted ? [] : chips,
+    };
+  });
 
   /**
-   * Superwall's paywall for this moment, over this one.
-   *
-   * The placement says which price the user has earned, so the dashboard can
-   * show a paywall with the matching products. This screen stays underneath as
-   * the fallback: no campaign, no network or no Superwall at all, and it is the
-   * paywall the user sees. A beat after mount, so the screen has arrived — and,
-   * at the end of onboarding, the founders' note has gone — before anything
-   * covers it. Once per view.
-   *
-   * Registered as the paywall opens, on its first step rather than on the
-   * plans, so Superwall counts everyone who saw it and not only those who
-   * read on to the prices. Every campaign holds this screen as a 100% holdout
-   * (see AGENTS.md), so nothing covers it; a dashboard paywall given traffic
-   * again would stand in from the first step.
+   * Superwall's paywall for this moment, over this one. Every campaign holds
+   * this screen as a 100% holdout (see AGENTS.md), so nothing covers it; a
+   * dashboard paywall given traffic again would stand in. A beat after mount,
+   * once per view, and never over Home.
    */
   const paywall = usePaywall();
   useEffect(() => {
-    // A simulator in development cannot buy through Superwall (no StoreKit
-    // products), so our own paywall stays up and its button carries on.
     if (__DEV__ && onSimulator) return;
-    // Never over Home: the wall is ours alone.
     if (wall) return;
-    const placement = winback ? 'paywall_comeback' : 'paywall_first';
+    const placement = boosted ? 'paywall_comeback' : 'paywall_first';
     const timer = setTimeout(() => paywall.register(placement, { offering: offeringId }), 600);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /**
-   * The offering being sold, and the standard one to strike through against.
-   *
-   * Both are fetched, because a discount has to be measured against a real
-   * price rather than a printed one: comparing a store figure to a constant is
-   * how a sheet ends up claiming a saving off a number nobody charges.
+   * The three shelves the lineup draws from, from the store. The standard one
+   * is always read, because a discount has to be measured against a real
+   * price rather than a printed one, and a card whose shelf is missing falls
+   * back to it (`plansOf`).
    */
-  const [shelf, setShelf] = useState<Shelf>({ offering: null, standard: null });
+  const [shelves, setShelves] = useState<Shelves>({ standard: null, trial: null, offer: null });
   /**
-   * Whether the store has answered.
-   *
-   * Needed to tell "still loading" from "the dashboard has no such package".
-   * Both look like a null plan, and only one of them is a row the user must not
-   * be allowed to tap. Set only by an answer: a fetch that failed leaves it
-   * false, so a dropped connection never greys a plan out.
+   * Whether the store has answered: "still loading" and "the dashboard has no
+   * such package" both look like a null plan, and only the second is a card
+   * that must not be tapped. A failed fetch leaves it false, so a dropped
+   * connection never greys a plan out.
    */
   const [loaded, setLoaded] = useState(false);
-  /**
-   * Whether the last attempt to ask the store failed.
-   *
-   * Offline, an outage, or StoreKit returning no products. The rows stay
-   * enabled and the screen says the store is unreachable; it asks again when
-   * the app comes back to the foreground and when Continue is tapped. This
-   * screen is the only way into the app for somebody who has not paid, so a
-   * failed fetch must never be a dead end.
-   */
+  /** The last attempt to ask the store failed. The cards stay enabled, the
+   * page says the store is unreachable, and it asks again on the next
+   * foreground and on the button: this screen must never be a dead end. */
   const [unreachable, setUnreachable] = useState(false);
-  /** Bumped to ask the store again. */
   const [attempt, setAttempt] = useState(0);
 
-  /** Takes a store answer in. */
-  const stock = (next: Shelf) => {
-    setShelf(next);
+  const fetchShelves = async (): Promise<Shelves> => {
+    const wanted = new Set([lineup.annualFrom, lineup.monthlyFrom, lineup.lifetimeFrom]);
+    const read = (shelf: keyof Shelves) => (wanted.has(shelf) ? purchases.offering(OFFERINGS[shelf]) : Promise.resolve(null));
+    const [standard, trial, offer] = await Promise.all([purchases.offering(OFFERINGS.standard), read('trial'), read('offer')]);
+    return { standard, trial, offer };
+  };
+  const stock = (next: Shelves) => {
+    setShelves(next);
     setLoaded(true);
     setUnreachable(false);
   };
@@ -404,7 +285,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
   useEffect(() => {
     if (!purchases.configured) return;
     let live = true;
-    fetchShelf(offeringId).then(
+    fetchShelves().then(
       (next) => {
         if (live) stock(next);
       },
@@ -415,11 +296,12 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     return () => {
       live = false;
     };
-  }, [offeringId, attempt]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [attempt]);
 
   // Ask again when the app comes back while the store has not answered: the
   // usual reason it could not be reached is a connection that has since come
-  // back, and somebody who fixed it in Settings should not have to do more.
+  // back.
   useEffect(() => {
     if (loaded || !purchases.configured) return;
     const subscription = AppState.addEventListener('change', (next) => {
@@ -428,42 +310,32 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     return () => subscription.remove();
   }, [loaded]);
 
+  const plans = plansOf(shelves, lineup);
+  const kinds = shownKinds(lineup, plans, loaded);
+  const devPreview = __DEV__ && onSimulator;
+
   /**
-   * The win-back's promise, from the store, once this view has seen it.
-   *
-   * The notification is scheduled as the app goes to the background, and it
-   * says what the comeback price takes off. That figure is the comeback
-   * annual's first year (paid up front) against the standard annual, both from
-   * the store; until both have been read there is no honest number to send,
-   * and no notification goes.
+   * The win-back's promise: the comeback annual's first year against the
+   * standard annual, both from the store. Until both have been read there is
+   * no honest number to send, and no notification goes.
    */
   const winbackPercent = useRef<number | null>(null);
 
   /**
-   * The same view, for the offer emails and the win-back.
-   *
-   * The emails go four and fourteen days after the first view, and quote the
-   * store's own prices for the discounted annual subscription and the standard
-   * one — read here, in this storefront's currency, because the server has no
-   * way to know what the App Store would charge this person. Marked
-   * `plan: 'annual'` so the emails can tell these prices from ones recorded
-   * before the annual existed. Once per view, whichever offering this view is
-   * selling, and only once the store has answered — a view recorded with no
-   * prices would be no use to the emails.
+   * The same view, for the offer emails and the win-back: the store's own
+   * prices for the comeback annual and the standard one, in this
+   * storefront's currency, once the store has answered.
    */
   const recorded = useRef(false);
   useEffect(() => {
     if (!loaded || recorded.current) return;
     recorded.current = true;
     let live = true;
-    void Promise.all([purchases.offering(OFFERINGS.offer), purchases.offering(OFFERINGS.standard)]).then(
+    void Promise.all([shelves.offer ?? purchases.offering(OFFERINGS.offer), shelves.standard]).then(
       ([cheap, full]) => {
         if (!live) return;
         const low = cheap?.annual ?? null;
         const high = full?.annual ?? null;
-        // The comeback annual is the same yearly subscription with its first
-        // year paid up front at less: what it saves is that first payment
-        // against the standard year, and the price the emails quote is it.
         const percent = firstChargeSavingPercent(low, high);
         winbackPercent.current = percent;
         void recordAppEvent('paywall_viewed', {
@@ -474,63 +346,49 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
           percent,
         });
       },
-      () => {
-        // The store just answered for this screen, so this is rare; the view
-        // is simply not recorded, and no win-back figure is set.
-      },
+      () => undefined,
     );
     return () => {
       live = false;
     };
-    // Once per view: a change of offering mid-view is the same view.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded]);
 
-  /**
-   * Shown, and — on the way out — left without buying.
-   *
-   * On mount and unmount rather than on a button, so every way of leaving is
-   * counted. A purchase or restore marks the exit as not a dismissal.
-   */
+  /** Shown, and on the way out left without buying: on mount and unmount, so
+   * every way of leaving is counted. A purchase or restore marks the exit as
+   * not a dismissal. */
   const converted = useRef(false);
-
-  /**
-   * The onboarding's story, over the plans: her plan's name, her goals, her
-   * first-step routine (`StoryHead`). Not on the comeback view, which tells
-   * its own. Read once, as the view opens.
-   */
-  const language = useLanguage();
-  const firstStepReady = useFirstStepReady();
-  const [told] = useState(() => (boosted ? null : storyOf()));
-  const plansStory: PlansStory | null = (() => {
-    if (told == null) return null;
-    const at = firstStepDueAt();
-    const upcoming = at != null && at > Date.now();
-    const time = at == null ? null : wakeLabel(new Date(at).getHours() * 60 + new Date(at).getMinutes(), language);
-    return {
-      planName: t(`story.plan.${told.kind}`),
-      goals: told.goals,
-      firstStep: firstStepReady
-        ? t('story.paywall.ready')
-        : upcoming && time != null
-          ? t('story.paywall.firstStep', { time })
-          : null,
+  useEffect(() => {
+    // On every event after this one, the purchase events among them: which
+    // lineup the sheet was opened from.
+    register({ paywall_variant: lineup.variant });
+    track('paywall_viewed', {
+      offering: offeringId,
+      boosted,
+      after_session: afterSession,
+      wall,
+      default_plan: lineup.chosen,
+      variant: lineup.variant,
+    });
+    return () => {
+      if (!converted.current) track('paywall_dismissed', { offering: offeringId });
     };
-  })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /**
-   * The exit gift: `walkito_annual_offer` from the `offer` offering, loaded
-   * as the view opens, and kept only where the store has it and StoreKit says
-   * this customer can have its first-year price (`giftPlan`). Opened once,
-   * after a closed payment sheet (`giftOpens`); "What stopped you?" follows.
+   * The exit gift: `walkito_annual_offer` from the `offer` offering, once,
+   * after a closed payment sheet (`giftOpens`), and only in a lineup that
+   * does not already show that price (`lineup.gift`, the yearly one). Kept
+   * only where StoreKit says this customer can have its first-year price
+   * (`giftPlan`). "What stopped you?" follows it.
    */
   const [gift, setGift] = useState<Plan | null>(null);
   const [giftShown, setGiftShown] = useState(false);
   const [giftBusy, setGiftBusy] = useState(false);
-  /** The plan whose sheet was closed, for the question after the gift. */
-  const giftFor = useRef<PaywallPeriod>('annual');
+  const giftFor = useRef<PaywallPeriod>(lineup.chosen);
   useEffect(() => {
-    if (boosted || giftSeen() || !purchases.configured) return undefined;
+    if (!lineup.gift || giftSeen() || !purchases.configured) return undefined;
     let live = true;
     purchases
       .offering(OFFERINGS.offer)
@@ -541,7 +399,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     return () => {
       live = false;
     };
-  }, [boosted]);
+  }, [lineup.gift]);
   const giftEvent = gift == null ? null : { offering: OFFERINGS.offer, product: gift.product.id };
   const afterGift = () => {
     setGiftShown(false);
@@ -573,147 +431,98 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     else if (result.status === 'failed') setNotice(result.message);
     else setNotice(t('offer.storeUnreachable'));
   };
-  useEffect(() => {
-    track('paywall_viewed', { offering: offeringId, boosted, after_session: afterSession, wall });
-    return () => {
-      if (!converted.current) track('paywall_dismissed', { offering: offeringId });
-    };
-    // Once per presentation; the offering is settled before the screen opens.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   /**
-   * Each plan the offering holds, by kind, from the store. The annual is the
-   * offering's own (its price is what the offering is for); the others fall
-   * back to the standard offering's, the same product at its ordinary price
-   * (`planOn`). iOS sells annual, monthly and lifetime; Android's offerings
-   * still hold the first line-up, annual and weekly, until its own versions
-   * of the new products exist, and the step draws whatever is there.
+   * The plans, once the store has answered: each card with the store's own
+   * figures, the lineup that ordered them, and the default as a selection,
+   * so the default is never missing from `paywall_plan_selected`. Then
+   * Meta's standard "View content", through AppsFlyer, with neutral words
+   * only. Once per view.
    */
-  const plans: Readonly<Record<PaywallPeriod, Plan | null>> = {
-    annual: planOn(shelf, 'annual'),
-    monthly: planOn(shelf, 'monthly'),
-    weekly: planOn(shelf, 'weekly'),
-    lifetime: planOn(shelf, 'lifetime'),
-  };
-  const annualPlan = plans.annual;
-  const freeDays = sellsTrial ? trialDays(annualPlan) : null;
-  useEffect(() => {
-    if (story != null) return;
-    if (loaded) setStory(freeDays != null ? 'trial' : 'plan');
-    else if (unreachable) setStory('plan');
-  }, [story, loaded, unreachable, freeDays]);
-  // Whether the plans that were shown carried the free week: the offering's
-  // name says who was meant to get it, this says who the store gave it to.
   const plansShown = useRef(false);
   useEffect(() => {
-    if (step !== 3 || !loaded || plansShown.current) return;
+    if (!loaded || plansShown.current) return;
     plansShown.current = true;
-    track('paywall_plans_shown', { offering: offeringId, trial: trialDays(annualPlan) != null });
-    // Meta's standard "View content", through AppsFlyer (production builds
-    // only, by the wrapper): the price page was seen. Once per visit, with
-    // neutral words only, never a price or anything about her feet.
+    const shown: PlanShown[] = kinds.flatMap((kind) => {
+      const plan = plans[kind];
+      if (plan == null) return [];
+      return [
+        {
+          plan: kind,
+          product_id: plan.product.id,
+          price: plan.product.price,
+          price_string: plan.priceString,
+          currency: plan.product.currencyCode,
+          intro:
+            plan.intro?.kind === 'free-trial'
+              ? 'free_trial'
+              : plan.intro?.kind === 'pay-up-front'
+                ? 'pay_up_front'
+                : plan.intro?.kind === 'pay-as-you-go'
+                  ? 'pay_as_you_go'
+                  : 'none',
+        },
+      ];
+    });
+    const chosen = firstChoice(lineup, kinds);
+    track('paywall_plans_shown', {
+      offering: offeringId,
+      trial: [plans.annual, plans.monthly].some((plan) => plan != null && freeTrialOf(plan) != null),
+      default_plan: chosen,
+      variant: lineup.variant,
+      rc_offering: shelves[lineup.offering]?.identifier ?? shelves.standard?.identifier,
+      plans_shown: shown,
+      currency: plans[chosen]?.product.currencyCode,
+    });
+    track('paywall_plan_selected', { plan: chosen, default: true, variant: lineup.variant });
     logAppsFlyerEvent('af_content_view', {
       af_content_type: 'subscription',
-      af_content_id: annualPlan?.product.id ?? 'annual',
+      af_content_id: plans[chosen]?.product.id ?? chosen,
     });
-  }, [step, loaded, offeringId, annualPlan]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded]);
   /** Meta's "Initiate checkout" has been sent on this visit. */
   const checkoutLogged = useRef(false);
 
-  /**
-   * The annual plan, which the store answered about and had nothing for.
-   *
-   * Not the user's problem: it is an offering with no `$rc_annual` package.
-   * The card stays visible but cannot be picked, so the failure is a greyed
-   * card rather than a Continue that says the App Store is unreachable when it
-   * plainly answered. Guarded on `loaded` so a card is never disabled merely
-   * because the fetch has not landed. The other plans are simply left out when
-   * the store has none of them.
-   */
-  const annualMissing = loaded && annualPlan == null;
-  /**
-   * Every plan on the page, from the start, in `PLAN_ORDER`: the annual
-   * (always, greyed if the store has none), the monthly, the lifetime. A year
-   * is a lot to agree to on a first day, and a month or one payment are the
-   * other honest ways in, so neither waits behind "Show all plans". Before
-   * the store answers, the ones iOS sells, with no figure yet; after, the
-   * ones it really has. The weekly only where the store has no monthly
-   * (Android's first line-up).
-   */
-  const kinds = PLAN_ORDER.filter((kind) => {
-    if (kind === 'annual') return true;
-    if (kind === 'weekly') return loaded && plans.weekly != null && plans.monthly == null;
-    return loaded ? plans[kind] != null : true;
-  });
-  const others = kinds.filter((kind) => kind !== 'annual');
-
+  // Never leave the selection on a plan that cannot be bought.
   useEffect(() => {
-    if (!loaded) return;
-    // Never leave the selection on a plan that cannot be bought.
-    if (tier === 'annual' && annualMissing && others.length > 0) setTier(others[0]);
-    else if (tier !== 'annual' && plans[tier] == null && !annualMissing) setTier('annual');
-    // `plans` and `others` follow `shelf`, which only changes with `loaded`
-    // or a fresh answer; the tier is what this watches.
+    if (!loaded || devPreview) return;
+    if (plans[tier] == null && kinds.length > 0) setTier(firstChoice(lineup, kinds));
+    // `plans` and `kinds` follow `shelves`; the tier is what this watches.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loaded, annualMissing, tier, shelf]);
+  }, [loaded, tier, shelves]);
 
   useEffect(() => {
-    if (!__DEV__ || !loaded) return;
+    if (!__DEV__ || !loaded || plans[lineup.chosen] != null) return;
     // The diagnosis, at the moment it is knowable. Without it this
-    // misconfiguration surfaces as a greyed card nobody can explain.
-    const id = shelf.offering?.identifier ?? offeringId;
-    if (annualMissing) {
-      console.error(
-        `[paywall] Offering "${id}" has no ${PACKAGES.annual} package, so the annual ` +
-          'subscription cannot be sold. Add it in the RevenueCat dashboard (Offerings → ' +
-          'Packages → Annual) and attach the annual product to it.',
-      );
-    }
-  }, [loaded, annualMissing, shelf, offeringId]);
+    // misconfiguration surfaces as a card nobody can explain.
+    console.error(
+      `[paywall] No ${lineup.chosen} plan on "${OFFERINGS[lineup.offering]}" or "${OFFERINGS.standard}", so the lineup's ` +
+        `default (${lineup.variant}) cannot be sold. Check the ${PACKAGES.annual}/${PACKAGES.monthly} packages in RevenueCat.`,
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded]);
 
   /**
-   * The comeback discount, computed rather than asserted.
-   *
-   * The comeback annual's first payment against the standard annual, both
-   * from the store, so changing either price in App Store Connect moves the
-   * claim instead of leaving it advertising a saving nobody is getting. Null
-   * when there is no store, when `offer` is missing and the standard plan
-   * stands in, or when the two cost the same; then nothing on screen claims a
-   * discount.
+   * The comeback discount, computed rather than asserted: the comeback
+   * annual's first payment against the standard annual, both from the
+   * store. Null when there is nothing to claim; then nothing on screen
+   * claims a discount.
    */
-  const fullAnnual = shelf.standard?.annual ?? null;
-  const offerPct = firstChargeSavingPercent(annualPlan, fullAnnual);
-  const discounted = offerPct != null;
-
-  /**
-   * Whether this view presents itself as the offer: the comeback badge and
-   * headline.
-   *
-   * While the store is still answering, a returning visitor is
-   * assumed to be getting the offer, so the screen does not open plain and then
-   * change its mind. Once it has answered, only a real discount keeps it.
-   */
+  const discounted = firstChargeSavingPercent(plans.annual, shelves.standard?.annual ?? null) != null;
+  /** The comeback badge: assumed while the store is answering, so the page
+   * does not open plain and change its mind; kept only for a real discount. */
   const offerShown = boosted && (discounted || (purchases.configured && !loaded));
 
-  // Arriving on the better price is worth marking. A tap, not a sound.
   useEffect(() => {
-    if (!discounted) return;
+    if (!boosted || !discounted) return;
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-  }, [discounted]);
+  }, [boosted, discounted]);
 
   /**
-   * The win-back.
-   *
-   * Scheduled the moment the app is backgrounded with this screen open, and
-   * pulled back if the user returns on their own before it fires — someone who
-   * came back by themselves has not earned a "come back" message, and sending
-   * one anyway is how an app teaches people to turn its notifications off.
-   *
-   * Once only, and never after the discount has already been given. Never for
-   * somebody who skipped the paywall either: the offer screen carries their
-   * offers (the one-time trial, then the comeback with its own pushes), and a
-   * second "come back" nudge from here would talk over them.
+   * The win-back, scheduled as the app is backgrounded with this screen open
+   * and pulled back if she returns on her own. Once only, never after the
+   * discount has been given, and never for somebody who skipped the paywall.
    */
   const sent = useRef(false);
   useEffect(() => {
@@ -721,7 +530,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       if (next === 'background') {
         if (sent.current || boosted || paywallSkipped()) return;
         const percent = winbackPercent.current;
-        // No store figure, no promise. See `winbackPercent`.
         if (percent == null) return;
         sent.current = true;
         void notificationsAllowed().then((allowed) => {
@@ -736,11 +544,8 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
 
   /**
    * The morning after: "Day 2 is ready", for somebody who did the first
-   * session and left this screen without buying. Laid as the app goes to the
-   * background, for the plan's next day at the time their reminder was set
-   * for (or the hour they wake), and taken back by a purchase, wherever it
-   * is made (`useOfferNotifications`). Not for a day that has already
-   * opened: there is no morning left to arrive on.
+   * session and left this screen without buying, at the time of her
+   * reminder (or the hour she wakes).
    */
   useEffect(() => {
     if (!afterSession) return undefined;
@@ -754,8 +559,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     return () => subscription.remove();
   }, [afterSession, name]);
 
-  /** Paid, or as good as: the entitlement guard takes the screen away; this is
-   * for the case where it was pushed. */
   const close = () => {
     if (!wall && router.canGoBack()) router.back();
   };
@@ -767,25 +570,14 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     close();
   };
 
-  /**
-   * Buy, or — with no store wired up — say so.
-   *
-   * `unavailable` is not an error and must not read as one. Nothing was
-   * charged, nothing was refused, and there is no store to blame; telling the
-   * user "that didn't go through" would describe a transaction that was never
-   * attempted.
-   */
+  /** Buy, or, with no store wired up, say so (`unavailable` is not an error). */
   const start = async () => {
     if (busy) return;
     track('paywall_cta_tapped', { offering: offeringId, plan: tier });
-    // The plan object, not a product identifier. It came out of the same fetch
-    // that produced the price on screen, so the two cannot be for different
-    // things.
+    // The plan object from the same fetch that put the price on screen.
     const plan = plans[tier];
-    // A simulator in development has no StoreKit purchase to make. The button
-    // plays the purchase's ending instead, so the flow after it — the setup
-    // screens — can be walked through. Sample prices (`?samplePrices`) buy
-    // through the store's own path, which grants the pretend purchase.
+    // A simulator in development has no StoreKit purchase to make: the button
+    // plays the purchase's ending. Sample prices buy through the store's path.
     if (__DEV__ && onSimulator && (plan == null || !isSamplePlan(plan))) {
       converted.current = true;
       finish();
@@ -795,13 +587,10 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     setBusy(true);
     if (plan == null) {
       if (purchases.configured && !loaded) {
-        // The store has not answered this screen yet. Ask it again now rather
-        // than only saying it is unreachable: the tap is the moment somebody
-        // has decided, and the connection may well be back. A fresh answer
-        // fills the rows and the price line in; buying waits for a second tap,
-        // so nobody is charged a price they never saw on this screen.
+        // Ask again now: a fresh answer fills the cards in, and buying waits
+        // for a second tap, so nobody is charged a price they never saw.
         try {
-          stock(await fetchShelf(offeringId));
+          stock(await fetchShelves());
           setBusy(false);
           Haptics.selectionAsync();
           return;
@@ -811,15 +600,9 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       }
       setBusy(false);
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-      // A store that never answered is unreachable; a store that answered
-      // without this package is misconfigured, and telling somebody to try again
-      // in a moment sends them to retry something that will never succeed.
       setNotice(t(loaded ? 'offer.planUnavailable' : 'offer.storeUnreachable'));
       return;
     }
-    // Meta's standard "Initiate checkout", through AppsFlyer: the first buy
-    // tap of this visit that reaches the store. The plan's kind and product,
-    // nothing else: no price, no revenue (RevenueCat reports that).
     if (!checkoutLogged.current) {
       checkoutLogged.current = true;
       logAppsFlyerEvent('af_initiated_checkout', {
@@ -832,15 +615,14 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
 
     if (result.status === 'purchased') {
       converted.current = true;
-      // The reminder the plans step promised, from the trial's own length.
+      // The reminder the rail promised, from the trial's own length.
       const trial = freeTrialOf(plan);
       if (trial != null) void remindBeforeTrialEnds(trial, plan.priceString);
       finish();
       return;
     }
-    // The user backed out of the store's own sheet. Once, they are told that
-    // nothing was charged and asked what stopped them (`CancelQuestion`);
-    // after that, nothing: they know what they did.
+    // Backed out of the store's own sheet: the exit gift once, where the
+    // lineup has one; then, once, "What stopped you?".
     if (result.status === 'cancelled') {
       if (giftOpens({ cancelled: true, seen: giftSeen(), plan: gift, comeback: boosted }) && giftEvent != null) {
         markGiftSeen();
@@ -852,9 +634,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       if (takeCancelQuestion()) setAsking(tier);
       return;
     }
-    // Ask to Buy, or a bank confirming. Nothing went wrong, so no error buzz;
-    // if it is approved, the store pushes the entitlement and the guard takes
-    // this screen away on its own.
     if (result.status === 'pending') {
       setNotice(t('offer.pending'));
       return;
@@ -864,8 +643,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       setNotice(result.message);
       return;
     }
-    // `unavailable`: no store was reached at all. Not an error, because nothing
-    // failed and nobody was charged; not a success either.
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
     setNotice(t('offer.storeUnreachable'));
   };
@@ -876,7 +653,6 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     setBusy(true);
     const result = await purchases.restore();
     setBusy(false);
-
     if (result.status === 'restored') {
       converted.current = true;
       finish();
@@ -890,56 +666,53 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
       setNotice(t('offer.restoreFailed'));
     }
-    // `unavailable` says nothing: there was no store to ask.
   };
 
   const select = (period: PaywallPeriod) => {
     if (period === tier) return;
     Haptics.selectionAsync();
     setTier(period);
-    track('paywall_plan_selected', { plan: period });
+    track('paywall_plan_selected', { plan: period, variant: lineup.variant });
   };
 
   /**
-   * "Not now", and the close over the sky: on to Home, for the "Day 1"
-   * card's two-minute session and the tour after it, which are free; the
-   * one-time trial offer follows the tour (`OfferWall` in the root layout).
-   *
-   * `skipPaywall` records it (and tracks `paywall_skipped`, once per person);
-   * the root guards then take this route away and open the tabs, so this
-   * does not navigate. Leaving unmounts this view, which counts as
-   * `paywall_dismissed` as any other way out does.
+   * "Not now", and the close at the top: on to Home, for the "Day 1" card's
+   * free two-minute session and the tour after it. `skipPaywall` records it;
+   * the root guards then take this route away.
    */
   const skip = () => {
-    // Already past the plans once (the route was opened over the app): back
-    // to where they were.
     if (paywallSkipped()) return close();
     armHomeTour();
-    // The day-one session is already done, before this screen: Home opens on
-    // the tour, not on the "Day 1" card again.
     if (afterSession) setHomeTourStage('tour');
     skipPaywall();
   };
 
-  /** The simulator has no store: the plans still look and select as they will. */
-  const devPreview = __DEV__ && onSimulator;
-  /** What the store said last, or that it could not be reached. */
   const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
 
-  /** The line over the button: whose sheet comes next, and what is paid
-   * today, from the chosen plan's store product. */
-  const today = dueToday(tier, plans[tier]);
-  const confirm =
-    today == null
-      ? null
-      : t(Platform.OS === 'android' ? 'offer.plans.confirmGoogle' : 'offer.plans.confirmApple', { amount: today });
+  /** The chosen plan's charges with their dates, and the line over the
+   * button that says what the store's sheet will ask for. "Now" is read on
+   * each render, so a page left open past midnight dates from the day the
+   * sheet opens. */
+  const now = Date.now();
+  const stops = chargeTimeline(tier, plans[tier], now, TRIAL_REMINDER_DAYS, t);
+  const day = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' });
+  const dayInYear = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric', year: 'numeric' });
+  const confirm = sheetLine(
+    tier,
+    plans[tier],
+    now,
+    t,
+    t(Platform.OS === 'android' ? 'offer.sheet.storeGoogle' : 'offer.sheet.storeApple'),
+    // A year on is the same day: the year says which.
+    (at) => (new Date(at).getFullYear() === new Date(now).getFullYear() ? day : dayInYear).format(new Date(at)),
+  );
 
   /**
    * "What stopped you?" answered. Recorded, and nothing new is offered: for
-   * "It costs too much" the page points back to the cheaper ways in it already
-   * showed, the monthly's lower first month (when this customer can have it)
-   * or the one-time lifetime, by choosing it and bringing it into view. No
-   * new price, no sheet, no timer (Guideline 5.6).
+   * "It costs too much" the page points back to a cheaper way in it already
+   * showed (the monthly's free week or lower first month, when this customer
+   * can have it, or the one-time lifetime), by choosing it and bringing it
+   * into view. No new price, no sheet, no timer (Guideline 5.6).
    */
   const answered = (reason: CancelReason | null) => {
     if (asking == null) return;
@@ -947,7 +720,10 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     setAsking(null);
     if (reason !== 'price') return;
     const target = (['monthly', 'lifetime'] as const).find(
-      (kind) => kind !== asking && (kind === 'monthly' ? hasIntroMonth(plans.monthly) : plans.lifetime != null),
+      (kind) =>
+        kind !== asking &&
+        kinds.includes(kind) &&
+        (kind === 'monthly' ? hasIntroMonth(plans.monthly) || (plans.monthly != null && freeTrialOf(plans.monthly) != null) : plans.lifetime != null),
     );
     if (target == null) return;
     setTier(target);
@@ -955,189 +731,45 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
     track('paywall_cancel_reminded', { plan: target });
   };
 
-  // One page per step. They cross-fade in place over each other (`STEP_IN`,
-  // `STEP_OUT` below), with the bar and the button where they were, so moving
-  // on reads as the page changing under them rather than a new screen.
-  let page: ReactNode;
-  if (step !== 3 && story == null) {
-    // The store has not said yet whether there is a free week: the bar, and
-    // nothing promised under it.
-    page = (
-      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={1} />
-      </View>
-    );
-  } else if (step !== 3 && story === 'trial' && freeDays != null && annualPlan != null) {
-    page = (
-      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={1} />
-        <View style={styles.trialBody}>
-          <TrialGift name={profileName} days={freeDays} />
-        </View>
-        <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-          <TrialNext onPress={next} />
-          <NotNow onPress={skip} />
-          {/* What the week costs after it, before anybody is asked to go on:
-              the plans' own line, in the days the headline counts in. */}
-          <Text style={[styles.terms, { color: meter.label }]} maxFontSizeMultiplier={1.4}>
-            {t('offer.plans.noPaymentToday')}.{' '}
-            {t('offer.plans.renewsTrial', {
-              period: t('offer.plans.days', { count: freeDays }),
-              price: annualPlan.priceString,
-            })}{' '}
-            {t(Platform.OS === 'android' ? 'offer.plans.cancelAndroid' : 'offer.plans.cancel')}
-          </Text>
-        </View>
-      </View>
-    );
-  } else if (step === 1) {
-    page = (
-      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
-        <StepBar step={1} />
-        <ScrollView
-          style={styles.body}
-          contentContainerStyle={styles.introContent}
-          showsVerticalScrollIndicator={false}>
-          {/* Keyed on the step, so the next one arrives rather than appears. */}
-          <Animated.View entering={FadeIn.duration(280).reduceMotion(ReduceMotion.System)}>
-            <IntroPlan
-              name={profileName}
-              strip={strip}
-              why={why}
-              minutes={settings.defaultMinutes}
-              daysPerWeek={settings.daysPerWeek}
-              checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
-            />
-          </Animated.View>
-        </ScrollView>
-        <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
-          <IntroNext onPress={next} />
-          <NotNow onPress={skip} />
-        </View>
-      </View>
-    );
-  } else {
-    /** A row for the step: the plan, and whether the store answered without it. */
-    const row = (kind: PaywallPeriod): PlansStepRow => ({
-      kind,
-      plan: plans[kind],
-      missing: loaded && plans[kind] == null && !devPreview,
-    });
-    page = (
-      <PlansStep
-        stepBar={flow ? <StepBar step={2} onSelect={toStep} /> : undefined}
-        rows={kinds.map(row)}
-        story={plansStory}
-        after={
-          plansStory == null && afterSession
-            ? {
-                title: profileName.length > 0 ? t('offer.next.titleNamed', { name: profileName }) : t('offer.next.title'),
-                // The free week is the annual's: with another plan chosen the
-                // line promises only the day.
-                line: t(freeDays != null && tier === 'annual' ? 'offer.next.lineTrial' : 'offer.next.line', {
-                  day: nextDay()?.day ?? 2,
-                }),
-                picture: <NextDay covered={busy} />,
-              }
-            : null
-        }
-        // Her Foot Check, when no screen before this one has shown it.
-        result={!flow}
-        selected={tier}
-        onSelect={select}
-        leadBadge={offerShown ? t('offer.comebackBadge') : null}
-        comeback={offerShown}
-        name={profileName.length > 0 ? profileName : null}
-        confirm={confirm}
-        reveal={reveal}
-        busy={busy}
-        onBuy={start}
-        notice={shownNotice}
-        onRestore={restore}
-        // For somebody holding an App Store offer code: Apple's own sheet,
-        // which redeems it in the store, and the subscription it starts
-        // arrives through the usual purchase listener. Never a field of ours:
-        // a code typed into the app that unlocks or discounts anything is what
-        // App Review rejected 1.0.3 (35) for (Guideline 3.1.1). Only where the
-        // store has such a sheet (iOS).
-        onRedeemCode={
-          purchases.canRedeemCode
-            ? () => {
-                Haptics.selectionAsync();
-                track('paywall_code_opened');
-                void purchases.redeemCode();
-              }
-            : undefined
-        }
-        covered={busy || asking != null || giftShown}
-        onSkip={wall ? onClose : skip}>
-        {/* Owns the dismissal. The paywall vanishing into Home is what backing out
-          looks like too, so the one moment worth marking was the one that read
-          as nothing having happened. */}
-        <CancelQuestion visible={asking != null} onAnswer={answered} inModal={wall} />
-        {gift != null && (
-          <ExitGift plan={gift} visible={giftShown} busy={giftBusy} onBuy={() => void buyGift()} onDecline={declineGift} />
-        )}
-      </PlansStep>
-    );
-  }
+  const rows: PlansStepRow[] = kinds.map((kind) => ({
+    kind,
+    plan: plans[kind],
+    missing: loaded && plans[kind] == null && !devPreview,
+  }));
 
   return (
-    <View style={styles.full}>
-      <Animated.View key={step} entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
-        {page}
-      </Animated.View>
-    </View>
-  );
-}
-
-/**
- * "Not now" under a step's button, as the plans have it: the way past is
- * there from the first screen. Of the first Meta installs on 1.0.11, more than
- * half left the app on step one, which had a single button and no way on but
- * through it; a visible way out is what makes the button safe to press.
- */
-function NotNow({ onPress }: { onPress: () => void }) {
-  const scheme = useColorScheme();
-  const t = useT();
-  return (
-    <Pressable
-      accessibilityRole="button"
-      hitSlop={8}
-      onPress={() => {
-        void Haptics.selectionAsync();
-        onPress();
-      }}
-      style={({ pressed }) => [styles.notNow, pressed && { opacity: 0.6 }]}>
-      <Text style={[styles.notNowText, { color: meterColors[scheme].caption }]} maxFontSizeMultiplier={1.3}>
-        {t('offer.plans.skip')}
-      </Text>
-    </Pressable>
+    <PlansStep
+      head={head}
+      rows={rows}
+      selected={tier}
+      onSelect={select}
+      leadBadge={offerShown ? t('offer.comebackBadge') : null}
+      stops={stops}
+      confirm={confirm}
+      reveal={reveal}
+      busy={busy}
+      onBuy={start}
+      notice={shownNotice}
+      onRestore={restore}
+      // Apple's own offer-code sheet, never a field of ours (Guideline 3.1.1).
+      onRedeemCode={
+        purchases.canRedeemCode
+          ? () => {
+              Haptics.selectionAsync();
+              track('paywall_code_opened');
+              void purchases.redeemCode();
+            }
+          : undefined
+      }
+      onSkip={wall ? onClose : skip}>
+      <CancelQuestion visible={asking != null} onAnswer={answered} inModal={wall} />
+      {gift != null && (
+        <ExitGift plan={gift} visible={giftShown} busy={giftBusy} onBuy={() => void buyGift()} onDecline={declineGift} />
+      )}
+    </PlansStep>
   );
 }
 
 const styles = StyleSheet.create({
-  notNow: { alignSelf: 'center', paddingVertical: 6 },
-  notNowText: fonts.semibold(15),
-  terms: { ...fonts.regular(13), lineHeight: 18, textAlign: 'center', paddingHorizontal: 12 },
-  screen: {
-    flex: 1,
-    // `paddingTop` comes from the safe-area inset at the call site.
-    paddingHorizontal: 22,
-    gap: 12,
-  },
-  /** The scrolling half. `flex: 1` so it yields to the pinned button below
-   * rather than pushing it off the screen. */
-  body: { flex: 1 },
-  /** Pinned. Padding rather than margin so the safe-area inset is part of the
-   * block's own box. */
-  cta: {
-    paddingTop: 4,
-    gap: 10,
-  },
-  /** The step before the plans: room under the bar. */
-  introContent: { paddingTop: 22, paddingBottom: 16 },
-  /** The free week's step: one screenful, scrolling only at large text. */
-  trialBody: { flex: 1, paddingTop: 18, paddingBottom: 12 },
   full: { flex: 1 },
 });
