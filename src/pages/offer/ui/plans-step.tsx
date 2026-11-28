@@ -32,6 +32,7 @@ import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { RaisedScheme, Raised } from '@/shared/ui/raised';
 import { useSplashRevealed } from '@/shared/ui/splash';
+import { ReviewerLine } from '@/shared/ui/reviewer';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 
 import { describeCta, describePlan, splitHighlight } from '../model/plans';
@@ -227,6 +228,8 @@ export function PlansStep({
                 ),
               )}
             </Text>
+
+            <ReviewerLine long color={SHEET.caption} />
 
             <View accessibilityRole="radiogroup" style={styles.plans}>
               <PlanCard

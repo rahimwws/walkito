@@ -24,6 +24,7 @@ import { CANCEL_FR } from './cancel';
 import { PASS_FR } from './pass';
 import { COMMUNITY_FR } from './community';
 import { INSIGHTS_FR } from './insights';
+import { REVIEWER_FR } from './reviewer';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -58,4 +59,5 @@ export const fr: CatalogueFor<'fr'> = {
   ...PASS_FR,
   ...COMMUNITY_FR,
   ...INSIGHTS_FR,
+  ...REVIEWER_FR,
 };

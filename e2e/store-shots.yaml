@@ -1,0 +1,30 @@
+# App Store screenshots of the seeded user (Maria, Fri 23 Oct 2026 7:12).
+# Needs Metro started with EXPO_PUBLIC_STORE_SHOTS=1 and the dev build
+# connected to it once (the first launch seeds and reloads).
+# Run: maestro test e2e/store-shots.yaml
+appId: com.walkito.app.dev
+---
+- launchApp
+- extendedWaitUntil:
+    visible: "Start session"
+    timeout: 60000
+- takeScreenshot: store-shots/en/ios/01_today
+- scroll
+- takeScreenshot: store-shots/en/ios/01b_today_tasks
+- tapOn: "Edit"
+- takeScreenshot: store-shots/en/ios/06_checkin
+- tapOn: "Cancel"
+- tapOn: "Quick"
+- takeScreenshot: store-shots/en/ios/04_moments
+- tapOn: "At work"
+- takeScreenshot: store-shots/en/ios/07_at_work
+- back
+- tapOn: "Progress"
+- waitForAnimationToEnd
+- takeScreenshot: store-shots/en/ios/08_week
+- tapOn: "Start session"
+- takeScreenshot: store-shots/en/ios/05a_plan
+- tapOn: "Start"
+- waitForAnimationToEnd
+- tapOn: "Pause"
+- takeScreenshot: store-shots/en/ios/05_player

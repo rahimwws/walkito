@@ -33,6 +33,7 @@ import {
 } from '@/shared/ui/mascot';
 import { BUTTON_3D_XL_HEIGHT, Button3D } from '@/shared/ui/button-3d';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+import { ReviewerByline } from '@/shared/ui/reviewer';
 
 /**
  * The 3D art beside each line: the same holographic chrome as the welcome
@@ -226,6 +227,10 @@ export function BuildingStep({ rows, onDone, insets, readyLine, celebrate }: Bui
               />
             ))}
           </View>
+          {/* Who checked the moves being picked: the trust line before the plan is theirs. */}
+          <Animated.View entering={FadeIn.delay(600).duration(360).reduceMotion(ReduceMotion.System)}>
+            <ReviewerByline />
+          </Animated.View>
         </ScrollView>
 
         {/* The button's room is kept from the start, so its arrival does not

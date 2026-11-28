@@ -8,6 +8,7 @@ import { LanguageOptions } from '@/features/language-switch';
 import { LEGAL, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { ReviewerCard } from '@/shared/ui/reviewer';
 
 import { writeToUs } from '../lib/write-to-us';
 
@@ -80,6 +81,8 @@ export function SettingsPage() {
 
       <EmailSettings />
 
+      <ReviewerCard style={styles.reviewer} />
+
       <View style={[styles.list, { backgroundColor: meter.track }]}>
         <Pressable
           accessibilityRole="link"
@@ -144,6 +147,7 @@ const styles = StyleSheet.create({
     ...fonts.bold(12, 0.1),
     marginBottom: 8,
   },
+  reviewer: { marginTop: 24 },
   list: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden', marginTop: 24 },
   row: {
     flexDirection: 'row',

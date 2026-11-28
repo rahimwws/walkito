@@ -24,6 +24,7 @@ import { CANCEL_RU } from './cancel';
 import { PASS_RU } from './pass';
 import { COMMUNITY_RU } from './community';
 import { INSIGHTS_RU } from './insights';
+import { REVIEWER_RU } from './reviewer';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -58,4 +59,5 @@ export const ru: CatalogueFor<'ru'> = {
   ...PASS_RU,
   ...COMMUNITY_RU,
   ...INSIGHTS_RU,
+  ...REVIEWER_RU,
 };
