@@ -152,6 +152,33 @@ const FOOT_CHECK_HEEL_PARAM = /[?&]footCheckHeel=(left|right|both|unsure|off)\b/
 /** `?footCheckToe=yes|no|unsure` is the big toe answer the paywall reads back
  * (the saved answers' `miniTest.arch`); `=off` none. */
 const FOOT_CHECK_TOE_PARAM = /[?&]footCheckToe=(yes|no|unsure|off)\b/;
+/** `?sampleIntake`: onboarding answers as somebody with a sore right heel
+ * would give them (better mornings, 6/10 this morning, for months), so the
+ * paywall's head reads as hers on a simulator that never ran the onboarding. */
+const SAMPLE_INTAKE_PARAM = /[?&]sampleIntake\b/;
+
+/** Development only: the sample answers `?sampleIntake` writes. */
+function devSeedIntake(): void {
+  saveIntake({
+    pain: ['heel'],
+    side: 'right',
+    sport: null,
+    runner: null,
+    goal: 'mornings',
+    challenge: null,
+    load: null,
+    sessionsPerWeek: null,
+    sex: null,
+    age: null,
+    weightKg: null,
+    shoe: null,
+    watch: null,
+    role: 'walking',
+    painDuration: 'months',
+    morningPain: 6,
+    completedAt: Date.now(),
+  });
+}
 
 /** Development only: the big toe answer in the saved answers, as the
  * onboarding writes it, or none. */
@@ -349,6 +376,7 @@ export function useDevLinks(): void {
         if (footCheckHeel != null) devSeedSelfCheck(footCheckHeel[1] as 'left' | 'right' | 'both' | 'unsure' | 'off');
         const footCheckToe = FOOT_CHECK_TOE_PARAM.exec(url);
         if (footCheckToe != null) devSeedToe(footCheckToe[1] as 'yes' | 'no' | 'unsure' | 'off');
+        if (SAMPLE_INTAKE_PARAM.test(url)) devSeedIntake();
         if (SEED_CHECKINS_PARAM.test(url)) devSeedCheckins();
         if (SEED_ON_FEET_WEEK_PARAM.test(url)) devSeedOnFeetWeek();
         const onFeetWeek = ON_FEET_WEEK_PARAM.exec(url);
