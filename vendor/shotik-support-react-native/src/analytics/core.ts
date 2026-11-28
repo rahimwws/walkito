@@ -110,14 +110,22 @@ export class Analytics {
     }
     if (!this.firstSeen) this.firstSeen = this.now()
     this.loaded = true
-    this.touch()
-    for (const ev of this.queue) if (!ev.sessionId) Object.assign(ev, { sessionId: this.sessionId, seq: ++this.seq })
+    const pre = this.queue.filter((e) => !e.sessionId)
+    const n = this.queue.length
+    this.touch(pre[0]?.ts)
+    const at = pre.length && this.queue.length > n ? this.queue.indexOf(pre[0]) : -1
+    if (at >= 0) {
+      const [s] = this.queue.splice(this.queue.length - 1, 1)
+      this.queue.splice(at, 0, { ...s, screen: pre[0].screen })
+    }
+    for (const ev of pre) Object.assign(ev, { sessionId: this.sessionId, seq: ++this.seq })
+    if (pre.length) this.lastActive = Math.max(this.lastActive, pre[pre.length - 1].ts)
     this.schedule()
   }
 
-  // Starts a new session after sessionTimeoutMs (30 min) of inactivity.
-  private touch(): void {
-    const t = this.now()
+  // Starts a new session after sessionTimeoutMs (30 min) of inactivity. at: when the activity happened (events queued before storage loaded).
+  private touch(at?: number): void {
+    const t = at ?? this.now()
     if (!this.loaded) return
     if (!this.sessionId || t - this.lastActive > (this.cfg.sessionTimeoutMs ?? 30 * 60_000)) {
       const first = this.fresh
@@ -127,7 +135,7 @@ export class Analytics {
       this.sampled = Math.random() < (this.cfg.snapshots ?? 0.2)
       this.snapped.clear()
       this.lastActive = t
-      this.push('session', undefined, first ? { first: 1 } : undefined)
+      this.push('session', undefined, first ? { first: 1 } : undefined, t)
     }
     this.lastActive = t
   }
