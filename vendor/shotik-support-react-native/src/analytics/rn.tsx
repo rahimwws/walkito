@@ -42,6 +42,13 @@ function storage(): Storage | undefined {
     a = m?.default ?? m
   } catch {}
   if (a?.getItem) return { get: (k) => a.getItem(k), set: (k, v) => a.setItem(k, v), remove: (k) => a.removeItem(k) }
+  let mm = null
+  try {
+    const m = require('react-native-mmkv')
+    mm = m.createMMKV ? m.createMMKV({ id: 'shotik' }) : new m.MMKV({ id: 'shotik' })
+  } catch {}
+  if (mm?.getString) return { get: async (k) => mm.getString(k) ?? null, set: async (k, v) => mm.set(k, v), remove: async (k) => void (mm.remove ?? mm.delete).call(mm, k) }
+  // The keychain is a last resort: small values only, and it throws in unsigned simulator builds (reported as store: 'error').
   let s = null
   try {
     s = require('expo-secure-store')
