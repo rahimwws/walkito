@@ -19,6 +19,7 @@ export type {
   NotificationOpenType,
   NotificationsPermission,
   PassPlacement,
+  PaywallPlacement,
   PlanShown,
   PlanTier,
   PurchaseProps,

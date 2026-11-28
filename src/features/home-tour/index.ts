@@ -21,3 +21,5 @@ export {
   type DayOneStep,
 } from './model/day-one';
 export { devPreviewOfferWall, useDevOfferWall } from './model/dev-offer-wall';
+export { offerAfterDayOne } from './model/after-day-one';
+export { devForgetAfterDayOne } from './model/after-day-one-rule';

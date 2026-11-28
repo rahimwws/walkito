@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Modal, StyleSheet } from 'react-native';
 import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
+import { plansAskedFrom } from '@/entities/purchase';
 import { PaywallWall } from '@/pages/offer';
 import { palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -15,9 +16,9 @@ const PRESENT_AFTER_MS = 360;
 
 /**
  * The plans over Home, for somebody who said "Not now" on the paywall and is
- * looking around: raised by a tap on something locked (`askForPlans`), never
- * on its own. The same plans at the same prices (`PaywallWall`), carrying on
- * from the day they have done.
+ * looking around: raised by a tap on something locked (`askForPlans`), or
+ * once, on its own, after Day 1 (`after_day1`). The same plans at the same
+ * prices (`PaywallWall`), carrying on from the day they have done.
  *
  * Nothing else is offered here: no second price and no deadline. An offer
  * that appears because the first was turned down is what App Review rejects
@@ -74,7 +75,7 @@ export function OfferWall({ visible, onClose }: { visible: boolean; onClose: () 
   return (
     <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={onClose}>
       <Animated.View style={[StyleSheet.absoluteFill, { backgroundColor: palette[scheme].background }, fade]}>
-        <PaywallWall onClose={onClose} />
+        <PaywallWall onClose={onClose} afterDayOne={plansAskedFrom() === 'after_day1'} />
       </Animated.View>
     </Modal>
   );

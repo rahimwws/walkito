@@ -4,7 +4,14 @@ import { useEffect, useRef, useState } from 'react';
 import { AppState, Platform, StyleSheet, View } from 'react-native';
 import Animated, { Easing, FadeOut, ReduceMotion } from 'react-native-reanimated';
 
-import { cancelWinback, notificationsAllowed, scheduleNextDayPush, scheduleWinback, wakeMinutes } from '@/entities/notifications';
+import {
+  cancelWinback,
+  notificationsAllowed,
+  scheduleNextDayPush,
+  scheduleWinback,
+  wakeLabel,
+  wakeMinutes,
+} from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
 import { firstName, getIntake, useProfileName } from '@/entities/profile';
@@ -27,12 +34,13 @@ import {
 } from '@/entities/purchase';
 import { armHomeTour, firstSession, firstSessionAgain, firstSessionOfferedAgain, setHomeTourStage, useFirstSessionAgain } from '@/entities/session';
 import { freeTrialOf, remindBeforeTrialEnds, TRIAL_REMINDER_DAYS } from '@/features/home-offer';
-import { register, track, type PlanShown } from '@/shared/lib/analytics';
+import { register, track, type PaywallPlacement, type PlanShown } from '@/shared/lib/analytics';
 import { logAppsFlyerEvent } from '@/shared/lib/appsflyer';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 
+import { afterDayOneTitle } from '../model/after-day-one';
 import { giftOpens, giftPlan } from '../model/gift';
 import { giftSeen, markGiftSeen } from '../model/gift-store';
 import { firstChoice, lineupFor, plansOf, shownKinds, type Shelves } from '../model/lineup';
@@ -120,8 +128,8 @@ export function OfferPage() {
  * down again; there is no other way past. Whatever was offered before is what
  * is offered here.
  */
-export function PaywallWall({ onClose }: { onClose: () => void }) {
-  return <Paywall wall onClose={onClose} />;
+export function PaywallWall({ onClose, afterDayOne = false }: { onClose: () => void; afterDayOne?: boolean }) {
+  return <Paywall wall onClose={onClose} afterDayOne={afterDayOne} />;
 }
 
 
@@ -144,7 +152,7 @@ export function PaywallWall({ onClose }: { onClose: () => void }) {
  * Its one way past without buying is "Not now" (`skipPaywall`), which leads
  * to Home's free first session, never into the app.
  */
-function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => void }) {
+function Paywall({ wall = false, onClose, afterDayOne = false }: { wall?: boolean; onClose?: () => void; afterDayOne?: boolean }) {
   const router = useRouter();
   const t = useT();
   const language = useLanguage();
@@ -167,6 +175,8 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
    * under somebody's eyes. */
   const [lineup] = useState(() => lineupFor(paywallVariant(), { comeback: boosted, trialAudience }));
   const offeringId = OFFERINGS[lineup.offering];
+  /** Where this view opened, for analytics: settled as it opens. */
+  const [placement] = useState<PaywallPlacement>(() => (!wall ? 'onboarding' : afterDayOne ? 'after_day1' : 'locked'));
 
   /** Which plan is selected: the lineup's, until she picks another. */
   const [tier, setTier] = useState<PaywallPeriod>(lineup.chosen);
@@ -218,6 +228,16 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
         .map((run) => run.text)
         .join('');
     const named = profileName.length > 0;
+    // Over Home after Day 1: what she just did, and when the next day opens.
+    if (placement === 'after_day1') {
+      const next = nextDay();
+      const minutes = next == null ? null : (planSettings().reminderMinutes ?? wakeMinutes(next.at));
+      return {
+        eyebrow: named ? t('offer.next.titleNamed', { name: profileName }) : t('offer.next.title'),
+        title: afterDayOneTitle(next, minutes == null ? null : wakeLabel(minutes, language), t),
+        chips,
+      };
+    }
     const eyebrow = boosted
       ? null
       : afterSession
@@ -369,6 +389,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       wall,
       default_plan: lineup.chosen,
       variant: lineup.variant,
+      placement,
     });
     return () => {
       if (!converted.current) track('paywall_dismissed', { offering: offeringId });
@@ -473,6 +494,7 @@ function Paywall({ wall = false, onClose }: { wall?: boolean; onClose?: () => vo
       rc_offering: shelves[lineup.offering]?.identifier ?? shelves.standard?.identifier,
       plans_shown: shown,
       currency: plans[chosen]?.product.currencyCode,
+      placement,
     });
     track('paywall_plan_selected', { plan: chosen, default: true, variant: lineup.variant });
     logAppsFlyerEvent('af_content_view', {

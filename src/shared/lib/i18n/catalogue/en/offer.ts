@@ -395,6 +395,10 @@ export const OFFER_EN = {
   // out for this language; `{period}` a trial's length (`offer.plans.days`).
   'offer.head.eyebrow': 'Your plan is ready',
   'offer.head.eyebrowNamed': '{name}, your plan is ready',
+  /** The offer over Home after Day 1, under "Day 1 done": the next day, at
+   * her reminder time when it is tomorrow. */
+  'offer.afterDay1.titleTomorrow': 'Keep the streak going: Day {day} is ready tomorrow at {time}',
+  'offer.afterDay1.title': 'Keep the streak going: Day {day} is ready when you are',
   'offer.plans.freeDays': { one: '{count} day free', other: '{count} days free' },
   'offer.plans.save': 'Save {percent}%',
   'offer.plans.aboutPerMonthFirstYear': 'About {perMonth} a month in year one',

@@ -34,7 +34,7 @@ import {
 import { getIntake, saveIntake } from '@/entities/profile';
 import { devForgetCancelQuestion, devForgetGift, devSetFirstSession, devSetPaywallVariant } from '@/pages/offer';
 import { devResetFollowOffer } from '@/features/follow';
-import { devPreviewOfferWall } from '@/features/home-tour';
+import { devForgetAfterDayOne, devPreviewOfferWall } from '@/features/home-tour';
 import {
   armSetup,
   completeOnboarding,
@@ -78,6 +78,9 @@ const SAMPLE_CURRENCY_PARAM = /[?&]sampleCurrency=(\w+)\b/;
 /** `?paywallDefault=monthly_trial|yearly|first_year_2999`: the paywall's
  * lineup, as the `paywall_default_plan` flag would set it; `=off` the flag. */
 const PAYWALL_DEFAULT_PARAM = /[?&]paywallDefault=(\w+)\b/;
+/** `?previewAfterDay1`: the offer after Day 1 can rise again (it rises once
+ * the tour is over, for somebody looking around with Day 1 done). */
+const AFTER_DAY1_PARAM = /[?&]previewAfterDay1\b/;
 /** `?previewPaywall`: the three-step paywall again (not skipped, the intro
  * unseen, the pretend purchase and the win-back price taken away). */
 const PAYWALL_PARAM = /[?&]previewPaywall\b/;
@@ -307,6 +310,7 @@ export function useDevLinks(): void {
         if (currency != null) setSampleCurrency(currency[1]);
         const lineup = PAYWALL_DEFAULT_PARAM.exec(url);
         if (lineup != null) devSetPaywallVariant(lineup[1]);
+        if (AFTER_DAY1_PARAM.test(url)) devForgetAfterDayOne();
         const first = FIRST_SESSION_PARAM.exec(url);
         if (first != null) {
           if (first[1] === 'offer') startProgram(programState());

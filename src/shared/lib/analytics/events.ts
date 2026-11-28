@@ -174,6 +174,10 @@ export type AnalyticsEvents = {
      * or `comeback`). */
     default_plan?: PlanTier;
     variant?: string;
+    /** Where it opened: `onboarding` (the end of the onboarding),
+     * `after_day1` (once, over Home after Day 1), or `locked` (a tap on
+     * something locked, over Home). */
+    placement?: PaywallPlacement;
   };
   /** A step of the first paywall: the screen before it, then the plans.
    * `story` is which it is: the free week, or how the plan starts. Step 2
@@ -193,6 +197,7 @@ export type AnalyticsEvents = {
     rc_offering?: string;
     /** Each card, first to last, with the store's own price string. */
     plans_shown?: PlanShown[];
+    placement?: PaywallPlacement;
     /** The default plan's currency, for a breakdown without unpacking. */
     currency?: string;
   };
@@ -425,7 +430,9 @@ export type AnalyticsEvents = {
   /** A locked tap by somebody looking around without buying raised the plans
    * over Home: a plan session, a task off Home's list, the test, a routine,
    * relief after a check-in, or the session player's own lock. */
-  locked_plans_opened: { from: 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step' };
+  /** The plans over Home. `after_day1`: the once-only offer after Day 1,
+   * raised by the app rather than a locked tap. */
+  locked_plans_opened: { from: 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step' | 'after_day1' };
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;
@@ -568,6 +575,8 @@ export type AnalyticsEvents = {
 export type AppUpdateKind = 'ota' | 'store';
 
 /** One card as the paywall showed it. */
+export type PaywallPlacement = 'onboarding' | 'after_day1' | 'locked';
+
 export type PlanShown = {
   plan: PlanTier;
   product_id: string;

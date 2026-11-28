@@ -16,6 +16,8 @@ import { askForPlans, useLookingAround, type PlansAskedFrom } from '@/entities/p
 import { askForDayOne, dropDayOneAsk, homeTourState, setHomeTourStage } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 
+import { offerAfterDayOneSoon } from './after-day-one';
+
 /**
  * The first session somebody does in the app: two easy minutes, over before
  * they have had time to wonder whether this is for them, and the best footage
@@ -135,6 +137,7 @@ export function finishDayOne(run: DayOneRun, skipped: readonly string[] = [], no
   track('day1_session_completed');
   dropDayOneAsk();
   if (homeTourState() === 'armed') setHomeTourStage('tour');
+  else offerAfterDayOneSoon();
 }
 
 /**

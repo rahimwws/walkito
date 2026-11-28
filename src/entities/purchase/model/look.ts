@@ -15,9 +15,10 @@ import { purchases } from './store';
  * any time. Every other session is locked: a tap on one (the plan's, a task,
  * a routine, relief) raises the plans over Home (`askForPlans`, shown by
  * `OfferWall`), the same plans at the same prices as the paywall, closed
- * back to where they were. Nothing else is offered and nothing rises on its
- * own: what is offered after "Not now" is what was offered before it
- * (Guideline 5.6).
+ * back to where they were. They rise on their own once only, after Day 1
+ * (`after_day1`, `offerAfterDayOne` in `features/home-tour`). Nothing else
+ * is offered: what is offered after "Not now" is what was offered before it,
+ * at the same prices (Guideline 5.6).
  *
  * Somebody whose paid access ran out is not looking around: they have the
  * expiry screen and its read-only browsing (`lapse.ts`).
@@ -39,24 +40,26 @@ export function useLookingAround(): boolean {
   return useSyncExternalStore(subscribeLook, lookingAround, () => false);
 }
 
-/** What was tapped that raised the plans. */
-export type PlansAskedFrom = 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step';
-
+/** What raised the plans: a locked tap on one of these, or `after_day1`,
+ * the once-only offer after Day 1. */
+export type PlansAskedFrom = 'session' | 'task' | 'test' | 'routine' | 'relief' | 'player' | 'first_step' | 'after_day1';
 
 let asked = false;
+let askedFrom: PlansAskedFrom | null = null;
 const askedListeners = new Set<() => void>();
 
-function setAsked(next: boolean): void {
+function setAsked(next: boolean, from: PlansAskedFrom | null = null): void {
   if (next === asked) return;
   asked = next;
+  askedFrom = next ? from : null;
   for (const listener of askedListeners) listener();
 }
 
-/** A locked tap: the plans, over Home. Only while looking around. */
+/** The plans, over Home. Only while looking around. */
 export function askForPlans(from: PlansAskedFrom): void {
   if (!lookingAround() || asked) return;
   track('locked_plans_opened', { from });
-  setAsked(true);
+  setAsked(true, from);
 }
 
 /** Closed without buying, or bought: back to where they were. */
@@ -66,6 +69,11 @@ export function closePlans(): void {
 
 export function plansAsked(): boolean {
   return asked;
+}
+
+/** What raised the plans that are up, or null when none are. */
+export function plansAskedFrom(): PlansAskedFrom | null {
+  return askedFrom;
 }
 
 export function usePlansAsked(): boolean {

@@ -293,6 +293,8 @@ export const OFFER_RU = {
   // ── The plans, v2 (WALK-18). See `../en/offer.ts`.
   'offer.head.eyebrow': 'Ваш план готов',
   'offer.head.eyebrowNamed': '{name}, ваш план готов',
+  'offer.afterDay1.titleTomorrow': 'Не прерывайте серию: день {day} будет готов завтра в {time}',
+  'offer.afterDay1.title': 'Не прерывайте серию: день {day} ждёт вас',
   'offer.plans.freeDays': { one: '{count} день бесплатно', few: '{count} дня бесплатно', many: '{count} дней бесплатно' },
   'offer.plans.save': 'Выгода {percent}%',
   'offer.plans.aboutPerMonthFirstYear': 'Около {perMonth} в месяц в первый год',

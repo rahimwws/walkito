@@ -12,7 +12,6 @@ import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Button } from '@/shared/ui/button';
-import { GuidelinesLine } from '@/shared/ui/guidelines-line';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 
@@ -82,8 +81,8 @@ export type PlansStepProps = {
  * Her goal at the top, in the words she picked in the onboarding, with where
  * it hurts under it; then the two plans side by side at equal weight (the
  * lineup decides which is first and chosen); the chosen plan's first charges
- * on a rail with real dates; then the line that says the exercises follow
- * physical therapy guidelines, and what is included. The button stays docked
+ * on a rail with real dates; then what is included. No credential or
+ * reviewer claim: none is backed yet. The button stays docked
  * at the foot on a solid ground, with the line that says what the store's
  * sheet shows next over it, and "Not now", the renewal terms, Restore, Terms
  * and Privacy under it. Nothing in the scroll can pass under those words.
@@ -225,8 +224,6 @@ export function PlansStep({
           </View>
 
           {stops != null && <ChargeRail stops={stops} />}
-
-          <GuidelinesLine color={SHEET.label} />
 
           <PlansTable />
 

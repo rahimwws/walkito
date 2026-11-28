@@ -293,6 +293,8 @@ export const OFFER_PT = {
   // ── The plans, v2 (WALK-18). See `../en/offer.ts`.
   'offer.head.eyebrow': 'Seu plano está pronto',
   'offer.head.eyebrowNamed': '{name}, seu plano está pronto',
+  'offer.afterDay1.titleTomorrow': 'Mantenha a sequência: o dia {day} estará pronto amanhã às {time}',
+  'offer.afterDay1.title': 'Mantenha a sequência: o dia {day} está te esperando',
   'offer.plans.freeDays': { one: '{count} dia grátis', other: '{count} dias grátis' },
   'offer.plans.save': 'Economize {percent}%',
   'offer.plans.aboutPerMonthFirstYear': 'Cerca de {perMonth} por mês no primeiro ano',

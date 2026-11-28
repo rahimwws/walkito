@@ -34,7 +34,7 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { dayOneWentWell, devPreviewOfferWall, useDevOfferWall } from '@/features/home-tour';
+import { dayOneWentWell, devPreviewOfferWall, offerAfterDayOne, useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { endResumeActivities } from '@/pages/onboarding';
 import { PassSetPreview } from '@/widgets/pass-checkout';
@@ -215,6 +215,11 @@ function RootLayoutInner() {
   // Home would be open with nothing in front of it and no offer after.
   useEffect(() => {
     if (tryingOut && tourState === 'off') armHomeTour();
+  }, [tryingOut, tourState]);
+  // The tour over, with Day 1 behind her: the plans once more, "Day 1 done"
+  // (once per person; `offerAfterDayOne`).
+  useEffect(() => {
+    if (tryingOut && tourState === 'done') offerAfterDayOne();
   }, [tryingOut, tourState]);
   const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
