@@ -1,0 +1,272 @@
+{
+  "schema": "shotik.recipe/1",
+  "id": "analytics-react-native",
+  "title": "Shotik analytics in a React Native / Expo app",
+  "package": "@shotik/support-react-native/analytics",
+  "rules": [
+    "Follow the repo's own conventions (AGENTS.md, CLAUDE.md, lint, import aliases, file layout) when placing code.",
+    "Edit only the files a step names or detects; never change native projects (ios/, android/): the SDK has no native code.",
+    "Replace {{VARS}} before writing. Keep edits minimal and idempotent: skip a step whose `done` check already passes.",
+    "Privacy: never pass text input values, emails, names or tokens in track() props. Wrap any view showing personal data (names, health numbers, messages) in <ShotikMask>.",
+    "Analytics must not change behavior or look: no new UI, no new screens. If something here would, stop and ask."
+  ],
+  "variables": {
+    "APP_KEY": {
+      "required": true,
+      "desc": "Public SDK key from Shotik (Support → SDK), spk_…; the same key as Support, safe to ship"
+    },
+    "SERVER_URL": {
+      "required": true,
+      "desc": "Shotik server URL the phone can reach (simulator: http://127.0.0.1:4590)"
+    },
+    "SDK_SOURCE": {
+      "required": true,
+      "desc": "Absolute path of the SDK folder Shotik ships (sdk/react-native); the package is not on npm"
+    },
+    "SNAPSHOTS": {
+      "required": false,
+      "default": "0.2",
+      "desc": "Share of sessions that record privacy-safe wireframes (0..1)"
+    },
+    "METRO_PORT": {
+      "required": false,
+      "default": "8081",
+      "desc": "Port for the bundle check"
+    }
+  },
+  "detect": [
+    {
+      "id": "vendored",
+      "how": "package.json dependencies has \"@shotik/support-react-native\" (Support already integrated) → true"
+    },
+    {
+      "id": "packageManager",
+      "how": "bun.lock or bun.lockb → bun; pnpm-lock.yaml → pnpm; yarn.lock → yarn; else npm"
+    },
+    {
+      "id": "router",
+      "how": "\"expo-router\" in dependencies → expo-router; \"@react-navigation/native\" → react-navigation; else none"
+    },
+    {
+      "id": "rootComponent",
+      "how": "expo-router: the root _layout.tsx; if it only re-exports, follow it to the file that renders the tree. Otherwise the component passed to registerRootComponent / AppRegistry."
+    },
+    {
+      "id": "providers",
+      "how": "Outermost wrappers returned by rootComponent (GestureHandlerRootView, SafeAreaProvider, ShotikSupportProvider, …), outermost first"
+    },
+    {
+      "id": "navigationRef",
+      "when": "router == react-navigation",
+      "how": "The ref passed to <NavigationContainer ref=…>, or none"
+    },
+    {
+      "id": "purchases",
+      "how": "\"react-native-purchases\" in dependencies → the module where Purchases.configure(...) is called",
+      "optional": true
+    },
+    {
+      "id": "auth",
+      "how": "Where the app learns the signed-in user and its sign-out path",
+      "optional": true
+    },
+    {
+      "id": "keyActions",
+      "how": "Up to 5 core user actions worth naming (e.g. start a workout, finish a lesson, share): the handler where each completes",
+      "optional": true
+    },
+    {
+      "id": "sensitive",
+      "how": "Views that render personal data (user name, email, health values, private messages)",
+      "optional": true
+    },
+    {
+      "id": "typecheck",
+      "how": "package.json scripts.typecheck → \"<pm> run typecheck\"; else \"npx tsc --noEmit\" when tsconfig.json exists"
+    }
+  ],
+  "steps": [
+    {
+      "id": "dependency",
+      "title": "Add or refresh the package",
+      "when": "always",
+      "edits": [
+        {
+          "op": "copy-dir",
+          "from": "{{SDK_SOURCE}}",
+          "to": "vendor/shotik-support-react-native",
+          "only": [
+            "package.json",
+            "README.md",
+            "src"
+          ]
+        },
+        {
+          "op": "json-set",
+          "file": "package.json",
+          "path": [
+            "dependencies",
+            "@shotik/support-react-native"
+          ],
+          "value": "file:./vendor/shotik-support-react-native"
+        }
+      ],
+      "run": {
+        "bun": "bun install",
+        "pnpm": "pnpm install",
+        "yarn": "yarn install",
+        "npm": "npm install"
+      },
+      "note": "When detect.vendored is true the folder already exists: re-copy it so src/analytics is present, then reinstall.",
+      "done": "test -f node_modules/@shotik/support-react-native/src/analytics/index.ts"
+    },
+    {
+      "id": "init",
+      "title": "Start analytics once, at module scope of the root",
+      "file": "{{detect.rootComponent}}",
+      "edits": [
+        {
+          "op": "add-import",
+          "code": "import { ShotikAnalytics, ShotikAnalyticsRoot } from '@shotik/support-react-native/analytics';"
+        },
+        {
+          "op": "insert-after",
+          "anchor": "the imports",
+          "code": "ShotikAnalytics.init({ appKey: '{{APP_KEY}}', serverUrl: '{{SERVER_URL}}', snapshots: {{SNAPSHOTS}} });"
+        }
+      ],
+      "done": "grep -q 'ShotikAnalytics.init' {{detect.rootComponent}}"
+    },
+    {
+      "id": "root",
+      "title": "Wrap the tree for taps and wireframes",
+      "file": "{{detect.rootComponent}}",
+      "edits": [
+        {
+          "op": "wrap-jsx",
+          "target": "The children of the outermost element in detect.providers (inside GestureHandlerRootView), or the whole returned tree when there is none",
+          "open": "<ShotikAnalyticsRoot>",
+          "close": "</ShotikAnalyticsRoot>"
+        }
+      ],
+      "done": "grep -q '<ShotikAnalyticsRoot>' {{detect.rootComponent}}"
+    },
+    {
+      "id": "screens",
+      "title": "Screen tracking",
+      "edits": [
+        {
+          "op": "add-import",
+          "file": "{{detect.rootComponent}}",
+          "when": "router == expo-router",
+          "code": "import { useShotikExpoRouter } from '@shotik/support-react-native/analytics';"
+        },
+        {
+          "op": "insert-after",
+          "file": "{{detect.rootComponent}}",
+          "when": "router == expo-router",
+          "anchor": "the first line inside the root layout component body (a hook call at top level, before any early return)",
+          "code": "useShotikExpoRouter();"
+        }
+      ],
+      "otherwise": "react-navigation: after the container is ready call ShotikAnalytics.trackNavigation(detect.navigationRef); no router: ShotikAnalytics.screen('<name>') in each screen's mount effect",
+      "done": "grep -rqE 'useShotikExpoRouter\\(|trackNavigation\\(' {{detect.rootComponent}}"
+    },
+    {
+      "id": "purchases",
+      "title": "Purchase events",
+      "when": "detect.purchases found",
+      "file": "{{detect.purchases}}",
+      "edits": [
+        {
+          "op": "add-import",
+          "code": "import { ShotikAnalytics } from '@shotik/support-react-native/analytics';"
+        },
+        {
+          "op": "insert-after",
+          "anchor": "Purchases.configure(...)",
+          "code": "ShotikAnalytics.trackRevenueCat(Purchases as unknown as Record<string, unknown>);"
+        }
+      ],
+      "done": "grep -q 'trackRevenueCat' {{detect.purchases}}"
+    },
+    {
+      "id": "identify",
+      "title": "Identify after sign-in",
+      "when": "detect.auth found",
+      "file": "{{detect.auth}}",
+      "edits": [
+        {
+          "op": "add-import",
+          "code": "import { ShotikAnalytics } from '@shotik/support-react-native/analytics';"
+        },
+        {
+          "op": "insert-after",
+          "anchor": "the point where a signed-in user id is known",
+          "code": "ShotikAnalytics.identify(user.id);"
+        },
+        {
+          "op": "insert-after",
+          "anchor": "the sign-out path",
+          "code": "void ShotikAnalytics.reset();"
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Name the core actions",
+      "when": "detect.keyActions found",
+      "edits": [
+        {
+          "op": "insert-after",
+          "anchor": "where each key action completes",
+          "code": "ShotikAnalytics.track('<snake_case_action>', { <non-personal props, e.g. minutes: 10> });"
+        }
+      ],
+      "note": "At most 5. Names are snake_case verbs (walk_started, plan_completed). No personal data in props."
+    },
+    {
+      "id": "mask",
+      "title": "Mask personal data",
+      "when": "detect.sensitive found",
+      "edits": [
+        {
+          "op": "wrap-jsx",
+          "target": "each view in detect.sensitive",
+          "open": "<ShotikMask>",
+          "close": "</ShotikMask>",
+          "import": "import { ShotikMask } from '@shotik/support-react-native/analytics';"
+        }
+      ]
+    }
+  ],
+  "verify": [
+    {
+      "id": "wired",
+      "run": "grep -rlE 'ShotikAnalytics\\.(init|track|trackRevenueCat)|ShotikAnalyticsRoot|useShotikExpoRouter' --include=*.ts --include=*.tsx --exclude-dir=node_modules --exclude-dir=vendor .",
+      "expect": "lists the root component (and the purchases/auth files when found)"
+    },
+    {
+      "id": "typecheck",
+      "run": "{{detect.typecheck}}",
+      "expect": "exit 0, or no new errors in the files this recipe touched"
+    },
+    {
+      "id": "key",
+      "run": "curl -s -o /dev/null -w '%{http_code}' -X POST -H 'x-shotik-key: {{APP_KEY}}' -H 'content-type: application/json' -d '{\"anonymousId\":\"recipe-check\",\"events\":[]}' {{SERVER_URL}}/analytics/v1/events",
+      "expect": "200; 401 means a wrong key"
+    },
+    {
+      "id": "bundle",
+      "run": "curl -sf 'http://127.0.0.1:{{METRO_PORT}}/{{detect.entry}}.bundle?platform=ios&dev=true' | grep -c '/analytics/v1/events'",
+      "expect": "≥ 1",
+      "needs": "Metro running: npx expo start --dev-client --port {{METRO_PORT}}"
+    },
+    {
+      "id": "device",
+      "run": "open the app on the shared simulator (device broker) and tap through two screens",
+      "expect": "Shotik → Insights shows the app's users and sessions within a minute",
+      "manual": true
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { Platform } from 'react-native';
 
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
+import { ShotikAnalytics, ShotikAnalyticsRoot, useShotikExpoRouter } from '@shotik/support-react-native/analytics';
 
 import {
   NavThemeProvider,
@@ -64,6 +65,8 @@ import { FORM_SHEET, sheetRouteOptions } from './form-sheet';
 import { OfferWall } from './offer-wall';
 import { runStoreShots } from '../providers/store-shots';
 
+ShotikAnalytics.init({ appKey: 'spk_oD66fHhAyDW7Xb5V6podsNwyBiJqmgoJ', serverUrl: 'http://127.0.0.1:4618', snapshots: 1 });
+
 /**
  * The app shell: fonts, theme, gesture root, routes.
  *
@@ -110,6 +113,7 @@ export function RootLayout() {
 }
 
 function RootLayoutInner() {
+  useShotikExpoRouter();
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
   // Not bypassed in development builds. It was, to get a simulator past Sign in
@@ -263,6 +267,7 @@ function RootLayoutInner() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
+      <ShotikAnalyticsRoot>
       {/* Required by react-native-keyboard-controller: it installs the native
           frame listener that lets a KeyboardAvoidingView track the keyboard's
           real animation instead of approximating it from show/hide events. */}
@@ -493,6 +498,7 @@ function RootLayoutInner() {
           before the fonts, and unmounts completely once the app is showing.
           After an update's restart it waits out the reload screen's fade. */}
       <SplashReveal ready holdMs={updateRestartHoldMs()} />
+      </ShotikAnalyticsRoot>
     </GestureHandlerRootView>
   );
 }

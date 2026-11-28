@@ -21,6 +21,7 @@
  *   `pain-check.tsx` from inheriting a strength day's prescription.
  */
 
+import { ShotikAnalytics } from '@shotik/support-react-native/analytics';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor, type Key, type Translate } from '@/shared/lib/i18n';
 import { useSyncExternalStore } from 'react';
@@ -480,6 +481,7 @@ export function recordRetest(day: number, measured: RetestMeasurements, now: num
   persistRetests();
   for (const listener of retestSubscribers) listener();
   track('retest_completed', { day, block: blockIndexForRetest(day) });
+  ShotikAnalytics.track('retest_completed', { day });
   return retest;
 }
 

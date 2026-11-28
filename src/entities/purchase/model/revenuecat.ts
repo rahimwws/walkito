@@ -1,3 +1,4 @@
+import { ShotikAnalytics } from '@shotik/support-react-native/analytics';
 import { identify, setPerson, track, type PlanTier, type PurchaseProps, type StoreResult } from '@/shared/lib/analytics';
 import {
   getAppsFlyerUID,
@@ -872,6 +873,7 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   Purchases.setLogLevel(verbose ? LOG_LEVEL.VERBOSE : LOG_LEVEL.WARN);
   Purchases.configure({ apiKey });
   reportUnresolved();
+  ShotikAnalytics.trackRevenueCat(Purchases as unknown as Record<string, unknown>);
 
   // Registered before the first fetch, so a renewal that lands between
   // configure and the fetch is not missed.

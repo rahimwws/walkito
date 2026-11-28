@@ -10,6 +10,7 @@ import { healthAvailable, type HealthSummary } from '@/entities/health';
 import { firstName, getIntake, profileEmail, saveIntake, setProfileEmail, useProfileName } from '@/entities/profile';
 import { accountSaved, deferAccount, finishSetup, settleAccount, useAccountOwed, useSetupPending } from '@/entities/session';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { ShotikAnalytics } from '@shotik/support-react-native/analytics';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -211,7 +212,10 @@ export function SetupPage() {
    * is started for them; Home's own button is there. */
   const done = () => {
     // An account owed from an earlier launch is not a second setup.
-    if (!owedOnly) track('setup_completed');
+    if (!owedOnly) {
+      track('setup_completed');
+      ShotikAnalytics.track('setup_completed');
+    }
     finishSetup();
   };
 

@@ -3,6 +3,7 @@ import 'react-native-url-polyfill/auto';
 import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
 import { requireOptionalNativeModule } from 'expo';
 
+import { ShotikAnalytics } from '@shotik/support-react-native/analytics';
 import { setPerson } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
@@ -113,7 +114,9 @@ supabase?.auth.onAuthStateChange((event, session) => {
   if (event === 'SIGNED_OUT') {
     keepRefreshToken(null);
     kv.remove(ACCOUNT_KEY);
+    void ShotikAnalytics.reset();
   } else if (session != null) {
+    ShotikAnalytics.identify(session.user.id);
     keepRefreshToken(session);
     // Every session says which it is, so a device that ends up anonymous by a
     // way other than signing out stops claiming an account. A launch with no

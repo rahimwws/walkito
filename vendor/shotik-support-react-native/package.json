@@ -1,0 +1,34 @@
+{
+  "name": "@shotik/support-react-native",
+  "version": "0.1.0",
+  "description": "In-app support chat for React Native and Expo apps, answered from Shotik.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "react-native": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "react-native": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./client": "./src/client.ts",
+    "./analytics": "./src/analytics/index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "guide.json",
+    "recipe.json"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.72"
+  },
+  "scripts": {
+    "test": "node --disable-warning=ExperimentalWarning --test ../../server/test/support.test.ts"
+  }
+}

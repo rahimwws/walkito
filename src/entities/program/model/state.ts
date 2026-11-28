@@ -13,6 +13,7 @@
 
 import { useSyncExternalStore } from 'react';
 
+import { ShotikAnalytics } from '@shotik/support-react-native/analytics';
 import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
@@ -459,6 +460,7 @@ export function writeLog(
       kind: kindFor(dayNumber),
       checkpoint: block?.retestDay === dayNumber,
     });
+    ShotikAnalytics.track('session_completed', { day: dayNumber, kind: kindFor(dayNumber) });
   }
   if (next.morningStretchDone && !existing.morningStretchDone) {
     track('morning_stretch_done', { day: dayNumber });
@@ -515,6 +517,7 @@ export function logPain(
   // That a check-in happened, and whether it was a correction. Never the score
   // or the zones — see the note at the top of `shared/lib/analytics`.
   track('checkin_logged', { day: dayNumber, entries_today: entries.length, kind: index < 0 ? 'checkin' : 'edit' });
+  ShotikAnalytics.track('checkin_logged', { day: dayNumber, kind: index < 0 ? 'checkin' : 'edit' });
 
   const log = writeLog(dayNumber, { painEntries: entries, painMorning: score, painZones: [...zones] }, now);
   // Straight up rather than after the debounce: a check-in answered from the
