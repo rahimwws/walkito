@@ -22,7 +22,7 @@ export interface DeviceContext {
 }
 
 // Props by type (all optional, short keys keep batches small):
-//   session  { first: 1 on the first session of this install }
+//   session  { first: 1 on the first session of this install, store: 'none' | 'error' when the id can't persist }
 //   screen   { from, ms (ready time) }               leave { dur, depth (0..1), drag (pt), stalls, maxStall }
 //   tap      { el, id, label, x, y, nx, ny (0..1000), dead: 1, input: 1 }   rage { el, id, label, n, x, y }
 //            id is the stable element key (testID, nativeID or a structural hash); el and label are for display

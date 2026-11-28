@@ -75,6 +75,7 @@ export class Analytics {
   private active = true
   private loaded = false
   private fresh = true
+  private storeIssue: 'none' | 'error' | undefined
 
   constructor(cfg: AnalyticsConfig) {
     this.cfg = cfg
@@ -102,8 +103,10 @@ export class Analytics {
         }
         if (q) this.queue = (JSON.parse(q) as WireEvent[]).concat(this.queue).slice(-MAX_QUEUE)
         if (c === 'granted' || c === 'denied') this.consent = c
-      } catch {}
-    }
+      } catch {
+        this.storeIssue = 'error'
+      }
+    } else this.storeIssue = 'none'
     if (!this.anon) {
       this.anon = 'anon_' + uid()
       st?.set(K.anon, this.anon).catch(() => {})
@@ -135,7 +138,8 @@ export class Analytics {
       this.sampled = Math.random() < (this.cfg.snapshots ?? 0.2)
       this.snapped.clear()
       this.lastActive = t
-      this.push('session', undefined, first ? { first: 1 } : undefined, t)
+      const props = { ...(first && { first: 1 }), ...(this.storeIssue && { store: this.storeIssue }) }
+      this.push('session', undefined, Object.keys(props).length ? props : undefined, t)
     }
     this.lastActive = t
   }
